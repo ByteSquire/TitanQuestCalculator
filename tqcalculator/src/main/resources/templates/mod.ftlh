@@ -1,7 +1,7 @@
 ## Titan Quest Calculator
 
-You can click any link shown below to get to the mastery overview.
+You can click any link shown below to get to the skill overview.
 
-<#list mods as mod>
-    [${mod.name}](${mod.url})
+<#list masteries as mastery>
+    [<#if mastery.name??>${mastery.name}<#else>name</#if>](${mastery.url})
 </#list>
