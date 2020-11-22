@@ -1,6 +1,7 @@
 package main;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.io.Writer;
@@ -65,15 +66,21 @@ public class Control {
     }
 
     private static void writeTemplates() {
-        Writer out = new OutputStreamWriter(System.out);
+        Writer outHome;
         try {
-            home.process(root, out);
-        } catch (TemplateException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
+            outHome = new FileWriter("index.md");
+            Writer outMod = new OutputStreamWriter(System.out);
+            Writer outMastery = new OutputStreamWriter(System.out);
+            Writer outSkill = new OutputStreamWriter(System.out);
+
+            home.process(root, outHome);
+            mod.process(root, outMod);
+            mastery.process(root, outMastery);
+            skill.process(root, outSkill);
+        } catch (IOException | TemplateException e1) {
+            e1.printStackTrace();
         }
+
     }
 
     private static void getTemplates() {
