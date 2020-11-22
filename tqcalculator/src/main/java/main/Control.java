@@ -61,19 +61,16 @@ public class Control {
             e.printStackTrace();
         }
 
-//        for (Mod mod : mMods) {
-//            for (Mastery mastery : mod.getMasteries()) {
-//                try {
-//                    Path out = Path.of("../mods/" + mod.getName() + "/" + mastery.getName());
-//                    Files.createDirectories(out);
-//                } catch (IOException e) {
-//                    e.printStackTrace();
-//                }
-//                for (Skill skill : mastery.getSkills()) {
-//                    System.out.println(skill);
-//                }
-//            }
-//        }
+        for (Mod mod : mMods) {
+            for (Mastery mastery : mod.getMasteries()) {
+                try {
+                    Path out = Path.of("../mods/" + mod.getName() + "/" + mastery.getName());
+                    Files.createDirectories(out);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
 
         writeTemplates();
 
