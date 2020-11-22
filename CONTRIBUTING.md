@@ -1,0 +1,5 @@
+- Fork the repo. [how to fork](https://docs.github.com/en/enterprise-server@2.20/github/getting-started-with-github/fork-a-repo)
+- Put your mod from CustomMaps into the databases directory inside the tqcalulator directory.
+- Delete the assets and source directories as they are not required and would bloat the repo
+- Create a [pull request](https://github.com/ByteSquire/TitanQuestCalculator/pulls)
+- That's it you're done, you can now wait for [someone](https://github.com/ByteSquire) to merge the pull and push the result
