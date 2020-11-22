@@ -19,7 +19,7 @@ public class Skill {
             return;
         mParentPath = aParentPath;
         mSkillParser = new SkillParser(aSkill, aParentPath);
-        mSkillName = aSkill.getName();
+        mSkillName = aSkill.getName().substring(0, aSkill.getName().length() - 4);
 
         String[] underscoredName = aSkill.getPath().split("_");
         if (underscoredName.length > 1) {
