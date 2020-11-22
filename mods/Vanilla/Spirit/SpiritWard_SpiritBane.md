@@ -1,0 +1,8 @@
+## Titan Quest Calculator
+
+    - racialBonusAbsoluteDamage : [9.0, 13.0, 17.0, 21.0, 25.0, 29.0, 33.0, 37.0, 41.0, 45.0]
+    - skillUltimateLevel : 10
+    - skillActiveManaCost : [1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9]
+    - racialBonusPercentDamage : [20.0, 27.0, 35.0, 44.0, 54.0, 65.0, 77.0, 90.0, 104.0, 119.0]
+    - skillTier : 3
+    - skillMaxLevel : 6

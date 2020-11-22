@@ -1,0 +1,16 @@
+## Titan Quest Calculator
+
+    - projectileLaunchNumber : 3
+    - skillCooldownTime : 6.0
+    - skillManaCost : [37.0, 40.0, 43.0, 47.0, 51.0, 54.0, 57.0, 61.0, 65.0, 68.0, 71.0, 75.0, 79.0, 82.0, 85.0, 89.0]
+    - offensiveSlowDefensiveAbilityDurationMin : 3.0
+    - skillConnectionSpacing : 62
+    - cameraShakeAmplitude : 0.12
+    - offensiveSlowDefensiveAbilityMin : [5.0, 8.0, 11.0, 14.0, 17.0, 20.0, 23.0, 26.0, 29.0, 32.0, 35.0, 38.0, 41.0, 44.0, 47.0, 50.0]
+    - skillMaxLevel : 12
+    - skillUltimateLevel : 16
+    - projectileLaunchRotation : 20.0
+    - offensiveFireMax : [15.0, 18.0, 22.0, 27.0, 31.0, 34.0, 38.0, 43.0, 47.0, 50.0, 54.0, 59.0, 63.0, 66.0, 70.0, 75.0]
+    - offensiveFireMin : [8.0, 11.0, 13.0, 17.0, 20.0, 23.0, 25.0, 29.0, 32.0, 35.0, 38.0, 43.0, 45.0, 48.0, 53.0, 59.0]
+    - skillMasteryLevelRequired : 1
+    - skillTier : 1

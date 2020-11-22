@@ -1,0 +1,24 @@
+## Titan Quest Calculator
+
+    - skillCooldownTime : 7.0
+    - skillManaCost : [80.0, 86.0, 92.0, 98.0, 104.0, 110.0, 116.0, 122.0, 128.0, 134.0, 140.0, 146.0, 152.0, 158.0, 164.0, 170.0, 176.0, 182.0, 188.0, 194.0]
+    - offensiveStunMax : 2.0
+    - offensiveProjectileFumbleDurationMax : [1.5, 1.8, 2.1, 2.4, 2.7, 3.0, 3.3, 3.6, 3.9, 4.2, 4.5, 4.8, 5.1, 5.4, 5.7, 6.0]
+    - cameraShakeAmplitude : 0.12
+    - offensivePhysicalMin : [60.0, 81.0, 103.0, 126.0, 150.0, 175.0, 201.0, 228.0, 256.0, 285.0, 315.0, 346.0, 378.0, 411.0, 445.0, 480.0]
+    - offensiveProjectileFumbleMin : 70.0
+    - offensiveDisruptionMin : [1.0, 1.2, 1.4, 1.6, 1.8, 2.0, 2.2, 2.4, 2.6, 2.8, 3.0, 3.2, 3.4, 3.6, 3.8, 4.0]
+    - offensivePhysicalMax : [80.0, 101.0, 123.0, 146.0, 170.0, 195.0, 221.0, 248.0, 276.0, 305.0, 335.0, 366.0, 398.0, 431.0, 465.0, 500.0]
+    - ragDollAmplification : 1.5
+    - skillMaxLevel : 12
+    - waveDistance : 25.0
+    - waveStartWidth : 1.0
+    - offensiveProjectileFumbleDurationMin : [1.0, 1.2, 1.4, 1.6, 1.8, 2.0, 2.2, 2.4, 2.6, 2.8, 3.0, 3.2, 3.4, 3.6, 3.8, 4.0]
+    - cameraShakeDurationSecs : 1.0
+    - offensiveStunMin : 1.0
+    - skillUltimateLevel : 16
+    - waveEndWidth : 2.0
+    - waveTime : 0.5
+    - skillTier : 7
+    - offensivePercentCurrentLifeMin : 20.0
+    - offensiveDisruptionMax : [1.5, 1.8, 2.1, 2.4, 2.7, 3.0, 3.3, 3.6, 3.9, 4.2, 4.5, 4.8, 5.1, 5.4, 5.7, 6.0]

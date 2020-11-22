@@ -1,0 +1,26 @@
+## Titan Quest Calculator
+
+You can click any link shown below to get info about the skill.
+
+    [Wolf_PetModifer_Maul](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/null/Wolf_PetModifer_Maul.md)
+    [BriarWard_Sanctuary](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/null/BriarWard_Sanctuary.md)
+    [SylvanNymph_PetModifier_Nature&#39;sWrath](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/null/SylvanNymph_PetModifier_Nature&#39;sWrath.md)
+    [Plague_Susceptibility](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/null/Plague_Susceptibility.md)
+    [SylvanNymph_PetModifier_Overgrowth](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/null/SylvanNymph_PetModifier_Overgrowth.md)
+    [Regrowth_AcceleratedGrowth](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/null/Regrowth_AcceleratedGrowth.md)
+    [nature_nymph_petmodifier_rootwave](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/null/nature_nymph_petmodifier_rootwave.md)
+    [HeartofOak_Permanence](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/null/HeartofOak_Permanence.md)
+    [SylvanNymphSummons](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Nature/SylvanNymphSummons.md)
+    [BriarWard](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Nature/BriarWard.md)
+    [Wolf_PetModifier_StrengthofthePack](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Nature/Wolf_PetModifier_StrengthofthePack.md)
+    [Wolf_PetModifer_SurvivalInstinct](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Nature/Wolf_PetModifer_SurvivalInstinct.md)
+    [HeartofOak_Tranquility](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Nature/HeartofOak_Tranquility.md)
+    [Renewal](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Nature/Renewal.md)
+    [nature_earthbind](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Nature/nature_earthbind.md)
+    [Plague_Fatigue](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Nature/Plague_Fatigue.md)
+    [HeartofOak](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Nature/HeartofOak.md)
+    [WolfSummons](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Nature/WolfSummons.md)
+    [Plague](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Nature/Plague.md)
+    [Regrowth](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Nature/Regrowth.md)
+    [BriarWard_PetModifier_StingingNettle](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Nature/BriarWard_PetModifier_StingingNettle.md)
+    [Regrowth_Dissemination](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Nature/Regrowth_Dissemination.md)

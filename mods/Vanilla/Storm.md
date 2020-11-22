@@ -1,0 +1,26 @@
+## Titan Quest Calculator
+
+You can click any link shown below to get info about the skill.
+
+    [StormWispSummoning](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/null/StormWispSummoning.md)
+    [FreezingBlast](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/null/FreezingBlast.md)
+    [Thunderball](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/null/Thunderball.md)
+    [Squall](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/null/Squall.md)
+    [StormSurge](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/null/StormSurge.md)
+    [IceShard_Velocity](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/null/IceShard_Velocity.md)
+    [Thunderball_ConcussiveBlast](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/null/Thunderball_ConcussiveBlast.md)
+    [StormNimbus_StaticCharge](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/null/StormNimbus_StaticCharge.md)
+    [LightningBolt](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Storm/LightningBolt.md)
+    [storm_stormwisp_petmodifier_arcingchaos](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Storm/storm_stormwisp_petmodifier_arcingchaos.md)
+    [StormWisp_PetModifier_EyeoftheStorm](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Storm/StormWisp_PetModifier_EyeoftheStorm.md)
+    [StormNimbus_HeartofFrost](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Storm/StormNimbus_HeartofFrost.md)
+    [SpellBreaker](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Storm/SpellBreaker.md)
+    [storm_flash](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Storm/storm_flash.md)
+    [SpellBreaker_SpellShock](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Storm/SpellBreaker_SpellShock.md)
+    [EnergyShield_Reflection](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Storm/EnergyShield_Reflection.md)
+    [StormNimbus](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Storm/StormNimbus.md)
+    [Squall_ObscuredVisibility](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Storm/Squall_ObscuredVisibility.md)
+    [EnergyShield](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Storm/EnergyShield.md)
+    [IceShard](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Storm/IceShard.md)
+    [LightningBolt_ChainLightning](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Storm/LightningBolt_ChainLightning.md)
+    [IceShard_Torrent](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Storm/IceShard_Torrent.md)

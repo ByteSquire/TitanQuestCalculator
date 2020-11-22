@@ -1,0 +1,26 @@
+## Titan Quest Calculator
+
+You can click any link shown below to get info about the skill.
+
+    [BattleRage_CrushingBlow](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/null/BattleRage_CrushingBlow.md)
+    [DualWieldTechnique_JumpSlash](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/null/DualWieldTechnique_JumpSlash.md)
+    [BattleStandard](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/null/BattleStandard.md)
+    [Onslaught_Ardor](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/null/Onslaught_Ardor.md)
+    [DualWieldTechnique_Tumult](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/null/DualWieldTechnique_Tumult.md)
+    [WarWind](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/null/WarWind.md)
+    [BattleStandard_PetModifier_Triumph](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/null/BattleStandard_PetModifier_Triumph.md)
+    [Onslaught](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/null/Onslaught.md)
+    [WarHorn_DoomHorn](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Warfare/WarHorn_DoomHorn.md)
+    [Dodge Attack](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Warfare/Dodge Attack.md)
+    [WarHorn](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Warfare/WarHorn.md)
+    [BattleRage_CounterAttack](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Warfare/BattleRage_CounterAttack.md)
+    [AncestralHorn](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Warfare/AncestralHorn.md)
+    [warfare_clubslam](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Warfare/warfare_clubslam.md)
+    [warfare_ancestralmod](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Warfare/warfare_ancestralmod.md)
+    [Onslaught_Hamstring](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Warfare/Onslaught_Hamstring.md)
+    [DualWieldTechnique_CrossCut](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Warfare/DualWieldTechnique_CrossCut.md)
+    [BattleRage](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Warfare/BattleRage.md)
+    [Onslaught_IgnorePain](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Warfare/Onslaught_IgnorePain.md)
+    [WeaponTraining](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Warfare/WeaponTraining.md)
+    [DualWeaponTraining](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Warfare/DualWeaponTraining.md)
+    [WarWind_Lacerate](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Warfare/WarWind_Lacerate.md)

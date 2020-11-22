@@ -1,0 +1,28 @@
+## Titan Quest Calculator
+
+You can click any link shown below to get info about the skill.
+
+    [ShieldCharge_Disruption](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/null/ShieldCharge_Disruption.md)
+    [BattleAwareness_IronWill](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/null/BattleAwareness_IronWill.md)
+    [Rally_Inspiration](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/null/Rally_Inspiration.md)
+    [BattleAwareness](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/null/BattleAwareness.md)
+    [ShieldCharge](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/null/ShieldCharge.md)
+    [Adrenaline](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/null/Adrenaline.md)
+    [ConcussiveBlow](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/null/ConcussiveBlow.md)
+    [WeaponPool_ShieldSmash](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/null/WeaponPool_ShieldSmash.md)
+    [Batter_RendArmor](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Defensive/Batter_RendArmor.md)
+    [Adrenaline_DefensiveReaction](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Defensive/Adrenaline_DefensiveReaction.md)
+    [Skill_AllPetAttack](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Defensive/Skill_AllPetAttack.md)
+    [Batter](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Defensive/Batter.md)
+    [QuickRecovery](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Defensive/QuickRecovery.md)
+    [ColossusForm](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Defensive/ColossusForm.md)
+    [defense_activeblock](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Defensive/defense_activeblock.md)
+    [defense_summonphalanx](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Defensive/defense_summonphalanx.md)
+    [WeaponPool_Pulverize](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Defensive/WeaponPool_Pulverize.md)
+    [Rally_Defiance](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Defensive/Rally_Defiance.md)
+    [BattleAwareness_Focus](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Defensive/BattleAwareness_Focus.md)
+    [WeaponPool_Disable](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Defensive/WeaponPool_Disable.md)
+    [all_taunt](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Defensive/all_taunt.md)
+    [ArmorHandling](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Defensive/ArmorHandling.md)
+    [Rally](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Defensive/Rally.md)
+    [Adrenaline_Resilience](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Defensive/Adrenaline_Resilience.md)

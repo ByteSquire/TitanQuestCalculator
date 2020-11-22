@@ -1,0 +1,21 @@
+## Titan Quest Calculator
+
+    - defensiveSlowManaLeach : 100.0
+    - skillActiveDuration : 4.0
+    - skillCooldownTime : 70.0
+    - offensiveSlowTotalSpeedMin : 50.0
+    - skillManaCost : [120.0, 125.0, 130.0, 135.0, 140.0, 145.0, 150.0, 155.0, 160.0, 165.0, 170.0, 175.0, 180.0, 185.0]
+    - offensiveSlowLifeLeachMin : [36.0, 48.0, 60.0, 72.0, 84.0, 96.0, 108.0, 120.0, 132.0, 144.0, 156.0, 168.0, 180.0, 192.0]
+    - defensiveSlowLifeLeach : 100.0
+    - skillWeaponTintRed : 1.0
+    - skillConnectionSpacing : 62
+    - cameraShakeAmplitude : 0.12
+    - offensiveSlowManaLeachMin : [12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 64.0]
+    - skillMaxLevel : 10
+    - offensiveSlowLifeLeachDurationMin : 1.0
+    - skillUltimateLevel : 14
+    - excludeRacialDamage : 1
+    - offensiveSlowManaLeachDurationMin : 1.0
+    - skillTargetRadius : 5.0
+    - skillTier : 7
+    - offensiveSlowTotalSpeedDurationMin : 1.0

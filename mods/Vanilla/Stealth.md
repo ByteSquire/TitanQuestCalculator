@@ -1,0 +1,26 @@
+## Titan Quest Calculator
+
+You can click any link shown below to get info about the skill.
+
+    [PoisonGasBomb](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/null/PoisonGasBomb.md)
+    [CalculatedStrike_LuckyHit](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/null/CalculatedStrike_LuckyHit.md)
+    [LayTrap_RapidConstruction](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/null/LayTrap_RapidConstruction.md)
+    [LethalStrike](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/null/LethalStrike.md)
+    [LayTrap](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/null/LayTrap.md)
+    [EnvenomWeapon_Neurotoxin](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/null/EnvenomWeapon_Neurotoxin.md)
+    [LayTrap_PetModifier_MultishotBoltTrap](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/null/LayTrap_PetModifier_MultishotBoltTrap.md)
+    [ThrowingKnife](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/null/ThrowingKnife.md)
+    [FlashPowder](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Stealth/FlashPowder.md)
+    [EnvenomWeapon_Delirium](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Stealth/EnvenomWeapon_Delirium.md)
+    [rogue_poisongasbomb_spread](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Stealth/rogue_poisongasbomb_spread.md)
+    [PoisonGasBomb_Shrapnel](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Stealth/PoisonGasBomb_Shrapnel.md)
+    [Anatomy](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Stealth/Anatomy.md)
+    [rogue_bladebarrier](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Stealth/rogue_bladebarrier.md)
+    [DisarmTraps](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Stealth/DisarmTraps.md)
+    [BladeHoning](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Stealth/BladeHoning.md)
+    [OpenWound](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Stealth/OpenWound.md)
+    [LethalStrike_MortalWound](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Stealth/LethalStrike_MortalWound.md)
+    [ThrowingKnife_FlurryofKnives](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Stealth/ThrowingKnife_FlurryofKnives.md)
+    [EnvenomWeapon](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Stealth/EnvenomWeapon.md)
+    [CalculatedStrike](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Stealth/CalculatedStrike.md)
+    [ToxinDistillation](https://bytesquire.github.io/TitanQuestCalculator/Vanilla/Stealth/ToxinDistillation.md)
