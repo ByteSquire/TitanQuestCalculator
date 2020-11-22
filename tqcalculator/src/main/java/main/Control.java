@@ -68,7 +68,7 @@ public class Control {
     private static void writeTemplates() {
         Writer outHome;
         try {
-            outHome = new FileWriter("index.md");
+            outHome = new FileWriter("../../index.md");
             Writer outMod = new OutputStreamWriter(System.out);
             Writer outMastery = new OutputStreamWriter(System.out);
             Writer outSkill = new OutputStreamWriter(System.out);
