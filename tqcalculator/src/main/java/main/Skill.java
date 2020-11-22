@@ -18,9 +18,14 @@ public class Skill {
         if (aSkill == null)
             return;
         mParentPath = aParentPath;
-        mSkillParser = new SkillParser(aSkill);
+        mSkillParser = new SkillParser(aSkill, aParentPath);
         mSkillName = aSkill.getName();
-        mSkillName = mSkillName.substring(0, mSkillName.length() - 4);
+
+        String[] underscoredName = aSkill.getPath().split("_");
+        if (underscoredName.length > 1) {
+            mSkillName = underscoredName[underscoredName.length - 1].substring(0,
+                    underscoredName[underscoredName.length - 1].length() - 4);
+        }
 
         mSkillAttributes = mSkillParser.getAttributes();
     }

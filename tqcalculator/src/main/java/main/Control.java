@@ -23,7 +23,7 @@ public class Control {
 
     private static final String mSeparator = Paths.get("").getFileSystem().getSeparator();
 
-    private static final String mDatabasesDir = Paths.get("").toAbsolutePath().toString() + mSeparator + "databases"
+    public static final String DATABASES_DIR = Paths.get("").toAbsolutePath().toString() + mSeparator + "databases"
             + mSeparator;
 
     private static ArrayList<Mod> mMods = new ArrayList<>();
@@ -41,7 +41,7 @@ public class Control {
 
         DirectoryStream<Path> databaseDir;
         try {
-            databaseDir = Files.newDirectoryStream(Path.of(mDatabasesDir));
+            databaseDir = Files.newDirectoryStream(Path.of(DATABASES_DIR));
 
             databaseDir.forEach((mod) -> {
                 if (mod != null)

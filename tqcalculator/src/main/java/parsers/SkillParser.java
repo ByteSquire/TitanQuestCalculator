@@ -9,6 +9,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.stream.Stream;
 
+import main.Control;
+import main.Skill;
 import main.SkillAttribute;
 
 public class SkillParser {
@@ -16,11 +18,14 @@ public class SkillParser {
     private HashMap<String, SkillAttribute<?>> mAttributes;
     public static final int COUNT_SKILLS = 26;
     private File mSkill;
+    private String mParentPath;
 
-    public SkillParser(File aSkill) {
+    public SkillParser(File aSkill, String aParentPath) {
 
         if (aSkill == null)
             return;
+
+        mParentPath = aParentPath;
 
         mAttributes = new HashMap<>();
 
@@ -59,6 +64,14 @@ public class SkillParser {
                     mAttributes.put(str.split(",")[0], new SkillAttribute<ArrayList<Double>>(value));
                     return;
                 } catch (Exception e) {
+                }
+                if (str.split(",")[0].equals("petSkillName") || str.split(",")[0].equals("buffSkillName")) {
+                    String[] underscoredName = mSkill.getPath().split("_");
+                    mAttributes.put(
+                            underscoredName[underscoredName.length - 1].substring(0,
+                                    underscoredName[underscoredName.length - 1].length() - 4),
+                            new SkillAttribute<Skill>(new Skill(new File(Control.DATABASES_DIR
+                                    + mParentPath.split("/")[0] + "/database/" + str.split(",")[1]), mParentPath)));
                 }
             });
         } catch (FileNotFoundException e) {
