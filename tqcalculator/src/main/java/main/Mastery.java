@@ -18,11 +18,15 @@ public class Mastery {
         mSkillTreeParser = new SkillTreeParser(aSkillTree, aModDir);
         mSkills = new ArrayList<Skill>();
 
+        for (File skill : mSkillTreeParser.getSkills()) {
+            if (skill.getName().endsWith("_Mastery.dbr"))
+                name = skill.getName().substring(0, skill.getName().length() - 18) + "s";
+            else if (skill.getName().endsWith("Mastery.dbr"))
+                name = skill.getName().substring(0, skill.getName().length() - 11);
+        }
 //        int i = 0;
         for (File skill : mSkillTreeParser.getSkills()) {
-            if (skill.getName().endsWith("Mastery.dbr"))
-                name = skill.getName().substring(0, skill.getName().length() - 11);
-            else
+            if (!skill.getName().endsWith("Mastery.dbr"))
                 mSkills.add(/* i++, */new Skill(skill, (mParentModName + "/" + name)));
         }
     }
