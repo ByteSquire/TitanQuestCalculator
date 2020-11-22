@@ -52,7 +52,7 @@ public class Mod {
     }
 
     public String getUrl() {
-        return Control.URL + "/mods/" + getName() + ".md";
+        return Control.URL + "/mods/" + getName() + ".html";
     }
 
 }

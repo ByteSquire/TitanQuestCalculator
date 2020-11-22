@@ -82,20 +82,21 @@ public class Control {
     private static void writeTemplates() {
         try {
             for (Mod mod : mMods) {
-                Writer outMod = new FileWriter("../mods/" + mod.getName() + ".md");
+                Writer outMod = new FileWriter("../mods/" + mod.getName() + ".html");
                 rootMod = new HashMap<>();
                 rootMod.put("masteries", mod.getMasteries());
                 Control.mod.process(rootMod, outMod);
                 for (Mastery mastery : mod.getMasteries()) {
-                    Writer outMastery = new FileWriter("../mods/" + mod.getName() + "/" + mastery.getName() + ".md");
+                    Writer outMastery = new FileWriter("../mods/" + mod.getName() + "/" + mastery.getName() + ".html");
                     rootMastery = new HashMap<>();
                     rootMastery.put("skills", mastery.getSkills());
                     Control.mastery.process(rootMastery, outMastery);
                     for (Skill skill : mastery.getSkills()) {
                         Writer outSkill = new FileWriter(
-                                "../mods/" + mod.getName() + "/" + mastery.getName() + "/" + skill.getName() + ".md");
+                                "../mods/" + mod.getName() + "/" + mastery.getName() + "/" + skill.getName() + ".html");
                         rootSkill = new HashMap<>();
                         rootSkill.put("attributes", skill.getAttributes());
+                        rootSkill.put("name", skill.getName());
                         Control.skill.process(rootSkill, outSkill);
                     }
                 }
