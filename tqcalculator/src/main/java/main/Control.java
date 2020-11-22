@@ -3,7 +3,6 @@ package main;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.OutputStreamWriter;
 import java.io.Writer;
 import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
@@ -14,12 +13,13 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import freemarker.*;
 import freemarker.template.*;
 
 //import templates.*;
 
 public class Control {
+
+    public static final String URL = "https://bytesquire.github.io/TitanQuestCalculator";
 
     private static final String mSeparator = Paths.get("").getFileSystem().getSeparator();
 
@@ -32,7 +32,7 @@ public class Control {
 
     private static Template home, mod, mastery, skill;
 
-    private static Map<String, Object> root = new HashMap();
+    private static Map<String, Object> rootHome, rootMod, rootMastery, rootSkill;
 
     public static void main(String[] args) {
 
@@ -51,12 +51,26 @@ public class Control {
             e.printStackTrace();
         }
 
-        root.put("mods", (List<Mod>) mMods);
+        rootHome = new HashMap<>();
 
-//        for (Mod m : mMods) {
-//            for (SkillTree st : m.getSkillTrees()) {
-//                for (Skill s : st.getSkills()) {
-//                    System.out.println(s);
+        rootHome.put("mods", (List<Mod>) mMods);
+        try {
+            Writer outHome = new FileWriter("../index.md");
+            home.process(rootHome, outHome);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+//        for (Mod mod : mMods) {
+//            for (Mastery mastery : mod.getMasteries()) {
+//                try {
+//                    Path out = Path.of("../mods/" + mod.getName() + "/" + mastery.getName());
+//                    Files.createDirectories(out);
+//                } catch (IOException e) {
+//                    e.printStackTrace();
+//                }
+//                for (Skill skill : mastery.getSkills()) {
+//                    System.out.println(skill);
 //                }
 //            }
 //        }
@@ -66,17 +80,26 @@ public class Control {
     }
 
     private static void writeTemplates() {
-        Writer outHome;
         try {
-            outHome = new FileWriter("../../index.md");
-            Writer outMod = new OutputStreamWriter(System.out);
-            Writer outMastery = new OutputStreamWriter(System.out);
-            Writer outSkill = new OutputStreamWriter(System.out);
-
-            home.process(root, outHome);
-            mod.process(root, outMod);
-            mastery.process(root, outMastery);
-            skill.process(root, outSkill);
+            for (Mod mod : mMods) {
+                Writer outMod = new FileWriter("../mods/" + mod.getName() + ".md");
+                rootMod = new HashMap<>();
+                rootMod.put("masteries", mod.getMasteries());
+                Control.mod.process(rootMod, outMod);
+                for (Mastery mastery : mod.getMasteries()) {
+                    Writer outMastery = new FileWriter("../mods/" + mod.getName() + "/" + mastery.getName() + ".md");
+                    rootMastery = new HashMap<>();
+                    rootMastery.put("skills", mastery.getSkills());
+                    Control.mastery.process(rootMastery, outMastery);
+                    for (Skill skill : mastery.getSkills()) {
+                        Writer outSkill = new FileWriter(
+                                "../mods/" + mod.getName() + "/" + mastery.getName() + "/" + skill.getName() + ".md");
+                        rootSkill = new HashMap<>();
+                        rootSkill.put("attributes", skill.getAttributes());
+                        Control.skill.process(rootSkill, outSkill);
+                    }
+                }
+            }
         } catch (IOException | TemplateException e1) {
             e1.printStackTrace();
         }

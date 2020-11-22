@@ -4,38 +4,40 @@ import java.io.File;
 import java.nio.file.Paths;
 import java.security.InvalidParameterException;
 import java.util.ArrayList;
+import java.util.List;
 
 import parsers.ModParser;
 
 public class Mod {
 
     private ModParser mModParser;
-    private ArrayList<SkillTree> mSkillTrees;
+    private ArrayList<Mastery> mMasteries;
     private String mModName, mModDir;
 
-    public Mod(String mModName, String mModDir) {
-        super();
-        this.mSkillTrees = new ArrayList<SkillTree>();
-        this.mModName = mModName;
-        this.mModDir = mModDir;
+    public Mod(String aModName, String aModDir) {
+        if (aModName == null)
+            return;
+        mMasteries = new ArrayList<Mastery>();
+        mModName = aModName;
+        mModDir = aModDir;
 
-        mModParser = new ModParser(mModDir);
+        mModParser = new ModParser(aModDir);
 
 //        int i = 0;
         for (File skillTree : mModParser.getSkillTrees()) {
             if (!skillTree.getName().equals("QuestRewardSkillTree.dbr"))
-                mSkillTrees.add(/* i++, */new SkillTree(skillTree,
-                        mModDir + "database" + Paths.get("").getFileSystem().getSeparator()));
+                mMasteries.add(/* i++, */new Mastery(skillTree,
+                        aModDir + "database" + Paths.get("").getFileSystem().getSeparator(), aModName));
         }
     }
 
-    public ArrayList<SkillTree> getSkillTrees() {
-        return mSkillTrees;
+    public List<Mastery> getMasteries() {
+        return mMasteries;
     }
 
-    public SkillTree getSkillTree(int index) throws InvalidParameterException {
+    public Mastery getMastery(int index) throws InvalidParameterException {
         if ((0 > index - ModParser.COUNT_MASTERIES + ModParser.COUNT_QUEST_REWARD_TREES))
-            return mSkillTrees.get(index);
+            return mMasteries.get(index);
         else
             throw new InvalidParameterException(
                     "0 <= index <= " + (ModParser.COUNT_MASTERIES + ModParser.COUNT_QUEST_REWARD_TREES - 1));
@@ -50,7 +52,7 @@ public class Mod {
     }
 
     public String getUrl() {
-        return getName() + "/";
+        return Control.URL + "/mods/" + getName() + ".md";
     }
 
 }
