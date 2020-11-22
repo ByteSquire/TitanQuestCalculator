@@ -1,2 +1,0 @@
-## Titan Quest Calculator
-
