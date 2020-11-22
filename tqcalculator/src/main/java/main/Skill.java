@@ -41,7 +41,7 @@ public class Skill {
     }
 
     public String getUrl() {
-        return Control.URL + "/" + mParentPath + "/" + getName() + ".html";
+        return Control.URL + "/mods/" + mParentPath + "/" + getName() + ".html";
     }
 
 }

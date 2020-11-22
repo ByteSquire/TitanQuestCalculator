@@ -36,7 +36,7 @@ public class Mastery {
     }
 
     public String getUrl() {
-        return Control.URL + "/" + mParentModName + "/" + getName() + ".html";
+        return Control.URL + "/mods/" + mParentModName + "/" + getName() + ".html";
     }
 
 }
