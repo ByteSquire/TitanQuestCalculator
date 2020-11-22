@@ -2,14 +2,14 @@ package main;
 
 public class SkillAttribute<T> {
 
-    private T value;
+    private T mValue;
 
     public SkillAttribute(T aValue) {
-        this.value = aValue;
+        this.mValue = aValue;
     }
 
     @Override
     public String toString() {
-        return value.toString();
+        return mValue.toString();
     }
 }

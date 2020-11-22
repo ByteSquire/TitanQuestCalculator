@@ -21,10 +21,7 @@ public class Control {
 
     public static final String URL = "https://bytesquire.github.io/TitanQuestCalculator";
 
-    private static final String mSeparator = Paths.get("").getFileSystem().getSeparator();
-
-    public static final String DATABASES_DIR = Paths.get("").toAbsolutePath().toString() + mSeparator + "databases"
-            + mSeparator;
+    public static final String DATABASES_DIR = Paths.get("").toAbsolutePath().toString() + "/databases/";
 
     private static ArrayList<Mod> mMods = new ArrayList<>();
 
@@ -45,7 +42,7 @@ public class Control {
 
             databaseDir.forEach((mod) -> {
                 if (mod != null)
-                    mMods.add(new Mod(mod.getFileName().toString(), mod.toAbsolutePath().toString() + mSeparator));
+                    mMods.add(new Mod(mod.getFileName().toString(), mod.toAbsolutePath().toString() + "/"));
             });
         } catch (IOException e) {
             e.printStackTrace();
@@ -117,8 +114,8 @@ public class Control {
 
     private static void configFreemarker() {
         try {
-            mCfg.setDirectoryForTemplateLoading(new File(Paths.get("").toAbsolutePath().toString() + mSeparator + "src"
-                    + mSeparator + "main" + mSeparator + "resources" + mSeparator + "templates"));
+            mCfg.setDirectoryForTemplateLoading(
+                    new File(Paths.get("").toAbsolutePath().toString() + "/src/main/resources/templates"));
         } catch (IOException e) {
             e.printStackTrace();
         }
