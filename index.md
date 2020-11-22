@@ -2,4 +2,4 @@
 
 You can click any link shown below to get to the mastery overview.
 
-    [Vanilla](Vanilla/)
+    [Vanilla](https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla.md)
