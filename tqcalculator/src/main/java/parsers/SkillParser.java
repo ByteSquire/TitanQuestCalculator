@@ -67,11 +67,13 @@ public class SkillParser {
                 }
                 if (str.split(",")[0].equals("petSkillName") || str.split(",")[0].equals("buffSkillName")) {
                     String[] underscoredName = mSkill.getPath().split("_");
-                    mAttributes.put(
-                            underscoredName[underscoredName.length - 1].substring(0,
-                                    underscoredName[underscoredName.length - 1].length() - 4),
-                            new SkillAttribute<Skill>(new Skill(new File(Control.DATABASES_DIR
-                                    + mParentPath.split("/")[0] + "/database/" + str.split(",")[1]), mParentPath)));
+                    String name = mSkill.getName().substring(0, mSkill.getName().length() - 4);
+                    if (underscoredName.length > 1)
+                        name = underscoredName[underscoredName.length - 1].substring(0,
+                                underscoredName[underscoredName.length - 1].length() - 4);
+                    mAttributes.put(name, new SkillAttribute<Skill>(new Skill(new File(
+                            Control.DATABASES_DIR + mParentPath.split("/")[0] + "/database/" + str.split(",")[1]),
+                            mParentPath)));
                 }
             });
         } catch (FileNotFoundException e) {
