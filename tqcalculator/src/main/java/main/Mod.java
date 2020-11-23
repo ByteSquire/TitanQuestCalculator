@@ -7,10 +7,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 import parsers.ModParser;
+import parsers.ModStringsParser;
 
 public class Mod {
 
     private ModParser mModParser;
+    private ModStringsParser mMSParser;
     private ArrayList<Mastery> mMasteries;
     private String mModName, mModDir;
 
@@ -20,6 +22,7 @@ public class Mod {
         mMasteries = new ArrayList<Mastery>();
         mModName = aModName;
         mModDir = aModDir;
+        mMSParser = new ModStringsParser(aModDir + "/text/");
 
         mModParser = new ModParser(aModDir);
 
@@ -27,7 +30,7 @@ public class Mod {
         for (File skillTree : mModParser.getSkillTrees()) {
             if (!skillTree.getName().equals("QuestRewardSkillTree.dbr"))
                 mMasteries.add(/* i++, */new Mastery(skillTree,
-                        aModDir + "database" + Paths.get("").getFileSystem().getSeparator(), aModName));
+                        mModDir + "database" + Paths.get("").getFileSystem().getSeparator(), mModName, mMSParser));
         }
     }
 

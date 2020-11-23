@@ -4,6 +4,7 @@ import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
+import parsers.ModStringsParser;
 import parsers.SkillParser;
 
 public class Skill {
@@ -15,18 +16,13 @@ public class Skill {
     private String mBuffIndex;
 //    private boolean isModifier;
 
-    public Skill(File aSkill, String aParentPath) {
+    public Skill(File aSkill, String aParentPath, ModStringsParser aMSParser) {
         if (aSkill == null)
             return;
         mParentPath = aParentPath;
-        mSkillParser = new SkillParser(aSkill, aParentPath);
-        mSkillName = aSkill.getName().substring(0, aSkill.getName().length() - 4);
+        mSkillParser = new SkillParser(aSkill, aParentPath, aMSParser);
 
-        String[] underscoredName = aSkill.getPath().split("_");
-        if (underscoredName.length > 1) {
-            mSkillName = underscoredName[underscoredName.length - 1].substring(0,
-                    underscoredName[underscoredName.length - 1].length() - 4);
-        }
+        mSkillName = aMSParser.getTags().get(mSkillParser.getSkillTag());
 
         mSkillAttributes = mSkillParser.getAttributes();
     }
@@ -39,7 +35,11 @@ public class Skill {
     }
 
     public String getName() {
-        return mSkillName;
+        return /*mParentPath.split("/")[1] + "/" +*/ mSkillName;
+    }
+
+    public String getSkillTag() {
+        return mSkillParser.getSkillTag();
     }
 
     public Map<String, SkillAttribute<?>> getAttributes() {

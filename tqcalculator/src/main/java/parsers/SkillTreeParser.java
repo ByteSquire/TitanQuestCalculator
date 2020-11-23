@@ -14,6 +14,7 @@ public class SkillTreeParser {
     public static final int COUNT_SKILLS = 26;
     private File mSkillTree;
     private String mModDir;
+    private String mMasteryTag;
 
     public SkillTreeParser(File aSkillTree, String aModDir) {
         mModDir = aModDir;
@@ -35,7 +36,19 @@ public class SkillTreeParser {
                     } catch (NumberFormatException e) {
                     }
                 }
-                mSkills.add(/* index - 1, */new File(mModDir + str.split(",")[1]));
+                if (index == 1) {
+                    try {
+                        BufferedReader masterySkillReader = new BufferedReader(
+                                new FileReader(new File(mModDir + str.split(",")[1])));
+                        Stream<String> fileStream1 = masterySkillReader.lines();
+                        fileStream1.filter((str1) -> str1.startsWith("skillDisplayName")).forEach((str1) -> {
+                            mMasteryTag = str1.split(",")[1];
+                        });
+                    } catch (FileNotFoundException e) {
+                        e.printStackTrace();
+                    }
+                } else
+                    mSkills.add(/* index - 1, */new File(mModDir + str.split(",")[1]));
             });
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -48,5 +61,9 @@ public class SkillTreeParser {
 
     public ArrayList<File> getSkills() {
         return mSkills;
+    }
+
+    public String getMasteryTag() {
+        return mMasteryTag;
     }
 }

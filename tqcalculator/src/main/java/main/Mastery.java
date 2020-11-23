@@ -4,6 +4,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
+import parsers.ModStringsParser;
 import parsers.SkillTreeParser;
 
 public class Mastery {
@@ -13,21 +14,17 @@ public class Mastery {
     private String mName;
     private String mParentModName;
 
-    public Mastery(File aSkillTree, String aModDir, String aModName) {
+    public Mastery(File aSkillTree, String aModDir, String aModName, ModStringsParser aMSParser) {
         mParentModName = aModName;
         mSkillTreeParser = new SkillTreeParser(aSkillTree, aModDir);
         mSkills = new ArrayList<Skill>();
 
-        for (File skill : mSkillTreeParser.getSkills()) {
-            if (skill.getName().endsWith("_Mastery.dbr"))
-                mName = skill.getName().substring(0, skill.getName().length() - 18) + "s";
-            else if (skill.getName().endsWith("Mastery.dbr"))
-                mName = skill.getName().substring(0, skill.getName().length() - 11);
-        }
+        mName = aMSParser.getTags().get(mSkillTreeParser.getMasteryTag());
+
 //        int i = 0;
         for (File skill : mSkillTreeParser.getSkills()) {
             if (!skill.getName().endsWith("Mastery.dbr"))
-                mSkills.add(/* i++, */new Skill(skill, (mParentModName + "/" + mName)));
+                mSkills.add(/* i++, */new Skill(skill, (mParentModName + "/" + mName), aMSParser));
         }
     }
 
