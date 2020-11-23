@@ -6,7 +6,7 @@
 </head>
 <body>
     <h1>${name}</h1>
-    <h2>You can click any link shown below to get to the mastery overview.</h2>
+    <h2>You can click any link shown below to get to the skills overview.</h2>
 
     <table border=1.7>
     <#list masteries as mastery>
