@@ -56,7 +56,7 @@ public class ModParser {
         try (BufferedReader linksReader = new BufferedReader(new FileReader(links));) {
             Stream<String> fileStream = linksReader.lines();
             fileStream.filter((str) -> !str.isBlank()).forEach((str) -> {
-                mLinks.put(str.split("=")[0], str.split("=")[1]);
+                mLinks.put(str.split("->")[0], str.split("->")[1]);
             });
         } catch (FileNotFoundException e) {
             e.printStackTrace();

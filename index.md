@@ -13,7 +13,7 @@ Post your mod by making a pull request with your database added to the databases
 ### Links
 [Check out the game on GoG](https://www.gog.com/game/titan_quest_anniversary_edition)
  
-[Visit the Shadow Champions mod page on steam](https://steamcommunity.com/sharedfiles/filedetails/?id)
+[Visit the Shadow Champions mod page on steam](https://steamcommunity.com/sharedfiles/filedetails/?id=1949340853)
  
 [Check out the game on Steam](https://store.steampowered.com/app/475150/Titan_Quest_Anniversary_Edition/)
  
