@@ -20,6 +20,7 @@ public class SkillParser {
     private File mSkill;
     private String mParentPath;
     private String mSkillTag;
+    private boolean isModifier = false;
     private ModStringsParser mMSParser;
 
     public SkillParser(File aSkill, String aParentPath, ModStringsParser aMSParser) {
@@ -87,6 +88,9 @@ public class SkillParser {
                                                     mParentPath, mMSParser)));
                     mSkillTag = ((SkillAttribute<Skill>) mAttributes.get(name)).getValue().getSkillTag();
                 }
+                if (str.split(",")[0].equals("Class") && str.split(",")[1].equals("Skill_Modifier"))
+                    isModifier = true;
+
             });
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -101,5 +105,9 @@ public class SkillParser {
 
     public String getSkillTag() {
         return mSkillTag;
+    }
+
+    public boolean isModifier() {
+        return isModifier;
     }
 }

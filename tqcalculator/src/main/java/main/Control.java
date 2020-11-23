@@ -12,6 +12,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import freemarker.template.*;
 
 //import templates.*;
@@ -69,6 +71,13 @@ public class Control {
                 try {
                     Path out = Path.of("../mods/" + mod.getName() + "/" + mastery.getName());
                     Files.createDirectories(out);
+
+                    ObjectMapper mapper = new ObjectMapper();
+                    try {
+                        mapper.writeValue(new File(out.toString() + ".json"), mastery);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
                 } catch (IOException e) {
                     e.printStackTrace();
                 }

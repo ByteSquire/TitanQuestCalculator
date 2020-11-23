@@ -21,10 +21,14 @@ public class Mastery {
 
         mName = aMSParser.getTags().get(mSkillTreeParser.getMasteryTag());
 
-//        int i = 0;
         for (File skill : mSkillTreeParser.getSkills()) {
             if (!skill.getName().endsWith("Mastery.dbr"))
-                mSkills.add(/* i++, */new Skill(skill, (mParentModName + "/" + mName), aMSParser));
+                mSkills.add(new Skill(skill, (mParentModName + "/" + mName), aMSParser));
+        }
+
+        for (Skill skill : mSkills) {
+            if (skill.isModifier())
+                skill.setParent(mSkills.get(mSkills.indexOf(skill) - 1).getName());
         }
     }
 

@@ -29,7 +29,6 @@ public class Mod {
         mModParser = new ModParser(aModDir);
         mLinks = mModParser.getLinks();
 
-//        int i = 0;
         for (File skillTree : mModParser.getSkillTrees()) {
             if (!skillTree.getName().equals("QuestRewardSkillTree.dbr"))
                 mMasteries.add(/* i++, */new Mastery(skillTree,
