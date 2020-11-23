@@ -5,6 +5,7 @@ import java.nio.file.Paths;
 import java.security.InvalidParameterException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import parsers.ModParser;
 import parsers.ModStringsParser;
@@ -15,6 +16,7 @@ public class Mod {
     private ModStringsParser mMSParser;
     private ArrayList<Mastery> mMasteries;
     private String mModName, mModDir;
+    private Map<String, String> mLinks;
 
     public Mod(String aModName, String aModDir) {
         if (aModName == null)
@@ -25,6 +27,7 @@ public class Mod {
         mMSParser = new ModStringsParser(aModDir + "/text/");
 
         mModParser = new ModParser(aModDir);
+        mLinks = mModParser.getLinks();
 
 //        int i = 0;
         for (File skillTree : mModParser.getSkillTrees()) {
@@ -56,6 +59,10 @@ public class Mod {
 
     public String getUrl() {
         return Control.URL + "/mods/" + getName() + ".html";
+    }
+
+    public Map<String, String> getLinks() {
+        return mLinks;
     }
 
 }

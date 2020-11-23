@@ -7,6 +7,8 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.stream.Stream;
 
 public class ModParser {
@@ -17,18 +19,19 @@ public class ModParser {
     public static final int COUNT_MASTERIES = 10;
     public static final int COUNT_QUEST_REWARD_TREES = 1;
     private String mModdir;
+    private HashMap<String, String> mLinks;
 
     public ModParser(String aModdir) {
         mSkillTrees = new ArrayList<>();
-
+        mLinks = new HashMap<>();
         mModdir = aModdir;
 
         initSkillTrees();
+        initLinks();
     }
 
     private void initSkillTrees() {
-        File character = new File(mModdir + "database" + SEPARATOR + "records" + SEPARATOR + "xpack" + SEPARATOR
-                + "creatures" + SEPARATOR + "pc" + SEPARATOR + "malepc01.dbr");
+        File character = new File(mModdir + "database/records/xpack/creatures/pc/malepc01.dbr");
         try (BufferedReader characterReader = new BufferedReader(new FileReader(character));) {
             Stream<String> fileStream = characterReader.lines();
             fileStream.filter((str) -> str.startsWith("skillTree")).forEach((str) -> {
@@ -39,7 +42,21 @@ public class ModParser {
                     } catch (NumberFormatException e) {
                     }
                 }
-                mSkillTrees.add(/*index - 1, */new File(mModdir + "database" + SEPARATOR + str.split(",")[1]));
+                mSkillTrees.add(/* index - 1, */new File(mModdir + "database" + SEPARATOR + str.split(",")[1]));
+            });
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e1) {
+            e1.printStackTrace();
+        }
+    }
+
+    private void initLinks() {
+        File links = new File(mModdir + "links.txt");
+        try (BufferedReader linksReader = new BufferedReader(new FileReader(links));) {
+            Stream<String> fileStream = linksReader.lines();
+            fileStream.filter((str) -> !str.isBlank()).forEach((str) -> {
+                mLinks.put(str.split("=")[0], str.split("=")[1]);
             });
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -50,6 +67,10 @@ public class ModParser {
 
     public ArrayList<File> getSkillTrees() {
         return mSkillTrees;
+    }
+
+    public Map<String, String> getLinks() {
+        return mLinks;
     }
 
 }

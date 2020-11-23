@@ -10,7 +10,6 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import freemarker.template.*;
@@ -48,9 +47,16 @@ public class Control {
             e.printStackTrace();
         }
 
-        rootHome = new HashMap<>();
+        HashMap<String, String> links = new HashMap<>();
+        for (Mod mod : mMods) {
+            for (String linkString : mod.getLinks().keySet()) {
+                links.put(linkString, mod.getLinks().get(linkString));
+            }
+        }
 
-        rootHome.put("mods", (List<Mod>) mMods);
+        rootHome = new HashMap<>();
+        rootHome.put("links", links);
+        rootHome.put("mods", mMods);
         try {
             Writer outHome = new FileWriter("../index.md");
             home.process(rootHome, outHome);
