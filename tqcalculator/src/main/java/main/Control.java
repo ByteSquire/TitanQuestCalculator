@@ -79,17 +79,23 @@ public class Control {
                 Writer outMod = new FileWriter("../mods/" + mod.getName() + ".html");
                 rootMod = new HashMap<>();
                 rootMod.put("masteries", mod.getMasteries());
+                rootMod.put("name", mod.getName());
                 Control.mod.process(rootMod, outMod);
                 for (Mastery mastery : mod.getMasteries()) {
                     Writer outMastery = new FileWriter("../mods/" + mod.getName() + "/" + mastery.getName() + ".html");
                     rootMastery = new HashMap<>();
                     rootMastery.put("skills", mastery.getSkills());
+                    rootMastery.put("name", mastery.getName());
                     Control.mastery.process(rootMastery, outMastery);
                     for (Skill skill : mastery.getSkills()) {
                         Writer outSkill = new FileWriter(
                                 "../mods/" + mod.getName() + "/" + mastery.getName() + "/" + skill.getName() + ".html");
                         rootSkill = new HashMap<>();
-                        rootSkill.put("attributes", skill.getAttributes());
+                        if (skill.isBuff()) {
+                            rootSkill.put("buffName", skill.getBuff().getName());
+                            rootSkill.put("buffAttributes", skill.getBuff().getAttributes());
+                        } else
+                            rootSkill.put("attributes", skill.getAttributes());
                         rootSkill.put("name", skill.getName());
                         Control.skill.process(rootSkill, outSkill);
                     }

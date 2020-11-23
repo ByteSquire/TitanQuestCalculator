@@ -12,4 +12,12 @@ public class SkillAttribute<T> {
     public String toString() {
         return mValue.toString();
     }
+
+    public boolean isSkill() {
+        return (mValue instanceof Skill);
+    }
+
+    public T getValue() {
+        return mValue;
+    }
 }

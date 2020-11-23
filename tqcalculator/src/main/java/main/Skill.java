@@ -12,6 +12,7 @@ public class Skill {
     private String mSkillName;
     private HashMap<String, SkillAttribute<?>> mSkillAttributes;
     private String mParentPath;
+    private String mBuffIndex;
 //    private boolean isModifier;
 
     public Skill(File aSkill, String aParentPath) {
@@ -43,6 +44,22 @@ public class Skill {
 
     public Map<String, SkillAttribute<?>> getAttributes() {
         return mSkillAttributes;
+    }
+
+    public boolean isBuff() {
+        for (String key : mSkillAttributes.keySet()) {
+            if (mSkillAttributes.get(key).isSkill()) {
+                mBuffIndex = key;
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public Skill getBuff() throws UnsupportedOperationException {
+        if (mBuffIndex != null)
+            return (Skill) mSkillAttributes.get(mBuffIndex).getValue();
+        throw new UnsupportedOperationException();
     }
 
     public String getUrl() {
