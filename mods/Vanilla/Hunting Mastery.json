@@ -1,1605 +1,1569 @@
 {
-  "mastery" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\HuntingMastery.dbr",
-  "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery.html",
-  "skillTree" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\HuntingSkillTree.dbr",
   "name" : "Hunting Mastery",
   "skills" : [ {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Wood Lore.html",
-    "modifier" : false,
-    "skillTag" : "tagSkillName077",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\WoodLore.dbr",
     "name" : "Wood Lore",
     "parent" : null,
     "attributes" : {
       "characterAttackSpeedModifier" : {
-        "skill" : false,
-        "value" : [ 5.0, 8.0, 12.0, 16.0, 20.0, 24.0, 26.0, 28.0, 30.0, 33.0 ]
+        "value" : [ 5.0, 8.0, 12.0, 16.0, 20.0, 24.0, 26.0, 28.0, 30.0, 33.0 ],
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 10
+        "value" : 10,
+        "skill" : false
       },
       "characterDefensiveAbility" : {
-        "skill" : false,
-        "value" : [ 62.0, 94.0, 126.0, 158.0, 190.0, 222.0, 254.0, 286.0, 318.0, 350.0 ]
+        "value" : [ 62.0, 94.0, 126.0, 158.0, 190.0, 222.0, 254.0, 286.0, 318.0, 350.0 ],
+        "skill" : false
       },
       "Bow" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "skillMasteryLevelRequired" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 6
+        "value" : 6,
+        "skill" : false
       },
       "Spear" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "RangedOneHand" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Wood Lore.html",
+    "skillDescription" : null,
+    "skillTag" : "tagSkillName077",
+    "modifier" : false
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Art of the Hunt.html",
-    "modifier" : false,
-    "skillTag" : "tagSkillName084",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\ArtoftheHunt.dbr",
     "name" : "Art of the Hunt",
     "parent" : null,
     "attributes" : {
       "ArtoftheHunt" : {
-        "skill" : true,
         "value" : {
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Art of the Hunt.html",
-          "modifier" : false,
-          "skillTag" : "tagSkillName084",
-          "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\ArtoftheHuntBuff.dbr",
           "name" : "Art of the Hunt",
           "parent" : null,
           "attributes" : {
             "skillCooldownTime" : {
-              "skill" : false,
-              "value" : 4.0
+              "value" : 4.0,
+              "skill" : false
             },
             "skillUltimateLevel" : {
-              "skill" : false,
-              "value" : 16
+              "value" : 16,
+              "skill" : false
             },
             "racialBonusAbsoluteDamage" : {
-              "skill" : false,
-              "value" : [ 3.0, 5.0, 8.0, 10.0, 12.0, 15.0, 17.0, 19.0, 22.0, 25.0, 27.0, 30.0, 34.0, 39.0, 45.0, 51.0 ]
+              "value" : [ 3.0, 5.0, 8.0, 10.0, 12.0, 15.0, 17.0, 19.0, 22.0, 25.0, 27.0, 30.0, 34.0, 39.0, 45.0, 51.0 ],
+              "skill" : false
             },
             "characterManaLimitReserve" : {
-              "skill" : false,
-              "value" : 75.0
+              "value" : 75.0,
+              "skill" : false
             },
             "offensivePierceModifier" : {
-              "skill" : false,
-              "value" : [ 12.0, 18.0, 23.0, 30.0, 34.0, 40.0, 45.0, 52.0, 56.0, 62.0, 67.0, 75.0, 83.0, 91.0, 101.0, 115.0 ]
+              "value" : [ 12.0, 18.0, 23.0, 30.0, 34.0, 40.0, 45.0, 52.0, 56.0, 62.0, 67.0, 75.0, 83.0, 91.0, 101.0, 115.0 ],
+              "skill" : false
             },
             "skillConnectionSpacing" : {
-              "skill" : false,
-              "value" : 62
+              "value" : 62,
+              "skill" : false
             },
             "cameraShakeAmplitude" : {
-              "skill" : false,
-              "value" : 0.12
+              "value" : 0.12,
+              "skill" : false
             },
             "skillTargetRadius" : {
-              "skill" : false,
-              "value" : 15.0
+              "value" : 15.0,
+              "skill" : false
             },
             "skillTier" : {
-              "skill" : false,
-              "value" : 2
+              "value" : 2,
+              "skill" : false
             },
             "offensiveSlowBleedingModifier" : {
-              "skill" : false,
-              "value" : [ 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0, 51.0, 54.0, 57.0, 60.0 ]
+              "value" : [ 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0, 51.0, 54.0, 57.0, 60.0 ],
+              "skill" : false
             },
             "skillMaxLevel" : {
-              "skill" : false,
-              "value" : 12
+              "value" : 12,
+              "skill" : false
             }
           },
           "buff" : null,
-          "skillDescription" : null
-        }
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Art of the Hunt.html",
+          "skillDescription" : null,
+          "skillTag" : "tagSkillName084",
+          "modifier" : false
+        },
+        "skill" : true
       }
     },
     "buff" : {
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Art of the Hunt.html",
-      "modifier" : false,
-      "skillTag" : "tagSkillName084",
-      "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\ArtoftheHuntBuff.dbr",
       "name" : "Art of the Hunt",
       "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
-          "skill" : false,
-          "value" : 4.0
+          "value" : 4.0,
+          "skill" : false
         },
         "skillUltimateLevel" : {
-          "skill" : false,
-          "value" : 16
+          "value" : 16,
+          "skill" : false
         },
         "racialBonusAbsoluteDamage" : {
-          "skill" : false,
-          "value" : [ 3.0, 5.0, 8.0, 10.0, 12.0, 15.0, 17.0, 19.0, 22.0, 25.0, 27.0, 30.0, 34.0, 39.0, 45.0, 51.0 ]
+          "value" : [ 3.0, 5.0, 8.0, 10.0, 12.0, 15.0, 17.0, 19.0, 22.0, 25.0, 27.0, 30.0, 34.0, 39.0, 45.0, 51.0 ],
+          "skill" : false
         },
         "characterManaLimitReserve" : {
-          "skill" : false,
-          "value" : 75.0
+          "value" : 75.0,
+          "skill" : false
         },
         "offensivePierceModifier" : {
-          "skill" : false,
-          "value" : [ 12.0, 18.0, 23.0, 30.0, 34.0, 40.0, 45.0, 52.0, 56.0, 62.0, 67.0, 75.0, 83.0, 91.0, 101.0, 115.0 ]
+          "value" : [ 12.0, 18.0, 23.0, 30.0, 34.0, 40.0, 45.0, 52.0, 56.0, 62.0, 67.0, 75.0, 83.0, 91.0, 101.0, 115.0 ],
+          "skill" : false
         },
         "skillConnectionSpacing" : {
-          "skill" : false,
-          "value" : 62
+          "value" : 62,
+          "skill" : false
         },
         "cameraShakeAmplitude" : {
-          "skill" : false,
-          "value" : 0.12
+          "value" : 0.12,
+          "skill" : false
         },
         "skillTargetRadius" : {
-          "skill" : false,
-          "value" : 15.0
+          "value" : 15.0,
+          "skill" : false
         },
         "skillTier" : {
-          "skill" : false,
-          "value" : 2
+          "value" : 2,
+          "skill" : false
         },
         "offensiveSlowBleedingModifier" : {
-          "skill" : false,
-          "value" : [ 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0, 51.0, 54.0, 57.0, 60.0 ]
+          "value" : [ 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0, 51.0, 54.0, 57.0, 60.0 ],
+          "skill" : false
         },
         "skillMaxLevel" : {
-          "skill" : false,
-          "value" : 12
+          "value" : 12,
+          "skill" : false
         }
       },
       "buff" : null,
-      "skillDescription" : null
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Art of the Hunt.html",
+      "skillDescription" : null,
+      "skillTag" : "tagSkillName084",
+      "modifier" : false
     },
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Art of the Hunt.html",
+    "skillDescription" : null,
+    "skillTag" : "tagSkillName084",
+    "modifier" : false
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Find Cover.html",
-    "modifier" : true,
-    "skillTag" : "tagSkillName094",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\ArtoftheHunt_FindCover.dbr",
     "name" : "Find Cover",
     "parent" : "Art of the Hunt",
     "attributes" : {
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 12
+        "value" : 12,
+        "skill" : false
       },
       "characterManaLimitReserve" : {
-        "skill" : false,
-        "value" : 10.0
+        "value" : 10.0,
+        "skill" : false
       },
       "characterDeflectProjectile" : {
-        "skill" : false,
-        "value" : [ 8.0, 10.0, 12.0, 15.0, 17.0, 19.0, 23.0, 25.0, 27.0, 29.0, 32.0, 35.0 ]
+        "value" : [ 8.0, 10.0, 12.0, 15.0, 17.0, 19.0, 23.0, 25.0, 27.0, 29.0, 32.0, 35.0 ],
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 4
+        "value" : 4,
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 8
+        "value" : 8,
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Find Cover.html",
+    "skillDescription" : null,
+    "skillTag" : "tagSkillName094",
+    "modifier" : true
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Trail Blazing.html",
-    "modifier" : true,
-    "skillTag" : "tagSkillName093",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\ArtoftheHunt_Trailblazing.dbr",
     "name" : "Trail Blazing",
     "parent" : "Find Cover",
     "attributes" : {
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 10
+        "value" : 10,
+        "skill" : false
       },
       "characterManaLimitReserve" : {
-        "skill" : false,
-        "value" : 50.0
+        "value" : 50.0,
+        "skill" : false
       },
       "characterRunSpeedModifier" : {
-        "skill" : false,
-        "value" : [ 5.0, 8.0, 10.0, 12.0, 16.0, 18.0, 21.0, 25.0, 29.0, 33.0 ]
+        "value" : [ 5.0, 8.0, 10.0, 12.0, 16.0, 18.0, 21.0, 25.0, 29.0, 33.0 ],
+        "skill" : false
       },
       "defensiveTrap" : {
-        "skill" : false,
-        "value" : 100.0
+        "value" : 100.0,
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 5
+        "value" : 5,
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 6
+        "value" : 6,
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Trail Blazing.html",
+    "skillDescription" : null,
+    "skillTag" : "tagSkillName093",
+    "modifier" : true
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Ensnare.html",
-    "modifier" : false,
-    "skillTag" : "tagSkillName081",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\Ensnare.dbr",
     "name" : "Ensnare",
     "parent" : null,
     "attributes" : {
       "Ensnare" : {
-        "skill" : true,
         "value" : {
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Ensnare.html",
-          "modifier" : false,
-          "skillTag" : "tagSkillName081",
-          "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\EnsnareBuff.dbr",
           "name" : "Ensnare",
           "parent" : null,
           "attributes" : {
             "skillActiveDuration" : {
-              "skill" : false,
-              "value" : [ 3.0, 4.0, 5.1, 6.3, 7.6, 9.0, 10.5, 11.1, 12.8, 14.6 ]
+              "value" : [ 3.0, 4.0, 5.1, 6.3, 7.6, 9.0, 10.5, 11.1, 12.8, 14.6 ],
+              "skill" : false
             },
             "skillCooldownTime" : {
-              "skill" : false,
-              "value" : 3.0
+              "value" : 3.0,
+              "skill" : false
             },
             "skillManaCost" : {
-              "skill" : false,
-              "value" : [ 15.0, 17.0, 19.0, 20.0, 22.0, 24.0, 25.0, 27.0, 29.0, 31.0, 32.0, 34.0, 36.0, 37.0, 39.0, 41.0 ]
+              "value" : [ 15.0, 17.0, 19.0, 20.0, 22.0, 24.0, 25.0, 27.0, 29.0, 31.0, 32.0, 34.0, 36.0, 37.0, 39.0, 41.0 ],
+              "skill" : false
             },
             "projectileExplosionRadius" : {
-              "skill" : false,
-              "value" : [ 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2, 1.3, 1.4 ]
+              "value" : [ 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2, 1.3, 1.4 ],
+              "skill" : false
             },
             "skillConnectionSpacing" : {
-              "skill" : false,
-              "value" : 62
+              "value" : 62,
+              "skill" : false
             },
             "cameraShakeAmplitude" : {
-              "skill" : false,
-              "value" : 0.12
+              "value" : 0.12,
+              "skill" : false
             },
             "characterRunSpeedModifier" : {
-              "skill" : false,
-              "value" : -25.0
+              "value" : -25.0,
+              "skill" : false
             },
             "skillMaxLevel" : {
-              "skill" : false,
-              "value" : 6
+              "value" : 6,
+              "skill" : false
             },
             "debufSkill" : {
-              "skill" : false,
-              "value" : 1
+              "value" : 1,
+              "skill" : false
             },
             "skillUltimateLevel" : {
-              "skill" : false,
-              "value" : 10
+              "value" : 10,
+              "skill" : false
             },
             "characterDefensiveAbility" : {
-              "skill" : false,
-              "value" : -300.0
+              "value" : -300.0,
+              "skill" : false
             },
             "skillMasteryLevelRequired" : {
-              "skill" : false,
-              "value" : 5
+              "value" : 5,
+              "skill" : false
             },
             "skillTier" : {
-              "skill" : false,
-              "value" : 1
+              "value" : 1,
+              "skill" : false
             }
           },
           "buff" : null,
-          "skillDescription" : null
-        }
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Ensnare.html",
+          "skillDescription" : null,
+          "skillTag" : "tagSkillName081",
+          "modifier" : false
+        },
+        "skill" : true
       }
     },
     "buff" : {
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Ensnare.html",
-      "modifier" : false,
-      "skillTag" : "tagSkillName081",
-      "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\EnsnareBuff.dbr",
       "name" : "Ensnare",
       "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
-          "skill" : false,
-          "value" : [ 3.0, 4.0, 5.1, 6.3, 7.6, 9.0, 10.5, 11.1, 12.8, 14.6 ]
+          "value" : [ 3.0, 4.0, 5.1, 6.3, 7.6, 9.0, 10.5, 11.1, 12.8, 14.6 ],
+          "skill" : false
         },
         "skillCooldownTime" : {
-          "skill" : false,
-          "value" : 3.0
+          "value" : 3.0,
+          "skill" : false
         },
         "skillManaCost" : {
-          "skill" : false,
-          "value" : [ 15.0, 17.0, 19.0, 20.0, 22.0, 24.0, 25.0, 27.0, 29.0, 31.0, 32.0, 34.0, 36.0, 37.0, 39.0, 41.0 ]
+          "value" : [ 15.0, 17.0, 19.0, 20.0, 22.0, 24.0, 25.0, 27.0, 29.0, 31.0, 32.0, 34.0, 36.0, 37.0, 39.0, 41.0 ],
+          "skill" : false
         },
         "projectileExplosionRadius" : {
-          "skill" : false,
-          "value" : [ 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2, 1.3, 1.4 ]
+          "value" : [ 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2, 1.3, 1.4 ],
+          "skill" : false
         },
         "skillConnectionSpacing" : {
-          "skill" : false,
-          "value" : 62
+          "value" : 62,
+          "skill" : false
         },
         "cameraShakeAmplitude" : {
-          "skill" : false,
-          "value" : 0.12
+          "value" : 0.12,
+          "skill" : false
         },
         "characterRunSpeedModifier" : {
-          "skill" : false,
-          "value" : -25.0
+          "value" : -25.0,
+          "skill" : false
         },
         "skillMaxLevel" : {
-          "skill" : false,
-          "value" : 6
+          "value" : 6,
+          "skill" : false
         },
         "debufSkill" : {
-          "skill" : false,
-          "value" : 1
+          "value" : 1,
+          "skill" : false
         },
         "skillUltimateLevel" : {
-          "skill" : false,
-          "value" : 10
+          "value" : 10,
+          "skill" : false
         },
         "characterDefensiveAbility" : {
-          "skill" : false,
-          "value" : -300.0
+          "value" : -300.0,
+          "skill" : false
         },
         "skillMasteryLevelRequired" : {
-          "skill" : false,
-          "value" : 5
+          "value" : 5,
+          "skill" : false
         },
         "skillTier" : {
-          "skill" : false,
-          "value" : 1
+          "value" : 1,
+          "skill" : false
         }
       },
       "buff" : null,
-      "skillDescription" : null
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Ensnare.html",
+      "skillDescription" : null,
+      "skillTag" : "tagSkillName081",
+      "modifier" : false
     },
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Ensnare.html",
+    "skillDescription" : null,
+    "skillTag" : "tagSkillName081",
+    "modifier" : false
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Barbed Netting.html",
-    "modifier" : true,
-    "skillTag" : "tagSkillName078",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\Ensnare_BarbedNetting.dbr",
     "name" : "Barbed Netting",
     "parent" : "Ensnare",
     "attributes" : {
       "offensiveSlowBleedingMin" : {
-        "skill" : false,
-        "value" : [ 17.5, 24.5, 33.0, 40.0, 47.0, 55.5, 62.5, 69.5, 78.0, 85.0, 92.0, 100.5 ]
+        "value" : [ 17.5, 24.5, 33.0, 40.0, 47.0, 55.5, 62.5, 69.5, 78.0, 85.0, 92.0, 100.5 ],
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 12
+        "value" : 12,
+        "skill" : false
       },
       "offensiveSlowBleedingDurationMin" : {
-        "skill" : false,
-        "value" : 1.0
+        "value" : 1.0,
+        "skill" : false
       },
       "skillMasteryLevelRequired" : {
-        "skill" : false,
-        "value" : 24
+        "value" : 24,
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 3
+        "value" : 3,
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 8
+        "value" : 8,
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Barbed Netting.html",
+    "skillDescription" : null,
+    "skillTag" : "tagSkillName078",
+    "modifier" : true
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Call of the Hunt.html",
-    "modifier" : false,
-    "skillTag" : "tagSkillName079",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\CalloftheHunt.dbr",
     "name" : "Call of the Hunt",
     "parent" : null,
     "attributes" : {
       "CalloftheHunt" : {
-        "skill" : true,
         "value" : {
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Call of the Hunt.html",
-          "modifier" : false,
-          "skillTag" : "tagSkillName079",
-          "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\CalloftheHuntBuff.dbr",
           "name" : "Call of the Hunt",
           "parent" : null,
           "attributes" : {
             "skillActiveDuration" : {
-              "skill" : false,
-              "value" : [ 28.0, 31.0, 33.0, 36.0, 42.0, 44.0, 47.0, 50.0, 52.0, 58.0, 60.0, 64.0, 66.0, 68.0, 75.0, 77.0, 80.0, 82.0, 84.0, 94.0 ]
+              "value" : [ 28.0, 31.0, 33.0, 36.0, 42.0, 44.0, 47.0, 50.0, 52.0, 58.0, 60.0, 64.0, 66.0, 68.0, 75.0, 77.0, 80.0, 82.0, 84.0, 94.0 ],
+              "skill" : false
             },
             "offensiveSlowBleedingMin" : {
-              "skill" : false,
-              "value" : [ 6.1, 7.4, 8.6, 10.1, 11.3, 12.6, 13.8, 15.4, 16.8, 18.5, 20.6, 23.3 ]
+              "value" : [ 6.1, 7.4, 8.6, 10.1, 11.3, 12.6, 13.8, 15.4, 16.8, 18.5, 20.6, 23.3 ],
+              "skill" : false
             },
             "skillCooldownTime" : {
-              "skill" : false,
-              "value" : 180.0
+              "value" : 180.0,
+              "skill" : false
             },
             "skillManaCost" : {
-              "skill" : false,
-              "value" : [ 45.0, 47.0, 49.0, 51.0, 53.0, 55.0, 57.0, 59.0, 61.0, 63.0, 65.0, 67.0 ]
+              "value" : [ 45.0, 47.0, 49.0, 51.0, 53.0, 55.0, 57.0, 59.0, 61.0, 63.0, 65.0, 67.0 ],
+              "skill" : false
             },
             "skillConnectionSpacing" : {
-              "skill" : false,
-              "value" : 62
+              "value" : 62,
+              "skill" : false
             },
             "cameraShakeAmplitude" : {
-              "skill" : false,
-              "value" : 0.12
+              "value" : 0.12,
+              "skill" : false
             },
             "offensiveSlowBleedingDurationMin" : {
-              "skill" : false,
-              "value" : 3.0
+              "value" : 3.0,
+              "skill" : false
             },
             "skillMaxLevel" : {
-              "skill" : false,
-              "value" : 8
+              "value" : 8,
+              "skill" : false
             },
             "characterAttackSpeedModifier" : {
-              "skill" : false,
-              "value" : [ 15.0, 17.0, 19.0, 22.0, 24.0, 26.0, 28.0, 31.0, 33.0, 35.0, 37.0, 40.0 ]
+              "value" : [ 15.0, 17.0, 19.0, 22.0, 24.0, 26.0, 28.0, 31.0, 33.0, 35.0, 37.0, 40.0 ],
+              "skill" : false
             },
             "skillUltimateLevel" : {
-              "skill" : false,
-              "value" : 12
+              "value" : 12,
+              "skill" : false
             },
             "racialBonusPercentDamage" : {
-              "skill" : false,
-              "value" : 33.0
+              "value" : 33.0,
+              "skill" : false
             },
             "skillTargetRadius" : {
-              "skill" : false,
-              "value" : 15.0
+              "value" : 15.0,
+              "skill" : false
             },
             "skillMasteryLevelRequired" : {
-              "skill" : false,
-              "value" : 10
+              "value" : 10,
+              "skill" : false
             },
             "skillTier" : {
-              "skill" : false,
-              "value" : 3
+              "value" : 3,
+              "skill" : false
             }
           },
           "buff" : null,
-          "skillDescription" : null
-        }
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Call of the Hunt.html",
+          "skillDescription" : null,
+          "skillTag" : "tagSkillName079",
+          "modifier" : false
+        },
+        "skill" : true
       }
     },
     "buff" : {
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Call of the Hunt.html",
-      "modifier" : false,
-      "skillTag" : "tagSkillName079",
-      "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\CalloftheHuntBuff.dbr",
       "name" : "Call of the Hunt",
       "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
-          "skill" : false,
-          "value" : [ 28.0, 31.0, 33.0, 36.0, 42.0, 44.0, 47.0, 50.0, 52.0, 58.0, 60.0, 64.0, 66.0, 68.0, 75.0, 77.0, 80.0, 82.0, 84.0, 94.0 ]
+          "value" : [ 28.0, 31.0, 33.0, 36.0, 42.0, 44.0, 47.0, 50.0, 52.0, 58.0, 60.0, 64.0, 66.0, 68.0, 75.0, 77.0, 80.0, 82.0, 84.0, 94.0 ],
+          "skill" : false
         },
         "offensiveSlowBleedingMin" : {
-          "skill" : false,
-          "value" : [ 6.1, 7.4, 8.6, 10.1, 11.3, 12.6, 13.8, 15.4, 16.8, 18.5, 20.6, 23.3 ]
+          "value" : [ 6.1, 7.4, 8.6, 10.1, 11.3, 12.6, 13.8, 15.4, 16.8, 18.5, 20.6, 23.3 ],
+          "skill" : false
         },
         "skillCooldownTime" : {
-          "skill" : false,
-          "value" : 180.0
+          "value" : 180.0,
+          "skill" : false
         },
         "skillManaCost" : {
-          "skill" : false,
-          "value" : [ 45.0, 47.0, 49.0, 51.0, 53.0, 55.0, 57.0, 59.0, 61.0, 63.0, 65.0, 67.0 ]
+          "value" : [ 45.0, 47.0, 49.0, 51.0, 53.0, 55.0, 57.0, 59.0, 61.0, 63.0, 65.0, 67.0 ],
+          "skill" : false
         },
         "skillConnectionSpacing" : {
-          "skill" : false,
-          "value" : 62
+          "value" : 62,
+          "skill" : false
         },
         "cameraShakeAmplitude" : {
-          "skill" : false,
-          "value" : 0.12
+          "value" : 0.12,
+          "skill" : false
         },
         "offensiveSlowBleedingDurationMin" : {
-          "skill" : false,
-          "value" : 3.0
+          "value" : 3.0,
+          "skill" : false
         },
         "skillMaxLevel" : {
-          "skill" : false,
-          "value" : 8
+          "value" : 8,
+          "skill" : false
         },
         "characterAttackSpeedModifier" : {
-          "skill" : false,
-          "value" : [ 15.0, 17.0, 19.0, 22.0, 24.0, 26.0, 28.0, 31.0, 33.0, 35.0, 37.0, 40.0 ]
+          "value" : [ 15.0, 17.0, 19.0, 22.0, 24.0, 26.0, 28.0, 31.0, 33.0, 35.0, 37.0, 40.0 ],
+          "skill" : false
         },
         "skillUltimateLevel" : {
-          "skill" : false,
-          "value" : 12
+          "value" : 12,
+          "skill" : false
         },
         "racialBonusPercentDamage" : {
-          "skill" : false,
-          "value" : 33.0
+          "value" : 33.0,
+          "skill" : false
         },
         "skillTargetRadius" : {
-          "skill" : false,
-          "value" : 15.0
+          "value" : 15.0,
+          "skill" : false
         },
         "skillMasteryLevelRequired" : {
-          "skill" : false,
-          "value" : 10
+          "value" : 10,
+          "skill" : false
         },
         "skillTier" : {
-          "skill" : false,
-          "value" : 3
+          "value" : 3,
+          "skill" : false
         }
       },
       "buff" : null,
-      "skillDescription" : null
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Call of the Hunt.html",
+      "skillDescription" : null,
+      "skillTag" : "tagSkillName079",
+      "modifier" : false
     },
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Call of the Hunt.html",
+    "skillDescription" : null,
+    "skillTag" : "tagSkillName079",
+    "modifier" : false
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Exploit Weakness.html",
-    "modifier" : true,
-    "skillTag" : "tagSkillName088",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\CalloftheHunt_Cunning.dbr",
     "name" : "Exploit Weakness",
     "parent" : "Call of the Hunt",
     "attributes" : {
       "skillManaCost" : {
-        "skill" : false,
-        "value" : 10.0
+        "value" : 10.0,
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 14
+        "value" : 14,
+        "skill" : false
       },
       "offensivePierceModifier" : {
-        "skill" : false,
-        "value" : [ 58.0, 66.0, 77.0, 85.0, 93.0, 104.0, 112.0, 120.0, 131.0, 139.0, 147.0, 158.0, 166.0, 174.0, 185.0 ]
+        "value" : [ 58.0, 66.0, 77.0, 85.0, 93.0, 104.0, 112.0, 120.0, 131.0, 139.0, 147.0, 158.0, 166.0, 174.0, 185.0 ],
+        "skill" : false
       },
       "skillMasteryLevelRequired" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 5
+        "value" : 5,
+        "skill" : false
       },
       "offensiveSlowBleedingModifier" : {
-        "skill" : false,
-        "value" : [ 58.0, 66.0, 77.0, 85.0, 93.0, 104.0, 112.0, 120.0, 131.0, 139.0, 147.0, 158.0, 166.0, 174.0, 185.0 ]
+        "value" : [ 58.0, 66.0, 77.0, 85.0, 93.0, 104.0, 112.0, 120.0, 131.0, 139.0, 147.0, 158.0, 166.0, 174.0, 185.0 ],
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 10
+        "value" : 10,
+        "skill" : false
       },
       "Spear" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Exploit Weakness.html",
+    "skillDescription" : null,
+    "skillTag" : "tagSkillName088",
+    "modifier" : true
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Finesse.html",
-    "modifier" : true,
-    "skillTag" : "x3tagSkillHuntingFinesse",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\records\\xpack3\\skills\\allmasteries\\hunter_callofthehunt_crits.dbr",
     "name" : "Finesse",
     "parent" : "Exploit Weakness",
     "attributes" : {
       "characterOffensiveAbilityModifier" : {
-        "skill" : false,
-        "value" : [ 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0 ]
+        "value" : [ 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0 ],
+        "skill" : false
       },
       "characterOffensiveAbility" : {
-        "skill" : false,
-        "value" : [ 100.0, 150.0, 200.0, 250.0, 300.0, 350.0, 400.0, 450.0, 500.0, 550.0, 600.0, 650.0 ]
+        "value" : [ 100.0, 150.0, 200.0, 250.0, 300.0, 350.0, 400.0, 450.0, 500.0, 550.0, 600.0, 650.0 ],
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 12
+        "value" : 12,
+        "skill" : false
       },
       "offensivePercentCurrentLifeChance" : {
-        "skill" : false,
-        "value" : 2.0
+        "value" : 2.0,
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 7
+        "value" : 7,
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 8
+        "value" : 8,
+        "skill" : false
       },
       "offensivePercentCurrentLifeMin" : {
-        "skill" : false,
-        "value" : [ 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0 ]
+        "value" : [ 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0 ],
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Finesse.html",
+    "skillDescription" : null,
+    "skillTag" : "x3tagSkillHuntingFinesse",
+    "modifier" : true
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Study Prey.html",
-    "modifier" : false,
-    "skillTag" : "tagSkillName095",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\StudyPrey.dbr",
     "name" : "Study Prey",
     "parent" : null,
     "attributes" : {
       "StudyPrey" : {
-        "skill" : true,
         "value" : {
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Study Prey.html",
-          "modifier" : false,
-          "skillTag" : "tagSkillName095",
-          "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\StudyPreyBuff.dbr",
           "name" : "Study Prey",
           "parent" : null,
           "attributes" : {
             "skillActiveDuration" : {
-              "skill" : false,
-              "value" : 8.0
+              "value" : 8.0,
+              "skill" : false
             },
             "skillCooldownTime" : {
-              "skill" : false,
-              "value" : 8.0
+              "value" : 8.0,
+              "skill" : false
             },
             "skillManaCost" : {
-              "skill" : false,
-              "value" : 35.0
+              "value" : 35.0,
+              "skill" : false
             },
             "skillConnectionSpacing" : {
-              "skill" : false,
-              "value" : 62
+              "value" : 62,
+              "skill" : false
             },
             "cameraShakeAmplitude" : {
-              "skill" : false,
-              "value" : 0.12
+              "value" : 0.12,
+              "skill" : false
             },
             "defensivePierce" : {
-              "skill" : false,
-              "value" : [ -21.0, -25.0, -29.0, -33.0, -38.0, -42.0, -46.0, -50.0, -54.0, -58.0, -62.0, -66.0 ]
+              "value" : [ -21.0, -25.0, -29.0, -33.0, -38.0, -42.0, -46.0, -50.0, -54.0, -58.0, -62.0, -66.0 ],
+              "skill" : false
             },
             "skillMaxLevel" : {
-              "skill" : false,
-              "value" : 8
+              "value" : 8,
+              "skill" : false
             },
             "debufSkill" : {
-              "skill" : false,
-              "value" : 1
+              "value" : 1,
+              "skill" : false
             },
             "defensivePhysical" : {
-              "skill" : false,
-              "value" : [ -21.0, -26.0, -30.0, -34.0, -38.0, -42.0, -46.0, -50.0, -54.0, -58.0, -62.0, -66.0 ]
+              "value" : [ -21.0, -26.0, -30.0, -34.0, -38.0, -42.0, -46.0, -50.0, -54.0, -58.0, -62.0, -66.0 ],
+              "skill" : false
             },
             "skillUltimateLevel" : {
-              "skill" : false,
-              "value" : 12
+              "value" : 12,
+              "skill" : false
             },
             "excludeRacialDamage" : {
-              "skill" : false,
-              "value" : 1
+              "value" : 1,
+              "skill" : false
             },
             "skillTargetRadius" : {
-              "skill" : false,
-              "value" : 6.0
+              "value" : 6.0,
+              "skill" : false
             },
             "skillMasteryLevelRequired" : {
-              "skill" : false,
-              "value" : 1
+              "value" : 1,
+              "skill" : false
             },
             "skillTier" : {
-              "skill" : false,
-              "value" : 4
+              "value" : 4,
+              "skill" : false
             }
           },
           "buff" : null,
-          "skillDescription" : null
-        }
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Study Prey.html",
+          "skillDescription" : null,
+          "skillTag" : "tagSkillName095",
+          "modifier" : false
+        },
+        "skill" : true
       }
     },
     "buff" : {
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Study Prey.html",
-      "modifier" : false,
-      "skillTag" : "tagSkillName095",
-      "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\StudyPreyBuff.dbr",
       "name" : "Study Prey",
       "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
-          "skill" : false,
-          "value" : 8.0
+          "value" : 8.0,
+          "skill" : false
         },
         "skillCooldownTime" : {
-          "skill" : false,
-          "value" : 8.0
+          "value" : 8.0,
+          "skill" : false
         },
         "skillManaCost" : {
-          "skill" : false,
-          "value" : 35.0
+          "value" : 35.0,
+          "skill" : false
         },
         "skillConnectionSpacing" : {
-          "skill" : false,
-          "value" : 62
+          "value" : 62,
+          "skill" : false
         },
         "cameraShakeAmplitude" : {
-          "skill" : false,
-          "value" : 0.12
+          "value" : 0.12,
+          "skill" : false
         },
         "defensivePierce" : {
-          "skill" : false,
-          "value" : [ -21.0, -25.0, -29.0, -33.0, -38.0, -42.0, -46.0, -50.0, -54.0, -58.0, -62.0, -66.0 ]
+          "value" : [ -21.0, -25.0, -29.0, -33.0, -38.0, -42.0, -46.0, -50.0, -54.0, -58.0, -62.0, -66.0 ],
+          "skill" : false
         },
         "skillMaxLevel" : {
-          "skill" : false,
-          "value" : 8
+          "value" : 8,
+          "skill" : false
         },
         "debufSkill" : {
-          "skill" : false,
-          "value" : 1
+          "value" : 1,
+          "skill" : false
         },
         "defensivePhysical" : {
-          "skill" : false,
-          "value" : [ -21.0, -26.0, -30.0, -34.0, -38.0, -42.0, -46.0, -50.0, -54.0, -58.0, -62.0, -66.0 ]
+          "value" : [ -21.0, -26.0, -30.0, -34.0, -38.0, -42.0, -46.0, -50.0, -54.0, -58.0, -62.0, -66.0 ],
+          "skill" : false
         },
         "skillUltimateLevel" : {
-          "skill" : false,
-          "value" : 12
+          "value" : 12,
+          "skill" : false
         },
         "excludeRacialDamage" : {
-          "skill" : false,
-          "value" : 1
+          "value" : 1,
+          "skill" : false
         },
         "skillTargetRadius" : {
-          "skill" : false,
-          "value" : 6.0
+          "value" : 6.0,
+          "skill" : false
         },
         "skillMasteryLevelRequired" : {
-          "skill" : false,
-          "value" : 1
+          "value" : 1,
+          "skill" : false
         },
         "skillTier" : {
-          "skill" : false,
-          "value" : 4
+          "value" : 4,
+          "skill" : false
         }
       },
       "buff" : null,
-      "skillDescription" : null
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Study Prey.html",
+      "skillDescription" : null,
+      "skillTag" : "tagSkillName095",
+      "modifier" : false
     },
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Study Prey.html",
+    "skillDescription" : null,
+    "skillTag" : "tagSkillName095",
+    "modifier" : false
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Flush Out.html",
-    "modifier" : true,
-    "skillTag" : "tagSkillName096",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\StudyPrey_FlushOut.dbr",
     "name" : "Flush Out",
     "parent" : "Study Prey",
     "attributes" : {
       "defensiveBleeding" : {
-        "skill" : false,
-        "value" : [ -14.0, -18.0, -22.0, -26.0, -30.0, -36.0, -40.0, -44.0, -48.0, -54.0 ]
+        "value" : [ -14.0, -18.0, -22.0, -26.0, -30.0, -36.0, -40.0, -44.0, -48.0, -54.0 ],
+        "skill" : false
       },
       "skillManaCost" : {
-        "skill" : false,
-        "value" : 10.0
+        "value" : 10.0,
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 10
+        "value" : 10,
+        "skill" : false
       },
       "defensiveElementalResistance" : {
-        "skill" : false,
-        "value" : [ -14.0, -18.0, -22.0, -26.0, -30.0, -36.0, -40.0, -44.0, -48.0, -54.0 ]
+        "value" : [ -14.0, -18.0, -22.0, -26.0, -30.0, -36.0, -40.0, -44.0, -48.0, -54.0 ],
+        "skill" : false
       },
       "excludeRacialDamage" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "characterDefensiveAbilityModifier" : {
-        "skill" : false,
-        "value" : [ -14.0, -18.0, -22.0, -26.0, -30.0, -36.0, -40.0, -44.0, -48.0, -54.0 ]
+        "value" : [ -14.0, -18.0, -22.0, -26.0, -30.0, -36.0, -40.0, -44.0, -48.0, -54.0 ],
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 6
+        "value" : 6,
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 6
+        "value" : 6,
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Flush Out.html",
+    "skillDescription" : null,
+    "skillTag" : "tagSkillName096",
+    "modifier" : true
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Marksmanship.html",
-    "modifier" : false,
-    "skillTag" : "tagSkillName169",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\Marksmanship.dbr",
     "name" : "Marksmanship",
     "parent" : null,
     "attributes" : {
       "skillProjectileSpeedModifier" : {
-        "skill" : false,
-        "value" : [ 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0, 150.0, 160.0, 170.0, 180.0 ]
+        "value" : [ 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0, 150.0, 160.0, 170.0, 180.0 ],
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 16
+        "value" : 16,
+        "skill" : false
       },
       "skillManaCost" : {
-        "skill" : false,
-        "value" : 2.0
+        "value" : 2.0,
+        "skill" : false
       },
       "skillConnectionSpacing" : {
-        "skill" : false,
-        "value" : 62
+        "value" : 62,
+        "skill" : false
       },
       "cameraShakeAmplitude" : {
-        "skill" : false,
-        "value" : 0.12
+        "value" : 0.12,
+        "skill" : false
       },
       "Bow" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "offensivePierceMin" : {
-        "skill" : false,
-        "value" : [ 4.0, 8.0, 12.0, 16.0, 20.0, 24.0, 28.0, 33.0, 38.0, 43.0, 49.0, 55.0, 61.0, 67.0, 74.0, 81.0 ]
+        "value" : [ 4.0, 8.0, 12.0, 16.0, 20.0, 24.0, 28.0, 33.0, 38.0, 43.0, 49.0, 55.0, 61.0, 67.0, 74.0, 81.0 ],
+        "skill" : false
       },
       "skillMasteryLevelRequired" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 2
+        "value" : 2,
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 12
+        "value" : 12,
+        "skill" : false
       },
       "RangedOneHand" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Marksmanship.html",
+    "skillDescription" : null,
+    "skillTag" : "tagSkillName169",
+    "modifier" : false
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Puncture Shot Arrows.html",
-    "modifier" : true,
-    "skillTag" : "tagSkillName170",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\Marksmanship_PunctureShotArrows.dbr",
     "name" : "Puncture Shot Arrows",
     "parent" : "Marksmanship",
     "attributes" : {
       "projectilePiercing" : {
-        "skill" : false,
-        "value" : [ 8.0, 12.0, 16.0, 21.0, 25.0, 29.0, 33.0, 38.0, 42.0, 46.0, 50.0, 55.0, 59.0, 63.0, 68.0, 75.0 ]
+        "value" : [ 8.0, 12.0, 16.0, 21.0, 25.0, 29.0, 33.0, 38.0, 42.0, 46.0, 50.0, 55.0, 59.0, 63.0, 68.0, 75.0 ],
+        "skill" : false
       },
       "skillManaCost" : {
-        "skill" : false,
-        "value" : 1.0
+        "value" : 1.0,
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 16
+        "value" : 16,
+        "skill" : false
       },
       "offensivePierceModifier" : {
-        "skill" : false,
-        "value" : [ 5.0, 8.0, 10.0, 12.0, 15.0, 18.0, 20.0, 22.0, 25.0, 28.0, 30.0, 33.0, 35.0, 38.0, 41.0, 45.0 ]
+        "value" : [ 5.0, 8.0, 10.0, 12.0, 15.0, 18.0, 20.0, 22.0, 25.0, 28.0, 30.0, 33.0, 35.0, 38.0, 41.0, 45.0 ],
+        "skill" : false
       },
       "Bow" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "skillMasteryLevelRequired" : {
-        "skill" : false,
-        "value" : 10
+        "value" : 10,
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 4
+        "value" : 4,
+        "skill" : false
       },
       "offensiveSlowBleedingModifier" : {
-        "skill" : false,
-        "value" : [ 9.0, 12.0, 15.0, 20.0, 23.0, 27.0, 30.0, 35.0, 38.0, 42.0, 45.0, 50.0 ]
+        "value" : [ 9.0, 12.0, 15.0, 20.0, 23.0, 27.0, 30.0, 35.0, 38.0, 42.0, 45.0, 50.0 ],
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 12
+        "value" : 12,
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Puncture Shot Arrows.html",
+    "skillDescription" : null,
+    "skillTag" : "tagSkillName170",
+    "modifier" : true
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Scatter Shot Arrows.html",
-    "modifier" : false,
-    "skillTag" : "tagSkillName171",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\Marksmanship_ScatterShotArrows.dbr",
     "name" : "Scatter Shot Arrows",
     "parent" : null,
     "attributes" : {
       "projectileFragmentsLaunchNumberMin" : {
-        "skill" : false,
-        "value" : [ 3.0, 3.0, 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 8.0 ]
+        "value" : [ 3.0, 3.0, 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 8.0 ],
+        "skill" : false
       },
       "offensiveSlowBleedingMin" : {
-        "skill" : false,
-        "value" : [ 4.0, 6.4, 8.8, 11.7, 14.7, 17.9, 21.3, 25.3, 29.3, 33.6, 38.1, 43.2, 48.5, 54.4, 60.8, 67.7 ]
+        "value" : [ 4.0, 6.4, 8.8, 11.7, 14.7, 17.9, 21.3, 25.3, 29.3, 33.6, 38.1, 43.2, 48.5, 54.4, 60.8, 67.7 ],
+        "skill" : false
       },
       "projectileFragmentsLaunchNumberMax" : {
-        "skill" : false,
-        "value" : [ 4.0, 5.0, 5.0, 5.0, 6.0, 6.0, 7.0, 7.0, 7.0, 8.0, 8.0, 9.0, 9.0, 9.0, 10.0 ]
+        "value" : [ 4.0, 5.0, 5.0, 5.0, 6.0, 6.0, 7.0, 7.0, 7.0, 8.0, 8.0, 9.0, 9.0, 9.0, 10.0 ],
+        "skill" : false
       },
       "skillManaCost" : {
-        "skill" : false,
-        "value" : 1.0
+        "value" : 1.0,
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 16
+        "value" : 16,
+        "skill" : false
       },
       "offensiveSlowBleedingDurationMin" : {
-        "skill" : false,
-        "value" : 3.0
+        "value" : 3.0,
+        "skill" : false
       },
       "offensivePierceMin" : {
-        "skill" : false,
-        "value" : [ 3.0, 4.8, 6.6, 8.8, 11.0, 13.4, 16.0, 19.0, 22.0, 25.2, 28.6, 32.4, 36.4, 40.8, 45.6, 50.8 ]
+        "value" : [ 3.0, 4.8, 6.6, 8.8, 11.0, 13.4, 16.0, 19.0, 22.0, 25.2, 28.6, 32.4, 36.4, 40.8, 45.6, 50.8 ],
+        "skill" : false
       },
       "Bow" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "skillMasteryLevelRequired" : {
-        "skill" : false,
-        "value" : 25
+        "value" : 25,
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 6
+        "value" : 6,
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 12
+        "value" : 12,
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Scatter Shot Arrows.html",
+    "skillDescription" : null,
+    "skillTag" : "tagSkillName171",
+    "modifier" : false
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Gouge.html",
-    "modifier" : false,
-    "skillTag" : "tagSkillName172",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\WeaponSkill_Gouge.dbr",
     "name" : "Gouge",
     "parent" : null,
     "attributes" : {
       "skillChanceWeight" : {
-        "skill" : false,
-        "value" : [ 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 17.0, 18.0, 19.0, 20.0 ]
+        "value" : [ 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 17.0, 18.0, 19.0, 20.0 ],
+        "skill" : false
       },
       "offensiveSlowBleedingMin" : {
-        "skill" : false,
-        "value" : [ 24.0, 36.0, 49.5, 64.5, 81.0, 99.0, 118.5, 139.5, 162.0, 187.5 ]
+        "value" : [ 24.0, 36.0, 49.5, 64.5, 81.0, 99.0, 118.5, 139.5, 162.0, 187.5 ],
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 10
+        "value" : 10,
+        "skill" : false
       },
       "cameraShakeAmplitude" : {
-        "skill" : false,
-        "value" : 0.12
+        "value" : 0.12,
+        "skill" : false
       },
       "offensiveSlowBleedingDurationMin" : {
-        "skill" : false,
-        "value" : 3.0
+        "value" : 3.0,
+        "skill" : false
       },
       "skillProjectileNumber" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "Bow" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "skillMasteryLevelRequired" : {
-        "skill" : false,
-        "value" : 5
+        "value" : 5,
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 4
+        "value" : 4,
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 6
+        "value" : 6,
+        "skill" : false
       },
       "Spear" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Gouge.html",
+    "skillDescription" : null,
+    "skillTag" : "tagSkillName172",
+    "modifier" : false
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Volley.html",
-    "modifier" : false,
-    "skillTag" : "tagSkillName173",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\WeaponSkill_Volley.dbr",
     "name" : "Volley",
     "parent" : null,
     "attributes" : {
       "skillChanceWeight" : {
-        "skill" : false,
-        "value" : [ 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 17.0, 18.0, 19.0, 20.0 ]
+        "value" : [ 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 17.0, 18.0, 19.0, 20.0 ],
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 10
+        "value" : 10,
+        "skill" : false
       },
       "cameraShakeAmplitude" : {
-        "skill" : false,
-        "value" : 0.12
+        "value" : 0.12,
+        "skill" : false
       },
       "skillProjectileNumber" : {
-        "skill" : false,
-        "value" : 3
+        "value" : 3,
+        "skill" : false
       },
       "Bow" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "skillMasteryLevelRequired" : {
-        "skill" : false,
-        "value" : 25
+        "value" : 25,
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 6
+        "value" : 6,
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 6
+        "value" : 6,
+        "skill" : false
       },
       "Spear" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "RangedOneHand" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Volley.html",
+    "skillDescription" : null,
+    "skillTag" : "tagSkillName173",
+    "modifier" : false
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Take Down.html",
-    "modifier" : false,
-    "skillTag" : "tagSkillName089",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\TakeDown.dbr",
     "name" : "Take Down",
     "parent" : null,
     "attributes" : {
       "skillCooldownTime" : {
-        "skill" : false,
-        "value" : 8.0
+        "value" : 8.0,
+        "skill" : false
       },
       "skillManaCost" : {
-        "skill" : false,
-        "value" : [ 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0, 48.0, 50.0, 52.0, 54.0, 56.0, 58.0, 60.0 ]
+        "value" : [ 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0, 48.0, 50.0, 52.0, 54.0, 56.0, 58.0, 60.0 ],
+        "skill" : false
       },
       "skillConnectionSpacing" : {
-        "skill" : false,
-        "value" : 62
+        "value" : 62,
+        "skill" : false
       },
       "cameraShakeAmplitude" : {
-        "skill" : false,
-        "value" : 0.12
+        "value" : 0.12,
+        "skill" : false
       },
       "characterRunSpeedModifier" : {
-        "skill" : false,
-        "value" : 300.0
+        "value" : 300.0,
+        "skill" : false
       },
       "offensivePierceMin" : {
-        "skill" : false,
-        "value" : [ 25.0, 36.0, 48.0, 62.0, 72.0, 82.0, 91.0, 103.0, 112.0, 122.0, 131.0, 143.0, 152.0, 162.0, 173.0, 187.0 ]
+        "value" : [ 25.0, 36.0, 48.0, 62.0, 72.0, 82.0, 91.0, 103.0, 112.0, 122.0, 131.0, 143.0, 152.0, 162.0, 173.0, 187.0 ],
+        "skill" : false
       },
       "skillAllowsWarmUp" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 12
+        "value" : 12,
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 16
+        "value" : 16,
+        "skill" : false
       },
       "skillProjectileNumber" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "skillMasteryLevelRequired" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "offensivePercentCurrentLifeMin" : {
-        "skill" : false,
-        "value" : [ 8.0, 12.0, 15.0, 18.0, 21.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 45.0 ]
+        "value" : [ 8.0, 12.0, 15.0, 18.0, 21.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 45.0 ],
+        "skill" : false
       },
       "Spear" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Take Down.html",
+    "skillDescription" : null,
+    "skillTag" : "tagSkillName089",
+    "modifier" : false
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Eviscerate.html",
-    "modifier" : true,
-    "skillTag" : "tagSkillName090",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\TakeDown_Eviscerate.dbr",
     "name" : "Eviscerate",
     "parent" : "Take Down",
     "attributes" : {
       "offensiveSlowBleedingMin" : {
-        "skill" : false,
-        "value" : [ 27.5, 37.5, 50.0, 60.0, 70.0, 82.5, 92.5, 102.5, 115.0, 125.0, 135.0, 147.5, 157.5, 167.5, 180.0 ]
+        "value" : [ 27.5, 37.5, 50.0, 60.0, 70.0, 82.5, 92.5, 102.5, 115.0, 125.0, 135.0, 147.5, 157.5, 167.5, 180.0 ],
+        "skill" : false
       },
       "skillManaCost" : {
-        "skill" : false,
-        "value" : 5.0
+        "value" : 5.0,
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 14
+        "value" : 14,
+        "skill" : false
       },
       "offensiveSlowBleedingDurationMin" : {
-        "skill" : false,
-        "value" : 3.0
+        "value" : 3.0,
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 3
+        "value" : 3,
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 10
+        "value" : 10,
+        "skill" : false
       },
       "Spear" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Eviscerate.html",
+    "skillDescription" : null,
+    "skillTag" : "tagSkillName090",
+    "modifier" : true
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Monster Lure.html",
-    "modifier" : false,
-    "skillTag" : "tagSkillName097",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\MonsterLure.dbr",
     "name" : "Monster Lure",
     "parent" : null,
     "attributes" : {
       "skillCooldownTime" : {
-        "skill" : false,
-        "value" : 12.0
+        "value" : 12.0,
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 10
+        "value" : 10,
+        "skill" : false
       },
       "skillManaCost" : {
-        "skill" : false,
-        "value" : [ 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0, 70.0 ]
+        "value" : [ 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0, 70.0 ],
+        "skill" : false
       },
       "spawnObjectsTimeToLive" : {
-        "skill" : false,
-        "value" : 30.0
+        "value" : 30.0,
+        "skill" : false
       },
       "petLimit" : {
-        "skill" : false,
-        "value" : 3
+        "value" : 3,
+        "skill" : false
       },
       "cameraShakeAmplitude" : {
-        "skill" : false,
-        "value" : 0.12
+        "value" : 0.12,
+        "skill" : false
       },
       "skillConnectionSpacing" : {
-        "skill" : false,
-        "value" : 62
+        "value" : 62,
+        "skill" : false
       },
       "skillMasteryLevelRequired" : {
-        "skill" : false,
-        "value" : 5
+        "value" : 5,
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 3
+        "value" : 3,
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 6
+        "value" : 6,
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Monster Lure.html",
+    "skillDescription" : null,
+    "skillTag" : "tagSkillName097",
+    "modifier" : false
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Detonate.html",
-    "modifier" : false,
-    "skillTag" : "tagSkillName193",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\MonsterLure_PetModifier_Detonate.dbr",
     "name" : "Detonate",
     "parent" : null,
     "attributes" : {
       "Detonate" : {
-        "skill" : true,
         "value" : {
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Detonate.html",
-          "modifier" : false,
-          "skillTag" : "tagSkillName193",
-          "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\MonsterLure_PetSkill_Detonate.dbr",
           "name" : "Detonate",
           "parent" : null,
           "attributes" : {
             "projectileLaunchNumber" : {
-              "skill" : false,
-              "value" : 1
+              "value" : 1,
+              "skill" : false
             },
             "skillManaCost" : {
-              "skill" : false,
-              "value" : 15.0
+              "value" : 15.0,
+              "skill" : false
             },
             "projectileExplosionRadius" : {
-              "skill" : false,
-              "value" : 6.0
+              "value" : 6.0,
+              "skill" : false
             },
             "cameraShakeAmplitude" : {
-              "skill" : false,
-              "value" : 0.12
+              "value" : 0.12,
+              "skill" : false
             },
             "offensivePhysicalMin" : {
-              "skill" : false,
-              "value" : [ 36.0, 42.0, 49.0, 58.0, 64.0, 70.0, 77.0, 86.0, 92.0, 98.0, 105.0, 114.0, 120.0, 126.0, 133.0, 142.0 ]
+              "value" : [ 36.0, 42.0, 49.0, 58.0, 64.0, 70.0, 77.0, 86.0, 92.0, 98.0, 105.0, 114.0, 120.0, 126.0, 133.0, 142.0 ],
+              "skill" : false
             },
             "offensivePhysicalMax" : {
-              "skill" : false,
-              "value" : [ 58.0, 66.0, 75.0, 86.0, 94.0, 102.0, 111.0, 122.0, 130.0, 138.0, 147.0, 158.0, 166.0, 174.0, 183.0, 194.0 ]
+              "value" : [ 58.0, 66.0, 75.0, 86.0, 94.0, 102.0, 111.0, 122.0, 130.0, 138.0, 147.0, 158.0, 166.0, 174.0, 183.0, 194.0 ],
+              "skill" : false
             },
             "ragDollAmplification" : {
-              "skill" : false,
-              "value" : 1.5
+              "value" : 1.5,
+              "skill" : false
             },
             "projectileUsesAllDamage" : {
-              "skill" : false,
-              "value" : 1
+              "value" : 1,
+              "skill" : false
             },
             "skillMaxLevel" : {
-              "skill" : false,
-              "value" : 12
+              "value" : 12,
+              "skill" : false
             },
             "offensiveStunMin" : {
-              "skill" : false,
-              "value" : 1.0
+              "value" : 1.0,
+              "skill" : false
             },
             "skillUltimateLevel" : {
-              "skill" : false,
-              "value" : 16
+              "value" : 16,
+              "skill" : false
             },
             "projectileLaunchRotation" : {
-              "skill" : false,
-              "value" : 360.0
+              "value" : 360.0,
+              "skill" : false
             },
             "offensiveFireMax" : {
-              "skill" : false,
-              "value" : [ 116.0, 132.0, 150.0, 172.0, 188.0, 204.0, 222.0, 244.0, 260.0, 276.0, 294.0, 316.0, 332.0, 348.0, 366.0, 388.0 ]
+              "value" : [ 116.0, 132.0, 150.0, 172.0, 188.0, 204.0, 222.0, 244.0, 260.0, 276.0, 294.0, 316.0, 332.0, 348.0, 366.0, 388.0 ],
+              "skill" : false
             },
             "offensiveFireMin" : {
-              "skill" : false,
-              "value" : [ 72.0, 84.0, 98.0, 116.0, 128.0, 140.0, 154.0, 172.0, 184.0, 196.0, 210.0, 228.0, 240.0, 252.0, 266.0, 284.0 ]
+              "value" : [ 72.0, 84.0, 98.0, 116.0, 128.0, 140.0, 154.0, 172.0, 184.0, 196.0, 210.0, 228.0, 240.0, 252.0, 266.0, 284.0 ],
+              "skill" : false
             },
             "skillTier" : {
-              "skill" : false,
-              "value" : 5
+              "value" : 5,
+              "skill" : false
             }
           },
           "buff" : null,
-          "skillDescription" : null
-        }
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Detonate.html",
+          "skillDescription" : null,
+          "skillTag" : "tagSkillName193",
+          "modifier" : false
+        },
+        "skill" : true
       }
     },
     "buff" : {
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Detonate.html",
-      "modifier" : false,
-      "skillTag" : "tagSkillName193",
-      "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\MonsterLure_PetSkill_Detonate.dbr",
       "name" : "Detonate",
       "parent" : null,
       "attributes" : {
         "projectileLaunchNumber" : {
-          "skill" : false,
-          "value" : 1
+          "value" : 1,
+          "skill" : false
         },
         "skillManaCost" : {
-          "skill" : false,
-          "value" : 15.0
+          "value" : 15.0,
+          "skill" : false
         },
         "projectileExplosionRadius" : {
-          "skill" : false,
-          "value" : 6.0
+          "value" : 6.0,
+          "skill" : false
         },
         "cameraShakeAmplitude" : {
-          "skill" : false,
-          "value" : 0.12
+          "value" : 0.12,
+          "skill" : false
         },
         "offensivePhysicalMin" : {
-          "skill" : false,
-          "value" : [ 36.0, 42.0, 49.0, 58.0, 64.0, 70.0, 77.0, 86.0, 92.0, 98.0, 105.0, 114.0, 120.0, 126.0, 133.0, 142.0 ]
+          "value" : [ 36.0, 42.0, 49.0, 58.0, 64.0, 70.0, 77.0, 86.0, 92.0, 98.0, 105.0, 114.0, 120.0, 126.0, 133.0, 142.0 ],
+          "skill" : false
         },
         "offensivePhysicalMax" : {
-          "skill" : false,
-          "value" : [ 58.0, 66.0, 75.0, 86.0, 94.0, 102.0, 111.0, 122.0, 130.0, 138.0, 147.0, 158.0, 166.0, 174.0, 183.0, 194.0 ]
+          "value" : [ 58.0, 66.0, 75.0, 86.0, 94.0, 102.0, 111.0, 122.0, 130.0, 138.0, 147.0, 158.0, 166.0, 174.0, 183.0, 194.0 ],
+          "skill" : false
         },
         "ragDollAmplification" : {
-          "skill" : false,
-          "value" : 1.5
+          "value" : 1.5,
+          "skill" : false
         },
         "projectileUsesAllDamage" : {
-          "skill" : false,
-          "value" : 1
+          "value" : 1,
+          "skill" : false
         },
         "skillMaxLevel" : {
-          "skill" : false,
-          "value" : 12
+          "value" : 12,
+          "skill" : false
         },
         "offensiveStunMin" : {
-          "skill" : false,
-          "value" : 1.0
+          "value" : 1.0,
+          "skill" : false
         },
         "skillUltimateLevel" : {
-          "skill" : false,
-          "value" : 16
+          "value" : 16,
+          "skill" : false
         },
         "projectileLaunchRotation" : {
-          "skill" : false,
-          "value" : 360.0
+          "value" : 360.0,
+          "skill" : false
         },
         "offensiveFireMax" : {
-          "skill" : false,
-          "value" : [ 116.0, 132.0, 150.0, 172.0, 188.0, 204.0, 222.0, 244.0, 260.0, 276.0, 294.0, 316.0, 332.0, 348.0, 366.0, 388.0 ]
+          "value" : [ 116.0, 132.0, 150.0, 172.0, 188.0, 204.0, 222.0, 244.0, 260.0, 276.0, 294.0, 316.0, 332.0, 348.0, 366.0, 388.0 ],
+          "skill" : false
         },
         "offensiveFireMin" : {
-          "skill" : false,
-          "value" : [ 72.0, 84.0, 98.0, 116.0, 128.0, 140.0, 154.0, 172.0, 184.0, 196.0, 210.0, 228.0, 240.0, 252.0, 266.0, 284.0 ]
+          "value" : [ 72.0, 84.0, 98.0, 116.0, 128.0, 140.0, 154.0, 172.0, 184.0, 196.0, 210.0, 228.0, 240.0, 252.0, 266.0, 284.0 ],
+          "skill" : false
         },
         "skillTier" : {
-          "skill" : false,
-          "value" : 5
+          "value" : 5,
+          "skill" : false
         }
       },
       "buff" : null,
-      "skillDescription" : null
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Detonate.html",
+      "skillDescription" : null,
+      "skillTag" : "tagSkillName193",
+      "modifier" : false
     },
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Detonate.html",
+    "skillDescription" : null,
+    "skillTag" : "tagSkillName193",
+    "modifier" : false
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Herbal Remedy.html",
-    "modifier" : false,
-    "skillTag" : "tagSkillName091",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\Herbalism.dbr",
     "name" : "Herbal Remedy",
     "parent" : null,
     "attributes" : {
       "Herbalism" : {
-        "skill" : true,
         "value" : {
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Herbal Remedy.html",
-          "modifier" : false,
-          "skillTag" : "tagSkillName091",
-          "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\Herbalism_Buff.dbr",
           "name" : "Herbal Remedy",
           "parent" : null,
           "attributes" : {
             "skillActiveDuration" : {
-              "skill" : false,
-              "value" : [ 180.0, 240.0, 300.0, 360.0, 420.0, 480.0, 540.0, 600.0, 660.0, 720.0 ]
+              "value" : [ 180.0, 240.0, 300.0, 360.0, 420.0, 480.0, 540.0, 600.0, 660.0, 720.0 ],
+              "skill" : false
             },
             "skillManaCost" : {
-              "skill" : false,
-              "value" : [ 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0 ]
+              "value" : [ 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0 ],
+              "skill" : false
             },
             "skillUltimateLevel" : {
-              "skill" : false,
-              "value" : 10
+              "value" : 10,
+              "skill" : false
             },
             "characterLifeRegen" : {
-              "skill" : false,
-              "value" : [ 3.0, 3.6, 4.2, 4.8, 5.4, 6.0, 6.6, 7.2, 7.8, 8.4 ]
+              "value" : [ 3.0, 3.6, 4.2, 4.8, 5.4, 6.0, 6.6, 7.2, 7.8, 8.4 ],
+              "skill" : false
             },
             "cameraShakeAmplitude" : {
-              "skill" : false,
-              "value" : 0.12
+              "value" : 0.12,
+              "skill" : false
             },
             "skillMasteryLevelRequired" : {
-              "skill" : false,
-              "value" : 5
+              "value" : 5,
+              "skill" : false
             },
             "defensivePoison" : {
-              "skill" : false,
-              "value" : [ 30.0, 38.0, 46.0, 54.0, 66.0, 72.0, 80.0, 86.0, 92.0, 100.0 ]
+              "value" : [ 30.0, 38.0, 46.0, 54.0, 66.0, 72.0, 80.0, 86.0, 92.0, 100.0 ],
+              "skill" : false
             },
             "skillTier" : {
-              "skill" : false,
-              "value" : 2
+              "value" : 2,
+              "skill" : false
             },
             "skillMaxLevel" : {
-              "skill" : false,
-              "value" : 6
+              "value" : 6,
+              "skill" : false
             }
           },
           "buff" : null,
-          "skillDescription" : null
-        }
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Herbal Remedy.html",
+          "skillDescription" : null,
+          "skillTag" : "tagSkillName091",
+          "modifier" : false
+        },
+        "skill" : true
       }
     },
     "buff" : {
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Herbal Remedy.html",
-      "modifier" : false,
-      "skillTag" : "tagSkillName091",
-      "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\Herbalism_Buff.dbr",
       "name" : "Herbal Remedy",
       "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
-          "skill" : false,
-          "value" : [ 180.0, 240.0, 300.0, 360.0, 420.0, 480.0, 540.0, 600.0, 660.0, 720.0 ]
+          "value" : [ 180.0, 240.0, 300.0, 360.0, 420.0, 480.0, 540.0, 600.0, 660.0, 720.0 ],
+          "skill" : false
         },
         "skillManaCost" : {
-          "skill" : false,
-          "value" : [ 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0 ]
+          "value" : [ 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0 ],
+          "skill" : false
         },
         "skillUltimateLevel" : {
-          "skill" : false,
-          "value" : 10
+          "value" : 10,
+          "skill" : false
         },
         "characterLifeRegen" : {
-          "skill" : false,
-          "value" : [ 3.0, 3.6, 4.2, 4.8, 5.4, 6.0, 6.6, 7.2, 7.8, 8.4 ]
+          "value" : [ 3.0, 3.6, 4.2, 4.8, 5.4, 6.0, 6.6, 7.2, 7.8, 8.4 ],
+          "skill" : false
         },
         "cameraShakeAmplitude" : {
-          "skill" : false,
-          "value" : 0.12
+          "value" : 0.12,
+          "skill" : false
         },
         "skillMasteryLevelRequired" : {
-          "skill" : false,
-          "value" : 5
+          "value" : 5,
+          "skill" : false
         },
         "defensivePoison" : {
-          "skill" : false,
-          "value" : [ 30.0, 38.0, 46.0, 54.0, 66.0, 72.0, 80.0, 86.0, 92.0, 100.0 ]
+          "value" : [ 30.0, 38.0, 46.0, 54.0, 66.0, 72.0, 80.0, 86.0, 92.0, 100.0 ],
+          "skill" : false
         },
         "skillTier" : {
-          "skill" : false,
-          "value" : 2
+          "value" : 2,
+          "skill" : false
         },
         "skillMaxLevel" : {
-          "skill" : false,
-          "value" : 6
+          "value" : 6,
+          "skill" : false
         }
       },
       "buff" : null,
-      "skillDescription" : null
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Herbal Remedy.html",
+      "skillDescription" : null,
+      "skillTag" : "tagSkillName091",
+      "modifier" : false
     },
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Herbal Remedy.html",
+    "skillDescription" : null,
+    "skillTag" : "tagSkillName091",
+    "modifier" : false
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Spear Dance.html",
-    "modifier" : false,
-    "skillTag" : "x3tagSkillHuntingSpearDance",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\records\\xpack3\\skills\\allmasteries\\hunter_speardance.dbr",
     "name" : "Spear Dance",
     "parent" : null,
     "attributes" : {
       "skillCooldownTime" : {
-        "skill" : false,
-        "value" : 18.0
+        "value" : 18.0,
+        "skill" : false
       },
       "offensiveFearMin" : {
-        "skill" : false,
-        "value" : 1.0
+        "value" : 1.0,
+        "skill" : false
       },
       "skillManaCost" : {
-        "skill" : false,
-        "value" : [ 60.0, 63.0, 66.0, 69.0, 72.0, 75.0, 78.0, 81.0, 84.0, 87.0, 90.0, 93.0, 96.0, 99.0, 102.0, 105.0 ]
+        "value" : [ 60.0, 63.0, 66.0, 69.0, 72.0, 75.0, 78.0, 81.0, 84.0, 87.0, 90.0, 93.0, 96.0, 99.0, 102.0, 105.0 ],
+        "skill" : false
       },
       "skillConnectionSpacing" : {
-        "skill" : false,
-        "value" : 62
+        "value" : 62,
+        "skill" : false
       },
       "cameraShakeAmplitude" : {
-        "skill" : false,
-        "value" : 0.12
+        "value" : 0.12,
+        "skill" : false
       },
       "offensiveFearChance" : {
-        "skill" : false,
-        "value" : [ 8.0, 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 64.0, 68.0 ]
+        "value" : [ 8.0, 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 64.0, 68.0 ],
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 12
+        "value" : 12,
+        "skill" : false
       },
       "offensivePhysicalModifier" : {
-        "skill" : false,
-        "value" : [ -20.0, -16.0, -12.0, -8.0, -4.0, 0.0, 4.0, 8.0, 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0 ]
+        "value" : [ -20.0, -16.0, -12.0, -8.0, -4.0, 0.0, 4.0, 8.0, 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0 ],
+        "skill" : false
       },
       "offensiveFearMax" : {
-        "skill" : false,
-        "value" : 3.0
+        "value" : 3.0,
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 16
+        "value" : 16,
+        "skill" : false
       },
       "offensiveSlowAttackSpeedMin" : {
-        "skill" : false,
-        "value" : [ -50.0, -50.0, -50.0, -50.0, -50.0, -50.0, -50.0, -50.0, -50.0, -50.0, -50.0, -50.0, -50.0, -50.0, -50.0, -50.0 ]
+        "value" : [ -50.0, -50.0, -50.0, -50.0, -50.0, -50.0, -50.0, -50.0, -50.0, -50.0, -50.0, -50.0, -50.0, -50.0, -50.0, -50.0 ],
+        "skill" : false
       },
       "skillProjectileNumber" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "skillTargetAngle" : {
-        "skill" : false,
-        "value" : 360.0
+        "value" : 360.0,
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 7
+        "value" : 7,
+        "skill" : false
       },
       "offensiveSlowAttackSpeedDurationMin" : {
-        "skill" : false,
-        "value" : 2.0
+        "value" : 2.0,
+        "skill" : false
       },
       "Spear" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
-  } ]
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Spear Dance.html",
+    "skillDescription" : null,
+    "skillTag" : "x3tagSkillHuntingSpearDance",
+    "modifier" : false
+  } ],
+  "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery.html"
 }

@@ -1,2473 +1,2421 @@
 {
-  "mastery" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\lifegiving\\lifegiving_mastery.dbr",
-  "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery.html",
-  "skillTree" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\lifegiving\\lifegiving_skilltree.dbr",
   "name" : "Lifegiving Mastery",
   "skills" : [ {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Punishment.html",
-    "modifier" : false,
-    "skillTag" : "skillLifegiving3n",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\lifegiving\\skills\\punishment.dbr",
     "name" : "Punishment",
     "parent" : null,
     "attributes" : {
       "retaliationSlowFireDurationMin" : {
-        "skill" : false,
-        "value" : 3.0
+        "value" : 3.0,
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 16
+        "value" : 16,
+        "skill" : false
       },
       "skillMasteryLevelRequired" : {
-        "skill" : false,
-        "value" : 4
+        "value" : 4,
+        "skill" : false
       },
       "retaliationSlowFireMin" : {
-        "skill" : false,
-        "value" : [ 12.0, 16.0, 20.0, 27.0, 32.0, 38.0, 45.0, 51.0, 61.0, 70.0, 80.0, 90.0, 104.0, 120.0, 138.0, 155.0 ]
+        "value" : [ 12.0, 16.0, 20.0, 27.0, 32.0, 38.0, 45.0, 51.0, 61.0, 70.0, 80.0, 90.0, 104.0, 120.0, 138.0, 155.0 ],
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 2
+        "value" : 2,
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 12
+        "value" : 12,
+        "skill" : false
       },
       "retaliationSlowFireChance" : {
-        "skill" : false,
-        "value" : 25.0
+        "value" : 25.0,
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Punishment.html",
+    "skillDescription" : null,
+    "skillTag" : "skillLifegiving3n",
+    "modifier" : false
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Reciprocate.html",
-    "modifier" : false,
-    "skillTag" : "skillLifegiving4n",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\lifegiving\\skills\\reciprocate.dbr",
     "name" : "Reciprocate",
     "parent" : null,
     "attributes" : {
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 12
+        "value" : 12,
+        "skill" : false
       },
       "defensiveReflect" : {
-        "skill" : false,
-        "value" : [ 12.0, 20.0, 28.0, 36.0, 44.0, 52.0, 60.0, 68.0, 76.0, 84.0, 92.0, 100.0 ]
+        "value" : [ 12.0, 20.0, 28.0, 36.0, 44.0, 52.0, 60.0, 68.0, 76.0, 84.0, 92.0, 100.0 ],
+        "skill" : false
       },
       "skillMasteryLevelRequired" : {
-        "skill" : false,
-        "value" : 24
+        "value" : 24,
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 5
+        "value" : 5,
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 8
+        "value" : 8,
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Reciprocate.html",
+    "skillDescription" : null,
+    "skillTag" : "skillLifegiving4n",
+    "modifier" : false
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Radiant Orb.html",
-    "modifier" : false,
-    "skillTag" : "skillLifegiving5n",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\lifegiving\\skills\\radiantorb.dbr",
     "name" : "Radiant Orb",
     "parent" : null,
     "attributes" : {
       "radiantorb" : {
-        "skill" : true,
         "value" : {
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Radiant Orb.html",
-          "modifier" : false,
-          "skillTag" : "skillLifegiving5n",
-          "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\lifegiving\\skills\\radiantorb_buff.dbr",
           "name" : "Radiant Orb",
           "parent" : null,
           "attributes" : {
             "skillCooldownTime" : {
-              "skill" : false,
-              "value" : 15.0
+              "value" : 15.0,
+              "skill" : false
             },
             "cameraShakeDurationSecs" : {
-              "skill" : false,
-              "value" : 0.5
+              "value" : 0.5,
+              "skill" : false
             },
             "skillManaCost" : {
-              "skill" : false,
-              "value" : [ 100.0, 193.0, 287.0, 380.0, 473.0, 567.0, 660.0, 753.0, 847.0, 940.0, 1033.0, 1127.0, 1220.0, 1313.0, 1407.0, 1500.0 ]
+              "value" : [ 100.0, 193.0, 287.0, 380.0, 473.0, 567.0, 660.0, 753.0, 847.0, 940.0, 1033.0, 1127.0, 1220.0, 1313.0, 1407.0, 1500.0 ],
+              "skill" : false
             },
             "skillUltimateLevel" : {
-              "skill" : false,
-              "value" : 16
+              "value" : 16,
+              "skill" : false
             },
             "characterLifeRegenModifier" : {
-              "skill" : false,
-              "value" : 50.0
+              "value" : 50.0,
+              "skill" : false
             },
             "physicalDamageQualifier" : {
-              "skill" : false,
-              "value" : 1
+              "value" : 1,
+              "skill" : false
             },
             "cameraShakeAmplitude" : {
-              "skill" : false,
-              "value" : 0.32
+              "value" : 0.32,
+              "skill" : false
             },
             "damageAbsorption" : {
-              "skill" : false,
-              "value" : [ 170.0, 301.0, 432.0, 564.0, 695.0, 826.0, 957.0, 1088.0, 1220.0, 1351.0, 1482.0, 1809.0, 2136.0, 2463.0, 2790.0, 3117.0 ]
+              "value" : [ 170.0, 301.0, 432.0, 564.0, 695.0, 826.0, 957.0, 1088.0, 1220.0, 1351.0, 1482.0, 1809.0, 2136.0, 2463.0, 2790.0, 3117.0 ],
+              "skill" : false
             },
             "skillMasteryLevelRequired" : {
-              "skill" : false,
-              "value" : 16
+              "value" : 16,
+              "skill" : false
             },
             "skillTier" : {
-              "skill" : false,
-              "value" : 4
+              "value" : 4,
+              "skill" : false
             },
             "skillMaxLevel" : {
-              "skill" : false,
-              "value" : 12
+              "value" : 12,
+              "skill" : false
             }
           },
           "buff" : null,
-          "skillDescription" : null
-        }
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Radiant Orb.html",
+          "skillDescription" : null,
+          "skillTag" : "skillLifegiving5n",
+          "modifier" : false
+        },
+        "skill" : true
       }
     },
     "buff" : {
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Radiant Orb.html",
-      "modifier" : false,
-      "skillTag" : "skillLifegiving5n",
-      "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\lifegiving\\skills\\radiantorb_buff.dbr",
       "name" : "Radiant Orb",
       "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
-          "skill" : false,
-          "value" : 15.0
+          "value" : 15.0,
+          "skill" : false
         },
         "cameraShakeDurationSecs" : {
-          "skill" : false,
-          "value" : 0.5
+          "value" : 0.5,
+          "skill" : false
         },
         "skillManaCost" : {
-          "skill" : false,
-          "value" : [ 100.0, 193.0, 287.0, 380.0, 473.0, 567.0, 660.0, 753.0, 847.0, 940.0, 1033.0, 1127.0, 1220.0, 1313.0, 1407.0, 1500.0 ]
+          "value" : [ 100.0, 193.0, 287.0, 380.0, 473.0, 567.0, 660.0, 753.0, 847.0, 940.0, 1033.0, 1127.0, 1220.0, 1313.0, 1407.0, 1500.0 ],
+          "skill" : false
         },
         "skillUltimateLevel" : {
-          "skill" : false,
-          "value" : 16
+          "value" : 16,
+          "skill" : false
         },
         "characterLifeRegenModifier" : {
-          "skill" : false,
-          "value" : 50.0
+          "value" : 50.0,
+          "skill" : false
         },
         "physicalDamageQualifier" : {
-          "skill" : false,
-          "value" : 1
+          "value" : 1,
+          "skill" : false
         },
         "cameraShakeAmplitude" : {
-          "skill" : false,
-          "value" : 0.32
+          "value" : 0.32,
+          "skill" : false
         },
         "damageAbsorption" : {
-          "skill" : false,
-          "value" : [ 170.0, 301.0, 432.0, 564.0, 695.0, 826.0, 957.0, 1088.0, 1220.0, 1351.0, 1482.0, 1809.0, 2136.0, 2463.0, 2790.0, 3117.0 ]
+          "value" : [ 170.0, 301.0, 432.0, 564.0, 695.0, 826.0, 957.0, 1088.0, 1220.0, 1351.0, 1482.0, 1809.0, 2136.0, 2463.0, 2790.0, 3117.0 ],
+          "skill" : false
         },
         "skillMasteryLevelRequired" : {
-          "skill" : false,
-          "value" : 16
+          "value" : 16,
+          "skill" : false
         },
         "skillTier" : {
-          "skill" : false,
-          "value" : 4
+          "value" : 4,
+          "skill" : false
         },
         "skillMaxLevel" : {
-          "skill" : false,
-          "value" : 12
+          "value" : 12,
+          "skill" : false
         }
       },
       "buff" : null,
-      "skillDescription" : null
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Radiant Orb.html",
+      "skillDescription" : null,
+      "skillTag" : "skillLifegiving5n",
+      "modifier" : false
     },
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Radiant Orb.html",
+    "skillDescription" : null,
+    "skillTag" : "skillLifegiving5n",
+    "modifier" : false
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Celerity.html",
-    "modifier" : true,
-    "skillTag" : "skillLifegiving6n",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\lifegiving\\skills\\radiantorb_celerity.dbr",
     "name" : "Celerity",
     "parent" : "Radiant Orb",
     "attributes" : {
       "characterAttackSpeedModifier" : {
-        "skill" : false,
-        "value" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0 ]
+        "value" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0 ],
+        "skill" : false
       },
       "skillManaCost" : {
-        "skill" : false,
-        "value" : [ 20.0, 46.0, 71.0, 97.0, 122.0, 148.0, 173.0, 199.0, 224.0, 250.0 ]
+        "value" : [ 20.0, 46.0, 71.0, 97.0, 122.0, 148.0, 173.0, 199.0, 224.0, 250.0 ],
+        "skill" : false
       },
       "characterSpellCastSpeedModifier" : {
-        "skill" : false,
-        "value" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0 ]
+        "value" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0 ],
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 10
+        "value" : 10,
+        "skill" : false
       },
       "characterDefensiveAbility" : {
-        "skill" : false,
-        "value" : [ 15.0, 30.0, 45.0, 60.0, 75.0, 90.0, 105.0, 120.0, 135.0, 150.0 ]
+        "value" : [ 15.0, 30.0, 45.0, 60.0, 75.0, 90.0, 105.0, 120.0, 135.0, 150.0 ],
+        "skill" : false
       },
       "skillMasteryLevelRequired" : {
-        "skill" : false,
-        "value" : 24
+        "value" : 24,
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 5
+        "value" : 5,
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 6
+        "value" : 6,
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Celerity.html",
+    "skillDescription" : null,
+    "skillTag" : "skillLifegiving6n",
+    "modifier" : true
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Barricade.html",
-    "modifier" : true,
-    "skillTag" : "skillLifegiving31n",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\lifegiving\\skills\\radiantorb_barricade.dbr",
     "name" : "Barricade",
     "parent" : "Celerity",
     "attributes" : {
       "defensivePhysical" : {
-        "skill" : false,
-        "value" : 20.0
+        "value" : 20.0,
+        "skill" : false
       },
       "skillManaCost" : {
-        "skill" : false,
-        "value" : 175.0
+        "value" : 175.0,
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "characterDodgePercent" : {
-        "skill" : false,
-        "value" : 20.0
+        "value" : 20.0,
+        "skill" : false
       },
       "characterDeflectProjectile" : {
-        "skill" : false,
-        "value" : 20.0
+        "value" : 20.0,
+        "skill" : false
       },
       "skillMasteryLevelRequired" : {
-        "skill" : false,
-        "value" : 32
+        "value" : 32,
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 6
+        "value" : 6,
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "characterTotalSpeedModifier" : {
-        "skill" : false,
-        "value" : -25.0
+        "value" : -25.0,
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Barricade.html",
+    "skillDescription" : null,
+    "skillTag" : "skillLifegiving31n",
+    "modifier" : true
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Painkiller.html",
-    "modifier" : false,
-    "skillTag" : "skillLifegiving7n",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\lifegiving\\skills\\radiantorb_painkiller.dbr",
     "name" : "Painkiller",
     "parent" : null,
     "attributes" : {
       "defensiveBleeding" : {
-        "skill" : false,
-        "value" : [ 10.0, 14.0, 18.0, 22.0, 25.0, 29.0, 33.0, 37.0, 41.0, 45.0, 48.0, 52.0, 56.0, 60.0 ]
+        "value" : [ 10.0, 14.0, 18.0, 22.0, 25.0, 29.0, 33.0, 37.0, 41.0, 45.0, 48.0, 52.0, 56.0, 60.0 ],
+        "skill" : false
       },
       "defensivePhysical" : {
-        "skill" : false,
-        "value" : [ 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0 ]
+        "value" : [ 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0 ],
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 14
+        "value" : 14,
+        "skill" : false
       },
       "defensiveAbsorption" : {
-        "skill" : false,
-        "value" : 20.0
+        "value" : 20.0,
+        "skill" : false
       },
       "characterLifeRegen" : {
-        "skill" : false,
-        "value" : [ 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0 ]
+        "value" : [ 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0 ],
+        "skill" : false
       },
       "skillMasteryLevelRequired" : {
-        "skill" : false,
-        "value" : 40
+        "value" : 40,
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 7
+        "value" : 7,
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 10
+        "value" : 10,
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Painkiller.html",
+    "skillDescription" : null,
+    "skillTag" : "skillLifegiving7n",
+    "modifier" : false
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Gift of Life.html",
-    "modifier" : false,
-    "skillTag" : "skillLifegiving1n",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\lifegiving\\skills\\giftoflife.dbr",
     "name" : "Gift of Life",
     "parent" : null,
     "attributes" : {
       "giftoflife" : {
-        "skill" : true,
         "value" : {
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Gift of Life.html",
-          "modifier" : false,
-          "skillTag" : "skillLifegiving1n",
-          "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\lifegiving\\skills\\giftoflife_buff.dbr",
           "name" : "Gift of Life",
           "parent" : null,
           "attributes" : {
             "skillCooldownTime" : {
-              "skill" : false,
-              "value" : 5.0
+              "value" : 5.0,
+              "skill" : false
             },
             "skillLifeBonus" : {
-              "skill" : false,
-              "value" : [ 200.0, 450.0, 700.0, 950.0, 1200.0, 1450.0, 1700.0, 1950.0, 2200.0, 2450.0, 2700.0, 2950.0, 3275.0, 3600.0, 3925.0, 4250.0 ]
+              "value" : [ 200.0, 450.0, 700.0, 950.0, 1200.0, 1450.0, 1700.0, 1950.0, 2200.0, 2450.0, 2700.0, 2950.0, 3275.0, 3600.0, 3925.0, 4250.0 ],
+              "skill" : false
             },
             "skillManaCost" : {
-              "skill" : false,
-              "value" : [ 30.0, 34.0, 38.0, 42.0, 47.0, 52.0, 57.0, 62.0, 68.0, 74.0, 79.0, 85.0, 90.0, 96.0, 102.0, 108.0, 114.0, 122.0, 130.0, 137.0 ]
+              "value" : [ 30.0, 34.0, 38.0, 42.0, 47.0, 52.0, 57.0, 62.0, 68.0, 74.0, 79.0, 85.0, 90.0, 96.0, 102.0, 108.0, 114.0, 122.0, 130.0, 137.0 ],
+              "skill" : false
             },
             "skillUltimateLevel" : {
-              "skill" : false,
-              "value" : 16
+              "value" : 16,
+              "skill" : false
             },
             "skillConnectionSpacing" : {
-              "skill" : false,
-              "value" : 62
+              "value" : 62,
+              "skill" : false
             },
             "cameraShakeAmplitude" : {
-              "skill" : false,
-              "value" : 0.12
+              "value" : 0.12,
+              "skill" : false
             },
             "skillTargetRadius" : {
-              "skill" : false,
-              "value" : 3.0
+              "value" : 3.0,
+              "skill" : false
             },
             "skillMasteryLevelRequired" : {
-              "skill" : false,
-              "value" : 1
+              "value" : 1,
+              "skill" : false
             },
             "skillTier" : {
-              "skill" : false,
-              "value" : 1
+              "value" : 1,
+              "skill" : false
             },
             "skillMaxLevel" : {
-              "skill" : false,
-              "value" : 12
+              "value" : 12,
+              "skill" : false
             }
           },
           "buff" : null,
-          "skillDescription" : null
-        }
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Gift of Life.html",
+          "skillDescription" : null,
+          "skillTag" : "skillLifegiving1n",
+          "modifier" : false
+        },
+        "skill" : true
       }
     },
     "buff" : {
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Gift of Life.html",
-      "modifier" : false,
-      "skillTag" : "skillLifegiving1n",
-      "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\lifegiving\\skills\\giftoflife_buff.dbr",
       "name" : "Gift of Life",
       "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
-          "skill" : false,
-          "value" : 5.0
+          "value" : 5.0,
+          "skill" : false
         },
         "skillLifeBonus" : {
-          "skill" : false,
-          "value" : [ 200.0, 450.0, 700.0, 950.0, 1200.0, 1450.0, 1700.0, 1950.0, 2200.0, 2450.0, 2700.0, 2950.0, 3275.0, 3600.0, 3925.0, 4250.0 ]
+          "value" : [ 200.0, 450.0, 700.0, 950.0, 1200.0, 1450.0, 1700.0, 1950.0, 2200.0, 2450.0, 2700.0, 2950.0, 3275.0, 3600.0, 3925.0, 4250.0 ],
+          "skill" : false
         },
         "skillManaCost" : {
-          "skill" : false,
-          "value" : [ 30.0, 34.0, 38.0, 42.0, 47.0, 52.0, 57.0, 62.0, 68.0, 74.0, 79.0, 85.0, 90.0, 96.0, 102.0, 108.0, 114.0, 122.0, 130.0, 137.0 ]
+          "value" : [ 30.0, 34.0, 38.0, 42.0, 47.0, 52.0, 57.0, 62.0, 68.0, 74.0, 79.0, 85.0, 90.0, 96.0, 102.0, 108.0, 114.0, 122.0, 130.0, 137.0 ],
+          "skill" : false
         },
         "skillUltimateLevel" : {
-          "skill" : false,
-          "value" : 16
+          "value" : 16,
+          "skill" : false
         },
         "skillConnectionSpacing" : {
-          "skill" : false,
-          "value" : 62
+          "value" : 62,
+          "skill" : false
         },
         "cameraShakeAmplitude" : {
-          "skill" : false,
-          "value" : 0.12
+          "value" : 0.12,
+          "skill" : false
         },
         "skillTargetRadius" : {
-          "skill" : false,
-          "value" : 3.0
+          "value" : 3.0,
+          "skill" : false
         },
         "skillMasteryLevelRequired" : {
-          "skill" : false,
-          "value" : 1
+          "value" : 1,
+          "skill" : false
         },
         "skillTier" : {
-          "skill" : false,
-          "value" : 1
+          "value" : 1,
+          "skill" : false
         },
         "skillMaxLevel" : {
-          "skill" : false,
-          "value" : 12
+          "value" : 12,
+          "skill" : false
         }
       },
       "buff" : null,
-      "skillDescription" : null
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Gift of Life.html",
+      "skillDescription" : null,
+      "skillTag" : "skillLifegiving1n",
+      "modifier" : false
     },
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Gift of Life.html",
+    "skillDescription" : null,
+    "skillTag" : "skillLifegiving1n",
+    "modifier" : false
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Torchbearer's Bastion.html",
-    "modifier" : false,
-    "skillTag" : "skillLifegiving25n",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\lifegiving\\skills\\torchbearerbastion.dbr",
     "name" : "Torchbearer's Bastion",
     "parent" : null,
     "attributes" : {
       "offensivePhysicalModifier" : {
-        "skill" : false,
-        "value" : [ 8.0, 11.0, 13.0, 16.0, 19.0, 22.0, 24.0, 27.0, 30.0, 33.0, 35.0, 38.0 ]
+        "value" : [ 8.0, 11.0, 13.0, 16.0, 19.0, 22.0, 24.0, 27.0, 30.0, 33.0, 35.0, 38.0 ],
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 12
+        "value" : 12,
+        "skill" : false
       },
       "Shield" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "defensiveBlockModifier" : {
-        "skill" : false,
-        "value" : [ 2.0, 3.0, 5.0, 6.0, 7.0, 8.0, 10.0, 11.0, 12.0, 13.0, 15.0, 16.0 ]
+        "value" : [ 2.0, 3.0, 5.0, 6.0, 7.0, 8.0, 10.0, 11.0, 12.0, 13.0, 15.0, 16.0 ],
+        "skill" : false
       },
       "skillMasteryLevelRequired" : {
-        "skill" : false,
-        "value" : 4
+        "value" : 4,
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 2
+        "value" : 2,
+        "skill" : false
       },
       "offensiveSlowFireModifier" : {
-        "skill" : false,
-        "value" : [ 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0 ]
+        "value" : [ 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0 ],
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 8
+        "value" : 8,
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Torchbearer's Bastion.html",
+    "skillDescription" : null,
+    "skillTag" : "skillLifegiving25n",
+    "modifier" : false
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Godly Presence.html",
-    "modifier" : false,
-    "skillTag" : "skillLifegiving9n",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\lifegiving\\skills\\godlyavatar.dbr",
     "name" : "Godly Presence",
     "parent" : null,
     "attributes" : {
       "godlyavatar" : {
-        "skill" : true,
         "value" : {
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Godly Presence.html",
-          "modifier" : false,
-          "skillTag" : "skillLifegiving9n",
-          "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\lifegiving\\skills\\godlyavatarbuff.dbr",
           "name" : "Godly Presence",
           "parent" : null,
           "attributes" : {
             "skillCooldownTime" : {
-              "skill" : false,
-              "value" : 3.0
+              "value" : 3.0,
+              "skill" : false
             },
             "skillWeaponTintBlue" : {
-              "skill" : false,
-              "value" : 0.5
+              "value" : 0.5,
+              "skill" : false
             },
             "characterManaLimitReserve" : {
-              "skill" : false,
-              "value" : 100.0
+              "value" : 100.0,
+              "skill" : false
             },
             "skillActiveManaCost" : {
-              "skill" : false,
-              "value" : 1.0
+              "value" : 1.0,
+              "skill" : false
             },
             "skillConnectionSpacing" : {
-              "skill" : false,
-              "value" : 62
+              "value" : 62,
+              "skill" : false
             },
             "cameraShakeAmplitude" : {
-              "skill" : false,
-              "value" : 0.12
+              "value" : 0.12,
+              "skill" : false
             },
             "characterDexterity" : {
-              "skill" : false,
-              "value" : [ 3.0, 5.0, 8.0, 10.0, 13.0, 15.0, 18.0, 20.0, 23.0, 25.0, 28.0, 30.0, 33.0, 35.0, 38.0, 41.0, 45.0, 49.0, 53.0 ]
+              "value" : [ 3.0, 5.0, 8.0, 10.0, 13.0, 15.0, 18.0, 20.0, 23.0, 25.0, 28.0, 30.0, 33.0, 35.0, 38.0, 41.0, 45.0, 49.0, 53.0 ],
+              "skill" : false
             },
             "characterStrength" : {
-              "skill" : false,
-              "value" : [ 3.0, 5.0, 8.0, 10.0, 13.0, 15.0, 18.0, 20.0, 23.0, 25.0, 28.0, 30.0, 33.0, 35.0, 38.0, 41.0, 45.0, 49.0, 53.0 ]
+              "value" : [ 3.0, 5.0, 8.0, 10.0, 13.0, 15.0, 18.0, 20.0, 23.0, 25.0, 28.0, 30.0, 33.0, 35.0, 38.0, 41.0, 45.0, 49.0, 53.0 ],
+              "skill" : false
             },
             "skillMaxLevel" : {
-              "skill" : false,
-              "value" : 15
+              "value" : 15,
+              "skill" : false
             },
             "characterLifeModifier" : {
-              "skill" : false,
-              "value" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 21.0, 22.0, 23.0, 24.0, 25.0 ]
+              "value" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 21.0, 22.0, 23.0, 24.0, 25.0 ],
+              "skill" : false
             },
             "skillUltimateLevel" : {
-              "skill" : false,
-              "value" : 19
+              "value" : 19,
+              "skill" : false
             },
             "skillWeaponTintGreen" : {
-              "skill" : false,
-              "value" : 0.4
+              "value" : 0.4,
+              "skill" : false
             },
             "notDispelable" : {
-              "skill" : false,
-              "value" : 1
+              "value" : 1,
+              "skill" : false
             },
             "characterIntelligence" : {
-              "skill" : false,
-              "value" : [ 3.0, 5.0, 8.0, 10.0, 13.0, 15.0, 18.0, 20.0, 23.0, 25.0, 28.0, 30.0, 33.0, 35.0, 38.0, 41.0, 45.0, 49.0, 53.0 ]
+              "value" : [ 3.0, 5.0, 8.0, 10.0, 13.0, 15.0, 18.0, 20.0, 23.0, 25.0, 28.0, 30.0, 33.0, 35.0, 38.0, 41.0, 45.0, 49.0, 53.0 ],
+              "skill" : false
             },
             "skillTargetRadius" : {
-              "skill" : false,
-              "value" : 14.0
+              "value" : 14.0,
+              "skill" : false
             },
             "skillMasteryLevelRequired" : {
-              "skill" : false,
-              "value" : 4
+              "value" : 4,
+              "skill" : false
             },
             "characterMana" : {
-              "skill" : false,
-              "value" : [ 10.0, 22.0, 34.0, 46.0, 58.0, 70.0, 82.0, 94.0, 106.0, 118.0, 130.0, 142.0, 154.0, 166.0, 178.0, 196.0, 214.0, 232.0, 250.0 ]
+              "value" : [ 10.0, 22.0, 34.0, 46.0, 58.0, 70.0, 82.0, 94.0, 106.0, 118.0, 130.0, 142.0, 154.0, 166.0, 178.0, 196.0, 214.0, 232.0, 250.0 ],
+              "skill" : false
             },
             "skillTier" : {
-              "skill" : false,
-              "value" : 2
+              "value" : 2,
+              "skill" : false
             }
           },
           "buff" : null,
-          "skillDescription" : null
-        }
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Godly Presence.html",
+          "skillDescription" : null,
+          "skillTag" : "skillLifegiving9n",
+          "modifier" : false
+        },
+        "skill" : true
       }
     },
     "buff" : {
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Godly Presence.html",
-      "modifier" : false,
-      "skillTag" : "skillLifegiving9n",
-      "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\lifegiving\\skills\\godlyavatarbuff.dbr",
       "name" : "Godly Presence",
       "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
-          "skill" : false,
-          "value" : 3.0
+          "value" : 3.0,
+          "skill" : false
         },
         "skillWeaponTintBlue" : {
-          "skill" : false,
-          "value" : 0.5
+          "value" : 0.5,
+          "skill" : false
         },
         "characterManaLimitReserve" : {
-          "skill" : false,
-          "value" : 100.0
+          "value" : 100.0,
+          "skill" : false
         },
         "skillActiveManaCost" : {
-          "skill" : false,
-          "value" : 1.0
+          "value" : 1.0,
+          "skill" : false
         },
         "skillConnectionSpacing" : {
-          "skill" : false,
-          "value" : 62
+          "value" : 62,
+          "skill" : false
         },
         "cameraShakeAmplitude" : {
-          "skill" : false,
-          "value" : 0.12
+          "value" : 0.12,
+          "skill" : false
         },
         "characterDexterity" : {
-          "skill" : false,
-          "value" : [ 3.0, 5.0, 8.0, 10.0, 13.0, 15.0, 18.0, 20.0, 23.0, 25.0, 28.0, 30.0, 33.0, 35.0, 38.0, 41.0, 45.0, 49.0, 53.0 ]
+          "value" : [ 3.0, 5.0, 8.0, 10.0, 13.0, 15.0, 18.0, 20.0, 23.0, 25.0, 28.0, 30.0, 33.0, 35.0, 38.0, 41.0, 45.0, 49.0, 53.0 ],
+          "skill" : false
         },
         "characterStrength" : {
-          "skill" : false,
-          "value" : [ 3.0, 5.0, 8.0, 10.0, 13.0, 15.0, 18.0, 20.0, 23.0, 25.0, 28.0, 30.0, 33.0, 35.0, 38.0, 41.0, 45.0, 49.0, 53.0 ]
+          "value" : [ 3.0, 5.0, 8.0, 10.0, 13.0, 15.0, 18.0, 20.0, 23.0, 25.0, 28.0, 30.0, 33.0, 35.0, 38.0, 41.0, 45.0, 49.0, 53.0 ],
+          "skill" : false
         },
         "skillMaxLevel" : {
-          "skill" : false,
-          "value" : 15
+          "value" : 15,
+          "skill" : false
         },
         "characterLifeModifier" : {
-          "skill" : false,
-          "value" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 21.0, 22.0, 23.0, 24.0, 25.0 ]
+          "value" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 21.0, 22.0, 23.0, 24.0, 25.0 ],
+          "skill" : false
         },
         "skillUltimateLevel" : {
-          "skill" : false,
-          "value" : 19
+          "value" : 19,
+          "skill" : false
         },
         "skillWeaponTintGreen" : {
-          "skill" : false,
-          "value" : 0.4
+          "value" : 0.4,
+          "skill" : false
         },
         "notDispelable" : {
-          "skill" : false,
-          "value" : 1
+          "value" : 1,
+          "skill" : false
         },
         "characterIntelligence" : {
-          "skill" : false,
-          "value" : [ 3.0, 5.0, 8.0, 10.0, 13.0, 15.0, 18.0, 20.0, 23.0, 25.0, 28.0, 30.0, 33.0, 35.0, 38.0, 41.0, 45.0, 49.0, 53.0 ]
+          "value" : [ 3.0, 5.0, 8.0, 10.0, 13.0, 15.0, 18.0, 20.0, 23.0, 25.0, 28.0, 30.0, 33.0, 35.0, 38.0, 41.0, 45.0, 49.0, 53.0 ],
+          "skill" : false
         },
         "skillTargetRadius" : {
-          "skill" : false,
-          "value" : 14.0
+          "value" : 14.0,
+          "skill" : false
         },
         "skillMasteryLevelRequired" : {
-          "skill" : false,
-          "value" : 4
+          "value" : 4,
+          "skill" : false
         },
         "characterMana" : {
-          "skill" : false,
-          "value" : [ 10.0, 22.0, 34.0, 46.0, 58.0, 70.0, 82.0, 94.0, 106.0, 118.0, 130.0, 142.0, 154.0, 166.0, 178.0, 196.0, 214.0, 232.0, 250.0 ]
+          "value" : [ 10.0, 22.0, 34.0, 46.0, 58.0, 70.0, 82.0, 94.0, 106.0, 118.0, 130.0, 142.0, 154.0, 166.0, 178.0, 196.0, 214.0, 232.0, 250.0 ],
+          "skill" : false
         },
         "skillTier" : {
-          "skill" : false,
-          "value" : 2
+          "value" : 2,
+          "skill" : false
         }
       },
       "buff" : null,
-      "skillDescription" : null
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Godly Presence.html",
+      "skillDescription" : null,
+      "skillTag" : "skillLifegiving9n",
+      "modifier" : false
     },
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Godly Presence.html",
+    "skillDescription" : null,
+    "skillTag" : "skillLifegiving9n",
+    "modifier" : false
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Celestial Armory.html",
-    "modifier" : true,
-    "skillTag" : "skillLifegiving11n",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\lifegiving\\skills\\godlyavatar_celestialarmory.dbr",
     "name" : "Celestial Armory",
     "parent" : "Godly Presence",
     "attributes" : {
       "offensiveSlowFireDurationMin" : {
-        "skill" : false,
-        "value" : 3.0
+        "value" : 3.0,
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 12
+        "value" : 12,
+        "skill" : false
       },
       "characterManaLimitReserve" : {
-        "skill" : false,
-        "value" : 50.0
+        "value" : 50.0,
+        "skill" : false
       },
       "offensiveFireModifier" : {
-        "skill" : false,
-        "value" : [ 10.0, 14.0, 17.0, 20.0, 23.0, 26.0, 29.0, 32.0, 36.0, 39.0, 42.0, 45.0 ]
+        "value" : [ 10.0, 14.0, 17.0, 20.0, 23.0, 26.0, 29.0, 32.0, 36.0, 39.0, 42.0, 45.0 ],
+        "skill" : false
       },
       "racialBonusPercentDamage" : {
-        "skill" : false,
-        "value" : [ 6.0, 9.0, 13.0, 16.0, 19.0, 21.0, 24.0, 28.0, 30.0, 35.0, 38.0, 40.0 ]
+        "value" : [ 6.0, 9.0, 13.0, 16.0, 19.0, 21.0, 24.0, 28.0, 30.0, 35.0, 38.0, 40.0 ],
+        "skill" : false
       },
       "offensiveSlowFireMin" : {
-        "skill" : false,
-        "value" : [ 6.0, 9.0, 11.0, 14.0, 16.0, 19.0, 21.0, 24.0, 26.0, 29.0, 31.0, 34.0 ]
+        "value" : [ 6.0, 9.0, 11.0, 14.0, 16.0, 19.0, 21.0, 24.0, 26.0, 29.0, 31.0, 34.0 ],
+        "skill" : false
       },
       "offensiveFireMin" : {
-        "skill" : false,
-        "value" : [ 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0 ]
+        "value" : [ 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0 ],
+        "skill" : false
       },
       "skillMasteryLevelRequired" : {
-        "skill" : false,
-        "value" : 16
+        "value" : 16,
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 4
+        "value" : 4,
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 8
+        "value" : 8,
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Celestial Armory.html",
+    "skillDescription" : null,
+    "skillTag" : "skillLifegiving11n",
+    "modifier" : true
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Depraved Act.html",
-    "modifier" : true,
-    "skillTag" : "skillLifegiving28n",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\lifegiving\\skills\\godlyavatar_depravedact.dbr",
     "name" : "Depraved Act",
     "parent" : "Celestial Armory",
     "attributes" : {
       "characterLifeModifier" : {
-        "skill" : false,
-        "value" : -15.0
+        "value" : -15.0,
+        "skill" : false
       },
       "characterManaModifier" : {
-        "skill" : false,
-        "value" : 30.0
+        "value" : 30.0,
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "skillMasteryLevelRequired" : {
-        "skill" : false,
-        "value" : 10
+        "value" : 10,
+        "skill" : false
       },
       "offensiveLifeLeechMin" : {
-        "skill" : false,
-        "value" : 8.0
+        "value" : 8.0,
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 3
+        "value" : 3,
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Depraved Act.html",
+    "skillDescription" : null,
+    "skillTag" : "skillLifegiving28n",
+    "modifier" : true
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Guilt.html",
-    "modifier" : false,
-    "skillTag" : "skillLifegiving22n",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\lifegiving\\skills\\guilt.dbr",
     "name" : "Guilt",
     "parent" : null,
     "attributes" : {
       "retaliationLightningModifier" : {
-        "skill" : false,
-        "value" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ]
+        "value" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ],
+        "skill" : false
       },
       "retaliationSlowBleedingModifier" : {
-        "skill" : false,
-        "value" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ]
+        "value" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ],
+        "skill" : false
       },
       "retaliationPierceModifier" : {
-        "skill" : false,
-        "value" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ]
+        "value" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ],
+        "skill" : false
       },
       "retaliationSlowPoisonModifier" : {
-        "skill" : false,
-        "value" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ]
+        "value" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ],
+        "skill" : false
       },
       "retaliationSlowLifeModifier" : {
-        "skill" : false,
-        "value" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ]
+        "value" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ],
+        "skill" : false
       },
       "retaliationSlowFireModifier" : {
-        "skill" : false,
-        "value" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ]
+        "value" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ],
+        "skill" : false
       },
       "retaliationSlowColdModifier" : {
-        "skill" : false,
-        "value" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ]
+        "value" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ],
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 8
+        "value" : 8,
+        "skill" : false
       },
       "retaliationPhysicalModifier" : {
-        "skill" : false,
-        "value" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ]
+        "value" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ],
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 12
+        "value" : 12,
+        "skill" : false
       },
       "retaliationColdModifier" : {
-        "skill" : false,
-        "value" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ]
+        "value" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ],
+        "skill" : false
       },
       "retaliationSlowLightningModifier" : {
-        "skill" : false,
-        "value" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ]
+        "value" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ],
+        "skill" : false
       },
       "skillMasteryLevelRequired" : {
-        "skill" : false,
-        "value" : 10
+        "value" : 10,
+        "skill" : false
       },
       "retaliationPoisonModifier" : {
-        "skill" : false,
-        "value" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ]
+        "value" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ],
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 3
+        "value" : 3,
+        "skill" : false
       },
       "retaliationFireModifier" : {
-        "skill" : false,
-        "value" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ]
+        "value" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ],
+        "skill" : false
       },
       "retaliationLifeModifier" : {
-        "skill" : false,
-        "value" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ]
+        "value" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ],
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Guilt.html",
+    "skillDescription" : null,
+    "skillTag" : "skillLifegiving22n",
+    "modifier" : false
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Screen of Light.html",
-    "modifier" : false,
-    "skillTag" : "skillLifegiving14n",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\lifegiving\\skills\\light.dbr",
     "name" : "Screen of Light",
     "parent" : null,
     "attributes" : {
       "light" : {
-        "skill" : true,
         "value" : {
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Screen of Light.html",
-          "modifier" : false,
-          "skillTag" : "skillLifegiving14n",
-          "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\lifegiving\\skills\\lightbuff.dbr",
           "name" : "Screen of Light",
           "parent" : null,
           "attributes" : {
             "offensiveSlowFireDurationMin" : {
-              "skill" : false,
-              "value" : 1.0
+              "value" : 1.0,
+              "skill" : false
             },
             "contagionLimit" : {
-              "skill" : false,
-              "value" : 4
+              "value" : 4,
+              "skill" : false
             },
             "skillActiveDuration" : {
-              "skill" : false,
-              "value" : 6.0
+              "value" : 6.0,
+              "skill" : false
             },
             "skillCooldownTime" : {
-              "skill" : false,
-              "value" : 10.0
+              "value" : 10.0,
+              "skill" : false
             },
             "skillManaCost" : {
-              "skill" : false,
-              "value" : [ 63.21, 65.982, 67.83, 70.602, 72.45, 75.222, 77.07, 79.842, 81.69, 84.462, 86.31 ]
+              "value" : [ 63.21, 65.982, 67.83, 70.602, 72.45, 75.222, 77.07, 79.842, 81.69, 84.462, 86.31 ],
+              "skill" : false
             },
             "skillConnectionSpacing" : {
-              "skill" : false,
-              "value" : 62
+              "value" : 62,
+              "skill" : false
             },
             "cameraShakeAmplitude" : {
-              "skill" : false,
-              "value" : 0.12
+              "value" : 0.12,
+              "skill" : false
             },
             "contagionInterval" : {
-              "skill" : false,
-              "value" : 0.15
+              "value" : 0.15,
+              "skill" : false
             },
             "offensiveSlowFireMin" : {
-              "skill" : false,
-              "value" : [ 7.0, 9.0, 11.0, 14.0, 16.0, 18.0, 20.0, 22.0, 25.0, 27.0, 29.0 ]
+              "value" : [ 7.0, 9.0, 11.0, 14.0, 16.0, 18.0, 20.0, 22.0, 25.0, 27.0, 29.0 ],
+              "skill" : false
             },
             "skillMaxLevel" : {
-              "skill" : false,
-              "value" : 7
+              "value" : 7,
+              "skill" : false
             },
             "offensiveTotalResistanceReductionAbsoluteDurationMin" : {
-              "skill" : false,
-              "value" : 1.0
+              "value" : 1.0,
+              "skill" : false
             },
             "offensiveTotalDamageReductionAbsoluteMin" : {
-              "skill" : false,
-              "value" : [ 8.0, 14.0, 20.0, 26.0, 32.0, 38.0, 44.0, 50.0, 58.0, 62.0, 70.0 ]
+              "value" : [ 8.0, 14.0, 20.0, 26.0, 32.0, 38.0, 44.0, 50.0, 58.0, 62.0, 70.0 ],
+              "skill" : false
             },
             "debufSkill" : {
-              "skill" : false,
-              "value" : 1
+              "value" : 1,
+              "skill" : false
             },
             "contagionMaxSpread" : {
-              "skill" : false,
-              "value" : 99
+              "value" : 99,
+              "skill" : false
             },
             "skillUltimateLevel" : {
-              "skill" : false,
-              "value" : 11
+              "value" : 11,
+              "skill" : false
             },
             "characterLifeRegenModifier" : {
-              "skill" : false,
-              "value" : [ -25.0, -30.0, -35.0, -40.0, -45.0, -50.0, -55.0, -60.0, -65.0, -70.0, -75.0 ]
+              "value" : [ -25.0, -30.0, -35.0, -40.0, -45.0, -50.0, -55.0, -60.0, -65.0, -70.0, -75.0 ],
+              "skill" : false
             },
             "offensiveTotalDamageReductionAbsoluteDurationMin" : {
-              "skill" : false,
-              "value" : 1.0
+              "value" : 1.0,
+              "skill" : false
             },
             "offensiveTotalResistanceReductionAbsoluteMin" : {
-              "skill" : false,
-              "value" : [ 6.0, 7.0, 8.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 18.0 ]
+              "value" : [ 6.0, 7.0, 8.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 18.0 ],
+              "skill" : false
             },
             "contagionRadius" : {
-              "skill" : false,
-              "value" : 4.0
+              "value" : 4.0,
+              "skill" : false
             },
             "skillMasteryLevelRequired" : {
-              "skill" : false,
-              "value" : 10
+              "value" : 10,
+              "skill" : false
             },
             "skillTier" : {
-              "skill" : false,
-              "value" : 3
+              "value" : 3,
+              "skill" : false
             }
           },
           "buff" : null,
-          "skillDescription" : null
-        }
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Screen of Light.html",
+          "skillDescription" : null,
+          "skillTag" : "skillLifegiving14n",
+          "modifier" : false
+        },
+        "skill" : true
       }
     },
     "buff" : {
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Screen of Light.html",
-      "modifier" : false,
-      "skillTag" : "skillLifegiving14n",
-      "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\lifegiving\\skills\\lightbuff.dbr",
       "name" : "Screen of Light",
       "parent" : null,
       "attributes" : {
         "offensiveSlowFireDurationMin" : {
-          "skill" : false,
-          "value" : 1.0
+          "value" : 1.0,
+          "skill" : false
         },
         "contagionLimit" : {
-          "skill" : false,
-          "value" : 4
+          "value" : 4,
+          "skill" : false
         },
         "skillActiveDuration" : {
-          "skill" : false,
-          "value" : 6.0
+          "value" : 6.0,
+          "skill" : false
         },
         "skillCooldownTime" : {
-          "skill" : false,
-          "value" : 10.0
+          "value" : 10.0,
+          "skill" : false
         },
         "skillManaCost" : {
-          "skill" : false,
-          "value" : [ 63.21, 65.982, 67.83, 70.602, 72.45, 75.222, 77.07, 79.842, 81.69, 84.462, 86.31 ]
+          "value" : [ 63.21, 65.982, 67.83, 70.602, 72.45, 75.222, 77.07, 79.842, 81.69, 84.462, 86.31 ],
+          "skill" : false
         },
         "skillConnectionSpacing" : {
-          "skill" : false,
-          "value" : 62
+          "value" : 62,
+          "skill" : false
         },
         "cameraShakeAmplitude" : {
-          "skill" : false,
-          "value" : 0.12
+          "value" : 0.12,
+          "skill" : false
         },
         "contagionInterval" : {
-          "skill" : false,
-          "value" : 0.15
+          "value" : 0.15,
+          "skill" : false
         },
         "offensiveSlowFireMin" : {
-          "skill" : false,
-          "value" : [ 7.0, 9.0, 11.0, 14.0, 16.0, 18.0, 20.0, 22.0, 25.0, 27.0, 29.0 ]
+          "value" : [ 7.0, 9.0, 11.0, 14.0, 16.0, 18.0, 20.0, 22.0, 25.0, 27.0, 29.0 ],
+          "skill" : false
         },
         "skillMaxLevel" : {
-          "skill" : false,
-          "value" : 7
+          "value" : 7,
+          "skill" : false
         },
         "offensiveTotalResistanceReductionAbsoluteDurationMin" : {
-          "skill" : false,
-          "value" : 1.0
+          "value" : 1.0,
+          "skill" : false
         },
         "offensiveTotalDamageReductionAbsoluteMin" : {
-          "skill" : false,
-          "value" : [ 8.0, 14.0, 20.0, 26.0, 32.0, 38.0, 44.0, 50.0, 58.0, 62.0, 70.0 ]
+          "value" : [ 8.0, 14.0, 20.0, 26.0, 32.0, 38.0, 44.0, 50.0, 58.0, 62.0, 70.0 ],
+          "skill" : false
         },
         "debufSkill" : {
-          "skill" : false,
-          "value" : 1
+          "value" : 1,
+          "skill" : false
         },
         "contagionMaxSpread" : {
-          "skill" : false,
-          "value" : 99
+          "value" : 99,
+          "skill" : false
         },
         "skillUltimateLevel" : {
-          "skill" : false,
-          "value" : 11
+          "value" : 11,
+          "skill" : false
         },
         "characterLifeRegenModifier" : {
-          "skill" : false,
-          "value" : [ -25.0, -30.0, -35.0, -40.0, -45.0, -50.0, -55.0, -60.0, -65.0, -70.0, -75.0 ]
+          "value" : [ -25.0, -30.0, -35.0, -40.0, -45.0, -50.0, -55.0, -60.0, -65.0, -70.0, -75.0 ],
+          "skill" : false
         },
         "offensiveTotalDamageReductionAbsoluteDurationMin" : {
-          "skill" : false,
-          "value" : 1.0
+          "value" : 1.0,
+          "skill" : false
         },
         "offensiveTotalResistanceReductionAbsoluteMin" : {
-          "skill" : false,
-          "value" : [ 6.0, 7.0, 8.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 18.0 ]
+          "value" : [ 6.0, 7.0, 8.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 18.0 ],
+          "skill" : false
         },
         "contagionRadius" : {
-          "skill" : false,
-          "value" : 4.0
+          "value" : 4.0,
+          "skill" : false
         },
         "skillMasteryLevelRequired" : {
-          "skill" : false,
-          "value" : 10
+          "value" : 10,
+          "skill" : false
         },
         "skillTier" : {
-          "skill" : false,
-          "value" : 3
+          "value" : 3,
+          "skill" : false
         }
       },
       "buff" : null,
-      "skillDescription" : null
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Screen of Light.html",
+      "skillDescription" : null,
+      "skillTag" : "skillLifegiving14n",
+      "modifier" : false
     },
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Screen of Light.html",
+    "skillDescription" : null,
+    "skillTag" : "skillLifegiving14n",
+    "modifier" : false
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Numbing Magic.html",
-    "modifier" : true,
-    "skillTag" : "skillLifegiving15n",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\lifegiving\\skills\\light_numbingmagic.dbr",
     "name" : "Numbing Magic",
     "parent" : "Screen of Light",
     "attributes" : {
       "offensiveFumbleDurationMin" : {
-        "skill" : false,
-        "value" : 1.0
+        "value" : 1.0,
+        "skill" : false
       },
       "offensiveConfusionMin" : {
-        "skill" : false,
-        "value" : 1.0
+        "value" : 1.0,
+        "skill" : false
       },
       "offensiveProjectileFumbleDurationMin" : {
-        "skill" : false,
-        "value" : 1.0
+        "value" : 1.0,
+        "skill" : false
       },
       "skillManaCost" : {
-        "skill" : false,
-        "value" : [ 5.0, 8.0, 11.0, 14.0, 17.0, 20.0, 23.0, 26.0, 29.0, 32.0, 35.0, 38.0 ]
+        "value" : [ 5.0, 8.0, 11.0, 14.0, 17.0, 20.0, 23.0, 26.0, 29.0, 32.0, 35.0, 38.0 ],
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 12
+        "value" : 12,
+        "skill" : false
       },
       "offensiveFumbleMin" : {
-        "skill" : false,
-        "value" : [ 12.0, 15.0, 17.0, 20.0, 22.0, 25.0, 27.0, 30.0, 32.0, 35.0, 37.0, 40.0 ]
+        "value" : [ 12.0, 15.0, 17.0, 20.0, 22.0, 25.0, 27.0, 30.0, 32.0, 35.0, 37.0, 40.0 ],
+        "skill" : false
       },
       "offensiveProjectileFumbleMin" : {
-        "skill" : false,
-        "value" : [ 12.0, 15.0, 17.0, 20.0, 22.0, 25.0, 27.0, 30.0, 32.0, 35.0, 37.0, 40.0 ]
+        "value" : [ 12.0, 15.0, 17.0, 20.0, 22.0, 25.0, 27.0, 30.0, 32.0, 35.0, 37.0, 40.0 ],
+        "skill" : false
       },
       "offensiveDisruptionMin" : {
-        "skill" : false,
-        "value" : [ 1.0, 1.2, 1.4, 1.6, 1.8, 2.0, 2.2, 2.4, 2.6, 2.8, 3.0, 3.2 ]
+        "value" : [ 1.0, 1.2, 1.4, 1.6, 1.8, 2.0, 2.2, 2.4, 2.6, 2.8, 3.0, 3.2 ],
+        "skill" : false
       },
       "skillMasteryLevelRequired" : {
-        "skill" : false,
-        "value" : 16
+        "value" : 16,
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 4
+        "value" : 4,
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 8
+        "value" : 8,
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Numbing Magic.html",
+    "skillDescription" : null,
+    "skillTag" : "skillLifegiving15n",
+    "modifier" : true
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Crystal Balls.html",
-    "modifier" : false,
-    "skillTag" : "skillLifegiving19n",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\lifegiving\\skills\\crystalballs.dbr",
     "name" : "Crystal Balls",
     "parent" : null,
     "attributes" : {
       "offensiveSlowFireDurationMin" : {
-        "skill" : false,
-        "value" : 3.0
+        "value" : 3.0,
+        "skill" : false
       },
       "projectileLaunchNumber" : {
-        "skill" : false,
-        "value" : [ 4.0, 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 7.0 ]
+        "value" : [ 4.0, 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 7.0 ],
+        "skill" : false
       },
       "skillCooldownTime" : {
-        "skill" : false,
-        "value" : 8.0
+        "value" : 8.0,
+        "skill" : false
       },
       "skillManaCost" : {
-        "skill" : false,
-        "value" : [ 60.0, 63.0, 66.0, 69.0, 72.0, 75.0, 78.0, 81.0, 84.0, 87.0, 90.0, 93.0, 96.0, 99.0, 102.0, 105.0 ]
+        "value" : [ 60.0, 63.0, 66.0, 69.0, 72.0, 75.0, 78.0, 81.0, 84.0, 87.0, 90.0, 93.0, 96.0, 99.0, 102.0, 105.0 ],
+        "skill" : false
       },
       "projectileExplosionRadius" : {
-        "skill" : false,
-        "value" : 0.5
+        "value" : 0.5,
+        "skill" : false
       },
       "skillConnectionSpacing" : {
-        "skill" : false,
-        "value" : 62
+        "value" : 62,
+        "skill" : false
       },
       "cameraShakeAmplitude" : {
-        "skill" : false,
-        "value" : 0.12
+        "value" : 0.12,
+        "skill" : false
       },
       "offensiveSlowFireMin" : {
-        "skill" : false,
-        "value" : [ 10.0, 14.0, 17.0, 21.0, 24.0, 28.0, 32.0, 35.0, 39.0, 42.0, 46.0, 50.0, 53.0, 57.0, 60.0, 64.0 ]
+        "value" : [ 10.0, 14.0, 17.0, 21.0, 24.0, 28.0, 32.0, 35.0, 39.0, 42.0, 46.0, 50.0, 53.0, 57.0, 60.0, 64.0 ],
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 12
+        "value" : 12,
+        "skill" : false
       },
       "offensiveElementalMin" : {
-        "skill" : false,
-        "value" : [ 12.0, 21.0, 29.0, 38.0, 46.0, 55.0, 63.0, 72.0, 80.0, 89.0, 97.0, 106.0, 114.0, 123.0, 131.0, 140.0 ]
+        "value" : [ 12.0, 21.0, 29.0, 38.0, 46.0, 55.0, 63.0, 72.0, 80.0, 89.0, 97.0, 106.0, 114.0, 123.0, 131.0, 140.0 ],
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 16
+        "value" : 16,
+        "skill" : false
       },
       "projectileLaunchRotation" : {
-        "skill" : false,
-        "value" : 100.0
+        "value" : 100.0,
+        "skill" : false
       },
       "offensiveFireMin" : {
-        "skill" : false,
-        "value" : [ 12.0, 21.0, 29.0, 38.0, 46.0, 55.0, 63.0, 72.0, 80.0, 89.0, 97.0, 106.0, 114.0, 123.0, 131.0, 140.0 ]
+        "value" : [ 12.0, 21.0, 29.0, 38.0, 46.0, 55.0, 63.0, 72.0, 80.0, 89.0, 97.0, 106.0, 114.0, 123.0, 131.0, 140.0 ],
+        "skill" : false
       },
       "skillMasteryLevelRequired" : {
-        "skill" : false,
-        "value" : 4
+        "value" : 4,
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 2
+        "value" : 2,
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Crystal Balls.html",
+    "skillDescription" : null,
+    "skillTag" : "skillLifegiving19n",
+    "modifier" : false
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Skyward Shock.html",
-    "modifier" : true,
-    "skillTag" : "skillLifegiving20n",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\lifegiving\\skills\\crystalballs_skywardmagic.dbr",
     "name" : "Skyward Shock",
     "parent" : "Crystal Balls",
     "attributes" : {
       "skillManaCost" : {
-        "skill" : false,
-        "value" : [ 3.0, 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0 ]
+        "value" : [ 3.0, 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0 ],
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 14
+        "value" : 14,
+        "skill" : false
       },
       "offensiveDisruptionMin" : {
-        "skill" : false,
-        "value" : [ 1.0, 1.4, 1.8, 2.2, 2.5, 2.9, 3.3, 3.7, 4.1, 4.5, 4.8, 5.2, 5.6, 6.0 ]
+        "value" : [ 1.0, 1.4, 1.8, 2.2, 2.5, 2.9, 3.3, 3.7, 4.1, 4.5, 4.8, 5.2, 5.6, 6.0 ],
+        "skill" : false
       },
       "skillMasteryLevelRequired" : {
-        "skill" : false,
-        "value" : 10
+        "value" : 10,
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 3
+        "value" : 3,
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 10
+        "value" : 10,
+        "skill" : false
       },
       "offensiveManaBurnDamageRatio" : {
-        "skill" : false,
-        "value" : [ 25.0, 38.0, 52.0, 65.0, 79.0, 92.0, 106.0, 119.0, 133.0, 146.0, 160.0, 173.0, 187.0, 200.0 ]
+        "value" : [ 25.0, 38.0, 52.0, 65.0, 79.0, 92.0, 106.0, 119.0, 133.0, 146.0, 160.0, 173.0, 187.0, 200.0 ],
+        "skill" : false
       },
       "offensiveManaBurnDrainMin" : {
-        "skill" : false,
-        "value" : [ 10.0, 12.0, 13.0, 15.0, 16.0, 18.0, 19.0, 21.0, 22.0, 24.0, 25.0, 27.0, 28.0, 30.0 ]
+        "value" : [ 10.0, 12.0, 13.0, 15.0, 16.0, 18.0, 19.0, 21.0, 22.0, 24.0, 25.0, 27.0, 28.0, 30.0 ],
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Skyward Shock.html",
+    "skillDescription" : null,
+    "skillTag" : "skillLifegiving20n",
+    "modifier" : true
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Diamond Rage.html",
-    "modifier" : true,
-    "skillTag" : "skillLifegiving21n",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\lifegiving\\skills\\crystalballs_diamondrage.dbr",
     "name" : "Diamond Rage",
     "parent" : "Skyward Shock",
     "attributes" : {
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 12
+        "value" : 12,
+        "skill" : false
       },
       "skillCooldownReduction" : {
-        "skill" : false,
-        "value" : [ 5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0 ]
+        "value" : [ 5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0 ],
+        "skill" : false
       },
       "skillMasteryLevelRequired" : {
-        "skill" : false,
-        "value" : 24
+        "value" : 24,
+        "skill" : false
       },
       "skillManaCostReduction" : {
-        "skill" : false,
-        "value" : [ 5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0 ]
+        "value" : [ 5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0 ],
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 5
+        "value" : 5,
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 8
+        "value" : 8,
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Diamond Rage.html",
+    "skillDescription" : null,
+    "skillTag" : "skillLifegiving21n",
+    "modifier" : true
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Angelic Altar.html",
-    "modifier" : false,
-    "skillTag" : "skillLifegiving16n",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\lifegiving\\skills\\angelicaltar.dbr",
     "name" : "Angelic Altar",
     "parent" : null,
     "attributes" : {
       "skillCooldownTime" : {
-        "skill" : false,
-        "value" : 90.0
+        "value" : 90.0,
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 14
+        "value" : 14,
+        "skill" : false
       },
       "skillManaCost" : {
-        "skill" : false,
-        "value" : [ 75.0, 79.0, 83.0, 87.0, 91.0, 95.0, 99.0, 105.0, 110.0, 115.0, 120.0, 125.0, 130.0, 137.0 ]
+        "value" : [ 75.0, 79.0, 83.0, 87.0, 91.0, 95.0, 99.0, 105.0, 110.0, 115.0, 120.0, 125.0, 130.0, 137.0 ],
+        "skill" : false
       },
       "spawnObjectsTimeToLive" : {
-        "skill" : false,
-        "value" : 30.0
+        "value" : 30.0,
+        "skill" : false
       },
       "petLimit" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "cameraShakeAmplitude" : {
-        "skill" : false,
-        "value" : 0.12
+        "value" : 0.12,
+        "skill" : false
       },
       "skillConnectionSpacing" : {
-        "skill" : false,
-        "value" : 62
+        "value" : 62,
+        "skill" : false
       },
       "skillMasteryLevelRequired" : {
-        "skill" : false,
-        "value" : 24
+        "value" : 24,
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 5
+        "value" : 5,
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 10
+        "value" : 10,
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Angelic Altar.html",
+    "skillDescription" : null,
+    "skillTag" : "skillLifegiving16n",
+    "modifier" : false
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Fury of the Skies.html",
-    "modifier" : false,
-    "skillTag" : "skillLifegiving17n",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\lifegiving\\skills\\angelicaltar_petmodifier_furyoftheskies.dbr",
     "name" : "Fury of the Skies",
     "parent" : null,
     "attributes" : {
       "furyoftheskies" : {
-        "skill" : true,
         "value" : {
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Fury of the Skies.html",
-          "modifier" : false,
-          "skillTag" : "skillLifegiving17n",
-          "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\lifegiving\\skills\\pet\\angelicaltar_chainlightning.dbr",
           "name" : "Fury of the Skies",
           "parent" : null,
           "attributes" : {
             "skillCooldownTime" : {
-              "skill" : false,
-              "value" : 4.0
+              "value" : 4.0,
+              "skill" : false
             },
             "offensiveLightningMax" : {
-              "skill" : false,
-              "value" : [ 120.0, 142.0, 164.0, 186.0, 208.0, 230.0, 253.0, 275.0, 297.0, 319.0, 341.0, 363.0, 385.0, 407.0, 429.0, 451.0, 473.0 ]
+              "value" : [ 120.0, 142.0, 164.0, 186.0, 208.0, 230.0, 253.0, 275.0, 297.0, 319.0, 341.0, 363.0, 385.0, 407.0, 429.0, 451.0, 473.0 ],
+              "skill" : false
             },
             "isPetDisplayable" : {
-              "skill" : false,
-              "value" : 1
+              "value" : 1,
+              "skill" : false
             },
             "sparkGap" : {
-              "skill" : false,
-              "value" : 20.0
+              "value" : 20.0,
+              "skill" : false
             },
             "cameraShakeAmplitude" : {
-              "skill" : false,
-              "value" : 0.12
+              "value" : 0.12,
+              "skill" : false
             },
             "sparkMaxNumber" : {
-              "skill" : false,
-              "value" : [ 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ]
+              "value" : [ 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ],
+              "skill" : false
             },
             "skillMaxLevel" : {
-              "skill" : false,
-              "value" : 9
+              "value" : 9,
+              "skill" : false
             },
             "offensiveStunMin" : {
-              "skill" : false,
-              "value" : [ 0.5, 0.6, 0.6, 0.7, 0.8, 0.8, 0.9, 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0, 2.1 ]
+              "value" : [ 0.5, 0.6, 0.6, 0.7, 0.8, 0.8, 0.9, 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0, 2.1 ],
+              "skill" : false
             },
             "skillUltimateLevel" : {
-              "skill" : false,
-              "value" : 13
+              "value" : 13,
+              "skill" : false
             },
             "offensiveSlowLightningDurationMin" : {
-              "skill" : false,
-              "value" : 1.0
+              "value" : 1.0,
+              "skill" : false
             },
             "offensiveLightningMin" : {
-              "skill" : false,
-              "value" : [ 48.0, 57.0, 66.0, 75.0, 83.0, 92.0, 101.0, 110.0, 119.0, 127.0, 136.0, 145.0, 154.0, 163.0, 172.0, 181.0, 190.0 ]
+              "value" : [ 48.0, 57.0, 66.0, 75.0, 83.0, 92.0, 101.0, 110.0, 119.0, 127.0, 136.0, 145.0, 154.0, 163.0, 172.0, 181.0, 190.0 ],
+              "skill" : false
             },
             "sparkChance" : {
-              "skill" : false,
-              "value" : 100.0
+              "value" : 100.0,
+              "skill" : false
             },
             "skillMasteryLevelRequired" : {
-              "skill" : false,
-              "value" : 32
+              "value" : 32,
+              "skill" : false
             },
             "offensiveSlowLightningMin" : {
-              "skill" : false,
-              "value" : [ 20.0, 35.0, 50.0, 65.0, 80.0, 95.0, 110.0, 125.0, 140.0, 155.0, 170.0, 185.0, 200.0, 215.0, 230.0, 245.0, 260.0 ]
+              "value" : [ 20.0, 35.0, 50.0, 65.0, 80.0, 95.0, 110.0, 125.0, 140.0, 155.0, 170.0, 185.0, 200.0, 215.0, 230.0, 245.0, 260.0 ],
+              "skill" : false
             },
             "skillTier" : {
-              "skill" : false,
-              "value" : 6
+              "value" : 6,
+              "skill" : false
             },
             "offensivePercentCurrentLifeMin" : {
-              "skill" : false,
-              "value" : [ 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ]
+              "value" : [ 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ],
+              "skill" : false
             }
           },
           "buff" : null,
-          "skillDescription" : null
-        }
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Fury of the Skies.html",
+          "skillDescription" : null,
+          "skillTag" : "skillLifegiving17n",
+          "modifier" : false
+        },
+        "skill" : true
       }
     },
     "buff" : {
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Fury of the Skies.html",
-      "modifier" : false,
-      "skillTag" : "skillLifegiving17n",
-      "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\lifegiving\\skills\\pet\\angelicaltar_chainlightning.dbr",
       "name" : "Fury of the Skies",
       "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
-          "skill" : false,
-          "value" : 4.0
+          "value" : 4.0,
+          "skill" : false
         },
         "offensiveLightningMax" : {
-          "skill" : false,
-          "value" : [ 120.0, 142.0, 164.0, 186.0, 208.0, 230.0, 253.0, 275.0, 297.0, 319.0, 341.0, 363.0, 385.0, 407.0, 429.0, 451.0, 473.0 ]
+          "value" : [ 120.0, 142.0, 164.0, 186.0, 208.0, 230.0, 253.0, 275.0, 297.0, 319.0, 341.0, 363.0, 385.0, 407.0, 429.0, 451.0, 473.0 ],
+          "skill" : false
         },
         "isPetDisplayable" : {
-          "skill" : false,
-          "value" : 1
+          "value" : 1,
+          "skill" : false
         },
         "sparkGap" : {
-          "skill" : false,
-          "value" : 20.0
+          "value" : 20.0,
+          "skill" : false
         },
         "cameraShakeAmplitude" : {
-          "skill" : false,
-          "value" : 0.12
+          "value" : 0.12,
+          "skill" : false
         },
         "sparkMaxNumber" : {
-          "skill" : false,
-          "value" : [ 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ]
+          "value" : [ 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ],
+          "skill" : false
         },
         "skillMaxLevel" : {
-          "skill" : false,
-          "value" : 9
+          "value" : 9,
+          "skill" : false
         },
         "offensiveStunMin" : {
-          "skill" : false,
-          "value" : [ 0.5, 0.6, 0.6, 0.7, 0.8, 0.8, 0.9, 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0, 2.1 ]
+          "value" : [ 0.5, 0.6, 0.6, 0.7, 0.8, 0.8, 0.9, 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0, 2.1 ],
+          "skill" : false
         },
         "skillUltimateLevel" : {
-          "skill" : false,
-          "value" : 13
+          "value" : 13,
+          "skill" : false
         },
         "offensiveSlowLightningDurationMin" : {
-          "skill" : false,
-          "value" : 1.0
+          "value" : 1.0,
+          "skill" : false
         },
         "offensiveLightningMin" : {
-          "skill" : false,
-          "value" : [ 48.0, 57.0, 66.0, 75.0, 83.0, 92.0, 101.0, 110.0, 119.0, 127.0, 136.0, 145.0, 154.0, 163.0, 172.0, 181.0, 190.0 ]
+          "value" : [ 48.0, 57.0, 66.0, 75.0, 83.0, 92.0, 101.0, 110.0, 119.0, 127.0, 136.0, 145.0, 154.0, 163.0, 172.0, 181.0, 190.0 ],
+          "skill" : false
         },
         "sparkChance" : {
-          "skill" : false,
-          "value" : 100.0
+          "value" : 100.0,
+          "skill" : false
         },
         "skillMasteryLevelRequired" : {
-          "skill" : false,
-          "value" : 32
+          "value" : 32,
+          "skill" : false
         },
         "offensiveSlowLightningMin" : {
-          "skill" : false,
-          "value" : [ 20.0, 35.0, 50.0, 65.0, 80.0, 95.0, 110.0, 125.0, 140.0, 155.0, 170.0, 185.0, 200.0, 215.0, 230.0, 245.0, 260.0 ]
+          "value" : [ 20.0, 35.0, 50.0, 65.0, 80.0, 95.0, 110.0, 125.0, 140.0, 155.0, 170.0, 185.0, 200.0, 215.0, 230.0, 245.0, 260.0 ],
+          "skill" : false
         },
         "skillTier" : {
-          "skill" : false,
-          "value" : 6
+          "value" : 6,
+          "skill" : false
         },
         "offensivePercentCurrentLifeMin" : {
-          "skill" : false,
-          "value" : [ 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ]
+          "value" : [ 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ],
+          "skill" : false
         }
       },
       "buff" : null,
-      "skillDescription" : null
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Fury of the Skies.html",
+      "skillDescription" : null,
+      "skillTag" : "skillLifegiving17n",
+      "modifier" : false
     },
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Fury of the Skies.html",
+    "skillDescription" : null,
+    "skillTag" : "skillLifegiving17n",
+    "modifier" : false
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Strength Bestowal.html",
-    "modifier" : false,
-    "skillTag" : "skillLifegiving12n",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\lifegiving\\skills\\bestowal.dbr",
     "name" : "Strength Bestowal",
     "parent" : null,
     "attributes" : {
       "bestowal" : {
-        "skill" : true,
         "value" : {
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Strength Bestowal.html",
-          "modifier" : false,
-          "skillTag" : "skillLifegiving12n",
-          "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\lifegiving\\skills\\bestowal_buff.dbr",
           "name" : "Strength Bestowal",
           "parent" : null,
           "attributes" : {
             "skillActiveDuration" : {
-              "skill" : false,
-              "value" : 15.0
+              "value" : 15.0,
+              "skill" : false
             },
             "skillCooldownTime" : {
-              "skill" : false,
-              "value" : 180.0
+              "value" : 180.0,
+              "skill" : false
             },
             "skillManaCost" : {
-              "skill" : false,
-              "value" : [ 100.0, 110.0, 120.0, 130.0, 140.0, 150.0, 160.0, 170.0, 180.0, 190.0, 200.0, 210.0 ]
+              "value" : [ 100.0, 110.0, 120.0, 130.0, 140.0, 150.0, 160.0, 170.0, 180.0, 190.0, 200.0, 210.0 ],
+              "skill" : false
             },
             "cameraShakeAmplitude" : {
-              "skill" : false,
-              "value" : 0.32
+              "value" : 0.32,
+              "skill" : false
             },
             "offensiveTotalDamageModifier" : {
-              "skill" : false,
-              "value" : [ 20.0, 23.0, 26.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 49.0, 52.0, 55.0 ]
+              "value" : [ 20.0, 23.0, 26.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 49.0, 52.0, 55.0 ],
+              "skill" : false
             },
             "characterDefensiveAbilityModifier" : {
-              "skill" : false,
-              "value" : [ 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 20.0 ]
+              "value" : [ 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 20.0 ],
+              "skill" : false
             },
             "skillMaxLevel" : {
-              "skill" : false,
-              "value" : 8
+              "value" : 8,
+              "skill" : false
             },
             "characterOffensiveAbilityModifier" : {
-              "skill" : false,
-              "value" : [ 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 20.0 ]
+              "value" : [ 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 20.0 ],
+              "skill" : false
             },
             "cameraShakeDurationSecs" : {
-              "skill" : false,
-              "value" : 0.5
+              "value" : 0.5,
+              "skill" : false
             },
             "skillUltimateLevel" : {
-              "skill" : false,
-              "value" : 12
+              "value" : 12,
+              "skill" : false
             },
             "characterLifeRegenModifier" : {
-              "skill" : false,
-              "value" : [ 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 70.0, 80.0, 90.0, 100.0 ]
+              "value" : [ 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 70.0, 80.0, 90.0, 100.0 ],
+              "skill" : false
             },
             "skillMasteryLevelRequired" : {
-              "skill" : false,
-              "value" : 32
+              "value" : 32,
+              "skill" : false
             },
             "skillTier" : {
-              "skill" : false,
-              "value" : 6
+              "value" : 6,
+              "skill" : false
             },
             "characterManaRegenModifier" : {
-              "skill" : false,
-              "value" : [ 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 70.0, 80.0, 90.0, 100.0 ]
+              "value" : [ 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 70.0, 80.0, 90.0, 100.0 ],
+              "skill" : false
             }
           },
           "buff" : null,
-          "skillDescription" : null
-        }
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Strength Bestowal.html",
+          "skillDescription" : null,
+          "skillTag" : "skillLifegiving12n",
+          "modifier" : false
+        },
+        "skill" : true
       }
     },
     "buff" : {
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Strength Bestowal.html",
-      "modifier" : false,
-      "skillTag" : "skillLifegiving12n",
-      "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\lifegiving\\skills\\bestowal_buff.dbr",
       "name" : "Strength Bestowal",
       "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
-          "skill" : false,
-          "value" : 15.0
+          "value" : 15.0,
+          "skill" : false
         },
         "skillCooldownTime" : {
-          "skill" : false,
-          "value" : 180.0
+          "value" : 180.0,
+          "skill" : false
         },
         "skillManaCost" : {
-          "skill" : false,
-          "value" : [ 100.0, 110.0, 120.0, 130.0, 140.0, 150.0, 160.0, 170.0, 180.0, 190.0, 200.0, 210.0 ]
+          "value" : [ 100.0, 110.0, 120.0, 130.0, 140.0, 150.0, 160.0, 170.0, 180.0, 190.0, 200.0, 210.0 ],
+          "skill" : false
         },
         "cameraShakeAmplitude" : {
-          "skill" : false,
-          "value" : 0.32
+          "value" : 0.32,
+          "skill" : false
         },
         "offensiveTotalDamageModifier" : {
-          "skill" : false,
-          "value" : [ 20.0, 23.0, 26.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 49.0, 52.0, 55.0 ]
+          "value" : [ 20.0, 23.0, 26.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 49.0, 52.0, 55.0 ],
+          "skill" : false
         },
         "characterDefensiveAbilityModifier" : {
-          "skill" : false,
-          "value" : [ 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 20.0 ]
+          "value" : [ 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 20.0 ],
+          "skill" : false
         },
         "skillMaxLevel" : {
-          "skill" : false,
-          "value" : 8
+          "value" : 8,
+          "skill" : false
         },
         "characterOffensiveAbilityModifier" : {
-          "skill" : false,
-          "value" : [ 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 20.0 ]
+          "value" : [ 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 20.0 ],
+          "skill" : false
         },
         "cameraShakeDurationSecs" : {
-          "skill" : false,
-          "value" : 0.5
+          "value" : 0.5,
+          "skill" : false
         },
         "skillUltimateLevel" : {
-          "skill" : false,
-          "value" : 12
+          "value" : 12,
+          "skill" : false
         },
         "characterLifeRegenModifier" : {
-          "skill" : false,
-          "value" : [ 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 70.0, 80.0, 90.0, 100.0 ]
+          "value" : [ 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 70.0, 80.0, 90.0, 100.0 ],
+          "skill" : false
         },
         "skillMasteryLevelRequired" : {
-          "skill" : false,
-          "value" : 32
+          "value" : 32,
+          "skill" : false
         },
         "skillTier" : {
-          "skill" : false,
-          "value" : 6
+          "value" : 6,
+          "skill" : false
         },
         "characterManaRegenModifier" : {
-          "skill" : false,
-          "value" : [ 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 70.0, 80.0, 90.0, 100.0 ]
+          "value" : [ 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 70.0, 80.0, 90.0, 100.0 ],
+          "skill" : false
         }
       },
       "buff" : null,
-      "skillDescription" : null
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Strength Bestowal.html",
+      "skillDescription" : null,
+      "skillTag" : "skillLifegiving12n",
+      "modifier" : false
     },
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Strength Bestowal.html",
+    "skillDescription" : null,
+    "skillTag" : "skillLifegiving12n",
+    "modifier" : false
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Purity.html",
-    "modifier" : true,
-    "skillTag" : "skillLifegiving13n",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\lifegiving\\skills\\bestowal_buff_purity.dbr",
     "name" : "Purity",
     "parent" : "Strength Bestowal",
     "attributes" : {
       "skillActiveDuration" : {
-        "skill" : false,
-        "value" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0 ]
+        "value" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0 ],
+        "skill" : false
       },
       "skillManaCost" : {
-        "skill" : false,
-        "value" : [ 6.0, 9.0, 15.0, 18.0, 22.0, 25.0, 28.0, 34.0, 37.0, 41.0, 44.0, 48.0 ]
+        "value" : [ 6.0, 9.0, 15.0, 18.0, 22.0, 25.0, 28.0, 34.0, 37.0, 41.0, 44.0, 48.0 ],
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 12
+        "value" : 12,
+        "skill" : false
       },
       "defensiveLife" : {
-        "skill" : false,
-        "value" : [ 15.0, 19.0, 22.0, 26.0, 29.0, 33.0, 37.0, 40.0, 44.0, 47.0, 51.0, 55.0 ]
+        "value" : [ 15.0, 19.0, 22.0, 26.0, 29.0, 33.0, 37.0, 40.0, 44.0, 47.0, 51.0, 55.0 ],
+        "skill" : false
       },
       "characterLifeRegen" : {
-        "skill" : false,
-        "value" : [ 4.0, 6.0, 9.0, 11.0, 13.0, 16.0, 18.0, 21.0, 23.0, 25.0, 28.0, 30.0 ]
+        "value" : [ 4.0, 6.0, 9.0, 11.0, 13.0, 16.0, 18.0, 21.0, 23.0, 25.0, 28.0, 30.0 ],
+        "skill" : false
       },
       "skillMasteryLevelRequired" : {
-        "skill" : false,
-        "value" : 40
+        "value" : 40,
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 7
+        "value" : 7,
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 8
+        "value" : 8,
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Purity.html",
+    "skillDescription" : null,
+    "skillTag" : "skillLifegiving13n",
+    "modifier" : true
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Fiery Strikes.html",
-    "modifier" : false,
-    "skillTag" : "skillLifegiving18n",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\lifegiving\\skills\\fierystrikes.dbr",
     "name" : "Fiery Strikes",
     "parent" : null,
     "attributes" : {
       "skillCooldownTime" : {
-        "skill" : false,
-        "value" : [ 6.0, 5.9, 5.7, 5.6, 5.5, 5.4, 5.2, 5.1, 5.0, 4.9, 4.7, 4.6, 4.5, 4.4, 4.2, 4.1, 4.0, 3.9, 3.7, 3.6 ]
+        "value" : [ 6.0, 5.9, 5.7, 5.6, 5.5, 5.4, 5.2, 5.1, 5.0, 4.9, 4.7, 4.6, 4.5, 4.4, 4.2, 4.1, 4.0, 3.9, 3.7, 3.6 ],
+        "skill" : false
       },
       "skillManaCost" : {
-        "skill" : false,
-        "value" : [ 34.5, 36.8, 39.1, 41.4, 43.7, 46.0, 48.3, 50.6, 52.9, 55.2, 57.5, 59.8, 62.1, 64.4 ]
+        "value" : [ 34.5, 36.8, 39.1, 41.4, 43.7, 46.0, 48.3, 50.6, 52.9, 55.2, 57.5, 59.8, 62.1, 64.4 ],
+        "skill" : false
       },
       "projectilePiercingChance" : {
-        "skill" : false,
-        "value" : 100.0
+        "value" : 100.0,
+        "skill" : false
       },
       "skillConnectionSpacing" : {
-        "skill" : false,
-        "value" : 62
+        "value" : 62,
+        "skill" : false
       },
       "driftMax" : {
-        "skill" : false,
-        "value" : 2.0
+        "value" : 2.0,
+        "skill" : false
       },
       "cameraShakeAmplitude" : {
-        "skill" : false,
-        "value" : 0.32
+        "value" : 0.32,
+        "skill" : false
       },
       "ragDollAmplification" : {
-        "skill" : false,
-        "value" : 1.0
+        "value" : 1.0,
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 16
+        "value" : 16,
+        "skill" : false
       },
       "characterOffensiveAbilityModifier" : {
-        "skill" : false,
-        "value" : 33.0
+        "value" : 33.0,
+        "skill" : false
       },
       "cameraShakeDurationSecs" : {
-        "skill" : false,
-        "value" : 1.0
+        "value" : 1.0,
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 20
+        "value" : 20,
+        "skill" : false
       },
       "driftMin" : {
-        "skill" : false,
-        "value" : 0.5
+        "value" : 0.5,
+        "skill" : false
       },
       "skillProjectileNumber" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "offensiveFireMin" : {
-        "skill" : false,
-        "value" : [ 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 43.0, 47.0, 52.0, 57.0, 61.0, 66.0, 72.0, 77.0, 82.0, 88.0, 94.0, 100.0 ]
+        "value" : [ 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 43.0, 47.0, 52.0, 57.0, 61.0, 66.0, 72.0, 77.0, 82.0, 88.0, 94.0, 100.0 ],
+        "skill" : false
       },
       "skillMasteryLevelRequired" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Fiery Strikes.html",
+    "skillDescription" : null,
+    "skillTag" : "skillLifegiving18n",
+    "modifier" : false
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Siphon.html",
-    "modifier" : true,
-    "skillTag" : "skillLifegiving30n",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\lifegiving\\skills\\fierystrikes_siphon.dbr",
     "name" : "Siphon",
     "parent" : "Fiery Strikes",
     "attributes" : {
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 14
+        "value" : 14,
+        "skill" : false
       },
       "offensiveSlowManaLeachDurationMin" : {
-        "skill" : false,
-        "value" : 3.0
+        "value" : 3.0,
+        "skill" : false
       },
       "offensiveSlowManaLeachMin" : {
-        "skill" : false,
-        "value" : [ 9.0, 12.0, 15.0, 18.0, 22.0, 25.0, 28.0, 31.0, 34.0, 37.0, 41.0, 44.0, 47.0, 50.0 ]
+        "value" : [ 9.0, 12.0, 15.0, 18.0, 22.0, 25.0, 28.0, 31.0, 34.0, 37.0, 41.0, 44.0, 47.0, 50.0 ],
+        "skill" : false
       },
       "skillMasteryLevelRequired" : {
-        "skill" : false,
-        "value" : 16
+        "value" : 16,
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 4
+        "value" : 4,
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 10
+        "value" : 10,
+        "skill" : false
       },
       "offensiveManaBurnDamageRatio" : {
-        "skill" : false,
-        "value" : [ 17.5, 22.5, 28.0, 33.0, 38.5, 43.5, 48.5, 54.0, 59.0, 64.0, 69.5, 74.5, 80.0, 85.0 ]
+        "value" : [ 17.5, 22.5, 28.0, 33.0, 38.5, 43.5, 48.5, 54.0, 59.0, 64.0, 69.5, 74.5, 80.0, 85.0 ],
+        "skill" : false
       },
       "offensiveManaBurnDrainMin" : {
-        "skill" : false,
-        "value" : [ 5.0, 8.5, 12.0, 15.5, 19.0, 22.5, 26.0, 29.0, 32.5, 36.0, 39.5, 43.0, 46.5, 50.0 ]
+        "value" : [ 5.0, 8.5, 12.0, 15.5, 19.0, 22.5, 26.0, 29.0, 32.5, 36.0, 39.5, 43.0, 46.5, 50.0 ],
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Siphon.html",
+    "skillDescription" : null,
+    "skillTag" : "skillLifegiving30n",
+    "modifier" : true
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Swift Retribution.html",
-    "modifier" : true,
-    "skillTag" : "skillLifegiving29n",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\lifegiving\\skills\\fierystrikes_swiftretribution.dbr",
     "name" : "Swift Retribution",
     "parent" : "Siphon",
     "attributes" : {
       "offensiveLightningModifier" : {
-        "skill" : false,
-        "value" : 150.0
+        "value" : 150.0,
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "offensiveSlowLightningDurationMin" : {
-        "skill" : false,
-        "value" : 3.0
+        "value" : 3.0,
+        "skill" : false
       },
       "offensiveLightningMin" : {
-        "skill" : false,
-        "value" : 50.0
+        "value" : 50.0,
+        "skill" : false
       },
       "offensiveFireModifier" : {
-        "skill" : false,
-        "value" : -300.0
+        "value" : -300.0,
+        "skill" : false
       },
       "offensiveLightningModifierChance" : {
-        "skill" : false,
-        "value" : 10.0
+        "value" : 10.0,
+        "skill" : false
       },
       "offensiveSlowLightningMin" : {
-        "skill" : false,
-        "value" : 40.0
+        "value" : 40.0,
+        "skill" : false
       },
       "skillMasteryLevelRequired" : {
-        "skill" : false,
-        "value" : 32
+        "value" : 32,
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 6
+        "value" : 6,
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Swift Retribution.html",
+    "skillDescription" : null,
+    "skillTag" : "skillLifegiving29n",
+    "modifier" : true
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Heavenly Order.html",
-    "modifier" : false,
-    "skillTag" : "skillLifegiving23n",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\lifegiving\\skills\\archangel_summon.dbr",
     "name" : "Heavenly Order",
     "parent" : null,
     "attributes" : {
       "skillCooldownTime" : {
-        "skill" : false,
-        "value" : 45.0
+        "value" : 45.0,
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 24
+        "value" : 24,
+        "skill" : false
       },
       "skillManaCost" : {
-        "skill" : false,
-        "value" : [ 150.0, 153.0, 157.0, 160.0, 163.0, 166.0, 170.0, 173.0, 176.0, 179.0, 183.0, 186.0, 189.0, 192.0, 196.0, 199.0, 202.0, 205.0, 209.0, 212.0, 215.0, 218.0, 222.0, 225.0 ]
+        "value" : [ 150.0, 153.0, 157.0, 160.0, 163.0, 166.0, 170.0, 173.0, 176.0, 179.0, 183.0, 186.0, 189.0, 192.0, 196.0, 199.0, 202.0, 205.0, 209.0, 212.0, 215.0, 218.0, 222.0, 225.0 ],
+        "skill" : false
       },
       "petLimit" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "cameraShakeAmplitude" : {
-        "skill" : false,
-        "value" : 0.12
+        "value" : 0.12,
+        "skill" : false
       },
       "skillConnectionSpacing" : {
-        "skill" : false,
-        "value" : 62
+        "value" : 62,
+        "skill" : false
       },
       "skillMasteryLevelRequired" : {
-        "skill" : false,
-        "value" : 24
+        "value" : 24,
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 5
+        "value" : 5,
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 20
+        "value" : 20,
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Heavenly Order.html",
+    "skillDescription" : null,
+    "skillTag" : "skillLifegiving23n",
+    "modifier" : false
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Guardian Angel.html",
-    "modifier" : false,
-    "skillTag" : "skillLifegiving24n",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\lifegiving\\skills\\archangel_petmodifier_guardianangel.dbr",
     "name" : "Guardian Angel",
     "parent" : null,
     "attributes" : {
       "guardianangel" : {
-        "skill" : true,
         "value" : {
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Guardian Angel.html",
-          "modifier" : false,
-          "skillTag" : "skillLifegiving24n",
-          "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\lifegiving\\skills\\pet\\angel_petskill_mastermind.dbr",
           "name" : "Guardian Angel",
           "parent" : null,
           "attributes" : {
             "mastermind" : {
-              "skill" : true,
               "value" : {
-                "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Guardian Angel.html",
-                "modifier" : false,
-                "skillTag" : "skillLifegiving24n",
-                "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\lifegiving\\skills\\pet\\angel_petskill_mastermindbuff.dbr",
                 "name" : "Guardian Angel",
                 "parent" : null,
                 "attributes" : {
                   "defensiveProtection" : {
-                    "skill" : false,
-                    "value" : [ 4.0, 7.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 30.0 ]
+                    "value" : [ 4.0, 7.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 30.0 ],
+                    "skill" : false
                   },
                   "skillUltimateLevel" : {
-                    "skill" : false,
-                    "value" : 10
+                    "value" : 10,
+                    "skill" : false
                   },
                   "skillWeaponTintGreen" : {
-                    "skill" : false,
-                    "value" : 0.1
+                    "value" : 0.1,
+                    "skill" : false
                   },
                   "notDispelable" : {
-                    "skill" : false,
-                    "value" : 1
+                    "value" : 1,
+                    "skill" : false
                   },
                   "defensiveAbsorptionModifier" : {
-                    "skill" : false,
-                    "value" : [ 2.0, 4.0, 5.0, 7.0, 8.0, 10.0, 11.0, 13.0, 14.0, 16.0 ]
+                    "value" : [ 2.0, 4.0, 5.0, 7.0, 8.0, 10.0, 11.0, 13.0, 14.0, 16.0 ],
+                    "skill" : false
                   },
                   "skillWeaponTintRed" : {
-                    "skill" : false,
-                    "value" : 1.0
+                    "value" : 1.0,
+                    "skill" : false
                   },
                   "cameraShakeAmplitude" : {
-                    "skill" : false,
-                    "value" : 0.12
+                    "value" : 0.12,
+                    "skill" : false
                   },
                   "characterLife" : {
-                    "skill" : false,
-                    "value" : [ 20.0, 40.0, 60.0, 80.0, 100.0, 120.0, 140.0, 160.0, 180.0, 200.0 ]
+                    "value" : [ 20.0, 40.0, 60.0, 80.0, 100.0, 120.0, 140.0, 160.0, 180.0, 200.0 ],
+                    "skill" : false
                   },
                   "skillTargetRadius" : {
-                    "skill" : false,
-                    "value" : 15.0
+                    "value" : 15.0,
+                    "skill" : false
                   },
                   "skillMasteryLevelRequired" : {
-                    "skill" : false,
-                    "value" : 32
+                    "value" : 32,
+                    "skill" : false
                   },
                   "skillTier" : {
-                    "skill" : false,
-                    "value" : 6
+                    "value" : 6,
+                    "skill" : false
                   },
                   "skillMaxLevel" : {
-                    "skill" : false,
-                    "value" : 6
+                    "value" : 6,
+                    "skill" : false
                   }
                 },
                 "buff" : null,
-                "skillDescription" : null
-              }
+                "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Guardian Angel.html",
+                "skillDescription" : null,
+                "skillTag" : "skillLifegiving24n",
+                "modifier" : false
+              },
+              "skill" : true
             },
             "instantCast" : {
-              "skill" : false,
-              "value" : 1
+              "value" : 1,
+              "skill" : false
             }
           },
           "buff" : {
-            "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Guardian Angel.html",
-            "modifier" : false,
-            "skillTag" : "skillLifegiving24n",
-            "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\lifegiving\\skills\\pet\\angel_petskill_mastermindbuff.dbr",
             "name" : "Guardian Angel",
             "parent" : null,
             "attributes" : {
               "defensiveProtection" : {
-                "skill" : false,
-                "value" : [ 4.0, 7.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 30.0 ]
+                "value" : [ 4.0, 7.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 30.0 ],
+                "skill" : false
               },
               "skillUltimateLevel" : {
-                "skill" : false,
-                "value" : 10
+                "value" : 10,
+                "skill" : false
               },
               "skillWeaponTintGreen" : {
-                "skill" : false,
-                "value" : 0.1
+                "value" : 0.1,
+                "skill" : false
               },
               "notDispelable" : {
-                "skill" : false,
-                "value" : 1
+                "value" : 1,
+                "skill" : false
               },
               "defensiveAbsorptionModifier" : {
-                "skill" : false,
-                "value" : [ 2.0, 4.0, 5.0, 7.0, 8.0, 10.0, 11.0, 13.0, 14.0, 16.0 ]
+                "value" : [ 2.0, 4.0, 5.0, 7.0, 8.0, 10.0, 11.0, 13.0, 14.0, 16.0 ],
+                "skill" : false
               },
               "skillWeaponTintRed" : {
-                "skill" : false,
-                "value" : 1.0
+                "value" : 1.0,
+                "skill" : false
               },
               "cameraShakeAmplitude" : {
-                "skill" : false,
-                "value" : 0.12
+                "value" : 0.12,
+                "skill" : false
               },
               "characterLife" : {
-                "skill" : false,
-                "value" : [ 20.0, 40.0, 60.0, 80.0, 100.0, 120.0, 140.0, 160.0, 180.0, 200.0 ]
+                "value" : [ 20.0, 40.0, 60.0, 80.0, 100.0, 120.0, 140.0, 160.0, 180.0, 200.0 ],
+                "skill" : false
               },
               "skillTargetRadius" : {
-                "skill" : false,
-                "value" : 15.0
+                "value" : 15.0,
+                "skill" : false
               },
               "skillMasteryLevelRequired" : {
-                "skill" : false,
-                "value" : 32
+                "value" : 32,
+                "skill" : false
               },
               "skillTier" : {
-                "skill" : false,
-                "value" : 6
+                "value" : 6,
+                "skill" : false
               },
               "skillMaxLevel" : {
-                "skill" : false,
-                "value" : 6
+                "value" : 6,
+                "skill" : false
               }
             },
             "buff" : null,
-            "skillDescription" : null
+            "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Guardian Angel.html",
+            "skillDescription" : null,
+            "skillTag" : "skillLifegiving24n",
+            "modifier" : false
           },
-          "skillDescription" : null
-        }
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Guardian Angel.html",
+          "skillDescription" : null,
+          "skillTag" : "skillLifegiving24n",
+          "modifier" : false
+        },
+        "skill" : true
       }
     },
     "buff" : {
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Guardian Angel.html",
-      "modifier" : false,
-      "skillTag" : "skillLifegiving24n",
-      "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\lifegiving\\skills\\pet\\angel_petskill_mastermind.dbr",
       "name" : "Guardian Angel",
       "parent" : null,
       "attributes" : {
         "mastermind" : {
-          "skill" : true,
           "value" : {
-            "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Guardian Angel.html",
-            "modifier" : false,
-            "skillTag" : "skillLifegiving24n",
-            "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\lifegiving\\skills\\pet\\angel_petskill_mastermindbuff.dbr",
             "name" : "Guardian Angel",
             "parent" : null,
             "attributes" : {
               "defensiveProtection" : {
-                "skill" : false,
-                "value" : [ 4.0, 7.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 30.0 ]
+                "value" : [ 4.0, 7.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 30.0 ],
+                "skill" : false
               },
               "skillUltimateLevel" : {
-                "skill" : false,
-                "value" : 10
+                "value" : 10,
+                "skill" : false
               },
               "skillWeaponTintGreen" : {
-                "skill" : false,
-                "value" : 0.1
+                "value" : 0.1,
+                "skill" : false
               },
               "notDispelable" : {
-                "skill" : false,
-                "value" : 1
+                "value" : 1,
+                "skill" : false
               },
               "defensiveAbsorptionModifier" : {
-                "skill" : false,
-                "value" : [ 2.0, 4.0, 5.0, 7.0, 8.0, 10.0, 11.0, 13.0, 14.0, 16.0 ]
+                "value" : [ 2.0, 4.0, 5.0, 7.0, 8.0, 10.0, 11.0, 13.0, 14.0, 16.0 ],
+                "skill" : false
               },
               "skillWeaponTintRed" : {
-                "skill" : false,
-                "value" : 1.0
+                "value" : 1.0,
+                "skill" : false
               },
               "cameraShakeAmplitude" : {
-                "skill" : false,
-                "value" : 0.12
+                "value" : 0.12,
+                "skill" : false
               },
               "characterLife" : {
-                "skill" : false,
-                "value" : [ 20.0, 40.0, 60.0, 80.0, 100.0, 120.0, 140.0, 160.0, 180.0, 200.0 ]
+                "value" : [ 20.0, 40.0, 60.0, 80.0, 100.0, 120.0, 140.0, 160.0, 180.0, 200.0 ],
+                "skill" : false
               },
               "skillTargetRadius" : {
-                "skill" : false,
-                "value" : 15.0
+                "value" : 15.0,
+                "skill" : false
               },
               "skillMasteryLevelRequired" : {
-                "skill" : false,
-                "value" : 32
+                "value" : 32,
+                "skill" : false
               },
               "skillTier" : {
-                "skill" : false,
-                "value" : 6
+                "value" : 6,
+                "skill" : false
               },
               "skillMaxLevel" : {
-                "skill" : false,
-                "value" : 6
+                "value" : 6,
+                "skill" : false
               }
             },
             "buff" : null,
-            "skillDescription" : null
-          }
+            "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Guardian Angel.html",
+            "skillDescription" : null,
+            "skillTag" : "skillLifegiving24n",
+            "modifier" : false
+          },
+          "skill" : true
         },
         "instantCast" : {
-          "skill" : false,
-          "value" : 1
+          "value" : 1,
+          "skill" : false
         }
       },
       "buff" : {
-        "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Guardian Angel.html",
-        "modifier" : false,
-        "skillTag" : "skillLifegiving24n",
-        "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\lifegiving\\skills\\pet\\angel_petskill_mastermindbuff.dbr",
         "name" : "Guardian Angel",
         "parent" : null,
         "attributes" : {
           "defensiveProtection" : {
-            "skill" : false,
-            "value" : [ 4.0, 7.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 30.0 ]
+            "value" : [ 4.0, 7.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 30.0 ],
+            "skill" : false
           },
           "skillUltimateLevel" : {
-            "skill" : false,
-            "value" : 10
+            "value" : 10,
+            "skill" : false
           },
           "skillWeaponTintGreen" : {
-            "skill" : false,
-            "value" : 0.1
+            "value" : 0.1,
+            "skill" : false
           },
           "notDispelable" : {
-            "skill" : false,
-            "value" : 1
+            "value" : 1,
+            "skill" : false
           },
           "defensiveAbsorptionModifier" : {
-            "skill" : false,
-            "value" : [ 2.0, 4.0, 5.0, 7.0, 8.0, 10.0, 11.0, 13.0, 14.0, 16.0 ]
+            "value" : [ 2.0, 4.0, 5.0, 7.0, 8.0, 10.0, 11.0, 13.0, 14.0, 16.0 ],
+            "skill" : false
           },
           "skillWeaponTintRed" : {
-            "skill" : false,
-            "value" : 1.0
+            "value" : 1.0,
+            "skill" : false
           },
           "cameraShakeAmplitude" : {
-            "skill" : false,
-            "value" : 0.12
+            "value" : 0.12,
+            "skill" : false
           },
           "characterLife" : {
-            "skill" : false,
-            "value" : [ 20.0, 40.0, 60.0, 80.0, 100.0, 120.0, 140.0, 160.0, 180.0, 200.0 ]
+            "value" : [ 20.0, 40.0, 60.0, 80.0, 100.0, 120.0, 140.0, 160.0, 180.0, 200.0 ],
+            "skill" : false
           },
           "skillTargetRadius" : {
-            "skill" : false,
-            "value" : 15.0
+            "value" : 15.0,
+            "skill" : false
           },
           "skillMasteryLevelRequired" : {
-            "skill" : false,
-            "value" : 32
+            "value" : 32,
+            "skill" : false
           },
           "skillTier" : {
-            "skill" : false,
-            "value" : 6
+            "value" : 6,
+            "skill" : false
           },
           "skillMaxLevel" : {
-            "skill" : false,
-            "value" : 6
+            "value" : 6,
+            "skill" : false
           }
         },
         "buff" : null,
-        "skillDescription" : null
+        "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Guardian Angel.html",
+        "skillDescription" : null,
+        "skillTag" : "skillLifegiving24n",
+        "modifier" : false
       },
-      "skillDescription" : null
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Guardian Angel.html",
+      "skillDescription" : null,
+      "skillTag" : "skillLifegiving24n",
+      "modifier" : false
     },
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Guardian Angel.html",
+    "skillDescription" : null,
+    "skillTag" : "skillLifegiving24n",
+    "modifier" : false
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Pure Heart.html",
-    "modifier" : false,
-    "skillTag" : "skillLifegiving26n",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\lifegiving\\skills\\pureheart.dbr",
     "name" : "Pure Heart",
     "parent" : null,
     "attributes" : {
       "racialBonusPercentDefense" : {
-        "skill" : false,
-        "value" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0 ]
+        "value" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0 ],
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 12
+        "value" : 12,
+        "skill" : false
       },
       "skillMasteryLevelRequired" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "defensivePoison" : {
-        "skill" : false,
-        "value" : [ 6.0, 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0 ]
+        "value" : [ 6.0, 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0 ],
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 8
+        "value" : 8,
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Pure Heart.html",
+    "skillDescription" : null,
+    "skillTag" : "skillLifegiving26n",
+    "modifier" : false
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Vigor Reaper.html",
-    "modifier" : false,
-    "skillTag" : "skillLifegiving32n",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\lifegiving\\skills\\vigorreaper.dbr",
     "name" : "Vigor Reaper",
     "parent" : null,
     "attributes" : {
       "vigorreaper" : {
-        "skill" : true,
         "value" : {
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Vigor Reaper.html",
-          "modifier" : false,
-          "skillTag" : "skillLifegiving32n",
-          "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\lifegiving\\skills\\vigorreaper_buff.dbr",
           "name" : "Vigor Reaper",
           "parent" : null,
           "attributes" : {
             "defensiveSlowManaLeach" : {
-              "skill" : false,
-              "value" : [ -12.0, -18.0, -24.0, -30.0, -36.0, -42.0, -48.0, -54.0, -60.0, -66.0, -72.0, -78.0 ]
+              "value" : [ -12.0, -18.0, -24.0, -30.0, -36.0, -42.0, -48.0, -54.0, -60.0, -66.0, -72.0, -78.0 ],
+              "skill" : false
             },
             "skillActiveDuration" : {
-              "skill" : false,
-              "value" : 1.0
+              "value" : 1.0,
+              "skill" : false
             },
             "skillActiveManaCost" : {
-              "skill" : false,
-              "value" : 1.0
+              "value" : 1.0,
+              "skill" : false
             },
             "skillWeaponTintRed" : {
-              "skill" : false,
-              "value" : 1.0
+              "value" : 1.0,
+              "skill" : false
             },
             "skillConnectionSpacing" : {
-              "skill" : false,
-              "value" : 62
+              "value" : 62,
+              "skill" : false
             },
             "cameraShakeAmplitude" : {
-              "skill" : false,
-              "value" : 0.12
+              "value" : 0.12,
+              "skill" : false
             },
             "skillMaxLevel" : {
-              "skill" : false,
-              "value" : 8
+              "value" : 8,
+              "skill" : false
             },
             "debufSkill" : {
-              "skill" : false,
-              "value" : 1
+              "value" : 1,
+              "skill" : false
             },
             "characterManaModifier" : {
-              "skill" : false,
-              "value" : [ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0 ]
+              "value" : [ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0 ],
+              "skill" : false
             },
             "skillUltimateLevel" : {
-              "skill" : false,
-              "value" : 12
+              "value" : 12,
+              "skill" : false
             },
             "excludeRacialDamage" : {
-              "skill" : false,
-              "value" : 1
+              "value" : 1,
+              "skill" : false
             },
             "characterManaRegen" : {
-              "skill" : false,
-              "value" : [ 2.0, 2.9, 3.8, 4.7, 5.6, 6.5, 7.4, 8.3, 9.2, 10.1, 11.0, 11.9 ]
+              "value" : [ 2.0, 2.9, 3.8, 4.7, 5.6, 6.5, 7.4, 8.3, 9.2, 10.1, 11.0, 11.9 ],
+              "skill" : false
             },
             "skillTargetRadius" : {
-              "skill" : false,
-              "value" : 5.0
+              "value" : 5.0,
+              "skill" : false
             },
             "skillMasteryLevelRequired" : {
-              "skill" : false,
-              "value" : 16
+              "value" : 16,
+              "skill" : false
             },
             "characterMana" : {
-              "skill" : false,
-              "value" : [ 25.0, 50.0, 75.0, 100.0, 125.0, 150.0, 175.0, 200.0, 225.0, 250.0, 275.0, 300.0 ]
+              "value" : [ 25.0, 50.0, 75.0, 100.0, 125.0, 150.0, 175.0, 200.0, 225.0, 250.0, 275.0, 300.0 ],
+              "skill" : false
             },
             "skillTier" : {
-              "skill" : false,
-              "value" : 4
+              "value" : 4,
+              "skill" : false
             }
           },
           "buff" : null,
-          "skillDescription" : null
-        }
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Vigor Reaper.html",
+          "skillDescription" : null,
+          "skillTag" : "skillLifegiving32n",
+          "modifier" : false
+        },
+        "skill" : true
       }
     },
     "buff" : {
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Vigor Reaper.html",
-      "modifier" : false,
-      "skillTag" : "skillLifegiving32n",
-      "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\lifegiving\\skills\\vigorreaper_buff.dbr",
       "name" : "Vigor Reaper",
       "parent" : null,
       "attributes" : {
         "defensiveSlowManaLeach" : {
-          "skill" : false,
-          "value" : [ -12.0, -18.0, -24.0, -30.0, -36.0, -42.0, -48.0, -54.0, -60.0, -66.0, -72.0, -78.0 ]
+          "value" : [ -12.0, -18.0, -24.0, -30.0, -36.0, -42.0, -48.0, -54.0, -60.0, -66.0, -72.0, -78.0 ],
+          "skill" : false
         },
         "skillActiveDuration" : {
-          "skill" : false,
-          "value" : 1.0
+          "value" : 1.0,
+          "skill" : false
         },
         "skillActiveManaCost" : {
-          "skill" : false,
-          "value" : 1.0
+          "value" : 1.0,
+          "skill" : false
         },
         "skillWeaponTintRed" : {
-          "skill" : false,
-          "value" : 1.0
+          "value" : 1.0,
+          "skill" : false
         },
         "skillConnectionSpacing" : {
-          "skill" : false,
-          "value" : 62
+          "value" : 62,
+          "skill" : false
         },
         "cameraShakeAmplitude" : {
-          "skill" : false,
-          "value" : 0.12
+          "value" : 0.12,
+          "skill" : false
         },
         "skillMaxLevel" : {
-          "skill" : false,
-          "value" : 8
+          "value" : 8,
+          "skill" : false
         },
         "debufSkill" : {
-          "skill" : false,
-          "value" : 1
+          "value" : 1,
+          "skill" : false
         },
         "characterManaModifier" : {
-          "skill" : false,
-          "value" : [ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0 ]
+          "value" : [ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0 ],
+          "skill" : false
         },
         "skillUltimateLevel" : {
-          "skill" : false,
-          "value" : 12
+          "value" : 12,
+          "skill" : false
         },
         "excludeRacialDamage" : {
-          "skill" : false,
-          "value" : 1
+          "value" : 1,
+          "skill" : false
         },
         "characterManaRegen" : {
-          "skill" : false,
-          "value" : [ 2.0, 2.9, 3.8, 4.7, 5.6, 6.5, 7.4, 8.3, 9.2, 10.1, 11.0, 11.9 ]
+          "value" : [ 2.0, 2.9, 3.8, 4.7, 5.6, 6.5, 7.4, 8.3, 9.2, 10.1, 11.0, 11.9 ],
+          "skill" : false
         },
         "skillTargetRadius" : {
-          "skill" : false,
-          "value" : 5.0
+          "value" : 5.0,
+          "skill" : false
         },
         "skillMasteryLevelRequired" : {
-          "skill" : false,
-          "value" : 16
+          "value" : 16,
+          "skill" : false
         },
         "characterMana" : {
-          "skill" : false,
-          "value" : [ 25.0, 50.0, 75.0, 100.0, 125.0, 150.0, 175.0, 200.0, 225.0, 250.0, 275.0, 300.0 ]
+          "value" : [ 25.0, 50.0, 75.0, 100.0, 125.0, 150.0, 175.0, 200.0, 225.0, 250.0, 275.0, 300.0 ],
+          "skill" : false
         },
         "skillTier" : {
-          "skill" : false,
-          "value" : 4
+          "value" : 4,
+          "skill" : false
         }
       },
       "buff" : null,
-      "skillDescription" : null
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Vigor Reaper.html",
+      "skillDescription" : null,
+      "skillTag" : "skillLifegiving32n",
+      "modifier" : false
     },
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Vigor Reaper.html",
+    "skillDescription" : null,
+    "skillTag" : "skillLifegiving32n",
+    "modifier" : false
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Exertion.html",
-    "modifier" : true,
-    "skillTag" : "skillLifegiving34n",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\lifegiving\\skills\\vigorreaper_exertion.dbr",
     "name" : "Exertion",
     "parent" : "Vigor Reaper",
     "attributes" : {
       "characterOffensiveAbilityModifier" : {
-        "skill" : false,
-        "value" : [ -5.0, -6.5, -8.0, -9.5, -11.0, -12.5, -14.0, -15.5, -17.0, -18.5, -20.0, -21.5, -23.0, -24.5, -26.0, -27.5 ]
+        "value" : [ -5.0, -6.5, -8.0, -9.5, -11.0, -12.5, -14.0, -15.5, -17.0, -18.5, -20.0, -21.5, -23.0, -24.5, -26.0, -27.5 ],
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 16
+        "value" : 16,
+        "skill" : false
       },
       "characterManaLimitReserve" : {
-        "skill" : false,
-        "value" : 75.0
+        "value" : 75.0,
+        "skill" : false
       },
       "excludeRacialDamage" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "skillMasteryLevelRequired" : {
-        "skill" : false,
-        "value" : 32
+        "value" : 32,
+        "skill" : false
       },
       "characterDefensiveAbilityModifier" : {
-        "skill" : false,
-        "value" : [ -5.0, -6.5, -8.0, -9.5, -11.0, -12.5, -14.0, -15.5, -17.0, -18.5, -20.0, -21.5, -23.0, -24.5, -26.0, -27.5 ]
+        "value" : [ -5.0, -6.5, -8.0, -9.5, -11.0, -12.5, -14.0, -15.5, -17.0, -18.5, -20.0, -21.5, -23.0, -24.5, -26.0, -27.5 ],
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 6
+        "value" : 6,
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 12
+        "value" : 12,
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Exertion.html",
+    "skillDescription" : null,
+    "skillTag" : "skillLifegiving34n",
+    "modifier" : true
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Destiny Shield.html",
-    "modifier" : false,
-    "skillTag" : "skillLifegiving33n",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\lifegiving\\skills\\destinyshield.dbr",
     "name" : "Destiny Shield",
     "parent" : null,
     "attributes" : {
       "skillActiveDuration" : {
-        "skill" : false,
-        "value" : 10.0
+        "value" : 10.0,
+        "skill" : false
       },
       "skillCooldownTime" : {
-        "skill" : false,
-        "value" : 30.0
+        "value" : 30.0,
+        "skill" : false
       },
       "skillManaCost" : {
-        "skill" : false,
-        "value" : [ 40.0, 42.5, 45.0, 47.5, 50.0, 52.5, 55.0, 57.5, 60.0, 62.5, 65.0, 67.5, 70.0, 72.5, 75.0, 77.5, 80.0, 82.5 ]
+        "value" : [ 40.0, 42.5, 45.0, 47.5, 50.0, 52.5, 55.0, 57.5, 60.0, 62.5, 65.0, 67.5, 70.0, 72.5, 75.0, 77.5, 80.0, 82.5 ],
+        "skill" : false
       },
       "skillConnectionSpacing" : {
-        "skill" : false,
-        "value" : 62
+        "value" : 62,
+        "skill" : false
       },
       "cameraShakeAmplitude" : {
-        "skill" : false,
-        "value" : 0.12
+        "value" : 0.12,
+        "skill" : false
       },
       "retaliationSlowFireModifier" : {
-        "skill" : false,
-        "value" : [ 15.0, 22.0, 29.0, 36.0, 43.0, 50.0, 57.0, 64.0, 71.0, 79.0, 86.0, 93.0, 100.0, 107.0, 114.0, 121.0, 128.0, 135.0 ]
+        "value" : [ 15.0, 22.0, 29.0, 36.0, 43.0, 50.0, 57.0, 64.0, 71.0, 79.0, 86.0, 93.0, 100.0, 107.0, 114.0, 121.0, 128.0, 135.0 ],
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 14
+        "value" : 14,
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 18
+        "value" : 18,
+        "skill" : false
       },
       "offensivePierceRatioMin" : {
-        "skill" : false,
-        "value" : 20.0
+        "value" : 20.0,
+        "skill" : false
       },
       "skillMasteryLevelRequired" : {
-        "skill" : false,
-        "value" : 10
+        "value" : 10,
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 3
+        "value" : 3,
+        "skill" : false
       },
       "retaliationFireMin" : {
-        "skill" : false,
-        "value" : [ 8.0, 10.0, 13.0, 15.0, 18.0, 20.0, 23.0, 25.0, 28.0, 30.0, 33.0, 35.0, 38.0, 40.0, 43.0, 45.0, 48.0, 50.0 ]
+        "value" : [ 8.0, 10.0, 13.0, 15.0, 18.0, 20.0, 23.0, 25.0, 28.0, 30.0, 33.0, 35.0, 38.0, 40.0, 43.0, 45.0, 48.0, 50.0 ],
+        "skill" : false
       },
       "retaliationFireModifier" : {
-        "skill" : false,
-        "value" : [ 15.0, 22.0, 29.0, 36.0, 43.0, 50.0, 57.0, 64.0, 71.0, 79.0, 86.0, 93.0, 100.0, 107.0, 114.0, 121.0, 128.0, 135.0 ]
+        "value" : [ 15.0, 22.0, 29.0, 36.0, 43.0, 50.0, 57.0, 64.0, 71.0, 79.0, 86.0, 93.0, 100.0, 107.0, 114.0, 121.0, 128.0, 135.0 ],
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
-  } ]
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery/Destiny Shield.html",
+    "skillDescription" : null,
+    "skillTag" : "skillLifegiving33n",
+    "modifier" : false
+  } ],
+  "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving Mastery.html"
 }

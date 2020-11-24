@@ -1,1667 +1,1637 @@
 {
-  "mastery" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\records\\xpack2\\skills\\RuneMaster\\RuneMaster_Mastery.dbr",
-  "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery.html",
-  "skillTree" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\XPack2\\skills\\RuneMaster\\RuneMaster_SkillTree.dbr",
   "name" : "Rune Mastery",
   "skills" : [ {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Rune Storm.html",
-    "modifier" : false,
-    "skillTag" : "x3tagSkillRunesRunestorm",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\records\\xpack3\\skills\\allmasteries\\rune_magicmaelstrom.dbr",
     "name" : "Rune Storm",
     "parent" : null,
     "attributes" : {
       "skillCooldownTime" : {
-        "skill" : false,
-        "value" : 120.0
+        "value" : 120.0,
+        "skill" : false
       },
       "offensiveFearMin" : {
-        "skill" : false,
-        "value" : 1.0
+        "value" : 1.0,
+        "skill" : false
       },
       "skillManaCost" : {
-        "skill" : false,
-        "value" : 300.0
+        "value" : 300.0,
+        "skill" : false
       },
       "offensiveDisruptionGlobal" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "offensivePhysicalMin" : {
-        "skill" : false,
-        "value" : [ 30.0, 45.0, 60.0, 75.0, 90.0, 105.0, 120.0, 135.0, 150.0, 165.0, 180.0, 195.0 ]
+        "value" : [ 30.0, 45.0, 60.0, 75.0, 90.0, 105.0, 120.0, 135.0, 150.0, 165.0, 180.0, 195.0 ],
+        "skill" : false
       },
       "skillConnectionSpacing" : {
-        "skill" : false,
-        "value" : 62
+        "value" : 62,
+        "skill" : false
       },
       "cameraShakeAmplitude" : {
-        "skill" : false,
-        "value" : 0.12
+        "value" : 0.12,
+        "skill" : false
       },
       "offensiveFearXOR" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "offensiveConfusionXOR" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "offensiveFearGlobal" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "offensiveStunGlobal" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "offensiveConfusionMin" : {
-        "skill" : false,
-        "value" : 1.0
+        "value" : 1.0,
+        "skill" : false
       },
       "offensiveStunMin" : {
-        "skill" : false,
-        "value" : 1.0
+        "value" : 1.0,
+        "skill" : false
       },
       "offensiveSlowFireXOR" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "offensiveGlobalChance" : {
-        "skill" : false,
-        "value" : 100.0
+        "value" : 100.0,
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 10
+        "value" : 10,
+        "skill" : false
       },
       "offensiveFumbleMin" : {
-        "skill" : false,
-        "value" : [ 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0 ]
+        "value" : [ 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0 ],
+        "skill" : false
       },
       "offensiveSlowColdXOR" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "retaliationElementalMin" : {
-        "skill" : false,
-        "value" : [ 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0 ]
+        "value" : [ 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0 ],
+        "skill" : false
       },
       "offensiveSlowLightningXOR" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "offensiveSlowLightningChance" : {
-        "skill" : false,
-        "value" : 15.0
+        "value" : 15.0,
+        "skill" : false
       },
       "offensiveSlowColdMin" : {
-        "skill" : false,
-        "value" : [ 8.0, 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 64.0, 68.0, 72.0, 76.0, 80.0, 84.0, 88.0, 92.0, 96.0, 100.0, 104.0, 108.0, 112.0, 116.0, 120.0, 124.0 ]
+        "value" : [ 8.0, 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 64.0, 68.0, 72.0, 76.0, 80.0, 84.0, 88.0, 92.0, 96.0, 100.0, 104.0, 108.0, 112.0, 116.0, 120.0, 124.0 ],
+        "skill" : false
       },
       "offensiveSlowLightningMin" : {
-        "skill" : false,
-        "value" : [ 8.0, 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 64.0, 68.0, 72.0, 76.0, 80.0, 84.0, 88.0, 92.0, 96.0, 100.0, 104.0, 108.0, 112.0, 116.0, 120.0, 124.0 ]
+        "value" : [ 8.0, 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 64.0, 68.0, 72.0, 76.0, 80.0, 84.0, 88.0, 92.0, 96.0, 100.0, 104.0, 108.0, 112.0, 116.0, 120.0, 124.0 ],
+        "skill" : false
       },
       "skillTargetRadius" : {
-        "skill" : false,
-        "value" : [ 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 8.5, 9.0, 9.5, 10.0 ]
+        "value" : [ 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 8.5, 9.0, 9.5, 10.0 ],
+        "skill" : false
       },
       "offensiveConfusionChance" : {
-        "skill" : false,
-        "value" : 20.0
+        "value" : 20.0,
+        "skill" : false
       },
       "offensiveConfusionGlobal" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "offensiveDisruptionXOR" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "skillActiveDuration" : {
-        "skill" : false,
-        "value" : 10.0
+        "value" : 10.0,
+        "skill" : false
       },
       "offensiveSlowFireChance" : {
-        "skill" : false,
-        "value" : 15.0
+        "value" : 15.0,
+        "skill" : false
       },
       "offensiveDisruptionChance" : {
-        "skill" : false,
-        "value" : 20.0
+        "value" : 20.0,
+        "skill" : false
       },
       "offensiveProjectileFumbleMin" : {
-        "skill" : false,
-        "value" : [ 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0 ]
+        "value" : [ 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0 ],
+        "skill" : false
       },
       "offensiveDisruptionMin" : {
-        "skill" : false,
-        "value" : 1.0
+        "value" : 1.0,
+        "skill" : false
       },
       "offensiveFearChance" : {
-        "skill" : false,
-        "value" : 20.0
+        "value" : 20.0,
+        "skill" : false
       },
       "offensiveSlowFireMin" : {
-        "skill" : false,
-        "value" : [ 8.0, 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 64.0, 68.0, 72.0, 76.0, 80.0, 84.0, 88.0, 92.0, 96.0, 100.0, 104.0, 108.0, 112.0, 116.0, 120.0, 124.0 ]
+        "value" : [ 8.0, 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 64.0, 68.0, 72.0, 76.0, 80.0, 84.0, 88.0, 92.0, 96.0, 100.0, 104.0, 108.0, 112.0, 116.0, 120.0, 124.0 ],
+        "skill" : false
       },
       "offensiveStunXOR" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 6
+        "value" : 6,
+        "skill" : false
       },
       "offensiveStunChance" : {
-        "skill" : false,
-        "value" : 20.0
+        "value" : 20.0,
+        "skill" : false
       },
       "offensiveSlowColdChance" : {
-        "skill" : false,
-        "value" : 15.0
+        "value" : 15.0,
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 7
+        "value" : 7,
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Rune Storm.html",
+    "skillDescription" : null,
+    "skillTag" : "x3tagSkillRunesRunestorm",
+    "modifier" : false
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Life Rune.html",
-    "modifier" : false,
-    "skillTag" : "x2tagSkillRunesName011",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\records\\xpack2\\skills\\runemaster\\liferune.dbr",
     "name" : "Life Rune",
     "parent" : null,
     "attributes" : {
       "liferune" : {
-        "skill" : true,
         "value" : {
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Life Rune.html",
-          "modifier" : false,
-          "skillTag" : "x2tagSkillRunesName011",
-          "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\records\\xpack2\\skills\\runemaster\\liferune_buff.dbr",
           "name" : "Life Rune",
           "parent" : null,
           "attributes" : {
             "defensiveBleeding" : {
-              "skill" : false,
-              "value" : [ 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0 ]
+              "value" : [ 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0 ],
+              "skill" : false
             },
             "skillActiveDuration" : {
-              "skill" : false,
-              "value" : [ 600.0, 600.0, 600.0, 600.0, 600.0, 600.0, 600.0, 600.0, 600.0, 600.0 ]
+              "value" : [ 600.0, 600.0, 600.0, 600.0, 600.0, 600.0, 600.0, 600.0, 600.0, 600.0 ],
+              "skill" : false
             },
             "skillManaCost" : {
-              "skill" : false,
-              "value" : [ 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 64.0, 68.0, 72.0, 76.0 ]
+              "value" : [ 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 64.0, 68.0, 72.0, 76.0 ],
+              "skill" : false
             },
             "skillUltimateLevel" : {
-              "skill" : false,
-              "value" : 14
+              "value" : 14,
+              "skill" : false
             },
             "offensivePierceRatioMin" : {
-              "skill" : false,
-              "value" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 28.0, 30.0, 35.0 ]
+              "value" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 28.0, 30.0, 35.0 ],
+              "skill" : false
             },
             "defensiveLife" : {
-              "skill" : false,
-              "value" : [ 8.0, 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0 ]
+              "value" : [ 8.0, 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0 ],
+              "skill" : false
             },
             "cameraShakeAmplitude" : {
-              "skill" : false,
-              "value" : 0.12
+              "value" : 0.12,
+              "skill" : false
             },
             "characterRunSpeedModifier" : {
-              "skill" : false,
-              "value" : 10.0
+              "value" : 10.0,
+              "skill" : false
             },
             "skillTier" : {
-              "skill" : false,
-              "value" : 1
+              "value" : 1,
+              "skill" : false
             },
             "skillMaxLevel" : {
-              "skill" : false,
-              "value" : 10
+              "value" : 10,
+              "skill" : false
             },
             "characterStrengthModifier" : {
-              "skill" : false,
-              "value" : [ 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 8.5, 9.0, 9.5, 10.0, 10.5, 11.0, 11.5 ]
+              "value" : [ 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 8.5, 9.0, 9.5, 10.0, 10.5, 11.0, 11.5 ],
+              "skill" : false
             }
           },
           "buff" : null,
-          "skillDescription" : null
-        }
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Life Rune.html",
+          "skillDescription" : null,
+          "skillTag" : "x2tagSkillRunesName011",
+          "modifier" : false
+        },
+        "skill" : true
       }
     },
     "buff" : {
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Life Rune.html",
-      "modifier" : false,
-      "skillTag" : "x2tagSkillRunesName011",
-      "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\records\\xpack2\\skills\\runemaster\\liferune_buff.dbr",
       "name" : "Life Rune",
       "parent" : null,
       "attributes" : {
         "defensiveBleeding" : {
-          "skill" : false,
-          "value" : [ 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0 ]
+          "value" : [ 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0 ],
+          "skill" : false
         },
         "skillActiveDuration" : {
-          "skill" : false,
-          "value" : [ 600.0, 600.0, 600.0, 600.0, 600.0, 600.0, 600.0, 600.0, 600.0, 600.0 ]
+          "value" : [ 600.0, 600.0, 600.0, 600.0, 600.0, 600.0, 600.0, 600.0, 600.0, 600.0 ],
+          "skill" : false
         },
         "skillManaCost" : {
-          "skill" : false,
-          "value" : [ 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 64.0, 68.0, 72.0, 76.0 ]
+          "value" : [ 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 64.0, 68.0, 72.0, 76.0 ],
+          "skill" : false
         },
         "skillUltimateLevel" : {
-          "skill" : false,
-          "value" : 14
+          "value" : 14,
+          "skill" : false
         },
         "offensivePierceRatioMin" : {
-          "skill" : false,
-          "value" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 28.0, 30.0, 35.0 ]
+          "value" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 28.0, 30.0, 35.0 ],
+          "skill" : false
         },
         "defensiveLife" : {
-          "skill" : false,
-          "value" : [ 8.0, 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0 ]
+          "value" : [ 8.0, 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0 ],
+          "skill" : false
         },
         "cameraShakeAmplitude" : {
-          "skill" : false,
-          "value" : 0.12
+          "value" : 0.12,
+          "skill" : false
         },
         "characterRunSpeedModifier" : {
-          "skill" : false,
-          "value" : 10.0
+          "value" : 10.0,
+          "skill" : false
         },
         "skillTier" : {
-          "skill" : false,
-          "value" : 1
+          "value" : 1,
+          "skill" : false
         },
         "skillMaxLevel" : {
-          "skill" : false,
-          "value" : 10
+          "value" : 10,
+          "skill" : false
         },
         "characterStrengthModifier" : {
-          "skill" : false,
-          "value" : [ 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 8.5, 9.0, 9.5, 10.0, 10.5, 11.0, 11.5 ]
+          "value" : [ 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 8.5, 9.0, 9.5, 10.0, 10.5, 11.0, 11.5 ],
+          "skill" : false
         }
       },
       "buff" : null,
-      "skillDescription" : null
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Life Rune.html",
+      "skillDescription" : null,
+      "skillTag" : "x2tagSkillRunesName011",
+      "modifier" : false
     },
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Life Rune.html",
+    "skillDescription" : null,
+    "skillTag" : "x2tagSkillRunesName011",
+    "modifier" : false
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Runeword: Feather.html",
-    "modifier" : false,
-    "skillTag" : "x2tagSkillRunesName007",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\records\\xpack2\\skills\\runemaster\\lightweight.dbr",
     "name" : "Runeword: Feather",
     "parent" : null,
     "attributes" : {
       "characterOffensiveAbility" : {
-        "skill" : false,
-        "value" : [ 30.0, 45.0, 60.0, 75.0, 90.0, 105.0, 120.0, 135.0, 150.0, 165.0, 180.0, 195.0 ]
+        "value" : [ 30.0, 45.0, 60.0, 75.0, 90.0, 105.0, 120.0, 135.0, 150.0, 165.0, 180.0, 195.0 ],
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 10
+        "value" : 10,
+        "skill" : false
       },
       "characterWeaponStrengthReqReduction" : {
-        "skill" : false,
-        "value" : [ 14.0, 20.0, 26.0, 32.0, 37.0, 42.0, 47.0, 51.0, 55.0, 59.0, 62.0, 65.0 ]
+        "value" : [ 14.0, 20.0, 26.0, 32.0, 37.0, 42.0, 47.0, 51.0, 55.0, 59.0, 62.0, 65.0 ],
+        "skill" : false
       },
       "skillMasteryLevelRequired" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 6
+        "value" : 6,
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Runeword: Feather.html",
+    "skillDescription" : null,
+    "skillTag" : "x2tagSkillRunesName007",
+    "modifier" : false
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Thunder Strike.html",
-    "modifier" : false,
-    "skillTag" : "x2tagSkillRunesName002",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\records\\xpack2\\skills\\runemaster\\arcattack.dbr",
     "name" : "Thunder Strike",
     "parent" : null,
     "attributes" : {
       "skillCooldownTime" : {
-        "skill" : false,
-        "value" : 7.0
+        "value" : 7.0,
+        "skill" : false
       },
       "skillManaCost" : {
-        "skill" : false,
-        "value" : [ 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0, 48.0, 50.0, 52.0, 54.0, 56.0 ]
+        "value" : [ 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0, 48.0, 50.0, 52.0, 54.0, 56.0 ],
+        "skill" : false
       },
       "offensiveStunMax" : {
-        "skill" : false,
-        "value" : [ 0.5, 0.5, 0.6, 0.6, 0.7, 0.7, 0.8, 0.8, 0.9, 0.9, 1.0, 1.0, 1.1, 1.1 ]
+        "value" : [ 0.5, 0.5, 0.6, 0.6, 0.7, 0.7, 0.8, 0.8, 0.9, 0.9, 1.0, 1.0, 1.1, 1.1 ],
+        "skill" : false
       },
       "projectilePiercingChance" : {
-        "skill" : false,
-        "value" : 50.0
+        "value" : 50.0,
+        "skill" : false
       },
       "offensiveLightningMax" : {
-        "skill" : false,
-        "value" : 20.0
+        "value" : 20.0,
+        "skill" : false
       },
       "skillConnectionSpacing" : {
-        "skill" : false,
-        "value" : 62
+        "value" : 62,
+        "skill" : false
       },
       "driftMax" : {
-        "skill" : false,
-        "value" : 15.0
+        "value" : 15.0,
+        "skill" : false
       },
       "cameraShakeAmplitude" : {
-        "skill" : false,
-        "value" : 0.12
+        "value" : 0.12,
+        "skill" : false
       },
       "characterRunSpeedModifier" : {
-        "skill" : false,
-        "value" : 100.0
+        "value" : 100.0,
+        "skill" : false
       },
       "offensiveTotalDamageModifier" : {
-        "skill" : false,
-        "value" : [ 0.0, 7.0, 14.0, 21.0, 28.0, 35.0, 42.0, 49.0, 56.0, 63.0, 70.0, 77.0, 84.0, 91.0 ]
+        "value" : [ 0.0, 7.0, 14.0, 21.0, 28.0, 35.0, 42.0, 49.0, 56.0, 63.0, 70.0, 77.0, 84.0, 91.0 ],
+        "skill" : false
       },
       "ragDollAmplification" : {
-        "skill" : false,
-        "value" : 1.0
+        "value" : 1.0,
+        "skill" : false
       },
       "skillAllowsWarmUp" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 10
+        "value" : 10,
+        "skill" : false
       },
       "offensiveStunMin" : {
-        "skill" : false,
-        "value" : [ 0.1, 0.2, 0.2, 0.3, 0.3, 0.4, 0.4, 0.5, 0.5, 0.6, 0.6, 0.7, 0.7, 0.8 ]
+        "value" : [ 0.1, 0.2, 0.2, 0.3, 0.3, 0.4, 0.4, 0.5, 0.5, 0.6, 0.6, 0.7, 0.7, 0.8 ],
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 14
+        "value" : 14,
+        "skill" : false
       },
       "driftMin" : {
-        "skill" : false,
-        "value" : 0.5
+        "value" : 0.5,
+        "skill" : false
       },
       "offensiveLightningMin" : {
-        "skill" : false,
-        "value" : 2.0
+        "value" : 2.0,
+        "skill" : false
       },
       "skillProjectileNumber" : {
-        "skill" : false,
-        "value" : 5
+        "value" : 5,
+        "skill" : false
       },
       "skillMasteryLevelRequired" : {
-        "skill" : false,
-        "value" : 15
+        "value" : 15,
+        "skill" : false
       },
       "skillTargetAngle" : {
-        "skill" : false,
-        "value" : 250.0
+        "value" : 250.0,
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 2
+        "value" : 2,
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Thunder Strike.html",
+    "skillDescription" : null,
+    "skillTag" : "x2tagSkillRunesName002",
+    "modifier" : false
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Unleash.html",
-    "modifier" : false,
-    "skillTag" : "x2tagSkillRunesName003",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\records\\xpack2\\skills\\runemaster\\arcattack_unleash.dbr",
     "name" : "Unleash",
     "parent" : null,
     "attributes" : {
       "offensiveConfusionMax" : {
-        "skill" : false,
-        "value" : 3.0
+        "value" : 3.0,
+        "skill" : false
       },
       "offensiveConfusionMin" : {
-        "skill" : false,
-        "value" : 1.0
+        "value" : 1.0,
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 14
+        "value" : 14,
+        "skill" : false
       },
       "offensiveSlowLightningDurationMin" : {
-        "skill" : false,
-        "value" : 1.0
+        "value" : 1.0,
+        "skill" : false
       },
       "offensiveDisruptionMin" : {
-        "skill" : false,
-        "value" : 1.0
+        "value" : 1.0,
+        "skill" : false
       },
       "expansionTime" : {
-        "skill" : false,
-        "value" : 0.01
+        "value" : 0.01,
+        "skill" : false
       },
       "offensiveSlowColdDurationMin" : {
-        "skill" : false,
-        "value" : 3.0
+        "value" : 3.0,
+        "skill" : false
       },
       "offensiveSlowLightningMin" : {
-        "skill" : false,
-        "value" : [ 32.0, 48.0, 64.0, 80.0, 96.0, 112.0, 128.0, 144.0, 160.0, 176.0, 192.0, 208.0, 224.0, 240.0 ]
+        "value" : [ 32.0, 48.0, 64.0, 80.0, 96.0, 112.0, 128.0, 144.0, 160.0, 176.0, 192.0, 208.0, 224.0, 240.0 ],
+        "skill" : false
       },
       "skillTargetRadius" : {
-        "skill" : false,
-        "value" : 5.0
+        "value" : 5.0,
+        "skill" : false
       },
       "offensiveConfusionChance" : {
-        "skill" : false,
-        "value" : [ 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0 ]
+        "value" : [ 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0 ],
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 3
+        "value" : 3,
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 10
+        "value" : 10,
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Unleash.html",
+    "skillDescription" : null,
+    "skillTag" : "x2tagSkillRunesName003",
+    "modifier" : false
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Runic Mines.html",
-    "modifier" : false,
-    "skillTag" : "x2tagSkillRunesName012",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\records\\xpack2\\skills\\runemaster\\mines.dbr",
     "name" : "Runic Mines",
     "parent" : null,
     "attributes" : {
       "skillActiveDuration" : {
-        "skill" : false,
-        "value" : 10.0
+        "value" : 10.0,
+        "skill" : false
       },
       "spawnObjectsNumberOfRings" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "skillCooldownTime" : {
-        "skill" : false,
-        "value" : 9.0
+        "value" : 9.0,
+        "skill" : false
       },
       "skillManaCost" : {
-        "skill" : false,
-        "value" : [ 40.0, 45.0, 50.0, 56.0, 61.0, 66.0, 72.0, 77.0, 82.0, 88.0, 93.0, 98.0, 104.0, 109.0, 114.0, 120.0 ]
+        "value" : [ 40.0, 45.0, 50.0, 56.0, 61.0, 66.0, 72.0, 77.0, 82.0, 88.0, 93.0, 98.0, 104.0, 109.0, 114.0, 120.0 ],
+        "skill" : false
       },
       "projectileExplosionRadius" : {
-        "skill" : false,
-        "value" : 2.0
+        "value" : 2.0,
+        "skill" : false
       },
       "cameraShakeAmplitude" : {
-        "skill" : false,
-        "value" : 0.12
+        "value" : 0.12,
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 10
+        "value" : 10,
+        "skill" : false
       },
       "offensiveElementalMin" : {
-        "skill" : false,
-        "value" : [ 18.0, 27.0, 36.0, 45.0, 54.0, 63.0, 72.0, 81.0, 90.0, 99.0, 108.0, 117.0, 126.0, 135.0, 144.0, 153.0 ]
+        "value" : [ 18.0, 27.0, 36.0, 45.0, 54.0, 63.0, 72.0, 81.0, 90.0, 99.0, 108.0, 117.0, 126.0, 135.0, 144.0, 153.0 ],
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 14
+        "value" : 14,
+        "skill" : false
       },
       "spawnObjectsDistanceInnerCircle" : {
-        "skill" : false,
-        "value" : 3.0
+        "value" : 3.0,
+        "skill" : false
       },
       "spawnObjectsSpacingAngle" : {
-        "skill" : false,
-        "value" : 72.0
+        "value" : 72.0,
+        "skill" : false
       },
       "offensiveElementalMax" : {
-        "skill" : false,
-        "value" : [ 26.0, 39.0, 52.0, 65.0, 78.0, 91.0, 104.0, 117.0, 130.0, 143.0, 156.0, 169.0, 182.0, 195.0, 208.0, 221.0 ]
+        "value" : [ 26.0, 39.0, 52.0, 65.0, 78.0, 91.0, 104.0, 117.0, 130.0, 143.0, 156.0, 169.0, 182.0, 195.0, 208.0, 221.0 ],
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 2
+        "value" : 2,
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Runic Mines.html",
+    "skillDescription" : null,
+    "skillTag" : "x2tagSkillRunesName012",
+    "modifier" : false
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Freezing Mines.html",
-    "modifier" : true,
-    "skillTag" : "x2tagSkillRunesName013",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\records\\xpack2\\skills\\runemaster\\mines_damage.dbr",
     "name" : "Freezing Mines",
     "parent" : "Runic Mines",
     "attributes" : {
       "offensiveSlowTotalSpeedMin" : {
-        "skill" : false,
-        "value" : [ 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 64.0, 68.0, 72.0 ]
+        "value" : [ 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 64.0, 68.0, 72.0 ],
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 12
+        "value" : 12,
+        "skill" : false
       },
       "offensiveFreezeMin" : {
-        "skill" : false,
-        "value" : 0.2
+        "value" : 0.2,
+        "skill" : false
       },
       "offensiveFreezeMax" : {
-        "skill" : false,
-        "value" : 2.0
+        "value" : 2.0,
+        "skill" : false
       },
       "offensiveSlowColdMin" : {
-        "skill" : false,
-        "value" : [ 12.0, 18.0, 24.0, 30.0, 36.0, 42.0, 48.0, 54.0, 60.0, 66.0, 72.0, 78.0, 84.0, 90.0 ]
+        "value" : [ 12.0, 18.0, 24.0, 30.0, 36.0, 42.0, 48.0, 54.0, 60.0, 66.0, 72.0, 78.0, 84.0, 90.0 ],
+        "skill" : false
       },
       "offensiveSlowColdDurationMin" : {
-        "skill" : false,
-        "value" : 3.0
+        "value" : 3.0,
+        "skill" : false
       },
       "offensiveFreezeChance" : {
-        "skill" : false,
-        "value" : 25.0
+        "value" : 25.0,
+        "skill" : false
       },
       "skillTargetRadius" : {
-        "skill" : false,
-        "value" : 1.0
+        "value" : 1.0,
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 5
+        "value" : 5,
+        "skill" : false
       },
       "offensiveSlowTotalSpeedDurationMin" : {
-        "skill" : false,
-        "value" : 3.0
+        "value" : 3.0,
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 8
+        "value" : 8,
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Freezing Mines.html",
+    "skillDescription" : null,
+    "skillTag" : "x2tagSkillRunesName013",
+    "modifier" : true
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Rune Field.html",
-    "modifier" : true,
-    "skillTag" : "x3tagSkillRunesRunicMinefield",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\records\\xpack3\\skills\\allmasteries\\rune_mines_field.dbr",
     "name" : "Rune Field",
     "parent" : "Freezing Mines",
     "attributes" : {
       "skillActiveDuration" : {
-        "skill" : false,
-        "value" : [ 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0 ]
+        "value" : [ 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0 ],
+        "skill" : false
       },
       "numRings" : {
-        "skill" : false,
-        "value" : [ 0.0, 1.0, 2.0, 1.0, 2.0, 1.0, 2.0, 3.0, 2.0, 3.0, 2.0, 4.0, 4.0, 2.0, 3.0, 4.0 ]
+        "value" : [ 0.0, 1.0, 2.0, 1.0, 2.0, 1.0, 2.0, 3.0, 2.0, 3.0, 2.0, 4.0, 4.0, 2.0, 3.0, 4.0 ],
+        "skill" : false
       },
       "projectileLaunchNumber" : {
-        "skill" : false,
-        "value" : [ 6.0, 8.0, 9.0, 10.0, 12.0, 14.0, 15.0, 16.0, 18.0, 20.0, 21.0, 24.0, 25.0, 27.0, 28.0, 30.0 ]
+        "value" : [ 6.0, 8.0, 9.0, 10.0, 12.0, 14.0, 15.0, 16.0, 18.0, 20.0, 21.0, 24.0, 25.0, 27.0, 28.0, 30.0 ],
+        "skill" : false
       },
       "skillManaCost" : {
-        "skill" : false,
-        "value" : [ 25.0, 50.0, 75.0, 100.0, 125.0, 150.0, 175.0, 200.0, 225.0, 250.0, 275.0, 300.0, 325.0, 350.0, 375.0, 400.0 ]
+        "value" : [ 25.0, 50.0, 75.0, 100.0, 125.0, 150.0, 175.0, 200.0, 225.0, 250.0, 275.0, 300.0, 325.0, 350.0, 375.0, 400.0 ],
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 16
+        "value" : 16,
+        "skill" : false
       },
       "distanceIncrement" : {
-        "skill" : false,
-        "value" : [ 0.0, 1.0, 1.5, 3.0, 1.5, 5.0, 3.0, 2.0, 4.0, 3.0, 5.0, 2.5, 3.0, 6.0, 4.0, 3.0 ]
+        "value" : [ 0.0, 1.0, 1.5, 3.0, 1.5, 5.0, 3.0, 2.0, 4.0, 3.0, 5.0, 2.5, 3.0, 6.0, 4.0, 3.0 ],
+        "skill" : false
       },
       "spacingAngle" : {
-        "skill" : false,
-        "value" : [ -12.0, 18.0, 48.0, 0.0, 18.0, -21.0, 0.0, 18.0, -12.0, 0.0, -21.0, -12.0, 0.0, -32.0, -21.0, -12.0 ]
+        "value" : [ -12.0, 18.0, 48.0, 0.0, 18.0, -21.0, 0.0, 18.0, -12.0, 0.0, -21.0, -12.0, 0.0, -32.0, -21.0, -12.0 ],
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 7
+        "value" : 7,
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 12
+        "value" : 12,
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Rune Field.html",
+    "skillDescription" : null,
+    "skillTag" : "x3tagSkillRunesRunicMinefield",
+    "modifier" : true
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Taunt.html",
-    "modifier" : false,
-    "skillTag" : "x2tagSkillOther15",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\records\\skills\\default\\mp_taunt.dbr",
     "name" : "Taunt",
     "parent" : null,
     "attributes" : {
       "skillCooldownTime" : {
-        "skill" : false,
-        "value" : 30.0
+        "value" : 30.0,
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 30
+        "value" : 30,
+        "skill" : false
       },
       "skillManaCost" : {
-        "skill" : false,
-        "value" : 50.0
+        "value" : 50.0,
+        "skill" : false
       },
       "skillConnectionSpacing" : {
-        "skill" : false,
-        "value" : 62
+        "value" : 62,
+        "skill" : false
       },
       "cameraShakeAmplitude" : {
-        "skill" : false,
-        "value" : 0.12
+        "value" : 0.12,
+        "skill" : false
       },
       "expansionTime" : {
-        "skill" : false,
-        "value" : 0.02
+        "value" : 0.02,
+        "skill" : false
       },
       "skillTargetRadius" : {
-        "skill" : false,
-        "value" : 12.0
+        "value" : 12.0,
+        "skill" : false
       },
       "offensiveTauntMax" : {
-        "skill" : false,
-        "value" : 200.0
+        "value" : 200.0,
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 20
+        "value" : 20,
+        "skill" : false
       },
       "offensiveTauntMin" : {
-        "skill" : false,
-        "value" : 100.0
+        "value" : 100.0,
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Taunt.html",
+    "skillDescription" : null,
+    "skillTag" : "x2tagSkillOther15",
+    "modifier" : false
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Rune Weapon.html",
-    "modifier" : false,
-    "skillTag" : "x2tagSkillRunesName016",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\records\\xpack2\\skills\\runemaster\\runeweapon.dbr",
     "name" : "Rune Weapon",
     "parent" : null,
     "attributes" : {
       "skillManaCost" : {
-        "skill" : false,
-        "value" : 1.0
+        "value" : 1.0,
+        "skill" : false
       },
       "offensiveElementalModifier" : {
-        "skill" : false,
-        "value" : [ 2.5, 5.0, 7.5, 10.0, 12.5, 15.0, 17.5, 20.0, 22.5, 25.0, 27.5, 30.0, 32.5, 35.0 ]
+        "value" : [ 2.5, 5.0, 7.5, 10.0, 12.5, 15.0, 17.5, 20.0, 22.5, 25.0, 27.5, 30.0, 32.5, 35.0 ],
+        "skill" : false
       },
       "skillConnectionSpacing" : {
-        "skill" : false,
-        "value" : 62
+        "value" : 62,
+        "skill" : false
       },
       "cameraShakeAmplitude" : {
-        "skill" : false,
-        "value" : 0.12
+        "value" : 0.12,
+        "skill" : false
       },
       "offensiveTotalDamageModifier" : {
-        "skill" : false,
-        "value" : [ 2.5, 5.0, 7.5, 10.0, 12.5, 15.0, 17.5, 20.0, 22.5, 25.0, 27.5, 30.0, 32.5, 35.0 ]
+        "value" : [ 2.5, 5.0, 7.5, 10.0, 12.5, 15.0, 17.5, 20.0, 22.5, 25.0, 27.5, 30.0, 32.5, 35.0 ],
+        "skill" : false
       },
       "Bow" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 10
+        "value" : 10,
+        "skill" : false
       },
       "Axe" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "RangedOneHand" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "Mace" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 14
+        "value" : 14,
+        "skill" : false
       },
       "Sword" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "skillChargeLevel" : {
-        "skill" : false,
-        "value" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0 ]
+        "value" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0 ],
+        "skill" : false
       },
       "skillChargeDuration" : {
-        "skill" : false,
-        "value" : [ 2.2, 2.1, 2.0, 1.9, 1.8, 1.7, 1.6, 1.5, 1.4, 1.3, 1.2, 1.1, 1.0, 0.9 ]
+        "value" : [ 2.2, 2.1, 2.0, 1.9, 1.8, 1.7, 1.6, 1.5, 1.4, 1.3, 1.2, 1.1, 1.0, 0.9 ],
+        "skill" : false
       },
       "skillMasteryLevelRequired" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "Spear" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "characterIntelligenceModifier" : {
-        "skill" : false,
-        "value" : [ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0 ]
+        "value" : [ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0 ],
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Rune Weapon.html",
+    "skillDescription" : null,
+    "skillTag" : "x2tagSkillRunesName016",
+    "modifier" : false
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Magical Charge.html",
-    "modifier" : true,
-    "skillTag" : "x2tagSkillRunesName017",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\records\\xpack2\\skills\\runemaster\\runeweapon_bonus.dbr",
     "name" : "Magical Charge",
     "parent" : "Rune Weapon",
     "attributes" : {
       "skillManaCost" : {
-        "skill" : false,
-        "value" : [ 1.0, 1.2, 1.4, 1.6, 1.8, 2.0, 2.2, 2.4, 2.6, 2.8, 3.0, 3.2, 3.4, 3.6, 3.8, 4.0, 4.2, 4.4, 4.6, 4.8 ]
+        "value" : [ 1.0, 1.2, 1.4, 1.6, 1.8, 2.0, 2.2, 2.4, 2.6, 2.8, 3.0, 3.2, 3.4, 3.6, 3.8, 4.0, 4.2, 4.4, 4.6, 4.8 ],
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 20
+        "value" : 20,
+        "skill" : false
       },
       "retaliationElementalMin" : {
-        "skill" : false,
-        "value" : [ 12.0, 18.0, 24.0, 30.0, 36.0, 42.0, 48.0, 54.0, 60.0, 66.0, 72.0, 78.0, 84.0, 90.0, 96.0, 102.0, 108.0, 114.0, 120.0, 126.0 ]
+        "value" : [ 12.0, 18.0, 24.0, 30.0, 36.0, 42.0, 48.0, 54.0, 60.0, 66.0, 72.0, 78.0, 84.0, 90.0, 96.0, 102.0, 108.0, 114.0, 120.0, 126.0 ],
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 2
+        "value" : 2,
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 16
+        "value" : 16,
+        "skill" : false
       },
       "offensiveElementalMin" : {
-        "skill" : false,
-        "value" : [ 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0, 51.0, 54.0, 57.0, 60.0, 63.0 ]
+        "value" : [ 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0, 51.0, 54.0, 57.0, 60.0, 63.0 ],
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Magical Charge.html",
+    "skillDescription" : null,
+    "skillTag" : "x2tagSkillRunesName017",
+    "modifier" : true
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Energy Drain.html",
-    "modifier" : true,
-    "skillTag" : "x2tagSkillRunesName018",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\records\\xpack2\\skills\\runemaster\\runeweapon_sustain.dbr",
     "name" : "Energy Drain",
     "parent" : "Magical Charge",
     "attributes" : {
       "offensiveSlowTotalSpeedMin" : {
-        "skill" : false,
-        "value" : [ 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0 ]
+        "value" : [ 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0 ],
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 14
+        "value" : 14,
+        "skill" : false
       },
       "offensiveSlowManaLeachDurationMin" : {
-        "skill" : false,
-        "value" : 1.0
+        "value" : 1.0,
+        "skill" : false
       },
       "offensiveSlowManaLeachMin" : {
-        "skill" : false,
-        "value" : [ 12.0, 18.0, 24.0, 30.0, 36.0, 42.0, 48.0, 54.0, 60.0, 66.0, 72.0, 78.0, 84.0, 90.0 ]
+        "value" : [ 12.0, 18.0, 24.0, 30.0, 36.0, 42.0, 48.0, 54.0, 60.0, 66.0, 72.0, 78.0, 84.0, 90.0 ],
+        "skill" : false
       },
       "offensiveSlowOffensiveAbilityDurationMin" : {
-        "skill" : false,
-        "value" : 3.0
+        "value" : 3.0,
+        "skill" : false
       },
       "offensiveLifeLeechMin" : {
-        "skill" : false,
-        "value" : 4.0
+        "value" : 4.0,
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 4
+        "value" : 4,
+        "skill" : false
       },
       "offensiveSlowTotalSpeedDurationMin" : {
-        "skill" : false,
-        "value" : 3.0
+        "value" : 3.0,
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 10
+        "value" : 10,
+        "skill" : false
       },
       "offensiveSlowOffensiveAbilityMin" : {
-        "skill" : false,
-        "value" : [ 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0 ]
+        "value" : [ 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0 ],
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Energy Drain.html",
+    "skillDescription" : null,
+    "skillTag" : "x2tagSkillRunesName018",
+    "modifier" : true
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Transmutation.html",
-    "modifier" : false,
-    "skillTag" : "x2tagSkillRunesName019",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\records\\xpack2\\skills\\runemaster\\runeweapon_conversion.dbr",
     "name" : "Transmutation",
     "parent" : null,
     "attributes" : {
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 10
+        "value" : 10,
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 6
+        "value" : 6,
+        "skill" : false
       },
       "characterPhysToElementalRatio" : {
-        "skill" : false,
-        "value" : [ 18.0, 27.0, 36.0, 45.0, 54.0, 63.0, 72.0, 81.0, 90.0, 99.0 ]
+        "value" : [ 18.0, 27.0, 36.0, 45.0, 54.0, 63.0, 72.0, 81.0, 90.0, 99.0 ],
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 6
+        "value" : 6,
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Transmutation.html",
+    "skillDescription" : null,
+    "skillTag" : "x2tagSkillRunesName019",
+    "modifier" : false
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Runeword: Explode.html",
-    "modifier" : false,
-    "skillTag" : "x2tagSkillRunesName005",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\records\\xpack2\\skills\\runemaster\\explodingstrikes.dbr",
     "name" : "Runeword: Explode",
     "parent" : null,
     "attributes" : {
       "skillChanceWeight" : {
-        "skill" : false,
-        "value" : [ 4.0, 6.0, 7.0, 9.0, 11.0, 13.0, 14.0, 16.0, 18.0, 20.0, 21.0, 23.0, 25.0, 27.0 ]
+        "value" : [ 4.0, 6.0, 7.0, 9.0, 11.0, 13.0, 14.0, 16.0, 18.0, 20.0, 21.0, 23.0, 25.0, 27.0 ],
+        "skill" : false
       },
       "offensiveStunMin" : {
-        "skill" : false,
-        "value" : 0.5
+        "value" : 0.5,
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 14
+        "value" : 14,
+        "skill" : false
       },
       "projectileExplosionRadius" : {
-        "skill" : false,
-        "value" : 2.5
+        "value" : 2.5,
+        "skill" : false
       },
       "cameraShakeAmplitude" : {
-        "skill" : false,
-        "value" : 0.12
+        "value" : 0.12,
+        "skill" : false
       },
       "offensivePhysicalMin" : {
-        "skill" : false,
-        "value" : [ 8.0, 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0 ]
+        "value" : [ 8.0, 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0 ],
+        "skill" : false
       },
       "skillProjectileNumber" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "ragDollAmplification" : {
-        "skill" : false,
-        "value" : 1.5
+        "value" : 1.5,
+        "skill" : false
       },
       "offensiveFireMin" : {
-        "skill" : false,
-        "value" : [ 8.0, 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0 ]
+        "value" : [ 8.0, 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0 ],
+        "skill" : false
       },
       "skillTargetAngle" : {
-        "skill" : false,
-        "value" : 120.0
+        "value" : 120.0,
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 3
+        "value" : 3,
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 10
+        "value" : 10,
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Runeword: Explode.html",
+    "skillDescription" : null,
+    "skillTag" : "x2tagSkillRunesName005",
+    "modifier" : false
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Runeword: Burn.html",
-    "modifier" : false,
-    "skillTag" : "x2tagSkillRunesName006",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\records\\xpack2\\skills\\runemaster\\explodingstrikes_embers.dbr",
     "name" : "Runeword: Burn",
     "parent" : null,
     "attributes" : {
       "offensiveSlowFireDurationMin" : {
-        "skill" : false,
-        "value" : 3.0
+        "value" : 3.0,
+        "skill" : false
       },
       "projectileFragmentsLaunchNumberMin" : {
-        "skill" : false,
-        "value" : 4
+        "value" : 4,
+        "skill" : false
       },
       "projectileFragmentsLaunchNumberMax" : {
-        "skill" : false,
-        "value" : 5
+        "value" : 5,
+        "skill" : false
       },
       "projectileExplosionRadius" : {
-        "skill" : false,
-        "value" : 0.5
+        "value" : 0.5,
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 14
+        "value" : 14,
+        "skill" : false
       },
       "offensiveSlowFireMin" : {
-        "skill" : false,
-        "value" : [ 9.5, 14.0, 19.0, 24.5, 30.5, 37.0, 44.0, 51.5, 59.5, 68.0, 77.0, 86.5, 96.5, 107.0, 118.0, 129.5 ]
+        "value" : [ 9.5, 14.0, 19.0, 24.5, 30.5, 37.0, 44.0, 51.5, 59.5, 68.0, 77.0, 86.5, 96.5, 107.0, 118.0, 129.5 ],
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 4
+        "value" : 4,
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 10
+        "value" : 10,
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Runeword: Burn.html",
+    "skillDescription" : null,
+    "skillTag" : "x2tagSkillRunesName006",
+    "modifier" : false
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Reckless Offense.html",
-    "modifier" : false,
-    "skillTag" : "x2tagSkillRunesName010",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\records\\xpack2\\skills\\runemaster\\hailofaxes.dbr",
     "name" : "Reckless Offense",
     "parent" : null,
     "attributes" : {
       "skillChanceWeight" : {
-        "skill" : false,
-        "value" : [ 4.0, 6.0, 7.0, 9.0, 10.0, 12.0, 13.0, 15.0, 16.0, 18.0, 19.0, 21.0, 22.0, 24.0, 25.0, 27.0 ]
+        "value" : [ 4.0, 6.0, 7.0, 9.0, 10.0, 12.0, 13.0, 15.0, 16.0, 18.0, 19.0, 21.0, 22.0, 24.0, 25.0, 27.0 ],
+        "skill" : false
       },
       "Mace" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 16
+        "value" : 16,
+        "skill" : false
       },
       "Sword" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "cameraShakeAmplitude" : {
-        "skill" : false,
-        "value" : 0.12
+        "value" : 0.12,
+        "skill" : false
       },
       "offensiveTotalDamageModifier" : {
-        "skill" : false,
-        "value" : 100.0
+        "value" : 100.0,
+        "skill" : false
       },
       "skillProjectileNumber" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "dualWieldOnly" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 5
+        "value" : 5,
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 12
+        "value" : 12,
+        "skill" : false
       },
       "Axe" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "RangedOneHand" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Reckless Offense.html",
+    "skillDescription" : null,
+    "skillTag" : "x2tagSkillRunesName010",
+    "modifier" : false
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Energy Armor.html",
-    "modifier" : false,
-    "skillTag" : "x2tagSkillRunesName009",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\records\\xpack2\\skills\\runemaster\\forceshield.dbr",
     "name" : "Energy Armor",
     "parent" : null,
     "attributes" : {
       "targetCaster" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "forceshield" : {
-        "skill" : true,
         "value" : {
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Energy Armor.html",
-          "modifier" : false,
-          "skillTag" : "x2tagSkillRunesName009",
-          "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\records\\xpack2\\skills\\runemaster\\forceshieldbuff.dbr",
           "name" : "Energy Armor",
           "parent" : null,
           "attributes" : {
             "defensiveStun" : {
-              "skill" : false,
-              "value" : 50.0
+              "value" : 50.0,
+              "skill" : false
             },
             "pierceDamageQualifier" : {
-              "skill" : false,
-              "value" : 1
+              "value" : 1,
+              "skill" : false
             },
             "skillCooldownTime" : {
-              "skill" : false,
-              "value" : 25.0
+              "value" : 25.0,
+              "skill" : false
             },
             "skillManaCost" : {
-              "skill" : false,
-              "value" : [ 40.0, 60.0, 90.0, 135.0, 202.5, 303.8, 455.6, 683.5, 1025.2, 1537.8, 2306.6, 3460.0 ]
+              "value" : [ 40.0, 60.0, 90.0, 135.0, 202.5, 303.8, 455.6, 683.5, 1025.2, 1537.8, 2306.6, 3460.0 ],
+              "skill" : false
             },
             "isPetDisplayable" : {
-              "skill" : false,
-              "value" : 1
+              "value" : 1,
+              "skill" : false
             },
             "cameraShakeAmplitude" : {
-              "skill" : false,
-              "value" : 0.12
+              "value" : 0.12,
+              "skill" : false
             },
             "skillMaxLevel" : {
-              "skill" : false,
-              "value" : 8
+              "value" : 8,
+              "skill" : false
             },
             "skillUltimateLevel" : {
-              "skill" : false,
-              "value" : 12
+              "value" : 12,
+              "skill" : false
             },
             "physicalDamageQualifier" : {
-              "skill" : false,
-              "value" : 1
+              "value" : 1,
+              "skill" : false
             },
             "bleedingDamageQualifier" : {
-              "skill" : false,
-              "value" : 1
+              "value" : 1,
+              "skill" : false
             },
             "damageAbsorption" : {
-              "skill" : false,
-              "value" : [ 80.0, 120.0, 180.0, 270.0, 405.0, 607.6, 911.2, 1367.0, 2050.4, 3075.6, 4613.2, 6920.0 ]
+              "value" : [ 80.0, 120.0, 180.0, 270.0, 405.0, 607.6, 911.2, 1367.0, 2050.4, 3075.6, 4613.2, 6920.0 ],
+              "skill" : false
             },
             "skillTargetRadius" : {
-              "skill" : false,
-              "value" : 5.0
+              "value" : 5.0,
+              "skill" : false
             },
             "skillMasteryLevelRequired" : {
-              "skill" : false,
-              "value" : 15
+              "value" : 15,
+              "skill" : false
             },
             "skillTier" : {
-              "skill" : false,
-              "value" : 6
+              "value" : 6,
+              "skill" : false
             }
           },
           "buff" : null,
-          "skillDescription" : null
-        }
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Energy Armor.html",
+          "skillDescription" : null,
+          "skillTag" : "x2tagSkillRunesName009",
+          "modifier" : false
+        },
+        "skill" : true
       }
     },
     "buff" : {
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Energy Armor.html",
-      "modifier" : false,
-      "skillTag" : "x2tagSkillRunesName009",
-      "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\records\\xpack2\\skills\\runemaster\\forceshieldbuff.dbr",
       "name" : "Energy Armor",
       "parent" : null,
       "attributes" : {
         "defensiveStun" : {
-          "skill" : false,
-          "value" : 50.0
+          "value" : 50.0,
+          "skill" : false
         },
         "pierceDamageQualifier" : {
-          "skill" : false,
-          "value" : 1
+          "value" : 1,
+          "skill" : false
         },
         "skillCooldownTime" : {
-          "skill" : false,
-          "value" : 25.0
+          "value" : 25.0,
+          "skill" : false
         },
         "skillManaCost" : {
-          "skill" : false,
-          "value" : [ 40.0, 60.0, 90.0, 135.0, 202.5, 303.8, 455.6, 683.5, 1025.2, 1537.8, 2306.6, 3460.0 ]
+          "value" : [ 40.0, 60.0, 90.0, 135.0, 202.5, 303.8, 455.6, 683.5, 1025.2, 1537.8, 2306.6, 3460.0 ],
+          "skill" : false
         },
         "isPetDisplayable" : {
-          "skill" : false,
-          "value" : 1
+          "value" : 1,
+          "skill" : false
         },
         "cameraShakeAmplitude" : {
-          "skill" : false,
-          "value" : 0.12
+          "value" : 0.12,
+          "skill" : false
         },
         "skillMaxLevel" : {
-          "skill" : false,
-          "value" : 8
+          "value" : 8,
+          "skill" : false
         },
         "skillUltimateLevel" : {
-          "skill" : false,
-          "value" : 12
+          "value" : 12,
+          "skill" : false
         },
         "physicalDamageQualifier" : {
-          "skill" : false,
-          "value" : 1
+          "value" : 1,
+          "skill" : false
         },
         "bleedingDamageQualifier" : {
-          "skill" : false,
-          "value" : 1
+          "value" : 1,
+          "skill" : false
         },
         "damageAbsorption" : {
-          "skill" : false,
-          "value" : [ 80.0, 120.0, 180.0, 270.0, 405.0, 607.6, 911.2, 1367.0, 2050.4, 3075.6, 4613.2, 6920.0 ]
+          "value" : [ 80.0, 120.0, 180.0, 270.0, 405.0, 607.6, 911.2, 1367.0, 2050.4, 3075.6, 4613.2, 6920.0 ],
+          "skill" : false
         },
         "skillTargetRadius" : {
-          "skill" : false,
-          "value" : 5.0
+          "value" : 5.0,
+          "skill" : false
         },
         "skillMasteryLevelRequired" : {
-          "skill" : false,
-          "value" : 15
+          "value" : 15,
+          "skill" : false
         },
         "skillTier" : {
-          "skill" : false,
-          "value" : 6
+          "value" : 6,
+          "skill" : false
         }
       },
       "buff" : null,
-      "skillDescription" : null
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Energy Armor.html",
+      "skillDescription" : null,
+      "skillTag" : "x2tagSkillRunesName009",
+      "modifier" : false
     },
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Energy Armor.html",
+    "skillDescription" : null,
+    "skillTag" : "x2tagSkillRunesName009",
+    "modifier" : false
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Runeword: Absorb.html",
-    "modifier" : false,
-    "skillTag" : "x2tagSkillRunesName008",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\records\\xpack2\\skills\\runemaster\\ManaAbsorb.dbr",
     "name" : "Runeword: Absorb",
     "parent" : null,
     "attributes" : {
       "characterEnergyAbsorptionPercent" : {
-        "skill" : false,
-        "value" : [ 23.0, 34.0, 45.0, 56.0, 67.0, 78.0, 89.0, 100.0, 111.0, 122.0, 133.0, 144.0, 155.0, 166.0 ]
+        "value" : [ 23.0, 34.0, 45.0, 56.0, 67.0, 78.0, 89.0, 100.0, 111.0, 122.0, 133.0, 144.0, 155.0, 166.0 ],
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 12
+        "value" : 12,
+        "skill" : false
       },
       "Shield" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "skillConnectionSpacing" : {
-        "skill" : false,
-        "value" : 62
+        "value" : 62,
+        "skill" : false
       },
       "Staff" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "retaliationSlowManaLeachDurationMin" : {
-        "skill" : false,
-        "value" : 1.0
+        "value" : 1.0,
+        "skill" : false
       },
       "characterDefensiveBlockRecoveryReduction" : {
-        "skill" : false,
-        "value" : [ 15.0, 22.0, 29.0, 35.0, 41.0, 46.0, 51.0, 55.0, 59.0, 62.0, 65.0, 67.0, 69.0, 70.0 ]
+        "value" : [ 15.0, 22.0, 29.0, 35.0, 41.0, 46.0, 51.0, 55.0, 59.0, 62.0, 65.0, 67.0, 69.0, 70.0 ],
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 5
+        "value" : 5,
+        "skill" : false
       },
       "retaliationSlowManaLeachMin" : {
-        "skill" : false,
-        "value" : [ 12.0, 18.0, 24.0, 30.0, 36.0, 42.0, 48.0, 54.0, 60.0, 66.0, 72.0, 78.0, 84.0, 90.0 ]
+        "value" : [ 12.0, 18.0, 24.0, 30.0, 36.0, 42.0, 48.0, 54.0, 60.0, 66.0, 72.0, 78.0, 84.0, 90.0 ],
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 8
+        "value" : 8,
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Runeword: Absorb.html",
+    "skillDescription" : null,
+    "skillTag" : "x2tagSkillRunesName008",
+    "modifier" : false
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Sacred Rage.html",
-    "modifier" : false,
-    "skillTag" : "x2tagSkillRunesName020",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\records\\xpack2\\skills\\runemaster\\shamanrage.dbr",
     "name" : "Sacred Rage",
     "parent" : null,
     "attributes" : {
       "defensiveTotalSpeedResistance" : {
-        "skill" : false,
-        "value" : 50.0
+        "value" : 50.0,
+        "skill" : false
       },
       "skillActiveDuration" : {
-        "skill" : false,
-        "value" : 10.0
+        "value" : 10.0,
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 14
+        "value" : 14,
+        "skill" : false
       },
       "skillConnectionSpacing" : {
-        "skill" : false,
-        "value" : 62
+        "value" : 62,
+        "skill" : false
       },
       "characterManaRegen" : {
-        "skill" : false,
-        "value" : [ 3.0, 4.5, 6.0, 7.5, 9.0, 10.5, 12.0, 13.5, 15.0, 16.5, 18.0, 19.5, 21.0, 22.5 ]
+        "value" : [ 3.0, 4.5, 6.0, 7.5, 9.0, 10.5, 12.0, 13.5, 15.0, 16.5, 18.0, 19.5, 21.0, 22.5 ],
+        "skill" : false
       },
       "damageAbsorptionPercent" : {
-        "skill" : false,
-        "value" : 20.0
+        "value" : 20.0,
+        "skill" : false
       },
       "skillCooldownReduction" : {
-        "skill" : false,
-        "value" : [ 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0 ]
+        "value" : [ 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0 ],
+        "skill" : false
       },
       "skillMasteryLevelRequired" : {
-        "skill" : false,
-        "value" : 12
+        "value" : 12,
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 2
+        "value" : 2,
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 10
+        "value" : 10,
+        "skill" : false
       },
       "lifeMonitorPercent" : {
-        "skill" : false,
-        "value" : 40.0
+        "value" : 40.0,
+        "skill" : false
       },
       "characterTotalSpeedModifier" : {
-        "skill" : false,
-        "value" : [ 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0 ]
+        "value" : [ 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0 ],
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Sacred Rage.html",
+    "skillDescription" : null,
+    "skillTag" : "x2tagSkillRunesName020",
+    "modifier" : false
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Frightening Power.html",
-    "modifier" : false,
-    "skillTag" : "x2tagSkillRunesName021",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\records\\xpack2\\skills\\runemaster\\shamanrage_frighten.dbr",
     "name" : "Frightening Power",
     "parent" : null,
     "attributes" : {
       "offensiveTotalDamageReductionPercentMin" : {
-        "skill" : false,
-        "value" : [ 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0 ]
+        "value" : [ 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0 ],
+        "skill" : false
       },
       "offensiveFearMin" : {
-        "skill" : false,
-        "value" : 1.0
+        "value" : 1.0,
+        "skill" : false
       },
       "offensiveProjectileFumbleMin" : {
-        "skill" : false,
-        "value" : 66.0
+        "value" : 66.0,
+        "skill" : false
       },
       "offensiveFearChance" : {
-        "skill" : false,
-        "value" : [ 27.0, 39.0, 50.0, 60.0, 69.0, 77.0, 84.0, 90.0, 95.0, 99.0 ]
+        "value" : [ 27.0, 39.0, 50.0, 60.0, 69.0, 77.0, 84.0, 90.0, 95.0, 99.0 ],
+        "skill" : false
       },
       "offensiveLifeChance" : {
-        "skill" : false,
-        "value" : [ 30.0, 46.0, 62.0, 78.0, 94.0, 110.0, 126.0, 142.0, 158.0, 174.0, 190.0, 206.0, 222.0, 238.0 ]
+        "value" : [ 30.0, 46.0, 62.0, 78.0, 94.0, 110.0, 126.0, 142.0, 158.0, 174.0, 190.0, 206.0, 222.0, 238.0 ],
+        "skill" : false
       },
       "offensiveTotalDamageReductionPercentDurationMin" : {
-        "skill" : false,
-        "value" : 3.0
+        "value" : 3.0,
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 6
+        "value" : 6,
+        "skill" : false
       },
       "offensiveFearMax" : {
-        "skill" : false,
-        "value" : 3.0
+        "value" : 3.0,
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 10
+        "value" : 10,
+        "skill" : false
       },
       "expansionTime" : {
-        "skill" : false,
-        "value" : 0.05
+        "value" : 0.05,
+        "skill" : false
       },
       "skillTargetRadius" : {
-        "skill" : false,
-        "value" : 10.0
+        "value" : 10.0,
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 3
+        "value" : 3,
+        "skill" : false
       },
       "offensivePercentCurrentLifeMin" : {
-        "skill" : false,
-        "value" : [ 10.0, 19.0, 27.0, 34.0, 40.0, 45.0, 49.0, 52.0, 54.0, 55.0 ]
+        "value" : [ 10.0, 19.0, 27.0, 34.0, 40.0, 45.0, 49.0, 52.0, 54.0, 55.0 ],
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Frightening Power.html",
+    "skillDescription" : null,
+    "skillTag" : "x2tagSkillRunesName021",
+    "modifier" : false
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Menhir Wall.html",
-    "modifier" : false,
-    "skillTag" : "x2tagSkillRunesName022",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\records\\xpack2\\skills\\runemaster\\menhirwall.dbr",
     "name" : "Menhir Wall",
     "parent" : null,
     "attributes" : {
       "spawnObjectsNumberOfRings" : {
-        "skill" : false,
-        "value" : [ 3.0, 3.0, 4.0, 4.0, 5.0, 5.0, 6.0, 6.0, 7.0, 7.0, 8.0, 8.0, 9.0, 9.0 ]
+        "value" : [ 3.0, 3.0, 4.0, 4.0, 5.0, 5.0, 6.0, 6.0, 7.0, 7.0, 8.0, 8.0, 9.0, 9.0 ],
+        "skill" : false
       },
       "skillCooldownTime" : {
-        "skill" : false,
-        "value" : 22.0
+        "value" : 22.0,
+        "skill" : false
       },
       "skillManaCost" : {
-        "skill" : false,
-        "value" : 75.0
+        "value" : 75.0,
+        "skill" : false
       },
       "spawnObjectsTimeToLive" : {
-        "skill" : false,
-        "value" : 10.0
+        "value" : 10.0,
+        "skill" : false
       },
       "cameraShakeAmplitude" : {
-        "skill" : false,
-        "value" : 0.12
+        "value" : 0.12,
+        "skill" : false
       },
       "spawnObjectsAngleToCaster" : {
-        "skill" : false,
-        "value" : 90.0
+        "value" : 90.0,
+        "skill" : false
       },
       "spawnObjectsUseAngleToCaster" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 10
+        "value" : 10,
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 14
+        "value" : 14,
+        "skill" : false
       },
       "spawnObjectsDistanceInnerCircle" : {
-        "skill" : false,
-        "value" : 0.5
+        "value" : 0.5,
+        "skill" : false
       },
       "spawnObjectsSpacingAngle" : {
-        "skill" : false,
-        "value" : 360.0
+        "value" : 360.0,
+        "skill" : false
       },
       "spawnObjectsDistanceIncrement" : {
-        "skill" : false,
-        "value" : 1.0
+        "value" : 1.0,
+        "skill" : false
       },
       "spawnObjectsRandomRotation" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 3
+        "value" : 3,
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Menhir Wall.html",
+    "skillDescription" : null,
+    "skillTag" : "x2tagSkillRunesName022",
+    "modifier" : false
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Guardian Stones.html",
-    "modifier" : false,
-    "skillTag" : "x2tagSkillRunesName023",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\records\\xpack2\\skills\\runemaster\\menhiraltar.dbr",
     "name" : "Guardian Stones",
     "parent" : null,
     "attributes" : {
       "spawnObjectsNumberOfRings" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "skillCooldownTime" : {
-        "skill" : false,
-        "value" : 240.0
+        "value" : 240.0,
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 16
+        "value" : 16,
+        "skill" : false
       },
       "skillManaCost" : {
-        "skill" : false,
-        "value" : [ 153.0, 168.0, 183.0, 198.0, 213.0, 228.0, 243.0, 258.0, 273.0, 288.0, 303.0, 318.0, 333.0, 348.0, 363.0, 378.0 ]
+        "value" : [ 153.0, 168.0, 183.0, 198.0, 213.0, 228.0, 243.0, 258.0, 273.0, 288.0, 303.0, 318.0, 333.0, 348.0, 363.0, 378.0 ],
+        "skill" : false
       },
       "spawnObjectsTimeToLive" : {
-        "skill" : false,
-        "value" : 45.0
+        "value" : 45.0,
+        "skill" : false
       },
       "spawnObjectsDistanceInnerCircle" : {
-        "skill" : false,
-        "value" : 5.0
+        "value" : 5.0,
+        "skill" : false
       },
       "spawnObjectsSpacingAngle" : {
-        "skill" : false,
-        "value" : 120.0
+        "value" : 120.0,
+        "skill" : false
       },
       "excludeRacialDamage" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "cameraShakeAmplitude" : {
-        "skill" : false,
-        "value" : 0.12
+        "value" : 0.12,
+        "skill" : false
       },
       "spawnObjectsDistanceIncrement" : {
-        "skill" : false,
-        "value" : 1.0
+        "value" : 1.0,
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 6
+        "value" : 6,
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 12
+        "value" : 12,
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Guardian Stones.html",
+    "skillDescription" : null,
+    "skillTag" : "x2tagSkillRunesName023",
+    "modifier" : false
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Seal of Fate.html",
-    "modifier" : false,
-    "skillTag" : "x2tagSkillRunesName014",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\records\\xpack2\\skills\\runemaster\\runecircle.dbr",
     "name" : "Seal of Fate",
     "parent" : null,
     "attributes" : {
       "skillActiveDuration" : {
-        "skill" : false,
-        "value" : 3.0
+        "value" : 3.0,
+        "skill" : false
       },
       "skillCooldownTime" : {
-        "skill" : false,
-        "value" : 9.0
+        "value" : 9.0,
+        "skill" : false
       },
       "skillManaCost" : {
-        "skill" : false,
-        "value" : [ 40.0, 42.0, 44.0, 46.0, 48.0, 50.0, 52.0, 54.0, 56.0, 58.0, 60.0, 62.0, 64.0, 66.0, 68.0, 70.0, 72.0, 74.0, 76.0, 78.0 ]
+        "value" : [ 40.0, 42.0, 44.0, 46.0, 48.0, 50.0, 52.0, 54.0, 56.0, 58.0, 60.0, 62.0, 64.0, 66.0, 68.0, 70.0, 72.0, 74.0, 76.0, 78.0 ],
+        "skill" : false
       },
       "projectileExplosionRadius" : {
-        "skill" : false,
-        "value" : 4.0
+        "value" : 4.0,
+        "skill" : false
       },
       "skillProjectileTargetGroundOnly" : {
-        "skill" : false,
-        "value" : 1
+        "value" : 1,
+        "skill" : false
       },
       "skillConnectionSpacing" : {
-        "skill" : false,
-        "value" : 62
+        "value" : 62,
+        "skill" : false
       },
       "cameraShakeAmplitude" : {
-        "skill" : false,
-        "value" : 0.12
+        "value" : 0.12,
+        "skill" : false
       },
       "ragDollAmplification" : {
-        "skill" : false,
-        "value" : 2.0
+        "value" : 2.0,
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 12
+        "value" : 12,
+        "skill" : false
       },
       "offensiveElementalMin" : {
-        "skill" : false,
-        "value" : [ 85.0, 135.0, 189.0, 247.0, 310.0, 378.0, 450.0, 526.0, 607.0, 693.0, 783.0, 877.0, 976.0, 1080.0, 1188.0, 1300.0 ]
+        "value" : [ 85.0, 135.0, 189.0, 247.0, 310.0, 378.0, 450.0, 526.0, 607.0, 693.0, 783.0, 877.0, 976.0, 1080.0, 1188.0, 1300.0 ],
+        "skill" : false
       },
       "offensiveStunMin" : {
-        "skill" : false,
-        "value" : 2.0
+        "value" : 2.0,
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 16
+        "value" : 16,
+        "skill" : false
       },
       "racialBonusPercentDamage" : {
-        "skill" : false,
-        "value" : 100.0
+        "value" : 100.0,
+        "skill" : false
       },
       "offensiveSlowTotalSpeedDurationMin" : {
-        "skill" : false,
-        "value" : 2.0
+        "value" : 2.0,
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 4
+        "value" : 4,
+        "skill" : false
       },
       "offensivePercentCurrentLifeMin" : {
-        "skill" : false,
-        "value" : [ 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0 ]
+        "value" : [ 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0 ],
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Seal of Fate.html",
+    "skillDescription" : null,
+    "skillTag" : "x2tagSkillRunesName014",
+    "modifier" : false
   }, {
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Aftershock.html",
-    "modifier" : false,
-    "skillTag" : "x2tagSkillRunesName015",
-    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\records\\xpack2\\skills\\runemaster\\runecircle_aftershock.dbr",
     "name" : "Aftershock",
     "parent" : null,
     "attributes" : {
       "offensiveSlowBleedingMin" : {
-        "skill" : false,
-        "value" : [ 22.0, 33.0, 44.0, 55.0, 66.0, 77.0, 88.0, 99.0, 110.0, 121.0, 132.0, 143.0, 154.0, 165.0 ]
+        "value" : [ 22.0, 33.0, 44.0, 55.0, 66.0, 77.0, 88.0, 99.0, 110.0, 121.0, 132.0, 143.0, 154.0, 165.0 ],
+        "skill" : false
       },
       "offensiveSlowTotalSpeedMin" : {
-        "skill" : false,
-        "value" : 20.0
+        "value" : 20.0,
+        "skill" : false
       },
       "offensiveProjectileFumbleMin" : {
-        "skill" : false,
-        "value" : 60.0
+        "value" : 60.0,
+        "skill" : false
       },
       "offensiveSlowBleedingDurationMin" : {
-        "skill" : false,
-        "value" : 4.0
+        "value" : 4.0,
+        "skill" : false
       },
       "offensiveDisruptionMin" : {
-        "skill" : false,
-        "value" : 4.0
+        "value" : 4.0,
+        "skill" : false
       },
       "offensiveSlowFireMin" : {
-        "skill" : false,
-        "value" : [ 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0 ]
+        "value" : [ 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0 ],
+        "skill" : false
       },
       "skillMaxLevel" : {
-        "skill" : false,
-        "value" : 6
+        "value" : 6,
+        "skill" : false
       },
       "offensiveTotalResistanceReductionAbsoluteDurationMin" : {
-        "skill" : false,
-        "value" : 4.0
+        "value" : 4.0,
+        "skill" : false
       },
       "offensiveProjectileFumbleDurationMin" : {
-        "skill" : false,
-        "value" : 4.0
+        "value" : 4.0,
+        "skill" : false
       },
       "offensiveSlowDefensiveReductionDurationMin" : {
-        "skill" : false,
-        "value" : 4.0
+        "value" : 4.0,
+        "skill" : false
       },
       "skillUltimateLevel" : {
-        "skill" : false,
-        "value" : 10
+        "value" : 10,
+        "skill" : false
       },
       "offensiveTotalResistanceReductionAbsoluteMin" : {
-        "skill" : false,
-        "value" : [ 14.0, 21.0, 28.0, 35.0, 42.0, 49.0, 56.0, 63.0, 70.0, 77.0, 84.0, 91.0, 98.0, 105.0 ]
+        "value" : [ 14.0, 21.0, 28.0, 35.0, 42.0, 49.0, 56.0, 63.0, 70.0, 77.0, 84.0, 91.0, 98.0, 105.0 ],
+        "skill" : false
       },
       "skillTargetRadius" : {
-        "skill" : false,
-        "value" : 4.0
+        "value" : 4.0,
+        "skill" : false
       },
       "offensiveSlowTotalSpeedDurationMin" : {
-        "skill" : false,
-        "value" : 4.0
+        "value" : 4.0,
+        "skill" : false
       },
       "skillTier" : {
-        "skill" : false,
-        "value" : 6
+        "value" : 6,
+        "skill" : false
       },
       "offensiveSlowDefensiveReductionMin" : {
-        "skill" : false,
-        "value" : [ 140.0, 210.0, 280.0, 350.0, 420.0, 490.0, 560.0, 630.0, 700.0, 770.0, 840.0, 910.0, 980.0, 1050.0 ]
+        "value" : [ 140.0, 210.0, 280.0, 350.0, 420.0, 490.0, 560.0, 630.0, 700.0, 770.0, 840.0, 910.0, 980.0, 1050.0 ],
+        "skill" : false
       }
     },
     "buff" : null,
-    "skillDescription" : null
-  } ]
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery/Aftershock.html",
+    "skillDescription" : null,
+    "skillTag" : "x2tagSkillRunesName015",
+    "modifier" : false
+  } ],
+  "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rune Mastery.html"
 }
