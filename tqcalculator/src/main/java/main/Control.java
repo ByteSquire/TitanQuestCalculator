@@ -84,7 +84,7 @@ public class Control {
             }
         }
 
-        new Cleaner(mMods);
+        //new Cleaner(mMods);
 
         writeTemplates();
 
