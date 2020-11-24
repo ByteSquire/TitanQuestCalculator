@@ -10,6 +10,11 @@
     - links consist of two parts separated by an arrow like this ``text->url``:
       - the text that will be visible on the site 
       - the url where clicking on the text will take you
+  - If you're real fancy you can slim down the repo by:
+    - Building the maven project inside tqcalculator
+    - Running the resulting program __ONCE__
+    - Deleting all database directories not named *modname*-cleaned and renaming all ones named *modname*-cleaned
+  - Commit your changes with a message like ``[database] add -modname-``. [how to commit](https://github.com/git-guides/git-commit)
   - Push your local clone. [pushing a repo](https://docs.github.com/en/free-pro-team@latest/github/using-git/pushing-commits-to-a-remote-repository)
   - Create a [pull request](https://github.com/ByteSquire/TitanQuestCalculator/pulls). (you can take a look at [the example pull request](https://github.com/ByteSquire/TitanQuestCalculator/pull/1))
   - That's it you're done, you can now wait for [someone](https://github.com/ByteSquire) to merge the pull and push the result
