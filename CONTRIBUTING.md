@@ -14,5 +14,5 @@
   - Create a [pull request](https://github.com/ByteSquire/TitanQuestCalculator/pulls). (you can take a look at [the example pull request](https://github.com/ByteSquire/TitanQuestCalculator/pull/1))
   - That's it you're done, you can now wait for [someone](https://github.com/ByteSquire) to merge the pull and push the result
 
-### If you do not want to creat a Github account
+### If you do not want to create a Github account
   - Get in touch with me via the Titan Forge discord channel
