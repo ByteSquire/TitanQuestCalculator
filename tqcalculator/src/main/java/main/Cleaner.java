@@ -37,6 +37,19 @@ public class Cleaner {
                     e.printStackTrace();
             }
 
+            Path originLinksPath = Path.of(mod.getModDir() + "links.txt");
+//          System.out.println(originLinksPath);
+            Path targetLinksPath = Path
+                    .of(mod.getModDir().substring(0, mod.getModDir().length() - 1) + "-cleaned/links.txt");
+//          System.out.println(targetLinksPath);
+            try {
+                Files.createDirectories(Path.of(targetLinksPath.toString().split("links.txt")[0]));
+                Files.copy(originLinksPath, targetLinksPath);
+            } catch (IOException e) {
+                if (!(e instanceof java.nio.file.FileAlreadyExistsException))
+                    e.printStackTrace();
+            }
+
             cleanModStrings(mod);
 
             for (Mastery mastery : mod.getMasteries()) {
@@ -95,54 +108,6 @@ public class Cleaner {
         }
     }
 
-    /*private void cleanSkill(Skill skill, Mod mod, Mastery mastery) {
-        Path originPath = skill.getSkill().toPath();
-//        System.out.println(originPath);
-        Path targetPath = Path.of(mod.getModDir().substring(0, mod.getModDir().length() - 1) + "-cleaned/"
-                + skill.getSkill().toPath().toString().split(mod.getName())[1]);
-//        System.out.println(targetPath);
-        try {
-            Files.createDirectories(Path.of(targetPath.toString().split(skill.getSkill().getName())[0]));
-            Files.copy(originPath, targetPath);
-        } catch (IOException e) {
-            if (!(e instanceof java.nio.file.FileAlreadyExistsException))
-                e.printStackTrace();
-        }
-
-        if (skill.isBuff()) {
-            Skill internalSkill = skill.getBuff();
-            Path originInternalPath = internalSkill.getSkill().toPath();
-//          System.out.println(originPath);
-            Path targetInternalPath = Path.of(mod.getModDir().substring(0, mod.getModDir().length() - 1) + "-cleaned/"
-                    + internalSkill.getSkill().toPath().toString().split(mod.getName())[1]);
-//          System.out.println(targetPath);
-            try {
-                Files.createDirectories(
-                        Path.of(targetInternalPath.toString().split(internalSkill.getSkill().getName())[0]));
-                Files.copy(originInternalPath, targetInternalPath);
-            } catch (IOException e) {
-                if (!(e instanceof java.nio.file.FileAlreadyExistsException))
-                    e.printStackTrace();
-            }
-            if(internalSkill.isBuff()) {
-                Skill internalInternalSkill = internalSkill.getBuff();
-                Path originInternalInternalPath = internalInternalSkill.getSkill().toPath();
-//              System.out.println(originPath);
-                Path targetInternalInternalPath = Path.of(mod.getModDir().substring(0, mod.getModDir().length() - 1) + "-cleaned/"
-                        + internalInternalSkill.getSkill().toPath().toString().split(mod.getName())[1]);
-//              System.out.println(targetPath);
-                try {
-                    Files.createDirectories(
-                            Path.of(targetInternalInternalPath.toString().split(internalInternalSkill.getSkill().getName())[0]));
-                    Files.copy(originInternalInternalPath, targetInternalInternalPath);
-                } catch (IOException e) {
-                    if (!(e instanceof java.nio.file.FileAlreadyExistsException))
-                        e.printStackTrace();
-                }
-            }
-        }
-    }*/
-    
     private void cleanSkill(Skill skill, Mod mod, Mastery mastery) {
         Path originPath = skill.getSkill().toPath();
 //        System.out.println(originPath);
