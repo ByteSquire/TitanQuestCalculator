@@ -15,4 +15,4 @@
   - That's it you're done, you can now wait for [someone](https://github.com/ByteSquire) to merge the pull and push the result
 
 ### If you do not want to create a Github account
-  - Get in touch with me via the Titan Forge discord channel
+  - Get in touch with me via the [Titan Forge discord channel](https://discord.gg/efFsGMJ8tn)
