@@ -74,7 +74,7 @@ public class Control {
 
                     ObjectMapper mapper = new ObjectMapper();
                     try {
-                        mapper.writeValue(new File(out.toString() + ".json"), mastery);
+                        mapper.writerWithDefaultPrettyPrinter().writeValue(new File(out.toString() + ".json"), mastery);
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
