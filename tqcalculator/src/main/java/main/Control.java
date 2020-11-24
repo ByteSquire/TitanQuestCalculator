@@ -42,7 +42,7 @@ public class Control {
             databaseDir = Files.newDirectoryStream(Path.of(DATABASES_DIR));
 
             databaseDir.forEach((mod) -> {
-                if (mod != null)
+                if (mod != null && !mod.getFileName().toString().startsWith("."))
                     mMods.add(new Mod(mod.getFileName().toString(), mod.toAbsolutePath().toString() + "/"));
             });
         } catch (IOException e) {

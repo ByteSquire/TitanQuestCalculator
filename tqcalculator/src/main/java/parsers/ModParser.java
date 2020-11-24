@@ -53,6 +53,8 @@ public class ModParser {
 
     private void initLinks() {
         File links = new File(mModdir + "links.txt");
+        if (!links.exists())
+            return;
         try (BufferedReader linksReader = new BufferedReader(new FileReader(links));) {
             Stream<String> fileStream = linksReader.lines();
             fileStream.filter((str) -> !str.isBlank()).forEach((str) -> {
