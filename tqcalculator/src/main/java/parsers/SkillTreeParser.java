@@ -11,6 +11,7 @@ import java.util.stream.Stream;
 public class SkillTreeParser {
 
     private ArrayList<File> mSkills;
+    private ArrayList<Boolean> mSkillIsInnate;
     public static final int COUNT_SKILLS = 50;
     private File mSkillTree;
     private String mModDir;
@@ -19,14 +20,46 @@ public class SkillTreeParser {
     public SkillTreeParser(File aSkillTree, String aModDir) {
         mModDir = aModDir;
         mSkills = new ArrayList<File>();
+        mSkillIsInnate = new ArrayList<Boolean>();
 
         for (int i = 0; i < COUNT_SKILLS; i++) {
             mSkills.add(null);
+            mSkillIsInnate.add(null);
         }
 
         mSkillTree = aSkillTree;
 
         initSkills();
+        filterSkills();
+    }
+
+    private void filterSkills() {
+        try (BufferedReader skillTreeReader = new BufferedReader(new FileReader(mSkillTree));) {
+            Stream<String> fileStream = skillTreeReader.lines();
+
+            fileStream.filter((str) -> str.startsWith("skillLevel")).forEach((str) -> {
+                int index = Integer.parseInt(str.substring(10, 11));
+                try {
+                    index = Integer.parseInt(str.substring(10, 12));
+                } catch (NumberFormatException e) {
+                }
+
+                if (index != 1) {
+                    mSkillIsInnate.set(index - 1, (str.split(",")[1].equals("1")));
+                }
+            });
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+            return;
+        } catch (IOException e1) {
+            e1.printStackTrace();
+            return;
+        }
+
+        for (int i = 1; i < mSkills.size(); i++) {
+            if (mSkillIsInnate.get(i) != null && mSkillIsInnate.get(i))
+                mSkills.set(i, null);
+        }
     }
 
     private void initSkills() {
