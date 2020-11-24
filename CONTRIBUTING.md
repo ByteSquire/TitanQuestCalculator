@@ -2,5 +2,6 @@
 - Put your mod from CustomMaps into the databases directory inside the tqcalulator directory.
 - Put your modstrings.txt in a folder called text. (you can take a look at the other mods for reference)
 - Delete the assets and source directories as they are not required and would bloat the repo.
+- If you have any kind of uncommon directory structure please have a look at the .gitignore in the databases directory to avoid bloating the repo.
 - Create a [pull request](https://github.com/ByteSquire/TitanQuestCalculator/pulls). (you can take a look at [the example pull request](https://github.com/ByteSquire/TitanQuestCalculator/pull/1))
 - That's it you're done, you can now wait for [someone](https://github.com/ByteSquire) to merge the pull and push the result
