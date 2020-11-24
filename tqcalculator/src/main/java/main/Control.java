@@ -103,8 +103,8 @@ public class Control {
                     rootMastery.put("name", mastery.getName());
                     Control.mastery.process(rootMastery, outMastery);
                     for (Skill skill : mastery.getSkills()) {
-                        Writer outSkill = new FileWriter(
-                                "../mods/" + mod.getName() + "/" + mastery.getName() + "/" + skill.getName() + ".html");
+                        Writer outSkill = new FileWriter("../mods/" + mod.getName() + "/" + mastery.getName() + "/"
+                                + ((skill.getName() == null) ? skill.toString() : skill.getName()) + ".html");
                         rootSkill = new HashMap<>();
                         if (skill.isBuff()) {
                             rootSkill.put("buffName", skill.getBuff().getName());
