@@ -1,1269 +1,2089 @@
 {
+  "mastery" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\NatureMastery.dbr",
+  "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery.html",
   "name" : "Nature Mastery",
   "skills" : [ {
+    "skillTag" : "tagSkillName072",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\Regrowth.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Regrowth.html",
     "name" : "Regrowth",
     "parent" : null,
     "attributes" : {
       "skillCooldownTime" : {
-        "value" : 8.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 8.0
       },
       "skillLifeBonus" : {
-        "value" : [ 240.0, 300.0, 370.0, 440.0, 530.0, 630.0, 740.0, 870.0, 1010.0, 1160.0, 1320.0, 1500.0, 1690.0, 1900.0, 2120.0, 2360.0, 2620.0, 2900.0, 3200.0, 3520.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 240.0, 300.0, 370.0, 440.0, 530.0, 630.0, 740.0, 870.0, 1010.0, 1160.0, 1320.0, 1500.0, 1690.0, 1900.0, 2120.0, 2360.0, 2620.0, 2900.0, 3200.0, 3520.0 ]
       },
       "skillUltimateLevel" : {
-        "value" : 20,
-        "skill" : false
+        "skill" : false,
+        "value" : 20
       },
       "skillManaCost" : {
-        "value" : [ 46.0, 52.0, 58.0, 64.0, 70.0, 76.0, 82.0, 88.0, 94.0, 100.0, 106.0, 112.0, 118.0, 124.0, 130.0, 136.0, 142.0, 148.0, 154.0, 160.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 46.0, 52.0, 58.0, 64.0, 70.0, 76.0, 82.0, 88.0, 94.0, 100.0, 106.0, 112.0, 118.0, 124.0, 130.0, 136.0, 142.0, 148.0, 154.0, 160.0 ]
       },
       "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
+        "skill" : false,
+        "value" : 0.12
       },
       "skillConnectionSpacing" : {
-        "value" : 62,
-        "skill" : false
+        "skill" : false,
+        "value" : 62
       },
       "skillMasteryLevelRequired" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillTier" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillMaxLevel" : {
-        "value" : 16,
-        "skill" : false
+        "skill" : false,
+        "value" : 16
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "tagSkillName072",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Regrowth.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "tagSkillName075",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\Regrowth_AcceleratedGrowth.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Accelerated Growth.html",
     "name" : "Accelerated Growth",
     "parent" : "Regrowth",
     "attributes" : {
       "skillCooldownTime" : {
-        "value" : [ -0.333, -0.666, -0.999, -1.333, -1.666, -2.0, -2.333, -2.666, -3.0, -3.333, -3.666, -4.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ -0.333, -0.666, -0.999, -1.333, -1.666, -2.0, -2.333, -2.666, -3.0, -3.333, -3.666, -4.0 ]
       },
       "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
+        "skill" : false,
+        "value" : 12
       },
       "skillCooldownReduction" : {
-        "value" : [ 18.0, 26.0, 34.0, 42.0, 50.0, 57.0, 63.0, 68.0, 72.0, 75.0, 78.0, 80.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 18.0, 26.0, 34.0, 42.0, 50.0, 57.0, 63.0, 68.0, 72.0, 75.0, 78.0, 80.0 ]
       },
       "skillMasteryLevelRequired" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillTier" : {
-        "value" : 2,
-        "skill" : false
+        "skill" : false,
+        "value" : 2
       },
       "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
+        "skill" : false,
+        "value" : 8
       }
     },
     "buff" : null,
-    "modifier" : true,
-    "skillTag" : "tagSkillName075",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Accelerated Growth.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : true
   }, {
+    "skillTag" : "tagSkillName073",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\Regrowth_Dissemination.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Dissemination.html",
     "name" : "Dissemination",
     "parent" : null,
     "attributes" : {
       "skillLifeBonus" : {
-        "value" : [ 180.0, 225.0, 277.5, 330.0, 397.5, 472.5, 555.0, 652.5, 757.5, 870.0, 990.0, 1125.0, 1267.5, 1425.0, 1590.0, 1770.0, 1965.0, 2175.0, 2400.0, 2640.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 180.0, 225.0, 277.5, 330.0, 397.5, 472.5, 555.0, 652.5, 757.5, 870.0, 990.0, 1125.0, 1267.5, 1425.0, 1590.0, 1770.0, 1965.0, 2175.0, 2400.0, 2640.0 ]
       },
       "skillUltimateLevel" : {
-        "value" : 16,
-        "skill" : false
+        "skill" : false,
+        "value" : 16
       },
       "sparkGap" : {
-        "value" : 8.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 8.0
       },
       "sparkChance" : {
-        "value" : 100.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 100.0
       },
       "skillMasteryLevelRequired" : {
-        "value" : 10,
-        "skill" : false
+        "skill" : false,
+        "value" : 10
       },
       "skillTier" : {
-        "value" : 4,
-        "skill" : false
+        "skill" : false,
+        "value" : 4
       },
       "sparkMaxNumber" : {
-        "value" : 3,
-        "skill" : false
+        "skill" : false,
+        "value" : 3
       },
       "skillMaxLevel" : {
-        "value" : 12,
-        "skill" : false
+        "skill" : false,
+        "value" : 12
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "tagSkillName073",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Dissemination.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "tagSkillName068",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\BriarWard.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Briar Ward.html",
     "name" : "Briar Ward",
     "parent" : null,
     "attributes" : {
       "spawnObjectsNumberOfRings" : {
-        "value" : 2,
-        "skill" : false
+        "skill" : false,
+        "value" : 2
       },
       "skillCooldownTime" : {
-        "value" : 120.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 120.0
       },
       "skillUltimateLevel" : {
-        "value" : 20,
-        "skill" : false
+        "skill" : false,
+        "value" : 20
       },
       "skillManaCost" : {
-        "value" : [ 112.0, 116.0, 120.0, 124.0, 128.0, 132.0, 136.0, 140.0, 144.0, 148.0, 152.0, 156.0, 160.0, 164.0, 168.0, 172.0, 176.0, 180.0, 184.0, 188.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 112.0, 116.0, 120.0, 124.0, 128.0, 132.0, 136.0, 140.0, 144.0, 148.0, 152.0, 156.0, 160.0, 164.0, 168.0, 172.0, 176.0, 180.0, 184.0, 188.0 ]
       },
       "spawnObjectsTimeToLive" : {
-        "value" : 30.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 30.0
       },
       "spawnObjectsDistanceInnerCircle" : {
-        "value" : 2.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 2.0
       },
       "spawnObjectsSpacingAngle" : {
-        "value" : 45.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 45.0
       },
       "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
+        "skill" : false,
+        "value" : 0.12
       },
       "skillConnectionSpacing" : {
-        "value" : 62,
-        "skill" : false
+        "skill" : false,
+        "value" : 62
       },
       "spawnObjectsDistanceIncrement" : {
-        "value" : 0.8,
-        "skill" : false
+        "skill" : false,
+        "value" : 0.8
       },
       "skillTier" : {
-        "value" : 3,
-        "skill" : false
+        "skill" : false,
+        "value" : 3
       },
       "skillMaxLevel" : {
-        "value" : 16,
-        "skill" : false
+        "skill" : false,
+        "value" : 16
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "tagSkillName068",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Briar Ward.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "tagSkillName190",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\BriarWard_PetModifier_StingingNettle.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Stinging Nettle.html",
     "name" : "Stinging Nettle",
     "parent" : null,
     "attributes" : {
       "StingingNettle" : {
+        "skill" : true,
         "value" : {
+          "skillTag" : "tagSkillName190",
+          "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\BriarWard_PetSkill_StingingNettle.dbr",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Stinging Nettle.html",
           "name" : "Stinging Nettle",
           "parent" : null,
           "attributes" : {
             "retaliationSlowPoisonDurationMin" : {
-              "value" : 6.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 6.0
             },
             "skillUltimateLevel" : {
-              "value" : 12,
-              "skill" : false
+              "skill" : false,
+              "value" : 12
             },
             "retaliationSlowPoisonMin" : {
-              "value" : [ 5.0, 8.0, 11.0, 14.0, 17.0, 20.0, 23.0, 26.0, 29.0, 32.0, 35.0, 38.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 5.0, 8.0, 11.0, 14.0, 17.0, 20.0, 23.0, 26.0, 29.0, 32.0, 35.0, 38.0 ]
             },
             "skillTier" : {
-              "value" : 4,
-              "skill" : false
+              "skill" : false,
+              "value" : 4
             },
             "skillMaxLevel" : {
-              "value" : 8,
-              "skill" : false
+              "skill" : false,
+              "value" : 8
             }
           },
           "buff" : null,
-          "modifier" : false,
-          "skillTag" : "tagSkillName190",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Stinging Nettle.html",
-          "skillDescription" : null
-        },
-        "skill" : true
+          "skillDescription" : null,
+          "modifier" : false
+        }
       }
     },
-    "buff" : null,
-    "modifier" : false,
-    "skillTag" : "tagSkillName190",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Stinging Nettle.html",
-    "skillDescription" : null
+    "buff" : {
+      "skillTag" : "tagSkillName190",
+      "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\BriarWard_PetSkill_StingingNettle.dbr",
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Stinging Nettle.html",
+      "name" : "Stinging Nettle",
+      "parent" : null,
+      "attributes" : {
+        "retaliationSlowPoisonDurationMin" : {
+          "skill" : false,
+          "value" : 6.0
+        },
+        "skillUltimateLevel" : {
+          "skill" : false,
+          "value" : 12
+        },
+        "retaliationSlowPoisonMin" : {
+          "skill" : false,
+          "value" : [ 5.0, 8.0, 11.0, 14.0, 17.0, 20.0, 23.0, 26.0, 29.0, 32.0, 35.0, 38.0 ]
+        },
+        "skillTier" : {
+          "skill" : false,
+          "value" : 4
+        },
+        "skillMaxLevel" : {
+          "skill" : false,
+          "value" : 8
+        }
+      },
+      "buff" : null,
+      "skillDescription" : null,
+      "modifier" : false
+    },
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "tagSkillName069",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\BriarWard_Sanctuary.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Sanctuary.html",
     "name" : "Sanctuary",
     "parent" : null,
     "attributes" : {
       "Sanctuary" : {
+        "skill" : true,
         "value" : {
+          "skillTag" : "tagSkillName069",
+          "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\BriarWard_SanctuaryBuff.dbr",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Sanctuary.html",
           "name" : "Sanctuary",
           "parent" : null,
           "attributes" : {
             "skillActiveDuration" : {
-              "value" : 18.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 18.0
             },
             "skillUltimateLevel" : {
-              "value" : 12,
-              "skill" : false
+              "skill" : false,
+              "value" : 12
             },
             "characterLifeRegen" : {
-              "value" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0 ]
             },
             "cameraShakeAmplitude" : {
-              "value" : 0.12,
-              "skill" : false
+              "skill" : false,
+              "value" : 0.12
             },
             "damageAbsorptionPercent" : {
-              "value" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0 ]
             },
             "skillTargetRadius" : {
-              "value" : 3.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 3.0
             },
             "skillManaCostReduction" : {
-              "value" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0 ]
             },
             "skillTier" : {
-              "value" : 6,
-              "skill" : false
+              "skill" : false,
+              "value" : 6
             },
             "skillMaxLevel" : {
-              "value" : 8,
-              "skill" : false
+              "skill" : false,
+              "value" : 8
             }
           },
           "buff" : null,
-          "modifier" : false,
-          "skillTag" : "tagSkillName069",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Sanctuary.html",
-          "skillDescription" : null
-        },
-        "skill" : true
+          "skillDescription" : null,
+          "modifier" : false
+        }
       }
     },
-    "buff" : null,
-    "modifier" : false,
-    "skillTag" : "tagSkillName069",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Sanctuary.html",
-    "skillDescription" : null
+    "buff" : {
+      "skillTag" : "tagSkillName069",
+      "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\BriarWard_SanctuaryBuff.dbr",
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Sanctuary.html",
+      "name" : "Sanctuary",
+      "parent" : null,
+      "attributes" : {
+        "skillActiveDuration" : {
+          "skill" : false,
+          "value" : 18.0
+        },
+        "skillUltimateLevel" : {
+          "skill" : false,
+          "value" : 12
+        },
+        "characterLifeRegen" : {
+          "skill" : false,
+          "value" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0 ]
+        },
+        "cameraShakeAmplitude" : {
+          "skill" : false,
+          "value" : 0.12
+        },
+        "damageAbsorptionPercent" : {
+          "skill" : false,
+          "value" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0 ]
+        },
+        "skillTargetRadius" : {
+          "skill" : false,
+          "value" : 3.0
+        },
+        "skillManaCostReduction" : {
+          "skill" : false,
+          "value" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0 ]
+        },
+        "skillTier" : {
+          "skill" : false,
+          "value" : 6
+        },
+        "skillMaxLevel" : {
+          "skill" : false,
+          "value" : 8
+        }
+      },
+      "buff" : null,
+      "skillDescription" : null,
+      "modifier" : false
+    },
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "tagSkillName160",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\HeartofOak.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Heart of Oak.html",
     "name" : "Heart of Oak",
     "parent" : null,
     "attributes" : {
       "HeartofOak" : {
+        "skill" : true,
         "value" : {
+          "skillTag" : "tagSkillName160",
+          "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\HeartofOakBuff.dbr",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Heart of Oak.html",
           "name" : "Heart of Oak",
           "parent" : null,
           "attributes" : {
             "characterLifeModifier" : {
-              "value" : [ 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0 ]
             },
             "skillUltimateLevel" : {
-              "value" : 16,
-              "skill" : false
+              "skill" : false,
+              "value" : 16
             },
             "characterManaLimitReserve" : {
-              "value" : 100.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 100.0
             },
             "skillActiveManaCost" : {
-              "value" : 1.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 1.0
             },
             "skillConnectionSpacing" : {
-              "value" : 62,
-              "skill" : false
+              "skill" : false,
+              "value" : 62
             },
             "cameraShakeAmplitude" : {
-              "value" : 0.12,
-              "skill" : false
+              "skill" : false,
+              "value" : 0.12
             },
             "skillTargetRadius" : {
-              "value" : 18.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 18.0
             },
             "skillMasteryLevelRequired" : {
-              "value" : 1,
-              "skill" : false
+              "skill" : false,
+              "value" : 1
             },
             "skillTier" : {
-              "value" : 2,
-              "skill" : false
+              "skill" : false,
+              "value" : 2
             },
             "skillMaxLevel" : {
-              "value" : 12,
-              "skill" : false
+              "skill" : false,
+              "value" : 12
             },
             "characterTotalSpeedModifier" : {
-              "value" : 10.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 10.0
             }
           },
           "buff" : null,
-          "modifier" : false,
-          "skillTag" : "tagSkillName160",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Heart of Oak.html",
-          "skillDescription" : null
-        },
-        "skill" : true
+          "skillDescription" : null,
+          "modifier" : false
+        }
       }
     },
-    "buff" : null,
-    "modifier" : false,
-    "skillTag" : "tagSkillName160",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Heart of Oak.html",
-    "skillDescription" : null
+    "buff" : {
+      "skillTag" : "tagSkillName160",
+      "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\HeartofOakBuff.dbr",
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Heart of Oak.html",
+      "name" : "Heart of Oak",
+      "parent" : null,
+      "attributes" : {
+        "characterLifeModifier" : {
+          "skill" : false,
+          "value" : [ 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0 ]
+        },
+        "skillUltimateLevel" : {
+          "skill" : false,
+          "value" : 16
+        },
+        "characterManaLimitReserve" : {
+          "skill" : false,
+          "value" : 100.0
+        },
+        "skillActiveManaCost" : {
+          "skill" : false,
+          "value" : 1.0
+        },
+        "skillConnectionSpacing" : {
+          "skill" : false,
+          "value" : 62
+        },
+        "cameraShakeAmplitude" : {
+          "skill" : false,
+          "value" : 0.12
+        },
+        "skillTargetRadius" : {
+          "skill" : false,
+          "value" : 18.0
+        },
+        "skillMasteryLevelRequired" : {
+          "skill" : false,
+          "value" : 1
+        },
+        "skillTier" : {
+          "skill" : false,
+          "value" : 2
+        },
+        "skillMaxLevel" : {
+          "skill" : false,
+          "value" : 12
+        },
+        "characterTotalSpeedModifier" : {
+          "skill" : false,
+          "value" : 10.0
+        }
+      },
+      "buff" : null,
+      "skillDescription" : null,
+      "modifier" : false
+    },
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "tagSkillName161",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\HeartofOak_Tranquility.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Tranquility of Water.html",
     "name" : "Tranquility of Water",
     "parent" : "Heart of Oak",
     "attributes" : {
       "skillUltimateLevel" : {
-        "value" : 10,
-        "skill" : false
+        "skill" : false,
+        "value" : 10
       },
       "skillManaCostReductionChance" : {
-        "value" : [ 9.0, 18.0, 27.0, 36.0, 45.0, 54.0, 63.0, 72.0, 81.0, 90.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 9.0, 18.0, 27.0, 36.0, 45.0, 54.0, 63.0, 72.0, 81.0, 90.0 ]
       },
       "skillMasteryLevelRequired" : {
-        "value" : 15,
-        "skill" : false
+        "skill" : false,
+        "value" : 15
       },
       "skillManaCostReduction" : {
-        "value" : 50.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 50.0
       },
       "skillTier" : {
-        "value" : 4,
-        "skill" : false
+        "skill" : false,
+        "value" : 4
       },
       "skillMaxLevel" : {
-        "value" : 6,
-        "skill" : false
+        "skill" : false,
+        "value" : 6
       }
     },
     "buff" : null,
-    "modifier" : true,
-    "skillTag" : "tagSkillName161",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Tranquility of Water.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : true
   }, {
+    "skillTag" : "tagSkillName162",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\HeartofOak_Permanence.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Permanence of Stone.html",
     "name" : "Permanence of Stone",
     "parent" : "Tranquility of Water",
     "attributes" : {
       "skillUltimateLevel" : {
-        "value" : 10,
-        "skill" : false
+        "skill" : false,
+        "value" : 10
       },
       "skillActiveManaCost" : {
-        "value" : 1.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 1.0
       },
       "defensiveElementalResistance" : {
-        "value" : [ 5.0, 8.0, 10.0, 12.0, 15.0, 18.0, 21.0, 25.0, 28.0, 31.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 5.0, 8.0, 10.0, 12.0, 15.0, 18.0, 21.0, 25.0, 28.0, 31.0 ]
       },
       "skillMasteryLevelRequired" : {
-        "value" : 15,
-        "skill" : false
+        "skill" : false,
+        "value" : 15
       },
       "skillTier" : {
-        "value" : 5,
-        "skill" : false
+        "skill" : false,
+        "value" : 5
       },
       "skillMaxLevel" : {
-        "value" : 6,
-        "skill" : false
+        "skill" : false,
+        "value" : 6
       }
     },
     "buff" : null,
-    "modifier" : true,
-    "skillTag" : "tagSkillName162",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Permanence of Stone.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : true
   }, {
+    "skillTag" : "tagSkillName141",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\Plague.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Plague.html",
     "name" : "Plague",
     "parent" : null,
     "attributes" : {
       "Plague" : {
+        "skill" : true,
         "value" : {
+          "skillTag" : "tagSkillName141",
+          "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\PlagueBuff.dbr",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Plague.html",
           "name" : "Plague",
           "parent" : null,
           "attributes" : {
             "contagionLimit" : {
-              "value" : 2,
-              "skill" : false
+              "skill" : false,
+              "value" : 2
             },
             "skillActiveDuration" : {
-              "value" : [ 3.0, 3.4, 4.0, 4.3, 4.7, 5.3, 5.6, 6.0, 6.6, 6.9, 7.3, 8.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 3.0, 3.4, 4.0, 4.3, 4.7, 5.3, 5.6, 6.0, 6.6, 6.9, 7.3, 8.0 ]
             },
             "skillCooldownTime" : {
-              "value" : 8.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 8.0
             },
             "skillManaCost" : {
-              "value" : [ 65.0, 68.0, 70.0, 73.0, 75.0, 78.0, 80.0, 83.0, 85.0, 88.0, 90.0, 93.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 65.0, 68.0, 70.0, 73.0, 75.0, 78.0, 80.0, 83.0, 85.0, 88.0, 90.0, 93.0 ]
             },
             "skillConnectionSpacing" : {
-              "value" : 62,
-              "skill" : false
+              "skill" : false,
+              "value" : 62
             },
             "cameraShakeAmplitude" : {
-              "value" : 0.12,
-              "skill" : false
+              "skill" : false,
+              "value" : 0.12
             },
             "contagionInterval" : {
-              "value" : 1.5,
-              "skill" : false
+              "skill" : false,
+              "value" : 1.5
             },
             "offensivePercentCurrentLifeMax" : {
-              "value" : [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0 ]
             },
             "skillMaxLevel" : {
-              "value" : 8,
-              "skill" : false
+              "skill" : false,
+              "value" : 8
             },
             "debufSkill" : {
-              "value" : 1,
-              "skill" : false
+              "skill" : false,
+              "value" : 1
             },
             "contagionMaxSpread" : {
-              "value" : 5,
-              "skill" : false
+              "skill" : false,
+              "value" : 5
             },
             "skillUltimateLevel" : {
-              "value" : 12,
-              "skill" : false
+              "skill" : false,
+              "value" : 12
             },
             "offensiveSlowPoisonDurationMin" : {
-              "value" : 1.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 1.0
             },
             "contagionRadius" : {
-              "value" : 4.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 4.0
             },
             "skillTier" : {
-              "value" : 2,
-              "skill" : false
+              "skill" : false,
+              "value" : 2
             },
             "offensiveSlowPoisonMin" : {
-              "value" : [ 3.0, 6.0, 9.0, 12.0, 16.0, 20.0, 24.0, 28.0, 33.0, 38.0, 43.0, 49.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 3.0, 6.0, 9.0, 12.0, 16.0, 20.0, 24.0, 28.0, 33.0, 38.0, 43.0, 49.0 ]
             },
             "offensivePercentCurrentLifeMin" : {
-              "value" : [ 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0 ]
             }
           },
           "buff" : null,
-          "modifier" : false,
-          "skillTag" : "tagSkillName141",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Plague.html",
-          "skillDescription" : null
-        },
-        "skill" : true
+          "skillDescription" : null,
+          "modifier" : false
+        }
       }
     },
-    "buff" : null,
-    "modifier" : false,
-    "skillTag" : "tagSkillName141",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Plague.html",
-    "skillDescription" : null
+    "buff" : {
+      "skillTag" : "tagSkillName141",
+      "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\PlagueBuff.dbr",
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Plague.html",
+      "name" : "Plague",
+      "parent" : null,
+      "attributes" : {
+        "contagionLimit" : {
+          "skill" : false,
+          "value" : 2
+        },
+        "skillActiveDuration" : {
+          "skill" : false,
+          "value" : [ 3.0, 3.4, 4.0, 4.3, 4.7, 5.3, 5.6, 6.0, 6.6, 6.9, 7.3, 8.0 ]
+        },
+        "skillCooldownTime" : {
+          "skill" : false,
+          "value" : 8.0
+        },
+        "skillManaCost" : {
+          "skill" : false,
+          "value" : [ 65.0, 68.0, 70.0, 73.0, 75.0, 78.0, 80.0, 83.0, 85.0, 88.0, 90.0, 93.0 ]
+        },
+        "skillConnectionSpacing" : {
+          "skill" : false,
+          "value" : 62
+        },
+        "cameraShakeAmplitude" : {
+          "skill" : false,
+          "value" : 0.12
+        },
+        "contagionInterval" : {
+          "skill" : false,
+          "value" : 1.5
+        },
+        "offensivePercentCurrentLifeMax" : {
+          "skill" : false,
+          "value" : [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0 ]
+        },
+        "skillMaxLevel" : {
+          "skill" : false,
+          "value" : 8
+        },
+        "debufSkill" : {
+          "skill" : false,
+          "value" : 1
+        },
+        "contagionMaxSpread" : {
+          "skill" : false,
+          "value" : 5
+        },
+        "skillUltimateLevel" : {
+          "skill" : false,
+          "value" : 12
+        },
+        "offensiveSlowPoisonDurationMin" : {
+          "skill" : false,
+          "value" : 1.0
+        },
+        "contagionRadius" : {
+          "skill" : false,
+          "value" : 4.0
+        },
+        "skillTier" : {
+          "skill" : false,
+          "value" : 2
+        },
+        "offensiveSlowPoisonMin" : {
+          "skill" : false,
+          "value" : [ 3.0, 6.0, 9.0, 12.0, 16.0, 20.0, 24.0, 28.0, 33.0, 38.0, 43.0, 49.0 ]
+        },
+        "offensivePercentCurrentLifeMin" : {
+          "skill" : false,
+          "value" : [ 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0 ]
+        }
+      },
+      "buff" : null,
+      "skillDescription" : null,
+      "modifier" : false
+    },
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "tagSkillName186",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\Plague_Fatigue.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Fatigue.html",
     "name" : "Fatigue",
     "parent" : "Plague",
     "attributes" : {
       "offensiveTotalDamageReductionPercentMin" : {
-        "value" : [ 15.0, 18.0, 20.0, 23.0, 28.0, 31.0, 34.0, 36.0, 39.0, 45.0, 47.0, 50.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 15.0, 18.0, 20.0, 23.0, 28.0, 31.0, 34.0, 36.0, 39.0, 45.0, 47.0, 50.0 ]
       },
       "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
+        "skill" : false,
+        "value" : 12
       },
       "offensiveSlowOffensiveReductionDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 3.0
       },
       "skillMasteryLevelRequired" : {
-        "value" : 18,
-        "skill" : false
+        "skill" : false,
+        "value" : 18
       },
       "offensivePercentCurrentLifeChance" : {
-        "value" : 5.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 5.0
       },
       "skillTier" : {
-        "value" : 3,
-        "skill" : false
+        "skill" : false,
+        "value" : 3
       },
       "offensiveTotalDamageReductionPercentDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 3.0
       },
       "offensiveSlowOffensiveReductionMin" : {
-        "value" : [ 3.0, 5.0, 6.0, 8.0, 9.0, 11.0, 12.0, 15.0, 16.0, 17.0, 18.0, 21.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 3.0, 5.0, 6.0, 8.0, 9.0, 11.0, 12.0, 15.0, 16.0, 17.0, 18.0, 21.0 ]
       },
       "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
+        "skill" : false,
+        "value" : 8
       },
       "offensivePercentCurrentLifeMin" : {
-        "value" : [ 50.0, 52.0, 55.0, 57.0, 61.0, 64.0, 66.0, 69.0, 71.0, 75.0, 78.0, 80.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 50.0, 52.0, 55.0, 57.0, 61.0, 64.0, 66.0, 69.0, 71.0, 75.0, 78.0, 80.0 ]
       },
       "characterTotalSpeedModifier" : {
-        "value" : [ -15.0, -18.0, -20.0, -23.0, -25.0, -28.0, -30.0, -33.0, -35.0, -38.0, -40.0, -45.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ -15.0, -18.0, -20.0, -23.0, -25.0, -28.0, -30.0, -33.0, -35.0, -38.0, -40.0, -45.0 ]
       }
     },
     "buff" : null,
-    "modifier" : true,
-    "skillTag" : "tagSkillName186",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Fatigue.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : true
   }, {
+    "skillTag" : "tagSkillName187",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\Plague_Susceptibility.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Susceptibility.html",
     "name" : "Susceptibility",
     "parent" : "Fatigue",
     "attributes" : {
       "defensivePhysical" : {
-        "value" : [ -12.0, -15.0, -19.0, -24.0, -27.0, -30.0, -34.0, -39.0, -42.0, -45.0, -49.0, -54.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ -12.0, -15.0, -19.0, -24.0, -27.0, -30.0, -34.0, -39.0, -42.0, -45.0, -49.0, -54.0 ]
       },
       "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
+        "skill" : false,
+        "value" : 12
       },
       "defensiveElementalResistance" : {
-        "value" : [ -12.0, -15.0, -19.0, -24.0, -27.0, -30.0, -34.0, -39.0, -42.0, -45.0, -49.0, -54.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ -12.0, -15.0, -19.0, -24.0, -27.0, -30.0, -34.0, -39.0, -42.0, -45.0, -49.0, -54.0 ]
       },
       "skillMasteryLevelRequired" : {
-        "value" : 18,
-        "skill" : false
+        "skill" : false,
+        "value" : 18
       },
       "defensivePoison" : {
-        "value" : [ -12.0, -15.0, -19.0, -24.0, -27.0, -30.0, -34.0, -39.0, -42.0, -45.0, -49.0, -54.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ -12.0, -15.0, -19.0, -24.0, -27.0, -30.0, -34.0, -39.0, -42.0, -45.0, -49.0, -54.0 ]
       },
       "skillTier" : {
-        "value" : 5,
-        "skill" : false
+        "skill" : false,
+        "value" : 5
       },
       "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
+        "skill" : false,
+        "value" : 8
       }
     },
     "buff" : null,
-    "modifier" : true,
-    "skillTag" : "tagSkillName187",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Susceptibility.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : true
   }, {
+    "skillTag" : "tagSkillName159",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\WolfSummons.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Call of the Wild.html",
     "name" : "Call of the Wild",
     "parent" : null,
     "attributes" : {
       "skillCooldownTime" : {
-        "value" : 20.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 20.0
       },
       "skillUltimateLevel" : {
-        "value" : 20,
-        "skill" : false
+        "skill" : false,
+        "value" : 20
       },
       "skillManaCost" : {
-        "value" : [ 120.0, 124.0, 128.0, 132.0, 136.0, 140.0, 144.0, 148.0, 152.0, 156.0, 160.0, 164.0, 168.0, 172.0, 176.0, 180.0, 184.0, 188.0, 192.0, 196.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 120.0, 124.0, 128.0, 132.0, 136.0, 140.0, 144.0, 148.0, 152.0, 156.0, 160.0, 164.0, 168.0, 172.0, 176.0, 180.0, 184.0, 188.0, 192.0, 196.0 ]
       },
       "petLimit" : {
-        "value" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0 ]
       },
       "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
+        "skill" : false,
+        "value" : 0.12
       },
       "skillConnectionSpacing" : {
-        "value" : 62,
-        "skill" : false
+        "skill" : false,
+        "value" : 62
       },
       "skillMasteryLevelRequired" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillTier" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillMaxLevel" : {
-        "value" : 16,
-        "skill" : false
+        "skill" : false,
+        "value" : 16
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "tagSkillName159",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Call of the Wild.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "tagSkillName177",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\Wolf_PetModifer_Maul.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Maul.html",
     "name" : "Maul",
     "parent" : null,
     "attributes" : {
       "Maul" : {
+        "skill" : true,
         "value" : {
+          "skillTag" : "tagSkillName177",
+          "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\Wolf_PetSkill_Maul.dbr",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Maul.html",
           "name" : "Maul",
           "parent" : null,
           "attributes" : {
             "offensiveSlowBleedingMin" : {
-              "value" : [ 5.6, 9.4, 13.1, 17.3, 21.4, 25.7, 29.9, 34.6, 38.7, 43.0, 47.5, 52.5, 56.9, 61.7, 66.4, 71.6 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 5.6, 9.4, 13.1, 17.3, 21.4, 25.7, 29.9, 34.6, 38.7, 43.0, 47.5, 52.5, 56.9, 61.7, 66.4, 71.6 ]
             },
             "skillManaCost" : {
-              "value" : 24.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 24.0
             },
             "skillUltimateLevel" : {
-              "value" : 16,
-              "skill" : false
+              "skill" : false,
+              "value" : 16
             },
             "cameraShakeAmplitude" : {
-              "value" : 0.12,
-              "skill" : false
+              "skill" : false,
+              "value" : 0.12
             },
             "skillProjectileNumber" : {
-              "value" : 1,
-              "skill" : false
+              "skill" : false,
+              "value" : 1
             },
             "offensiveSlowBleedingDurationMin" : {
-              "value" : 3.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 3.0
             },
             "offensivePierceMin" : {
-              "value" : [ 3.0, 5.0, 7.0, 9.0, 10.0, 12.0, 14.0, 16.0, 17.0, 19.0, 21.0, 23.0, 24.0, 26.0, 28.0, 30.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 3.0, 5.0, 7.0, 9.0, 10.0, 12.0, 14.0, 16.0, 17.0, 19.0, 21.0, 23.0, 24.0, 26.0, 28.0, 30.0 ]
             },
             "skillTier" : {
-              "value" : 2,
-              "skill" : false
+              "skill" : false,
+              "value" : 2
             },
             "skillMaxLevel" : {
-              "value" : 12,
-              "skill" : false
+              "skill" : false,
+              "value" : 12
             },
             "offensivePercentCurrentLifeMin" : {
-              "value" : [ 6.0, 6.0, 8.0, 8.0, 8.0, 10.0, 10.0, 10.0, 12.0, 12.0, 12.0, 13.0, 14.0, 15.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 6.0, 6.0, 8.0, 8.0, 8.0, 10.0, 10.0, 10.0, 12.0, 12.0, 12.0, 13.0, 14.0, 15.0 ]
             }
           },
           "buff" : null,
-          "modifier" : false,
-          "skillTag" : "tagSkillName177",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Maul.html",
-          "skillDescription" : null
-        },
-        "skill" : true
+          "skillDescription" : null,
+          "modifier" : false
+        }
       }
     },
-    "buff" : null,
-    "modifier" : false,
-    "skillTag" : "tagSkillName177",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Maul.html",
-    "skillDescription" : null
+    "buff" : {
+      "skillTag" : "tagSkillName177",
+      "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\Wolf_PetSkill_Maul.dbr",
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Maul.html",
+      "name" : "Maul",
+      "parent" : null,
+      "attributes" : {
+        "offensiveSlowBleedingMin" : {
+          "skill" : false,
+          "value" : [ 5.6, 9.4, 13.1, 17.3, 21.4, 25.7, 29.9, 34.6, 38.7, 43.0, 47.5, 52.5, 56.9, 61.7, 66.4, 71.6 ]
+        },
+        "skillManaCost" : {
+          "skill" : false,
+          "value" : 24.0
+        },
+        "skillUltimateLevel" : {
+          "skill" : false,
+          "value" : 16
+        },
+        "cameraShakeAmplitude" : {
+          "skill" : false,
+          "value" : 0.12
+        },
+        "skillProjectileNumber" : {
+          "skill" : false,
+          "value" : 1
+        },
+        "offensiveSlowBleedingDurationMin" : {
+          "skill" : false,
+          "value" : 3.0
+        },
+        "offensivePierceMin" : {
+          "skill" : false,
+          "value" : [ 3.0, 5.0, 7.0, 9.0, 10.0, 12.0, 14.0, 16.0, 17.0, 19.0, 21.0, 23.0, 24.0, 26.0, 28.0, 30.0 ]
+        },
+        "skillTier" : {
+          "skill" : false,
+          "value" : 2
+        },
+        "skillMaxLevel" : {
+          "skill" : false,
+          "value" : 12
+        },
+        "offensivePercentCurrentLifeMin" : {
+          "skill" : false,
+          "value" : [ 6.0, 6.0, 8.0, 8.0, 8.0, 10.0, 10.0, 10.0, 12.0, 12.0, 12.0, 13.0, 14.0, 15.0 ]
+        }
+      },
+      "buff" : null,
+      "skillDescription" : null,
+      "modifier" : false
+    },
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "tagSkillName071",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\Wolf_PetModifer_SurvivalInstinct.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Survival Instinct.html",
     "name" : "Survival Instinct",
     "parent" : null,
     "attributes" : {
       "SurvivalInstinct" : {
+        "skill" : true,
         "value" : {
+          "skillTag" : "tagSkillName071",
+          "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\Wolf_PetSkill_SurvivalInstinct.dbr",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Survival Instinct.html",
           "name" : "Survival Instinct",
           "parent" : null,
           "attributes" : {
             "offensivePhysicalModifier" : {
-              "value" : [ 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0, 90.0, 95.0, 100.0, 105.0, 110.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0, 90.0, 95.0, 100.0, 105.0, 110.0 ]
             },
             "skillActiveDuration" : {
-              "value" : 6.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 6.0
             },
             "skillUltimateLevel" : {
-              "value" : 20,
-              "skill" : false
+              "skill" : false,
+              "value" : 20
             },
             "damageAbsorptionPercent" : {
-              "value" : [ 15.0, 20.0, 24.0, 30.0, 38.0, 42.0, 47.0, 51.0, 54.0, 60.0, 63.0, 67.0, 70.0, 74.0, 80.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 15.0, 20.0, 24.0, 30.0, 38.0, 42.0, 47.0, 51.0, 54.0, 60.0, 63.0, 67.0, 70.0, 74.0, 80.0 ]
             },
             "skillMasteryLevelRequired" : {
-              "value" : 6,
-              "skill" : false
+              "skill" : false,
+              "value" : 6
             },
             "skillTier" : {
-              "value" : 3,
-              "skill" : false
+              "skill" : false,
+              "value" : 3
             },
             "skillMaxLevel" : {
-              "value" : 16,
-              "skill" : false
+              "skill" : false,
+              "value" : 16
             },
             "lifeMonitorPercent" : {
-              "value" : 33.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 33.0
             }
           },
           "buff" : null,
-          "modifier" : false,
-          "skillTag" : "tagSkillName071",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Survival Instinct.html",
-          "skillDescription" : null
-        },
-        "skill" : true
+          "skillDescription" : null,
+          "modifier" : false
+        }
       }
     },
-    "buff" : null,
-    "modifier" : false,
-    "skillTag" : "tagSkillName071",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Survival Instinct.html",
-    "skillDescription" : null
+    "buff" : {
+      "skillTag" : "tagSkillName071",
+      "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\Wolf_PetSkill_SurvivalInstinct.dbr",
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Survival Instinct.html",
+      "name" : "Survival Instinct",
+      "parent" : null,
+      "attributes" : {
+        "offensivePhysicalModifier" : {
+          "skill" : false,
+          "value" : [ 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0, 90.0, 95.0, 100.0, 105.0, 110.0 ]
+        },
+        "skillActiveDuration" : {
+          "skill" : false,
+          "value" : 6.0
+        },
+        "skillUltimateLevel" : {
+          "skill" : false,
+          "value" : 20
+        },
+        "damageAbsorptionPercent" : {
+          "skill" : false,
+          "value" : [ 15.0, 20.0, 24.0, 30.0, 38.0, 42.0, 47.0, 51.0, 54.0, 60.0, 63.0, 67.0, 70.0, 74.0, 80.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "skill" : false,
+          "value" : 6
+        },
+        "skillTier" : {
+          "skill" : false,
+          "value" : 3
+        },
+        "skillMaxLevel" : {
+          "skill" : false,
+          "value" : 16
+        },
+        "lifeMonitorPercent" : {
+          "skill" : false,
+          "value" : 33.0
+        }
+      },
+      "buff" : null,
+      "skillDescription" : null,
+      "modifier" : false
+    },
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "tagSkillName191",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\Wolf_PetModifier_StrengthofthePack.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Strength of the Pack.html",
     "name" : "Strength of the Pack",
     "parent" : null,
     "attributes" : {
       "StrengthofthePack" : {
+        "skill" : true,
         "value" : {
+          "skillTag" : "tagSkillName191",
+          "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\Wolf_PetSkill_StrengthofthePack.dbr",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Strength of the Pack.html",
           "name" : "Strength of the Pack",
           "parent" : null,
           "attributes" : {
             "StrengthofthePack" : {
+              "skill" : true,
               "value" : {
+                "skillTag" : "tagSkillName191",
+                "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\Wolf_PetSkill_StrengthofthePackBuff.dbr",
+                "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Strength of the Pack.html",
                 "name" : "Strength of the Pack",
                 "parent" : null,
                 "attributes" : {
                   "offensivePhysicalModifier" : {
-                    "value" : [ 15.0, 20.0, 24.0, 30.0, 34.0, 39.0, 43.0, 49.0, 53.0, 58.0, 62.0, 68.0, 72.0, 77.0, 82.0, 90.0 ],
-                    "skill" : false
+                    "skill" : false,
+                    "value" : [ 15.0, 20.0, 24.0, 30.0, 34.0, 39.0, 43.0, 49.0, 53.0, 58.0, 62.0, 68.0, 72.0, 77.0, 82.0, 90.0 ]
                   },
                   "skillActiveDuration" : {
-                    "value" : 15.0,
-                    "skill" : false
+                    "skill" : false,
+                    "value" : 15.0
                   },
                   "skillManaCost" : {
-                    "value" : 25.0,
-                    "skill" : false
+                    "skill" : false,
+                    "value" : 25.0
                   },
                   "defensiveProtection" : {
-                    "value" : [ 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0 ],
-                    "skill" : false
+                    "skill" : false,
+                    "value" : [ 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0 ]
                   },
                   "skillUltimateLevel" : {
-                    "value" : 16,
-                    "skill" : false
+                    "skill" : false,
+                    "value" : 16
                   },
                   "cameraShakeAmplitude" : {
-                    "value" : 0.12,
-                    "skill" : false
+                    "skill" : false,
+                    "value" : 0.12
                   },
                   "characterManaRegen" : {
-                    "value" : 1.0,
-                    "skill" : false
+                    "skill" : false,
+                    "value" : 1.0
                   },
                   "skillTargetRadius" : {
-                    "value" : 10.0,
-                    "skill" : false
+                    "skill" : false,
+                    "value" : 10.0
                   },
                   "skillTier" : {
-                    "value" : 5,
-                    "skill" : false
+                    "skill" : false,
+                    "value" : 5
                   },
                   "skillMaxLevel" : {
-                    "value" : 12,
-                    "skill" : false
+                    "skill" : false,
+                    "value" : 12
                   },
                   "characterTotalSpeedModifier" : {
-                    "value" : 15.0,
-                    "skill" : false
+                    "skill" : false,
+                    "value" : 15.0
                   }
                 },
                 "buff" : null,
-                "modifier" : false,
-                "skillTag" : "tagSkillName191",
-                "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Strength of the Pack.html",
-                "skillDescription" : null
-              },
-              "skill" : true
+                "skillDescription" : null,
+                "modifier" : false
+              }
             }
           },
-          "buff" : null,
-          "modifier" : false,
-          "skillTag" : "tagSkillName191",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Strength of the Pack.html",
-          "skillDescription" : null
-        },
-        "skill" : true
+          "buff" : {
+            "skillTag" : "tagSkillName191",
+            "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\Wolf_PetSkill_StrengthofthePackBuff.dbr",
+            "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Strength of the Pack.html",
+            "name" : "Strength of the Pack",
+            "parent" : null,
+            "attributes" : {
+              "offensivePhysicalModifier" : {
+                "skill" : false,
+                "value" : [ 15.0, 20.0, 24.0, 30.0, 34.0, 39.0, 43.0, 49.0, 53.0, 58.0, 62.0, 68.0, 72.0, 77.0, 82.0, 90.0 ]
+              },
+              "skillActiveDuration" : {
+                "skill" : false,
+                "value" : 15.0
+              },
+              "skillManaCost" : {
+                "skill" : false,
+                "value" : 25.0
+              },
+              "defensiveProtection" : {
+                "skill" : false,
+                "value" : [ 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0 ]
+              },
+              "skillUltimateLevel" : {
+                "skill" : false,
+                "value" : 16
+              },
+              "cameraShakeAmplitude" : {
+                "skill" : false,
+                "value" : 0.12
+              },
+              "characterManaRegen" : {
+                "skill" : false,
+                "value" : 1.0
+              },
+              "skillTargetRadius" : {
+                "skill" : false,
+                "value" : 10.0
+              },
+              "skillTier" : {
+                "skill" : false,
+                "value" : 5
+              },
+              "skillMaxLevel" : {
+                "skill" : false,
+                "value" : 12
+              },
+              "characterTotalSpeedModifier" : {
+                "skill" : false,
+                "value" : 15.0
+              }
+            },
+            "buff" : null,
+            "skillDescription" : null,
+            "modifier" : false
+          },
+          "skillDescription" : null,
+          "modifier" : false
+        }
       }
     },
-    "buff" : null,
-    "modifier" : false,
-    "skillTag" : "tagSkillName191",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Strength of the Pack.html",
-    "skillDescription" : null
+    "buff" : {
+      "skillTag" : "tagSkillName191",
+      "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\Wolf_PetSkill_StrengthofthePack.dbr",
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Strength of the Pack.html",
+      "name" : "Strength of the Pack",
+      "parent" : null,
+      "attributes" : {
+        "StrengthofthePack" : {
+          "skill" : true,
+          "value" : {
+            "skillTag" : "tagSkillName191",
+            "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\Wolf_PetSkill_StrengthofthePackBuff.dbr",
+            "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Strength of the Pack.html",
+            "name" : "Strength of the Pack",
+            "parent" : null,
+            "attributes" : {
+              "offensivePhysicalModifier" : {
+                "skill" : false,
+                "value" : [ 15.0, 20.0, 24.0, 30.0, 34.0, 39.0, 43.0, 49.0, 53.0, 58.0, 62.0, 68.0, 72.0, 77.0, 82.0, 90.0 ]
+              },
+              "skillActiveDuration" : {
+                "skill" : false,
+                "value" : 15.0
+              },
+              "skillManaCost" : {
+                "skill" : false,
+                "value" : 25.0
+              },
+              "defensiveProtection" : {
+                "skill" : false,
+                "value" : [ 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0 ]
+              },
+              "skillUltimateLevel" : {
+                "skill" : false,
+                "value" : 16
+              },
+              "cameraShakeAmplitude" : {
+                "skill" : false,
+                "value" : 0.12
+              },
+              "characterManaRegen" : {
+                "skill" : false,
+                "value" : 1.0
+              },
+              "skillTargetRadius" : {
+                "skill" : false,
+                "value" : 10.0
+              },
+              "skillTier" : {
+                "skill" : false,
+                "value" : 5
+              },
+              "skillMaxLevel" : {
+                "skill" : false,
+                "value" : 12
+              },
+              "characterTotalSpeedModifier" : {
+                "skill" : false,
+                "value" : 15.0
+              }
+            },
+            "buff" : null,
+            "skillDescription" : null,
+            "modifier" : false
+          }
+        }
+      },
+      "buff" : {
+        "skillTag" : "tagSkillName191",
+        "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\Wolf_PetSkill_StrengthofthePackBuff.dbr",
+        "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Strength of the Pack.html",
+        "name" : "Strength of the Pack",
+        "parent" : null,
+        "attributes" : {
+          "offensivePhysicalModifier" : {
+            "skill" : false,
+            "value" : [ 15.0, 20.0, 24.0, 30.0, 34.0, 39.0, 43.0, 49.0, 53.0, 58.0, 62.0, 68.0, 72.0, 77.0, 82.0, 90.0 ]
+          },
+          "skillActiveDuration" : {
+            "skill" : false,
+            "value" : 15.0
+          },
+          "skillManaCost" : {
+            "skill" : false,
+            "value" : 25.0
+          },
+          "defensiveProtection" : {
+            "skill" : false,
+            "value" : [ 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0 ]
+          },
+          "skillUltimateLevel" : {
+            "skill" : false,
+            "value" : 16
+          },
+          "cameraShakeAmplitude" : {
+            "skill" : false,
+            "value" : 0.12
+          },
+          "characterManaRegen" : {
+            "skill" : false,
+            "value" : 1.0
+          },
+          "skillTargetRadius" : {
+            "skill" : false,
+            "value" : 10.0
+          },
+          "skillTier" : {
+            "skill" : false,
+            "value" : 5
+          },
+          "skillMaxLevel" : {
+            "skill" : false,
+            "value" : 12
+          },
+          "characterTotalSpeedModifier" : {
+            "skill" : false,
+            "value" : 15.0
+          }
+        },
+        "buff" : null,
+        "skillDescription" : null,
+        "modifier" : false
+      },
+      "skillDescription" : null,
+      "modifier" : false
+    },
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "tagSkillName158",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\SylvanNymphSummons.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Sylvan Nymph.html",
     "name" : "Sylvan Nymph",
     "parent" : null,
     "attributes" : {
       "skillCooldownTime" : {
-        "value" : 60.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 60.0
       },
       "skillUltimateLevel" : {
-        "value" : 20,
-        "skill" : false
+        "skill" : false,
+        "value" : 20
       },
       "skillManaCost" : {
-        "value" : [ 200.0, 204.0, 209.0, 213.0, 217.0, 222.0, 226.0, 230.0, 235.0, 239.0, 243.0, 248.0, 252.0, 256.0, 261.0, 265.0, 269.0, 274.0, 278.0, 282.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 200.0, 204.0, 209.0, 213.0, 217.0, 222.0, 226.0, 230.0, 235.0, 239.0, 243.0, 248.0, 252.0, 256.0, 261.0, 265.0, 269.0, 274.0, 278.0, 282.0 ]
       },
       "projectileExplosionRadius" : {
-        "value" : 1.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 1.0
       },
       "skillConnectionSpacing" : {
-        "value" : 62,
-        "skill" : false
+        "skill" : false,
+        "value" : 62
       },
       "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
+        "skill" : false,
+        "value" : 0.12
       },
       "petLimit" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillProjectileNumber" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillMasteryLevelRequired" : {
-        "value" : 15,
-        "skill" : false
+        "skill" : false,
+        "value" : 15
       },
       "skillTier" : {
-        "value" : 4,
-        "skill" : false
+        "skill" : false,
+        "value" : 4
       },
       "skillMaxLevel" : {
-        "value" : 16,
-        "skill" : false
+        "skill" : false,
+        "value" : 16
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "tagSkillName158",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Sylvan Nymph.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "tagSkillName188",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\SylvanNymph_PetModifier_Overgrowth.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Overgrowth.html",
     "name" : "Overgrowth",
     "parent" : null,
     "attributes" : {
       "Overgrowth" : {
+        "skill" : true,
         "value" : {
+          "skillTag" : "tagSkillName188",
+          "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\SylvanNymph_PetSkill_Overgrowth.dbr",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Overgrowth.html",
           "name" : "Overgrowth",
           "parent" : null,
           "attributes" : {
             "Overgrowth" : {
+              "skill" : true,
               "value" : {
+                "skillTag" : "tagSkillName188",
+                "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\SylvanNymph_PetSkill_OvergrowthBuff.dbr",
+                "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Overgrowth.html",
                 "name" : "Overgrowth",
                 "parent" : null,
                 "attributes" : {
                   "retaliationPierceMax" : {
-                    "value" : [ 5.01, 7.014, 9.018, 12.024, 14.028, 16.032, 19.038, 21.042, 25.05, 30.06, 31.062, 33.066, 35.07, 38.076, 41.082, 45.09 ],
-                    "skill" : false
+                    "skill" : false,
+                    "value" : [ 5.01, 7.014, 9.018, 12.024, 14.028, 16.032, 19.038, 21.042, 25.05, 30.06, 31.062, 33.066, 35.07, 38.076, 41.082, 45.09 ]
                   },
                   "retaliationPierceChance" : {
-                    "value" : 33.0,
-                    "skill" : false
+                    "skill" : false,
+                    "value" : 33.0
                   },
                   "skillManaCost" : {
-                    "value" : [ 8.0, 11.0, 14.0, 17.0, 20.0, 23.0, 26.0, 29.0, 32.0, 35.0, 38.0, 41.0, 44.0, 47.0, 50.0, 53.0 ],
-                    "skill" : false
+                    "skill" : false,
+                    "value" : [ 8.0, 11.0, 14.0, 17.0, 20.0, 23.0, 26.0, 29.0, 32.0, 35.0, 38.0, 41.0, 44.0, 47.0, 50.0, 53.0 ]
                   },
                   "skillUltimateLevel" : {
-                    "value" : 16,
-                    "skill" : false
+                    "skill" : false,
+                    "value" : 16
                   },
                   "retaliationPierceMin" : {
-                    "value" : [ 1.002, 3.006, 4.008, 6.012, 7.014, 9.018, 10.02, 12.024, 13.026, 15.03, 16.032, 18.036, 19.038, 21.042, 25.05, 28.056 ],
-                    "skill" : false
+                    "skill" : false,
+                    "value" : [ 1.002, 3.006, 4.008, 6.012, 7.014, 9.018, 10.02, 12.024, 13.026, 15.03, 16.032, 18.036, 19.038, 21.042, 25.05, 28.056 ]
                   },
                   "cameraShakeAmplitude" : {
-                    "value" : 0.12,
-                    "skill" : false
+                    "skill" : false,
+                    "value" : 0.12
                   },
                   "damageAbsorption" : {
-                    "value" : [ 78.0, 123.0, 168.0, 213.0, 263.0, 313.0, 363.0, 413.0, 468.0, 523.0, 578.0, 633.0, 693.0, 753.0, 813.0, 873.0 ],
-                    "skill" : false
+                    "skill" : false,
+                    "value" : [ 78.0, 123.0, 168.0, 213.0, 263.0, 313.0, 363.0, 413.0, 468.0, 523.0, 578.0, 633.0, 693.0, 753.0, 813.0, 873.0 ]
                   },
                   "skillTier" : {
-                    "value" : 5,
-                    "skill" : false
+                    "skill" : false,
+                    "value" : 5
                   },
                   "skillMaxLevel" : {
-                    "value" : 12,
-                    "skill" : false
+                    "skill" : false,
+                    "value" : 12
                   }
                 },
                 "buff" : null,
-                "modifier" : false,
-                "skillTag" : "tagSkillName188",
-                "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Overgrowth.html",
-                "skillDescription" : null
-              },
-              "skill" : true
+                "skillDescription" : null,
+                "modifier" : false
+              }
             }
           },
-          "buff" : null,
-          "modifier" : false,
-          "skillTag" : "tagSkillName188",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Overgrowth.html",
-          "skillDescription" : null
-        },
-        "skill" : true
+          "buff" : {
+            "skillTag" : "tagSkillName188",
+            "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\SylvanNymph_PetSkill_OvergrowthBuff.dbr",
+            "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Overgrowth.html",
+            "name" : "Overgrowth",
+            "parent" : null,
+            "attributes" : {
+              "retaliationPierceMax" : {
+                "skill" : false,
+                "value" : [ 5.01, 7.014, 9.018, 12.024, 14.028, 16.032, 19.038, 21.042, 25.05, 30.06, 31.062, 33.066, 35.07, 38.076, 41.082, 45.09 ]
+              },
+              "retaliationPierceChance" : {
+                "skill" : false,
+                "value" : 33.0
+              },
+              "skillManaCost" : {
+                "skill" : false,
+                "value" : [ 8.0, 11.0, 14.0, 17.0, 20.0, 23.0, 26.0, 29.0, 32.0, 35.0, 38.0, 41.0, 44.0, 47.0, 50.0, 53.0 ]
+              },
+              "skillUltimateLevel" : {
+                "skill" : false,
+                "value" : 16
+              },
+              "retaliationPierceMin" : {
+                "skill" : false,
+                "value" : [ 1.002, 3.006, 4.008, 6.012, 7.014, 9.018, 10.02, 12.024, 13.026, 15.03, 16.032, 18.036, 19.038, 21.042, 25.05, 28.056 ]
+              },
+              "cameraShakeAmplitude" : {
+                "skill" : false,
+                "value" : 0.12
+              },
+              "damageAbsorption" : {
+                "skill" : false,
+                "value" : [ 78.0, 123.0, 168.0, 213.0, 263.0, 313.0, 363.0, 413.0, 468.0, 523.0, 578.0, 633.0, 693.0, 753.0, 813.0, 873.0 ]
+              },
+              "skillTier" : {
+                "skill" : false,
+                "value" : 5
+              },
+              "skillMaxLevel" : {
+                "skill" : false,
+                "value" : 12
+              }
+            },
+            "buff" : null,
+            "skillDescription" : null,
+            "modifier" : false
+          },
+          "skillDescription" : null,
+          "modifier" : false
+        }
       }
     },
-    "buff" : null,
-    "modifier" : false,
-    "skillTag" : "tagSkillName188",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Overgrowth.html",
-    "skillDescription" : null
+    "buff" : {
+      "skillTag" : "tagSkillName188",
+      "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\SylvanNymph_PetSkill_Overgrowth.dbr",
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Overgrowth.html",
+      "name" : "Overgrowth",
+      "parent" : null,
+      "attributes" : {
+        "Overgrowth" : {
+          "skill" : true,
+          "value" : {
+            "skillTag" : "tagSkillName188",
+            "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\SylvanNymph_PetSkill_OvergrowthBuff.dbr",
+            "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Overgrowth.html",
+            "name" : "Overgrowth",
+            "parent" : null,
+            "attributes" : {
+              "retaliationPierceMax" : {
+                "skill" : false,
+                "value" : [ 5.01, 7.014, 9.018, 12.024, 14.028, 16.032, 19.038, 21.042, 25.05, 30.06, 31.062, 33.066, 35.07, 38.076, 41.082, 45.09 ]
+              },
+              "retaliationPierceChance" : {
+                "skill" : false,
+                "value" : 33.0
+              },
+              "skillManaCost" : {
+                "skill" : false,
+                "value" : [ 8.0, 11.0, 14.0, 17.0, 20.0, 23.0, 26.0, 29.0, 32.0, 35.0, 38.0, 41.0, 44.0, 47.0, 50.0, 53.0 ]
+              },
+              "skillUltimateLevel" : {
+                "skill" : false,
+                "value" : 16
+              },
+              "retaliationPierceMin" : {
+                "skill" : false,
+                "value" : [ 1.002, 3.006, 4.008, 6.012, 7.014, 9.018, 10.02, 12.024, 13.026, 15.03, 16.032, 18.036, 19.038, 21.042, 25.05, 28.056 ]
+              },
+              "cameraShakeAmplitude" : {
+                "skill" : false,
+                "value" : 0.12
+              },
+              "damageAbsorption" : {
+                "skill" : false,
+                "value" : [ 78.0, 123.0, 168.0, 213.0, 263.0, 313.0, 363.0, 413.0, 468.0, 523.0, 578.0, 633.0, 693.0, 753.0, 813.0, 873.0 ]
+              },
+              "skillTier" : {
+                "skill" : false,
+                "value" : 5
+              },
+              "skillMaxLevel" : {
+                "skill" : false,
+                "value" : 12
+              }
+            },
+            "buff" : null,
+            "skillDescription" : null,
+            "modifier" : false
+          }
+        }
+      },
+      "buff" : {
+        "skillTag" : "tagSkillName188",
+        "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\SylvanNymph_PetSkill_OvergrowthBuff.dbr",
+        "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Overgrowth.html",
+        "name" : "Overgrowth",
+        "parent" : null,
+        "attributes" : {
+          "retaliationPierceMax" : {
+            "skill" : false,
+            "value" : [ 5.01, 7.014, 9.018, 12.024, 14.028, 16.032, 19.038, 21.042, 25.05, 30.06, 31.062, 33.066, 35.07, 38.076, 41.082, 45.09 ]
+          },
+          "retaliationPierceChance" : {
+            "skill" : false,
+            "value" : 33.0
+          },
+          "skillManaCost" : {
+            "skill" : false,
+            "value" : [ 8.0, 11.0, 14.0, 17.0, 20.0, 23.0, 26.0, 29.0, 32.0, 35.0, 38.0, 41.0, 44.0, 47.0, 50.0, 53.0 ]
+          },
+          "skillUltimateLevel" : {
+            "skill" : false,
+            "value" : 16
+          },
+          "retaliationPierceMin" : {
+            "skill" : false,
+            "value" : [ 1.002, 3.006, 4.008, 6.012, 7.014, 9.018, 10.02, 12.024, 13.026, 15.03, 16.032, 18.036, 19.038, 21.042, 25.05, 28.056 ]
+          },
+          "cameraShakeAmplitude" : {
+            "skill" : false,
+            "value" : 0.12
+          },
+          "damageAbsorption" : {
+            "skill" : false,
+            "value" : [ 78.0, 123.0, 168.0, 213.0, 263.0, 313.0, 363.0, 413.0, 468.0, 523.0, 578.0, 633.0, 693.0, 753.0, 813.0, 873.0 ]
+          },
+          "skillTier" : {
+            "skill" : false,
+            "value" : 5
+          },
+          "skillMaxLevel" : {
+            "skill" : false,
+            "value" : 12
+          }
+        },
+        "buff" : null,
+        "skillDescription" : null,
+        "modifier" : false
+      },
+      "skillDescription" : null,
+      "modifier" : false
+    },
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "tagSkillName189",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\SylvanNymph_PetModifier_Nature'sWrath.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Nature's Wrath.html",
     "name" : "Nature's Wrath",
     "parent" : null,
     "attributes" : {
       "Nature'sWrath" : {
+        "skill" : true,
         "value" : {
+          "skillTag" : "tagSkillName189",
+          "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\SylvanNymph_PetSkill_Nature'sWrath.dbr",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Nature's Wrath.html",
           "name" : "Nature's Wrath",
           "parent" : null,
           "attributes" : {
             "skillUltimateLevel" : {
-              "value" : 16,
-              "skill" : false
+              "skill" : false,
+              "value" : 16
             },
             "skillManaCost" : {
-              "value" : [ 8.0, 8.0, 9.0, 9.0, 10.0, 10.0, 11.0, 11.0, 12.0, 12.0, 13.0, 13.0, 14.0, 14.0, 15.0, 15.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 8.0, 8.0, 9.0, 9.0, 10.0, 10.0, 11.0, 11.0, 12.0, 12.0, 13.0, 13.0, 14.0, 14.0, 15.0, 15.0 ]
             },
             "projectileExplosionRadius" : {
-              "value" : 1.5,
-              "skill" : false
+              "skill" : false,
+              "value" : 1.5
             },
             "projectilePiercingChance" : {
-              "value" : 33.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 33.0
             },
             "cameraShakeAmplitude" : {
-              "value" : 0.12,
-              "skill" : false
+              "skill" : false,
+              "value" : 0.12
             },
             "skillProjectileNumber" : {
-              "value" : 1,
-              "skill" : false
+              "skill" : false,
+              "value" : 1
             },
             "projectileUsesAllDamage" : {
-              "value" : 1,
-              "skill" : false
+              "skill" : false,
+              "value" : 1
             },
             "offensiveElementalMax" : {
-              "value" : [ 58.0, 68.0, 78.0, 88.0, 99.0, 110.0, 121.0, 132.0, 143.0, 155.0, 168.0, 182.0, 198.0, 217.0, 239.0, 261.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 58.0, 68.0, 78.0, 88.0, 99.0, 110.0, 121.0, 132.0, 143.0, 155.0, 168.0, 182.0, 198.0, 217.0, 239.0, 261.0 ]
             },
             "skillTier" : {
-              "value" : 6,
-              "skill" : false
+              "skill" : false,
+              "value" : 6
             },
             "skillMaxLevel" : {
-              "value" : 12,
-              "skill" : false
+              "skill" : false,
+              "value" : 12
             },
             "offensiveElementalMin" : {
-              "value" : [ 33.0, 40.0, 46.0, 54.0, 60.0, 67.0, 73.0, 81.0, 87.0, 94.0, 100.0, 110.0, 119.0, 130.0, 141.0, 155.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 33.0, 40.0, 46.0, 54.0, 60.0, 67.0, 73.0, 81.0, 87.0, 94.0, 100.0, 110.0, 119.0, 130.0, 141.0, 155.0 ]
             }
           },
           "buff" : null,
-          "modifier" : false,
-          "skillTag" : "tagSkillName189",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Nature's Wrath.html",
-          "skillDescription" : null
-        },
-        "skill" : true
+          "skillDescription" : null,
+          "modifier" : false
+        }
       }
     },
-    "buff" : null,
-    "modifier" : false,
-    "skillTag" : "tagSkillName189",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Nature's Wrath.html",
-    "skillDescription" : null
+    "buff" : {
+      "skillTag" : "tagSkillName189",
+      "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\SylvanNymph_PetSkill_Nature'sWrath.dbr",
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Nature's Wrath.html",
+      "name" : "Nature's Wrath",
+      "parent" : null,
+      "attributes" : {
+        "skillUltimateLevel" : {
+          "skill" : false,
+          "value" : 16
+        },
+        "skillManaCost" : {
+          "skill" : false,
+          "value" : [ 8.0, 8.0, 9.0, 9.0, 10.0, 10.0, 11.0, 11.0, 12.0, 12.0, 13.0, 13.0, 14.0, 14.0, 15.0, 15.0 ]
+        },
+        "projectileExplosionRadius" : {
+          "skill" : false,
+          "value" : 1.5
+        },
+        "projectilePiercingChance" : {
+          "skill" : false,
+          "value" : 33.0
+        },
+        "cameraShakeAmplitude" : {
+          "skill" : false,
+          "value" : 0.12
+        },
+        "skillProjectileNumber" : {
+          "skill" : false,
+          "value" : 1
+        },
+        "projectileUsesAllDamage" : {
+          "skill" : false,
+          "value" : 1
+        },
+        "offensiveElementalMax" : {
+          "skill" : false,
+          "value" : [ 58.0, 68.0, 78.0, 88.0, 99.0, 110.0, 121.0, 132.0, 143.0, 155.0, 168.0, 182.0, 198.0, 217.0, 239.0, 261.0 ]
+        },
+        "skillTier" : {
+          "skill" : false,
+          "value" : 6
+        },
+        "skillMaxLevel" : {
+          "skill" : false,
+          "value" : 12
+        },
+        "offensiveElementalMin" : {
+          "skill" : false,
+          "value" : [ 33.0, 40.0, 46.0, 54.0, 60.0, 67.0, 73.0, 81.0, 87.0, 94.0, 100.0, 110.0, 119.0, 130.0, 141.0, 155.0 ]
+        }
+      },
+      "buff" : null,
+      "skillDescription" : null,
+      "modifier" : false
+    },
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "x3tagSkillNatureSylvanProtection",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\records\\xpack3\\skills\\allmasteries\\nature_nymph_petmodifier_rootwave.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Sylvan Protection.html",
     "name" : "Sylvan Protection",
     "parent" : null,
     "attributes" : {
       "rootwave" : {
+        "skill" : true,
         "value" : {
+          "skillTag" : "x3tagSkillNatureSylvanProtection",
+          "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\records\\xpack3\\skills\\allmasteries\\nature_nymph_petskill_rootwave.dbr",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Sylvan Protection.html",
           "name" : "Sylvan Protection",
           "parent" : null,
           "attributes" : {
             "offensiveSlowRunSpeedMin" : {
-              "value" : 75.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 75.0
             },
             "skillManaCost" : {
-              "value" : [ 12.0, 13.0, 14.0, 15.0, 15.0, 16.0, 18.0, 18.0, 19.0, 19.0, 21.0, 22.0, 22.0, 24.0, 24.0, 25.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 12.0, 13.0, 14.0, 15.0, 15.0, 16.0, 18.0, 18.0, 19.0, 19.0, 21.0, 22.0, 22.0, 24.0, 24.0, 25.0 ]
             },
             "offensiveSlowDefensiveAbilityDurationMin" : {
-              "value" : [ 1.0, 1.25, 1.5, 1.75, 2.0, 2.25, 2.5, 2.75, 3.0, 3.25, 3.5, 3.75 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 1.0, 1.25, 1.5, 1.75, 2.0, 2.25, 2.5, 2.75, 3.0, 3.25, 3.5, 3.75 ]
             },
             "offensiveTrapMin" : {
-              "value" : [ 1.0, 1.25, 1.5, 1.75, 2.0, 2.25, 2.5, 2.75, 3.0, 3.25, 3.5, 3.75 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 1.0, 1.25, 1.5, 1.75, 2.0, 2.25, 2.5, 2.75, 3.0, 3.25, 3.5, 3.75 ]
             },
             "cameraShakeAmplitude" : {
-              "value" : 0.12,
-              "skill" : false
+              "skill" : false,
+              "value" : 0.12
             },
             "offensivePhysicalMin" : {
-              "value" : [ 68.0, 92.0, 116.0, 138.0, 162.0, 186.0, 210.0, 234.0, 258.0, 282.0, 306.0, 330.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 68.0, 92.0, 116.0, 138.0, 162.0, 186.0, 210.0, 234.0, 258.0, 282.0, 306.0, 330.0 ]
             },
             "offensiveSlowDefensiveAbilityMin" : {
-              "value" : 66.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 66.0
             },
             "offensivePhysicalMax" : {
-              "value" : [ 90.0, 122.0, 154.0, 184.0, 216.0, 248.0, 280.0, 312.0, 344.0, 376.0, 408.0, 440.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 90.0, 122.0, 154.0, 184.0, 216.0, 248.0, 280.0, 312.0, 344.0, 376.0, 408.0, 440.0 ]
             },
             "offensivePierceMin" : {
-              "value" : [ 35.0, 47.0, 59.0, 71.0, 83.0, 95.0, 107.0, 119.0, 131.0, 143.0, 155.0, 167.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 35.0, 47.0, 59.0, 71.0, 83.0, 95.0, 107.0, 119.0, 131.0, 143.0, 155.0, 167.0 ]
             },
             "skillMaxLevel" : {
-              "value" : 8,
-              "skill" : false
+              "skill" : false,
+              "value" : 8
             },
             "waveDistance" : {
-              "value" : 7.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 7.0
             },
             "waveStartWidth" : {
-              "value" : 2.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 2.0
             },
             "skillUltimateLevel" : {
-              "value" : 12,
-              "skill" : false
+              "skill" : false,
+              "value" : 12
             },
             "offensiveSlowRunSpeedDurationMin" : {
-              "value" : [ 2.0, 2.25, 2.5, 2.75, 3.0, 3.25, 3.5, 3.75, 4.0, 4.25, 4.5, 4.75 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 2.0, 2.25, 2.5, 2.75, 3.0, 3.25, 3.5, 3.75, 4.0, 4.25, 4.5, 4.75 ]
             },
             "waveEndWidth" : {
-              "value" : 7.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 7.0
             },
             "offensivePierceMax" : {
-              "value" : [ 45.0, 61.0, 77.0, 92.0, 108.0, 124.0, 140.0, 156.0, 172.0, 188.0, 204.0, 220.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 45.0, 61.0, 77.0, 92.0, 108.0, 124.0, 140.0, 156.0, 172.0, 188.0, 204.0, 220.0 ]
             },
             "waveTime" : {
-              "value" : 0.8,
-              "skill" : false
+              "skill" : false,
+              "value" : 0.8
             },
             "skillTier" : {
-              "value" : 7,
-              "skill" : false
+              "skill" : false,
+              "value" : 7
             },
             "offensivePercentCurrentLifeMin" : {
-              "value" : [ 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0 ]
             }
           },
           "buff" : null,
-          "modifier" : false,
-          "skillTag" : "x3tagSkillNatureSylvanProtection",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Sylvan Protection.html",
-          "skillDescription" : null
-        },
-        "skill" : true
+          "skillDescription" : null,
+          "modifier" : false
+        }
       }
     },
-    "buff" : null,
-    "modifier" : false,
-    "skillTag" : "x3tagSkillNatureSylvanProtection",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Sylvan Protection.html",
-    "skillDescription" : null
+    "buff" : {
+      "skillTag" : "x3tagSkillNatureSylvanProtection",
+      "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\records\\xpack3\\skills\\allmasteries\\nature_nymph_petskill_rootwave.dbr",
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Sylvan Protection.html",
+      "name" : "Sylvan Protection",
+      "parent" : null,
+      "attributes" : {
+        "offensiveSlowRunSpeedMin" : {
+          "skill" : false,
+          "value" : 75.0
+        },
+        "skillManaCost" : {
+          "skill" : false,
+          "value" : [ 12.0, 13.0, 14.0, 15.0, 15.0, 16.0, 18.0, 18.0, 19.0, 19.0, 21.0, 22.0, 22.0, 24.0, 24.0, 25.0 ]
+        },
+        "offensiveSlowDefensiveAbilityDurationMin" : {
+          "skill" : false,
+          "value" : [ 1.0, 1.25, 1.5, 1.75, 2.0, 2.25, 2.5, 2.75, 3.0, 3.25, 3.5, 3.75 ]
+        },
+        "offensiveTrapMin" : {
+          "skill" : false,
+          "value" : [ 1.0, 1.25, 1.5, 1.75, 2.0, 2.25, 2.5, 2.75, 3.0, 3.25, 3.5, 3.75 ]
+        },
+        "cameraShakeAmplitude" : {
+          "skill" : false,
+          "value" : 0.12
+        },
+        "offensivePhysicalMin" : {
+          "skill" : false,
+          "value" : [ 68.0, 92.0, 116.0, 138.0, 162.0, 186.0, 210.0, 234.0, 258.0, 282.0, 306.0, 330.0 ]
+        },
+        "offensiveSlowDefensiveAbilityMin" : {
+          "skill" : false,
+          "value" : 66.0
+        },
+        "offensivePhysicalMax" : {
+          "skill" : false,
+          "value" : [ 90.0, 122.0, 154.0, 184.0, 216.0, 248.0, 280.0, 312.0, 344.0, 376.0, 408.0, 440.0 ]
+        },
+        "offensivePierceMin" : {
+          "skill" : false,
+          "value" : [ 35.0, 47.0, 59.0, 71.0, 83.0, 95.0, 107.0, 119.0, 131.0, 143.0, 155.0, 167.0 ]
+        },
+        "skillMaxLevel" : {
+          "skill" : false,
+          "value" : 8
+        },
+        "waveDistance" : {
+          "skill" : false,
+          "value" : 7.0
+        },
+        "waveStartWidth" : {
+          "skill" : false,
+          "value" : 2.0
+        },
+        "skillUltimateLevel" : {
+          "skill" : false,
+          "value" : 12
+        },
+        "offensiveSlowRunSpeedDurationMin" : {
+          "skill" : false,
+          "value" : [ 2.0, 2.25, 2.5, 2.75, 3.0, 3.25, 3.5, 3.75, 4.0, 4.25, 4.5, 4.75 ]
+        },
+        "waveEndWidth" : {
+          "skill" : false,
+          "value" : 7.0
+        },
+        "offensivePierceMax" : {
+          "skill" : false,
+          "value" : [ 45.0, 61.0, 77.0, 92.0, 108.0, 124.0, 140.0, 156.0, 172.0, 188.0, 204.0, 220.0 ]
+        },
+        "waveTime" : {
+          "skill" : false,
+          "value" : 0.8
+        },
+        "skillTier" : {
+          "skill" : false,
+          "value" : 7
+        },
+        "offensivePercentCurrentLifeMin" : {
+          "skill" : false,
+          "value" : [ 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0 ]
+        }
+      },
+      "buff" : null,
+      "skillDescription" : null,
+      "modifier" : false
+    },
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "tagSkillName074",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\Renewal.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Refresh.html",
     "name" : "Refresh",
     "parent" : null,
     "attributes" : {
       "skillCooldownTime" : {
-        "value" : [ 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0, 28.0, 29.0, 30.0, 31.0, 32.0, 33.0, 34.0, 35.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0, 28.0, 29.0, 30.0, 31.0, 32.0, 33.0, 34.0, 35.0 ]
       },
       "skillUltimateLevel" : {
-        "value" : 16,
-        "skill" : false
+        "skill" : false,
+        "value" : 16
       },
       "skillManaCost" : {
-        "value" : [ 30.0, 45.0, 60.0, 75.0, 90.0, 105.0, 120.0, 135.0, 150.0, 165.0, 180.0, 195.0, 210.0, 225.0, 240.0, 255.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 30.0, 45.0, 60.0, 75.0, 90.0, 105.0, 120.0, 135.0, 150.0, 165.0, 180.0, 195.0, 210.0, 225.0, 240.0, 255.0 ]
       },
       "refreshTime" : {
-        "value" : [ 8.0, 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 64.0, 68.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 8.0, 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 64.0, 68.0 ]
       },
       "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
+        "skill" : false,
+        "value" : 0.12
       },
       "skillTier" : {
-        "value" : 6,
-        "skill" : false
+        "skill" : false,
+        "value" : 6
       },
       "skillMaxLevel" : {
-        "value" : 12,
-        "skill" : false
+        "skill" : false,
+        "value" : 12
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "tagSkillName074",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Refresh.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "x3tagSkillNatureEarthbind",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\records\\xpack3\\skills\\allmasteries\\nature_earthbind.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Earthbind.html",
     "name" : "Earthbind",
     "parent" : null,
     "attributes" : {
       "offensiveSlowRunSpeedMin" : {
-        "value" : 66.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 66.0
       },
       "skillCooldownTime" : {
-        "value" : 20.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 20.0
       },
       "skillManaCost" : {
-        "value" : [ 130.0, 136.0, 142.0, 148.0, 154.0, 160.0, 166.0, 172.0, 178.0, 184.0, 190.0, 196.0, 202.0, 208.0, 214.0, 220.0, 226.0, 232.0, 238.0, 244.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 130.0, 136.0, 142.0, 148.0, 154.0, 160.0, 166.0, 172.0, 178.0, 184.0, 190.0, 196.0, 202.0, 208.0, 214.0, 220.0, 226.0, 232.0, 238.0, 244.0 ]
       },
       "offensiveSlowDefensiveAbilityDurationMin" : {
-        "value" : [ 1.0, 1.3, 1.6, 1.9, 2.2, 2.5, 2.9, 3.3, 3.7, 4.1, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 1.0, 1.3, 1.6, 1.9, 2.2, 2.5, 2.9, 3.3, 3.7, 4.1, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0 ]
       },
       "offensiveTrapMin" : {
-        "value" : [ 1.0, 1.3, 1.6, 1.9, 2.2, 2.5, 2.9, 3.3, 3.7, 4.1, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 1.0, 1.3, 1.6, 1.9, 2.2, 2.5, 2.9, 3.3, 3.7, 4.1, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0 ]
       },
       "skillConnectionSpacing" : {
-        "value" : 62,
-        "skill" : false
+        "skill" : false,
+        "value" : 62
       },
       "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
+        "skill" : false,
+        "value" : 0.12
       },
       "offensiveSlowDefensiveAbilityMin" : {
-        "value" : 50.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 50.0
       },
       "skillMaxLevel" : {
-        "value" : 12,
-        "skill" : false
+        "skill" : false,
+        "value" : 12
       },
       "offensiveSlowPoisonMax" : {
-        "value" : 48.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 48.0
       },
       "skillUltimateLevel" : {
-        "value" : 16,
-        "skill" : false
+        "skill" : false,
+        "value" : 16
       },
       "offensiveSlowRunSpeedDurationMin" : {
-        "value" : [ 2.0, 2.3, 2.6, 2.9, 3.2, 3.5, 3.9, 4.3, 4.7, 5.1, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 2.0, 2.3, 2.6, 2.9, 3.2, 3.5, 3.9, 4.3, 4.7, 5.1, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0 ]
       },
       "offensiveSlowPoisonDurationMin" : {
-        "value" : [ 1.0, 1.3, 1.6, 1.9, 2.2, 2.5, 2.9, 3.3, 3.7, 4.1, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 1.0, 1.3, 1.6, 1.9, 2.2, 2.5, 2.9, 3.3, 3.7, 4.1, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0 ]
       },
       "expansionTime" : {
-        "value" : 0.08,
-        "skill" : false
+        "skill" : false,
+        "value" : 0.08
       },
       "skillTargetRadius" : {
-        "value" : 22.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 22.0
       },
       "offensiveSlowPoisonMin" : {
-        "value" : 36.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 36.0
       },
       "skillTier" : {
-        "value" : 7,
-        "skill" : false
+        "skill" : false,
+        "value" : 7
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "x3tagSkillNatureEarthbind",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Earthbind.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   } ],
-  "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery.html"
+  "skillTree" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\NatureSkillTree.dbr"
 }

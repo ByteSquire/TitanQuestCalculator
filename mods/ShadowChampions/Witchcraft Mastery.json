@@ -1,1981 +1,2441 @@
 {
+  "mastery" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\witchcraft\\witchcraft_mastery.dbr",
+  "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery.html",
   "name" : "Witchcraft Mastery",
   "skills" : [ {
+    "skillTag" : "skillWitchcraft1n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\witchcraft\\skills\\school_fire.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/School of Fire.html",
     "name" : "School of Fire",
     "parent" : null,
     "attributes" : {
       "fire" : {
+        "skill" : true,
         "value" : {
+          "skillTag" : "skillWitchcraft1n",
+          "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\witchcraft\\skills\\school_fire_buff.dbr",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/School of Fire.html",
           "name" : "School of Fire",
           "parent" : null,
           "attributes" : {
             "skillCooldownTime" : {
-              "value" : 3.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 3.0
             },
             "characterSpellCastSpeedModifier" : {
-              "value" : [ 4.0, 7.0, 10.0, 13.0, 16.0, 19.0, 22.0, 25.0, 28.0, 31.0, 34.0, 37.0, 40.0, 42.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 4.0, 7.0, 10.0, 13.0, 16.0, 19.0, 22.0, 25.0, 28.0, 31.0, 34.0, 37.0, 40.0, 42.0 ]
             },
             "characterManaLimitReserve" : {
-              "value" : 50.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 50.0
             },
             "skillActiveManaCost" : {
-              "value" : 1.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 1.0
             },
             "skillWeaponTintRed" : {
-              "value" : 1.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 1.0
             },
             "skillConnectionSpacing" : {
-              "value" : 62,
-              "skill" : false
+              "skill" : false,
+              "value" : 62
             },
             "offensiveFireModifier" : {
-              "value" : [ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0 ]
             },
             "cameraShakeAmplitude" : {
-              "value" : 0.12,
-              "skill" : false
+              "skill" : false,
+              "value" : 0.12
             },
             "skillMaxLevel" : {
-              "value" : 10,
-              "skill" : false
+              "skill" : false,
+              "value" : 10
             },
             "exclusiveSkill" : {
-              "value" : 1,
-              "skill" : false
+              "skill" : false,
+              "value" : 1
             },
             "skillUltimateLevel" : {
-              "value" : 14,
-              "skill" : false
+              "skill" : false,
+              "value" : 14
             },
             "skillTargetRadius" : {
-              "value" : 16.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 16.0
             },
             "skillMasteryLevelRequired" : {
-              "value" : 1,
-              "skill" : false
+              "skill" : false,
+              "value" : 1
             },
             "skillTier" : {
-              "value" : 1,
-              "skill" : false
+              "skill" : false,
+              "value" : 1
             },
             "offensiveSlowFireModifier" : {
-              "value" : [ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0 ]
             }
           },
           "buff" : null,
-          "modifier" : false,
-          "skillTag" : "skillWitchcraft1n",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/School of Fire.html",
-          "skillDescription" : null
-        },
-        "skill" : true
+          "skillDescription" : null,
+          "modifier" : false
+        }
       }
     },
-    "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillWitchcraft1n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/School of Fire.html",
-    "skillDescription" : null
+    "buff" : {
+      "skillTag" : "skillWitchcraft1n",
+      "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\witchcraft\\skills\\school_fire_buff.dbr",
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/School of Fire.html",
+      "name" : "School of Fire",
+      "parent" : null,
+      "attributes" : {
+        "skillCooldownTime" : {
+          "skill" : false,
+          "value" : 3.0
+        },
+        "characterSpellCastSpeedModifier" : {
+          "skill" : false,
+          "value" : [ 4.0, 7.0, 10.0, 13.0, 16.0, 19.0, 22.0, 25.0, 28.0, 31.0, 34.0, 37.0, 40.0, 42.0 ]
+        },
+        "characterManaLimitReserve" : {
+          "skill" : false,
+          "value" : 50.0
+        },
+        "skillActiveManaCost" : {
+          "skill" : false,
+          "value" : 1.0
+        },
+        "skillWeaponTintRed" : {
+          "skill" : false,
+          "value" : 1.0
+        },
+        "skillConnectionSpacing" : {
+          "skill" : false,
+          "value" : 62
+        },
+        "offensiveFireModifier" : {
+          "skill" : false,
+          "value" : [ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0 ]
+        },
+        "cameraShakeAmplitude" : {
+          "skill" : false,
+          "value" : 0.12
+        },
+        "skillMaxLevel" : {
+          "skill" : false,
+          "value" : 10
+        },
+        "exclusiveSkill" : {
+          "skill" : false,
+          "value" : 1
+        },
+        "skillUltimateLevel" : {
+          "skill" : false,
+          "value" : 14
+        },
+        "skillTargetRadius" : {
+          "skill" : false,
+          "value" : 16.0
+        },
+        "skillMasteryLevelRequired" : {
+          "skill" : false,
+          "value" : 1
+        },
+        "skillTier" : {
+          "skill" : false,
+          "value" : 1
+        },
+        "offensiveSlowFireModifier" : {
+          "skill" : false,
+          "value" : [ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0 ]
+        }
+      },
+      "buff" : null,
+      "skillDescription" : null,
+      "modifier" : false
+    },
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillWitchcraft2n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\witchcraft\\skills\\school_frost.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/School of Frost.html",
     "name" : "School of Frost",
     "parent" : null,
     "attributes" : {
       "frost" : {
+        "skill" : true,
         "value" : {
+          "skillTag" : "skillWitchcraft2n",
+          "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\witchcraft\\skills\\school_frost_buff.dbr",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/School of Frost.html",
           "name" : "School of Frost",
           "parent" : null,
           "attributes" : {
             "skillCooldownTime" : {
-              "value" : 3.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 3.0
             },
             "skillWeaponTintBlue" : {
-              "value" : 1.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 1.0
             },
             "characterManaLimitReserve" : {
-              "value" : 50.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 50.0
             },
             "skillActiveManaCost" : {
-              "value" : 1.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 1.0
             },
             "offensiveSlowColdModifier" : {
-              "value" : [ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0 ]
             },
             "skillConnectionSpacing" : {
-              "value" : 62,
-              "skill" : false
+              "skill" : false,
+              "value" : 62
             },
             "cameraShakeAmplitude" : {
-              "value" : 0.12,
-              "skill" : false
+              "skill" : false,
+              "value" : 0.12
             },
             "skillMaxLevel" : {
-              "value" : 10,
-              "skill" : false
+              "skill" : false,
+              "value" : 10
             },
             "offensiveColdModifier" : {
-              "value" : [ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0 ]
             },
             "exclusiveSkill" : {
-              "value" : 1,
-              "skill" : false
+              "skill" : false,
+              "value" : 1
             },
             "skillUltimateLevel" : {
-              "value" : 14,
-              "skill" : false
+              "skill" : false,
+              "value" : 14
             },
             "skillTargetRadius" : {
-              "value" : 16.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 16.0
             },
             "skillMasteryLevelRequired" : {
-              "value" : 1,
-              "skill" : false
+              "skill" : false,
+              "value" : 1
             },
             "characterMana" : {
-              "value" : [ 30.0, 60.0, 90.0, 120.0, 150.0, 180.0, 210.0, 240.0, 270.0, 300.0, 330.0, 360.0, 390.0, 420.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 30.0, 60.0, 90.0, 120.0, 150.0, 180.0, 210.0, 240.0, 270.0, 300.0, 330.0, 360.0, 390.0, 420.0 ]
             },
             "skillTier" : {
-              "value" : 1,
-              "skill" : false
+              "skill" : false,
+              "value" : 1
             }
           },
           "buff" : null,
-          "modifier" : false,
-          "skillTag" : "skillWitchcraft2n",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/School of Frost.html",
-          "skillDescription" : null
-        },
-        "skill" : true
+          "skillDescription" : null,
+          "modifier" : false
+        }
       }
     },
-    "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillWitchcraft2n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/School of Frost.html",
-    "skillDescription" : null
+    "buff" : {
+      "skillTag" : "skillWitchcraft2n",
+      "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\witchcraft\\skills\\school_frost_buff.dbr",
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/School of Frost.html",
+      "name" : "School of Frost",
+      "parent" : null,
+      "attributes" : {
+        "skillCooldownTime" : {
+          "skill" : false,
+          "value" : 3.0
+        },
+        "skillWeaponTintBlue" : {
+          "skill" : false,
+          "value" : 1.0
+        },
+        "characterManaLimitReserve" : {
+          "skill" : false,
+          "value" : 50.0
+        },
+        "skillActiveManaCost" : {
+          "skill" : false,
+          "value" : 1.0
+        },
+        "offensiveSlowColdModifier" : {
+          "skill" : false,
+          "value" : [ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0 ]
+        },
+        "skillConnectionSpacing" : {
+          "skill" : false,
+          "value" : 62
+        },
+        "cameraShakeAmplitude" : {
+          "skill" : false,
+          "value" : 0.12
+        },
+        "skillMaxLevel" : {
+          "skill" : false,
+          "value" : 10
+        },
+        "offensiveColdModifier" : {
+          "skill" : false,
+          "value" : [ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0 ]
+        },
+        "exclusiveSkill" : {
+          "skill" : false,
+          "value" : 1
+        },
+        "skillUltimateLevel" : {
+          "skill" : false,
+          "value" : 14
+        },
+        "skillTargetRadius" : {
+          "skill" : false,
+          "value" : 16.0
+        },
+        "skillMasteryLevelRequired" : {
+          "skill" : false,
+          "value" : 1
+        },
+        "characterMana" : {
+          "skill" : false,
+          "value" : [ 30.0, 60.0, 90.0, 120.0, 150.0, 180.0, 210.0, 240.0, 270.0, 300.0, 330.0, 360.0, 390.0, 420.0 ]
+        },
+        "skillTier" : {
+          "skill" : false,
+          "value" : 1
+        }
+      },
+      "buff" : null,
+      "skillDescription" : null,
+      "modifier" : false
+    },
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillWitchcraft3n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\witchcraft\\skills\\school_lightning.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/School of Lightning.html",
     "name" : "School of Lightning",
     "parent" : null,
     "attributes" : {
       "lightning" : {
+        "skill" : true,
         "value" : {
+          "skillTag" : "skillWitchcraft3n",
+          "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\witchcraft\\skills\\school_lightning_buff.dbr",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/School of Lightning.html",
           "name" : "School of Lightning",
           "parent" : null,
           "attributes" : {
             "skillCooldownTime" : {
-              "value" : 3.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 3.0
             },
             "skillWeaponTintBlue" : {
-              "value" : 0.5,
-              "skill" : false
+              "skill" : false,
+              "value" : 0.5
             },
             "characterManaLimitReserve" : {
-              "value" : 50.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 50.0
             },
             "skillActiveManaCost" : {
-              "value" : 1.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 1.0
             },
             "skillWeaponTintRed" : {
-              "value" : 0.5,
-              "skill" : false
+              "skill" : false,
+              "value" : 0.5
             },
             "skillConnectionSpacing" : {
-              "value" : 62,
-              "skill" : false
+              "skill" : false,
+              "value" : 62
             },
             "offensiveSlowLightningModifier" : {
-              "value" : [ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0 ]
             },
             "cameraShakeAmplitude" : {
-              "value" : 0.12,
-              "skill" : false
+              "skill" : false,
+              "value" : 0.12
             },
             "skillMaxLevel" : {
-              "value" : 10,
-              "skill" : false
+              "skill" : false,
+              "value" : 10
             },
             "characterTotalSpeedModifier" : {
-              "value" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0 ]
             },
             "offensiveLightningModifier" : {
-              "value" : [ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0 ]
             },
             "exclusiveSkill" : {
-              "value" : 1,
-              "skill" : false
+              "skill" : false,
+              "value" : 1
             },
             "skillUltimateLevel" : {
-              "value" : 14,
-              "skill" : false
+              "skill" : false,
+              "value" : 14
             },
             "skillTargetRadius" : {
-              "value" : 16.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 16.0
             },
             "skillMasteryLevelRequired" : {
-              "value" : 1,
-              "skill" : false
+              "skill" : false,
+              "value" : 1
             },
             "skillTier" : {
-              "value" : 1,
-              "skill" : false
+              "skill" : false,
+              "value" : 1
             }
           },
           "buff" : null,
-          "modifier" : false,
-          "skillTag" : "skillWitchcraft3n",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/School of Lightning.html",
-          "skillDescription" : null
-        },
-        "skill" : true
+          "skillDescription" : null,
+          "modifier" : false
+        }
       }
     },
-    "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillWitchcraft3n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/School of Lightning.html",
-    "skillDescription" : null
+    "buff" : {
+      "skillTag" : "skillWitchcraft3n",
+      "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\witchcraft\\skills\\school_lightning_buff.dbr",
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/School of Lightning.html",
+      "name" : "School of Lightning",
+      "parent" : null,
+      "attributes" : {
+        "skillCooldownTime" : {
+          "skill" : false,
+          "value" : 3.0
+        },
+        "skillWeaponTintBlue" : {
+          "skill" : false,
+          "value" : 0.5
+        },
+        "characterManaLimitReserve" : {
+          "skill" : false,
+          "value" : 50.0
+        },
+        "skillActiveManaCost" : {
+          "skill" : false,
+          "value" : 1.0
+        },
+        "skillWeaponTintRed" : {
+          "skill" : false,
+          "value" : 0.5
+        },
+        "skillConnectionSpacing" : {
+          "skill" : false,
+          "value" : 62
+        },
+        "offensiveSlowLightningModifier" : {
+          "skill" : false,
+          "value" : [ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0 ]
+        },
+        "cameraShakeAmplitude" : {
+          "skill" : false,
+          "value" : 0.12
+        },
+        "skillMaxLevel" : {
+          "skill" : false,
+          "value" : 10
+        },
+        "characterTotalSpeedModifier" : {
+          "skill" : false,
+          "value" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0 ]
+        },
+        "offensiveLightningModifier" : {
+          "skill" : false,
+          "value" : [ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0 ]
+        },
+        "exclusiveSkill" : {
+          "skill" : false,
+          "value" : 1
+        },
+        "skillUltimateLevel" : {
+          "skill" : false,
+          "value" : 14
+        },
+        "skillTargetRadius" : {
+          "skill" : false,
+          "value" : 16.0
+        },
+        "skillMasteryLevelRequired" : {
+          "skill" : false,
+          "value" : 1
+        },
+        "skillTier" : {
+          "skill" : false,
+          "value" : 1
+        }
+      },
+      "buff" : null,
+      "skillDescription" : null,
+      "modifier" : false
+    },
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillWitchcraft4n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\witchcraft\\skills\\school_poison.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/School of Poison.html",
     "name" : "School of Poison",
     "parent" : null,
     "attributes" : {
       "poison" : {
+        "skill" : true,
         "value" : {
+          "skillTag" : "skillWitchcraft4n",
+          "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\witchcraft\\skills\\school_poison_buff.dbr",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/School of Poison.html",
           "name" : "School of Poison",
           "parent" : null,
           "attributes" : {
             "offensiveSlowPoisonDurationModifier" : {
-              "value" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ]
             },
             "offensiveSlowPoisonModifier" : {
-              "value" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ]
             },
             "skillCooldownTime" : {
-              "value" : 3.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 3.0
             },
             "characterManaLimitReserve" : {
-              "value" : 75.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 75.0
             },
             "skillActiveManaCost" : {
-              "value" : 1.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 1.0
             },
             "offensivePoisonMin" : {
-              "value" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ]
             },
             "skillConnectionSpacing" : {
-              "value" : 62,
-              "skill" : false
+              "skill" : false,
+              "value" : 62
             },
             "cameraShakeAmplitude" : {
-              "value" : 0.12,
-              "skill" : false
+              "skill" : false,
+              "value" : 0.12
             },
             "skillMaxLevel" : {
-              "value" : 10,
-              "skill" : false
+              "skill" : false,
+              "value" : 10
             },
             "skillUltimateLevel" : {
-              "value" : 14,
-              "skill" : false
+              "skill" : false,
+              "value" : 14
             },
             "offensivePoisonModifier" : {
-              "value" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ]
             },
             "skillWeaponTintGreen" : {
-              "value" : 1.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 1.0
             },
             "skillTargetRadius" : {
-              "value" : 16.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 16.0
             },
             "skillMasteryLevelRequired" : {
-              "value" : 1,
-              "skill" : false
+              "skill" : false,
+              "value" : 1
             },
             "skillTier" : {
-              "value" : 1,
-              "skill" : false
+              "skill" : false,
+              "value" : 1
             }
           },
           "buff" : null,
-          "modifier" : false,
-          "skillTag" : "skillWitchcraft4n",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/School of Poison.html",
-          "skillDescription" : null
-        },
-        "skill" : true
+          "skillDescription" : null,
+          "modifier" : false
+        }
       }
     },
-    "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillWitchcraft4n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/School of Poison.html",
-    "skillDescription" : null
+    "buff" : {
+      "skillTag" : "skillWitchcraft4n",
+      "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\witchcraft\\skills\\school_poison_buff.dbr",
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/School of Poison.html",
+      "name" : "School of Poison",
+      "parent" : null,
+      "attributes" : {
+        "offensiveSlowPoisonDurationModifier" : {
+          "skill" : false,
+          "value" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ]
+        },
+        "offensiveSlowPoisonModifier" : {
+          "skill" : false,
+          "value" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ]
+        },
+        "skillCooldownTime" : {
+          "skill" : false,
+          "value" : 3.0
+        },
+        "characterManaLimitReserve" : {
+          "skill" : false,
+          "value" : 75.0
+        },
+        "skillActiveManaCost" : {
+          "skill" : false,
+          "value" : 1.0
+        },
+        "offensivePoisonMin" : {
+          "skill" : false,
+          "value" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ]
+        },
+        "skillConnectionSpacing" : {
+          "skill" : false,
+          "value" : 62
+        },
+        "cameraShakeAmplitude" : {
+          "skill" : false,
+          "value" : 0.12
+        },
+        "skillMaxLevel" : {
+          "skill" : false,
+          "value" : 10
+        },
+        "skillUltimateLevel" : {
+          "skill" : false,
+          "value" : 14
+        },
+        "offensivePoisonModifier" : {
+          "skill" : false,
+          "value" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ]
+        },
+        "skillWeaponTintGreen" : {
+          "skill" : false,
+          "value" : 1.0
+        },
+        "skillTargetRadius" : {
+          "skill" : false,
+          "value" : 16.0
+        },
+        "skillMasteryLevelRequired" : {
+          "skill" : false,
+          "value" : 1
+        },
+        "skillTier" : {
+          "skill" : false,
+          "value" : 1
+        }
+      },
+      "buff" : null,
+      "skillDescription" : null,
+      "modifier" : false
+    },
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillWitchcraft5n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\witchcraft\\skills\\school_vitality.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/School of Shadows.html",
     "name" : "School of Shadows",
     "parent" : null,
     "attributes" : {
       "vitality" : {
+        "skill" : true,
         "value" : {
+          "skillTag" : "skillWitchcraft5n",
+          "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\witchcraft\\skills\\school_vitality_buff.dbr",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/School of Shadows.html",
           "name" : "School of Shadows",
           "parent" : null,
           "attributes" : {
             "skillCooldownTime" : {
-              "value" : 3.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 3.0
             },
             "characterManaLimitReserve" : {
-              "value" : 75.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 75.0
             },
             "skillActiveManaCost" : {
-              "value" : 1.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 1.0
             },
             "skillConnectionSpacing" : {
-              "value" : 62,
-              "skill" : false
+              "skill" : false,
+              "value" : 62
             },
             "cameraShakeAmplitude" : {
-              "value" : 0.12,
-              "skill" : false
+              "skill" : false,
+              "value" : 0.12
             },
             "skillMaxLevel" : {
-              "value" : 10,
-              "skill" : false
+              "skill" : false,
+              "value" : 10
             },
             "offensiveSlowLifeDurationModifier" : {
-              "value" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ]
             },
             "skillUltimateLevel" : {
-              "value" : 14,
-              "skill" : false
+              "skill" : false,
+              "value" : 14
             },
             "offensiveLifeModifier" : {
-              "value" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ]
             },
             "offensiveLifeMin" : {
-              "value" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ]
             },
             "offensiveSlowLifeModifier" : {
-              "value" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ]
             },
             "skillTargetRadius" : {
-              "value" : 16.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 16.0
             },
             "skillMasteryLevelRequired" : {
-              "value" : 1,
-              "skill" : false
+              "skill" : false,
+              "value" : 1
             },
             "skillTier" : {
-              "value" : 1,
-              "skill" : false
+              "skill" : false,
+              "value" : 1
             }
           },
           "buff" : null,
-          "modifier" : false,
-          "skillTag" : "skillWitchcraft5n",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/School of Shadows.html",
-          "skillDescription" : null
-        },
-        "skill" : true
+          "skillDescription" : null,
+          "modifier" : false
+        }
       }
     },
-    "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillWitchcraft5n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/School of Shadows.html",
-    "skillDescription" : null
+    "buff" : {
+      "skillTag" : "skillWitchcraft5n",
+      "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\witchcraft\\skills\\school_vitality_buff.dbr",
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/School of Shadows.html",
+      "name" : "School of Shadows",
+      "parent" : null,
+      "attributes" : {
+        "skillCooldownTime" : {
+          "skill" : false,
+          "value" : 3.0
+        },
+        "characterManaLimitReserve" : {
+          "skill" : false,
+          "value" : 75.0
+        },
+        "skillActiveManaCost" : {
+          "skill" : false,
+          "value" : 1.0
+        },
+        "skillConnectionSpacing" : {
+          "skill" : false,
+          "value" : 62
+        },
+        "cameraShakeAmplitude" : {
+          "skill" : false,
+          "value" : 0.12
+        },
+        "skillMaxLevel" : {
+          "skill" : false,
+          "value" : 10
+        },
+        "offensiveSlowLifeDurationModifier" : {
+          "skill" : false,
+          "value" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ]
+        },
+        "skillUltimateLevel" : {
+          "skill" : false,
+          "value" : 14
+        },
+        "offensiveLifeModifier" : {
+          "skill" : false,
+          "value" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ]
+        },
+        "offensiveLifeMin" : {
+          "skill" : false,
+          "value" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ]
+        },
+        "offensiveSlowLifeModifier" : {
+          "skill" : false,
+          "value" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ]
+        },
+        "skillTargetRadius" : {
+          "skill" : false,
+          "value" : 16.0
+        },
+        "skillMasteryLevelRequired" : {
+          "skill" : false,
+          "value" : 1
+        },
+        "skillTier" : {
+          "skill" : false,
+          "value" : 1
+        }
+      },
+      "buff" : null,
+      "skillDescription" : null,
+      "modifier" : false
+    },
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillWitchcraft27n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\witchcraft\\skills\\school_vitality_darkpact.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Dark Pact.html",
     "name" : "Dark Pact",
     "parent" : "School of Shadows",
     "attributes" : {
       "characterLifeModifier" : {
-        "value" : -12.0,
-        "skill" : false
+        "skill" : false,
+        "value" : -12.0
       },
       "skillUltimateLevel" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "offensiveLifeModifier" : {
-        "value" : 33.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 33.0
       },
       "offensiveSlowLifeModifier" : {
-        "value" : 33.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 33.0
       },
       "skillMasteryLevelRequired" : {
-        "value" : 4,
-        "skill" : false
+        "skill" : false,
+        "value" : 4
       },
       "skillTier" : {
-        "value" : 2,
-        "skill" : false
+        "skill" : false,
+        "value" : 2
       },
       "skillMaxLevel" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       }
     },
     "buff" : null,
-    "modifier" : true,
-    "skillTag" : "skillWitchcraft27n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Dark Pact.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : true
   }, {
+    "skillTag" : "skillWitchcraft6n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\witchcraft\\skills\\elementalchaos.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Elemental Dominion.html",
     "name" : "Elemental Dominion",
     "parent" : null,
     "attributes" : {
       "elementalchaos" : {
+        "skill" : true,
         "value" : {
+          "skillTag" : "skillWitchcraft6n",
+          "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\witchcraft\\skills\\elementalchaos_buff.dbr",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Elemental Dominion.html",
           "name" : "Elemental Dominion",
           "parent" : null,
           "attributes" : {
             "skillCooldownTime" : {
-              "value" : 3.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 3.0
             },
             "characterManaLimitReserve" : {
-              "value" : 75.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 75.0
             },
             "offensiveElementalModifier" : {
-              "value" : [ 5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0 ]
             },
             "skillActiveManaCost" : {
-              "value" : 1.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 1.0
             },
             "skillConnectionSpacing" : {
-              "value" : 62,
-              "skill" : false
+              "skill" : false,
+              "value" : 62
             },
             "cameraShakeAmplitude" : {
-              "value" : 0.12,
-              "skill" : false
+              "skill" : false,
+              "value" : 0.12
             },
             "skillMaxLevel" : {
-              "value" : 10,
-              "skill" : false
+              "skill" : false,
+              "value" : 10
             },
             "offensiveElementalMin" : {
-              "value" : [ 10.0, 14.0, 18.0, 22.0, 25.0, 29.0, 33.0, 37.0, 41.0, 45.0, 48.0, 52.0, 56.0, 60.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 10.0, 14.0, 18.0, 22.0, 25.0, 29.0, 33.0, 37.0, 41.0, 45.0, 48.0, 52.0, 56.0, 60.0 ]
             },
             "exclusiveSkill" : {
-              "value" : 1,
-              "skill" : false
+              "skill" : false,
+              "value" : 1
             },
             "skillUltimateLevel" : {
-              "value" : 14,
-              "skill" : false
+              "skill" : false,
+              "value" : 14
             },
             "retaliationElementalMin" : {
-              "value" : [ 5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0 ]
             },
             "skillTargetRadius" : {
-              "value" : 16.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 16.0
             },
             "skillMasteryLevelRequired" : {
-              "value" : 40,
-              "skill" : false
+              "skill" : false,
+              "value" : 40
             },
             "skillTier" : {
-              "value" : 7,
-              "skill" : false
+              "skill" : false,
+              "value" : 7
             }
           },
           "buff" : null,
-          "modifier" : false,
-          "skillTag" : "skillWitchcraft6n",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Elemental Dominion.html",
-          "skillDescription" : null
-        },
-        "skill" : true
+          "skillDescription" : null,
+          "modifier" : false
+        }
       }
     },
-    "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillWitchcraft6n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Elemental Dominion.html",
-    "skillDescription" : null
+    "buff" : {
+      "skillTag" : "skillWitchcraft6n",
+      "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\witchcraft\\skills\\elementalchaos_buff.dbr",
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Elemental Dominion.html",
+      "name" : "Elemental Dominion",
+      "parent" : null,
+      "attributes" : {
+        "skillCooldownTime" : {
+          "skill" : false,
+          "value" : 3.0
+        },
+        "characterManaLimitReserve" : {
+          "skill" : false,
+          "value" : 75.0
+        },
+        "offensiveElementalModifier" : {
+          "skill" : false,
+          "value" : [ 5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0 ]
+        },
+        "skillActiveManaCost" : {
+          "skill" : false,
+          "value" : 1.0
+        },
+        "skillConnectionSpacing" : {
+          "skill" : false,
+          "value" : 62
+        },
+        "cameraShakeAmplitude" : {
+          "skill" : false,
+          "value" : 0.12
+        },
+        "skillMaxLevel" : {
+          "skill" : false,
+          "value" : 10
+        },
+        "offensiveElementalMin" : {
+          "skill" : false,
+          "value" : [ 10.0, 14.0, 18.0, 22.0, 25.0, 29.0, 33.0, 37.0, 41.0, 45.0, 48.0, 52.0, 56.0, 60.0 ]
+        },
+        "exclusiveSkill" : {
+          "skill" : false,
+          "value" : 1
+        },
+        "skillUltimateLevel" : {
+          "skill" : false,
+          "value" : 14
+        },
+        "retaliationElementalMin" : {
+          "skill" : false,
+          "value" : [ 5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0 ]
+        },
+        "skillTargetRadius" : {
+          "skill" : false,
+          "value" : 16.0
+        },
+        "skillMasteryLevelRequired" : {
+          "skill" : false,
+          "value" : 40
+        },
+        "skillTier" : {
+          "skill" : false,
+          "value" : 7
+        }
+      },
+      "buff" : null,
+      "skillDescription" : null,
+      "modifier" : false
+    },
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillWitchcraft7n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\witchcraft\\skills\\triplicate.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Triplicate.html",
     "name" : "Triplicate",
     "parent" : null,
     "attributes" : {
       "skillManaCost" : {
-        "value" : [ 17.0, 20.0, 23.0, 26.0, 29.0, 32.0, 35.0, 38.0, 41.0, 43.0, 46.0, 49.0, 52.0, 55.0, 58.0, 60.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 17.0, 20.0, 23.0, 26.0, 29.0, 32.0, 35.0, 38.0, 41.0, 43.0, 46.0, 49.0, 52.0, 55.0, 58.0, 60.0 ]
       },
       "projectilePiercingChance" : {
-        "value" : [ 13.0, 17.0, 21.0, 25.0, 29.0, 33.0, 37.0, 41.0, 45.0, 49.0, 53.0, 57.0, 61.0, 65.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 13.0, 17.0, 21.0, 25.0, 29.0, 33.0, 37.0, 41.0, 45.0, 49.0, 53.0, 57.0, 61.0, 65.0 ]
       },
       "isPetDisplayable" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillConnectionSpacing" : {
-        "value" : 62,
-        "skill" : false
+        "skill" : false,
+        "value" : 62
       },
       "Staff" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "driftMax" : {
-        "value" : 6.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 6.0
       },
       "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
+        "skill" : false,
+        "value" : 0.12
       },
       "offensiveTotalDamageModifier" : {
-        "value" : [ -50.0, -45.0, -40.0, -35.0, -30.0, -25.0, -20.0, -17.0, -14.0, -11.0, -8.0, -5.0, -2.0, 0.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ -50.0, -45.0, -40.0, -35.0, -30.0, -25.0, -20.0, -17.0, -14.0, -11.0, -8.0, -5.0, -2.0, 0.0 ]
       },
       "skillMaxLevel" : {
-        "value" : 10,
-        "skill" : false
+        "skill" : false,
+        "value" : 10
       },
       "skillUltimateLevel" : {
-        "value" : 14,
-        "skill" : false
+        "skill" : false,
+        "value" : 14
       },
       "driftMin" : {
-        "value" : 6.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 6.0
       },
       "skillProjectileNumber" : {
-        "value" : 3,
-        "skill" : false
+        "skill" : false,
+        "value" : 3
       },
       "skillMasteryLevelRequired" : {
-        "value" : 4,
-        "skill" : false
+        "skill" : false,
+        "value" : 4
       },
       "skillTier" : {
-        "value" : 2,
-        "skill" : false
+        "skill" : false,
+        "value" : 2
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillWitchcraft7n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Triplicate.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillWitchcraft10n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\witchcraft\\skills\\conjuredsteel.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Conjured Steel.html",
     "name" : "Conjured Steel",
     "parent" : null,
     "attributes" : {
       "offensivePhysicalModifier" : {
-        "value" : [ 6.0, 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 6.0, 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0 ]
       },
       "Mace" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
+        "skill" : false,
+        "value" : 12
       },
       "Sword" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "Bow" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillMasteryLevelRequired" : {
-        "value" : 10,
-        "skill" : false
+        "skill" : false,
+        "value" : 10
       },
       "skillTier" : {
-        "value" : 3,
-        "skill" : false
+        "skill" : false,
+        "value" : 3
       },
       "characterPhysToElementalRatio" : {
-        "value" : [ 8.0, 13.0, 17.0, 22.0, 27.0, 32.0, 36.0, 42.0, 46.0, 52.0, 55.0, 60.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 8.0, 13.0, 17.0, 22.0, 27.0, 32.0, 36.0, 42.0, 46.0, 52.0, 55.0, 60.0 ]
       },
       "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
+        "skill" : false,
+        "value" : 8
       },
       "Spear" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "Axe" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "RangedOneHand" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillWitchcraft10n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Conjured Steel.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillWitchcraft8n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\witchcraft\\skills\\coneofflames.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Cone of Flames.html",
     "name" : "Cone of Flames",
     "parent" : null,
     "attributes" : {
       "waveDepth" : {
-        "value" : 1.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 1.0
       },
       "skillCooldownTime" : {
-        "value" : 6.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 6.0
       },
       "skillManaCost" : {
-        "value" : [ 68.0, 74.0, 80.0, 86.0, 93.0, 99.0, 105.0, 111.0, 117.0, 123.0, 130.0, 136.0, 142.0, 148.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 68.0, 74.0, 80.0, 86.0, 93.0, 99.0, 105.0, 111.0, 117.0, 123.0, 130.0, 136.0, 142.0, 148.0 ]
       },
       "offensiveSlowDefensiveAbilityDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 3.0
       },
       "skillConnectionSpacing" : {
-        "value" : 62,
-        "skill" : false
+        "skill" : false,
+        "value" : 62
       },
       "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
+        "skill" : false,
+        "value" : 0.12
       },
       "offensiveSlowDefensiveAbilityMin" : {
-        "value" : [ 10.0, 12.0, 15.0, 17.0, 20.0, 22.0, 25.0, 27.0, 30.0, 32.0, 35.0, 37.0, 40.0, 42.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 10.0, 12.0, 15.0, 17.0, 20.0, 22.0, 25.0, 27.0, 30.0, 32.0, 35.0, 37.0, 40.0, 42.0 ]
       },
       "skillMaxLevel" : {
-        "value" : 10,
-        "skill" : false
+        "skill" : false,
+        "value" : 10
       },
       "waveDistance" : {
-        "value" : 10.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 10.0
       },
       "waveStartWidth" : {
-        "value" : 1.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 1.0
       },
       "cameraShakeDurationSecs" : {
-        "value" : 1.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 1.0
       },
       "skillUltimateLevel" : {
-        "value" : 14,
-        "skill" : false
+        "skill" : false,
+        "value" : 14
       },
       "waveEndWidth" : {
-        "value" : 8.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 8.0
       },
       "offensiveFireMin" : {
-        "value" : [ 87.5, 108.5, 127.75, 148.75, 168.0, 189.0, 208.25, 229.25, 248.5, 269.5, 288.75, 309.75, 329.0, 350.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 87.5, 108.5, 127.75, 148.75, 168.0, 189.0, 208.25, 229.25, 248.5, 269.5, 288.75, 309.75, 329.0, 350.0 ]
       },
       "skillMasteryLevelRequired" : {
-        "value" : 16,
-        "skill" : false
+        "skill" : false,
+        "value" : 16
       },
       "waveTime" : {
-        "value" : 1.25,
-        "skill" : false
+        "skill" : false,
+        "value" : 1.25
       },
       "skillTier" : {
-        "value" : 4,
-        "skill" : false
+        "skill" : false,
+        "value" : 4
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillWitchcraft8n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Cone of Flames.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillWitchcraft9n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\witchcraft\\skills\\coneoffflames_infinitereach.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Infinite Reach.html",
     "name" : "Infinite Reach",
     "parent" : "Cone of Flames",
     "attributes" : {
       "offensiveSlowFireDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 3.0
       },
       "skillManaCost" : {
-        "value" : [ 10.0, 12.0, 15.0, 17.0, 20.0, 22.0, 25.0, 27.0, 30.0, 32.0, 35.0, 37.0, 40.0, 42.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 10.0, 12.0, 15.0, 17.0, 20.0, 22.0, 25.0, 27.0, 30.0, 32.0, 35.0, 37.0, 40.0, 42.0 ]
       },
       "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
+        "skill" : false,
+        "value" : 12
       },
       "offensiveFireModifier" : {
-        "value" : [ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0 ]
       },
       "offensiveSlowFireMin" : {
-        "value" : [ 20.0, 28.0, 36.0, 45.0, 53.0, 61.0, 69.0, 77.0, 85.0, 94.0, 102.0, 110.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 20.0, 28.0, 36.0, 45.0, 53.0, 61.0, 69.0, 77.0, 85.0, 94.0, 102.0, 110.0 ]
       },
       "skillMasteryLevelRequired" : {
-        "value" : 24,
-        "skill" : false
+        "skill" : false,
+        "value" : 24
       },
       "skillTier" : {
-        "value" : 5,
-        "skill" : false
+        "skill" : false,
+        "value" : 5
       },
       "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
+        "skill" : false,
+        "value" : 8
       },
       "waveDistance" : {
-        "value" : [ 1.0, 3.0, 4.0, 5.0, 6.0, 7.0, 9.0, 11.0, 12.0, 14.0, 15.0, 16.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 1.0, 3.0, 4.0, 5.0, 6.0, 7.0, 9.0, 11.0, 12.0, 14.0, 15.0, 16.0 ]
       }
     },
     "buff" : null,
-    "modifier" : true,
-    "skillTag" : "skillWitchcraft9n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Infinite Reach.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : true
   }, {
+    "skillTag" : "skillWitchcraft13n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\witchcraft\\skills\\magicgems.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Magic Gems.html",
     "name" : "Magic Gems",
     "parent" : null,
     "attributes" : {
       "projectileLaunchNumber" : {
-        "value" : [ 3.0, 3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 6.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 3.0, 3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 6.0 ]
       },
       "skillUltimateLevel" : {
-        "value" : 20,
-        "skill" : false
+        "skill" : false,
+        "value" : 20
       },
       "skillManaCost" : {
-        "value" : [ 30.0, 34.0, 38.0, 43.0, 47.0, 51.0, 55.0, 59.0, 64.0, 68.0, 72.0, 76.0, 81.0, 85.0, 89.0, 93.0, 97.0, 102.0, 106.0, 110.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 30.0, 34.0, 38.0, 43.0, 47.0, 51.0, 55.0, 59.0, 64.0, 68.0, 72.0, 76.0, 81.0, 85.0, 89.0, 93.0, 97.0, 102.0, 106.0, 110.0 ]
       },
       "projectileExplosionRadius" : {
-        "value" : 3.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 3.0
       },
       "projectileLaunchRotation" : {
-        "value" : 37.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 37.0
       },
       "skillConnectionSpacing" : {
-        "value" : 62,
-        "skill" : false
+        "skill" : false,
+        "value" : 62
       },
       "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
+        "skill" : false,
+        "value" : 0.12
       },
       "offensiveLightningMin" : {
-        "value" : [ 16.0, 23.0, 30.0, 37.0, 44.0, 52.0, 59.0, 66.0, 73.0, 80.0, 87.0, 94.0, 101.0, 108.0, 115.0, 123.0, 130.0, 137.0, 144.0, 151.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 16.0, 23.0, 30.0, 37.0, 44.0, 52.0, 59.0, 66.0, 73.0, 80.0, 87.0, 94.0, 101.0, 108.0, 115.0, 123.0, 130.0, 137.0, 144.0, 151.0 ]
       },
       "skillMasteryLevelRequired" : {
-        "value" : 4,
-        "skill" : false
+        "skill" : false,
+        "value" : 4
       },
       "skillTier" : {
-        "value" : 2,
-        "skill" : false
+        "skill" : false,
+        "value" : 2
       },
       "skillMaxLevel" : {
-        "value" : 16,
-        "skill" : false
+        "skill" : false,
+        "value" : 16
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillWitchcraft13n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Magic Gems.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillWitchcraft26n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\witchcraft\\skills\\magicgems_superchargedamethysts.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Supercharged Amethysts.html",
     "name" : "Supercharged Amethysts",
     "parent" : "Magic Gems",
     "attributes" : {
       "skillUltimateLevel" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "offensivePetrifyMin" : {
-        "value" : 1.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 1.0
       },
       "offensiveTotalDamageModifierChance" : {
-        "value" : 20.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 20.0
       },
       "offensiveTotalDamageModifier" : {
-        "value" : -100.0,
-        "skill" : false
+        "skill" : false,
+        "value" : -100.0
       },
       "offensivePetrifyChance" : {
-        "value" : 5.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 5.0
       },
       "skillMasteryLevelRequired" : {
-        "value" : 10,
-        "skill" : false
+        "skill" : false,
+        "value" : 10
       },
       "skillTier" : {
-        "value" : 3,
-        "skill" : false
+        "skill" : false,
+        "value" : 3
       },
       "skillMaxLevel" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       }
     },
     "buff" : null,
-    "modifier" : true,
-    "skillTag" : "skillWitchcraft26n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Supercharged Amethysts.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : true
   }, {
+    "skillTag" : "skillWitchcraft11n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\witchcraft\\skills\\rotzone.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Rot Zone.html",
     "name" : "Rot Zone",
     "parent" : null,
     "attributes" : {
       "skillActiveDuration" : {
-        "value" : 8.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 8.0
       },
       "skillCooldownTime" : {
-        "value" : 8.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 8.0
       },
       "skillManaCost" : {
-        "value" : [ 43.0, 45.0, 49.0, 53.0, 55.0, 60.0, 63.0, 67.0, 72.0, 75.0, 79.0, 85.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 43.0, 45.0, 49.0, 53.0, 55.0, 60.0, 63.0, 67.0, 72.0, 75.0, 79.0, 85.0 ]
       },
       "projectileExplosionRadius" : {
-        "value" : 5.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 5.0
       },
       "offensivePoisonMin" : {
-        "value" : [ 10.0, 23.0, 35.0, 48.0, 61.0, 74.0, 86.0, 99.0, 112.0, 125.0, 137.0, 150.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 10.0, 23.0, 35.0, 48.0, 61.0, 74.0, 86.0, 99.0, 112.0, 125.0, 137.0, 150.0 ]
       },
       "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
+        "skill" : false,
+        "value" : 0.12
       },
       "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
+        "skill" : false,
+        "value" : 8
       },
       "offensivePercentCurrentLifeGlobal" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
+        "skill" : false,
+        "value" : 12
       },
       "offensiveGlobalChance" : {
-        "value" : 15.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 15.0
       },
       "offensiveSlowPoisonGlobal" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "offensiveLifeMin" : {
-        "value" : [ 10.0, 23.0, 35.0, 48.0, 61.0, 74.0, 86.0, 99.0, 112.0, 125.0, 137.0, 150.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 10.0, 23.0, 35.0, 48.0, 61.0, 74.0, 86.0, 99.0, 112.0, 125.0, 137.0, 150.0 ]
       },
       "offensiveSlowPoisonDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 3.0
       },
       "skillMasteryLevelRequired" : {
-        "value" : 4,
-        "skill" : false
+        "skill" : false,
+        "value" : 4
       },
       "offensiveSlowPoisonMin" : {
-        "value" : [ 8.0, 15.0, 23.0, 30.0, 38.0, 45.0, 53.0, 60.0, 67.0, 73.0, 80.0, 86.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 8.0, 15.0, 23.0, 30.0, 38.0, 45.0, 53.0, 60.0, 67.0, 73.0, 80.0, 86.0 ]
       },
       "skillTier" : {
-        "value" : 2,
-        "skill" : false
+        "skill" : false,
+        "value" : 2
       },
       "offensivePercentCurrentLifeMin" : {
-        "value" : [ 5.0, 7.0, 10.0, 12.0, 14.0, 16.0, 19.0, 21.0, 23.0, 25.0, 28.0, 30.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 5.0, 7.0, 10.0, 12.0, 14.0, 16.0, 19.0, 21.0, 23.0, 25.0, 28.0, 30.0 ]
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillWitchcraft11n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Rot Zone.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillWitchcraft12n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\witchcraft\\skills\\rotzone_bouncingplague.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Bouncing Plague.html",
     "name" : "Bouncing Plague",
     "parent" : null,
     "attributes" : {
       "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
+        "skill" : false,
+        "value" : 12
       },
       "offensivePoisonMin" : {
-        "value" : [ 24.0, 31.0, 37.0, 45.0, 53.0, 61.0, 70.0, 80.0, 91.0, 102.0, 115.0, 130.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 24.0, 31.0, 37.0, 45.0, 53.0, 61.0, 70.0, 80.0, 91.0, 102.0, 115.0, 130.0 ]
       },
       "sparkGap" : {
-        "value" : 10.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 10.0
       },
       "sparkChance" : {
-        "value" : 100.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 100.0
       },
       "offensiveLifeMin" : {
-        "value" : [ 24.0, 31.0, 37.0, 45.0, 53.0, 61.0, 70.0, 80.0, 91.0, 102.0, 115.0, 130.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 24.0, 31.0, 37.0, 45.0, 53.0, 61.0, 70.0, 80.0, 91.0, 102.0, 115.0, 130.0 ]
       },
       "offensiveLifeLeechMin" : {
-        "value" : [ 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0 ]
       },
       "skillTier" : {
-        "value" : 5,
-        "skill" : false
+        "skill" : false,
+        "value" : 5
       },
       "sparkMaxNumber" : {
-        "value" : [ 3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 5.0, 5.0, 6.0, 6.0, 7.0, 7.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 5.0, 5.0, 6.0, 6.0, 7.0, 7.0 ]
       },
       "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
+        "skill" : false,
+        "value" : 8
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillWitchcraft12n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Bouncing Plague.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillWitchcraft14n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\witchcraft\\skills\\glacierwall.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Ice Blockade.html",
     "name" : "Ice Blockade",
     "parent" : null,
     "attributes" : {
       "offensiveSlowRunSpeedMin" : {
-        "value" : [ 16.0, 19.0, 23.0, 26.0, 29.0, 32.0, 36.0, 39.0, 42.0, 45.0, 49.0, 52.0, 55.0, 58.0, 62.0, 65.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 16.0, 19.0, 23.0, 26.0, 29.0, 32.0, 36.0, 39.0, 42.0, 45.0, 49.0, 52.0, 55.0, 58.0, 62.0, 65.0 ]
       },
       "waveDepth" : {
-        "value" : 1.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 1.0
       },
       "skillCooldownTime" : {
-        "value" : 8.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 8.0
       },
       "skillManaCost" : {
-        "value" : [ 70.0, 75.0, 78.0, 81.0, 84.0, 88.0, 93.0, 96.0, 100.0, 103.0, 106.0, 111.0, 115.0, 120.0, 124.0, 130.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 70.0, 75.0, 78.0, 81.0, 84.0, 88.0, 93.0, 96.0, 100.0, 103.0, 106.0, 111.0, 115.0, 120.0, 124.0, 130.0 ]
       },
       "skillConnectionSpacing" : {
-        "value" : 62,
-        "skill" : false
+        "skill" : false,
+        "value" : 62
       },
       "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
+        "skill" : false,
+        "value" : 0.12
       },
       "offensiveColdMin" : {
-        "value" : [ 16.0, 26.9, 37.9, 48.8, 59.7, 70.7, 81.6, 92.5, 103.5, 114.4, 125.3, 136.3, 147.2, 158.1, 169.1, 180.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 16.0, 26.9, 37.9, 48.8, 59.7, 70.7, 81.6, 92.5, 103.5, 114.4, 125.3, 136.3, 147.2, 158.1, 169.1, 180.0 ]
       },
       "skillMaxLevel" : {
-        "value" : 12,
-        "skill" : false
+        "skill" : false,
+        "value" : 12
       },
       "waveDistance" : {
-        "value" : 4.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 4.0
       },
       "waveStartWidth" : {
-        "value" : 15.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 15.0
       },
       "cameraShakeDurationSecs" : {
-        "value" : 1.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 1.0
       },
       "skillUltimateLevel" : {
-        "value" : 16,
-        "skill" : false
+        "skill" : false,
+        "value" : 16
       },
       "offensiveSlowRunSpeedDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 3.0
       },
       "waveEndWidth" : {
-        "value" : 15.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 15.0
       },
       "offensiveSlowColdMin" : {
-        "value" : [ 8.0, 13.0, 17.0, 22.0, 27.0, 32.0, 36.0, 41.0, 46.0, 51.0, 55.0, 60.0, 68.0, 75.0, 83.0, 90.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 8.0, 13.0, 17.0, 22.0, 27.0, 32.0, 36.0, 41.0, 46.0, 51.0, 55.0, 60.0, 68.0, 75.0, 83.0, 90.0 ]
       },
       "offensiveSlowColdDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 3.0
       },
       "skillMasteryLevelRequired" : {
-        "value" : 4,
-        "skill" : false
+        "skill" : false,
+        "value" : 4
       },
       "waveTime" : {
-        "value" : 4.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 4.0
       },
       "skillTier" : {
-        "value" : 2,
-        "skill" : false
+        "skill" : false,
+        "value" : 2
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillWitchcraft14n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Ice Blockade.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillWitchcraft15n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\witchcraft\\skills\\glacierwall_intensefrost.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Intense Frost.html",
     "name" : "Intense Frost",
     "parent" : "Ice Blockade",
     "attributes" : {
       "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
+        "skill" : false,
+        "value" : 12
       },
       "offensiveSlowColdModifier" : {
-        "value" : [ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0 ]
       },
       "offensiveFreezeMin" : {
-        "value" : [ 1.0, 1.3, 1.5, 1.8, 2.1, 2.4, 2.6, 2.9, 3.2, 3.5, 3.7, 4.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 1.0, 1.3, 1.5, 1.8, 2.1, 2.4, 2.6, 2.9, 3.2, 3.5, 3.7, 4.0 ]
       },
       "skillMasteryLevelRequired" : {
-        "value" : 16,
-        "skill" : false
+        "skill" : false,
+        "value" : 16
       },
       "skillTier" : {
-        "value" : 4,
-        "skill" : false
+        "skill" : false,
+        "value" : 4
       },
       "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
+        "skill" : false,
+        "value" : 8
       }
     },
     "buff" : null,
-    "modifier" : true,
-    "skillTag" : "skillWitchcraft15n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Intense Frost.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : true
   }, {
+    "skillTag" : "skillWitchcraft16n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\witchcraft\\skills\\severmind.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Sever Minds.html",
     "name" : "Sever Minds",
     "parent" : null,
     "attributes" : {
       "skillCooldownTime" : {
-        "value" : [ 6.0, 6.0, 5.0, 5.0, 5.0, 5.0, 4.0, 4.0, 4.0, 4.0, 3.0, 3.0, 2.85, 2.7, 2.55, 2.4, 2.25, 2.1, 1.95, 1.8, 1.65, 1.5, 1.35, 1.2, 1.05, 0.9, 0.75, 0.6, 0.45, 0.3, 0.15, 0.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 6.0, 6.0, 5.0, 5.0, 5.0, 5.0, 4.0, 4.0, 4.0, 4.0, 3.0, 3.0, 2.85, 2.7, 2.55, 2.4, 2.25, 2.1, 1.95, 1.8, 1.65, 1.5, 1.35, 1.2, 1.05, 0.9, 0.75, 0.6, 0.45, 0.3, 0.15, 0.0 ]
       },
       "skillManaCost" : {
-        "value" : [ 40.0, 47.0, 55.0, 62.0, 69.0, 76.0, 84.0, 91.0, 98.0, 105.0, 113.0, 120.0, 126.0, 132.0, 138.0, 144.0, 150.0, 156.0, 162.0, 168.0, 174.0, 180.0, 186.0, 192.0, 198.0, 204.0, 210.0, 216.0, 222.0, 228.0, 234.0, 240.0, 246.0, 252.0, 258.0, 264.0, 270.0, 276.0, 282.0, 288.0, 294.0, 300.0, 306.0, 312.0, 318.0, 324.0, 330.0, 336.0, 342.0, 348.0, 354.0, 360.0, 366.0, 372.0, 378.0, 384.0, 390.0, 396.0, 402.0, 408.0, 414.0, 420.0, 426.0, 432.0, 438.0, 444.0, 450.0, 456.0, 462.0, 468.0, 474.0, 480.0, 486.0, 492.0, 498.0, 504.0, 510.0, 516.0, 522.0, 528.0, 534.0, 540.0, 546.0, 552.0, 558.0, 564.0, 570.0, 576.0, 582.0, 588.0, 594.0, 600.0, 606.0, 612.0, 618.0, 624.0, 630.0, 636.0, 642.0, 648.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 40.0, 47.0, 55.0, 62.0, 69.0, 76.0, 84.0, 91.0, 98.0, 105.0, 113.0, 120.0, 126.0, 132.0, 138.0, 144.0, 150.0, 156.0, 162.0, 168.0, 174.0, 180.0, 186.0, 192.0, 198.0, 204.0, 210.0, 216.0, 222.0, 228.0, 234.0, 240.0, 246.0, 252.0, 258.0, 264.0, 270.0, 276.0, 282.0, 288.0, 294.0, 300.0, 306.0, 312.0, 318.0, 324.0, 330.0, 336.0, 342.0, 348.0, 354.0, 360.0, 366.0, 372.0, 378.0, 384.0, 390.0, 396.0, 402.0, 408.0, 414.0, 420.0, 426.0, 432.0, 438.0, 444.0, 450.0, 456.0, 462.0, 468.0, 474.0, 480.0, 486.0, 492.0, 498.0, 504.0, 510.0, 516.0, 522.0, 528.0, 534.0, 540.0, 546.0, 552.0, 558.0, 564.0, 570.0, 576.0, 582.0, 588.0, 594.0, 600.0, 606.0, 612.0, 618.0, 624.0, 630.0, 636.0, 642.0, 648.0 ]
       },
       "sparkGap" : {
-        "value" : 6.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 6.0
       },
       "skillConnectionSpacing" : {
-        "value" : 62,
-        "skill" : false
+        "skill" : false,
+        "value" : 62
       },
       "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
+        "skill" : false,
+        "value" : 0.12
       },
       "offensiveDisruptionMin" : {
-        "value" : [ 2.0, 2.3, 2.6, 2.9, 3.2, 3.5, 3.8, 4.1, 4.4, 4.7, 5.0, 5.3, 5.6, 6.0, 6.2, 6.4, 6.6, 6.8, 7.0, 7.2, 7.4, 7.6, 7.8, 8.0, 8.2, 8.4, 8.6, 8.8, 9.0, 9.2, 9.4, 9.6, 9.8, 10.0, 10.2, 10.4, 10.6, 10.8, 11.0, 11.2, 11.4, 11.6, 11.8, 12.0, 12.2, 12.4, 12.6, 12.8, 13.0, 13.2, 13.4, 13.6, 13.8, 14.0, 14.2, 14.4, 14.6, 14.8, 15.0, 15.2, 15.4, 15.6, 15.8, 16.0, 16.2, 16.4, 16.6, 16.8, 17.0, 17.2, 17.4, 17.6, 17.8, 18.0, 18.2, 18.4, 18.6, 18.8, 19.0, 19.2, 19.4, 19.6, 19.8, 20.0, 20.2, 20.4, 20.6, 20.8, 21.0, 21.2, 21.4, 21.6, 21.8, 22.0, 22.2, 22.4, 22.6, 22.8, 23.0, 23.2, 23.4, 23.6, 23.8, 24.0, 24.2, 24.4, 24.6, 24.8, 25.0, 25.2, 25.4, 25.6, 25.8, 26.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 2.0, 2.3, 2.6, 2.9, 3.2, 3.5, 3.8, 4.1, 4.4, 4.7, 5.0, 5.3, 5.6, 6.0, 6.2, 6.4, 6.6, 6.8, 7.0, 7.2, 7.4, 7.6, 7.8, 8.0, 8.2, 8.4, 8.6, 8.8, 9.0, 9.2, 9.4, 9.6, 9.8, 10.0, 10.2, 10.4, 10.6, 10.8, 11.0, 11.2, 11.4, 11.6, 11.8, 12.0, 12.2, 12.4, 12.6, 12.8, 13.0, 13.2, 13.4, 13.6, 13.8, 14.0, 14.2, 14.4, 14.6, 14.8, 15.0, 15.2, 15.4, 15.6, 15.8, 16.0, 16.2, 16.4, 16.6, 16.8, 17.0, 17.2, 17.4, 17.6, 17.8, 18.0, 18.2, 18.4, 18.6, 18.8, 19.0, 19.2, 19.4, 19.6, 19.8, 20.0, 20.2, 20.4, 20.6, 20.8, 21.0, 21.2, 21.4, 21.6, 21.8, 22.0, 22.2, 22.4, 22.6, 22.8, 23.0, 23.2, 23.4, 23.6, 23.8, 24.0, 24.2, 24.4, 24.6, 24.8, 25.0, 25.2, 25.4, 25.6, 25.8, 26.0 ]
       },
       "sparkMaxNumber" : {
-        "value" : [ 2.0, 2.0, 3.0, 3.0, 4.0, 4.0, 5.0, 5.0, 6.0, 6.0, 7.0, 7.0, 8.0, 8.0, 8.0, 9.0, 9.0, 9.0, 10.0, 10.0, 10.0, 11.0, 11.0, 11.0, 12.0, 12.0, 12.0, 13.0, 13.0, 13.0, 14.0, 14.0, 14.0, 15.0, 15.0, 15.0, 16.0, 16.0, 16.0, 17.0, 17.0, 17.0, 18.0, 18.0, 18.0, 19.0, 19.0, 19.0, 20.0, 20.0, 20.0, 21.0, 21.0, 21.0, 22.0, 22.0, 22.0, 23.0, 23.0, 23.0, 24.0, 24.0, 24.0, 25.0, 25.0, 25.0, 26.0, 26.0, 26.0, 27.0, 27.0, 27.0, 28.0, 28.0, 28.0, 29.0, 29.0, 29.0, 30.0, 30.0, 30.0, 31.0, 31.0, 31.0, 32.0, 32.0, 32.0, 33.0, 33.0, 33.0, 34.0, 34.0, 34.0, 35.0, 35.0, 35.0, 36.0, 36.0, 36.0, 37.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 2.0, 2.0, 3.0, 3.0, 4.0, 4.0, 5.0, 5.0, 6.0, 6.0, 7.0, 7.0, 8.0, 8.0, 8.0, 9.0, 9.0, 9.0, 10.0, 10.0, 10.0, 11.0, 11.0, 11.0, 12.0, 12.0, 12.0, 13.0, 13.0, 13.0, 14.0, 14.0, 14.0, 15.0, 15.0, 15.0, 16.0, 16.0, 16.0, 17.0, 17.0, 17.0, 18.0, 18.0, 18.0, 19.0, 19.0, 19.0, 20.0, 20.0, 20.0, 21.0, 21.0, 21.0, 22.0, 22.0, 22.0, 23.0, 23.0, 23.0, 24.0, 24.0, 24.0, 25.0, 25.0, 25.0, 26.0, 26.0, 26.0, 27.0, 27.0, 27.0, 28.0, 28.0, 28.0, 29.0, 29.0, 29.0, 30.0, 30.0, 30.0, 31.0, 31.0, 31.0, 32.0, 32.0, 32.0, 33.0, 33.0, 33.0, 34.0, 34.0, 34.0, 35.0, 35.0, 35.0, 36.0, 36.0, 36.0, 37.0 ]
       },
       "skillMaxLevel" : {
-        "value" : 12,
-        "skill" : false
+        "skill" : false,
+        "value" : 12
       },
       "skillUltimateLevel" : {
-        "value" : 100,
-        "skill" : false
+        "skill" : false,
+        "value" : 100
       },
       "sparkChance" : {
-        "value" : 100.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 100.0
       },
       "offensiveLifeMin" : {
-        "value" : [ 36.0, 51.0, 66.0, 81.0, 96.0, 111.0, 125.0, 140.0, 155.0, 170.0, 185.0, 200.0, 215.0, 230.0, 245.0, 260.0, 275.0, 290.0, 305.0, 320.0, 335.0, 350.0, 365.0, 380.0, 395.0, 410.0, 425.0, 440.0, 455.0, 470.0, 485.0, 500.0, 515.0, 530.0, 545.0, 560.0, 575.0, 590.0, 605.0, 620.0, 635.0, 650.0, 665.0, 680.0, 695.0, 710.0, 725.0, 740.0, 755.0, 770.0, 785.0, 800.0, 815.0, 830.0, 845.0, 860.0, 875.0, 890.0, 905.0, 920.0, 935.0, 950.0, 965.0, 980.0, 995.0, 1010.0, 1025.0, 1040.0, 1055.0, 1070.0, 1085.0, 1100.0, 1115.0, 1130.0, 1145.0, 1160.0, 1175.0, 1190.0, 1205.0, 1220.0, 1235.0, 1250.0, 1265.0, 1280.0, 1295.0, 1310.0, 1325.0, 1340.0, 1355.0, 1370.0, 1385.0, 1400.0, 1415.0, 1430.0, 1445.0, 1460.0, 1475.0, 1490.0, 1505.0, 1520.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 36.0, 51.0, 66.0, 81.0, 96.0, 111.0, 125.0, 140.0, 155.0, 170.0, 185.0, 200.0, 215.0, 230.0, 245.0, 260.0, 275.0, 290.0, 305.0, 320.0, 335.0, 350.0, 365.0, 380.0, 395.0, 410.0, 425.0, 440.0, 455.0, 470.0, 485.0, 500.0, 515.0, 530.0, 545.0, 560.0, 575.0, 590.0, 605.0, 620.0, 635.0, 650.0, 665.0, 680.0, 695.0, 710.0, 725.0, 740.0, 755.0, 770.0, 785.0, 800.0, 815.0, 830.0, 845.0, 860.0, 875.0, 890.0, 905.0, 920.0, 935.0, 950.0, 965.0, 980.0, 995.0, 1010.0, 1025.0, 1040.0, 1055.0, 1070.0, 1085.0, 1100.0, 1115.0, 1130.0, 1145.0, 1160.0, 1175.0, 1190.0, 1205.0, 1220.0, 1235.0, 1250.0, 1265.0, 1280.0, 1295.0, 1310.0, 1325.0, 1340.0, 1355.0, 1370.0, 1385.0, 1400.0, 1415.0, 1430.0, 1445.0, 1460.0, 1475.0, 1490.0, 1505.0, 1520.0 ]
       },
       "offensiveFireMin" : {
-        "value" : [ 18.0, 25.0, 33.0, 40.0, 48.0, 55.0, 63.0, 70.0, 78.0, 85.0, 93.0, 100.0, 110.0, 120.0, 130.0, 140.0, 150.0, 160.0, 170.0, 180.0, 190.0, 200.0, 210.0, 220.0, 230.0, 240.0, 250.0, 260.0, 270.0, 280.0, 290.0, 300.0, 310.0, 320.0, 330.0, 340.0, 350.0, 360.0, 370.0, 380.0, 390.0, 400.0, 410.0, 420.0, 430.0, 440.0, 450.0, 460.0, 470.0, 480.0, 490.0, 500.0, 510.0, 520.0, 530.0, 540.0, 550.0, 560.0, 570.0, 580.0, 590.0, 600.0, 610.0, 620.0, 630.0, 640.0, 650.0, 660.0, 670.0, 680.0, 690.0, 700.0, 710.0, 720.0, 730.0, 740.0, 750.0, 760.0, 770.0, 780.0, 790.0, 800.0, 810.0, 820.0, 830.0, 840.0, 850.0, 860.0, 870.0, 880.0, 890.0, 900.0, 910.0, 920.0, 930.0, 940.0, 950.0, 960.0, 970.0, 980.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 18.0, 25.0, 33.0, 40.0, 48.0, 55.0, 63.0, 70.0, 78.0, 85.0, 93.0, 100.0, 110.0, 120.0, 130.0, 140.0, 150.0, 160.0, 170.0, 180.0, 190.0, 200.0, 210.0, 220.0, 230.0, 240.0, 250.0, 260.0, 270.0, 280.0, 290.0, 300.0, 310.0, 320.0, 330.0, 340.0, 350.0, 360.0, 370.0, 380.0, 390.0, 400.0, 410.0, 420.0, 430.0, 440.0, 450.0, 460.0, 470.0, 480.0, 490.0, 500.0, 510.0, 520.0, 530.0, 540.0, 550.0, 560.0, 570.0, 580.0, 590.0, 600.0, 610.0, 620.0, 630.0, 640.0, 650.0, 660.0, 670.0, 680.0, 690.0, 700.0, 710.0, 720.0, 730.0, 740.0, 750.0, 760.0, 770.0, 780.0, 790.0, 800.0, 810.0, 820.0, 830.0, 840.0, 850.0, 860.0, 870.0, 880.0, 890.0, 900.0, 910.0, 920.0, 930.0, 940.0, 950.0, 960.0, 970.0, 980.0 ]
       },
       "skillTier" : {
-        "value" : 3,
-        "skill" : false
+        "skill" : false,
+        "value" : 3
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillWitchcraft16n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Sever Minds.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillWitchcraft17n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\witchcraft\\skills\\severmind_modifier.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Inner Turmoil.html",
     "name" : "Inner Turmoil",
     "parent" : null,
     "attributes" : {
       "offensiveConfusionMax" : {
-        "value" : [ 2.0, 2.3, 2.6, 2.9, 3.2, 3.5, 3.8, 4.2, 4.5, 4.8, 5.1, 5.4, 5.7, 6.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 2.0, 2.3, 2.6, 2.9, 3.2, 3.5, 3.8, 4.2, 4.5, 4.8, 5.1, 5.4, 5.7, 6.0 ]
       },
       "offensiveSlowLifeMin" : {
-        "value" : [ 20.66666, 29.9, 39.8, 49.8, 59.7, 69.6, 79.5, 89.5, 99.4, 109.3, 119.2, 129.2, 139.1, 149.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 20.66666, 29.9, 39.8, 49.8, 59.7, 69.6, 79.5, 89.5, 99.4, 109.3, 119.2, 129.2, 139.1, 149.0 ]
       },
       "offensiveSlowManaLeachMin" : {
-        "value" : [ 9.0, 11.0, 13.0, 16.0, 18.0, 20.0, 22.0, 25.0, 27.0, 29.0, 31.0, 34.0, 36.0, 38.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 9.0, 11.0, 13.0, 16.0, 18.0, 20.0, 22.0, 25.0, 27.0, 29.0, 31.0, 34.0, 36.0, 38.0 ]
       },
       "skillMaxLevel" : {
-        "value" : 10,
-        "skill" : false
+        "skill" : false,
+        "value" : 10
       },
       "offensiveSlowLifeDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 3.0
       },
       "offensiveConfusionMin" : {
-        "value" : 1.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 1.0
       },
       "skillUltimateLevel" : {
-        "value" : 14,
-        "skill" : false
+        "skill" : false,
+        "value" : 14
       },
       "offensiveSlowManaLeachDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 3.0
       },
       "expansionTime" : {
-        "value" : 0.3,
-        "skill" : false
+        "skill" : false,
+        "value" : 0.3
       },
       "skillMasteryLevelRequired" : {
-        "value" : 24,
-        "skill" : false
+        "skill" : false,
+        "value" : 24
       },
       "skillTargetRadius" : {
-        "value" : 5.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 5.0
       },
       "offensiveConfusionChance" : {
-        "value" : 33.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 33.0
       },
       "skillTier" : {
-        "value" : 5,
-        "skill" : false
+        "skill" : false,
+        "value" : 5
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillWitchcraft17n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Inner Turmoil.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillWitchcraft18n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\witchcraft\\skills\\horror.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Horror.html",
     "name" : "Horror",
     "parent" : null,
     "attributes" : {
       "offensiveFumbleDurationMin" : {
-        "value" : 4.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 4.0
       },
       "skillCooldownTime" : {
-        "value" : 12.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 12.0
       },
       "skillManaCost" : {
-        "value" : [ 70.0, 76.9, 83.8, 90.7, 97.6, 104.5, 111.4, 118.3, 125.2, 132.1, 139.0, 145.9 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 70.0, 76.9, 83.8, 90.7, 97.6, 104.5, 111.4, 118.3, 125.2, 132.1, 139.0, 145.9 ]
       },
       "projectileExplosionRadius" : {
-        "value" : 6.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 6.0
       },
       "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
+        "skill" : false,
+        "value" : 0.12
       },
       "offensiveProjectileFumbleMin" : {
-        "value" : [ 20.0, 23.0, 27.0, 30.0, 34.0, 37.0, 41.0, 45.0, 49.0, 51.0, 55.0, 60.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 20.0, 23.0, 27.0, 30.0, 34.0, 37.0, 41.0, 45.0, 49.0, 51.0, 55.0, 60.0 ]
       },
       "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
+        "skill" : false,
+        "value" : 8
       },
       "offensiveTotalResistanceReductionAbsoluteDurationMin" : {
-        "value" : 4.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 4.0
       },
       "offensiveProjectileFumbleDurationMin" : {
-        "value" : 4.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 4.0
       },
       "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
+        "skill" : false,
+        "value" : 12
       },
       "offensiveFumbleMin" : {
-        "value" : [ 20.0, 23.0, 27.0, 30.0, 34.0, 37.0, 41.0, 45.0, 49.0, 51.0, 55.0, 60.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 20.0, 23.0, 27.0, 30.0, 34.0, 37.0, 41.0, 45.0, 49.0, 51.0, 55.0, 60.0 ]
       },
       "excludeRacialDamage" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "offensiveTotalResistanceReductionAbsoluteMin" : {
-        "value" : [ 10.0, 12.0, 15.0, 17.0, 19.0, 21.0, 23.0, 26.0, 28.0, 30.0, 32.0, 35.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 10.0, 12.0, 15.0, 17.0, 19.0, 21.0, 23.0, 26.0, 28.0, 30.0, 32.0, 35.0 ]
       },
       "skillMasteryLevelRequired" : {
-        "value" : 32,
-        "skill" : false
+        "skill" : false,
+        "value" : 32
       },
       "skillTier" : {
-        "value" : 6,
-        "skill" : false
+        "skill" : false,
+        "value" : 6
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillWitchcraft18n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Horror.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillWitchcraft19n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\witchcraft\\skills\\magicalcatastrophe.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Magical Catastrophe.html",
     "name" : "Magical Catastrophe",
     "parent" : null,
     "attributes" : {
       "skillCooldownTime" : {
-        "value" : 60.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 60.0
       },
       "skillManaCost" : {
-        "value" : [ 200.0, 260.0, 320.0, 380.0, 440.0, 500.0, 560.0, 620.0, 680.0, 740.0, 800.0, 860.0, 920.0, 980.0, 1040.0, 1100.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 200.0, 260.0, 320.0, 380.0, 440.0, 500.0, 560.0, 620.0, 680.0, 740.0, 800.0, 860.0, 920.0, 980.0, 1040.0, 1100.0 ]
       },
       "offensivePoisonMin" : {
-        "value" : [ 50.0, 64.0, 76.0, 90.0, 104.0, 116.0, 130.0, 144.0, 156.0, 170.0, 184.0, 196.0, 210.0, 224.0, 236.0, 250.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 50.0, 64.0, 76.0, 90.0, 104.0, 116.0, 130.0, 144.0, 156.0, 170.0, 184.0, 196.0, 210.0, 224.0, 236.0, 250.0 ]
       },
       "Staff" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
+        "skill" : false,
+        "value" : 0.12
       },
       "ragDollAmplification" : {
-        "value" : 1.6,
-        "skill" : false
+        "skill" : false,
+        "value" : 1.6
       },
       "skillUltimateLevel" : {
-        "value" : 16,
-        "skill" : false
+        "skill" : false,
+        "value" : 16
       },
       "offensiveSlowLightningDurationMin" : {
-        "value" : 1.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 1.0
       },
       "offensiveLightningMin" : {
-        "value" : [ 50.0, 64.0, 76.0, 90.0, 104.0, 116.0, 130.0, 144.0, 156.0, 170.0, 184.0, 196.0, 210.0, 224.0, 236.0, 250.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 50.0, 64.0, 76.0, 90.0, 104.0, 116.0, 130.0, 144.0, 156.0, 170.0, 184.0, 196.0, 210.0, 224.0, 236.0, 250.0 ]
       },
       "offensiveSlowColdMin" : {
-        "value" : [ 50.0, 64.0, 76.0, 90.0, 104.0, 116.0, 130.0, 144.0, 156.0, 170.0, 184.0, 196.0, 210.0, 224.0, 236.0, 250.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 50.0, 64.0, 76.0, 90.0, 104.0, 116.0, 130.0, 144.0, 156.0, 170.0, 184.0, 196.0, 210.0, 224.0, 236.0, 250.0 ]
       },
       "expansionTime" : {
-        "value" : 0.01,
-        "skill" : false
+        "skill" : false,
+        "value" : 0.01
       },
       "offensiveSlowColdDurationMin" : {
-        "value" : 1.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 1.0
       },
       "offensiveSlowLightningMin" : {
-        "value" : [ 50.0, 64.0, 76.0, 90.0, 104.0, 116.0, 130.0, 144.0, 156.0, 170.0, 184.0, 196.0, 210.0, 224.0, 236.0, 250.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 50.0, 64.0, 76.0, 90.0, 104.0, 116.0, 130.0, 144.0, 156.0, 170.0, 184.0, 196.0, 210.0, 224.0, 236.0, 250.0 ]
       },
       "skillTargetRadius" : {
-        "value" : 10.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 10.0
       },
       "offensiveSlowPoisonMin" : {
-        "value" : [ 50.0, 64.0, 76.0, 90.0, 104.0, 116.0, 130.0, 144.0, 156.0, 170.0, 184.0, 196.0, 210.0, 224.0, 236.0, 250.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 50.0, 64.0, 76.0, 90.0, 104.0, 116.0, 130.0, 144.0, 156.0, 170.0, 184.0, 196.0, 210.0, 224.0, 236.0, 250.0 ]
       },
       "offensiveLifeLeechMin" : {
-        "value" : [ 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 8.0, 8.0, 8.0, 9.0, 9.0, 9.0, 10.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 8.0, 8.0, 8.0, 9.0, 9.0, 9.0, 10.0 ]
       },
       "offensiveSlowFireDurationMin" : {
-        "value" : 1.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 1.0
       },
       "offensiveSlowLifeMin" : {
-        "value" : [ 50.0, 64.0, 76.0, 90.0, 104.0, 116.0, 130.0, 144.0, 156.0, 170.0, 184.0, 196.0, 210.0, 224.0, 236.0, 250.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 50.0, 64.0, 76.0, 90.0, 104.0, 116.0, 130.0, 144.0, 156.0, 170.0, 184.0, 196.0, 210.0, 224.0, 236.0, 250.0 ]
       },
       "offensiveSlowFireMin" : {
-        "value" : [ 50.0, 64.0, 76.0, 90.0, 104.0, 116.0, 130.0, 144.0, 156.0, 170.0, 184.0, 196.0, 210.0, 224.0, 236.0, 250.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 50.0, 64.0, 76.0, 90.0, 104.0, 116.0, 130.0, 144.0, 156.0, 170.0, 184.0, 196.0, 210.0, 224.0, 236.0, 250.0 ]
       },
       "offensiveColdMin" : {
-        "value" : [ 50.0, 64.0, 76.0, 90.0, 104.0, 116.0, 130.0, 144.0, 156.0, 170.0, 184.0, 196.0, 210.0, 224.0, 236.0, 250.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 50.0, 64.0, 76.0, 90.0, 104.0, 116.0, 130.0, 144.0, 156.0, 170.0, 184.0, 196.0, 210.0, 224.0, 236.0, 250.0 ]
       },
       "skillMaxLevel" : {
-        "value" : 12,
-        "skill" : false
+        "skill" : false,
+        "value" : 12
       },
       "offensiveSlowLifeDurationMin" : {
-        "value" : 1.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 1.0
       },
       "cameraShakeDurationSecs" : {
-        "value" : 2.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 2.0
       },
       "offensiveLifeMin" : {
-        "value" : [ 50.0, 64.0, 76.0, 90.0, 104.0, 116.0, 130.0, 144.0, 156.0, 170.0, 184.0, 196.0, 210.0, 224.0, 236.0, 250.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 50.0, 64.0, 76.0, 90.0, 104.0, 116.0, 130.0, 144.0, 156.0, 170.0, 184.0, 196.0, 210.0, 224.0, 236.0, 250.0 ]
       },
       "offensiveSlowPoisonDurationMin" : {
-        "value" : 1.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 1.0
       },
       "offensiveFireMin" : {
-        "value" : [ 50.0, 64.0, 76.0, 90.0, 104.0, 116.0, 130.0, 144.0, 156.0, 170.0, 184.0, 196.0, 210.0, 224.0, 236.0, 250.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 50.0, 64.0, 76.0, 90.0, 104.0, 116.0, 130.0, 144.0, 156.0, 170.0, 184.0, 196.0, 210.0, 224.0, 236.0, 250.0 ]
       },
       "skillMasteryLevelRequired" : {
-        "value" : 40,
-        "skill" : false
+        "skill" : false,
+        "value" : 40
       },
       "skillTier" : {
-        "value" : 7,
-        "skill" : false
+        "skill" : false,
+        "value" : 7
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillWitchcraft19n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Magical Catastrophe.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillWitchcraft21n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\witchcraft\\skills\\electrostaticveil.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Electrostatic Veil.html",
     "name" : "Electrostatic Veil",
     "parent" : null,
     "attributes" : {
       "defensiveSlowManaLeach" : {
-        "value" : [ 12.0, 19.0, 26.0, 32.0, 39.0, 46.0, 53.0, 59.0, 66.0, 72.0, 80.0, 86.0, 93.0, 100.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 12.0, 19.0, 26.0, 32.0, 39.0, 46.0, 53.0, 59.0, 66.0, 72.0, 80.0, 86.0, 93.0, 100.0 ]
       },
       "retaliationLightningMin" : {
-        "value" : [ 12.0, 20.0, 27.0, 35.0, 42.0, 50.0, 57.0, 65.0, 72.0, 80.0, 87.0, 95.0, 102.0, 110.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 12.0, 20.0, 27.0, 35.0, 42.0, 50.0, 57.0, 65.0, 72.0, 80.0, 87.0, 95.0, 102.0, 110.0 ]
       },
       "defensiveLightning" : {
-        "value" : [ 12.0, 19.0, 26.0, 32.0, 39.0, 46.0, 53.0, 59.0, 66.0, 72.0, 80.0, 86.0, 93.0, 100.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 12.0, 19.0, 26.0, 32.0, 39.0, 46.0, 53.0, 59.0, 66.0, 72.0, 80.0, 86.0, 93.0, 100.0 ]
       },
       "skillActiveDuration" : {
-        "value" : 8.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 8.0
       },
       "skillCooldownTime" : {
-        "value" : 10.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 10.0
       },
       "skillConnectionSpacing" : {
-        "value" : 62,
-        "skill" : false
+        "skill" : false,
+        "value" : 62
       },
       "lightningDamageQualifier" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "offensiveTotalDamageModifier" : {
-        "value" : [ 5.0, 7.0, 10.0, 12.0, 15.0, 17.0, 19.0, 22.0, 24.0, 26.0, 29.0, 31.0, 34.0, 36.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 5.0, 7.0, 10.0, 12.0, 15.0, 17.0, 19.0, 22.0, 24.0, 26.0, 29.0, 31.0, 34.0, 36.0 ]
       },
       "damageAbsorptionPercent" : {
-        "value" : [ 6.0, 9.0, 13.0, 16.0, 20.0, 23.0, 26.0, 30.0, 33.0, 36.0, 40.0, 43.0, 47.0, 50.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 6.0, 9.0, 13.0, 16.0, 20.0, 23.0, 26.0, 30.0, 33.0, 36.0, 40.0, 43.0, 47.0, 50.0 ]
       },
       "skillManaBonus" : {
-        "value" : [ 100.0, 154.0, 208.0, 262.0, 315.0, 369.0, 423.0, 477.0, 531.0, 585.0, 638.0, 692.0, 746.0, 800.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 100.0, 154.0, 208.0, 262.0, 315.0, 369.0, 423.0, 477.0, 531.0, 585.0, 638.0, 692.0, 746.0, 800.0 ]
       },
       "skillMaxLevel" : {
-        "value" : 10,
-        "skill" : false
+        "skill" : false,
+        "value" : 10
       },
       "lifeMonitorPercent" : {
-        "value" : 40.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 40.0
       },
       "characterTotalSpeedModifier" : {
-        "value" : [ 5.0, 7.0, 10.0, 12.0, 15.0, 17.0, 19.0, 22.0, 24.0, 26.0, 29.0, 31.0, 34.0, 36.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 5.0, 7.0, 10.0, 12.0, 15.0, 17.0, 19.0, 22.0, 24.0, 26.0, 29.0, 31.0, 34.0, 36.0 ]
       },
       "skillUltimateLevel" : {
-        "value" : 14,
-        "skill" : false
+        "skill" : false,
+        "value" : 14
       },
       "retaliationLightningMax" : {
-        "value" : [ 18.0, 29.0, 40.0, 51.0, 62.0, 73.0, 84.0, 94.0, 105.0, 116.0, 127.0, 138.0, 149.0, 160.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 18.0, 29.0, 40.0, 51.0, 62.0, 73.0, 84.0, 94.0, 105.0, 116.0, 127.0, 138.0, 149.0, 160.0 ]
       },
       "notDispelable" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "characterManaRegen" : {
-        "value" : [ 3.0, 5.0, 6.0, 8.0, 9.0, 11.0, 13.0, 14.0, 16.0, 18.0, 19.0, 21.0, 22.0, 24.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 3.0, 5.0, 6.0, 8.0, 9.0, 11.0, 13.0, 14.0, 16.0, 18.0, 19.0, 21.0, 22.0, 24.0 ]
       },
       "skillMasteryLevelRequired" : {
-        "value" : 16,
-        "skill" : false
+        "skill" : false,
+        "value" : 16
       },
       "skillTier" : {
-        "value" : 4,
-        "skill" : false
+        "skill" : false,
+        "value" : 4
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillWitchcraft21n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Electrostatic Veil.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillWitchcraft22n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\witchcraft\\skills\\electrostaticveil_outburst.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Outburst.html",
     "name" : "Outburst",
     "parent" : null,
     "attributes" : {
       "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
+        "skill" : false,
+        "value" : 12
       },
       "offensiveSlowTotalSpeedMin" : {
-        "value" : [ 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0 ]
       },
       "offensiveSlowLightningDurationMin" : {
-        "value" : 4.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 4.0
       },
       "expansionTime" : {
-        "value" : 0.05,
-        "skill" : false
+        "skill" : false,
+        "value" : 0.05
       },
       "skillMasteryLevelRequired" : {
-        "value" : 32,
-        "skill" : false
+        "skill" : false,
+        "value" : 32
       },
       "offensiveSlowLightningMin" : {
-        "value" : [ 10.0, 15.5, 20.9, 26.4, 31.8, 37.3, 42.7, 48.2, 53.6, 59.1, 64.5, 70.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 10.0, 15.5, 20.9, 26.4, 31.8, 37.3, 42.7, 48.2, 53.6, 59.1, 64.5, 70.0 ]
       },
       "skillTargetRadius" : {
-        "value" : 6.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 6.0
       },
       "offensiveSlowTotalSpeedDurationMin" : {
-        "value" : 4.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 4.0
       },
       "skillTier" : {
-        "value" : 6,
-        "skill" : false
+        "skill" : false,
+        "value" : 6
       },
       "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
+        "skill" : false,
+        "value" : 8
       },
       "offensiveManaBurnDrainMin" : {
-        "value" : [ 15.0, 32.0, 49.0, 65.0, 82.0, 99.0, 116.0, 133.0, 150.0, 166.0, 183.0, 200.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 15.0, 32.0, 49.0, 65.0, 82.0, 99.0, 116.0, 133.0, 150.0, 166.0, 183.0, 200.0 ]
       },
       "offensiveManaBurnDamageRatio" : {
-        "value" : 100.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 100.0
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillWitchcraft22n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Outburst.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillWitchcraft20n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\witchcraft\\skills\\archmagecloak.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Archmage's Cloak.html",
     "name" : "Archmage's Cloak",
     "parent" : null,
     "attributes" : {
       "characterLifeModifier" : {
-        "value" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0 ]
       },
       "characterManaModifier" : {
-        "value" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0 ]
       },
       "skillUltimateLevel" : {
-        "value" : 10,
-        "skill" : false
+        "skill" : false,
+        "value" : 10
       },
       "skillMasteryLevelRequired" : {
-        "value" : 24,
-        "skill" : false
+        "skill" : false,
+        "value" : 24
       },
       "characterDefensiveAbilityModifier" : {
-        "value" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0 ]
       },
       "skillTier" : {
-        "value" : 5,
-        "skill" : false
+        "skill" : false,
+        "value" : 5
       },
       "skillMaxLevel" : {
-        "value" : 6,
-        "skill" : false
+        "skill" : false,
+        "value" : 6
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillWitchcraft20n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Archmage's Cloak.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillWitchcraft24n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\witchcraft\\skills\\magmabarrier.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Magma Barrier.html",
     "name" : "Magma Barrier",
     "parent" : null,
     "attributes" : {
       "spawnObjectsNumberOfRings" : {
-        "value" : 5,
-        "skill" : false
+        "skill" : false,
+        "value" : 5
       },
       "skillCooldownTime" : {
-        "value" : 30.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 30.0
       },
       "skillManaCost" : {
-        "value" : [ 60.0, 65.0, 70.0, 75.0, 80.0, 85.0, 90.0, 95.0, 100.0, 105.0, 110.0, 115.0, 120.0, 125.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 60.0, 65.0, 70.0, 75.0, 80.0, 85.0, 90.0, 95.0, 100.0, 105.0, 110.0, 115.0, 120.0, 125.0 ]
       },
       "spawnObjectsTimeToLive" : {
-        "value" : 25.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 25.0
       },
       "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
+        "skill" : false,
+        "value" : 0.12
       },
       "spawnObjectsAngleToCaster" : {
-        "value" : 90.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 90.0
       },
       "spawnObjectsUseAngleToCaster" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillMaxLevel" : {
-        "value" : 10,
-        "skill" : false
+        "skill" : false,
+        "value" : 10
       },
       "skillUltimateLevel" : {
-        "value" : 14,
-        "skill" : false
+        "skill" : false,
+        "value" : 14
       },
       "spawnObjectsDistanceInnerCircle" : {
-        "value" : 0.5,
-        "skill" : false
+        "skill" : false,
+        "value" : 0.5
       },
       "spawnObjectsSpacingAngle" : {
-        "value" : 360.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 360.0
       },
       "spawnObjectsDistanceIncrement" : {
-        "value" : 1.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 1.0
       },
       "spawnObjectsRandomRotation" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillMasteryLevelRequired" : {
-        "value" : 32,
-        "skill" : false
+        "skill" : false,
+        "value" : 32
       },
       "skillTier" : {
-        "value" : 6,
-        "skill" : false
+        "skill" : false,
+        "value" : 6
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillWitchcraft24n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Magma Barrier.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillWitchcraft23n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\witchcraft\\skills\\physicalward.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Physical Ward.html",
     "name" : "Physical Ward",
     "parent" : null,
     "attributes" : {
       "skillActiveDuration" : {
-        "value" : 10.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 10.0
       },
       "defensivePhysical" : {
-        "value" : 100.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 100.0
       },
       "skillCooldownTime" : {
-        "value" : 30.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 30.0
       },
       "skillUltimateLevel" : {
-        "value" : 14,
-        "skill" : false
+        "skill" : false,
+        "value" : 14
       },
       "defensivePhysicalChance" : {
-        "value" : [ 8.0, 10.0, 11.0, 13.0, 15.0, 16.0, 18.0, 20.0, 22.0, 23.0, 25.0, 27.0, 28.0, 30.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 8.0, 10.0, 11.0, 13.0, 15.0, 16.0, 18.0, 20.0, 22.0, 23.0, 25.0, 27.0, 28.0, 30.0 ]
       },
       "onHitActivationChance" : {
-        "value" : 8.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 8.0
       },
       "defensivePierce" : {
-        "value" : 100.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 100.0
       },
       "defensivePierceChance" : {
-        "value" : [ 8.0, 10.0, 11.0, 13.0, 15.0, 16.0, 18.0, 20.0, 22.0, 23.0, 25.0, 27.0, 28.0, 30.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 8.0, 10.0, 11.0, 13.0, 15.0, 16.0, 18.0, 20.0, 22.0, 23.0, 25.0, 27.0, 28.0, 30.0 ]
       },
       "skillMasteryLevelRequired" : {
-        "value" : 32,
-        "skill" : false
+        "skill" : false,
+        "value" : 32
       },
       "characterDefensiveAbilityModifier" : {
-        "value" : [ 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0 ]
       },
       "skillTier" : {
-        "value" : 6,
-        "skill" : false
+        "skill" : false,
+        "value" : 6
       },
       "skillMaxLevel" : {
-        "value" : 10,
-        "skill" : false
+        "skill" : false,
+        "value" : 10
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillWitchcraft23n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Physical Ward.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillWitchcraft29n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\witchcraft\\skills\\icelance.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Ice Lance.html",
     "name" : "Ice Lance",
     "parent" : null,
     "attributes" : {
       "projectileLaunchNumber" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillCooldownTime" : {
-        "value" : 6.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 6.0
       },
       "skillManaCost" : {
-        "value" : [ 70.0, 75.0, 80.0, 84.0, 89.0, 94.0, 99.0, 104.0, 108.0, 113.0, 118.0, 123.0, 128.0, 132.0, 137.0, 142.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 70.0, 75.0, 80.0, 84.0, 89.0, 94.0, 99.0, 104.0, 108.0, 113.0, 118.0, 123.0, 128.0, 132.0, 137.0, 142.0 ]
       },
       "projectileExplosionRadius" : {
-        "value" : 2.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 2.0
       },
       "skillConnectionSpacing" : {
-        "value" : 62,
-        "skill" : false
+        "skill" : false,
+        "value" : 62
       },
       "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
+        "skill" : false,
+        "value" : 0.12
       },
       "projectileUsesAllDamage" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "offensiveColdMin" : {
-        "value" : [ 93.0, 117.0, 141.0, 166.0, 190.0, 214.0, 238.0, 262.0, 287.0, 311.0, 335.0, 359.0, 383.0, 408.0, 432.0, 456.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 93.0, 117.0, 141.0, 166.0, 190.0, 214.0, 238.0, 262.0, 287.0, 311.0, 335.0, 359.0, 383.0, 408.0, 432.0, 456.0 ]
       },
       "offensivePierceMin" : {
-        "value" : [ 50.0, 65.0, 81.0, 96.0, 112.0, 127.0, 143.0, 158.0, 174.0, 189.0, 205.0, 220.0, 236.0, 251.0, 267.0, 282.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 50.0, 65.0, 81.0, 96.0, 112.0, 127.0, 143.0, 158.0, 174.0, 189.0, 205.0, 220.0, 236.0, 251.0, 267.0, 282.0 ]
       },
       "skillMaxLevel" : {
-        "value" : 12,
-        "skill" : false
+        "skill" : false,
+        "value" : 12
       },
       "skillUltimateLevel" : {
-        "value" : 16,
-        "skill" : false
+        "skill" : false,
+        "value" : 16
       },
       "skillMasteryLevelRequired" : {
-        "value" : 24,
-        "skill" : false
+        "skill" : false,
+        "value" : 24
       },
       "skillTier" : {
-        "value" : 5,
-        "skill" : false
+        "skill" : false,
+        "value" : 5
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillWitchcraft29n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Ice Lance.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillWitchcraft31n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\witchcraft\\skills\\icelance_frostdemons.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Cryopulverization.html",
     "name" : "Cryopulverization",
     "parent" : null,
     "attributes" : {
       "projectileFragmentsLaunchNumberMin" : {
-        "value" : [ 3.0, 3.0, 4.0, 4.0, 5.0, 5.0, 6.0, 6.0, 7.0, 7.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 3.0, 3.0, 4.0, 4.0, 5.0, 5.0, 6.0, 6.0, 7.0, 7.0 ]
       },
       "projectileFragmentsLaunchNumberMax" : {
-        "value" : [ 3.0, 3.0, 4.0, 4.0, 5.0, 5.0, 6.0, 6.0, 7.0, 7.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 3.0, 3.0, 4.0, 4.0, 5.0, 5.0, 6.0, 6.0, 7.0, 7.0 ]
       },
       "skillManaCost" : {
-        "value" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0 ]
       },
       "skillUltimateLevel" : {
-        "value" : 10,
-        "skill" : false
+        "skill" : false,
+        "value" : 10
       },
       "projectilePiercingChance" : {
-        "value" : 33.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 33.0
       },
       "offensiveFreezeMin" : {
-        "value" : [ 1.0, 1.2, 1.3, 1.5, 1.7, 1.8, 2.0, 2.2, 2.3, 2.5 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 1.0, 1.2, 1.3, 1.5, 1.7, 1.8, 2.0, 2.2, 2.3, 2.5 ]
       },
       "offensiveSlowColdMin" : {
-        "value" : [ 19.0, 26.3, 33.7, 41.0, 48.3, 55.7, 63.0, 70.3, 77.7, 85.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 19.0, 26.3, 33.7, 41.0, 48.3, 55.7, 63.0, 70.3, 77.7, 85.0 ]
       },
       "offensiveSlowColdDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 3.0
       },
       "skillTier" : {
-        "value" : 6,
-        "skill" : false
+        "skill" : false,
+        "value" : 6
       },
       "skillMaxLevel" : {
-        "value" : 6,
-        "skill" : false
+        "skill" : false,
+        "value" : 6
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillWitchcraft31n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Cryopulverization.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillWitchcraft28n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\witchcraft\\skills\\gallbomb.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Gall Bomb.html",
     "name" : "Gall Bomb",
     "parent" : null,
     "attributes" : {
       "offensiveConfusionMax" : {
-        "value" : [ 1.5, 1.7, 1.8, 2.0, 2.2, 2.4, 2.5, 2.7, 2.9, 3.1, 3.2, 3.4, 3.6, 3.7 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 1.5, 1.7, 1.8, 2.0, 2.2, 2.4, 2.5, 2.7, 2.9, 3.1, 3.2, 3.4, 3.6, 3.7 ]
       },
       "skillCooldownTime" : {
-        "value" : 12.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 12.0
       },
       "skillManaCost" : {
-        "value" : [ 92.0, 97.29, 102.58, 107.87, 113.275, 118.565, 123.855, 129.145, 134.435, 139.725, 145.13, 150.42, 155.71, 161.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 92.0, 97.29, 102.58, 107.87, 113.275, 118.565, 123.855, 129.145, 134.435, 139.725, 145.13, 150.42, 155.71, 161.0 ]
       },
       "projectileExplosionRadius" : {
-        "value" : 4.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 4.0
       },
       "offensivePoisonMin" : {
-        "value" : [ 60.0, 74.2, 88.5, 102.7, 116.9, 131.2, 145.4, 159.6, 173.8, 188.1, 202.3, 216.5, 230.8, 245.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 60.0, 74.2, 88.5, 102.7, 116.9, 131.2, 145.4, 159.6, 173.8, 188.1, 202.3, 216.5, 230.8, 245.0 ]
       },
       "skillConnectionSpacing" : {
-        "value" : 62,
-        "skill" : false
+        "skill" : false,
+        "value" : 62
       },
       "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
+        "skill" : false,
+        "value" : 0.12
       },
       "skillMaxLevel" : {
-        "value" : 10,
-        "skill" : false
+        "skill" : false,
+        "value" : 10
       },
       "offensiveConfusionMin" : {
-        "value" : [ 1.0, 1.1, 1.2, 1.3, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0, 2.2, 2.3, 2.4, 2.5 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 1.0, 1.1, 1.2, 1.3, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0, 2.2, 2.3, 2.4, 2.5 ]
       },
       "skillUltimateLevel" : {
-        "value" : 14,
-        "skill" : false
+        "skill" : false,
+        "value" : 14
       },
       "skillProjectileNumber" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "offensiveSlowPoisonDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 3.0
       },
       "skillMasteryLevelRequired" : {
-        "value" : 32,
-        "skill" : false
+        "skill" : false,
+        "value" : 32
       },
       "offensiveSlowPoisonMin" : {
-        "value" : [ 25.0, 35.1, 45.2, 55.2, 65.3, 75.4, 85.5, 95.5, 105.6, 115.7, 125.8, 135.8, 145.9, 156.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 25.0, 35.1, 45.2, 55.2, 65.3, 75.4, 85.5, 95.5, 105.6, 115.7, 125.8, 135.8, 145.9, 156.0 ]
       },
       "skillTier" : {
-        "value" : 6,
-        "skill" : false
+        "skill" : false,
+        "value" : 6
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillWitchcraft28n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Gall Bomb.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillWitchcraft30n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\witchcraft\\skills\\reload.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Reload.html",
     "name" : "Reload",
     "parent" : null,
     "attributes" : {
       "skillCooldownTime" : {
-        "value" : 12.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 12.0
       },
       "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
+        "skill" : false,
+        "value" : 12
       },
       "skillManaCost" : {
-        "value" : [ 50.25, 81.25, 112.25, 143.375, 174.375, 205.375, 236.375, 267.375, 298.375, 329.5, 360.5, 391.5 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 50.25, 81.25, 112.25, 143.375, 174.375, 205.375, 236.375, 267.375, 298.375, 329.5, 360.5, 391.5 ]
       },
       "refreshTime" : {
-        "value" : [ 3.0, 3.6, 4.3, 4.9, 5.5, 6.2, 6.8, 7.5, 8.1, 8.7, 9.4, 10.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 3.0, 3.6, 4.3, 4.9, 5.5, 6.2, 6.8, 7.5, 8.1, 8.7, 9.4, 10.0 ]
       },
       "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
+        "skill" : false,
+        "value" : 0.12
       },
       "skillMasteryLevelRequired" : {
-        "value" : 10,
-        "skill" : false
+        "skill" : false,
+        "value" : 10
       },
       "skillTier" : {
-        "value" : 3,
-        "skill" : false
+        "skill" : false,
+        "value" : 3
       },
       "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
+        "skill" : false,
+        "value" : 8
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillWitchcraft30n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery/Reload.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   } ],
-  "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Witchcraft Mastery.html"
+  "skillTree" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\witchcraft\\witchcraft_skilltree.dbr"
 }

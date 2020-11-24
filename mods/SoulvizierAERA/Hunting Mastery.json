@@ -1,1359 +1,1697 @@
 {
+  "mastery" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXHuntingMastery.dbr",
+  "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery.html",
   "name" : "Hunting Mastery",
   "skills" : [ {
+    "skillTag" : "tagSkillName077",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXWoodLore.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Wood Lore.html",
     "name" : "Wood Lore",
     "parent" : null,
     "attributes" : {
       "characterAttackSpeedModifier" : {
-        "value" : [ 5.0, 8.0, 12.0, 16.0, 20.0, 24.0, 26.0, 28.0, 30.0, 33.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 5.0, 8.0, 12.0, 16.0, 20.0, 24.0, 26.0, 28.0, 30.0, 33.0 ]
       },
       "skillUltimateLevel" : {
-        "value" : 10,
-        "skill" : false
+        "skill" : false,
+        "value" : 10
       },
       "characterDefensiveAbility" : {
-        "value" : [ 34.0, 42.0, 50.0, 58.0, 66.0, 74.0, 82.0, 90.0, 98.0, 106.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 34.0, 42.0, 50.0, 58.0, 66.0, 74.0, 82.0, 90.0, 98.0, 106.0 ]
       },
       "skillConnectionSpacing" : {
-        "value" : 62,
-        "skill" : false
+        "skill" : false,
+        "value" : 62
       },
       "Bow" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillMasteryLevelRequired" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "characterDefensiveAbilityModifier" : {
-        "value" : [ 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 8.5, 9.5, 10.0, 10.5 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 8.5, 9.5, 10.0, 10.5 ]
       },
       "skillTier" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillMaxLevel" : {
-        "value" : 6,
-        "skill" : false
+        "skill" : false,
+        "value" : 6
       },
       "Spear" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "RangedOneHand" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "tagSkillName077",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Wood Lore.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "tagSkillName084",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXArtoftheHunt.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Art of the Hunt.html",
     "name" : "Art of the Hunt",
     "parent" : null,
     "attributes" : {
       "DRXArtoftheHunt" : {
+        "skill" : true,
         "value" : {
+          "skillTag" : "tagSkillName084",
+          "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXArtoftheHuntBuff.dbr",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Art of the Hunt.html",
           "name" : "Art of the Hunt",
           "parent" : null,
           "attributes" : {
             "skillCooldownTime" : {
-              "value" : 4.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 4.0
             },
             "skillUltimateLevel" : {
-              "value" : 16,
-              "skill" : false
+              "skill" : false,
+              "value" : 16
             },
             "characterManaLimitReserve" : {
-              "value" : 75.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 75.0
             },
             "offensivePierceModifier" : {
-              "value" : [ 12.0, 18.0, 23.0, 30.0, 34.0, 40.0, 45.0, 52.0, 56.0, 62.0, 67.0, 75.0, 83.0, 91.0, 101.0, 115.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 12.0, 18.0, 23.0, 30.0, 34.0, 40.0, 45.0, 52.0, 56.0, 62.0, 67.0, 75.0, 83.0, 91.0, 101.0, 115.0 ]
             },
             "isPetDisplayable" : {
-              "value" : 1,
-              "skill" : false
+              "skill" : false,
+              "value" : 1
             },
             "skillConnectionSpacing" : {
-              "value" : 62,
-              "skill" : false
+              "skill" : false,
+              "value" : 62
             },
             "cameraShakeAmplitude" : {
-              "value" : 0.12,
-              "skill" : false
+              "skill" : false,
+              "value" : 0.12
             },
             "racialBonusPercentDamage" : {
-              "value" : [ 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0, 35.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0, 35.0 ]
             },
             "skillTargetRadius" : {
-              "value" : 15.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 15.0
             },
             "skillTier" : {
-              "value" : 2,
-              "skill" : false
+              "skill" : false,
+              "value" : 2
             },
             "offensiveSlowBleedingModifier" : {
-              "value" : [ 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0, 51.0, 54.0, 57.0, 60.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0, 51.0, 54.0, 57.0, 60.0 ]
             },
             "skillMaxLevel" : {
-              "value" : 12,
-              "skill" : false
+              "skill" : false,
+              "value" : 12
             }
           },
           "buff" : null,
-          "modifier" : false,
-          "skillTag" : "tagSkillName084",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Art of the Hunt.html",
-          "skillDescription" : null
-        },
-        "skill" : true
+          "skillDescription" : null,
+          "modifier" : false
+        }
       }
     },
-    "buff" : null,
-    "modifier" : false,
-    "skillTag" : "tagSkillName084",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Art of the Hunt.html",
-    "skillDescription" : null
+    "buff" : {
+      "skillTag" : "tagSkillName084",
+      "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXArtoftheHuntBuff.dbr",
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Art of the Hunt.html",
+      "name" : "Art of the Hunt",
+      "parent" : null,
+      "attributes" : {
+        "skillCooldownTime" : {
+          "skill" : false,
+          "value" : 4.0
+        },
+        "skillUltimateLevel" : {
+          "skill" : false,
+          "value" : 16
+        },
+        "characterManaLimitReserve" : {
+          "skill" : false,
+          "value" : 75.0
+        },
+        "offensivePierceModifier" : {
+          "skill" : false,
+          "value" : [ 12.0, 18.0, 23.0, 30.0, 34.0, 40.0, 45.0, 52.0, 56.0, 62.0, 67.0, 75.0, 83.0, 91.0, 101.0, 115.0 ]
+        },
+        "isPetDisplayable" : {
+          "skill" : false,
+          "value" : 1
+        },
+        "skillConnectionSpacing" : {
+          "skill" : false,
+          "value" : 62
+        },
+        "cameraShakeAmplitude" : {
+          "skill" : false,
+          "value" : 0.12
+        },
+        "racialBonusPercentDamage" : {
+          "skill" : false,
+          "value" : [ 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0, 35.0 ]
+        },
+        "skillTargetRadius" : {
+          "skill" : false,
+          "value" : 15.0
+        },
+        "skillTier" : {
+          "skill" : false,
+          "value" : 2
+        },
+        "offensiveSlowBleedingModifier" : {
+          "skill" : false,
+          "value" : [ 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0, 51.0, 54.0, 57.0, 60.0 ]
+        },
+        "skillMaxLevel" : {
+          "skill" : false,
+          "value" : 12
+        }
+      },
+      "buff" : null,
+      "skillDescription" : null,
+      "modifier" : false
+    },
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "tagSkillName094",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXArtoftheHunt_FindCover.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Find Cover.html",
     "name" : "Find Cover",
     "parent" : "Art of the Hunt",
     "attributes" : {
       "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
+        "skill" : false,
+        "value" : 12
       },
       "characterManaLimitReserve" : {
-        "value" : 10.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 10.0
       },
       "characterDeflectProjectile" : {
-        "value" : [ 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0 ]
       },
       "skillTier" : {
-        "value" : 4,
-        "skill" : false
+        "skill" : false,
+        "value" : 4
       },
       "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
+        "skill" : false,
+        "value" : 8
       }
     },
     "buff" : null,
-    "modifier" : true,
-    "skillTag" : "tagSkillName094",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Find Cover.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : true
   }, {
+    "skillTag" : "tagSkillName093",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXArtoftheHunt_Trailblazing.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Trail Blazing.html",
     "name" : "Trail Blazing",
     "parent" : "Find Cover",
     "attributes" : {
       "defensiveTotalSpeedResistance" : {
-        "value" : [ 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0, 90.0, 100.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0, 90.0, 100.0 ]
       },
       "skillUltimateLevel" : {
-        "value" : 10,
-        "skill" : false
+        "skill" : false,
+        "value" : 10
       },
       "characterManaLimitReserve" : {
-        "value" : 50.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 50.0
       },
       "characterRunSpeedModifier" : {
-        "value" : [ 5.0, 8.0, 10.0, 12.0, 16.0, 18.0, 21.0, 25.0, 29.0, 33.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 5.0, 8.0, 10.0, 12.0, 16.0, 18.0, 21.0, 25.0, 29.0, 33.0 ]
       },
       "defensiveTrap" : {
-        "value" : [ 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0, 90.0, 100.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0, 90.0, 100.0 ]
       },
       "skillTier" : {
-        "value" : 5,
-        "skill" : false
+        "skill" : false,
+        "value" : 5
       },
       "skillMaxLevel" : {
-        "value" : 6,
-        "skill" : false
+        "skill" : false,
+        "value" : 6
       }
     },
     "buff" : null,
-    "modifier" : true,
-    "skillTag" : "tagSkillName093",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Trail Blazing.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : true
   }, {
+    "skillTag" : "tagSkillName083",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXMonsterLure.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Lay Trap.html",
     "name" : "Lay Trap",
     "parent" : null,
     "attributes" : {
       "skillProjectileMissTimeToLive" : {
-        "value" : 30.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 30.0
       },
       "skillCooldownTime" : {
-        "value" : 20.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 20.0
       },
       "spawnObjectsTimeToLive" : {
-        "value" : 30.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 30.0
       },
       "skillManaCost" : {
-        "value" : [ 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0, 70.0, 74.0, 78.0, 82.0, 86.0, 90.0, 94.0, 98.0, 102.0, 106.0, 110.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0, 70.0, 74.0, 78.0, 82.0, 86.0, 90.0, 94.0, 98.0, 102.0, 106.0, 110.0 ]
       },
       "projectileExplosionRadius" : {
-        "value" : 1.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 1.0
       },
       "offensivePierceRatioMax" : {
-        "value" : 50.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 50.0
       },
       "skillConnectionSpacing" : {
-        "value" : 62,
-        "skill" : false
+        "skill" : false,
+        "value" : 62
       },
       "skillProjectileTargetGroundOnly" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
+        "skill" : false,
+        "value" : 0.12
       },
       "skillProjectileHitTimeToLive" : {
-        "value" : 30.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 30.0
       },
       "skillMaxLevel" : {
-        "value" : 16,
-        "skill" : false
+        "skill" : false,
+        "value" : 16
       },
       "petBurstSpawn" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillUltimateLevel" : {
-        "value" : 20,
-        "skill" : false
+        "skill" : false,
+        "value" : 20
       },
       "offensivePierceRatioMin" : {
-        "value" : 30.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 30.0
       },
       "petLimit" : {
-        "value" : [ 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0 ]
       },
       "skillMasteryLevelRequired" : {
-        "value" : 10,
-        "skill" : false
+        "skill" : false,
+        "value" : 10
       },
       "skillTier" : {
-        "value" : 4,
-        "skill" : false
+        "skill" : false,
+        "value" : 4
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "tagSkillName083",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Lay Trap.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "tagSkillName087",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\records\\skills\\hunting\\drxmonsterlure_rapidconstruction.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Rapid Construction.html",
     "name" : "Rapid Construction",
     "parent" : "Lay Trap",
     "attributes" : {
       "skillCooldownTime" : {
-        "value" : [ -3.6, -5.4, -7.2, -8.8, -10.4, -12.0, -13.2, -14.4, -15.6, -17.0, -18.4, -19.8 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ -3.6, -5.4, -7.2, -8.8, -10.4, -12.0, -13.2, -14.4, -15.6, -17.0, -18.4, -19.8 ]
       },
       "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
+        "skill" : false,
+        "value" : 12
       },
       "skillMasteryLevelRequired" : {
-        "value" : 10,
-        "skill" : false
+        "skill" : false,
+        "value" : 10
       },
       "skillManaCostReduction" : {
-        "value" : [ 5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0 ]
       },
       "skillTier" : {
-        "value" : 5,
-        "skill" : false
+        "skill" : false,
+        "value" : 5
       },
       "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
+        "skill" : false,
+        "value" : 8
       }
     },
     "buff" : null,
-    "modifier" : true,
-    "skillTag" : "tagSkillName087",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Rapid Construction.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : true
   }, {
+    "skillTag" : "tagSkillName082",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXMonsterLure_PetModifier_Detonate.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Improved Firing Mechanism.html",
     "name" : "Improved Firing Mechanism",
     "parent" : null,
     "attributes" : {
       "Detonate" : {
+        "skill" : true,
         "value" : {
+          "skillTag" : "tagSkillName082",
+          "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\records\\skills\\hunting\\drxmonsterlure_petskill_detonate.dbr",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Improved Firing Mechanism.html",
           "name" : "Improved Firing Mechanism",
           "parent" : null,
           "attributes" : {
             "projectilePiercing" : {
-              "value" : [ 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0 ]
             },
             "projectileLaunchNumber" : {
-              "value" : [ 3.0, 4.0, 4.0, 5.0, 5.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 8.0, 8.0, 8.0, 9.0, 9.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 3.0, 4.0, 4.0, 5.0, 5.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 8.0, 8.0, 8.0, 9.0, 9.0 ]
             },
             "skillUltimateLevel" : {
-              "value" : 12,
-              "skill" : false
+              "skill" : false,
+              "value" : 12
             },
             "projectileLaunchRotation" : {
-              "value" : 360.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 360.0
             },
             "offensivePierceModifier" : {
-              "value" : [ 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0, 90.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0, 90.0 ]
             },
             "characterLife" : {
-              "value" : [ 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0, 90.0, 95.0, 100.0, 105.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0, 90.0, 95.0, 100.0, 105.0 ]
             },
             "skillMasteryLevelRequired" : {
-              "value" : 30,
-              "skill" : false
+              "skill" : false,
+              "value" : 30
             },
             "skillTier" : {
-              "value" : 7,
-              "skill" : false
+              "skill" : false,
+              "value" : 7
             },
             "offensiveSlowBleedingModifier" : {
-              "value" : [ 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0, 90.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0, 90.0 ]
             },
             "skillMaxLevel" : {
-              "value" : 8,
-              "skill" : false
+              "skill" : false,
+              "value" : 8
             }
           },
           "buff" : null,
-          "modifier" : true,
-          "skillTag" : "tagSkillName082",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Improved Firing Mechanism.html",
-          "skillDescription" : null
-        },
-        "skill" : true
+          "skillDescription" : null,
+          "modifier" : true
+        }
       }
     },
-    "buff" : null,
-    "modifier" : false,
-    "skillTag" : "tagSkillName082",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Improved Firing Mechanism.html",
-    "skillDescription" : null
+    "buff" : {
+      "skillTag" : "tagSkillName082",
+      "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\records\\skills\\hunting\\drxmonsterlure_petskill_detonate.dbr",
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Improved Firing Mechanism.html",
+      "name" : "Improved Firing Mechanism",
+      "parent" : null,
+      "attributes" : {
+        "projectilePiercing" : {
+          "skill" : false,
+          "value" : [ 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0 ]
+        },
+        "projectileLaunchNumber" : {
+          "skill" : false,
+          "value" : [ 3.0, 4.0, 4.0, 5.0, 5.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 8.0, 8.0, 8.0, 9.0, 9.0 ]
+        },
+        "skillUltimateLevel" : {
+          "skill" : false,
+          "value" : 12
+        },
+        "projectileLaunchRotation" : {
+          "skill" : false,
+          "value" : 360.0
+        },
+        "offensivePierceModifier" : {
+          "skill" : false,
+          "value" : [ 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0, 90.0 ]
+        },
+        "characterLife" : {
+          "skill" : false,
+          "value" : [ 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0, 90.0, 95.0, 100.0, 105.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "skill" : false,
+          "value" : 30
+        },
+        "skillTier" : {
+          "skill" : false,
+          "value" : 7
+        },
+        "offensiveSlowBleedingModifier" : {
+          "skill" : false,
+          "value" : [ 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0, 90.0 ]
+        },
+        "skillMaxLevel" : {
+          "skill" : false,
+          "value" : 8
+        }
+      },
+      "buff" : null,
+      "skillDescription" : null,
+      "modifier" : true
+    },
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "tagSkillName079",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXCalloftheHunt.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Call of the Hunt.html",
     "name" : "Call of the Hunt",
     "parent" : null,
     "attributes" : {
       "DRXCalloftheHunt" : {
+        "skill" : true,
         "value" : {
+          "skillTag" : "tagSkillName079",
+          "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXCalloftheHuntBuff.dbr",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Call of the Hunt.html",
           "name" : "Call of the Hunt",
           "parent" : null,
           "attributes" : {
             "characterOffensiveAbility" : {
-              "value" : [ 10.0, 20.0, 30.0, 40.0, 55.0, 70.0, 85.0, 100.0, 115.0, 130.0, 145.0, 160.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 10.0, 20.0, 30.0, 40.0, 55.0, 70.0, 85.0, 100.0, 115.0, 130.0, 145.0, 160.0 ]
             },
             "skillActiveDuration" : {
-              "value" : [ 28.0, 31.0, 33.0, 36.0, 42.0, 44.0, 47.0, 50.0, 52.0, 58.0, 60.0, 64.0, 66.0, 68.0, 75.0, 77.0, 80.0, 82.0, 84.0, 94.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 28.0, 31.0, 33.0, 36.0, 42.0, 44.0, 47.0, 50.0, 52.0, 58.0, 60.0, 64.0, 66.0, 68.0, 75.0, 77.0, 80.0, 82.0, 84.0, 94.0 ]
             },
             "offensiveSlowBleedingMin" : {
-              "value" : [ 6.0, 7.0, 8.0, 10.0, 11.0, 12.0, 13.0, 15.0, 16.0, 18.0, 20.0, 23.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 6.0, 7.0, 8.0, 10.0, 11.0, 12.0, 13.0, 15.0, 16.0, 18.0, 20.0, 23.0 ]
             },
             "skillCooldownTime" : {
-              "value" : 180.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 180.0
             },
             "skillManaCost" : {
-              "value" : [ 45.0, 47.0, 49.0, 51.0, 53.0, 55.0, 57.0, 59.0, 61.0, 63.0, 65.0, 67.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 45.0, 47.0, 49.0, 51.0, 53.0, 55.0, 57.0, 59.0, 61.0, 63.0, 65.0, 67.0 ]
             },
             "skillConnectionSpacing" : {
-              "value" : 62,
-              "skill" : false
+              "skill" : false,
+              "value" : 62
             },
             "cameraShakeAmplitude" : {
-              "value" : 0.12,
-              "skill" : false
+              "skill" : false,
+              "value" : 0.12
             },
             "offensiveSlowBleedingDurationMin" : {
-              "value" : 3.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 3.0
             },
             "skillMaxLevel" : {
-              "value" : 8,
-              "skill" : false
+              "skill" : false,
+              "value" : 8
             },
             "characterAttackSpeedModifier" : {
-              "value" : [ 15.0, 17.0, 19.0, 22.0, 24.0, 26.0, 28.0, 31.0, 33.0, 35.0, 37.0, 40.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 15.0, 17.0, 19.0, 22.0, 24.0, 26.0, 28.0, 31.0, 33.0, 35.0, 37.0, 40.0 ]
             },
             "skillUltimateLevel" : {
-              "value" : 12,
-              "skill" : false
+              "skill" : false,
+              "value" : 12
             },
             "skillTargetRadius" : {
-              "value" : 15.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 15.0
             },
             "skillMasteryLevelRequired" : {
-              "value" : 10,
-              "skill" : false
+              "skill" : false,
+              "value" : 10
             },
             "skillTier" : {
-              "value" : 3,
-              "skill" : false
+              "skill" : false,
+              "value" : 3
             }
           },
           "buff" : null,
-          "modifier" : false,
-          "skillTag" : "tagSkillName079",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Call of the Hunt.html",
-          "skillDescription" : null
-        },
-        "skill" : true
+          "skillDescription" : null,
+          "modifier" : false
+        }
       }
     },
-    "buff" : null,
-    "modifier" : false,
-    "skillTag" : "tagSkillName079",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Call of the Hunt.html",
-    "skillDescription" : null
+    "buff" : {
+      "skillTag" : "tagSkillName079",
+      "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXCalloftheHuntBuff.dbr",
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Call of the Hunt.html",
+      "name" : "Call of the Hunt",
+      "parent" : null,
+      "attributes" : {
+        "characterOffensiveAbility" : {
+          "skill" : false,
+          "value" : [ 10.0, 20.0, 30.0, 40.0, 55.0, 70.0, 85.0, 100.0, 115.0, 130.0, 145.0, 160.0 ]
+        },
+        "skillActiveDuration" : {
+          "skill" : false,
+          "value" : [ 28.0, 31.0, 33.0, 36.0, 42.0, 44.0, 47.0, 50.0, 52.0, 58.0, 60.0, 64.0, 66.0, 68.0, 75.0, 77.0, 80.0, 82.0, 84.0, 94.0 ]
+        },
+        "offensiveSlowBleedingMin" : {
+          "skill" : false,
+          "value" : [ 6.0, 7.0, 8.0, 10.0, 11.0, 12.0, 13.0, 15.0, 16.0, 18.0, 20.0, 23.0 ]
+        },
+        "skillCooldownTime" : {
+          "skill" : false,
+          "value" : 180.0
+        },
+        "skillManaCost" : {
+          "skill" : false,
+          "value" : [ 45.0, 47.0, 49.0, 51.0, 53.0, 55.0, 57.0, 59.0, 61.0, 63.0, 65.0, 67.0 ]
+        },
+        "skillConnectionSpacing" : {
+          "skill" : false,
+          "value" : 62
+        },
+        "cameraShakeAmplitude" : {
+          "skill" : false,
+          "value" : 0.12
+        },
+        "offensiveSlowBleedingDurationMin" : {
+          "skill" : false,
+          "value" : 3.0
+        },
+        "skillMaxLevel" : {
+          "skill" : false,
+          "value" : 8
+        },
+        "characterAttackSpeedModifier" : {
+          "skill" : false,
+          "value" : [ 15.0, 17.0, 19.0, 22.0, 24.0, 26.0, 28.0, 31.0, 33.0, 35.0, 37.0, 40.0 ]
+        },
+        "skillUltimateLevel" : {
+          "skill" : false,
+          "value" : 12
+        },
+        "skillTargetRadius" : {
+          "skill" : false,
+          "value" : 15.0
+        },
+        "skillMasteryLevelRequired" : {
+          "skill" : false,
+          "value" : 10
+        },
+        "skillTier" : {
+          "skill" : false,
+          "value" : 3
+        }
+      },
+      "buff" : null,
+      "skillDescription" : null,
+      "modifier" : false
+    },
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "tagSkillName088",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXCalloftheHunt_Cunning.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Exploit Weakness.html",
     "name" : "Exploit Weakness",
     "parent" : "Call of the Hunt",
     "attributes" : {
       "skillManaCost" : {
-        "value" : 10.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 10.0
       },
       "skillUltimateLevel" : {
-        "value" : 14,
-        "skill" : false
+        "skill" : false,
+        "value" : 14
       },
       "offensivePierceModifier" : {
-        "value" : [ 58.0, 66.0, 77.0, 85.0, 93.0, 104.0, 112.0, 120.0, 131.0, 139.0, 147.0, 158.0, 166.0, 174.0, 185.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 58.0, 66.0, 77.0, 85.0, 93.0, 104.0, 112.0, 120.0, 131.0, 139.0, 147.0, 158.0, 166.0, 174.0, 185.0 ]
       },
       "racialBonusPercentDamage" : {
-        "value" : 33.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 33.0
       },
       "skillMasteryLevelRequired" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillTier" : {
-        "value" : 5,
-        "skill" : false
+        "skill" : false,
+        "value" : 5
       },
       "offensiveSlowBleedingModifier" : {
-        "value" : [ 58.0, 66.0, 77.0, 85.0, 93.0, 104.0, 112.0, 120.0, 131.0, 139.0, 147.0, 158.0, 166.0, 174.0, 185.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 58.0, 66.0, 77.0, 85.0, 93.0, 104.0, 112.0, 120.0, 131.0, 139.0, 147.0, 158.0, 166.0, 174.0, 185.0 ]
       },
       "skillMaxLevel" : {
-        "value" : 10,
-        "skill" : false
+        "skill" : false,
+        "value" : 10
       },
       "Spear" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       }
     },
     "buff" : null,
-    "modifier" : true,
-    "skillTag" : "tagSkillName088",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Exploit Weakness.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : true
   }, {
+    "skillTag" : "tagSkillName095",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXStudyPrey.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Study Prey.html",
     "name" : "Study Prey",
     "parent" : null,
     "attributes" : {
       "DRXStudyPrey" : {
+        "skill" : true,
         "value" : {
+          "skillTag" : "tagSkillName095",
+          "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXStudyPreyBuff.dbr",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Study Prey.html",
           "name" : "Study Prey",
           "parent" : null,
           "attributes" : {
             "defensiveBleeding" : {
-              "value" : [ -21.0, -25.0, -29.0, -33.0, -38.0, -42.0, -46.0, -50.0, -54.0, -58.0, -62.0, -66.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ -21.0, -25.0, -29.0, -33.0, -38.0, -42.0, -46.0, -50.0, -54.0, -58.0, -62.0, -66.0 ]
             },
             "skillActiveDuration" : {
-              "value" : 5.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 5.0
             },
             "skillCooldownTime" : {
-              "value" : 8.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 8.0
             },
             "skillManaCost" : {
-              "value" : 35.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 35.0
             },
             "skillConnectionSpacing" : {
-              "value" : 62,
-              "skill" : false
+              "skill" : false,
+              "value" : 62
             },
             "cameraShakeAmplitude" : {
-              "value" : 0.12,
-              "skill" : false
+              "skill" : false,
+              "value" : 0.12
             },
             "defensivePierce" : {
-              "value" : [ -21.0, -25.0, -29.0, -33.0, -38.0, -42.0, -46.0, -50.0, -54.0, -58.0, -62.0, -66.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ -21.0, -25.0, -29.0, -33.0, -38.0, -42.0, -46.0, -50.0, -54.0, -58.0, -62.0, -66.0 ]
             },
             "skillMaxLevel" : {
-              "value" : 8,
-              "skill" : false
+              "skill" : false,
+              "value" : 8
             },
             "debufSkill" : {
-              "value" : 1,
-              "skill" : false
+              "skill" : false,
+              "value" : 1
             },
             "skillUltimateLevel" : {
-              "value" : 12,
-              "skill" : false
+              "skill" : false,
+              "value" : 12
             },
             "excludeRacialDamage" : {
-              "value" : 1,
-              "skill" : false
+              "skill" : false,
+              "value" : 1
             },
             "skillTargetRadius" : {
-              "value" : 3.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 3.0
             },
             "skillMasteryLevelRequired" : {
-              "value" : 1,
-              "skill" : false
+              "skill" : false,
+              "value" : 1
             },
             "skillTier" : {
-              "value" : 5,
-              "skill" : false
+              "skill" : false,
+              "value" : 5
             }
           },
           "buff" : null,
-          "modifier" : false,
-          "skillTag" : "tagSkillName095",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Study Prey.html",
-          "skillDescription" : null
-        },
-        "skill" : true
+          "skillDescription" : null,
+          "modifier" : false
+        }
       }
     },
-    "buff" : null,
-    "modifier" : false,
-    "skillTag" : "tagSkillName095",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Study Prey.html",
-    "skillDescription" : null
+    "buff" : {
+      "skillTag" : "tagSkillName095",
+      "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXStudyPreyBuff.dbr",
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Study Prey.html",
+      "name" : "Study Prey",
+      "parent" : null,
+      "attributes" : {
+        "defensiveBleeding" : {
+          "skill" : false,
+          "value" : [ -21.0, -25.0, -29.0, -33.0, -38.0, -42.0, -46.0, -50.0, -54.0, -58.0, -62.0, -66.0 ]
+        },
+        "skillActiveDuration" : {
+          "skill" : false,
+          "value" : 5.0
+        },
+        "skillCooldownTime" : {
+          "skill" : false,
+          "value" : 8.0
+        },
+        "skillManaCost" : {
+          "skill" : false,
+          "value" : 35.0
+        },
+        "skillConnectionSpacing" : {
+          "skill" : false,
+          "value" : 62
+        },
+        "cameraShakeAmplitude" : {
+          "skill" : false,
+          "value" : 0.12
+        },
+        "defensivePierce" : {
+          "skill" : false,
+          "value" : [ -21.0, -25.0, -29.0, -33.0, -38.0, -42.0, -46.0, -50.0, -54.0, -58.0, -62.0, -66.0 ]
+        },
+        "skillMaxLevel" : {
+          "skill" : false,
+          "value" : 8
+        },
+        "debufSkill" : {
+          "skill" : false,
+          "value" : 1
+        },
+        "skillUltimateLevel" : {
+          "skill" : false,
+          "value" : 12
+        },
+        "excludeRacialDamage" : {
+          "skill" : false,
+          "value" : 1
+        },
+        "skillTargetRadius" : {
+          "skill" : false,
+          "value" : 3.0
+        },
+        "skillMasteryLevelRequired" : {
+          "skill" : false,
+          "value" : 1
+        },
+        "skillTier" : {
+          "skill" : false,
+          "value" : 5
+        }
+      },
+      "buff" : null,
+      "skillDescription" : null,
+      "modifier" : false
+    },
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "tagSkillName096",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXStudyPrey_FlushOut.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Flush Out.html",
     "name" : "Flush Out",
     "parent" : "Study Prey",
     "attributes" : {
       "skillActiveDuration" : {
-        "value" : [ 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0 ]
       },
       "skillManaCost" : {
-        "value" : 10.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 10.0
       },
       "skillUltimateLevel" : {
-        "value" : 10,
-        "skill" : false
+        "skill" : false,
+        "value" : 10
       },
       "defensiveElementalResistance" : {
-        "value" : [ -14.0, -18.0, -22.0, -26.0, -30.0, -36.0, -40.0, -44.0, -48.0, -54.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ -14.0, -18.0, -22.0, -26.0, -30.0, -36.0, -40.0, -44.0, -48.0, -54.0 ]
       },
       "excludeRacialDamage" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillTargetRadius" : {
-        "value" : [ 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0 ]
       },
       "defensiveTrap" : {
-        "value" : [ -14.0, -18.0, -22.0, -26.0, -30.0, -36.0, -40.0, -44.0, -48.0, -54.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ -14.0, -18.0, -22.0, -26.0, -30.0, -36.0, -40.0, -44.0, -48.0, -54.0 ]
       },
       "skillTier" : {
-        "value" : 7,
-        "skill" : false
+        "skill" : false,
+        "value" : 7
       },
       "skillMaxLevel" : {
-        "value" : 6,
-        "skill" : false
+        "skill" : false,
+        "value" : 6
       }
     },
     "buff" : null,
-    "modifier" : true,
-    "skillTag" : "tagSkillName096",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Flush Out.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : true
   }, {
+    "skillTag" : "tagSkillName169",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXMarksmanship.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Marksmanship.html",
     "name" : "Marksmanship",
     "parent" : null,
     "attributes" : {
       "skillProjectileSpeedModifier" : {
-        "value" : [ 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0, 150.0, 160.0, 170.0, 180.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0, 150.0, 160.0, 170.0, 180.0 ]
       },
       "skillManaCost" : {
-        "value" : 2.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 2.0
       },
       "skillConnectionSpacing" : {
-        "value" : 62,
-        "skill" : false
+        "skill" : false,
+        "value" : 62
       },
       "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
+        "skill" : false,
+        "value" : 0.12
       },
       "ragDollAmplification" : {
-        "value" : [ 1.0, 1.03, 1.06, 1.09, 1.12, 1.15, 1.18, 1.21, 1.24, 1.27, 1.3, 1.33, 1.36, 1.39, 1.42, 1.45 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 1.0, 1.03, 1.06, 1.09, 1.12, 1.15, 1.18, 1.21, 1.24, 1.27, 1.3, 1.33, 1.36, 1.39, 1.42, 1.45 ]
       },
       "Bow" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "offensivePierceMin" : {
-        "value" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 25.0, 28.0, 32.0, 36.0, 40.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 25.0, 28.0, 32.0, 36.0, 40.0 ]
       },
       "skillMaxLevel" : {
-        "value" : 12,
-        "skill" : false
+        "skill" : false,
+        "value" : 12
       },
       "RangedOneHand" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillUltimateLevel" : {
-        "value" : 16,
-        "skill" : false
+        "skill" : false,
+        "value" : 16
       },
       "skillMasteryLevelRequired" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillTier" : {
-        "value" : 2,
-        "skill" : false
+        "skill" : false,
+        "value" : 2
       },
       "offensivePierceRatioModifier" : {
-        "value" : [ 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0, 51.0, 54.0, 57.0, 60.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0, 51.0, 54.0, 57.0, 60.0 ]
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "tagSkillName169",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Marksmanship.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "tagSkillName170",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXMarksmanship_PunctureShotArrows.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Puncture Shot Arrows.html",
     "name" : "Puncture Shot Arrows",
     "parent" : "Marksmanship",
     "attributes" : {
       "projectilePiercing" : {
-        "value" : [ 14.0, 16.0, 18.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0, 35.0, 38.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 14.0, 16.0, 18.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0, 35.0, 38.0 ]
       },
       "skillManaCost" : {
-        "value" : 1.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 1.0
       },
       "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
+        "skill" : false,
+        "value" : 12
       },
       "offensivePierceModifier" : {
-        "value" : [ 18.0, 20.0, 22.0, 24.0, 27.0, 30.0, 32.0, 34.0, 37.0, 40.0, 42.0, 45.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 18.0, 20.0, 22.0, 24.0, 27.0, 30.0, 32.0, 34.0, 37.0, 40.0, 42.0, 45.0 ]
       },
       "Bow" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillMasteryLevelRequired" : {
-        "value" : 10,
-        "skill" : false
+        "skill" : false,
+        "value" : 10
       },
       "skillTier" : {
-        "value" : 4,
-        "skill" : false
+        "skill" : false,
+        "value" : 4
       },
       "offensiveSlowBleedingModifier" : {
-        "value" : [ 9.0, 12.0, 15.0, 20.0, 23.0, 27.0, 30.0, 35.0, 38.0, 42.0, 45.0, 50.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 9.0, 12.0, 15.0, 20.0, 23.0, 27.0, 30.0, 35.0, 38.0, 42.0, 45.0, 50.0 ]
       },
       "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
+        "skill" : false,
+        "value" : 8
       }
     },
     "buff" : null,
-    "modifier" : true,
-    "skillTag" : "tagSkillName170",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Puncture Shot Arrows.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : true
   }, {
+    "skillTag" : "tagSkillName171",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXMarksmanship_ScatterShotArrows.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Scatter Shot Arrows.html",
     "name" : "Scatter Shot Arrows",
     "parent" : null,
     "attributes" : {
       "projectileFragmentsLaunchNumberMin" : {
-        "value" : [ 3.0, 3.0, 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 8.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 3.0, 3.0, 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 8.0 ]
       },
       "offensiveSlowBleedingMin" : {
-        "value" : [ 4.0, 6.4, 8.8, 11.7, 14.7, 17.9, 21.3, 25.3, 29.3, 33.6, 38.1, 43.2, 48.5, 54.4, 60.8, 67.7 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 4.0, 6.4, 8.8, 11.7, 14.7, 17.9, 21.3, 25.3, 29.3, 33.6, 38.1, 43.2, 48.5, 54.4, 60.8, 67.7 ]
       },
       "projectileFragmentsLaunchNumberMax" : {
-        "value" : [ 4.0, 5.0, 5.0, 5.0, 6.0, 6.0, 7.0, 7.0, 7.0, 8.0, 8.0, 9.0, 9.0, 9.0, 10.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 4.0, 5.0, 5.0, 5.0, 6.0, 6.0, 7.0, 7.0, 7.0, 8.0, 8.0, 9.0, 9.0, 9.0, 10.0 ]
       },
       "skillManaCost" : {
-        "value" : [ 2.0, 2.2, 2.4, 2.6, 2.8, 3.0, 3.2, 3.4, 3.6, 3.8, 4.0, 4.2, 4.4, 4.6, 4.8, 5.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 2.0, 2.2, 2.4, 2.6, 2.8, 3.0, 3.2, 3.4, 3.6, 3.8, 4.0, 4.2, 4.4, 4.6, 4.8, 5.0 ]
       },
       "skillUltimateLevel" : {
-        "value" : 16,
-        "skill" : false
+        "skill" : false,
+        "value" : 16
       },
       "offensiveSlowBleedingDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 3.0
       },
       "offensivePierceMin" : {
-        "value" : [ 3.0, 4.8, 6.6, 8.8, 11.0, 13.4, 16.0, 19.0, 22.0, 25.2, 28.6, 32.4, 36.4, 40.8, 45.6, 50.8 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 3.0, 4.8, 6.6, 8.8, 11.0, 13.4, 16.0, 19.0, 22.0, 25.2, 28.6, 32.4, 36.4, 40.8, 45.6, 50.8 ]
       },
       "Bow" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillMasteryLevelRequired" : {
-        "value" : 25,
-        "skill" : false
+        "skill" : false,
+        "value" : 25
       },
       "skillTier" : {
-        "value" : 6,
-        "skill" : false
+        "skill" : false,
+        "value" : 6
       },
       "skillMaxLevel" : {
-        "value" : 12,
-        "skill" : false
+        "skill" : false,
+        "value" : 12
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "tagSkillName171",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Scatter Shot Arrows.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "tagSkillName172",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXWeaponSkill_Gouge.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Gouge.html",
     "name" : "Gouge",
     "parent" : null,
     "attributes" : {
       "skillChanceWeight" : {
-        "value" : [ 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 17.0, 18.0, 19.0, 20.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 17.0, 18.0, 19.0, 20.0 ]
       },
       "offensiveSlowBleedingMin" : {
-        "value" : [ 24.0, 36.0, 49.5, 64.5, 81.0, 99.0, 118.5, 139.5, 162.0, 187.5 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 24.0, 36.0, 49.5, 64.5, 81.0, 99.0, 118.5, 139.5, 162.0, 187.5 ]
       },
       "skillUltimateLevel" : {
-        "value" : 10,
-        "skill" : false
+        "skill" : false,
+        "value" : 10
       },
       "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
+        "skill" : false,
+        "value" : 0.12
       },
       "offensiveSlowBleedingDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 3.0
       },
       "skillProjectileNumber" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "Bow" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillMasteryLevelRequired" : {
-        "value" : 5,
-        "skill" : false
+        "skill" : false,
+        "value" : 5
       },
       "skillTier" : {
-        "value" : 3,
-        "skill" : false
+        "skill" : false,
+        "value" : 3
       },
       "skillMaxLevel" : {
-        "value" : 6,
-        "skill" : false
+        "skill" : false,
+        "value" : 6
       },
       "offensivePierceRatioModifier" : {
-        "value" : [ 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0 ]
       },
       "Spear" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "tagSkillName172",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Gouge.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "tagSkillName089",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXTakeDown.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Take Down.html",
     "name" : "Take Down",
     "parent" : null,
     "attributes" : {
       "skillCooldownTime" : {
-        "value" : 8.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 8.0
       },
       "skillManaCost" : {
-        "value" : [ 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0, 48.0, 50.0, 52.0, 54.0, 56.0, 58.0, 60.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0, 48.0, 50.0, 52.0, 54.0, 56.0, 58.0, 60.0 ]
       },
       "skillConnectionSpacing" : {
-        "value" : 62,
-        "skill" : false
+        "skill" : false,
+        "value" : 62
       },
       "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
+        "skill" : false,
+        "value" : 0.12
       },
       "characterRunSpeedModifier" : {
-        "value" : 200.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 200.0
       },
       "skillAllowsWarmUp" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillMaxLevel" : {
-        "value" : 12,
-        "skill" : false
+        "skill" : false,
+        "value" : 12
       },
       "offensivePhysicalModifier" : {
-        "value" : [ 26.0, 29.0, 32.0, 35.0, 38.0, 41.0, 44.0, 47.0, 50.0, 53.0, 56.0, 61.0, 64.0, 67.0, 70.0, 75.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 26.0, 29.0, 32.0, 35.0, 38.0, 41.0, 44.0, 47.0, 50.0, 53.0, 56.0, 61.0, 64.0, 67.0, 70.0, 75.0 ]
       },
       "skillUltimateLevel" : {
-        "value" : 16,
-        "skill" : false
+        "skill" : false,
+        "value" : 16
       },
       "skillProjectileNumber" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillMasteryLevelRequired" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillTier" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "offensivePercentCurrentLifeMin" : {
-        "value" : [ 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0 ]
       },
       "Spear" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "tagSkillName089",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Take Down.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "tagSkillName090",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXTakeDown_Eviscerate.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Eviscerate.html",
     "name" : "Eviscerate",
     "parent" : "Take Down",
     "attributes" : {
       "offensiveSlowBleedingMin" : {
-        "value" : [ 37.5, 50.0, 62.5, 75.0, 87.5, 100.0, 112.5, 125.0, 137.5, 150.0, 162.5, 175.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 37.5, 50.0, 62.5, 75.0, 87.5, 100.0, 112.5, 125.0, 137.5, 150.0, 162.5, 175.0 ]
       },
       "skillCooldownTime" : {
-        "value" : [ 0.0, -0.6, -0.9, -1.2, -1.5, -1.8, -2.1, -2.4, -2.7, -3.0, -3.3, -3.6 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 0.0, -0.6, -0.9, -1.2, -1.5, -1.8, -2.1, -2.4, -2.7, -3.0, -3.3, -3.6 ]
       },
       "skillManaCost" : {
-        "value" : 5.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 5.0
       },
       "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
+        "skill" : false,
+        "value" : 12
       },
       "offensiveSlowBleedingDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 3.0
       },
       "skillTier" : {
-        "value" : 3,
-        "skill" : false
+        "skill" : false,
+        "value" : 3
       },
       "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
+        "skill" : false,
+        "value" : 8
       },
       "offensivePercentCurrentLifeMin" : {
-        "value" : [ 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0 ]
       },
       "Spear" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       }
     },
     "buff" : null,
-    "modifier" : true,
-    "skillTag" : "tagSkillName090",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Eviscerate.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : true
   }, {
+    "skillTag" : "tagCorneredRageNAME",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\records\\skills\\hunting\\drxcorneredrage.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Cornered.html",
     "name" : "Cornered",
     "parent" : null,
     "attributes" : {
       "defensiveStun" : {
-        "value" : 120.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 120.0
       },
       "skillActiveDuration" : {
-        "value" : [ 6.3, 6.6, 6.9, 7.2, 7.5, 7.8, 8.1, 8.4, 8.7, 9.0, 9.3, 10.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 6.3, 6.6, 6.9, 7.2, 7.5, 7.8, 8.1, 8.4, 8.7, 9.0, 9.3, 10.0 ]
       },
       "skillCooldownTime" : {
-        "value" : 180.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 180.0
       },
       "characterSpellCastSpeedModifier" : {
-        "value" : [ -68.0, -80.0, -92.0, -104.0, -116.0, -128.0, -140.0, -152.0, -164.0, -176.0, -188.0, -200.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ -68.0, -80.0, -92.0, -104.0, -116.0, -128.0, -140.0, -152.0, -164.0, -176.0, -188.0, -200.0 ]
       },
       "damageAbsorptionPercent" : {
-        "value" : [ 16.0, 20.0, 23.0, 26.0, 29.0, 32.0, 35.0, 38.0, 41.0, 44.0, 47.0, 50.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 16.0, 20.0, 23.0, 26.0, 29.0, 32.0, 35.0, 38.0, 41.0, 44.0, 47.0, 50.0 ]
       },
       "characterDefensiveAbilityModifier" : {
-        "value" : [ 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0, 51.0, 54.0, 57.0, 60.0, 66.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0, 51.0, 54.0, 57.0, 60.0, 66.0 ]
       },
       "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
+        "skill" : false,
+        "value" : 8
       },
       "lifeMonitorPercent" : {
-        "value" : 33.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 33.0
       },
       "characterOffensiveAbilityModifier" : {
-        "value" : [ 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0, 90.0, 95.0, 100.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0, 90.0, 95.0, 100.0 ]
       },
       "characterAttackSpeedModifier" : {
-        "value" : [ 25.0, 28.0, 31.0, 34.0, 37.0, 40.0, 43.0, 46.0, 49.0, 52.0, 55.0, 60.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 25.0, 28.0, 31.0, 34.0, 37.0, 40.0, 43.0, 46.0, 49.0, 52.0, 55.0, 60.0 ]
       },
       "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
+        "skill" : false,
+        "value" : 12
       },
       "skillTier" : {
-        "value" : 6,
-        "skill" : false
+        "skill" : false,
+        "value" : 6
       },
       "characterManaRegenModifier" : {
-        "value" : [ -68.0, -80.0, -92.0, -104.0, -116.0, -128.0, -140.0, -152.0, -164.0, -176.0, -188.0, -200.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ -68.0, -80.0, -92.0, -104.0, -116.0, -128.0, -140.0, -152.0, -164.0, -176.0, -188.0, -200.0 ]
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "tagCorneredRageNAME",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Cornered.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "tagSkillName081",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXEnsnare.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Ensnare.html",
     "name" : "Ensnare",
     "parent" : null,
     "attributes" : {
       "DRXEnsnare" : {
+        "skill" : true,
         "value" : {
+          "skillTag" : "tagSkillName081",
+          "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXEnsnareBuff.dbr",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Ensnare.html",
           "name" : "Ensnare",
           "parent" : null,
           "attributes" : {
             "skillActiveDuration" : {
-              "value" : [ 2.5, 3.3, 4.1, 4.9, 5.7, 6.5, 7.3, 8.1, 8.9, 10.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 2.5, 3.3, 4.1, 4.9, 5.7, 6.5, 7.3, 8.1, 8.9, 10.0 ]
             },
             "skillCooldownTime" : {
-              "value" : 3.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 3.0
             },
             "projectileLaunchNumber" : {
-              "value" : 1,
-              "skill" : false
+              "skill" : false,
+              "value" : 1
             },
             "skillManaCost" : {
-              "value" : [ 15.0, 17.0, 19.0, 20.0, 22.0, 24.0, 25.0, 27.0, 29.0, 31.0, 32.0, 34.0, 36.0, 37.0, 39.0, 41.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 15.0, 17.0, 19.0, 20.0, 22.0, 24.0, 25.0, 27.0, 29.0, 31.0, 32.0, 34.0, 36.0, 37.0, 39.0, 41.0 ]
             },
             "projectileExplosionRadius" : {
-              "value" : [ 1.0, 1.4, 1.8, 2.2, 2.6, 3.2, 3.6, 4.0, 4.4, 5.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 1.0, 1.4, 1.8, 2.2, 2.6, 3.2, 3.6, 4.0, 4.4, 5.0 ]
             },
             "skillConnectionSpacing" : {
-              "value" : 62,
-              "skill" : false
+              "skill" : false,
+              "value" : 62
             },
             "cameraShakeAmplitude" : {
-              "value" : 0.12,
-              "skill" : false
+              "skill" : false,
+              "value" : 0.12
             },
             "offensivePierceMin" : {
-              "value" : [ 8.0, 13.0, 18.0, 23.0, 28.0, 33.0, 38.0, 43.0, 49.0, 56.0, 64.0, 75.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 8.0, 13.0, 18.0, 23.0, 28.0, 33.0, 38.0, 43.0, 49.0, 56.0, 64.0, 75.0 ]
             },
             "skillMaxLevel" : {
-              "value" : 6,
-              "skill" : false
+              "skill" : false,
+              "value" : 6
             },
             "debufSkill" : {
-              "value" : 1,
-              "skill" : false
+              "skill" : false,
+              "value" : 1
             },
             "skillUltimateLevel" : {
-              "value" : 10,
-              "skill" : false
+              "skill" : false,
+              "value" : 10
             },
             "skillMasteryLevelRequired" : {
-              "value" : 5,
-              "skill" : false
+              "skill" : false,
+              "value" : 5
             },
             "skillTier" : {
-              "value" : 1,
-              "skill" : false
+              "skill" : false,
+              "value" : 1
             }
           },
           "buff" : null,
-          "modifier" : false,
-          "skillTag" : "tagSkillName081",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Ensnare.html",
-          "skillDescription" : null
-        },
-        "skill" : true
+          "skillDescription" : null,
+          "modifier" : false
+        }
       }
     },
-    "buff" : null,
-    "modifier" : false,
-    "skillTag" : "tagSkillName081",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Ensnare.html",
-    "skillDescription" : null
+    "buff" : {
+      "skillTag" : "tagSkillName081",
+      "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXEnsnareBuff.dbr",
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Ensnare.html",
+      "name" : "Ensnare",
+      "parent" : null,
+      "attributes" : {
+        "skillActiveDuration" : {
+          "skill" : false,
+          "value" : [ 2.5, 3.3, 4.1, 4.9, 5.7, 6.5, 7.3, 8.1, 8.9, 10.0 ]
+        },
+        "skillCooldownTime" : {
+          "skill" : false,
+          "value" : 3.0
+        },
+        "projectileLaunchNumber" : {
+          "skill" : false,
+          "value" : 1
+        },
+        "skillManaCost" : {
+          "skill" : false,
+          "value" : [ 15.0, 17.0, 19.0, 20.0, 22.0, 24.0, 25.0, 27.0, 29.0, 31.0, 32.0, 34.0, 36.0, 37.0, 39.0, 41.0 ]
+        },
+        "projectileExplosionRadius" : {
+          "skill" : false,
+          "value" : [ 1.0, 1.4, 1.8, 2.2, 2.6, 3.2, 3.6, 4.0, 4.4, 5.0 ]
+        },
+        "skillConnectionSpacing" : {
+          "skill" : false,
+          "value" : 62
+        },
+        "cameraShakeAmplitude" : {
+          "skill" : false,
+          "value" : 0.12
+        },
+        "offensivePierceMin" : {
+          "skill" : false,
+          "value" : [ 8.0, 13.0, 18.0, 23.0, 28.0, 33.0, 38.0, 43.0, 49.0, 56.0, 64.0, 75.0 ]
+        },
+        "skillMaxLevel" : {
+          "skill" : false,
+          "value" : 6
+        },
+        "debufSkill" : {
+          "skill" : false,
+          "value" : 1
+        },
+        "skillUltimateLevel" : {
+          "skill" : false,
+          "value" : 10
+        },
+        "skillMasteryLevelRequired" : {
+          "skill" : false,
+          "value" : 5
+        },
+        "skillTier" : {
+          "skill" : false,
+          "value" : 1
+        }
+      },
+      "buff" : null,
+      "skillDescription" : null,
+      "modifier" : false
+    },
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "tagSkillName078",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXEnsnare_BarbedNetting.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Barbed Netting.html",
     "name" : "Barbed Netting",
     "parent" : "Ensnare",
     "attributes" : {
       "characterOffensiveAbilityModifier" : {
-        "value" : [ -28.0, -30.0, -32.0, -34.0, -36.0, -38.0, -40.0, -42.0, -44.0, -46.0, -48.0, -50.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ -28.0, -30.0, -32.0, -34.0, -36.0, -38.0, -40.0, -42.0, -44.0, -46.0, -48.0, -50.0 ]
       },
       "offensiveSlowBleedingMin" : {
-        "value" : [ 15.0, 19.0, 24.0, 28.0, 32.0, 37.0, 41.0, 45.0, 50.0, 54.0, 58.0, 63.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 15.0, 19.0, 24.0, 28.0, 32.0, 37.0, 41.0, 45.0, 50.0, 54.0, 58.0, 63.0 ]
       },
       "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
+        "skill" : false,
+        "value" : 12
       },
       "offensiveSlowBleedingDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 3.0
       },
       "skillMasteryLevelRequired" : {
-        "value" : 24,
-        "skill" : false
+        "skill" : false,
+        "value" : 24
       },
       "characterDefensiveAbilityModifier" : {
-        "value" : [ -28.0, -30.0, -32.0, -34.0, -36.0, -38.0, -40.0, -42.0, -44.0, -46.0, -48.0, -50.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ -28.0, -30.0, -32.0, -34.0, -36.0, -38.0, -40.0, -42.0, -44.0, -46.0, -48.0, -50.0 ]
       },
       "skillTier" : {
-        "value" : 3,
-        "skill" : false
+        "skill" : false,
+        "value" : 3
       },
       "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
+        "skill" : false,
+        "value" : 8
       },
       "defensiveBleedingDurationModifier" : {
-        "value" : [ -23.5, -31.0, -38.5, -46.0, -53.5, -61.0, -68.5, -76.0, -83.5, -91.0, -98.5, -106.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ -23.5, -31.0, -38.5, -46.0, -53.5, -61.0, -68.5, -76.0, -83.5, -91.0, -98.5, -106.0 ]
       }
     },
     "buff" : null,
-    "modifier" : true,
-    "skillTag" : "tagSkillName078",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Barbed Netting.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : true
   }, {
+    "skillTag" : "tagHerbalismNAME",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXHerbalism.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Herbalism.html",
     "name" : "Herbalism",
     "parent" : null,
     "attributes" : {
       "offensiveSlowPoisonDurationModifier" : {
-        "value" : [ 24.0, 32.0, 40.0, 48.0, 56.0, 66.0, 74.0, 82.0, 90.0, 100.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 24.0, 32.0, 40.0, 48.0, 56.0, 66.0, 74.0, 82.0, 90.0, 100.0 ]
       },
       "skillUltimateLevel" : {
-        "value" : 10,
-        "skill" : false
+        "skill" : false,
+        "value" : 10
       },
       "characterLifeRegen" : {
-        "value" : [ 3.0, 3.6, 4.2, 4.8, 5.4, 6.0, 6.6, 7.2, 7.8, 8.4 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 3.0, 3.6, 4.2, 4.8, 5.4, 6.0, 6.6, 7.2, 7.8, 8.4 ]
       },
       "skillMasteryLevelRequired" : {
-        "value" : 5,
-        "skill" : false
+        "skill" : false,
+        "value" : 5
       },
       "defensivePoison" : {
-        "value" : [ 28.0, 36.0, 44.0, 52.0, 60.0, 68.0, 76.0, 84.0, 92.0, 100.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 28.0, 36.0, 44.0, 52.0, 60.0, 68.0, 76.0, 84.0, 92.0, 100.0 ]
       },
       "skillTier" : {
-        "value" : 2,
-        "skill" : false
+        "skill" : false,
+        "value" : 2
       },
       "skillMaxLevel" : {
-        "value" : 6,
-        "skill" : false
+        "skill" : false,
+        "value" : 6
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "tagHerbalismNAME",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Herbalism.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "tagSpearTempestNAME",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\records\\skills\\hunting\\drxspear_tempest.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Spear Tempest.html",
     "name" : "Spear Tempest",
     "parent" : null,
     "attributes" : {
       "offensiveConfusionMax" : {
-        "value" : 6.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 6.0
       },
       "skillCooldownTime" : {
-        "value" : 6.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 6.0
       },
       "skillManaCost" : {
-        "value" : [ 45.0, 48.0, 51.0, 54.0, 57.0, 60.0, 63.0, 66.0, 69.0, 72.0, 75.0, 78.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 45.0, 48.0, 51.0, 54.0, 57.0, 60.0, 63.0, 66.0, 69.0, 72.0, 75.0, 78.0 ]
       },
       "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
+        "skill" : false,
+        "value" : 0.12
       },
       "ragDollAmplification" : {
-        "value" : 0.75,
-        "skill" : false
+        "skill" : false,
+        "value" : 0.75
       },
       "skillAllowsWarmUp" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
+        "skill" : false,
+        "value" : 8
       },
       "characterOffensiveAbilityModifier" : {
-        "value" : [ 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0 ]
       },
       "characterAttackSpeedModifier" : {
-        "value" : [ 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0, 28.0, 29.0, 30.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0, 28.0, 29.0, 30.0 ]
       },
       "offensivePhysicalModifier" : {
-        "value" : [ 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 64.0, 68.0, 72.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 64.0, 68.0, 72.0 ]
       },
       "offensiveConfusionMin" : {
-        "value" : 3.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 3.0
       },
       "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
+        "skill" : false,
+        "value" : 12
       },
       "characterDodgePercent" : {
-        "value" : 100.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 100.0
       },
       "skillTargetNumber" : {
-        "value" : 6,
-        "skill" : false
+        "skill" : false,
+        "value" : 6
       },
       "skillProjectileNumber" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillMasteryLevelRequired" : {
-        "value" : 30,
-        "skill" : false
+        "skill" : false,
+        "value" : 30
       },
       "skillTargetAngle" : {
-        "value" : 200.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 200.0
       },
       "skillTier" : {
-        "value" : 4,
-        "skill" : false
+        "skill" : false,
+        "value" : 4
       },
       "offensiveConfusionChance" : {
-        "value" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0 ]
       },
       "Spear" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "tagSpearTempestNAME",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Spear Tempest.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "tagTempestExposeNAME",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\records\\skills\\hunting\\drxtempest_expose.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Flayer.html",
     "name" : "Flayer",
     "parent" : "Spear Tempest",
     "attributes" : {
       "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
+        "skill" : false,
+        "value" : 12
       },
       "offensivePierceModifier" : {
-        "value" : [ 38.0, 46.0, 54.0, 62.0, 70.0, 78.0, 86.0, 94.0, 102.0, 110.0, 118.0, 126.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 38.0, 46.0, 54.0, 62.0, 70.0, 78.0, 86.0, 94.0, 102.0, 110.0, 118.0, 126.0 ]
       },
       "skillTargetNumber" : {
-        "value" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 2.0, 2.0, 3.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 2.0, 2.0, 3.0 ]
       },
       "skillTargetAngle" : {
-        "value" : [ 5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0 ]
       },
       "skillTier" : {
-        "value" : 6,
-        "skill" : false
+        "skill" : false,
+        "value" : 6
       },
       "offensiveSlowBleedingModifier" : {
-        "value" : [ 59.0, 68.0, 77.0, 86.0, 95.0, 104.0, 113.0, 122.0, 131.0, 140.0, 149.0, 158.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 59.0, 68.0, 77.0, 86.0, 95.0, 104.0, 113.0, 122.0, 131.0, 140.0, 149.0, 158.0 ]
       },
       "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
+        "skill" : false,
+        "value" : 8
       },
       "Spear" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       }
     },
     "buff" : null,
-    "modifier" : true,
-    "skillTag" : "tagTempestExposeNAME",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Flayer.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : true
   }, {
+    "skillTag" : "tagSkillName173",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXWeaponSkill_Volley.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Volley.html",
     "name" : "Volley",
     "parent" : null,
     "attributes" : {
       "skillChanceWeight" : {
-        "value" : [ 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 17.0, 18.0, 19.0, 20.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 17.0, 18.0, 19.0, 20.0 ]
       },
       "skillUltimateLevel" : {
-        "value" : 10,
-        "skill" : false
+        "skill" : false,
+        "value" : 10
       },
       "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
+        "skill" : false,
+        "value" : 0.12
       },
       "skillProjectileNumber" : {
-        "value" : 3,
-        "skill" : false
+        "skill" : false,
+        "value" : 3
       },
       "Bow" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillMasteryLevelRequired" : {
-        "value" : 25,
-        "skill" : false
+        "skill" : false,
+        "value" : 25
       },
       "skillTier" : {
-        "value" : 7,
-        "skill" : false
+        "skill" : false,
+        "value" : 7
       },
       "skillMaxLevel" : {
-        "value" : 6,
-        "skill" : false
+        "skill" : false,
+        "value" : 6
       },
       "Spear" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "tagSkillName173",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Volley.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   } ],
-  "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery.html"
+  "skillTree" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DrxHuntingSkillTree.dbr"
 }

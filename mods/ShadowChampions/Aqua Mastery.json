@@ -1,1745 +1,2137 @@
 {
+  "mastery" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\aqua\\aqua_mastery.dbr",
+  "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery.html",
   "name" : "Aqua Mastery",
   "skills" : [ {
+    "skillTag" : "skillAqua1n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\aqua\\skills\\oceanicmight.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Oceanic Might.html",
     "name" : "Oceanic Might",
     "parent" : null,
     "attributes" : {
       "skillManaCost" : {
-        "value" : 1.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 1.0
       },
       "skillConnectionSpacing" : {
-        "value" : 62,
-        "skill" : false
+        "skill" : false,
+        "value" : 62
       },
       "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
+        "skill" : false,
+        "value" : 0.12
       },
       "offensiveTotalDamageModifier" : {
-        "value" : [ 4.0, 8.0, 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 4.0, 8.0, 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0 ]
       },
       "skillMaxLevel" : {
-        "value" : 10,
-        "skill" : false
+        "skill" : false,
+        "value" : 10
       },
       "skillUltimateLevel" : {
-        "value" : 14,
-        "skill" : false
+        "skill" : false,
+        "value" : 14
       },
       "skillChargeLevel" : {
-        "value" : 3,
-        "skill" : false
+        "skill" : false,
+        "value" : 3
       },
       "skillTargetNumber" : {
-        "value" : 2,
-        "skill" : false
+        "skill" : false,
+        "value" : 2
       },
       "skillProjectileNumber" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "offensiveSlowColdMin" : {
-        "value" : [ 10.5, 12.0, 13.5, 15.5, 17.5, 20.0, 23.0, 26.0, 29.0, 33.0, 37.0, 41.5, 45.0, 50.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 10.5, 12.0, 13.5, 15.5, 17.5, 20.0, 23.0, 26.0, 29.0, 33.0, 37.0, 41.5, 45.0, 50.0 ]
       },
       "skillChargeDuration" : {
-        "value" : 3.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 3.0
       },
       "offensiveSlowColdDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 3.0
       },
       "skillMasteryLevelRequired" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillTargetAngle" : {
-        "value" : 45.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 45.0
       },
       "skillTier" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillAqua1n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Oceanic Might.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillAqua2n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\aqua\\skills\\oceanicmight_rust.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Rust.html",
     "name" : "Rust",
     "parent" : "Oceanic Might",
     "attributes" : {
       "offensiveSlowDefensiveReductionDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 3.0
       },
       "skillManaCost" : {
-        "value" : 1.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 1.0
       },
       "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
+        "skill" : false,
+        "value" : 12
       },
       "skillMasteryLevelRequired" : {
-        "value" : 10,
-        "skill" : false
+        "skill" : false,
+        "value" : 10
       },
       "skillTier" : {
-        "value" : 3,
-        "skill" : false
+        "skill" : false,
+        "value" : 3
       },
       "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
+        "skill" : false,
+        "value" : 8
       },
       "offensiveSlowDefensiveReductionMin" : {
-        "value" : [ 40.0, 65.0, 89.0, 114.0, 138.0, 163.0, 187.0, 212.0, 236.0, 261.0, 285.0, 310.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 40.0, 65.0, 89.0, 114.0, 138.0, 163.0, 187.0, 212.0, 236.0, 261.0, 285.0, 310.0 ]
       }
     },
     "buff" : null,
-    "modifier" : true,
-    "skillTag" : "skillAqua2n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Rust.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : true
   }, {
+    "skillTag" : "skillAqua23n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\aqua\\skills\\oceanicmight_flashfreeze.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Flash Freeze.html",
     "name" : "Flash Freeze",
     "parent" : "Rust",
     "attributes" : {
       "skillProjectileSpeedModifier" : {
-        "value" : 100.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 100.0
       },
       "skillManaCost" : {
-        "value" : 1.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 1.0
       },
       "offensiveSlowColdModifier" : {
-        "value" : [ 12.0, 16.0, 21.0, 25.0, 29.0, 34.0, 38.0, 43.0, 47.0, 51.0, 56.0, 60.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 12.0, 16.0, 21.0, 25.0, 29.0, 34.0, 38.0, 43.0, 47.0, 51.0, 56.0, 60.0 ]
       },
       "offensiveFreezeMin" : {
-        "value" : [ 1.0, 1.2, 1.3, 1.4, 1.5, 1.7, 1.8, 1.9, 2.0, 2.1, 2.2, 2.4 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 1.0, 1.2, 1.3, 1.4, 1.5, 1.7, 1.8, 1.9, 2.0, 2.1, 2.2, 2.4 ]
       },
       "Staff" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "Bow" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
+        "skill" : false,
+        "value" : 8
       },
       "RangedOneHand" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "offensiveColdModifier" : {
-        "value" : [ 12.0, 16.0, 21.0, 25.0, 29.0, 34.0, 38.0, 43.0, 47.0, 51.0, 56.0, 60.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 12.0, 16.0, 21.0, 25.0, 29.0, 34.0, 38.0, 43.0, 47.0, 51.0, 56.0, 60.0 ]
       },
       "projectilePiercing" : {
-        "value" : [ 15.0, 18.0, 21.0, 25.0, 28.0, 31.0, 34.0, 37.0, 40.0, 44.0, 47.0, 50.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 15.0, 18.0, 21.0, 25.0, 28.0, 31.0, 34.0, 37.0, 40.0, 44.0, 47.0, 50.0 ]
       },
       "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
+        "skill" : false,
+        "value" : 12
       },
       "offensiveFreezeChance" : {
-        "value" : [ 30.0, 32.0, 35.0, 37.0, 39.0, 41.0, 44.0, 46.0, 48.0, 50.0, 53.0, 55.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 30.0, 32.0, 35.0, 37.0, 39.0, 41.0, 44.0, 46.0, 48.0, 50.0, 53.0, 55.0 ]
       },
       "skillMasteryLevelRequired" : {
-        "value" : 24,
-        "skill" : false
+        "skill" : false,
+        "value" : 24
       },
       "skillTier" : {
-        "value" : 5,
-        "skill" : false
+        "skill" : false,
+        "value" : 5
       }
     },
     "buff" : null,
-    "modifier" : true,
-    "skillTag" : "skillAqua23n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Flash Freeze.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : true
   }, {
+    "skillTag" : "skillAqua3n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\aqua\\skills\\tidalsmash.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Tidal Wave.html",
     "name" : "Tidal Wave",
     "parent" : null,
     "attributes" : {
       "skillCooldownTime" : {
-        "value" : 16.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 16.0
       },
       "skillManaCost" : {
-        "value" : [ 75.39807, 78.0, 82.0, 85.0, 89.0, 92.0, 96.0, 98.0, 103.0, 107.0, 111.0, 115.0, 120.0, 125.0, 131.0, 135.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 75.39807, 78.0, 82.0, 85.0, 89.0, 92.0, 96.0, 98.0, 103.0, 107.0, 111.0, 115.0, 120.0, 125.0, 131.0, 135.0 ]
       },
       "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
+        "skill" : false,
+        "value" : 0.12
       },
       "offensivePhysicalMin" : {
-        "value" : [ 15.0, 18.0, 21.0, 24.0, 28.0, 32.0, 37.0, 42.0, 47.0, 53.0, 60.0, 67.0, 74.0, 81.0, 88.0, 94.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 15.0, 18.0, 21.0, 24.0, 28.0, 32.0, 37.0, 42.0, 47.0, 53.0, 60.0, 67.0, 74.0, 81.0, 88.0, 94.0 ]
       },
       "offensiveColdMin" : {
-        "value" : [ 30.0, 43.0, 55.0, 68.0, 81.0, 93.0, 106.0, 119.0, 131.0, 144.0, 157.0, 169.0, 182.0, 195.0, 207.0, 220.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 30.0, 43.0, 55.0, 68.0, 81.0, 93.0, 106.0, 119.0, 131.0, 144.0, 157.0, 169.0, 182.0, 195.0, 207.0, 220.0 ]
       },
       "skillMaxLevel" : {
-        "value" : 12,
-        "skill" : false
+        "skill" : false,
+        "value" : 12
       },
       "cameraShakeDurationSecs" : {
-        "value" : 1.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 1.0
       },
       "offensiveStunMin" : {
-        "value" : [ 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0 ]
       },
       "skillUltimateLevel" : {
-        "value" : 16,
-        "skill" : false
+        "skill" : false,
+        "value" : 16
       },
       "offensiveSlowColdMin" : {
-        "value" : [ 21.0, 28.0, 34.0, 41.0, 48.0, 55.0, 61.0, 68.0, 75.0, 82.0, 88.0, 95.0, 102.0, 109.0, 115.0, 122.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 21.0, 28.0, 34.0, 41.0, 48.0, 55.0, 61.0, 68.0, 75.0, 82.0, 88.0, 95.0, 102.0, 109.0, 115.0, 122.0 ]
       },
       "expansionTime" : {
-        "value" : 0.25,
-        "skill" : false
+        "skill" : false,
+        "value" : 0.25
       },
       "offensiveSlowColdDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 3.0
       },
       "skillMasteryLevelRequired" : {
-        "value" : 32,
-        "skill" : false
+        "skill" : false,
+        "value" : 32
       },
       "skillTargetRadius" : {
-        "value" : 15.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 15.0
       },
       "skillTier" : {
-        "value" : 6,
-        "skill" : false
+        "skill" : false,
+        "value" : 6
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillAqua3n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Tidal Wave.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillAqua4n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\aqua\\skills\\tidalsmash_dangerouswaters.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Dangerous Waters.html",
     "name" : "Dangerous Waters",
     "parent" : "Tidal Wave",
     "attributes" : {
       "skillManaCost" : {
-        "value" : [ 15.0, 23.0, 31.0, 39.0, 47.0, 55.0, 63.0, 71.0, 79.0, 87.0, 95.0, 105.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 15.0, 23.0, 31.0, 39.0, 47.0, 55.0, 63.0, 71.0, 79.0, 87.0, 95.0, 105.0 ]
       },
       "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
+        "skill" : false,
+        "value" : 12
       },
       "offensiveSlowColdModifier" : {
-        "value" : [ 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 115.0, 130.0, 145.0, 160.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 115.0, 130.0, 145.0, 160.0 ]
       },
       "offensiveFreezeMin" : {
-        "value" : [ 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2, 1.3, 1.5, 1.6, 1.8 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2, 1.3, 1.5, 1.6, 1.8 ]
       },
       "offensiveSlowColdDurationModifier" : {
-        "value" : [ 20.0, 25.0, 31.0, 36.0, 42.0, 47.0, 53.0, 58.0, 64.0, 69.0, 75.0, 80.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 20.0, 25.0, 31.0, 36.0, 42.0, 47.0, 53.0, 58.0, 64.0, 69.0, 75.0, 80.0 ]
       },
       "skillMasteryLevelRequired" : {
-        "value" : 40,
-        "skill" : false
+        "skill" : false,
+        "value" : 40
       },
       "skillTier" : {
-        "value" : 7,
-        "skill" : false
+        "skill" : false,
+        "value" : 7
       },
       "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
+        "skill" : false,
+        "value" : 8
       },
       "offensiveColdModifier" : {
-        "value" : [ 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0 ]
       }
     },
     "buff" : null,
-    "modifier" : true,
-    "skillTag" : "skillAqua4n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Dangerous Waters.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : true
   }, {
+    "skillTag" : "skillAqua5n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\aqua\\skills\\rain.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Rain.html",
     "name" : "Rain",
     "parent" : null,
     "attributes" : {
       "dropOffset" : {
-        "value" : 10.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 10.0
       },
       "skillCooldownTime" : {
-        "value" : 12.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 12.0
       },
       "skillManaCost" : {
-        "value" : [ 60.0, 65.0, 69.0, 74.0, 78.0, 83.0, 88.0, 92.0, 97.0, 101.0, 106.0, 111.0, 115.0, 120.0, 124.0, 129.0, 134.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 60.0, 65.0, 69.0, 74.0, 78.0, 83.0, 88.0, 92.0, 97.0, 101.0, 106.0, 111.0, 115.0, 120.0, 124.0, 129.0, 134.0 ]
       },
       "projectileExplosionRadius" : {
-        "value" : 3.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 3.0
       },
       "numProjectiles" : {
-        "value" : 5,
-        "skill" : false
+        "skill" : false,
+        "value" : 5
       },
       "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
+        "skill" : false,
+        "value" : 0.12
       },
       "offensiveColdMin" : {
-        "value" : [ 11.0, 14.6, 18.2, 20.8, 25.4, 29.0, 31.6, 35.2, 39.9, 44.5, 48.1, 52.8, 57.5, 63.2, 68.9, 72.5, 78.2 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 11.0, 14.6, 18.2, 20.8, 25.4, 29.0, 31.6, 35.2, 39.9, 44.5, 48.1, 52.8, 57.5, 63.2, 68.9, 72.5, 78.2 ]
       },
       "skillMaxLevel" : {
-        "value" : 13,
-        "skill" : false
+        "skill" : false,
+        "value" : 13
       },
       "skillUltimateLevel" : {
-        "value" : 17,
-        "skill" : false
+        "skill" : false,
+        "value" : 17
       },
       "dropHeight" : {
-        "value" : 7.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 7.0
       },
       "offensiveColdMax" : {
-        "value" : [ 15.9, 18.4, 22.9, 27.6, 30.1, 37.8, 41.3, 44.8, 50.5, 57.2, 62.7, 67.4, 73.9, 80.6, 86.2, 90.8, 99.5 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 15.9, 18.4, 22.9, 27.6, 30.1, 37.8, 41.3, 44.8, 50.5, 57.2, 62.7, 67.4, 73.9, 80.6, 86.2, 90.8, 99.5 ]
       },
       "skillMasteryLevelRequired" : {
-        "value" : 16,
-        "skill" : false
+        "skill" : false,
+        "value" : 16
       },
       "skillTier" : {
-        "value" : 4,
-        "skill" : false
+        "skill" : false,
+        "value" : 4
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillAqua5n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Rain.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillAqua6n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\aqua\\skills\\rain_torrentialflow.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Torrential Flow.html",
     "name" : "Torrential Flow",
     "parent" : "Rain",
     "attributes" : {
       "offensiveStunMin" : {
-        "value" : 1.5,
-        "skill" : false
+        "skill" : false,
+        "value" : 1.5
       },
       "offensiveSlowTotalSpeedMin" : {
-        "value" : [ 18.0, 20.0, 21.0, 23.0, 24.0, 26.0, 27.0, 29.0, 30.0, 32.0, 33.0, 35.0, 36.0, 38.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 18.0, 20.0, 21.0, 23.0, 24.0, 26.0, 27.0, 29.0, 30.0, 32.0, 33.0, 35.0, 36.0, 38.0 ]
       },
       "skillManaCost" : {
-        "value" : [ 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 65.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 65.0 ]
       },
       "skillUltimateLevel" : {
-        "value" : 14,
-        "skill" : false
+        "skill" : false,
+        "value" : 14
       },
       "offensiveStunMax" : {
-        "value" : 3.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 3.0
       },
       "offensivePhysicalMin" : {
-        "value" : [ 16.0, 22.0, 28.0, 33.0, 39.0, 45.0, 51.0, 56.0, 62.0, 68.0, 74.0, 79.0, 85.0, 91.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 16.0, 22.0, 28.0, 33.0, 39.0, 45.0, 51.0, 56.0, 62.0, 68.0, 74.0, 79.0, 85.0, 91.0 ]
       },
       "skillMasteryLevelRequired" : {
-        "value" : 24,
-        "skill" : false
+        "skill" : false,
+        "value" : 24
       },
       "skillTier" : {
-        "value" : 5,
-        "skill" : false
+        "skill" : false,
+        "value" : 5
       },
       "offensiveSlowTotalSpeedDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 3.0
       },
       "skillMaxLevel" : {
-        "value" : 10,
-        "skill" : false
+        "skill" : false,
+        "value" : 10
       },
       "offensiveStunChance" : {
-        "value" : [ 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0 ]
       }
     },
     "buff" : null,
-    "modifier" : true,
-    "skillTag" : "skillAqua6n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Torrential Flow.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : true
   }, {
+    "skillTag" : "skillAqua24n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\aqua\\skills\\rain_acidrain.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Acid Rain.html",
     "name" : "Acid Rain",
     "parent" : "Torrential Flow",
     "attributes" : {
       "offensiveTotalResistanceReductionAbsoluteDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 3.0
       },
       "skillUltimateLevel" : {
-        "value" : 3,
-        "skill" : false
+        "skill" : false,
+        "value" : 3
       },
       "offensivePoisonMin" : {
-        "value" : [ 30.0, 60.0, 90.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 30.0, 60.0, 90.0 ]
       },
       "offensiveTotalResistanceReductionAbsoluteMin" : {
-        "value" : [ 4.0, 8.0, 12.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 4.0, 8.0, 12.0 ]
       },
       "skillMasteryLevelRequired" : {
-        "value" : 32,
-        "skill" : false
+        "skill" : false,
+        "value" : 32
       },
       "skillTier" : {
-        "value" : 6,
-        "skill" : false
+        "skill" : false,
+        "value" : 6
       },
       "skillMaxLevel" : {
-        "value" : 3,
-        "skill" : false
+        "skill" : false,
+        "value" : 3
       },
       "offensivePercentCurrentLifeMin" : {
-        "value" : [ 2.0, 4.0, 6.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 2.0, 4.0, 6.0 ]
       },
       "offensiveColdModifier" : {
-        "value" : [ -22.0, -44.0, -66.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ -22.0, -44.0, -66.0 ]
       }
     },
     "buff" : null,
-    "modifier" : true,
-    "skillTag" : "skillAqua24n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Acid Rain.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : true
   }, {
+    "skillTag" : "skillAqua7n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\aqua\\skills\\markofthetrident.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Mark of the Trident.html",
     "name" : "Mark of the Trident",
     "parent" : null,
     "attributes" : {
       "characterAttackSpeedModifier" : {
-        "value" : [ 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0 ]
       },
       "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
+        "skill" : false,
+        "value" : 12
       },
       "offensivePhysicalMin" : {
-        "value" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0 ]
       },
       "offensivePierceMin" : {
-        "value" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0 ]
       },
       "skillMasteryLevelRequired" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillTier" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
+        "skill" : false,
+        "value" : 8
       },
       "Spear" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillAqua7n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Mark of the Trident.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillAqua8n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\aqua\\skills\\mark_speartechnique1.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Tsunami Spin.html",
     "name" : "Tsunami Spin",
     "parent" : null,
     "attributes" : {
       "skillChanceWeight" : {
-        "value" : [ 6.0, 8.0, 9.0, 10.0, 12.0, 13.0, 15.0, 16.0, 18.0, 20.0, 22.0, 24.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 6.0, 8.0, 9.0, 10.0, 12.0, 13.0, 15.0, 16.0, 18.0, 20.0, 22.0, 24.0 ]
       },
       "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
+        "skill" : false,
+        "value" : 0.12
       },
       "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
+        "skill" : false,
+        "value" : 8
       },
       "offensiveColdModifier" : {
-        "value" : [ 15.0, 20.0, 24.0, 28.0, 32.0, 35.0, 40.0, 44.0, 47.0, 51.0, 56.0, 60.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 15.0, 20.0, 24.0, 28.0, 32.0, 35.0, 40.0, 44.0, 47.0, 51.0, 56.0, 60.0 ]
       },
       "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
+        "skill" : false,
+        "value" : 12
       },
       "skillTargetNumber" : {
-        "value" : 2,
-        "skill" : false
+        "skill" : false,
+        "value" : 2
       },
       "skillProjectileNumber" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "offensiveSlowColdMin" : {
-        "value" : [ 9.0, 11.0, 14.0, 16.0, 19.0, 21.0, 24.0, 26.0, 29.0, 31.0, 34.0, 36.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 9.0, 11.0, 14.0, 16.0, 19.0, 21.0, 24.0, 26.0, 29.0, 31.0, 34.0, 36.0 ]
       },
       "offensiveSlowColdDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 3.0
       },
       "skillMasteryLevelRequired" : {
-        "value" : 10,
-        "skill" : false
+        "skill" : false,
+        "value" : 10
       },
       "skillTargetAngle" : {
-        "value" : 250.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 250.0
       },
       "skillTier" : {
-        "value" : 3,
-        "skill" : false
+        "skill" : false,
+        "value" : 3
       },
       "Spear" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillAqua8n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Tsunami Spin.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillAqua9n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\aqua\\skills\\mark_speartechnique2.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Tempest Spear.html",
     "name" : "Tempest Spear",
     "parent" : null,
     "attributes" : {
       "offensiveLightningModifier" : {
-        "value" : [ 15.0, 20.0, 24.0, 28.0, 32.0, 35.0, 40.0, 44.0, 47.0, 51.0, 56.0, 60.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 15.0, 20.0, 24.0, 28.0, 32.0, 35.0, 40.0, 44.0, 47.0, 51.0, 56.0, 60.0 ]
       },
       "skillChanceWeight" : {
-        "value" : [ 6.0, 8.0, 9.0, 10.0, 12.0, 13.0, 15.0, 16.0, 18.0, 20.0, 22.0, 24.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 6.0, 8.0, 9.0, 10.0, 12.0, 13.0, 15.0, 16.0, 18.0, 20.0, 22.0, 24.0 ]
       },
       "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
+        "skill" : false,
+        "value" : 12
       },
       "offensiveLightningMax" : {
-        "value" : [ 28.0, 37.0, 45.0, 54.0, 62.0, 72.0, 81.0, 92.0, 102.0, 111.0, 119.0, 128.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 28.0, 37.0, 45.0, 54.0, 62.0, 72.0, 81.0, 92.0, 102.0, 111.0, 119.0, 128.0 ]
       },
       "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
+        "skill" : false,
+        "value" : 0.12
       },
       "offensiveLightningMin" : {
-        "value" : [ 4.0, 7.0, 11.0, 14.0, 18.0, 21.0, 25.0, 28.0, 32.0, 35.0, 39.0, 42.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 4.0, 7.0, 11.0, 14.0, 18.0, 21.0, 25.0, 28.0, 32.0, 35.0, 39.0, 42.0 ]
       },
       "skillProjectileNumber" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillMasteryLevelRequired" : {
-        "value" : 32,
-        "skill" : false
+        "skill" : false,
+        "value" : 32
       },
       "skillTier" : {
-        "value" : 6,
-        "skill" : false
+        "skill" : false,
+        "value" : 6
       },
       "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
+        "skill" : false,
+        "value" : 8
       },
       "Spear" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillAqua9n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Tempest Spear.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillAqua10n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\aqua\\skills\\waterspirit_summon.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Summon Water Spirit.html",
     "name" : "Summon Water Spirit",
     "parent" : null,
     "attributes" : {
       "skillCooldownTime" : {
-        "value" : 20.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 20.0
       },
       "skillUltimateLevel" : {
-        "value" : 24,
-        "skill" : false
+        "skill" : false,
+        "value" : 24
       },
       "skillManaCost" : {
-        "value" : [ 100.0, 103.0, 107.0, 110.0, 113.0, 116.0, 120.0, 123.0, 126.0, 129.0, 133.0, 136.0, 139.0, 142.0, 146.0, 149.0, 152.0, 155.0, 159.0, 162.0, 165.0, 168.0, 172.0, 175.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 100.0, 103.0, 107.0, 110.0, 113.0, 116.0, 120.0, 123.0, 126.0, 129.0, 133.0, 136.0, 139.0, 142.0, 146.0, 149.0, 152.0, 155.0, 159.0, 162.0, 165.0, 168.0, 172.0, 175.0 ]
       },
       "petLimit" : {
-        "value" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0 ]
       },
       "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
+        "skill" : false,
+        "value" : 0.12
       },
       "skillConnectionSpacing" : {
-        "value" : 62,
-        "skill" : false
+        "skill" : false,
+        "value" : 62
       },
       "skillMasteryLevelRequired" : {
-        "value" : 10,
-        "skill" : false
+        "skill" : false,
+        "value" : 10
       },
       "skillTier" : {
-        "value" : 2,
-        "skill" : false
+        "skill" : false,
+        "value" : 2
       },
       "skillMaxLevel" : {
-        "value" : 20,
-        "skill" : false
+        "skill" : false,
+        "value" : 20
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillAqua10n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Summon Water Spirit.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillAqua11n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\aqua\\skills\\waterspirit_petmodifier_washout.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Wash Out.html",
     "name" : "Wash Out",
     "parent" : null,
     "attributes" : {
       "washout" : {
+        "skill" : true,
         "value" : {
+          "skillTag" : "skillAqua11n",
+          "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\aqua\\skills\\pet\\waterspirit_petskill_washout.dbr",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Wash Out.html",
           "name" : "Wash Out",
           "parent" : null,
           "attributes" : {
             "skillActiveDuration" : {
-              "value" : 2.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 2.0
             },
             "skillCooldownTime" : {
-              "value" : 6.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 6.0
             },
             "skillManaCost" : {
-              "value" : [ 30.25, 31.5, 32.75, 34.0, 35.25, 36.5, 37.75, 39.0, 40.25, 41.5 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 30.25, 31.5, 32.75, 34.0, 35.25, 36.5, 37.75, 39.0, 40.25, 41.5 ]
             },
             "projectileExplosionRadius" : {
-              "value" : 3.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 3.0
             },
             "skillConnectionSpacing" : {
-              "value" : 62,
-              "skill" : false
+              "skill" : false,
+              "value" : 62
             },
             "cameraShakeAmplitude" : {
-              "value" : 0.12,
-              "skill" : false
+              "skill" : false,
+              "value" : 0.12
             },
             "offensiveColdMin" : {
-              "value" : [ 40.0, 65.0, 89.0, 114.0, 139.0, 164.0, 188.0, 213.0, 238.0, 263.0, 287.0, 312.0, 337.0, 362.0, 387.0, 412.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 40.0, 65.0, 89.0, 114.0, 139.0, 164.0, 188.0, 213.0, 238.0, 263.0, 287.0, 312.0, 337.0, 362.0, 387.0, 412.0 ]
             },
             "offensiveSlowOffensiveAbilityDurationMin" : {
-              "value" : 5.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 5.0
             },
             "skillMaxLevel" : {
-              "value" : 8,
-              "skill" : false
+              "skill" : false,
+              "value" : 8
             },
             "skillUltimateLevel" : {
-              "value" : 12,
-              "skill" : false
+              "skill" : false,
+              "value" : 12
             },
             "skillMasteryLevelRequired" : {
-              "value" : 16,
-              "skill" : false
+              "skill" : false,
+              "value" : 16
             },
             "skillTier" : {
-              "value" : 4,
-              "skill" : false
+              "skill" : false,
+              "value" : 4
             },
             "offensiveSlowOffensiveAbilityMin" : {
-              "value" : [ 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 64.0, 66.0, 68.0, 70.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 64.0, 66.0, 68.0, 70.0 ]
             }
           },
           "buff" : null,
-          "modifier" : false,
-          "skillTag" : "skillAqua11n",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Wash Out.html",
-          "skillDescription" : null
-        },
-        "skill" : true
+          "skillDescription" : null,
+          "modifier" : false
+        }
       }
     },
-    "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillAqua11n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Wash Out.html",
-    "skillDescription" : null
+    "buff" : {
+      "skillTag" : "skillAqua11n",
+      "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\aqua\\skills\\pet\\waterspirit_petskill_washout.dbr",
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Wash Out.html",
+      "name" : "Wash Out",
+      "parent" : null,
+      "attributes" : {
+        "skillActiveDuration" : {
+          "skill" : false,
+          "value" : 2.0
+        },
+        "skillCooldownTime" : {
+          "skill" : false,
+          "value" : 6.0
+        },
+        "skillManaCost" : {
+          "skill" : false,
+          "value" : [ 30.25, 31.5, 32.75, 34.0, 35.25, 36.5, 37.75, 39.0, 40.25, 41.5 ]
+        },
+        "projectileExplosionRadius" : {
+          "skill" : false,
+          "value" : 3.0
+        },
+        "skillConnectionSpacing" : {
+          "skill" : false,
+          "value" : 62
+        },
+        "cameraShakeAmplitude" : {
+          "skill" : false,
+          "value" : 0.12
+        },
+        "offensiveColdMin" : {
+          "skill" : false,
+          "value" : [ 40.0, 65.0, 89.0, 114.0, 139.0, 164.0, 188.0, 213.0, 238.0, 263.0, 287.0, 312.0, 337.0, 362.0, 387.0, 412.0 ]
+        },
+        "offensiveSlowOffensiveAbilityDurationMin" : {
+          "skill" : false,
+          "value" : 5.0
+        },
+        "skillMaxLevel" : {
+          "skill" : false,
+          "value" : 8
+        },
+        "skillUltimateLevel" : {
+          "skill" : false,
+          "value" : 12
+        },
+        "skillMasteryLevelRequired" : {
+          "skill" : false,
+          "value" : 16
+        },
+        "skillTier" : {
+          "skill" : false,
+          "value" : 4
+        },
+        "offensiveSlowOffensiveAbilityMin" : {
+          "skill" : false,
+          "value" : [ 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 64.0, 66.0, 68.0, 70.0 ]
+        }
+      },
+      "buff" : null,
+      "skillDescription" : null,
+      "modifier" : false
+    },
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillAqua12n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\aqua\\skills\\waterspirit_petmodifier_magicaltides.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Magical Sea Sources.html",
     "name" : "Magical Sea Sources",
     "parent" : null,
     "attributes" : {
       "magicaltides" : {
+        "skill" : true,
         "value" : {
+          "skillTag" : "skillAqua12n",
+          "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\aqua\\skills\\pet\\waterspirit_petskill_magictides.dbr",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Magical Sea Sources.html",
           "name" : "Magical Sea Sources",
           "parent" : null,
           "attributes" : {
             "skillProjectileSpeedModifier" : {
-              "value" : [ 6.0, 12.0, 18.0, 24.0, 30.0, 36.0, 42.0, 48.0, 54.0, 60.0, 66.0, 72.0, 78.0, 84.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 6.0, 12.0, 18.0, 24.0, 30.0, 36.0, 42.0, 48.0, 54.0, 60.0, 66.0, 72.0, 78.0, 84.0 ]
             },
             "skillUltimateLevel" : {
-              "value" : 14,
-              "skill" : false
+              "skill" : false,
+              "value" : 14
             },
             "offensiveSlowColdModifier" : {
-              "value" : [ 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0 ]
             },
             "skillMasteryLevelRequired" : {
-              "value" : 24,
-              "skill" : false
+              "skill" : false,
+              "value" : 24
             },
             "offensiveLifeLeechMin" : {
-              "value" : [ 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 8.0, 8.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 8.0, 8.0 ]
             },
             "skillTier" : {
-              "value" : 5,
-              "skill" : false
+              "skill" : false,
+              "value" : 5
             },
             "skillMaxLevel" : {
-              "value" : 10,
-              "skill" : false
+              "skill" : false,
+              "value" : 10
             },
             "offensiveColdModifier" : {
-              "value" : [ 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0 ]
             }
           },
           "buff" : null,
-          "modifier" : false,
-          "skillTag" : "skillAqua12n",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Magical Sea Sources.html",
-          "skillDescription" : null
-        },
-        "skill" : true
+          "skillDescription" : null,
+          "modifier" : false
+        }
       }
     },
-    "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillAqua12n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Magical Sea Sources.html",
-    "skillDescription" : null
+    "buff" : {
+      "skillTag" : "skillAqua12n",
+      "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\aqua\\skills\\pet\\waterspirit_petskill_magictides.dbr",
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Magical Sea Sources.html",
+      "name" : "Magical Sea Sources",
+      "parent" : null,
+      "attributes" : {
+        "skillProjectileSpeedModifier" : {
+          "skill" : false,
+          "value" : [ 6.0, 12.0, 18.0, 24.0, 30.0, 36.0, 42.0, 48.0, 54.0, 60.0, 66.0, 72.0, 78.0, 84.0 ]
+        },
+        "skillUltimateLevel" : {
+          "skill" : false,
+          "value" : 14
+        },
+        "offensiveSlowColdModifier" : {
+          "skill" : false,
+          "value" : [ 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "skill" : false,
+          "value" : 24
+        },
+        "offensiveLifeLeechMin" : {
+          "skill" : false,
+          "value" : [ 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 8.0, 8.0 ]
+        },
+        "skillTier" : {
+          "skill" : false,
+          "value" : 5
+        },
+        "skillMaxLevel" : {
+          "skill" : false,
+          "value" : 10
+        },
+        "offensiveColdModifier" : {
+          "skill" : false,
+          "value" : [ 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0 ]
+        }
+      },
+      "buff" : null,
+      "skillDescription" : null,
+      "modifier" : false
+    },
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillAqua28n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\aqua\\skills\\pet\\aquasummon_petmodifier_waterrapids.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Water Rapids.html",
     "name" : "Water Rapids",
     "parent" : null,
     "attributes" : {
       "waterrapids" : {
+        "skill" : true,
         "value" : {
+          "skillTag" : "skillAqua28n",
+          "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\aqua\\skills\\pet\\aquasummon_petskill_waterrapids.dbr",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Water Rapids.html",
           "name" : "Water Rapids",
           "parent" : null,
           "attributes" : {
             "skillProjectileSpeedModifier" : {
-              "value" : 100.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 100.0
             },
             "characterLifeModifier" : {
-              "value" : -75.0,
-              "skill" : false
+              "skill" : false,
+              "value" : -75.0
             },
             "characterSpellCastSpeedModifier" : {
-              "value" : 40.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 40.0
             },
             "skillUltimateLevel" : {
-              "value" : 1,
-              "skill" : false
+              "skill" : false,
+              "value" : 1
             },
             "characterRunSpeedModifier" : {
-              "value" : 25.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 25.0
             },
             "skillMasteryLevelRequired" : {
-              "value" : 32,
-              "skill" : false
+              "skill" : false,
+              "value" : 32
             },
             "skillTier" : {
-              "value" : 6,
-              "skill" : false
+              "skill" : false,
+              "value" : 6
             },
             "skillMaxLevel" : {
-              "value" : 1,
-              "skill" : false
+              "skill" : false,
+              "value" : 1
             }
           },
           "buff" : null,
-          "modifier" : false,
-          "skillTag" : "skillAqua28n",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Water Rapids.html",
-          "skillDescription" : null
-        },
-        "skill" : true
+          "skillDescription" : null,
+          "modifier" : false
+        }
       }
     },
-    "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillAqua28n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Water Rapids.html",
-    "skillDescription" : null
+    "buff" : {
+      "skillTag" : "skillAqua28n",
+      "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\aqua\\skills\\pet\\aquasummon_petskill_waterrapids.dbr",
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Water Rapids.html",
+      "name" : "Water Rapids",
+      "parent" : null,
+      "attributes" : {
+        "skillProjectileSpeedModifier" : {
+          "skill" : false,
+          "value" : 100.0
+        },
+        "characterLifeModifier" : {
+          "skill" : false,
+          "value" : -75.0
+        },
+        "characterSpellCastSpeedModifier" : {
+          "skill" : false,
+          "value" : 40.0
+        },
+        "skillUltimateLevel" : {
+          "skill" : false,
+          "value" : 1
+        },
+        "characterRunSpeedModifier" : {
+          "skill" : false,
+          "value" : 25.0
+        },
+        "skillMasteryLevelRequired" : {
+          "skill" : false,
+          "value" : 32
+        },
+        "skillTier" : {
+          "skill" : false,
+          "value" : 6
+        },
+        "skillMaxLevel" : {
+          "skill" : false,
+          "value" : 1
+        }
+      },
+      "buff" : null,
+      "skillDescription" : null,
+      "modifier" : false
+    },
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillAqua13n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\aqua\\skills\\lunge.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Lunge.html",
     "name" : "Lunge",
     "parent" : null,
     "attributes" : {
       "defensiveTotalSpeedResistance" : {
-        "value" : 80.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 80.0
       },
       "skillManaCost" : {
-        "value" : [ 50.4482, 55.78687, 61.12554, 66.4642, 71.80287, 77.14154, 82.48021, 87.81888, 93.15755, 98.49621, 103.8349, 109.1735 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 50.4482, 55.78687, 61.12554, 66.4642, 71.80287, 77.14154, 82.48021, 87.81888, 93.15755, 98.49621, 103.8349, 109.1735 ]
       },
       "offensiveLightningMax" : {
-        "value" : [ 30.0, 36.0, 42.0, 48.0, 54.0, 61.0, 69.0, 78.0, 87.0, 98.0, 109.0, 120.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 30.0, 36.0, 42.0, 48.0, 54.0, 61.0, 69.0, 78.0, 87.0, 98.0, 109.0, 120.0 ]
       },
       "skillConnectionSpacing" : {
-        "value" : 62,
-        "skill" : false
+        "skill" : false,
+        "value" : 62
       },
       "cameraShakeAmplitude" : {
-        "value" : 0.32,
-        "skill" : false
+        "skill" : false,
+        "value" : 0.32
       },
       "characterRunSpeedModifier" : {
-        "value" : [ 100.0, 110.0, 120.0, 130.0, 140.0, 150.0, 160.0, 170.0, 180.0, 190.0, 200.0, 210.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 100.0, 110.0, 120.0, 130.0, 140.0, 150.0, 160.0, 170.0, 180.0, 190.0, 200.0, 210.0 ]
       },
       "meleeOnly" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "offensiveTotalDamageModifier" : {
-        "value" : [ 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0 ]
       },
       "ragDollAmplification" : {
-        "value" : 1.1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1.1
       },
       "offensiveColdMin" : {
-        "value" : [ 19.0, 23.0, 28.0, 33.0, 38.0, 43.0, 47.0, 53.0, 57.0, 62.0, 77.0, 81.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 19.0, 23.0, 28.0, 33.0, 38.0, 43.0, 47.0, 53.0, 57.0, 62.0, 77.0, 81.0 ]
       },
       "skillAllowsWarmUp" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
+        "skill" : false,
+        "value" : 8
       },
       "cameraShakeDurationSecs" : {
-        "value" : 0.5,
-        "skill" : false
+        "skill" : false,
+        "value" : 0.5
       },
       "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
+        "skill" : false,
+        "value" : 12
       },
       "offensiveLightningMin" : {
-        "value" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ]
       },
       "skillProjectileNumber" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillMasteryLevelRequired" : {
-        "value" : 24,
-        "skill" : false
+        "skill" : false,
+        "value" : 24
       },
       "skillTier" : {
-        "value" : 5,
-        "skill" : false
+        "skill" : false,
+        "value" : 5
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillAqua13n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Lunge.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillAqua30n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\aqua\\skills\\lunge_impale.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Impale.html",
     "name" : "Impale",
     "parent" : "Lunge",
     "attributes" : {
       "offensiveSlowBleedingMin" : {
-        "value" : [ 22.78, 30.954, 39.128, 47.235, 55.409, 63.583, 71.757, 79.931, 88.105, 96.212, 104.386, 112.56 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 22.78, 30.954, 39.128, 47.235, 55.409, 63.583, 71.757, 79.931, 88.105, 96.212, 104.386, 112.56 ]
       },
       "skillManaCost" : {
-        "value" : [ 8.0, 11.0, 14.0, 17.0, 20.0, 23.0, 26.0, 29.0, 32.0, 35.0, 38.0, 41.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 8.0, 11.0, 14.0, 17.0, 20.0, 23.0, 26.0, 29.0, 32.0, 35.0, 38.0, 41.0 ]
       },
       "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
+        "skill" : false,
+        "value" : 12
       },
       "offensivePierceModifier" : {
-        "value" : [ 30.0, 39.0, 48.0, 57.0, 66.0, 75.0, 84.0, 93.0, 102.0, 111.0, 120.0, 129.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 30.0, 39.0, 48.0, 57.0, 66.0, 75.0, 84.0, 93.0, 102.0, 111.0, 120.0, 129.0 ]
       },
       "offensiveSlowBleedingDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 3.0
       },
       "offensiveSlowBleedingDurationModifier" : {
-        "value" : [ 12.0, 24.0, 36.0, 48.0, 60.0, 72.0, 84.0, 96.0, 108.0, 120.0, 132.0, 144.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 12.0, 24.0, 36.0, 48.0, 60.0, 72.0, 84.0, 96.0, 108.0, 120.0, 132.0, 144.0 ]
       },
       "skillMasteryLevelRequired" : {
-        "value" : 32,
-        "skill" : false
+        "skill" : false,
+        "value" : 32
       },
       "skillTier" : {
-        "value" : 6,
-        "skill" : false
+        "skill" : false,
+        "value" : 6
       },
       "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
+        "skill" : false,
+        "value" : 8
       },
       "Spear" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       }
     },
     "buff" : null,
-    "modifier" : true,
-    "skillTag" : "skillAqua30n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Impale.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : true
   }, {
+    "skillTag" : "skillAqua15n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\aqua\\skills\\bountyofthelake.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Aquamancer's Bounty.html",
     "name" : "Aquamancer's Bounty",
     "parent" : null,
     "attributes" : {
       "bountyofthelake" : {
+        "skill" : true,
         "value" : {
+          "skillTag" : "skillAqua15n",
+          "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\aqua\\skills\\bountyofthelake_buff.dbr",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Aquamancer's Bounty.html",
           "name" : "Aquamancer's Bounty",
           "parent" : null,
           "attributes" : {
             "skillActiveDuration" : {
-              "value" : 120.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 120.0
             },
             "skillCooldownTime" : {
-              "value" : [ 120.0, 115.0, 110.0, 105.0, 100.0, 95.0, 90.0, 85.0, 80.0, 75.0, 70.0, 65.0, 60.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 120.0, 115.0, 110.0, 105.0, 100.0, 95.0, 90.0, 85.0, 80.0, 75.0, 70.0, 65.0, 60.0 ]
             },
             "skillManaCost" : {
-              "value" : [ 30.0, 35.0, 39.0, 44.0, 48.0, 53.0, 57.0, 62.0, 66.0, 71.0, 75.0, 78.0, 82.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 30.0, 35.0, 39.0, 44.0, 48.0, 53.0, 57.0, 62.0, 66.0, 71.0, 75.0, 78.0, 82.0 ]
             },
             "skillUltimateLevel" : {
-              "value" : 13,
-              "skill" : false
+              "skill" : false,
+              "value" : 13
             },
             "cameraShakeAmplitude" : {
-              "value" : 0.12,
-              "skill" : false
+              "skill" : false,
+              "value" : 0.12
             },
             "retaliationColdMin" : {
-              "value" : [ 20.0, 26.0, 32.0, 38.0, 45.0, 51.0, 57.0, 63.0, 69.0, 73.0, 79.0, 84.0, 90.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 20.0, 26.0, 32.0, 38.0, 45.0, 51.0, 57.0, 63.0, 69.0, 73.0, 79.0, 84.0, 90.0 ]
             },
             "retaliationColdChance" : {
-              "value" : 25.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 25.0
             },
             "offensiveColdMin" : {
-              "value" : [ 10.0, 14.0, 18.0, 23.0, 28.0, 34.0, 39.0, 44.0, 50.0, 56.0, 62.0, 69.0, 75.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 10.0, 14.0, 18.0, 23.0, 28.0, 34.0, 39.0, 44.0, 50.0, 56.0, 62.0, 69.0, 75.0 ]
             },
             "skillMasteryLevelRequired" : {
-              "value" : 1,
-              "skill" : false
+              "skill" : false,
+              "value" : 1
             },
             "skillTier" : {
-              "value" : 1,
-              "skill" : false
+              "skill" : false,
+              "value" : 1
             },
             "skillMaxLevel" : {
-              "value" : 9,
-              "skill" : false
+              "skill" : false,
+              "value" : 9
             },
             "characterTotalSpeedModifier" : {
-              "value" : [ 5.0, 6.0, 6.0, 7.0, 7.0, 8.0, 8.0, 9.0, 9.0, 10.0, 11.0, 12.0, 13.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 5.0, 6.0, 6.0, 7.0, 7.0, 8.0, 8.0, 9.0, 9.0, 10.0, 11.0, 12.0, 13.0 ]
             }
           },
           "buff" : null,
-          "modifier" : false,
-          "skillTag" : "skillAqua15n",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Aquamancer's Bounty.html",
-          "skillDescription" : null
-        },
-        "skill" : true
+          "skillDescription" : null,
+          "modifier" : false
+        }
       }
     },
-    "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillAqua15n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Aquamancer's Bounty.html",
-    "skillDescription" : null
+    "buff" : {
+      "skillTag" : "skillAqua15n",
+      "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\aqua\\skills\\bountyofthelake_buff.dbr",
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Aquamancer's Bounty.html",
+      "name" : "Aquamancer's Bounty",
+      "parent" : null,
+      "attributes" : {
+        "skillActiveDuration" : {
+          "skill" : false,
+          "value" : 120.0
+        },
+        "skillCooldownTime" : {
+          "skill" : false,
+          "value" : [ 120.0, 115.0, 110.0, 105.0, 100.0, 95.0, 90.0, 85.0, 80.0, 75.0, 70.0, 65.0, 60.0 ]
+        },
+        "skillManaCost" : {
+          "skill" : false,
+          "value" : [ 30.0, 35.0, 39.0, 44.0, 48.0, 53.0, 57.0, 62.0, 66.0, 71.0, 75.0, 78.0, 82.0 ]
+        },
+        "skillUltimateLevel" : {
+          "skill" : false,
+          "value" : 13
+        },
+        "cameraShakeAmplitude" : {
+          "skill" : false,
+          "value" : 0.12
+        },
+        "retaliationColdMin" : {
+          "skill" : false,
+          "value" : [ 20.0, 26.0, 32.0, 38.0, 45.0, 51.0, 57.0, 63.0, 69.0, 73.0, 79.0, 84.0, 90.0 ]
+        },
+        "retaliationColdChance" : {
+          "skill" : false,
+          "value" : 25.0
+        },
+        "offensiveColdMin" : {
+          "skill" : false,
+          "value" : [ 10.0, 14.0, 18.0, 23.0, 28.0, 34.0, 39.0, 44.0, 50.0, 56.0, 62.0, 69.0, 75.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "skill" : false,
+          "value" : 1
+        },
+        "skillTier" : {
+          "skill" : false,
+          "value" : 1
+        },
+        "skillMaxLevel" : {
+          "skill" : false,
+          "value" : 9
+        },
+        "characterTotalSpeedModifier" : {
+          "skill" : false,
+          "value" : [ 5.0, 6.0, 6.0, 7.0, 7.0, 8.0, 8.0, 9.0, 9.0, 10.0, 11.0, 12.0, 13.0 ]
+        }
+      },
+      "buff" : null,
+      "skillDescription" : null,
+      "modifier" : false
+    },
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillAqua16n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\aqua\\skills\\bountyofthelake_synergy.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Hypothermia.html",
     "name" : "Hypothermia",
     "parent" : "Aquamancer's Bounty",
     "attributes" : {
       "retaliationSlowColdMin" : {
-        "value" : [ 15.0, 22.0, 28.0, 35.0, 41.0, 48.0, 54.0, 61.0, 67.0, 74.0, 80.0, 87.0, 93.0, 100.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 15.0, 22.0, 28.0, 35.0, 41.0, 48.0, 54.0, 61.0, 67.0, 74.0, 80.0, 87.0, 93.0, 100.0 ]
       },
       "skillUltimateLevel" : {
-        "value" : 14,
-        "skill" : false
+        "skill" : false,
+        "value" : 14
       },
       "offensiveSlowColdModifier" : {
-        "value" : [ 18.0, 22.0, 25.0, 29.0, 32.0, 36.0, 39.0, 43.0, 46.0, 50.0, 53.0, 57.0, 60.0, 64.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 18.0, 22.0, 25.0, 29.0, 32.0, 36.0, 39.0, 43.0, 46.0, 50.0, 53.0, 57.0, 60.0, 64.0 ]
       },
       "retaliationSlowColdDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 3.0
       },
       "retaliationSlowColdChance" : {
-        "value" : 33.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 33.0
       },
       "skillMasteryLevelRequired" : {
-        "value" : 4,
-        "skill" : false
+        "skill" : false,
+        "value" : 4
       },
       "skillTier" : {
-        "value" : 2,
-        "skill" : false
+        "skill" : false,
+        "value" : 2
       },
       "skillMaxLevel" : {
-        "value" : 10,
-        "skill" : false
+        "skill" : false,
+        "value" : 10
       }
     },
     "buff" : null,
-    "modifier" : true,
-    "skillTag" : "skillAqua16n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Hypothermia.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : true
   }, {
+    "skillTag" : "skillAqua17n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\aqua\\skills\\bountyofthelake_synergy2.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Absolute Zero.html",
     "name" : "Absolute Zero",
     "parent" : "Hypothermia",
     "attributes" : {
       "offensiveSlowTotalSpeedMin" : {
-        "value" : [ 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0 ]
       },
       "skillUltimateLevel" : {
-        "value" : 18,
-        "skill" : false
+        "skill" : false,
+        "value" : 18
       },
       "offensiveSlowTotalSpeedChance" : {
-        "value" : 33.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 33.0
       },
       "offensiveFreezeMin" : {
-        "value" : [ 1.0, 1.1, 1.1, 1.2, 1.2, 1.3, 1.3, 1.4, 1.4, 1.5, 1.5, 1.6, 1.6, 1.7, 1.7, 1.8, 1.8, 1.9 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 1.0, 1.1, 1.1, 1.2, 1.2, 1.3, 1.3, 1.4, 1.4, 1.5, 1.5, 1.6, 1.6, 1.7, 1.7, 1.8, 1.8, 1.9 ]
       },
       "offensiveFreezeMax" : {
-        "value" : [ 3.0, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4.0, 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 3.0, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4.0, 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7 ]
       },
       "offensiveFreezeChance" : {
-        "value" : 5.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 5.0
       },
       "skillMasteryLevelRequired" : {
-        "value" : 16,
-        "skill" : false
+        "skill" : false,
+        "value" : 16
       },
       "skillTier" : {
-        "value" : 4,
-        "skill" : false
+        "skill" : false,
+        "value" : 4
       },
       "offensiveSlowTotalSpeedDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 3.0
       },
       "skillMaxLevel" : {
-        "value" : 14,
-        "skill" : false
+        "skill" : false,
+        "value" : 14
       },
       "offensiveColdModifier" : {
-        "value" : [ 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0, 90.0, 95.0, 100.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0, 90.0, 95.0, 100.0 ]
       }
     },
     "buff" : null,
-    "modifier" : true,
-    "skillTag" : "skillAqua17n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Absolute Zero.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : true
   }, {
+    "skillTag" : "skillAqua33n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\aqua\\skills\\bountyofthelake_synergy3.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Engulfment.html",
     "name" : "Engulfment",
     "parent" : "Absolute Zero",
     "attributes" : {
       "skillActiveDuration" : {
-        "value" : [ 15.0, 30.0, 45.0, 60.0, 75.0, 90.0, 105.0, 120.0, 135.0, 150.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 15.0, 30.0, 45.0, 60.0, 75.0, 90.0, 105.0, 120.0, 135.0, 150.0 ]
       },
       "skillUltimateLevel" : {
-        "value" : 10,
-        "skill" : false
+        "skill" : false,
+        "value" : 10
       },
       "skillMasteryLevelRequired" : {
-        "value" : 10,
-        "skill" : false
+        "skill" : false,
+        "value" : 10
       },
       "skillTier" : {
-        "value" : 3,
-        "skill" : false
+        "skill" : false,
+        "value" : 3
       },
       "skillMaxLevel" : {
-        "value" : 6,
-        "skill" : false
+        "skill" : false,
+        "value" : 6
       }
     },
     "buff" : null,
-    "modifier" : true,
-    "skillTag" : "skillAqua33n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Engulfment.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : true
   }, {
+    "skillTag" : "skillAqua18n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\aqua\\skills\\shoreuprising.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Shore Uprising.html",
     "name" : "Shore Uprising",
     "parent" : null,
     "attributes" : {
       "projectileLaunchNumber" : {
-        "value" : [ 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 8.0, 8.0, 8.0, 9.0, 9.0, 9.0, 9.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 8.0, 8.0, 8.0, 9.0, 9.0, 9.0, 9.0 ]
       },
       "skillCooldownTime" : {
-        "value" : [ 2.0, 1.9, 1.8, 1.7, 1.6, 1.5, 1.4, 1.3, 1.2, 1.1, 1.0, 0.8, 0.6, 0.4, 0.0, 0.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 2.0, 1.9, 1.8, 1.7, 1.6, 1.5, 1.4, 1.3, 1.2, 1.1, 1.0, 0.8, 0.6, 0.4, 0.0, 0.0 ]
       },
       "skillManaCost" : {
-        "value" : [ 35.0, 38.0, 40.0, 43.0, 45.0, 48.0, 50.0, 53.0, 55.0, 58.0, 60.0, 63.0, 65.0, 68.0, 70.0, 73.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 35.0, 38.0, 40.0, 43.0, 45.0, 48.0, 50.0, 53.0, 55.0, 58.0, 60.0, 63.0, 65.0, 68.0, 70.0, 73.0 ]
       },
       "projectilePiercingChance" : {
-        "value" : 100.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 100.0
       },
       "skillConnectionSpacing" : {
-        "value" : 62,
-        "skill" : false
+        "skill" : false,
+        "value" : 62
       },
       "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
+        "skill" : false,
+        "value" : 0.12
       },
       "offensiveColdMin" : {
-        "value" : [ 6.0, 9.0, 12.0, 15.0, 19.0, 22.0, 25.0, 28.0, 31.0, 34.0, 37.0, 40.0, 44.0, 47.0, 50.0, 53.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 6.0, 9.0, 12.0, 15.0, 19.0, 22.0, 25.0, 28.0, 31.0, 34.0, 37.0, 40.0, 44.0, 47.0, 50.0, 53.0 ]
       },
       "skillMaxLevel" : {
-        "value" : 12,
-        "skill" : false
+        "skill" : false,
+        "value" : 12
       },
       "skillUltimateLevel" : {
-        "value" : 16,
-        "skill" : false
+        "skill" : false,
+        "value" : 16
       },
       "projectileLaunchRotation" : {
-        "value" : 30.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 30.0
       },
       "offensiveColdMax" : {
-        "value" : [ 10.0, 13.0, 16.0, 20.0, 23.0, 26.0, 29.0, 32.0, 36.0, 39.0, 42.0, 45.0, 48.0, 52.0, 55.0, 58.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 10.0, 13.0, 16.0, 20.0, 23.0, 26.0, 29.0, 32.0, 36.0, 39.0, 42.0, 45.0, 48.0, 52.0, 55.0, 58.0 ]
       },
       "skillMasteryLevelRequired" : {
-        "value" : 4,
-        "skill" : false
+        "skill" : false,
+        "value" : 4
       },
       "skillTier" : {
-        "value" : 2,
-        "skill" : false
+        "skill" : false,
+        "value" : 2
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillAqua18n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Shore Uprising.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillAqua19n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\aqua\\skills\\shoreuprising_ire.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Ire of Storms.html",
     "name" : "Ire of Storms",
     "parent" : "Shore Uprising",
     "attributes" : {
       "offensiveSlowOffensiveAbilityGlobal" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "offensiveLightningMax" : {
-        "value" : [ 10.0, 13.0, 16.0, 20.0, 23.0, 26.0, 29.0, 32.0, 36.0, 39.0, 42.0, 45.0, 48.0, 52.0, 55.0, 58.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 10.0, 13.0, 16.0, 20.0, 23.0, 26.0, 29.0, 32.0, 36.0, 39.0, 42.0, 45.0, 48.0, 52.0, 55.0, 58.0 ]
       },
       "offensiveSlowOffensiveAbilityDurationMin" : {
-        "value" : 1.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 1.0
       },
       "skillMaxLevel" : {
-        "value" : 12,
-        "skill" : false
+        "skill" : false,
+        "value" : 12
       },
       "offensiveColdModifier" : {
-        "value" : [ 50.0, 67.0, 83.0, 100.0, 117.0, 133.0, 150.0, 167.0, 183.0, 200.0, 217.0, 233.0, 250.0, 267.0, 283.0, 300.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 50.0, 67.0, 83.0, 100.0, 117.0, 133.0, 150.0, 167.0, 183.0, 200.0, 217.0, 233.0, 250.0, 267.0, 283.0, 300.0 ]
       },
       "offensiveGlobalChance" : {
-        "value" : 20.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 20.0
       },
       "skillUltimateLevel" : {
-        "value" : 16,
-        "skill" : false
+        "skill" : false,
+        "value" : 16
       },
       "offensiveLightningMin" : {
-        "value" : [ 6.0, 9.0, 12.0, 15.0, 19.0, 22.0, 25.0, 28.0, 31.0, 34.0, 37.0, 40.0, 44.0, 47.0, 50.0, 53.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 6.0, 9.0, 12.0, 15.0, 19.0, 22.0, 25.0, 28.0, 31.0, 34.0, 37.0, 40.0, 44.0, 47.0, 50.0, 53.0 ]
       },
       "offensiveColdGlobal" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillMasteryLevelRequired" : {
-        "value" : 16,
-        "skill" : false
+        "skill" : false,
+        "value" : 16
       },
       "skillManaCostReduction" : {
-        "value" : [ 4.0, 5.0, 7.0, 8.0, 9.0, 11.0, 12.0, 13.0, 15.0, 16.0, 17.0, 19.0, 20.0, 21.0, 23.0, 24.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 4.0, 5.0, 7.0, 8.0, 9.0, 11.0, 12.0, 13.0, 15.0, 16.0, 17.0, 19.0, 20.0, 21.0, 23.0, 24.0 ]
       },
       "skillTier" : {
-        "value" : 4,
-        "skill" : false
+        "skill" : false,
+        "value" : 4
       },
       "offensiveSlowOffensiveAbilityMin" : {
-        "value" : [ 10.0, 13.0, 15.0, 18.0, 21.0, 23.0, 26.0, 29.0, 31.0, 34.0, 37.0, 39.0, 42.0, 45.0, 47.0, 50.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 10.0, 13.0, 15.0, 18.0, 21.0, 23.0, 26.0, 29.0, 31.0, 34.0, 37.0, 39.0, 42.0, 45.0, 47.0, 50.0 ]
       }
     },
     "buff" : null,
-    "modifier" : true,
-    "skillTag" : "skillAqua19n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Ire of Storms.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : true
   }, {
+    "skillTag" : "skillAqua25n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\aqua\\skills\\pet\\geyser_geyser.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Hydrothermal Explosion.html",
     "name" : "Hydrothermal Explosion",
     "parent" : null,
     "attributes" : {
       "offensiveSlowFireDurationMin" : {
-        "value" : 1.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 1.0
       },
       "projectileFragmentsLaunchNumberMin" : {
-        "value" : [ 1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 5.0, 5.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 5.0, 5.0 ]
       },
       "skillActiveDuration" : {
-        "value" : 6.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 6.0
       },
       "offensiveFumbleDurationMin" : {
-        "value" : 2.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 2.0
       },
       "skillCooldownTime" : {
-        "value" : 32.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 32.0
       },
       "skillManaCost" : {
-        "value" : [ 100.0, 110.0, 121.0, 131.0, 141.0, 152.0, 162.0, 172.0, 182.0, 193.0, 203.0, 213.0, 224.0, 234.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 100.0, 110.0, 121.0, 131.0, 141.0, 152.0, 162.0, 172.0, 182.0, 193.0, 203.0, 213.0, 224.0, 234.0 ]
       },
       "projectileExplosionRadius" : {
-        "value" : 5.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 5.0
       },
       "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
+        "skill" : false,
+        "value" : 0.12
       },
       "offensivePhysicalMin" : {
-        "value" : [ 16.0, 22.0, 27.0, 33.0, 39.0, 44.0, 50.0, 56.0, 62.0, 67.0, 73.0, 79.0, 84.0, 90.0, 94.0, 99.0, 103.0, 108.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 16.0, 22.0, 27.0, 33.0, 39.0, 44.0, 50.0, 56.0, 62.0, 67.0, 73.0, 79.0, 84.0, 90.0, 94.0, 99.0, 103.0, 108.0 ]
       },
       "offensiveProjectileFumbleMin" : {
-        "value" : [ 20.0, 22.0, 25.0, 27.0, 29.0, 32.0, 34.0, 36.0, 39.0, 41.0, 44.0, 46.0, 48.0, 51.0, 53.0, 55.0, 58.0, 60.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 20.0, 22.0, 25.0, 27.0, 29.0, 32.0, 34.0, 36.0, 39.0, 41.0, 44.0, 46.0, 48.0, 51.0, 53.0, 55.0, 58.0, 60.0 ]
       },
       "offensiveSlowFireMin" : {
-        "value" : [ 35.0, 46.0, 54.0, 65.0, 73.0, 84.0, 94.0, 102.0, 113.0, 122.0, 132.0, 142.0, 151.0, 161.0, 170.0, 180.0, 190.0, 197.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 35.0, 46.0, 54.0, 65.0, 73.0, 84.0, 94.0, 102.0, 113.0, 122.0, 132.0, 142.0, 151.0, 161.0, 170.0, 180.0, 190.0, 197.0 ]
       },
       "skillMaxLevel" : {
-        "value" : 10,
-        "skill" : false
+        "skill" : false,
+        "value" : 10
       },
       "offensiveProjectileFumbleDurationMin" : {
-        "value" : 2.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 2.0
       },
       "skillUltimateLevel" : {
-        "value" : 14,
-        "skill" : false
+        "skill" : false,
+        "value" : 14
       },
       "offensiveFumbleMin" : {
-        "value" : [ 20.0, 22.0, 25.0, 27.0, 29.0, 32.0, 34.0, 36.0, 39.0, 41.0, 44.0, 46.0, 48.0, 51.0, 53.0, 55.0, 58.0, 60.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 20.0, 22.0, 25.0, 27.0, 29.0, 32.0, 34.0, 36.0, 39.0, 41.0, 44.0, 46.0, 48.0, 51.0, 53.0, 55.0, 58.0, 60.0 ]
       },
       "projectileFragmentsLaunchNumberMax" : {
-        "value" : [ 3.0, 3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 5.0, 6.0, 6.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 3.0, 3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 5.0, 6.0, 6.0 ]
       },
       "offensiveSlowColdMin" : {
-        "value" : [ 35.0, 46.0, 54.0, 65.0, 73.0, 84.0, 94.0, 102.0, 113.0, 122.0, 132.0, 142.0, 151.0, 161.0, 170.0, 180.0, 190.0, 197.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 35.0, 46.0, 54.0, 65.0, 73.0, 84.0, 94.0, 102.0, 113.0, 122.0, 132.0, 142.0, 151.0, 161.0, 170.0, 180.0, 190.0, 197.0 ]
       },
       "offensiveSlowColdDurationMin" : {
-        "value" : 1.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 1.0
       },
       "skillMasteryLevelRequired" : {
-        "value" : 40,
-        "skill" : false
+        "skill" : false,
+        "value" : 40
       },
       "skillTier" : {
-        "value" : 7,
-        "skill" : false
+        "skill" : false,
+        "value" : 7
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillAqua25n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Hydrothermal Explosion.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillAqua21n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\aqua\\skills\\regenerativeshell.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Regenerative Shell.html",
     "name" : "Regenerative Shell",
     "parent" : null,
     "attributes" : {
       "skillActiveDuration" : {
-        "value" : 12.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 12.0
       },
       "skillCooldownTime" : {
-        "value" : 40.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 40.0
       },
       "skillUltimateLevel" : {
-        "value" : 14,
-        "skill" : false
+        "skill" : false,
+        "value" : 14
       },
       "characterLifeRegen" : {
-        "value" : [ 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0 ]
       },
       "characterDodgePercent" : {
-        "value" : [ 8.0, 10.0, 12.0, 14.0, 16.0, 17.0, 19.0, 20.0, 22.0, 23.0, 25.0, 26.0, 28.0, 29.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 8.0, 10.0, 12.0, 14.0, 16.0, 17.0, 19.0, 20.0, 22.0, 23.0, 25.0, 26.0, 28.0, 29.0 ]
       },
       "characterManaRegen" : {
-        "value" : [ 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0 ]
       },
       "onHitActivationChance" : {
-        "value" : 8.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 8.0
       },
       "characterDeflectProjectile" : {
-        "value" : [ 8.0, 10.0, 12.0, 14.0, 16.0, 17.0, 19.0, 20.0, 22.0, 23.0, 25.0, 26.0, 28.0, 29.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 8.0, 10.0, 12.0, 14.0, 16.0, 17.0, 19.0, 20.0, 22.0, 23.0, 25.0, 26.0, 28.0, 29.0 ]
       },
       "skillMasteryLevelRequired" : {
-        "value" : 32,
-        "skill" : false
+        "skill" : false,
+        "value" : 32
       },
       "skillTier" : {
-        "value" : 6,
-        "skill" : false
+        "skill" : false,
+        "value" : 6
       },
       "skillMaxLevel" : {
-        "value" : 10,
-        "skill" : false
+        "skill" : false,
+        "value" : 10
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillAqua21n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Regenerative Shell.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillAqua26n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\aqua\\skills\\environmentaladaption.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Environmental Adaptation.html",
     "name" : "Environmental Adaptation",
     "parent" : null,
     "attributes" : {
       "defensiveCold" : {
-        "value" : [ 4.0, 7.0, 11.0, 14.0, 17.0, 20.0, 24.0, 27.0, 30.0, 33.0, 37.0, 40.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 4.0, 7.0, 11.0, 14.0, 17.0, 20.0, 24.0, 27.0, 30.0, 33.0, 37.0, 40.0 ]
       },
       "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
+        "skill" : false,
+        "value" : 12
       },
       "defensiveFreeze" : {
-        "value" : [ 8.0, 14.0, 22.0, 28.0, 34.0, 40.0, 48.0, 54.0, 60.0, 66.0, 74.0, 80.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 8.0, 14.0, 22.0, 28.0, 34.0, 40.0, 48.0, 54.0, 60.0, 66.0, 74.0, 80.0 ]
       },
       "skillMasteryLevelRequired" : {
-        "value" : 4,
-        "skill" : false
+        "skill" : false,
+        "value" : 4
       },
       "defensivePoison" : {
-        "value" : [ 4.0, 7.0, 11.0, 14.0, 17.0, 20.0, 24.0, 27.0, 30.0, 33.0, 37.0, 40.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 4.0, 7.0, 11.0, 14.0, 17.0, 20.0, 24.0, 27.0, 30.0, 33.0, 37.0, 40.0 ]
       },
       "skillTier" : {
-        "value" : 2,
-        "skill" : false
+        "skill" : false,
+        "value" : 2
       },
       "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
+        "skill" : false,
+        "value" : 8
       },
       "defensiveFire" : {
-        "value" : [ 4.0, 7.0, 11.0, 14.0, 17.0, 20.0, 24.0, 27.0, 30.0, 33.0, 37.0, 40.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 4.0, 7.0, 11.0, 14.0, 17.0, 20.0, 24.0, 27.0, 30.0, 33.0, 37.0, 40.0 ]
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillAqua26n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Environmental Adaptation.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillAqua27n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\aqua\\skills\\scalyskin.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Scaly Skin.html",
     "name" : "Scaly Skin",
     "parent" : null,
     "attributes" : {
       "defensiveProtection" : {
-        "value" : [ 6.0, 12.0, 18.0, 24.0, 30.0, 36.0, 42.0, 48.0, 54.0, 60.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 6.0, 12.0, 18.0, 24.0, 30.0, 36.0, 42.0, 48.0, 54.0, 60.0 ]
       },
       "skillUltimateLevel" : {
-        "value" : 10,
-        "skill" : false
+        "skill" : false,
+        "value" : 10
       },
       "defensivePierce" : {
-        "value" : [ 4.0, 8.0, 11.0, 15.0, 18.0, 22.0, 25.0, 29.0, 32.0, 36.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 4.0, 8.0, 11.0, 15.0, 18.0, 22.0, 25.0, 29.0, 32.0, 36.0 ]
       },
       "characterDexterity" : {
-        "value" : [ 6.0, 12.0, 18.0, 24.0, 30.0, 36.0, 42.0, 48.0, 54.0, 60.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 6.0, 12.0, 18.0, 24.0, 30.0, 36.0, 42.0, 48.0, 54.0, 60.0 ]
       },
       "skillMasteryLevelRequired" : {
-        "value" : 10,
-        "skill" : false
+        "skill" : false,
+        "value" : 10
       },
       "skillTier" : {
-        "value" : 3,
-        "skill" : false
+        "skill" : false,
+        "value" : 3
       },
       "skillMaxLevel" : {
-        "value" : 6,
-        "skill" : false
+        "skill" : false,
+        "value" : 6
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillAqua27n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Scaly Skin.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillAqua29n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\aqua\\skills\\hoarfrost.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Hoarfrost.html",
     "name" : "Hoarfrost",
     "parent" : null,
     "attributes" : {
       "hoarfrost" : {
+        "skill" : true,
         "value" : {
+          "skillTag" : "skillAqua29n",
+          "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\aqua\\skills\\hoarfrostbuff.dbr",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Hoarfrost.html",
           "name" : "Hoarfrost",
           "parent" : null,
           "attributes" : {
             "skillActiveDuration" : {
-              "value" : [ 3.0, 3.4, 3.8, 4.2, 4.6, 5.0, 5.4, 5.8, 6.2, 6.6, 7.0, 7.5 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 3.0, 3.4, 3.8, 4.2, 4.6, 5.0, 5.4, 5.8, 6.2, 6.6, 7.0, 7.5 ]
             },
             "skillCooldownTime" : {
-              "value" : 8.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 8.0
             },
             "skillManaCost" : {
-              "value" : [ 50.0, 52.5, 55.0, 57.5, 60.0, 62.5, 65.0, 67.5, 70.0, 72.5, 75.0, 77.5 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 50.0, 52.5, 55.0, 57.5, 60.0, 62.5, 65.0, 67.5, 70.0, 72.5, 75.0, 77.5 ]
             },
             "skillConnectionSpacing" : {
-              "value" : 62,
-              "skill" : false
+              "skill" : false,
+              "value" : 62
             },
             "cameraShakeAmplitude" : {
-              "value" : 0.12,
-              "skill" : false
+              "skill" : false,
+              "value" : 0.12
             },
             "damageAbsorptionPercent" : {
-              "value" : 70.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 70.0
             },
             "skillMaxLevel" : {
-              "value" : 8,
-              "skill" : false
+              "skill" : false,
+              "value" : 8
             },
             "defensiveFireDuration" : {
-              "value" : 100.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 100.0
             },
             "debufSkill" : {
-              "value" : 1,
-              "skill" : false
+              "skill" : false,
+              "value" : 1
             },
             "skillUltimateLevel" : {
-              "value" : 12,
-              "skill" : false
+              "skill" : false,
+              "value" : 12
             },
             "offensiveSlowColdMin" : {
-              "value" : [ 10.0, 23.0, 38.0, 53.0, 67.0, 83.0, 97.0, 113.0, 126.0, 141.0, 157.0, 170.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 10.0, 23.0, 38.0, 53.0, 67.0, 83.0, 97.0, 113.0, 126.0, 141.0, 157.0, 170.0 ]
             },
             "offensiveSlowColdDurationMin" : {
-              "value" : 1.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 1.0
             },
             "skillTargetRadius" : {
-              "value" : [ 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0 ]
             },
             "skillMasteryLevelRequired" : {
-              "value" : 10,
-              "skill" : false
+              "skill" : false,
+              "value" : 10
             },
             "skillTier" : {
-              "value" : 3,
-              "skill" : false
+              "skill" : false,
+              "value" : 3
             }
           },
           "buff" : null,
-          "modifier" : false,
-          "skillTag" : "skillAqua29n",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Hoarfrost.html",
-          "skillDescription" : null
-        },
-        "skill" : true
+          "skillDescription" : null,
+          "modifier" : false
+        }
       }
     },
-    "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillAqua29n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Hoarfrost.html",
-    "skillDescription" : null
+    "buff" : {
+      "skillTag" : "skillAqua29n",
+      "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\aqua\\skills\\hoarfrostbuff.dbr",
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Hoarfrost.html",
+      "name" : "Hoarfrost",
+      "parent" : null,
+      "attributes" : {
+        "skillActiveDuration" : {
+          "skill" : false,
+          "value" : [ 3.0, 3.4, 3.8, 4.2, 4.6, 5.0, 5.4, 5.8, 6.2, 6.6, 7.0, 7.5 ]
+        },
+        "skillCooldownTime" : {
+          "skill" : false,
+          "value" : 8.0
+        },
+        "skillManaCost" : {
+          "skill" : false,
+          "value" : [ 50.0, 52.5, 55.0, 57.5, 60.0, 62.5, 65.0, 67.5, 70.0, 72.5, 75.0, 77.5 ]
+        },
+        "skillConnectionSpacing" : {
+          "skill" : false,
+          "value" : 62
+        },
+        "cameraShakeAmplitude" : {
+          "skill" : false,
+          "value" : 0.12
+        },
+        "damageAbsorptionPercent" : {
+          "skill" : false,
+          "value" : 70.0
+        },
+        "skillMaxLevel" : {
+          "skill" : false,
+          "value" : 8
+        },
+        "defensiveFireDuration" : {
+          "skill" : false,
+          "value" : 100.0
+        },
+        "debufSkill" : {
+          "skill" : false,
+          "value" : 1
+        },
+        "skillUltimateLevel" : {
+          "skill" : false,
+          "value" : 12
+        },
+        "offensiveSlowColdMin" : {
+          "skill" : false,
+          "value" : [ 10.0, 23.0, 38.0, 53.0, 67.0, 83.0, 97.0, 113.0, 126.0, 141.0, 157.0, 170.0 ]
+        },
+        "offensiveSlowColdDurationMin" : {
+          "skill" : false,
+          "value" : 1.0
+        },
+        "skillTargetRadius" : {
+          "skill" : false,
+          "value" : [ 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "skill" : false,
+          "value" : 10
+        },
+        "skillTier" : {
+          "skill" : false,
+          "value" : 3
+        }
+      },
+      "buff" : null,
+      "skillDescription" : null,
+      "modifier" : false
+    },
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillAqua31n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\aqua\\skills\\hurricanespirit.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Hurricane's Spirit.html",
     "name" : "Hurricane's Spirit",
     "parent" : null,
     "attributes" : {
       "hurricanespirit" : {
+        "skill" : true,
         "value" : {
+          "skillTag" : "skillAqua31n",
+          "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\aqua\\skills\\hurricanespirit_buff.dbr",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Hurricane's Spirit.html",
           "name" : "Hurricane's Spirit",
           "parent" : null,
           "attributes" : {
             "skillActiveDuration" : {
-              "value" : 1.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 1.0
             },
             "skillCooldownTime" : {
-              "value" : 10.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 10.0
             },
             "characterManaLimitReserve" : {
-              "value" : 100.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 100.0
             },
             "skillActiveManaCost" : {
-              "value" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ]
             },
             "skillWeaponTintRed" : {
-              "value" : 1.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 1.0
             },
             "skillConnectionSpacing" : {
-              "value" : 62,
-              "skill" : false
+              "skill" : false,
+              "value" : 62
             },
             "cameraShakeAmplitude" : {
-              "value" : 0.12,
-              "skill" : false
+              "skill" : false,
+              "value" : 0.12
             },
             "skillMaxLevel" : {
-              "value" : 10,
-              "skill" : false
+              "skill" : false,
+              "value" : 10
             },
             "characterTotalSpeedModifier" : {
-              "value" : [ -2.0, -3.0, -5.0, -6.0, -8.0, -9.0, -10.0, -12.0, -13.0, -14.0, -16.0, -17.0, -19.0, -20.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ -2.0, -3.0, -5.0, -6.0, -8.0, -9.0, -10.0, -12.0, -13.0, -14.0, -16.0, -17.0, -19.0, -20.0 ]
             },
             "debufSkill" : {
-              "value" : 1,
-              "skill" : false
+              "skill" : false,
+              "value" : 1
             },
             "defensiveCold" : {
-              "value" : [ -10.0, -12.0, -15.0, -17.0, -19.0, -22.0, -24.0, -26.0, -28.0, -31.0, -33.0, -35.0, -38.0, -40.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ -10.0, -12.0, -15.0, -17.0, -19.0, -22.0, -24.0, -26.0, -28.0, -31.0, -33.0, -35.0, -38.0, -40.0 ]
             },
             "skillUltimateLevel" : {
-              "value" : 14,
-              "skill" : false
+              "skill" : false,
+              "value" : 14
             },
             "skillTargetRadius" : {
-              "value" : 5.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 5.0
             },
             "skillMasteryLevelRequired" : {
-              "value" : 16,
-              "skill" : false
+              "skill" : false,
+              "value" : 16
             },
             "skillTier" : {
-              "value" : 4,
-              "skill" : false
+              "skill" : false,
+              "value" : 4
             },
             "defensiveProtectionModifier" : {
-              "value" : [ -5.0, -7.0, -9.0, -11.0, -13.0, -15.0, -17.0, -18.0, -20.0, -22.0, -24.0, -26.0, -28.0, -30.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ -5.0, -7.0, -9.0, -11.0, -13.0, -15.0, -17.0, -18.0, -20.0, -22.0, -24.0, -26.0, -28.0, -30.0 ]
             }
           },
           "buff" : null,
-          "modifier" : false,
-          "skillTag" : "skillAqua31n",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Hurricane's Spirit.html",
-          "skillDescription" : null
-        },
-        "skill" : true
+          "skillDescription" : null,
+          "modifier" : false
+        }
       }
     },
-    "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillAqua31n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Hurricane's Spirit.html",
-    "skillDescription" : null
+    "buff" : {
+      "skillTag" : "skillAqua31n",
+      "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\aqua\\skills\\hurricanespirit_buff.dbr",
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Hurricane's Spirit.html",
+      "name" : "Hurricane's Spirit",
+      "parent" : null,
+      "attributes" : {
+        "skillActiveDuration" : {
+          "skill" : false,
+          "value" : 1.0
+        },
+        "skillCooldownTime" : {
+          "skill" : false,
+          "value" : 10.0
+        },
+        "characterManaLimitReserve" : {
+          "skill" : false,
+          "value" : 100.0
+        },
+        "skillActiveManaCost" : {
+          "skill" : false,
+          "value" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ]
+        },
+        "skillWeaponTintRed" : {
+          "skill" : false,
+          "value" : 1.0
+        },
+        "skillConnectionSpacing" : {
+          "skill" : false,
+          "value" : 62
+        },
+        "cameraShakeAmplitude" : {
+          "skill" : false,
+          "value" : 0.12
+        },
+        "skillMaxLevel" : {
+          "skill" : false,
+          "value" : 10
+        },
+        "characterTotalSpeedModifier" : {
+          "skill" : false,
+          "value" : [ -2.0, -3.0, -5.0, -6.0, -8.0, -9.0, -10.0, -12.0, -13.0, -14.0, -16.0, -17.0, -19.0, -20.0 ]
+        },
+        "debufSkill" : {
+          "skill" : false,
+          "value" : 1
+        },
+        "defensiveCold" : {
+          "skill" : false,
+          "value" : [ -10.0, -12.0, -15.0, -17.0, -19.0, -22.0, -24.0, -26.0, -28.0, -31.0, -33.0, -35.0, -38.0, -40.0 ]
+        },
+        "skillUltimateLevel" : {
+          "skill" : false,
+          "value" : 14
+        },
+        "skillTargetRadius" : {
+          "skill" : false,
+          "value" : 5.0
+        },
+        "skillMasteryLevelRequired" : {
+          "skill" : false,
+          "value" : 16
+        },
+        "skillTier" : {
+          "skill" : false,
+          "value" : 4
+        },
+        "defensiveProtectionModifier" : {
+          "skill" : false,
+          "value" : [ -5.0, -7.0, -9.0, -11.0, -13.0, -15.0, -17.0, -18.0, -20.0, -22.0, -24.0, -26.0, -28.0, -30.0 ]
+        }
+      },
+      "buff" : null,
+      "skillDescription" : null,
+      "modifier" : false
+    },
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillAqua32n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\aqua\\skills\\hurricanespirit_apothichchasm.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Aphotic Chasm.html",
     "name" : "Aphotic Chasm",
     "parent" : "Hurricane's Spirit",
     "attributes" : {
       "defensiveTotalSpeedResistance" : {
-        "value" : [ -10.0, -16.0, -21.0, -27.0, -32.0, -38.0, -43.0, -49.0, -54.0, -60.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ -10.0, -16.0, -21.0, -27.0, -32.0, -38.0, -43.0, -49.0, -54.0, -60.0 ]
       },
       "skillUltimateLevel" : {
-        "value" : 10,
-        "skill" : false
+        "skill" : false,
+        "value" : 10
       },
       "characterManaLimitReserve" : {
-        "value" : [ 50.0, 56.0, 61.0, 67.0, 72.0, 78.0, 83.0, 89.0, 94.0, 100.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 50.0, 56.0, 61.0, 67.0, 72.0, 78.0, 83.0, 89.0, 94.0, 100.0 ]
       },
       "defensiveFreeze" : {
-        "value" : [ -10.0, -16.0, -21.0, -27.0, -32.0, -38.0, -43.0, -49.0, -54.0, -60.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ -10.0, -16.0, -21.0, -27.0, -32.0, -38.0, -43.0, -49.0, -54.0, -60.0 ]
       },
       "offensiveTotalDamageModifier" : {
-        "value" : [ -5.0, -6.0, -7.0, -8.0, -9.0, -11.0, -12.0, -13.0, -14.0, -15.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ -5.0, -6.0, -7.0, -8.0, -9.0, -11.0, -12.0, -13.0, -14.0, -15.0 ]
       },
       "skillMasteryLevelRequired" : {
-        "value" : 40,
-        "skill" : false
+        "skill" : false,
+        "value" : 40
       },
       "defensiveColdDuration" : {
-        "value" : [ -25.0, -33.0, -42.0, -50.0, -58.0, -67.0, -75.0, -83.0, -92.0, -100.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ -25.0, -33.0, -42.0, -50.0, -58.0, -67.0, -75.0, -83.0, -92.0, -100.0 ]
       },
       "skillTier" : {
-        "value" : 7,
-        "skill" : false
+        "skill" : false,
+        "value" : 7
       },
       "skillMaxLevel" : {
-        "value" : 6,
-        "skill" : false
+        "skill" : false,
+        "value" : 6
       }
     },
     "buff" : null,
-    "modifier" : true,
-    "skillTag" : "skillAqua32n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Aphotic Chasm.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : true
   } ],
-  "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery.html"
+  "skillTree" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\aqua\\aqua_skilltree.dbr"
 }

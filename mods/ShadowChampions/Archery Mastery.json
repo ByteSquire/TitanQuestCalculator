@@ -1,1901 +1,2679 @@
 {
+  "mastery" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\archery_mastery.dbr",
+  "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery.html",
   "name" : "Archery Mastery",
   "skills" : [ {
+    "skillTag" : "skillArchery1n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\eagleeye.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Eagle Eye.html",
     "name" : "Eagle Eye",
     "parent" : null,
     "attributes" : {
       "skillManaCost" : {
-        "value" : 1.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 1.0
       },
       "skillConnectionSpacing" : {
-        "value" : 62,
-        "skill" : false
+        "skill" : false,
+        "value" : 62
       },
       "Staff" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
+        "skill" : false,
+        "value" : 0.12
       },
       "Bow" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "offensiveSlowManaLeachMin" : {
-        "value" : [ 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0 ]
       },
       "offensivePierceMin" : {
-        "value" : [ 6.0, 12.0, 19.0, 25.0, 31.0, 37.0, 44.0, 50.0, 56.0, 62.0, 69.0, 75.0, 81.0, 87.0, 94.0, 100.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 6.0, 12.0, 19.0, 25.0, 31.0, 37.0, 44.0, 50.0, 56.0, 62.0, 69.0, 75.0, 81.0, 87.0, 94.0, 100.0 ]
       },
       "skillMaxLevel" : {
-        "value" : 12,
-        "skill" : false
+        "skill" : false,
+        "value" : 12
       },
       "RangedOneHand" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillUltimateLevel" : {
-        "value" : 16,
-        "skill" : false
+        "skill" : false,
+        "value" : 16
       },
       "offensiveSlowManaLeachDurationMin" : {
-        "value" : 2.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 2.0
       },
       "skillMasteryLevelRequired" : {
-        "value" : 4,
-        "skill" : false
+        "skill" : false,
+        "value" : 4
       },
       "skillTier" : {
-        "value" : 2,
-        "skill" : false
+        "skill" : false,
+        "value" : 2
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillArchery1n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Eagle Eye.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillArchery4n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\eagleye_customizedarrowheads.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Acute Precision.html",
     "name" : "Acute Precision",
     "parent" : "Eagle Eye",
     "attributes" : {
       "projectilePiercing" : {
-        "value" : [ 8.0, 10.0, 13.0, 15.0, 18.0, 20.0, 23.0, 25.0, 28.0, 30.0, 33.0, 35.0, 38.0, 40.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 8.0, 10.0, 13.0, 15.0, 18.0, 20.0, 23.0, 25.0, 28.0, 30.0, 33.0, 35.0, 38.0, 40.0 ]
       },
       "skillManaCost" : {
-        "value" : 1.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 1.0
       },
       "skillUltimateLevel" : {
-        "value" : 14,
-        "skill" : false
+        "skill" : false,
+        "value" : 14
       },
       "offensivePierceModifier" : {
-        "value" : [ 5.0, 9.0, 13.0, 18.0, 22.0, 26.0, 30.0, 35.0, 39.0, 43.0, 47.0, 52.0, 56.0, 60.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 5.0, 9.0, 13.0, 18.0, 22.0, 26.0, 30.0, 35.0, 39.0, 43.0, 47.0, 52.0, 56.0, 60.0 ]
       },
       "skillMasteryLevelRequired" : {
-        "value" : 16,
-        "skill" : false
+        "skill" : false,
+        "value" : 16
       },
       "skillTier" : {
-        "value" : 4,
-        "skill" : false
+        "skill" : false,
+        "value" : 4
       },
       "skillMaxLevel" : {
-        "value" : 10,
-        "skill" : false
+        "skill" : false,
+        "value" : 10
       }
     },
     "buff" : null,
-    "modifier" : true,
-    "skillTag" : "skillArchery4n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Acute Precision.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : true
   }, {
+    "skillTag" : "skillArchery3n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\eagleye_headshot.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Headshot.html",
     "name" : "Headshot",
     "parent" : "Acute Precision",
     "attributes" : {
       "skillProjectileSpeedModifier" : {
-        "value" : [ 15.0, 24.0, 33.0, 43.0, 52.0, 61.0, 70.0, 80.0, 89.0, 98.0, 107.0, 117.0, 126.0, 135.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 15.0, 24.0, 33.0, 43.0, 52.0, 61.0, 70.0, 80.0, 89.0, 98.0, 107.0, 117.0, 126.0, 135.0 ]
       },
       "offensivePhysicalModifier" : {
-        "value" : [ 10.0, 13.0, 16.0, 19.0, 22.0, 25.0, 28.0, 32.0, 35.0, 38.0, 41.0, 44.0, 47.0, 50.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 10.0, 13.0, 16.0, 19.0, 22.0, 25.0, 28.0, 32.0, 35.0, 38.0, 41.0, 44.0, 47.0, 50.0 ]
       },
       "offensiveStunMin" : {
-        "value" : [ 0.8, 0.96, 1.04, 1.2, 1.28, 1.44, 1.52, 1.68, 1.76, 1.92, 2.0, 2.16, 2.24, 2.4 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 0.8, 0.96, 1.04, 1.2, 1.28, 1.44, 1.52, 1.68, 1.76, 1.92, 2.0, 2.16, 2.24, 2.4 ]
       },
       "skillManaCost" : {
-        "value" : 1.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 1.0
       },
       "skillUltimateLevel" : {
-        "value" : 14,
-        "skill" : false
+        "skill" : false,
+        "value" : 14
       },
       "offensiveStunMax" : {
-        "value" : [ 1.2, 1.44, 1.56, 1.8, 1.92, 2.16, 2.28, 2.52, 2.64, 2.88, 3.0, 3.24, 3.36, 3.6 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 1.2, 1.44, 1.56, 1.8, 1.92, 2.16, 2.28, 2.52, 2.64, 2.88, 3.0, 3.24, 3.36, 3.6 ]
       },
       "skillMasteryLevelRequired" : {
-        "value" : 32,
-        "skill" : false
+        "skill" : false,
+        "value" : 32
       },
       "skillTier" : {
-        "value" : 6,
-        "skill" : false
+        "skill" : false,
+        "value" : 6
       },
       "skillMaxLevel" : {
-        "value" : 10,
-        "skill" : false
+        "skill" : false,
+        "value" : 10
       },
       "offensiveStunChance" : {
-        "value" : [ 4.0, 4.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 8.0, 8.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 4.0, 4.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 8.0, 8.0 ]
       }
     },
     "buff" : null,
-    "modifier" : true,
-    "skillTag" : "skillArchery3n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Headshot.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : true
   }, {
+    "skillTag" : "skillArchery25n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\eagleye_arrowinthaknee.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Languid Death.html",
     "name" : "Languid Death",
     "parent" : "Headshot",
     "attributes" : {
       "offensiveSlowRunSpeedMin" : {
-        "value" : [ 10.0, 13.0, 15.0, 18.0, 21.0, 24.0, 26.0, 29.0, 32.0, 35.0, 37.0, 40.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 10.0, 13.0, 15.0, 18.0, 21.0, 24.0, 26.0, 29.0, 32.0, 35.0, 37.0, 40.0 ]
       },
       "offensiveSlowPoisonModifier" : {
-        "value" : [ 8.0, 11.0, 15.0, 18.0, 21.0, 25.0, 28.0, 32.0, 35.0, 38.0, 42.0, 45.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 8.0, 11.0, 15.0, 18.0, 21.0, 25.0, 28.0, 32.0, 35.0, 38.0, 42.0, 45.0 ]
       },
       "offensiveSlowBleedingMin" : {
-        "value" : [ 9.0, 11.0, 12.0, 14.0, 16.0, 18.0, 19.0, 21.0, 23.0, 25.0, 26.0, 28.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 9.0, 11.0, 12.0, 14.0, 16.0, 18.0, 19.0, 21.0, 23.0, 25.0, 26.0, 28.0 ]
       },
       "skillManaCost" : {
-        "value" : 1.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 1.0
       },
       "offensiveSlowRunSpeedChance" : {
-        "value" : 33.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 33.0
       },
       "offensiveSlowBleedingDurationMin" : {
-        "value" : 4.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 4.0
       },
       "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
+        "skill" : false,
+        "value" : 8
       },
       "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
+        "skill" : false,
+        "value" : 12
       },
       "offensiveSlowRunSpeedDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 3.0
       },
       "offensiveSlowPoisonDurationMin" : {
-        "value" : 4.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 4.0
       },
       "skillMasteryLevelRequired" : {
-        "value" : 24,
-        "skill" : false
+        "skill" : false,
+        "value" : 24
       },
       "skillTier" : {
-        "value" : 5,
-        "skill" : false
+        "skill" : false,
+        "value" : 5
       },
       "offensiveSlowPoisonMin" : {
-        "value" : [ 9.0, 11.0, 12.0, 14.0, 16.0, 18.0, 19.0, 21.0, 23.0, 25.0, 26.0, 28.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 9.0, 11.0, 12.0, 14.0, 16.0, 18.0, 19.0, 21.0, 23.0, 25.0, 26.0, 28.0 ]
       },
       "offensiveSlowBleedingModifier" : {
-        "value" : [ 8.0, 11.0, 15.0, 18.0, 21.0, 25.0, 28.0, 32.0, 35.0, 38.0, 42.0, 45.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 8.0, 11.0, 15.0, 18.0, 21.0, 25.0, 28.0, 32.0, 35.0, 38.0, 42.0, 45.0 ]
       }
     },
     "buff" : null,
-    "modifier" : true,
-    "skillTag" : "skillArchery25n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Languid Death.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : true
   }, {
+    "skillTag" : "skillArchery21n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\razorsharpening.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Razor Sharpening.html",
     "name" : "Razor Sharpening",
     "parent" : null,
     "attributes" : {
       "razorsharpening" : {
+        "skill" : true,
         "value" : {
+          "skillTag" : "skillArchery21n",
+          "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\razorsharpeningbuff.dbr",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Razor Sharpening.html",
           "name" : "Razor Sharpening",
           "parent" : null,
           "attributes" : {
             "skillCooldownTime" : {
-              "value" : 4.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 4.0
             },
             "skillWeaponTintBlue" : {
-              "value" : 0.5,
-              "skill" : false
+              "skill" : false,
+              "value" : 0.5
             },
             "characterManaLimitReserve" : {
-              "value" : 50.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 50.0
             },
             "offensivePierceModifier" : {
-              "value" : [ 4.0, 7.0, 10.0, 13.0, 16.0, 19.0, 22.0, 25.0, 29.0, 32.0, 35.0, 38.0, 41.0, 44.0, 47.0, 50.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 4.0, 7.0, 10.0, 13.0, 16.0, 19.0, 22.0, 25.0, 29.0, 32.0, 35.0, 38.0, 41.0, 44.0, 47.0, 50.0 ]
             },
             "skillActiveManaCost" : {
-              "value" : 1.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 1.0
             },
             "skillConnectionSpacing" : {
-              "value" : 62,
-              "skill" : false
+              "skill" : false,
+              "value" : 62
             },
             "cameraShakeAmplitude" : {
-              "value" : 0.12,
-              "skill" : false
+              "skill" : false,
+              "value" : 0.12
             },
             "Bow" : {
-              "value" : 1,
-              "skill" : false
+              "skill" : false,
+              "value" : 1
             },
             "skillMaxLevel" : {
-              "value" : 12,
-              "skill" : false
+              "skill" : false,
+              "value" : 12
             },
             "RangedOneHand" : {
-              "value" : 1,
-              "skill" : false
+              "skill" : false,
+              "value" : 1
             },
             "skillUltimateLevel" : {
-              "value" : 16,
-              "skill" : false
+              "skill" : false,
+              "value" : 16
             },
             "skillWeaponTintGreen" : {
-              "value" : 0.4,
-              "skill" : false
+              "skill" : false,
+              "value" : 0.4
             },
             "Sword" : {
-              "value" : 1,
-              "skill" : false
+              "skill" : false,
+              "value" : 1
             },
             "skillTargetRadius" : {
-              "value" : [ 6.0, 6.0, 7.0, 7.0, 8.0, 8.0, 8.0, 9.0, 9.0, 10.0, 10.0, 10.0, 11.0, 11.0, 12.0, 12.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 6.0, 6.0, 7.0, 7.0, 8.0, 8.0, 8.0, 9.0, 9.0, 10.0, 10.0, 10.0, 11.0, 11.0, 12.0, 12.0 ]
             },
             "skillMasteryLevelRequired" : {
-              "value" : 4,
-              "skill" : false
+              "skill" : false,
+              "value" : 4
             },
             "skillTier" : {
-              "value" : 2,
-              "skill" : false
+              "skill" : false,
+              "value" : 2
             },
             "Spear" : {
-              "value" : 1,
-              "skill" : false
+              "skill" : false,
+              "value" : 1
             },
             "offensivePierceRatioModifier" : {
-              "value" : [ 10.0, 14.0, 19.0, 23.0, 27.0, 32.0, 36.0, 40.0, 45.0, 49.0, 53.0, 58.0, 62.0, 66.0, 71.0, 75.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 10.0, 14.0, 19.0, 23.0, 27.0, 32.0, 36.0, 40.0, 45.0, 49.0, 53.0, 58.0, 62.0, 66.0, 71.0, 75.0 ]
             }
           },
           "buff" : null,
-          "modifier" : false,
-          "skillTag" : "skillArchery21n",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Razor Sharpening.html",
-          "skillDescription" : null
-        },
-        "skill" : true
+          "skillDescription" : null,
+          "modifier" : false
+        }
       }
     },
-    "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillArchery21n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Razor Sharpening.html",
-    "skillDescription" : null
+    "buff" : {
+      "skillTag" : "skillArchery21n",
+      "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\razorsharpeningbuff.dbr",
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Razor Sharpening.html",
+      "name" : "Razor Sharpening",
+      "parent" : null,
+      "attributes" : {
+        "skillCooldownTime" : {
+          "skill" : false,
+          "value" : 4.0
+        },
+        "skillWeaponTintBlue" : {
+          "skill" : false,
+          "value" : 0.5
+        },
+        "characterManaLimitReserve" : {
+          "skill" : false,
+          "value" : 50.0
+        },
+        "offensivePierceModifier" : {
+          "skill" : false,
+          "value" : [ 4.0, 7.0, 10.0, 13.0, 16.0, 19.0, 22.0, 25.0, 29.0, 32.0, 35.0, 38.0, 41.0, 44.0, 47.0, 50.0 ]
+        },
+        "skillActiveManaCost" : {
+          "skill" : false,
+          "value" : 1.0
+        },
+        "skillConnectionSpacing" : {
+          "skill" : false,
+          "value" : 62
+        },
+        "cameraShakeAmplitude" : {
+          "skill" : false,
+          "value" : 0.12
+        },
+        "Bow" : {
+          "skill" : false,
+          "value" : 1
+        },
+        "skillMaxLevel" : {
+          "skill" : false,
+          "value" : 12
+        },
+        "RangedOneHand" : {
+          "skill" : false,
+          "value" : 1
+        },
+        "skillUltimateLevel" : {
+          "skill" : false,
+          "value" : 16
+        },
+        "skillWeaponTintGreen" : {
+          "skill" : false,
+          "value" : 0.4
+        },
+        "Sword" : {
+          "skill" : false,
+          "value" : 1
+        },
+        "skillTargetRadius" : {
+          "skill" : false,
+          "value" : [ 6.0, 6.0, 7.0, 7.0, 8.0, 8.0, 8.0, 9.0, 9.0, 10.0, 10.0, 10.0, 11.0, 11.0, 12.0, 12.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "skill" : false,
+          "value" : 4
+        },
+        "skillTier" : {
+          "skill" : false,
+          "value" : 2
+        },
+        "Spear" : {
+          "skill" : false,
+          "value" : 1
+        },
+        "offensivePierceRatioModifier" : {
+          "skill" : false,
+          "value" : [ 10.0, 14.0, 19.0, 23.0, 27.0, 32.0, 36.0, 40.0, 45.0, 49.0, 53.0, 58.0, 62.0, 66.0, 71.0, 75.0 ]
+        }
+      },
+      "buff" : null,
+      "skillDescription" : null,
+      "modifier" : false
+    },
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillArchery36n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\razorsharpening_bloodletting.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Bloodletting.html",
     "name" : "Bloodletting",
     "parent" : "Razor Sharpening",
     "attributes" : {
       "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
+        "skill" : false,
+        "value" : 12
       },
       "offensiveSlowBleedingDurationModifier" : {
-        "value" : [ 15.0, 20.0, 26.0, 31.0, 37.0, 42.0, 48.0, 53.0, 59.0, 64.0, 70.0, 75.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 15.0, 20.0, 26.0, 31.0, 37.0, 42.0, 48.0, 53.0, 59.0, 64.0, 70.0, 75.0 ]
       },
       "skillMasteryLevelRequired" : {
-        "value" : 10,
-        "skill" : false
+        "skill" : false,
+        "value" : 10
       },
       "skillTier" : {
-        "value" : 3,
-        "skill" : false
+        "skill" : false,
+        "value" : 3
       },
       "offensiveSlowBleedingModifier" : {
-        "value" : [ 15.0, 20.0, 26.0, 31.0, 37.0, 42.0, 48.0, 53.0, 59.0, 64.0, 70.0, 75.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 15.0, 20.0, 26.0, 31.0, 37.0, 42.0, 48.0, 53.0, 59.0, 64.0, 70.0, 75.0 ]
       },
       "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
+        "skill" : false,
+        "value" : 8
       }
     },
     "buff" : null,
-    "modifier" : true,
-    "skillTag" : "skillArchery36n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Bloodletting.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : true
   }, {
+    "skillTag" : "skillArchery27n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\razorsharpening_scorchingedge.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Scorching Edge.html",
     "name" : "Scorching Edge",
     "parent" : null,
     "attributes" : {
       "offensivePhysicalModifier" : {
-        "value" : [ 30.0, 60.0, 80.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 30.0, 60.0, 80.0 ]
       },
       "offensiveSlowDefensiveReductionDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 3.0
       },
       "skillUltimateLevel" : {
-        "value" : 3,
-        "skill" : false
+        "skill" : false,
+        "value" : 3
       },
       "offensivePierceModifier" : {
-        "value" : [ -30.0, -60.0, -80.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ -30.0, -60.0, -80.0 ]
       },
       "offensiveFireMin" : {
-        "value" : [ 14.0, 28.0, 42.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 14.0, 28.0, 42.0 ]
       },
       "Bow" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillMasteryLevelRequired" : {
-        "value" : 32,
-        "skill" : false
+        "skill" : false,
+        "value" : 32
       },
       "skillTier" : {
-        "value" : 6,
-        "skill" : false
+        "skill" : false,
+        "value" : 6
       },
       "skillMaxLevel" : {
-        "value" : 3,
-        "skill" : false
+        "skill" : false,
+        "value" : 3
       },
       "offensiveSlowDefensiveReductionMin" : {
-        "value" : [ 50.0, 110.0, 170.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 50.0, 110.0, 170.0 ]
       },
       "offensivePierceRatioModifier" : {
-        "value" : [ -100.0, -200.0, -300.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ -100.0, -200.0, -300.0 ]
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillArchery27n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Scorching Edge.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillArchery7n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\magicwindarrow.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Magical Winds.html",
     "name" : "Magical Winds",
     "parent" : null,
     "attributes" : {
       "offensiveSlowRunSpeedMin" : {
-        "value" : [ 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0, 48.0, 50.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0, 48.0, 50.0 ]
       },
       "skillCooldownTime" : {
-        "value" : 10.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 10.0
       },
       "skillManaCost" : {
-        "value" : [ 50.0, 53.0, 57.0, 60.0, 64.0, 67.0, 71.0, 74.0, 77.0, 81.0, 84.0, 88.0, 91.0, 94.0, 98.0, 101.0, 105.0, 108.0, 112.0, 115.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 50.0, 53.0, 57.0, 60.0, 64.0, 67.0, 71.0, 74.0, 77.0, 81.0, 84.0, 88.0, 91.0, 94.0, 98.0, 101.0, 105.0, 108.0, 112.0, 115.0 ]
       },
       "projectileExplosionRadius" : {
-        "value" : 3.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 3.0
       },
       "projectilePiercingChance" : {
-        "value" : 100.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 100.0
       },
       "skillConnectionSpacing" : {
-        "value" : 62,
-        "skill" : false
+        "skill" : false,
+        "value" : 62
       },
       "Staff" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
+        "skill" : false,
+        "value" : 0.12
       },
       "projectileUsesAllDamage" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "Bow" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "offensivePierceMin" : {
-        "value" : [ 8.0, 10.0, 13.0, 15.0, 18.0, 20.0, 23.0, 25.0, 28.0, 30.0, 33.0, 35.0, 38.0, 40.0, 43.0, 45.0, 48.0, 50.0, 53.0, 55.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 8.0, 10.0, 13.0, 15.0, 18.0, 20.0, 23.0, 25.0, 28.0, 30.0, 33.0, 35.0, 38.0, 40.0, 43.0, 45.0, 48.0, 50.0, 53.0, 55.0 ]
       },
       "skillMaxLevel" : {
-        "value" : 16,
-        "skill" : false
+        "skill" : false,
+        "value" : 16
       },
       "offensiveElementalMin" : {
-        "value" : [ 30.0, 41.3, 52.7, 64.0, 75.3, 86.7, 98.0, 109.3, 120.7, 132.0, 143.3, 154.7, 166.0, 177.3, 188.7, 200.0, 225.0, 250.0, 275.0, 300.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 30.0, 41.3, 52.7, 64.0, 75.3, 86.7, 98.0, 109.3, 120.7, 132.0, 143.3, 154.7, 166.0, 177.3, 188.7, 200.0, 225.0, 250.0, 275.0, 300.0 ]
       },
       "RangedOneHand" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillUltimateLevel" : {
-        "value" : 20,
-        "skill" : false
+        "skill" : false,
+        "value" : 20
       },
       "offensiveSlowRunSpeedDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 3.0
       },
       "skillProjectileNumber" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillMasteryLevelRequired" : {
-        "value" : 4,
-        "skill" : false
+        "skill" : false,
+        "value" : 4
       },
       "skillTier" : {
-        "value" : 2,
-        "skill" : false
+        "skill" : false,
+        "value" : 2
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillArchery7n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Magical Winds.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillArchery8n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\magicwindarrow_blindingwinds.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Blinding Winds.html",
     "name" : "Blinding Winds",
     "parent" : "Magical Winds",
     "attributes" : {
       "offensiveConfusionMax" : {
-        "value" : [ 1.9, 2.0, 2.0, 2.1, 2.1, 2.3, 2.3, 2.4, 2.5, 2.6, 2.8, 3.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 1.9, 2.0, 2.0, 2.1, 2.1, 2.3, 2.3, 2.4, 2.5, 2.6, 2.8, 3.0 ]
       },
       "skillManaCost" : {
-        "value" : [ 2.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 20.0, 22.0, 24.0, 27.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 2.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 20.0, 22.0, 24.0, 27.0 ]
       },
       "offensiveLightningMax" : {
-        "value" : [ 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0, 150.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0, 150.0 ]
       },
       "offensiveProjectileFumbleMin" : {
-        "value" : [ 25.0, 27.0, 30.0, 32.0, 34.0, 36.0, 39.0, 41.0, 43.0, 45.0, 48.0, 50.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 25.0, 27.0, 30.0, 32.0, 34.0, 36.0, 39.0, 41.0, 43.0, 45.0, 48.0, 50.0 ]
       },
       "offensiveSlowOffensiveAbilityDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 3.0
       },
       "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
+        "skill" : false,
+        "value" : 8
       },
       "offensiveConfusionMin" : {
-        "value" : [ 0.4, 0.4, 0.5, 0.5, 0.6, 0.6, 0.8, 0.8, 0.9, 1.0, 1.1, 1.3 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 0.4, 0.4, 0.5, 0.5, 0.6, 0.6, 0.8, 0.8, 0.9, 1.0, 1.1, 1.3 ]
       },
       "offensiveProjectileFumbleDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 3.0
       },
       "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
+        "skill" : false,
+        "value" : 12
       },
       "offensiveLightningMin" : {
-        "value" : [ 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0 ]
       },
       "skillMasteryLevelRequired" : {
-        "value" : 10,
-        "skill" : false
+        "skill" : false,
+        "value" : 10
       },
       "skillTier" : {
-        "value" : 3,
-        "skill" : false
+        "skill" : false,
+        "value" : 3
       },
       "offensiveConfusionChance" : {
-        "value" : [ 5.0, 7.0, 9.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 21.0, 23.0, 25.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 5.0, 7.0, 9.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 21.0, 23.0, 25.0 ]
       },
       "offensiveSlowOffensiveAbilityMin" : {
-        "value" : [ 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0 ]
       }
     },
     "buff" : null,
-    "modifier" : true,
-    "skillTag" : "skillArchery8n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Blinding Winds.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : true
   }, {
+    "skillTag" : "skillArchery9n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\magicwindarrow_vampireshots.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Vampire Shots.html",
     "name" : "Vampire Shots",
     "parent" : "Blinding Winds",
     "attributes" : {
       "skillManaCost" : {
-        "value" : 150.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 150.0
       },
       "skillUltimateLevel" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillMasteryLevelRequired" : {
-        "value" : 24,
-        "skill" : false
+        "skill" : false,
+        "value" : 24
       },
       "offensiveLifeLeechMin" : {
-        "value" : 35.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 35.0
       },
       "skillTier" : {
-        "value" : 5,
-        "skill" : false
+        "skill" : false,
+        "value" : 5
       },
       "skillMaxLevel" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       }
     },
     "buff" : null,
-    "modifier" : true,
-    "skillTag" : "skillArchery9n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Vampire Shots.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : true
   }, {
+    "skillTag" : "skillArchery11n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\monsterhunter.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Monster Hunter.html",
     "name" : "Monster Hunter",
     "parent" : null,
     "attributes" : {
       "racialBonusPercentDefense" : {
-        "value" : [ 3.0, 5.0, 6.0, 8.0, 9.0, 11.0, 12.0, 14.0, 15.0, 17.0, 18.0, 20.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 3.0, 5.0, 6.0, 8.0, 9.0, 11.0, 12.0, 14.0, 15.0, 17.0, 18.0, 20.0 ]
       },
       "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
+        "skill" : false,
+        "value" : 12
       },
       "racialBonusPercentDamage" : {
-        "value" : [ 5.0, 7.0, 10.0, 12.0, 14.0, 16.0, 19.0, 21.0, 23.0, 25.0, 28.0, 30.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 5.0, 7.0, 10.0, 12.0, 14.0, 16.0, 19.0, 21.0, 23.0, 25.0, 28.0, 30.0 ]
       },
       "skillMasteryLevelRequired" : {
-        "value" : 4,
-        "skill" : false
+        "skill" : false,
+        "value" : 4
       },
       "skillTier" : {
-        "value" : 2,
-        "skill" : false
+        "skill" : false,
+        "value" : 2
       },
       "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
+        "skill" : false,
+        "value" : 8
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillArchery11n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Monster Hunter.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillArchery28n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\divinedefiance.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Divine Defiance.html",
     "name" : "Divine Defiance",
     "parent" : null,
     "attributes" : {
       "racialBonusPercentDefense" : {
-        "value" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 12.0, 14.0, 16.0, 18.0, 20.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 12.0, 14.0, 16.0, 18.0, 20.0 ]
       },
       "skillUltimateLevel" : {
-        "value" : 10,
-        "skill" : false
+        "skill" : false,
+        "value" : 10
       },
       "racialBonusPercentDamage" : {
-        "value" : [ 5.0, 8.0, 11.0, 13.0, 16.0, 19.0, 22.0, 24.0, 27.0, 30.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 5.0, 8.0, 11.0, 13.0, 16.0, 19.0, 22.0, 24.0, 27.0, 30.0 ]
       },
       "skillMasteryLevelRequired" : {
-        "value" : 24,
-        "skill" : false
+        "skill" : false,
+        "value" : 24
       },
       "skillTier" : {
-        "value" : 5,
-        "skill" : false
+        "skill" : false,
+        "value" : 5
       },
       "skillMaxLevel" : {
-        "value" : 6,
-        "skill" : false
+        "skill" : false,
+        "value" : 6
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillArchery28n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Divine Defiance.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillArchery12n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\splitshots.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Split Shots.html",
     "name" : "Split Shots",
     "parent" : null,
     "attributes" : {
       "skillCooldownTime" : {
-        "value" : 7.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 7.0
       },
       "skillManaCost" : {
-        "value" : [ 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0, 70.0, 75.0, 80.0, 85.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0, 70.0, 75.0, 80.0, 85.0 ]
       },
       "projectilePiercingChance" : {
-        "value" : [ 12.0, 14.0, 16.0, 18.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 34.0, 36.0, 38.0, 40.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 12.0, 14.0, 16.0, 18.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 34.0, 36.0, 38.0, 40.0 ]
       },
       "driftMax" : {
-        "value" : 4.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 4.0
       },
       "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
+        "skill" : false,
+        "value" : 0.12
       },
       "offensiveTotalDamageModifier" : {
-        "value" : [ -60.0, -55.0, -50.0, -45.0, -40.0, -35.0, -30.0, -25.0, -20.0, -15.0, -10.0, -5.0, 0.0, 5.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ -60.0, -55.0, -50.0, -45.0, -40.0, -35.0, -30.0, -25.0, -20.0, -15.0, -10.0, -5.0, 0.0, 5.0 ]
       },
       "Bow" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillMaxLevel" : {
-        "value" : 10,
-        "skill" : false
+        "skill" : false,
+        "value" : 10
       },
       "RangedOneHand" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillUltimateLevel" : {
-        "value" : 14,
-        "skill" : false
+        "skill" : false,
+        "value" : 14
       },
       "driftMin" : {
-        "value" : 1.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 1.0
       },
       "skillProjectileNumber" : {
-        "value" : 5,
-        "skill" : false
+        "skill" : false,
+        "value" : 5
       },
       "skillMasteryLevelRequired" : {
-        "value" : 10,
-        "skill" : false
+        "skill" : false,
+        "value" : 10
       },
       "skillTier" : {
-        "value" : 3,
-        "skill" : false
+        "skill" : false,
+        "value" : 3
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillArchery12n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Split Shots.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillArchery13n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\quickdraw.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Ranger's Prowess.html",
     "name" : "Ranger's Prowess",
     "parent" : null,
     "attributes" : {
       "instantCast" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "quickdraw" : {
+        "skill" : true,
         "value" : {
+          "skillTag" : "skillArchery13n",
+          "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\quickdraw_buff.dbr",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Ranger's Prowess.html",
           "name" : "Ranger's Prowess",
           "parent" : null,
           "attributes" : {
             "skillActiveDuration" : {
-              "value" : [ 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0 ]
             },
             "skillCooldownTime" : {
-              "value" : 80.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 80.0
             },
             "skillManaCost" : {
-              "value" : [ 60.0, 63.0, 65.0, 70.0, 78.0, 79.0, 85.0, 90.0, 94.0, 99.0, 101.0, 106.0, 108.0, 115.0, 119.0, 124.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 60.0, 63.0, 65.0, 70.0, 78.0, 79.0, 85.0, 90.0, 94.0, 99.0, 101.0, 106.0, 108.0, 115.0, 119.0, 124.0 ]
             },
             "characterSpellCastSpeedModifier" : {
-              "value" : [ 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0, 51.0, 54.0, 57.0, 60.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0, 51.0, 54.0, 57.0, 60.0 ]
             },
             "offensivePhysicalMin" : {
-              "value" : [ 6.0, 8.0, 11.0, 13.0, 15.0, 17.0, 20.0, 22.0, 24.0, 26.0, 29.0, 31.0, 33.0, 35.0, 38.0, 40.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 6.0, 8.0, 11.0, 13.0, 15.0, 17.0, 20.0, 22.0, 24.0, 26.0, 29.0, 31.0, 33.0, 35.0, 38.0, 40.0 ]
             },
             "cameraShakeAmplitude" : {
-              "value" : 0.12,
-              "skill" : false
+              "skill" : false,
+              "value" : 0.12
             },
             "offensivePierceMin" : {
-              "value" : [ 6.0, 8.0, 11.0, 13.0, 15.0, 17.0, 20.0, 22.0, 24.0, 26.0, 29.0, 31.0, 33.0, 35.0, 38.0, 40.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 6.0, 8.0, 11.0, 13.0, 15.0, 17.0, 20.0, 22.0, 24.0, 26.0, 29.0, 31.0, 33.0, 35.0, 38.0, 40.0 ]
             },
             "skillMaxLevel" : {
-              "value" : 12,
-              "skill" : false
+              "skill" : false,
+              "value" : 12
             },
             "characterAttackSpeedModifier" : {
-              "value" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0 ]
             },
             "skillUltimateLevel" : {
-              "value" : 16,
-              "skill" : false
+              "skill" : false,
+              "value" : 16
             },
             "notDispelable" : {
-              "value" : 1,
-              "skill" : false
+              "skill" : false,
+              "value" : 1
             },
             "skillTargetRadius" : {
-              "value" : 14.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 14.0
             },
             "skillMasteryLevelRequired" : {
-              "value" : 16,
-              "skill" : false
+              "skill" : false,
+              "value" : 16
             },
             "skillTier" : {
-              "value" : 4,
-              "skill" : false
+              "skill" : false,
+              "value" : 4
             }
           },
           "buff" : null,
-          "modifier" : false,
-          "skillTag" : "skillArchery13n",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Ranger's Prowess.html",
-          "skillDescription" : null
-        },
-        "skill" : true
+          "skillDescription" : null,
+          "modifier" : false
+        }
       }
     },
-    "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillArchery13n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Ranger's Prowess.html",
-    "skillDescription" : null
+    "buff" : {
+      "skillTag" : "skillArchery13n",
+      "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\quickdraw_buff.dbr",
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Ranger's Prowess.html",
+      "name" : "Ranger's Prowess",
+      "parent" : null,
+      "attributes" : {
+        "skillActiveDuration" : {
+          "skill" : false,
+          "value" : [ 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0 ]
+        },
+        "skillCooldownTime" : {
+          "skill" : false,
+          "value" : 80.0
+        },
+        "skillManaCost" : {
+          "skill" : false,
+          "value" : [ 60.0, 63.0, 65.0, 70.0, 78.0, 79.0, 85.0, 90.0, 94.0, 99.0, 101.0, 106.0, 108.0, 115.0, 119.0, 124.0 ]
+        },
+        "characterSpellCastSpeedModifier" : {
+          "skill" : false,
+          "value" : [ 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0, 51.0, 54.0, 57.0, 60.0 ]
+        },
+        "offensivePhysicalMin" : {
+          "skill" : false,
+          "value" : [ 6.0, 8.0, 11.0, 13.0, 15.0, 17.0, 20.0, 22.0, 24.0, 26.0, 29.0, 31.0, 33.0, 35.0, 38.0, 40.0 ]
+        },
+        "cameraShakeAmplitude" : {
+          "skill" : false,
+          "value" : 0.12
+        },
+        "offensivePierceMin" : {
+          "skill" : false,
+          "value" : [ 6.0, 8.0, 11.0, 13.0, 15.0, 17.0, 20.0, 22.0, 24.0, 26.0, 29.0, 31.0, 33.0, 35.0, 38.0, 40.0 ]
+        },
+        "skillMaxLevel" : {
+          "skill" : false,
+          "value" : 12
+        },
+        "characterAttackSpeedModifier" : {
+          "skill" : false,
+          "value" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0 ]
+        },
+        "skillUltimateLevel" : {
+          "skill" : false,
+          "value" : 16
+        },
+        "notDispelable" : {
+          "skill" : false,
+          "value" : 1
+        },
+        "skillTargetRadius" : {
+          "skill" : false,
+          "value" : 14.0
+        },
+        "skillMasteryLevelRequired" : {
+          "skill" : false,
+          "value" : 16
+        },
+        "skillTier" : {
+          "skill" : false,
+          "value" : 4
+        }
+      },
+      "buff" : null,
+      "skillDescription" : null,
+      "modifier" : false
+    },
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillArchery14n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\quickdraw_bowmastery.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Devastating Shots.html",
     "name" : "Devastating Shots",
     "parent" : "Ranger's Prowess",
     "attributes" : {
       "offensiveSlowBleedingMin" : {
-        "value" : [ 36.0, 45.0, 53.0, 62.0, 70.0, 79.0, 88.0, 96.0, 105.0, 114.0, 122.0, 131.0, 139.0, 148.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 36.0, 45.0, 53.0, 62.0, 70.0, 79.0, 88.0, 96.0, 105.0, 114.0, 122.0, 131.0, 139.0, 148.0 ]
       },
       "skillManaCost" : {
-        "value" : [ 4.0, 6.0, 7.0, 9.0, 10.0, 12.0, 14.0, 15.0, 17.0, 19.0, 20.0, 22.0, 23.0, 25.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 4.0, 6.0, 7.0, 9.0, 10.0, 12.0, 14.0, 15.0, 17.0, 19.0, 20.0, 22.0, 23.0, 25.0 ]
       },
       "offensiveSlowBleedingDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 3.0
       },
       "offensiveTotalDamageModifier" : {
-        "value" : [ 24.0, 31.0, 38.0, 44.0, 51.0, 58.0, 65.0, 71.0, 78.0, 85.0, 92.0, 98.0, 105.0, 112.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 24.0, 31.0, 38.0, 44.0, 51.0, 58.0, 65.0, 71.0, 78.0, 85.0, 92.0, 98.0, 105.0, 112.0 ]
       },
       "Bow" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillMaxLevel" : {
-        "value" : 10,
-        "skill" : false
+        "skill" : false,
+        "value" : 10
       },
       "RangedOneHand" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "offensivePierceRatioModifierChance" : {
-        "value" : 10.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 10.0
       },
       "skillUltimateLevel" : {
-        "value" : 14,
-        "skill" : false
+        "skill" : false,
+        "value" : 14
       },
       "offensiveTotalDamageModifierChance" : {
-        "value" : 10.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 10.0
       },
       "skillMasteryLevelRequired" : {
-        "value" : 32,
-        "skill" : false
+        "skill" : false,
+        "value" : 32
       },
       "skillTier" : {
-        "value" : 6,
-        "skill" : false
+        "skill" : false,
+        "value" : 6
       },
       "offensiveSlowBleedingChance" : {
-        "value" : 10.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 10.0
       },
       "offensivePierceRatioModifier" : {
-        "value" : [ 25.0, 31.0, 37.0, 42.0, 48.0, 54.0, 60.0, 65.0, 71.0, 77.0, 83.0, 88.0, 94.0, 100.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 25.0, 31.0, 37.0, 42.0, 48.0, 54.0, 60.0, 65.0, 71.0, 77.0, 83.0, 88.0, 94.0, 100.0 ]
       }
     },
     "buff" : null,
-    "modifier" : true,
-    "skillTag" : "skillArchery14n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Devastating Shots.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : true
   }, {
+    "skillTag" : "skillArchery15n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\targetpractice.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Target Practice.html",
     "name" : "Target Practice",
     "parent" : null,
     "attributes" : {
       "characterAttackSpeedModifier" : {
-        "value" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0 ]
       },
       "skillUltimateLevel" : {
-        "value" : 14,
-        "skill" : false
+        "skill" : false,
+        "value" : 14
       },
       "Staff" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "characterDexterityModifier" : {
-        "value" : [ 2.0, 3.0, 4.0, 6.0, 7.0, 8.0, 9.0, 11.0, 12.0, 13.0, 14.0, 16.0, 17.0, 18.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 2.0, 3.0, 4.0, 6.0, 7.0, 8.0, 9.0, 11.0, 12.0, 13.0, 14.0, 16.0, 17.0, 18.0 ]
       },
       "Bow" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillMasteryLevelRequired" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillTier" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillMaxLevel" : {
-        "value" : 10,
-        "skill" : false
+        "skill" : false,
+        "value" : 10
       },
       "RangedOneHand" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillArchery15n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Target Practice.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillArchery16n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\dragonarrow.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Dragon Arrow.html",
     "name" : "Dragon Arrow",
     "parent" : null,
     "attributes" : {
       "offensiveSlowFireDurationMin" : {
-        "value" : 5.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 5.0
       },
       "skillCooldownTime" : {
-        "value" : 20.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 20.0
       },
       "skillManaCost" : {
-        "value" : [ 90.0, 92.0, 96.0, 98.0, 103.0, 105.0, 108.0, 112.0, 115.0, 118.0, 122.0, 125.0, 127.0, 131.0, 136.0, 140.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 90.0, 92.0, 96.0, 98.0, 103.0, 105.0, 108.0, 112.0, 115.0, 118.0, 122.0, 125.0, 127.0, 131.0, 136.0, 140.0 ]
       },
       "projectileExplosionRadius" : {
-        "value" : 3.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 3.0
       },
       "skillConnectionSpacing" : {
-        "value" : 62,
-        "skill" : false
+        "skill" : false,
+        "value" : 62
       },
       "Staff" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
+        "skill" : false,
+        "value" : 0.12
       },
       "offensivePhysicalMin" : {
-        "value" : [ 25.0, 41.0, 56.0, 73.0, 88.0, 104.0, 120.0, 136.0, 152.0, 167.0, 183.0, 200.0, 215.0, 231.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 25.0, 41.0, 56.0, 73.0, 88.0, 104.0, 120.0, 136.0, 152.0, 167.0, 183.0, 200.0, 215.0, 231.0 ]
       },
       "offensiveSlowFireMin" : {
-        "value" : [ 39.8, 50.6, 61.4, 73.2, 84.0, 94.8, 105.6, 117.4, 128.2, 139.0, 149.8, 161.6, 172.4, 183.2 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 39.8, 50.6, 61.4, 73.2, 84.0, 94.8, 105.6, 117.4, 128.2, 139.0, 149.8, 161.6, 172.4, 183.2 ]
       },
       "projectileUsesAllDamage" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "Bow" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "offensivePierceMin" : {
-        "value" : [ 35.0, 42.0, 48.0, 55.0, 61.0, 68.0, 74.0, 81.0, 87.0, 94.0, 100.0, 107.0, 113.0, 120.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 35.0, 42.0, 48.0, 55.0, 61.0, 68.0, 74.0, 81.0, 87.0, 94.0, 100.0, 107.0, 113.0, 120.0 ]
       },
       "skillMaxLevel" : {
-        "value" : 10,
-        "skill" : false
+        "skill" : false,
+        "value" : 10
       },
       "RangedOneHand" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "offensiveStunMin" : {
-        "value" : 1.5,
-        "skill" : false
+        "skill" : false,
+        "value" : 1.5
       },
       "skillUltimateLevel" : {
-        "value" : 14,
-        "skill" : false
+        "skill" : false,
+        "value" : 14
       },
       "skillProjectileNumber" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "offensiveFireMin" : {
-        "value" : [ 51.0, 71.0, 89.0, 110.0, 129.0, 149.0, 168.0, 189.0, 209.0, 227.0, 247.0, 267.0, 287.0, 306.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 51.0, 71.0, 89.0, 110.0, 129.0, 149.0, 168.0, 189.0, 209.0, 227.0, 247.0, 267.0, 287.0, 306.0 ]
       },
       "skillMasteryLevelRequired" : {
-        "value" : 40,
-        "skill" : false
+        "skill" : false,
+        "value" : 40
       },
       "skillTier" : {
-        "value" : 7,
-        "skill" : false
+        "skill" : false,
+        "value" : 7
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillArchery16n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Dragon Arrow.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillArchery17n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\raptorsummon.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Raptor Hunter.html",
     "name" : "Raptor Hunter",
     "parent" : null,
     "attributes" : {
       "skillCooldownTime" : {
-        "value" : 30.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 30.0
       },
       "skillUltimateLevel" : {
-        "value" : 22,
-        "skill" : false
+        "skill" : false,
+        "value" : 22
       },
       "skillManaCost" : {
-        "value" : [ 100.0, 102.0, 105.0, 107.0, 110.0, 112.0, 114.0, 117.0, 119.0, 121.0, 124.0, 126.0, 129.0, 131.0, 133.0, 136.0, 138.0, 140.0, 143.0, 145.0, 148.0, 150.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 100.0, 102.0, 105.0, 107.0, 110.0, 112.0, 114.0, 117.0, 119.0, 121.0, 124.0, 126.0, 129.0, 131.0, 133.0, 136.0, 138.0, 140.0, 143.0, 145.0, 148.0, 150.0 ]
       },
       "petLimit" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
+        "skill" : false,
+        "value" : 0.12
       },
       "skillConnectionSpacing" : {
-        "value" : 62,
-        "skill" : false
+        "skill" : false,
+        "value" : 62
       },
       "skillMasteryLevelRequired" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillTier" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillMaxLevel" : {
-        "value" : 18,
-        "skill" : false
+        "skill" : false,
+        "value" : 18
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillArchery17n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Raptor Hunter.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillArchery26n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\raptorsummon_petmodifier_intimidatingscreech.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Intimidating Screech.html",
     "name" : "Intimidating Screech",
     "parent" : null,
     "attributes" : {
       "intimidatingscreech" : {
+        "skill" : true,
         "value" : {
+          "skillTag" : "skillArchery26n",
+          "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\eagle_screech.dbr",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Intimidating Screech.html",
           "name" : "Intimidating Screech",
           "parent" : null,
           "attributes" : {
             "screech" : {
+              "skill" : true,
               "value" : {
+                "skillTag" : "skillArchery26n",
+                "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\eagle_screechbuff.dbr",
+                "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Intimidating Screech.html",
                 "name" : "Intimidating Screech",
                 "parent" : null,
                 "attributes" : {
                   "skillActiveDuration" : {
-                    "value" : 8.0,
-                    "skill" : false
+                    "skill" : false,
+                    "value" : 8.0
                   },
                   "skillCooldownTime" : {
-                    "value" : 8.0,
-                    "skill" : false
+                    "skill" : false,
+                    "value" : 8.0
                   },
                   "skillManaCost" : {
-                    "value" : 40.0,
-                    "skill" : false
+                    "skill" : false,
+                    "value" : 40.0
                   },
                   "isPetDisplayable" : {
-                    "value" : 1,
-                    "skill" : false
+                    "skill" : false,
+                    "value" : 1
                   },
                   "skillConnectionSpacing" : {
-                    "value" : 62,
-                    "skill" : false
+                    "skill" : false,
+                    "value" : 62
                   },
                   "cameraShakeAmplitude" : {
-                    "value" : 0.12,
-                    "skill" : false
+                    "skill" : false,
+                    "value" : 0.12
                   },
                   "offensiveTotalDamageModifier" : {
-                    "value" : [ -8.0, -10.0, -11.0, -13.0, -15.0, -16.0, -18.0, -20.0, -22.0, -23.0, -25.0, -27.0, -28.0, -30.0 ],
-                    "skill" : false
+                    "skill" : false,
+                    "value" : [ -8.0, -10.0, -11.0, -13.0, -15.0, -16.0, -18.0, -20.0, -22.0, -23.0, -25.0, -27.0, -28.0, -30.0 ]
                   },
                   "defensivePierce" : {
-                    "value" : [ -8.0, -12.0, -15.0, -19.0, -22.0, -26.0, -30.0, -33.0, -37.0, -41.0, -44.0, -48.0, -51.0, -55.0 ],
-                    "skill" : false
+                    "skill" : false,
+                    "value" : [ -8.0, -12.0, -15.0, -19.0, -22.0, -26.0, -30.0, -33.0, -37.0, -41.0, -44.0, -48.0, -51.0, -55.0 ]
                   },
                   "skillMaxLevel" : {
-                    "value" : 10,
-                    "skill" : false
+                    "skill" : false,
+                    "value" : 10
                   },
                   "debufSkill" : {
-                    "value" : 1,
-                    "skill" : false
+                    "skill" : false,
+                    "value" : 1
                   },
                   "skillUltimateLevel" : {
-                    "value" : 14,
-                    "skill" : false
+                    "skill" : false,
+                    "value" : 14
                   },
                   "excludeRacialDamage" : {
-                    "value" : 1,
-                    "skill" : false
+                    "skill" : false,
+                    "value" : 1
                   },
                   "skillTargetRadius" : {
-                    "value" : 8.0,
-                    "skill" : false
+                    "skill" : false,
+                    "value" : 8.0
                   },
                   "skillMasteryLevelRequired" : {
-                    "value" : 10,
-                    "skill" : false
+                    "skill" : false,
+                    "value" : 10
                   },
                   "skillTier" : {
-                    "value" : 3,
-                    "skill" : false
+                    "skill" : false,
+                    "value" : 3
                   }
                 },
                 "buff" : null,
-                "modifier" : false,
-                "skillTag" : "skillArchery26n",
-                "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Intimidating Screech.html",
-                "skillDescription" : null
-              },
-              "skill" : true
+                "skillDescription" : null,
+                "modifier" : false
+              }
             }
           },
-          "buff" : null,
-          "modifier" : false,
-          "skillTag" : "skillArchery26n",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Intimidating Screech.html",
-          "skillDescription" : null
-        },
-        "skill" : true
+          "buff" : {
+            "skillTag" : "skillArchery26n",
+            "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\eagle_screechbuff.dbr",
+            "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Intimidating Screech.html",
+            "name" : "Intimidating Screech",
+            "parent" : null,
+            "attributes" : {
+              "skillActiveDuration" : {
+                "skill" : false,
+                "value" : 8.0
+              },
+              "skillCooldownTime" : {
+                "skill" : false,
+                "value" : 8.0
+              },
+              "skillManaCost" : {
+                "skill" : false,
+                "value" : 40.0
+              },
+              "isPetDisplayable" : {
+                "skill" : false,
+                "value" : 1
+              },
+              "skillConnectionSpacing" : {
+                "skill" : false,
+                "value" : 62
+              },
+              "cameraShakeAmplitude" : {
+                "skill" : false,
+                "value" : 0.12
+              },
+              "offensiveTotalDamageModifier" : {
+                "skill" : false,
+                "value" : [ -8.0, -10.0, -11.0, -13.0, -15.0, -16.0, -18.0, -20.0, -22.0, -23.0, -25.0, -27.0, -28.0, -30.0 ]
+              },
+              "defensivePierce" : {
+                "skill" : false,
+                "value" : [ -8.0, -12.0, -15.0, -19.0, -22.0, -26.0, -30.0, -33.0, -37.0, -41.0, -44.0, -48.0, -51.0, -55.0 ]
+              },
+              "skillMaxLevel" : {
+                "skill" : false,
+                "value" : 10
+              },
+              "debufSkill" : {
+                "skill" : false,
+                "value" : 1
+              },
+              "skillUltimateLevel" : {
+                "skill" : false,
+                "value" : 14
+              },
+              "excludeRacialDamage" : {
+                "skill" : false,
+                "value" : 1
+              },
+              "skillTargetRadius" : {
+                "skill" : false,
+                "value" : 8.0
+              },
+              "skillMasteryLevelRequired" : {
+                "skill" : false,
+                "value" : 10
+              },
+              "skillTier" : {
+                "skill" : false,
+                "value" : 3
+              }
+            },
+            "buff" : null,
+            "skillDescription" : null,
+            "modifier" : false
+          },
+          "skillDescription" : null,
+          "modifier" : false
+        }
       }
     },
-    "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillArchery26n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Intimidating Screech.html",
-    "skillDescription" : null
+    "buff" : {
+      "skillTag" : "skillArchery26n",
+      "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\eagle_screech.dbr",
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Intimidating Screech.html",
+      "name" : "Intimidating Screech",
+      "parent" : null,
+      "attributes" : {
+        "screech" : {
+          "skill" : true,
+          "value" : {
+            "skillTag" : "skillArchery26n",
+            "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\eagle_screechbuff.dbr",
+            "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Intimidating Screech.html",
+            "name" : "Intimidating Screech",
+            "parent" : null,
+            "attributes" : {
+              "skillActiveDuration" : {
+                "skill" : false,
+                "value" : 8.0
+              },
+              "skillCooldownTime" : {
+                "skill" : false,
+                "value" : 8.0
+              },
+              "skillManaCost" : {
+                "skill" : false,
+                "value" : 40.0
+              },
+              "isPetDisplayable" : {
+                "skill" : false,
+                "value" : 1
+              },
+              "skillConnectionSpacing" : {
+                "skill" : false,
+                "value" : 62
+              },
+              "cameraShakeAmplitude" : {
+                "skill" : false,
+                "value" : 0.12
+              },
+              "offensiveTotalDamageModifier" : {
+                "skill" : false,
+                "value" : [ -8.0, -10.0, -11.0, -13.0, -15.0, -16.0, -18.0, -20.0, -22.0, -23.0, -25.0, -27.0, -28.0, -30.0 ]
+              },
+              "defensivePierce" : {
+                "skill" : false,
+                "value" : [ -8.0, -12.0, -15.0, -19.0, -22.0, -26.0, -30.0, -33.0, -37.0, -41.0, -44.0, -48.0, -51.0, -55.0 ]
+              },
+              "skillMaxLevel" : {
+                "skill" : false,
+                "value" : 10
+              },
+              "debufSkill" : {
+                "skill" : false,
+                "value" : 1
+              },
+              "skillUltimateLevel" : {
+                "skill" : false,
+                "value" : 14
+              },
+              "excludeRacialDamage" : {
+                "skill" : false,
+                "value" : 1
+              },
+              "skillTargetRadius" : {
+                "skill" : false,
+                "value" : 8.0
+              },
+              "skillMasteryLevelRequired" : {
+                "skill" : false,
+                "value" : 10
+              },
+              "skillTier" : {
+                "skill" : false,
+                "value" : 3
+              }
+            },
+            "buff" : null,
+            "skillDescription" : null,
+            "modifier" : false
+          }
+        }
+      },
+      "buff" : {
+        "skillTag" : "skillArchery26n",
+        "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\eagle_screechbuff.dbr",
+        "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Intimidating Screech.html",
+        "name" : "Intimidating Screech",
+        "parent" : null,
+        "attributes" : {
+          "skillActiveDuration" : {
+            "skill" : false,
+            "value" : 8.0
+          },
+          "skillCooldownTime" : {
+            "skill" : false,
+            "value" : 8.0
+          },
+          "skillManaCost" : {
+            "skill" : false,
+            "value" : 40.0
+          },
+          "isPetDisplayable" : {
+            "skill" : false,
+            "value" : 1
+          },
+          "skillConnectionSpacing" : {
+            "skill" : false,
+            "value" : 62
+          },
+          "cameraShakeAmplitude" : {
+            "skill" : false,
+            "value" : 0.12
+          },
+          "offensiveTotalDamageModifier" : {
+            "skill" : false,
+            "value" : [ -8.0, -10.0, -11.0, -13.0, -15.0, -16.0, -18.0, -20.0, -22.0, -23.0, -25.0, -27.0, -28.0, -30.0 ]
+          },
+          "defensivePierce" : {
+            "skill" : false,
+            "value" : [ -8.0, -12.0, -15.0, -19.0, -22.0, -26.0, -30.0, -33.0, -37.0, -41.0, -44.0, -48.0, -51.0, -55.0 ]
+          },
+          "skillMaxLevel" : {
+            "skill" : false,
+            "value" : 10
+          },
+          "debufSkill" : {
+            "skill" : false,
+            "value" : 1
+          },
+          "skillUltimateLevel" : {
+            "skill" : false,
+            "value" : 14
+          },
+          "excludeRacialDamage" : {
+            "skill" : false,
+            "value" : 1
+          },
+          "skillTargetRadius" : {
+            "skill" : false,
+            "value" : 8.0
+          },
+          "skillMasteryLevelRequired" : {
+            "skill" : false,
+            "value" : 10
+          },
+          "skillTier" : {
+            "skill" : false,
+            "value" : 3
+          }
+        },
+        "buff" : null,
+        "skillDescription" : null,
+        "modifier" : false
+      },
+      "skillDescription" : null,
+      "modifier" : false
+    },
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillArchery19n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\raptorsummon_petmodifier_silverfeathers.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Silver Feathers.html",
     "name" : "Silver Feathers",
     "parent" : null,
     "attributes" : {
       "silverfeathers" : {
+        "skill" : true,
         "value" : {
+          "skillTag" : "skillArchery19n",
+          "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\raptorsummon_petskill_silverfeathers.dbr",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Silver Feathers.html",
           "name" : "Silver Feathers",
           "parent" : null,
           "attributes" : {
             "offensiveFumbleDurationMin" : {
-              "value" : [ 2.8, 2.9, 3.0, 3.1, 3.3, 3.4, 3.5, 3.7, 3.8, 3.9, 4.1, 4.2 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 2.8, 2.9, 3.0, 3.1, 3.3, 3.4, 3.5, 3.7, 3.8, 3.9, 4.1, 4.2 ]
             },
             "projectileLaunchNumber" : {
-              "value" : [ 3.0, 3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 6.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 3.0, 3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 6.0 ]
             },
             "skillCooldownTime" : {
-              "value" : 6.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 6.0
             },
             "skillManaCost" : {
-              "value" : [ 25.92, 27.36, 28.8, 30.24, 31.68, 33.12, 34.56, 36.0, 37.44, 38.88, 40.32, 41.76, 43.2, 44.64, 46.08, 47.52 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 25.92, 27.36, 28.8, 30.24, 31.68, 33.12, 34.56, 36.0, 37.44, 38.88, 40.32, 41.76, 43.2, 44.64, 46.08, 47.52 ]
             },
             "offensiveProjectileFumbleDurationMax" : {
-              "value" : [ 4.3, 4.4, 4.5, 4.7, 4.8, 5.0, 5.1, 5.3, 5.4, 5.6, 5.8, 6.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 4.3, 4.4, 4.5, 4.7, 4.8, 5.0, 5.1, 5.3, 5.4, 5.6, 5.8, 6.0 ]
             },
             "projectilePiercingChance" : {
-              "value" : 10.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 10.0
             },
             "skillConnectionSpacing" : {
-              "value" : 62,
-              "skill" : false
+              "skill" : false,
+              "value" : 62
             },
             "cameraShakeAmplitude" : {
-              "value" : 0.12,
-              "skill" : false
+              "skill" : false,
+              "value" : 0.12
             },
             "offensiveProjectileFumbleMin" : {
-              "value" : [ 50.0, 52.0, 53.5, 55.0, 56.5, 58.0, 59.5, 61.0, 62.5, 64.0, 65.5, 67.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 50.0, 52.0, 53.5, 55.0, 56.5, 58.0, 59.5, 61.0, 62.5, 64.0, 65.5, 67.0 ]
             },
             "projectileUsesAllDamage" : {
-              "value" : 1,
-              "skill" : false
+              "skill" : false,
+              "value" : 1
             },
             "offensivePierceMin" : {
-              "value" : [ 33.08707, 39.70449, 46.3219, 52.93932, 59.55674, 68.37995, 77.20318, 86.0264, 94.84962, 105.8786, 116.9077, 127.9367, 138.9657, 152.2005, 165.4354, 178.6702 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 33.08707, 39.70449, 46.3219, 52.93932, 59.55674, 68.37995, 77.20318, 86.0264, 94.84962, 105.8786, 116.9077, 127.9367, 138.9657, 152.2005, 165.4354, 178.6702 ]
             },
             "skillMaxLevel" : {
-              "value" : 8,
-              "skill" : false
+              "skill" : false,
+              "value" : 8
             },
             "offensiveFumbleDurationMax" : {
-              "value" : [ 4.3, 4.4, 4.5, 4.7, 4.8, 5.0, 5.1, 5.3, 5.4, 5.6, 5.8, 6.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 4.3, 4.4, 4.5, 4.7, 4.8, 5.0, 5.1, 5.3, 5.4, 5.6, 5.8, 6.0 ]
             },
             "offensiveProjectileFumbleDurationMin" : {
-              "value" : [ 2.8, 2.9, 3.0, 3.1, 3.3, 3.4, 3.5, 3.7, 3.8, 3.9, 4.1, 4.2 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 2.8, 2.9, 3.0, 3.1, 3.3, 3.4, 3.5, 3.7, 3.8, 3.9, 4.1, 4.2 ]
             },
             "skillUltimateLevel" : {
-              "value" : 12,
-              "skill" : false
+              "skill" : false,
+              "value" : 12
             },
             "offensiveFumbleMin" : {
-              "value" : [ 33.0, 35.0, 36.5, 38.0, 39.5, 41.0, 42.5, 44.0, 45.5, 47.0, 48.5, 50.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 33.0, 35.0, 36.5, 38.0, 39.5, 41.0, 42.5, 44.0, 45.5, 47.0, 48.5, 50.0 ]
             },
             "projectileLaunchRotation" : {
-              "value" : 12.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 12.0
             },
             "skillMasteryLevelRequired" : {
-              "value" : 16,
-              "skill" : false
+              "skill" : false,
+              "value" : 16
             },
             "skillTier" : {
-              "value" : 4,
-              "skill" : false
+              "skill" : false,
+              "value" : 4
             }
           },
           "buff" : null,
-          "modifier" : false,
-          "skillTag" : "skillArchery19n",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Silver Feathers.html",
-          "skillDescription" : null
-        },
-        "skill" : true
+          "skillDescription" : null,
+          "modifier" : false
+        }
       }
     },
-    "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillArchery19n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Silver Feathers.html",
-    "skillDescription" : null
+    "buff" : {
+      "skillTag" : "skillArchery19n",
+      "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\raptorsummon_petskill_silverfeathers.dbr",
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Silver Feathers.html",
+      "name" : "Silver Feathers",
+      "parent" : null,
+      "attributes" : {
+        "offensiveFumbleDurationMin" : {
+          "skill" : false,
+          "value" : [ 2.8, 2.9, 3.0, 3.1, 3.3, 3.4, 3.5, 3.7, 3.8, 3.9, 4.1, 4.2 ]
+        },
+        "projectileLaunchNumber" : {
+          "skill" : false,
+          "value" : [ 3.0, 3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 6.0 ]
+        },
+        "skillCooldownTime" : {
+          "skill" : false,
+          "value" : 6.0
+        },
+        "skillManaCost" : {
+          "skill" : false,
+          "value" : [ 25.92, 27.36, 28.8, 30.24, 31.68, 33.12, 34.56, 36.0, 37.44, 38.88, 40.32, 41.76, 43.2, 44.64, 46.08, 47.52 ]
+        },
+        "offensiveProjectileFumbleDurationMax" : {
+          "skill" : false,
+          "value" : [ 4.3, 4.4, 4.5, 4.7, 4.8, 5.0, 5.1, 5.3, 5.4, 5.6, 5.8, 6.0 ]
+        },
+        "projectilePiercingChance" : {
+          "skill" : false,
+          "value" : 10.0
+        },
+        "skillConnectionSpacing" : {
+          "skill" : false,
+          "value" : 62
+        },
+        "cameraShakeAmplitude" : {
+          "skill" : false,
+          "value" : 0.12
+        },
+        "offensiveProjectileFumbleMin" : {
+          "skill" : false,
+          "value" : [ 50.0, 52.0, 53.5, 55.0, 56.5, 58.0, 59.5, 61.0, 62.5, 64.0, 65.5, 67.0 ]
+        },
+        "projectileUsesAllDamage" : {
+          "skill" : false,
+          "value" : 1
+        },
+        "offensivePierceMin" : {
+          "skill" : false,
+          "value" : [ 33.08707, 39.70449, 46.3219, 52.93932, 59.55674, 68.37995, 77.20318, 86.0264, 94.84962, 105.8786, 116.9077, 127.9367, 138.9657, 152.2005, 165.4354, 178.6702 ]
+        },
+        "skillMaxLevel" : {
+          "skill" : false,
+          "value" : 8
+        },
+        "offensiveFumbleDurationMax" : {
+          "skill" : false,
+          "value" : [ 4.3, 4.4, 4.5, 4.7, 4.8, 5.0, 5.1, 5.3, 5.4, 5.6, 5.8, 6.0 ]
+        },
+        "offensiveProjectileFumbleDurationMin" : {
+          "skill" : false,
+          "value" : [ 2.8, 2.9, 3.0, 3.1, 3.3, 3.4, 3.5, 3.7, 3.8, 3.9, 4.1, 4.2 ]
+        },
+        "skillUltimateLevel" : {
+          "skill" : false,
+          "value" : 12
+        },
+        "offensiveFumbleMin" : {
+          "skill" : false,
+          "value" : [ 33.0, 35.0, 36.5, 38.0, 39.5, 41.0, 42.5, 44.0, 45.5, 47.0, 48.5, 50.0 ]
+        },
+        "projectileLaunchRotation" : {
+          "skill" : false,
+          "value" : 12.0
+        },
+        "skillMasteryLevelRequired" : {
+          "skill" : false,
+          "value" : 16
+        },
+        "skillTier" : {
+          "skill" : false,
+          "value" : 4
+        }
+      },
+      "buff" : null,
+      "skillDescription" : null,
+      "modifier" : false
+    },
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillArchery20n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\raptorsummon_petmodifier_scavenger.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Scavenger.html",
     "name" : "Scavenger",
     "parent" : null,
     "attributes" : {
       "scavenger" : {
+        "skill" : true,
         "value" : {
+          "skillTag" : "skillArchery20n",
+          "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\raptorsummon_petskill_scavenger.dbr",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Scavenger.html",
           "name" : "Scavenger",
           "parent" : null,
           "attributes" : {
             "skillUltimateLevel" : {
-              "value" : 12,
-              "skill" : false
+              "skill" : false,
+              "value" : 12
             },
             "offensivePhysicalMin" : {
-              "value" : [ 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0 ]
             },
             "skillMasteryLevelRequired" : {
-              "value" : 24,
-              "skill" : false
+              "skill" : false,
+              "value" : 24
             },
             "offensiveLifeLeechMin" : {
-              "value" : [ 3.0, 3.0, 4.0, 4.0, 5.0, 5.0, 6.0, 6.0, 7.0, 7.0, 8.0, 8.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 3.0, 3.0, 4.0, 4.0, 5.0, 5.0, 6.0, 6.0, 7.0, 7.0, 8.0, 8.0 ]
             },
             "skillTier" : {
-              "value" : 5,
-              "skill" : false
+              "skill" : false,
+              "value" : 5
             },
             "skillMaxLevel" : {
-              "value" : 8,
-              "skill" : false
+              "skill" : false,
+              "value" : 8
             },
             "characterTotalSpeedModifier" : {
-              "value" : [ 5.0, 7.0, 9.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 21.0, 23.0, 25.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 5.0, 7.0, 9.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 21.0, 23.0, 25.0 ]
             }
           },
           "buff" : null,
-          "modifier" : false,
-          "skillTag" : "skillArchery20n",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Scavenger.html",
-          "skillDescription" : null
-        },
-        "skill" : true
+          "skillDescription" : null,
+          "modifier" : false
+        }
       }
     },
-    "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillArchery20n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Scavenger.html",
-    "skillDescription" : null
+    "buff" : {
+      "skillTag" : "skillArchery20n",
+      "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\raptorsummon_petskill_scavenger.dbr",
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Scavenger.html",
+      "name" : "Scavenger",
+      "parent" : null,
+      "attributes" : {
+        "skillUltimateLevel" : {
+          "skill" : false,
+          "value" : 12
+        },
+        "offensivePhysicalMin" : {
+          "skill" : false,
+          "value" : [ 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "skill" : false,
+          "value" : 24
+        },
+        "offensiveLifeLeechMin" : {
+          "skill" : false,
+          "value" : [ 3.0, 3.0, 4.0, 4.0, 5.0, 5.0, 6.0, 6.0, 7.0, 7.0, 8.0, 8.0 ]
+        },
+        "skillTier" : {
+          "skill" : false,
+          "value" : 5
+        },
+        "skillMaxLevel" : {
+          "skill" : false,
+          "value" : 8
+        },
+        "characterTotalSpeedModifier" : {
+          "skill" : false,
+          "value" : [ 5.0, 7.0, 9.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 21.0, 23.0, 25.0 ]
+        }
+      },
+      "buff" : null,
+      "skillDescription" : null,
+      "modifier" : false
+    },
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillArchery29n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\lightarmorspecialist.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Light Armor Specialist.html",
     "name" : "Light Armor Specialist",
     "parent" : null,
     "attributes" : {
       "lightarmorspecialist" : {
+        "skill" : true,
         "value" : {
+          "skillTag" : "skillArchery29n",
+          "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\lightarmorspecialistbuff.dbr",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Light Armor Specialist.html",
           "name" : "Light Armor Specialist",
           "parent" : null,
           "attributes" : {
             "skillCooldownTime" : {
-              "value" : 3.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 3.0
             },
             "skillWeaponTintBlue" : {
-              "value" : 0.5,
-              "skill" : false
+              "skill" : false,
+              "value" : 0.5
             },
             "characterManaLimitReserve" : {
-              "value" : 100.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 100.0
             },
             "skillConnectionSpacing" : {
-              "value" : 62,
-              "skill" : false
+              "skill" : false,
+              "value" : 62
             },
             "cameraShakeAmplitude" : {
-              "value" : 0.12,
-              "skill" : false
+              "skill" : false,
+              "value" : 0.12
             },
             "characterRunSpeedModifier" : {
-              "value" : [ 5.0, 7.0, 9.0, 10.0, 12.0, 14.0, 16.0, 17.0, 19.0, 21.0, 23.0, 24.0, 26.0, 28.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 5.0, 7.0, 9.0, 10.0, 12.0, 14.0, 16.0, 17.0, 19.0, 21.0, 23.0, 24.0, 26.0, 28.0 ]
             },
             "defensivePierce" : {
-              "value" : [ 8.0, 11.0, 13.0, 16.0, 18.0, 21.0, 24.0, 26.0, 29.0, 32.0, 34.0, 37.0, 39.0, 42.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 8.0, 11.0, 13.0, 16.0, 18.0, 21.0, 24.0, 26.0, 29.0, 32.0, 34.0, 37.0, 39.0, 42.0 ]
             },
             "skillMaxLevel" : {
-              "value" : 10,
-              "skill" : false
+              "skill" : false,
+              "value" : 10
             },
             "defensiveProtection" : {
-              "value" : [ 10.0, 15.0, 18.0, 23.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 49.0, 54.0, 57.0, 62.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 10.0, 15.0, 18.0, 23.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 49.0, 54.0, 57.0, 62.0 ]
             },
             "skillUltimateLevel" : {
-              "value" : 14,
-              "skill" : false
+              "skill" : false,
+              "value" : 14
             },
             "skillWeaponTintGreen" : {
-              "value" : 0.4,
-              "skill" : false
+              "skill" : false,
+              "value" : 0.4
             },
             "skillTargetRadius" : {
-              "value" : 12.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 12.0
             },
             "skillMasteryLevelRequired" : {
-              "value" : 32,
-              "skill" : false
+              "skill" : false,
+              "value" : 32
             },
             "skillTier" : {
-              "value" : 6,
-              "skill" : false
+              "skill" : false,
+              "value" : 6
             }
           },
           "buff" : null,
-          "modifier" : false,
-          "skillTag" : "skillArchery29n",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Light Armor Specialist.html",
-          "skillDescription" : null
-        },
-        "skill" : true
+          "skillDescription" : null,
+          "modifier" : false
+        }
       }
     },
-    "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillArchery29n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Light Armor Specialist.html",
-    "skillDescription" : null
+    "buff" : {
+      "skillTag" : "skillArchery29n",
+      "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\lightarmorspecialistbuff.dbr",
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Light Armor Specialist.html",
+      "name" : "Light Armor Specialist",
+      "parent" : null,
+      "attributes" : {
+        "skillCooldownTime" : {
+          "skill" : false,
+          "value" : 3.0
+        },
+        "skillWeaponTintBlue" : {
+          "skill" : false,
+          "value" : 0.5
+        },
+        "characterManaLimitReserve" : {
+          "skill" : false,
+          "value" : 100.0
+        },
+        "skillConnectionSpacing" : {
+          "skill" : false,
+          "value" : 62
+        },
+        "cameraShakeAmplitude" : {
+          "skill" : false,
+          "value" : 0.12
+        },
+        "characterRunSpeedModifier" : {
+          "skill" : false,
+          "value" : [ 5.0, 7.0, 9.0, 10.0, 12.0, 14.0, 16.0, 17.0, 19.0, 21.0, 23.0, 24.0, 26.0, 28.0 ]
+        },
+        "defensivePierce" : {
+          "skill" : false,
+          "value" : [ 8.0, 11.0, 13.0, 16.0, 18.0, 21.0, 24.0, 26.0, 29.0, 32.0, 34.0, 37.0, 39.0, 42.0 ]
+        },
+        "skillMaxLevel" : {
+          "skill" : false,
+          "value" : 10
+        },
+        "defensiveProtection" : {
+          "skill" : false,
+          "value" : [ 10.0, 15.0, 18.0, 23.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 49.0, 54.0, 57.0, 62.0 ]
+        },
+        "skillUltimateLevel" : {
+          "skill" : false,
+          "value" : 14
+        },
+        "skillWeaponTintGreen" : {
+          "skill" : false,
+          "value" : 0.4
+        },
+        "skillTargetRadius" : {
+          "skill" : false,
+          "value" : 12.0
+        },
+        "skillMasteryLevelRequired" : {
+          "skill" : false,
+          "value" : 32
+        },
+        "skillTier" : {
+          "skill" : false,
+          "value" : 6
+        }
+      },
+      "buff" : null,
+      "skillDescription" : null,
+      "modifier" : false
+    },
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillArchery22n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\lightarmorspecialist_astuteness.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Astuteness.html",
     "name" : "Astuteness",
     "parent" : "Light Armor Specialist",
     "attributes" : {
       "skillUltimateLevel" : {
-        "value" : 16,
-        "skill" : false
+        "skill" : false,
+        "value" : 16
       },
       "characterManaLimitReserve" : {
-        "value" : 50.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 50.0
       },
       "characterDeflectProjectile" : {
-        "value" : [ 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0 ]
       },
       "skillMasteryLevelRequired" : {
-        "value" : 40,
-        "skill" : false
+        "skill" : false,
+        "value" : 40
       },
       "defensiveTrap" : {
-        "value" : [ 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 64.0, 68.0, 72.0, 76.0, 80.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 64.0, 68.0, 72.0, 76.0, 80.0 ]
       },
       "characterDefensiveAbilityModifier" : {
-        "value" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ]
       },
       "skillTier" : {
-        "value" : 7,
-        "skill" : false
+        "skill" : false,
+        "value" : 7
       },
       "skillMaxLevel" : {
-        "value" : 12,
-        "skill" : false
+        "skill" : false,
+        "value" : 12
       }
     },
     "buff" : null,
-    "modifier" : true,
-    "skillTag" : "skillArchery22n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Astuteness.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : true
   }, {
+    "skillTag" : "skillArchery30n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\huntingnet.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Hunting Net.html",
     "name" : "Hunting Net",
     "parent" : null,
     "attributes" : {
       "projectileLaunchNumber" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "huntingnet" : {
+        "skill" : true,
         "value" : {
+          "skillTag" : "skillArchery30n",
+          "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\huntingnet_buff.dbr",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Hunting Net.html",
           "name" : "Hunting Net",
           "parent" : null,
           "attributes" : {
             "debufSkill" : {
-              "value" : 1,
-              "skill" : false
+              "skill" : false,
+              "value" : 1
             },
             "skillActiveDuration" : {
-              "value" : [ 3.0, 4.0, 5.1, 6.3, 7.6, 9.0, 10.5, 11.1, 12.8, 14.6 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 3.0, 4.0, 5.1, 6.3, 7.6, 9.0, 10.5, 11.1, 12.8, 14.6 ]
             },
             "skillCooldownTime" : {
-              "value" : 8.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 8.0
             },
             "skillManaCost" : {
-              "value" : [ 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 45.0, 49.0, 53.0, 57.0, 61.0, 65.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 45.0, 49.0, 53.0, 57.0, 61.0, 65.0 ]
             },
             "skillUltimateLevel" : {
-              "value" : 12,
-              "skill" : false
+              "skill" : false,
+              "value" : 12
             },
             "projectileExplosionRadius" : {
-              "value" : [ 0.5, 0.6, 0.8, 0.9, 1.0, 1.2, 1.3, 1.5, 1.6, 1.7, 1.9, 2.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 0.5, 0.6, 0.8, 0.9, 1.0, 1.2, 1.3, 1.5, 1.6, 1.7, 1.9, 2.0 ]
             },
             "skillConnectionSpacing" : {
-              "value" : 62,
-              "skill" : false
+              "skill" : false,
+              "value" : 62
             },
             "cameraShakeAmplitude" : {
-              "value" : 0.12,
-              "skill" : false
+              "skill" : false,
+              "value" : 0.12
             },
             "offensiveTotalDamageModifier" : {
-              "value" : [ -10.0, -13.0, -15.0, -18.0, -20.0, -23.0, -25.0, -28.0, -30.0, -33.0, -35.0, -38.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ -10.0, -13.0, -15.0, -18.0, -20.0, -23.0, -25.0, -28.0, -30.0, -33.0, -35.0, -38.0 ]
             },
             "skillMasteryLevelRequired" : {
-              "value" : 1,
-              "skill" : false
+              "skill" : false,
+              "value" : 1
             },
             "skillTier" : {
-              "value" : 1,
-              "skill" : false
+              "skill" : false,
+              "value" : 1
             },
             "skillMaxLevel" : {
-              "value" : 8,
-              "skill" : false
+              "skill" : false,
+              "value" : 8
             }
           },
           "buff" : null,
-          "modifier" : false,
-          "skillTag" : "skillArchery30n",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Hunting Net.html",
-          "skillDescription" : null
-        },
-        "skill" : true
+          "skillDescription" : null,
+          "modifier" : false
+        }
       }
     },
-    "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillArchery30n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Hunting Net.html",
-    "skillDescription" : null
+    "buff" : {
+      "skillTag" : "skillArchery30n",
+      "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\huntingnet_buff.dbr",
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Hunting Net.html",
+      "name" : "Hunting Net",
+      "parent" : null,
+      "attributes" : {
+        "debufSkill" : {
+          "skill" : false,
+          "value" : 1
+        },
+        "skillActiveDuration" : {
+          "skill" : false,
+          "value" : [ 3.0, 4.0, 5.1, 6.3, 7.6, 9.0, 10.5, 11.1, 12.8, 14.6 ]
+        },
+        "skillCooldownTime" : {
+          "skill" : false,
+          "value" : 8.0
+        },
+        "skillManaCost" : {
+          "skill" : false,
+          "value" : [ 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 45.0, 49.0, 53.0, 57.0, 61.0, 65.0 ]
+        },
+        "skillUltimateLevel" : {
+          "skill" : false,
+          "value" : 12
+        },
+        "projectileExplosionRadius" : {
+          "skill" : false,
+          "value" : [ 0.5, 0.6, 0.8, 0.9, 1.0, 1.2, 1.3, 1.5, 1.6, 1.7, 1.9, 2.0 ]
+        },
+        "skillConnectionSpacing" : {
+          "skill" : false,
+          "value" : 62
+        },
+        "cameraShakeAmplitude" : {
+          "skill" : false,
+          "value" : 0.12
+        },
+        "offensiveTotalDamageModifier" : {
+          "skill" : false,
+          "value" : [ -10.0, -13.0, -15.0, -18.0, -20.0, -23.0, -25.0, -28.0, -30.0, -33.0, -35.0, -38.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "skill" : false,
+          "value" : 1
+        },
+        "skillTier" : {
+          "skill" : false,
+          "value" : 1
+        },
+        "skillMaxLevel" : {
+          "skill" : false,
+          "value" : 8
+        }
+      },
+      "buff" : null,
+      "skillDescription" : null,
+      "modifier" : false
+    },
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillArchery23n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\ominousarrows.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Ominous Arrows.html",
     "name" : "Ominous Arrows",
     "parent" : null,
     "attributes" : {
       "projectileLaunchNumber" : {
-        "value" : 3,
-        "skill" : false
+        "skill" : false,
+        "value" : 3
       },
       "skillCooldownTime" : {
-        "value" : 15.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 15.0
       },
       "offensiveSlowBleedingMin" : {
-        "value" : [ 39.0, 51.0, 64.0, 77.0, 89.0, 102.0, 114.0, 126.0, 139.0, 152.0, 164.0, 177.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 39.0, 51.0, 64.0, 77.0, 89.0, 102.0, 114.0, 126.0, 139.0, 152.0, 164.0, 177.0 ]
       },
       "skillManaCost" : {
-        "value" : [ 75.0, 83.0, 91.0, 99.0, 107.0, 115.0, 122.0, 130.0, 138.0, 146.0, 154.0, 162.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 75.0, 83.0, 91.0, 99.0, 107.0, 115.0, 122.0, 130.0, 138.0, 146.0, 154.0, 162.0 ]
       },
       "projectileExplosionRadius" : {
-        "value" : 2.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 2.0
       },
       "projectilePiercingChance" : {
-        "value" : 66.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 66.0
       },
       "skillConnectionSpacing" : {
-        "value" : 62,
-        "skill" : false
+        "skill" : false,
+        "value" : 62
       },
       "Staff" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
+        "skill" : false,
+        "value" : 0.12
       },
       "offensiveSlowBleedingDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 3.0
       },
       "projectileUsesAllDamage" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "offensiveColdMin" : {
-        "value" : [ 33.8, 47.5, 60.1, 73.7, 87.4, 100.0, 113.6, 126.3, 139.9, 153.5, 166.1, 179.8 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 33.8, 47.5, 60.1, 73.7, 87.4, 100.0, 113.6, 126.3, 139.9, 153.5, 166.1, 179.8 ]
       },
       "Bow" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
+        "skill" : false,
+        "value" : 8
       },
       "RangedOneHand" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "offensivePhysicalModifier" : {
-        "value" : -50.0,
-        "skill" : false
+        "skill" : false,
+        "value" : -50.0
       },
       "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
+        "skill" : false,
+        "value" : 12
       },
       "projectileLaunchRotation" : {
-        "value" : 25.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 25.0
       },
       "offensiveLifeMin" : {
-        "value" : [ 33.8, 47.5, 60.1, 73.7, 87.4, 100.0, 113.6, 126.3, 139.9, 153.5, 166.1, 179.8 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 33.8, 47.5, 60.1, 73.7, 87.4, 100.0, 113.6, 126.3, 139.9, 153.5, 166.1, 179.8 ]
       },
       "skillMasteryLevelRequired" : {
-        "value" : 32,
-        "skill" : false
+        "skill" : false,
+        "value" : 32
       },
       "skillTier" : {
-        "value" : 6,
-        "skill" : false
+        "skill" : false,
+        "value" : 6
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillArchery23n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Ominous Arrows.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillArchery31n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\ominousarrows_confinedtechnique.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Confined Technique.html",
     "name" : "Confined Technique",
     "parent" : "Ominous Arrows",
     "attributes" : {
       "skillManaCost" : {
-        "value" : [ 25.0, 50.0, 75.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 25.0, 50.0, 75.0 ]
       },
       "skillUltimateLevel" : {
-        "value" : 3,
-        "skill" : false
+        "skill" : false,
+        "value" : 3
       },
       "offensivePetrifyMin" : {
-        "value" : 1.5,
-        "skill" : false
+        "skill" : false,
+        "value" : 1.5
       },
       "offensiveLifeModifier" : {
-        "value" : [ 25.0, 50.0, 75.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 25.0, 50.0, 75.0 ]
       },
       "offensiveSlowLifeMin" : {
-        "value" : [ 33.33333, 66.66666, 100.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 33.33333, 66.66666, 100.0 ]
       },
       "skillMasteryLevelRequired" : {
-        "value" : 40,
-        "skill" : false
+        "skill" : false,
+        "value" : 40
       },
       "skillTier" : {
-        "value" : 7,
-        "skill" : false
+        "skill" : false,
+        "value" : 7
       },
       "offensiveSlowBleedingModifier" : {
-        "value" : [ -33.0, -66.0, -100.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ -33.0, -66.0, -100.0 ]
       },
       "skillMaxLevel" : {
-        "value" : 3,
-        "skill" : false
+        "skill" : false,
+        "value" : 3
       },
       "offensiveSlowLifeDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 3.0
       }
     },
     "buff" : null,
-    "modifier" : true,
-    "skillTag" : "skillArchery31n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Confined Technique.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : true
   }, {
+    "skillTag" : "skillArchery32n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\rainofarrows.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Storm of Arrows.html",
     "name" : "Storm of Arrows",
     "parent" : null,
     "attributes" : {
       "skillActiveDuration" : {
-        "value" : 3.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 3.0
       },
       "skillCooldownTime" : {
-        "value" : 15.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 15.0
       },
       "offensiveSlowBleedingMin" : {
-        "value" : [ 55.6371, 64.7316, 75.195, 84.2895, 93.384, 103.8474, 112.9419, 122.0364, 131.1309, 141.5943, 150.6888, 159.7833, 170.2467, 179.3412 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 55.6371, 64.7316, 75.195, 84.2895, 93.384, 103.8474, 112.9419, 122.0364, 131.1309, 141.5943, 150.6888, 159.7833, 170.2467, 179.3412 ]
       },
       "skillManaCost" : {
-        "value" : [ 50.0, 53.0, 56.0, 59.0, 62.0, 65.0, 68.0, 72.0, 75.0, 78.0, 81.0, 84.0, 87.0, 90.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 50.0, 53.0, 56.0, 59.0, 62.0, 65.0, 68.0, 72.0, 75.0, 78.0, 81.0, 84.0, 87.0, 90.0 ]
       },
       "projectileExplosionRadius" : {
-        "value" : 5.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 5.0
       },
       "Staff" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
+        "skill" : false,
+        "value" : 0.12
       },
       "offensiveSlowBleedingDurationMin" : {
-        "value" : 1.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 1.0
       },
       "projectileUsesAllDamage" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "Bow" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "offensivePierceMin" : {
-        "value" : [ 55.6371, 64.7316, 75.195, 84.2895, 93.384, 103.8474, 112.9419, 122.0364, 131.1309, 141.5943, 150.6888, 159.7833, 170.2467, 179.3412 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 55.6371, 64.7316, 75.195, 84.2895, 93.384, 103.8474, 112.9419, 122.0364, 131.1309, 141.5943, 150.6888, 159.7833, 170.2467, 179.3412 ]
       },
       "skillMaxLevel" : {
-        "value" : 10,
-        "skill" : false
+        "skill" : false,
+        "value" : 10
       },
       "RangedOneHand" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "skillUltimateLevel" : {
-        "value" : 14,
-        "skill" : false
+        "skill" : false,
+        "value" : 14
       },
       "skillMasteryLevelRequired" : {
-        "value" : 16,
-        "skill" : false
+        "skill" : false,
+        "value" : 16
       },
       "skillTier" : {
-        "value" : 4,
-        "skill" : false
+        "skill" : false,
+        "value" : 4
       }
     },
     "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillArchery32n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Storm of Arrows.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillArchery33n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\rainofarrows_tempest.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Tempest.html",
     "name" : "Tempest",
     "parent" : "Storm of Arrows",
     "attributes" : {
       "offensiveSlowRunSpeedMin" : {
-        "value" : [ 12.0, 16.0, 20.0, 25.0, 29.0, 33.0, 37.0, 42.0, 46.0, 50.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 12.0, 16.0, 20.0, 25.0, 29.0, 33.0, 37.0, 42.0, 46.0, 50.0 ]
       },
       "skillManaCost" : {
-        "value" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0 ]
       },
       "skillUltimateLevel" : {
-        "value" : 10,
-        "skill" : false
+        "skill" : false,
+        "value" : 10
       },
       "offensiveSlowRunSpeedDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
+        "skill" : false,
+        "value" : 3.0
       },
       "skillMasteryLevelRequired" : {
-        "value" : 24,
-        "skill" : false
+        "skill" : false,
+        "value" : 24
       },
       "skillTier" : {
-        "value" : 5,
-        "skill" : false
+        "skill" : false,
+        "value" : 5
       },
       "skillMaxLevel" : {
-        "value" : 6,
-        "skill" : false
+        "skill" : false,
+        "value" : 6
       },
       "offensiveElementalMin" : {
-        "value" : [ 12.0, 18.0, 22.0, 28.0, 34.0, 38.0, 44.0, 50.0, 54.0, 60.0 ],
-        "skill" : false
+        "skill" : false,
+        "value" : [ 12.0, 18.0, 22.0, 28.0, 34.0, 38.0, 44.0, 50.0, 54.0, 60.0 ]
       }
     },
     "buff" : null,
-    "modifier" : true,
-    "skillTag" : "skillArchery33n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Tempest.html",
-    "skillDescription" : null
+    "skillDescription" : null,
+    "modifier" : true
   }, {
+    "skillTag" : "skillArchery35n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\survivaltechniques.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Survival Techniques.html",
     "name" : "Survival Techniques",
     "parent" : null,
     "attributes" : {
       "instantCast" : {
-        "value" : 1,
-        "skill" : false
+        "skill" : false,
+        "value" : 1
       },
       "survivaltechniques" : {
+        "skill" : true,
         "value" : {
+          "skillTag" : "skillArchery35n",
+          "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\survivaltechniques_buff.dbr",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Survival Techniques.html",
           "name" : "Survival Techniques",
           "parent" : null,
           "attributes" : {
             "skillUltimateLevel" : {
-              "value" : 12,
-              "skill" : false
+              "skill" : false,
+              "value" : 12
             },
             "characterManaLimitReserve" : {
-              "value" : 50.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 50.0
             },
             "notDispelable" : {
-              "value" : 1,
-              "skill" : false
+              "skill" : false,
+              "value" : 1
             },
             "characterDodgePercent" : {
-              "value" : [ 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0 ]
             },
             "cameraShakeAmplitude" : {
-              "value" : 0.12,
-              "skill" : false
+              "skill" : false,
+              "value" : 0.12
             },
             "skillMasteryLevelRequired" : {
-              "value" : 16,
-              "skill" : false
+              "skill" : false,
+              "value" : 16
             },
             "skillTier" : {
-              "value" : 4,
-              "skill" : false
+              "skill" : false,
+              "value" : 4
             },
             "skillMaxLevel" : {
-              "value" : 8,
-              "skill" : false
+              "skill" : false,
+              "value" : 8
             }
           },
           "buff" : null,
-          "modifier" : false,
-          "skillTag" : "skillArchery35n",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Survival Techniques.html",
-          "skillDescription" : null
-        },
-        "skill" : true
+          "skillDescription" : null,
+          "modifier" : false
+        }
       }
     },
-    "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillArchery35n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Survival Techniques.html",
-    "skillDescription" : null
+    "buff" : {
+      "skillTag" : "skillArchery35n",
+      "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\survivaltechniques_buff.dbr",
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Survival Techniques.html",
+      "name" : "Survival Techniques",
+      "parent" : null,
+      "attributes" : {
+        "skillUltimateLevel" : {
+          "skill" : false,
+          "value" : 12
+        },
+        "characterManaLimitReserve" : {
+          "skill" : false,
+          "value" : 50.0
+        },
+        "notDispelable" : {
+          "skill" : false,
+          "value" : 1
+        },
+        "characterDodgePercent" : {
+          "skill" : false,
+          "value" : [ 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0 ]
+        },
+        "cameraShakeAmplitude" : {
+          "skill" : false,
+          "value" : 0.12
+        },
+        "skillMasteryLevelRequired" : {
+          "skill" : false,
+          "value" : 16
+        },
+        "skillTier" : {
+          "skill" : false,
+          "value" : 4
+        },
+        "skillMaxLevel" : {
+          "skill" : false,
+          "value" : 8
+        }
+      },
+      "buff" : null,
+      "skillDescription" : null,
+      "modifier" : false
+    },
+    "skillDescription" : null,
+    "modifier" : false
   }, {
+    "skillTag" : "skillArchery34n",
+    "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\bandages.dbr",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Bandages.html",
     "name" : "Bandages",
     "parent" : null,
     "attributes" : {
       "bandages" : {
+        "skill" : true,
         "value" : {
+          "skillTag" : "skillArchery34n",
+          "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\bandages_buff.dbr",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Bandages.html",
           "name" : "Bandages",
           "parent" : null,
           "attributes" : {
             "defensiveBleeding" : {
-              "value" : [ 16.0, 22.0, 28.0, 34.0, 40.0, 46.0, 52.0, 58.0, 64.0, 70.0, 76.0, 82.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 16.0, 22.0, 28.0, 34.0, 40.0, 46.0, 52.0, 58.0, 64.0, 70.0, 76.0, 82.0 ]
             },
             "skillActiveDuration" : {
-              "value" : 300.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 300.0
             },
             "skillCooldownTime" : {
-              "value" : 10.0,
-              "skill" : false
+              "skill" : false,
+              "value" : 10.0
             },
             "skillLifeBonus" : {
-              "value" : [ 100.0, 225.0, 350.0, 475.0, 600.0, 725.0, 850.0, 975.0, 1100.0, 1225.0, 1350.0, 1475.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 100.0, 225.0, 350.0, 475.0, 600.0, 725.0, 850.0, 975.0, 1100.0, 1225.0, 1350.0, 1475.0 ]
             },
             "skillManaCost" : {
-              "value" : [ 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0 ]
             },
             "characterLifeRegen" : {
-              "value" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ]
             },
             "cameraShakeAmplitude" : {
-              "value" : 0.12,
-              "skill" : false
+              "skill" : false,
+              "value" : 0.12
             },
             "skillMaxLevel" : {
-              "value" : 8,
-              "skill" : false
+              "skill" : false,
+              "value" : 8
             },
             "defensivePoisonDuration" : {
-              "value" : [ 1.5, 3.0, 4.5, 6.0, 7.5, 9.0, 10.5, 12.0, 13.5, 15.0, 16.5, 18.0 ],
-              "skill" : false
+              "skill" : false,
+              "value" : [ 1.5, 3.0, 4.5, 6.0, 7.5, 9.0, 10.5, 12.0, 13.5, 15.0, 16.5, 18.0 ]
             },
             "skillUltimateLevel" : {
-              "value" : 12,
-              "skill" : false
+              "skill" : false,
+              "value" : 12
             },
             "notDispelable" : {
-              "value" : 1,
-              "skill" : false
+              "skill" : false,
+              "value" : 1
             },
             "skillMasteryLevelRequired" : {
-              "value" : 10,
-              "skill" : false
+              "skill" : false,
+              "value" : 10
             },
             "skillTier" : {
-              "value" : 3,
-              "skill" : false
+              "skill" : false,
+              "value" : 3
             }
           },
           "buff" : null,
-          "modifier" : false,
-          "skillTag" : "skillArchery34n",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Bandages.html",
-          "skillDescription" : null
-        },
-        "skill" : true
+          "skillDescription" : null,
+          "modifier" : false
+        }
       }
     },
-    "buff" : null,
-    "modifier" : false,
-    "skillTag" : "skillArchery34n",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Bandages.html",
-    "skillDescription" : null
+    "buff" : {
+      "skillTag" : "skillArchery34n",
+      "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\bandages_buff.dbr",
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Bandages.html",
+      "name" : "Bandages",
+      "parent" : null,
+      "attributes" : {
+        "defensiveBleeding" : {
+          "skill" : false,
+          "value" : [ 16.0, 22.0, 28.0, 34.0, 40.0, 46.0, 52.0, 58.0, 64.0, 70.0, 76.0, 82.0 ]
+        },
+        "skillActiveDuration" : {
+          "skill" : false,
+          "value" : 300.0
+        },
+        "skillCooldownTime" : {
+          "skill" : false,
+          "value" : 10.0
+        },
+        "skillLifeBonus" : {
+          "skill" : false,
+          "value" : [ 100.0, 225.0, 350.0, 475.0, 600.0, 725.0, 850.0, 975.0, 1100.0, 1225.0, 1350.0, 1475.0 ]
+        },
+        "skillManaCost" : {
+          "skill" : false,
+          "value" : [ 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0 ]
+        },
+        "characterLifeRegen" : {
+          "skill" : false,
+          "value" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ]
+        },
+        "cameraShakeAmplitude" : {
+          "skill" : false,
+          "value" : 0.12
+        },
+        "skillMaxLevel" : {
+          "skill" : false,
+          "value" : 8
+        },
+        "defensivePoisonDuration" : {
+          "skill" : false,
+          "value" : [ 1.5, 3.0, 4.5, 6.0, 7.5, 9.0, 10.5, 12.0, 13.5, 15.0, 16.5, 18.0 ]
+        },
+        "skillUltimateLevel" : {
+          "skill" : false,
+          "value" : 12
+        },
+        "notDispelable" : {
+          "skill" : false,
+          "value" : 1
+        },
+        "skillMasteryLevelRequired" : {
+          "skill" : false,
+          "value" : 10
+        },
+        "skillTier" : {
+          "skill" : false,
+          "value" : 3
+        }
+      },
+      "buff" : null,
+      "skillDescription" : null,
+      "modifier" : false
+    },
+    "skillDescription" : null,
+    "modifier" : false
   } ],
-  "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery.html"
+  "skillTree" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\archery_skilltree.dbr"
 }
