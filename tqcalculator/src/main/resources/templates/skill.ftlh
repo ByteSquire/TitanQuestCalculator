@@ -5,7 +5,7 @@
     <title>Titan Quest Calculator</title>
 </head>
 <body>
-    <h1>${name}</h1>
+    <h1><#if name??>${name}<#else>Error reading name</#if></h1>
 
     <table border=1.7>
     <#if buffName??>

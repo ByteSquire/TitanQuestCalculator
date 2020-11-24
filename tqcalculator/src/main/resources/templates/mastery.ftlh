@@ -10,7 +10,7 @@
 
     <table border=1.7>
     <#list skills as skill>
-        <tr><td><a href="${skill.url}">${skill.name}</a>
+        <tr><td><a href="${skill.url}"><#if skill.name??>${skill.name}<#else>Error reading name</#if></a>
     </#list>
     </table>
 </body>
