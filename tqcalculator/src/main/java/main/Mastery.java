@@ -4,9 +4,12 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import parsers.ModStringsParser;
 import parsers.SkillTreeParser;
 
+@JsonIgnoreProperties({ "mastery", "skillTree" })
 public class Mastery {
 
     private SkillTreeParser mSkillTreeParser;

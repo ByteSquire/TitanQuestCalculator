@@ -4,9 +4,12 @@ import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import parsers.ModStringsParser;
 import parsers.SkillParser;
 
+@JsonIgnoreProperties({ "skill" })
 public class Skill {
 
     private SkillParser mSkillParser;
