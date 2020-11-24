@@ -4,6 +4,8 @@ You can click any link shown below to get to the mastery overview.
 
 [ShadowChampions](https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions.html)
  
+[SoulvizierAERA](https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA.html)
+ 
 [Vanilla](https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla.html)
  
 
