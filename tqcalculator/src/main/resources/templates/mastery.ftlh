@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
     <link rel="stylesheet" href="../../stylesheets/styles.css">
@@ -13,5 +14,7 @@
         <tr><td><a href="${skill.url}"><#if skill.name??>${skill.name}<#else>Error reading name</#if></a>
     </#list>
     </table>
+    
+    <script src="/TitanQuestCalculator/assets/js/scale.fix.js"></script>
 </body>
 </html>

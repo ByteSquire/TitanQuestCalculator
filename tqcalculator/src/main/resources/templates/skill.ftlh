@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
     <link rel="stylesheet" href="../../../stylesheets/styles.css">
@@ -22,5 +23,7 @@
     </#list>
     </#if>
     </table>
+    
+    <script src="/TitanQuestCalculator/assets/js/scale.fix.js"></script>
 </body>
 </html>

@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
     <link rel="stylesheet" href="../stylesheets/styles.css">
@@ -13,5 +14,7 @@
         <tr><td><a href="${mastery.url}"><#if mastery.name??>${mastery.name}<#else>name</#if></a>
     </#list>
     </table>
+    
+    <script src="/TitanQuestCalculator/assets/js/scale.fix.js"></script>
 </body>
 </html>
