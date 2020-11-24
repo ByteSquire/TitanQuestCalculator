@@ -1,11 +1,13 @@
 {
   "mastery" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Stealth\\StealthMastery.dbr",
   "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery.html",
+  "skillTree" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Stealth\\StealthSkillTree.dbr",
   "name" : "Rogue Mastery",
   "skills" : [ {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Envenom Weapon.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName057",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Stealth\\EnvenomWeapon.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Envenom Weapon.html",
     "name" : "Envenom Weapon",
     "parent" : null,
     "attributes" : {
@@ -63,12 +65,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Nightshade.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName062",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Stealth\\EnvenomWeapon_Neurotoxin.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Nightshade.html",
     "name" : "Nightshade",
     "parent" : "Envenom Weapon",
     "attributes" : {
@@ -98,12 +100,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Toxin Distillation.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName056",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Stealth\\ToxinDistillation.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Toxin Distillation.html",
     "name" : "Toxin Distillation",
     "parent" : "Nightshade",
     "attributes" : {
@@ -133,12 +135,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Mandrake.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName055",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Stealth\\EnvenomWeapon_Delirium.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Mandrake.html",
     "name" : "Mandrake",
     "parent" : "Toxin Distillation",
     "attributes" : {
@@ -184,12 +186,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Calculated Strike.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName054",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Stealth\\CalculatedStrike.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Calculated Strike.html",
     "name" : "Calculated Strike",
     "parent" : null,
     "attributes" : {
@@ -267,12 +269,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Lucky Hit.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName142",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Stealth\\CalculatedStrike_LuckyHit.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Lucky Hit.html",
     "name" : "Lucky Hit",
     "parent" : "Calculated Strike",
     "attributes" : {
@@ -346,12 +348,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Open Wound.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName063",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Stealth\\OpenWound.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Open Wound.html",
     "name" : "Open Wound",
     "parent" : null,
     "attributes" : {
@@ -401,12 +403,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Anatomy.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName051",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Stealth\\Anatomy.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Anatomy.html",
     "name" : "Anatomy",
     "parent" : null,
     "attributes" : {
@@ -432,12 +434,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Throwing Knife.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName052",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Stealth\\ThrowingKnife.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Throwing Knife.html",
     "name" : "Throwing Knife",
     "parent" : null,
     "attributes" : {
@@ -499,12 +501,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Flurry of Knives.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName143",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Stealth\\ThrowingKnife_FlurryofKnives.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Flurry of Knives.html",
     "name" : "Flurry of Knives",
     "parent" : "Throwing Knife",
     "attributes" : {
@@ -538,21 +540,22 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Blade Honing.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName053",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Stealth\\BladeHoning.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Blade Honing.html",
     "name" : "Blade Honing",
     "parent" : null,
     "attributes" : {
       "BladeHoning" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Blade Honing.html",
+          "modifier" : false,
           "skillTag" : "tagSkillName053",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Stealth\\BladeHoningBuff.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Blade Honing.html",
           "name" : "Blade Honing",
           "parent" : null,
           "attributes" : {
@@ -610,15 +613,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Blade Honing.html",
+      "modifier" : false,
       "skillTag" : "tagSkillName053",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Stealth\\BladeHoningBuff.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Blade Honing.html",
       "name" : "Blade Honing",
       "parent" : null,
       "attributes" : {
@@ -676,15 +679,14 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Lethal Strike.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName061",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Stealth\\LethalStrike.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Lethal Strike.html",
     "name" : "Lethal Strike",
     "parent" : null,
     "attributes" : {
@@ -754,12 +756,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Mortal Wound.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName197",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Stealth\\LethalStrike_MortalWound.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Mortal Wound.html",
     "name" : "Mortal Wound",
     "parent" : "Lethal Strike",
     "attributes" : {
@@ -797,12 +799,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Poison Gas Bomb.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName194",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Stealth\\PoisonGasBomb.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Poison Gas Bomb.html",
     "name" : "Poison Gas Bomb",
     "parent" : null,
     "attributes" : {
@@ -860,12 +862,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Shrapnel.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName195",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Stealth\\PoisonGasBomb_Shrapnel.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Shrapnel.html",
     "name" : "Shrapnel",
     "parent" : null,
     "attributes" : {
@@ -911,12 +913,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Poison Mayhem.html",
+    "modifier" : true,
     "skillTag" : "x3tagSkillRoguePoisonMayhem",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\records\\xpack3\\skills\\allmasteries\\rogue_poisongasbomb_spread.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Poison Mayhem.html",
     "name" : "Poison Mayhem",
     "parent" : "Shrapnel",
     "attributes" : {
@@ -962,12 +964,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Flash Powder.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName058",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Stealth\\FlashPowder.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Flash Powder.html",
     "name" : "Flash Powder",
     "parent" : null,
     "attributes" : {
@@ -1025,12 +1027,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Lay Trap.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName083",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Stealth\\LayTrap.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Lay Trap.html",
     "name" : "Lay Trap",
     "parent" : null,
     "attributes" : {
@@ -1104,12 +1106,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Rapid Construction.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName087",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Stealth\\LayTrap_RapidConstruction.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Rapid Construction.html",
     "name" : "Rapid Construction",
     "parent" : "Lay Trap",
     "attributes" : {
@@ -1139,21 +1141,22 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Improved Firing Mechanism.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName082",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Stealth\\LayTrap_PetModifier_MultishotBoltTrap.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Improved Firing Mechanism.html",
     "name" : "Improved Firing Mechanism",
     "parent" : null,
     "attributes" : {
       "MultishotBoltTrap" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Improved Firing Mechanism.html",
+          "modifier" : true,
           "skillTag" : "tagSkillName082",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Stealth\\LayTrap_PetSkill_MultishotBoltTrap.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Improved Firing Mechanism.html",
           "name" : "Improved Firing Mechanism",
           "parent" : null,
           "attributes" : {
@@ -1191,15 +1194,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : true
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Improved Firing Mechanism.html",
+      "modifier" : true,
       "skillTag" : "tagSkillName082",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Stealth\\LayTrap_PetSkill_MultishotBoltTrap.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Improved Firing Mechanism.html",
       "name" : "Improved Firing Mechanism",
       "parent" : null,
       "attributes" : {
@@ -1237,15 +1240,14 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : true
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Disarm Traps.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName198",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Stealth\\DisarmTraps.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Disarm Traps.html",
     "name" : "Disarm Traps",
     "parent" : null,
     "attributes" : {
@@ -1271,12 +1273,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Blade Barrier.html",
+    "modifier" : false,
     "skillTag" : "x3tagSkillRogueBladeBarrier",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\records\\xpack3\\skills\\allmasteries\\rogue_bladebarrier.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Blade Barrier.html",
     "name" : "Blade Barrier",
     "parent" : null,
     "attributes" : {
@@ -1350,8 +1352,6 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
-  } ],
-  "skillTree" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Stealth\\StealthSkillTree.dbr"
+    "skillDescription" : null
+  } ]
 }

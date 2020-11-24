@@ -1,11 +1,13 @@
 {
   "mastery" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Stealth\\DRXStealthMastery.dbr",
   "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery.html",
+  "skillTree" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Stealth\\DrxStealthSkillTree.dbr",
   "name" : "Occult Mastery",
   "skills" : [ {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Envenom Weapon.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName057",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Stealth\\DRXEnvenomWeapon.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Envenom Weapon.html",
     "name" : "Envenom Weapon",
     "parent" : null,
     "attributes" : {
@@ -95,12 +97,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Nightshade.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName062",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Stealth\\DRXEnvenomWeapon_Neurotoxin.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Nightshade.html",
     "name" : "Nightshade",
     "parent" : "Envenom Weapon",
     "attributes" : {
@@ -134,12 +136,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Mandrake.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName055",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Stealth\\DRXEnvenomWeapon_Delirium.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Mandrake.html",
     "name" : "Mandrake",
     "parent" : "Nightshade",
     "attributes" : {
@@ -185,12 +187,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Toxin Distillation.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName056",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Stealth\\DRXToxinDistillation.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Toxin Distillation.html",
     "name" : "Toxin Distillation",
     "parent" : "Mandrake",
     "attributes" : {
@@ -216,21 +218,22 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Shadow Link.html",
+    "modifier" : false,
     "skillTag" : "tagDRXbladehoningNAME",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Stealth\\DRXBladeHoning.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Shadow Link.html",
     "name" : "Shadow Link",
     "parent" : null,
     "attributes" : {
       "DRXBladeHoning" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Shadow Link.html",
+          "modifier" : false,
           "skillTag" : "tagDRXbladehoningNAME",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Stealth\\DRXBladeHoningBuff.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Shadow Link.html",
           "name" : "Shadow Link",
           "parent" : null,
           "attributes" : {
@@ -292,15 +295,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Shadow Link.html",
+      "modifier" : false,
       "skillTag" : "tagDRXbladehoningNAME",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Stealth\\DRXBladeHoningBuff.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Shadow Link.html",
       "name" : "Shadow Link",
       "parent" : null,
       "attributes" : {
@@ -362,15 +365,14 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Dark Invigoration.html",
+    "modifier" : true,
     "skillTag" : "tagDRXopenwoundNAME",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Stealth\\DRXOpenWound.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Dark Invigoration.html",
     "name" : "Dark Invigoration",
     "parent" : "Shadow Link",
     "attributes" : {
@@ -404,12 +406,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Shadow Lore.html",
+    "modifier" : true,
     "skillTag" : "tagDRXanatomyNAME",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Stealth\\DRXAnatomy.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Shadow Lore.html",
     "name" : "Shadow Lore",
     "parent" : "Dark Invigoration",
     "attributes" : {
@@ -447,12 +449,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Throwing Knife.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName052",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Stealth\\DRXThrowingKnife.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Throwing Knife.html",
     "name" : "Throwing Knife",
     "parent" : null,
     "attributes" : {
@@ -514,12 +516,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Flurry of Knives.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName143",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Stealth\\DRXThrowingKnife_FlurryofKnives.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Flurry of Knives.html",
     "name" : "Flurry of Knives",
     "parent" : "Throwing Knife",
     "attributes" : {
@@ -553,12 +555,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Calculated Strike.html",
+    "modifier" : false,
     "skillTag" : "tagCalStrikeNAME",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Stealth\\DRXCalculatedStrike.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Calculated Strike.html",
     "name" : "Calculated Strike",
     "parent" : null,
     "attributes" : {
@@ -676,12 +678,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Blade Fury.html",
+    "modifier" : false,
     "skillTag" : "tagDRXcalculatedstrike_luckyhitNAME",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Stealth\\DRXCalculatedStrike_LuckyHit.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Blade Fury.html",
     "name" : "Blade Fury",
     "parent" : null,
     "attributes" : {
@@ -751,12 +753,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Nether Strike.html",
+    "modifier" : false,
     "skillTag" : "tagDRXlethalstrikeNAME",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Stealth\\DRXLethalStrike.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Nether Strike.html",
     "name" : "Nether Strike",
     "parent" : null,
     "attributes" : {
@@ -842,12 +844,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Dark Vapors.html",
+    "modifier" : true,
     "skillTag" : "tagDRXlethalstrike_mortalwoundNAME",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Stealth\\DRXLethalStrike_MortalWound.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Dark Vapors.html",
     "name" : "Dark Vapors",
     "parent" : "Nether Strike",
     "attributes" : {
@@ -913,12 +915,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Flash Powder.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName058",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Stealth\\DRXFlashPowder.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Flash Powder.html",
     "name" : "Flash Powder",
     "parent" : null,
     "attributes" : {
@@ -976,12 +978,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Toxic Concoction.html",
+    "modifier" : false,
     "skillTag" : "tagScrapNAME",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\records\\skills\\stealth\\drx_scrap.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Toxic Concoction.html",
     "name" : "Toxic Concoction",
     "parent" : null,
     "attributes" : {
@@ -1051,12 +1053,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Poisonous Gas.html",
+    "modifier" : false,
     "skillTag" : "tagPGBNAME",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Stealth\\DRXPoisonGasBomb.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Poisonous Gas.html",
     "name" : "Poisonous Gas",
     "parent" : null,
     "attributes" : {
@@ -1114,12 +1116,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Aphotic Ichor.html",
+    "modifier" : false,
     "skillTag" : "tagDRXpoisongasbomb_shrapnelNAME",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Stealth\\DRXPoisonGasBomb_Shrapnel.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Aphotic Ichor.html",
     "name" : "Aphotic Ichor",
     "parent" : null,
     "attributes" : {
@@ -1185,12 +1187,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Blade Barrier.html",
+    "modifier" : false,
     "skillTag" : "x3tagSkillRogueBladeBarrier",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Stealth\\drx_bladebarrier.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Blade Barrier.html",
     "name" : "Blade Barrier",
     "parent" : null,
     "attributes" : {
@@ -1264,12 +1266,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Agility.html",
+    "modifier" : false,
     "skillTag" : "tagDRXdisarmtrapsNAME",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\records\\skills\\stealth\\drxagility.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Agility.html",
     "name" : "Agility",
     "parent" : null,
     "attributes" : {
@@ -1303,12 +1305,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Dual Blade Proficiency.html",
+    "modifier" : false,
     "skillTag" : "tagBladeMasteryNAME",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\records\\skills\\stealth\\drx_dual_blade.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Dual Blade Proficiency.html",
     "name" : "Dual Blade Proficiency",
     "parent" : null,
     "attributes" : {
@@ -1354,12 +1356,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Smoke Screen.html",
+    "modifier" : false,
     "skillTag" : "tagDRXlaytrap_petmodifier_multishotbolttrapNAME",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Stealth\\DRXLayTrap_PetModifier_MultishotBoltTrap.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Smoke Screen.html",
     "name" : "Smoke Screen",
     "parent" : null,
     "attributes" : {
@@ -1433,12 +1435,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Dual Ranged Proficiency.html",
+    "modifier" : false,
     "skillTag" : "tagRoHMasteryNAME",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\records\\skills\\stealth\\drx_dual_ranged.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Dual Ranged Proficiency.html",
     "name" : "Dual Ranged Proficiency",
     "parent" : null,
     "attributes" : {
@@ -1480,12 +1482,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Disarm Traps.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName198",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\records\\skills\\stealth\\drxdisarmtraps.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Disarm Traps.html",
     "name" : "Disarm Traps",
     "parent" : null,
     "attributes" : {
@@ -1515,12 +1517,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Shadow Rifts.html",
+    "modifier" : false,
     "skillTag" : "tagNewDarklingsNAME",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Stealth\\DRXLaytrap.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Shadow Rifts.html",
     "name" : "Shadow Rifts",
     "parent" : null,
     "attributes" : {
@@ -1578,12 +1580,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Nether Breach.html",
+    "modifier" : true,
     "skillTag" : "tagbreachNAME",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\records\\skills\\stealth\\drxlaytrap_rapidconstruction.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Nether Breach.html",
     "name" : "Nether Breach",
     "parent" : "Shadow Rifts",
     "attributes" : {
@@ -1613,12 +1615,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Shadow Stalker.html",
+    "modifier" : false,
     "skillTag" : "tagStalkerSummonsNAME",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\records\\skills\\stealth\\drx_summon_shadow_stalker.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Shadow Stalker.html",
     "name" : "Shadow Stalker",
     "parent" : null,
     "attributes" : {
@@ -1656,21 +1658,22 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Channel.html",
+    "modifier" : false,
     "skillTag" : "tagGreaterPowerNAME",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\records\\skills\\stealth\\drx_petmodifier_greaterpower.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Channel.html",
     "name" : "Channel",
     "parent" : null,
     "attributes" : {
       "greaterpower" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Channel.html",
+          "modifier" : false,
           "skillTag" : "tagGreaterPowerNAME",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\records\\skills\\stealth\\drxpet\\drx_stalker_skills\\skill_greaterpower.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Channel.html",
           "name" : "Channel",
           "parent" : null,
           "attributes" : {
@@ -1740,15 +1743,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Channel.html",
+      "modifier" : false,
       "skillTag" : "tagGreaterPowerNAME",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\records\\skills\\stealth\\drxpet\\drx_stalker_skills\\skill_greaterpower.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Channel.html",
       "name" : "Channel",
       "parent" : null,
       "attributes" : {
@@ -1818,24 +1821,24 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Shadow Bolts.html",
+    "modifier" : false,
     "skillTag" : "tagShadowZapNAME",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\records\\skills\\stealth\\drx_petmodifier_shadowzap.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Shadow Bolts.html",
     "name" : "Shadow Bolts",
     "parent" : null,
     "attributes" : {
       "shadowzap" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Shadow Bolts.html",
+          "modifier" : false,
           "skillTag" : "tagShadowZapNAME",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\records\\skills\\stealth\\drxpet\\drx_stalker_skills\\skill_shadowzap.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Shadow Bolts.html",
           "name" : "Shadow Bolts",
           "parent" : null,
           "attributes" : {
@@ -1901,15 +1904,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Shadow Bolts.html",
+      "modifier" : false,
       "skillTag" : "tagShadowZapNAME",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\records\\skills\\stealth\\drxpet\\drx_stalker_skills\\skill_shadowzap.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult Mastery/Shadow Bolts.html",
       "name" : "Shadow Bolts",
       "parent" : null,
       "attributes" : {
@@ -1975,11 +1978,8 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
-  } ],
-  "skillTree" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Stealth\\DrxStealthSkillTree.dbr"
+    "skillDescription" : null
+  } ]
 }

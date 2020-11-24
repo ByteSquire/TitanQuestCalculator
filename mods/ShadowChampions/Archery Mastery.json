@@ -1,11 +1,13 @@
 {
   "mastery" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\archery_mastery.dbr",
   "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery.html",
+  "skillTree" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\archery_skilltree.dbr",
   "name" : "Archery Mastery",
   "skills" : [ {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Eagle Eye.html",
+    "modifier" : false,
     "skillTag" : "skillArchery1n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\eagleeye.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Eagle Eye.html",
     "name" : "Eagle Eye",
     "parent" : null,
     "attributes" : {
@@ -63,12 +65,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Acute Precision.html",
+    "modifier" : true,
     "skillTag" : "skillArchery4n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\eagleye_customizedarrowheads.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Acute Precision.html",
     "name" : "Acute Precision",
     "parent" : "Eagle Eye",
     "attributes" : {
@@ -102,12 +104,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Headshot.html",
+    "modifier" : true,
     "skillTag" : "skillArchery3n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\eagleye_headshot.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Headshot.html",
     "name" : "Headshot",
     "parent" : "Acute Precision",
     "attributes" : {
@@ -153,12 +155,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Languid Death.html",
+    "modifier" : true,
     "skillTag" : "skillArchery25n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\eagleye_arrowinthaknee.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Languid Death.html",
     "name" : "Languid Death",
     "parent" : "Headshot",
     "attributes" : {
@@ -220,21 +222,22 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Razor Sharpening.html",
+    "modifier" : false,
     "skillTag" : "skillArchery21n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\razorsharpening.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Razor Sharpening.html",
     "name" : "Razor Sharpening",
     "parent" : null,
     "attributes" : {
       "razorsharpening" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Razor Sharpening.html",
+          "modifier" : false,
           "skillTag" : "skillArchery21n",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\razorsharpeningbuff.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Razor Sharpening.html",
           "name" : "Razor Sharpening",
           "parent" : null,
           "attributes" : {
@@ -312,15 +315,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Razor Sharpening.html",
+      "modifier" : false,
       "skillTag" : "skillArchery21n",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\razorsharpeningbuff.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Razor Sharpening.html",
       "name" : "Razor Sharpening",
       "parent" : null,
       "attributes" : {
@@ -398,15 +401,14 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Bloodletting.html",
+    "modifier" : true,
     "skillTag" : "skillArchery36n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\razorsharpening_bloodletting.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Bloodletting.html",
     "name" : "Bloodletting",
     "parent" : "Razor Sharpening",
     "attributes" : {
@@ -436,12 +438,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Scorching Edge.html",
+    "modifier" : false,
     "skillTag" : "skillArchery27n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\razorsharpening_scorchingedge.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Scorching Edge.html",
     "name" : "Scorching Edge",
     "parent" : null,
     "attributes" : {
@@ -491,12 +493,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Magical Winds.html",
+    "modifier" : false,
     "skillTag" : "skillArchery7n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\magicwindarrow.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Magical Winds.html",
     "name" : "Magical Winds",
     "parent" : null,
     "attributes" : {
@@ -578,12 +580,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Blinding Winds.html",
+    "modifier" : true,
     "skillTag" : "skillArchery8n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\magicwindarrow_blindingwinds.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Blinding Winds.html",
     "name" : "Blinding Winds",
     "parent" : "Magical Winds",
     "attributes" : {
@@ -645,12 +647,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Vampire Shots.html",
+    "modifier" : true,
     "skillTag" : "skillArchery9n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\magicwindarrow_vampireshots.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Vampire Shots.html",
     "name" : "Vampire Shots",
     "parent" : "Blinding Winds",
     "attributes" : {
@@ -680,12 +682,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Monster Hunter.html",
+    "modifier" : false,
     "skillTag" : "skillArchery11n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\monsterhunter.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Monster Hunter.html",
     "name" : "Monster Hunter",
     "parent" : null,
     "attributes" : {
@@ -715,12 +717,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Divine Defiance.html",
+    "modifier" : false,
     "skillTag" : "skillArchery28n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\divinedefiance.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Divine Defiance.html",
     "name" : "Divine Defiance",
     "parent" : null,
     "attributes" : {
@@ -750,12 +752,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Split Shots.html",
+    "modifier" : false,
     "skillTag" : "skillArchery12n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\splitshots.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Split Shots.html",
     "name" : "Split Shots",
     "parent" : null,
     "attributes" : {
@@ -817,12 +819,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Ranger's Prowess.html",
+    "modifier" : false,
     "skillTag" : "skillArchery13n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\quickdraw.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Ranger's Prowess.html",
     "name" : "Ranger's Prowess",
     "parent" : null,
     "attributes" : {
@@ -833,9 +835,10 @@
       "quickdraw" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Ranger's Prowess.html",
+          "modifier" : false,
           "skillTag" : "skillArchery13n",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\quickdraw_buff.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Ranger's Prowess.html",
           "name" : "Ranger's Prowess",
           "parent" : null,
           "attributes" : {
@@ -897,15 +900,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Ranger's Prowess.html",
+      "modifier" : false,
       "skillTag" : "skillArchery13n",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\quickdraw_buff.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Ranger's Prowess.html",
       "name" : "Ranger's Prowess",
       "parent" : null,
       "attributes" : {
@@ -967,15 +970,14 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Devastating Shots.html",
+    "modifier" : true,
     "skillTag" : "skillArchery14n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\quickdraw_bowmastery.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Devastating Shots.html",
     "name" : "Devastating Shots",
     "parent" : "Ranger's Prowess",
     "attributes" : {
@@ -1037,12 +1039,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Target Practice.html",
+    "modifier" : false,
     "skillTag" : "skillArchery15n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\targetpractice.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Target Practice.html",
     "name" : "Target Practice",
     "parent" : null,
     "attributes" : {
@@ -1084,12 +1086,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Dragon Arrow.html",
+    "modifier" : false,
     "skillTag" : "skillArchery16n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\dragonarrow.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Dragon Arrow.html",
     "name" : "Dragon Arrow",
     "parent" : null,
     "attributes" : {
@@ -1175,12 +1177,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Raptor Hunter.html",
+    "modifier" : false,
     "skillTag" : "skillArchery17n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\raptorsummon.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Raptor Hunter.html",
     "name" : "Raptor Hunter",
     "parent" : null,
     "attributes" : {
@@ -1222,30 +1224,32 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Intimidating Screech.html",
+    "modifier" : false,
     "skillTag" : "skillArchery26n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\raptorsummon_petmodifier_intimidatingscreech.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Intimidating Screech.html",
     "name" : "Intimidating Screech",
     "parent" : null,
     "attributes" : {
       "intimidatingscreech" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Intimidating Screech.html",
+          "modifier" : false,
           "skillTag" : "skillArchery26n",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\eagle_screech.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Intimidating Screech.html",
           "name" : "Intimidating Screech",
           "parent" : null,
           "attributes" : {
             "screech" : {
               "skill" : true,
               "value" : {
+                "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Intimidating Screech.html",
+                "modifier" : false,
                 "skillTag" : "skillArchery26n",
                 "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\eagle_screechbuff.dbr",
-                "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Intimidating Screech.html",
                 "name" : "Intimidating Screech",
                 "parent" : null,
                 "attributes" : {
@@ -1311,15 +1315,15 @@
                   }
                 },
                 "buff" : null,
-                "skillDescription" : null,
-                "modifier" : false
+                "skillDescription" : null
               }
             }
           },
           "buff" : {
+            "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Intimidating Screech.html",
+            "modifier" : false,
             "skillTag" : "skillArchery26n",
             "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\eagle_screechbuff.dbr",
-            "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Intimidating Screech.html",
             "name" : "Intimidating Screech",
             "parent" : null,
             "attributes" : {
@@ -1385,27 +1389,27 @@
               }
             },
             "buff" : null,
-            "skillDescription" : null,
-            "modifier" : false
+            "skillDescription" : null
           },
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Intimidating Screech.html",
+      "modifier" : false,
       "skillTag" : "skillArchery26n",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\eagle_screech.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Intimidating Screech.html",
       "name" : "Intimidating Screech",
       "parent" : null,
       "attributes" : {
         "screech" : {
           "skill" : true,
           "value" : {
+            "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Intimidating Screech.html",
+            "modifier" : false,
             "skillTag" : "skillArchery26n",
             "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\eagle_screechbuff.dbr",
-            "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Intimidating Screech.html",
             "name" : "Intimidating Screech",
             "parent" : null,
             "attributes" : {
@@ -1471,15 +1475,15 @@
               }
             },
             "buff" : null,
-            "skillDescription" : null,
-            "modifier" : false
+            "skillDescription" : null
           }
         }
       },
       "buff" : {
+        "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Intimidating Screech.html",
+        "modifier" : false,
         "skillTag" : "skillArchery26n",
         "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\eagle_screechbuff.dbr",
-        "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Intimidating Screech.html",
         "name" : "Intimidating Screech",
         "parent" : null,
         "attributes" : {
@@ -1545,27 +1549,26 @@
           }
         },
         "buff" : null,
-        "skillDescription" : null,
-        "modifier" : false
+        "skillDescription" : null
       },
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Silver Feathers.html",
+    "modifier" : false,
     "skillTag" : "skillArchery19n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\raptorsummon_petmodifier_silverfeathers.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Silver Feathers.html",
     "name" : "Silver Feathers",
     "parent" : null,
     "attributes" : {
       "silverfeathers" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Silver Feathers.html",
+          "modifier" : false,
           "skillTag" : "skillArchery19n",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\raptorsummon_petskill_silverfeathers.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Silver Feathers.html",
           "name" : "Silver Feathers",
           "parent" : null,
           "attributes" : {
@@ -1647,15 +1650,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Silver Feathers.html",
+      "modifier" : false,
       "skillTag" : "skillArchery19n",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\raptorsummon_petskill_silverfeathers.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Silver Feathers.html",
       "name" : "Silver Feathers",
       "parent" : null,
       "attributes" : {
@@ -1737,24 +1740,24 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Scavenger.html",
+    "modifier" : false,
     "skillTag" : "skillArchery20n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\raptorsummon_petmodifier_scavenger.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Scavenger.html",
     "name" : "Scavenger",
     "parent" : null,
     "attributes" : {
       "scavenger" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Scavenger.html",
+          "modifier" : false,
           "skillTag" : "skillArchery20n",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\raptorsummon_petskill_scavenger.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Scavenger.html",
           "name" : "Scavenger",
           "parent" : null,
           "attributes" : {
@@ -1788,15 +1791,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Scavenger.html",
+      "modifier" : false,
       "skillTag" : "skillArchery20n",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\raptorsummon_petskill_scavenger.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Scavenger.html",
       "name" : "Scavenger",
       "parent" : null,
       "attributes" : {
@@ -1830,24 +1833,24 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Light Armor Specialist.html",
+    "modifier" : false,
     "skillTag" : "skillArchery29n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\lightarmorspecialist.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Light Armor Specialist.html",
     "name" : "Light Armor Specialist",
     "parent" : null,
     "attributes" : {
       "lightarmorspecialist" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Light Armor Specialist.html",
+          "modifier" : false,
           "skillTag" : "skillArchery29n",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\lightarmorspecialistbuff.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Light Armor Specialist.html",
           "name" : "Light Armor Specialist",
           "parent" : null,
           "attributes" : {
@@ -1909,15 +1912,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Light Armor Specialist.html",
+      "modifier" : false,
       "skillTag" : "skillArchery29n",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\lightarmorspecialistbuff.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Light Armor Specialist.html",
       "name" : "Light Armor Specialist",
       "parent" : null,
       "attributes" : {
@@ -1979,15 +1982,14 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Astuteness.html",
+    "modifier" : true,
     "skillTag" : "skillArchery22n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\lightarmorspecialist_astuteness.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Astuteness.html",
     "name" : "Astuteness",
     "parent" : "Light Armor Specialist",
     "attributes" : {
@@ -2025,12 +2027,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Hunting Net.html",
+    "modifier" : false,
     "skillTag" : "skillArchery30n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\huntingnet.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Hunting Net.html",
     "name" : "Hunting Net",
     "parent" : null,
     "attributes" : {
@@ -2041,9 +2043,10 @@
       "huntingnet" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Hunting Net.html",
+          "modifier" : false,
           "skillTag" : "skillArchery30n",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\huntingnet_buff.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Hunting Net.html",
           "name" : "Hunting Net",
           "parent" : null,
           "attributes" : {
@@ -2097,15 +2100,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Hunting Net.html",
+      "modifier" : false,
       "skillTag" : "skillArchery30n",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\huntingnet_buff.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Hunting Net.html",
       "name" : "Hunting Net",
       "parent" : null,
       "attributes" : {
@@ -2159,15 +2162,14 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Ominous Arrows.html",
+    "modifier" : false,
     "skillTag" : "skillArchery23n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\ominousarrows.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Ominous Arrows.html",
     "name" : "Ominous Arrows",
     "parent" : null,
     "attributes" : {
@@ -2257,12 +2259,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Confined Technique.html",
+    "modifier" : true,
     "skillTag" : "skillArchery31n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\ominousarrows_confinedtechnique.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Confined Technique.html",
     "name" : "Confined Technique",
     "parent" : "Ominous Arrows",
     "attributes" : {
@@ -2308,12 +2310,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Storm of Arrows.html",
+    "modifier" : false,
     "skillTag" : "skillArchery32n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\rainofarrows.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Storm of Arrows.html",
     "name" : "Storm of Arrows",
     "parent" : null,
     "attributes" : {
@@ -2383,12 +2385,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Tempest.html",
+    "modifier" : true,
     "skillTag" : "skillArchery33n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\rainofarrows_tempest.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Tempest.html",
     "name" : "Tempest",
     "parent" : "Storm of Arrows",
     "attributes" : {
@@ -2426,12 +2428,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Survival Techniques.html",
+    "modifier" : false,
     "skillTag" : "skillArchery35n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\survivaltechniques.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Survival Techniques.html",
     "name" : "Survival Techniques",
     "parent" : null,
     "attributes" : {
@@ -2442,9 +2444,10 @@
       "survivaltechniques" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Survival Techniques.html",
+          "modifier" : false,
           "skillTag" : "skillArchery35n",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\survivaltechniques_buff.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Survival Techniques.html",
           "name" : "Survival Techniques",
           "parent" : null,
           "attributes" : {
@@ -2482,15 +2485,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Survival Techniques.html",
+      "modifier" : false,
       "skillTag" : "skillArchery35n",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\survivaltechniques_buff.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Survival Techniques.html",
       "name" : "Survival Techniques",
       "parent" : null,
       "attributes" : {
@@ -2528,24 +2531,24 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Bandages.html",
+    "modifier" : false,
     "skillTag" : "skillArchery34n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\bandages.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Bandages.html",
     "name" : "Bandages",
     "parent" : null,
     "attributes" : {
       "bandages" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Bandages.html",
+          "modifier" : false,
           "skillTag" : "skillArchery34n",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\bandages_buff.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Bandages.html",
           "name" : "Bandages",
           "parent" : null,
           "attributes" : {
@@ -2603,15 +2606,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Bandages.html",
+      "modifier" : false,
       "skillTag" : "skillArchery34n",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\skills\\bandages_buff.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery Mastery/Bandages.html",
       "name" : "Bandages",
       "parent" : null,
       "attributes" : {
@@ -2669,11 +2672,8 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
-  } ],
-  "skillTree" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\archery\\archery_skilltree.dbr"
+    "skillDescription" : null
+  } ]
 }

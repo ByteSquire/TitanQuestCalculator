@@ -1,11 +1,13 @@
 {
   "mastery" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Storm\\StormMastery.dbr",
   "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery.html",
+  "skillTree" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Storm\\StormSkillTree.dbr",
   "name" : "Storm Mastery",
   "skills" : [ {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Ice Shard.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName022",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Storm\\IceShard.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Ice Shard.html",
     "name" : "Ice Shard",
     "parent" : null,
     "attributes" : {
@@ -59,12 +61,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Velocity.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName023",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Storm\\IceShard_Velocity.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Velocity.html",
     "name" : "Velocity",
     "parent" : "Ice Shard",
     "attributes" : {
@@ -98,12 +100,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Torrent.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName024",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Storm\\IceShard_Torrent.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Torrent.html",
     "name" : "Torrent",
     "parent" : "Velocity",
     "attributes" : {
@@ -141,12 +143,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Lightning Bolt.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName025",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Storm\\LightningBolt.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Lightning Bolt.html",
     "name" : "Lightning Bolt",
     "parent" : null,
     "attributes" : {
@@ -204,12 +206,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Chain Lightning.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName026",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Storm\\LightningBolt_ChainLightning.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Chain Lightning.html",
     "name" : "Chain Lightning",
     "parent" : null,
     "attributes" : {
@@ -251,21 +253,22 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Freezing Blast.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName204",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Storm\\FreezingBlast.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Freezing Blast.html",
     "name" : "Freezing Blast",
     "parent" : null,
     "attributes" : {
       "FreezingBlast" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Freezing Blast.html",
+          "modifier" : false,
           "skillTag" : "tagSkillName204",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Storm\\FreezingBlastBuff.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Freezing Blast.html",
           "name" : "Freezing Blast",
           "parent" : null,
           "attributes" : {
@@ -327,15 +330,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Freezing Blast.html",
+      "modifier" : false,
       "skillTag" : "tagSkillName204",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Storm\\FreezingBlastBuff.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Freezing Blast.html",
       "name" : "Freezing Blast",
       "parent" : null,
       "attributes" : {
@@ -397,15 +400,14 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Storm Nimbus.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName027",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Storm\\StormNimbus.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Storm Nimbus.html",
     "name" : "Storm Nimbus",
     "parent" : null,
     "attributes" : {
@@ -491,12 +493,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Heart of Frost.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName028",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Storm\\StormNimbus_HeartofFrost.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Heart of Frost.html",
     "name" : "Heart of Frost",
     "parent" : "Storm Nimbus",
     "attributes" : {
@@ -542,12 +544,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Static Charge.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName029",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Storm\\StormNimbus_StaticCharge.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Static Charge.html",
     "name" : "Static Charge",
     "parent" : "Heart of Frost",
     "attributes" : {
@@ -585,21 +587,22 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Energy Shield.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName180",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Storm\\EnergyShield.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Energy Shield.html",
     "name" : "Energy Shield",
     "parent" : null,
     "attributes" : {
       "EnergyShield" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Energy Shield.html",
+          "modifier" : false,
           "skillTag" : "tagSkillName180",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Storm\\EnergyShieldBuff.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Energy Shield.html",
           "name" : "Energy Shield",
           "parent" : null,
           "attributes" : {
@@ -653,15 +656,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Energy Shield.html",
+      "modifier" : false,
       "skillTag" : "tagSkillName180",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Storm\\EnergyShieldBuff.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Energy Shield.html",
       "name" : "Energy Shield",
       "parent" : null,
       "attributes" : {
@@ -715,15 +718,14 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Reflection.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName181",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Storm\\EnergyShield_Reflection.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Reflection.html",
     "name" : "Reflection",
     "parent" : "Energy Shield",
     "attributes" : {
@@ -757,12 +759,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Squall.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName151",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Storm\\Squall.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Squall.html",
     "name" : "Squall",
     "parent" : null,
     "attributes" : {
@@ -824,12 +826,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Obscured Visibility.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName215",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Storm\\Squall_ObscuredVisibility.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Obscured Visibility.html",
     "name" : "Obscured Visibility",
     "parent" : "Squall",
     "attributes" : {
@@ -871,12 +873,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Summon Wisp.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName149",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Storm\\StormWispSummoning.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Summon Wisp.html",
     "name" : "Summon Wisp",
     "parent" : null,
     "attributes" : {
@@ -918,30 +920,32 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Eye of the Storm.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName205",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Storm\\StormWisp_PetModifier_EyeoftheStorm.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Eye of the Storm.html",
     "name" : "Eye of the Storm",
     "parent" : null,
     "attributes" : {
       "EyeoftheStorm" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Eye of the Storm.html",
+          "modifier" : false,
           "skillTag" : "tagSkillName205",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Storm\\StormWisp_PetSkill_EyeoftheStorm.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Eye of the Storm.html",
           "name" : "Eye of the Storm",
           "parent" : null,
           "attributes" : {
             "EyeoftheStorm" : {
               "skill" : true,
               "value" : {
+                "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Eye of the Storm.html",
+                "modifier" : false,
                 "skillTag" : "tagSkillName205",
                 "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Storm\\StormWisp_PetSkill_EyeoftheStormBuff.dbr",
-                "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Eye of the Storm.html",
                 "name" : "Eye of the Storm",
                 "parent" : null,
                 "attributes" : {
@@ -995,15 +999,15 @@
                   }
                 },
                 "buff" : null,
-                "skillDescription" : null,
-                "modifier" : false
+                "skillDescription" : null
               }
             }
           },
           "buff" : {
+            "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Eye of the Storm.html",
+            "modifier" : false,
             "skillTag" : "tagSkillName205",
             "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Storm\\StormWisp_PetSkill_EyeoftheStormBuff.dbr",
-            "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Eye of the Storm.html",
             "name" : "Eye of the Storm",
             "parent" : null,
             "attributes" : {
@@ -1057,27 +1061,27 @@
               }
             },
             "buff" : null,
-            "skillDescription" : null,
-            "modifier" : false
+            "skillDescription" : null
           },
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Eye of the Storm.html",
+      "modifier" : false,
       "skillTag" : "tagSkillName205",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Storm\\StormWisp_PetSkill_EyeoftheStorm.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Eye of the Storm.html",
       "name" : "Eye of the Storm",
       "parent" : null,
       "attributes" : {
         "EyeoftheStorm" : {
           "skill" : true,
           "value" : {
+            "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Eye of the Storm.html",
+            "modifier" : false,
             "skillTag" : "tagSkillName205",
             "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Storm\\StormWisp_PetSkill_EyeoftheStormBuff.dbr",
-            "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Eye of the Storm.html",
             "name" : "Eye of the Storm",
             "parent" : null,
             "attributes" : {
@@ -1131,15 +1135,15 @@
               }
             },
             "buff" : null,
-            "skillDescription" : null,
-            "modifier" : false
+            "skillDescription" : null
           }
         }
       },
       "buff" : {
+        "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Eye of the Storm.html",
+        "modifier" : false,
         "skillTag" : "tagSkillName205",
         "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Storm\\StormWisp_PetSkill_EyeoftheStormBuff.dbr",
-        "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Eye of the Storm.html",
         "name" : "Eye of the Storm",
         "parent" : null,
         "attributes" : {
@@ -1193,27 +1197,26 @@
           }
         },
         "buff" : null,
-        "skillDescription" : null,
-        "modifier" : false
+        "skillDescription" : null
       },
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Arc Discharge.html",
+    "modifier" : false,
     "skillTag" : "x3tagSkillStormArcingChaos",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\records\\xpack3\\skills\\allmasteries\\storm_stormwisp_petmodifier_arcingchaos.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Arc Discharge.html",
     "name" : "Arc Discharge",
     "parent" : null,
     "attributes" : {
       "arcingchaos" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Arc Discharge.html",
+          "modifier" : false,
           "skillTag" : "x3tagSkillStormArcingChaos",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\records\\xpack3\\skills\\allmasteries\\storm_stormwisp_petskill_arcingchaos.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Arc Discharge.html",
           "name" : "Arc Discharge",
           "parent" : null,
           "attributes" : {
@@ -1255,15 +1258,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Arc Discharge.html",
+      "modifier" : false,
       "skillTag" : "x3tagSkillStormArcingChaos",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\records\\xpack3\\skills\\allmasteries\\storm_stormwisp_petskill_arcingchaos.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Arc Discharge.html",
       "name" : "Arc Discharge",
       "parent" : null,
       "attributes" : {
@@ -1305,15 +1308,14 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Storm Surge.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName019",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Storm\\StormSurge.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Storm Surge.html",
     "name" : "Storm Surge",
     "parent" : null,
     "attributes" : {
@@ -1375,12 +1377,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Thunderball.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName020",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Storm\\Thunderball.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Thunderball.html",
     "name" : "Thunderball",
     "parent" : null,
     "attributes" : {
@@ -1442,12 +1444,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Concussive Blast.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName021",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Storm\\Thunderball_ConcussiveBlast.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Concussive Blast.html",
     "name" : "Concussive Blast",
     "parent" : null,
     "attributes" : {
@@ -1493,12 +1495,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Spell Breaker.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName156",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Storm\\SpellBreaker.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Spell Breaker.html",
     "name" : "Spell Breaker",
     "parent" : null,
     "attributes" : {
@@ -1552,12 +1554,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Spell Shock.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName157",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Storm\\SpellBreaker_SpellShock.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Spell Shock.html",
     "name" : "Spell Shock",
     "parent" : "Spell Breaker",
     "attributes" : {
@@ -1599,12 +1601,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Lightning Dash.html",
+    "modifier" : false,
     "skillTag" : "x3tagSkillStormFlash",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\records\\xpack3\\skills\\allmasteries\\storm_flash.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Storm Mastery/Lightning Dash.html",
     "name" : "Lightning Dash",
     "parent" : null,
     "attributes" : {
@@ -1686,8 +1688,6 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
-  } ],
-  "skillTree" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Storm\\StormSkillTree.dbr"
+    "skillDescription" : null
+  } ]
 }

@@ -1,11 +1,13 @@
 {
   "mastery" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Nature\\DRXNatureMastery.dbr",
   "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery.html",
+  "skillTree" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Nature\\DrxNatureSkillTree.dbr",
   "name" : "Nature Mastery",
   "skills" : [ {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Regrowth.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName072",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Nature\\DRXRegrowth.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Regrowth.html",
     "name" : "Regrowth",
     "parent" : null,
     "attributes" : {
@@ -47,12 +49,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Accelerated Growth.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName075",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Nature\\DRXRegrowth_AcceleratedGrowth.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Accelerated Growth.html",
     "name" : "Accelerated Growth",
     "parent" : "Regrowth",
     "attributes" : {
@@ -82,12 +84,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Dissemination.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName073",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Nature\\DRXRegrowth_Dissemination.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Dissemination.html",
     "name" : "Dissemination",
     "parent" : null,
     "attributes" : {
@@ -125,12 +127,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Quill Ward.html",
+    "modifier" : false,
     "skillTag" : "tagNewSkill256",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Nature\\DRXBriarWard.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Quill Ward.html",
     "name" : "Quill Ward",
     "parent" : null,
     "attributes" : {
@@ -188,21 +190,22 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Poisonous Quills.html",
+    "modifier" : false,
     "skillTag" : "tagNewSkill257",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Nature\\DRXBriarWard_PetModifier_StingingNettle.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Poisonous Quills.html",
     "name" : "Poisonous Quills",
     "parent" : null,
     "attributes" : {
       "StingingNettle" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Poisonous Quills.html",
+          "modifier" : false,
           "skillTag" : "tagNewSkill257",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\records\\skills\\nature\\svpet\\skills\\petskill_poisonquill.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Poisonous Quills.html",
           "name" : "Poisonous Quills",
           "parent" : null,
           "attributes" : {
@@ -284,15 +287,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Poisonous Quills.html",
+      "modifier" : false,
       "skillTag" : "tagNewSkill257",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\records\\skills\\nature\\svpet\\skills\\petskill_poisonquill.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Poisonous Quills.html",
       "name" : "Poisonous Quills",
       "parent" : null,
       "attributes" : {
@@ -374,24 +377,24 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Sanctuary.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName069",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Nature\\DRXBriarWard_Sanctuary.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Sanctuary.html",
     "name" : "Sanctuary",
     "parent" : null,
     "attributes" : {
       "Sanctuary" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Sanctuary.html",
+          "modifier" : false,
           "skillTag" : "tagSkillName069",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Nature\\DRXBriarWard_SanctuaryBuff.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Sanctuary.html",
           "name" : "Sanctuary",
           "parent" : null,
           "attributes" : {
@@ -433,15 +436,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Sanctuary.html",
+      "modifier" : false,
       "skillTag" : "tagSkillName069",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Nature\\DRXBriarWard_SanctuaryBuff.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Sanctuary.html",
       "name" : "Sanctuary",
       "parent" : null,
       "attributes" : {
@@ -483,24 +486,24 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Heart of Oak.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName160",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Nature\\DRXHeartofOak.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Heart of Oak.html",
     "name" : "Heart of Oak",
     "parent" : null,
     "attributes" : {
       "DRXHeartofOak" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Heart of Oak.html",
+          "modifier" : false,
           "skillTag" : "tagSkillName160",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Nature\\DRXHeartofOakBuff.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Heart of Oak.html",
           "name" : "Heart of Oak",
           "parent" : null,
           "attributes" : {
@@ -550,15 +553,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Heart of Oak.html",
+      "modifier" : false,
       "skillTag" : "tagSkillName160",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Nature\\DRXHeartofOakBuff.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Heart of Oak.html",
       "name" : "Heart of Oak",
       "parent" : null,
       "attributes" : {
@@ -608,15 +611,14 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Tranquility of Water.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName161",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Nature\\DRXHeartofOak_Tranquility.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Tranquility of Water.html",
     "name" : "Tranquility of Water",
     "parent" : "Heart of Oak",
     "attributes" : {
@@ -646,12 +648,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Permanence of Stone.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName162",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Nature\\DRXHeartofOak_Permanence.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Permanence of Stone.html",
     "name" : "Permanence of Stone",
     "parent" : "Tranquility of Water",
     "attributes" : {
@@ -685,21 +687,22 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Plague.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName141",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Nature\\DRXPlague.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Plague.html",
     "name" : "Plague",
     "parent" : null,
     "attributes" : {
       "DRXPlague" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Plague.html",
+          "modifier" : false,
           "skillTag" : "tagSkillName141",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Nature\\DRXPlagueBuff.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Plague.html",
           "name" : "Plague",
           "parent" : null,
           "attributes" : {
@@ -777,15 +780,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Plague.html",
+      "modifier" : false,
       "skillTag" : "tagSkillName141",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Nature\\DRXPlagueBuff.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Plague.html",
       "name" : "Plague",
       "parent" : null,
       "attributes" : {
@@ -863,15 +866,14 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Fatigue.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName186",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Nature\\DRXPlague_Fatigue.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Fatigue.html",
     "name" : "Fatigue",
     "parent" : "Plague",
     "attributes" : {
@@ -917,12 +919,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Susceptibility.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName187",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Nature\\DRXPlague_Susceptibility.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Susceptibility.html",
     "name" : "Susceptibility",
     "parent" : "Fatigue",
     "attributes" : {
@@ -960,12 +962,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Call of the Wild.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName159",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Nature\\DRXWolfSummons.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Call of the Wild.html",
     "name" : "Call of the Wild",
     "parent" : null,
     "attributes" : {
@@ -1007,21 +1009,22 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Survival Instinct.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName071",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Nature\\DRXWolf_PetModifer_SurvivalInstinct.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Survival Instinct.html",
     "name" : "Survival Instinct",
     "parent" : null,
     "attributes" : {
       "SurvivalInstinct" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Survival Instinct.html",
+          "modifier" : false,
           "skillTag" : "tagSkillName071",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Nature\\DRXWolf_PetSkill_SurvivalInstinct.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Survival Instinct.html",
           "name" : "Survival Instinct",
           "parent" : null,
           "attributes" : {
@@ -1063,15 +1066,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Survival Instinct.html",
+      "modifier" : false,
       "skillTag" : "tagSkillName071",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Nature\\DRXWolf_PetSkill_SurvivalInstinct.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Survival Instinct.html",
       "name" : "Survival Instinct",
       "parent" : null,
       "attributes" : {
@@ -1113,24 +1116,24 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Maul.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName177",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Nature\\DRXWolf_PetModifer_Maul.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Maul.html",
     "name" : "Maul",
     "parent" : null,
     "attributes" : {
       "Maul" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Maul.html",
+          "modifier" : false,
           "skillTag" : "tagSkillName177",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Nature\\DRXWolf_PetSkill_Maul.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Maul.html",
           "name" : "Maul",
           "parent" : null,
           "attributes" : {
@@ -1180,15 +1183,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Maul.html",
+      "modifier" : false,
       "skillTag" : "tagSkillName177",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Nature\\DRXWolf_PetSkill_Maul.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Maul.html",
       "name" : "Maul",
       "parent" : null,
       "attributes" : {
@@ -1238,33 +1241,34 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Strength of the Pack.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName191",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Nature\\DRXWolf_PetModifier_StrengthofthePack.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Strength of the Pack.html",
     "name" : "Strength of the Pack",
     "parent" : null,
     "attributes" : {
       "StrengthofthePack" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Strength of the Pack.html",
+          "modifier" : false,
           "skillTag" : "tagSkillName191",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Nature\\DRXWolf_PetSkill_StrengthofthePack.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Strength of the Pack.html",
           "name" : "Strength of the Pack",
           "parent" : null,
           "attributes" : {
             "StrengthofthePack" : {
               "skill" : true,
               "value" : {
+                "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Strength of the Pack.html",
+                "modifier" : false,
                 "skillTag" : "tagSkillName191",
                 "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Nature\\DRXWolf_PetSkill_StrengthofthePackBuff.dbr",
-                "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Strength of the Pack.html",
                 "name" : "Strength of the Pack",
                 "parent" : null,
                 "attributes" : {
@@ -1318,15 +1322,15 @@
                   }
                 },
                 "buff" : null,
-                "skillDescription" : null,
-                "modifier" : false
+                "skillDescription" : null
               }
             }
           },
           "buff" : {
+            "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Strength of the Pack.html",
+            "modifier" : false,
             "skillTag" : "tagSkillName191",
             "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Nature\\DRXWolf_PetSkill_StrengthofthePackBuff.dbr",
-            "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Strength of the Pack.html",
             "name" : "Strength of the Pack",
             "parent" : null,
             "attributes" : {
@@ -1380,27 +1384,27 @@
               }
             },
             "buff" : null,
-            "skillDescription" : null,
-            "modifier" : false
+            "skillDescription" : null
           },
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Strength of the Pack.html",
+      "modifier" : false,
       "skillTag" : "tagSkillName191",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Nature\\DRXWolf_PetSkill_StrengthofthePack.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Strength of the Pack.html",
       "name" : "Strength of the Pack",
       "parent" : null,
       "attributes" : {
         "StrengthofthePack" : {
           "skill" : true,
           "value" : {
+            "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Strength of the Pack.html",
+            "modifier" : false,
             "skillTag" : "tagSkillName191",
             "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Nature\\DRXWolf_PetSkill_StrengthofthePackBuff.dbr",
-            "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Strength of the Pack.html",
             "name" : "Strength of the Pack",
             "parent" : null,
             "attributes" : {
@@ -1454,15 +1458,15 @@
               }
             },
             "buff" : null,
-            "skillDescription" : null,
-            "modifier" : false
+            "skillDescription" : null
           }
         }
       },
       "buff" : {
+        "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Strength of the Pack.html",
+        "modifier" : false,
         "skillTag" : "tagSkillName191",
         "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Nature\\DRXWolf_PetSkill_StrengthofthePackBuff.dbr",
-        "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Strength of the Pack.html",
         "name" : "Strength of the Pack",
         "parent" : null,
         "attributes" : {
@@ -1516,18 +1520,16 @@
           }
         },
         "buff" : null,
-        "skillDescription" : null,
-        "modifier" : false
+        "skillDescription" : null
       },
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Sylvan Nymph.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName158",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Nature\\DRXSylvanNymphSummons.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Sylvan Nymph.html",
     "name" : "Sylvan Nymph",
     "parent" : null,
     "attributes" : {
@@ -1577,21 +1579,22 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Sylvan Protection.html",
+    "modifier" : false,
     "skillTag" : "x3tagSkillNatureSylvanProtection",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Nature\\drx_nymph_petmodifier_rootwave.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Sylvan Protection.html",
     "name" : "Sylvan Protection",
     "parent" : null,
     "attributes" : {
       "rootwave" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Sylvan Protection.html",
+          "modifier" : false,
           "skillTag" : "x3tagSkillNatureSylvanProtection",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\records\\skills\\nature\\drx_nymph_petskill_rootwave.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Sylvan Protection.html",
           "name" : "Sylvan Protection",
           "parent" : null,
           "attributes" : {
@@ -1673,15 +1676,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Sylvan Protection.html",
+      "modifier" : false,
       "skillTag" : "x3tagSkillNatureSylvanProtection",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\records\\skills\\nature\\drx_nymph_petskill_rootwave.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Sylvan Protection.html",
       "name" : "Sylvan Protection",
       "parent" : null,
       "attributes" : {
@@ -1763,33 +1766,34 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Overgrowth.html",
+    "modifier" : false,
     "skillTag" : "tagOverGrowthNAME",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Nature\\DRXSylvanNymph_PetModifier_Overgrowth.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Overgrowth.html",
     "name" : "Overgrowth",
     "parent" : null,
     "attributes" : {
       "Overgrowth" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Overgrowth.html",
+          "modifier" : false,
           "skillTag" : "tagOverGrowthNAME",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\records\\skills\\nature\\drxsylvannymph_petskill_overgrowth.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Overgrowth.html",
           "name" : "Overgrowth",
           "parent" : null,
           "attributes" : {
             "overgrowth" : {
               "skill" : true,
               "value" : {
+                "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Overgrowth.html",
+                "modifier" : false,
                 "skillTag" : "tagOverGrowthNAME",
                 "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Nature\\DRXSylvanNymph_PetSkill_OvergrowthBuff.dbr",
-                "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Overgrowth.html",
                 "name" : "Overgrowth",
                 "parent" : null,
                 "attributes" : {
@@ -1827,15 +1831,15 @@
                   }
                 },
                 "buff" : null,
-                "skillDescription" : null,
-                "modifier" : false
+                "skillDescription" : null
               }
             }
           },
           "buff" : {
+            "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Overgrowth.html",
+            "modifier" : false,
             "skillTag" : "tagOverGrowthNAME",
             "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Nature\\DRXSylvanNymph_PetSkill_OvergrowthBuff.dbr",
-            "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Overgrowth.html",
             "name" : "Overgrowth",
             "parent" : null,
             "attributes" : {
@@ -1873,27 +1877,27 @@
               }
             },
             "buff" : null,
-            "skillDescription" : null,
-            "modifier" : false
+            "skillDescription" : null
           },
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Overgrowth.html",
+      "modifier" : false,
       "skillTag" : "tagOverGrowthNAME",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\records\\skills\\nature\\drxsylvannymph_petskill_overgrowth.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Overgrowth.html",
       "name" : "Overgrowth",
       "parent" : null,
       "attributes" : {
         "overgrowth" : {
           "skill" : true,
           "value" : {
+            "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Overgrowth.html",
+            "modifier" : false,
             "skillTag" : "tagOverGrowthNAME",
             "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Nature\\DRXSylvanNymph_PetSkill_OvergrowthBuff.dbr",
-            "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Overgrowth.html",
             "name" : "Overgrowth",
             "parent" : null,
             "attributes" : {
@@ -1931,15 +1935,15 @@
               }
             },
             "buff" : null,
-            "skillDescription" : null,
-            "modifier" : false
+            "skillDescription" : null
           }
         }
       },
       "buff" : {
+        "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Overgrowth.html",
+        "modifier" : false,
         "skillTag" : "tagOverGrowthNAME",
         "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Nature\\DRXSylvanNymph_PetSkill_OvergrowthBuff.dbr",
-        "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Overgrowth.html",
         "name" : "Overgrowth",
         "parent" : null,
         "attributes" : {
@@ -1977,27 +1981,26 @@
           }
         },
         "buff" : null,
-        "skillDescription" : null,
-        "modifier" : false
+        "skillDescription" : null
       },
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Nature's Blessing.html",
+    "modifier" : false,
     "skillTag" : "tagNaturesBlessingNAME",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\records\\skills\\nature\\drxnaturesblessing.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Nature's Blessing.html",
     "name" : "Nature's Blessing",
     "parent" : null,
     "attributes" : {
       "drxnaturesblessing" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Nature's Blessing.html",
+          "modifier" : false,
           "skillTag" : "tagNaturesBlessingNAME",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\records\\skills\\nature\\drxnaturesblessingbuff.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Nature's Blessing.html",
           "name" : "Nature's Blessing",
           "parent" : null,
           "attributes" : {
@@ -2059,15 +2062,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Nature's Blessing.html",
+      "modifier" : false,
       "skillTag" : "tagNaturesBlessingNAME",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\records\\skills\\nature\\drxnaturesblessingbuff.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Nature's Blessing.html",
       "name" : "Nature's Blessing",
       "parent" : null,
       "attributes" : {
@@ -2129,15 +2132,14 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Earthbind.html",
+    "modifier" : false,
     "skillTag" : "x3tagSkillNatureEarthbind",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\records\\skills\\nature\\drx_earthbind.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Earthbind.html",
     "name" : "Earthbind",
     "parent" : null,
     "attributes" : {
@@ -2211,12 +2213,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Elemental Flurry.html",
+    "modifier" : false,
     "skillTag" : "tagNewSkill335",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\records\\skills\\nature\\drxsprite_summons.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Elemental Flurry.html",
     "name" : "Elemental Flurry",
     "parent" : null,
     "attributes" : {
@@ -2294,12 +2296,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Elemental Burst.html",
+    "modifier" : false,
     "skillTag" : "tagNewSkill337",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Nature\\DRXRenewal.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Elemental Burst.html",
     "name" : "Elemental Burst",
     "parent" : null,
     "attributes" : {
@@ -2337,12 +2339,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Force of Nature.html",
+    "modifier" : false,
     "skillTag" : "tagForceofNatureNAME",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\records\\skills\\nature\\drxforceofnature.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Nature Mastery/Force of Nature.html",
     "name" : "Force of Nature",
     "parent" : null,
     "attributes" : {
@@ -2388,8 +2390,6 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
-  } ],
-  "skillTree" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Nature\\DrxNatureSkillTree.dbr"
+    "skillDescription" : null
+  } ]
 }

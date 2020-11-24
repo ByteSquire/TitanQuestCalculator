@@ -1,11 +1,13 @@
 {
   "mastery" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Spirit\\SpiritMastery.dbr",
   "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery.html",
+  "skillTree" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Spirit\\SpiritSkillTree.dbr",
   "name" : "Spirit Mastery",
   "skills" : [ {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Vision of Death.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName032",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Spirit\\VisionofDeath.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Vision of Death.html",
     "name" : "Vision of Death",
     "parent" : null,
     "attributes" : {
@@ -75,12 +77,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Death Ward.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName039",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Spirit\\DeathWard.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Death Ward.html",
     "name" : "Death Ward",
     "parent" : null,
     "attributes" : {
@@ -118,21 +120,22 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Deathchill Aura.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName035",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Spirit\\DeathchillAura.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Deathchill Aura.html",
     "name" : "Deathchill Aura",
     "parent" : null,
     "attributes" : {
       "DeathchillAura" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Deathchill Aura.html",
+          "modifier" : false,
           "skillTag" : "tagSkillName035",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Spirit\\DeathchillAuraBuff.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Deathchill Aura.html",
           "name" : "Deathchill Aura",
           "parent" : null,
           "attributes" : {
@@ -198,15 +201,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Deathchill Aura.html",
+      "modifier" : false,
       "skillTag" : "tagSkillName035",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Spirit\\DeathchillAuraBuff.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Deathchill Aura.html",
       "name" : "Deathchill Aura",
       "parent" : null,
       "attributes" : {
@@ -272,15 +275,14 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Ravages of Time.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName036",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Spirit\\DeathchillAura_RavagesofTime.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Ravages of Time.html",
     "name" : "Ravages of Time",
     "parent" : "Deathchill Aura",
     "attributes" : {
@@ -318,12 +320,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Necrosis.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName037",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Spirit\\DeathchillAura_Necrosis.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Necrosis.html",
     "name" : "Necrosis",
     "parent" : "Ravages of Time",
     "attributes" : {
@@ -361,12 +363,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Circle of Power.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName048",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Spirit\\CircleofPower.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Circle of Power.html",
     "name" : "Circle of Power",
     "parent" : null,
     "attributes" : {
@@ -412,21 +414,22 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Dark Covenant.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName155",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Spirit\\DarkCovenant.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Dark Covenant.html",
     "name" : "Dark Covenant",
     "parent" : null,
     "attributes" : {
       "DarkCovenant" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Dark Covenant.html",
+          "modifier" : false,
           "skillTag" : "tagSkillName155",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Spirit\\DarkCovenantBuff.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Dark Covenant.html",
           "name" : "Dark Covenant",
           "parent" : null,
           "attributes" : {
@@ -476,15 +479,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Dark Covenant.html",
+      "modifier" : false,
       "skillTag" : "tagSkillName155",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Spirit\\DarkCovenantBuff.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Dark Covenant.html",
       "name" : "Dark Covenant",
       "parent" : null,
       "attributes" : {
@@ -534,15 +537,14 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Unearthly Power.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName046",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Spirit\\DarkCovenant_UnearthlyPower.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Unearthly Power.html",
     "name" : "Unearthly Power",
     "parent" : "Dark Covenant",
     "attributes" : {
@@ -580,12 +582,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Life Drain.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName209",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Spirit\\LifeDrain.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Life Drain.html",
     "name" : "Life Drain",
     "parent" : null,
     "attributes" : {
@@ -639,12 +641,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Cascade.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName210",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Spirit\\LifeDrain_Cascade.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Cascade.html",
     "name" : "Cascade",
     "parent" : null,
     "attributes" : {
@@ -686,12 +688,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Soul Drain.html",
+    "modifier" : false,
     "skillTag" : "x3tagSkillSpiritSoulDrain",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\records\\xpack3\\skills\\allmasteries\\spirit_cascade_voids.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Soul Drain.html",
     "name" : "Soul Drain",
     "parent" : null,
     "attributes" : {
@@ -741,12 +743,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Ternion Attack.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName213",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Spirit\\Ternion.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Ternion Attack.html",
     "name" : "Ternion Attack",
     "parent" : null,
     "attributes" : {
@@ -800,12 +802,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Arcane Lore.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName214",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Spirit\\Ternion_ArcaneLore.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Arcane Lore.html",
     "name" : "Arcane Lore",
     "parent" : "Ternion Attack",
     "attributes" : {
@@ -843,21 +845,22 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Spirit Ward.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName232",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Spirit\\SpiritWard.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Spirit Ward.html",
     "name" : "Spirit Ward",
     "parent" : null,
     "attributes" : {
       "SpiritWard" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Spirit Ward.html",
+          "modifier" : false,
           "skillTag" : "tagSkillName232",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Spirit\\SpiritWardBuff.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Spirit Ward.html",
           "name" : "Spirit Ward",
           "parent" : null,
           "attributes" : {
@@ -895,15 +898,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Spirit Ward.html",
+      "modifier" : false,
       "skillTag" : "tagSkillName232",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Spirit\\SpiritWardBuff.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Spirit Ward.html",
       "name" : "Spirit Ward",
       "parent" : null,
       "attributes" : {
@@ -941,15 +944,14 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Spirit Bane.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName233",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Spirit\\SpiritWard_SpiritBane.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Spirit Bane.html",
     "name" : "Spirit Bane",
     "parent" : "Spirit Ward",
     "attributes" : {
@@ -979,12 +981,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Enslave Spirit.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName212",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Spirit\\EnslaveSpirit.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Enslave Spirit.html",
     "name" : "Enslave Spirit",
     "parent" : null,
     "attributes" : {
@@ -1026,12 +1028,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Summon Liche King.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName045",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Spirit\\WraithLordSummons.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Summon Liche King.html",
     "name" : "Summon Liche King",
     "parent" : null,
     "attributes" : {
@@ -1073,21 +1075,22 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Death Nova.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName207",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Spirit\\WraithLord_PetModifier_DeathNova.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Death Nova.html",
     "name" : "Death Nova",
     "parent" : null,
     "attributes" : {
       "DeathNova" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Death Nova.html",
+          "modifier" : false,
           "skillTag" : "tagSkillName207",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Spirit\\WraithLord_PetSkill_DeathNova.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Death Nova.html",
           "name" : "Death Nova",
           "parent" : null,
           "attributes" : {
@@ -1137,15 +1140,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Death Nova.html",
+      "modifier" : false,
       "skillTag" : "tagSkillName207",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Spirit\\WraithLord_PetSkill_DeathNova.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Death Nova.html",
       "name" : "Death Nova",
       "parent" : null,
       "attributes" : {
@@ -1195,24 +1198,24 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Wraith Shell.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName044",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Spirit\\WraithLord_PetModifier_WraithShell.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Wraith Shell.html",
     "name" : "Wraith Shell",
     "parent" : null,
     "attributes" : {
       "WraithShell" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Wraith Shell.html",
+          "modifier" : false,
           "skillTag" : "tagSkillName044",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Spirit\\WraithLord_PetSkill_WraithShell.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Wraith Shell.html",
           "name" : "Wraith Shell",
           "parent" : null,
           "attributes" : {
@@ -1254,15 +1257,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Wraith Shell.html",
+      "modifier" : false,
       "skillTag" : "tagSkillName044",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Spirit\\WraithLord_PetSkill_WraithShell.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Wraith Shell.html",
       "name" : "Wraith Shell",
       "parent" : null,
       "attributes" : {
@@ -1304,24 +1307,24 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Arcane Blast.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName201",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Spirit\\WraithLord_PetModifier_ArcaneBlast.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Arcane Blast.html",
     "name" : "Arcane Blast",
     "parent" : null,
     "attributes" : {
       "ArcaneBlast" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Arcane Blast.html",
+          "modifier" : false,
           "skillTag" : "tagSkillName201",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Spirit\\WraithLord_PetSkill_ArcaneBlast.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Arcane Blast.html",
           "name" : "Arcane Blast",
           "parent" : null,
           "attributes" : {
@@ -1383,15 +1386,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Arcane Blast.html",
+      "modifier" : false,
       "skillTag" : "tagSkillName201",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Spirit\\WraithLord_PetSkill_ArcaneBlast.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Arcane Blast.html",
       "name" : "Arcane Blast",
       "parent" : null,
       "attributes" : {
@@ -1453,15 +1456,14 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Summon Outsider.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName202",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Spirit\\OutsiderSummons.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Summon Outsider.html",
     "name" : "Summon Outsider",
     "parent" : null,
     "attributes" : {
@@ -1499,12 +1501,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Soul Vortex.html",
+    "modifier" : false,
     "skillTag" : "x3tagSkillSpiritSoulVortex",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\records\\xpack3\\skills\\allmasteries\\Spirit_SoulVortex.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Spirit Mastery/Soul Vortex.html",
     "name" : "Soul Vortex",
     "parent" : null,
     "attributes" : {
@@ -1586,8 +1588,6 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
-  } ],
-  "skillTree" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Spirit\\SpiritSkillTree.dbr"
+    "skillDescription" : null
+  } ]
 }

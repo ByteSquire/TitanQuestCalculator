@@ -1,11 +1,13 @@
 {
   "mastery" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\HuntingMastery.dbr",
   "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery.html",
+  "skillTree" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\HuntingSkillTree.dbr",
   "name" : "Hunting Mastery",
   "skills" : [ {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Wood Lore.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName077",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\WoodLore.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Wood Lore.html",
     "name" : "Wood Lore",
     "parent" : null,
     "attributes" : {
@@ -47,21 +49,22 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Art of the Hunt.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName084",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\ArtoftheHunt.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Art of the Hunt.html",
     "name" : "Art of the Hunt",
     "parent" : null,
     "attributes" : {
       "ArtoftheHunt" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Art of the Hunt.html",
+          "modifier" : false,
           "skillTag" : "tagSkillName084",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\ArtoftheHuntBuff.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Art of the Hunt.html",
           "name" : "Art of the Hunt",
           "parent" : null,
           "attributes" : {
@@ -111,15 +114,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Art of the Hunt.html",
+      "modifier" : false,
       "skillTag" : "tagSkillName084",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\ArtoftheHuntBuff.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Art of the Hunt.html",
       "name" : "Art of the Hunt",
       "parent" : null,
       "attributes" : {
@@ -169,15 +172,14 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Find Cover.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName094",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\ArtoftheHunt_FindCover.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Find Cover.html",
     "name" : "Find Cover",
     "parent" : "Art of the Hunt",
     "attributes" : {
@@ -203,12 +205,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Trail Blazing.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName093",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\ArtoftheHunt_Trailblazing.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Trail Blazing.html",
     "name" : "Trail Blazing",
     "parent" : "Find Cover",
     "attributes" : {
@@ -238,21 +240,22 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Ensnare.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName081",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\Ensnare.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Ensnare.html",
     "name" : "Ensnare",
     "parent" : null,
     "attributes" : {
       "Ensnare" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Ensnare.html",
+          "modifier" : false,
           "skillTag" : "tagSkillName081",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\EnsnareBuff.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Ensnare.html",
           "name" : "Ensnare",
           "parent" : null,
           "attributes" : {
@@ -310,15 +313,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Ensnare.html",
+      "modifier" : false,
       "skillTag" : "tagSkillName081",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\EnsnareBuff.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Ensnare.html",
       "name" : "Ensnare",
       "parent" : null,
       "attributes" : {
@@ -376,15 +379,14 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Barbed Netting.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName078",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\Ensnare_BarbedNetting.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Barbed Netting.html",
     "name" : "Barbed Netting",
     "parent" : "Ensnare",
     "attributes" : {
@@ -414,21 +416,22 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Call of the Hunt.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName079",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\CalloftheHunt.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Call of the Hunt.html",
     "name" : "Call of the Hunt",
     "parent" : null,
     "attributes" : {
       "CalloftheHunt" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Call of the Hunt.html",
+          "modifier" : false,
           "skillTag" : "tagSkillName079",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\CalloftheHuntBuff.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Call of the Hunt.html",
           "name" : "Call of the Hunt",
           "parent" : null,
           "attributes" : {
@@ -490,15 +493,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Call of the Hunt.html",
+      "modifier" : false,
       "skillTag" : "tagSkillName079",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\CalloftheHuntBuff.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Call of the Hunt.html",
       "name" : "Call of the Hunt",
       "parent" : null,
       "attributes" : {
@@ -560,15 +563,14 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Exploit Weakness.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName088",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\CalloftheHunt_Cunning.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Exploit Weakness.html",
     "name" : "Exploit Weakness",
     "parent" : "Call of the Hunt",
     "attributes" : {
@@ -606,12 +608,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Finesse.html",
+    "modifier" : true,
     "skillTag" : "x3tagSkillHuntingFinesse",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\records\\xpack3\\skills\\allmasteries\\hunter_callofthehunt_crits.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Finesse.html",
     "name" : "Finesse",
     "parent" : "Exploit Weakness",
     "attributes" : {
@@ -645,21 +647,22 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Study Prey.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName095",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\StudyPrey.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Study Prey.html",
     "name" : "Study Prey",
     "parent" : null,
     "attributes" : {
       "StudyPrey" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Study Prey.html",
+          "modifier" : false,
           "skillTag" : "tagSkillName095",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\StudyPreyBuff.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Study Prey.html",
           "name" : "Study Prey",
           "parent" : null,
           "attributes" : {
@@ -721,15 +724,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Study Prey.html",
+      "modifier" : false,
       "skillTag" : "tagSkillName095",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\StudyPreyBuff.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Study Prey.html",
       "name" : "Study Prey",
       "parent" : null,
       "attributes" : {
@@ -791,15 +794,14 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Flush Out.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName096",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\StudyPrey_FlushOut.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Flush Out.html",
     "name" : "Flush Out",
     "parent" : "Study Prey",
     "attributes" : {
@@ -837,12 +839,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Marksmanship.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName169",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\Marksmanship.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Marksmanship.html",
     "name" : "Marksmanship",
     "parent" : null,
     "attributes" : {
@@ -892,12 +894,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Puncture Shot Arrows.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName170",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\Marksmanship_PunctureShotArrows.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Puncture Shot Arrows.html",
     "name" : "Puncture Shot Arrows",
     "parent" : "Marksmanship",
     "attributes" : {
@@ -939,12 +941,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Scatter Shot Arrows.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName171",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\Marksmanship_ScatterShotArrows.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Scatter Shot Arrows.html",
     "name" : "Scatter Shot Arrows",
     "parent" : null,
     "attributes" : {
@@ -994,12 +996,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Gouge.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName172",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\WeaponSkill_Gouge.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Gouge.html",
     "name" : "Gouge",
     "parent" : null,
     "attributes" : {
@@ -1049,12 +1051,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Volley.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName173",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\WeaponSkill_Volley.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Volley.html",
     "name" : "Volley",
     "parent" : null,
     "attributes" : {
@@ -1100,12 +1102,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Take Down.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName089",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\TakeDown.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Take Down.html",
     "name" : "Take Down",
     "parent" : null,
     "attributes" : {
@@ -1167,12 +1169,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Eviscerate.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName090",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\TakeDown_Eviscerate.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Eviscerate.html",
     "name" : "Eviscerate",
     "parent" : "Take Down",
     "attributes" : {
@@ -1206,12 +1208,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Monster Lure.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName097",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\MonsterLure.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Monster Lure.html",
     "name" : "Monster Lure",
     "parent" : null,
     "attributes" : {
@@ -1257,21 +1259,22 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Detonate.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName193",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\MonsterLure_PetModifier_Detonate.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Detonate.html",
     "name" : "Detonate",
     "parent" : null,
     "attributes" : {
       "Detonate" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Detonate.html",
+          "modifier" : false,
           "skillTag" : "tagSkillName193",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\MonsterLure_PetSkill_Detonate.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Detonate.html",
           "name" : "Detonate",
           "parent" : null,
           "attributes" : {
@@ -1337,15 +1340,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Detonate.html",
+      "modifier" : false,
       "skillTag" : "tagSkillName193",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\MonsterLure_PetSkill_Detonate.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Detonate.html",
       "name" : "Detonate",
       "parent" : null,
       "attributes" : {
@@ -1411,24 +1414,24 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Herbal Remedy.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName091",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\Herbalism.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Herbal Remedy.html",
     "name" : "Herbal Remedy",
     "parent" : null,
     "attributes" : {
       "Herbalism" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Herbal Remedy.html",
+          "modifier" : false,
           "skillTag" : "tagSkillName091",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\Herbalism_Buff.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Herbal Remedy.html",
           "name" : "Herbal Remedy",
           "parent" : null,
           "attributes" : {
@@ -1470,15 +1473,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Herbal Remedy.html",
+      "modifier" : false,
       "skillTag" : "tagSkillName091",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\Herbalism_Buff.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Herbal Remedy.html",
       "name" : "Herbal Remedy",
       "parent" : null,
       "attributes" : {
@@ -1520,15 +1523,14 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Spear Dance.html",
+    "modifier" : false,
     "skillTag" : "x3tagSkillHuntingSpearDance",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\records\\xpack3\\skills\\allmasteries\\hunter_speardance.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Hunting Mastery/Spear Dance.html",
     "name" : "Spear Dance",
     "parent" : null,
     "attributes" : {
@@ -1598,8 +1600,6 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
-  } ],
-  "skillTree" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Hunting\\HuntingSkillTree.dbr"
+    "skillDescription" : null
+  } ]
 }

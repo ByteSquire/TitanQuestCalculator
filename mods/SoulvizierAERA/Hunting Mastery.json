@@ -1,11 +1,13 @@
 {
   "mastery" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXHuntingMastery.dbr",
   "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery.html",
+  "skillTree" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DrxHuntingSkillTree.dbr",
   "name" : "Hunting Mastery",
   "skills" : [ {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Wood Lore.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName077",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXWoodLore.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Wood Lore.html",
     "name" : "Wood Lore",
     "parent" : null,
     "attributes" : {
@@ -55,21 +57,22 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Art of the Hunt.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName084",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXArtoftheHunt.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Art of the Hunt.html",
     "name" : "Art of the Hunt",
     "parent" : null,
     "attributes" : {
       "DRXArtoftheHunt" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Art of the Hunt.html",
+          "modifier" : false,
           "skillTag" : "tagSkillName084",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXArtoftheHuntBuff.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Art of the Hunt.html",
           "name" : "Art of the Hunt",
           "parent" : null,
           "attributes" : {
@@ -123,15 +126,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Art of the Hunt.html",
+      "modifier" : false,
       "skillTag" : "tagSkillName084",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXArtoftheHuntBuff.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Art of the Hunt.html",
       "name" : "Art of the Hunt",
       "parent" : null,
       "attributes" : {
@@ -185,15 +188,14 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Find Cover.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName094",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXArtoftheHunt_FindCover.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Find Cover.html",
     "name" : "Find Cover",
     "parent" : "Art of the Hunt",
     "attributes" : {
@@ -219,12 +221,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Trail Blazing.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName093",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXArtoftheHunt_Trailblazing.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Trail Blazing.html",
     "name" : "Trail Blazing",
     "parent" : "Find Cover",
     "attributes" : {
@@ -258,12 +260,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Lay Trap.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName083",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXMonsterLure.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Lay Trap.html",
     "name" : "Lay Trap",
     "parent" : null,
     "attributes" : {
@@ -337,12 +339,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Rapid Construction.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName087",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\records\\skills\\hunting\\drxmonsterlure_rapidconstruction.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Rapid Construction.html",
     "name" : "Rapid Construction",
     "parent" : "Lay Trap",
     "attributes" : {
@@ -372,21 +374,22 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Improved Firing Mechanism.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName082",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXMonsterLure_PetModifier_Detonate.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Improved Firing Mechanism.html",
     "name" : "Improved Firing Mechanism",
     "parent" : null,
     "attributes" : {
       "Detonate" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Improved Firing Mechanism.html",
+          "modifier" : true,
           "skillTag" : "tagSkillName082",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\records\\skills\\hunting\\drxmonsterlure_petskill_detonate.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Improved Firing Mechanism.html",
           "name" : "Improved Firing Mechanism",
           "parent" : null,
           "attributes" : {
@@ -432,15 +435,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : true
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Improved Firing Mechanism.html",
+      "modifier" : true,
       "skillTag" : "tagSkillName082",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\records\\skills\\hunting\\drxmonsterlure_petskill_detonate.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Improved Firing Mechanism.html",
       "name" : "Improved Firing Mechanism",
       "parent" : null,
       "attributes" : {
@@ -486,24 +489,24 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : true
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Call of the Hunt.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName079",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXCalloftheHunt.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Call of the Hunt.html",
     "name" : "Call of the Hunt",
     "parent" : null,
     "attributes" : {
       "DRXCalloftheHunt" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Call of the Hunt.html",
+          "modifier" : false,
           "skillTag" : "tagSkillName079",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXCalloftheHuntBuff.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Call of the Hunt.html",
           "name" : "Call of the Hunt",
           "parent" : null,
           "attributes" : {
@@ -565,15 +568,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Call of the Hunt.html",
+      "modifier" : false,
       "skillTag" : "tagSkillName079",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXCalloftheHuntBuff.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Call of the Hunt.html",
       "name" : "Call of the Hunt",
       "parent" : null,
       "attributes" : {
@@ -635,15 +638,14 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Exploit Weakness.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName088",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXCalloftheHunt_Cunning.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Exploit Weakness.html",
     "name" : "Exploit Weakness",
     "parent" : "Call of the Hunt",
     "attributes" : {
@@ -685,21 +687,22 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Study Prey.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName095",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXStudyPrey.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Study Prey.html",
     "name" : "Study Prey",
     "parent" : null,
     "attributes" : {
       "DRXStudyPrey" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Study Prey.html",
+          "modifier" : false,
           "skillTag" : "tagSkillName095",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXStudyPreyBuff.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Study Prey.html",
           "name" : "Study Prey",
           "parent" : null,
           "attributes" : {
@@ -761,15 +764,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Study Prey.html",
+      "modifier" : false,
       "skillTag" : "tagSkillName095",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXStudyPreyBuff.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Study Prey.html",
       "name" : "Study Prey",
       "parent" : null,
       "attributes" : {
@@ -831,15 +834,14 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Flush Out.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName096",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXStudyPrey_FlushOut.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Flush Out.html",
     "name" : "Flush Out",
     "parent" : "Study Prey",
     "attributes" : {
@@ -881,12 +883,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Marksmanship.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName169",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXMarksmanship.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Marksmanship.html",
     "name" : "Marksmanship",
     "parent" : null,
     "attributes" : {
@@ -944,12 +946,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Puncture Shot Arrows.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName170",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXMarksmanship_PunctureShotArrows.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Puncture Shot Arrows.html",
     "name" : "Puncture Shot Arrows",
     "parent" : "Marksmanship",
     "attributes" : {
@@ -991,12 +993,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Scatter Shot Arrows.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName171",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXMarksmanship_ScatterShotArrows.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Scatter Shot Arrows.html",
     "name" : "Scatter Shot Arrows",
     "parent" : null,
     "attributes" : {
@@ -1046,12 +1048,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Gouge.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName172",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXWeaponSkill_Gouge.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Gouge.html",
     "name" : "Gouge",
     "parent" : null,
     "attributes" : {
@@ -1105,12 +1107,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Take Down.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName089",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXTakeDown.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Take Down.html",
     "name" : "Take Down",
     "parent" : null,
     "attributes" : {
@@ -1172,12 +1174,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Eviscerate.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName090",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXTakeDown_Eviscerate.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Eviscerate.html",
     "name" : "Eviscerate",
     "parent" : "Take Down",
     "attributes" : {
@@ -1219,12 +1221,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Cornered.html",
+    "modifier" : false,
     "skillTag" : "tagCorneredRageNAME",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\records\\skills\\hunting\\drxcorneredrage.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Cornered.html",
     "name" : "Cornered",
     "parent" : null,
     "attributes" : {
@@ -1282,21 +1284,22 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Ensnare.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName081",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXEnsnare.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Ensnare.html",
     "name" : "Ensnare",
     "parent" : null,
     "attributes" : {
       "DRXEnsnare" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Ensnare.html",
+          "modifier" : false,
           "skillTag" : "tagSkillName081",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXEnsnareBuff.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Ensnare.html",
           "name" : "Ensnare",
           "parent" : null,
           "attributes" : {
@@ -1354,15 +1357,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Ensnare.html",
+      "modifier" : false,
       "skillTag" : "tagSkillName081",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXEnsnareBuff.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Ensnare.html",
       "name" : "Ensnare",
       "parent" : null,
       "attributes" : {
@@ -1420,15 +1423,14 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Barbed Netting.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName078",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXEnsnare_BarbedNetting.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Barbed Netting.html",
     "name" : "Barbed Netting",
     "parent" : "Ensnare",
     "attributes" : {
@@ -1470,12 +1472,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Herbalism.html",
+    "modifier" : false,
     "skillTag" : "tagHerbalismNAME",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXHerbalism.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Herbalism.html",
     "name" : "Herbalism",
     "parent" : null,
     "attributes" : {
@@ -1509,12 +1511,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Spear Tempest.html",
+    "modifier" : false,
     "skillTag" : "tagSpearTempestNAME",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\records\\skills\\hunting\\drxspear_tempest.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Spear Tempest.html",
     "name" : "Spear Tempest",
     "parent" : null,
     "attributes" : {
@@ -1600,12 +1602,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Flayer.html",
+    "modifier" : true,
     "skillTag" : "tagTempestExposeNAME",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\records\\skills\\hunting\\drxtempest_expose.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Flayer.html",
     "name" : "Flayer",
     "parent" : "Spear Tempest",
     "attributes" : {
@@ -1643,12 +1645,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Volley.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName173",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DRXWeaponSkill_Volley.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Hunting Mastery/Volley.html",
     "name" : "Volley",
     "parent" : null,
     "attributes" : {
@@ -1690,8 +1692,6 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
-  } ],
-  "skillTree" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Hunting\\DrxHuntingSkillTree.dbr"
+    "skillDescription" : null
+  } ]
 }

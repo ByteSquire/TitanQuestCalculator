@@ -1,11 +1,13 @@
 {
   "mastery" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Defensive\\DRXDefensiveMastery.dbr",
   "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery.html",
+  "skillTree" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Defensive\\DrxDefensiveSkillTree.dbr",
   "name" : "Defense Mastery",
   "skills" : [ {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Armor Handling.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName121",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Defensive\\DRXArmorHandling.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Armor Handling.html",
     "name" : "Armor Handling",
     "parent" : null,
     "attributes" : {
@@ -39,12 +41,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Adrenaline.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName117",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Defensive\\DRXAdrenaline.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Adrenaline.html",
     "name" : "Adrenaline",
     "parent" : null,
     "attributes" : {
@@ -82,12 +84,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Quick Recovery.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName120",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Defensive\\DRXQuickRecovery.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Quick Recovery.html",
     "name" : "Quick Recovery",
     "parent" : "Adrenaline",
     "attributes" : {
@@ -125,12 +127,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Resilience.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName132",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Defensive\\DRXAdrenaline_Resilience.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Resilience.html",
     "name" : "Resilience",
     "parent" : "Quick Recovery",
     "attributes" : {
@@ -156,12 +158,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Defensive Reaction.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName118",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Defensive\\DRXAdrenaline_DefensiveReaction.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Defensive Reaction.html",
     "name" : "Defensive Reaction",
     "parent" : "Resilience",
     "attributes" : {
@@ -191,21 +193,22 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Rally.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName122",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Defensive\\DRXRally.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Rally.html",
     "name" : "Rally",
     "parent" : null,
     "attributes" : {
       "DRXRally" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Rally.html",
+          "modifier" : false,
           "skillTag" : "tagSkillName122",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Defensive\\DRXRallyBuff.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Rally.html",
           "name" : "Rally",
           "parent" : null,
           "attributes" : {
@@ -259,15 +262,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Rally.html",
+      "modifier" : false,
       "skillTag" : "tagSkillName122",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Defensive\\DRXRallyBuff.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Rally.html",
       "name" : "Rally",
       "parent" : null,
       "attributes" : {
@@ -321,15 +324,14 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Inspiration.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName123",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Defensive\\DRXRally_Inspiration.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Inspiration.html",
     "name" : "Inspiration",
     "parent" : "Rally",
     "attributes" : {
@@ -359,12 +361,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Defiance.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName124",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Defensive\\DRXRally_Defiance.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Defiance.html",
     "name" : "Defiance",
     "parent" : "Inspiration",
     "attributes" : {
@@ -398,12 +400,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Colossus Form.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName135",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Defensive\\DRXColossusForm.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Colossus Form.html",
     "name" : "Colossus Form",
     "parent" : null,
     "attributes" : {
@@ -469,12 +471,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Shield Smash.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName125",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Defensive\\DRXWeaponPool_ShieldSmash.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Shield Smash.html",
     "name" : "Shield Smash",
     "parent" : null,
     "attributes" : {
@@ -528,12 +530,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Disable.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName126",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Defensive\\DRXWeaponPool_Disable.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Disable.html",
     "name" : "Disable",
     "parent" : null,
     "attributes" : {
@@ -587,12 +589,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Pulverize.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName127",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Defensive\\DRXWeaponPool_Pulverize.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Pulverize.html",
     "name" : "Pulverize",
     "parent" : null,
     "attributes" : {
@@ -658,21 +660,22 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Battle Awareness.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName128",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Defensive\\DRXBattleAwareness.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Battle Awareness.html",
     "name" : "Battle Awareness",
     "parent" : null,
     "attributes" : {
       "DRXBattleAwareness" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Battle Awareness.html",
+          "modifier" : false,
           "skillTag" : "tagSkillName128",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Defensive\\DRXBattleAwarenessBuff.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Battle Awareness.html",
           "name" : "Battle Awareness",
           "parent" : null,
           "attributes" : {
@@ -726,15 +729,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Battle Awareness.html",
+      "modifier" : false,
       "skillTag" : "tagSkillName128",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Defensive\\DRXBattleAwarenessBuff.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Battle Awareness.html",
       "name" : "Battle Awareness",
       "parent" : null,
       "attributes" : {
@@ -788,15 +791,14 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Focus.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName129",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Defensive\\DRXBattleAwareness_Focus.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Focus.html",
     "name" : "Focus",
     "parent" : "Battle Awareness",
     "attributes" : {
@@ -830,12 +832,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Iron Will.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName130",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Defensive\\DRXBattleAwareness_IronWill.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Iron Will.html",
     "name" : "Iron Will",
     "parent" : "Focus",
     "attributes" : {
@@ -885,12 +887,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Batter.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName133",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Defensive\\DRXBatter.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Batter.html",
     "name" : "Batter",
     "parent" : null,
     "attributes" : {
@@ -968,12 +970,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Rend Armor.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName134",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Defensive\\DRXBatter_RendArmor.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Rend Armor.html",
     "name" : "Rend Armor",
     "parent" : "Batter",
     "attributes" : {
@@ -1015,12 +1017,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Shield Charge.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName137",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Defensive\\DRXShieldCharge.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Shield Charge.html",
     "name" : "Shield Charge",
     "parent" : null,
     "attributes" : {
@@ -1094,12 +1096,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Disruption.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName119",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Defensive\\DRXShieldCharge_Disruption.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Disruption.html",
     "name" : "Disruption",
     "parent" : "Shield Charge",
     "attributes" : {
@@ -1149,12 +1151,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Hack.html",
+    "modifier" : false,
     "skillTag" : "tagHackNAME",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\records\\skills\\defensive\\drxaxepassive.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Hack.html",
     "name" : "Hack",
     "parent" : null,
     "attributes" : {
@@ -1188,12 +1190,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Concussive Blow.html",
+    "modifier" : false,
     "skillTag" : "tagConcussiveBlowNAME",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Defensive\\DRXConcussiveBlow.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Concussive Blow.html",
     "name" : "Concussive Blow",
     "parent" : null,
     "attributes" : {
@@ -1231,12 +1233,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Heave.html",
+    "modifier" : false,
     "skillTag" : "tagHeaveNAME",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\records\\skills\\defensive\\drxheave.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Heave.html",
     "name" : "Heave",
     "parent" : null,
     "attributes" : {
@@ -1310,12 +1312,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Cleave.html",
+    "modifier" : false,
     "skillTag" : "tagCleaveNAME",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\records\\skills\\defensive\\drxheave_cleave.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Cleave.html",
     "name" : "Cleave",
     "parent" : null,
     "attributes" : {
@@ -1365,12 +1367,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Perfect Block.html",
+    "modifier" : false,
     "skillTag" : "x3tagSkillDefenseActiveBlock",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\records\\skills\\defensive\\drx_activeblock.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Perfect Block.html",
     "name" : "Perfect Block",
     "parent" : null,
     "attributes" : {
@@ -1448,12 +1450,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Unyielding Phalanx.html",
+    "modifier" : false,
     "skillTag" : "x3tagSkillDefenseSummonPhalanx",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\records\\skills\\defensive\\drx_summonphalanx.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Unyielding Phalanx.html",
     "name" : "Unyielding Phalanx",
     "parent" : null,
     "attributes" : {
@@ -1515,12 +1517,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Shield Training.html",
+    "modifier" : false,
     "skillTag" : "tagShieldTrainingNAME",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\records\\skills\\defensive\\drxshieldpassive.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Defense Mastery/Shield Training.html",
     "name" : "Shield Training",
     "parent" : null,
     "attributes" : {
@@ -1554,8 +1556,6 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
-  } ],
-  "skillTree" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\SoulvizierAERA\\database\\Records\\Skills\\Defensive\\DrxDefensiveSkillTree.dbr"
+    "skillDescription" : null
+  } ]
 }

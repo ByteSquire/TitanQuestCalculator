@@ -1,11 +1,13 @@
 {
   "mastery" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\NatureMastery.dbr",
   "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery.html",
+  "skillTree" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\NatureSkillTree.dbr",
   "name" : "Nature Mastery",
   "skills" : [ {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Regrowth.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName072",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\Regrowth.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Regrowth.html",
     "name" : "Regrowth",
     "parent" : null,
     "attributes" : {
@@ -47,12 +49,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Accelerated Growth.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName075",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\Regrowth_AcceleratedGrowth.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Accelerated Growth.html",
     "name" : "Accelerated Growth",
     "parent" : "Regrowth",
     "attributes" : {
@@ -82,12 +84,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Dissemination.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName073",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\Regrowth_Dissemination.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Dissemination.html",
     "name" : "Dissemination",
     "parent" : null,
     "attributes" : {
@@ -125,12 +127,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Briar Ward.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName068",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\BriarWard.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Briar Ward.html",
     "name" : "Briar Ward",
     "parent" : null,
     "attributes" : {
@@ -184,21 +186,22 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Stinging Nettle.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName190",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\BriarWard_PetModifier_StingingNettle.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Stinging Nettle.html",
     "name" : "Stinging Nettle",
     "parent" : null,
     "attributes" : {
       "StingingNettle" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Stinging Nettle.html",
+          "modifier" : false,
           "skillTag" : "tagSkillName190",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\BriarWard_PetSkill_StingingNettle.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Stinging Nettle.html",
           "name" : "Stinging Nettle",
           "parent" : null,
           "attributes" : {
@@ -224,15 +227,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Stinging Nettle.html",
+      "modifier" : false,
       "skillTag" : "tagSkillName190",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\BriarWard_PetSkill_StingingNettle.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Stinging Nettle.html",
       "name" : "Stinging Nettle",
       "parent" : null,
       "attributes" : {
@@ -258,24 +261,24 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Sanctuary.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName069",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\BriarWard_Sanctuary.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Sanctuary.html",
     "name" : "Sanctuary",
     "parent" : null,
     "attributes" : {
       "Sanctuary" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Sanctuary.html",
+          "modifier" : false,
           "skillTag" : "tagSkillName069",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\BriarWard_SanctuaryBuff.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Sanctuary.html",
           "name" : "Sanctuary",
           "parent" : null,
           "attributes" : {
@@ -317,15 +320,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Sanctuary.html",
+      "modifier" : false,
       "skillTag" : "tagSkillName069",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\BriarWard_SanctuaryBuff.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Sanctuary.html",
       "name" : "Sanctuary",
       "parent" : null,
       "attributes" : {
@@ -367,24 +370,24 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Heart of Oak.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName160",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\HeartofOak.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Heart of Oak.html",
     "name" : "Heart of Oak",
     "parent" : null,
     "attributes" : {
       "HeartofOak" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Heart of Oak.html",
+          "modifier" : false,
           "skillTag" : "tagSkillName160",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\HeartofOakBuff.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Heart of Oak.html",
           "name" : "Heart of Oak",
           "parent" : null,
           "attributes" : {
@@ -434,15 +437,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Heart of Oak.html",
+      "modifier" : false,
       "skillTag" : "tagSkillName160",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\HeartofOakBuff.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Heart of Oak.html",
       "name" : "Heart of Oak",
       "parent" : null,
       "attributes" : {
@@ -492,15 +495,14 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Tranquility of Water.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName161",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\HeartofOak_Tranquility.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Tranquility of Water.html",
     "name" : "Tranquility of Water",
     "parent" : "Heart of Oak",
     "attributes" : {
@@ -530,12 +532,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Permanence of Stone.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName162",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\HeartofOak_Permanence.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Permanence of Stone.html",
     "name" : "Permanence of Stone",
     "parent" : "Tranquility of Water",
     "attributes" : {
@@ -565,21 +567,22 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Plague.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName141",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\Plague.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Plague.html",
     "name" : "Plague",
     "parent" : null,
     "attributes" : {
       "Plague" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Plague.html",
+          "modifier" : false,
           "skillTag" : "tagSkillName141",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\PlagueBuff.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Plague.html",
           "name" : "Plague",
           "parent" : null,
           "attributes" : {
@@ -653,15 +656,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Plague.html",
+      "modifier" : false,
       "skillTag" : "tagSkillName141",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\PlagueBuff.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Plague.html",
       "name" : "Plague",
       "parent" : null,
       "attributes" : {
@@ -735,15 +738,14 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Fatigue.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName186",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\Plague_Fatigue.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Fatigue.html",
     "name" : "Fatigue",
     "parent" : "Plague",
     "attributes" : {
@@ -793,12 +795,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Susceptibility.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName187",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\Plague_Susceptibility.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Susceptibility.html",
     "name" : "Susceptibility",
     "parent" : "Fatigue",
     "attributes" : {
@@ -832,12 +834,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Call of the Wild.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName159",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\WolfSummons.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Call of the Wild.html",
     "name" : "Call of the Wild",
     "parent" : null,
     "attributes" : {
@@ -879,21 +881,22 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Maul.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName177",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\Wolf_PetModifer_Maul.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Maul.html",
     "name" : "Maul",
     "parent" : null,
     "attributes" : {
       "Maul" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Maul.html",
+          "modifier" : false,
           "skillTag" : "tagSkillName177",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\Wolf_PetSkill_Maul.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Maul.html",
           "name" : "Maul",
           "parent" : null,
           "attributes" : {
@@ -939,15 +942,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Maul.html",
+      "modifier" : false,
       "skillTag" : "tagSkillName177",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\Wolf_PetSkill_Maul.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Maul.html",
       "name" : "Maul",
       "parent" : null,
       "attributes" : {
@@ -993,24 +996,24 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Survival Instinct.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName071",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\Wolf_PetModifer_SurvivalInstinct.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Survival Instinct.html",
     "name" : "Survival Instinct",
     "parent" : null,
     "attributes" : {
       "SurvivalInstinct" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Survival Instinct.html",
+          "modifier" : false,
           "skillTag" : "tagSkillName071",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\Wolf_PetSkill_SurvivalInstinct.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Survival Instinct.html",
           "name" : "Survival Instinct",
           "parent" : null,
           "attributes" : {
@@ -1048,15 +1051,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Survival Instinct.html",
+      "modifier" : false,
       "skillTag" : "tagSkillName071",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\Wolf_PetSkill_SurvivalInstinct.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Survival Instinct.html",
       "name" : "Survival Instinct",
       "parent" : null,
       "attributes" : {
@@ -1094,33 +1097,34 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Strength of the Pack.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName191",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\Wolf_PetModifier_StrengthofthePack.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Strength of the Pack.html",
     "name" : "Strength of the Pack",
     "parent" : null,
     "attributes" : {
       "StrengthofthePack" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Strength of the Pack.html",
+          "modifier" : false,
           "skillTag" : "tagSkillName191",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\Wolf_PetSkill_StrengthofthePack.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Strength of the Pack.html",
           "name" : "Strength of the Pack",
           "parent" : null,
           "attributes" : {
             "StrengthofthePack" : {
               "skill" : true,
               "value" : {
+                "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Strength of the Pack.html",
+                "modifier" : false,
                 "skillTag" : "tagSkillName191",
                 "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\Wolf_PetSkill_StrengthofthePackBuff.dbr",
-                "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Strength of the Pack.html",
                 "name" : "Strength of the Pack",
                 "parent" : null,
                 "attributes" : {
@@ -1170,15 +1174,15 @@
                   }
                 },
                 "buff" : null,
-                "skillDescription" : null,
-                "modifier" : false
+                "skillDescription" : null
               }
             }
           },
           "buff" : {
+            "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Strength of the Pack.html",
+            "modifier" : false,
             "skillTag" : "tagSkillName191",
             "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\Wolf_PetSkill_StrengthofthePackBuff.dbr",
-            "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Strength of the Pack.html",
             "name" : "Strength of the Pack",
             "parent" : null,
             "attributes" : {
@@ -1228,27 +1232,27 @@
               }
             },
             "buff" : null,
-            "skillDescription" : null,
-            "modifier" : false
+            "skillDescription" : null
           },
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Strength of the Pack.html",
+      "modifier" : false,
       "skillTag" : "tagSkillName191",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\Wolf_PetSkill_StrengthofthePack.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Strength of the Pack.html",
       "name" : "Strength of the Pack",
       "parent" : null,
       "attributes" : {
         "StrengthofthePack" : {
           "skill" : true,
           "value" : {
+            "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Strength of the Pack.html",
+            "modifier" : false,
             "skillTag" : "tagSkillName191",
             "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\Wolf_PetSkill_StrengthofthePackBuff.dbr",
-            "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Strength of the Pack.html",
             "name" : "Strength of the Pack",
             "parent" : null,
             "attributes" : {
@@ -1298,15 +1302,15 @@
               }
             },
             "buff" : null,
-            "skillDescription" : null,
-            "modifier" : false
+            "skillDescription" : null
           }
         }
       },
       "buff" : {
+        "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Strength of the Pack.html",
+        "modifier" : false,
         "skillTag" : "tagSkillName191",
         "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\Wolf_PetSkill_StrengthofthePackBuff.dbr",
-        "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Strength of the Pack.html",
         "name" : "Strength of the Pack",
         "parent" : null,
         "attributes" : {
@@ -1356,18 +1360,16 @@
           }
         },
         "buff" : null,
-        "skillDescription" : null,
-        "modifier" : false
+        "skillDescription" : null
       },
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Sylvan Nymph.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName158",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\SylvanNymphSummons.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Sylvan Nymph.html",
     "name" : "Sylvan Nymph",
     "parent" : null,
     "attributes" : {
@@ -1417,30 +1419,32 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Overgrowth.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName188",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\SylvanNymph_PetModifier_Overgrowth.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Overgrowth.html",
     "name" : "Overgrowth",
     "parent" : null,
     "attributes" : {
       "Overgrowth" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Overgrowth.html",
+          "modifier" : false,
           "skillTag" : "tagSkillName188",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\SylvanNymph_PetSkill_Overgrowth.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Overgrowth.html",
           "name" : "Overgrowth",
           "parent" : null,
           "attributes" : {
             "Overgrowth" : {
               "skill" : true,
               "value" : {
+                "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Overgrowth.html",
+                "modifier" : false,
                 "skillTag" : "tagSkillName188",
                 "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\SylvanNymph_PetSkill_OvergrowthBuff.dbr",
-                "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Overgrowth.html",
                 "name" : "Overgrowth",
                 "parent" : null,
                 "attributes" : {
@@ -1482,15 +1486,15 @@
                   }
                 },
                 "buff" : null,
-                "skillDescription" : null,
-                "modifier" : false
+                "skillDescription" : null
               }
             }
           },
           "buff" : {
+            "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Overgrowth.html",
+            "modifier" : false,
             "skillTag" : "tagSkillName188",
             "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\SylvanNymph_PetSkill_OvergrowthBuff.dbr",
-            "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Overgrowth.html",
             "name" : "Overgrowth",
             "parent" : null,
             "attributes" : {
@@ -1532,27 +1536,27 @@
               }
             },
             "buff" : null,
-            "skillDescription" : null,
-            "modifier" : false
+            "skillDescription" : null
           },
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Overgrowth.html",
+      "modifier" : false,
       "skillTag" : "tagSkillName188",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\SylvanNymph_PetSkill_Overgrowth.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Overgrowth.html",
       "name" : "Overgrowth",
       "parent" : null,
       "attributes" : {
         "Overgrowth" : {
           "skill" : true,
           "value" : {
+            "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Overgrowth.html",
+            "modifier" : false,
             "skillTag" : "tagSkillName188",
             "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\SylvanNymph_PetSkill_OvergrowthBuff.dbr",
-            "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Overgrowth.html",
             "name" : "Overgrowth",
             "parent" : null,
             "attributes" : {
@@ -1594,15 +1598,15 @@
               }
             },
             "buff" : null,
-            "skillDescription" : null,
-            "modifier" : false
+            "skillDescription" : null
           }
         }
       },
       "buff" : {
+        "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Overgrowth.html",
+        "modifier" : false,
         "skillTag" : "tagSkillName188",
         "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\SylvanNymph_PetSkill_OvergrowthBuff.dbr",
-        "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Overgrowth.html",
         "name" : "Overgrowth",
         "parent" : null,
         "attributes" : {
@@ -1644,27 +1648,26 @@
           }
         },
         "buff" : null,
-        "skillDescription" : null,
-        "modifier" : false
+        "skillDescription" : null
       },
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Nature's Wrath.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName189",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\SylvanNymph_PetModifier_Nature'sWrath.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Nature's Wrath.html",
     "name" : "Nature's Wrath",
     "parent" : null,
     "attributes" : {
       "Nature'sWrath" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Nature's Wrath.html",
+          "modifier" : false,
           "skillTag" : "tagSkillName189",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\SylvanNymph_PetSkill_Nature'sWrath.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Nature's Wrath.html",
           "name" : "Nature's Wrath",
           "parent" : null,
           "attributes" : {
@@ -1714,15 +1717,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Nature's Wrath.html",
+      "modifier" : false,
       "skillTag" : "tagSkillName189",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\SylvanNymph_PetSkill_Nature'sWrath.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Nature's Wrath.html",
       "name" : "Nature's Wrath",
       "parent" : null,
       "attributes" : {
@@ -1772,24 +1775,24 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Sylvan Protection.html",
+    "modifier" : false,
     "skillTag" : "x3tagSkillNatureSylvanProtection",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\records\\xpack3\\skills\\allmasteries\\nature_nymph_petmodifier_rootwave.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Sylvan Protection.html",
     "name" : "Sylvan Protection",
     "parent" : null,
     "attributes" : {
       "rootwave" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Sylvan Protection.html",
+          "modifier" : false,
           "skillTag" : "x3tagSkillNatureSylvanProtection",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\records\\xpack3\\skills\\allmasteries\\nature_nymph_petskill_rootwave.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Sylvan Protection.html",
           "name" : "Sylvan Protection",
           "parent" : null,
           "attributes" : {
@@ -1871,15 +1874,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Sylvan Protection.html",
+      "modifier" : false,
       "skillTag" : "x3tagSkillNatureSylvanProtection",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\records\\xpack3\\skills\\allmasteries\\nature_nymph_petskill_rootwave.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Sylvan Protection.html",
       "name" : "Sylvan Protection",
       "parent" : null,
       "attributes" : {
@@ -1961,15 +1964,14 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Refresh.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName074",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\Renewal.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Refresh.html",
     "name" : "Refresh",
     "parent" : null,
     "attributes" : {
@@ -2003,12 +2005,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Earthbind.html",
+    "modifier" : false,
     "skillTag" : "x3tagSkillNatureEarthbind",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\records\\xpack3\\skills\\allmasteries\\nature_earthbind.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Nature Mastery/Earthbind.html",
     "name" : "Earthbind",
     "parent" : null,
     "attributes" : {
@@ -2082,8 +2084,6 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
-  } ],
-  "skillTree" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Nature\\NatureSkillTree.dbr"
+    "skillDescription" : null
+  } ]
 }

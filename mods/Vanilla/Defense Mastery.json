@@ -1,11 +1,13 @@
 {
   "mastery" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Defensive\\DefensiveMastery.dbr",
   "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery.html",
+  "skillTree" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Defensive\\DefensiveSkillTree.dbr",
   "name" : "Defense Mastery",
   "skills" : [ {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery/Armor Handling.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName121",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Defensive\\ArmorHandling.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery/Armor Handling.html",
     "name" : "Armor Handling",
     "parent" : null,
     "attributes" : {
@@ -39,12 +41,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery/Adrenaline.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName117",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Defensive\\Adrenaline.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery/Adrenaline.html",
     "name" : "Adrenaline",
     "parent" : null,
     "attributes" : {
@@ -82,12 +84,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery/Resilience.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName132",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Defensive\\Adrenaline_Resilience.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery/Resilience.html",
     "name" : "Resilience",
     "parent" : "Adrenaline",
     "attributes" : {
@@ -109,12 +111,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery/Defensive Reaction.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName118",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Defensive\\Adrenaline_DefensiveReaction.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery/Defensive Reaction.html",
     "name" : "Defensive Reaction",
     "parent" : "Resilience",
     "attributes" : {
@@ -144,21 +146,22 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery/Rally.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName122",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Defensive\\Rally.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery/Rally.html",
     "name" : "Rally",
     "parent" : null,
     "attributes" : {
       "Rally" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery/Rally.html",
+          "modifier" : false,
           "skillTag" : "tagSkillName122",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Defensive\\RallyBuff.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery/Rally.html",
           "name" : "Rally",
           "parent" : null,
           "attributes" : {
@@ -212,15 +215,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery/Rally.html",
+      "modifier" : false,
       "skillTag" : "tagSkillName122",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Defensive\\RallyBuff.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery/Rally.html",
       "name" : "Rally",
       "parent" : null,
       "attributes" : {
@@ -274,15 +277,14 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery/Inspiration.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName123",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Defensive\\Rally_Inspiration.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery/Inspiration.html",
     "name" : "Inspiration",
     "parent" : "Rally",
     "attributes" : {
@@ -312,12 +314,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery/Defiance.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName124",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Defensive\\Rally_Defiance.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery/Defiance.html",
     "name" : "Defiance",
     "parent" : "Inspiration",
     "attributes" : {
@@ -351,12 +353,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery/Colossus Form.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName135",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Defensive\\ColossusForm.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery/Colossus Form.html",
     "name" : "Colossus Form",
     "parent" : null,
     "attributes" : {
@@ -418,12 +420,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery/Shield Smash.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName125",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Defensive\\WeaponPool_ShieldSmash.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery/Shield Smash.html",
     "name" : "Shield Smash",
     "parent" : null,
     "attributes" : {
@@ -477,12 +479,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery/Disable.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName126",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Defensive\\WeaponPool_Disable.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery/Disable.html",
     "name" : "Disable",
     "parent" : null,
     "attributes" : {
@@ -536,12 +538,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery/Pulverize.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName127",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Defensive\\WeaponPool_Pulverize.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery/Pulverize.html",
     "name" : "Pulverize",
     "parent" : null,
     "attributes" : {
@@ -607,21 +609,22 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery/Battle Awareness.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName128",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Defensive\\BattleAwareness.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery/Battle Awareness.html",
     "name" : "Battle Awareness",
     "parent" : null,
     "attributes" : {
       "BattleAwareness" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery/Battle Awareness.html",
+          "modifier" : false,
           "skillTag" : "tagSkillName128",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Defensive\\BattleAwarenessBuff.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery/Battle Awareness.html",
           "name" : "Battle Awareness",
           "parent" : null,
           "attributes" : {
@@ -671,15 +674,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery/Battle Awareness.html",
+      "modifier" : false,
       "skillTag" : "tagSkillName128",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Defensive\\BattleAwarenessBuff.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery/Battle Awareness.html",
       "name" : "Battle Awareness",
       "parent" : null,
       "attributes" : {
@@ -729,15 +732,14 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery/Focus.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName129",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Defensive\\BattleAwareness_Focus.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery/Focus.html",
     "name" : "Focus",
     "parent" : "Battle Awareness",
     "attributes" : {
@@ -771,12 +773,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery/Iron Will.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName130",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Defensive\\BattleAwareness_IronWill.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery/Iron Will.html",
     "name" : "Iron Will",
     "parent" : "Focus",
     "attributes" : {
@@ -822,12 +824,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery/Quick Recovery.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName120",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Defensive\\QuickRecovery.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery/Quick Recovery.html",
     "name" : "Quick Recovery",
     "parent" : null,
     "attributes" : {
@@ -881,12 +883,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery/Batter.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName133",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Defensive\\Batter.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery/Batter.html",
     "name" : "Batter",
     "parent" : null,
     "attributes" : {
@@ -956,12 +958,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery/Rend Armor.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName134",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Defensive\\Batter_RendArmor.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery/Rend Armor.html",
     "name" : "Rend Armor",
     "parent" : "Batter",
     "attributes" : {
@@ -1007,12 +1009,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery/Shield Charge.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName137",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Defensive\\ShieldCharge.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery/Shield Charge.html",
     "name" : "Shield Charge",
     "parent" : null,
     "attributes" : {
@@ -1086,12 +1088,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery/Disruption.html",
+    "modifier" : true,
     "skillTag" : "tagSkillName119",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Defensive\\ShieldCharge_Disruption.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery/Disruption.html",
     "name" : "Disruption",
     "parent" : "Shield Charge",
     "attributes" : {
@@ -1133,12 +1135,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery/Concussive Blow.html",
+    "modifier" : false,
     "skillTag" : "tagSkillName203",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Defensive\\ConcussiveBlow.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery/Concussive Blow.html",
     "name" : "Concussive Blow",
     "parent" : null,
     "attributes" : {
@@ -1180,12 +1182,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery/Unyielding Phalanx.html",
+    "modifier" : false,
     "skillTag" : "x3tagSkillDefenseSummonPhalanx",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\records\\xpack3\\skills\\allmasteries\\defense_summonphalanx.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery/Unyielding Phalanx.html",
     "name" : "Unyielding Phalanx",
     "parent" : null,
     "attributes" : {
@@ -1247,12 +1249,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery/Perfect Block.html",
+    "modifier" : false,
     "skillTag" : "x3tagSkillDefenseActiveBlock",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\records\\xpack3\\skills\\allmasteries\\defense_activeblock.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Defense Mastery/Perfect Block.html",
     "name" : "Perfect Block",
     "parent" : null,
     "attributes" : {
@@ -1330,8 +1332,6 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
-  } ],
-  "skillTree" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\Vanilla\\database\\Records\\Skills\\Defensive\\DefensiveSkillTree.dbr"
+    "skillDescription" : null
+  } ]
 }

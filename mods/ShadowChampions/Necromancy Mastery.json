@@ -1,11 +1,13 @@
 {
   "mastery" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\necromancy\\necromancy_mastery.dbr",
   "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery.html",
+  "skillTree" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\necromancy\\necromancy_skilltree.dbr",
   "name" : "Necromancy Mastery",
   "skills" : [ {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Summon Undead Minion.html",
+    "modifier" : false,
     "skillTag" : "skillNecromancy1n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\necromancy\\skills\\summon1_minion.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Summon Undead Minion.html",
     "name" : "Summon Undead Minion",
     "parent" : null,
     "attributes" : {
@@ -55,12 +57,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Summon Undead Archer.html",
+    "modifier" : false,
     "skillTag" : "skillNecromancy2n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\necromancy\\skills\\summon2_archer.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Summon Undead Archer.html",
     "name" : "Summon Undead Archer",
     "parent" : null,
     "attributes" : {
@@ -110,12 +112,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Summon Undead Wizard.html",
+    "modifier" : false,
     "skillTag" : "skillNecromancy3n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\necromancy\\skills\\summon3_wizard.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Summon Undead Wizard.html",
     "name" : "Summon Undead Wizard",
     "parent" : null,
     "attributes" : {
@@ -165,12 +167,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Summon Undead Captain.html",
+    "modifier" : false,
     "skillTag" : "skillNecromancy4n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\necromancy\\skills\\summon4_captain.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Summon Undead Captain.html",
     "name" : "Summon Undead Captain",
     "parent" : null,
     "attributes" : {
@@ -216,21 +218,22 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Ossein Recovery.html",
+    "modifier" : false,
     "skillTag" : "skillNecromancy6n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\necromancy\\skills\\osseinrecovery.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Ossein Recovery.html",
     "name" : "Ossein Recovery",
     "parent" : null,
     "attributes" : {
       "osseinrecovery" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Ossein Recovery.html",
+          "modifier" : false,
           "skillTag" : "skillNecromancy6n",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\necromancy\\skills\\osseinrecovery_buff.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Ossein Recovery.html",
           "name" : "Ossein Recovery",
           "parent" : null,
           "attributes" : {
@@ -260,8 +263,7 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       },
       "instantCast" : {
@@ -270,9 +272,10 @@
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Ossein Recovery.html",
+      "modifier" : false,
       "skillTag" : "skillNecromancy6n",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\necromancy\\skills\\osseinrecovery_buff.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Ossein Recovery.html",
       "name" : "Ossein Recovery",
       "parent" : null,
       "attributes" : {
@@ -302,15 +305,14 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Necromania.html",
+    "modifier" : false,
     "skillTag" : "skillNecromancy5n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\necromancy\\skills\\necromania2.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Necromania.html",
     "name" : "Necromania",
     "parent" : null,
     "attributes" : {
@@ -348,12 +350,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Skull Grenade.html",
+    "modifier" : false,
     "skillTag" : "skillNecromancy25n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\necromancy\\skills\\skullgrenade.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Skull Grenade.html",
     "name" : "Skull Grenade",
     "parent" : null,
     "attributes" : {
@@ -423,12 +425,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Impaling Bones.html",
+    "modifier" : false,
     "skillTag" : "skillNecromancy9n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\necromancy\\skills\\impalingbones.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Impaling Bones.html",
     "name" : "Impaling Bones",
     "parent" : null,
     "attributes" : {
@@ -494,12 +496,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Doom Sealing.html",
+    "modifier" : true,
     "skillTag" : "skillNecromancy11n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\necromancy\\skills\\impalingbones_doomsealing.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Doom Sealing.html",
     "name" : "Doom Sealing",
     "parent" : "Impaling Bones",
     "attributes" : {
@@ -549,12 +551,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Skewer.html",
+    "modifier" : true,
     "skillTag" : "skillNecromancy31n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\necromancy\\skills\\impalingbones_skewer.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Skewer.html",
     "name" : "Skewer",
     "parent" : "Doom Sealing",
     "attributes" : {
@@ -592,12 +594,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Soulflaying Magic.html",
+    "modifier" : true,
     "skillTag" : "skillNecromancy10n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\necromancy\\skills\\impalingbones_ghostflayingmagic.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Soulflaying Magic.html",
     "name" : "Soulflaying Magic",
     "parent" : "Skewer",
     "attributes" : {
@@ -639,12 +641,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Forbidden Codex.html",
+    "modifier" : false,
     "skillTag" : "skillNecromancy21n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\necromancy\\skills\\forbiddencodex.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Forbidden Codex.html",
     "name" : "Forbidden Codex",
     "parent" : null,
     "attributes" : {
@@ -678,21 +680,22 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Vanquish Undead.html",
+    "modifier" : false,
     "skillTag" : "skillNecromancy18n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\necromancy\\skills\\vanquishundead.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Vanquish Undead.html",
     "name" : "Vanquish Undead",
     "parent" : null,
     "attributes" : {
       "vanquishundead" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Vanquish Undead.html",
+          "modifier" : false,
           "skillTag" : "skillNecromancy18n",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\necromancy\\skills\\vanquishdeathbuff.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Vanquish Undead.html",
           "name" : "Vanquish Undead",
           "parent" : null,
           "attributes" : {
@@ -754,15 +757,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Vanquish Undead.html",
+      "modifier" : false,
       "skillTag" : "skillNecromancy18n",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\necromancy\\skills\\vanquishdeathbuff.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Vanquish Undead.html",
       "name" : "Vanquish Undead",
       "parent" : null,
       "attributes" : {
@@ -824,15 +827,14 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Deathshield.html",
+    "modifier" : true,
     "skillTag" : "skillNecromancy19n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\necromancy\\skills\\vanquishundead_guard.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Deathshield.html",
     "name" : "Deathshield",
     "parent" : "Vanquish Undead",
     "attributes" : {
@@ -870,12 +872,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Gravestone .html",
+    "modifier" : false,
     "skillTag" : "skillNecromancy24n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\necromancy\\skills\\pet\\gravestone_summon.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Gravestone .html",
     "name" : "Gravestone ",
     "parent" : null,
     "attributes" : {
@@ -921,12 +923,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Early Grave.html",
+    "modifier" : false,
     "skillTag" : "skillNecromancy12n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\necromancy\\skills\\earlygrave.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Early Grave.html",
     "name" : "Early Grave",
     "parent" : null,
     "attributes" : {
@@ -956,12 +958,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Bone Cage.html",
+    "modifier" : false,
     "skillTag" : "skillNecromancy7n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\necromancy\\skills\\bonetrapgrenade.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Bone Cage.html",
     "name" : "Bone Cage",
     "parent" : null,
     "attributes" : {
@@ -972,9 +974,10 @@
       "bonetrapgrenade" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Bone Cage.html",
+          "modifier" : false,
           "skillTag" : "skillNecromancy7n",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\necromancy\\skills\\bonetrapgrenade_buff.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Bone Cage.html",
           "name" : "Bone Cage",
           "parent" : null,
           "attributes" : {
@@ -1044,15 +1047,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Bone Cage.html",
+      "modifier" : false,
       "skillTag" : "skillNecromancy7n",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\necromancy\\skills\\bonetrapgrenade_buff.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Bone Cage.html",
       "name" : "Bone Cage",
       "parent" : null,
       "attributes" : {
@@ -1122,15 +1125,14 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Degeneracy.html",
+    "modifier" : true,
     "skillTag" : "skillNecromancy8n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\necromancy\\skills\\bonetrapgrenade_buff_degenreancy.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Degeneracy.html",
     "name" : "Degeneracy",
     "parent" : "Bone Cage",
     "attributes" : {
@@ -1172,12 +1174,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Impenetrable Ossuary.html",
+    "modifier" : true,
     "skillTag" : "skillNecromancy26n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\necromancy\\skills\\bonetrapgrenade_buff_impenetrableossuary.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Impenetrable Ossuary.html",
     "name" : "Impenetrable Ossuary",
     "parent" : "Degeneracy",
     "attributes" : {
@@ -1223,12 +1225,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Spellbound Souls.html",
+    "modifier" : false,
     "skillTag" : "skillNecromancy22n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\necromancy\\skills\\spellboundsouls.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Spellbound Souls.html",
     "name" : "Spellbound Souls",
     "parent" : null,
     "attributes" : {
@@ -1262,12 +1264,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Banishing Spell.html",
+    "modifier" : false,
     "skillTag" : "skillNecromancy23n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\necromancy\\skills\\banishingspell.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Banishing Spell.html",
     "name" : "Banishing Spell",
     "parent" : null,
     "attributes" : {
@@ -1349,12 +1351,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Mana Source.html",
+    "modifier" : false,
     "skillTag" : "skillNecromancy13n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\necromancy\\skills\\manasource.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Mana Source.html",
     "name" : "Mana Source",
     "parent" : null,
     "attributes" : {
@@ -1404,12 +1406,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Energy Rush.html",
+    "modifier" : true,
     "skillTag" : "skillNecromancy14n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\necromancy\\skills\\manasource_focus.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Energy Rush.html",
     "name" : "Energy Rush",
     "parent" : "Mana Source",
     "attributes" : {
@@ -1455,21 +1457,22 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Cold Hand of Death.html",
+    "modifier" : false,
     "skillTag" : "skillNecromancy15n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\necromancy\\skills\\coldhandofdeath.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Cold Hand of Death.html",
     "name" : "Cold Hand of Death",
     "parent" : null,
     "attributes" : {
       "coldhandofdeath" : {
         "skill" : true,
         "value" : {
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Cold Hand of Death.html",
+          "modifier" : false,
           "skillTag" : "skillNecromancy15n",
           "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\necromancy\\skills\\coldhandofdeathbuff.dbr",
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Cold Hand of Death.html",
           "name" : "Cold Hand of Death",
           "parent" : null,
           "attributes" : {
@@ -1539,15 +1542,15 @@
             }
           },
           "buff" : null,
-          "skillDescription" : null,
-          "modifier" : false
+          "skillDescription" : null
         }
       }
     },
     "buff" : {
+      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Cold Hand of Death.html",
+      "modifier" : false,
       "skillTag" : "skillNecromancy15n",
       "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\necromancy\\skills\\coldhandofdeathbuff.dbr",
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Cold Hand of Death.html",
       "name" : "Cold Hand of Death",
       "parent" : null,
       "attributes" : {
@@ -1617,15 +1620,14 @@
         }
       },
       "buff" : null,
-      "skillDescription" : null,
-      "modifier" : false
+      "skillDescription" : null
     },
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Soul Chill.html",
+    "modifier" : true,
     "skillTag" : "skillNecromancy20n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\necromancy\\skills\\coldhandofdeath_soulchill.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Soul Chill.html",
     "name" : "Soul Chill",
     "parent" : "Cold Hand of Death",
     "attributes" : {
@@ -1659,12 +1661,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Reaper's Avatar.html",
+    "modifier" : true,
     "skillTag" : "skillNecromancy16n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\necromancy\\skills\\coldhandofdeath_reapersavatar.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Reaper's Avatar.html",
     "name" : "Reaper's Avatar",
     "parent" : "Soul Chill",
     "attributes" : {
@@ -1698,12 +1700,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Death Ray.html",
+    "modifier" : false,
     "skillTag" : "skillNecromancy27n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\necromancy\\skills\\deathray.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Death Ray.html",
     "name" : "Death Ray",
     "parent" : null,
     "attributes" : {
@@ -1769,12 +1771,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Eternal Slumber.html",
+    "modifier" : true,
     "skillTag" : "skillNecromancy28n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\necromancy\\skills\\deathray_eternalslumber.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Eternal Slumber.html",
     "name" : "Eternal Slumber",
     "parent" : "Death Ray",
     "attributes" : {
@@ -1816,12 +1818,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : true
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Skeletal Armor.html",
+    "modifier" : false,
     "skillTag" : "skillNecromancy30n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\necromancy\\skills\\skeletalarmor.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Skeletal Armor.html",
     "name" : "Skeletal Armor",
     "parent" : null,
     "attributes" : {
@@ -1851,12 +1853,12 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
+    "skillDescription" : null
   }, {
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Devour Soul.html",
+    "modifier" : false,
     "skillTag" : "skillNecromancy29n",
     "skill" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\necromancy\\skills\\devoursoul.dbr",
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Necromancy Mastery/Devour Soul.html",
     "name" : "Devour Soul",
     "parent" : null,
     "attributes" : {
@@ -1910,8 +1912,6 @@
       }
     },
     "buff" : null,
-    "skillDescription" : null,
-    "modifier" : false
-  } ],
-  "skillTree" : "C:\\Users\\green\\OneDrive\\Documents\\TTQMods\\TitanQuestCalculator\\tqcalculator\\databases\\ShadowChampions\\database\\records\\skills\\necromancy\\necromancy_skilltree.dbr"
+    "skillDescription" : null
+  } ]
 }
