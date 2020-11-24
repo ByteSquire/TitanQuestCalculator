@@ -17,16 +17,24 @@ public class Skill {
     private String mBuffIndex;
     private boolean isModifier;
     private String mParent;
+    private File mSkill;
 
     public Skill(File aSkill, String aParentPath, ModStringsParser aMSParser) {
         if (aSkill == null)
             return;
         mParentPath = aParentPath;
+        mSkill = aSkill;
         mSkillParser = new SkillParser(aSkill, aParentPath, aMSParser);
 
         mSkillName = aMSParser.getTags().get(mSkillParser.getSkillTag());
         mSkillAttributes = mSkillParser.getAttributes();
         isModifier = mSkillParser.isModifier();
+
+        for (String key : mSkillAttributes.keySet()) {
+            if (mSkillAttributes.get(key).isSkill()) {
+                mBuffIndex = key;
+            }
+        }
     }
 
     @Override
@@ -49,19 +57,13 @@ public class Skill {
     }
 
     public boolean isBuff() {
-        for (String key : mSkillAttributes.keySet()) {
-            if (mSkillAttributes.get(key).isSkill()) {
-                mBuffIndex = key;
-                return true;
-            }
-        }
-        return false;
+        return mBuffIndex != null;
     }
 
     public Skill getBuff() throws UnsupportedOperationException {
         if (mBuffIndex != null)
             return (Skill) mSkillAttributes.get(mBuffIndex).getValue();
-        else 
+        else
             return null;
 //        throw new UnsupportedOperationException();
     }
@@ -84,6 +86,10 @@ public class Skill {
 
     public void setParent(String mSkillParent) {
         this.mParent = mSkillParent;
+    }
+
+    public File getSkill() {
+        return mSkill;
     }
 
 }

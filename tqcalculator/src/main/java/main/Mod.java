@@ -17,6 +17,7 @@ public class Mod {
     private ArrayList<Mastery> mMasteries;
     private String mModName, mModDir;
     private Map<String, String> mLinks;
+    private File mCharacter;
 
     public Mod(String aModName, String aModDir) {
         if (aModName == null)
@@ -28,6 +29,7 @@ public class Mod {
 
         mModParser = new ModParser(aModDir);
         mLinks = mModParser.getLinks();
+        mCharacter = mModParser.getCharacter();
 
         for (File skillTree : mModParser.getSkillTrees()) {
             if (!skillTree.getName().equals("QuestRewardSkillTree.dbr"))
@@ -56,12 +58,20 @@ public class Mod {
         return mModDir;
     }
 
+    public ModStringsParser getMSParser() {
+        return mMSParser;
+    }
+
     public String getUrl() {
         return Control.URL + "/mods/" + getName() + ".html";
     }
 
     public Map<String, String> getLinks() {
         return mLinks;
+    }
+
+    public File getCharacter() {
+        return mCharacter;
     }
 
 }

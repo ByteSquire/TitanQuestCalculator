@@ -16,6 +16,7 @@ public class ModParser {
     private static final String SEPARATOR = Paths.get("").getFileSystem().getSeparator();
 
     private ArrayList<File> mSkillTrees;
+    private File mCharacter;
     public static final int COUNT_MASTERIES = 10;
     public static final int COUNT_QUEST_REWARD_TREES = 1;
     private String mModdir;
@@ -31,8 +32,8 @@ public class ModParser {
     }
 
     private void initSkillTrees() {
-        File character = new File(mModdir + "database/records/xpack/creatures/pc/malepc01.dbr");
-        try (BufferedReader characterReader = new BufferedReader(new FileReader(character));) {
+        mCharacter = new File(mModdir + "database/records/xpack/creatures/pc/malepc01.dbr");
+        try (BufferedReader characterReader = new BufferedReader(new FileReader(mCharacter));) {
             Stream<String> fileStream = characterReader.lines();
             fileStream.filter((str) -> str.startsWith("skillTree")).forEach((str) -> {
                 int index = Integer.parseInt(str.substring(9, 10));
@@ -73,6 +74,10 @@ public class ModParser {
 
     public Map<String, String> getLinks() {
         return mLinks;
+    }
+
+    public File getCharacter() {
+        return mCharacter;
     }
 
 }

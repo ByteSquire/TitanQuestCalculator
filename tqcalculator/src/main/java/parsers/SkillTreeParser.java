@@ -44,7 +44,7 @@ public class SkillTreeParser {
                 } catch (NumberFormatException e) {
                 }
 
-                if (index != 1) {
+                if (index > 1) {
                     mSkillIsInnate.set(index - 1, (str.split(",")[1].equals("1")));
                 }
             });
@@ -84,8 +84,8 @@ public class SkillTreeParser {
                     } catch (FileNotFoundException e) {
                         e.printStackTrace();
                     }
-                } else
-                    mSkills.set(index - 1, new File(mModDir + str.split(",")[1]));
+                }
+                mSkills.set(index - 1, new File(mModDir + str.split(",")[1]));
             });
         } catch (FileNotFoundException e) {
             e.printStackTrace();

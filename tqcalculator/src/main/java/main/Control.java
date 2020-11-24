@@ -84,6 +84,8 @@ public class Control {
             }
         }
 
+        new Cleaner(mMods);
+
         writeTemplates();
 
     }

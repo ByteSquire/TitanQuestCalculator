@@ -1,12 +1,14 @@
 package parsers;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.Stream;
@@ -16,9 +18,11 @@ import org.mozilla.universalchardet.UniversalDetector;
 public class ModStringsParser {
 
     private HashMap<String, String> tags;
+    private ArrayList<File> mModStrings;
 
     public ModStringsParser(String aModStringsPath) {
         tags = new HashMap<>();
+        mModStrings = new ArrayList<File>();
 
         try {
             DirectoryStream<Path> modStringsDir = Files.newDirectoryStream(Path.of(aModStringsPath));
@@ -44,6 +48,7 @@ public class ModStringsParser {
                     } catch (IOException e1) {
                         e1.printStackTrace();
                     }
+                    mModStrings.add(textFile.toFile());
                 }
             });
         } catch (IOException e1) {
@@ -54,5 +59,9 @@ public class ModStringsParser {
 
     public Map<String, String> getTags() {
         return tags;
+    }
+
+    public ArrayList<File> getModStrings() {
+        return mModStrings;
     }
 }
