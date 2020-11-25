@@ -7,6 +7,7 @@
 </head>
 <body>
     <h1><#if name??>${name}<#else>Error reading name</#if></h1>
+    <h2><#if description??>${description}<#else>Error reading name</#if></h2>
 
     <table border=1.7>
     <#if buffName??>
