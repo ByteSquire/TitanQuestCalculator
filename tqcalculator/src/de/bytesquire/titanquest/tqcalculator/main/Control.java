@@ -26,7 +26,7 @@ public class Control {
     public static final String URL = "https://bytesquire.github.io/TitanQuestCalculator";
 
     public static final String DATABASES_DIR = Paths.get("").toAbsolutePath().toString() + "/resources/databases/";
-    
+
     public static final String REPOSITORY_DIR = Paths.get("").toAbsolutePath().getParent().getParent().toString();
 
     private static ArrayList<Mod> mMods = new ArrayList<>();
@@ -91,7 +91,7 @@ public class Control {
             }
         }
 
-        // new Cleaner(mMods);
+        new Cleaner(mMods);
 
         writeTemplates();
 
@@ -101,7 +101,7 @@ public class Control {
     private static void showSuccess() {
         if (mSuccess)
             JOptionPane.showMessageDialog(new JFrame(), "Success", "Parse Database", JOptionPane.INFORMATION_MESSAGE);
-        else 
+        else
             JOptionPane.showMessageDialog(new JFrame(), "Error", "Parse Database", JOptionPane.ERROR_MESSAGE);
         System.exit(0);
     }
@@ -125,14 +125,16 @@ public class Control {
                 rootMod.put("name", mod.getName());
                 Control.mod.process(rootMod, outMod);
                 for (Mastery mastery : mod.getMasteries()) {
-                    Writer outMastery = new FileWriter(REPOSITORY_DIR + "/mods/" + mod.getName() + "/" + mastery.getName() + ".html");
+                    Writer outMastery = new FileWriter(
+                            REPOSITORY_DIR + "/mods/" + mod.getName() + "/" + mastery.getName() + ".html");
                     rootMastery = new HashMap<>();
                     rootMastery.put("skills", mastery.getSkills());
                     rootMastery.put("name", mastery.getName());
                     Control.mastery.process(rootMastery, outMastery);
                     for (Skill skill : mastery.getSkills()) {
-                        Writer outSkill = new FileWriter(REPOSITORY_DIR + "/mods/" + mod.getName() + "/" + mastery.getName() + "/"
-                                + ((skill.getName() == null) ? skill.toString() : skill.getName()) + ".html");
+                        Writer outSkill = new FileWriter(
+                                REPOSITORY_DIR + "/mods/" + mod.getName() + "/" + mastery.getName() + "/"
+                                        + ((skill.getName() == null) ? skill.toString() : skill.getName()) + ".html");
                         rootSkill = new HashMap<>();
                         if (skill.isBuff()) {
                             rootSkill.put("buffName", skill.getBuff().getName());
