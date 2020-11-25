@@ -1,6 +1,6 @@
 {
   "name" : "Warfare Mastery",
-  "skills" : [ {
+  "skillTiers" : [ [ {
     "name" : "Weapon Training",
     "parent" : null,
     "attributes" : {
@@ -28,7 +28,191 @@
         "value" : 1,
         "skill" : false
       },
-      "skillTier" : {
+      "skillMaxLevel" : {
+        "value" : 6,
+        "skill" : false
+      },
+      "Axe" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "RangedOneHand" : {
+        "value" : 1,
+        "skill" : false
+      }
+    },
+    "description" : "Years of training with the sword, axe, and club allow you to attack faster and more accurately.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery/Weapon Training.html"
+  }, {
+    "name" : "Onslaught",
+    "parent" : null,
+    "attributes" : {
+      "skillProjectileSpeedModifier" : {
+        "value" : [ 15.0, 24.0, 33.0, 42.0, 51.0, 60.0, 69.0, 78.0, 87.0, 96.0, 105.0, 114.0 ],
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : 1.0,
+        "skill" : false
+      },
+      "skillConnectionSpacing" : {
+        "value" : 62,
+        "skill" : false
+      },
+      "cameraShakeAmplitude" : {
+        "value" : 0.12,
+        "skill" : false
+      },
+      "Bow" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 8,
+        "skill" : false
+      },
+      "Axe" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "RangedOneHand" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "offensivePhysicalModifier" : {
+        "value" : [ 10.0, 16.0, 22.0, 28.0, 34.0, 40.0, 46.0, 52.0, 58.0, 64.0, 70.0, 76.0 ],
+        "skill" : false
+      },
+      "Mace" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "Sword" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillChargeLevel" : {
+        "value" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ],
+        "skill" : false
+      },
+      "skillChargeDuration" : {
+        "value" : [ 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5 ],
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "Spear" : {
+        "value" : 1,
+        "skill" : false
+      }
+    },
+    "description" : "When used as your default weapon attack, Onslaught charges up as you hit enemies causing increased damage.  The first hit always charges Onslaught to the first level of the skill and it continues to charge until it reaches your current skill level. Onslaught dissipates rapidly when not attacking.  {^y}Assign this skill to your left mouse button.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery/Onslaught.html"
+  }, {
+    "name" : "Battle Rage",
+    "parent" : null,
+    "attributes" : {
+      "characterOffensiveAbilityModifier" : {
+        "value" : 33.0,
+        "skill" : false
+      },
+      "skillActiveDuration" : {
+        "value" : 10.0,
+        "skill" : false
+      },
+      "skillCooldownTime" : {
+        "value" : 12.0,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 16,
+        "skill" : false
+      },
+      "offensivePhysicalMin" : {
+        "value" : [ 8.0, 14.0, 20.0, 26.0, 33.0, 40.0, 46.0, 54.0, 61.0, 68.0, 75.0, 84.0, 91.0, 98.0, 106.0, 115.0 ],
+        "skill" : false
+      },
+      "skillConnectionSpacing" : {
+        "value" : 62,
+        "skill" : false
+      },
+      "onHitActivationChance" : {
+        "value" : 8.0,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 12,
+        "skill" : false
+      }
+    },
+    "description" : "Each enemy hit has a chance of sending you into a battle rage that adds bonus damage to attacks and increases Offensive Ability for a short duration.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery/Battle Rage.html"
+  } ], [ {
+    "name" : "Dodge Attacks",
+    "parent" : null,
+    "attributes" : {
+      "skillUltimateLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "offensivePierceRatioMin" : {
+        "value" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 28.0, 30.0, 35.0 ],
+        "skill" : false
+      },
+      "characterDodgePercent" : {
+        "value" : [ 3.0, 6.0, 8.0, 10.0, 12.0, 15.0, 18.0, 21.0, 23.0, 25.0, 27.0, 30.0 ],
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 8,
+        "skill" : false
+      }
+    },
+    "description" : "Even the sturdiest armor has its chinks.  The best way to stay alive is to not get hit.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery/Dodge Attacks.html"
+  }, {
+    "name" : "Dual Wield",
+    "parent" : null,
+    "attributes" : {
+      "skillChanceWeight" : {
+        "value" : [ 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0 ],
+        "skill" : false
+      },
+      "Mace" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 10,
+        "skill" : false
+      },
+      "Sword" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillConnectionSpacing" : {
+        "value" : 62,
+        "skill" : false
+      },
+      "cameraShakeAmplitude" : {
+        "value" : 0.12,
+        "skill" : false
+      },
+      "offensivePhysicalMin" : {
+        "value" : 10.0,
+        "skill" : false
+      },
+      "skillProjectileNumber" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "dualWieldOnly" : {
         "value" : 1,
         "skill" : false
       },
@@ -45,12 +229,87 @@
         "skill" : false
       }
     },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery/Weapon Training.html",
-    "modifier" : false,
-    "skillTag" : "tagSkillName017"
+    "description" : "Learn to effectively wield two weapons and perform occasional double attacks.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery/Dual Wield.html"
   }, {
+    "name" : "Ignore Pain",
+    "parent" : "Onslaught",
+    "attributes" : {
+      "defensivePhysical" : {
+        "value" : [ 3.0, 6.0, 8.0, 10.0, 12.0, 15.0, 16.0, 17.0, 18.0, 20.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 10,
+        "skill" : false
+      },
+      "defensivePierce" : {
+        "value" : [ 3.0, 6.0, 8.0, 10.0, 12.0, 15.0, 16.0, 17.0, 18.0, 20.0 ],
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 6,
+        "skill" : false
+      }
+    },
+    "description" : "Total focus in the heat of battle allows you to ignore physical and piercing damage.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery/Ignore Pain.html"
+  }, {
+    "name" : "War Horn",
+    "parent" : null,
+    "attributes" : {
+      "skillCooldownTime" : {
+        "value" : 18.0,
+        "skill" : false
+      },
+      "offensiveStunMin" : {
+        "value" : [ 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5 ],
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : [ 52.0, 54.0, 56.0, 58.0, 60.0, 62.0, 64.0, 66.0, 68.0, 70.0, 72.0, 74.0, 76.0, 78.0, 80.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 14,
+        "skill" : false
+      },
+      "offensiveStunMax" : {
+        "value" : [ 3.0, 3.5, 3.9, 4.3, 4.6, 5.0, 5.3, 5.6, 6.0, 6.5, 6.7, 6.9, 7.2, 7.5, 8.0 ],
+        "skill" : false
+      },
+      "skillConnectionSpacing" : {
+        "value" : 62,
+        "skill" : false
+      },
+      "cameraShakeAmplitude" : {
+        "value" : 0.12,
+        "skill" : false
+      },
+      "excludeRacialDamage" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "expansionTime" : {
+        "value" : 0.05,
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 5,
+        "skill" : false
+      },
+      "skillTargetRadius" : {
+        "value" : [ 8.0, 8.4, 8.8, 9.2, 9.6, 10.0, 10.4, 10.8, 11.2, 11.6, 12.0, 12.4, 12.8, 13.2 ],
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 10,
+        "skill" : false
+      }
+    },
+    "description" : "The triumphant call of your war horn temporarily stuns enemies.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery/War Horn.html"
+  } ], [ {
     "name" : "War Wind",
     "parent" : null,
     "attributes" : {
@@ -122,166 +381,13 @@
         "value" : 360.0,
         "skill" : false
       },
-      "skillTier" : {
-        "value" : 3,
-        "skill" : false
-      },
       "Spear" : {
         "value" : 1,
         "skill" : false
       }
     },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery/War Wind.html",
-    "modifier" : false,
-    "skillTag" : "tagSkillName014"
-  }, {
-    "name" : "Lacerate",
-    "parent" : "War Wind",
-    "attributes" : {
-      "offensiveSlowBleedingMin" : {
-        "value" : [ 25.4, 31.4, 37.5, 44.0, 49.5, 57.1, 64.9, 73.0, 81.2, 89.8, 99.6, 110.1 ],
-        "skill" : false
-      },
-      "skillManaCost" : {
-        "value" : [ 12.0, 14.0, 17.0, 19.0, 21.0, 24.0, 26.0, 28.0, 31.0, 33.0, 35.0, 38.0 ],
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
-      },
-      "Sword" : {
-        "value" : 1,
-        "skill" : false
-      },
-      "skillTargetNumber" : {
-        "value" : [ 1.0, 1.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 5.0 ],
-        "skill" : false
-      },
-      "offensiveSlowBleedingDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
-      },
-      "skillMasteryLevelRequired" : {
-        "value" : 25,
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 5,
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
-      },
-      "Spear" : {
-        "value" : 1,
-        "skill" : false
-      },
-      "Axe" : {
-        "value" : 1,
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery/Lacerate.html",
-    "modifier" : true,
-    "skillTag" : "tagSkillName015"
-  }, {
-    "name" : "Dodge Attacks",
-    "parent" : null,
-    "attributes" : {
-      "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
-      },
-      "offensivePierceRatioMin" : {
-        "value" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 28.0, 30.0, 35.0 ],
-        "skill" : false
-      },
-      "characterDodgePercent" : {
-        "value" : [ 3.0, 6.0, 8.0, 10.0, 12.0, 15.0, 18.0, 21.0, 23.0, 25.0, 27.0, 30.0 ],
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 2,
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery/Dodge Attacks.html",
-    "modifier" : false,
-    "skillTag" : "tagSkillName192"
-  }, {
-    "name" : "Dual Wield",
-    "parent" : null,
-    "attributes" : {
-      "skillChanceWeight" : {
-        "value" : [ 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0 ],
-        "skill" : false
-      },
-      "skillConnectionSpacing" : {
-        "value" : 62,
-        "skill" : false
-      },
-      "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
-      },
-      "offensivePhysicalMin" : {
-        "value" : 10.0,
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 6,
-        "skill" : false
-      },
-      "Axe" : {
-        "value" : 1,
-        "skill" : false
-      },
-      "RangedOneHand" : {
-        "value" : 1,
-        "skill" : false
-      },
-      "Mace" : {
-        "value" : 1,
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 10,
-        "skill" : false
-      },
-      "Sword" : {
-        "value" : 1,
-        "skill" : false
-      },
-      "skillProjectileNumber" : {
-        "value" : 1,
-        "skill" : false
-      },
-      "dualWieldOnly" : {
-        "value" : 1,
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 2,
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery/Dual Wield.html",
-    "modifier" : false,
-    "skillTag" : "tagSkillName010"
+    "description" : "Executes a devastating spinning attack that can damage up to four enemies.  Initially each hit is not as powerful as a normal attack but the effectiveness increases every level.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery/War Wind.html"
   }, {
     "name" : "Hew",
     "parent" : null,
@@ -318,10 +424,6 @@
         "value" : 1,
         "skill" : false
       },
-      "skillTier" : {
-        "value" : 3,
-        "skill" : false
-      },
       "skillMaxLevel" : {
         "value" : 6,
         "skill" : false
@@ -331,12 +433,75 @@
         "skill" : false
       }
     },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery/Hew.html",
-    "modifier" : false,
-    "skillTag" : "tagSkillName012"
+    "description" : "A Dual Wield melee strike that hits one target with both weapons.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery/Hew.html"
   }, {
+    "name" : "Crushing Blow",
+    "parent" : "Battle Rage",
+    "attributes" : {
+      "skillUltimateLevel" : {
+        "value" : 16,
+        "skill" : false
+      },
+      "offensivePhysicalMin" : {
+        "value" : [ 25.0, 45.0, 66.0, 87.0, 108.0, 130.0, 152.0, 174.0, 197.0, 220.0, 243.0, 267.0, 291.0, 315.0, 340.0, 365.0 ],
+        "skill" : false
+      },
+      "offensivePhysicalChance" : {
+        "value" : 25.0,
+        "skill" : false
+      },
+      "offensivePhysicalMax" : {
+        "value" : [ 51.0, 76.0, 101.0, 126.0, 151.0, 177.0, 203.0, 229.0, 256.0, 283.0, 310.0, 338.0, 366.0, 394.0, 423.0, 452.0 ],
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 10,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 12,
+        "skill" : false
+      }
+    },
+    "description" : "Provides a chance for attacks to cause bonus damage while in Battle Rage.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery/Crushing Blow.html"
+  }, {
+    "name" : "Battle Standard",
+    "parent" : null,
+    "attributes" : {
+      "skillCooldownTime" : {
+        "value" : 60.0,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 14,
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : 50.0,
+        "skill" : false
+      },
+      "spawnObjectsTimeToLive" : {
+        "value" : [ 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0 ],
+        "skill" : false
+      },
+      "cameraShakeAmplitude" : {
+        "value" : 0.12,
+        "skill" : false
+      },
+      "skillConnectionSpacing" : {
+        "value" : 62,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 10,
+        "skill" : false
+      }
+    },
+    "description" : "Throw down a mighty standard to embolden the hearts of nearby allies.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery/Battle Standard.html"
+  } ], [ {
     "name" : "Cross Cut",
     "parent" : null,
     "attributes" : {
@@ -395,18 +560,252 @@
       "skillTargetAngle" : {
         "value" : 90.0,
         "skill" : false
+      }
+    },
+    "description" : "A Dual Wield technique that can hit up to 2 enemies with a cross-cutting scissor motion.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery/Cross Cut.html"
+  }, {
+    "name" : "Hamstring",
+    "parent" : "Ignore Pain",
+    "attributes" : {
+      "offensiveSlowRunSpeedMin" : {
+        "value" : [ 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0 ],
+        "skill" : false
       },
-      "skillTier" : {
-        "value" : 4,
+      "offensiveSlowDefensiveReductionDurationMin" : {
+        "value" : 6.0,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 10,
+        "skill" : false
+      },
+      "offensiveSlowDefensiveAbilityDurationMin" : {
+        "value" : 3.0,
+        "skill" : false
+      },
+      "offensiveSlowRunSpeedDurationMin" : {
+        "value" : 5.0,
+        "skill" : false
+      },
+      "offensiveSlowDefensiveAbilityMin" : {
+        "value" : [ 8.0, 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0 ],
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 6,
+        "skill" : false
+      },
+      "offensiveSlowDefensiveReductionMin" : {
+        "value" : [ 16.0, 24.0, 32.0, 40.0, 48.0, 56.0, 64.0, 72.0, 80.0, 90.0 ],
         "skill" : false
       }
     },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery/Cross Cut.html",
-    "modifier" : false,
-    "skillTag" : "tagSkillName009"
+    "description" : "An attack aimed at the enemy's legs reduces their ability to run and increases their vulnerability for a short duration.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery/Hamstring.html"
+  } ], [ {
+    "name" : "Lacerate",
+    "parent" : "War Wind",
+    "attributes" : {
+      "offensiveSlowBleedingMin" : {
+        "value" : [ 25.4, 31.4, 37.5, 44.0, 49.5, 57.1, 64.9, 73.0, 81.2, 89.8, 99.6, 110.1 ],
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : [ 12.0, 14.0, 17.0, 19.0, 21.0, 24.0, 26.0, 28.0, 31.0, 33.0, 35.0, 38.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "Sword" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillTargetNumber" : {
+        "value" : [ 1.0, 1.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 5.0 ],
+        "skill" : false
+      },
+      "offensiveSlowBleedingDurationMin" : {
+        "value" : 3.0,
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 25,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 8,
+        "skill" : false
+      },
+      "Spear" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "Axe" : {
+        "value" : 1,
+        "skill" : false
+      }
+    },
+    "description" : "Adds bleeding damage to War Wind and increases the number of enemies hit.  Requires at least one sword, axe, or spear.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery/Lacerate.html"
   }, {
+    "name" : "Counter Attack",
+    "parent" : "Crushing Blow",
+    "attributes" : {
+      "retaliationPhysicalMax" : {
+        "value" : [ 93.0, 105.0, 117.0, 129.0, 153.0, 168.0, 192.0, 213.0, 231.0, 267.0, 294.0, 324.0, 357.0, 387.0, 429.0, 468.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 16,
+        "skill" : false
+      },
+      "retaliationPhysicalMin" : {
+        "value" : [ 54.0, 60.0, 69.0, 75.0, 90.0, 99.0, 105.0, 114.0, 120.0, 135.0, 144.0, 150.0, 159.0, 165.0, 183.0, 195.0 ],
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 15,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "retaliationPhysicalChance" : {
+        "value" : 15.0,
+        "skill" : false
+      }
+    },
+    "description" : "Provides a chance to counter attack an enemy after being hit in Battle Rage.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery/Counter Attack.html"
+  }, {
+    "name" : "Doom Horn",
+    "parent" : "War Horn",
+    "attributes" : {
+      "offensiveSlowDefensiveReductionDurationMin" : {
+        "value" : 10.0,
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : 20.0,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 10,
+        "skill" : false
+      },
+      "excludeRacialDamage" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "offensiveTotalResistanceReductionAbsoluteMax" : {
+        "value" : 8.0,
+        "skill" : false
+      },
+      "offensiveTotalResistanceReductionAbsoluteMin" : {
+        "value" : [ 25.0, 29.0, 33.0, 37.0, 43.0, 47.0, 51.0, 55.0, 59.0, 65.0, 67.0, 70.0, 73.0, 75.0, 80.0 ],
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 6,
+        "skill" : false
+      },
+      "offensivePercentCurrentLifeMin" : {
+        "value" : [ 9.0, 12.0, 15.0, 18.0, 21.0, 25.0, 27.0, 30.0, 33.0, 36.0 ],
+        "skill" : false
+      },
+      "offensiveSlowDefensiveReductionMin" : {
+        "value" : [ 24.0, 32.0, 40.0, 48.0, 56.0, 66.0, 72.0, 80.0, 90.0, 100.0 ],
+        "skill" : false
+      }
+    },
+    "description" : "Your War Horn heralds the doom of your enemies, shattering their nerves and reducing their ability to defend themselves.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery/Doom Horn.html"
+  }, {
+    "name" : "Triumph",
+    "parent" : null,
+    "attributes" : {
+      "Triumph" : {
+        "value" : {
+          "name" : "Triumph",
+          "parent" : null,
+          "attributes" : {
+            "TriumphBuffRadius" : {
+              "value" : {
+                "name" : "Triumph",
+                "parent" : null,
+                "attributes" : {
+                  "defensiveStun" : {
+                    "value" : -50.0,
+                    "skill" : false
+                  },
+                  "offensivePhysicalModifier" : {
+                    "value" : [ -15.0, -20.0, -25.0, -30.0, -35.0, -40.0, -45.0, -50.0, -55.0, -60.0 ],
+                    "skill" : false
+                  },
+                  "skillActiveDuration" : {
+                    "value" : 90.0,
+                    "skill" : false
+                  },
+                  "debufSkill" : {
+                    "value" : 1,
+                    "skill" : false
+                  },
+                  "defensivePhysical" : {
+                    "value" : [ -15.0, -20.0, -25.0, -30.0, -35.0, -40.0, -45.0, -50.0, -55.0, -60.0 ],
+                    "skill" : false
+                  },
+                  "skillWeaponTintBlue" : {
+                    "value" : 0.5,
+                    "skill" : false
+                  },
+                  "skillUltimateLevel" : {
+                    "value" : 10,
+                    "skill" : false
+                  },
+                  "skillWeaponTintGreen" : {
+                    "value" : 0.5,
+                    "skill" : false
+                  },
+                  "skillWeaponTintRed" : {
+                    "value" : 0.5,
+                    "skill" : false
+                  },
+                  "cameraShakeAmplitude" : {
+                    "value" : 0.12,
+                    "skill" : false
+                  },
+                  "skillTargetRadius" : {
+                    "value" : 12.0,
+                    "skill" : false
+                  },
+                  "skillMaxLevel" : {
+                    "value" : 6,
+                    "skill" : false
+                  }
+                },
+                "description" : "Seeing the inevitability of your triumph, enemies lose hope and the strength of their attack diminishes.",
+                "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery/Triumph.html"
+              },
+              "skill" : true
+            },
+            "instantCast" : {
+              "value" : 1,
+              "skill" : false
+            }
+          },
+          "description" : "Seeing the inevitability of your triumph, enemies lose hope and the strength of their attack diminishes.",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery/Triumph.html"
+        },
+        "skill" : true
+      }
+    },
+    "description" : "Seeing the inevitability of your triumph, enemies lose hope and the strength of their attack diminishes.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery/Triumph.html"
+  } ], [ {
     "name" : "Tumult",
     "parent" : null,
     "attributes" : {
@@ -469,171 +868,10 @@
       "skillTargetAngle" : {
         "value" : 360.0,
         "skill" : false
-      },
-      "skillTier" : {
-        "value" : 6,
-        "skill" : false
       }
     },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery/Tumult.html",
-    "modifier" : false,
-    "skillTag" : "tagSkillName008"
-  }, {
-    "name" : "Onslaught",
-    "parent" : null,
-    "attributes" : {
-      "skillProjectileSpeedModifier" : {
-        "value" : [ 15.0, 24.0, 33.0, 42.0, 51.0, 60.0, 69.0, 78.0, 87.0, 96.0, 105.0, 114.0 ],
-        "skill" : false
-      },
-      "skillManaCost" : {
-        "value" : 1.0,
-        "skill" : false
-      },
-      "skillConnectionSpacing" : {
-        "value" : 62,
-        "skill" : false
-      },
-      "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
-      },
-      "Bow" : {
-        "value" : 1,
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
-      },
-      "Axe" : {
-        "value" : 1,
-        "skill" : false
-      },
-      "RangedOneHand" : {
-        "value" : 1,
-        "skill" : false
-      },
-      "offensivePhysicalModifier" : {
-        "value" : [ 10.0, 16.0, 22.0, 28.0, 34.0, 40.0, 46.0, 52.0, 58.0, 64.0, 70.0, 76.0 ],
-        "skill" : false
-      },
-      "Mace" : {
-        "value" : 1,
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
-      },
-      "Sword" : {
-        "value" : 1,
-        "skill" : false
-      },
-      "skillChargeLevel" : {
-        "value" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ],
-        "skill" : false
-      },
-      "skillChargeDuration" : {
-        "value" : [ 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5 ],
-        "skill" : false
-      },
-      "skillMasteryLevelRequired" : {
-        "value" : 1,
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 1,
-        "skill" : false
-      },
-      "Spear" : {
-        "value" : 1,
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery/Onslaught.html",
-    "modifier" : false,
-    "skillTag" : "tagSkillName005"
-  }, {
-    "name" : "Ignore Pain",
-    "parent" : "Onslaught",
-    "attributes" : {
-      "defensivePhysical" : {
-        "value" : [ 3.0, 6.0, 8.0, 10.0, 12.0, 15.0, 16.0, 17.0, 18.0, 20.0 ],
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 10,
-        "skill" : false
-      },
-      "defensivePierce" : {
-        "value" : [ 3.0, 6.0, 8.0, 10.0, 12.0, 15.0, 16.0, 17.0, 18.0, 20.0 ],
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 2,
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 6,
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery/Ignore Pain.html",
-    "modifier" : true,
-    "skillTag" : "tagSkillName007"
-  }, {
-    "name" : "Hamstring",
-    "parent" : "Ignore Pain",
-    "attributes" : {
-      "offensiveSlowRunSpeedMin" : {
-        "value" : [ 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0 ],
-        "skill" : false
-      },
-      "offensiveSlowDefensiveReductionDurationMin" : {
-        "value" : 6.0,
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 10,
-        "skill" : false
-      },
-      "offensiveSlowDefensiveAbilityDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
-      },
-      "offensiveSlowRunSpeedDurationMin" : {
-        "value" : 5.0,
-        "skill" : false
-      },
-      "offensiveSlowDefensiveAbilityMin" : {
-        "value" : [ 8.0, 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0 ],
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 4,
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 6,
-        "skill" : false
-      },
-      "offensiveSlowDefensiveReductionMin" : {
-        "value" : [ 16.0, 24.0, 32.0, 40.0, 48.0, 56.0, 64.0, 72.0, 80.0, 90.0 ],
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery/Hamstring.html",
-    "modifier" : true,
-    "skillTag" : "tagSkillName011"
+    "description" : "A Dual Wield technique that hits up to 3 adjacent enemies.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery/Tumult.html"
   }, {
     "name" : "Ardor",
     "parent" : "Hamstring",
@@ -650,594 +888,13 @@
         "value" : [ 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 25.0 ],
         "skill" : false
       },
-      "skillTier" : {
-        "value" : 6,
-        "skill" : false
-      },
       "skillMaxLevel" : {
         "value" : 6,
         "skill" : false
       }
     },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery/Ardor.html",
-    "modifier" : true,
-    "skillTag" : "tagSkillName006"
-  }, {
-    "name" : "Battle Rage",
-    "parent" : null,
-    "attributes" : {
-      "characterOffensiveAbilityModifier" : {
-        "value" : 33.0,
-        "skill" : false
-      },
-      "skillActiveDuration" : {
-        "value" : 10.0,
-        "skill" : false
-      },
-      "skillCooldownTime" : {
-        "value" : 12.0,
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 16,
-        "skill" : false
-      },
-      "offensivePhysicalMin" : {
-        "value" : [ 8.0, 14.0, 20.0, 26.0, 33.0, 40.0, 46.0, 54.0, 61.0, 68.0, 75.0, 84.0, 91.0, 98.0, 106.0, 115.0 ],
-        "skill" : false
-      },
-      "skillConnectionSpacing" : {
-        "value" : 62,
-        "skill" : false
-      },
-      "onHitActivationChance" : {
-        "value" : 8.0,
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 1,
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 12,
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery/Battle Rage.html",
-    "modifier" : false,
-    "skillTag" : "tagSkillName002"
-  }, {
-    "name" : "Crushing Blow",
-    "parent" : "Battle Rage",
-    "attributes" : {
-      "skillUltimateLevel" : {
-        "value" : 16,
-        "skill" : false
-      },
-      "offensivePhysicalMin" : {
-        "value" : [ 25.0, 45.0, 66.0, 87.0, 108.0, 130.0, 152.0, 174.0, 197.0, 220.0, 243.0, 267.0, 291.0, 315.0, 340.0, 365.0 ],
-        "skill" : false
-      },
-      "offensivePhysicalChance" : {
-        "value" : 25.0,
-        "skill" : false
-      },
-      "offensivePhysicalMax" : {
-        "value" : [ 51.0, 76.0, 101.0, 126.0, 151.0, 177.0, 203.0, 229.0, 256.0, 283.0, 310.0, 338.0, 366.0, 394.0, 423.0, 452.0 ],
-        "skill" : false
-      },
-      "skillMasteryLevelRequired" : {
-        "value" : 10,
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 3,
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 12,
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery/Crushing Blow.html",
-    "modifier" : true,
-    "skillTag" : "tagSkillName003"
-  }, {
-    "name" : "Counter Attack",
-    "parent" : "Crushing Blow",
-    "attributes" : {
-      "retaliationPhysicalMax" : {
-        "value" : [ 93.0, 105.0, 117.0, 129.0, 153.0, 168.0, 192.0, 213.0, 231.0, 267.0, 294.0, 324.0, 357.0, 387.0, 429.0, 468.0 ],
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 16,
-        "skill" : false
-      },
-      "retaliationPhysicalMin" : {
-        "value" : [ 54.0, 60.0, 69.0, 75.0, 90.0, 99.0, 105.0, 114.0, 120.0, 135.0, 144.0, 150.0, 159.0, 165.0, 183.0, 195.0 ],
-        "skill" : false
-      },
-      "skillMasteryLevelRequired" : {
-        "value" : 15,
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 5,
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 12,
-        "skill" : false
-      },
-      "retaliationPhysicalChance" : {
-        "value" : 15.0,
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery/Counter Attack.html",
-    "modifier" : true,
-    "skillTag" : "tagSkillName004"
-  }, {
-    "name" : "War Horn",
-    "parent" : null,
-    "attributes" : {
-      "skillCooldownTime" : {
-        "value" : 18.0,
-        "skill" : false
-      },
-      "skillManaCost" : {
-        "value" : [ 52.0, 54.0, 56.0, 58.0, 60.0, 62.0, 64.0, 66.0, 68.0, 70.0, 72.0, 74.0, 76.0, 78.0, 80.0 ],
-        "skill" : false
-      },
-      "offensiveStunMax" : {
-        "value" : [ 3.0, 3.5, 3.9, 4.3, 4.6, 5.0, 5.3, 5.6, 6.0, 6.5, 6.7, 6.9, 7.2, 7.5, 8.0 ],
-        "skill" : false
-      },
-      "skillConnectionSpacing" : {
-        "value" : 62,
-        "skill" : false
-      },
-      "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 10,
-        "skill" : false
-      },
-      "offensiveStunMin" : {
-        "value" : [ 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5 ],
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 14,
-        "skill" : false
-      },
-      "excludeRacialDamage" : {
-        "value" : 1,
-        "skill" : false
-      },
-      "expansionTime" : {
-        "value" : 0.05,
-        "skill" : false
-      },
-      "skillMasteryLevelRequired" : {
-        "value" : 5,
-        "skill" : false
-      },
-      "skillTargetRadius" : {
-        "value" : [ 8.0, 8.4, 8.8, 9.2, 9.6, 10.0, 10.4, 10.8, 11.2, 11.6, 12.0, 12.4, 12.8, 13.2 ],
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 2,
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery/War Horn.html",
-    "modifier" : false,
-    "skillTag" : "tagSkillName016"
-  }, {
-    "name" : "Doom Horn",
-    "parent" : "War Horn",
-    "attributes" : {
-      "offensiveSlowDefensiveReductionDurationMin" : {
-        "value" : 10.0,
-        "skill" : false
-      },
-      "skillManaCost" : {
-        "value" : 20.0,
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 10,
-        "skill" : false
-      },
-      "excludeRacialDamage" : {
-        "value" : 1,
-        "skill" : false
-      },
-      "offensiveTotalResistanceReductionAbsoluteMax" : {
-        "value" : 8.0,
-        "skill" : false
-      },
-      "offensiveTotalResistanceReductionAbsoluteMin" : {
-        "value" : [ 25.0, 29.0, 33.0, 37.0, 43.0, 47.0, 51.0, 55.0, 59.0, 65.0, 67.0, 70.0, 73.0, 75.0, 80.0 ],
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 5,
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 6,
-        "skill" : false
-      },
-      "offensivePercentCurrentLifeMin" : {
-        "value" : [ 9.0, 12.0, 15.0, 18.0, 21.0, 25.0, 27.0, 30.0, 33.0, 36.0 ],
-        "skill" : false
-      },
-      "offensiveSlowDefensiveReductionMin" : {
-        "value" : [ 24.0, 32.0, 40.0, 48.0, 56.0, 66.0, 72.0, 80.0, 90.0, 100.0 ],
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery/Doom Horn.html",
-    "modifier" : true,
-    "skillTag" : "tagSkillName138"
-  }, {
-    "name" : "Battle Standard",
-    "parent" : null,
-    "attributes" : {
-      "skillCooldownTime" : {
-        "value" : 60.0,
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 14,
-        "skill" : false
-      },
-      "skillManaCost" : {
-        "value" : 50.0,
-        "skill" : false
-      },
-      "spawnObjectsTimeToLive" : {
-        "value" : [ 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0 ],
-        "skill" : false
-      },
-      "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
-      },
-      "skillConnectionSpacing" : {
-        "value" : 62,
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 3,
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 10,
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery/Battle Standard.html",
-    "modifier" : false,
-    "skillTag" : "tagSkillName174"
-  }, {
-    "name" : "Triumph",
-    "parent" : null,
-    "attributes" : {
-      "Triumph" : {
-        "value" : {
-          "name" : "Triumph",
-          "parent" : null,
-          "attributes" : {
-            "TriumphBuffRadius" : {
-              "value" : {
-                "name" : "Triumph",
-                "parent" : null,
-                "attributes" : {
-                  "defensiveStun" : {
-                    "value" : -50.0,
-                    "skill" : false
-                  },
-                  "skillActiveDuration" : {
-                    "value" : 90.0,
-                    "skill" : false
-                  },
-                  "skillWeaponTintBlue" : {
-                    "value" : 0.5,
-                    "skill" : false
-                  },
-                  "skillWeaponTintRed" : {
-                    "value" : 0.5,
-                    "skill" : false
-                  },
-                  "cameraShakeAmplitude" : {
-                    "value" : 0.12,
-                    "skill" : false
-                  },
-                  "skillMaxLevel" : {
-                    "value" : 6,
-                    "skill" : false
-                  },
-                  "offensivePhysicalModifier" : {
-                    "value" : [ -15.0, -20.0, -25.0, -30.0, -35.0, -40.0, -45.0, -50.0, -55.0, -60.0 ],
-                    "skill" : false
-                  },
-                  "debufSkill" : {
-                    "value" : 1,
-                    "skill" : false
-                  },
-                  "defensivePhysical" : {
-                    "value" : [ -15.0, -20.0, -25.0, -30.0, -35.0, -40.0, -45.0, -50.0, -55.0, -60.0 ],
-                    "skill" : false
-                  },
-                  "skillUltimateLevel" : {
-                    "value" : 10,
-                    "skill" : false
-                  },
-                  "skillWeaponTintGreen" : {
-                    "value" : 0.5,
-                    "skill" : false
-                  },
-                  "skillTargetRadius" : {
-                    "value" : 12.0,
-                    "skill" : false
-                  },
-                  "skillTier" : {
-                    "value" : 5,
-                    "skill" : false
-                  }
-                },
-                "buff" : null,
-                "skillDescription" : null,
-                "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery/Triumph.html",
-                "modifier" : false,
-                "skillTag" : "tagSkillName179"
-              },
-              "skill" : true
-            },
-            "instantCast" : {
-              "value" : 1,
-              "skill" : false
-            }
-          },
-          "buff" : {
-            "name" : "Triumph",
-            "parent" : null,
-            "attributes" : {
-              "defensiveStun" : {
-                "value" : -50.0,
-                "skill" : false
-              },
-              "skillActiveDuration" : {
-                "value" : 90.0,
-                "skill" : false
-              },
-              "skillWeaponTintBlue" : {
-                "value" : 0.5,
-                "skill" : false
-              },
-              "skillWeaponTintRed" : {
-                "value" : 0.5,
-                "skill" : false
-              },
-              "cameraShakeAmplitude" : {
-                "value" : 0.12,
-                "skill" : false
-              },
-              "skillMaxLevel" : {
-                "value" : 6,
-                "skill" : false
-              },
-              "offensivePhysicalModifier" : {
-                "value" : [ -15.0, -20.0, -25.0, -30.0, -35.0, -40.0, -45.0, -50.0, -55.0, -60.0 ],
-                "skill" : false
-              },
-              "debufSkill" : {
-                "value" : 1,
-                "skill" : false
-              },
-              "defensivePhysical" : {
-                "value" : [ -15.0, -20.0, -25.0, -30.0, -35.0, -40.0, -45.0, -50.0, -55.0, -60.0 ],
-                "skill" : false
-              },
-              "skillUltimateLevel" : {
-                "value" : 10,
-                "skill" : false
-              },
-              "skillWeaponTintGreen" : {
-                "value" : 0.5,
-                "skill" : false
-              },
-              "skillTargetRadius" : {
-                "value" : 12.0,
-                "skill" : false
-              },
-              "skillTier" : {
-                "value" : 5,
-                "skill" : false
-              }
-            },
-            "buff" : null,
-            "skillDescription" : null,
-            "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery/Triumph.html",
-            "modifier" : false,
-            "skillTag" : "tagSkillName179"
-          },
-          "skillDescription" : null,
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery/Triumph.html",
-          "modifier" : false,
-          "skillTag" : "tagSkillName179"
-        },
-        "skill" : true
-      }
-    },
-    "buff" : {
-      "name" : "Triumph",
-      "parent" : null,
-      "attributes" : {
-        "TriumphBuffRadius" : {
-          "value" : {
-            "name" : "Triumph",
-            "parent" : null,
-            "attributes" : {
-              "defensiveStun" : {
-                "value" : -50.0,
-                "skill" : false
-              },
-              "skillActiveDuration" : {
-                "value" : 90.0,
-                "skill" : false
-              },
-              "skillWeaponTintBlue" : {
-                "value" : 0.5,
-                "skill" : false
-              },
-              "skillWeaponTintRed" : {
-                "value" : 0.5,
-                "skill" : false
-              },
-              "cameraShakeAmplitude" : {
-                "value" : 0.12,
-                "skill" : false
-              },
-              "skillMaxLevel" : {
-                "value" : 6,
-                "skill" : false
-              },
-              "offensivePhysicalModifier" : {
-                "value" : [ -15.0, -20.0, -25.0, -30.0, -35.0, -40.0, -45.0, -50.0, -55.0, -60.0 ],
-                "skill" : false
-              },
-              "debufSkill" : {
-                "value" : 1,
-                "skill" : false
-              },
-              "defensivePhysical" : {
-                "value" : [ -15.0, -20.0, -25.0, -30.0, -35.0, -40.0, -45.0, -50.0, -55.0, -60.0 ],
-                "skill" : false
-              },
-              "skillUltimateLevel" : {
-                "value" : 10,
-                "skill" : false
-              },
-              "skillWeaponTintGreen" : {
-                "value" : 0.5,
-                "skill" : false
-              },
-              "skillTargetRadius" : {
-                "value" : 12.0,
-                "skill" : false
-              },
-              "skillTier" : {
-                "value" : 5,
-                "skill" : false
-              }
-            },
-            "buff" : null,
-            "skillDescription" : null,
-            "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery/Triumph.html",
-            "modifier" : false,
-            "skillTag" : "tagSkillName179"
-          },
-          "skill" : true
-        },
-        "instantCast" : {
-          "value" : 1,
-          "skill" : false
-        }
-      },
-      "buff" : {
-        "name" : "Triumph",
-        "parent" : null,
-        "attributes" : {
-          "defensiveStun" : {
-            "value" : -50.0,
-            "skill" : false
-          },
-          "skillActiveDuration" : {
-            "value" : 90.0,
-            "skill" : false
-          },
-          "skillWeaponTintBlue" : {
-            "value" : 0.5,
-            "skill" : false
-          },
-          "skillWeaponTintRed" : {
-            "value" : 0.5,
-            "skill" : false
-          },
-          "cameraShakeAmplitude" : {
-            "value" : 0.12,
-            "skill" : false
-          },
-          "skillMaxLevel" : {
-            "value" : 6,
-            "skill" : false
-          },
-          "offensivePhysicalModifier" : {
-            "value" : [ -15.0, -20.0, -25.0, -30.0, -35.0, -40.0, -45.0, -50.0, -55.0, -60.0 ],
-            "skill" : false
-          },
-          "debufSkill" : {
-            "value" : 1,
-            "skill" : false
-          },
-          "defensivePhysical" : {
-            "value" : [ -15.0, -20.0, -25.0, -30.0, -35.0, -40.0, -45.0, -50.0, -55.0, -60.0 ],
-            "skill" : false
-          },
-          "skillUltimateLevel" : {
-            "value" : 10,
-            "skill" : false
-          },
-          "skillWeaponTintGreen" : {
-            "value" : 0.5,
-            "skill" : false
-          },
-          "skillTargetRadius" : {
-            "value" : 12.0,
-            "skill" : false
-          },
-          "skillTier" : {
-            "value" : 5,
-            "skill" : false
-          }
-        },
-        "buff" : null,
-        "skillDescription" : null,
-        "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery/Triumph.html",
-        "modifier" : false,
-        "skillTag" : "tagSkillName179"
-      },
-      "skillDescription" : null,
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery/Triumph.html",
-      "modifier" : false,
-      "skillTag" : "tagSkillName179"
-    },
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery/Triumph.html",
-    "modifier" : false,
-    "skillTag" : "tagSkillName179"
+    "description" : "You build momentum as you drive your attack forward, attacking and moving more rapidly.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery/Ardor.html"
   }, {
     "name" : "Ancestral Horn",
     "parent" : null,
@@ -1274,21 +931,14 @@
         "value" : 30,
         "skill" : false
       },
-      "skillTier" : {
-        "value" : 6,
-        "skill" : false
-      },
       "skillMaxLevel" : {
         "value" : 16,
         "skill" : false
       }
     },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery/Ancestral Horn.html",
-    "modifier" : false,
-    "skillTag" : "tagSkillName139"
-  }, {
+    "description" : "The ominous call on this ancient heirloom will summon forth ghostly heroes of old from the Elysian Fields to do battle once more.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery/Ancestral Horn.html"
+  } ], [ {
     "name" : "Lasting Legacy",
     "parent" : "Ancestral Horn",
     "attributes" : {
@@ -1300,20 +950,13 @@
         "value" : 10,
         "skill" : false
       },
-      "skillTier" : {
-        "value" : 7,
-        "skill" : false
-      },
       "skillMaxLevel" : {
         "value" : 6,
         "skill" : false
       }
     },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery/Lasting Legacy.html",
-    "modifier" : true,
-    "skillTag" : "x3tagSkillWarfareLastingLegacy"
+    "description" : "Forming a deeper connection with your ancestors allows their spirits to remain at your side for longer.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery/Lasting Legacy.html"
   }, {
     "name" : "Slam",
     "parent" : null,
@@ -1394,10 +1037,6 @@
         "value" : 0.5,
         "skill" : false
       },
-      "skillTier" : {
-        "value" : 7,
-        "skill" : false
-      },
       "offensivePercentCurrentLifeMin" : {
         "value" : 20.0,
         "skill" : false
@@ -1407,11 +1046,8 @@
         "skill" : false
       }
     },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery/Slam.html",
-    "modifier" : false,
-    "skillTag" : "x3tagSkillWarfareLineSlam"
-  } ],
+    "description" : "Hit all enemies in a straight line with staggering force, disrupting their aim and spellcasting.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery/Slam.html"
+  } ] ],
   "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Warfare Mastery.html"
 }

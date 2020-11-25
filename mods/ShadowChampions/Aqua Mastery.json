@@ -1,6 +1,6 @@
 {
   "name" : "Aqua Mastery",
-  "skills" : [ {
+  "skillTiers" : [ [ {
     "name" : "Oceanic Might",
     "parent" : null,
     "attributes" : {
@@ -59,18 +59,272 @@
       "skillTargetAngle" : {
         "value" : 45.0,
         "skill" : false
+      }
+    },
+    "description" : "The power of the ocean is invoked in your every fourth hit, blasting enemies with a powerful jet of water that instantly turns to ice. {^y}Apply this skill to your left mouse button.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Oceanic Might.html"
+  }, {
+    "name" : "Mark of the Trident",
+    "parent" : null,
+    "attributes" : {
+      "characterAttackSpeedModifier" : {
+        "value" : [ 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0 ],
+        "skill" : false
       },
-      "skillTier" : {
+      "skillUltimateLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "offensivePhysicalMin" : {
+        "value" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0 ],
+        "skill" : false
+      },
+      "offensivePierceMin" : {
+        "value" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0 ],
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 8,
+        "skill" : false
+      },
+      "Spear" : {
         "value" : 1,
         "skill" : false
       }
     },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Oceanic Might.html",
-    "modifier" : false,
-    "skillTag" : "skillAqua1n"
+    "description" : "Mastery of trident-like weapons has been a vital part of all Aquamancers' studies, thus improving their overall ability with using spears.{^n}{^y}Requires a spear.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Mark of the Trident.html"
   }, {
+    "name" : "Aquamancer's Bounty",
+    "parent" : null,
+    "attributes" : {
+      "bountyofthelake" : {
+        "value" : {
+          "name" : "Aquamancer's Bounty",
+          "parent" : null,
+          "attributes" : {
+            "skillActiveDuration" : {
+              "value" : 120.0,
+              "skill" : false
+            },
+            "skillCooldownTime" : {
+              "value" : [ 120.0, 115.0, 110.0, 105.0, 100.0, 95.0, 90.0, 85.0, 80.0, 75.0, 70.0, 65.0, 60.0 ],
+              "skill" : false
+            },
+            "skillManaCost" : {
+              "value" : [ 30.0, 35.0, 39.0, 44.0, 48.0, 53.0, 57.0, 62.0, 66.0, 71.0, 75.0, 78.0, 82.0 ],
+              "skill" : false
+            },
+            "skillUltimateLevel" : {
+              "value" : 13,
+              "skill" : false
+            },
+            "cameraShakeAmplitude" : {
+              "value" : 0.12,
+              "skill" : false
+            },
+            "retaliationColdMin" : {
+              "value" : [ 20.0, 26.0, 32.0, 38.0, 45.0, 51.0, 57.0, 63.0, 69.0, 73.0, 79.0, 84.0, 90.0 ],
+              "skill" : false
+            },
+            "retaliationColdChance" : {
+              "value" : 25.0,
+              "skill" : false
+            },
+            "offensiveColdMin" : {
+              "value" : [ 10.0, 14.0, 18.0, 23.0, 28.0, 34.0, 39.0, 44.0, 50.0, 56.0, 62.0, 69.0, 75.0 ],
+              "skill" : false
+            },
+            "skillMasteryLevelRequired" : {
+              "value" : 1,
+              "skill" : false
+            },
+            "skillMaxLevel" : {
+              "value" : 9,
+              "skill" : false
+            },
+            "characterTotalSpeedModifier" : {
+              "value" : [ 5.0, 6.0, 6.0, 7.0, 7.0, 8.0, 8.0, 9.0, 9.0, 10.0, 11.0, 12.0, 13.0 ],
+              "skill" : false
+            }
+          },
+          "description" : "Temporarily increase your own power, or permeate an ally with the teachings of aquamancy, granting them control over water, even despite their lack of knowledge in this school of magic.{^n}{^y}Cooldown is reduced with more skill points.",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Aquamancer's Bounty.html"
+        },
+        "skill" : true
+      }
+    },
+    "description" : "Temporarily increase your own power, or permeate an ally with the teachings of aquamancy, granting them control over water, even despite their lack of knowledge in this school of magic.{^n}{^y}Cooldown is reduced with more skill points.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Aquamancer's Bounty.html"
+  } ], [ {
+    "name" : "Summon Water Spirit",
+    "parent" : null,
+    "attributes" : {
+      "skillCooldownTime" : {
+        "value" : 20.0,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 24,
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : [ 100.0, 103.0, 107.0, 110.0, 113.0, 116.0, 120.0, 123.0, 126.0, 129.0, 133.0, 136.0, 139.0, 142.0, 146.0, 149.0, 152.0, 155.0, 159.0, 162.0, 165.0, 168.0, 172.0, 175.0 ],
+        "skill" : false
+      },
+      "petLimit" : {
+        "value" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0 ],
+        "skill" : false
+      },
+      "cameraShakeAmplitude" : {
+        "value" : 0.12,
+        "skill" : false
+      },
+      "skillConnectionSpacing" : {
+        "value" : 62,
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 10,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 20,
+        "skill" : false
+      }
+    },
+    "description" : "You call upon a water spirit from the depths of an ocean that will follow you and aid you in taking down monsters with cold water. Later levels increase the summon limit.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Summon Water Spirit.html"
+  }, {
+    "name" : "Hypothermia",
+    "parent" : "Aquamancer's Bounty",
+    "attributes" : {
+      "retaliationSlowColdMin" : {
+        "value" : [ 15.0, 22.0, 28.0, 35.0, 41.0, 48.0, 54.0, 61.0, 67.0, 74.0, 80.0, 87.0, 93.0, 100.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 14,
+        "skill" : false
+      },
+      "offensiveSlowColdModifier" : {
+        "value" : [ 18.0, 22.0, 25.0, 29.0, 32.0, 36.0, 39.0, 43.0, 46.0, 50.0, 53.0, 57.0, 60.0, 64.0 ],
+        "skill" : false
+      },
+      "retaliationSlowColdDurationMin" : {
+        "value" : 3.0,
+        "skill" : false
+      },
+      "retaliationSlowColdChance" : {
+        "value" : 33.0,
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 4,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 10,
+        "skill" : false
+      }
+    },
+    "description" : "Lingering frost is brought upon your enemies, ensuring a slow and certain demise, crippling both the tough and the weak.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Hypothermia.html"
+  }, {
+    "name" : "Shore Uprising",
+    "parent" : null,
+    "attributes" : {
+      "projectileLaunchNumber" : {
+        "value" : [ 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 8.0, 8.0, 8.0, 9.0, 9.0, 9.0, 9.0 ],
+        "skill" : false
+      },
+      "skillCooldownTime" : {
+        "value" : [ 2.0, 1.9, 1.8, 1.7, 1.6, 1.5, 1.4, 1.3, 1.2, 1.1, 1.0, 0.8, 0.6, 0.4, 0.0, 0.0 ],
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : [ 35.0, 38.0, 40.0, 43.0, 45.0, 48.0, 50.0, 53.0, 55.0, 58.0, 60.0, 63.0, 65.0, 68.0, 70.0, 73.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 16,
+        "skill" : false
+      },
+      "projectilePiercingChance" : {
+        "value" : 100.0,
+        "skill" : false
+      },
+      "projectileLaunchRotation" : {
+        "value" : 30.0,
+        "skill" : false
+      },
+      "skillConnectionSpacing" : {
+        "value" : 62,
+        "skill" : false
+      },
+      "cameraShakeAmplitude" : {
+        "value" : 0.12,
+        "skill" : false
+      },
+      "offensiveColdMax" : {
+        "value" : [ 10.0, 13.0, 16.0, 20.0, 23.0, 26.0, 29.0, 32.0, 36.0, 39.0, 42.0, 45.0, 48.0, 52.0, 55.0, 58.0 ],
+        "skill" : false
+      },
+      "offensiveColdMin" : {
+        "value" : [ 6.0, 9.0, 12.0, 15.0, 19.0, 22.0, 25.0, 28.0, 31.0, 34.0, 37.0, 40.0, 44.0, 47.0, 50.0, 53.0 ],
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 4,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 12,
+        "skill" : false
+      }
+    },
+    "description" : "Deliver a blow of concentrated water with the pressure capable of breaking bones.{^n}{^y}Cooldown is reduced with more skill points.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Shore Uprising.html"
+  }, {
+    "name" : "Environmental Adaptation",
+    "parent" : null,
+    "attributes" : {
+      "defensiveCold" : {
+        "value" : [ 4.0, 7.0, 11.0, 14.0, 17.0, 20.0, 24.0, 27.0, 30.0, 33.0, 37.0, 40.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "defensiveFreeze" : {
+        "value" : [ 8.0, 14.0, 22.0, 28.0, 34.0, 40.0, 48.0, 54.0, 60.0, 66.0, 74.0, 80.0 ],
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 4,
+        "skill" : false
+      },
+      "defensivePoison" : {
+        "value" : [ 4.0, 7.0, 11.0, 14.0, 17.0, 20.0, 24.0, 27.0, 30.0, 33.0, 37.0, 40.0 ],
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 8,
+        "skill" : false
+      },
+      "defensiveFire" : {
+        "value" : [ 4.0, 7.0, 11.0, 14.0, 17.0, 20.0, 24.0, 27.0, 30.0, 33.0, 37.0, 40.0 ],
+        "skill" : false
+      }
+    },
+    "description" : "Your body adapts to living in most climates and conditions; dry land, pollution and even underwater.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Environmental Adaptation.html"
+  } ], [ {
     "name" : "Rust",
     "parent" : "Oceanic Might",
     "attributes" : {
@@ -90,10 +344,6 @@
         "value" : 10,
         "skill" : false
       },
-      "skillTier" : {
-        "value" : 3,
-        "skill" : false
-      },
       "skillMaxLevel" : {
         "value" : 8,
         "skill" : false
@@ -103,12 +353,493 @@
         "skill" : false
       }
     },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Rust.html",
-    "modifier" : true,
-    "skillTag" : "skillAqua2n"
+    "description" : "Concentrated water pulses cause metal armor to rust, almost completely negating its effectiveness.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Rust.html"
   }, {
+    "name" : "Tsunami Spin",
+    "parent" : null,
+    "attributes" : {
+      "skillChanceWeight" : {
+        "value" : [ 6.0, 8.0, 9.0, 10.0, 12.0, 13.0, 15.0, 16.0, 18.0, 20.0, 22.0, 24.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "cameraShakeAmplitude" : {
+        "value" : 0.12,
+        "skill" : false
+      },
+      "skillTargetNumber" : {
+        "value" : 2,
+        "skill" : false
+      },
+      "skillProjectileNumber" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "offensiveSlowColdMin" : {
+        "value" : [ 9.0, 11.0, 14.0, 16.0, 19.0, 21.0, 24.0, 26.0, 29.0, 31.0, 34.0, 36.0 ],
+        "skill" : false
+      },
+      "offensiveSlowColdDurationMin" : {
+        "value" : 3.0,
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 10,
+        "skill" : false
+      },
+      "skillTargetAngle" : {
+        "value" : 250.0,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 8,
+        "skill" : false
+      },
+      "offensiveColdModifier" : {
+        "value" : [ 15.0, 20.0, 24.0, 28.0, 32.0, 35.0, 40.0, 44.0, 47.0, 51.0, 56.0, 60.0 ],
+        "skill" : false
+      },
+      "Spear" : {
+        "value" : 1,
+        "skill" : false
+      }
+    },
+    "description" : "A technique reserved to spear-wielders. This trick allows you to hit two enemies twice in a single attack.{^n}{^y}Requires a spear.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Tsunami Spin.html"
+  }, {
+    "name" : "Engulfment",
+    "parent" : "Absolute Zero",
+    "attributes" : {
+      "skillActiveDuration" : {
+        "value" : [ 15.0, 30.0, 45.0, 60.0, 75.0, 90.0, 105.0, 120.0, 135.0, 150.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 10,
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 10,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 6,
+        "skill" : false
+      }
+    },
+    "description" : "A better understanding of aquamancy permits the extension of the duration of your blessings.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Engulfment.html"
+  }, {
+    "name" : "Scaly Skin",
+    "parent" : null,
+    "attributes" : {
+      "defensiveProtection" : {
+        "value" : [ 6.0, 12.0, 18.0, 24.0, 30.0, 36.0, 42.0, 48.0, 54.0, 60.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 10,
+        "skill" : false
+      },
+      "defensivePierce" : {
+        "value" : [ 4.0, 8.0, 11.0, 15.0, 18.0, 22.0, 25.0, 29.0, 32.0, 36.0 ],
+        "skill" : false
+      },
+      "characterDexterity" : {
+        "value" : [ 6.0, 12.0, 18.0, 24.0, 30.0, 36.0, 42.0, 48.0, 54.0, 60.0 ],
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 10,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 6,
+        "skill" : false
+      }
+    },
+    "description" : "Your skin becomes scaly and resilient, similar to that of a reptile, yet doesn't diminish your agility.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Scaly Skin.html"
+  }, {
+    "name" : "Hoarfrost",
+    "parent" : null,
+    "attributes" : {
+      "hoarfrost" : {
+        "value" : {
+          "name" : "Hoarfrost",
+          "parent" : null,
+          "attributes" : {
+            "skillActiveDuration" : {
+              "value" : [ 3.0, 3.4, 3.8, 4.2, 4.6, 5.0, 5.4, 5.8, 6.2, 6.6, 7.0, 7.5 ],
+              "skill" : false
+            },
+            "skillCooldownTime" : {
+              "value" : 8.0,
+              "skill" : false
+            },
+            "skillManaCost" : {
+              "value" : [ 50.0, 52.5, 55.0, 57.5, 60.0, 62.5, 65.0, 67.5, 70.0, 72.5, 75.0, 77.5 ],
+              "skill" : false
+            },
+            "skillConnectionSpacing" : {
+              "value" : 62,
+              "skill" : false
+            },
+            "cameraShakeAmplitude" : {
+              "value" : 0.12,
+              "skill" : false
+            },
+            "damageAbsorptionPercent" : {
+              "value" : 70.0,
+              "skill" : false
+            },
+            "skillMaxLevel" : {
+              "value" : 8,
+              "skill" : false
+            },
+            "defensiveFireDuration" : {
+              "value" : 100.0,
+              "skill" : false
+            },
+            "debufSkill" : {
+              "value" : 1,
+              "skill" : false
+            },
+            "skillUltimateLevel" : {
+              "value" : 12,
+              "skill" : false
+            },
+            "offensiveSlowColdMin" : {
+              "value" : [ 10.0, 23.0, 38.0, 53.0, 67.0, 83.0, 97.0, 113.0, 126.0, 141.0, 157.0, 170.0 ],
+              "skill" : false
+            },
+            "offensiveSlowColdDurationMin" : {
+              "value" : 1.0,
+              "skill" : false
+            },
+            "skillTargetRadius" : {
+              "value" : [ 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0 ],
+              "skill" : false
+            },
+            "skillMasteryLevelRequired" : {
+              "value" : 10,
+              "skill" : false
+            }
+          },
+          "description" : "Conjure frost to trap your enemies in a thick layer of ice, preventing them to move or fight back but also protecting them from your own attacks.",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Hoarfrost.html"
+        },
+        "skill" : true
+      }
+    },
+    "description" : "Conjure frost to trap your enemies in a thick layer of ice, preventing them to move or fight back but also protecting them from your own attacks.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Hoarfrost.html"
+  } ], [ {
+    "name" : "Rain",
+    "parent" : null,
+    "attributes" : {
+      "dropOffset" : {
+        "value" : 10.0,
+        "skill" : false
+      },
+      "skillCooldownTime" : {
+        "value" : 12.0,
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : [ 60.0, 65.0, 69.0, 74.0, 78.0, 83.0, 88.0, 92.0, 97.0, 101.0, 106.0, 111.0, 115.0, 120.0, 124.0, 129.0, 134.0 ],
+        "skill" : false
+      },
+      "projectileExplosionRadius" : {
+        "value" : 3.0,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 17,
+        "skill" : false
+      },
+      "numProjectiles" : {
+        "value" : 5,
+        "skill" : false
+      },
+      "dropHeight" : {
+        "value" : 7.0,
+        "skill" : false
+      },
+      "cameraShakeAmplitude" : {
+        "value" : 0.12,
+        "skill" : false
+      },
+      "offensiveColdMax" : {
+        "value" : [ 15.9, 18.4, 22.9, 27.6, 30.1, 37.8, 41.3, 44.8, 50.5, 57.2, 62.7, 67.4, 73.9, 80.6, 86.2, 90.8, 99.5 ],
+        "skill" : false
+      },
+      "offensiveColdMin" : {
+        "value" : [ 11.0, 14.6, 18.2, 20.8, 25.4, 29.0, 31.6, 35.2, 39.9, 44.5, 48.1, 52.8, 57.5, 63.2, 68.9, 72.5, 78.2 ],
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 16,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 13,
+        "skill" : false
+      }
+    },
+    "description" : "Cast large torrents of water on a specific zone, assaulting any hostile units with a cold and drenching rain.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Rain.html"
+  }, {
+    "name" : "Wash Out",
+    "parent" : null,
+    "attributes" : {
+      "washout" : {
+        "value" : {
+          "name" : "Wash Out",
+          "parent" : null,
+          "attributes" : {
+            "skillActiveDuration" : {
+              "value" : 2.0,
+              "skill" : false
+            },
+            "skillCooldownTime" : {
+              "value" : 6.0,
+              "skill" : false
+            },
+            "skillManaCost" : {
+              "value" : [ 30.25, 31.5, 32.75, 34.0, 35.25, 36.5, 37.75, 39.0, 40.25, 41.5 ],
+              "skill" : false
+            },
+            "projectileExplosionRadius" : {
+              "value" : 3.0,
+              "skill" : false
+            },
+            "skillUltimateLevel" : {
+              "value" : 12,
+              "skill" : false
+            },
+            "skillConnectionSpacing" : {
+              "value" : 62,
+              "skill" : false
+            },
+            "cameraShakeAmplitude" : {
+              "value" : 0.12,
+              "skill" : false
+            },
+            "offensiveColdMin" : {
+              "value" : [ 40.0, 65.0, 89.0, 114.0, 139.0, 164.0, 188.0, 213.0, 238.0, 263.0, 287.0, 312.0, 337.0, 362.0, 387.0, 412.0 ],
+              "skill" : false
+            },
+            "offensiveSlowOffensiveAbilityDurationMin" : {
+              "value" : 5.0,
+              "skill" : false
+            },
+            "skillMasteryLevelRequired" : {
+              "value" : 16,
+              "skill" : false
+            },
+            "skillMaxLevel" : {
+              "value" : 8,
+              "skill" : false
+            },
+            "offensiveSlowOffensiveAbilityMin" : {
+              "value" : [ 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 64.0, 66.0, 68.0, 70.0 ],
+              "skill" : false
+            }
+          },
+          "description" : "Blast enemies with a destabilizing pulse of water, effectively worsening the victims' fighting skills.",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Wash Out.html"
+        },
+        "skill" : true
+      }
+    },
+    "description" : "Blast enemies with a destabilizing pulse of water, effectively worsening the victims' fighting skills.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Wash Out.html"
+  }, {
+    "name" : "Absolute Zero",
+    "parent" : "Hypothermia",
+    "attributes" : {
+      "offensiveSlowTotalSpeedMin" : {
+        "value" : [ 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 18,
+        "skill" : false
+      },
+      "offensiveSlowTotalSpeedChance" : {
+        "value" : 33.0,
+        "skill" : false
+      },
+      "offensiveFreezeMin" : {
+        "value" : [ 1.0, 1.1, 1.1, 1.2, 1.2, 1.3, 1.3, 1.4, 1.4, 1.5, 1.5, 1.6, 1.6, 1.7, 1.7, 1.8, 1.8, 1.9 ],
+        "skill" : false
+      },
+      "offensiveFreezeMax" : {
+        "value" : [ 3.0, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4.0, 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7 ],
+        "skill" : false
+      },
+      "offensiveFreezeChance" : {
+        "value" : 5.0,
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 16,
+        "skill" : false
+      },
+      "offensiveSlowTotalSpeedDurationMin" : {
+        "value" : 3.0,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 14,
+        "skill" : false
+      },
+      "offensiveColdModifier" : {
+        "value" : [ 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0, 90.0, 95.0, 100.0 ],
+        "skill" : false
+      }
+    },
+    "description" : "Masterful control over water and ice allows your magic to reach the lowest temperatures.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Absolute Zero.html"
+  }, {
+    "name" : "Ire of Storms",
+    "parent" : "Shore Uprising",
+    "attributes" : {
+      "offensiveSlowOffensiveAbilityGlobal" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "offensiveGlobalChance" : {
+        "value" : 20.0,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 16,
+        "skill" : false
+      },
+      "offensiveLightningMax" : {
+        "value" : [ 10.0, 13.0, 16.0, 20.0, 23.0, 26.0, 29.0, 32.0, 36.0, 39.0, 42.0, 45.0, 48.0, 52.0, 55.0, 58.0 ],
+        "skill" : false
+      },
+      "offensiveLightningMin" : {
+        "value" : [ 6.0, 9.0, 12.0, 15.0, 19.0, 22.0, 25.0, 28.0, 31.0, 34.0, 37.0, 40.0, 44.0, 47.0, 50.0, 53.0 ],
+        "skill" : false
+      },
+      "offensiveColdGlobal" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "offensiveSlowOffensiveAbilityDurationMin" : {
+        "value" : 1.0,
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 16,
+        "skill" : false
+      },
+      "skillManaCostReduction" : {
+        "value" : [ 4.0, 5.0, 7.0, 8.0, 9.0, 11.0, 12.0, 13.0, 15.0, 16.0, 17.0, 19.0, 20.0, 21.0, 23.0, 24.0 ],
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "offensiveColdModifier" : {
+        "value" : [ 50.0, 67.0, 83.0, 100.0, 117.0, 133.0, 150.0, 167.0, 183.0, 200.0, 217.0, 233.0, 250.0, 267.0, 283.0, 300.0 ],
+        "skill" : false
+      },
+      "offensiveSlowOffensiveAbilityMin" : {
+        "value" : [ 10.0, 13.0, 15.0, 18.0, 21.0, 23.0, 26.0, 29.0, 31.0, 34.0, 37.0, 39.0, 42.0, 45.0, 47.0, 50.0 ],
+        "skill" : false
+      }
+    },
+    "description" : "Heeding the call of the storms, your surging tides, ever increasing in power, are now allied with the wrath of the tempest.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Ire of Storms.html"
+  }, {
+    "name" : "Hurricane's Spirit",
+    "parent" : null,
+    "attributes" : {
+      "hurricanespirit" : {
+        "value" : {
+          "name" : "Hurricane's Spirit",
+          "parent" : null,
+          "attributes" : {
+            "skillActiveDuration" : {
+              "value" : 1.0,
+              "skill" : false
+            },
+            "skillCooldownTime" : {
+              "value" : 10.0,
+              "skill" : false
+            },
+            "characterManaLimitReserve" : {
+              "value" : 100.0,
+              "skill" : false
+            },
+            "skillActiveManaCost" : {
+              "value" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+              "skill" : false
+            },
+            "skillWeaponTintRed" : {
+              "value" : 1.0,
+              "skill" : false
+            },
+            "skillConnectionSpacing" : {
+              "value" : 62,
+              "skill" : false
+            },
+            "cameraShakeAmplitude" : {
+              "value" : 0.12,
+              "skill" : false
+            },
+            "skillMaxLevel" : {
+              "value" : 10,
+              "skill" : false
+            },
+            "characterTotalSpeedModifier" : {
+              "value" : [ -2.0, -3.0, -5.0, -6.0, -8.0, -9.0, -10.0, -12.0, -13.0, -14.0, -16.0, -17.0, -19.0, -20.0 ],
+              "skill" : false
+            },
+            "debufSkill" : {
+              "value" : 1,
+              "skill" : false
+            },
+            "defensiveCold" : {
+              "value" : [ -10.0, -12.0, -15.0, -17.0, -19.0, -22.0, -24.0, -26.0, -28.0, -31.0, -33.0, -35.0, -38.0, -40.0 ],
+              "skill" : false
+            },
+            "skillUltimateLevel" : {
+              "value" : 14,
+              "skill" : false
+            },
+            "skillTargetRadius" : {
+              "value" : 5.0,
+              "skill" : false
+            },
+            "skillMasteryLevelRequired" : {
+              "value" : 16,
+              "skill" : false
+            },
+            "defensiveProtectionModifier" : {
+              "value" : [ -5.0, -7.0, -9.0, -11.0, -13.0, -15.0, -17.0, -18.0, -20.0, -22.0, -24.0, -26.0, -28.0, -30.0 ],
+              "skill" : false
+            }
+          },
+          "description" : "With improved control over the water, cast a small but powerful vortex of water around you, similar to a hurricane, that will disable nearby enemies with its strong, chilling winds.",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Hurricane's Spirit.html"
+        },
+        "skill" : true
+      }
+    },
+    "description" : "With improved control over the water, cast a small but powerful vortex of water around you, similar to a hurricane, that will disable nearby enemies with its strong, chilling winds.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Hurricane's Spirit.html"
+  } ], [ {
     "name" : "Flash Freeze",
     "parent" : "Rust",
     "attributes" : {
@@ -163,195 +894,10 @@
       "skillMasteryLevelRequired" : {
         "value" : 24,
         "skill" : false
-      },
-      "skillTier" : {
-        "value" : 5,
-        "skill" : false
       }
     },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Flash Freeze.html",
-    "modifier" : true,
-    "skillTag" : "skillAqua23n"
-  }, {
-    "name" : "Tidal Wave",
-    "parent" : null,
-    "attributes" : {
-      "skillCooldownTime" : {
-        "value" : 16.0,
-        "skill" : false
-      },
-      "skillManaCost" : {
-        "value" : [ 75.39807, 78.0, 82.0, 85.0, 89.0, 92.0, 96.0, 98.0, 103.0, 107.0, 111.0, 115.0, 120.0, 125.0, 131.0, 135.0 ],
-        "skill" : false
-      },
-      "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
-      },
-      "offensivePhysicalMin" : {
-        "value" : [ 15.0, 18.0, 21.0, 24.0, 28.0, 32.0, 37.0, 42.0, 47.0, 53.0, 60.0, 67.0, 74.0, 81.0, 88.0, 94.0 ],
-        "skill" : false
-      },
-      "offensiveColdMin" : {
-        "value" : [ 30.0, 43.0, 55.0, 68.0, 81.0, 93.0, 106.0, 119.0, 131.0, 144.0, 157.0, 169.0, 182.0, 195.0, 207.0, 220.0 ],
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 12,
-        "skill" : false
-      },
-      "cameraShakeDurationSecs" : {
-        "value" : 1.0,
-        "skill" : false
-      },
-      "offensiveStunMin" : {
-        "value" : [ 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0 ],
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 16,
-        "skill" : false
-      },
-      "offensiveSlowColdMin" : {
-        "value" : [ 21.0, 28.0, 34.0, 41.0, 48.0, 55.0, 61.0, 68.0, 75.0, 82.0, 88.0, 95.0, 102.0, 109.0, 115.0, 122.0 ],
-        "skill" : false
-      },
-      "expansionTime" : {
-        "value" : 0.25,
-        "skill" : false
-      },
-      "offensiveSlowColdDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
-      },
-      "skillMasteryLevelRequired" : {
-        "value" : 32,
-        "skill" : false
-      },
-      "skillTargetRadius" : {
-        "value" : 15.0,
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 6,
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Tidal Wave.html",
-    "modifier" : false,
-    "skillTag" : "skillAqua3n"
-  }, {
-    "name" : "Dangerous Waters",
-    "parent" : "Tidal Wave",
-    "attributes" : {
-      "skillManaCost" : {
-        "value" : [ 15.0, 23.0, 31.0, 39.0, 47.0, 55.0, 63.0, 71.0, 79.0, 87.0, 95.0, 105.0 ],
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
-      },
-      "offensiveSlowColdModifier" : {
-        "value" : [ 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 115.0, 130.0, 145.0, 160.0 ],
-        "skill" : false
-      },
-      "offensiveFreezeMin" : {
-        "value" : [ 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2, 1.3, 1.5, 1.6, 1.8 ],
-        "skill" : false
-      },
-      "offensiveSlowColdDurationModifier" : {
-        "value" : [ 20.0, 25.0, 31.0, 36.0, 42.0, 47.0, 53.0, 58.0, 64.0, 69.0, 75.0, 80.0 ],
-        "skill" : false
-      },
-      "skillMasteryLevelRequired" : {
-        "value" : 40,
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 7,
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
-      },
-      "offensiveColdModifier" : {
-        "value" : [ 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0 ],
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Dangerous Waters.html",
-    "modifier" : true,
-    "skillTag" : "skillAqua4n"
-  }, {
-    "name" : "Rain",
-    "parent" : null,
-    "attributes" : {
-      "dropOffset" : {
-        "value" : 10.0,
-        "skill" : false
-      },
-      "skillCooldownTime" : {
-        "value" : 12.0,
-        "skill" : false
-      },
-      "skillManaCost" : {
-        "value" : [ 60.0, 65.0, 69.0, 74.0, 78.0, 83.0, 88.0, 92.0, 97.0, 101.0, 106.0, 111.0, 115.0, 120.0, 124.0, 129.0, 134.0 ],
-        "skill" : false
-      },
-      "projectileExplosionRadius" : {
-        "value" : 3.0,
-        "skill" : false
-      },
-      "numProjectiles" : {
-        "value" : 5,
-        "skill" : false
-      },
-      "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
-      },
-      "offensiveColdMin" : {
-        "value" : [ 11.0, 14.6, 18.2, 20.8, 25.4, 29.0, 31.6, 35.2, 39.9, 44.5, 48.1, 52.8, 57.5, 63.2, 68.9, 72.5, 78.2 ],
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 13,
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 17,
-        "skill" : false
-      },
-      "dropHeight" : {
-        "value" : 7.0,
-        "skill" : false
-      },
-      "offensiveColdMax" : {
-        "value" : [ 15.9, 18.4, 22.9, 27.6, 30.1, 37.8, 41.3, 44.8, 50.5, 57.2, 62.7, 67.4, 73.9, 80.6, 86.2, 90.8, 99.5 ],
-        "skill" : false
-      },
-      "skillMasteryLevelRequired" : {
-        "value" : 16,
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 4,
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Rain.html",
-    "modifier" : false,
-    "skillTag" : "skillAqua5n"
+    "description" : "When using a ranged weapon, imbue your shots with biting cold, capable of freezing and impaling multiple targets at once.{^n}{^y}Requires a ranged weapon.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Flash Freeze.html"
   }, {
     "name" : "Torrential Flow",
     "parent" : "Rain",
@@ -384,10 +930,6 @@
         "value" : 24,
         "skill" : false
       },
-      "skillTier" : {
-        "value" : 5,
-        "skill" : false
-      },
       "offensiveSlowTotalSpeedDurationMin" : {
         "value" : 3.0,
         "skill" : false
@@ -401,399 +943,8 @@
         "skill" : false
       }
     },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Torrential Flow.html",
-    "modifier" : true,
-    "skillTag" : "skillAqua6n"
-  }, {
-    "name" : "Acid Rain",
-    "parent" : "Torrential Flow",
-    "attributes" : {
-      "offensiveTotalResistanceReductionAbsoluteDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 3,
-        "skill" : false
-      },
-      "offensivePoisonMin" : {
-        "value" : [ 30.0, 60.0, 90.0 ],
-        "skill" : false
-      },
-      "offensiveTotalResistanceReductionAbsoluteMin" : {
-        "value" : [ 4.0, 8.0, 12.0 ],
-        "skill" : false
-      },
-      "skillMasteryLevelRequired" : {
-        "value" : 32,
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 6,
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 3,
-        "skill" : false
-      },
-      "offensivePercentCurrentLifeMin" : {
-        "value" : [ 2.0, 4.0, 6.0 ],
-        "skill" : false
-      },
-      "offensiveColdModifier" : {
-        "value" : [ -22.0, -44.0, -66.0 ],
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Acid Rain.html",
-    "modifier" : true,
-    "skillTag" : "skillAqua24n"
-  }, {
-    "name" : "Mark of the Trident",
-    "parent" : null,
-    "attributes" : {
-      "characterAttackSpeedModifier" : {
-        "value" : [ 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0 ],
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
-      },
-      "offensivePhysicalMin" : {
-        "value" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0 ],
-        "skill" : false
-      },
-      "offensivePierceMin" : {
-        "value" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0 ],
-        "skill" : false
-      },
-      "skillMasteryLevelRequired" : {
-        "value" : 1,
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 1,
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
-      },
-      "Spear" : {
-        "value" : 1,
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Mark of the Trident.html",
-    "modifier" : false,
-    "skillTag" : "skillAqua7n"
-  }, {
-    "name" : "Tsunami Spin",
-    "parent" : null,
-    "attributes" : {
-      "skillChanceWeight" : {
-        "value" : [ 6.0, 8.0, 9.0, 10.0, 12.0, 13.0, 15.0, 16.0, 18.0, 20.0, 22.0, 24.0 ],
-        "skill" : false
-      },
-      "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
-      },
-      "offensiveColdModifier" : {
-        "value" : [ 15.0, 20.0, 24.0, 28.0, 32.0, 35.0, 40.0, 44.0, 47.0, 51.0, 56.0, 60.0 ],
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
-      },
-      "skillTargetNumber" : {
-        "value" : 2,
-        "skill" : false
-      },
-      "skillProjectileNumber" : {
-        "value" : 1,
-        "skill" : false
-      },
-      "offensiveSlowColdMin" : {
-        "value" : [ 9.0, 11.0, 14.0, 16.0, 19.0, 21.0, 24.0, 26.0, 29.0, 31.0, 34.0, 36.0 ],
-        "skill" : false
-      },
-      "offensiveSlowColdDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
-      },
-      "skillMasteryLevelRequired" : {
-        "value" : 10,
-        "skill" : false
-      },
-      "skillTargetAngle" : {
-        "value" : 250.0,
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 3,
-        "skill" : false
-      },
-      "Spear" : {
-        "value" : 1,
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Tsunami Spin.html",
-    "modifier" : false,
-    "skillTag" : "skillAqua8n"
-  }, {
-    "name" : "Tempest Spear",
-    "parent" : null,
-    "attributes" : {
-      "offensiveLightningModifier" : {
-        "value" : [ 15.0, 20.0, 24.0, 28.0, 32.0, 35.0, 40.0, 44.0, 47.0, 51.0, 56.0, 60.0 ],
-        "skill" : false
-      },
-      "skillChanceWeight" : {
-        "value" : [ 6.0, 8.0, 9.0, 10.0, 12.0, 13.0, 15.0, 16.0, 18.0, 20.0, 22.0, 24.0 ],
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
-      },
-      "offensiveLightningMax" : {
-        "value" : [ 28.0, 37.0, 45.0, 54.0, 62.0, 72.0, 81.0, 92.0, 102.0, 111.0, 119.0, 128.0 ],
-        "skill" : false
-      },
-      "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
-      },
-      "offensiveLightningMin" : {
-        "value" : [ 4.0, 7.0, 11.0, 14.0, 18.0, 21.0, 25.0, 28.0, 32.0, 35.0, 39.0, 42.0 ],
-        "skill" : false
-      },
-      "skillProjectileNumber" : {
-        "value" : 1,
-        "skill" : false
-      },
-      "skillMasteryLevelRequired" : {
-        "value" : 32,
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 6,
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
-      },
-      "Spear" : {
-        "value" : 1,
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Tempest Spear.html",
-    "modifier" : false,
-    "skillTag" : "skillAqua9n"
-  }, {
-    "name" : "Summon Water Spirit",
-    "parent" : null,
-    "attributes" : {
-      "skillCooldownTime" : {
-        "value" : 20.0,
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 24,
-        "skill" : false
-      },
-      "skillManaCost" : {
-        "value" : [ 100.0, 103.0, 107.0, 110.0, 113.0, 116.0, 120.0, 123.0, 126.0, 129.0, 133.0, 136.0, 139.0, 142.0, 146.0, 149.0, 152.0, 155.0, 159.0, 162.0, 165.0, 168.0, 172.0, 175.0 ],
-        "skill" : false
-      },
-      "petLimit" : {
-        "value" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0 ],
-        "skill" : false
-      },
-      "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
-      },
-      "skillConnectionSpacing" : {
-        "value" : 62,
-        "skill" : false
-      },
-      "skillMasteryLevelRequired" : {
-        "value" : 10,
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 2,
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 20,
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Summon Water Spirit.html",
-    "modifier" : false,
-    "skillTag" : "skillAqua10n"
-  }, {
-    "name" : "Wash Out",
-    "parent" : null,
-    "attributes" : {
-      "washout" : {
-        "value" : {
-          "name" : "Wash Out",
-          "parent" : null,
-          "attributes" : {
-            "skillActiveDuration" : {
-              "value" : 2.0,
-              "skill" : false
-            },
-            "skillCooldownTime" : {
-              "value" : 6.0,
-              "skill" : false
-            },
-            "skillManaCost" : {
-              "value" : [ 30.25, 31.5, 32.75, 34.0, 35.25, 36.5, 37.75, 39.0, 40.25, 41.5 ],
-              "skill" : false
-            },
-            "projectileExplosionRadius" : {
-              "value" : 3.0,
-              "skill" : false
-            },
-            "skillConnectionSpacing" : {
-              "value" : 62,
-              "skill" : false
-            },
-            "cameraShakeAmplitude" : {
-              "value" : 0.12,
-              "skill" : false
-            },
-            "offensiveColdMin" : {
-              "value" : [ 40.0, 65.0, 89.0, 114.0, 139.0, 164.0, 188.0, 213.0, 238.0, 263.0, 287.0, 312.0, 337.0, 362.0, 387.0, 412.0 ],
-              "skill" : false
-            },
-            "offensiveSlowOffensiveAbilityDurationMin" : {
-              "value" : 5.0,
-              "skill" : false
-            },
-            "skillMaxLevel" : {
-              "value" : 8,
-              "skill" : false
-            },
-            "skillUltimateLevel" : {
-              "value" : 12,
-              "skill" : false
-            },
-            "skillMasteryLevelRequired" : {
-              "value" : 16,
-              "skill" : false
-            },
-            "skillTier" : {
-              "value" : 4,
-              "skill" : false
-            },
-            "offensiveSlowOffensiveAbilityMin" : {
-              "value" : [ 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 64.0, 66.0, 68.0, 70.0 ],
-              "skill" : false
-            }
-          },
-          "buff" : null,
-          "skillDescription" : null,
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Wash Out.html",
-          "modifier" : false,
-          "skillTag" : "skillAqua11n"
-        },
-        "skill" : true
-      }
-    },
-    "buff" : {
-      "name" : "Wash Out",
-      "parent" : null,
-      "attributes" : {
-        "skillActiveDuration" : {
-          "value" : 2.0,
-          "skill" : false
-        },
-        "skillCooldownTime" : {
-          "value" : 6.0,
-          "skill" : false
-        },
-        "skillManaCost" : {
-          "value" : [ 30.25, 31.5, 32.75, 34.0, 35.25, 36.5, 37.75, 39.0, 40.25, 41.5 ],
-          "skill" : false
-        },
-        "projectileExplosionRadius" : {
-          "value" : 3.0,
-          "skill" : false
-        },
-        "skillConnectionSpacing" : {
-          "value" : 62,
-          "skill" : false
-        },
-        "cameraShakeAmplitude" : {
-          "value" : 0.12,
-          "skill" : false
-        },
-        "offensiveColdMin" : {
-          "value" : [ 40.0, 65.0, 89.0, 114.0, 139.0, 164.0, 188.0, 213.0, 238.0, 263.0, 287.0, 312.0, 337.0, 362.0, 387.0, 412.0 ],
-          "skill" : false
-        },
-        "offensiveSlowOffensiveAbilityDurationMin" : {
-          "value" : 5.0,
-          "skill" : false
-        },
-        "skillMaxLevel" : {
-          "value" : 8,
-          "skill" : false
-        },
-        "skillUltimateLevel" : {
-          "value" : 12,
-          "skill" : false
-        },
-        "skillMasteryLevelRequired" : {
-          "value" : 16,
-          "skill" : false
-        },
-        "skillTier" : {
-          "value" : 4,
-          "skill" : false
-        },
-        "offensiveSlowOffensiveAbilityMin" : {
-          "value" : [ 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 64.0, 66.0, 68.0, 70.0 ],
-          "skill" : false
-        }
-      },
-      "buff" : null,
-      "skillDescription" : null,
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Wash Out.html",
-      "modifier" : false,
-      "skillTag" : "skillAqua11n"
-    },
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Wash Out.html",
-    "modifier" : false,
-    "skillTag" : "skillAqua11n"
+    "description" : "Invoking rain with strength of a waterfall allows you to crush foes with immense power.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Torrential Flow.html"
   }, {
     "name" : "Magical Sea Sources",
     "parent" : null,
@@ -823,10 +974,6 @@
               "value" : [ 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 8.0, 8.0 ],
               "skill" : false
             },
-            "skillTier" : {
-              "value" : 5,
-              "skill" : false
-            },
             "skillMaxLevel" : {
               "value" : 10,
               "skill" : false
@@ -836,160 +983,14 @@
               "skill" : false
             }
           },
-          "buff" : null,
-          "skillDescription" : null,
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Magical Sea Sources.html",
-          "modifier" : false,
-          "skillTag" : "skillAqua12n"
+          "description" : "Spirits born from enchanted water sources are able to use an enhanced arsenal of spells, alongside a life-leeching ability.",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Magical Sea Sources.html"
         },
         "skill" : true
       }
     },
-    "buff" : {
-      "name" : "Magical Sea Sources",
-      "parent" : null,
-      "attributes" : {
-        "skillProjectileSpeedModifier" : {
-          "value" : [ 6.0, 12.0, 18.0, 24.0, 30.0, 36.0, 42.0, 48.0, 54.0, 60.0, 66.0, 72.0, 78.0, 84.0 ],
-          "skill" : false
-        },
-        "skillUltimateLevel" : {
-          "value" : 14,
-          "skill" : false
-        },
-        "offensiveSlowColdModifier" : {
-          "value" : [ 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0 ],
-          "skill" : false
-        },
-        "skillMasteryLevelRequired" : {
-          "value" : 24,
-          "skill" : false
-        },
-        "offensiveLifeLeechMin" : {
-          "value" : [ 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 8.0, 8.0 ],
-          "skill" : false
-        },
-        "skillTier" : {
-          "value" : 5,
-          "skill" : false
-        },
-        "skillMaxLevel" : {
-          "value" : 10,
-          "skill" : false
-        },
-        "offensiveColdModifier" : {
-          "value" : [ 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0 ],
-          "skill" : false
-        }
-      },
-      "buff" : null,
-      "skillDescription" : null,
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Magical Sea Sources.html",
-      "modifier" : false,
-      "skillTag" : "skillAqua12n"
-    },
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Magical Sea Sources.html",
-    "modifier" : false,
-    "skillTag" : "skillAqua12n"
-  }, {
-    "name" : "Water Rapids",
-    "parent" : null,
-    "attributes" : {
-      "waterrapids" : {
-        "value" : {
-          "name" : "Water Rapids",
-          "parent" : null,
-          "attributes" : {
-            "skillProjectileSpeedModifier" : {
-              "value" : 100.0,
-              "skill" : false
-            },
-            "characterLifeModifier" : {
-              "value" : -75.0,
-              "skill" : false
-            },
-            "characterSpellCastSpeedModifier" : {
-              "value" : 40.0,
-              "skill" : false
-            },
-            "skillUltimateLevel" : {
-              "value" : 1,
-              "skill" : false
-            },
-            "characterRunSpeedModifier" : {
-              "value" : 25.0,
-              "skill" : false
-            },
-            "skillMasteryLevelRequired" : {
-              "value" : 32,
-              "skill" : false
-            },
-            "skillTier" : {
-              "value" : 6,
-              "skill" : false
-            },
-            "skillMaxLevel" : {
-              "value" : 1,
-              "skill" : false
-            }
-          },
-          "buff" : null,
-          "skillDescription" : null,
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Water Rapids.html",
-          "modifier" : false,
-          "skillTag" : "skillAqua28n"
-        },
-        "skill" : true
-      }
-    },
-    "buff" : {
-      "name" : "Water Rapids",
-      "parent" : null,
-      "attributes" : {
-        "skillProjectileSpeedModifier" : {
-          "value" : 100.0,
-          "skill" : false
-        },
-        "characterLifeModifier" : {
-          "value" : -75.0,
-          "skill" : false
-        },
-        "characterSpellCastSpeedModifier" : {
-          "value" : 40.0,
-          "skill" : false
-        },
-        "skillUltimateLevel" : {
-          "value" : 1,
-          "skill" : false
-        },
-        "characterRunSpeedModifier" : {
-          "value" : 25.0,
-          "skill" : false
-        },
-        "skillMasteryLevelRequired" : {
-          "value" : 32,
-          "skill" : false
-        },
-        "skillTier" : {
-          "value" : 6,
-          "skill" : false
-        },
-        "skillMaxLevel" : {
-          "value" : 1,
-          "skill" : false
-        }
-      },
-      "buff" : null,
-      "skillDescription" : null,
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Water Rapids.html",
-      "modifier" : false,
-      "skillTag" : "skillAqua28n"
-    },
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Water Rapids.html",
-    "modifier" : false,
-    "skillTag" : "skillAqua28n"
+    "description" : "Spirits born from enchanted water sources are able to use an enhanced arsenal of spells, alongside a life-leeching ability.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Magical Sea Sources.html"
   }, {
     "name" : "Lunge",
     "parent" : null,
@@ -1061,17 +1062,205 @@
       "skillMasteryLevelRequired" : {
         "value" : 24,
         "skill" : false
+      }
+    },
+    "description" : "Dive forward and attack violently in melee range, and do so with unexisting cooldown constraints, allowing you to quickly travel around the battleground.{^n}{^y}Requires a melee weapon.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Lunge.html"
+  } ], [ {
+    "name" : "Tidal Wave",
+    "parent" : null,
+    "attributes" : {
+      "skillCooldownTime" : {
+        "value" : 16.0,
+        "skill" : false
       },
-      "skillTier" : {
-        "value" : 5,
+      "skillManaCost" : {
+        "value" : [ 75.39807, 78.0, 82.0, 85.0, 89.0, 92.0, 96.0, 98.0, 103.0, 107.0, 111.0, 115.0, 120.0, 125.0, 131.0, 135.0 ],
+        "skill" : false
+      },
+      "cameraShakeAmplitude" : {
+        "value" : 0.12,
+        "skill" : false
+      },
+      "offensivePhysicalMin" : {
+        "value" : [ 15.0, 18.0, 21.0, 24.0, 28.0, 32.0, 37.0, 42.0, 47.0, 53.0, 60.0, 67.0, 74.0, 81.0, 88.0, 94.0 ],
+        "skill" : false
+      },
+      "offensiveColdMin" : {
+        "value" : [ 30.0, 43.0, 55.0, 68.0, 81.0, 93.0, 106.0, 119.0, 131.0, 144.0, 157.0, 169.0, 182.0, 195.0, 207.0, 220.0 ],
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "cameraShakeDurationSecs" : {
+        "value" : 1.0,
+        "skill" : false
+      },
+      "offensiveStunMin" : {
+        "value" : [ 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 16,
+        "skill" : false
+      },
+      "offensiveSlowColdMin" : {
+        "value" : [ 21.0, 28.0, 34.0, 41.0, 48.0, 55.0, 61.0, 68.0, 75.0, 82.0, 88.0, 95.0, 102.0, 109.0, 115.0, 122.0 ],
+        "skill" : false
+      },
+      "expansionTime" : {
+        "value" : 0.25,
+        "skill" : false
+      },
+      "offensiveSlowColdDurationMin" : {
+        "value" : 3.0,
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 32,
+        "skill" : false
+      },
+      "skillTargetRadius" : {
+        "value" : 15.0,
         "skill" : false
       }
     },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Lunge.html",
-    "modifier" : false,
-    "skillTag" : "skillAqua13n"
+    "description" : "Summon a colossal, circular wave of water around you, violently disabling everyone caught in it.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Tidal Wave.html"
+  }, {
+    "name" : "Acid Rain",
+    "parent" : "Torrential Flow",
+    "attributes" : {
+      "offensiveTotalResistanceReductionAbsoluteDurationMin" : {
+        "value" : 3.0,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 3,
+        "skill" : false
+      },
+      "offensivePoisonMin" : {
+        "value" : [ 30.0, 60.0, 90.0 ],
+        "skill" : false
+      },
+      "offensiveTotalResistanceReductionAbsoluteMin" : {
+        "value" : [ 4.0, 8.0, 12.0 ],
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 32,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 3,
+        "skill" : false
+      },
+      "offensivePercentCurrentLifeMin" : {
+        "value" : [ 2.0, 4.0, 6.0 ],
+        "skill" : false
+      },
+      "offensiveColdModifier" : {
+        "value" : [ -22.0, -44.0, -66.0 ],
+        "skill" : false
+      }
+    },
+    "description" : "{^g}Skill Modifier{^n}{^w}Toxic and acidic water chips away at your enemies' life force and resistances.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Acid Rain.html"
+  }, {
+    "name" : "Tempest Spear",
+    "parent" : null,
+    "attributes" : {
+      "offensiveLightningModifier" : {
+        "value" : [ 15.0, 20.0, 24.0, 28.0, 32.0, 35.0, 40.0, 44.0, 47.0, 51.0, 56.0, 60.0 ],
+        "skill" : false
+      },
+      "skillChanceWeight" : {
+        "value" : [ 6.0, 8.0, 9.0, 10.0, 12.0, 13.0, 15.0, 16.0, 18.0, 20.0, 22.0, 24.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "offensiveLightningMax" : {
+        "value" : [ 28.0, 37.0, 45.0, 54.0, 62.0, 72.0, 81.0, 92.0, 102.0, 111.0, 119.0, 128.0 ],
+        "skill" : false
+      },
+      "cameraShakeAmplitude" : {
+        "value" : 0.12,
+        "skill" : false
+      },
+      "offensiveLightningMin" : {
+        "value" : [ 4.0, 7.0, 11.0, 14.0, 18.0, 21.0, 25.0, 28.0, 32.0, 35.0, 39.0, 42.0 ],
+        "skill" : false
+      },
+      "skillProjectileNumber" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 32,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 8,
+        "skill" : false
+      },
+      "Spear" : {
+        "value" : 1,
+        "skill" : false
+      }
+    },
+    "description" : "A strong technique only usable by spear-wielders. Learn how to strike an enemy thrice in a row with unmatched speed and tempestuous force.{^n}{^y}Requires a spear.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Tempest Spear.html"
+  }, {
+    "name" : "Water Rapids",
+    "parent" : null,
+    "attributes" : {
+      "waterrapids" : {
+        "value" : {
+          "name" : "Water Rapids",
+          "parent" : null,
+          "attributes" : {
+            "skillProjectileSpeedModifier" : {
+              "value" : 100.0,
+              "skill" : false
+            },
+            "characterLifeModifier" : {
+              "value" : -75.0,
+              "skill" : false
+            },
+            "characterSpellCastSpeedModifier" : {
+              "value" : 40.0,
+              "skill" : false
+            },
+            "skillUltimateLevel" : {
+              "value" : 1,
+              "skill" : false
+            },
+            "characterRunSpeedModifier" : {
+              "value" : 25.0,
+              "skill" : false
+            },
+            "skillMasteryLevelRequired" : {
+              "value" : 32,
+              "skill" : false
+            },
+            "skillMaxLevel" : {
+              "value" : 1,
+              "skill" : false
+            }
+          },
+          "description" : "{^g}Skill Modifier{^n}{^w}Mirroring the nature of water, your familiars are as fast as currents, yet as unstable as a lake's surface.",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Water Rapids.html"
+        },
+        "skill" : true
+      }
+    },
+    "description" : "{^g}Skill Modifier{^n}{^w}Mirroring the nature of water, your familiars are as fast as currents, yet as unstable as a lake's surface.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Water Rapids.html"
   }, {
     "name" : "Impale",
     "parent" : "Lunge",
@@ -1104,10 +1293,6 @@
         "value" : 32,
         "skill" : false
       },
-      "skillTier" : {
-        "value" : 6,
-        "skill" : false
-      },
       "skillMaxLevel" : {
         "value" : 8,
         "skill" : false
@@ -1117,391 +1302,94 @@
         "skill" : false
       }
     },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Impale.html",
-    "modifier" : true,
-    "skillTag" : "skillAqua30n"
+    "description" : "Thrust your weapon forward to pierce through your enemies at a blinding speed, which results into lethal bloodbaths.{^n}{^y}Requires a spear.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Impale.html"
   }, {
-    "name" : "Aquamancer's Bounty",
+    "name" : "Regenerative Shell",
     "parent" : null,
-    "attributes" : {
-      "bountyofthelake" : {
-        "value" : {
-          "name" : "Aquamancer's Bounty",
-          "parent" : null,
-          "attributes" : {
-            "skillActiveDuration" : {
-              "value" : 120.0,
-              "skill" : false
-            },
-            "skillCooldownTime" : {
-              "value" : [ 120.0, 115.0, 110.0, 105.0, 100.0, 95.0, 90.0, 85.0, 80.0, 75.0, 70.0, 65.0, 60.0 ],
-              "skill" : false
-            },
-            "skillManaCost" : {
-              "value" : [ 30.0, 35.0, 39.0, 44.0, 48.0, 53.0, 57.0, 62.0, 66.0, 71.0, 75.0, 78.0, 82.0 ],
-              "skill" : false
-            },
-            "skillUltimateLevel" : {
-              "value" : 13,
-              "skill" : false
-            },
-            "cameraShakeAmplitude" : {
-              "value" : 0.12,
-              "skill" : false
-            },
-            "retaliationColdMin" : {
-              "value" : [ 20.0, 26.0, 32.0, 38.0, 45.0, 51.0, 57.0, 63.0, 69.0, 73.0, 79.0, 84.0, 90.0 ],
-              "skill" : false
-            },
-            "retaliationColdChance" : {
-              "value" : 25.0,
-              "skill" : false
-            },
-            "offensiveColdMin" : {
-              "value" : [ 10.0, 14.0, 18.0, 23.0, 28.0, 34.0, 39.0, 44.0, 50.0, 56.0, 62.0, 69.0, 75.0 ],
-              "skill" : false
-            },
-            "skillMasteryLevelRequired" : {
-              "value" : 1,
-              "skill" : false
-            },
-            "skillTier" : {
-              "value" : 1,
-              "skill" : false
-            },
-            "skillMaxLevel" : {
-              "value" : 9,
-              "skill" : false
-            },
-            "characterTotalSpeedModifier" : {
-              "value" : [ 5.0, 6.0, 6.0, 7.0, 7.0, 8.0, 8.0, 9.0, 9.0, 10.0, 11.0, 12.0, 13.0 ],
-              "skill" : false
-            }
-          },
-          "buff" : null,
-          "skillDescription" : null,
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Aquamancer's Bounty.html",
-          "modifier" : false,
-          "skillTag" : "skillAqua15n"
-        },
-        "skill" : true
-      }
-    },
-    "buff" : {
-      "name" : "Aquamancer's Bounty",
-      "parent" : null,
-      "attributes" : {
-        "skillActiveDuration" : {
-          "value" : 120.0,
-          "skill" : false
-        },
-        "skillCooldownTime" : {
-          "value" : [ 120.0, 115.0, 110.0, 105.0, 100.0, 95.0, 90.0, 85.0, 80.0, 75.0, 70.0, 65.0, 60.0 ],
-          "skill" : false
-        },
-        "skillManaCost" : {
-          "value" : [ 30.0, 35.0, 39.0, 44.0, 48.0, 53.0, 57.0, 62.0, 66.0, 71.0, 75.0, 78.0, 82.0 ],
-          "skill" : false
-        },
-        "skillUltimateLevel" : {
-          "value" : 13,
-          "skill" : false
-        },
-        "cameraShakeAmplitude" : {
-          "value" : 0.12,
-          "skill" : false
-        },
-        "retaliationColdMin" : {
-          "value" : [ 20.0, 26.0, 32.0, 38.0, 45.0, 51.0, 57.0, 63.0, 69.0, 73.0, 79.0, 84.0, 90.0 ],
-          "skill" : false
-        },
-        "retaliationColdChance" : {
-          "value" : 25.0,
-          "skill" : false
-        },
-        "offensiveColdMin" : {
-          "value" : [ 10.0, 14.0, 18.0, 23.0, 28.0, 34.0, 39.0, 44.0, 50.0, 56.0, 62.0, 69.0, 75.0 ],
-          "skill" : false
-        },
-        "skillMasteryLevelRequired" : {
-          "value" : 1,
-          "skill" : false
-        },
-        "skillTier" : {
-          "value" : 1,
-          "skill" : false
-        },
-        "skillMaxLevel" : {
-          "value" : 9,
-          "skill" : false
-        },
-        "characterTotalSpeedModifier" : {
-          "value" : [ 5.0, 6.0, 6.0, 7.0, 7.0, 8.0, 8.0, 9.0, 9.0, 10.0, 11.0, 12.0, 13.0 ],
-          "skill" : false
-        }
-      },
-      "buff" : null,
-      "skillDescription" : null,
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Aquamancer's Bounty.html",
-      "modifier" : false,
-      "skillTag" : "skillAqua15n"
-    },
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Aquamancer's Bounty.html",
-    "modifier" : false,
-    "skillTag" : "skillAqua15n"
-  }, {
-    "name" : "Hypothermia",
-    "parent" : "Aquamancer's Bounty",
-    "attributes" : {
-      "retaliationSlowColdMin" : {
-        "value" : [ 15.0, 22.0, 28.0, 35.0, 41.0, 48.0, 54.0, 61.0, 67.0, 74.0, 80.0, 87.0, 93.0, 100.0 ],
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 14,
-        "skill" : false
-      },
-      "offensiveSlowColdModifier" : {
-        "value" : [ 18.0, 22.0, 25.0, 29.0, 32.0, 36.0, 39.0, 43.0, 46.0, 50.0, 53.0, 57.0, 60.0, 64.0 ],
-        "skill" : false
-      },
-      "retaliationSlowColdDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
-      },
-      "retaliationSlowColdChance" : {
-        "value" : 33.0,
-        "skill" : false
-      },
-      "skillMasteryLevelRequired" : {
-        "value" : 4,
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 2,
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 10,
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Hypothermia.html",
-    "modifier" : true,
-    "skillTag" : "skillAqua16n"
-  }, {
-    "name" : "Absolute Zero",
-    "parent" : "Hypothermia",
-    "attributes" : {
-      "offensiveSlowTotalSpeedMin" : {
-        "value" : [ 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0 ],
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 18,
-        "skill" : false
-      },
-      "offensiveSlowTotalSpeedChance" : {
-        "value" : 33.0,
-        "skill" : false
-      },
-      "offensiveFreezeMin" : {
-        "value" : [ 1.0, 1.1, 1.1, 1.2, 1.2, 1.3, 1.3, 1.4, 1.4, 1.5, 1.5, 1.6, 1.6, 1.7, 1.7, 1.8, 1.8, 1.9 ],
-        "skill" : false
-      },
-      "offensiveFreezeMax" : {
-        "value" : [ 3.0, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4.0, 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7 ],
-        "skill" : false
-      },
-      "offensiveFreezeChance" : {
-        "value" : 5.0,
-        "skill" : false
-      },
-      "skillMasteryLevelRequired" : {
-        "value" : 16,
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 4,
-        "skill" : false
-      },
-      "offensiveSlowTotalSpeedDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 14,
-        "skill" : false
-      },
-      "offensiveColdModifier" : {
-        "value" : [ 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0, 90.0, 95.0, 100.0 ],
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Absolute Zero.html",
-    "modifier" : true,
-    "skillTag" : "skillAqua17n"
-  }, {
-    "name" : "Engulfment",
-    "parent" : "Absolute Zero",
     "attributes" : {
       "skillActiveDuration" : {
-        "value" : [ 15.0, 30.0, 45.0, 60.0, 75.0, 90.0, 105.0, 120.0, 135.0, 150.0 ],
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 10,
-        "skill" : false
-      },
-      "skillMasteryLevelRequired" : {
-        "value" : 10,
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 3,
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 6,
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Engulfment.html",
-    "modifier" : true,
-    "skillTag" : "skillAqua33n"
-  }, {
-    "name" : "Shore Uprising",
-    "parent" : null,
-    "attributes" : {
-      "projectileLaunchNumber" : {
-        "value" : [ 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 8.0, 8.0, 8.0, 9.0, 9.0, 9.0, 9.0 ],
+        "value" : 12.0,
         "skill" : false
       },
       "skillCooldownTime" : {
-        "value" : [ 2.0, 1.9, 1.8, 1.7, 1.6, 1.5, 1.4, 1.3, 1.2, 1.1, 1.0, 0.8, 0.6, 0.4, 0.0, 0.0 ],
-        "skill" : false
-      },
-      "skillManaCost" : {
-        "value" : [ 35.0, 38.0, 40.0, 43.0, 45.0, 48.0, 50.0, 53.0, 55.0, 58.0, 60.0, 63.0, 65.0, 68.0, 70.0, 73.0 ],
-        "skill" : false
-      },
-      "projectilePiercingChance" : {
-        "value" : 100.0,
-        "skill" : false
-      },
-      "skillConnectionSpacing" : {
-        "value" : 62,
-        "skill" : false
-      },
-      "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
-      },
-      "offensiveColdMin" : {
-        "value" : [ 6.0, 9.0, 12.0, 15.0, 19.0, 22.0, 25.0, 28.0, 31.0, 34.0, 37.0, 40.0, 44.0, 47.0, 50.0, 53.0 ],
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 12,
+        "value" : 40.0,
         "skill" : false
       },
       "skillUltimateLevel" : {
-        "value" : 16,
+        "value" : 14,
         "skill" : false
       },
-      "projectileLaunchRotation" : {
-        "value" : 30.0,
+      "characterLifeRegen" : {
+        "value" : [ 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0 ],
         "skill" : false
       },
-      "offensiveColdMax" : {
-        "value" : [ 10.0, 13.0, 16.0, 20.0, 23.0, 26.0, 29.0, 32.0, 36.0, 39.0, 42.0, 45.0, 48.0, 52.0, 55.0, 58.0 ],
+      "characterDodgePercent" : {
+        "value" : [ 8.0, 10.0, 12.0, 14.0, 16.0, 17.0, 19.0, 20.0, 22.0, 23.0, 25.0, 26.0, 28.0, 29.0 ],
+        "skill" : false
+      },
+      "characterManaRegen" : {
+        "value" : [ 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0 ],
+        "skill" : false
+      },
+      "onHitActivationChance" : {
+        "value" : 8.0,
+        "skill" : false
+      },
+      "characterDeflectProjectile" : {
+        "value" : [ 8.0, 10.0, 12.0, 14.0, 16.0, 17.0, 19.0, 20.0, 22.0, 23.0, 25.0, 26.0, 28.0, 29.0 ],
         "skill" : false
       },
       "skillMasteryLevelRequired" : {
-        "value" : 4,
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 2,
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Shore Uprising.html",
-    "modifier" : false,
-    "skillTag" : "skillAqua18n"
-  }, {
-    "name" : "Ire of Storms",
-    "parent" : "Shore Uprising",
-    "attributes" : {
-      "offensiveSlowOffensiveAbilityGlobal" : {
-        "value" : 1,
-        "skill" : false
-      },
-      "offensiveLightningMax" : {
-        "value" : [ 10.0, 13.0, 16.0, 20.0, 23.0, 26.0, 29.0, 32.0, 36.0, 39.0, 42.0, 45.0, 48.0, 52.0, 55.0, 58.0 ],
-        "skill" : false
-      },
-      "offensiveSlowOffensiveAbilityDurationMin" : {
-        "value" : 1.0,
+        "value" : 32,
         "skill" : false
       },
       "skillMaxLevel" : {
+        "value" : 10,
+        "skill" : false
+      }
+    },
+    "description" : "Preventively creates an envelope of protective energy, blocking most attacks and reducing potential damage inflicted by hostile sources.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Regenerative Shell.html"
+  } ], [ {
+    "name" : "Dangerous Waters",
+    "parent" : "Tidal Wave",
+    "attributes" : {
+      "skillManaCost" : {
+        "value" : [ 15.0, 23.0, 31.0, 39.0, 47.0, 55.0, 63.0, 71.0, 79.0, 87.0, 95.0, 105.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
         "value" : 12,
+        "skill" : false
+      },
+      "offensiveSlowColdModifier" : {
+        "value" : [ 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 115.0, 130.0, 145.0, 160.0 ],
+        "skill" : false
+      },
+      "offensiveFreezeMin" : {
+        "value" : [ 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2, 1.3, 1.5, 1.6, 1.8 ],
+        "skill" : false
+      },
+      "offensiveSlowColdDurationModifier" : {
+        "value" : [ 20.0, 25.0, 31.0, 36.0, 42.0, 47.0, 53.0, 58.0, 64.0, 69.0, 75.0, 80.0 ],
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 40,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 8,
         "skill" : false
       },
       "offensiveColdModifier" : {
-        "value" : [ 50.0, 67.0, 83.0, 100.0, 117.0, 133.0, 150.0, 167.0, 183.0, 200.0, 217.0, 233.0, 250.0, 267.0, 283.0, 300.0 ],
-        "skill" : false
-      },
-      "offensiveGlobalChance" : {
-        "value" : 20.0,
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 16,
-        "skill" : false
-      },
-      "offensiveLightningMin" : {
-        "value" : [ 6.0, 9.0, 12.0, 15.0, 19.0, 22.0, 25.0, 28.0, 31.0, 34.0, 37.0, 40.0, 44.0, 47.0, 50.0, 53.0 ],
-        "skill" : false
-      },
-      "offensiveColdGlobal" : {
-        "value" : 1,
-        "skill" : false
-      },
-      "skillMasteryLevelRequired" : {
-        "value" : 16,
-        "skill" : false
-      },
-      "skillManaCostReduction" : {
-        "value" : [ 4.0, 5.0, 7.0, 8.0, 9.0, 11.0, 12.0, 13.0, 15.0, 16.0, 17.0, 19.0, 20.0, 21.0, 23.0, 24.0 ],
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 4,
-        "skill" : false
-      },
-      "offensiveSlowOffensiveAbilityMin" : {
-        "value" : [ 10.0, 13.0, 15.0, 18.0, 21.0, 23.0, 26.0, 29.0, 31.0, 34.0, 37.0, 39.0, 42.0, 45.0, 47.0, 50.0 ],
+        "value" : [ 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0 ],
         "skill" : false
       }
     },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Ire of Storms.html",
-    "modifier" : true,
-    "skillTag" : "skillAqua19n"
+    "description" : "The indomitable seas submerge your enemies in the coldest waves, freezing their whole bodies.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Dangerous Waters.html"
   }, {
     "name" : "Hydrothermal Explosion",
     "parent" : null,
@@ -1581,467 +1469,10 @@
       "skillMasteryLevelRequired" : {
         "value" : 40,
         "skill" : false
-      },
-      "skillTier" : {
-        "value" : 7,
-        "skill" : false
       }
     },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Hydrothermal Explosion.html",
-    "modifier" : false,
-    "skillTag" : "skillAqua25n"
-  }, {
-    "name" : "Regenerative Shell",
-    "parent" : null,
-    "attributes" : {
-      "skillActiveDuration" : {
-        "value" : 12.0,
-        "skill" : false
-      },
-      "skillCooldownTime" : {
-        "value" : 40.0,
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 14,
-        "skill" : false
-      },
-      "characterLifeRegen" : {
-        "value" : [ 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0 ],
-        "skill" : false
-      },
-      "characterDodgePercent" : {
-        "value" : [ 8.0, 10.0, 12.0, 14.0, 16.0, 17.0, 19.0, 20.0, 22.0, 23.0, 25.0, 26.0, 28.0, 29.0 ],
-        "skill" : false
-      },
-      "characterManaRegen" : {
-        "value" : [ 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0 ],
-        "skill" : false
-      },
-      "onHitActivationChance" : {
-        "value" : 8.0,
-        "skill" : false
-      },
-      "characterDeflectProjectile" : {
-        "value" : [ 8.0, 10.0, 12.0, 14.0, 16.0, 17.0, 19.0, 20.0, 22.0, 23.0, 25.0, 26.0, 28.0, 29.0 ],
-        "skill" : false
-      },
-      "skillMasteryLevelRequired" : {
-        "value" : 32,
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 6,
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 10,
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Regenerative Shell.html",
-    "modifier" : false,
-    "skillTag" : "skillAqua21n"
-  }, {
-    "name" : "Environmental Adaptation",
-    "parent" : null,
-    "attributes" : {
-      "defensiveCold" : {
-        "value" : [ 4.0, 7.0, 11.0, 14.0, 17.0, 20.0, 24.0, 27.0, 30.0, 33.0, 37.0, 40.0 ],
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
-      },
-      "defensiveFreeze" : {
-        "value" : [ 8.0, 14.0, 22.0, 28.0, 34.0, 40.0, 48.0, 54.0, 60.0, 66.0, 74.0, 80.0 ],
-        "skill" : false
-      },
-      "skillMasteryLevelRequired" : {
-        "value" : 4,
-        "skill" : false
-      },
-      "defensivePoison" : {
-        "value" : [ 4.0, 7.0, 11.0, 14.0, 17.0, 20.0, 24.0, 27.0, 30.0, 33.0, 37.0, 40.0 ],
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 2,
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
-      },
-      "defensiveFire" : {
-        "value" : [ 4.0, 7.0, 11.0, 14.0, 17.0, 20.0, 24.0, 27.0, 30.0, 33.0, 37.0, 40.0 ],
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Environmental Adaptation.html",
-    "modifier" : false,
-    "skillTag" : "skillAqua26n"
-  }, {
-    "name" : "Scaly Skin",
-    "parent" : null,
-    "attributes" : {
-      "defensiveProtection" : {
-        "value" : [ 6.0, 12.0, 18.0, 24.0, 30.0, 36.0, 42.0, 48.0, 54.0, 60.0 ],
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 10,
-        "skill" : false
-      },
-      "defensivePierce" : {
-        "value" : [ 4.0, 8.0, 11.0, 15.0, 18.0, 22.0, 25.0, 29.0, 32.0, 36.0 ],
-        "skill" : false
-      },
-      "characterDexterity" : {
-        "value" : [ 6.0, 12.0, 18.0, 24.0, 30.0, 36.0, 42.0, 48.0, 54.0, 60.0 ],
-        "skill" : false
-      },
-      "skillMasteryLevelRequired" : {
-        "value" : 10,
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 3,
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 6,
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Scaly Skin.html",
-    "modifier" : false,
-    "skillTag" : "skillAqua27n"
-  }, {
-    "name" : "Hoarfrost",
-    "parent" : null,
-    "attributes" : {
-      "hoarfrost" : {
-        "value" : {
-          "name" : "Hoarfrost",
-          "parent" : null,
-          "attributes" : {
-            "skillActiveDuration" : {
-              "value" : [ 3.0, 3.4, 3.8, 4.2, 4.6, 5.0, 5.4, 5.8, 6.2, 6.6, 7.0, 7.5 ],
-              "skill" : false
-            },
-            "skillCooldownTime" : {
-              "value" : 8.0,
-              "skill" : false
-            },
-            "skillManaCost" : {
-              "value" : [ 50.0, 52.5, 55.0, 57.5, 60.0, 62.5, 65.0, 67.5, 70.0, 72.5, 75.0, 77.5 ],
-              "skill" : false
-            },
-            "skillConnectionSpacing" : {
-              "value" : 62,
-              "skill" : false
-            },
-            "cameraShakeAmplitude" : {
-              "value" : 0.12,
-              "skill" : false
-            },
-            "damageAbsorptionPercent" : {
-              "value" : 70.0,
-              "skill" : false
-            },
-            "skillMaxLevel" : {
-              "value" : 8,
-              "skill" : false
-            },
-            "defensiveFireDuration" : {
-              "value" : 100.0,
-              "skill" : false
-            },
-            "debufSkill" : {
-              "value" : 1,
-              "skill" : false
-            },
-            "skillUltimateLevel" : {
-              "value" : 12,
-              "skill" : false
-            },
-            "offensiveSlowColdMin" : {
-              "value" : [ 10.0, 23.0, 38.0, 53.0, 67.0, 83.0, 97.0, 113.0, 126.0, 141.0, 157.0, 170.0 ],
-              "skill" : false
-            },
-            "offensiveSlowColdDurationMin" : {
-              "value" : 1.0,
-              "skill" : false
-            },
-            "skillTargetRadius" : {
-              "value" : [ 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0 ],
-              "skill" : false
-            },
-            "skillMasteryLevelRequired" : {
-              "value" : 10,
-              "skill" : false
-            },
-            "skillTier" : {
-              "value" : 3,
-              "skill" : false
-            }
-          },
-          "buff" : null,
-          "skillDescription" : null,
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Hoarfrost.html",
-          "modifier" : false,
-          "skillTag" : "skillAqua29n"
-        },
-        "skill" : true
-      }
-    },
-    "buff" : {
-      "name" : "Hoarfrost",
-      "parent" : null,
-      "attributes" : {
-        "skillActiveDuration" : {
-          "value" : [ 3.0, 3.4, 3.8, 4.2, 4.6, 5.0, 5.4, 5.8, 6.2, 6.6, 7.0, 7.5 ],
-          "skill" : false
-        },
-        "skillCooldownTime" : {
-          "value" : 8.0,
-          "skill" : false
-        },
-        "skillManaCost" : {
-          "value" : [ 50.0, 52.5, 55.0, 57.5, 60.0, 62.5, 65.0, 67.5, 70.0, 72.5, 75.0, 77.5 ],
-          "skill" : false
-        },
-        "skillConnectionSpacing" : {
-          "value" : 62,
-          "skill" : false
-        },
-        "cameraShakeAmplitude" : {
-          "value" : 0.12,
-          "skill" : false
-        },
-        "damageAbsorptionPercent" : {
-          "value" : 70.0,
-          "skill" : false
-        },
-        "skillMaxLevel" : {
-          "value" : 8,
-          "skill" : false
-        },
-        "defensiveFireDuration" : {
-          "value" : 100.0,
-          "skill" : false
-        },
-        "debufSkill" : {
-          "value" : 1,
-          "skill" : false
-        },
-        "skillUltimateLevel" : {
-          "value" : 12,
-          "skill" : false
-        },
-        "offensiveSlowColdMin" : {
-          "value" : [ 10.0, 23.0, 38.0, 53.0, 67.0, 83.0, 97.0, 113.0, 126.0, 141.0, 157.0, 170.0 ],
-          "skill" : false
-        },
-        "offensiveSlowColdDurationMin" : {
-          "value" : 1.0,
-          "skill" : false
-        },
-        "skillTargetRadius" : {
-          "value" : [ 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0 ],
-          "skill" : false
-        },
-        "skillMasteryLevelRequired" : {
-          "value" : 10,
-          "skill" : false
-        },
-        "skillTier" : {
-          "value" : 3,
-          "skill" : false
-        }
-      },
-      "buff" : null,
-      "skillDescription" : null,
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Hoarfrost.html",
-      "modifier" : false,
-      "skillTag" : "skillAqua29n"
-    },
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Hoarfrost.html",
-    "modifier" : false,
-    "skillTag" : "skillAqua29n"
-  }, {
-    "name" : "Hurricane's Spirit",
-    "parent" : null,
-    "attributes" : {
-      "hurricanespirit" : {
-        "value" : {
-          "name" : "Hurricane's Spirit",
-          "parent" : null,
-          "attributes" : {
-            "skillActiveDuration" : {
-              "value" : 1.0,
-              "skill" : false
-            },
-            "skillCooldownTime" : {
-              "value" : 10.0,
-              "skill" : false
-            },
-            "characterManaLimitReserve" : {
-              "value" : 100.0,
-              "skill" : false
-            },
-            "skillActiveManaCost" : {
-              "value" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-              "skill" : false
-            },
-            "skillWeaponTintRed" : {
-              "value" : 1.0,
-              "skill" : false
-            },
-            "skillConnectionSpacing" : {
-              "value" : 62,
-              "skill" : false
-            },
-            "cameraShakeAmplitude" : {
-              "value" : 0.12,
-              "skill" : false
-            },
-            "skillMaxLevel" : {
-              "value" : 10,
-              "skill" : false
-            },
-            "characterTotalSpeedModifier" : {
-              "value" : [ -2.0, -3.0, -5.0, -6.0, -8.0, -9.0, -10.0, -12.0, -13.0, -14.0, -16.0, -17.0, -19.0, -20.0 ],
-              "skill" : false
-            },
-            "debufSkill" : {
-              "value" : 1,
-              "skill" : false
-            },
-            "defensiveCold" : {
-              "value" : [ -10.0, -12.0, -15.0, -17.0, -19.0, -22.0, -24.0, -26.0, -28.0, -31.0, -33.0, -35.0, -38.0, -40.0 ],
-              "skill" : false
-            },
-            "skillUltimateLevel" : {
-              "value" : 14,
-              "skill" : false
-            },
-            "skillTargetRadius" : {
-              "value" : 5.0,
-              "skill" : false
-            },
-            "skillMasteryLevelRequired" : {
-              "value" : 16,
-              "skill" : false
-            },
-            "skillTier" : {
-              "value" : 4,
-              "skill" : false
-            },
-            "defensiveProtectionModifier" : {
-              "value" : [ -5.0, -7.0, -9.0, -11.0, -13.0, -15.0, -17.0, -18.0, -20.0, -22.0, -24.0, -26.0, -28.0, -30.0 ],
-              "skill" : false
-            }
-          },
-          "buff" : null,
-          "skillDescription" : null,
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Hurricane's Spirit.html",
-          "modifier" : false,
-          "skillTag" : "skillAqua31n"
-        },
-        "skill" : true
-      }
-    },
-    "buff" : {
-      "name" : "Hurricane's Spirit",
-      "parent" : null,
-      "attributes" : {
-        "skillActiveDuration" : {
-          "value" : 1.0,
-          "skill" : false
-        },
-        "skillCooldownTime" : {
-          "value" : 10.0,
-          "skill" : false
-        },
-        "characterManaLimitReserve" : {
-          "value" : 100.0,
-          "skill" : false
-        },
-        "skillActiveManaCost" : {
-          "value" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-          "skill" : false
-        },
-        "skillWeaponTintRed" : {
-          "value" : 1.0,
-          "skill" : false
-        },
-        "skillConnectionSpacing" : {
-          "value" : 62,
-          "skill" : false
-        },
-        "cameraShakeAmplitude" : {
-          "value" : 0.12,
-          "skill" : false
-        },
-        "skillMaxLevel" : {
-          "value" : 10,
-          "skill" : false
-        },
-        "characterTotalSpeedModifier" : {
-          "value" : [ -2.0, -3.0, -5.0, -6.0, -8.0, -9.0, -10.0, -12.0, -13.0, -14.0, -16.0, -17.0, -19.0, -20.0 ],
-          "skill" : false
-        },
-        "debufSkill" : {
-          "value" : 1,
-          "skill" : false
-        },
-        "defensiveCold" : {
-          "value" : [ -10.0, -12.0, -15.0, -17.0, -19.0, -22.0, -24.0, -26.0, -28.0, -31.0, -33.0, -35.0, -38.0, -40.0 ],
-          "skill" : false
-        },
-        "skillUltimateLevel" : {
-          "value" : 14,
-          "skill" : false
-        },
-        "skillTargetRadius" : {
-          "value" : 5.0,
-          "skill" : false
-        },
-        "skillMasteryLevelRequired" : {
-          "value" : 16,
-          "skill" : false
-        },
-        "skillTier" : {
-          "value" : 4,
-          "skill" : false
-        },
-        "defensiveProtectionModifier" : {
-          "value" : [ -5.0, -7.0, -9.0, -11.0, -13.0, -15.0, -17.0, -18.0, -20.0, -22.0, -24.0, -26.0, -28.0, -30.0 ],
-          "skill" : false
-        }
-      },
-      "buff" : null,
-      "skillDescription" : null,
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Hurricane's Spirit.html",
-      "modifier" : false,
-      "skillTag" : "skillAqua31n"
-    },
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Hurricane's Spirit.html",
-    "modifier" : false,
-    "skillTag" : "skillAqua31n"
+    "description" : "Heat the water beneath the soil, causing a geyser to erupt, scorching anything that comes in contact with it.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Hydrothermal Explosion.html"
   }, {
     "name" : "Aphotic Chasm",
     "parent" : "Hurricane's Spirit",
@@ -2074,20 +1505,13 @@
         "value" : [ -25.0, -33.0, -42.0, -50.0, -58.0, -67.0, -75.0, -83.0, -92.0, -100.0 ],
         "skill" : false
       },
-      "skillTier" : {
-        "value" : 7,
-        "skill" : false
-      },
       "skillMaxLevel" : {
         "value" : 6,
         "skill" : false
       }
     },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Aphotic Chasm.html",
-    "modifier" : true,
-    "skillTag" : "skillAqua32n"
-  } ],
+    "description" : "Draw the remaining bits of unexploited power from the deepest abyss of the seas, only accessible to the elite aquamancers, to exhaust and enfeeble monsters with enormous pressure.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery/Aphotic Chasm.html"
+  } ] ],
   "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Aqua Mastery.html"
 }

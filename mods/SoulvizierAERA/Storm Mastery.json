@@ -1,6 +1,6 @@
 {
   "name" : "Storm Mastery",
-  "skills" : [ {
+  "skillTiers" : [ [ {
     "name" : "Ice Orb",
     "parent" : null,
     "attributes" : {
@@ -59,229 +59,10 @@
       "offensiveSlowTotalSpeedDurationMin" : {
         "value" : 2.0,
         "skill" : false
-      },
-      "skillTier" : {
-        "value" : 1,
-        "skill" : false
       }
     },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Ice Orb.html",
-    "modifier" : false,
-    "skillTag" : "tagSkillName022_SVAER"
-  }, {
-    "name" : "Frozen Orb",
-    "parent" : "Ice Orb",
-    "attributes" : {
-      "skillManaCost" : {
-        "value" : [ 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0 ],
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
-      },
-      "offensiveFreezeMin" : {
-        "value" : 0.3,
-        "skill" : false
-      },
-      "offensiveColdMin" : {
-        "value" : [ 5.5, 7.0, 8.5, 10.0, 11.5, 13.0, 14.5, 16.0, 17.5, 19.0, 20.5, 22.0 ],
-        "skill" : false
-      },
-      "offensiveFreezeChance" : {
-        "value" : [ 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0 ],
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 3,
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Frozen Orb.html",
-    "modifier" : true,
-    "skillTag" : "tagSkillName023_SVAER"
-  }, {
-    "name" : "Torrent",
-    "parent" : "Frozen Orb",
-    "attributes" : {
-      "projectileLaunchNumber" : {
-        "value" : [ 2.0, 2.0, 2.0, 2.0, 2.0, 3.0, 3.0, 4.0, 4.0, 4.0, 4.0, 5.0 ],
-        "skill" : false
-      },
-      "skillManaCost" : {
-        "value" : [ 7.0, 8.0, 9.0, 10.0, 12.0, 18.0, 19.0, 25.0, 27.0, 29.0, 31.0, 40.0 ],
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
-      },
-      "projectileLaunchRotation" : {
-        "value" : [ 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0 ],
-        "skill" : false
-      },
-      "offensiveSlowColdMax" : {
-        "value" : [ 18.0, 33.0, 46.5, 63.0, 81.0, 99.0, 118.5, 141.0, 165.0, 193.5, 223.5, 256.5 ],
-        "skill" : false
-      },
-      "offensiveSlowColdMin" : {
-        "value" : [ 8.04, 14.74, 20.77, 28.14, 36.18, 44.22, 52.93, 62.98, 73.7, 86.43, 99.83, 114.57 ],
-        "skill" : false
-      },
-      "offensiveSlowColdDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 7,
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Torrent.html",
-    "modifier" : true,
-    "skillTag" : "tagSkillName024_SVAER"
-  }, {
-    "name" : "Lightning Bolt",
-    "parent" : null,
-    "attributes" : {
-      "skillCooldownTime" : {
-        "value" : 12.0,
-        "skill" : false
-      },
-      "skillManaCost" : {
-        "value" : [ 80.0, 88.0, 96.0, 104.0, 112.0, 120.0, 128.0, 136.0, 144.0, 152.0, 160.0, 168.0, 176.0, 184.0, 192.0, 200.0 ],
-        "skill" : false
-      },
-      "offensiveLightningMax" : {
-        "value" : [ 115.2, 148.5, 181.8, 215.1, 248.4, 281.7, 315.0, 348.3, 381.6, 414.9, 448.2, 481.5, 514.8, 548.1, 581.4, 614.7 ],
-        "skill" : false
-      },
-      "offensivePetrifyMin" : {
-        "value" : [ 1.0, 1.2, 1.4, 1.6, 1.8, 2.0, 2.2, 2.4, 2.6, 2.8, 3.0, 3.2, 3.4, 3.6, 3.8, 4.0 ],
-        "skill" : false
-      },
-      "skillConnectionSpacing" : {
-        "value" : 62,
-        "skill" : false
-      },
-      "cameraShakeAmplitude" : {
-        "value" : 0.8,
-        "skill" : false
-      },
-      "ragDollAmplification" : {
-        "value" : 1.0,
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 12,
-        "skill" : false
-      },
-      "cameraShakeDurationSecs" : {
-        "value" : 1.0,
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 16,
-        "skill" : false
-      },
-      "offensiveLightningMin" : {
-        "value" : [ 58.5, 77.4, 96.3, 115.2, 134.1, 153.0, 171.9, 190.8, 209.7, 228.6, 247.5, 266.4, 285.3, 304.2, 323.1, 342.0 ],
-        "skill" : false
-      },
-      "expansionTime" : {
-        "value" : 0.1,
-        "skill" : false
-      },
-      "skillTargetRadius" : {
-        "value" : [ 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0, 2.1, 2.2, 2.3, 2.4, 2.5 ],
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 4,
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Lightning Bolt.html",
-    "modifier" : false,
-    "skillTag" : "tagSkillName025"
-  }, {
-    "name" : "Chain Lightning",
-    "parent" : null,
-    "attributes" : {
-      "offensiveLightningMax" : {
-        "value" : [ 79.5, 103.5, 126.0, 151.5, 172.5, 195.0, 217.5, 244.5, 265.5, 288.0, 310.5, 339.0, 367.5, 402.0, 439.5, 486.0 ],
-        "skill" : false
-      },
-      "offensivePetrifyMin" : {
-        "value" : [ 1.0, 1.2, 1.4, 1.6, 1.8, 2.0, 2.2, 2.4, 2.6, 2.8, 3.0, 3.2, 3.4, 3.6, 3.8, 4.0 ],
-        "skill" : false
-      },
-      "sparkGap" : {
-        "value" : 8.0,
-        "skill" : false
-      },
-      "sparkMaxNumber" : {
-        "value" : [ 5.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 7.0, 7.0, 8.0 ],
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 12,
-        "skill" : false
-      },
-      "offensiveLightningModifier" : {
-        "value" : [ 170.0, 192.0, 214.0, 236.0, 258.0, 280.0, 302.0, 324.0, 346.0, 368.0, 390.0, 412.0, 434.0, 456.0, 478.0, 500.0 ],
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 16,
-        "skill" : false
-      },
-      "offensiveSlowLightningDurationMin" : {
-        "value" : 4.0,
-        "skill" : false
-      },
-      "offensiveLightningMin" : {
-        "value" : [ 46.5, 61.5, 79.5, 97.5, 111.0, 129.0, 144.0, 160.5, 175.5, 192.0, 207.0, 225.0, 246.0, 268.5, 295.5, 325.5 ],
-        "skill" : false
-      },
-      "sparkChance" : {
-        "value" : 100.0,
-        "skill" : false
-      },
-      "offensiveLightningModifierChance" : {
-        "value" : 10.0,
-        "skill" : false
-      },
-      "offensiveSlowLightningMin" : {
-        "value" : [ 23.5, 31.0, 38.5, 46.0, 53.5, 61.0, 68.5, 76.0, 83.5, 91.0, 98.5, 106.0, 113.5, 121.0, 128.5, 136.0 ],
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 7,
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Chain Lightning.html",
-    "modifier" : false,
-    "skillTag" : "tagSkillName026"
+    "description" : "Projects a deadly orb of ice at the target inflicting cold damage and temporarily slowing it.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Ice Orb.html"
   }, {
     "name" : "Storm Nimbus",
     "parent" : null,
@@ -326,8 +107,102 @@
         "value" : 0.12,
         "skill" : false
       },
-      "skillTier" : {
-        "value" : 1,
+      "skillMaxLevel" : {
+        "value" : 10,
+        "skill" : false
+      }
+    },
+    "description" : "When active, the player and his pets are imbued with the power of the storm, causing their attacks to strike with lightning damage.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Storm Nimbus.html"
+  }, {
+    "name" : "Thunderball",
+    "parent" : null,
+    "attributes" : {
+      "offensiveStunMin" : {
+        "value" : [ 1.5, 1.8, 2.1, 2.4, 2.7, 3.0, 3.3, 3.7, 4.0, 4.3, 4.6, 5.0 ],
+        "skill" : false
+      },
+      "skillCooldownTime" : {
+        "value" : 7.0,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 16,
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : [ 50.0, 53.0, 56.0, 59.0, 62.0, 65.0, 68.0, 71.0, 74.0, 77.0, 80.0, 83.0, 86.0, 89.0, 92.0, 95.0 ],
+        "skill" : false
+      },
+      "projectileExplosionRadius" : {
+        "value" : [ 2.0, 2.3, 2.6, 2.9, 3.2, 3.5, 3.8, 4.4, 4.7, 5.0, 5.3, 6.0, 6.3, 6.6, 7.1, 7.5 ],
+        "skill" : false
+      },
+      "offensiveLightningMax" : {
+        "value" : [ 24.0, 42.0, 59.0, 78.0, 95.0, 113.0, 130.0, 149.0, 166.0, 184.0, 201.0, 220.0, 237.0, 255.0, 272.0, 291.0 ],
+        "skill" : false
+      },
+      "skillConnectionSpacing" : {
+        "value" : 62,
+        "skill" : false
+      },
+      "cameraShakeAmplitude" : {
+        "value" : 0.12,
+        "skill" : false
+      },
+      "offensiveLightningMin" : {
+        "value" : [ 5.0, 12.0, 20.0, 29.0, 36.0, 43.0, 51.0, 60.0, 67.0, 74.0, 82.0, 91.0, 98.0, 105.0, 113.0, 122.0 ],
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 12,
+        "skill" : false
+      }
+    },
+    "description" : "Hurls a ball of electrical energy that damages and stuns enemies in a small blast radius.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Thunderball.html"
+  }, {
+    "name" : "Arctic Shell",
+    "parent" : null,
+    "attributes" : {
+      "skillUltimateLevel" : {
+        "value" : 14,
+        "skill" : false
+      },
+      "skillWeaponTintBlue" : {
+        "value" : 1.0,
+        "skill" : false
+      },
+      "skillWeaponTintGreen" : {
+        "value" : 0.1,
+        "skill" : false
+      },
+      "characterManaLimitReserve" : {
+        "value" : [ 20.0, 20.0, 25.0, 25.0, 30.0, 30.0, 35.0, 35.0, 40.0, 40.0, 45.0, 45.0, 50.0, 50.0 ],
+        "skill" : false
+      },
+      "skillActiveManaCost" : {
+        "value" : 1.0,
+        "skill" : false
+      },
+      "skillWeaponTintRed" : {
+        "value" : 0.9,
+        "skill" : false
+      },
+      "skillConnectionSpacing" : {
+        "value" : 62,
+        "skill" : false
+      },
+      "cameraShakeAmplitude" : {
+        "value" : 0.12,
+        "skill" : false
+      },
+      "offensiveColdMax" : {
+        "value" : [ 7.0, 11.0, 15.0, 19.0, 23.0, 27.0, 31.0, 35.0, 39.0, 43.0, 47.0, 51.0, 55.0, 59.0 ],
+        "skill" : false
+      },
+      "offensiveColdMin" : {
+        "value" : [ 6.0, 9.0, 12.0, 16.0, 19.0, 22.0, 25.0, 29.0, 32.0, 35.0, 38.0, 42.0, 46.0, 51.0 ],
         "skill" : false
       },
       "skillMaxLevel" : {
@@ -335,12 +210,9 @@
         "skill" : false
       }
     },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Storm Nimbus.html",
-    "modifier" : false,
-    "skillTag" : "tagSkillName027"
-  }, {
+    "description" : "When active, the player and his pets are imbued with a creeping frost that inflicts cold damage on attack.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Arctic Shell.html"
+  } ], [ {
     "name" : "Static Charge",
     "parent" : "Storm Nimbus",
     "attributes" : {
@@ -404,20 +276,405 @@
         "value" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0 ],
         "skill" : false
       },
-      "skillTier" : {
-        "value" : 2,
-        "skill" : false
-      },
       "offensiveManaBurnDamageRatio" : {
         "value" : [ 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 45.0 ],
         "skill" : false
       }
     },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Static Charge.html",
-    "modifier" : true,
-    "skillTag" : "tagSkillName029"
+    "description" : "Electrical energy builds inside the player while Storm Nimbus is active and passes through enemy weapons that come in contact, delivering a powerful shock.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Static Charge.html"
+  }, {
+    "name" : "Storm Surge",
+    "parent" : null,
+    "attributes" : {
+      "skillCooldownTime" : {
+        "value" : [ 8.0, 7.7, 7.4, 7.1, 6.8, 6.5, 6.2, 5.9, 5.6, 5.3, 5.0, 4.7, 4.4, 4.1, 3.8, 3.5 ],
+        "skill" : false
+      },
+      "offensiveStunMin" : {
+        "value" : [ 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0, 2.1, 2.2, 2.3, 2.4, 2.5 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 16,
+        "skill" : false
+      },
+      "characterManaLimitReserve" : {
+        "value" : [ 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0, 150.0, 160.0, 170.0, 180.0, 190.0, 200.0 ],
+        "skill" : false
+      },
+      "offensiveLightningMax" : {
+        "value" : [ 53.0, 71.0, 89.0, 107.0, 125.0, 143.0, 161.0, 179.0, 197.0, 215.0, 233.0, 251.0, 269.0, 287.0, 305.0, 323.0 ],
+        "skill" : false
+      },
+      "cameraShakeAmplitude" : {
+        "value" : 0.12,
+        "skill" : false
+      },
+      "offensiveLightningMin" : {
+        "value" : [ 7.0, 17.0, 27.0, 39.0, 50.0, 61.0, 71.0, 82.0, 92.0, 103.0, 113.0, 125.0, 137.0, 151.0, 167.0, 187.0 ],
+        "skill" : false
+      },
+      "offensiveDisruptionMin" : {
+        "value" : 1.5,
+        "skill" : false
+      },
+      "expansionTime" : {
+        "value" : 0.2,
+        "skill" : false
+      },
+      "onHitActivationChance" : {
+        "value" : 10.0,
+        "skill" : false
+      },
+      "skillTargetRadius" : {
+        "value" : 5.0,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 12,
+        "skill" : false
+      }
+    },
+    "description" : "When activated, each enemy hit has a chance of unleashing a violent squall of storm energy.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Storm Surge.html"
+  }, {
+    "name" : "Heart of Frost",
+    "parent" : "Arctic Shell",
+    "attributes" : {
+      "offensiveSlowTotalSpeedMin" : {
+        "value" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "characterManaLimitReserve" : {
+        "value" : 25.0,
+        "skill" : false
+      },
+      "skillActiveManaCost" : {
+        "value" : 1.0,
+        "skill" : false
+      },
+      "offensiveFreezeMin" : {
+        "value" : [ 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0, 2.1 ],
+        "skill" : false
+      },
+      "offensiveFreezeChance" : {
+        "value" : 15.0,
+        "skill" : false
+      },
+      "retaliationSlowRunSpeedDurationMin" : {
+        "value" : 3.0,
+        "skill" : false
+      },
+      "offensiveSlowTotalSpeedDurationMin" : {
+        "value" : 2.0,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 8,
+        "skill" : false
+      },
+      "retaliationSlowAttackSpeedMin" : {
+        "value" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0 ],
+        "skill" : false
+      },
+      "retaliationSlowRunSpeedMin" : {
+        "value" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0 ],
+        "skill" : false
+      },
+      "retaliationSlowAttackSpeedDurationMin" : {
+        "value" : 3.0,
+        "skill" : false
+      }
+    },
+    "description" : "While Arctic Shell is active, the air around the player becomes icy cold and slows any attackers within its perimiter.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Heart of Frost.html"
+  }, {
+    "name" : "Freezing Blast",
+    "parent" : null,
+    "attributes" : {
+      "drxfreezingblast" : {
+        "value" : {
+          "name" : "Freezing Blast",
+          "parent" : null,
+          "attributes" : {
+            "skillActiveDuration" : {
+              "value" : [ 3.0, 3.2, 3.4, 3.6, 3.8, 4.0, 4.2, 4.6, 4.8, 5.0, 5.2, 5.5 ],
+              "skill" : false
+            },
+            "skillCooldownTime" : {
+              "value" : 8.0,
+              "skill" : false
+            },
+            "skillManaCost" : {
+              "value" : [ 63.0, 66.0, 69.0, 72.0, 75.0, 78.0, 81.0, 84.0, 87.0, 90.0, 93.0, 96.0 ],
+              "skill" : false
+            },
+            "skillConnectionSpacing" : {
+              "value" : 62,
+              "skill" : false
+            },
+            "cameraShakeAmplitude" : {
+              "value" : 0.12,
+              "skill" : false
+            },
+            "damageAbsorptionPercent" : {
+              "value" : 55.0,
+              "skill" : false
+            },
+            "offensiveColdMin" : {
+              "value" : [ 5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0 ],
+              "skill" : false
+            },
+            "skillMaxLevel" : {
+              "value" : 8,
+              "skill" : false
+            },
+            "debufSkill" : {
+              "value" : 1,
+              "skill" : false
+            },
+            "skillUltimateLevel" : {
+              "value" : 12,
+              "skill" : false
+            },
+            "offensiveSlowColdMin" : {
+              "value" : [ 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0 ],
+              "skill" : false
+            },
+            "offensiveSlowColdDurationMin" : {
+              "value" : 6.0,
+              "skill" : false
+            },
+            "skillTargetRadius" : {
+              "value" : [ 1.8, 2.2, 2.6, 3.0, 3.4, 3.8, 4.2, 4.6, 5.0, 5.4, 5.8, 6.2 ],
+              "skill" : false
+            }
+          },
+          "description" : "Encases enemies in ice, immobilizing them but also making them more difficult to damage.",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Freezing Blast.html"
+        },
+        "skill" : true
+      }
+    },
+    "description" : "Encases enemies in ice, immobilizing them but also making them more difficult to damage.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Freezing Blast.html"
+  } ], [ {
+    "name" : "Frozen Orb",
+    "parent" : "Ice Orb",
+    "attributes" : {
+      "skillManaCost" : {
+        "value" : [ 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "offensiveFreezeMin" : {
+        "value" : 0.3,
+        "skill" : false
+      },
+      "offensiveColdMin" : {
+        "value" : [ 5.5, 7.0, 8.5, 10.0, 11.5, 13.0, 14.5, 16.0, 17.5, 19.0, 20.5, 22.0 ],
+        "skill" : false
+      },
+      "offensiveFreezeChance" : {
+        "value" : [ 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0 ],
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 8,
+        "skill" : false
+      }
+    },
+    "description" : "Increases the damage of Ice Orb. Gives each orb a chance to freeze its target.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Frozen Orb.html"
+  }, {
+    "name" : "Concussive Blast",
+    "parent" : null,
+    "attributes" : {
+      "projectileFragmentsLaunchNumberMin" : {
+        "value" : [ 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 7.0, 7.0, 8.0 ],
+        "skill" : false
+      },
+      "offensiveStunMin" : {
+        "value" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+        "skill" : false
+      },
+      "projectileFragmentsLaunchNumberMax" : {
+        "value" : [ 5.0, 5.0, 6.0, 6.0, 7.0, 7.0, 8.0, 8.0, 9.0, 9.0, 10.0, 11.0 ],
+        "skill" : false
+      },
+      "projectileExplosionRadius" : {
+        "value" : 4.5,
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : [ 14.0, 15.0, 16.0, 18.0, 19.0, 20.0, 22.0, 23.0, 24.0, 26.0, 27.0, 28.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "offensiveLightningMax" : {
+        "value" : [ 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0 ],
+        "skill" : false
+      },
+      "offensiveLightningMin" : {
+        "value" : [ 4.0, 7.0, 10.0, 13.0, 16.0, 19.0, 22.0, 25.0, 28.0, 31.0, 34.0, 37.0 ],
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 8,
+        "skill" : false
+      }
+    },
+    "description" : "Enhances the power of Thunderball causing sparks to leap from the initial explosion. Each spark that hits an enemy inflicts electrical damage and stuns.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Concussive Blast.html"
+  }, {
+    "name" : "Flash Freeze",
+    "parent" : null,
+    "attributes" : {
+      "retaliationSlowColdMin" : {
+        "value" : [ 5.0, 7.0, 8.0, 9.0, 10.0, 12.0, 13.0, 14.0, 16.0, 17.0, 18.0, 20.0, 21.0, 22.0 ],
+        "skill" : false
+      },
+      "skillActiveDuration" : {
+        "value" : 2.0,
+        "skill" : false
+      },
+      "skillCooldownTime" : {
+        "value" : 18.0,
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : [ 52.0, 60.0, 68.0, 76.0, 84.0, 92.0, 100.0, 108.0, 116.0, 124.0, 132.0, 140.0, 148.0, 156.0 ],
+        "skill" : false
+      },
+      "skillConnectionSpacing" : {
+        "value" : 62,
+        "skill" : false
+      },
+      "cameraShakeAmplitude" : {
+        "value" : 0.12,
+        "skill" : false
+      },
+      "retaliationSlowColdDurationMin" : {
+        "value" : 3.0,
+        "skill" : false
+      },
+      "damageAbsorptionPercent" : {
+        "value" : [ 40.0, 43.0, 46.0, 49.0, 52.0, 55.0, 58.0, 61.0, 64.0, 67.0, 70.0, 73.0, 76.0, 80.0 ],
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 10,
+        "skill" : false
+      },
+      "retaliationSlowAttackSpeedMin" : {
+        "value" : [ 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0, 50.0, 52.0, 54.0, 56.0, 60.0 ],
+        "skill" : false
+      },
+      "retaliationSlowRunSpeedMin" : {
+        "value" : [ 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0, 50.0, 52.0, 54.0, 56.0, 60.0 ],
+        "skill" : false
+      },
+      "retaliationSlowAttackSpeedDurationMin" : {
+        "value" : 3.0,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 14,
+        "skill" : false
+      },
+      "notDispelable" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "characterManaRegen" : {
+        "value" : [ 20.0, 26.0, 32.0, 38.0, 44.0, 50.0, 56.0, 62.0, 68.0, 74.0, 80.0, 86.0, 92.0, 98.0 ],
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 5,
+        "skill" : false
+      },
+      "retaliationSlowRunSpeedDurationMin" : {
+        "value" : 3.0,
+        "skill" : false
+      },
+      "characterManaRegenModifier" : {
+        "value" : [ 100.0, 130.0, 160.0, 190.0, 220.0, 250.0, 280.0, 310.0, 340.0, 370.0, 400.0, 430.0, 460.0, 500.0 ],
+        "skill" : false
+      }
+    },
+    "description" : "Freeze yourself to briefly stop all bodily processes and quickly recover energy, while shielding yourself from damage.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Flash Freeze.html"
+  } ], [ {
+    "name" : "Lightning Bolt",
+    "parent" : null,
+    "attributes" : {
+      "skillCooldownTime" : {
+        "value" : 12.0,
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : [ 80.0, 88.0, 96.0, 104.0, 112.0, 120.0, 128.0, 136.0, 144.0, 152.0, 160.0, 168.0, 176.0, 184.0, 192.0, 200.0 ],
+        "skill" : false
+      },
+      "offensiveLightningMax" : {
+        "value" : [ 115.2, 148.5, 181.8, 215.1, 248.4, 281.7, 315.0, 348.3, 381.6, 414.9, 448.2, 481.5, 514.8, 548.1, 581.4, 614.7 ],
+        "skill" : false
+      },
+      "offensivePetrifyMin" : {
+        "value" : [ 1.0, 1.2, 1.4, 1.6, 1.8, 2.0, 2.2, 2.4, 2.6, 2.8, 3.0, 3.2, 3.4, 3.6, 3.8, 4.0 ],
+        "skill" : false
+      },
+      "skillConnectionSpacing" : {
+        "value" : 62,
+        "skill" : false
+      },
+      "cameraShakeAmplitude" : {
+        "value" : 0.8,
+        "skill" : false
+      },
+      "ragDollAmplification" : {
+        "value" : 1.0,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "cameraShakeDurationSecs" : {
+        "value" : 1.0,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 16,
+        "skill" : false
+      },
+      "offensiveLightningMin" : {
+        "value" : [ 58.5, 77.4, 96.3, 115.2, 134.1, 153.0, 171.9, 190.8, 209.7, 228.6, 247.5, 266.4, 285.3, 304.2, 323.1, 342.0 ],
+        "skill" : false
+      },
+      "expansionTime" : {
+        "value" : 0.1,
+        "skill" : false
+      },
+      "skillTargetRadius" : {
+        "value" : [ 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0, 2.1, 2.2, 2.3, 2.4, 2.5 ],
+        "skill" : false
+      }
+    },
+    "description" : "Calls down a powerful bolt of lightning from the heavens to decimate your target.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Lightning Bolt.html"
   }, {
     "name" : "Electrical Conduit",
     "parent" : "Static Charge",
@@ -442,224 +699,13 @@
         "value" : [ 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 36.0, 39.0, 42.0, 45.0, 50.0 ],
         "skill" : false
       },
-      "skillTier" : {
-        "value" : 4,
-        "skill" : false
-      },
       "skillMaxLevel" : {
         "value" : 8,
         "skill" : false
       }
     },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Electrical Conduit.html",
-    "modifier" : true,
-    "skillTag" : "tagElectricalConduitNAME"
-  }, {
-    "name" : "Energy Shield",
-    "parent" : null,
-    "attributes" : {
-      "targetCaster" : {
-        "value" : 1,
-        "skill" : false
-      },
-      "DRXEnergyShield" : {
-        "value" : {
-          "name" : "Energy Shield",
-          "parent" : null,
-          "attributes" : {
-            "skillCooldownTime" : {
-              "value" : [ 90.0, 88.0, 86.0, 84.0, 82.0, 80.0, 78.0, 76.0, 74.0, 72.0, 70.0, 68.0, 66.0, 64.0, 62.0, 60.0 ],
-              "skill" : false
-            },
-            "skillManaCost" : {
-              "value" : [ 90.0, 94.0, 98.0, 102.0, 106.0, 110.0, 114.0, 118.0, 122.0, 126.0, 130.0, 134.0, 138.0, 142.0, 146.0, 150.0 ],
-              "skill" : false
-            },
-            "skillConnectionSpacing" : {
-              "value" : 62,
-              "skill" : false
-            },
-            "cameraShakeAmplitude" : {
-              "value" : 0.12,
-              "skill" : false
-            },
-            "lightningDamageQualifier" : {
-              "value" : 1,
-              "skill" : false
-            },
-            "damageAbsorptionPercent" : {
-              "value" : [ 35.0, 37.0, 39.0, 41.0, 43.0, 45.0, 47.0, 49.0, 51.0, 53.0, 55.0, 57.0, 59.0, 61.0, 63.0, 65.0 ],
-              "skill" : false
-            },
-            "skillMaxLevel" : {
-              "value" : 12,
-              "skill" : false
-            },
-            "skillUltimateLevel" : {
-              "value" : 16,
-              "skill" : false
-            },
-            "defensiveReflectChance" : {
-              "value" : [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0 ],
-              "skill" : false
-            },
-            "coldDamageQualifier" : {
-              "value" : 1,
-              "skill" : false
-            },
-            "defensiveReflect" : {
-              "value" : [ 38.0, 51.0, 64.0, 77.0, 90.0, 103.0, 116.0, 129.0, 142.0, 155.0, 168.0, 181.0, 194.0, 207.0, 220.0, 233.0 ],
-              "skill" : false
-            },
-            "damageAbsorption" : {
-              "value" : [ 520.0, 740.0, 960.0, 1180.0, 1400.0, 1620.0, 1840.0, 2060.0, 2280.0, 2500.0, 2720.0, 2940.0, 3160.0, 3380.0, 3600.0, 3820.0 ],
-              "skill" : false
-            },
-            "skillTargetRadius" : {
-              "value" : 8.0,
-              "skill" : false
-            },
-            "skillMasteryLevelRequired" : {
-              "value" : 15,
-              "skill" : false
-            },
-            "skillTier" : {
-              "value" : 5,
-              "skill" : false
-            }
-          },
-          "buff" : null,
-          "skillDescription" : null,
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Energy Shield.html",
-          "modifier" : false,
-          "skillTag" : "tagSkillName180"
-        },
-        "skill" : true
-      }
-    },
-    "buff" : {
-      "name" : "Energy Shield",
-      "parent" : null,
-      "attributes" : {
-        "skillCooldownTime" : {
-          "value" : [ 90.0, 88.0, 86.0, 84.0, 82.0, 80.0, 78.0, 76.0, 74.0, 72.0, 70.0, 68.0, 66.0, 64.0, 62.0, 60.0 ],
-          "skill" : false
-        },
-        "skillManaCost" : {
-          "value" : [ 90.0, 94.0, 98.0, 102.0, 106.0, 110.0, 114.0, 118.0, 122.0, 126.0, 130.0, 134.0, 138.0, 142.0, 146.0, 150.0 ],
-          "skill" : false
-        },
-        "skillConnectionSpacing" : {
-          "value" : 62,
-          "skill" : false
-        },
-        "cameraShakeAmplitude" : {
-          "value" : 0.12,
-          "skill" : false
-        },
-        "lightningDamageQualifier" : {
-          "value" : 1,
-          "skill" : false
-        },
-        "damageAbsorptionPercent" : {
-          "value" : [ 35.0, 37.0, 39.0, 41.0, 43.0, 45.0, 47.0, 49.0, 51.0, 53.0, 55.0, 57.0, 59.0, 61.0, 63.0, 65.0 ],
-          "skill" : false
-        },
-        "skillMaxLevel" : {
-          "value" : 12,
-          "skill" : false
-        },
-        "skillUltimateLevel" : {
-          "value" : 16,
-          "skill" : false
-        },
-        "defensiveReflectChance" : {
-          "value" : [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0 ],
-          "skill" : false
-        },
-        "coldDamageQualifier" : {
-          "value" : 1,
-          "skill" : false
-        },
-        "defensiveReflect" : {
-          "value" : [ 38.0, 51.0, 64.0, 77.0, 90.0, 103.0, 116.0, 129.0, 142.0, 155.0, 168.0, 181.0, 194.0, 207.0, 220.0, 233.0 ],
-          "skill" : false
-        },
-        "damageAbsorption" : {
-          "value" : [ 520.0, 740.0, 960.0, 1180.0, 1400.0, 1620.0, 1840.0, 2060.0, 2280.0, 2500.0, 2720.0, 2940.0, 3160.0, 3380.0, 3600.0, 3820.0 ],
-          "skill" : false
-        },
-        "skillTargetRadius" : {
-          "value" : 8.0,
-          "skill" : false
-        },
-        "skillMasteryLevelRequired" : {
-          "value" : 15,
-          "skill" : false
-        },
-        "skillTier" : {
-          "value" : 5,
-          "skill" : false
-        }
-      },
-      "buff" : null,
-      "skillDescription" : null,
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Energy Shield.html",
-      "modifier" : false,
-      "skillTag" : "tagSkillName180"
-    },
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Energy Shield.html",
-    "modifier" : false,
-    "skillTag" : "tagSkillName180"
-  }, {
-    "name" : "Energy Resonance",
-    "parent" : "Energy Shield",
-    "attributes" : {
-      "defensiveSlowManaLeach" : {
-        "value" : [ 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0 ],
-        "skill" : false
-      },
-      "skillManaCost" : {
-        "value" : 30.0,
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
-      },
-      "defensiveManaBurnRatio" : {
-        "value" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
-        "skill" : false
-      },
-      "skillCooldownReduction" : {
-        "value" : [ 4.25, 5.0, 5.75, 6.5, 7.25, 8.0, 8.75, 9.5, 10.25, 11.0, 11.75, 12.5 ],
-        "skill" : false
-      },
-      "skillMasteryLevelRequired" : {
-        "value" : 25,
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 6,
-        "skill" : false
-      },
-      "characterManaRegenModifier" : {
-        "value" : [ 48.0, 60.0, 72.0, 84.0, 96.0, 108.0, 120.0, 132.0, 144.0, 156.0, 168.0, 180.0 ],
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Energy Resonance.html",
-    "modifier" : true,
-    "skillTag" : "tagEnergyResonanceNAME"
+    "description" : "While Storm Nimbus is active, the player can channel surrounding electrical energy, greatly increasing the damage of their attacks.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Electrical Conduit.html"
   }, {
     "name" : "Squall",
     "parent" : null,
@@ -731,79 +777,119 @@
       "offensiveSlowAttackSpeedDurationMin" : {
         "value" : 1.0,
         "skill" : false
-      },
-      "skillTier" : {
-        "value" : 4,
-        "skill" : false
       }
     },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Squall.html",
-    "modifier" : false,
-    "skillTag" : "tagSkillName151"
+    "description" : "Creates a wind storm in the target area that decreases the projectile attack accuracy of enemies caught within it.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Squall.html"
   }, {
-    "name" : "Thunder Clouds",
-    "parent" : null,
+    "name" : "Ice Song",
+    "parent" : "Heart of Frost",
     "attributes" : {
-      "offensiveTotalDamageReductionPercentMin" : {
-        "value" : [ 12.5, 15.0, 17.5, 20.0, 22.5, 25.0, 27.5, 30.0, 32.5, 35.0, 37.5, 40.0 ],
+      "skillUltimateLevel" : {
+        "value" : 12,
         "skill" : false
       },
-      "projectileExplosionRadius" : {
+      "characterManaLimitReserve" : {
+        "value" : 25.0,
+        "skill" : false
+      },
+      "skillActiveManaCost" : {
         "value" : 1.0,
         "skill" : false
       },
-      "skillManaCost" : {
-        "value" : [ 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0 ],
-        "skill" : false
-      },
-      "isPetDisplayable" : {
-        "value" : 1,
-        "skill" : false
-      },
-      "offensiveLightningMax" : {
-        "value" : [ 31.0, 52.0, 73.0, 94.0, 115.0, 136.0, 157.0, 178.0, 199.0, 220.0, 241.0, 263.0 ],
-        "skill" : false
-      },
-      "offensiveTotalResistanceReductionPercentMin" : {
-        "value" : [ 12.5, 15.0, 17.5, 20.0, 22.5, 25.0, 27.5, 30.0, 32.5, 35.0, 37.5, 40.0 ],
-        "skill" : false
-      },
-      "offensiveTotalDamageReductionPercentDurationMin" : {
-        "value" : 3.0,
+      "offensiveSlowColdModifier" : {
+        "value" : [ 14.0, 20.0, 26.0, 32.0, 38.0, 44.0, 50.0, 56.0, 62.0, 68.0, 74.0, 80.0 ],
         "skill" : false
       },
       "skillMaxLevel" : {
         "value" : 8,
         "skill" : false
       },
-      "offensiveTotalResistanceReductionPercentDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
-      },
-      "offensiveLightningChance" : {
-        "value" : [ 33.0, 33.0, 33.0, 33.0, 33.0, 33.0, 33.0, 33.0, 33.0, 33.0, 33.0, 33.0 ],
-        "skill" : false
-      },
-      "offensiveLightningMin" : {
-        "value" : [ 9.0, 14.0, 19.0, 24.0, 29.0, 34.0, 39.0, 44.0, 49.0, 54.0, 59.0, 64.0 ],
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 6,
+      "offensiveColdModifier" : {
+        "value" : [ 14.0, 20.0, 26.0, 32.0, 38.0, 44.0, 50.0, 56.0, 62.0, 68.0, 74.0, 80.0 ],
         "skill" : false
       }
     },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Thunder Clouds.html",
-    "modifier" : false,
-    "skillTag" : "tagThunderCloudsNAME"
+    "description" : "The player becomes able to concentrate the power of their cold attacks, greatly increasing damage.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Ice Song.html"
+  } ], [ {
+    "name" : "Energy Shield",
+    "parent" : null,
+    "attributes" : {
+      "targetCaster" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "DRXEnergyShield" : {
+        "value" : {
+          "name" : "Energy Shield",
+          "parent" : null,
+          "attributes" : {
+            "skillCooldownTime" : {
+              "value" : [ 90.0, 88.0, 86.0, 84.0, 82.0, 80.0, 78.0, 76.0, 74.0, 72.0, 70.0, 68.0, 66.0, 64.0, 62.0, 60.0 ],
+              "skill" : false
+            },
+            "skillManaCost" : {
+              "value" : [ 90.0, 94.0, 98.0, 102.0, 106.0, 110.0, 114.0, 118.0, 122.0, 126.0, 130.0, 134.0, 138.0, 142.0, 146.0, 150.0 ],
+              "skill" : false
+            },
+            "skillConnectionSpacing" : {
+              "value" : 62,
+              "skill" : false
+            },
+            "cameraShakeAmplitude" : {
+              "value" : 0.12,
+              "skill" : false
+            },
+            "lightningDamageQualifier" : {
+              "value" : 1,
+              "skill" : false
+            },
+            "damageAbsorptionPercent" : {
+              "value" : [ 35.0, 37.0, 39.0, 41.0, 43.0, 45.0, 47.0, 49.0, 51.0, 53.0, 55.0, 57.0, 59.0, 61.0, 63.0, 65.0 ],
+              "skill" : false
+            },
+            "skillMaxLevel" : {
+              "value" : 12,
+              "skill" : false
+            },
+            "skillUltimateLevel" : {
+              "value" : 16,
+              "skill" : false
+            },
+            "defensiveReflectChance" : {
+              "value" : [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0 ],
+              "skill" : false
+            },
+            "coldDamageQualifier" : {
+              "value" : 1,
+              "skill" : false
+            },
+            "defensiveReflect" : {
+              "value" : [ 38.0, 51.0, 64.0, 77.0, 90.0, 103.0, 116.0, 129.0, 142.0, 155.0, 168.0, 181.0, 194.0, 207.0, 220.0, 233.0 ],
+              "skill" : false
+            },
+            "damageAbsorption" : {
+              "value" : [ 520.0, 740.0, 960.0, 1180.0, 1400.0, 1620.0, 1840.0, 2060.0, 2280.0, 2500.0, 2720.0, 2940.0, 3160.0, 3380.0, 3600.0, 3820.0 ],
+              "skill" : false
+            },
+            "skillTargetRadius" : {
+              "value" : 8.0,
+              "skill" : false
+            },
+            "skillMasteryLevelRequired" : {
+              "value" : 15,
+              "skill" : false
+            }
+          },
+          "description" : "Creates a shield of energy that will nullify incoming damage from cold and lightning attacks.",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Energy Shield.html"
+        },
+        "skill" : true
+      }
+    },
+    "description" : "Creates a shield of energy that will nullify incoming damage from cold and lightning attacks.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Energy Shield.html"
   }, {
     "name" : "Lightning Dash",
     "parent" : null,
@@ -879,17 +965,10 @@
       "offensiveColdGlobal" : {
         "value" : 1,
         "skill" : false
-      },
-      "skillTier" : {
-        "value" : 5,
-        "skill" : false
       }
     },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Lightning Dash.html",
-    "modifier" : false,
-    "skillTag" : "x3tagSkillStormFlash"
+    "description" : "Move between enemies at lightning speed, becoming hard to hit in the process. {^n}{^y}Assign this skill to your left mouse button.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Lightning Dash.html"
   }, {
     "name" : "Storm Wisp",
     "parent" : null,
@@ -922,882 +1001,13 @@
         "value" : 20,
         "skill" : false
       },
-      "skillTier" : {
-        "value" : 5,
-        "skill" : false
-      },
       "skillMaxLevel" : {
         "value" : 16,
         "skill" : false
       }
     },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Storm Wisp.html",
-    "modifier" : false,
-    "skillTag" : "tagStormWispNAME"
-  }, {
-    "name" : "Eye of the Storm",
-    "parent" : null,
-    "attributes" : {
-      "EyeoftheStorm" : {
-        "value" : {
-          "name" : "Eye of the Storm",
-          "parent" : null,
-          "attributes" : {
-            "EyeoftheStorm" : {
-              "value" : {
-                "name" : "Eye of the Storm",
-                "parent" : null,
-                "attributes" : {
-                  "defensiveLightning" : {
-                    "value" : [ 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0 ],
-                    "skill" : false
-                  },
-                  "skillActiveDuration" : {
-                    "value" : [ 12.5, 13.0, 13.5, 14.0, 14.5, 15.0, 15.5, 16.0, 16.5, 17.0, 17.5, 18.0 ],
-                    "skill" : false
-                  },
-                  "skillCooldownTime" : {
-                    "value" : 10.0,
-                    "skill" : false
-                  },
-                  "offensiveElementalModifier" : {
-                    "value" : [ 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0, 150.0, 160.0, 170.0, 185.0, 200.0 ],
-                    "skill" : false
-                  },
-                  "skillWeaponTintRed" : {
-                    "value" : 1.0,
-                    "skill" : false
-                  },
-                  "cameraShakeAmplitude" : {
-                    "value" : 0.12,
-                    "skill" : false
-                  },
-                  "lightningDamageQualifier" : {
-                    "value" : 1,
-                    "skill" : false
-                  },
-                  "skillMaxLevel" : {
-                    "value" : 8,
-                    "skill" : false
-                  },
-                  "defensiveCold" : {
-                    "value" : [ 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0 ],
-                    "skill" : false
-                  },
-                  "skillUltimateLevel" : {
-                    "value" : 12,
-                    "skill" : false
-                  },
-                  "skillWeaponTintGreen" : {
-                    "value" : 0.1,
-                    "skill" : false
-                  },
-                  "coldDamageQualifier" : {
-                    "value" : 1,
-                    "skill" : false
-                  },
-                  "skillTargetRadius" : {
-                    "value" : 15.0,
-                    "skill" : false
-                  },
-                  "skillTier" : {
-                    "value" : 7,
-                    "skill" : false
-                  }
-                },
-                "buff" : null,
-                "skillDescription" : null,
-                "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Eye of the Storm.html",
-                "modifier" : false,
-                "skillTag" : "tagSkillName205"
-              },
-              "skill" : true
-            }
-          },
-          "buff" : {
-            "name" : "Eye of the Storm",
-            "parent" : null,
-            "attributes" : {
-              "defensiveLightning" : {
-                "value" : [ 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0 ],
-                "skill" : false
-              },
-              "skillActiveDuration" : {
-                "value" : [ 12.5, 13.0, 13.5, 14.0, 14.5, 15.0, 15.5, 16.0, 16.5, 17.0, 17.5, 18.0 ],
-                "skill" : false
-              },
-              "skillCooldownTime" : {
-                "value" : 10.0,
-                "skill" : false
-              },
-              "offensiveElementalModifier" : {
-                "value" : [ 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0, 150.0, 160.0, 170.0, 185.0, 200.0 ],
-                "skill" : false
-              },
-              "skillWeaponTintRed" : {
-                "value" : 1.0,
-                "skill" : false
-              },
-              "cameraShakeAmplitude" : {
-                "value" : 0.12,
-                "skill" : false
-              },
-              "lightningDamageQualifier" : {
-                "value" : 1,
-                "skill" : false
-              },
-              "skillMaxLevel" : {
-                "value" : 8,
-                "skill" : false
-              },
-              "defensiveCold" : {
-                "value" : [ 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0 ],
-                "skill" : false
-              },
-              "skillUltimateLevel" : {
-                "value" : 12,
-                "skill" : false
-              },
-              "skillWeaponTintGreen" : {
-                "value" : 0.1,
-                "skill" : false
-              },
-              "coldDamageQualifier" : {
-                "value" : 1,
-                "skill" : false
-              },
-              "skillTargetRadius" : {
-                "value" : 15.0,
-                "skill" : false
-              },
-              "skillTier" : {
-                "value" : 7,
-                "skill" : false
-              }
-            },
-            "buff" : null,
-            "skillDescription" : null,
-            "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Eye of the Storm.html",
-            "modifier" : false,
-            "skillTag" : "tagSkillName205"
-          },
-          "skillDescription" : null,
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Eye of the Storm.html",
-          "modifier" : false,
-          "skillTag" : "tagSkillName205"
-        },
-        "skill" : true
-      }
-    },
-    "buff" : {
-      "name" : "Eye of the Storm",
-      "parent" : null,
-      "attributes" : {
-        "EyeoftheStorm" : {
-          "value" : {
-            "name" : "Eye of the Storm",
-            "parent" : null,
-            "attributes" : {
-              "defensiveLightning" : {
-                "value" : [ 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0 ],
-                "skill" : false
-              },
-              "skillActiveDuration" : {
-                "value" : [ 12.5, 13.0, 13.5, 14.0, 14.5, 15.0, 15.5, 16.0, 16.5, 17.0, 17.5, 18.0 ],
-                "skill" : false
-              },
-              "skillCooldownTime" : {
-                "value" : 10.0,
-                "skill" : false
-              },
-              "offensiveElementalModifier" : {
-                "value" : [ 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0, 150.0, 160.0, 170.0, 185.0, 200.0 ],
-                "skill" : false
-              },
-              "skillWeaponTintRed" : {
-                "value" : 1.0,
-                "skill" : false
-              },
-              "cameraShakeAmplitude" : {
-                "value" : 0.12,
-                "skill" : false
-              },
-              "lightningDamageQualifier" : {
-                "value" : 1,
-                "skill" : false
-              },
-              "skillMaxLevel" : {
-                "value" : 8,
-                "skill" : false
-              },
-              "defensiveCold" : {
-                "value" : [ 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0 ],
-                "skill" : false
-              },
-              "skillUltimateLevel" : {
-                "value" : 12,
-                "skill" : false
-              },
-              "skillWeaponTintGreen" : {
-                "value" : 0.1,
-                "skill" : false
-              },
-              "coldDamageQualifier" : {
-                "value" : 1,
-                "skill" : false
-              },
-              "skillTargetRadius" : {
-                "value" : 15.0,
-                "skill" : false
-              },
-              "skillTier" : {
-                "value" : 7,
-                "skill" : false
-              }
-            },
-            "buff" : null,
-            "skillDescription" : null,
-            "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Eye of the Storm.html",
-            "modifier" : false,
-            "skillTag" : "tagSkillName205"
-          },
-          "skill" : true
-        }
-      },
-      "buff" : {
-        "name" : "Eye of the Storm",
-        "parent" : null,
-        "attributes" : {
-          "defensiveLightning" : {
-            "value" : [ 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0 ],
-            "skill" : false
-          },
-          "skillActiveDuration" : {
-            "value" : [ 12.5, 13.0, 13.5, 14.0, 14.5, 15.0, 15.5, 16.0, 16.5, 17.0, 17.5, 18.0 ],
-            "skill" : false
-          },
-          "skillCooldownTime" : {
-            "value" : 10.0,
-            "skill" : false
-          },
-          "offensiveElementalModifier" : {
-            "value" : [ 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0, 150.0, 160.0, 170.0, 185.0, 200.0 ],
-            "skill" : false
-          },
-          "skillWeaponTintRed" : {
-            "value" : 1.0,
-            "skill" : false
-          },
-          "cameraShakeAmplitude" : {
-            "value" : 0.12,
-            "skill" : false
-          },
-          "lightningDamageQualifier" : {
-            "value" : 1,
-            "skill" : false
-          },
-          "skillMaxLevel" : {
-            "value" : 8,
-            "skill" : false
-          },
-          "defensiveCold" : {
-            "value" : [ 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0 ],
-            "skill" : false
-          },
-          "skillUltimateLevel" : {
-            "value" : 12,
-            "skill" : false
-          },
-          "skillWeaponTintGreen" : {
-            "value" : 0.1,
-            "skill" : false
-          },
-          "coldDamageQualifier" : {
-            "value" : 1,
-            "skill" : false
-          },
-          "skillTargetRadius" : {
-            "value" : 15.0,
-            "skill" : false
-          },
-          "skillTier" : {
-            "value" : 7,
-            "skill" : false
-          }
-        },
-        "buff" : null,
-        "skillDescription" : null,
-        "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Eye of the Storm.html",
-        "modifier" : false,
-        "skillTag" : "tagSkillName205"
-      },
-      "skillDescription" : null,
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Eye of the Storm.html",
-      "modifier" : false,
-      "skillTag" : "tagSkillName205"
-    },
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Eye of the Storm.html",
-    "modifier" : false,
-    "skillTag" : "tagSkillName205"
-  }, {
-    "name" : "Storm Surge",
-    "parent" : null,
-    "attributes" : {
-      "skillCooldownTime" : {
-        "value" : [ 8.0, 7.7, 7.4, 7.1, 6.8, 6.5, 6.2, 5.9, 5.6, 5.3, 5.0, 4.7, 4.4, 4.1, 3.8, 3.5 ],
-        "skill" : false
-      },
-      "characterManaLimitReserve" : {
-        "value" : [ 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0, 150.0, 160.0, 170.0, 180.0, 190.0, 200.0 ],
-        "skill" : false
-      },
-      "offensiveLightningMax" : {
-        "value" : [ 53.0, 71.0, 89.0, 107.0, 125.0, 143.0, 161.0, 179.0, 197.0, 215.0, 233.0, 251.0, 269.0, 287.0, 305.0, 323.0 ],
-        "skill" : false
-      },
-      "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
-      },
-      "offensiveDisruptionMin" : {
-        "value" : 1.5,
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 12,
-        "skill" : false
-      },
-      "offensiveStunMin" : {
-        "value" : [ 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0, 2.1, 2.2, 2.3, 2.4, 2.5 ],
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 16,
-        "skill" : false
-      },
-      "offensiveLightningMin" : {
-        "value" : [ 7.0, 17.0, 27.0, 39.0, 50.0, 61.0, 71.0, 82.0, 92.0, 103.0, 113.0, 125.0, 137.0, 151.0, 167.0, 187.0 ],
-        "skill" : false
-      },
-      "expansionTime" : {
-        "value" : 0.2,
-        "skill" : false
-      },
-      "onHitActivationChance" : {
-        "value" : 10.0,
-        "skill" : false
-      },
-      "skillTargetRadius" : {
-        "value" : 5.0,
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 2,
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Storm Surge.html",
-    "modifier" : false,
-    "skillTag" : "tagSkillName019"
-  }, {
-    "name" : "Thunderball",
-    "parent" : null,
-    "attributes" : {
-      "offensiveStunMin" : {
-        "value" : [ 1.5, 1.8, 2.1, 2.4, 2.7, 3.0, 3.3, 3.7, 4.0, 4.3, 4.6, 5.0 ],
-        "skill" : false
-      },
-      "skillCooldownTime" : {
-        "value" : 7.0,
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 16,
-        "skill" : false
-      },
-      "skillManaCost" : {
-        "value" : [ 50.0, 53.0, 56.0, 59.0, 62.0, 65.0, 68.0, 71.0, 74.0, 77.0, 80.0, 83.0, 86.0, 89.0, 92.0, 95.0 ],
-        "skill" : false
-      },
-      "projectileExplosionRadius" : {
-        "value" : [ 2.0, 2.3, 2.6, 2.9, 3.2, 3.5, 3.8, 4.4, 4.7, 5.0, 5.3, 6.0, 6.3, 6.6, 7.1, 7.5 ],
-        "skill" : false
-      },
-      "offensiveLightningMax" : {
-        "value" : [ 24.0, 42.0, 59.0, 78.0, 95.0, 113.0, 130.0, 149.0, 166.0, 184.0, 201.0, 220.0, 237.0, 255.0, 272.0, 291.0 ],
-        "skill" : false
-      },
-      "skillConnectionSpacing" : {
-        "value" : 62,
-        "skill" : false
-      },
-      "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
-      },
-      "offensiveLightningMin" : {
-        "value" : [ 5.0, 12.0, 20.0, 29.0, 36.0, 43.0, 51.0, 60.0, 67.0, 74.0, 82.0, 91.0, 98.0, 105.0, 113.0, 122.0 ],
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 1,
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 12,
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Thunderball.html",
-    "modifier" : false,
-    "skillTag" : "tagSkillName020"
-  }, {
-    "name" : "Concussive Blast",
-    "parent" : null,
-    "attributes" : {
-      "projectileFragmentsLaunchNumberMin" : {
-        "value" : [ 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 7.0, 7.0, 8.0 ],
-        "skill" : false
-      },
-      "offensiveStunMin" : {
-        "value" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-        "skill" : false
-      },
-      "projectileFragmentsLaunchNumberMax" : {
-        "value" : [ 5.0, 5.0, 6.0, 6.0, 7.0, 7.0, 8.0, 8.0, 9.0, 9.0, 10.0, 11.0 ],
-        "skill" : false
-      },
-      "projectileExplosionRadius" : {
-        "value" : 4.5,
-        "skill" : false
-      },
-      "skillManaCost" : {
-        "value" : [ 14.0, 15.0, 16.0, 18.0, 19.0, 20.0, 22.0, 23.0, 24.0, 26.0, 27.0, 28.0 ],
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
-      },
-      "offensiveLightningMax" : {
-        "value" : [ 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0 ],
-        "skill" : false
-      },
-      "offensiveLightningMin" : {
-        "value" : [ 4.0, 7.0, 10.0, 13.0, 16.0, 19.0, 22.0, 25.0, 28.0, 31.0, 34.0, 37.0 ],
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 3,
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Concussive Blast.html",
-    "modifier" : false,
-    "skillTag" : "tagSkillName021"
-  }, {
-    "name" : "Arctic Shell",
-    "parent" : null,
-    "attributes" : {
-      "skillUltimateLevel" : {
-        "value" : 14,
-        "skill" : false
-      },
-      "skillWeaponTintBlue" : {
-        "value" : 1.0,
-        "skill" : false
-      },
-      "skillWeaponTintGreen" : {
-        "value" : 0.1,
-        "skill" : false
-      },
-      "characterManaLimitReserve" : {
-        "value" : [ 20.0, 20.0, 25.0, 25.0, 30.0, 30.0, 35.0, 35.0, 40.0, 40.0, 45.0, 45.0, 50.0, 50.0 ],
-        "skill" : false
-      },
-      "skillActiveManaCost" : {
-        "value" : 1.0,
-        "skill" : false
-      },
-      "skillWeaponTintRed" : {
-        "value" : 0.9,
-        "skill" : false
-      },
-      "skillConnectionSpacing" : {
-        "value" : 62,
-        "skill" : false
-      },
-      "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
-      },
-      "offensiveColdMax" : {
-        "value" : [ 7.0, 11.0, 15.0, 19.0, 23.0, 27.0, 31.0, 35.0, 39.0, 43.0, 47.0, 51.0, 55.0, 59.0 ],
-        "skill" : false
-      },
-      "offensiveColdMin" : {
-        "value" : [ 6.0, 9.0, 12.0, 16.0, 19.0, 22.0, 25.0, 29.0, 32.0, 35.0, 38.0, 42.0, 46.0, 51.0 ],
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 1,
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 10,
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Arctic Shell.html",
-    "modifier" : false,
-    "skillTag" : "tagIceSongNAME"
-  }, {
-    "name" : "Heart of Frost",
-    "parent" : "Arctic Shell",
-    "attributes" : {
-      "offensiveSlowTotalSpeedMin" : {
-        "value" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0 ],
-        "skill" : false
-      },
-      "characterManaLimitReserve" : {
-        "value" : 25.0,
-        "skill" : false
-      },
-      "skillActiveManaCost" : {
-        "value" : 1.0,
-        "skill" : false
-      },
-      "offensiveFreezeMin" : {
-        "value" : [ 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0, 2.1 ],
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
-      },
-      "retaliationSlowAttackSpeedMin" : {
-        "value" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0 ],
-        "skill" : false
-      },
-      "retaliationSlowRunSpeedMin" : {
-        "value" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0 ],
-        "skill" : false
-      },
-      "retaliationSlowAttackSpeedDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
-      },
-      "offensiveFreezeChance" : {
-        "value" : 15.0,
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 2,
-        "skill" : false
-      },
-      "retaliationSlowRunSpeedDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
-      },
-      "offensiveSlowTotalSpeedDurationMin" : {
-        "value" : 2.0,
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Heart of Frost.html",
-    "modifier" : true,
-    "skillTag" : "tagHeartofFrostNAME"
-  }, {
-    "name" : "Ice Song",
-    "parent" : "Heart of Frost",
-    "attributes" : {
-      "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
-      },
-      "characterManaLimitReserve" : {
-        "value" : 25.0,
-        "skill" : false
-      },
-      "skillActiveManaCost" : {
-        "value" : 1.0,
-        "skill" : false
-      },
-      "offensiveSlowColdModifier" : {
-        "value" : [ 14.0, 20.0, 26.0, 32.0, 38.0, 44.0, 50.0, 56.0, 62.0, 68.0, 74.0, 80.0 ],
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 4,
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
-      },
-      "offensiveColdModifier" : {
-        "value" : [ 14.0, 20.0, 26.0, 32.0, 38.0, 44.0, 50.0, 56.0, 62.0, 68.0, 74.0, 80.0 ],
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Ice Song.html",
-    "modifier" : true,
-    "skillTag" : "tagArcticEmanationNAME"
-  }, {
-    "name" : "Freezing Blast",
-    "parent" : null,
-    "attributes" : {
-      "drxfreezingblast" : {
-        "value" : {
-          "name" : "Freezing Blast",
-          "parent" : null,
-          "attributes" : {
-            "skillActiveDuration" : {
-              "value" : [ 3.0, 3.2, 3.4, 3.6, 3.8, 4.0, 4.2, 4.6, 4.8, 5.0, 5.2, 5.5 ],
-              "skill" : false
-            },
-            "skillCooldownTime" : {
-              "value" : 8.0,
-              "skill" : false
-            },
-            "skillManaCost" : {
-              "value" : [ 63.0, 66.0, 69.0, 72.0, 75.0, 78.0, 81.0, 84.0, 87.0, 90.0, 93.0, 96.0 ],
-              "skill" : false
-            },
-            "skillConnectionSpacing" : {
-              "value" : 62,
-              "skill" : false
-            },
-            "cameraShakeAmplitude" : {
-              "value" : 0.12,
-              "skill" : false
-            },
-            "damageAbsorptionPercent" : {
-              "value" : 55.0,
-              "skill" : false
-            },
-            "offensiveColdMin" : {
-              "value" : [ 5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0 ],
-              "skill" : false
-            },
-            "skillMaxLevel" : {
-              "value" : 8,
-              "skill" : false
-            },
-            "debufSkill" : {
-              "value" : 1,
-              "skill" : false
-            },
-            "skillUltimateLevel" : {
-              "value" : 12,
-              "skill" : false
-            },
-            "offensiveSlowColdMin" : {
-              "value" : [ 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0 ],
-              "skill" : false
-            },
-            "offensiveSlowColdDurationMin" : {
-              "value" : 6.0,
-              "skill" : false
-            },
-            "skillTargetRadius" : {
-              "value" : [ 1.8, 2.2, 2.6, 3.0, 3.4, 3.8, 4.2, 4.6, 5.0, 5.4, 5.8, 6.2 ],
-              "skill" : false
-            },
-            "skillTier" : {
-              "value" : 2,
-              "skill" : false
-            }
-          },
-          "buff" : null,
-          "skillDescription" : null,
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Freezing Blast.html",
-          "modifier" : false,
-          "skillTag" : "tagSkillName204"
-        },
-        "skill" : true
-      }
-    },
-    "buff" : {
-      "name" : "Freezing Blast",
-      "parent" : null,
-      "attributes" : {
-        "skillActiveDuration" : {
-          "value" : [ 3.0, 3.2, 3.4, 3.6, 3.8, 4.0, 4.2, 4.6, 4.8, 5.0, 5.2, 5.5 ],
-          "skill" : false
-        },
-        "skillCooldownTime" : {
-          "value" : 8.0,
-          "skill" : false
-        },
-        "skillManaCost" : {
-          "value" : [ 63.0, 66.0, 69.0, 72.0, 75.0, 78.0, 81.0, 84.0, 87.0, 90.0, 93.0, 96.0 ],
-          "skill" : false
-        },
-        "skillConnectionSpacing" : {
-          "value" : 62,
-          "skill" : false
-        },
-        "cameraShakeAmplitude" : {
-          "value" : 0.12,
-          "skill" : false
-        },
-        "damageAbsorptionPercent" : {
-          "value" : 55.0,
-          "skill" : false
-        },
-        "offensiveColdMin" : {
-          "value" : [ 5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0 ],
-          "skill" : false
-        },
-        "skillMaxLevel" : {
-          "value" : 8,
-          "skill" : false
-        },
-        "debufSkill" : {
-          "value" : 1,
-          "skill" : false
-        },
-        "skillUltimateLevel" : {
-          "value" : 12,
-          "skill" : false
-        },
-        "offensiveSlowColdMin" : {
-          "value" : [ 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0 ],
-          "skill" : false
-        },
-        "offensiveSlowColdDurationMin" : {
-          "value" : 6.0,
-          "skill" : false
-        },
-        "skillTargetRadius" : {
-          "value" : [ 1.8, 2.2, 2.6, 3.0, 3.4, 3.8, 4.2, 4.6, 5.0, 5.4, 5.8, 6.2 ],
-          "skill" : false
-        },
-        "skillTier" : {
-          "value" : 2,
-          "skill" : false
-        }
-      },
-      "buff" : null,
-      "skillDescription" : null,
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Freezing Blast.html",
-      "modifier" : false,
-      "skillTag" : "tagSkillName204"
-    },
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Freezing Blast.html",
-    "modifier" : false,
-    "skillTag" : "tagSkillName204"
-  }, {
-    "name" : "Flash Freeze",
-    "parent" : null,
-    "attributes" : {
-      "retaliationSlowColdMin" : {
-        "value" : [ 5.0, 7.0, 8.0, 9.0, 10.0, 12.0, 13.0, 14.0, 16.0, 17.0, 18.0, 20.0, 21.0, 22.0 ],
-        "skill" : false
-      },
-      "skillActiveDuration" : {
-        "value" : 2.0,
-        "skill" : false
-      },
-      "skillCooldownTime" : {
-        "value" : 18.0,
-        "skill" : false
-      },
-      "skillManaCost" : {
-        "value" : [ 52.0, 60.0, 68.0, 76.0, 84.0, 92.0, 100.0, 108.0, 116.0, 124.0, 132.0, 140.0, 148.0, 156.0 ],
-        "skill" : false
-      },
-      "skillConnectionSpacing" : {
-        "value" : 62,
-        "skill" : false
-      },
-      "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
-      },
-      "retaliationSlowColdDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
-      },
-      "damageAbsorptionPercent" : {
-        "value" : [ 40.0, 43.0, 46.0, 49.0, 52.0, 55.0, 58.0, 61.0, 64.0, 67.0, 70.0, 73.0, 76.0, 80.0 ],
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 10,
-        "skill" : false
-      },
-      "retaliationSlowAttackSpeedMin" : {
-        "value" : [ 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0, 50.0, 52.0, 54.0, 56.0, 60.0 ],
-        "skill" : false
-      },
-      "retaliationSlowRunSpeedMin" : {
-        "value" : [ 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0, 50.0, 52.0, 54.0, 56.0, 60.0 ],
-        "skill" : false
-      },
-      "retaliationSlowAttackSpeedDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 14,
-        "skill" : false
-      },
-      "notDispelable" : {
-        "value" : 1,
-        "skill" : false
-      },
-      "characterManaRegen" : {
-        "value" : [ 20.0, 26.0, 32.0, 38.0, 44.0, 50.0, 56.0, 62.0, 68.0, 74.0, 80.0, 86.0, 92.0, 98.0 ],
-        "skill" : false
-      },
-      "skillMasteryLevelRequired" : {
-        "value" : 5,
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 3,
-        "skill" : false
-      },
-      "retaliationSlowRunSpeedDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
-      },
-      "characterManaRegenModifier" : {
-        "value" : [ 100.0, 130.0, 160.0, 190.0, 220.0, 250.0, 280.0, 310.0, 340.0, 370.0, 400.0, 430.0, 460.0, 500.0 ],
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Flash Freeze.html",
-    "modifier" : false,
-    "skillTag" : "tagFlashFreezeNAME"
+    "description" : "Summon an immortal Storm Wisp from the atmosphere to battle your enemies. ^y^nAt level 5, the Wisp learns Thunderclap.^nAt level 10, the Thunderclap is enhanced and generates tendrils of lightning.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Storm Wisp.html"
   }, {
     "name" : "Ice Burst",
     "parent" : null,
@@ -1834,8 +1044,43 @@
         "value" : 5.0,
         "skill" : false
       },
-      "skillTier" : {
-        "value" : 5,
+      "skillMaxLevel" : {
+        "value" : 8,
+        "skill" : false
+      }
+    },
+    "description" : "Creates a shell of ice around you that can encase nearby enemies for large amounts of cold damage.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Ice Burst.html"
+  } ], [ {
+    "name" : "Energy Resonance",
+    "parent" : "Energy Shield",
+    "attributes" : {
+      "defensiveSlowManaLeach" : {
+        "value" : [ 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0 ],
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : 30.0,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "defensiveManaBurnRatio" : {
+        "value" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
+        "skill" : false
+      },
+      "skillCooldownReduction" : {
+        "value" : [ 4.25, 5.0, 5.75, 6.5, 7.25, 8.0, 8.75, 9.5, 10.25, 11.0, 11.75, 12.5 ],
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 25,
+        "skill" : false
+      },
+      "characterManaRegenModifier" : {
+        "value" : [ 48.0, 60.0, 72.0, 84.0, 96.0, 108.0, 120.0, 132.0, 144.0, 156.0, 168.0, 180.0 ],
         "skill" : false
       },
       "skillMaxLevel" : {
@@ -1843,11 +1088,63 @@
         "skill" : false
       }
     },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Ice Burst.html",
-    "modifier" : false,
-    "skillTag" : "tagIceBurstNAME"
+    "description" : "Brings the player in tune with energy channels, increasing energy regeneration and defense, and adds a chance that enemy attacks can reverberate back to the attacker.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Energy Resonance.html"
+  }, {
+    "name" : "Thunder Clouds",
+    "parent" : null,
+    "attributes" : {
+      "offensiveTotalDamageReductionPercentMin" : {
+        "value" : [ 12.5, 15.0, 17.5, 20.0, 22.5, 25.0, 27.5, 30.0, 32.5, 35.0, 37.5, 40.0 ],
+        "skill" : false
+      },
+      "offensiveTotalResistanceReductionPercentDurationMin" : {
+        "value" : 3.0,
+        "skill" : false
+      },
+      "projectileExplosionRadius" : {
+        "value" : 1.0,
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : [ 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "offensiveLightningChance" : {
+        "value" : [ 33.0, 33.0, 33.0, 33.0, 33.0, 33.0, 33.0, 33.0, 33.0, 33.0, 33.0, 33.0 ],
+        "skill" : false
+      },
+      "isPetDisplayable" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "offensiveLightningMax" : {
+        "value" : [ 31.0, 52.0, 73.0, 94.0, 115.0, 136.0, 157.0, 178.0, 199.0, 220.0, 241.0, 263.0 ],
+        "skill" : false
+      },
+      "offensiveTotalResistanceReductionPercentMin" : {
+        "value" : [ 12.5, 15.0, 17.5, 20.0, 22.5, 25.0, 27.5, 30.0, 32.5, 35.0, 37.5, 40.0 ],
+        "skill" : false
+      },
+      "offensiveLightningMin" : {
+        "value" : [ 9.0, 14.0, 19.0, 24.0, 29.0, 34.0, 39.0, 44.0, 49.0, 54.0, 59.0, 64.0 ],
+        "skill" : false
+      },
+      "offensiveTotalDamageReductionPercentDurationMin" : {
+        "value" : 3.0,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 8,
+        "skill" : false
+      }
+    },
+    "description" : "Lightning strikes enemies within the squall, and the reduced visibility makes it difficult for enemies to defend themselves.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Thunder Clouds.html"
   }, {
     "name" : "Frost Nova",
     "parent" : null,
@@ -1915,17 +1212,185 @@
       "offensiveSlowTotalSpeedDurationMin" : {
         "value" : [ 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4.0, 4.1, 4.2 ],
         "skill" : false
+      }
+    },
+    "description" : "Casts an expanding ring of frost that slows and freezes your enemies.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Frost Nova.html"
+  } ], [ {
+    "name" : "Torrent",
+    "parent" : "Frozen Orb",
+    "attributes" : {
+      "projectileLaunchNumber" : {
+        "value" : [ 2.0, 2.0, 2.0, 2.0, 2.0, 3.0, 3.0, 4.0, 4.0, 4.0, 4.0, 5.0 ],
+        "skill" : false
       },
-      "skillTier" : {
-        "value" : 6,
+      "skillManaCost" : {
+        "value" : [ 7.0, 8.0, 9.0, 10.0, 12.0, 18.0, 19.0, 25.0, 27.0, 29.0, 31.0, 40.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "projectileLaunchRotation" : {
+        "value" : [ 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0 ],
+        "skill" : false
+      },
+      "offensiveSlowColdMax" : {
+        "value" : [ 18.0, 33.0, 46.5, 63.0, 81.0, 99.0, 118.5, 141.0, 165.0, 193.5, 223.5, 256.5 ],
+        "skill" : false
+      },
+      "offensiveSlowColdMin" : {
+        "value" : [ 8.04, 14.74, 20.77, 28.14, 36.18, 44.22, 52.93, 62.98, 73.7, 86.43, 99.83, 114.57 ],
+        "skill" : false
+      },
+      "offensiveSlowColdDurationMin" : {
+        "value" : 3.0,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 8,
         "skill" : false
       }
     },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Frost Nova.html",
-    "modifier" : false,
-    "skillTag" : "tagSVAERSkillStorm001"
-  } ],
+    "description" : "Increases the number of orbs cast and adds frostburn damage, sending a deadly torrent at enemies.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Torrent.html"
+  }, {
+    "name" : "Chain Lightning",
+    "parent" : null,
+    "attributes" : {
+      "offensiveLightningModifier" : {
+        "value" : [ 170.0, 192.0, 214.0, 236.0, 258.0, 280.0, 302.0, 324.0, 346.0, 368.0, 390.0, 412.0, 434.0, 456.0, 478.0, 500.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 16,
+        "skill" : false
+      },
+      "offensiveLightningMax" : {
+        "value" : [ 79.5, 103.5, 126.0, 151.5, 172.5, 195.0, 217.5, 244.5, 265.5, 288.0, 310.5, 339.0, 367.5, 402.0, 439.5, 486.0 ],
+        "skill" : false
+      },
+      "offensivePetrifyMin" : {
+        "value" : [ 1.0, 1.2, 1.4, 1.6, 1.8, 2.0, 2.2, 2.4, 2.6, 2.8, 3.0, 3.2, 3.4, 3.6, 3.8, 4.0 ],
+        "skill" : false
+      },
+      "offensiveSlowLightningDurationMin" : {
+        "value" : 4.0,
+        "skill" : false
+      },
+      "sparkGap" : {
+        "value" : 8.0,
+        "skill" : false
+      },
+      "offensiveLightningMin" : {
+        "value" : [ 46.5, 61.5, 79.5, 97.5, 111.0, 129.0, 144.0, 160.5, 175.5, 192.0, 207.0, 225.0, 246.0, 268.5, 295.5, 325.5 ],
+        "skill" : false
+      },
+      "sparkChance" : {
+        "value" : 100.0,
+        "skill" : false
+      },
+      "offensiveLightningModifierChance" : {
+        "value" : 10.0,
+        "skill" : false
+      },
+      "offensiveSlowLightningMin" : {
+        "value" : [ 23.5, 31.0, 38.5, 46.0, 53.5, 61.0, 68.5, 76.0, 83.5, 91.0, 98.5, 106.0, 113.5, 121.0, 128.5, 136.0 ],
+        "skill" : false
+      },
+      "sparkMaxNumber" : {
+        "value" : [ 5.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 7.0, 7.0, 8.0 ],
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 12,
+        "skill" : false
+      }
+    },
+    "description" : "Causes electricity to leap from the target of your Lightning Bolt skill and strike additional nearby enemies.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Chain Lightning.html"
+  }, {
+    "name" : "Eye of the Storm",
+    "parent" : null,
+    "attributes" : {
+      "EyeoftheStorm" : {
+        "value" : {
+          "name" : "Eye of the Storm",
+          "parent" : null,
+          "attributes" : {
+            "EyeoftheStorm" : {
+              "value" : {
+                "name" : "Eye of the Storm",
+                "parent" : null,
+                "attributes" : {
+                  "defensiveLightning" : {
+                    "value" : [ 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0 ],
+                    "skill" : false
+                  },
+                  "skillActiveDuration" : {
+                    "value" : [ 12.5, 13.0, 13.5, 14.0, 14.5, 15.0, 15.5, 16.0, 16.5, 17.0, 17.5, 18.0 ],
+                    "skill" : false
+                  },
+                  "skillCooldownTime" : {
+                    "value" : 10.0,
+                    "skill" : false
+                  },
+                  "offensiveElementalModifier" : {
+                    "value" : [ 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0, 150.0, 160.0, 170.0, 185.0, 200.0 ],
+                    "skill" : false
+                  },
+                  "skillWeaponTintRed" : {
+                    "value" : 1.0,
+                    "skill" : false
+                  },
+                  "cameraShakeAmplitude" : {
+                    "value" : 0.12,
+                    "skill" : false
+                  },
+                  "lightningDamageQualifier" : {
+                    "value" : 1,
+                    "skill" : false
+                  },
+                  "skillMaxLevel" : {
+                    "value" : 8,
+                    "skill" : false
+                  },
+                  "defensiveCold" : {
+                    "value" : [ 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0 ],
+                    "skill" : false
+                  },
+                  "skillUltimateLevel" : {
+                    "value" : 12,
+                    "skill" : false
+                  },
+                  "skillWeaponTintGreen" : {
+                    "value" : 0.1,
+                    "skill" : false
+                  },
+                  "coldDamageQualifier" : {
+                    "value" : 1,
+                    "skill" : false
+                  },
+                  "skillTargetRadius" : {
+                    "value" : 15.0,
+                    "skill" : false
+                  }
+                },
+                "description" : "A wisp ability that increases the elemental damage of all nearby allies for a duration and provides protection from lightning and cold damage.",
+                "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Eye of the Storm.html"
+              },
+              "skill" : true
+            }
+          },
+          "description" : "A wisp ability that increases the elemental damage of all nearby allies for a duration and provides protection from lightning and cold damage.",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Eye of the Storm.html"
+        },
+        "skill" : true
+      }
+    },
+    "description" : "A wisp ability that increases the elemental damage of all nearby allies for a duration and provides protection from lightning and cold damage.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery/Eye of the Storm.html"
+  } ] ],
   "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Storm Mastery.html"
 }

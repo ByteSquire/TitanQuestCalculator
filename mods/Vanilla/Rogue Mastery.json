@@ -1,11 +1,19 @@
 {
   "name" : "Rogue Mastery",
-  "skills" : [ {
+  "skillTiers" : [ [ {
     "name" : "Envenom Weapon",
     "parent" : null,
     "attributes" : {
       "skillWeaponTintBlue" : {
         "value" : 0.25,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 16,
+        "skill" : false
+      },
+      "skillWeaponTintGreen" : {
+        "value" : 1.0,
         "skill" : false
       },
       "characterManaLimitReserve" : {
@@ -28,18 +36,6 @@
         "value" : 0.12,
         "skill" : false
       },
-      "skillMaxLevel" : {
-        "value" : 12,
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 16,
-        "skill" : false
-      },
-      "skillWeaponTintGreen" : {
-        "value" : 1.0,
-        "skill" : false
-      },
       "offensiveSlowPoisonDurationMin" : {
         "value" : 3.0,
         "skill" : false
@@ -48,138 +44,17 @@
         "value" : 1,
         "skill" : false
       },
-      "skillTier" : {
-        "value" : 1,
-        "skill" : false
-      },
       "offensiveSlowPoisonMin" : {
         "value" : [ 8.2, 11.2, 14.2, 17.6, 22.2, 27.4, 33.2, 39.8, 47.2, 56.0, 65.8, 76.6, 88.4, 101.4, 115.6, 131.0 ],
         "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Envenom Weapon.html",
-    "modifier" : false,
-    "skillTag" : "tagSkillName057"
-  }, {
-    "name" : "Nightshade",
-    "parent" : "Envenom Weapon",
-    "attributes" : {
-      "offensiveSlowPoisonModifier" : {
-        "value" : [ 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0 ],
-        "skill" : false
-      },
-      "offensiveSlowTotalSpeedMin" : {
-        "value" : [ 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 39.0, 41.0, 43.0, 46.0, 50.0 ],
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 2,
-        "skill" : false
-      },
-      "offensiveSlowTotalSpeedDurationMin" : {
-        "value" : 5.0,
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Nightshade.html",
-    "modifier" : true,
-    "skillTag" : "tagSkillName062"
-  }, {
-    "name" : "Toxin Distillation",
-    "parent" : "Nightshade",
-    "attributes" : {
-      "offensiveSlowPoisonDurationModifier" : {
-        "value" : [ 12.0, 24.0, 36.0, 48.0, 60.0, 72.0, 84.0, 96.0, 108.0, 120.0, 132.0, 144.0, 156.0, 168.0, 183.0, 200.0 ],
-        "skill" : false
-      },
-      "offensiveSlowPoisonModifier" : {
-        "value" : [ 10.0, 16.0, 22.0, 28.0, 34.0, 40.0, 46.0, 52.0, 58.0, 64.0, 70.0, 76.0, 82.0, 88.0, 94.0, 100.0 ],
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 16,
-        "skill" : false
-      },
-      "skillMasteryLevelRequired" : {
-        "value" : 25,
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 4,
-        "skill" : false
       },
       "skillMaxLevel" : {
         "value" : 12,
         "skill" : false
       }
     },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Toxin Distillation.html",
-    "modifier" : true,
-    "skillTag" : "tagSkillName056"
-  }, {
-    "name" : "Mandrake",
-    "parent" : "Toxin Distillation",
-    "attributes" : {
-      "offensiveConfusionMax" : {
-        "value" : [ 2.4, 2.8, 3.2, 3.5, 3.9, 4.3, 4.6, 5.0, 5.4, 5.7, 6.1, 6.5 ],
-        "skill" : false
-      },
-      "offensiveFumbleDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
-      },
-      "offensiveConfusionMin" : {
-        "value" : [ 1.8, 1.8, 1.8, 1.8, 1.8, 1.8, 1.8, 1.8, 1.8, 1.8, 1.8, 1.8 ],
-        "skill" : false
-      },
-      "offensiveGlobalChance" : {
-        "value" : 100.0,
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
-      },
-      "offensiveFumbleMin" : {
-        "value" : [ 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0 ],
-        "skill" : false
-      },
-      "skillActiveManaCost" : {
-        "value" : 0.5,
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 5,
-        "skill" : false
-      },
-      "offensiveConfusionChance" : {
-        "value" : [ 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0 ],
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Mandrake.html",
-    "modifier" : true,
-    "skillTag" : "tagSkillName055"
+    "description" : "Coats your weapons with deadly poison while activated.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Envenom Weapon.html"
   }, {
     "name" : "Calculated Strike",
     "parent" : null,
@@ -248,170 +123,97 @@
         "value" : 1,
         "skill" : false
       },
-      "skillTier" : {
-        "value" : 1,
-        "skill" : false
-      },
       "Spear" : {
         "value" : 1,
         "skill" : false
       }
     },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Calculated Strike.html",
-    "modifier" : false,
-    "skillTag" : "tagSkillName054"
+    "description" : "Used in place of your normal attack, every fourth hit with calculated strike will deliver increased damage.{^y}  Assign this skill to your left mouse button.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Calculated Strike.html"
   }, {
-    "name" : "Lucky Hit",
-    "parent" : "Calculated Strike",
-    "attributes" : {
-      "offensivePierceGlobal" : {
-        "value" : 1,
-        "skill" : false
-      },
-      "offensiveSlowBleedingMin" : {
-        "value" : [ 40.0, 56.0, 74.0, 94.0, 116.0, 138.0, 160.0, 186.0, 216.0, 248.0 ],
-        "skill" : false
-      },
-      "offensivePierceModifier" : {
-        "value" : [ 70.0, 99.0, 128.0, 157.0, 186.0, 215.0, 245.0, 278.0, 313.0, 351.0 ],
-        "skill" : false
-      },
-      "offensivePhysicalMin" : {
-        "value" : [ 78.0, 108.0, 138.0, 168.0, 198.0, 228.0, 258.0, 288.0, 318.0, 348.0 ],
-        "skill" : false
-      },
-      "offensivePhysicalChance" : {
-        "value" : 33.0,
-        "skill" : false
-      },
-      "offensiveSlowBleedingDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 6,
-        "skill" : false
-      },
-      "offensivePierceXOR" : {
-        "value" : 1,
-        "skill" : false
-      },
-      "offensiveGlobalChance" : {
-        "value" : 44.0,
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 10,
-        "skill" : false
-      },
-      "offensivePhysicalGlobal" : {
-        "value" : 1,
-        "skill" : false
-      },
-      "offensivePierceModifierChance" : {
-        "value" : 33.0,
-        "skill" : false
-      },
-      "offensiveSlowBleedingXOR" : {
-        "value" : 1,
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 3,
-        "skill" : false
-      },
-      "offensivePhysicalXOR" : {
-        "value" : 1,
-        "skill" : false
-      },
-      "offensiveSlowBleedingChance" : {
-        "value" : 34.0,
-        "skill" : false
-      },
-      "offensiveSlowBleedingGlobal" : {
-        "value" : 1,
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Lucky Hit.html",
-    "modifier" : true,
-    "skillTag" : "tagSkillName142"
-  }, {
-    "name" : "Open Wound",
+    "name" : "Blade Honing",
     "parent" : null,
     "attributes" : {
-      "offensiveSlowBleedingMin" : {
-        "value" : [ 9.0, 16.0, 23.0, 31.0, 39.0, 47.0, 55.0, 64.0, 73.0, 83.0, 92.0, 103.0, 112.0, 123.0, 134.0, 147.0 ],
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 16,
-        "skill" : false
-      },
-      "Sword" : {
-        "value" : 1,
-        "skill" : false
-      },
-      "offensiveSlowBleedingDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
-      },
-      "Bow" : {
-        "value" : 1,
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 3,
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 12,
-        "skill" : false
-      },
-      "offensiveSlowBleedingChance" : {
-        "value" : 33.0,
-        "skill" : false
-      },
-      "Spear" : {
-        "value" : 1,
-        "skill" : false
-      },
-      "Axe" : {
-        "value" : 1,
-        "skill" : false
-      },
-      "RangedOneHand" : {
-        "value" : 1,
-        "skill" : false
+      "BladeHoning" : {
+        "value" : {
+          "name" : "Blade Honing",
+          "parent" : null,
+          "attributes" : {
+            "skillUltimateLevel" : {
+              "value" : 10,
+              "skill" : false
+            },
+            "characterManaLimitReserve" : {
+              "value" : 50.0,
+              "skill" : false
+            },
+            "Sword" : {
+              "value" : 1,
+              "skill" : false
+            },
+            "cameraShakeAmplitude" : {
+              "value" : 0.12,
+              "skill" : false
+            },
+            "offensivePierceMin" : {
+              "value" : [ 3.0, 5.0, 7.0, 9.0, 12.0, 15.0, 18.0, 21.0, 25.0, 31.0 ],
+              "skill" : false
+            },
+            "skillTargetRadius" : {
+              "value" : 16.0,
+              "skill" : false
+            },
+            "skillMasteryLevelRequired" : {
+              "value" : 1,
+              "skill" : false
+            },
+            "skillMaxLevel" : {
+              "value" : 6,
+              "skill" : false
+            },
+            "Axe" : {
+              "value" : 1,
+              "skill" : false
+            },
+            "RangedOneHand" : {
+              "value" : 1,
+              "skill" : false
+            },
+            "Spear" : {
+              "value" : 1,
+              "skill" : false
+            },
+            "offensivePierceRatioModifier" : {
+              "value" : [ 16.0, 24.0, 32.0, 40.0, 48.0, 56.0, 64.0, 72.0, 80.0, 88.0 ],
+              "skill" : false
+            }
+          },
+          "description" : "While active, this skill ensures that the blades of yourself and allies will remain razor sharp and inflict increased piercing damage.",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Blade Honing.html"
+        },
+        "skill" : true
       }
     },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Open Wound.html",
-    "modifier" : false,
-    "skillTag" : "tagSkillName063"
-  }, {
-    "name" : "Anatomy",
-    "parent" : null,
+    "description" : "While active, this skill ensures that the blades of yourself and allies will remain razor sharp and inflict increased piercing damage.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Blade Honing.html"
+  } ], [ {
+    "name" : "Nightshade",
+    "parent" : "Envenom Weapon",
     "attributes" : {
+      "offensiveSlowPoisonModifier" : {
+        "value" : [ 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0 ],
+        "skill" : false
+      },
+      "offensiveSlowTotalSpeedMin" : {
+        "value" : [ 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 39.0, 41.0, 43.0, 46.0, 50.0 ],
+        "skill" : false
+      },
       "skillUltimateLevel" : {
         "value" : 12,
         "skill" : false
       },
-      "skillMasteryLevelRequired" : {
-        "value" : 25,
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 5,
-        "skill" : false
-      },
-      "offensiveSlowBleedingModifier" : {
-        "value" : [ 36.0, 48.0, 60.0, 72.0, 84.0, 96.0, 108.0, 120.0, 136.0, 154.0, 175.0, 199.0 ],
+      "offensiveSlowTotalSpeedDurationMin" : {
+        "value" : 5.0,
         "skill" : false
       },
       "skillMaxLevel" : {
@@ -419,11 +221,8 @@
         "skill" : false
       }
     },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Anatomy.html",
-    "modifier" : false,
-    "skillTag" : "tagSkillName051"
+    "description" : "Oils harvested from deadly Nightshade plants give your Envenomed Weapons the ability to slow enemies.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Nightshade.html"
   }, {
     "name" : "Throwing Knife",
     "parent" : null,
@@ -479,235 +278,165 @@
       "skillMasteryLevelRequired" : {
         "value" : 5,
         "skill" : false
-      },
-      "skillTier" : {
-        "value" : 2,
-        "skill" : false
       }
     },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Throwing Knife.html",
-    "modifier" : false,
-    "skillTag" : "tagSkillName052"
+    "description" : "Throw a piercing blade at your opponent capable of causing prolonged bleeding.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Throwing Knife.html"
   }, {
-    "name" : "Flurry of Knives",
-    "parent" : "Throwing Knife",
+    "name" : "Flash Powder",
+    "parent" : null,
     "attributes" : {
-      "projectileLaunchNumber" : {
-        "value" : [ 1.0, 2.0, 2.0, 3.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ],
+      "offensiveConfusionMax" : {
+        "value" : 8.0,
+        "skill" : false
+      },
+      "offensiveFumbleDurationMin" : {
+        "value" : 8.0,
+        "skill" : false
+      },
+      "skillCooldownTime" : {
+        "value" : 15.0,
+        "skill" : false
+      },
+      "offensiveConfusionMin" : {
+        "value" : 3.0,
         "skill" : false
       },
       "skillManaCost" : {
-        "value" : [ 15.0, 18.0, 18.0, 21.0, 21.0, 24.0, 24.0, 27.0, 27.0, 30.0 ],
+        "value" : [ 53.0, 56.0, 59.0, 62.0, 65.0, 68.0, 71.0, 74.0, 77.0, 80.0, 83.0, 86.0 ],
         "skill" : false
       },
       "skillUltimateLevel" : {
-        "value" : 10,
+        "value" : 12,
         "skill" : false
       },
-      "projectileLaunchRotation" : {
-        "value" : [ 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0 ],
-        "skill" : false
-      },
-      "offensivePierceModifier" : {
-        "value" : [ 25.5, 30.0, 34.5, 39.0, 43.5, 48.0, 52.5, 57.0, 61.5, 66.0 ],
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 6,
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 6,
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Flurry of Knives.html",
-    "modifier" : true,
-    "skillTag" : "tagSkillName143"
-  }, {
-    "name" : "Blade Honing",
-    "parent" : null,
-    "attributes" : {
-      "BladeHoning" : {
-        "value" : {
-          "name" : "Blade Honing",
-          "parent" : null,
-          "attributes" : {
-            "characterManaLimitReserve" : {
-              "value" : 50.0,
-              "skill" : false
-            },
-            "cameraShakeAmplitude" : {
-              "value" : 0.12,
-              "skill" : false
-            },
-            "offensivePierceMin" : {
-              "value" : [ 3.0, 5.0, 7.0, 9.0, 12.0, 15.0, 18.0, 21.0, 25.0, 31.0 ],
-              "skill" : false
-            },
-            "skillMaxLevel" : {
-              "value" : 6,
-              "skill" : false
-            },
-            "Axe" : {
-              "value" : 1,
-              "skill" : false
-            },
-            "RangedOneHand" : {
-              "value" : 1,
-              "skill" : false
-            },
-            "skillUltimateLevel" : {
-              "value" : 10,
-              "skill" : false
-            },
-            "Sword" : {
-              "value" : 1,
-              "skill" : false
-            },
-            "skillTargetRadius" : {
-              "value" : 16.0,
-              "skill" : false
-            },
-            "skillMasteryLevelRequired" : {
-              "value" : 1,
-              "skill" : false
-            },
-            "skillTier" : {
-              "value" : 1,
-              "skill" : false
-            },
-            "Spear" : {
-              "value" : 1,
-              "skill" : false
-            },
-            "offensivePierceRatioModifier" : {
-              "value" : [ 16.0, 24.0, 32.0, 40.0, 48.0, 56.0, 64.0, 72.0, 80.0, 88.0 ],
-              "skill" : false
-            }
-          },
-          "buff" : null,
-          "skillDescription" : null,
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Blade Honing.html",
-          "modifier" : false,
-          "skillTag" : "tagSkillName053"
-        },
-        "skill" : true
-      }
-    },
-    "buff" : {
-      "name" : "Blade Honing",
-      "parent" : null,
-      "attributes" : {
-        "characterManaLimitReserve" : {
-          "value" : 50.0,
-          "skill" : false
-        },
-        "cameraShakeAmplitude" : {
-          "value" : 0.12,
-          "skill" : false
-        },
-        "offensivePierceMin" : {
-          "value" : [ 3.0, 5.0, 7.0, 9.0, 12.0, 15.0, 18.0, 21.0, 25.0, 31.0 ],
-          "skill" : false
-        },
-        "skillMaxLevel" : {
-          "value" : 6,
-          "skill" : false
-        },
-        "Axe" : {
-          "value" : 1,
-          "skill" : false
-        },
-        "RangedOneHand" : {
-          "value" : 1,
-          "skill" : false
-        },
-        "skillUltimateLevel" : {
-          "value" : 10,
-          "skill" : false
-        },
-        "Sword" : {
-          "value" : 1,
-          "skill" : false
-        },
-        "skillTargetRadius" : {
-          "value" : 16.0,
-          "skill" : false
-        },
-        "skillMasteryLevelRequired" : {
-          "value" : 1,
-          "skill" : false
-        },
-        "skillTier" : {
-          "value" : 1,
-          "skill" : false
-        },
-        "Spear" : {
-          "value" : 1,
-          "skill" : false
-        },
-        "offensivePierceRatioModifier" : {
-          "value" : [ 16.0, 24.0, 32.0, 40.0, 48.0, 56.0, 64.0, 72.0, 80.0, 88.0 ],
-          "skill" : false
-        }
-      },
-      "buff" : null,
-      "skillDescription" : null,
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Blade Honing.html",
-      "modifier" : false,
-      "skillTag" : "tagSkillName053"
-    },
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Blade Honing.html",
-    "modifier" : false,
-    "skillTag" : "tagSkillName053"
-  }, {
-    "name" : "Lethal Strike",
-    "parent" : null,
-    "attributes" : {
-      "skillCooldownTime" : {
-        "value" : 12.0,
-        "skill" : false
-      },
-      "skillManaCost" : {
-        "value" : [ 52.0, 53.0, 55.0, 56.0, 58.0, 59.0, 61.0, 62.0, 64.0, 65.0, 67.0, 68.0, 70.0, 71.0, 73.0, 74.0 ],
-        "skill" : false
-      },
-      "offensivePierceModifier" : {
-        "value" : [ 225.0, 240.0, 255.0, 270.0, 285.0, 300.0, 315.0, 330.0, 345.0, 360.0, 375.0, 390.0, 405.0, 420.0, 435.0, 450.0 ],
-        "skill" : false
-      },
-      "skillConnectionSpacing" : {
-        "value" : 62,
+      "offensiveFumbleMin" : {
+        "value" : [ 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0 ],
         "skill" : false
       },
       "cameraShakeAmplitude" : {
         "value" : 0.12,
         "skill" : false
       },
-      "Bow" : {
+      "excludeRacialDamage" : {
         "value" : 1,
+        "skill" : false
+      },
+      "skillTargetRadius" : {
+        "value" : [ 3.8, 4.4, 5.0, 5.6, 6.2, 6.8, 7.4, 8.0, 8.6, 9.2, 9.8, 10.4 ],
+        "skill" : false
+      },
+      "offensiveConfusionChance" : {
+        "value" : [ 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0 ],
         "skill" : false
       },
       "skillMaxLevel" : {
-        "value" : 12,
+        "value" : 8,
+        "skill" : false
+      }
+    },
+    "description" : "A magician's trick turned to more nefarious purposes, flash powder blinds adjacent enemies impairing their ability to hit with weapons and potentially disorienting them.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Flash Powder.html"
+  }, {
+    "name" : "Disarm Traps",
+    "parent" : null,
+    "attributes" : {
+      "racialBonusPercentDefense" : {
+        "value" : [ 10.0, 20.0, 29.0, 38.0, 46.0, 54.0, 61.0, 68.0, 74.0, 80.0 ],
         "skill" : false
       },
-      "Axe" : {
+      "skillUltimateLevel" : {
+        "value" : 10,
+        "skill" : false
+      },
+      "racialBonusPercentDamage" : {
+        "value" : [ 20.0, 40.0, 61.0, 82.0, 105.0, 128.0, 154.0, 180.0, 210.0, 240.0 ],
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 6,
+        "skill" : false
+      }
+    },
+    "description" : "Expertise with traps and magical devices allows the Rogue to easily disable them and avoid their damage.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Disarm Traps.html"
+  } ], [ {
+    "name" : "Lucky Hit",
+    "parent" : "Calculated Strike",
+    "attributes" : {
+      "offensivePierceGlobal" : {
         "value" : 1,
         "skill" : false
       },
-      "RangedOneHand" : {
+      "offensiveSlowBleedingMin" : {
+        "value" : [ 40.0, 56.0, 74.0, 94.0, 116.0, 138.0, 160.0, 186.0, 216.0, 248.0 ],
+        "skill" : false
+      },
+      "offensivePierceModifier" : {
+        "value" : [ 70.0, 99.0, 128.0, 157.0, 186.0, 215.0, 245.0, 278.0, 313.0, 351.0 ],
+        "skill" : false
+      },
+      "offensivePhysicalMin" : {
+        "value" : [ 78.0, 108.0, 138.0, 168.0, 198.0, 228.0, 258.0, 288.0, 318.0, 348.0 ],
+        "skill" : false
+      },
+      "offensivePhysicalChance" : {
+        "value" : 33.0,
+        "skill" : false
+      },
+      "offensiveSlowBleedingDurationMin" : {
+        "value" : 3.0,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 6,
+        "skill" : false
+      },
+      "offensivePierceXOR" : {
         "value" : 1,
         "skill" : false
       },
-      "offensivePhysicalModifier" : {
-        "value" : [ 225.0, 250.0, 275.0, 300.0, 325.0, 350.0, 375.0, 400.0, 425.0, 450.0, 475.0, 500.0, 525.0, 550.0, 575.0, 600.0 ],
+      "offensiveGlobalChance" : {
+        "value" : 44.0,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 10,
+        "skill" : false
+      },
+      "offensivePhysicalGlobal" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "offensivePierceModifierChance" : {
+        "value" : 33.0,
+        "skill" : false
+      },
+      "offensiveSlowBleedingXOR" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "offensivePhysicalXOR" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "offensiveSlowBleedingChance" : {
+        "value" : 34.0,
+        "skill" : false
+      },
+      "offensiveSlowBleedingGlobal" : {
+        "value" : 1,
+        "skill" : false
+      }
+    },
+    "description" : "Uncommonly good fortune provides a chance that calculated strikes will slip past enemy armor causing tremendous damage.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Lucky Hit.html"
+  }, {
+    "name" : "Open Wound",
+    "parent" : null,
+    "attributes" : {
+      "offensiveSlowBleedingMin" : {
+        "value" : [ 9.0, 16.0, 23.0, 31.0, 39.0, 47.0, 55.0, 64.0, 73.0, 83.0, 92.0, 103.0, 112.0, 123.0, 134.0, 147.0 ],
         "skill" : false
       },
       "skillUltimateLevel" : {
@@ -718,70 +447,37 @@
         "value" : 1,
         "skill" : false
       },
-      "skillProjectileNumber" : {
+      "offensiveSlowBleedingDurationMin" : {
+        "value" : 3.0,
+        "skill" : false
+      },
+      "Bow" : {
         "value" : 1,
         "skill" : false
       },
-      "skillMasteryLevelRequired" : {
-        "value" : 10,
+      "skillMaxLevel" : {
+        "value" : 12,
         "skill" : false
       },
-      "skillTier" : {
-        "value" : 4,
+      "offensiveSlowBleedingChance" : {
+        "value" : 33.0,
         "skill" : false
       },
       "Spear" : {
         "value" : 1,
         "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Lethal Strike.html",
-    "modifier" : false,
-    "skillTag" : "tagSkillName061"
-  }, {
-    "name" : "Mortal Wound",
-    "parent" : "Lethal Strike",
-    "attributes" : {
-      "offensiveStunMin" : {
-        "value" : 3.0,
+      },
+      "Axe" : {
+        "value" : 1,
         "skill" : false
       },
-      "offensiveSlowPoisonModifier" : {
-        "value" : [ 60.0, 95.0, 130.0, 165.0, 200.0, 235.0, 270.0, 305.0, 340.0, 375.0, 410.0, 445.0 ],
-        "skill" : false
-      },
-      "skillManaCost" : {
-        "value" : 15.0,
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
-      },
-      "skillMasteryLevelRequired" : {
-        "value" : 10,
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 6,
-        "skill" : false
-      },
-      "offensiveSlowBleedingModifier" : {
-        "value" : [ 60.0, 95.0, 130.0, 165.0, 200.0, 235.0, 270.0, 305.0, 340.0, 375.0, 410.0, 445.0 ],
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 8,
+      "RangedOneHand" : {
+        "value" : 1,
         "skill" : false
       }
     },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Mortal Wound.html",
-    "modifier" : true,
-    "skillTag" : "tagSkillName197"
+    "description" : "Adds a chance that weapon attacks will inflict bleeding damage when using a sword, spear, bow, or axe.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Open Wound.html"
   }, {
     "name" : "Poison Gas Bomb",
     "parent" : null,
@@ -806,20 +502,16 @@
         "value" : 33.0,
         "skill" : false
       },
+      "skillUltimateLevel" : {
+        "value" : 16,
+        "skill" : false
+      },
       "skillConnectionSpacing" : {
         "value" : 62,
         "skill" : false
       },
       "cameraShakeAmplitude" : {
         "value" : 0.12,
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 12,
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 16,
         "skill" : false
       },
       "offensiveSlowPoisonDurationMin" : {
@@ -834,178 +526,13 @@
         "value" : 6.0,
         "skill" : false
       },
-      "skillTier" : {
-        "value" : 3,
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Poison Gas Bomb.html",
-    "modifier" : false,
-    "skillTag" : "tagSkillName194"
-  }, {
-    "name" : "Shrapnel",
-    "parent" : null,
-    "attributes" : {
-      "projectileFragmentsLaunchNumberMin" : {
-        "value" : 9,
-        "skill" : false
-      },
-      "offensiveSlowBleedingMin" : {
-        "value" : [ 18.29, 21.6, 24.94, 28.26, 31.59, 34.9, 38.24, 41.56, 44.89, 48.2, 51.54, 54.86, 58.19, 61.51, 64.84, 74.81 ],
-        "skill" : false
-      },
-      "projectileFragmentsLaunchNumberMax" : {
-        "value" : 11,
-        "skill" : false
-      },
-      "projectileExplosionRadius" : {
-        "value" : 1.5,
-        "skill" : false
-      },
-      "skillManaCost" : {
-        "value" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ],
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 16,
-        "skill" : false
-      },
-      "offensiveSlowBleedingDurationMin" : {
-        "value" : 4.0,
-        "skill" : false
-      },
-      "offensivePierceMin" : {
-        "value" : [ 24.0, 32.0, 40.0, 51.0, 61.0, 71.0, 82.0, 94.0, 106.0, 119.0, 131.0, 145.0, 160.0, 175.0, 193.0, 215.0 ],
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 5,
-        "skill" : false
-      },
       "skillMaxLevel" : {
         "value" : 12,
         "skill" : false
       }
     },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Shrapnel.html",
-    "modifier" : false,
-    "skillTag" : "tagSkillName195"
-  }, {
-    "name" : "Poison Mayhem",
-    "parent" : "Shrapnel",
-    "attributes" : {
-      "offensiveFearMax" : {
-        "value" : [ 0.0, 2.0 ],
-        "skill" : false
-      },
-      "offensiveProjectileFumbleDurationMin" : {
-        "value" : [ 0.0, 4.0 ],
-        "skill" : false
-      },
-      "offensiveFearMin" : {
-        "value" : [ 0.0, 1.0 ],
-        "skill" : false
-      },
-      "projectileLaunchNumber" : {
-        "value" : [ 1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0, 4.0 ],
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
-      },
-      "projectileLaunchRotation" : {
-        "value" : [ 40.0, 40.0, 40.0, 70.0, 70.0, 70.0, 100.0, 100.0, 100.0, 130.0 ],
-        "skill" : false
-      },
-      "offensiveProjectileFumbleMin" : {
-        "value" : [ 0.0, 5.0, 10.0, 10.0, 15.0, 20.0, 20.0, 25.0, 30.0, 30.0, 35.0, 40.0 ],
-        "skill" : false
-      },
-      "offensiveFearChance" : {
-        "value" : [ 0.0, 10.0, 20.0, 20.0, 30.0, 40.0, 40.0, 50.0, 60.0, 60.0, 70.0, 80.0 ],
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 7,
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Poison Mayhem.html",
-    "modifier" : true,
-    "skillTag" : "x3tagSkillRoguePoisonMayhem"
-  }, {
-    "name" : "Flash Powder",
-    "parent" : null,
-    "attributes" : {
-      "offensiveConfusionMax" : {
-        "value" : 8.0,
-        "skill" : false
-      },
-      "offensiveFumbleDurationMin" : {
-        "value" : 8.0,
-        "skill" : false
-      },
-      "skillCooldownTime" : {
-        "value" : 15.0,
-        "skill" : false
-      },
-      "skillManaCost" : {
-        "value" : [ 53.0, 56.0, 59.0, 62.0, 65.0, 68.0, 71.0, 74.0, 77.0, 80.0, 83.0, 86.0 ],
-        "skill" : false
-      },
-      "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
-      },
-      "offensiveConfusionMin" : {
-        "value" : 3.0,
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
-      },
-      "offensiveFumbleMin" : {
-        "value" : [ 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0 ],
-        "skill" : false
-      },
-      "excludeRacialDamage" : {
-        "value" : 1,
-        "skill" : false
-      },
-      "skillTargetRadius" : {
-        "value" : [ 3.8, 4.4, 5.0, 5.6, 6.2, 6.8, 7.4, 8.0, 8.6, 9.2, 9.8, 10.4 ],
-        "skill" : false
-      },
-      "offensiveConfusionChance" : {
-        "value" : [ 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0 ],
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 2,
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Flash Powder.html",
-    "modifier" : false,
-    "skillTag" : "tagSkillName058"
+    "description" : "Lobs a bomb that will burst on impact releasing a cloud of toxic gas that damages enemies and impairs their attacks.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Poison Gas Bomb.html"
   }, {
     "name" : "Lay Trap",
     "parent" : null,
@@ -1073,17 +600,104 @@
       "skillMasteryLevelRequired" : {
         "value" : 10,
         "skill" : false
+      }
+    },
+    "description" : "Drops a mechanical bolt trap that will trip when enemies draw near and rapidly fire out deadly bolts.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Lay Trap.html"
+  } ], [ {
+    "name" : "Toxin Distillation",
+    "parent" : "Nightshade",
+    "attributes" : {
+      "offensiveSlowPoisonDurationModifier" : {
+        "value" : [ 12.0, 24.0, 36.0, 48.0, 60.0, 72.0, 84.0, 96.0, 108.0, 120.0, 132.0, 144.0, 156.0, 168.0, 183.0, 200.0 ],
+        "skill" : false
       },
-      "skillTier" : {
-        "value" : 3,
+      "offensiveSlowPoisonModifier" : {
+        "value" : [ 10.0, 16.0, 22.0, 28.0, 34.0, 40.0, 46.0, 52.0, 58.0, 64.0, 70.0, 76.0, 82.0, 88.0, 94.0, 100.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 16,
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 25,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 12,
         "skill" : false
       }
     },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Lay Trap.html",
-    "modifier" : false,
-    "skillTag" : "tagSkillName083"
+    "description" : "Learn alchemical processes to distill natural toxins, increasing the potency and duration of all poison attacks.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Toxin Distillation.html"
+  }, {
+    "name" : "Lethal Strike",
+    "parent" : null,
+    "attributes" : {
+      "skillCooldownTime" : {
+        "value" : 12.0,
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : [ 52.0, 53.0, 55.0, 56.0, 58.0, 59.0, 61.0, 62.0, 64.0, 65.0, 67.0, 68.0, 70.0, 71.0, 73.0, 74.0 ],
+        "skill" : false
+      },
+      "offensivePierceModifier" : {
+        "value" : [ 225.0, 240.0, 255.0, 270.0, 285.0, 300.0, 315.0, 330.0, 345.0, 360.0, 375.0, 390.0, 405.0, 420.0, 435.0, 450.0 ],
+        "skill" : false
+      },
+      "skillConnectionSpacing" : {
+        "value" : 62,
+        "skill" : false
+      },
+      "cameraShakeAmplitude" : {
+        "value" : 0.12,
+        "skill" : false
+      },
+      "Bow" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "Axe" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "RangedOneHand" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "offensivePhysicalModifier" : {
+        "value" : [ 225.0, 250.0, 275.0, 300.0, 325.0, 350.0, 375.0, 400.0, 425.0, 450.0, 475.0, 500.0, 525.0, 550.0, 575.0, 600.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 16,
+        "skill" : false
+      },
+      "Sword" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillProjectileNumber" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 10,
+        "skill" : false
+      },
+      "Spear" : {
+        "value" : 1,
+        "skill" : false
+      }
+    },
+    "description" : "A single deadly hit that multiplies the damage of a normal weapon attack.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Lethal Strike.html"
   }, {
     "name" : "Rapid Construction",
     "parent" : "Lay Trap",
@@ -1104,8 +718,47 @@
         "value" : [ 5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0 ],
         "skill" : false
       },
-      "skillTier" : {
-        "value" : 4,
+      "skillMaxLevel" : {
+        "value" : 8,
+        "skill" : false
+      }
+    },
+    "description" : "Expertise in assembling traps reduces the amount of time it takes to create a new trap after one has been set.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Rapid Construction.html"
+  } ], [ {
+    "name" : "Mandrake",
+    "parent" : "Toxin Distillation",
+    "attributes" : {
+      "offensiveConfusionMax" : {
+        "value" : [ 2.4, 2.8, 3.2, 3.5, 3.9, 4.3, 4.6, 5.0, 5.4, 5.7, 6.1, 6.5 ],
+        "skill" : false
+      },
+      "offensiveFumbleDurationMin" : {
+        "value" : 3.0,
+        "skill" : false
+      },
+      "offensiveConfusionMin" : {
+        "value" : [ 1.8, 1.8, 1.8, 1.8, 1.8, 1.8, 1.8, 1.8, 1.8, 1.8, 1.8, 1.8 ],
+        "skill" : false
+      },
+      "offensiveGlobalChance" : {
+        "value" : 100.0,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "offensiveFumbleMin" : {
+        "value" : [ 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0 ],
+        "skill" : false
+      },
+      "skillActiveManaCost" : {
+        "value" : 0.5,
+        "skill" : false
+      },
+      "offensiveConfusionChance" : {
+        "value" : [ 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0 ],
         "skill" : false
       },
       "skillMaxLevel" : {
@@ -1113,11 +766,140 @@
         "skill" : false
       }
     },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Rapid Construction.html",
-    "modifier" : true,
-    "skillTag" : "tagSkillName087"
+    "description" : "Adds a chance for poison to cloud an enemy's mind, sending them into a state of confusion.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Mandrake.html"
+  }, {
+    "name" : "Anatomy",
+    "parent" : null,
+    "attributes" : {
+      "skillUltimateLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 25,
+        "skill" : false
+      },
+      "offensiveSlowBleedingModifier" : {
+        "value" : [ 36.0, 48.0, 60.0, 72.0, 84.0, 96.0, 108.0, 120.0, 136.0, 154.0, 175.0, 199.0 ],
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 8,
+        "skill" : false
+      }
+    },
+    "description" : "With a deep knowledge of anatomy, attacks can be directed at vital points in the body increasing the chance and effectiveness of bleed damage.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Anatomy.html"
+  }, {
+    "name" : "Shrapnel",
+    "parent" : null,
+    "attributes" : {
+      "projectileFragmentsLaunchNumberMin" : {
+        "value" : 9,
+        "skill" : false
+      },
+      "offensiveSlowBleedingMin" : {
+        "value" : [ 18.29, 21.6, 24.94, 28.26, 31.59, 34.9, 38.24, 41.56, 44.89, 48.2, 51.54, 54.86, 58.19, 61.51, 64.84, 74.81 ],
+        "skill" : false
+      },
+      "projectileFragmentsLaunchNumberMax" : {
+        "value" : 11,
+        "skill" : false
+      },
+      "projectileExplosionRadius" : {
+        "value" : 1.5,
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 16,
+        "skill" : false
+      },
+      "offensiveSlowBleedingDurationMin" : {
+        "value" : 4.0,
+        "skill" : false
+      },
+      "offensivePierceMin" : {
+        "value" : [ 24.0, 32.0, 40.0, 51.0, 61.0, 71.0, 82.0, 94.0, 106.0, 119.0, 131.0, 145.0, 160.0, 175.0, 193.0, 215.0 ],
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 12,
+        "skill" : false
+      }
+    },
+    "description" : "Packed with volatile liquid and metal scraps, the Poison Gas Bomb will explode violently on impact showering the area with deadly Shrapnel.  Each fragment of shrapnel inflicts piercing damage to the enemies it hits.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Shrapnel.html"
+  } ], [ {
+    "name" : "Flurry of Knives",
+    "parent" : "Throwing Knife",
+    "attributes" : {
+      "projectileLaunchNumber" : {
+        "value" : [ 1.0, 2.0, 2.0, 3.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ],
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : [ 15.0, 18.0, 18.0, 21.0, 21.0, 24.0, 24.0, 27.0, 27.0, 30.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 10,
+        "skill" : false
+      },
+      "projectileLaunchRotation" : {
+        "value" : [ 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0 ],
+        "skill" : false
+      },
+      "offensivePierceModifier" : {
+        "value" : [ 25.5, 30.0, 34.5, 39.0, 43.5, 48.0, 52.5, 57.0, 61.5, 66.0 ],
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 6,
+        "skill" : false
+      }
+    },
+    "description" : "Learn to throw additional knives at once and cut down enemies with a lethal flurry of razor-sharp metal.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Flurry of Knives.html"
+  }, {
+    "name" : "Mortal Wound",
+    "parent" : "Lethal Strike",
+    "attributes" : {
+      "offensiveStunMin" : {
+        "value" : 3.0,
+        "skill" : false
+      },
+      "offensiveSlowPoisonModifier" : {
+        "value" : [ 60.0, 95.0, 130.0, 165.0, 200.0, 235.0, 270.0, 305.0, 340.0, 375.0, 410.0, 445.0 ],
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : 15.0,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 10,
+        "skill" : false
+      },
+      "offensiveSlowBleedingModifier" : {
+        "value" : [ 60.0, 95.0, 130.0, 165.0, 200.0, 235.0, 270.0, 305.0, 340.0, 375.0, 410.0, 445.0 ],
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 8,
+        "skill" : false
+      }
+    },
+    "description" : "Stuns victims of Lethal Strike and greatly magnifies the impact of poison and bleeding damage caused by the attack.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Mortal Wound.html"
   }, {
     "name" : "Improved Firing Mechanism",
     "parent" : null,
@@ -1151,101 +933,62 @@
               "value" : 30,
               "skill" : false
             },
-            "skillTier" : {
-              "value" : 6,
-              "skill" : false
-            },
             "skillMaxLevel" : {
               "value" : 8,
               "skill" : false
             }
           },
-          "buff" : null,
-          "skillDescription" : null,
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Improved Firing Mechanism.html",
-          "modifier" : true,
-          "skillTag" : "tagSkillName082"
+          "description" : "Modifications to the Bolt Trap increase the number of bolts fired per round.",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Improved Firing Mechanism.html"
         },
         "skill" : true
       }
     },
-    "buff" : {
-      "name" : "Improved Firing Mechanism",
-      "parent" : null,
-      "attributes" : {
-        "projectilePiercing" : {
-          "value" : [ 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0 ],
-          "skill" : false
-        },
-        "projectileLaunchNumber" : {
-          "value" : [ 3.0, 4.0, 4.0, 5.0, 5.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 8.0 ],
-          "skill" : false
-        },
-        "skillUltimateLevel" : {
-          "value" : 12,
-          "skill" : false
-        },
-        "projectileLaunchRotation" : {
-          "value" : 360.0,
-          "skill" : false
-        },
-        "offensivePierceModifier" : {
-          "value" : [ 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 75.0 ],
-          "skill" : false
-        },
-        "skillMasteryLevelRequired" : {
-          "value" : 30,
-          "skill" : false
-        },
-        "skillTier" : {
-          "value" : 6,
-          "skill" : false
-        },
-        "skillMaxLevel" : {
-          "value" : 8,
-          "skill" : false
-        }
-      },
-      "buff" : null,
-      "skillDescription" : null,
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Improved Firing Mechanism.html",
-      "modifier" : true,
-      "skillTag" : "tagSkillName082"
-    },
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Improved Firing Mechanism.html",
-    "modifier" : false,
-    "skillTag" : "tagSkillName082"
-  }, {
-    "name" : "Disarm Traps",
-    "parent" : null,
+    "description" : "Modifications to the Bolt Trap increase the number of bolts fired per round.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Improved Firing Mechanism.html"
+  } ], [ {
+    "name" : "Poison Mayhem",
+    "parent" : "Shrapnel",
     "attributes" : {
-      "racialBonusPercentDefense" : {
-        "value" : [ 10.0, 20.0, 29.0, 38.0, 46.0, 54.0, 61.0, 68.0, 74.0, 80.0 ],
+      "offensiveFearMax" : {
+        "value" : [ 0.0, 2.0 ],
+        "skill" : false
+      },
+      "offensiveProjectileFumbleDurationMin" : {
+        "value" : [ 0.0, 4.0 ],
+        "skill" : false
+      },
+      "offensiveFearMin" : {
+        "value" : [ 0.0, 1.0 ],
+        "skill" : false
+      },
+      "projectileLaunchNumber" : {
+        "value" : [ 1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0, 4.0 ],
         "skill" : false
       },
       "skillUltimateLevel" : {
-        "value" : 10,
+        "value" : 12,
         "skill" : false
       },
-      "racialBonusPercentDamage" : {
-        "value" : [ 20.0, 40.0, 61.0, 82.0, 105.0, 128.0, 154.0, 180.0, 210.0, 240.0 ],
+      "projectileLaunchRotation" : {
+        "value" : [ 40.0, 40.0, 40.0, 70.0, 70.0, 70.0, 100.0, 100.0, 100.0, 130.0 ],
         "skill" : false
       },
-      "skillTier" : {
-        "value" : 2,
+      "offensiveProjectileFumbleMin" : {
+        "value" : [ 0.0, 5.0, 10.0, 10.0, 15.0, 20.0, 20.0, 25.0, 30.0, 30.0, 35.0, 40.0 ],
+        "skill" : false
+      },
+      "offensiveFearChance" : {
+        "value" : [ 0.0, 10.0, 20.0, 20.0, 30.0, 40.0, 40.0, 50.0, 60.0, 60.0, 70.0, 80.0 ],
         "skill" : false
       },
       "skillMaxLevel" : {
-        "value" : 6,
+        "value" : 8,
         "skill" : false
       }
     },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Disarm Traps.html",
-    "modifier" : false,
-    "skillTag" : "tagSkillName198"
+    "description" : "Throws multiple Poison Gas Bombs at a time.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Poison Mayhem.html"
   }, {
     "name" : "Blade Barrier",
     "parent" : null,
@@ -1310,20 +1053,13 @@
         "value" : 4.0,
         "skill" : false
       },
-      "skillTier" : {
-        "value" : 7,
-        "skill" : false
-      },
       "offensivePercentCurrentLifeMin" : {
         "value" : [ 0.4, 0.8, 1.2, 1.6, 2.0, 2.4, 2.8, 3.2, 3.6, 4.0, 4.4, 4.8, 5.2, 5.6, 6.0, 6.4, 6.8, 7.2, 7.6, 8.0, 8.4, 8.8, 9.2, 9.6, 10.0, 10.4, 10.8, 11.2, 11.6, 12.0 ],
         "skill" : false
       }
     },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Blade Barrier.html",
-    "modifier" : false,
-    "skillTag" : "x3tagSkillRogueBladeBarrier"
-  } ],
+    "description" : "Summons a field of whirling blades that can transmit effects like a regular weapon.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery/Blade Barrier.html"
+  } ] ],
   "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Rogue Mastery.html"
 }

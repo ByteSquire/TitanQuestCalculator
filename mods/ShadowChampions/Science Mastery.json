@@ -1,108 +1,6 @@
 {
   "name" : "Science Mastery",
-  "skills" : [ {
-    "name" : "Ingenuity",
-    "parent" : null,
-    "attributes" : {
-      "skillUltimateLevel" : {
-        "value" : 14,
-        "skill" : false
-      },
-      "skillManaCostReductionChance" : {
-        "value" : [ 8.0, 12.0, 15.0, 19.0, 22.0, 26.0, 30.0, 33.0, 37.0, 41.0, 44.0, 48.0, 51.0, 55.0 ],
-        "skill" : false
-      },
-      "skillMasteryLevelRequired" : {
-        "value" : 16,
-        "skill" : false
-      },
-      "skillManaCostReduction" : {
-        "value" : 50.0,
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 4,
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 10,
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Ingenuity.html",
-    "modifier" : false,
-    "skillTag" : "skillScience1n"
-  }, {
-    "name" : "Miracle Solution",
-    "parent" : null,
-    "attributes" : {
-      "skillUltimateLevel" : {
-        "value" : 10,
-        "skill" : false
-      },
-      "skillCooldownReduction" : {
-        "value" : 50.0,
-        "skill" : false
-      },
-      "skillMasteryLevelRequired" : {
-        "value" : 32,
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 6,
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 6,
-        "skill" : false
-      },
-      "skillCooldownReductionChance" : {
-        "value" : [ 5.0, 7.0, 9.0, 11.0, 13.0, 14.0, 16.0, 18.0, 20.0, 22.0 ],
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Miracle Solution.html",
-    "modifier" : false,
-    "skillTag" : "skillScience2n"
-  }, {
-    "name" : "Nature Familiarity",
-    "parent" : null,
-    "attributes" : {
-      "racialBonusPercentDefense" : {
-        "value" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0 ],
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
-      },
-      "characterLifeRegen" : {
-        "value" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ],
-        "skill" : false
-      },
-      "skillMasteryLevelRequired" : {
-        "value" : 4,
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 2,
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Nature Familiarity.html",
-    "modifier" : false,
-    "skillTag" : "skillScience3n"
-  }, {
+  "skillTiers" : [ [ {
     "name" : "Rubblemaker",
     "parent" : null,
     "attributes" : {
@@ -122,178 +20,13 @@
         "value" : 1,
         "skill" : false
       },
-      "skillTier" : {
-        "value" : 1,
-        "skill" : false
-      },
       "skillMaxLevel" : {
         "value" : 8,
         "skill" : false
       }
     },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Rubblemaker.html",
-    "modifier" : false,
-    "skillTag" : "skillScience4n"
-  }, {
-    "name" : "Electrical Field",
-    "parent" : null,
-    "attributes" : {
-      "skillActiveDuration" : {
-        "value" : 6.0,
-        "skill" : false
-      },
-      "skillCooldownTime" : {
-        "value" : 7.0,
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 16,
-        "skill" : false
-      },
-      "skillManaCost" : {
-        "value" : [ 50.0, 52.0, 54.0, 56.0, 58.0, 60.0, 62.0, 64.0, 66.0, 68.0, 70.0, 72.0, 74.0, 76.0, 78.0, 80.0 ],
-        "skill" : false
-      },
-      "projectileExplosionRadius" : {
-        "value" : 5.0,
-        "skill" : false
-      },
-      "offensiveSlowLightningDurationMin" : {
-        "value" : 1.0,
-        "skill" : false
-      },
-      "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
-      },
-      "offensiveLightningMin" : {
-        "value" : [ 12.0, 17.0, 21.0, 26.0, 30.0, 35.0, 39.0, 44.0, 48.0, 53.0, 57.0, 62.0, 66.0, 71.0, 75.0, 80.0 ],
-        "skill" : false
-      },
-      "skillMasteryLevelRequired" : {
-        "value" : 4,
-        "skill" : false
-      },
-      "offensiveSlowLightningMin" : {
-        "value" : [ 12.0, 19.0, 25.0, 32.0, 38.0, 45.0, 51.0, 58.0, 64.0, 71.0, 77.0, 84.0, 90.0, 97.0, 103.0, 110.0 ],
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 2,
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 12,
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Electrical Field.html",
-    "modifier" : false,
-    "skillTag" : "skillScience5n"
-  }, {
-    "name" : "Electrodynamics",
-    "parent" : "Electrical Field",
-    "attributes" : {
-      "skillActiveDuration" : {
-        "value" : -2.0,
-        "skill" : false
-      },
-      "skillCooldownTime" : {
-        "value" : [ 1.0, 2.0, 3.0 ],
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 3,
-        "skill" : false
-      },
-      "offensivePetrifyMin" : {
-        "value" : 1.0,
-        "skill" : false
-      },
-      "offensiveSlowLightningModifier" : {
-        "value" : [ 15.0, 25.0, 35.0 ],
-        "skill" : false
-      },
-      "offensivePetrifyChance" : {
-        "value" : [ 10.0, 14.0, 18.0 ],
-        "skill" : false
-      },
-      "skillMasteryLevelRequired" : {
-        "value" : 10,
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 3,
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 3,
-        "skill" : false
-      },
-      "offensivePercentCurrentLifeMin" : {
-        "value" : [ 2.0, 4.0, 6.0 ],
-        "skill" : false
-      },
-      "offensiveSlowLightningDurationModifier" : {
-        "value" : 25.0,
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Electrodynamics.html",
-    "modifier" : true,
-    "skillTag" : "skillScience29n"
-  }, {
-    "name" : "Magnetize",
-    "parent" : "Electrodynamics",
-    "attributes" : {
-      "offensiveSlowRunSpeedMin" : {
-        "value" : [ 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0 ],
-        "skill" : false
-      },
-      "skillManaCost" : {
-        "value" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ],
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
-      },
-      "offensiveSlowRunSpeedDurationMin" : {
-        "value" : 1.0,
-        "skill" : false
-      },
-      "offensiveSlowLightningModifier" : {
-        "value" : [ 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0 ],
-        "skill" : false
-      },
-      "racialBonusPercentDamage" : {
-        "value" : 66.0,
-        "skill" : false
-      },
-      "skillMasteryLevelRequired" : {
-        "value" : 24,
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 5,
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Magnetize.html",
-    "modifier" : true,
-    "skillTag" : "skillScience6n"
+    "description" : "You hit your foes precisely where it causes the most damage, and in turn, you become very efficient at dismantling mechanical devices.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Rubblemaker.html"
   }, {
     "name" : "Poison Weapons",
     "parent" : null,
@@ -350,20 +83,281 @@
         "value" : 1,
         "skill" : false
       },
-      "skillTier" : {
-        "value" : 1,
-        "skill" : false
-      },
       "offensiveSlowPoisonMin" : {
         "value" : [ 9.0, 14.0, 19.0, 23.0, 28.0, 33.0, 38.0, 42.0, 47.0, 52.0, 57.0, 61.0, 66.0, 71.0, 76.0, 80.0, 85.0, 90.0 ],
         "skill" : false
       }
     },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Poison Weapons.html",
-    "modifier" : false,
-    "skillTag" : "skillScience7n"
+    "description" : "Profound knowledge of alchemy allowed you to develop a potent poison that brings deadly effects in mere seconds.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Poison Weapons.html"
+  }, {
+    "name" : "Build Automaton",
+    "parent" : null,
+    "attributes" : {
+      "skillCooldownTime" : {
+        "value" : 45.0,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 24,
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : [ 100.0, 103.0, 106.0, 109.0, 112.0, 115.0, 118.0, 121.0, 124.0, 127.0, 130.0, 133.0, 135.0, 138.0, 141.0, 144.0, 147.0, 150.0, 153.0, 156.0, 159.0, 162.0, 165.0, 168.0 ],
+        "skill" : false
+      },
+      "petLimit" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "cameraShakeAmplitude" : {
+        "value" : 0.12,
+        "skill" : false
+      },
+      "skillConnectionSpacing" : {
+        "value" : 62,
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 20,
+        "skill" : false
+      }
+    },
+    "description" : "Use scrap metal pieces to form a fully customizable battle automaton that obeys your orders and proves itself immensely powerful in battle.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Build Automaton.html"
+  }, {
+    "name" : "Archive Studies",
+    "parent" : null,
+    "attributes" : {
+      "defensiveStun" : {
+        "value" : [ 8.0, 11.2, 14.5, 17.7, 20.9, 24.2, 27.4, 30.6, 33.8, 37.1, 40.3, 43.5, 46.8, 50.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 14,
+        "skill" : false
+      },
+      "characterManaRegen" : {
+        "value" : [ 1.0, 1.7, 2.4, 3.1, 3.8, 4.5, 5.2, 5.8, 6.5, 7.2, 7.9, 8.6, 9.3, 10.0 ],
+        "skill" : false
+      },
+      "characterIntelligence" : {
+        "value" : [ 3.0, 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0 ],
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 10,
+        "skill" : false
+      }
+    },
+    "description" : "After reading thousands of volumes and tomes, you hold the knowledge of the world in your hands, granting you increased cunning and intelligence.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Archive Studies.html"
+  } ], [ {
+    "name" : "Nature Familiarity",
+    "parent" : null,
+    "attributes" : {
+      "racialBonusPercentDefense" : {
+        "value" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "characterLifeRegen" : {
+        "value" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ],
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 4,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 8,
+        "skill" : false
+      }
+    },
+    "description" : "Your past studies on biology prove useful during your journey, when it comes to knowing how to better deal with beasts and plants alike.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Nature Familiarity.html"
+  }, {
+    "name" : "Electrical Field",
+    "parent" : null,
+    "attributes" : {
+      "skillActiveDuration" : {
+        "value" : 6.0,
+        "skill" : false
+      },
+      "skillCooldownTime" : {
+        "value" : 7.0,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 16,
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : [ 50.0, 52.0, 54.0, 56.0, 58.0, 60.0, 62.0, 64.0, 66.0, 68.0, 70.0, 72.0, 74.0, 76.0, 78.0, 80.0 ],
+        "skill" : false
+      },
+      "projectileExplosionRadius" : {
+        "value" : 5.0,
+        "skill" : false
+      },
+      "offensiveSlowLightningDurationMin" : {
+        "value" : 1.0,
+        "skill" : false
+      },
+      "cameraShakeAmplitude" : {
+        "value" : 0.12,
+        "skill" : false
+      },
+      "offensiveLightningMin" : {
+        "value" : [ 12.0, 17.0, 21.0, 26.0, 30.0, 35.0, 39.0, 44.0, 48.0, 53.0, 57.0, 62.0, 66.0, 71.0, 75.0, 80.0 ],
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 4,
+        "skill" : false
+      },
+      "offensiveSlowLightningMin" : {
+        "value" : [ 12.0, 19.0, 25.0, 32.0, 38.0, 45.0, 51.0, 58.0, 64.0, 71.0, 77.0, 84.0, 90.0, 97.0, 103.0, 110.0 ],
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 12,
+        "skill" : false
+      }
+    },
+    "description" : "Cast a zone of electrifying energy, damaging enemies who find themselves caught in its radius.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Electrical Field.html"
+  }, {
+    "name" : "Sprockets",
+    "parent" : null,
+    "attributes" : {
+      "sprockets" : {
+        "value" : {
+          "name" : "Sprockets",
+          "parent" : null,
+          "attributes" : {
+            "defensiveTotalSpeedResistance" : {
+              "value" : [ 40.0, 44.0, 47.0, 51.0, 55.0, 58.0, 62.0, 65.0, 69.0, 73.0, 76.0, 80.0 ],
+              "skill" : false
+            },
+            "skillUltimateLevel" : {
+              "value" : 12,
+              "skill" : false
+            },
+            "skillMasteryLevelRequired" : {
+              "value" : 4,
+              "skill" : false
+            },
+            "defensiveTrap" : {
+              "value" : [ 40.0, 44.0, 47.0, 51.0, 55.0, 58.0, 62.0, 65.0, 69.0, 73.0, 76.0, 80.0 ],
+              "skill" : false
+            },
+            "skillMaxLevel" : {
+              "value" : 8,
+              "skill" : false
+            },
+            "characterTotalSpeedModifier" : {
+              "value" : [ 5.0, 8.0, 11.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 34.0, 37.0, 40.0 ],
+              "skill" : false
+            }
+          },
+          "description" : "Study closely the plans of your automaton to figure new possible improvements to speed up its movements.",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Sprockets.html"
+        },
+        "skill" : true
+      }
+    },
+    "description" : "Study closely the plans of your automaton to figure new possible improvements to speed up its movements.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Sprockets.html"
+  }, {
+    "name" : "Technological Advancement",
+    "parent" : null,
+    "attributes" : {
+      "skillProjectileSpeedModifier" : {
+        "value" : [ 5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0 ],
+        "skill" : false
+      },
+      "characterOffensiveAbility" : {
+        "value" : [ 13.0, 26.0, 39.0, 52.0, 65.0, 78.0, 91.0, 104.0, 117.0, 130.0, 143.0, 156.0, 169.0, 182.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 14,
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 4,
+        "skill" : false
+      },
+      "defensiveProtectionModifier" : {
+        "value" : [ 2.0, 3.0, 4.0, 6.0, 7.0, 8.0, 9.0, 11.0, 12.0, 13.0, 14.0, 16.0, 17.0, 18.0 ],
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 10,
+        "skill" : false
+      }
+    },
+    "description" : "Your knowledge and innovation give your weapons and gear an edge over your opponents.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Technological Advancement.html"
+  } ], [ {
+    "name" : "Electrodynamics",
+    "parent" : "Electrical Field",
+    "attributes" : {
+      "skillActiveDuration" : {
+        "value" : -2.0,
+        "skill" : false
+      },
+      "skillCooldownTime" : {
+        "value" : [ 1.0, 2.0, 3.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 3,
+        "skill" : false
+      },
+      "offensivePetrifyMin" : {
+        "value" : 1.0,
+        "skill" : false
+      },
+      "offensiveSlowLightningModifier" : {
+        "value" : [ 15.0, 25.0, 35.0 ],
+        "skill" : false
+      },
+      "offensivePetrifyChance" : {
+        "value" : [ 10.0, 14.0, 18.0 ],
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 10,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 3,
+        "skill" : false
+      },
+      "offensivePercentCurrentLifeMin" : {
+        "value" : [ 2.0, 4.0, 6.0 ],
+        "skill" : false
+      },
+      "offensiveSlowLightningDurationModifier" : {
+        "value" : 25.0,
+        "skill" : false
+      }
+    },
+    "description" : "{^g}Skill Modifier{^n}{^w}Craft a more potent variant of the electrical net that discharges quicker and needs more preparation time.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Electrodynamics.html"
   }, {
     "name" : "Corrode",
     "parent" : "Poison Weapons",
@@ -392,112 +386,13 @@
         "value" : 10,
         "skill" : false
       },
-      "skillTier" : {
-        "value" : 3,
-        "skill" : false
-      },
       "skillMaxLevel" : {
         "value" : 10,
         "skill" : false
       }
     },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Corrode.html",
-    "modifier" : true,
-    "skillTag" : "skillScience8n"
-  }, {
-    "name" : "Antidote",
-    "parent" : "Corrode",
-    "attributes" : {
-      "characterLifeModifier" : {
-        "value" : [ 3.0, 4.0, 5.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 14.0, 15.0, 16.0 ],
-        "skill" : false
-      },
-      "defensivePoisonDuration" : {
-        "value" : [ 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ],
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 12,
-        "skill" : false
-      },
-      "characterManaLimitReserve" : {
-        "value" : 50.0,
-        "skill" : false
-      },
-      "defensiveLifeDuration" : {
-        "value" : [ 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ],
-        "skill" : false
-      },
-      "characterLife" : {
-        "value" : [ 40.0, 65.0, 91.0, 116.0, 142.0, 167.0, 193.0, 218.0, 244.0, 269.0, 295.0, 320.0 ],
-        "skill" : false
-      },
-      "skillMasteryLevelRequired" : {
-        "value" : 24,
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 5,
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 8,
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Antidote.html",
-    "modifier" : true,
-    "skillTag" : "skillScience9n"
-  }, {
-    "name" : "Powered Weapons",
-    "parent" : "Antidote",
-    "attributes" : {
-      "offensiveLightningModifier" : {
-        "value" : 50.0,
-        "skill" : false
-      },
-      "offensiveSlowPoisonModifier" : {
-        "value" : -35.0,
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 1,
-        "skill" : false
-      },
-      "offensivePoisonModifier" : {
-        "value" : -35.0,
-        "skill" : false
-      },
-      "characterManaLimitReserve" : {
-        "value" : 75.0,
-        "skill" : false
-      },
-      "offensiveSlowLightningModifier" : {
-        "value" : 50.0,
-        "skill" : false
-      },
-      "skillMasteryLevelRequired" : {
-        "value" : 16,
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 4,
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 1,
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Powered Weapons.html",
-    "modifier" : true,
-    "skillTag" : "skillScience26n"
+    "description" : "Enhance the poison with burning acid that melts both flesh and bones.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Corrode.html"
   }, {
     "name" : "Atomic Burst",
     "parent" : null,
@@ -553,665 +448,10 @@
       "skillMasteryLevelRequired" : {
         "value" : 10,
         "skill" : false
-      },
-      "skillTier" : {
-        "value" : 3,
-        "skill" : false
       }
     },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Atomic Burst.html",
-    "modifier" : false,
-    "skillTag" : "skillScience27n"
-  }, {
-    "name" : "Build Automaton",
-    "parent" : null,
-    "attributes" : {
-      "skillCooldownTime" : {
-        "value" : 45.0,
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 24,
-        "skill" : false
-      },
-      "skillManaCost" : {
-        "value" : [ 100.0, 103.0, 106.0, 109.0, 112.0, 115.0, 118.0, 121.0, 124.0, 127.0, 130.0, 133.0, 135.0, 138.0, 141.0, 144.0, 147.0, 150.0, 153.0, 156.0, 159.0, 162.0, 165.0, 168.0 ],
-        "skill" : false
-      },
-      "petLimit" : {
-        "value" : 1,
-        "skill" : false
-      },
-      "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
-      },
-      "skillConnectionSpacing" : {
-        "value" : 62,
-        "skill" : false
-      },
-      "skillMasteryLevelRequired" : {
-        "value" : 1,
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 1,
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 20,
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Build Automaton.html",
-    "modifier" : false,
-    "skillTag" : "skillScience12n"
-  }, {
-    "name" : "Sprockets",
-    "parent" : null,
-    "attributes" : {
-      "sprockets" : {
-        "value" : {
-          "name" : "Sprockets",
-          "parent" : null,
-          "attributes" : {
-            "defensiveTotalSpeedResistance" : {
-              "value" : [ 40.0, 44.0, 47.0, 51.0, 55.0, 58.0, 62.0, 65.0, 69.0, 73.0, 76.0, 80.0 ],
-              "skill" : false
-            },
-            "skillUltimateLevel" : {
-              "value" : 12,
-              "skill" : false
-            },
-            "skillMasteryLevelRequired" : {
-              "value" : 4,
-              "skill" : false
-            },
-            "defensiveTrap" : {
-              "value" : [ 40.0, 44.0, 47.0, 51.0, 55.0, 58.0, 62.0, 65.0, 69.0, 73.0, 76.0, 80.0 ],
-              "skill" : false
-            },
-            "skillTier" : {
-              "value" : 2,
-              "skill" : false
-            },
-            "skillMaxLevel" : {
-              "value" : 8,
-              "skill" : false
-            },
-            "characterTotalSpeedModifier" : {
-              "value" : [ 5.0, 8.0, 11.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 34.0, 37.0, 40.0 ],
-              "skill" : false
-            }
-          },
-          "buff" : null,
-          "skillDescription" : null,
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Sprockets.html",
-          "modifier" : false,
-          "skillTag" : "skillScience13n"
-        },
-        "skill" : true
-      }
-    },
-    "buff" : {
-      "name" : "Sprockets",
-      "parent" : null,
-      "attributes" : {
-        "defensiveTotalSpeedResistance" : {
-          "value" : [ 40.0, 44.0, 47.0, 51.0, 55.0, 58.0, 62.0, 65.0, 69.0, 73.0, 76.0, 80.0 ],
-          "skill" : false
-        },
-        "skillUltimateLevel" : {
-          "value" : 12,
-          "skill" : false
-        },
-        "skillMasteryLevelRequired" : {
-          "value" : 4,
-          "skill" : false
-        },
-        "defensiveTrap" : {
-          "value" : [ 40.0, 44.0, 47.0, 51.0, 55.0, 58.0, 62.0, 65.0, 69.0, 73.0, 76.0, 80.0 ],
-          "skill" : false
-        },
-        "skillTier" : {
-          "value" : 2,
-          "skill" : false
-        },
-        "skillMaxLevel" : {
-          "value" : 8,
-          "skill" : false
-        },
-        "characterTotalSpeedModifier" : {
-          "value" : [ 5.0, 8.0, 11.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 34.0, 37.0, 40.0 ],
-          "skill" : false
-        }
-      },
-      "buff" : null,
-      "skillDescription" : null,
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Sprockets.html",
-      "modifier" : false,
-      "skillTag" : "skillScience13n"
-    },
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Sprockets.html",
-    "modifier" : false,
-    "skillTag" : "skillScience13n"
-  }, {
-    "name" : "Spinning Gears",
-    "parent" : null,
-    "attributes" : {
-      "spinattack" : {
-        "value" : {
-          "name" : "Spinning Gears",
-          "parent" : null,
-          "attributes" : {
-            "offensiveTotalDamageReductionPercentMin" : {
-              "value" : [ 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0 ],
-              "skill" : false
-            },
-            "skillCooldownTime" : {
-              "value" : 6.0,
-              "skill" : false
-            },
-            "skillManaCost" : {
-              "value" : 30.0,
-              "skill" : false
-            },
-            "skillConnectionSpacing" : {
-              "value" : 62,
-              "skill" : false
-            },
-            "cameraShakeAmplitude" : {
-              "value" : 0.12,
-              "skill" : false
-            },
-            "ragDollAmplification" : {
-              "value" : 1.0,
-              "skill" : false
-            },
-            "offensiveTotalDamageReductionPercentDurationMin" : {
-              "value" : 3.0,
-              "skill" : false
-            },
-            "skillMaxLevel" : {
-              "value" : 8,
-              "skill" : false
-            },
-            "offensivePhysicalModifier" : {
-              "value" : [ 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0 ],
-              "skill" : false
-            },
-            "skillUltimateLevel" : {
-              "value" : 12,
-              "skill" : false
-            },
-            "skillTargetNumber" : {
-              "value" : [ 3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 7.0, 7.0 ],
-              "skill" : false
-            },
-            "skillProjectileNumber" : {
-              "value" : 1,
-              "skill" : false
-            },
-            "skillMasteryLevelRequired" : {
-              "value" : 16,
-              "skill" : false
-            },
-            "skillTargetAngle" : {
-              "value" : 360.0,
-              "skill" : false
-            },
-            "skillTier" : {
-              "value" : 4,
-              "skill" : false
-            },
-            "offensivePercentCurrentLifeMin" : {
-              "value" : [ 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0 ],
-              "skill" : false
-            }
-          },
-          "buff" : null,
-          "skillDescription" : null,
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Spinning Gears.html",
-          "modifier" : false,
-          "skillTag" : "skillScience14n"
-        },
-        "skill" : true
-      }
-    },
-    "buff" : {
-      "name" : "Spinning Gears",
-      "parent" : null,
-      "attributes" : {
-        "offensiveTotalDamageReductionPercentMin" : {
-          "value" : [ 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0 ],
-          "skill" : false
-        },
-        "skillCooldownTime" : {
-          "value" : 6.0,
-          "skill" : false
-        },
-        "skillManaCost" : {
-          "value" : 30.0,
-          "skill" : false
-        },
-        "skillConnectionSpacing" : {
-          "value" : 62,
-          "skill" : false
-        },
-        "cameraShakeAmplitude" : {
-          "value" : 0.12,
-          "skill" : false
-        },
-        "ragDollAmplification" : {
-          "value" : 1.0,
-          "skill" : false
-        },
-        "offensiveTotalDamageReductionPercentDurationMin" : {
-          "value" : 3.0,
-          "skill" : false
-        },
-        "skillMaxLevel" : {
-          "value" : 8,
-          "skill" : false
-        },
-        "offensivePhysicalModifier" : {
-          "value" : [ 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0 ],
-          "skill" : false
-        },
-        "skillUltimateLevel" : {
-          "value" : 12,
-          "skill" : false
-        },
-        "skillTargetNumber" : {
-          "value" : [ 3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 7.0, 7.0 ],
-          "skill" : false
-        },
-        "skillProjectileNumber" : {
-          "value" : 1,
-          "skill" : false
-        },
-        "skillMasteryLevelRequired" : {
-          "value" : 16,
-          "skill" : false
-        },
-        "skillTargetAngle" : {
-          "value" : 360.0,
-          "skill" : false
-        },
-        "skillTier" : {
-          "value" : 4,
-          "skill" : false
-        },
-        "offensivePercentCurrentLifeMin" : {
-          "value" : [ 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0 ],
-          "skill" : false
-        }
-      },
-      "buff" : null,
-      "skillDescription" : null,
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Spinning Gears.html",
-      "modifier" : false,
-      "skillTag" : "skillScience14n"
-    },
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Spinning Gears.html",
-    "modifier" : false,
-    "skillTag" : "skillScience14n"
-  }, {
-    "name" : "Radioactive Core",
-    "parent" : null,
-    "attributes" : {
-      "nuclearaura" : {
-        "value" : {
-          "name" : "Radioactive Core",
-          "parent" : null,
-          "attributes" : {
-            "skillCooldownTime" : {
-              "value" : 4.0,
-              "skill" : false
-            },
-            "offensivePoisonMin" : {
-              "value" : [ 15.0, 22.0, 29.0, 35.0, 42.0, 49.0, 56.0, 63.0, 70.0, 76.0, 83.0, 90.0 ],
-              "skill" : false
-            },
-            "skillWeaponTintRed" : {
-              "value" : 1.0,
-              "skill" : false
-            },
-            "skillConnectionSpacing" : {
-              "value" : 62,
-              "skill" : false
-            },
-            "cameraShakeAmplitude" : {
-              "value" : 0.12,
-              "skill" : false
-            },
-            "skillMaxLevel" : {
-              "value" : 8,
-              "skill" : false
-            },
-            "skillUltimateLevel" : {
-              "value" : 12,
-              "skill" : false
-            },
-            "excludeRacialDamage" : {
-              "value" : 1,
-              "skill" : false
-            },
-            "offensiveSlowPoisonDurationMin" : {
-              "value" : 3.0,
-              "skill" : false
-            },
-            "skillTargetRadius" : {
-              "value" : 5.0,
-              "skill" : false
-            },
-            "skillMasteryLevelRequired" : {
-              "value" : 24,
-              "skill" : false
-            },
-            "defensivePoison" : {
-              "value" : [ -10.0, -15.0, -19.0, -24.0, -28.0, -33.0, -37.0, -42.0, -46.0, -51.0, -55.0, -60.0 ],
-              "skill" : false
-            },
-            "skillTier" : {
-              "value" : 5,
-              "skill" : false
-            },
-            "offensiveSlowPoisonMin" : {
-              "value" : [ 16.0, 26.0, 36.0, 46.0, 56.0, 66.0, 75.0, 85.0, 95.0, 105.0, 115.0, 125.0 ],
-              "skill" : false
-            }
-          },
-          "buff" : null,
-          "skillDescription" : null,
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Radioactive Core.html",
-          "modifier" : false,
-          "skillTag" : "skillScience15n"
-        },
-        "skill" : true
-      }
-    },
-    "buff" : {
-      "name" : "Radioactive Core",
-      "parent" : null,
-      "attributes" : {
-        "skillCooldownTime" : {
-          "value" : 4.0,
-          "skill" : false
-        },
-        "offensivePoisonMin" : {
-          "value" : [ 15.0, 22.0, 29.0, 35.0, 42.0, 49.0, 56.0, 63.0, 70.0, 76.0, 83.0, 90.0 ],
-          "skill" : false
-        },
-        "skillWeaponTintRed" : {
-          "value" : 1.0,
-          "skill" : false
-        },
-        "skillConnectionSpacing" : {
-          "value" : 62,
-          "skill" : false
-        },
-        "cameraShakeAmplitude" : {
-          "value" : 0.12,
-          "skill" : false
-        },
-        "skillMaxLevel" : {
-          "value" : 8,
-          "skill" : false
-        },
-        "skillUltimateLevel" : {
-          "value" : 12,
-          "skill" : false
-        },
-        "excludeRacialDamage" : {
-          "value" : 1,
-          "skill" : false
-        },
-        "offensiveSlowPoisonDurationMin" : {
-          "value" : 3.0,
-          "skill" : false
-        },
-        "skillTargetRadius" : {
-          "value" : 5.0,
-          "skill" : false
-        },
-        "skillMasteryLevelRequired" : {
-          "value" : 24,
-          "skill" : false
-        },
-        "defensivePoison" : {
-          "value" : [ -10.0, -15.0, -19.0, -24.0, -28.0, -33.0, -37.0, -42.0, -46.0, -51.0, -55.0, -60.0 ],
-          "skill" : false
-        },
-        "skillTier" : {
-          "value" : 5,
-          "skill" : false
-        },
-        "offensiveSlowPoisonMin" : {
-          "value" : [ 16.0, 26.0, 36.0, 46.0, 56.0, 66.0, 75.0, 85.0, 95.0, 105.0, 115.0, 125.0 ],
-          "skill" : false
-        }
-      },
-      "buff" : null,
-      "skillDescription" : null,
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Radioactive Core.html",
-      "modifier" : false,
-      "skillTag" : "skillScience15n"
-    },
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Radioactive Core.html",
-    "modifier" : false,
-    "skillTag" : "skillScience15n"
-  }, {
-    "name" : "EMP",
-    "parent" : null,
-    "attributes" : {
-      "emp" : {
-        "value" : {
-          "name" : "EMP",
-          "parent" : null,
-          "attributes" : {
-            "skillCooldownTime" : {
-              "value" : 9.0,
-              "skill" : false
-            },
-            "projectileExplosionRadius" : {
-              "value" : 5.0,
-              "skill" : false
-            },
-            "skillUltimateLevel" : {
-              "value" : 12,
-              "skill" : false
-            },
-            "skillManaCost" : {
-              "value" : [ 39.0, 43.0, 47.0, 51.0, 55.0, 59.0, 63.0, 67.0, 71.0, 75.0, 79.0, 83.0 ],
-              "skill" : false
-            },
-            "skillConnectionSpacing" : {
-              "value" : 62,
-              "skill" : false
-            },
-            "cameraShakeAmplitude" : {
-              "value" : 0.12,
-              "skill" : false
-            },
-            "offensiveLightningMin" : {
-              "value" : [ 92.82184, 121.2672, 151.2098, 179.6552, 208.1006, 238.0431, 266.4885, 296.431, 324.8764, 353.3218, 383.2643, 411.7097, 447.0, 480.0, 514.0, 550.0 ],
-              "skill" : false
-            },
-            "offensivePhysicalMin" : {
-              "value" : [ 36.0375, 52.855, 69.6725, 84.0875, 100.905, 117.7225, 134.54, 151.3575, 168.175, 182.59, 199.4075, 216.225, 233.0, 250.0, 267.0, 284.0 ],
-              "skill" : false
-            },
-            "offensiveDisruptionMin" : {
-              "value" : [ 2.0, 2.4, 2.7, 3.1, 3.5, 3.8, 4.2, 4.5, 4.9, 5.3, 5.6, 6.0, 6.4, 6.8, 7.1, 7.5 ],
-              "skill" : false
-            },
-            "skillMasteryLevelRequired" : {
-              "value" : 32,
-              "skill" : false
-            },
-            "skillTier" : {
-              "value" : 6,
-              "skill" : false
-            },
-            "skillMaxLevel" : {
-              "value" : 8,
-              "skill" : false
-            }
-          },
-          "buff" : null,
-          "skillDescription" : null,
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/EMP.html",
-          "modifier" : false,
-          "skillTag" : "skillScience28n"
-        },
-        "skill" : true
-      }
-    },
-    "buff" : {
-      "name" : "EMP",
-      "parent" : null,
-      "attributes" : {
-        "skillCooldownTime" : {
-          "value" : 9.0,
-          "skill" : false
-        },
-        "projectileExplosionRadius" : {
-          "value" : 5.0,
-          "skill" : false
-        },
-        "skillUltimateLevel" : {
-          "value" : 12,
-          "skill" : false
-        },
-        "skillManaCost" : {
-          "value" : [ 39.0, 43.0, 47.0, 51.0, 55.0, 59.0, 63.0, 67.0, 71.0, 75.0, 79.0, 83.0 ],
-          "skill" : false
-        },
-        "skillConnectionSpacing" : {
-          "value" : 62,
-          "skill" : false
-        },
-        "cameraShakeAmplitude" : {
-          "value" : 0.12,
-          "skill" : false
-        },
-        "offensiveLightningMin" : {
-          "value" : [ 92.82184, 121.2672, 151.2098, 179.6552, 208.1006, 238.0431, 266.4885, 296.431, 324.8764, 353.3218, 383.2643, 411.7097, 447.0, 480.0, 514.0, 550.0 ],
-          "skill" : false
-        },
-        "offensivePhysicalMin" : {
-          "value" : [ 36.0375, 52.855, 69.6725, 84.0875, 100.905, 117.7225, 134.54, 151.3575, 168.175, 182.59, 199.4075, 216.225, 233.0, 250.0, 267.0, 284.0 ],
-          "skill" : false
-        },
-        "offensiveDisruptionMin" : {
-          "value" : [ 2.0, 2.4, 2.7, 3.1, 3.5, 3.8, 4.2, 4.5, 4.9, 5.3, 5.6, 6.0, 6.4, 6.8, 7.1, 7.5 ],
-          "skill" : false
-        },
-        "skillMasteryLevelRequired" : {
-          "value" : 32,
-          "skill" : false
-        },
-        "skillTier" : {
-          "value" : 6,
-          "skill" : false
-        },
-        "skillMaxLevel" : {
-          "value" : 8,
-          "skill" : false
-        }
-      },
-      "buff" : null,
-      "skillDescription" : null,
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/EMP.html",
-      "modifier" : false,
-      "skillTag" : "skillScience28n"
-    },
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/EMP.html",
-    "modifier" : false,
-    "skillTag" : "skillScience28n"
-  }, {
-    "name" : "Black Widow",
-    "parent" : null,
-    "attributes" : {
-      "offensiveSlowPoisonModifier" : {
-        "value" : [ 14.0, 20.0, 26.0, 32.0, 38.0, 44.0, 50.0, 56.0, 62.0, 68.0, 74.0, 80.0, 86.0, 92.0 ],
-        "skill" : false
-      },
-      "skillCooldownTime" : {
-        "value" : 18.0,
-        "skill" : false
-      },
-      "offensiveSlowTotalSpeedMin" : {
-        "value" : [ 10.0, 13.0, 16.0, 19.0, 22.0, 25.0, 28.0, 32.0, 35.0, 38.0, 41.0, 44.0, 47.0, 50.0 ],
-        "skill" : false
-      },
-      "skillManaCost" : {
-        "value" : [ 100.0, 102.58, 106.54, 108.52, 112.48, 114.46, 118.42, 120.4, 124.36, 126.34, 130.3, 132.28, 136.24, 138.22, 142.18, 144.16 ],
-        "skill" : false
-      },
-      "skillConnectionSpacing" : {
-        "value" : 62,
-        "skill" : false
-      },
-      "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
-      },
-      "offensivePierceMin" : {
-        "value" : [ 14.0, 20.0, 26.0, 32.0, 38.0, 44.0, 50.0, 56.0, 62.0, 68.0, 74.0, 80.0, 86.0, 92.0 ],
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 10,
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 14,
-        "skill" : false
-      },
-      "offensivePoisonModifier" : {
-        "value" : [ 14.0, 20.0, 26.0, 32.0, 38.0, 44.0, 50.0, 56.0, 62.0, 68.0, 74.0, 80.0, 86.0, 92.0 ],
-        "skill" : false
-      },
-      "skillProjectileNumber" : {
-        "value" : 1,
-        "skill" : false
-      },
-      "offensiveSlowPoisonDurationMin" : {
-        "value" : 6.0,
-        "skill" : false
-      },
-      "skillMasteryLevelRequired" : {
-        "value" : 40,
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 7,
-        "skill" : false
-      },
-      "offensiveSlowPoisonMin" : {
-        "value" : [ 52.0, 71.0, 90.0, 109.0, 128.0, 147.0, 166.0, 186.0, 205.0, 224.0, 243.0, 262.0, 281.0, 300.0 ],
-        "skill" : false
-      },
-      "offensiveSlowTotalSpeedDurationMin" : {
-        "value" : 6.0,
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Black Widow.html",
-    "modifier" : false,
-    "skillTag" : "skillScience16n"
+    "description" : "An atom-powered beam, infused with the power of electricity and poison, bounces from target to target at lightning speed. {^n}{^y}Scales infinitely beyond the maximum level.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Atomic Burst.html"
   }, {
     "name" : "Build Bolt Trap",
     "parent" : null,
@@ -1279,181 +519,10 @@
       "skillMasteryLevelRequired" : {
         "value" : 10,
         "skill" : false
-      },
-      "skillTier" : {
-        "value" : 3,
-        "skill" : false
       }
     },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Build Bolt Trap.html",
-    "modifier" : false,
-    "skillTag" : "skillScience17n"
-  }, {
-    "name" : "Build Electric Trap",
-    "parent" : null,
-    "attributes" : {
-      "skillProjectileMissTimeToLive" : {
-        "value" : 30.0,
-        "skill" : false
-      },
-      "skillCooldownTime" : {
-        "value" : 4.0,
-        "skill" : false
-      },
-      "spawnObjectsTimeToLive" : {
-        "value" : 60.0,
-        "skill" : false
-      },
-      "skillManaCost" : {
-        "value" : [ 50.0, 54.0, 58.0, 62.0, 65.0, 69.0, 73.0, 77.0, 81.0, 85.0, 88.0, 92.0, 96.0, 100.0 ],
-        "skill" : false
-      },
-      "projectileExplosionRadius" : {
-        "value" : 1.0,
-        "skill" : false
-      },
-      "offensivePierceRatioMax" : {
-        "value" : 50.0,
-        "skill" : false
-      },
-      "skillConnectionSpacing" : {
-        "value" : 62,
-        "skill" : false
-      },
-      "skillProjectileTargetGroundOnly" : {
-        "value" : 1,
-        "skill" : false
-      },
-      "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
-      },
-      "skillProjectileHitTimeToLive" : {
-        "value" : 30.0,
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 10,
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 14,
-        "skill" : false
-      },
-      "offensivePierceRatioMin" : {
-        "value" : 30.0,
-        "skill" : false
-      },
-      "petLimit" : {
-        "value" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 2.0 ],
-        "skill" : false
-      },
-      "skillProjectileNumber" : {
-        "value" : 1,
-        "skill" : false
-      },
-      "skillMasteryLevelRequired" : {
-        "value" : 24,
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 5,
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Build Electric Trap.html",
-    "modifier" : false,
-    "skillTag" : "skillScience18n"
-  }, {
-    "name" : "Advanced Armor Craftsmanship",
-    "parent" : null,
-    "attributes" : {
-      "instantCast" : {
-        "value" : 1,
-        "skill" : false
-      },
-      "mechanicalmasterpiece" : {
-        "value" : {
-          "name" : "Advanced Armor Craftsmanship",
-          "parent" : null,
-          "attributes" : {
-            "skillUltimateLevel" : {
-              "value" : 10,
-              "skill" : false
-            },
-            "notDispelable" : {
-              "value" : 1,
-              "skill" : false
-            },
-            "cameraShakeAmplitude" : {
-              "value" : 0.12,
-              "skill" : false
-            },
-            "skillMasteryLevelRequired" : {
-              "value" : 32,
-              "skill" : false
-            },
-            "skillTier" : {
-              "value" : 6,
-              "skill" : false
-            },
-            "skillMaxLevel" : {
-              "value" : 6,
-              "skill" : false
-            }
-          },
-          "buff" : null,
-          "skillDescription" : null,
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Advanced Armor Craftsmanship.html",
-          "modifier" : false,
-          "skillTag" : "skillScience19n"
-        },
-        "skill" : true
-      }
-    },
-    "buff" : {
-      "name" : "Advanced Armor Craftsmanship",
-      "parent" : null,
-      "attributes" : {
-        "skillUltimateLevel" : {
-          "value" : 10,
-          "skill" : false
-        },
-        "notDispelable" : {
-          "value" : 1,
-          "skill" : false
-        },
-        "cameraShakeAmplitude" : {
-          "value" : 0.12,
-          "skill" : false
-        },
-        "skillMasteryLevelRequired" : {
-          "value" : 32,
-          "skill" : false
-        },
-        "skillTier" : {
-          "value" : 6,
-          "skill" : false
-        },
-        "skillMaxLevel" : {
-          "value" : 6,
-          "skill" : false
-        }
-      },
-      "buff" : null,
-      "skillDescription" : null,
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Advanced Armor Craftsmanship.html",
-      "modifier" : false,
-      "skillTag" : "skillScience19n"
-    },
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Advanced Armor Craftsmanship.html",
-    "modifier" : false,
-    "skillTag" : "skillScience19n"
+    "description" : "Create a durable trap, which shoots poisonous piercing projectiles in all directions. Later levels increase the summon limit.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Build Bolt Trap.html"
   }, {
     "name" : "Emergency Plan",
     "parent" : null,
@@ -1521,43 +590,28 @@
       "offensiveSlowTotalSpeedDurationMin" : {
         "value" : 3.0,
         "skill" : false
-      },
-      "skillTier" : {
-        "value" : 3,
-        "skill" : false
       }
     },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Emergency Plan.html",
-    "modifier" : false,
-    "skillTag" : "skillScience20n"
-  }, {
-    "name" : "Technological Advancement",
+    "description" : "In case things don't go according to plan, this smokescreen allows you to escape almost any situation.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Emergency Plan.html"
+  } ], [ {
+    "name" : "Ingenuity",
     "parent" : null,
     "attributes" : {
-      "skillProjectileSpeedModifier" : {
-        "value" : [ 5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0 ],
-        "skill" : false
-      },
-      "characterOffensiveAbility" : {
-        "value" : [ 13.0, 26.0, 39.0, 52.0, 65.0, 78.0, 91.0, 104.0, 117.0, 130.0, 143.0, 156.0, 169.0, 182.0 ],
-        "skill" : false
-      },
       "skillUltimateLevel" : {
         "value" : 14,
         "skill" : false
       },
+      "skillManaCostReductionChance" : {
+        "value" : [ 8.0, 12.0, 15.0, 19.0, 22.0, 26.0, 30.0, 33.0, 37.0, 41.0, 44.0, 48.0, 51.0, 55.0 ],
+        "skill" : false
+      },
       "skillMasteryLevelRequired" : {
-        "value" : 4,
+        "value" : 16,
         "skill" : false
       },
-      "skillTier" : {
-        "value" : 2,
-        "skill" : false
-      },
-      "defensiveProtectionModifier" : {
-        "value" : [ 2.0, 3.0, 4.0, 6.0, 7.0, 8.0, 9.0, 11.0, 12.0, 13.0, 14.0, 16.0, 17.0, 18.0 ],
+      "skillManaCostReduction" : {
+        "value" : 50.0,
         "skill" : false
       },
       "skillMaxLevel" : {
@@ -1565,11 +619,125 @@
         "skill" : false
       }
     },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Technological Advancement.html",
-    "modifier" : false,
-    "skillTag" : "skillScience21n"
+    "description" : "With great experience, you learn how to do more with less resources.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Ingenuity.html"
+  }, {
+    "name" : "Powered Weapons",
+    "parent" : "Antidote",
+    "attributes" : {
+      "offensiveLightningModifier" : {
+        "value" : 50.0,
+        "skill" : false
+      },
+      "offensiveSlowPoisonModifier" : {
+        "value" : -35.0,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "offensivePoisonModifier" : {
+        "value" : -35.0,
+        "skill" : false
+      },
+      "characterManaLimitReserve" : {
+        "value" : 75.0,
+        "skill" : false
+      },
+      "offensiveSlowLightningModifier" : {
+        "value" : 50.0,
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 16,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 1,
+        "skill" : false
+      }
+    },
+    "description" : "{^g}Skill Modifier{^n}{^w}Invent a method of constantly charging your blade. Liquids, however, won't sustain on the electrified surface as well as on bright iron.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Powered Weapons.html"
+  }, {
+    "name" : "Spinning Gears",
+    "parent" : null,
+    "attributes" : {
+      "spinattack" : {
+        "value" : {
+          "name" : "Spinning Gears",
+          "parent" : null,
+          "attributes" : {
+            "offensiveTotalDamageReductionPercentMin" : {
+              "value" : [ 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0 ],
+              "skill" : false
+            },
+            "skillCooldownTime" : {
+              "value" : 6.0,
+              "skill" : false
+            },
+            "skillManaCost" : {
+              "value" : 30.0,
+              "skill" : false
+            },
+            "skillConnectionSpacing" : {
+              "value" : 62,
+              "skill" : false
+            },
+            "cameraShakeAmplitude" : {
+              "value" : 0.12,
+              "skill" : false
+            },
+            "ragDollAmplification" : {
+              "value" : 1.0,
+              "skill" : false
+            },
+            "offensiveTotalDamageReductionPercentDurationMin" : {
+              "value" : 3.0,
+              "skill" : false
+            },
+            "skillMaxLevel" : {
+              "value" : 8,
+              "skill" : false
+            },
+            "offensivePhysicalModifier" : {
+              "value" : [ 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0 ],
+              "skill" : false
+            },
+            "skillUltimateLevel" : {
+              "value" : 12,
+              "skill" : false
+            },
+            "skillTargetNumber" : {
+              "value" : [ 3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 7.0, 7.0 ],
+              "skill" : false
+            },
+            "skillProjectileNumber" : {
+              "value" : 1,
+              "skill" : false
+            },
+            "skillMasteryLevelRequired" : {
+              "value" : 16,
+              "skill" : false
+            },
+            "skillTargetAngle" : {
+              "value" : 360.0,
+              "skill" : false
+            },
+            "offensivePercentCurrentLifeMin" : {
+              "value" : [ 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0 ],
+              "skill" : false
+            }
+          },
+          "description" : "Implement rotating gears, allowing your automaton to attack multiple enemies at once.",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Spinning Gears.html"
+        },
+        "skill" : true
+      }
+    },
+    "description" : "Implement rotating gears, allowing your automaton to attack multiple enemies at once.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Spinning Gears.html"
   }, {
     "name" : "Mutagen Prototype",
     "parent" : null,
@@ -1651,119 +819,483 @@
               "value" : 16,
               "skill" : false
             },
-            "skillTier" : {
-              "value" : 4,
-              "skill" : false
-            },
             "offensiveSlowPoisonMin" : {
               "value" : [ 14.0, 18.0, 23.0, 27.0, 31.0, 36.0, 40.0, 44.0, 48.0, 53.0, 57.0, 61.0, 66.0, 70.0 ],
               "skill" : false
             }
           },
-          "buff" : null,
-          "skillDescription" : null,
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Mutagen Prototype.html",
-          "modifier" : false,
-          "skillTag" : "skillScience22n"
+          "description" : "An injection of this serum empowers the attacks of its user with vicious poison, however, the dangerous substance filling their bodies lowers the odds of their survival. Use with caution.",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Mutagen Prototype.html"
         },
         "skill" : true
       }
     },
-    "buff" : {
-      "name" : "Mutagen Prototype",
-      "parent" : null,
-      "attributes" : {
-        "skillActiveDuration" : {
-          "value" : 25.0,
-          "skill" : false
-        },
-        "offensiveSlowPoisonModifier" : {
-          "value" : [ 20.0, 26.0, 32.0, 38.0, 45.0, 51.0, 57.0, 63.0, 69.0, 75.0, 82.0, 88.0, 94.0, 100.0 ],
-          "skill" : false
-        },
-        "skillCooldownTime" : {
-          "value" : 90.0,
-          "skill" : false
-        },
-        "skillManaCost" : {
-          "value" : [ 65.0, 71.0, 77.0, 82.0, 88.0, 94.0, 100.0, 105.0, 111.0, 117.0, 123.0, 128.0, 134.0, 140.0 ],
-          "skill" : false
-        },
-        "defensiveAbsorptionModifier" : {
-          "value" : -15.0,
-          "skill" : false
-        },
-        "isPetDisplayable" : {
-          "value" : 1,
-          "skill" : false
-        },
-        "offensivePoisonMin" : {
-          "value" : [ 10.0, 16.0, 22.0, 27.0, 33.0, 39.0, 45.0, 50.0, 56.0, 62.0, 68.0, 73.0, 79.0, 85.0 ],
-          "skill" : false
-        },
-        "cameraShakeAmplitude" : {
-          "value" : 0.32,
-          "skill" : false
-        },
-        "retaliationSlowPoisonMin" : {
-          "value" : [ 17.0, 21.0, 25.0, 30.0, 34.0, 38.0, 42.0, 47.0, 51.0, 55.0, 59.0, 64.0, 68.0, 72.0 ],
-          "skill" : false
-        },
-        "skillMaxLevel" : {
-          "value" : 10,
-          "skill" : false
-        },
-        "characterLifeModifier" : {
-          "value" : -15.0,
-          "skill" : false
-        },
-        "cameraShakeDurationSecs" : {
-          "value" : 0.5,
-          "skill" : false
-        },
-        "retaliationSlowPoisonDurationMin" : {
-          "value" : 3.0,
-          "skill" : false
-        },
-        "skillUltimateLevel" : {
-          "value" : 14,
-          "skill" : false
-        },
-        "offensivePoisonModifier" : {
-          "value" : [ 20.0, 26.0, 32.0, 38.0, 45.0, 51.0, 57.0, 63.0, 69.0, 75.0, 82.0, 88.0, 94.0, 100.0 ],
-          "skill" : false
-        },
-        "characterLifeRegenModifier" : {
-          "value" : -100.0,
-          "skill" : false
-        },
-        "offensiveSlowPoisonDurationMin" : {
-          "value" : 3.0,
-          "skill" : false
-        },
-        "skillMasteryLevelRequired" : {
-          "value" : 16,
-          "skill" : false
-        },
-        "skillTier" : {
-          "value" : 4,
-          "skill" : false
-        },
-        "offensiveSlowPoisonMin" : {
-          "value" : [ 14.0, 18.0, 23.0, 27.0, 31.0, 36.0, 40.0, 44.0, 48.0, 53.0, 57.0, 61.0, 66.0, 70.0 ],
-          "skill" : false
-        }
+    "description" : "An injection of this serum empowers the attacks of its user with vicious poison, however, the dangerous substance filling their bodies lowers the odds of their survival. Use with caution.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Mutagen Prototype.html"
+  }, {
+    "name" : "Chemical Explosion",
+    "parent" : null,
+    "attributes" : {
+      "projectileFragmentsLaunchNumberMin" : {
+        "value" : [ 3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 6.0, 7.0, 7.0 ],
+        "skill" : false
       },
-      "buff" : null,
-      "skillDescription" : null,
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Mutagen Prototype.html",
-      "modifier" : false,
-      "skillTag" : "skillScience22n"
+      "skillActiveDuration" : {
+        "value" : [ 4.0, 4.15, 4.3, 4.45, 4.6, 4.75, 4.9, 5.05, 5.2, 5.35, 5.5, 5.65, 5.8, 5.95, 6.1, 6.25 ],
+        "skill" : false
+      },
+      "skillCooldownTime" : {
+        "value" : 20.0,
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : [ 70.0, 75.0, 80.0, 86.0, 91.0, 97.0, 102.0, 107.0, 113.0, 118.0, 124.0, 129.0, 134.0, 140.0, 145.0, 151.0 ],
+        "skill" : false
+      },
+      "projectileExplosionRadius" : {
+        "value" : 1.0,
+        "skill" : false
+      },
+      "offensivePoisonMin" : {
+        "value" : [ 13.06875, 18.24844, 23.42813, 28.60781, 33.7875, 38.96719, 44.22656, 49.40625, 54.58594, 59.76563, 64.94531, 70.125 ],
+        "skill" : false
+      },
+      "cameraShakeAmplitude" : {
+        "value" : 0.12,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 16,
+        "skill" : false
+      },
+      "projectileFragmentsLaunchNumberMax" : {
+        "value" : [ 4.0, 4.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 8.0, 8.0, 9.0, 9.0 ],
+        "skill" : false
+      },
+      "offensiveSlowPoisonDurationMin" : {
+        "value" : 3.0,
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 16,
+        "skill" : false
+      },
+      "offensiveSlowPoisonMin" : {
+        "value" : [ 9.69505, 12.03753, 14.38, 16.72248, 19.06497, 21.40745, 23.78041, 26.12289, 28.46537, 30.80786, 33.15033, 35.49281 ],
+        "skill" : false
+      }
     },
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Mutagen Prototype.html",
-    "modifier" : false,
-    "skillTag" : "skillScience22n"
+    "description" : "Various chemicals react violently when mixed together and produce an explosion of dangerous acid.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Chemical Explosion.html"
+  } ], [ {
+    "name" : "Magnetize",
+    "parent" : "Electrodynamics",
+    "attributes" : {
+      "offensiveSlowRunSpeedMin" : {
+        "value" : [ 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0 ],
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "offensiveSlowRunSpeedDurationMin" : {
+        "value" : 1.0,
+        "skill" : false
+      },
+      "offensiveSlowLightningModifier" : {
+        "value" : [ 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0 ],
+        "skill" : false
+      },
+      "racialBonusPercentDamage" : {
+        "value" : 66.0,
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 24,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 8,
+        "skill" : false
+      }
+    },
+    "description" : "The strong magnetism inside the field prevents enemies from leaving it, alongside an increase in electrical damage it deals.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Magnetize.html"
+  }, {
+    "name" : "Antidote",
+    "parent" : "Corrode",
+    "attributes" : {
+      "characterLifeModifier" : {
+        "value" : [ 3.0, 4.0, 5.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 14.0, 15.0, 16.0 ],
+        "skill" : false
+      },
+      "defensivePoisonDuration" : {
+        "value" : [ 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "characterManaLimitReserve" : {
+        "value" : 50.0,
+        "skill" : false
+      },
+      "defensiveLifeDuration" : {
+        "value" : [ 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ],
+        "skill" : false
+      },
+      "characterLife" : {
+        "value" : [ 40.0, 65.0, 91.0, 116.0, 142.0, 167.0, 193.0, 218.0, 244.0, 269.0, 295.0, 320.0 ],
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 24,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 8,
+        "skill" : false
+      }
+    },
+    "description" : "Mastering the art of elixir-making, you are able to create an antidote which protects you from toxins and life-decaying attacks.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Antidote.html"
+  }, {
+    "name" : "Radioactive Core",
+    "parent" : null,
+    "attributes" : {
+      "nuclearaura" : {
+        "value" : {
+          "name" : "Radioactive Core",
+          "parent" : null,
+          "attributes" : {
+            "skillCooldownTime" : {
+              "value" : 4.0,
+              "skill" : false
+            },
+            "offensivePoisonMin" : {
+              "value" : [ 15.0, 22.0, 29.0, 35.0, 42.0, 49.0, 56.0, 63.0, 70.0, 76.0, 83.0, 90.0 ],
+              "skill" : false
+            },
+            "skillWeaponTintRed" : {
+              "value" : 1.0,
+              "skill" : false
+            },
+            "skillConnectionSpacing" : {
+              "value" : 62,
+              "skill" : false
+            },
+            "cameraShakeAmplitude" : {
+              "value" : 0.12,
+              "skill" : false
+            },
+            "skillMaxLevel" : {
+              "value" : 8,
+              "skill" : false
+            },
+            "skillUltimateLevel" : {
+              "value" : 12,
+              "skill" : false
+            },
+            "excludeRacialDamage" : {
+              "value" : 1,
+              "skill" : false
+            },
+            "offensiveSlowPoisonDurationMin" : {
+              "value" : 3.0,
+              "skill" : false
+            },
+            "skillTargetRadius" : {
+              "value" : 5.0,
+              "skill" : false
+            },
+            "skillMasteryLevelRequired" : {
+              "value" : 24,
+              "skill" : false
+            },
+            "defensivePoison" : {
+              "value" : [ -10.0, -15.0, -19.0, -24.0, -28.0, -33.0, -37.0, -42.0, -46.0, -51.0, -55.0, -60.0 ],
+              "skill" : false
+            },
+            "offensiveSlowPoisonMin" : {
+              "value" : [ 16.0, 26.0, 36.0, 46.0, 56.0, 66.0, 75.0, 85.0, 95.0, 105.0, 115.0, 125.0 ],
+              "skill" : false
+            }
+          },
+          "description" : "Install a core of radioactive energy at the center of your automaton, causing irreparable damage to anyone standing too close.",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Radioactive Core.html"
+        },
+        "skill" : true
+      }
+    },
+    "description" : "Install a core of radioactive energy at the center of your automaton, causing irreparable damage to anyone standing too close.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Radioactive Core.html"
+  }, {
+    "name" : "Build Electric Trap",
+    "parent" : null,
+    "attributes" : {
+      "skillProjectileMissTimeToLive" : {
+        "value" : 30.0,
+        "skill" : false
+      },
+      "skillCooldownTime" : {
+        "value" : 4.0,
+        "skill" : false
+      },
+      "spawnObjectsTimeToLive" : {
+        "value" : 60.0,
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : [ 50.0, 54.0, 58.0, 62.0, 65.0, 69.0, 73.0, 77.0, 81.0, 85.0, 88.0, 92.0, 96.0, 100.0 ],
+        "skill" : false
+      },
+      "projectileExplosionRadius" : {
+        "value" : 1.0,
+        "skill" : false
+      },
+      "offensivePierceRatioMax" : {
+        "value" : 50.0,
+        "skill" : false
+      },
+      "skillConnectionSpacing" : {
+        "value" : 62,
+        "skill" : false
+      },
+      "skillProjectileTargetGroundOnly" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "cameraShakeAmplitude" : {
+        "value" : 0.12,
+        "skill" : false
+      },
+      "skillProjectileHitTimeToLive" : {
+        "value" : 30.0,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 10,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 14,
+        "skill" : false
+      },
+      "offensivePierceRatioMin" : {
+        "value" : 30.0,
+        "skill" : false
+      },
+      "petLimit" : {
+        "value" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 2.0 ],
+        "skill" : false
+      },
+      "skillProjectileNumber" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 24,
+        "skill" : false
+      }
+    },
+    "description" : "Create a durable trap, which shoots stunning, charged projectiles, splitting into smaller fragments on contact. Later levels increase the summon limit.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Build Electric Trap.html"
+  }, {
+    "name" : "Dazing Bacteria",
+    "parent" : "Chemical Explosion",
+    "attributes" : {
+      "offensiveFumbleDurationMin" : {
+        "value" : 3.0,
+        "skill" : false
+      },
+      "offensiveProjectileFumbleDurationMin" : {
+        "value" : 3.0,
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : [ 3.0, 5.0, 8.0, 10.0, 13.0, 15.0, 18.0, 20.0, 23.0, 25.0, 28.0, 30.0, 33.0, 35.0 ],
+        "skill" : false
+      },
+      "offensiveGlobalChance" : {
+        "value" : [ 6.25, 6.75, 7.25, 7.75, 8.125, 8.625, 9.125, 9.625, 10.125, 10.625, 11.0, 11.5, 12.0, 12.5 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 14,
+        "skill" : false
+      },
+      "offensiveFumbleMin" : {
+        "value" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0 ],
+        "skill" : false
+      },
+      "offensiveProjectileFumbleGlobal" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "offensiveLightningMin" : {
+        "value" : [ 15.0, 20.0, 26.0, 31.0, 36.0, 42.0, 47.0, 52.0, 57.0, 63.0, 68.0, 73.0, 79.0, 84.0 ],
+        "skill" : false
+      },
+      "offensiveProjectileFumbleMin" : {
+        "value" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0 ],
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 24,
+        "skill" : false
+      },
+      "offensiveFumbleGlobal" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 10,
+        "skill" : false
+      }
+    },
+    "description" : "Organisms infected by dangerous bacteria are afflicted with terrible side effects that make fighting a much harder task.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Dazing Bacteria.html"
+  } ], [ {
+    "name" : "Miracle Solution",
+    "parent" : null,
+    "attributes" : {
+      "skillUltimateLevel" : {
+        "value" : 10,
+        "skill" : false
+      },
+      "skillCooldownReduction" : {
+        "value" : 50.0,
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 32,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 6,
+        "skill" : false
+      },
+      "skillCooldownReductionChance" : {
+        "value" : [ 5.0, 7.0, 9.0, 11.0, 13.0, 14.0, 16.0, 18.0, 20.0, 22.0 ],
+        "skill" : false
+      }
+    },
+    "description" : "The best savants are resourceful and can achieve wonders with their skills.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Miracle Solution.html"
+  }, {
+    "name" : "EMP",
+    "parent" : null,
+    "attributes" : {
+      "emp" : {
+        "value" : {
+          "name" : "EMP",
+          "parent" : null,
+          "attributes" : {
+            "skillCooldownTime" : {
+              "value" : 9.0,
+              "skill" : false
+            },
+            "projectileExplosionRadius" : {
+              "value" : 5.0,
+              "skill" : false
+            },
+            "skillUltimateLevel" : {
+              "value" : 12,
+              "skill" : false
+            },
+            "skillManaCost" : {
+              "value" : [ 39.0, 43.0, 47.0, 51.0, 55.0, 59.0, 63.0, 67.0, 71.0, 75.0, 79.0, 83.0 ],
+              "skill" : false
+            },
+            "skillConnectionSpacing" : {
+              "value" : 62,
+              "skill" : false
+            },
+            "cameraShakeAmplitude" : {
+              "value" : 0.12,
+              "skill" : false
+            },
+            "offensiveLightningMin" : {
+              "value" : [ 92.82184, 121.2672, 151.2098, 179.6552, 208.1006, 238.0431, 266.4885, 296.431, 324.8764, 353.3218, 383.2643, 411.7097, 447.0, 480.0, 514.0, 550.0 ],
+              "skill" : false
+            },
+            "offensivePhysicalMin" : {
+              "value" : [ 36.0375, 52.855, 69.6725, 84.0875, 100.905, 117.7225, 134.54, 151.3575, 168.175, 182.59, 199.4075, 216.225, 233.0, 250.0, 267.0, 284.0 ],
+              "skill" : false
+            },
+            "offensiveDisruptionMin" : {
+              "value" : [ 2.0, 2.4, 2.7, 3.1, 3.5, 3.8, 4.2, 4.5, 4.9, 5.3, 5.6, 6.0, 6.4, 6.8, 7.1, 7.5 ],
+              "skill" : false
+            },
+            "skillMasteryLevelRequired" : {
+              "value" : 32,
+              "skill" : false
+            },
+            "skillMaxLevel" : {
+              "value" : 8,
+              "skill" : false
+            }
+          },
+          "description" : "The automaton generates its own energy and can project stored electricity in the form of an electromagnetic pulse; the implosion severely electrifies anyone caught in the radius and disrupts any positive buffs.",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/EMP.html"
+        },
+        "skill" : true
+      }
+    },
+    "description" : "The automaton generates its own energy and can project stored electricity in the form of an electromagnetic pulse; the implosion severely electrifies anyone caught in the radius and disrupts any positive buffs.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/EMP.html"
+  }, {
+    "name" : "Advanced Armor Craftsmanship",
+    "parent" : null,
+    "attributes" : {
+      "instantCast" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "mechanicalmasterpiece" : {
+        "value" : {
+          "name" : "Advanced Armor Craftsmanship",
+          "parent" : null,
+          "attributes" : {
+            "skillUltimateLevel" : {
+              "value" : 10,
+              "skill" : false
+            },
+            "notDispelable" : {
+              "value" : 1,
+              "skill" : false
+            },
+            "cameraShakeAmplitude" : {
+              "value" : 0.12,
+              "skill" : false
+            },
+            "skillMasteryLevelRequired" : {
+              "value" : 32,
+              "skill" : false
+            },
+            "skillMaxLevel" : {
+              "value" : 6,
+              "skill" : false
+            }
+          },
+          "description" : "Develop your skills in steel-working by crafting customized armor parts for your familiars' protection. Those armor pieces are perfectly adjusted to them and will not slow them down.{^n}{^a}Cannot be dispelled.",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Advanced Armor Craftsmanship.html"
+        },
+        "skill" : true
+      }
+    },
+    "description" : "Develop your skills in steel-working by crafting customized armor parts for your familiars' protection. Those armor pieces are perfectly adjusted to them and will not slow them down.{^n}{^a}Cannot be dispelled.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Advanced Armor Craftsmanship.html"
   }, {
     "name" : "Hazardous Alteration",
     "parent" : "Mutagen Prototype",
@@ -1792,10 +1324,6 @@
         "value" : 32,
         "skill" : false
       },
-      "skillTier" : {
-        "value" : 6,
-        "skill" : false
-      },
       "skillMaxLevel" : {
         "value" : 1,
         "skill" : false
@@ -1805,11 +1333,8 @@
         "skill" : false
       }
     },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Hazardous Alteration.html",
-    "modifier" : true,
-    "skillTag" : "skillScience23n"
+    "description" : "{^g}Skill Modifier{^n}{^w}The mutagen's effects last for much longer, however it doesn't come without drawbacks to the user.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Hazardous Alteration.html"
   }, {
     "name" : "Nanovirus",
     "parent" : null,
@@ -1891,119 +1416,86 @@
               "value" : 32,
               "skill" : false
             },
-            "skillTier" : {
-              "value" : 6,
-              "skill" : false
-            },
             "offensiveSlowPoisonMin" : {
               "value" : [ 10.0, 15.0, 19.0, 24.0, 28.0, 33.0, 38.0, 42.0, 47.0, 52.0, 56.0, 61.0, 65.0, 70.0 ],
               "skill" : false
             }
           },
-          "buff" : null,
-          "skillDescription" : null,
-          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Nanovirus.html",
-          "modifier" : false,
-          "skillTag" : "skillScience24n"
+          "description" : "Send out nanomachines, which implant themselves in the heads your opponents, damaging their mind and causing long-lasting injuries.",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Nanovirus.html"
         },
         "skill" : true
       }
     },
-    "buff" : {
-      "name" : "Nanovirus",
-      "parent" : null,
-      "attributes" : {
-        "offensiveTotalDamageReductionPercentMin" : {
-          "value" : [ 10.0, 12.0, 13.0, 15.0, 17.0, 18.0, 20.0, 22.0, 24.0, 25.0, 27.0, 29.0, 30.0, 32.0 ],
-          "skill" : false
-        },
-        "contagionLimit" : {
-          "value" : 4,
-          "skill" : false
-        },
-        "skillActiveDuration" : {
-          "value" : 4.0,
-          "skill" : false
-        },
-        "skillCooldownTime" : {
-          "value" : 32.0,
-          "skill" : false
-        },
-        "skillManaCost" : {
-          "value" : [ 80.0, 91.0, 102.0, 112.0, 123.0, 134.0, 145.0, 155.0, 166.0, 177.0, 188.0, 198.0, 209.0, 220.0 ],
-          "skill" : false
-        },
-        "skillConnectionSpacing" : {
-          "value" : 62,
-          "skill" : false
-        },
-        "cameraShakeAmplitude" : {
-          "value" : 0.12,
-          "skill" : false
-        },
-        "contagionInterval" : {
-          "value" : 1.0,
-          "skill" : false
-        },
-        "offensiveTotalDamageReductionPercentDurationMin" : {
-          "value" : 7.0,
-          "skill" : false
-        },
-        "skillMaxLevel" : {
-          "value" : 10,
-          "skill" : false
-        },
-        "debufSkill" : {
-          "value" : 1,
-          "skill" : false
-        },
-        "contagionMaxSpread" : {
-          "value" : 99,
-          "skill" : false
-        },
-        "skillUltimateLevel" : {
-          "value" : 14,
-          "skill" : false
-        },
-        "offensiveSlowLightningDurationMin" : {
-          "value" : 10.0,
-          "skill" : false
-        },
-        "offensiveSlowPoisonDurationMin" : {
-          "value" : 10.0,
-          "skill" : false
-        },
-        "contagionRadius" : {
-          "value" : 4.0,
-          "skill" : false
-        },
-        "offensiveSlowLightningMin" : {
-          "value" : [ 10.0, 15.0, 19.0, 24.0, 28.0, 33.0, 38.0, 42.0, 47.0, 52.0, 56.0, 61.0, 65.0, 70.0 ],
-          "skill" : false
-        },
-        "skillMasteryLevelRequired" : {
-          "value" : 32,
-          "skill" : false
-        },
-        "skillTier" : {
-          "value" : 6,
-          "skill" : false
-        },
-        "offensiveSlowPoisonMin" : {
-          "value" : [ 10.0, 15.0, 19.0, 24.0, 28.0, 33.0, 38.0, 42.0, 47.0, 52.0, 56.0, 61.0, 65.0, 70.0 ],
-          "skill" : false
-        }
+    "description" : "Send out nanomachines, which implant themselves in the heads your opponents, damaging their mind and causing long-lasting injuries.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Nanovirus.html"
+  } ], [ {
+    "name" : "Black Widow",
+    "parent" : null,
+    "attributes" : {
+      "offensiveSlowPoisonModifier" : {
+        "value" : [ 14.0, 20.0, 26.0, 32.0, 38.0, 44.0, 50.0, 56.0, 62.0, 68.0, 74.0, 80.0, 86.0, 92.0 ],
+        "skill" : false
       },
-      "buff" : null,
-      "skillDescription" : null,
-      "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Nanovirus.html",
-      "modifier" : false,
-      "skillTag" : "skillScience24n"
+      "skillCooldownTime" : {
+        "value" : 18.0,
+        "skill" : false
+      },
+      "offensiveSlowTotalSpeedMin" : {
+        "value" : [ 10.0, 13.0, 16.0, 19.0, 22.0, 25.0, 28.0, 32.0, 35.0, 38.0, 41.0, 44.0, 47.0, 50.0 ],
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : [ 100.0, 102.58, 106.54, 108.52, 112.48, 114.46, 118.42, 120.4, 124.36, 126.34, 130.3, 132.28, 136.24, 138.22, 142.18, 144.16 ],
+        "skill" : false
+      },
+      "skillConnectionSpacing" : {
+        "value" : 62,
+        "skill" : false
+      },
+      "cameraShakeAmplitude" : {
+        "value" : 0.12,
+        "skill" : false
+      },
+      "offensivePierceMin" : {
+        "value" : [ 14.0, 20.0, 26.0, 32.0, 38.0, 44.0, 50.0, 56.0, 62.0, 68.0, 74.0, 80.0, 86.0, 92.0 ],
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 10,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 14,
+        "skill" : false
+      },
+      "offensivePoisonModifier" : {
+        "value" : [ 14.0, 20.0, 26.0, 32.0, 38.0, 44.0, 50.0, 56.0, 62.0, 68.0, 74.0, 80.0, 86.0, 92.0 ],
+        "skill" : false
+      },
+      "skillProjectileNumber" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "offensiveSlowPoisonDurationMin" : {
+        "value" : 6.0,
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 40,
+        "skill" : false
+      },
+      "offensiveSlowPoisonMin" : {
+        "value" : [ 52.0, 71.0, 90.0, 109.0, 128.0, 147.0, 166.0, 186.0, 205.0, 224.0, 243.0, 262.0, 281.0, 300.0 ],
+        "skill" : false
+      },
+      "offensiveSlowTotalSpeedDurationMin" : {
+        "value" : 6.0,
+        "skill" : false
+      }
     },
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Nanovirus.html",
-    "modifier" : false,
-    "skillTag" : "skillScience24n"
+    "description" : "Even the smallest dose of this substance heavily cripples anyone struck by a weapon covered in it.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Black Widow.html"
   }, {
     "name" : "Last Stage",
     "parent" : "Nanovirus",
@@ -2032,10 +1524,6 @@
         "value" : [ -10.0, -16.0, -21.0, -27.0, -32.0, -38.0, -43.0, -49.0, -54.0, -60.0 ],
         "skill" : false
       },
-      "skillTier" : {
-        "value" : 7,
-        "skill" : false
-      },
       "defensiveProtectionModifier" : {
         "value" : [ -5.0, -8.0, -11.0, -13.0, -16.0, -19.0, -22.0, -24.0, -27.0, -30.0 ],
         "skill" : false
@@ -2045,177 +1533,8 @@
         "skill" : false
       }
     },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Last Stage.html",
-    "modifier" : true,
-    "skillTag" : "skillScience25n"
-  }, {
-    "name" : "Chemical Explosion",
-    "parent" : null,
-    "attributes" : {
-      "projectileFragmentsLaunchNumberMin" : {
-        "value" : [ 3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 6.0, 7.0, 7.0 ],
-        "skill" : false
-      },
-      "skillActiveDuration" : {
-        "value" : [ 4.0, 4.15, 4.3, 4.45, 4.6, 4.75, 4.9, 5.05, 5.2, 5.35, 5.5, 5.65, 5.8, 5.95, 6.1, 6.25 ],
-        "skill" : false
-      },
-      "skillCooldownTime" : {
-        "value" : 20.0,
-        "skill" : false
-      },
-      "skillManaCost" : {
-        "value" : [ 70.0, 75.0, 80.0, 86.0, 91.0, 97.0, 102.0, 107.0, 113.0, 118.0, 124.0, 129.0, 134.0, 140.0, 145.0, 151.0 ],
-        "skill" : false
-      },
-      "projectileExplosionRadius" : {
-        "value" : 1.0,
-        "skill" : false
-      },
-      "offensivePoisonMin" : {
-        "value" : [ 13.06875, 18.24844, 23.42813, 28.60781, 33.7875, 38.96719, 44.22656, 49.40625, 54.58594, 59.76563, 64.94531, 70.125 ],
-        "skill" : false
-      },
-      "cameraShakeAmplitude" : {
-        "value" : 0.12,
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 12,
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 16,
-        "skill" : false
-      },
-      "projectileFragmentsLaunchNumberMax" : {
-        "value" : [ 4.0, 4.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 8.0, 8.0, 9.0, 9.0 ],
-        "skill" : false
-      },
-      "offensiveSlowPoisonDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
-      },
-      "skillMasteryLevelRequired" : {
-        "value" : 16,
-        "skill" : false
-      },
-      "offensiveSlowPoisonMin" : {
-        "value" : [ 9.69505, 12.03753, 14.38, 16.72248, 19.06497, 21.40745, 23.78041, 26.12289, 28.46537, 30.80786, 33.15033, 35.49281 ],
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 4,
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Chemical Explosion.html",
-    "modifier" : false,
-    "skillTag" : "skillScience30n"
-  }, {
-    "name" : "Dazing Bacteria",
-    "parent" : "Chemical Explosion",
-    "attributes" : {
-      "offensiveFumbleDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
-      },
-      "skillManaCost" : {
-        "value" : [ 3.0, 5.0, 8.0, 10.0, 13.0, 15.0, 18.0, 20.0, 23.0, 25.0, 28.0, 30.0, 33.0, 35.0 ],
-        "skill" : false
-      },
-      "offensiveProjectileFumbleGlobal" : {
-        "value" : 1,
-        "skill" : false
-      },
-      "offensiveProjectileFumbleMin" : {
-        "value" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0 ],
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 10,
-        "skill" : false
-      },
-      "offensiveProjectileFumbleDurationMin" : {
-        "value" : 3.0,
-        "skill" : false
-      },
-      "offensiveGlobalChance" : {
-        "value" : [ 6.25, 6.75, 7.25, 7.75, 8.125, 8.625, 9.125, 9.625, 10.125, 10.625, 11.0, 11.5, 12.0, 12.5 ],
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 14,
-        "skill" : false
-      },
-      "offensiveFumbleMin" : {
-        "value" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0 ],
-        "skill" : false
-      },
-      "offensiveLightningMin" : {
-        "value" : [ 15.0, 20.0, 26.0, 31.0, 36.0, 42.0, 47.0, 52.0, 57.0, 63.0, 68.0, 73.0, 79.0, 84.0 ],
-        "skill" : false
-      },
-      "skillMasteryLevelRequired" : {
-        "value" : 24,
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 5,
-        "skill" : false
-      },
-      "offensiveFumbleGlobal" : {
-        "value" : 1,
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Dazing Bacteria.html",
-    "modifier" : true,
-    "skillTag" : "skillScience31n"
-  }, {
-    "name" : "Archive Studies",
-    "parent" : null,
-    "attributes" : {
-      "defensiveStun" : {
-        "value" : [ 8.0, 11.2, 14.5, 17.7, 20.9, 24.2, 27.4, 30.6, 33.8, 37.1, 40.3, 43.5, 46.8, 50.0 ],
-        "skill" : false
-      },
-      "skillUltimateLevel" : {
-        "value" : 14,
-        "skill" : false
-      },
-      "characterManaRegen" : {
-        "value" : [ 1.0, 1.7, 2.4, 3.1, 3.8, 4.5, 5.2, 5.8, 6.5, 7.2, 7.9, 8.6, 9.3, 10.0 ],
-        "skill" : false
-      },
-      "characterIntelligence" : {
-        "value" : [ 3.0, 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0 ],
-        "skill" : false
-      },
-      "skillMasteryLevelRequired" : {
-        "value" : 1,
-        "skill" : false
-      },
-      "skillTier" : {
-        "value" : 1,
-        "skill" : false
-      },
-      "skillMaxLevel" : {
-        "value" : 10,
-        "skill" : false
-      }
-    },
-    "buff" : null,
-    "skillDescription" : null,
-    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Archive Studies.html",
-    "modifier" : false,
-    "skillTag" : "skillScience32n"
-  } ],
+    "description" : "Ill and weak, your enemies can already feel the reaper's touch.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery/Last Stage.html"
+  } ] ],
   "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Science Mastery.html"
 }
