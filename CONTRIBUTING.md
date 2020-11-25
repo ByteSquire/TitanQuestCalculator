@@ -2,7 +2,7 @@
   - Fork the repo in the top-right corner. ![how to fork](https://docs.github.com/assets/images/help/repository/fork_button.jpg)
   - Clone your forked repo. [how to clone](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
   - Open your local clone of your forked repo.
-  - Put your mod from CustomMaps into the databases directory inside the tqcalulator directory.
+  - Put your mod from CustomMaps into the tqcalculator/resources/databases directory.
   - Put your modstrings.txt in a folder called text. (you can take a look at the other mods for reference)
   - Delete the assets and source directories as they are not required and would bloat the repo.
   - If you have any kind of uncommon directory structure and are familiar with git please have a look at the .gitignore in the databases directory to avoid bloating the repo.
