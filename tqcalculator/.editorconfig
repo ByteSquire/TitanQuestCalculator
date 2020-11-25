@@ -1,0 +1,20 @@
+# this is the root dir, don't search any further for editorconfig
+root = true
+
+# all files
+[*]
+# newline = lf
+end_of_line = lf
+# file ends with newline
+insert_final_newline = true
+#remove whitespace preceeding newline
+trim_trailing_whitespace = true
+# use utf-8
+charset = utf-8
+
+# source code files
+[*.{java,xml}]
+# indentation via spaces
+indent_style = space
+# indent by 4 spaces
+indent_size = 4
