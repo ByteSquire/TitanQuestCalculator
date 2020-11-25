@@ -10,8 +10,14 @@
     <h2>You can click any link shown below to get info about the skill.</h2>
 
     <table border=1.7>
-    <#list skills as skill>
-        <tr><td><a href="${skill.url}"><#if skill.name??>${skill.name}<#else>Error reading name</#if></a>
+    <#list skills as skillTier>
+        <tr><td>Tier: ${skillTier[0].skillTier}
+        <td>
+        <table border=1.7>
+            <#list skillTier as skill>
+                <tr><td><a href="${skill.url}"><#if skill.name??>${skill.name}<#else>Error reading name</#if></a>
+            </#list>
+        </table>
     </#list>
     </table>
     
