@@ -103,9 +103,10 @@ public class Cleaner {
                 e.printStackTrace();
         }
 
-        for (Skill skill : mastery.getSkills()) {
-            cleanSkill(skill, mod, mastery);
-        }
+        for (int i = 0; i < mastery.getSkillTiers().size(); i++)
+            for (Skill skill : mastery.getSkillTier(i)) {
+                cleanSkill(skill, mod, mastery);
+            }
     }
 
     private void cleanSkill(Skill skill, Mod mod, Mastery mastery) {

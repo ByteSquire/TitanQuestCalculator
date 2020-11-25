@@ -9,7 +9,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import de.bytesquire.titanquest.tqcalculator.parsers.ModStringsParser;
 import de.bytesquire.titanquest.tqcalculator.parsers.SkillParser;
 
-@JsonIgnoreProperties({ "skill" })
+@JsonIgnoreProperties({ "skill", "buff", "skillTag", "skillDescriptionTag", "modifier", "skillTier" })
 public class Skill {
 
     private SkillParser mSkillParser;
@@ -21,17 +21,26 @@ public class Skill {
     private boolean isModifier;
     private String mParent;
     private File mSkill;
+    private int mSkillTier;
 
     public Skill(File aSkill, String aParentPath, ModStringsParser aMSParser) {
         if (aSkill == null)
             return;
+        mSkillAttributes = new HashMap<>();
         mParentPath = aParentPath;
         mSkill = aSkill;
         mSkillParser = new SkillParser(aSkill, aParentPath, aMSParser);
 
         mSkillName = aMSParser.getTags().get(mSkillParser.getSkillTag());
-        mSkillAttributes = mSkillParser.getAttributes();
+        mSkillDescription = aMSParser.getTags().get(mSkillParser.getSkillDescriptionTag());
         isModifier = mSkillParser.isModifier();
+
+        for (String skillAttribute : mSkillParser.getAttributes().keySet()) {
+            if (skillAttribute.equals("skillTier"))
+                mSkillTier = (int) mSkillParser.getAttributes().get(skillAttribute).getValue();
+            else
+                mSkillAttributes.put(skillAttribute, mSkillParser.getAttributes().get(skillAttribute));
+        }
 
         for (String key : mSkillAttributes.keySet()) {
             if (mSkillAttributes.get(key).isSkill()) {
@@ -54,6 +63,10 @@ public class Skill {
     public String getSkillTag() {
         return mSkillParser.getSkillTag();
     }
+    
+    public String getSkillDescriptionTag() {
+        return mSkillParser.getSkillDescriptionTag();
+    }
 
     public Map<String, SkillAttribute<?>> getAttributes() {
         return mSkillAttributes;
@@ -75,7 +88,7 @@ public class Skill {
         return Control.URL + "/mods/" + mParentPath + "/" + getName() + ".html";
     }
 
-    public String getSkillDescription() {
+    public String getDescription() {
         return mSkillDescription;
     }
 
@@ -93,6 +106,13 @@ public class Skill {
 
     public File getSkill() {
         return mSkill;
+    }
+
+    public int getSkillTier() {
+        if (mSkillTier == 0)
+            return getBuff().getSkillTier();
+        else
+            return mSkillTier;
     }
 
 }

@@ -2,18 +2,18 @@ package de.bytesquire.titanquest.tqcalculator.main;
 
 import java.io.File;
 import java.util.ArrayList;
-import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import de.bytesquire.titanquest.tqcalculator.parsers.ModStringsParser;
 import de.bytesquire.titanquest.tqcalculator.parsers.SkillTreeParser;
 
-@JsonIgnoreProperties({ "mastery", "skillTree" })
+@JsonIgnoreProperties({ "mastery", "skillTree", "mSkills", "mSkillTreeParser" })
 public class Mastery {
 
     private SkillTreeParser mSkillTreeParser;
     private ArrayList<Skill> mSkills;
+    private ArrayList<ArrayList<Skill>> mSkillTiers;
     private String mName;
     private String mParentModName;
     private File mSkillTree;
@@ -23,25 +23,40 @@ public class Mastery {
         mParentModName = aModName;
         mSkillTree = aSkillTree;
         mSkillTreeParser = new SkillTreeParser(aSkillTree, aModDir);
-        mSkills = new ArrayList<Skill>();
+        mSkillTiers = new ArrayList<>();
+        mSkills = new ArrayList<>();
 
         mName = aMSParser.getTags().get(mSkillTreeParser.getMasteryTag());
 
         for (File skill : mSkillTreeParser.getSkills()) {
-            if (!(mSkillTreeParser.getSkills().indexOf(skill) == 0))
-                mSkills.add(new Skill(skill, (mParentModName + "/" + mName), aMSParser));
-            else
+            if (!(mSkillTreeParser.getSkills().indexOf(skill) == 0)) {
+                Skill tmp = new Skill(skill, (mParentModName + "/" + mName), aMSParser);
+                mSkills.add(tmp);
+            } else
                 mMastery = skill;
         }
 
         for (Skill skill : mSkills) {
-            if (skill.isModifier())
+            if (skill.isModifier()) {
                 skill.setParent(mSkills.get(mSkills.indexOf(skill) - 1).getName());
+            }
+            while (true) {
+                try {
+                    mSkillTiers.get(skill.getSkillTier() - 1).add(skill);
+                    break;
+                } catch (IndexOutOfBoundsException e) {
+                    mSkillTiers.add(new ArrayList<>());
+                }
+            }
         }
     }
 
-    public List<Skill> getSkills() {
-        return mSkills;
+    public ArrayList<ArrayList<Skill>> getSkillTiers() {
+        return mSkillTiers;
+    }
+
+    public ArrayList<Skill> getSkillTier(int aSkillTier) {
+        return mSkillTiers.get(aSkillTier);
     }
 
     public String getName() {

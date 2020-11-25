@@ -51,7 +51,7 @@ public class Control {
             databaseDir = Files.newDirectoryStream(Path.of(DATABASES_DIR));
 
             databaseDir.forEach((mod) -> {
-                if (mod != null && !mod.getFileName().toString().startsWith("."))
+                if (mod != null && !mod.getFileName().toString().startsWith(".") && !mod.getFileName().toString().endsWith("-cleaned"))
                     mMods.add(new Mod(mod.getFileName().toString(), mod.toAbsolutePath().toString() + "/"));
             });
         } catch (IOException e) {
@@ -124,26 +124,30 @@ public class Control {
                 rootMod.put("masteries", mod.getMasteries());
                 rootMod.put("name", mod.getName());
                 Control.mod.process(rootMod, outMod);
+
                 for (Mastery mastery : mod.getMasteries()) {
                     Writer outMastery = new FileWriter(
                             REPOSITORY_DIR + "/mods/" + mod.getName() + "/" + mastery.getName() + ".html");
                     rootMastery = new HashMap<>();
-                    rootMastery.put("skills", mastery.getSkills());
+                    rootMastery.put("skills", mastery.getSkillTiers());
                     rootMastery.put("name", mastery.getName());
                     Control.mastery.process(rootMastery, outMastery);
-                    for (Skill skill : mastery.getSkills()) {
-                        Writer outSkill = new FileWriter(
-                                REPOSITORY_DIR + "/mods/" + mod.getName() + "/" + mastery.getName() + "/"
-                                        + ((skill.getName() == null) ? skill.toString() : skill.getName()) + ".html");
-                        rootSkill = new HashMap<>();
-                        if (skill.isBuff()) {
-                            rootSkill.put("buffName", skill.getBuff().getName());
-                            rootSkill.put("buffAttributes", skill.getBuff().getAttributes());
-                        } else
-                            rootSkill.put("attributes", skill.getAttributes());
-                        rootSkill.put("name", skill.getName());
-                        Control.skill.process(rootSkill, outSkill);
-                    }
+
+                    for (int i = 0; i < mastery.getSkillTiers().size(); i++)
+                        for (Skill skill : mastery.getSkillTier(i)) {
+                            Writer outSkill = new FileWriter(REPOSITORY_DIR + "/mods/" + mod.getName() + "/"
+                                    + mastery.getName() + "/"
+                                    + ((skill.getName() == null) ? skill.toString() : skill.getName()) + ".html");
+                            rootSkill = new HashMap<>();
+                            if (skill.isBuff()) {
+                                rootSkill.put("buffName", skill.getBuff().getName());
+                                rootSkill.put("buffAttributes", skill.getBuff().getAttributes());
+                            } else
+                                rootSkill.put("attributes", skill.getAttributes());
+                            rootSkill.put("name", skill.getName());
+                            rootSkill.put("description", skill.getDescription());
+                            Control.skill.process(rootSkill, outSkill);
+                        }
                 }
             }
         } catch (IOException | TemplateException e1) {

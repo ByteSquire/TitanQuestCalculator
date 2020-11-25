@@ -22,6 +22,7 @@ public class SkillParser {
     private String mSkillTag;
     private boolean isModifier = false;
     private ModStringsParser mMSParser;
+    private String mSkillDescriptionTag;
 
     public SkillParser(File aSkill, String aParentPath, ModStringsParser aMSParser) {
 
@@ -45,6 +46,9 @@ public class SkillParser {
             fileStream.forEach((str) -> {
                 if (str.split(",")[0].equals("skillDisplayName")) {
                     mSkillTag = str.split(",")[1];
+                }
+                if (str.split(",")[0].equals("skillBaseDescription")) {
+                    mSkillDescriptionTag = str.split(",")[1];
                 }
                 try {
                     Integer value = Integer.parseInt(str.split(",")[1]);
@@ -87,6 +91,8 @@ public class SkillParser {
                                                             + "/database/" + str.split(",")[1]),
                                                     mParentPath, mMSParser)));
                     mSkillTag = ((SkillAttribute<Skill>) mAttributes.get(name)).getValue().getSkillTag();
+                    mSkillDescriptionTag = ((SkillAttribute<Skill>) mAttributes.get(name)).getValue()
+                            .getSkillDescriptionTag();
                 }
                 if (str.split(",")[0].equals("Class") && str.split(",")[1].equals("Skill_Modifier"))
                     isModifier = true;
@@ -109,5 +115,9 @@ public class SkillParser {
 
     public boolean isModifier() {
         return isModifier;
+    }
+
+    public String getSkillDescriptionTag() {
+        return mSkillDescriptionTag;
     }
 }
