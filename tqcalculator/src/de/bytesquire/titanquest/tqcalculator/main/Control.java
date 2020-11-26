@@ -27,7 +27,7 @@ public class Control {
 
     public static final String DATABASES_DIR = Paths.get("").toAbsolutePath().toString() + "/resources/databases/";
 
-    public static final String REPOSITORY_DIR = Paths.get("").toAbsolutePath().getParent().getParent().toString();
+    public static final String REPOSITORY_DIR = Paths.get("").toAbsolutePath().toString().split("tqcalculator")[0];
 
     private static ArrayList<Mod> mMods = new ArrayList<>();
 
@@ -51,7 +51,8 @@ public class Control {
             databaseDir = Files.newDirectoryStream(Path.of(DATABASES_DIR));
 
             databaseDir.forEach((mod) -> {
-                if (mod != null && !mod.getFileName().toString().startsWith(".") && !mod.getFileName().toString().endsWith("-cleaned"))
+                if (mod != null && !mod.getFileName().toString().startsWith(".")
+                        && !mod.getFileName().toString().endsWith("-cleaned"))
                     mMods.add(new Mod(mod.getFileName().toString(), mod.toAbsolutePath().toString() + "/"));
             });
         } catch (IOException e) {
@@ -70,7 +71,7 @@ public class Control {
         rootHome.put("links", links);
         rootHome.put("mods", mMods);
         try {
-            Writer outHome = new FileWriter(REPOSITORY_DIR + "/index.md");
+            Writer outHome = new FileWriter(REPOSITORY_DIR + "index.md");
             home.process(rootHome, outHome);
         } catch (Exception e) {
             e.printStackTrace();
@@ -80,7 +81,7 @@ public class Control {
         for (Mod mod : mMods) {
             for (Mastery mastery : mod.getMasteries()) {
                 try {
-                    Path out = Path.of(REPOSITORY_DIR + "/mods/" + mod.getName() + "/" + mastery.getName());
+                    Path out = Path.of(REPOSITORY_DIR + "mods/" + mod.getName() + "/" + mastery.getName());
                     Files.createDirectories(out);
 
                     writeMasteryToJSON(mastery, out);
@@ -99,11 +100,12 @@ public class Control {
     }
 
     private static void showSuccess() {
+        JFrame tmp = new JFrame();
         if (mSuccess)
-            JOptionPane.showMessageDialog(new JFrame(), "Success", "Parse Database", JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(tmp, "Success", "Parse Database", JOptionPane.INFORMATION_MESSAGE);
         else
-            JOptionPane.showMessageDialog(new JFrame(), "Error", "Parse Database", JOptionPane.ERROR_MESSAGE);
-        System.exit(0);
+            JOptionPane.showMessageDialog(tmp, "Error", "Parse Database", JOptionPane.ERROR_MESSAGE);
+        tmp.dispose();
     }
 
     private static void writeMasteryToJSON(Mastery mastery, Path masteryPath) {
@@ -119,7 +121,7 @@ public class Control {
     private static void writeTemplates() {
         try {
             for (Mod mod : mMods) {
-                Writer outMod = new FileWriter(REPOSITORY_DIR + "/mods/" + mod.getName() + ".html");
+                Writer outMod = new FileWriter(REPOSITORY_DIR + "mods/" + mod.getName() + ".html");
                 rootMod = new HashMap<>();
                 rootMod.put("masteries", mod.getMasteries());
                 rootMod.put("name", mod.getName());
@@ -127,7 +129,7 @@ public class Control {
 
                 for (Mastery mastery : mod.getMasteries()) {
                     Writer outMastery = new FileWriter(
-                            REPOSITORY_DIR + "/mods/" + mod.getName() + "/" + mastery.getName() + ".html");
+                            REPOSITORY_DIR + "mods/" + mod.getName() + "/" + mastery.getName() + ".html");
                     rootMastery = new HashMap<>();
                     rootMastery.put("skills", mastery.getSkillTiers());
                     rootMastery.put("name", mastery.getName());
@@ -135,7 +137,7 @@ public class Control {
 
                     for (int i = 0; i < mastery.getSkillTiers().size(); i++)
                         for (Skill skill : mastery.getSkillTier(i)) {
-                            Writer outSkill = new FileWriter(REPOSITORY_DIR + "/mods/" + mod.getName() + "/"
+                            Writer outSkill = new FileWriter(REPOSITORY_DIR + "mods/" + mod.getName() + "/"
                                     + mastery.getName() + "/"
                                     + ((skill.getName() == null) ? skill.toString() : skill.getName()) + ".html");
                             rootSkill = new HashMap<>();
