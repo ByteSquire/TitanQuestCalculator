@@ -16,7 +16,7 @@ xmlhttp.open("GET", url, true);
 xmlhttp.send();
 
 function main() {
-  document.getElementById("name").innerText = SoulvizierAERA;
+  document.getElementById("name").innerText = "SoulvizierAERA";
   for (var i = 1; i < 11; i++) {
     document.getElementById(i.toString()).innerHTML = document.getElementById(i.toString()).innerHTML.replaceAll(i.toString(), mod.mappedMasteries[i]);
   }
