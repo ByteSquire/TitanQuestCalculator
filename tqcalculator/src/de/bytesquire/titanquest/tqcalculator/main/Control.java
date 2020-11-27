@@ -33,7 +33,7 @@ public class Control {
 
     private static Configuration mCfg = new Configuration(Configuration.VERSION_2_3_30);
 
-    private static Template home, mod, mastery, skill, mod_fancy;
+    private static Template home, mod, mastery, skill, mod_fancy, mastery_fancy;
 
     private static Map<String, Object> rootHome, rootMod, rootMastery, rootSkill;
 
@@ -186,6 +186,12 @@ public class Control {
                 rootMod = new HashMap<>();
                 rootMod.put("name", mod.getName());
                 Control.mod_fancy.process(rootMod, outMod);
+                
+                Writer outMastery = new FileWriter(
+                        REPOSITORY_DIR + "mods/" + mod.getName() + "/js/mastery.js");
+                rootMastery = new HashMap<>();
+                rootMastery.put("name", mod.getName());
+                Control.mod_fancy.process(rootMastery, outMastery);
             } catch (IOException | TemplateException e) {
                 e.printStackTrace();
                 mSuccess = false;
@@ -199,6 +205,7 @@ public class Control {
             mod = mCfg.getTemplate("mod.ftlh");
             mod_fancy = mCfg.getTemplate("mod_fancy.ftlh");
             mastery = mCfg.getTemplate("mastery.ftlh");
+            mastery_fancy = mCfg.getTemplate("mastery_fancy.ftlh");
             skill = mCfg.getTemplate("skill.ftlh");
         } catch (IOException e) {
             e.printStackTrace();
