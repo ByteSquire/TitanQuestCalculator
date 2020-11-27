@@ -13,7 +13,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import de.bytesquire.titanquest.tqcalculator.parsers.ModParser;
 import de.bytesquire.titanquest.tqcalculator.parsers.ModStringsParser;
 
-@JsonIgnoreProperties({ "msparser", "character", "modDir", "links" })
+@JsonIgnoreProperties({ "msparser", "character", "modDir", "links", "masteryLevel", "gameEngine" })
 public class Mod {
 
     private ModParser mModParser;
@@ -23,6 +23,8 @@ public class Mod {
     private String mModName, mModDir;
     private Map<String, String> mLinks;
     private File mCharacter;
+    private File mGameEngine;
+    private ArrayList<Integer> mMasteryTiers;
 
     public Mod(String aModName, String aModDir) {
         if (aModName == null)
@@ -36,6 +38,8 @@ public class Mod {
         mModParser = new ModParser(aModDir);
         mLinks = mModParser.getLinks();
         mCharacter = mModParser.getCharacter();
+        mMasteryTiers = mModParser.getMasteryTiers();
+        mGameEngine = mModParser.getGameEngine();
 
         int i = 1;
         for (File skillTree : mModParser.getSkillTrees()) {
@@ -72,8 +76,12 @@ public class Mod {
         return mMSParser;
     }
 
+    public String getUrlLegacy() {
+        return Control.URL + "/mods/" + getName() + "/" + getName() + ".html";
+    }
+    
     public String getUrl() {
-        return Control.URL + "/mods/" + getName() + ".html";
+        return Control.URL + "/mods/" + getName() + "/"/* + getName() + ".json"*/;
     }
 
     public Map<String, String> getLinks() {
@@ -86,6 +94,14 @@ public class Mod {
 
     public HashMap<Integer, String> getMappedMasteries() {
         return mMappedMasteries;
+    }
+
+    public ArrayList<Integer> getMasteryLevels() {
+        return mMasteryTiers;
+    }
+
+    public File getGameEngine() {
+        return mGameEngine;
     }
 
 }

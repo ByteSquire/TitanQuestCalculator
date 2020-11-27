@@ -11,24 +11,65 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.Stream;
 
+import de.bytesquire.titanquest.tqcalculator.main.Control;
+
 public class ModParser {
 
     private static final String SEPARATOR = Paths.get("").getFileSystem().getSeparator();
 
     private ArrayList<File> mSkillTrees;
     private File mCharacter;
+    private File mGameEngine;
     public static final int COUNT_MASTERIES = 10;
     public static final int COUNT_QUEST_REWARD_TREES = 1;
     private String mModdir;
     private HashMap<String, String> mLinks;
+    private ArrayList<Integer> mMasteryTiers;
 
     public ModParser(String aModdir) {
         mSkillTrees = new ArrayList<>();
         mLinks = new HashMap<>();
+        mMasteryTiers = new ArrayList<>();
         mModdir = aModdir;
 
         initSkillTrees();
         initLinks();
+        initEngine();
+    }
+
+    private void initEngine() {
+        mGameEngine = new File(mModdir + "database/records/game/gameengine.dbr");
+        try (BufferedReader characterReader = new BufferedReader(new FileReader(mGameEngine));) {
+            Stream<String> fileStream = characterReader.lines();
+            fileStream.filter((str) -> str.startsWith("skillMasteryTierLevel")).forEach((str) -> {
+                for (String tierLevel : str.split(",")[1].split(";")) {
+                    mMasteryTiers.add(Integer.parseInt(tierLevel));
+                }
+            });
+        } catch (FileNotFoundException e) {
+            if (!initEngine(true))
+                e.printStackTrace();
+        } catch (IOException e1) {
+            e1.printStackTrace();
+        }
+    }
+
+    private boolean initEngine(boolean vanilla) {
+        mGameEngine = new File(Control.DATABASES_DIR + "Vanilla/database/records/game/gameengine.dbr");
+        try (BufferedReader characterReader = new BufferedReader(new FileReader(mGameEngine));) {
+            Stream<String> fileStream = characterReader.lines();
+            fileStream.filter((str) -> str.startsWith("skillMasteryTierLevel")).forEach((str) -> {
+                for (String tierLevel : str.split(",")[1].split(";")) {
+                    mMasteryTiers.add(Integer.parseInt(tierLevel));
+                }
+            });
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+            return false;
+        } catch (IOException e1) {
+            e1.printStackTrace();
+        }
+        return true;
     }
 
     private void initSkillTrees() {
@@ -78,6 +119,14 @@ public class ModParser {
 
     public File getCharacter() {
         return mCharacter;
+    }
+
+    public ArrayList<Integer> getMasteryTiers() {
+        return mMasteryTiers;
+    }
+
+    public File getGameEngine() {
+        return mGameEngine;
     }
 
 }

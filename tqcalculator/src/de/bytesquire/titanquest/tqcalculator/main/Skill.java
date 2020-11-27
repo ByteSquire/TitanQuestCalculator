@@ -84,8 +84,8 @@ public class Skill {
 //        throw new UnsupportedOperationException();
     }
 
-    public String getUrl() {
-        return Control.URL + "/mods/" + mParentPath + "/" + getName() + ".html";
+    public String getUrlLegacy() {
+        return Control.URL + "/mods/Masteries/" + mParentPath + "/" + getName() + ".html";
     }
 
     public String getDescription() {

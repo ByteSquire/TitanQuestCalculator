@@ -2,10 +2,12 @@ package de.bytesquire.titanquest.tqcalculator.main;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import de.bytesquire.titanquest.tqcalculator.parsers.ModStringsParser;
+import de.bytesquire.titanquest.tqcalculator.parsers.SkillParser;
 import de.bytesquire.titanquest.tqcalculator.parsers.SkillTreeParser;
 
 @JsonIgnoreProperties({ "mastery", "skillTree", "mSkills", "mSkillTreeParser" })
@@ -14,6 +16,7 @@ public class Mastery {
     private SkillTreeParser mSkillTreeParser;
     private ArrayList<Skill> mSkills;
     private ArrayList<ArrayList<Skill>> mSkillTiers;
+    private HashMap<String, SkillAttribute<?>> mMasteryAttributes;
     private String mName;
     private String mParentModName;
     private File mSkillTree;
@@ -32,8 +35,10 @@ public class Mastery {
             if (!(mSkillTreeParser.getSkills().indexOf(skill) == 0)) {
                 Skill tmp = new Skill(skill, (mParentModName + "/" + mName), aMSParser);
                 mSkills.add(tmp);
-            } else
+            } else {
                 mMastery = skill;
+                mMasteryAttributes = new SkillParser(skill, (mParentModName + "/" + mName), aMSParser).getAttributes();
+            }
         }
 
         for (Skill skill : mSkills) {
@@ -63,8 +68,8 @@ public class Mastery {
         return mName;
     }
 
-    public String getUrl() {
-        return Control.URL + "/mods/" + mParentModName + "/" + getName() + ".html";
+    public String getUrlLegacy() {
+        return Control.URL + "/mods/" + mParentModName + "/Masteries/" + getName() + ".html";
     }
 
     public File getMastery() {
@@ -73,6 +78,10 @@ public class Mastery {
 
     public File getSkillTree() {
         return mSkillTree;
+    }
+
+    public HashMap<String, SkillAttribute<?>> getMasteryAttributes() {
+        return mMasteryAttributes;
     }
 
 }
