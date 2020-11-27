@@ -17,8 +17,7 @@ xmlhttp.send();
 
 function main() {
   for (var i = 1; i < 11; i++) {
-    var imgSrc = document.getElementById(i.toString()).children[0].src;
-    document.getElementById(i.toString()).innerHTML = document.getElementById(i.toString()).innerHTML.replace(i.toString(), mod.mappedMasteries[i]);
+    document.getElementById(i.toString()).innerHTML = document.getElementById(i.toString()).innerHTML.replaceAll(i.toString(), mod.mappedMasteries[i]);
   }
 }
 
@@ -48,7 +47,7 @@ function changeImage(button) {
 function submit(button) {
   if (active > 0) {
     window.location.href = window.location.href.replace(
-      "Mod.html",
+      "index.html",
       getMasteriesPage()
     );
   }
