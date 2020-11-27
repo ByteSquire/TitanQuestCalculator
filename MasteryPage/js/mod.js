@@ -1,6 +1,26 @@
 var active = 0;
 var masteryIndex0 = 0;
 var masteryIndex1 = 0;
+var mod;
+
+var xmlhttp = new XMLHttpRequest();
+var url = "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla.json";
+
+xmlhttp.onreadystatechange = function () {
+  if (this.readyState == 4 && this.status == 200) {
+    mod = JSON.parse(this.responseText);
+    main();
+  }
+};
+xmlhttp.open("GET", url, true);
+xmlhttp.send();
+
+function main() {
+  for (var i = 1; i < 11; i++) {
+    var imgSrc = document.getElementById(i.toString()).children[0].src;
+    document.getElementById(i.toString()).innerHTML = document.getElementById(i.toString()).innerHTML.replace(i.toString(), mod.mappedMasteries[i]);
+  }
+}
 
 function changeImage(button) {
   switch (button.id) {
