@@ -11,7 +11,7 @@
 
     <table border=1.7>
     <#list masteries as mastery>
-        <tr><td><a href="${mastery.url}"><#if mastery.name??>${mastery.name}<#else>name</#if></a>
+        <tr><td><a href="${mastery.urlLegacy}"><#if mastery.name??>${mastery.name}<#else>name</#if></a>
     </#list>
     </table>
     

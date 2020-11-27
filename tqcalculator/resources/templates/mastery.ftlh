@@ -15,7 +15,7 @@
         <td>
         <table border=1.7>
             <#list skillTier as skill>
-                <tr><td><a href="${skill.url}"><#if skill.name??>${skill.name}<#else>Error reading name</#if></a>
+                <tr><td><a href="${skill.urlLegacy}"><#if skill.name??>${skill.name}<#else>Error reading name</#if></a>
             </#list>
         </table>
     </#list>
