@@ -19,11 +19,13 @@ function main() {
     document.getElementById("panel1").style.display = "unset";
     var mastery1 = mod.mappedMasteries[m1];
     document.getElementById("mastery1").src = document.getElementById("mastery1").src.replace("1", mastery1);
+    document.getElementById("mastery1").src = document.getElementById("mastery1").src.replace("MasteryPage", "mods/Vanilla");
   }
 
   if (m2 && m2 <= 10 && m2 >= 1) {
     document.getElementById("panel2").style.display = "unset";
     var mastery2 = mod.mappedMasteries[m2];
     document.getElementById("mastery2").src = document.getElementById("mastery2").src.replace("2", mastery2);
+    document.getElementById("mastery2").src = document.getElementById("mastery2").src.replace("MasteryPage", "mods/Vanilla");
   }
 }

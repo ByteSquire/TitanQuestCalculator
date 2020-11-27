@@ -19,6 +19,7 @@ function main() {
   document.getElementById("name").innerText = "SoulvizierAERA";
   for (var i = 1; i < 11; i++) {
     document.getElementById(i.toString()).innerHTML = document.getElementById(i.toString()).innerHTML.replaceAll(i.toString(), mod.mappedMasteries[i]);
+    document.getElementById(i.toString()).innerHTML = document.getElementById(i.toString()).innerHTML.replace("MasteryPage", "mods/SoulvizierAERA");
   }
 }
 
