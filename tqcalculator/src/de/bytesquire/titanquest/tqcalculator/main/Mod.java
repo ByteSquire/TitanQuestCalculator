@@ -4,17 +4,22 @@ import java.io.File;
 import java.nio.file.Paths;
 import java.security.InvalidParameterException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import de.bytesquire.titanquest.tqcalculator.parsers.ModParser;
 import de.bytesquire.titanquest.tqcalculator.parsers.ModStringsParser;
 
+@JsonIgnoreProperties({ "msparser", "character", "modDir", "links" })
 public class Mod {
 
     private ModParser mModParser;
     private ModStringsParser mMSParser;
     private ArrayList<Mastery> mMasteries;
+    private HashMap<Integer, String> mMappedMasteries;
     private String mModName, mModDir;
     private Map<String, String> mLinks;
     private File mCharacter;
@@ -23,6 +28,7 @@ public class Mod {
         if (aModName == null)
             return;
         mMasteries = new ArrayList<Mastery>();
+        mMappedMasteries = new HashMap<Integer, String>();
         mModName = aModName;
         mModDir = aModDir;
         mMSParser = new ModStringsParser(aModDir + "/text/");
@@ -31,10 +37,14 @@ public class Mod {
         mLinks = mModParser.getLinks();
         mCharacter = mModParser.getCharacter();
 
+        int i = 1;
         for (File skillTree : mModParser.getSkillTrees()) {
-            if (!skillTree.getName().equals("QuestRewardSkillTree.dbr"))
-                mMasteries.add(/* i++, */new Mastery(skillTree,
-                        mModDir + "database" + Paths.get("").getFileSystem().getSeparator(), mModName, mMSParser));
+            if (!skillTree.getName().equals("QuestRewardSkillTree.dbr")) {
+                Mastery tmp = new Mastery(skillTree,
+                        mModDir + "database" + Paths.get("").getFileSystem().getSeparator(), mModName, mMSParser);
+                mMasteries.add(tmp);
+                mMappedMasteries.put(i++, tmp.getName());
+            }
         }
     }
 
@@ -72,6 +82,10 @@ public class Mod {
 
     public File getCharacter() {
         return mCharacter;
+    }
+
+    public HashMap<Integer, String> getMappedMasteries() {
+        return mMappedMasteries;
     }
 
 }
