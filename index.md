@@ -2,11 +2,11 @@
 
 You can click any link shown below to get to the mastery overview.
 
-[ShadowChampions](https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/)	[ShadowChampions](https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/ShadowChampions.html)
+[ShadowChampions](https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/)	[ShadowChampions-Legacy](https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/ShadowChampions.html)
  
-[SoulvizierAERA](https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/)	[SoulvizierAERA](https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/SoulvizierAERA.html)
+[SoulvizierAERA](https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/)	[SoulvizierAERA-Legacy](https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/SoulvizierAERA.html)
  
-[Vanilla](https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/)	[Vanilla](https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Vanilla.html)
+[Vanilla](https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/)	[Vanilla-Legacy](https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Vanilla.html)
  
 
 
