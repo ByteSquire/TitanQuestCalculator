@@ -49,6 +49,19 @@ public class Cleaner {
                 if (!(e instanceof java.nio.file.FileAlreadyExistsException))
                     e.printStackTrace();
             }
+            
+            Path originGameEnginePath = mod.getGameEngine().toPath();
+//          System.out.println(originLinksPath);
+            Path targetGameEnginePath = Path
+                    .of(mod.getModDir().substring(0, mod.getModDir().length() - 1) + "-cleaned/database/records/game/gameengine.dbr");
+//          System.out.println(targetLinksPath);
+            try {
+                Files.createDirectories(Path.of(targetGameEnginePath.toString().split("links.txt")[0]));
+                Files.copy(originGameEnginePath, targetGameEnginePath);
+            } catch (IOException e) {
+                if (!(e instanceof java.nio.file.FileAlreadyExistsException))
+                    e.printStackTrace();
+            }
 
             cleanModStrings(mod);
 
