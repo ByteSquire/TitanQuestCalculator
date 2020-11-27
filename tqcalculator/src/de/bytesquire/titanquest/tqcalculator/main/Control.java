@@ -79,12 +79,19 @@ public class Control {
         }
 
         for (Mod mod : mMods) {
+            try {
+                Path out = Path.of(REPOSITORY_DIR + "mods/" + mod.getName());
+                Files.createDirectories(out);
+
+                writeModToJSON(mod, out);
+            } catch (IOException e) {
+                e.printStackTrace();
+                mSuccess = false;
+            }
             for (Mastery mastery : mod.getMasteries()) {
                 try {
                     Path out = Path.of(REPOSITORY_DIR + "mods/" + mod.getName() + "/" + mastery.getName());
                     Files.createDirectories(out);
-
-                    writeMasteryToJSON(mastery, out);
                 } catch (IOException e) {
                     e.printStackTrace();
                     mSuccess = false;
@@ -108,10 +115,18 @@ public class Control {
         tmp.dispose();
     }
 
-    private static void writeMasteryToJSON(Mastery mastery, Path masteryPath) {
+    /*
+     * private static void writeMasteryToJSON(Mastery mastery, Path masteryPath) {
+     * ObjectMapper mapper = new ObjectMapper(); try {
+     * mapper.writerWithDefaultPrettyPrinter().writeValue(new
+     * File(masteryPath.toString() + ".json"), mastery); } catch (IOException e) {
+     * e.printStackTrace(); mSuccess = false; } }
+     */
+
+    private static void writeModToJSON(Mod mod, Path modPath) {
         ObjectMapper mapper = new ObjectMapper();
         try {
-            mapper.writerWithDefaultPrettyPrinter().writeValue(new File(masteryPath.toString() + ".json"), mastery);
+            mapper.writerWithDefaultPrettyPrinter().writeValue(new File(modPath.toString() + ".json"), mod);
         } catch (IOException e) {
             e.printStackTrace();
             mSuccess = false;
