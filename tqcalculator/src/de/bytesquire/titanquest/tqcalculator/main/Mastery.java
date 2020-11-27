@@ -26,7 +26,7 @@ public class Mastery {
         mSkillTiers = new ArrayList<>();
         mSkills = new ArrayList<>();
 
-        mName = aMSParser.getTags().get(mSkillTreeParser.getMasteryTag());
+        mName = aMSParser.getTags().get(mSkillTreeParser.getMasteryTag()).split(" Mastery")[0];
 
         for (File skill : mSkillTreeParser.getSkills()) {
             if (!(mSkillTreeParser.getSkills().indexOf(skill) == 0)) {
