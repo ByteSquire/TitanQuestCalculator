@@ -33,7 +33,7 @@ public class Control {
 
     private static Configuration mCfg = new Configuration(Configuration.VERSION_2_3_30);
 
-    private static Template home, mod, mastery, skill;
+    private static Template home, mod, mastery, skill, mod_fancy;
 
     private static Map<String, Object> rootHome, rootMod, rootMastery, rootSkill;
 
@@ -90,7 +90,7 @@ public class Control {
             }
             for (Mastery mastery : mod.getMasteries()) {
                 try {
-                    Path out = Path.of(REPOSITORY_DIR + "mods/" + mod.getName() + "/" + mastery.getName());
+                    Path out = Path.of(REPOSITORY_DIR + "mods/" + mod.getName() + "/Masteries/" + mastery.getName());
                     Files.createDirectories(out);
                 } catch (IOException e) {
                     e.printStackTrace();
@@ -100,6 +100,8 @@ public class Control {
         }
 
         new Cleaner(mMods);
+
+        writeTemplatesLegacy();
 
         writeTemplates();
 
@@ -126,17 +128,19 @@ public class Control {
     private static void writeModToJSON(Mod mod, Path modPath) {
         ObjectMapper mapper = new ObjectMapper();
         try {
-            mapper.writerWithDefaultPrettyPrinter().writeValue(new File(modPath.toString() + ".json"), mod);
+            mapper.writerWithDefaultPrettyPrinter()
+                    .writeValue(new File(modPath.toString() + "/" + mod.getName() + ".json"), mod);
         } catch (IOException e) {
             e.printStackTrace();
             mSuccess = false;
         }
     }
 
-    private static void writeTemplates() {
+    private static void writeTemplatesLegacy() {
         try {
             for (Mod mod : mMods) {
-                Writer outMod = new FileWriter(REPOSITORY_DIR + "mods/" + mod.getName() + ".html");
+                Writer outMod = new FileWriter(
+                        REPOSITORY_DIR + "mods/" + mod.getName() + "/" + mod.getName() + ".html");
                 rootMod = new HashMap<>();
                 rootMod.put("masteries", mod.getMasteries());
                 rootMod.put("name", mod.getName());
@@ -144,7 +148,7 @@ public class Control {
 
                 for (Mastery mastery : mod.getMasteries()) {
                     Writer outMastery = new FileWriter(
-                            REPOSITORY_DIR + "mods/" + mod.getName() + "/" + mastery.getName() + ".html");
+                            REPOSITORY_DIR + "mods/" + mod.getName() + "/Masteries/" + mastery.getName() + ".html");
                     rootMastery = new HashMap<>();
                     rootMastery.put("skills", mastery.getSkillTiers());
                     rootMastery.put("name", mastery.getName());
@@ -152,7 +156,7 @@ public class Control {
 
                     for (int i = 0; i < mastery.getSkillTiers().size(); i++)
                         for (Skill skill : mastery.getSkillTier(i)) {
-                            Writer outSkill = new FileWriter(REPOSITORY_DIR + "mods/" + mod.getName() + "/"
+                            Writer outSkill = new FileWriter(REPOSITORY_DIR + "mods/" + mod.getName() + "/Masteries/"
                                     + mastery.getName() + "/"
                                     + ((skill.getName() == null) ? skill.toString() : skill.getName()) + ".html");
                             rootSkill = new HashMap<>();
@@ -174,10 +178,27 @@ public class Control {
 
     }
 
+    private static void writeTemplates() {
+        for (Mod mod : mMods) {
+            try {
+                Writer outMod = new FileWriter(
+                        REPOSITORY_DIR + "mods/" + mod.getName() + "/index.html");
+                rootMod = new HashMap<>();
+                rootMod.put("masteries", mod.getMasteries());
+                rootMod.put("name", mod.getName());
+                Control.mod_fancy.process(rootMod, outMod);
+            } catch (IOException | TemplateException e) {
+                e.printStackTrace();
+                mSuccess = false;
+            }
+        }
+    }
+
     private static void getTemplates() {
         try {
             home = mCfg.getTemplate("home.ftlh");
             mod = mCfg.getTemplate("mod.ftlh");
+            mod_fancy = mCfg.getTemplate("mod_fancy.ftlh");
             mastery = mCfg.getTemplate("mastery.ftlh");
             skill = mCfg.getTemplate("skill.ftlh");
         } catch (IOException e) {
