@@ -191,7 +191,7 @@ public class Control {
                         REPOSITORY_DIR + "mods/" + mod.getName() + "/js/mastery.js");
                 rootMastery = new HashMap<>();
                 rootMastery.put("name", mod.getName());
-                Control.mod_fancy.process(rootMastery, outMastery);
+                Control.mastery_fancy.process(rootMastery, outMastery);
             } catch (IOException | TemplateException e) {
                 e.printStackTrace();
                 mSuccess = false;
