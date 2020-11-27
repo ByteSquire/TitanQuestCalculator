@@ -182,9 +182,8 @@ public class Control {
         for (Mod mod : mMods) {
             try {
                 Writer outMod = new FileWriter(
-                        REPOSITORY_DIR + "mods/" + mod.getName() + "/index.html");
+                        REPOSITORY_DIR + "mods/" + mod.getName() + "/js/mod.js");
                 rootMod = new HashMap<>();
-                rootMod.put("masteries", mod.getMasteries());
                 rootMod.put("name", mod.getName());
                 Control.mod_fancy.process(rootMod, outMod);
             } catch (IOException | TemplateException e) {
