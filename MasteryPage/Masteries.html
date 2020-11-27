@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Titan Quest Calculator - Vanilla</title>
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+    <!--
+    <script id="mod" type="application/json" src="../mods/Vanilla.json"></script>
+
+    <script type="application/json" src="../mods/Vanilla/Defense.json"></script>
+    <script type="application/json" src="../mods/Vanilla/Dream.json"></script>
+    <script type="application/json" src="../mods/Vanilla/Earth.json"></script>
+    <script type="application/json" src="../mods/Vanilla/Hunting.json"></script>
+    <script type="application/json" src="../mods/Vanilla/Nature.json"></script>
+    <script type="application/json" src="../mods/Vanilla/Rogue.json"></script>
+    <script type="application/json" src="../mods/Vanilla/Rune.json"></script>
+    <script type="application/json" src="../mods/Vanilla/Spirit.json"></script>
+    <script type="application/json" src="../mods/Vanilla/Storm.json"></script>
+    <script type="application/json" src="../mods/Vanilla/Warfare.json"></script>
+    -->
+    
+    <script type="text/javascript" src="js/mastery.js"></script>
+  </head>
+
+  <body oncontextmenu="return false">
+    <table class="masteryTable">
+      <tr>
+        <td class="panels" id="panel1">
+          <div class="disabled">
+            <img
+              class="masteryPanel"
+              src="images/masteries/panel/skillpanel.png"
+            />
+            <button class="plusButton">
+              <img
+                id="plusButton1"
+                class="plusButtonImage"
+                src="images/masteries/panel/plusbutton.png"
+              />
+            </button>
+            <img
+              class="masteryImagePanel"
+              src="images/masteries/vanilla/defense.png"
+            />
+          </div>
+          <div class="disabled" id="panel2">
+            <img
+              class="masteryPanel"
+              src="images/masteries/panel/skillpanel.png"
+            />
+            <button class="plusButton">
+              <img
+                id="plusButton2"
+                class="plusButtonImage"
+                src="images/masteries/panel/plusbutton.png"
+              />
+            </button>
+            <img
+              class="masteryImagePanel"
+              src="images/masteries/vanilla/dream.png"
+            />
+          </div>
+        </td>
+        <td class="infos">
+          <div id="stats">
+            <table>
+              <tr>
+                <td>Level:</td>
+                <td><div id="lvl">1</div></td>
+                <td></td>
+                <td>Strength:</td>
+                <td><div id="str">50</div></td>
+              </tr>
+              <tr>
+                <td>Health:</td>
+                <td><div id="hp">500</div></td>
+                <td></td>
+                <td>Intelligence:</td>
+                <td><div id="int">50</div></td>
+              </tr>
+              <tr>
+                <td>Energy:</td>
+                <td><div id="mp">500</div></td>
+                <td></td>
+                <td>Dexterity:</td>
+                <td><div id="dex">50</div></td>
+              </tr>
+            </table>
+          </div>
+          <div id="skills gained">
+            <table>
+              <tr>
+                <td>Skill1:</td>
+                <td><div id="lvl">1</div></td>
+              </tr>
+              <tr>
+                <td>Skill2:</td>
+                <td><div id="lvl">1</div></td>
+              </tr>
+              <tr>
+                <td>Skill3:</td>
+                <td><div id="lvl">1</div></td>
+              </tr>
+            </table>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
