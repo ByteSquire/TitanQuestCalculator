@@ -1,0 +1,1534 @@
+{
+  "name" : "Occult",
+  "skillTiers" : [ [ {
+    "name" : "Envenom Weapon",
+    "parent" : null,
+    "attributes" : {
+      "skillWeaponTintBlue" : {
+        "value" : 0.25,
+        "skill" : false
+      },
+      "characterManaLimitReserve" : {
+        "value" : 50.0,
+        "skill" : false
+      },
+      "skillActiveManaCost" : {
+        "value" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0 ],
+        "skill" : false
+      },
+      "skillWeaponTintRed" : {
+        "value" : 0.25,
+        "skill" : false
+      },
+      "skillConnectionSpacing" : {
+        "value" : 62,
+        "skill" : false
+      },
+      "Staff" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "cameraShakeAmplitude" : {
+        "value" : 0.12,
+        "skill" : false
+      },
+      "Bow" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "Axe" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "RangedOneHand" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "offensiveSlowPoisonMax" : {
+        "value" : [ 6.0, 7.5, 9.0, 12.0, 15.0, 19.5, 24.0, 30.0, 36.0, 43.5, 51.0, 60.0, 69.0, 79.5, 90.0, 102.0 ],
+        "skill" : false
+      },
+      "Mace" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 16,
+        "skill" : false
+      },
+      "skillWeaponTintGreen" : {
+        "value" : 1.0,
+        "skill" : false
+      },
+      "Sword" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "offensiveSlowPoisonDurationMin" : {
+        "value" : 3.0,
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "offensiveSlowPoisonMin" : {
+        "value" : [ 3.6, 4.5, 5.4, 7.2, 9.0, 11.7, 14.4, 18.0, 21.6, 26.1, 30.6, 36.0, 41.4, 47.7, 54.0, 61.2 ],
+        "skill" : false
+      },
+      "Spear" : {
+        "value" : 1,
+        "skill" : false
+      }
+    },
+    "description" : "Coats your weapons with deadly poison while activated.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult/Envenom Weapon.html"
+  }, {
+    "name" : "Calculated Strike",
+    "parent" : null,
+    "attributes" : {
+      "skillCooldownTime" : {
+        "value" : [ 6.0, 5.75, 5.5, 5.25, 5.0, 4.75, 4.5, 4.0, 3.25, 2.5, 1.75, 1.0 ],
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : [ 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 40.0, 60.0, 80.0, 100.0 ],
+        "skill" : false
+      },
+      "skillConnectionSpacing" : {
+        "value" : 62,
+        "skill" : false
+      },
+      "cameraShakeAmplitude" : {
+        "value" : 0.12,
+        "skill" : false
+      },
+      "characterRunSpeedModifier" : {
+        "value" : [ 75.0, 80.0, 85.0, 90.0, 95.0, 100.0, 105.0, 110.0, 115.0, 120.0, 125.0, 130.0 ],
+        "skill" : false
+      },
+      "offensiveSlowBleedingDurationMin" : {
+        "value" : 3.0,
+        "skill" : false
+      },
+      "ragDollAmplification" : {
+        "value" : [ 1.0, 1.05, 1.1, 1.15, 1.2, 1.25, 1.3, 1.35, 1.4, 1.45, 1.5, 1.55 ],
+        "skill" : false
+      },
+      "offensivePierceMin" : {
+        "value" : [ 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 44.0, 50.0, 56.0, 62.0, 72.0 ],
+        "skill" : false
+      },
+      "RangedOneHand" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "offensiveFumbleMin" : {
+        "value" : [ 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 39.0, 42.0, 45.0, 48.0, 55.0 ],
+        "skill" : false
+      },
+      "Sword" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillProjectileNumber" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillProjectileSpeedModifier" : {
+        "value" : 100.0,
+        "skill" : false
+      },
+      "offensiveFumbleDurationMin" : {
+        "value" : 3.0,
+        "skill" : false
+      },
+      "offensiveSlowBleedingMin" : {
+        "value" : [ 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0 ],
+        "skill" : false
+      },
+      "offensivePierceModifier" : {
+        "value" : [ 8.0, 16.0, 24.0, 32.0, 40.0, 48.0, 56.0, 64.0, 72.0, 80.0, 88.0, 96.0 ],
+        "skill" : false
+      },
+      "offensiveProjectileFumbleMin" : {
+        "value" : [ 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 39.0, 42.0, 45.0, 48.0, 55.0 ],
+        "skill" : false
+      },
+      "offensiveDisruptionMin" : {
+        "value" : 3.0,
+        "skill" : false
+      },
+      "Bow" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillAllowsWarmUp" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 8,
+        "skill" : false
+      },
+      "Axe" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "characterOffensiveAbilityModifier" : {
+        "value" : [ 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0, 90.0, 95.0, 100.0 ],
+        "skill" : false
+      },
+      "offensiveProjectileFumbleDurationMin" : {
+        "value" : 3.0,
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "Spear" : {
+        "value" : 1,
+        "skill" : false
+      }
+    },
+    "description" : "A swift and potent attack that's difficult to avoid and damages the target's ability to retaliate. ^y(Doesn't work with staves or clubs)",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult/Calculated Strike.html"
+  }, {
+    "name" : "Agility",
+    "parent" : null,
+    "attributes" : {
+      "characterSpellCastSpeedModifier" : {
+        "value" : [ 22.0, 30.0, 38.0, 46.0, 54.0, 65.0, 73.0, 81.0, 89.0, 100.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 10,
+        "skill" : false
+      },
+      "skillConnectionSpacing" : {
+        "value" : 62,
+        "skill" : false
+      },
+      "characterDeflectProjectile" : {
+        "value" : [ 6.0, 7.5, 9.0, 10.5, 12.0, 13.5, 15.0, 16.5, 18.0, 19.5 ],
+        "skill" : false
+      },
+      "characterDefensiveAbilityModifier" : {
+        "value" : [ 6.0, 7.5, 9.0, 10.5, 12.0, 13.5, 15.0, 16.5, 18.0, 19.5 ],
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 6,
+        "skill" : false
+      }
+    },
+    "description" : "Years of training allows the Occultist to act deftly in combat and execute maneuvers with speed and precision.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult/Agility.html"
+  } ], [ {
+    "name" : "Shadow Link",
+    "parent" : null,
+    "attributes" : {
+      "DRXBladeHoning" : {
+        "value" : {
+          "name" : "Shadow Link",
+          "parent" : null,
+          "attributes" : {
+            "defensiveLife" : {
+              "value" : [ -5.0, -8.0, -11.0, -14.0, -17.0, -20.0, -23.0, -26.0, -29.0, -32.0, -35.0, -38.0, -41.0, -44.0, -47.0, -50.0 ],
+              "skill" : false
+            },
+            "skillConnectionSpacing" : {
+              "value" : 62,
+              "skill" : false
+            },
+            "cameraShakeAmplitude" : {
+              "value" : 0.12,
+              "skill" : false
+            },
+            "offensiveSlowLifeMin" : {
+              "value" : [ 2.5, 3.4, 4.5, 5.7, 7.0, 8.5, 10.1, 11.9, 13.8, 15.9, 18.2, 20.6, 23.3, 26.1, 29.1, 32.3 ],
+              "skill" : false
+            },
+            "skillMaxLevel" : {
+              "value" : 12,
+              "skill" : false
+            },
+            "offensiveSlowLifeDurationMin" : {
+              "value" : 5.0,
+              "skill" : false
+            },
+            "skillActiveLifeCost" : {
+              "value" : [ 1.0, 1.0, 1.0, 1.2, 1.2, 1.2, 1.5, 1.5, 1.5, 1.9, 1.9, 2.0, 3.5, 5.0, 8.5, 12.0 ],
+              "skill" : false
+            },
+            "skillUltimateLevel" : {
+              "value" : 16,
+              "skill" : false
+            },
+            "characterManaRegen" : {
+              "value" : [ 1.0, 1.0, 1.0, 1.2, 1.2, 1.2, 1.5, 1.5, 1.5, 1.9, 1.9, 2.0, 3.5, 5.0, 8.5, 18.0 ],
+              "skill" : false
+            },
+            "skillTargetRadius" : {
+              "value" : 5.0,
+              "skill" : false
+            },
+            "skillMasteryLevelRequired" : {
+              "value" : 5,
+              "skill" : false
+            },
+            "offensiveLifeLeechMin" : {
+              "value" : [ 1.2, 1.4, 1.6, 1.8, 2.0, 2.2, 2.4, 2.6, 2.8, 3.0, 3.2, 3.4, 4.6, 5.8, 7.0, 9.2 ],
+              "skill" : false
+            },
+            "offensivePierceRatioModifier" : {
+              "value" : [ 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0, 90.0 ],
+              "skill" : false
+            }
+          },
+          "description" : "Keeps the Occultist and nearby allies connected to the shadow realm, increasing their energy regeneration and imbuing their weapons with the ability to penetrate deeper and to damage the life of their targets. This connection comes at a cost; the continuous exposure to these energies weakens the user's resistance and slowly drains their life.",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult/Shadow Link.html"
+        },
+        "skill" : true
+      }
+    },
+    "description" : "Keeps the Occultist and nearby allies connected to the shadow realm, increasing their energy regeneration and imbuing their weapons with the ability to penetrate deeper and to damage the life of their targets. This connection comes at a cost; the continuous exposure to these energies weakens the user's resistance and slowly drains their life.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult/Shadow Link.html"
+  }, {
+    "name" : "Throwing Knife",
+    "parent" : null,
+    "attributes" : {
+      "projectileLaunchNumber" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillCooldownTime" : {
+        "value" : [ 6.0, 5.6, 5.2, 4.8, 4.4, 4.0, 3.6, 3.2, 2.8, 2.4, 2.0, 1.6, 1.2, 0.8, 0.4, 0.0 ],
+        "skill" : false
+      },
+      "offensiveSlowBleedingMin" : {
+        "value" : [ 16.0, 21.0, 26.0, 30.0, 35.0, 40.0, 44.0, 49.0, 54.0, 58.0, 63.0, 68.0, 72.0, 77.0, 82.0, 90.0 ],
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : [ 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0, 28.0, 29.0, 30.0, 31.0, 32.0, 33.0 ],
+        "skill" : false
+      },
+      "projectilePiercingChance" : {
+        "value" : 10.0,
+        "skill" : false
+      },
+      "skillConnectionSpacing" : {
+        "value" : 62,
+        "skill" : false
+      },
+      "cameraShakeAmplitude" : {
+        "value" : 0.12,
+        "skill" : false
+      },
+      "offensiveSlowBleedingDurationMin" : {
+        "value" : 3.0,
+        "skill" : false
+      },
+      "projectileUsesAllDamage" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "offensivePierceMin" : {
+        "value" : [ 15.0, 18.0, 21.0, 24.0, 27.0, 31.0, 35.0, 39.0, 43.0, 48.0, 53.0, 58.0, 63.0, 69.0, 75.0, 81.0 ],
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 16,
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 5,
+        "skill" : false
+      }
+    },
+    "description" : "Throw a piercing blade at your opponent capable of causing prolonged bleeding.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult/Throwing Knife.html"
+  }, {
+    "name" : "Flash Powder",
+    "parent" : null,
+    "attributes" : {
+      "offensiveConfusionMax" : {
+        "value" : 8.0,
+        "skill" : false
+      },
+      "offensiveFumbleDurationMin" : {
+        "value" : 8.0,
+        "skill" : false
+      },
+      "skillCooldownTime" : {
+        "value" : 15.0,
+        "skill" : false
+      },
+      "offensiveConfusionMin" : {
+        "value" : 3.0,
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : [ 53.0, 56.0, 59.0, 62.0, 65.0, 68.0, 71.0, 74.0, 77.0, 80.0, 83.0, 86.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "offensiveFumbleMin" : {
+        "value" : [ 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0 ],
+        "skill" : false
+      },
+      "cameraShakeAmplitude" : {
+        "value" : 0.12,
+        "skill" : false
+      },
+      "excludeRacialDamage" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillTargetRadius" : {
+        "value" : [ 4.8, 5.4, 6.0, 6.6, 7.2, 7.8, 8.4, 9.0, 9.6, 10.2, 10.8, 11.4 ],
+        "skill" : false
+      },
+      "offensiveConfusionChance" : {
+        "value" : [ 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0 ],
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 8,
+        "skill" : false
+      }
+    },
+    "description" : "A magician's trick turned to more nefarious purposes, flash powder blinds adjacent enemies impairing their ability to hit with weapons and potentially disorienting them.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult/Flash Powder.html"
+  }, {
+    "name" : "Disarm Traps",
+    "parent" : null,
+    "attributes" : {
+      "racialBonusPercentDefense" : {
+        "value" : [ 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 10,
+        "skill" : false
+      },
+      "racialBonusAbsoluteDamage" : {
+        "value" : [ 11.0, 17.0, 23.0, 29.0, 35.0, 41.0, 47.0, 53.0, 59.0, 65.0 ],
+        "skill" : false
+      },
+      "racialBonusPercentDamage" : {
+        "value" : [ 20.0, 26.0, 32.0, 38.0, 44.0, 50.0, 56.0, 62.0, 68.0, 74.0 ],
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 6,
+        "skill" : false
+      }
+    },
+    "description" : "Expertise with traps and magical devices allows the Rogue to easily disable them and avoid their damage.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult/Disarm Traps.html"
+  } ], [ {
+    "name" : "Nightshade",
+    "parent" : "Envenom Weapon",
+    "attributes" : {
+      "offensiveSlowTotalSpeedMin" : {
+        "value" : [ 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 39.0, 41.0, 43.0, 46.0, 50.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "characterManaLimitReserve" : {
+        "value" : 25.0,
+        "skill" : false
+      },
+      "skillActiveManaCost" : {
+        "value" : 1.0,
+        "skill" : false
+      },
+      "offensiveSlowTotalSpeedDurationMin" : {
+        "value" : 5.0,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 8,
+        "skill" : false
+      }
+    },
+    "description" : "Oils harvested from deadly Nightshade plants give your Envenomed Weapons the ability to slow enemies.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult/Nightshade.html"
+  }, {
+    "name" : "Blade Fury",
+    "parent" : null,
+    "attributes" : {
+      "skillChanceWeight" : {
+        "value" : [ 12.0, 12.0, 13.0, 14.0, 14.0, 15.0, 16.0, 17.0, 17.0, 18.0, 19.0, 20.0 ],
+        "skill" : false
+      },
+      "skillCooldownTime" : {
+        "value" : 6.0,
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : [ 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ],
+        "skill" : false
+      },
+      "offensivePierceModifier" : {
+        "value" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 26.0, 28.0, 30.0, 32.0, 36.0 ],
+        "skill" : false
+      },
+      "offensiveTrapMin" : {
+        "value" : 1.5,
+        "skill" : false
+      },
+      "cameraShakeAmplitude" : {
+        "value" : 0.12,
+        "skill" : false
+      },
+      "ragDollAmplification" : {
+        "value" : [ 1.1, 1.18, 1.26, 1.34, 1.42, 1.5, 1.58, 1.66, 1.74, 1.82, 1.9, 1.98 ],
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 8,
+        "skill" : false
+      },
+      "Axe" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "offensivePhysicalModifier" : {
+        "value" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 26.0, 28.0, 30.0, 32.0, 36.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "Sword" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillTargetNumber" : {
+        "value" : [ 1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0, 3.0, 4.0 ],
+        "skill" : false
+      },
+      "skillProjectileNumber" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillTargetAngle" : {
+        "value" : 90.0,
+        "skill" : false
+      }
+    },
+    "description" : "A swift and potent multi-hit attack. ^y(Hits more targets at higher levels of the skill. Sword~Dagger/Axe Required)",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult/Blade Fury.html"
+  }, {
+    "name" : "Dual Blade Proficiency",
+    "parent" : null,
+    "attributes" : {
+      "characterOffensiveAbilityModifier" : {
+        "value" : [ 5.0, 7.0, 9.0, 10.0, 12.0, 14.0, 16.0, 18.0, 19.0, 21.0, 23.0, 25.0 ],
+        "skill" : false
+      },
+      "characterAttackSpeedModifier" : {
+        "value" : [ 5.0, 7.0, 9.0, 10.0, 12.0, 14.0, 16.0, 18.0, 19.0, 21.0, 23.0, 25.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "Sword" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "characterDefensiveAbility" : {
+        "value" : [ 11.0, 17.0, 23.0, 29.0, 35.0, 41.0, 47.0, 60.0, 66.0, 72.0, 80.0, 90.0 ],
+        "skill" : false
+      },
+      "characterDodgePercent" : {
+        "value" : [ 5.0, 6.2, 7.4, 8.6, 9.8, 11.0, 12.2, 13.4, 14.6, 15.8, 17.0, 18.2 ],
+        "skill" : false
+      },
+      "dualWieldOnly" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 8,
+        "skill" : false
+      },
+      "Axe" : {
+        "value" : 1,
+        "skill" : false
+      }
+    },
+    "description" : "The Occultist is able to wield two blade melee weapons at once. With lighter blades, the Occultist can attack with greater proficiency and speed. ^y(Requires Dual wield of Swords~Daggers/Axes)",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult/Dual Blade Proficiency.html"
+  }, {
+    "name" : "Smoke Screen",
+    "parent" : null,
+    "attributes" : {
+      "skillProjectileMissTimeToLive" : {
+        "value" : 30.0,
+        "skill" : false
+      },
+      "skillCooldownTime" : {
+        "value" : 60.0,
+        "skill" : false
+      },
+      "spawnObjectsTimeToLive" : {
+        "value" : 25.0,
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : [ 27.0, 31.0, 35.0, 39.0, 43.0, 47.0, 51.0, 55.0, 59.0, 63.0, 67.0, 71.0, 75.0, 79.0, 83.0, 87.0, 91.0, 95.0, 99.0, 103.0 ],
+        "skill" : false
+      },
+      "projectileExplosionRadius" : {
+        "value" : 1.0,
+        "skill" : false
+      },
+      "offensivePierceRatioMax" : {
+        "value" : 50.0,
+        "skill" : false
+      },
+      "skillConnectionSpacing" : {
+        "value" : 62,
+        "skill" : false
+      },
+      "skillProjectileTargetGroundOnly" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "cameraShakeAmplitude" : {
+        "value" : 0.12,
+        "skill" : false
+      },
+      "skillProjectileHitTimeToLive" : {
+        "value" : 30.0,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 8,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "offensivePierceRatioMin" : {
+        "value" : 30.0,
+        "skill" : false
+      },
+      "excludeRacialDamage" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "petLimit" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillProjectileNumber" : {
+        "value" : 1,
+        "skill" : false
+      }
+    },
+    "description" : "Allows the Occultist to throw a trap that will cloud an area over with a debilitating, impenetrable smoke, making enemies fight less effectively. ",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult/Smoke Screen.html"
+  }, {
+    "name" : "Shadow Rifts",
+    "parent" : null,
+    "attributes" : {
+      "petBurstSpawn" : {
+        "value" : [ 3.0, 3.0, 3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 6.0, 6.0 ],
+        "skill" : false
+      },
+      "skillCooldownTime" : {
+        "value" : 20.0,
+        "skill" : false
+      },
+      "spawnObjectsTimeToLive" : {
+        "value" : 5.0,
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : [ 56.0, 65.8, 75.6, 85.4, 95.2, 105.0, 114.8, 124.6, 134.4, 144.2, 154.0, 163.8, 173.6, 183.4, 193.2, 203.0, 212.8, 222.6, 232.4, 242.2 ],
+        "skill" : false
+      },
+      "projectileExplosionRadius" : {
+        "value" : 1.0,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 20,
+        "skill" : false
+      },
+      "skillConnectionSpacing" : {
+        "value" : 62,
+        "skill" : false
+      },
+      "skillProjectileTargetGroundOnly" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "cameraShakeAmplitude" : {
+        "value" : 0.12,
+        "skill" : false
+      },
+      "petLimit" : {
+        "value" : [ 3.0, 3.0, 3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 6.0, 6.0 ],
+        "skill" : false
+      },
+      "skillProjectileNumber" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 16,
+        "skill" : false
+      }
+    },
+    "description" : "The Occultist opens multiple rifts, allowing shadow sprites to materialize. These highly unstable beings can't stay for long outside of the shadow realm, and leave the mortal world in a burst of energy.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult/Shadow Rifts.html"
+  } ], [ {
+    "name" : "Dark Invigoration",
+    "parent" : "Shadow Link",
+    "attributes" : {
+      "offensiveSlowBleedingMax" : {
+        "value" : [ 4.0, 8.0, 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0 ],
+        "skill" : false
+      },
+      "offensiveSlowBleedingMin" : {
+        "value" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "offensiveLifeMin" : {
+        "value" : [ 3.0, 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 27.0, 30.0, 33.0, 36.0, 42.0 ],
+        "skill" : false
+      },
+      "offensiveSlowBleedingDurationMin" : {
+        "value" : 3.0,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 8,
+        "skill" : false
+      }
+    },
+    "description" : "The Occultist's weapons are charged with dark energy, greatly increasing the power of their attacks.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult/Dark Invigoration.html"
+  }, {
+    "name" : "Toxic Concoction",
+    "parent" : null,
+    "attributes" : {
+      "projectileFragmentsLaunchNumberMin" : {
+        "value" : [ 6.0, 7.0, 7.0, 8.0, 8.0, 9.0, 9.0, 10.0, 10.0, 11.0, 11.0, 12.0 ],
+        "skill" : false
+      },
+      "skillCooldownTime" : {
+        "value" : 8.0,
+        "skill" : false
+      },
+      "offensiveSlowBleedingMin" : {
+        "value" : [ 22.0, 28.0, 34.0, 40.0, 46.0, 52.0, 58.0, 64.0, 70.0, 76.0, 82.0, 88.0 ],
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : [ 52.0, 54.0, 56.0, 58.0, 60.0, 62.0, 64.0, 66.0, 68.0, 70.0, 72.0, 74.0, 76.0, 78.0, 80.0, 82.0 ],
+        "skill" : false
+      },
+      "projectileExplosionRadius" : {
+        "value" : 1.0,
+        "skill" : false
+      },
+      "projectilePiercingChance" : {
+        "value" : 100.0,
+        "skill" : false
+      },
+      "skillProjectileTargetGroundOnly" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillConnectionSpacing" : {
+        "value" : 62,
+        "skill" : false
+      },
+      "cameraShakeAmplitude" : {
+        "value" : 0.12,
+        "skill" : false
+      },
+      "offensiveSlowBleedingDurationMin" : {
+        "value" : 3.0,
+        "skill" : false
+      },
+      "offensivePierceMin" : {
+        "value" : [ 26.0, 32.0, 38.0, 44.0, 50.0, 56.0, 62.0, 68.0, 74.0, 80.0, 86.0, 92.0 ],
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 8,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "projectileFragmentsLaunchNumberMax" : {
+        "value" : [ 9.0, 11.0, 11.0, 12.0, 12.0, 13.0, 13.0, 14.0, 14.0, 15.0, 15.0, 16.0 ],
+        "skill" : false
+      },
+      "skillProjectileNumber" : {
+        "value" : 1,
+        "skill" : false
+      }
+    },
+    "description" : "Lobs a bomb that will explode on impact, discharging shrapnel in all directions. With a greater mastery level, you can invest in more lethal ingredients.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult/Toxic Concoction.html"
+  }, {
+    "name" : "Dual Ranged Proficiency",
+    "parent" : null,
+    "attributes" : {
+      "skillProjectileSpeedModifier" : {
+        "value" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0 ],
+        "skill" : false
+      },
+      "characterAttackSpeedModifier" : {
+        "value" : [ 5.0, 6.45, 7.9, 9.35, 10.8, 12.25, 13.7, 15.15, 16.6, 18.05, 19.5, 20.95 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "characterDefensiveAbility" : {
+        "value" : [ 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0 ],
+        "skill" : false
+      },
+      "characterDodgePercent" : {
+        "value" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0 ],
+        "skill" : false
+      },
+      "dualWieldOnly" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 8,
+        "skill" : false
+      },
+      "RangedOneHand" : {
+        "value" : 1,
+        "skill" : false
+      }
+    },
+    "description" : "The Occultist is able to wield two ranged weapons at once. With lighter ranged weapons, the Occultist can attack with greater proficiency and speed. ^y(Requires Dual wield of One-hand Ranged Weapons)",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult/Dual Ranged Proficiency.html"
+  } ], [ {
+    "name" : "Mandrake",
+    "parent" : "Nightshade",
+    "attributes" : {
+      "offensiveConfusionMax" : {
+        "value" : [ 2.4, 2.8, 3.2, 3.5, 3.9, 4.3, 4.6, 5.0, 5.4, 5.7, 6.1, 6.5 ],
+        "skill" : false
+      },
+      "offensiveFumbleDurationMin" : {
+        "value" : 3.0,
+        "skill" : false
+      },
+      "offensiveConfusionMin" : {
+        "value" : [ 1.8, 1.8, 1.8, 1.8, 1.8, 1.8, 1.8, 1.8, 1.8, 1.8, 1.8, 1.8 ],
+        "skill" : false
+      },
+      "offensiveGlobalChance" : {
+        "value" : 100.0,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "offensiveFumbleMin" : {
+        "value" : [ 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0 ],
+        "skill" : false
+      },
+      "skillActiveManaCost" : {
+        "value" : 0.5,
+        "skill" : false
+      },
+      "offensiveConfusionChance" : {
+        "value" : [ 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0 ],
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 8,
+        "skill" : false
+      }
+    },
+    "description" : "Adds a chance for poison to cloud an enemy's mind, sending them into a state of confusion.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult/Mandrake.html"
+  }, {
+    "name" : "Nether Strike",
+    "parent" : null,
+    "attributes" : {
+      "skillCooldownTime" : {
+        "value" : 14.0,
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : [ 55.0, 57.0, 60.0, 62.0, 65.0, 67.0, 70.0, 72.0, 75.0, 77.0, 80.0, 82.0, 85.0, 87.0, 90.0, 92.0 ],
+        "skill" : false
+      },
+      "offensivePierceModifier" : {
+        "value" : [ 225.0, 240.0, 255.0, 270.0, 285.0, 300.0, 315.0, 330.0, 345.0, 360.0, 375.0, 390.0, 405.0, 420.0, 435.0, 450.0 ],
+        "skill" : false
+      },
+      "isPetDisplayable" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillConnectionSpacing" : {
+        "value" : 62,
+        "skill" : false
+      },
+      "cameraShakeAmplitude" : {
+        "value" : 0.12,
+        "skill" : false
+      },
+      "characterRunSpeedModifier" : {
+        "value" : 500.0,
+        "skill" : false
+      },
+      "Bow" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillAllowsWarmUp" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "Axe" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "RangedOneHand" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "offensivePhysicalModifier" : {
+        "value" : [ 225.0, 250.0, 275.0, 300.0, 325.0, 350.0, 375.0, 400.0, 425.0, 450.0, 475.0, 500.0, 525.0, 550.0, 575.0, 600.0 ],
+        "skill" : false
+      },
+      "Mace" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 16,
+        "skill" : false
+      },
+      "Sword" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillProjectileNumber" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 10,
+        "skill" : false
+      },
+      "Spear" : {
+        "value" : 1,
+        "skill" : false
+      }
+    },
+    "description" : "Speed through the shadow realm unseen to deliver an attack with terrifying momentum that will greatly multiply damage and penetration. ^y(Doesn't work with staves)",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult/Nether Strike.html"
+  }, {
+    "name" : "Poisonous Gas",
+    "parent" : null,
+    "attributes" : {
+      "projectileFragmentsLaunchNumberMin" : {
+        "value" : [ 3.0, 4.0, 4.0, 5.0, 5.0, 6.0, 6.0, 7.0, 7.0, 8.0, 8.0, 9.0 ],
+        "skill" : false
+      },
+      "skillCooldownTime" : {
+        "value" : 2.0,
+        "skill" : false
+      },
+      "offensiveSlowTotalSpeedMin" : {
+        "value" : [ 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0 ],
+        "skill" : false
+      },
+      "projectileExplosionRadius" : {
+        "value" : 3.5,
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : [ 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0 ],
+        "skill" : false
+      },
+      "projectileFragmentsLaunchNumberMax" : {
+        "value" : [ 4.0, 6.0, 6.0, 7.0, 7.0, 8.0, 8.0, 9.0, 9.0, 10.0, 10.0, 11.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "skillConnectionSpacing" : {
+        "value" : 62,
+        "skill" : false
+      },
+      "offensiveSlowPoisonDurationMin" : {
+        "value" : 6.0,
+        "skill" : false
+      },
+      "offensiveSlowPoisonMin" : {
+        "value" : [ 22.0, 26.0, 30.0, 34.0, 39.0, 44.0, 50.0, 56.0, 62.0, 69.0, 76.0, 84.0 ],
+        "skill" : false
+      },
+      "offensiveSlowTotalSpeedDurationMin" : {
+        "value" : 6.0,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 8,
+        "skill" : false
+      }
+    },
+    "description" : "Adds poison gas pellets to the toxic concoction.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult/Poisonous Gas.html"
+  }, {
+    "name" : "Nether Breach",
+    "parent" : "Shadow Rifts",
+    "attributes" : {
+      "skillUltimateLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "skillConnectionSpacing" : {
+        "value" : 62,
+        "skill" : false
+      },
+      "skillCooldownReduction" : {
+        "value" : 50.0,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 8,
+        "skill" : false
+      },
+      "skillCooldownReductionChance" : {
+        "value" : [ 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0, 70.0, 74.0 ],
+        "skill" : false
+      }
+    },
+    "description" : "Widens the aperture to the shadow realm, allowing dark energies to pool more freely.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult/Nether Breach.html"
+  } ], [ {
+    "name" : "Toxin Distillation",
+    "parent" : "Mandrake",
+    "attributes" : {
+      "offensiveSlowPoisonDurationModifier" : {
+        "value" : [ 12.0, 24.0, 36.0, 48.0, 60.0, 72.0, 84.0, 96.0, 108.0, 120.0, 132.0, 144.0, 156.0, 168.0, 183.0, 200.0 ],
+        "skill" : false
+      },
+      "offensiveSlowPoisonModifier" : {
+        "value" : [ 10.0, 16.0, 22.0, 28.0, 34.0, 40.0, 46.0, 52.0, 58.0, 64.0, 70.0, 76.0, 82.0, 88.0, 94.0, 100.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 16,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 12,
+        "skill" : false
+      }
+    },
+    "description" : "Learn alchemical processes to distill natural toxins, increasing the potency and duration of all poison attacks.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult/Toxin Distillation.html"
+  }, {
+    "name" : "Shadow Lore",
+    "parent" : "Dark Invigoration",
+    "attributes" : {
+      "skillActiveLifeCost" : {
+        "value" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "offensiveLifeModifier" : {
+        "value" : [ 33.0, 39.0, 45.0, 51.0, 57.0, 63.0, 69.0, 75.0, 81.0, 87.0, 93.0, 100.0 ],
+        "skill" : false
+      },
+      "defensiveLife" : {
+        "value" : [ 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 50.0 ],
+        "skill" : false
+      },
+      "offensiveSlowLifeModifier" : {
+        "value" : [ 33.0, 39.0, 45.0, 51.0, 57.0, 63.0, 69.0, 75.0, 81.0, 87.0, 93.0, 100.0 ],
+        "skill" : false
+      },
+      "offensiveSlowBleedingModifier" : {
+        "value" : [ 66.0, 78.0, 90.0, 102.0, 114.0, 126.0, 138.0, 150.0, 162.0, 174.0, 186.0, 200.0 ],
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 8,
+        "skill" : false
+      }
+    },
+    "description" : "With a deeper understanding of these darker energies, the Occultist is able to channel them in greater quantities.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult/Shadow Lore.html"
+  }, {
+    "name" : "Flurry of Knives",
+    "parent" : "Throwing Knife",
+    "attributes" : {
+      "projectileLaunchNumber" : {
+        "value" : [ 1.0, 2.0, 2.0, 3.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ],
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : [ 15.0, 18.0, 18.0, 21.0, 21.0, 24.0, 24.0, 27.0, 27.0, 30.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 10,
+        "skill" : false
+      },
+      "projectileLaunchRotation" : {
+        "value" : [ 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0 ],
+        "skill" : false
+      },
+      "offensivePierceModifier" : {
+        "value" : [ 25.5, 30.0, 34.5, 39.0, 43.5, 48.0, 52.5, 57.0, 61.5, 66.0 ],
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 6,
+        "skill" : false
+      }
+    },
+    "description" : "Learn to throw additional knives at once and cut down enemies with a lethal flurry of razor-sharp metal.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult/Flurry of Knives.html"
+  }, {
+    "name" : "Blade Barrier",
+    "parent" : null,
+    "attributes" : {
+      "skillActiveDuration" : {
+        "value" : [ 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0 ],
+        "skill" : false
+      },
+      "spawnObjectsNumberOfRings" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillCooldownTime" : {
+        "value" : 30.0,
+        "skill" : false
+      },
+      "offensiveSlowBleedingMin" : {
+        "value" : [ 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0 ],
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : [ 100.0, 105.0, 110.0, 115.0, 120.0, 125.0, 130.0, 135.0, 140.0, 145.0, 150.0, 155.0, 160.0, 165.0 ],
+        "skill" : false
+      },
+      "projectileExplosionRadius" : {
+        "value" : 2.5,
+        "skill" : false
+      },
+      "cameraShakeAmplitude" : {
+        "value" : 0.12,
+        "skill" : false
+      },
+      "offensiveSlowBleedingDurationMin" : {
+        "value" : 1.0,
+        "skill" : false
+      },
+      "projectileUsesAllDamage" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "offensivePierceMin" : {
+        "value" : [ 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0, 150.0 ],
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 10,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 14,
+        "skill" : false
+      },
+      "spawnObjectsDistanceInnerCircle" : {
+        "value" : 3.0,
+        "skill" : false
+      },
+      "spawnObjectsSpacingAngle" : {
+        "value" : 120.0,
+        "skill" : false
+      },
+      "spawnObjectsDistanceIncrement" : {
+        "value" : 4.0,
+        "skill" : false
+      },
+      "offensivePercentCurrentLifeMin" : {
+        "value" : [ 0.4, 0.8, 1.2, 1.6, 2.0, 2.4, 2.8, 3.2, 3.6, 4.0, 4.4, 4.8, 5.2, 5.6, 6.0, 6.4, 6.8, 7.2, 7.6, 8.0, 8.4, 8.8, 9.2, 9.6, 10.0, 10.4, 10.8, 11.2, 11.6, 12.0 ],
+        "skill" : false
+      }
+    },
+    "description" : "Summons a field of whirling blades that can transmit effects like a regular weapon.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult/Blade Barrier.html"
+  }, {
+    "name" : "Shadow Stalker",
+    "parent" : null,
+    "attributes" : {
+      "skillCooldownTime" : {
+        "value" : 60.0,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 20,
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : [ 139.0, 158.0, 177.0, 196.0, 215.0, 234.0, 253.0, 272.0, 291.0, 310.0, 329.0, 348.0, 367.0, 386.0, 405.0, 424.0, 443.0, 462.0, 481.0, 500.0, 519.0, 538.0, 557.0, 576.0, 595.0, 614.0, 633.0, 652.0 ],
+        "skill" : false
+      },
+      "petLimit" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "cameraShakeAmplitude" : {
+        "value" : 0.12,
+        "skill" : false
+      },
+      "skillConnectionSpacing" : {
+        "value" : 62,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 16,
+        "skill" : false
+      }
+    },
+    "description" : "Summons a powerful demon to assist the Occultist. Even outside of the shadow realm, the stalker is able to subdue enemies with a barrage of life-damaging attacks.^y^nAt level 5, the Stalker learns Shadow Strike - displaces himself through the nether, dealing massive damage and paralyzing the enemy.^y^nAt level 10, the Stalker learns Shadow Rush, a temporary aura that greatly increases the damage and durability of the Stalker and any nearby allies.^y^nAt level 15, the Stalker learns Shadow Plague : infects a target, reducing a portion of its life instantly and slowing it for a few seconds--effect can leap to nearby enemies.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult/Shadow Stalker.html"
+  } ], [ {
+    "name" : "Dark Vapors",
+    "parent" : "Nether Strike",
+    "attributes" : {
+      "skillManaCost" : {
+        "value" : 15.0,
+        "skill" : false
+      },
+      "Bow" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 8,
+        "skill" : false
+      },
+      "Axe" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "RangedOneHand" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "offensiveStunMin" : {
+        "value" : 3.0,
+        "skill" : false
+      },
+      "Mace" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "Sword" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "offensiveLifeModifier" : {
+        "value" : [ 60.0, 95.0, 130.0, 165.0, 200.0, 235.0, 270.0, 305.0, 340.0, 375.0, 410.0, 445.0 ],
+        "skill" : false
+      },
+      "offensiveSlowLifeModifier" : {
+        "value" : [ 60.0, 95.0, 130.0, 165.0, 200.0, 235.0, 270.0, 305.0, 340.0, 375.0, 410.0, 445.0 ],
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 10,
+        "skill" : false
+      },
+      "offensiveSlowBleedingModifier" : {
+        "value" : [ 60.0, 95.0, 130.0, 165.0, 200.0, 235.0, 270.0, 305.0, 340.0, 375.0, 410.0, 445.0 ],
+        "skill" : false
+      },
+      "Spear" : {
+        "value" : 1,
+        "skill" : false
+      }
+    },
+    "description" : "Shadow energies cling to your weapon as you pass through the shadow realm, greatly increasing bleeding and life damage. ^y(Doesn't work with staves)",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult/Dark Vapors.html"
+  }, {
+    "name" : "Aphotic Ichor",
+    "parent" : null,
+    "attributes" : {
+      "offensiveTotalDamageReductionPercentMin" : {
+        "value" : [ 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0, 35.0, 37.0, 39.0, 41.0, 43.0, 45.0 ],
+        "skill" : false
+      },
+      "projectileFragmentsLaunchNumberMin" : {
+        "value" : [ 3.0, 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 8.0, 8.0, 9.0 ],
+        "skill" : false
+      },
+      "skillCooldownTime" : {
+        "value" : 2.0,
+        "skill" : false
+      },
+      "projectileExplosionRadius" : {
+        "value" : 3.5,
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : [ 76.0, 80.0, 84.0, 88.0, 92.0, 96.0, 100.0, 104.0, 108.0, 112.0, 116.0, 120.0, 130.0, 134.0, 138.0, 148.0 ],
+        "skill" : false
+      },
+      "offensiveTotalResistanceReductionPercentMin" : {
+        "value" : [ 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0, 35.0, 37.0, 39.0, 41.0, 43.0, 45.0 ],
+        "skill" : false
+      },
+      "skillConnectionSpacing" : {
+        "value" : 62,
+        "skill" : false
+      },
+      "offensiveSlowLifeMin" : {
+        "value" : [ 25.0, 28.0, 32.0, 35.0, 40.0, 43.0, 46.0, 50.0, 53.0, 58.0, 61.0, 64.0, 68.0, 71.0, 76.0, 80.0 ],
+        "skill" : false
+      },
+      "offensiveTotalDamageReductionPercentDurationMin" : {
+        "value" : 8.0,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "offensiveSlowLifeDurationMin" : {
+        "value" : 5.0,
+        "skill" : false
+      },
+      "offensiveTotalResistanceReductionPercentDurationMin" : {
+        "value" : 8.0,
+        "skill" : false
+      },
+      "projectileFragmentsLaunchNumberMax" : {
+        "value" : [ 5.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 8.0, 8.0, 8.0, 9.0, 9.0, 9.0, 10.0, 10.0, 11.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 16,
+        "skill" : false
+      }
+    },
+    "description" : "Adds dark fragments to the toxic concoction, which explode into a noxious gas, lowering enemy constitution and causing life damage.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult/Aphotic Ichor.html"
+  }, {
+    "name" : "Channel",
+    "parent" : null,
+    "attributes" : {
+      "greaterpower" : {
+        "value" : {
+          "name" : "Channel",
+          "parent" : null,
+          "attributes" : {
+            "characterSpellCastSpeedModifier" : {
+              "value" : [ 14.0, 17.0, 20.0, 23.0, 26.0, 29.0, 32.0, 35.0, 38.0, 41.0, 44.0, 47.0 ],
+              "skill" : false
+            },
+            "isPetDisplayable" : {
+              "value" : 1,
+              "skill" : false
+            },
+            "skillConnectionSpacing" : {
+              "value" : 62,
+              "skill" : false
+            },
+            "cameraShakeAmplitude" : {
+              "value" : 0.12,
+              "skill" : false
+            },
+            "defensiveManaBurnRatio" : {
+              "value" : [ 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0, 70.0, 74.0 ],
+              "skill" : false
+            },
+            "skillMaxLevel" : {
+              "value" : 8,
+              "skill" : false
+            },
+            "retaliationSlowLifeLeachMin" : {
+              "value" : [ 30.0, 32.5, 35.0, 37.5, 40.0, 42.5, 45.0, 47.5, 50.0, 52.5, 55.0, 57.5 ],
+              "skill" : false
+            },
+            "retaliationSlowLifeLeachDurationMin" : {
+              "value" : 3.0,
+              "skill" : false
+            },
+            "characterEnergyAbsorptionPercent" : {
+              "value" : [ 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0, 150.0, 160.0 ],
+              "skill" : false
+            },
+            "skillUltimateLevel" : {
+              "value" : 12,
+              "skill" : false
+            },
+            "notDispelable" : {
+              "value" : 1,
+              "skill" : false
+            },
+            "instantCast" : {
+              "value" : 1,
+              "skill" : false
+            },
+            "characterManaRegen" : {
+              "value" : [ 1.0, 1.4, 1.8, 2.2, 2.6, 3.0, 3.4, 3.8, 4.2, 4.6, 5.0, 5.4 ],
+              "skill" : false
+            },
+            "allSkillEnhancement" : {
+              "value" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0 ],
+              "skill" : false
+            },
+            "skillManaCostReduction" : {
+              "value" : [ 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0 ],
+              "skill" : false
+            }
+          },
+          "description" : "Open a direct channel between the shadow stalker and the shadow realm to grant the demon increased capabilities.^n^yAlso adds a hidden 30% + 4% per level non-reducible resistance to Mana Burn.",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult/Channel.html"
+        },
+        "skill" : true
+      }
+    },
+    "description" : "Open a direct channel between the shadow stalker and the shadow realm to grant the demon increased capabilities.^n^yAlso adds a hidden 30% + 4% per level non-reducible resistance to Mana Burn.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult/Channel.html"
+  }, {
+    "name" : "Shadow Bolts",
+    "parent" : null,
+    "attributes" : {
+      "shadowzap" : {
+        "value" : {
+          "name" : "Shadow Bolts",
+          "parent" : null,
+          "attributes" : {
+            "skillCooldownTime" : {
+              "value" : 5.0,
+              "skill" : false
+            },
+            "skillManaCost" : {
+              "value" : [ 200.0, 204.0, 208.0, 212.0, 216.0, 220.0, 224.0, 228.0, 232.0, 236.0, 240.0, 244.0 ],
+              "skill" : false
+            },
+            "isPetDisplayable" : {
+              "value" : 1,
+              "skill" : false
+            },
+            "offensivePetrifyMin" : {
+              "value" : [ 1.35, 1.5, 1.65, 1.8, 1.95, 2.1, 2.25, 2.4, 2.55, 2.7, 2.85, 3.0 ],
+              "skill" : false
+            },
+            "sparkGap" : {
+              "value" : 6.0,
+              "skill" : false
+            },
+            "skillConnectionSpacing" : {
+              "value" : 62,
+              "skill" : false
+            },
+            "cameraShakeAmplitude" : {
+              "value" : 0.12,
+              "skill" : false
+            },
+            "offensiveSlowLifeMin" : {
+              "value" : [ 66.0, 74.0, 82.0, 90.0, 98.0, 106.0, 114.0, 122.0, 130.0, 138.0, 146.0, 154.0 ],
+              "skill" : false
+            },
+            "sparkMaxNumber" : {
+              "value" : [ 2.0, 2.0, 3.0, 3.0, 4.0, 4.0, 5.0, 5.0, 6.0, 6.0, 7.0, 7.0 ],
+              "skill" : false
+            },
+            "skillMaxLevel" : {
+              "value" : 8,
+              "skill" : false
+            },
+            "offensiveSlowLifeDurationMin" : {
+              "value" : 3.0,
+              "skill" : false
+            },
+            "skillUltimateLevel" : {
+              "value" : 12,
+              "skill" : false
+            },
+            "sparkChance" : {
+              "value" : 100.0,
+              "skill" : false
+            },
+            "offensivePercentCurrentLifeMin" : {
+              "value" : [ 2.75, 3.0, 3.25, 3.5, 3.75, 4.0, 4.25, 4.5, 4.75, 5.0, 5.25, 5.5 ],
+              "skill" : false
+            }
+          },
+          "description" : "The Shadow Stalker assaults a target with bolts of dark energy, dealing damage and paralyzing them momentarily.",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult/Shadow Bolts.html"
+        },
+        "skill" : true
+      }
+    },
+    "description" : "The Shadow Stalker assaults a target with bolts of dark energy, dealing damage and paralyzing them momentarily.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult/Shadow Bolts.html"
+  } ] ],
+  "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/Occult.html"
+}

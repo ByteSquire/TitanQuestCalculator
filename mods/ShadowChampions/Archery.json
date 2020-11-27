@@ -1,0 +1,1661 @@
+{
+  "name" : "Archery",
+  "skillTiers" : [ [ {
+    "name" : "Target Practice",
+    "parent" : null,
+    "attributes" : {
+      "characterAttackSpeedModifier" : {
+        "value" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 14,
+        "skill" : false
+      },
+      "Staff" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "characterDexterityModifier" : {
+        "value" : [ 2.0, 3.0, 4.0, 6.0, 7.0, 8.0, 9.0, 11.0, 12.0, 13.0, 14.0, 16.0, 17.0, 18.0 ],
+        "skill" : false
+      },
+      "Bow" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 10,
+        "skill" : false
+      },
+      "RangedOneHand" : {
+        "value" : 1,
+        "skill" : false
+      }
+    },
+    "description" : "Learn to remain steady and shoot under all conditions and from all angles to always hit the mark.{^n}{^y}Requires a ranged weapon.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery/Target Practice.html"
+  }, {
+    "name" : "Raptor Hunter",
+    "parent" : null,
+    "attributes" : {
+      "skillCooldownTime" : {
+        "value" : 30.0,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 22,
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : [ 100.0, 102.0, 105.0, 107.0, 110.0, 112.0, 114.0, 117.0, 119.0, 121.0, 124.0, 126.0, 129.0, 131.0, 133.0, 136.0, 138.0, 140.0, 143.0, 145.0, 148.0, 150.0 ],
+        "skill" : false
+      },
+      "petLimit" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "cameraShakeAmplitude" : {
+        "value" : 0.12,
+        "skill" : false
+      },
+      "skillConnectionSpacing" : {
+        "value" : 62,
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 18,
+        "skill" : false
+      }
+    },
+    "description" : "Call upon a bird of prey to assist you in hunting down your victims.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery/Raptor Hunter.html"
+  }, {
+    "name" : "Hunting Net",
+    "parent" : null,
+    "attributes" : {
+      "projectileLaunchNumber" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "huntingnet" : {
+        "value" : {
+          "name" : "Hunting Net",
+          "parent" : null,
+          "attributes" : {
+            "debufSkill" : {
+              "value" : 1,
+              "skill" : false
+            },
+            "skillActiveDuration" : {
+              "value" : [ 3.0, 4.0, 5.1, 6.3, 7.6, 9.0, 10.5, 11.1, 12.8, 14.6 ],
+              "skill" : false
+            },
+            "skillCooldownTime" : {
+              "value" : 8.0,
+              "skill" : false
+            },
+            "skillManaCost" : {
+              "value" : [ 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 45.0, 49.0, 53.0, 57.0, 61.0, 65.0 ],
+              "skill" : false
+            },
+            "skillUltimateLevel" : {
+              "value" : 12,
+              "skill" : false
+            },
+            "projectileExplosionRadius" : {
+              "value" : [ 0.5, 0.6, 0.8, 0.9, 1.0, 1.2, 1.3, 1.5, 1.6, 1.7, 1.9, 2.0 ],
+              "skill" : false
+            },
+            "skillConnectionSpacing" : {
+              "value" : 62,
+              "skill" : false
+            },
+            "cameraShakeAmplitude" : {
+              "value" : 0.12,
+              "skill" : false
+            },
+            "offensiveTotalDamageModifier" : {
+              "value" : [ -10.0, -13.0, -15.0, -18.0, -20.0, -23.0, -25.0, -28.0, -30.0, -33.0, -35.0, -38.0 ],
+              "skill" : false
+            },
+            "skillMasteryLevelRequired" : {
+              "value" : 1,
+              "skill" : false
+            },
+            "skillMaxLevel" : {
+              "value" : 8,
+              "skill" : false
+            }
+          },
+          "description" : "Throw a hunting net, entangling an enemy, preventing them from taking a single step for a duration, as well as heavily reducing their damage output.",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery/Hunting Net.html"
+        },
+        "skill" : true
+      }
+    },
+    "description" : "Throw a hunting net, entangling an enemy, preventing them from taking a single step for a duration, as well as heavily reducing their damage output.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery/Hunting Net.html"
+  } ], [ {
+    "name" : "Eagle Eye",
+    "parent" : null,
+    "attributes" : {
+      "skillManaCost" : {
+        "value" : 1.0,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 16,
+        "skill" : false
+      },
+      "skillConnectionSpacing" : {
+        "value" : 62,
+        "skill" : false
+      },
+      "Staff" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "cameraShakeAmplitude" : {
+        "value" : 0.12,
+        "skill" : false
+      },
+      "offensiveSlowManaLeachDurationMin" : {
+        "value" : 2.0,
+        "skill" : false
+      },
+      "Bow" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "offensiveSlowManaLeachMin" : {
+        "value" : [ 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0 ],
+        "skill" : false
+      },
+      "offensivePierceMin" : {
+        "value" : [ 6.0, 12.0, 19.0, 25.0, 31.0, 37.0, 44.0, 50.0, 56.0, 62.0, 69.0, 75.0, 81.0, 87.0, 94.0, 100.0 ],
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 4,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "RangedOneHand" : {
+        "value" : 1,
+        "skill" : false
+      }
+    },
+    "description" : "Firing rapidly allows you to enter a state of increased focus, replenishing your energy with ease and increasing the piercing damage of your projectiles. {^y}Apply this skill to your left mouse button.{^n}{^y}Requires a ranged weapon.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery/Eagle Eye.html"
+  }, {
+    "name" : "Razor Sharpening",
+    "parent" : null,
+    "attributes" : {
+      "razorsharpening" : {
+        "value" : {
+          "name" : "Razor Sharpening",
+          "parent" : null,
+          "attributes" : {
+            "skillCooldownTime" : {
+              "value" : 4.0,
+              "skill" : false
+            },
+            "skillWeaponTintBlue" : {
+              "value" : 0.5,
+              "skill" : false
+            },
+            "characterManaLimitReserve" : {
+              "value" : 50.0,
+              "skill" : false
+            },
+            "offensivePierceModifier" : {
+              "value" : [ 4.0, 7.0, 10.0, 13.0, 16.0, 19.0, 22.0, 25.0, 29.0, 32.0, 35.0, 38.0, 41.0, 44.0, 47.0, 50.0 ],
+              "skill" : false
+            },
+            "skillActiveManaCost" : {
+              "value" : 1.0,
+              "skill" : false
+            },
+            "skillConnectionSpacing" : {
+              "value" : 62,
+              "skill" : false
+            },
+            "cameraShakeAmplitude" : {
+              "value" : 0.12,
+              "skill" : false
+            },
+            "Bow" : {
+              "value" : 1,
+              "skill" : false
+            },
+            "skillMaxLevel" : {
+              "value" : 12,
+              "skill" : false
+            },
+            "RangedOneHand" : {
+              "value" : 1,
+              "skill" : false
+            },
+            "skillUltimateLevel" : {
+              "value" : 16,
+              "skill" : false
+            },
+            "skillWeaponTintGreen" : {
+              "value" : 0.4,
+              "skill" : false
+            },
+            "Sword" : {
+              "value" : 1,
+              "skill" : false
+            },
+            "skillTargetRadius" : {
+              "value" : [ 6.0, 6.0, 7.0, 7.0, 8.0, 8.0, 8.0, 9.0, 9.0, 10.0, 10.0, 10.0, 11.0, 11.0, 12.0, 12.0 ],
+              "skill" : false
+            },
+            "skillMasteryLevelRequired" : {
+              "value" : 4,
+              "skill" : false
+            },
+            "Spear" : {
+              "value" : 1,
+              "skill" : false
+            },
+            "offensivePierceRatioModifier" : {
+              "value" : [ 10.0, 14.0, 19.0, 23.0, 27.0, 32.0, 36.0, 40.0, 45.0, 49.0, 53.0, 58.0, 62.0, 66.0, 71.0, 75.0 ],
+              "skill" : false
+            }
+          },
+          "description" : "Increase the piercing potential of the weapons of the nearby allied units.{^n}{^y}Requires a bow, a thrown weapon, a sword or a spear.",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery/Razor Sharpening.html"
+        },
+        "skill" : true
+      }
+    },
+    "description" : "Increase the piercing potential of the weapons of the nearby allied units.{^n}{^y}Requires a bow, a thrown weapon, a sword or a spear.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery/Razor Sharpening.html"
+  }, {
+    "name" : "Magical Winds",
+    "parent" : null,
+    "attributes" : {
+      "offensiveSlowRunSpeedMin" : {
+        "value" : [ 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0, 48.0, 50.0 ],
+        "skill" : false
+      },
+      "skillCooldownTime" : {
+        "value" : 10.0,
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : [ 50.0, 53.0, 57.0, 60.0, 64.0, 67.0, 71.0, 74.0, 77.0, 81.0, 84.0, 88.0, 91.0, 94.0, 98.0, 101.0, 105.0, 108.0, 112.0, 115.0 ],
+        "skill" : false
+      },
+      "projectileExplosionRadius" : {
+        "value" : 3.0,
+        "skill" : false
+      },
+      "projectilePiercingChance" : {
+        "value" : 100.0,
+        "skill" : false
+      },
+      "skillConnectionSpacing" : {
+        "value" : 62,
+        "skill" : false
+      },
+      "Staff" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "cameraShakeAmplitude" : {
+        "value" : 0.12,
+        "skill" : false
+      },
+      "projectileUsesAllDamage" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "Bow" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "offensivePierceMin" : {
+        "value" : [ 8.0, 10.0, 13.0, 15.0, 18.0, 20.0, 23.0, 25.0, 28.0, 30.0, 33.0, 35.0, 38.0, 40.0, 43.0, 45.0, 48.0, 50.0, 53.0, 55.0 ],
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 16,
+        "skill" : false
+      },
+      "offensiveElementalMin" : {
+        "value" : [ 30.0, 41.3, 52.7, 64.0, 75.3, 86.7, 98.0, 109.3, 120.7, 132.0, 143.3, 154.7, 166.0, 177.3, 188.7, 200.0, 225.0, 250.0, 275.0, 300.0 ],
+        "skill" : false
+      },
+      "RangedOneHand" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 20,
+        "skill" : false
+      },
+      "offensiveSlowRunSpeedDurationMin" : {
+        "value" : 3.0,
+        "skill" : false
+      },
+      "skillProjectileNumber" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 4,
+        "skill" : false
+      }
+    },
+    "description" : "Concentrate a great amount of magical energy in a single, powerful projectile that damages all enemies in its path.{^n}{^y}Requires a ranged weapon.{^n}{^y}Transfers flat damage outside of the wielded weapon.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery/Magical Winds.html"
+  }, {
+    "name" : "Monster Hunter",
+    "parent" : null,
+    "attributes" : {
+      "racialBonusPercentDefense" : {
+        "value" : [ 3.0, 5.0, 6.0, 8.0, 9.0, 11.0, 12.0, 14.0, 15.0, 17.0, 18.0, 20.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "racialBonusPercentDamage" : {
+        "value" : [ 5.0, 7.0, 10.0, 12.0, 14.0, 16.0, 19.0, 21.0, 23.0, 25.0, 28.0, 30.0 ],
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 4,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 8,
+        "skill" : false
+      }
+    },
+    "description" : "Special training allows you to face all kinds of demons and giants with no hesitation.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery/Monster Hunter.html"
+  } ], [ {
+    "name" : "Bloodletting",
+    "parent" : "Razor Sharpening",
+    "attributes" : {
+      "skillUltimateLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "offensiveSlowBleedingDurationModifier" : {
+        "value" : [ 15.0, 20.0, 26.0, 31.0, 37.0, 42.0, 48.0, 53.0, 59.0, 64.0, 70.0, 75.0 ],
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 10,
+        "skill" : false
+      },
+      "offensiveSlowBleedingModifier" : {
+        "value" : [ 15.0, 20.0, 26.0, 31.0, 37.0, 42.0, 48.0, 53.0, 59.0, 64.0, 70.0, 75.0 ],
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 8,
+        "skill" : false
+      }
+    },
+    "description" : "Become an expert at causing internal bleeding with specialized fighting techniques using piercing weapons.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery/Bloodletting.html"
+  }, {
+    "name" : "Blinding Winds",
+    "parent" : "Magical Winds",
+    "attributes" : {
+      "offensiveConfusionMax" : {
+        "value" : [ 1.9, 2.0, 2.0, 2.1, 2.1, 2.3, 2.3, 2.4, 2.5, 2.6, 2.8, 3.0 ],
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : [ 2.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 20.0, 22.0, 24.0, 27.0 ],
+        "skill" : false
+      },
+      "offensiveLightningMax" : {
+        "value" : [ 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0, 150.0 ],
+        "skill" : false
+      },
+      "offensiveProjectileFumbleMin" : {
+        "value" : [ 25.0, 27.0, 30.0, 32.0, 34.0, 36.0, 39.0, 41.0, 43.0, 45.0, 48.0, 50.0 ],
+        "skill" : false
+      },
+      "offensiveSlowOffensiveAbilityDurationMin" : {
+        "value" : 3.0,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 8,
+        "skill" : false
+      },
+      "offensiveConfusionMin" : {
+        "value" : [ 0.4, 0.4, 0.5, 0.5, 0.6, 0.6, 0.8, 0.8, 0.9, 1.0, 1.1, 1.3 ],
+        "skill" : false
+      },
+      "offensiveProjectileFumbleDurationMin" : {
+        "value" : 3.0,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "offensiveLightningMin" : {
+        "value" : [ 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0 ],
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 10,
+        "skill" : false
+      },
+      "offensiveConfusionChance" : {
+        "value" : [ 5.0, 7.0, 9.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 21.0, 23.0, 25.0 ],
+        "skill" : false
+      },
+      "offensiveSlowOffensiveAbilityMin" : {
+        "value" : [ 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0 ],
+        "skill" : false
+      }
+    },
+    "description" : "Intense rays of light emerge from your projectiles, which blind your enemies, making them unable to aim properly or defend themselves. ",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery/Blinding Winds.html"
+  }, {
+    "name" : "Split Shots",
+    "parent" : null,
+    "attributes" : {
+      "skillCooldownTime" : {
+        "value" : 7.0,
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : [ 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0, 70.0, 75.0, 80.0, 85.0 ],
+        "skill" : false
+      },
+      "projectilePiercingChance" : {
+        "value" : [ 12.0, 14.0, 16.0, 18.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 34.0, 36.0, 38.0, 40.0 ],
+        "skill" : false
+      },
+      "driftMax" : {
+        "value" : 4.0,
+        "skill" : false
+      },
+      "cameraShakeAmplitude" : {
+        "value" : 0.12,
+        "skill" : false
+      },
+      "offensiveTotalDamageModifier" : {
+        "value" : [ -60.0, -55.0, -50.0, -45.0, -40.0, -35.0, -30.0, -25.0, -20.0, -15.0, -10.0, -5.0, 0.0, 5.0 ],
+        "skill" : false
+      },
+      "Bow" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 10,
+        "skill" : false
+      },
+      "RangedOneHand" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 14,
+        "skill" : false
+      },
+      "driftMin" : {
+        "value" : 1.0,
+        "skill" : false
+      },
+      "skillProjectileNumber" : {
+        "value" : 5,
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 10,
+        "skill" : false
+      }
+    },
+    "description" : "This special technique allows you to fire multiple projectiles at once to manage large groups more easily.{^n}{^y}Requires either a bow or a thrown weapon.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery/Split Shots.html"
+  }, {
+    "name" : "Intimidating Screech",
+    "parent" : null,
+    "attributes" : {
+      "intimidatingscreech" : {
+        "value" : {
+          "name" : "Intimidating Screech",
+          "parent" : null,
+          "attributes" : {
+            "screech" : {
+              "value" : {
+                "name" : "Intimidating Screech",
+                "parent" : null,
+                "attributes" : {
+                  "skillActiveDuration" : {
+                    "value" : 8.0,
+                    "skill" : false
+                  },
+                  "skillCooldownTime" : {
+                    "value" : 8.0,
+                    "skill" : false
+                  },
+                  "skillManaCost" : {
+                    "value" : 40.0,
+                    "skill" : false
+                  },
+                  "isPetDisplayable" : {
+                    "value" : 1,
+                    "skill" : false
+                  },
+                  "skillConnectionSpacing" : {
+                    "value" : 62,
+                    "skill" : false
+                  },
+                  "cameraShakeAmplitude" : {
+                    "value" : 0.12,
+                    "skill" : false
+                  },
+                  "offensiveTotalDamageModifier" : {
+                    "value" : [ -8.0, -10.0, -11.0, -13.0, -15.0, -16.0, -18.0, -20.0, -22.0, -23.0, -25.0, -27.0, -28.0, -30.0 ],
+                    "skill" : false
+                  },
+                  "defensivePierce" : {
+                    "value" : [ -8.0, -12.0, -15.0, -19.0, -22.0, -26.0, -30.0, -33.0, -37.0, -41.0, -44.0, -48.0, -51.0, -55.0 ],
+                    "skill" : false
+                  },
+                  "skillMaxLevel" : {
+                    "value" : 10,
+                    "skill" : false
+                  },
+                  "debufSkill" : {
+                    "value" : 1,
+                    "skill" : false
+                  },
+                  "skillUltimateLevel" : {
+                    "value" : 14,
+                    "skill" : false
+                  },
+                  "excludeRacialDamage" : {
+                    "value" : 1,
+                    "skill" : false
+                  },
+                  "skillTargetRadius" : {
+                    "value" : 8.0,
+                    "skill" : false
+                  },
+                  "skillMasteryLevelRequired" : {
+                    "value" : 10,
+                    "skill" : false
+                  }
+                },
+                "description" : "The raptor's screech sends a shivering wave, which lowers enemies' resistance and damage dealt for a short while.",
+                "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery/Intimidating Screech.html"
+              },
+              "skill" : true
+            }
+          },
+          "description" : "The raptor's screech sends a shivering wave, which lowers enemies' resistance and damage dealt for a short while.",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery/Intimidating Screech.html"
+        },
+        "skill" : true
+      }
+    },
+    "description" : "The raptor's screech sends a shivering wave, which lowers enemies' resistance and damage dealt for a short while.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery/Intimidating Screech.html"
+  }, {
+    "name" : "Bandages",
+    "parent" : null,
+    "attributes" : {
+      "bandages" : {
+        "value" : {
+          "name" : "Bandages",
+          "parent" : null,
+          "attributes" : {
+            "defensiveBleeding" : {
+              "value" : [ 16.0, 22.0, 28.0, 34.0, 40.0, 46.0, 52.0, 58.0, 64.0, 70.0, 76.0, 82.0 ],
+              "skill" : false
+            },
+            "skillActiveDuration" : {
+              "value" : 300.0,
+              "skill" : false
+            },
+            "skillCooldownTime" : {
+              "value" : 10.0,
+              "skill" : false
+            },
+            "skillLifeBonus" : {
+              "value" : [ 100.0, 225.0, 350.0, 475.0, 600.0, 725.0, 850.0, 975.0, 1100.0, 1225.0, 1350.0, 1475.0 ],
+              "skill" : false
+            },
+            "skillManaCost" : {
+              "value" : [ 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0 ],
+              "skill" : false
+            },
+            "defensivePoisonDuration" : {
+              "value" : [ 1.5, 3.0, 4.5, 6.0, 7.5, 9.0, 10.5, 12.0, 13.5, 15.0, 16.5, 18.0 ],
+              "skill" : false
+            },
+            "skillUltimateLevel" : {
+              "value" : 12,
+              "skill" : false
+            },
+            "notDispelable" : {
+              "value" : 1,
+              "skill" : false
+            },
+            "characterLifeRegen" : {
+              "value" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ],
+              "skill" : false
+            },
+            "cameraShakeAmplitude" : {
+              "value" : 0.12,
+              "skill" : false
+            },
+            "skillMasteryLevelRequired" : {
+              "value" : 10,
+              "skill" : false
+            },
+            "skillMaxLevel" : {
+              "value" : 8,
+              "skill" : false
+            }
+          },
+          "description" : "While you venture in unknown regions, carrying a pack of bandages is useful, as they are effective for protecting wounds from aggravating and enable accelerated recovery. Additonally, they may be used on allied units.{^n}{^a}Cannot be dispelled.",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery/Bandages.html"
+        },
+        "skill" : true
+      }
+    },
+    "description" : "While you venture in unknown regions, carrying a pack of bandages is useful, as they are effective for protecting wounds from aggravating and enable accelerated recovery. Additonally, they may be used on allied units.{^n}{^a}Cannot be dispelled.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery/Bandages.html"
+  } ], [ {
+    "name" : "Acute Precision",
+    "parent" : "Eagle Eye",
+    "attributes" : {
+      "projectilePiercing" : {
+        "value" : [ 8.0, 10.0, 13.0, 15.0, 18.0, 20.0, 23.0, 25.0, 28.0, 30.0, 33.0, 35.0, 38.0, 40.0 ],
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : 1.0,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 14,
+        "skill" : false
+      },
+      "offensivePierceModifier" : {
+        "value" : [ 5.0, 9.0, 13.0, 18.0, 22.0, 26.0, 30.0, 35.0, 39.0, 43.0, 47.0, 52.0, 56.0, 60.0 ],
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 16,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 10,
+        "skill" : false
+      }
+    },
+    "description" : "The projectiles of your ranged weapons pass through enemies and deal increased piercing damage.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery/Acute Precision.html"
+  }, {
+    "name" : "Ranger's Prowess",
+    "parent" : null,
+    "attributes" : {
+      "instantCast" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "quickdraw" : {
+        "value" : {
+          "name" : "Ranger's Prowess",
+          "parent" : null,
+          "attributes" : {
+            "skillActiveDuration" : {
+              "value" : [ 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0 ],
+              "skill" : false
+            },
+            "skillCooldownTime" : {
+              "value" : 80.0,
+              "skill" : false
+            },
+            "skillManaCost" : {
+              "value" : [ 60.0, 63.0, 65.0, 70.0, 78.0, 79.0, 85.0, 90.0, 94.0, 99.0, 101.0, 106.0, 108.0, 115.0, 119.0, 124.0 ],
+              "skill" : false
+            },
+            "characterSpellCastSpeedModifier" : {
+              "value" : [ 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0, 51.0, 54.0, 57.0, 60.0 ],
+              "skill" : false
+            },
+            "offensivePhysicalMin" : {
+              "value" : [ 6.0, 8.0, 11.0, 13.0, 15.0, 17.0, 20.0, 22.0, 24.0, 26.0, 29.0, 31.0, 33.0, 35.0, 38.0, 40.0 ],
+              "skill" : false
+            },
+            "cameraShakeAmplitude" : {
+              "value" : 0.12,
+              "skill" : false
+            },
+            "offensivePierceMin" : {
+              "value" : [ 6.0, 8.0, 11.0, 13.0, 15.0, 17.0, 20.0, 22.0, 24.0, 26.0, 29.0, 31.0, 33.0, 35.0, 38.0, 40.0 ],
+              "skill" : false
+            },
+            "skillMaxLevel" : {
+              "value" : 12,
+              "skill" : false
+            },
+            "characterAttackSpeedModifier" : {
+              "value" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0 ],
+              "skill" : false
+            },
+            "skillUltimateLevel" : {
+              "value" : 16,
+              "skill" : false
+            },
+            "notDispelable" : {
+              "value" : 1,
+              "skill" : false
+            },
+            "skillTargetRadius" : {
+              "value" : 14.0,
+              "skill" : false
+            },
+            "skillMasteryLevelRequired" : {
+              "value" : 16,
+              "skill" : false
+            }
+          },
+          "description" : "Rangers can share their techniques with companions and allies, improving their damage output and speed for a short moment.",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery/Ranger's Prowess.html"
+        },
+        "skill" : true
+      }
+    },
+    "description" : "Rangers can share their techniques with companions and allies, improving their damage output and speed for a short moment.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery/Ranger's Prowess.html"
+  }, {
+    "name" : "Silver Feathers",
+    "parent" : null,
+    "attributes" : {
+      "silverfeathers" : {
+        "value" : {
+          "name" : "Silver Feathers",
+          "parent" : null,
+          "attributes" : {
+            "offensiveFumbleDurationMin" : {
+              "value" : [ 2.8, 2.9, 3.0, 3.1, 3.3, 3.4, 3.5, 3.7, 3.8, 3.9, 4.1, 4.2 ],
+              "skill" : false
+            },
+            "projectileLaunchNumber" : {
+              "value" : [ 3.0, 3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 6.0 ],
+              "skill" : false
+            },
+            "skillCooldownTime" : {
+              "value" : 6.0,
+              "skill" : false
+            },
+            "skillManaCost" : {
+              "value" : [ 25.92, 27.36, 28.8, 30.24, 31.68, 33.12, 34.56, 36.0, 37.44, 38.88, 40.32, 41.76, 43.2, 44.64, 46.08, 47.52 ],
+              "skill" : false
+            },
+            "offensiveProjectileFumbleDurationMax" : {
+              "value" : [ 4.3, 4.4, 4.5, 4.7, 4.8, 5.0, 5.1, 5.3, 5.4, 5.6, 5.8, 6.0 ],
+              "skill" : false
+            },
+            "projectilePiercingChance" : {
+              "value" : 10.0,
+              "skill" : false
+            },
+            "skillConnectionSpacing" : {
+              "value" : 62,
+              "skill" : false
+            },
+            "cameraShakeAmplitude" : {
+              "value" : 0.12,
+              "skill" : false
+            },
+            "offensiveProjectileFumbleMin" : {
+              "value" : [ 50.0, 52.0, 53.5, 55.0, 56.5, 58.0, 59.5, 61.0, 62.5, 64.0, 65.5, 67.0 ],
+              "skill" : false
+            },
+            "projectileUsesAllDamage" : {
+              "value" : 1,
+              "skill" : false
+            },
+            "offensivePierceMin" : {
+              "value" : [ 33.08707, 39.70449, 46.3219, 52.93932, 59.55674, 68.37995, 77.20318, 86.0264, 94.84962, 105.8786, 116.9077, 127.9367, 138.9657, 152.2005, 165.4354, 178.6702 ],
+              "skill" : false
+            },
+            "skillMaxLevel" : {
+              "value" : 8,
+              "skill" : false
+            },
+            "offensiveFumbleDurationMax" : {
+              "value" : [ 4.3, 4.4, 4.5, 4.7, 4.8, 5.0, 5.1, 5.3, 5.4, 5.6, 5.8, 6.0 ],
+              "skill" : false
+            },
+            "offensiveProjectileFumbleDurationMin" : {
+              "value" : [ 2.8, 2.9, 3.0, 3.1, 3.3, 3.4, 3.5, 3.7, 3.8, 3.9, 4.1, 4.2 ],
+              "skill" : false
+            },
+            "skillUltimateLevel" : {
+              "value" : 12,
+              "skill" : false
+            },
+            "offensiveFumbleMin" : {
+              "value" : [ 33.0, 35.0, 36.5, 38.0, 39.5, 41.0, 42.5, 44.0, 45.5, 47.0, 48.5, 50.0 ],
+              "skill" : false
+            },
+            "projectileLaunchRotation" : {
+              "value" : 12.0,
+              "skill" : false
+            },
+            "skillMasteryLevelRequired" : {
+              "value" : 16,
+              "skill" : false
+            }
+          },
+          "description" : "Your raptor may now throw its piercing feathers to damage enemies from afar and disturb their eyesight.",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery/Silver Feathers.html"
+        },
+        "skill" : true
+      }
+    },
+    "description" : "Your raptor may now throw its piercing feathers to damage enemies from afar and disturb their eyesight.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery/Silver Feathers.html"
+  }, {
+    "name" : "Storm of Arrows",
+    "parent" : null,
+    "attributes" : {
+      "skillActiveDuration" : {
+        "value" : 3.0,
+        "skill" : false
+      },
+      "skillCooldownTime" : {
+        "value" : 15.0,
+        "skill" : false
+      },
+      "offensiveSlowBleedingMin" : {
+        "value" : [ 55.6371, 64.7316, 75.195, 84.2895, 93.384, 103.8474, 112.9419, 122.0364, 131.1309, 141.5943, 150.6888, 159.7833, 170.2467, 179.3412 ],
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : [ 50.0, 53.0, 56.0, 59.0, 62.0, 65.0, 68.0, 72.0, 75.0, 78.0, 81.0, 84.0, 87.0, 90.0 ],
+        "skill" : false
+      },
+      "projectileExplosionRadius" : {
+        "value" : 5.0,
+        "skill" : false
+      },
+      "Staff" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "cameraShakeAmplitude" : {
+        "value" : 0.12,
+        "skill" : false
+      },
+      "offensiveSlowBleedingDurationMin" : {
+        "value" : 1.0,
+        "skill" : false
+      },
+      "projectileUsesAllDamage" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "Bow" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "offensivePierceMin" : {
+        "value" : [ 55.6371, 64.7316, 75.195, 84.2895, 93.384, 103.8474, 112.9419, 122.0364, 131.1309, 141.5943, 150.6888, 159.7833, 170.2467, 179.3412 ],
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 10,
+        "skill" : false
+      },
+      "RangedOneHand" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 14,
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 16,
+        "skill" : false
+      }
+    },
+    "description" : "Firing multiple arrows up in the sky allows unavoidable attacks from unsuspected angles.{^y} Inflicts damage twice per second.{^n}{^y}Requires a ranged weapon.{^n}{^y}Transfers flat damage outside of the wielded weapon.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery/Storm of Arrows.html"
+  }, {
+    "name" : "Survival Techniques",
+    "parent" : null,
+    "attributes" : {
+      "instantCast" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "survivaltechniques" : {
+        "value" : {
+          "name" : "Survival Techniques",
+          "parent" : null,
+          "attributes" : {
+            "skillUltimateLevel" : {
+              "value" : 12,
+              "skill" : false
+            },
+            "characterManaLimitReserve" : {
+              "value" : 50.0,
+              "skill" : false
+            },
+            "notDispelable" : {
+              "value" : 1,
+              "skill" : false
+            },
+            "characterDodgePercent" : {
+              "value" : [ 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0 ],
+              "skill" : false
+            },
+            "cameraShakeAmplitude" : {
+              "value" : 0.12,
+              "skill" : false
+            },
+            "skillMasteryLevelRequired" : {
+              "value" : 16,
+              "skill" : false
+            },
+            "skillMaxLevel" : {
+              "value" : 8,
+              "skill" : false
+            }
+          },
+          "description" : "As a master of survival in the wild, you may teach your allies the basics of survivability; this knowledge can be applied in combat to avoid more attacks than a regular fighter would.{^n}{^a}Cannot be dispelled.",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery/Survival Techniques.html"
+        },
+        "skill" : true
+      }
+    },
+    "description" : "As a master of survival in the wild, you may teach your allies the basics of survivability; this knowledge can be applied in combat to avoid more attacks than a regular fighter would.{^n}{^a}Cannot be dispelled.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery/Survival Techniques.html"
+  } ], [ {
+    "name" : "Languid Death",
+    "parent" : "Headshot",
+    "attributes" : {
+      "offensiveSlowRunSpeedMin" : {
+        "value" : [ 10.0, 13.0, 15.0, 18.0, 21.0, 24.0, 26.0, 29.0, 32.0, 35.0, 37.0, 40.0 ],
+        "skill" : false
+      },
+      "offensiveSlowPoisonModifier" : {
+        "value" : [ 8.0, 11.0, 15.0, 18.0, 21.0, 25.0, 28.0, 32.0, 35.0, 38.0, 42.0, 45.0 ],
+        "skill" : false
+      },
+      "offensiveSlowBleedingMin" : {
+        "value" : [ 9.0, 11.0, 12.0, 14.0, 16.0, 18.0, 19.0, 21.0, 23.0, 25.0, 26.0, 28.0 ],
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : 1.0,
+        "skill" : false
+      },
+      "offensiveSlowRunSpeedChance" : {
+        "value" : 33.0,
+        "skill" : false
+      },
+      "offensiveSlowBleedingDurationMin" : {
+        "value" : 4.0,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 8,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "offensiveSlowRunSpeedDurationMin" : {
+        "value" : 3.0,
+        "skill" : false
+      },
+      "offensiveSlowPoisonDurationMin" : {
+        "value" : 4.0,
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 24,
+        "skill" : false
+      },
+      "offensiveSlowPoisonMin" : {
+        "value" : [ 9.0, 11.0, 12.0, 14.0, 16.0, 18.0, 19.0, 21.0, 23.0, 25.0, 26.0, 28.0 ],
+        "skill" : false
+      },
+      "offensiveSlowBleedingModifier" : {
+        "value" : [ 8.0, 11.0, 15.0, 18.0, 21.0, 25.0, 28.0, 32.0, 35.0, 38.0, 42.0, 45.0 ],
+        "skill" : false
+      }
+    },
+    "description" : "With hunter's profound knowledge of poison lore, you find ingredients to prepare deadly substances which infect wounds, preventing them from regenerating.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery/Languid Death.html"
+  }, {
+    "name" : "Vampire Shots",
+    "parent" : "Blinding Winds",
+    "attributes" : {
+      "skillManaCost" : {
+        "value" : 150.0,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 24,
+        "skill" : false
+      },
+      "offensiveLifeLeechMin" : {
+        "value" : 35.0,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 1,
+        "skill" : false
+      }
+    },
+    "description" : "{^g}Skill Modifier{^n}{^w}Upgrade your magical shots to drain life from your enemies and restore yours. This technique, however, will greatly increase the energy required to cast the skill.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery/Vampire Shots.html"
+  }, {
+    "name" : "Divine Defiance",
+    "parent" : null,
+    "attributes" : {
+      "racialBonusPercentDefense" : {
+        "value" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 12.0, 14.0, 16.0, 18.0, 20.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 10,
+        "skill" : false
+      },
+      "racialBonusPercentDamage" : {
+        "value" : [ 5.0, 8.0, 11.0, 13.0, 16.0, 19.0, 22.0, 24.0, 27.0, 30.0 ],
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 24,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 6,
+        "skill" : false
+      }
+    },
+    "description" : "The resolve of a monster slayer amplifies equally to the greatness of the challenge before them.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery/Divine Defiance.html"
+  }, {
+    "name" : "Scavenger",
+    "parent" : null,
+    "attributes" : {
+      "scavenger" : {
+        "value" : {
+          "name" : "Scavenger",
+          "parent" : null,
+          "attributes" : {
+            "skillUltimateLevel" : {
+              "value" : 12,
+              "skill" : false
+            },
+            "offensivePhysicalMin" : {
+              "value" : [ 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0 ],
+              "skill" : false
+            },
+            "skillMasteryLevelRequired" : {
+              "value" : 24,
+              "skill" : false
+            },
+            "offensiveLifeLeechMin" : {
+              "value" : [ 3.0, 3.0, 4.0, 4.0, 5.0, 5.0, 6.0, 6.0, 7.0, 7.0, 8.0, 8.0 ],
+              "skill" : false
+            },
+            "skillMaxLevel" : {
+              "value" : 8,
+              "skill" : false
+            },
+            "characterTotalSpeedModifier" : {
+              "value" : [ 5.0, 7.0, 9.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 21.0, 23.0, 25.0 ],
+              "skill" : false
+            }
+          },
+          "description" : "Feeding on the flesh of its sufferers and tracking those who attempt to flee becomes trivial to the most relentless raptors.",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery/Scavenger.html"
+        },
+        "skill" : true
+      }
+    },
+    "description" : "Feeding on the flesh of its sufferers and tracking those who attempt to flee becomes trivial to the most relentless raptors.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery/Scavenger.html"
+  }, {
+    "name" : "Tempest",
+    "parent" : "Storm of Arrows",
+    "attributes" : {
+      "offensiveSlowRunSpeedMin" : {
+        "value" : [ 12.0, 16.0, 20.0, 25.0, 29.0, 33.0, 37.0, 42.0, 46.0, 50.0 ],
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 10,
+        "skill" : false
+      },
+      "offensiveSlowRunSpeedDurationMin" : {
+        "value" : 3.0,
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 24,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 6,
+        "skill" : false
+      },
+      "offensiveElementalMin" : {
+        "value" : [ 12.0, 18.0, 22.0, 28.0, 34.0, 38.0, 44.0, 50.0, 54.0, 60.0 ],
+        "skill" : false
+      }
+    },
+    "description" : "Arrows flying through the sky absorb the elemental energy and deliver it on your unfortunate enemies.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery/Tempest.html"
+  } ], [ {
+    "name" : "Headshot",
+    "parent" : "Acute Precision",
+    "attributes" : {
+      "skillProjectileSpeedModifier" : {
+        "value" : [ 15.0, 24.0, 33.0, 43.0, 52.0, 61.0, 70.0, 80.0, 89.0, 98.0, 107.0, 117.0, 126.0, 135.0 ],
+        "skill" : false
+      },
+      "offensivePhysicalModifier" : {
+        "value" : [ 10.0, 13.0, 16.0, 19.0, 22.0, 25.0, 28.0, 32.0, 35.0, 38.0, 41.0, 44.0, 47.0, 50.0 ],
+        "skill" : false
+      },
+      "offensiveStunMin" : {
+        "value" : [ 0.8, 0.96, 1.04, 1.2, 1.28, 1.44, 1.52, 1.68, 1.76, 1.92, 2.0, 2.16, 2.24, 2.4 ],
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : 1.0,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 14,
+        "skill" : false
+      },
+      "offensiveStunMax" : {
+        "value" : [ 1.2, 1.44, 1.56, 1.8, 1.92, 2.16, 2.28, 2.52, 2.64, 2.88, 3.0, 3.24, 3.36, 3.6 ],
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 32,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 10,
+        "skill" : false
+      },
+      "offensiveStunChance" : {
+        "value" : [ 4.0, 4.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 8.0, 8.0 ],
+        "skill" : false
+      }
+    },
+    "description" : "Shots perfectly aimed at the head may cause critical damage and knock out enemies.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery/Headshot.html"
+  }, {
+    "name" : "Scorching Edge",
+    "parent" : null,
+    "attributes" : {
+      "offensivePhysicalModifier" : {
+        "value" : [ 30.0, 60.0, 80.0 ],
+        "skill" : false
+      },
+      "offensiveSlowDefensiveReductionDurationMin" : {
+        "value" : 3.0,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 3,
+        "skill" : false
+      },
+      "offensivePierceModifier" : {
+        "value" : [ -30.0, -60.0, -80.0 ],
+        "skill" : false
+      },
+      "offensiveFireMin" : {
+        "value" : [ 14.0, 28.0, 42.0 ],
+        "skill" : false
+      },
+      "Bow" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 32,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 3,
+        "skill" : false
+      },
+      "offensiveSlowDefensiveReductionMin" : {
+        "value" : [ 50.0, 110.0, 170.0 ],
+        "skill" : false
+      },
+      "offensivePierceRatioModifier" : {
+        "value" : [ -100.0, -200.0, -300.0 ],
+        "skill" : false
+      }
+    },
+    "description" : "{^g}Passive Modifier{^n}{^w}Instead of sharpening your arrows, you dip them into ignited oil to melt your opponent's armor. However, the tar-like complexion of the arrow will make it dull.{^n}{^y}Requires a bow.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery/Scorching Edge.html"
+  }, {
+    "name" : "Devastating Shots",
+    "parent" : "Ranger's Prowess",
+    "attributes" : {
+      "offensiveSlowBleedingMin" : {
+        "value" : [ 36.0, 45.0, 53.0, 62.0, 70.0, 79.0, 88.0, 96.0, 105.0, 114.0, 122.0, 131.0, 139.0, 148.0 ],
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : [ 4.0, 6.0, 7.0, 9.0, 10.0, 12.0, 14.0, 15.0, 17.0, 19.0, 20.0, 22.0, 23.0, 25.0 ],
+        "skill" : false
+      },
+      "offensiveSlowBleedingDurationMin" : {
+        "value" : 3.0,
+        "skill" : false
+      },
+      "offensiveTotalDamageModifier" : {
+        "value" : [ 24.0, 31.0, 38.0, 44.0, 51.0, 58.0, 65.0, 71.0, 78.0, 85.0, 92.0, 98.0, 105.0, 112.0 ],
+        "skill" : false
+      },
+      "Bow" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 10,
+        "skill" : false
+      },
+      "RangedOneHand" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "offensivePierceRatioModifierChance" : {
+        "value" : 10.0,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 14,
+        "skill" : false
+      },
+      "offensiveTotalDamageModifierChance" : {
+        "value" : 10.0,
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 32,
+        "skill" : false
+      },
+      "offensiveSlowBleedingChance" : {
+        "value" : 10.0,
+        "skill" : false
+      },
+      "offensivePierceRatioModifier" : {
+        "value" : [ 25.0, 31.0, 37.0, 42.0, 48.0, 54.0, 60.0, 65.0, 71.0, 77.0, 83.0, 88.0, 94.0, 100.0 ],
+        "skill" : false
+      }
+    },
+    "description" : "Perfected skills with ranged weapons allows you to aim where your opponents least expect it in a blink of an eye and deal extraordinary damage.{^n}{^y}Requires either a bow or a thrown weapon.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery/Devastating Shots.html"
+  }, {
+    "name" : "Light Armor Specialist",
+    "parent" : null,
+    "attributes" : {
+      "lightarmorspecialist" : {
+        "value" : {
+          "name" : "Light Armor Specialist",
+          "parent" : null,
+          "attributes" : {
+            "skillCooldownTime" : {
+              "value" : 3.0,
+              "skill" : false
+            },
+            "skillWeaponTintBlue" : {
+              "value" : 0.5,
+              "skill" : false
+            },
+            "characterManaLimitReserve" : {
+              "value" : 100.0,
+              "skill" : false
+            },
+            "skillConnectionSpacing" : {
+              "value" : 62,
+              "skill" : false
+            },
+            "cameraShakeAmplitude" : {
+              "value" : 0.12,
+              "skill" : false
+            },
+            "characterRunSpeedModifier" : {
+              "value" : [ 5.0, 7.0, 9.0, 10.0, 12.0, 14.0, 16.0, 17.0, 19.0, 21.0, 23.0, 24.0, 26.0, 28.0 ],
+              "skill" : false
+            },
+            "defensivePierce" : {
+              "value" : [ 8.0, 11.0, 13.0, 16.0, 18.0, 21.0, 24.0, 26.0, 29.0, 32.0, 34.0, 37.0, 39.0, 42.0 ],
+              "skill" : false
+            },
+            "skillMaxLevel" : {
+              "value" : 10,
+              "skill" : false
+            },
+            "defensiveProtection" : {
+              "value" : [ 10.0, 15.0, 18.0, 23.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 49.0, 54.0, 57.0, 62.0 ],
+              "skill" : false
+            },
+            "skillUltimateLevel" : {
+              "value" : 14,
+              "skill" : false
+            },
+            "skillWeaponTintGreen" : {
+              "value" : 0.4,
+              "skill" : false
+            },
+            "skillTargetRadius" : {
+              "value" : 12.0,
+              "skill" : false
+            },
+            "skillMasteryLevelRequired" : {
+              "value" : 32,
+              "skill" : false
+            }
+          },
+          "description" : "Learn how to adjust and customize the armor pieces of you and your allies, allowing for faster movement and an increase in durability.",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery/Light Armor Specialist.html"
+        },
+        "skill" : true
+      }
+    },
+    "description" : "Learn how to adjust and customize the armor pieces of you and your allies, allowing for faster movement and an increase in durability.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery/Light Armor Specialist.html"
+  }, {
+    "name" : "Ominous Arrows",
+    "parent" : null,
+    "attributes" : {
+      "projectileLaunchNumber" : {
+        "value" : 3,
+        "skill" : false
+      },
+      "skillCooldownTime" : {
+        "value" : 15.0,
+        "skill" : false
+      },
+      "offensiveSlowBleedingMin" : {
+        "value" : [ 39.0, 51.0, 64.0, 77.0, 89.0, 102.0, 114.0, 126.0, 139.0, 152.0, 164.0, 177.0 ],
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : [ 75.0, 83.0, 91.0, 99.0, 107.0, 115.0, 122.0, 130.0, 138.0, 146.0, 154.0, 162.0 ],
+        "skill" : false
+      },
+      "projectileExplosionRadius" : {
+        "value" : 2.0,
+        "skill" : false
+      },
+      "projectilePiercingChance" : {
+        "value" : 66.0,
+        "skill" : false
+      },
+      "skillConnectionSpacing" : {
+        "value" : 62,
+        "skill" : false
+      },
+      "Staff" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "cameraShakeAmplitude" : {
+        "value" : 0.12,
+        "skill" : false
+      },
+      "offensiveSlowBleedingDurationMin" : {
+        "value" : 3.0,
+        "skill" : false
+      },
+      "projectileUsesAllDamage" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "offensiveColdMin" : {
+        "value" : [ 33.8, 47.5, 60.1, 73.7, 87.4, 100.0, 113.6, 126.3, 139.9, 153.5, 166.1, 179.8 ],
+        "skill" : false
+      },
+      "Bow" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 8,
+        "skill" : false
+      },
+      "RangedOneHand" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "offensivePhysicalModifier" : {
+        "value" : -50.0,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "projectileLaunchRotation" : {
+        "value" : 25.0,
+        "skill" : false
+      },
+      "offensiveLifeMin" : {
+        "value" : [ 33.8, 47.5, 60.1, 73.7, 87.4, 100.0, 113.6, 126.3, 139.9, 153.5, 166.1, 179.8 ],
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 32,
+        "skill" : false
+      }
+    },
+    "description" : "Multiple piercing arrows, imbued with dreadful essence, explode in a small burst upon contact.{^n}{^y}Requires a ranged weapon.{^n}{^y}Transfers flat damage outside of the wielded weapon.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery/Ominous Arrows.html"
+  } ], [ {
+    "name" : "Dragon Arrow",
+    "parent" : null,
+    "attributes" : {
+      "offensiveSlowFireDurationMin" : {
+        "value" : 5.0,
+        "skill" : false
+      },
+      "skillCooldownTime" : {
+        "value" : 20.0,
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : [ 90.0, 92.0, 96.0, 98.0, 103.0, 105.0, 108.0, 112.0, 115.0, 118.0, 122.0, 125.0, 127.0, 131.0, 136.0, 140.0 ],
+        "skill" : false
+      },
+      "projectileExplosionRadius" : {
+        "value" : 3.0,
+        "skill" : false
+      },
+      "skillConnectionSpacing" : {
+        "value" : 62,
+        "skill" : false
+      },
+      "Staff" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "cameraShakeAmplitude" : {
+        "value" : 0.12,
+        "skill" : false
+      },
+      "offensivePhysicalMin" : {
+        "value" : [ 25.0, 41.0, 56.0, 73.0, 88.0, 104.0, 120.0, 136.0, 152.0, 167.0, 183.0, 200.0, 215.0, 231.0 ],
+        "skill" : false
+      },
+      "offensiveSlowFireMin" : {
+        "value" : [ 39.8, 50.6, 61.4, 73.2, 84.0, 94.8, 105.6, 117.4, 128.2, 139.0, 149.8, 161.6, 172.4, 183.2 ],
+        "skill" : false
+      },
+      "projectileUsesAllDamage" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "Bow" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "offensivePierceMin" : {
+        "value" : [ 35.0, 42.0, 48.0, 55.0, 61.0, 68.0, 74.0, 81.0, 87.0, 94.0, 100.0, 107.0, 113.0, 120.0 ],
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 10,
+        "skill" : false
+      },
+      "RangedOneHand" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "offensiveStunMin" : {
+        "value" : 1.5,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 14,
+        "skill" : false
+      },
+      "skillProjectileNumber" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "offensiveFireMin" : {
+        "value" : [ 51.0, 71.0, 89.0, 110.0, 129.0, 149.0, 168.0, 189.0, 209.0, 227.0, 247.0, 267.0, 287.0, 306.0 ],
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 40,
+        "skill" : false
+      }
+    },
+    "description" : "Launch a scorching, fiery arrow that explodes upon hitting the first enemy it encounters and deals a great deal of burn damage over time.{^n}{^y}Requires a ranged weapon.{^n}{^y}Transfers flat damage outside of the wielded weapon.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery/Dragon Arrow.html"
+  }, {
+    "name" : "Astuteness",
+    "parent" : "Light Armor Specialist",
+    "attributes" : {
+      "skillUltimateLevel" : {
+        "value" : 16,
+        "skill" : false
+      },
+      "characterManaLimitReserve" : {
+        "value" : 50.0,
+        "skill" : false
+      },
+      "characterDeflectProjectile" : {
+        "value" : [ 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0 ],
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 40,
+        "skill" : false
+      },
+      "defensiveTrap" : {
+        "value" : [ 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 64.0, 68.0, 72.0, 76.0, 80.0 ],
+        "skill" : false
+      },
+      "characterDefensiveAbilityModifier" : {
+        "value" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ],
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 12,
+        "skill" : false
+      }
+    },
+    "description" : "Having more cunning and cleverness than your opponents allows you to use different defensive strategies to outsmart your foes.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery/Astuteness.html"
+  }, {
+    "name" : "Confined Technique",
+    "parent" : "Ominous Arrows",
+    "attributes" : {
+      "skillManaCost" : {
+        "value" : [ 25.0, 50.0, 75.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 3,
+        "skill" : false
+      },
+      "offensivePetrifyMin" : {
+        "value" : 1.5,
+        "skill" : false
+      },
+      "offensiveLifeModifier" : {
+        "value" : [ 25.0, 50.0, 75.0 ],
+        "skill" : false
+      },
+      "offensiveSlowLifeMin" : {
+        "value" : [ 33.33333, 66.66666, 100.0 ],
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 40,
+        "skill" : false
+      },
+      "offensiveSlowBleedingModifier" : {
+        "value" : [ -33.0, -66.0, -100.0 ],
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 3,
+        "skill" : false
+      },
+      "offensiveSlowLifeDurationMin" : {
+        "value" : 3.0,
+        "skill" : false
+      }
+    },
+    "description" : "{^g}Skill Modifier{^n}{^w}Studying the dark arts, your arrows become ethereal and they tear their victims soul apart, albeit not their body.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery/Confined Technique.html"
+  } ] ],
+  "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Archery.html"
+}

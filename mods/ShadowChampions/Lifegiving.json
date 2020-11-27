@@ -1,0 +1,1498 @@
+{
+  "name" : "Lifegiving",
+  "skillTiers" : [ [ {
+    "name" : "Gift of Life",
+    "parent" : null,
+    "attributes" : {
+      "giftoflife" : {
+        "value" : {
+          "name" : "Gift of Life",
+          "parent" : null,
+          "attributes" : {
+            "skillCooldownTime" : {
+              "value" : 5.0,
+              "skill" : false
+            },
+            "skillLifeBonus" : {
+              "value" : [ 200.0, 450.0, 700.0, 950.0, 1200.0, 1450.0, 1700.0, 1950.0, 2200.0, 2450.0, 2700.0, 2950.0, 3275.0, 3600.0, 3925.0, 4250.0 ],
+              "skill" : false
+            },
+            "skillManaCost" : {
+              "value" : [ 30.0, 34.0, 38.0, 42.0, 47.0, 52.0, 57.0, 62.0, 68.0, 74.0, 79.0, 85.0, 90.0, 96.0, 102.0, 108.0, 114.0, 122.0, 130.0, 137.0 ],
+              "skill" : false
+            },
+            "skillUltimateLevel" : {
+              "value" : 16,
+              "skill" : false
+            },
+            "skillConnectionSpacing" : {
+              "value" : 62,
+              "skill" : false
+            },
+            "cameraShakeAmplitude" : {
+              "value" : 0.12,
+              "skill" : false
+            },
+            "skillTargetRadius" : {
+              "value" : 3.0,
+              "skill" : false
+            },
+            "skillMasteryLevelRequired" : {
+              "value" : 1,
+              "skill" : false
+            },
+            "skillMaxLevel" : {
+              "value" : 12,
+              "skill" : false
+            }
+          },
+          "description" : "Close the wounds and replenish the lost vigor of all close allies with a curing light.",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving/Gift of Life.html"
+        },
+        "skill" : true
+      }
+    },
+    "description" : "Close the wounds and replenish the lost vigor of all close allies with a curing light.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving/Gift of Life.html"
+  }, {
+    "name" : "Fiery Strikes",
+    "parent" : null,
+    "attributes" : {
+      "skillCooldownTime" : {
+        "value" : [ 6.0, 5.9, 5.7, 5.6, 5.5, 5.4, 5.2, 5.1, 5.0, 4.9, 4.7, 4.6, 4.5, 4.4, 4.2, 4.1, 4.0, 3.9, 3.7, 3.6 ],
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : [ 34.5, 36.8, 39.1, 41.4, 43.7, 46.0, 48.3, 50.6, 52.9, 55.2, 57.5, 59.8, 62.1, 64.4 ],
+        "skill" : false
+      },
+      "projectilePiercingChance" : {
+        "value" : 100.0,
+        "skill" : false
+      },
+      "skillConnectionSpacing" : {
+        "value" : 62,
+        "skill" : false
+      },
+      "driftMax" : {
+        "value" : 2.0,
+        "skill" : false
+      },
+      "cameraShakeAmplitude" : {
+        "value" : 0.32,
+        "skill" : false
+      },
+      "ragDollAmplification" : {
+        "value" : 1.0,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 16,
+        "skill" : false
+      },
+      "characterOffensiveAbilityModifier" : {
+        "value" : 33.0,
+        "skill" : false
+      },
+      "cameraShakeDurationSecs" : {
+        "value" : 1.0,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 20,
+        "skill" : false
+      },
+      "driftMin" : {
+        "value" : 0.5,
+        "skill" : false
+      },
+      "skillProjectileNumber" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "offensiveFireMin" : {
+        "value" : [ 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 43.0, 47.0, 52.0, 57.0, 61.0, 66.0, 72.0, 77.0, 82.0, 88.0, 94.0, 100.0 ],
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 1,
+        "skill" : false
+      }
+    },
+    "description" : "Charge heavenly power in your attacks to deal serious injuries and burns. {^y}Apply this skill to your left mouse button.{^n}{^y}Hits twice when used on melee range.{^n}{^y}Cooldown is reduced with more skill points.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving/Fiery Strikes.html"
+  }, {
+    "name" : "Pure Heart",
+    "parent" : null,
+    "attributes" : {
+      "racialBonusPercentDefense" : {
+        "value" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "defensivePoison" : {
+        "value" : [ 6.0, 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0 ],
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 8,
+        "skill" : false
+      }
+    },
+    "description" : "Strong-willed warriors always prevail when fighting for what they believe.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving/Pure Heart.html"
+  } ], [ {
+    "name" : "Punishment",
+    "parent" : null,
+    "attributes" : {
+      "retaliationSlowFireDurationMin" : {
+        "value" : 3.0,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 16,
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 4,
+        "skill" : false
+      },
+      "retaliationSlowFireMin" : {
+        "value" : [ 12.0, 16.0, 20.0, 27.0, 32.0, 38.0, 45.0, 51.0, 61.0, 70.0, 80.0, 90.0, 104.0, 120.0, 138.0, 155.0 ],
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "retaliationSlowFireChance" : {
+        "value" : 25.0,
+        "skill" : false
+      }
+    },
+    "description" : "Those who attempt to stop beneficence are sentenced to a punishment deserving of their sins.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving/Punishment.html"
+  }, {
+    "name" : "Torchbearer's Bastion",
+    "parent" : null,
+    "attributes" : {
+      "offensivePhysicalModifier" : {
+        "value" : [ 8.0, 11.0, 13.0, 16.0, 19.0, 22.0, 24.0, 27.0, 30.0, 33.0, 35.0, 38.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "Shield" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "defensiveBlockModifier" : {
+        "value" : [ 2.0, 3.0, 5.0, 6.0, 7.0, 8.0, 10.0, 11.0, 12.0, 13.0, 15.0, 16.0 ],
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 4,
+        "skill" : false
+      },
+      "offensiveSlowFireModifier" : {
+        "value" : [ 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0 ],
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 8,
+        "skill" : false
+      }
+    },
+    "description" : "Wield your aegis as a victorious symbol, bolstering your defense and increasing the damage of your strikes. {^n}{^y}Requires a shield.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving/Torchbearer's Bastion.html"
+  }, {
+    "name" : "Godly Presence",
+    "parent" : null,
+    "attributes" : {
+      "godlyavatar" : {
+        "value" : {
+          "name" : "Godly Presence",
+          "parent" : null,
+          "attributes" : {
+            "skillCooldownTime" : {
+              "value" : 3.0,
+              "skill" : false
+            },
+            "skillWeaponTintBlue" : {
+              "value" : 0.5,
+              "skill" : false
+            },
+            "characterManaLimitReserve" : {
+              "value" : 100.0,
+              "skill" : false
+            },
+            "skillActiveManaCost" : {
+              "value" : 1.0,
+              "skill" : false
+            },
+            "skillConnectionSpacing" : {
+              "value" : 62,
+              "skill" : false
+            },
+            "cameraShakeAmplitude" : {
+              "value" : 0.12,
+              "skill" : false
+            },
+            "characterDexterity" : {
+              "value" : [ 3.0, 5.0, 8.0, 10.0, 13.0, 15.0, 18.0, 20.0, 23.0, 25.0, 28.0, 30.0, 33.0, 35.0, 38.0, 41.0, 45.0, 49.0, 53.0 ],
+              "skill" : false
+            },
+            "characterStrength" : {
+              "value" : [ 3.0, 5.0, 8.0, 10.0, 13.0, 15.0, 18.0, 20.0, 23.0, 25.0, 28.0, 30.0, 33.0, 35.0, 38.0, 41.0, 45.0, 49.0, 53.0 ],
+              "skill" : false
+            },
+            "skillMaxLevel" : {
+              "value" : 15,
+              "skill" : false
+            },
+            "characterLifeModifier" : {
+              "value" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 21.0, 22.0, 23.0, 24.0, 25.0 ],
+              "skill" : false
+            },
+            "skillUltimateLevel" : {
+              "value" : 19,
+              "skill" : false
+            },
+            "skillWeaponTintGreen" : {
+              "value" : 0.4,
+              "skill" : false
+            },
+            "notDispelable" : {
+              "value" : 1,
+              "skill" : false
+            },
+            "characterIntelligence" : {
+              "value" : [ 3.0, 5.0, 8.0, 10.0, 13.0, 15.0, 18.0, 20.0, 23.0, 25.0, 28.0, 30.0, 33.0, 35.0, 38.0, 41.0, 45.0, 49.0, 53.0 ],
+              "skill" : false
+            },
+            "skillTargetRadius" : {
+              "value" : 14.0,
+              "skill" : false
+            },
+            "skillMasteryLevelRequired" : {
+              "value" : 4,
+              "skill" : false
+            },
+            "characterMana" : {
+              "value" : [ 10.0, 22.0, 34.0, 46.0, 58.0, 70.0, 82.0, 94.0, 106.0, 118.0, 130.0, 142.0, 154.0, 166.0, 178.0, 196.0, 214.0, 232.0, 250.0 ],
+              "skill" : false
+            }
+          },
+          "description" : "Powerful radiant energy emanates from you, strengthening all friendly entities.{^n}{^a}Cannot be dispelled.",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving/Godly Presence.html"
+        },
+        "skill" : true
+      }
+    },
+    "description" : "Powerful radiant energy emanates from you, strengthening all friendly entities.{^n}{^a}Cannot be dispelled.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving/Godly Presence.html"
+  }, {
+    "name" : "Crystal Balls",
+    "parent" : null,
+    "attributes" : {
+      "offensiveSlowFireDurationMin" : {
+        "value" : 3.0,
+        "skill" : false
+      },
+      "projectileLaunchNumber" : {
+        "value" : [ 4.0, 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 7.0 ],
+        "skill" : false
+      },
+      "skillCooldownTime" : {
+        "value" : 8.0,
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : [ 60.0, 63.0, 66.0, 69.0, 72.0, 75.0, 78.0, 81.0, 84.0, 87.0, 90.0, 93.0, 96.0, 99.0, 102.0, 105.0 ],
+        "skill" : false
+      },
+      "projectileExplosionRadius" : {
+        "value" : 0.5,
+        "skill" : false
+      },
+      "skillConnectionSpacing" : {
+        "value" : 62,
+        "skill" : false
+      },
+      "cameraShakeAmplitude" : {
+        "value" : 0.12,
+        "skill" : false
+      },
+      "offensiveSlowFireMin" : {
+        "value" : [ 10.0, 14.0, 17.0, 21.0, 24.0, 28.0, 32.0, 35.0, 39.0, 42.0, 46.0, 50.0, 53.0, 57.0, 60.0, 64.0 ],
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "offensiveElementalMin" : {
+        "value" : [ 12.0, 21.0, 29.0, 38.0, 46.0, 55.0, 63.0, 72.0, 80.0, 89.0, 97.0, 106.0, 114.0, 123.0, 131.0, 140.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 16,
+        "skill" : false
+      },
+      "projectileLaunchRotation" : {
+        "value" : 100.0,
+        "skill" : false
+      },
+      "offensiveFireMin" : {
+        "value" : [ 12.0, 21.0, 29.0, 38.0, 46.0, 55.0, 63.0, 72.0, 80.0, 89.0, 97.0, 106.0, 114.0, 123.0, 131.0, 140.0 ],
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 4,
+        "skill" : false
+      }
+    },
+    "description" : "Sends a wave of crystalline projectiles, imbued with elemental magic which damages enemies on contact.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving/Crystal Balls.html"
+  } ], [ {
+    "name" : "Depraved Act",
+    "parent" : "Celestial Armory",
+    "attributes" : {
+      "characterLifeModifier" : {
+        "value" : -15.0,
+        "skill" : false
+      },
+      "characterManaModifier" : {
+        "value" : 30.0,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 10,
+        "skill" : false
+      },
+      "offensiveLifeLeechMin" : {
+        "value" : 8.0,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 1,
+        "skill" : false
+      }
+    },
+    "description" : "{^g}Skill Modifier{^n}{^w}Go against the teachings of the light, sacrificing a part of your humanity for achieving higher power.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving/Depraved Act.html"
+  }, {
+    "name" : "Guilt",
+    "parent" : null,
+    "attributes" : {
+      "retaliationLightningModifier" : {
+        "value" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ],
+        "skill" : false
+      },
+      "retaliationSlowBleedingModifier" : {
+        "value" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ],
+        "skill" : false
+      },
+      "retaliationPierceModifier" : {
+        "value" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ],
+        "skill" : false
+      },
+      "retaliationSlowPoisonModifier" : {
+        "value" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ],
+        "skill" : false
+      },
+      "retaliationSlowLifeModifier" : {
+        "value" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ],
+        "skill" : false
+      },
+      "retaliationSlowFireModifier" : {
+        "value" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ],
+        "skill" : false
+      },
+      "retaliationSlowColdModifier" : {
+        "value" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ],
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 8,
+        "skill" : false
+      },
+      "retaliationPhysicalModifier" : {
+        "value" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "retaliationColdModifier" : {
+        "value" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ],
+        "skill" : false
+      },
+      "retaliationSlowLightningModifier" : {
+        "value" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ],
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 10,
+        "skill" : false
+      },
+      "retaliationPoisonModifier" : {
+        "value" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ],
+        "skill" : false
+      },
+      "retaliationFireModifier" : {
+        "value" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ],
+        "skill" : false
+      },
+      "retaliationLifeModifier" : {
+        "value" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ],
+        "skill" : false
+      }
+    },
+    "description" : "Regardless of the option they choose, your enemies shall regret their wretchedness.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving/Guilt.html"
+  }, {
+    "name" : "Screen of Light",
+    "parent" : null,
+    "attributes" : {
+      "light" : {
+        "value" : {
+          "name" : "Screen of Light",
+          "parent" : null,
+          "attributes" : {
+            "offensiveSlowFireDurationMin" : {
+              "value" : 1.0,
+              "skill" : false
+            },
+            "contagionLimit" : {
+              "value" : 4,
+              "skill" : false
+            },
+            "skillActiveDuration" : {
+              "value" : 6.0,
+              "skill" : false
+            },
+            "skillCooldownTime" : {
+              "value" : 10.0,
+              "skill" : false
+            },
+            "skillManaCost" : {
+              "value" : [ 63.21, 65.982, 67.83, 70.602, 72.45, 75.222, 77.07, 79.842, 81.69, 84.462, 86.31 ],
+              "skill" : false
+            },
+            "skillConnectionSpacing" : {
+              "value" : 62,
+              "skill" : false
+            },
+            "cameraShakeAmplitude" : {
+              "value" : 0.12,
+              "skill" : false
+            },
+            "contagionInterval" : {
+              "value" : 0.15,
+              "skill" : false
+            },
+            "offensiveSlowFireMin" : {
+              "value" : [ 7.0, 9.0, 11.0, 14.0, 16.0, 18.0, 20.0, 22.0, 25.0, 27.0, 29.0 ],
+              "skill" : false
+            },
+            "skillMaxLevel" : {
+              "value" : 7,
+              "skill" : false
+            },
+            "offensiveTotalResistanceReductionAbsoluteDurationMin" : {
+              "value" : 1.0,
+              "skill" : false
+            },
+            "offensiveTotalDamageReductionAbsoluteMin" : {
+              "value" : [ 8.0, 14.0, 20.0, 26.0, 32.0, 38.0, 44.0, 50.0, 58.0, 62.0, 70.0 ],
+              "skill" : false
+            },
+            "debufSkill" : {
+              "value" : 1,
+              "skill" : false
+            },
+            "contagionMaxSpread" : {
+              "value" : 99,
+              "skill" : false
+            },
+            "skillUltimateLevel" : {
+              "value" : 11,
+              "skill" : false
+            },
+            "characterLifeRegenModifier" : {
+              "value" : [ -25.0, -30.0, -35.0, -40.0, -45.0, -50.0, -55.0, -60.0, -65.0, -70.0, -75.0 ],
+              "skill" : false
+            },
+            "offensiveTotalDamageReductionAbsoluteDurationMin" : {
+              "value" : 1.0,
+              "skill" : false
+            },
+            "offensiveTotalResistanceReductionAbsoluteMin" : {
+              "value" : [ 6.0, 7.0, 8.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 18.0 ],
+              "skill" : false
+            },
+            "contagionRadius" : {
+              "value" : 4.0,
+              "skill" : false
+            },
+            "skillMasteryLevelRequired" : {
+              "value" : 10,
+              "skill" : false
+            }
+          },
+          "description" : "Assault your opponents with a violent flash of blinding light that weakens them and spreads to nearby enemies at light's speed.",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving/Screen of Light.html"
+        },
+        "skill" : true
+      }
+    },
+    "description" : "Assault your opponents with a violent flash of blinding light that weakens them and spreads to nearby enemies at light's speed.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving/Screen of Light.html"
+  }, {
+    "name" : "Skyward Shock",
+    "parent" : "Crystal Balls",
+    "attributes" : {
+      "skillManaCost" : {
+        "value" : [ 3.0, 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 14,
+        "skill" : false
+      },
+      "offensiveDisruptionMin" : {
+        "value" : [ 1.0, 1.4, 1.8, 2.2, 2.5, 2.9, 3.3, 3.7, 4.1, 4.5, 4.8, 5.2, 5.6, 6.0 ],
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 10,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 10,
+        "skill" : false
+      },
+      "offensiveManaBurnDamageRatio" : {
+        "value" : [ 25.0, 38.0, 52.0, 65.0, 79.0, 92.0, 106.0, 119.0, 133.0, 146.0, 160.0, 173.0, 187.0, 200.0 ],
+        "skill" : false
+      },
+      "offensiveManaBurnDrainMin" : {
+        "value" : [ 10.0, 12.0, 13.0, 15.0, 16.0, 18.0, 19.0, 21.0, 22.0, 24.0, 25.0, 27.0, 28.0, 30.0 ],
+        "skill" : false
+      }
+    },
+    "description" : "Invisible forces from the sky upgrade your crystals to cripple the vital energy from your foes faster.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving/Skyward Shock.html"
+  }, {
+    "name" : "Destiny Shield",
+    "parent" : null,
+    "attributes" : {
+      "skillActiveDuration" : {
+        "value" : 10.0,
+        "skill" : false
+      },
+      "skillCooldownTime" : {
+        "value" : 30.0,
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : [ 40.0, 42.5, 45.0, 47.5, 50.0, 52.5, 55.0, 57.5, 60.0, 62.5, 65.0, 67.5, 70.0, 72.5, 75.0, 77.5, 80.0, 82.5 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 18,
+        "skill" : false
+      },
+      "offensivePierceRatioMin" : {
+        "value" : 20.0,
+        "skill" : false
+      },
+      "skillConnectionSpacing" : {
+        "value" : 62,
+        "skill" : false
+      },
+      "cameraShakeAmplitude" : {
+        "value" : 0.12,
+        "skill" : false
+      },
+      "retaliationSlowFireModifier" : {
+        "value" : [ 15.0, 22.0, 29.0, 36.0, 43.0, 50.0, 57.0, 64.0, 71.0, 79.0, 86.0, 93.0, 100.0, 107.0, 114.0, 121.0, 128.0, 135.0 ],
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 10,
+        "skill" : false
+      },
+      "retaliationFireMin" : {
+        "value" : [ 8.0, 10.0, 13.0, 15.0, 18.0, 20.0, 23.0, 25.0, 28.0, 30.0, 33.0, 35.0, 38.0, 40.0, 43.0, 45.0, 48.0, 50.0 ],
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 14,
+        "skill" : false
+      },
+      "retaliationFireModifier" : {
+        "value" : [ 15.0, 22.0, 29.0, 36.0, 43.0, 50.0, 57.0, 64.0, 71.0, 79.0, 86.0, 93.0, 100.0, 107.0, 114.0, 121.0, 128.0, 135.0 ],
+        "skill" : false
+      }
+    },
+    "description" : "Canalize your righteous energy into a layer of light that wraps your body and severly harms enemies that come into contact with it. ",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving/Destiny Shield.html"
+  } ], [ {
+    "name" : "Radiant Orb",
+    "parent" : null,
+    "attributes" : {
+      "radiantorb" : {
+        "value" : {
+          "name" : "Radiant Orb",
+          "parent" : null,
+          "attributes" : {
+            "skillCooldownTime" : {
+              "value" : 15.0,
+              "skill" : false
+            },
+            "cameraShakeDurationSecs" : {
+              "value" : 0.5,
+              "skill" : false
+            },
+            "skillManaCost" : {
+              "value" : [ 100.0, 193.0, 287.0, 380.0, 473.0, 567.0, 660.0, 753.0, 847.0, 940.0, 1033.0, 1127.0, 1220.0, 1313.0, 1407.0, 1500.0 ],
+              "skill" : false
+            },
+            "skillUltimateLevel" : {
+              "value" : 16,
+              "skill" : false
+            },
+            "characterLifeRegenModifier" : {
+              "value" : 50.0,
+              "skill" : false
+            },
+            "physicalDamageQualifier" : {
+              "value" : 1,
+              "skill" : false
+            },
+            "cameraShakeAmplitude" : {
+              "value" : 0.32,
+              "skill" : false
+            },
+            "damageAbsorption" : {
+              "value" : [ 170.0, 301.0, 432.0, 564.0, 695.0, 826.0, 957.0, 1088.0, 1220.0, 1351.0, 1482.0, 1809.0, 2136.0, 2463.0, 2790.0, 3117.0 ],
+              "skill" : false
+            },
+            "skillMasteryLevelRequired" : {
+              "value" : 16,
+              "skill" : false
+            },
+            "skillMaxLevel" : {
+              "value" : 12,
+              "skill" : false
+            }
+          },
+          "description" : "Creates a veil of light that absorbs a certain quantity of physical damage until it breaks.",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving/Radiant Orb.html"
+        },
+        "skill" : true
+      }
+    },
+    "description" : "Creates a veil of light that absorbs a certain quantity of physical damage until it breaks.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving/Radiant Orb.html"
+  }, {
+    "name" : "Celestial Armory",
+    "parent" : "Godly Presence",
+    "attributes" : {
+      "offensiveSlowFireDurationMin" : {
+        "value" : 3.0,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "characterManaLimitReserve" : {
+        "value" : 50.0,
+        "skill" : false
+      },
+      "offensiveFireModifier" : {
+        "value" : [ 10.0, 14.0, 17.0, 20.0, 23.0, 26.0, 29.0, 32.0, 36.0, 39.0, 42.0, 45.0 ],
+        "skill" : false
+      },
+      "racialBonusPercentDamage" : {
+        "value" : [ 6.0, 9.0, 13.0, 16.0, 19.0, 21.0, 24.0, 28.0, 30.0, 35.0, 38.0, 40.0 ],
+        "skill" : false
+      },
+      "offensiveSlowFireMin" : {
+        "value" : [ 6.0, 9.0, 11.0, 14.0, 16.0, 19.0, 21.0, 24.0, 26.0, 29.0, 31.0, 34.0 ],
+        "skill" : false
+      },
+      "offensiveFireMin" : {
+        "value" : [ 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0 ],
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 16,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 8,
+        "skill" : false
+      }
+    },
+    "description" : "Bless all the weapons in range with a powerful angelic enchantment.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving/Celestial Armory.html"
+  }, {
+    "name" : "Numbing Magic",
+    "parent" : "Screen of Light",
+    "attributes" : {
+      "offensiveFumbleDurationMin" : {
+        "value" : 1.0,
+        "skill" : false
+      },
+      "offensiveConfusionMin" : {
+        "value" : 1.0,
+        "skill" : false
+      },
+      "offensiveProjectileFumbleDurationMin" : {
+        "value" : 1.0,
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : [ 5.0, 8.0, 11.0, 14.0, 17.0, 20.0, 23.0, 26.0, 29.0, 32.0, 35.0, 38.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "offensiveFumbleMin" : {
+        "value" : [ 12.0, 15.0, 17.0, 20.0, 22.0, 25.0, 27.0, 30.0, 32.0, 35.0, 37.0, 40.0 ],
+        "skill" : false
+      },
+      "offensiveProjectileFumbleMin" : {
+        "value" : [ 12.0, 15.0, 17.0, 20.0, 22.0, 25.0, 27.0, 30.0, 32.0, 35.0, 37.0, 40.0 ],
+        "skill" : false
+      },
+      "offensiveDisruptionMin" : {
+        "value" : [ 1.0, 1.2, 1.4, 1.6, 1.8, 2.0, 2.2, 2.4, 2.6, 2.8, 3.0, 3.2 ],
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 16,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 8,
+        "skill" : false
+      }
+    },
+    "description" : "Your foes get dazed and confused, which greatly stifles their fighting ability.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving/Numbing Magic.html"
+  }, {
+    "name" : "Siphon",
+    "parent" : "Fiery Strikes",
+    "attributes" : {
+      "skillUltimateLevel" : {
+        "value" : 14,
+        "skill" : false
+      },
+      "offensiveSlowManaLeachDurationMin" : {
+        "value" : 3.0,
+        "skill" : false
+      },
+      "offensiveSlowManaLeachMin" : {
+        "value" : [ 9.0, 12.0, 15.0, 18.0, 22.0, 25.0, 28.0, 31.0, 34.0, 37.0, 41.0, 44.0, 47.0, 50.0 ],
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 16,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 10,
+        "skill" : false
+      },
+      "offensiveManaBurnDamageRatio" : {
+        "value" : [ 17.5, 22.5, 28.0, 33.0, 38.5, 43.5, 48.5, 54.0, 59.0, 64.0, 69.5, 74.5, 80.0, 85.0 ],
+        "skill" : false
+      },
+      "offensiveManaBurnDrainMin" : {
+        "value" : [ 5.0, 8.5, 12.0, 15.5, 19.0, 22.5, 26.0, 29.0, 32.5, 36.0, 39.5, 43.0, 46.5, 50.0 ],
+        "skill" : false
+      }
+    },
+    "description" : "Use the energy of your enemies against them with a new siphonic proprety for your fiery attacks. ",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving/Siphon.html"
+  }, {
+    "name" : "Vigor Reaper",
+    "parent" : null,
+    "attributes" : {
+      "vigorreaper" : {
+        "value" : {
+          "name" : "Vigor Reaper",
+          "parent" : null,
+          "attributes" : {
+            "defensiveSlowManaLeach" : {
+              "value" : [ -12.0, -18.0, -24.0, -30.0, -36.0, -42.0, -48.0, -54.0, -60.0, -66.0, -72.0, -78.0 ],
+              "skill" : false
+            },
+            "skillActiveDuration" : {
+              "value" : 1.0,
+              "skill" : false
+            },
+            "skillActiveManaCost" : {
+              "value" : 1.0,
+              "skill" : false
+            },
+            "skillWeaponTintRed" : {
+              "value" : 1.0,
+              "skill" : false
+            },
+            "skillConnectionSpacing" : {
+              "value" : 62,
+              "skill" : false
+            },
+            "cameraShakeAmplitude" : {
+              "value" : 0.12,
+              "skill" : false
+            },
+            "skillMaxLevel" : {
+              "value" : 8,
+              "skill" : false
+            },
+            "debufSkill" : {
+              "value" : 1,
+              "skill" : false
+            },
+            "characterManaModifier" : {
+              "value" : [ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0 ],
+              "skill" : false
+            },
+            "skillUltimateLevel" : {
+              "value" : 12,
+              "skill" : false
+            },
+            "excludeRacialDamage" : {
+              "value" : 1,
+              "skill" : false
+            },
+            "characterManaRegen" : {
+              "value" : [ 2.0, 2.9, 3.8, 4.7, 5.6, 6.5, 7.4, 8.3, 9.2, 10.1, 11.0, 11.9 ],
+              "skill" : false
+            },
+            "skillTargetRadius" : {
+              "value" : 5.0,
+              "skill" : false
+            },
+            "skillMasteryLevelRequired" : {
+              "value" : 16,
+              "skill" : false
+            },
+            "characterMana" : {
+              "value" : [ 25.0, 50.0, 75.0, 100.0, 125.0, 150.0, 175.0, 200.0, 225.0, 250.0, 275.0, 300.0 ],
+              "skill" : false
+            }
+          },
+          "description" : "A little-known magical technique that consists in making the energy hidden deep inside your enemies surface, giving you full control over it.",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving/Vigor Reaper.html"
+        },
+        "skill" : true
+      }
+    },
+    "description" : "A little-known magical technique that consists in making the energy hidden deep inside your enemies surface, giving you full control over it.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving/Vigor Reaper.html"
+  } ], [ {
+    "name" : "Reciprocate",
+    "parent" : null,
+    "attributes" : {
+      "skillUltimateLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "defensiveReflect" : {
+        "value" : [ 12.0, 20.0, 28.0, 36.0, 44.0, 52.0, 60.0, 68.0, 76.0, 84.0, 92.0, 100.0 ],
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 24,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 8,
+        "skill" : false
+      }
+    },
+    "description" : "An eye for an eye, a tooth for a tooth. Anyone who attempts to harm you suffers just as much pain.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving/Reciprocate.html"
+  }, {
+    "name" : "Celerity",
+    "parent" : "Radiant Orb",
+    "attributes" : {
+      "characterAttackSpeedModifier" : {
+        "value" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0 ],
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : [ 20.0, 46.0, 71.0, 97.0, 122.0, 148.0, 173.0, 199.0, 224.0, 250.0 ],
+        "skill" : false
+      },
+      "characterSpellCastSpeedModifier" : {
+        "value" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 10,
+        "skill" : false
+      },
+      "characterDefensiveAbility" : {
+        "value" : [ 15.0, 30.0, 45.0, 60.0, 75.0, 90.0, 105.0, 120.0, 135.0, 150.0 ],
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 24,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 6,
+        "skill" : false
+      }
+    },
+    "description" : "Empower your shield with a spell that grants great speed and agility.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving/Celerity.html"
+  }, {
+    "name" : "Diamond Rage",
+    "parent" : "Skyward Shock",
+    "attributes" : {
+      "skillUltimateLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "skillCooldownReduction" : {
+        "value" : [ 5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0 ],
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 24,
+        "skill" : false
+      },
+      "skillManaCostReduction" : {
+        "value" : [ 5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0 ],
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 8,
+        "skill" : false
+      }
+    },
+    "description" : "Diminishes the mental resources required to conjure the crystal balls.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving/Diamond Rage.html"
+  }, {
+    "name" : "Angelic Altar",
+    "parent" : null,
+    "attributes" : {
+      "skillCooldownTime" : {
+        "value" : 90.0,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 14,
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : [ 75.0, 79.0, 83.0, 87.0, 91.0, 95.0, 99.0, 105.0, 110.0, 115.0, 120.0, 125.0, 130.0, 137.0 ],
+        "skill" : false
+      },
+      "spawnObjectsTimeToLive" : {
+        "value" : 30.0,
+        "skill" : false
+      },
+      "petLimit" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "cameraShakeAmplitude" : {
+        "value" : 0.12,
+        "skill" : false
+      },
+      "skillConnectionSpacing" : {
+        "value" : 62,
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 24,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 10,
+        "skill" : false
+      }
+    },
+    "description" : "Summon a heavenly shrine, which casts a large protective aura that lasts until the altar expires or breaks.{^n}{^a}Cannot be dispelled.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving/Angelic Altar.html"
+  }, {
+    "name" : "Heavenly Order",
+    "parent" : null,
+    "attributes" : {
+      "skillCooldownTime" : {
+        "value" : 45.0,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 24,
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : [ 150.0, 153.0, 157.0, 160.0, 163.0, 166.0, 170.0, 173.0, 176.0, 179.0, 183.0, 186.0, 189.0, 192.0, 196.0, 199.0, 202.0, 205.0, 209.0, 212.0, 215.0, 218.0, 222.0, 225.0 ],
+        "skill" : false
+      },
+      "petLimit" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "cameraShakeAmplitude" : {
+        "value" : 0.12,
+        "skill" : false
+      },
+      "skillConnectionSpacing" : {
+        "value" : 62,
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 24,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 20,
+        "skill" : false
+      }
+    },
+    "description" : "Call upon the skies to summon an archangel to assist you in your journey. Later levels unlock new spells for her to use.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving/Heavenly Order.html"
+  } ], [ {
+    "name" : "Barricade",
+    "parent" : "Celerity",
+    "attributes" : {
+      "defensivePhysical" : {
+        "value" : 20.0,
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : 175.0,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "characterDodgePercent" : {
+        "value" : 20.0,
+        "skill" : false
+      },
+      "characterDeflectProjectile" : {
+        "value" : 20.0,
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 32,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "characterTotalSpeedModifier" : {
+        "value" : -25.0,
+        "skill" : false
+      }
+    },
+    "description" : "{^g}Skill Modifier{^n}{^w}Weave incredible amounts of light into your shield, building up an unbreakable defense. However, this additional layer of protection comes at a price; the shielded allies must invest more physical effort to make any kind of movement.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving/Barricade.html"
+  }, {
+    "name" : "Fury of the Skies",
+    "parent" : null,
+    "attributes" : {
+      "furyoftheskies" : {
+        "value" : {
+          "name" : "Fury of the Skies",
+          "parent" : null,
+          "attributes" : {
+            "skillCooldownTime" : {
+              "value" : 4.0,
+              "skill" : false
+            },
+            "offensiveLightningMax" : {
+              "value" : [ 120.0, 142.0, 164.0, 186.0, 208.0, 230.0, 253.0, 275.0, 297.0, 319.0, 341.0, 363.0, 385.0, 407.0, 429.0, 451.0, 473.0 ],
+              "skill" : false
+            },
+            "isPetDisplayable" : {
+              "value" : 1,
+              "skill" : false
+            },
+            "sparkGap" : {
+              "value" : 20.0,
+              "skill" : false
+            },
+            "cameraShakeAmplitude" : {
+              "value" : 0.12,
+              "skill" : false
+            },
+            "sparkMaxNumber" : {
+              "value" : [ 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ],
+              "skill" : false
+            },
+            "skillMaxLevel" : {
+              "value" : 9,
+              "skill" : false
+            },
+            "offensiveStunMin" : {
+              "value" : [ 0.5, 0.6, 0.6, 0.7, 0.8, 0.8, 0.9, 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0, 2.1 ],
+              "skill" : false
+            },
+            "skillUltimateLevel" : {
+              "value" : 13,
+              "skill" : false
+            },
+            "offensiveSlowLightningDurationMin" : {
+              "value" : 1.0,
+              "skill" : false
+            },
+            "offensiveLightningMin" : {
+              "value" : [ 48.0, 57.0, 66.0, 75.0, 83.0, 92.0, 101.0, 110.0, 119.0, 127.0, 136.0, 145.0, 154.0, 163.0, 172.0, 181.0, 190.0 ],
+              "skill" : false
+            },
+            "sparkChance" : {
+              "value" : 100.0,
+              "skill" : false
+            },
+            "skillMasteryLevelRequired" : {
+              "value" : 32,
+              "skill" : false
+            },
+            "offensiveSlowLightningMin" : {
+              "value" : [ 20.0, 35.0, 50.0, 65.0, 80.0, 95.0, 110.0, 125.0, 140.0, 155.0, 170.0, 185.0, 200.0, 215.0, 230.0, 245.0, 260.0 ],
+              "skill" : false
+            },
+            "offensivePercentCurrentLifeMin" : {
+              "value" : [ 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ],
+              "skill" : false
+            }
+          },
+          "description" : "The altar channels a powerful thunder which bounces to all nearby targets, seriously damaging them.",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving/Fury of the Skies.html"
+        },
+        "skill" : true
+      }
+    },
+    "description" : "The altar channels a powerful thunder which bounces to all nearby targets, seriously damaging them.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving/Fury of the Skies.html"
+  }, {
+    "name" : "Strength Bestowal",
+    "parent" : null,
+    "attributes" : {
+      "bestowal" : {
+        "value" : {
+          "name" : "Strength Bestowal",
+          "parent" : null,
+          "attributes" : {
+            "skillActiveDuration" : {
+              "value" : 15.0,
+              "skill" : false
+            },
+            "skillCooldownTime" : {
+              "value" : 180.0,
+              "skill" : false
+            },
+            "skillManaCost" : {
+              "value" : [ 100.0, 110.0, 120.0, 130.0, 140.0, 150.0, 160.0, 170.0, 180.0, 190.0, 200.0, 210.0 ],
+              "skill" : false
+            },
+            "cameraShakeAmplitude" : {
+              "value" : 0.32,
+              "skill" : false
+            },
+            "offensiveTotalDamageModifier" : {
+              "value" : [ 20.0, 23.0, 26.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 49.0, 52.0, 55.0 ],
+              "skill" : false
+            },
+            "characterDefensiveAbilityModifier" : {
+              "value" : [ 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 20.0 ],
+              "skill" : false
+            },
+            "skillMaxLevel" : {
+              "value" : 8,
+              "skill" : false
+            },
+            "characterOffensiveAbilityModifier" : {
+              "value" : [ 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 20.0 ],
+              "skill" : false
+            },
+            "cameraShakeDurationSecs" : {
+              "value" : 0.5,
+              "skill" : false
+            },
+            "skillUltimateLevel" : {
+              "value" : 12,
+              "skill" : false
+            },
+            "characterLifeRegenModifier" : {
+              "value" : [ 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 70.0, 80.0, 90.0, 100.0 ],
+              "skill" : false
+            },
+            "skillMasteryLevelRequired" : {
+              "value" : 32,
+              "skill" : false
+            },
+            "characterManaRegenModifier" : {
+              "value" : [ 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 70.0, 80.0, 90.0, 100.0 ],
+              "skill" : false
+            }
+          },
+          "description" : "Lend great amounts of power to a unique ally, allowing them to wreak havoc for a short period of time.",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving/Strength Bestowal.html"
+        },
+        "skill" : true
+      }
+    },
+    "description" : "Lend great amounts of power to a unique ally, allowing them to wreak havoc for a short period of time.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving/Strength Bestowal.html"
+  }, {
+    "name" : "Swift Retribution",
+    "parent" : "Siphon",
+    "attributes" : {
+      "offensiveLightningModifier" : {
+        "value" : 150.0,
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "offensiveSlowLightningDurationMin" : {
+        "value" : 3.0,
+        "skill" : false
+      },
+      "offensiveLightningMin" : {
+        "value" : 50.0,
+        "skill" : false
+      },
+      "offensiveFireModifier" : {
+        "value" : -300.0,
+        "skill" : false
+      },
+      "offensiveLightningModifierChance" : {
+        "value" : 10.0,
+        "skill" : false
+      },
+      "offensiveSlowLightningMin" : {
+        "value" : 40.0,
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 32,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 1,
+        "skill" : false
+      }
+    },
+    "description" : "{^g}Skill Modifier{^n}{^w}Conjure heavenly vengance upon your foes.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving/Swift Retribution.html"
+  }, {
+    "name" : "Guardian Angel",
+    "parent" : null,
+    "attributes" : {
+      "guardianangel" : {
+        "value" : {
+          "name" : "Guardian Angel",
+          "parent" : null,
+          "attributes" : {
+            "mastermind" : {
+              "value" : {
+                "name" : "Guardian Angel",
+                "parent" : null,
+                "attributes" : {
+                  "defensiveProtection" : {
+                    "value" : [ 4.0, 7.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 30.0 ],
+                    "skill" : false
+                  },
+                  "skillUltimateLevel" : {
+                    "value" : 10,
+                    "skill" : false
+                  },
+                  "skillWeaponTintGreen" : {
+                    "value" : 0.1,
+                    "skill" : false
+                  },
+                  "notDispelable" : {
+                    "value" : 1,
+                    "skill" : false
+                  },
+                  "defensiveAbsorptionModifier" : {
+                    "value" : [ 2.0, 4.0, 5.0, 7.0, 8.0, 10.0, 11.0, 13.0, 14.0, 16.0 ],
+                    "skill" : false
+                  },
+                  "skillWeaponTintRed" : {
+                    "value" : 1.0,
+                    "skill" : false
+                  },
+                  "cameraShakeAmplitude" : {
+                    "value" : 0.12,
+                    "skill" : false
+                  },
+                  "characterLife" : {
+                    "value" : [ 20.0, 40.0, 60.0, 80.0, 100.0, 120.0, 140.0, 160.0, 180.0, 200.0 ],
+                    "skill" : false
+                  },
+                  "skillTargetRadius" : {
+                    "value" : 15.0,
+                    "skill" : false
+                  },
+                  "skillMasteryLevelRequired" : {
+                    "value" : 32,
+                    "skill" : false
+                  },
+                  "skillMaxLevel" : {
+                    "value" : 6,
+                    "skill" : false
+                  }
+                },
+                "description" : "The sole presence of the purest being fosters hope and empowers allied units.{^n}{^a}Cannot be dispelled.",
+                "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving/Guardian Angel.html"
+              },
+              "skill" : true
+            },
+            "instantCast" : {
+              "value" : 1,
+              "skill" : false
+            }
+          },
+          "description" : "The sole presence of the purest being fosters hope and empowers allied units.{^n}{^a}Cannot be dispelled.",
+          "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving/Guardian Angel.html"
+        },
+        "skill" : true
+      }
+    },
+    "description" : "The sole presence of the purest being fosters hope and empowers allied units.{^n}{^a}Cannot be dispelled.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving/Guardian Angel.html"
+  }, {
+    "name" : "Exertion",
+    "parent" : "Vigor Reaper",
+    "attributes" : {
+      "characterOffensiveAbilityModifier" : {
+        "value" : [ -5.0, -6.5, -8.0, -9.5, -11.0, -12.5, -14.0, -15.5, -17.0, -18.5, -20.0, -21.5, -23.0, -24.5, -26.0, -27.5 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 16,
+        "skill" : false
+      },
+      "characterManaLimitReserve" : {
+        "value" : 75.0,
+        "skill" : false
+      },
+      "excludeRacialDamage" : {
+        "value" : 1,
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 32,
+        "skill" : false
+      },
+      "characterDefensiveAbilityModifier" : {
+        "value" : [ -5.0, -6.5, -8.0, -9.5, -11.0, -12.5, -14.0, -15.5, -17.0, -18.5, -20.0, -21.5, -23.0, -24.5, -26.0, -27.5 ],
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 12,
+        "skill" : false
+      }
+    },
+    "description" : "Exhaust the stamina of your enemies, making them unable to proprely attack or defend themselves.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving/Exertion.html"
+  } ], [ {
+    "name" : "Painkiller",
+    "parent" : null,
+    "attributes" : {
+      "defensiveBleeding" : {
+        "value" : [ 10.0, 14.0, 18.0, 22.0, 25.0, 29.0, 33.0, 37.0, 41.0, 45.0, 48.0, 52.0, 56.0, 60.0 ],
+        "skill" : false
+      },
+      "defensivePhysical" : {
+        "value" : [ 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 14,
+        "skill" : false
+      },
+      "defensiveAbsorption" : {
+        "value" : 20.0,
+        "skill" : false
+      },
+      "characterLifeRegen" : {
+        "value" : [ 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0 ],
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 40,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 10,
+        "skill" : false
+      }
+    },
+    "description" : "The best tool to survive is an unbreakable resolve.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving/Painkiller.html"
+  }, {
+    "name" : "Purity",
+    "parent" : "Strength Bestowal",
+    "attributes" : {
+      "skillActiveDuration" : {
+        "value" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0 ],
+        "skill" : false
+      },
+      "skillManaCost" : {
+        "value" : [ 6.0, 9.0, 15.0, 18.0, 22.0, 25.0, 28.0, 34.0, 37.0, 41.0, 44.0, 48.0 ],
+        "skill" : false
+      },
+      "skillUltimateLevel" : {
+        "value" : 12,
+        "skill" : false
+      },
+      "defensiveLife" : {
+        "value" : [ 15.0, 19.0, 22.0, 26.0, 29.0, 33.0, 37.0, 40.0, 44.0, 47.0, 51.0, 55.0 ],
+        "skill" : false
+      },
+      "characterLifeRegen" : {
+        "value" : [ 4.0, 6.0, 9.0, 11.0, 13.0, 16.0, 18.0, 21.0, 23.0, 25.0, 28.0, 30.0 ],
+        "skill" : false
+      },
+      "skillMasteryLevelRequired" : {
+        "value" : 40,
+        "skill" : false
+      },
+      "skillMaxLevel" : {
+        "value" : 8,
+        "skill" : false
+      }
+    },
+    "description" : "Push the limits of a mortal envelope further, banishing all evil from within the target's soul.",
+    "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving/Purity.html"
+  } ] ],
+  "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/Lifegiving.html"
+}
