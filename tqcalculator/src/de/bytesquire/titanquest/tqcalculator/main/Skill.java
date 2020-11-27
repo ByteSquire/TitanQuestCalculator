@@ -85,7 +85,7 @@ public class Skill {
     }
 
     public String getUrlLegacy() {
-        return Control.URL + "/mods/Masteries/" + mParentPath + "/" + getName() + ".html";
+        return Control.URL + "/mods/" + mParentPath + "/" + getName() + ".html";
     }
 
     public String getDescription() {
