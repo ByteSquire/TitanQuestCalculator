@@ -1,106 +1,58 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Titan Quest Calculator</title>
+var active = 0;
+var masteryIndex0 = 0;
+var masteryIndex1 = 0;
+var mod;
 
-    <link rel="stylesheet" type="text/css" href="https://bytesquire.github.io/TitanQuestCalculator/css/styles.css" />
+var xmlhttp = new XMLHttpRequest();
+var url = "https://bytesquire.github.io/TitanQuestCalculator/mods/${name}/${name}.json";
 
-    <script type="text/javascript" src="js/mod.js"></script>
-  </head>
+xmlhttp.onreadystatechange = function () {
+  if (this.readyState == 4 && this.status == 200) {
+    mod = JSON.parse(this.responseText);
+    main();
+  }
+};
+xmlhttp.open("GET", url, true);
+xmlhttp.send();
 
-  <body oncontextmenu="return false">
-    <h1 class="centered">${name}</h1>
-    <h2 class="centered">Choose one or two masteries</h2>
+function main() {
+  document.getElementById("name").innerText = ${name};
+  for (var i = 1; i < 11; i++) {
+    document.getElementById(i.toString()).innerHTML = document.getElementById(i.toString()).innerHTML.replaceAll(i.toString(), mod.mappedMasteries[i]);
+  }
+}
 
-    <div class="masteryOverview">
-      <button id="1" class="masteryButton" onclick="changeImage(this);">
-        <img
-          class="masteryImage"
-          src="https://bytesquire.github.io/TitanQuestCalculator/mods/${name}/images/masteries/1.png"
-        />
-        <br />
-        1
-      </button>
-      <button id="2" class="masteryButton" onclick="changeImage(this);">
-        <img
-          class="masteryImage"
-          src="https://bytesquire.github.io/TitanQuestCalculator/mods/${name}/images/masteries/2.png"
-        />
-        <br />
-        2
-      </button>
-      <button id="3" class="masteryButton" onclick="changeImage(this);">
-        <img
-          class="masteryImage"
-          src="https://bytesquire.github.io/TitanQuestCalculator/mods/${name}/images/masteries/3.png"
-        />
-        <br />
-        3
-      </button>
-      <button id="4" class="masteryButton" onclick="changeImage(this);">
-        <img
-          class="masteryImage"
-          src="https://bytesquire.github.io/TitanQuestCalculator/mods/${name}/images/masteries/4.png"
-        />
-        <br />
-        4
-      </button>
-      <button id="5" class="masteryButton" onclick="changeImage(this);">
-        <img
-          class="masteryImage"
-          src="https://bytesquire.github.io/TitanQuestCalculator/mods/${name}/images/masteries/5.png"
-        />
-        <br />
-        5
-      </button>
-      <button id="6" class="masteryButton" onclick="changeImage(this);">
-        <img
-          class="masteryImage"
-          src="https://bytesquire.github.io/TitanQuestCalculator/mods/${name}/images/masteries/6.png"
-        />
-        <br />
-        6
-      </button>
-      <button id="7" class="masteryButton" onclick="changeImage(this);">
-        <img
-          class="masteryImage"
-          src="https://bytesquire.github.io/TitanQuestCalculator/mods/${name}/images/masteries/7.png"
-        />
-        <br />
-        7
-      </button>
-      <button id="8" class="masteryButton" onclick="changeImage(this);">
-        <img
-          class="masteryImage"
-          src="https://bytesquire.github.io/TitanQuestCalculator/mods/${name}/images/masteries/8.png"
-        />
-        <br />
-        8
-      </button>
-      <button id="9" class="masteryButton" onclick="changeImage(this);">
-        <img
-          class="masteryImage"
-          src="https://bytesquire.github.io/TitanQuestCalculator/mods/${name}/images/masteries/9.png"
-        />
-        <br />
-        9
-      </button>
-      <button id="10" class="masteryButton" onclick="changeImage(this);">
-        <img
-          class="masteryImage"
-          src="https://bytesquire.github.io/TitanQuestCalculator/mods/${name}/images/masteries/10.png"
-        />
-        <br />
-        10
-      </button>
-    </div>
+function changeImage(button) {
+  switch (button.id) {
+    case masteryIndex0:
+      button.children[0].style.filter = "grayscale()";
+      active--;
+      masteryIndex0 = 0;
+      break;
+    case masteryIndex1:
+      button.children[0].style.filter = "grayscale()";
+      active--;
+      masteryIndex1 = 0;
+      break;
+    default:
+      if (active < 2) {
+        button.children[0].style.filter = "none";
+        if (masteryIndex0 == 0) masteryIndex0 = button.id;
+        else masteryIndex1 = button.id;
+        active++;
+      }
+      break;
+  }
+}
 
-    <button class="submitButton" onclick="submit(this);">
-      <img
-        class="centered"
-        src="https://bytesquire.github.io/TitanQuestCalculator/mods/${name}/images/button.jpg"
-      />
-    </button>
-  </body>
-</html>
+function submit(button) {
+  if (active > 0) {
+    window.location.href += getMasteriesPage();
+  }
+}
+
+function getMasteriesPage() {
+  if (masteryIndex1 != 0)
+    return "Masteries.html?m1=" + masteryIndex0 + "&m2=" + masteryIndex1;
+  else return "Masteries.html?m1=" + masteryIndex0;
+}
