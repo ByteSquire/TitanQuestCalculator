@@ -3,7 +3,7 @@
 You can click any link shown below to get to the mastery overview.
 
 <#list mods as mod>
-[${mod.name}](${mod.url})${'\t'}[${mod.name}](${mod.urlLegacy})${'\n'} 
+[${mod.name}](${mod.url})${'\t'}[${mod.name}-Legacy](${mod.urlLegacy})${'\n'} 
 </#list>
 
 
