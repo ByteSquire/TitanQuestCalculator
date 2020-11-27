@@ -3,7 +3,7 @@ var m2 = new URLSearchParams(location.search).get("m2");
 var mod;
 
 var xmlhttp = new XMLHttpRequest();
-var url = "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla.json";
+var url = "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Vanilla.json";
 
 xmlhttp.onreadystatechange = function () {
   if (this.readyState == 4 && this.status == 200) {
