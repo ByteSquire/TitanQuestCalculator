@@ -1,11 +1,13 @@
 package de.bytesquire.titanquest.tqcalculator.main;
 
 import java.io.File;
+import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import de.bytesquire.titanquest.tqcalculator.parsers.IconsParser;
 import de.bytesquire.titanquest.tqcalculator.parsers.ModStringsParser;
 import de.bytesquire.titanquest.tqcalculator.parsers.SkillParser;
 
@@ -22,17 +24,21 @@ public class Skill {
     private String mParent;
     private File mSkill;
     private int mSkillTier;
+    private SkillIcon mSkillIcon;
 
-    public Skill(File aSkill, String aParentPath, ModStringsParser aMSParser) {
+    public Skill(File aSkill, String aParent, String aParentPath, ModStringsParser aMSParser,
+            IconsParser aIconsParser) {
         if (aSkill == null)
             return;
         mSkillAttributes = new HashMap<>();
         mParentPath = aParentPath;
+        mParent = aParent;
         mSkill = aSkill;
-        mSkillParser = new SkillParser(aSkill, aParentPath, aMSParser);
+        mSkillParser = new SkillParser(aSkill, aParentPath, aMSParser, aIconsParser);
 
         mSkillName = aMSParser.getTags().get(mSkillParser.getSkillTag());
         mSkillDescription = aMSParser.getTags().get(mSkillParser.getSkillDescriptionTag());
+        mSkillIcon = aIconsParser.getIcon(mSkill.getAbsolutePath().split("database")[2].substring(1));
         isModifier = mSkillParser.isModifier();
 
         for (String skillAttribute : mSkillParser.getAttributes().keySet()) {
@@ -63,7 +69,7 @@ public class Skill {
     public String getSkillTag() {
         return mSkillParser.getSkillTag();
     }
-    
+
     public String getSkillDescriptionTag() {
         return mSkillParser.getSkillDescriptionTag();
     }
@@ -113,6 +119,10 @@ public class Skill {
             return getBuff().getSkillTier();
         else
             return mSkillTier;
+    }
+
+    public SkillIcon getSkillIcon() {
+        return mSkillIcon;
     }
 
 }

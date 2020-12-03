@@ -49,14 +49,14 @@ public class Cleaner {
                 if (!(e instanceof java.nio.file.FileAlreadyExistsException))
                     e.printStackTrace();
             }
-            
+
             Path originGameEnginePath = mod.getGameEngine().toPath();
 //          System.out.println(originLinksPath);
-            Path targetGameEnginePath = Path
-                    .of(mod.getModDir().substring(0, mod.getModDir().length() - 1) + "-cleaned/database/records/game/gameengine.dbr");
+            Path targetGameEnginePath = Path.of(mod.getModDir().substring(0, mod.getModDir().length() - 1)
+                    + "-cleaned/database/records/game/gameengine.dbr");
 //          System.out.println(targetLinksPath);
             try {
-                Files.createDirectories(Path.of(targetGameEnginePath.toString().split("links.txt")[0]));
+                Files.createDirectories(Path.of(targetGameEnginePath.toString().split("gameengine.dbr")[0]));
                 Files.copy(originGameEnginePath, targetGameEnginePath);
             } catch (IOException e) {
                 if (!(e instanceof java.nio.file.FileAlreadyExistsException))
@@ -64,9 +64,27 @@ public class Cleaner {
             }
 
             cleanModStrings(mod);
+            cleanIcons(mod);
 
             for (Mastery mastery : mod.getMasteries()) {
                 cleanMastery(mastery, mod);
+            }
+        }
+    }
+
+    private void cleanIcons(Mod mod) {
+        for (File f : mod.getIconsParser().getIconFiles()) {
+            Path originPath = f.toPath();
+//          System.out.println(originLinksPath);
+            Path targetPath = Path.of(mod.getModDir().substring(0, mod.getModDir().length() - 1)
+                    + "-cleaned/" + f.getAbsolutePath().split(mod.getName())[1]);
+//          System.out.println(targetLinksPath);
+            try {
+                Files.createDirectories(Path.of(targetPath.toString().split(f.getName())[0]));
+                Files.copy(originPath, targetPath);
+            } catch (IOException e) {
+                if (!(e instanceof java.nio.file.FileAlreadyExistsException))
+                    e.printStackTrace();
             }
         }
     }

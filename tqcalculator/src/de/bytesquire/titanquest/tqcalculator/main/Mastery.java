@@ -6,6 +6,7 @@ import java.util.HashMap;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import de.bytesquire.titanquest.tqcalculator.parsers.IconsParser;
 import de.bytesquire.titanquest.tqcalculator.parsers.ModStringsParser;
 import de.bytesquire.titanquest.tqcalculator.parsers.SkillParser;
 import de.bytesquire.titanquest.tqcalculator.parsers.SkillTreeParser;
@@ -22,7 +23,7 @@ public class Mastery {
     private File mSkillTree;
     private File mMastery;
 
-    public Mastery(File aSkillTree, String aModDir, String aModName, ModStringsParser aMSParser) {
+    public Mastery(File aSkillTree, String aModDir, String aModName, ModStringsParser aMSParser, IconsParser aIconsParser) {
         mParentModName = aModName;
         mSkillTree = aSkillTree;
         mSkillTreeParser = new SkillTreeParser(aSkillTree, aModDir);
@@ -33,11 +34,11 @@ public class Mastery {
 
         for (File skill : mSkillTreeParser.getSkills()) {
             if (!(mSkillTreeParser.getSkills().indexOf(skill) == 0)) {
-                Skill tmp = new Skill(skill, (mParentModName + "/Masteries/" + mName), aMSParser);
+                Skill tmp = new Skill(skill, mParentModName, (mParentModName + "/Masteries/" + mName), aMSParser, aIconsParser);
                 mSkills.add(tmp);
             } else {
                 mMastery = skill;
-                mMasteryAttributes = new SkillParser(skill, (mParentModName + "/Masteries/" + mName), aMSParser).getAttributes();
+                mMasteryAttributes = new SkillParser(skill, (mParentModName + "/Masteries/" + mName), aMSParser, aIconsParser).getAttributes();
             }
         }
 

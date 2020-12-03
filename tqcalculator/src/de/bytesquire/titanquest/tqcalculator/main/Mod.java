@@ -10,6 +10,7 @@ import java.util.Map;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import de.bytesquire.titanquest.tqcalculator.parsers.IconsParser;
 import de.bytesquire.titanquest.tqcalculator.parsers.ModParser;
 import de.bytesquire.titanquest.tqcalculator.parsers.ModStringsParser;
 
@@ -18,6 +19,7 @@ public class Mod {
 
     private ModParser mModParser;
     private ModStringsParser mMSParser;
+    private IconsParser mIconsParser;
     private ArrayList<Mastery> mMasteries;
     private HashMap<Integer, String> mMappedMasteries;
     private String mModName, mModDir;
@@ -34,7 +36,7 @@ public class Mod {
         mModName = aModName;
         mModDir = aModDir;
         mMSParser = new ModStringsParser(aModDir + "/text/");
-
+        mIconsParser = new IconsParser(aModDir + "/database/");
         mModParser = new ModParser(aModDir);
         mLinks = mModParser.getLinks();
         mCharacter = mModParser.getCharacter();
@@ -45,7 +47,8 @@ public class Mod {
         for (File skillTree : mModParser.getSkillTrees()) {
             if (!skillTree.getName().equals("QuestRewardSkillTree.dbr")) {
                 Mastery tmp = new Mastery(skillTree,
-                        mModDir + "database" + Paths.get("").getFileSystem().getSeparator(), mModName, mMSParser);
+                        mModDir + "database" + Paths.get("").getFileSystem().getSeparator(), mModName, mMSParser,
+                        mIconsParser);
                 mMasteries.add(tmp);
                 mMappedMasteries.put(i++, tmp.getName());
             }
@@ -79,9 +82,9 @@ public class Mod {
     public String getUrlLegacy() {
         return Control.URL + "/mods/" + getName() + "/" + getName() + ".html";
     }
-    
+
     public String getUrl() {
-        return Control.URL + "/mods/" + getName() + "/"/* + getName() + ".json"*/;
+        return Control.URL + "/mods/" + getName() + "/"/* + getName() + ".json" */;
     }
 
     public Map<String, String> getLinks() {
@@ -104,4 +107,7 @@ public class Mod {
         return mGameEngine;
     }
 
+    public IconsParser getIconsParser() {
+        return mIconsParser;
+    }
 }
