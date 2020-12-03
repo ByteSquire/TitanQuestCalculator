@@ -22,15 +22,17 @@ public class SkillParser {
     private String mSkillTag;
     private boolean isModifier = false;
     private ModStringsParser mMSParser;
+    private IconsParser mIconsParser;
     private String mSkillDescriptionTag;
 
-    public SkillParser(File aSkill, String aParentPath, ModStringsParser aMSParser) {
+    public SkillParser(File aSkill, String aParentPath, ModStringsParser aMSParser, IconsParser aIconsParser) {
 
         if (aSkill == null)
             return;
 
         mParentPath = aParentPath;
         mMSParser = aMSParser;
+        mIconsParser = aIconsParser;
 
         mAttributes = new HashMap<>();
 
@@ -83,13 +85,11 @@ public class SkillParser {
                     if (underscoredName.length > 1)
                         name = underscoredName[underscoredName.length - 1].substring(0,
                                 underscoredName[underscoredName.length - 1].length() - 4);
-                    mAttributes
-                            .put(name,
-                                    new SkillAttribute<Skill>(
-                                            new Skill(
-                                                    new File(Control.DATABASES_DIR + mParentPath.split("/")[0]
-                                                            + "/database/" + str.split(",")[1]),
-                                                    mParentPath, mMSParser)));
+                    mAttributes.put(name,
+                            new SkillAttribute<Skill>(new Skill(
+                                    new File(Control.DATABASES_DIR + mParentPath.split("/")[0] + "/database/"
+                                            + str.split(",")[1]),
+                                    mParentPath.split("/Masteries/")[0], mParentPath, mMSParser, mIconsParser)));
                     mSkillTag = ((SkillAttribute<Skill>) mAttributes.get(name)).getValue().getSkillTag();
                     mSkillDescriptionTag = ((SkillAttribute<Skill>) mAttributes.get(name)).getValue()
                             .getSkillDescriptionTag();
