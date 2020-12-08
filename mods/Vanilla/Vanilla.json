@@ -4,7 +4,7 @@
     "name" : "Nature",
     "skillTiers" : [ [ {
       "name" : "Regrowth",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 8.0
@@ -24,6 +24,9 @@
         "skillConnectionSpacing" : {
           "value" : 62
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
+        },
         "skillMaxLevel" : {
           "value" : 16
         }
@@ -37,7 +40,7 @@
       }
     }, {
       "name" : "Call of the Wild",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 20.0
@@ -56,6 +59,9 @@
         },
         "skillConnectionSpacing" : {
           "value" : 62
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
         },
         "skillMaxLevel" : {
           "value" : 16
@@ -81,6 +87,9 @@
         "skillCooldownReduction" : {
           "value" : [ 18.0, 26.0, 34.0, 42.0, 50.0, 57.0, 63.0, 68.0, 72.0, 75.0, 78.0, 80.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
+        },
         "skillMaxLevel" : {
           "value" : 8
         }
@@ -94,7 +103,7 @@
       }
     }, {
       "name" : "Heart of Oak",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "characterLifeModifier" : {
           "value" : [ 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0 ]
@@ -117,6 +126,9 @@
         "skillTargetRadius" : {
           "value" : 18.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
+        },
         "skillMaxLevel" : {
           "value" : 12
         },
@@ -133,7 +145,7 @@
       }
     }, {
       "name" : "Plague",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "contagionLimit" : {
           "value" : 2
@@ -193,7 +205,7 @@
       }
     }, {
       "name" : "Maul",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "offensiveSlowBleedingMin" : {
           "value" : [ 5.6, 9.4, 13.1, 17.3, 21.4, 25.7, 29.9, 34.6, 38.7, 43.0, 47.5, 52.5, 56.9, 61.7, 66.4, 71.6 ]
@@ -232,7 +244,7 @@
       }
     } ], [ {
       "name" : "Briar Ward",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "spawnObjectsNumberOfRings" : {
           "value" : 2
@@ -288,6 +300,9 @@
         "offensiveSlowOffensiveReductionDurationMin" : {
           "value" : 3.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 18
+        },
         "offensivePercentCurrentLifeChance" : {
           "value" : 5.0
         },
@@ -316,7 +331,7 @@
       }
     }, {
       "name" : "Survival Instinct",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "offensivePhysicalModifier" : {
           "value" : [ 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0, 90.0, 95.0, 100.0, 105.0, 110.0 ]
@@ -329,6 +344,9 @@
         },
         "damageAbsorptionPercent" : {
           "value" : [ 15.0, 20.0, 24.0, 30.0, 38.0, 42.0, 47.0, 51.0, 54.0, 60.0, 63.0, 67.0, 70.0, 74.0, 80.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 6
         },
         "skillMaxLevel" : {
           "value" : 16
@@ -346,7 +364,7 @@
       }
     } ], [ {
       "name" : "Dissemination",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillLifeBonus" : {
           "value" : [ 180.0, 225.0, 277.5, 330.0, 397.5, 472.5, 555.0, 652.5, 757.5, 870.0, 990.0, 1125.0, 1267.5, 1425.0, 1590.0, 1770.0, 1965.0, 2175.0, 2400.0, 2640.0 ]
@@ -359,6 +377,9 @@
         },
         "sparkChance" : {
           "value" : 100.0
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
         },
         "sparkMaxNumber" : {
           "value" : 3
@@ -376,7 +397,7 @@
       }
     }, {
       "name" : "Stinging Nettle",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "retaliationSlowPoisonDurationMin" : {
           "value" : 6.0
@@ -408,6 +429,9 @@
         "skillManaCostReductionChance" : {
           "value" : [ 9.0, 18.0, 27.0, 36.0, 45.0, 54.0, 63.0, 72.0, 81.0, 90.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 15
+        },
         "skillManaCostReduction" : {
           "value" : 50.0
         },
@@ -424,7 +448,7 @@
       }
     }, {
       "name" : "Sylvan Nymph",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 60.0
@@ -450,6 +474,9 @@
         "skillProjectileNumber" : {
           "value" : 1
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 15
+        },
         "skillMaxLevel" : {
           "value" : 16
         }
@@ -473,6 +500,9 @@
         },
         "defensiveElementalResistance" : {
           "value" : [ 5.0, 8.0, 10.0, 12.0, 15.0, 18.0, 21.0, 25.0, 28.0, 31.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 15
         },
         "skillMaxLevel" : {
           "value" : 6
@@ -498,6 +528,9 @@
         "defensiveElementalResistance" : {
           "value" : [ -12.0, -15.0, -19.0, -24.0, -27.0, -30.0, -34.0, -39.0, -42.0, -45.0, -49.0, -54.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 18
+        },
         "defensivePoison" : {
           "value" : [ -12.0, -15.0, -19.0, -24.0, -27.0, -30.0, -34.0, -39.0, -42.0, -45.0, -49.0, -54.0 ]
         },
@@ -514,7 +547,7 @@
       }
     }, {
       "name" : "Strength of the Pack",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "offensivePhysicalModifier" : {
           "value" : [ 15.0, 20.0, 24.0, 30.0, 34.0, 39.0, 43.0, 49.0, 53.0, 58.0, 62.0, 68.0, 72.0, 77.0, 82.0, 90.0 ]
@@ -556,7 +589,7 @@
       }
     }, {
       "name" : "Overgrowth",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "retaliationPierceMax" : {
           "value" : [ 5.01, 7.014, 9.018, 12.024, 14.028, 16.032, 19.038, 21.042, 25.05, 30.06, 31.062, 33.066, 35.07, 38.076, 41.082, 45.09 ]
@@ -592,7 +625,7 @@
       }
     } ], [ {
       "name" : "Sanctuary",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 18.0
@@ -628,7 +661,7 @@
       }
     }, {
       "name" : "Nature's Wrath",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillUltimateLevel" : {
           "value" : 16
@@ -670,7 +703,7 @@
       }
     }, {
       "name" : "Refresh",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : [ 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0, 28.0, 29.0, 30.0, 31.0, 32.0, 33.0, 34.0, 35.0 ]
@@ -700,7 +733,7 @@
       }
     } ], [ {
       "name" : "Sylvan Protection",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "offensiveSlowRunSpeedMin" : {
           "value" : 75.0
@@ -762,7 +795,7 @@
       "skillIcon" : null
     }, {
       "name" : "Earthbind",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "offensiveSlowRunSpeedMin" : {
           "value" : 66.0
@@ -839,7 +872,7 @@
     "name" : "Spirit",
     "skillTiers" : [ [ {
       "name" : "Deathchill Aura",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 1.0
@@ -893,7 +926,7 @@
       }
     }, {
       "name" : "Life Drain",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 6.0
@@ -938,7 +971,7 @@
       }
     } ], [ {
       "name" : "Vision of Death",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "offensiveTotalDamageReductionPercentMin" : {
           "value" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 18.0 ]
@@ -981,6 +1014,9 @@
         },
         "excludeRacialDamage" : {
           "value" : 1
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 5
         }
       },
       "description" : "Assaults the minds of surrounding enemies with images of their own death causing the weak-hearted to flee in horror and more resolute foes to fight less effectively.",
@@ -1025,7 +1061,7 @@
       }
     }, {
       "name" : "Ternion Attack",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillManaCost" : {
           "value" : [ 30.0, 31.0, 31.0, 32.0, 32.0, 33.0, 33.0, 34.0, 34.0, 35.0, 35.0, 36.0, 36.0, 37.0, 37.0, 38.0 ]
@@ -1054,6 +1090,9 @@
         "offensiveTotalDamageModifier" : {
           "value" : [ -75.0, -70.0, -65.0, -60.0, -55.0, -50.0, -45.0, -40.0, -35.0, -30.0, -25.0, -20.0, -15.0, -10.0, -5.0, 0.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
+        },
         "skillMaxLevel" : {
           "value" : 12
         }
@@ -1067,7 +1106,7 @@
       }
     }, {
       "name" : "Spirit Ward",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "racialBonusPercentDefense" : {
           "value" : [ 15.0, 19.0, 23.0, 28.0, 32.0, 36.0, 41.0, 45.0, 49.0, 54.0, 58.0, 62.0 ]
@@ -1100,7 +1139,7 @@
       }
     } ], [ {
       "name" : "Dark Covenant",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillActiveLifeCost" : {
           "value" : [ 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0 ]
@@ -1142,7 +1181,7 @@
       }
     }, {
       "name" : "Cascade",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillUltimateLevel" : {
           "value" : 14
@@ -1205,7 +1244,7 @@
       }
     }, {
       "name" : "Summon Liche King",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 60.0
@@ -1224,6 +1263,9 @@
         },
         "skillConnectionSpacing" : {
           "value" : 62
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 15
         },
         "skillMaxLevel" : {
           "value" : 16
@@ -1285,6 +1327,9 @@
         "Staff" : {
           "value" : 1
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
+        },
         "skillMaxLevel" : {
           "value" : 6
         },
@@ -1301,7 +1346,7 @@
       }
     }, {
       "name" : "Enslave Spirit",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : [ 180.0, 171.0, 162.0, 153.0, 144.0, 135.0, 126.0, 117.0, 108.0, 99.0, 90.0, 81.0, 72.0, 63.0, 54.0, 45.0 ]
@@ -1337,7 +1382,7 @@
       }
     }, {
       "name" : "Death Nova",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillUltimateLevel" : {
           "value" : 16
@@ -1379,7 +1424,7 @@
       }
     } ], [ {
       "name" : "Circle of Power",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 60.0
@@ -1451,7 +1496,7 @@
       }
     }, {
       "name" : "Wraith Shell",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "defensivePhysical" : {
           "value" : 30.0
@@ -1471,6 +1516,9 @@
         "damageAbsorptionPercent" : {
           "value" : [ 18.0, 23.0, 28.0, 33.0, 38.0, 42.0, 46.0, 50.0, 54.0, 57.0, 60.0, 63.0, 66.0, 68.0, 70.0, 72.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 20
+        },
         "skillMaxLevel" : {
           "value" : 12
         }
@@ -1484,7 +1532,7 @@
       }
     } ], [ {
       "name" : "Death Ward",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 3.0
@@ -1517,7 +1565,7 @@
       }
     }, {
       "name" : "Arcane Blast",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "projectileLaunchNumber" : {
           "value" : [ 2.0, 2.0, 2.0, 3.0, 3.0, 3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 5.0, 5.0, 6.0, 6.0 ]
@@ -1568,7 +1616,7 @@
       }
     }, {
       "name" : "Summon Outsider",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 360.0
@@ -1601,7 +1649,7 @@
       }
     } ], [ {
       "name" : "Soul Drain",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillUltimateLevel" : {
           "value" : 10
@@ -1639,7 +1687,7 @@
       "skillIcon" : null
     }, {
       "name" : "Soul Vortex",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "defensiveSlowManaLeach" : {
           "value" : 100.0
@@ -1722,7 +1770,7 @@
     "name" : "Storm",
     "skillTiers" : [ [ {
       "name" : "Ice Shard",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "projectileLaunchNumber" : {
           "value" : 1
@@ -1748,6 +1796,9 @@
         "offensiveColdMin" : {
           "value" : [ 16.0, 20.0, 23.0, 28.0, 32.0, 36.0, 39.0, 44.0, 48.0, 52.0, 55.0, 60.0, 66.0, 73.0, 81.0, 90.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
+        },
         "offensiveSlowTotalSpeedDurationMin" : {
           "value" : 1.5
         },
@@ -1764,7 +1815,7 @@
       }
     }, {
       "name" : "Storm Nimbus",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "offensiveColdXOR" : {
           "value" : 1
@@ -1872,7 +1923,7 @@
       }
     }, {
       "name" : "Thunderball",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 10.0
@@ -1923,7 +1974,7 @@
       }
     }, {
       "name" : "Spell Breaker",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 6.0
@@ -1998,7 +2049,7 @@
       }
     }, {
       "name" : "Freezing Blast",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : [ 3.0, 3.4, 3.8, 4.2, 4.6, 5.0, 5.4, 5.8, 6.2, 6.6, 7.0, 7.5 ]
@@ -2049,7 +2100,7 @@
       }
     }, {
       "name" : "Squall",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 6.0
@@ -2136,7 +2187,7 @@
       }
     } ], [ {
       "name" : "Lightning Bolt",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 12.0
@@ -2217,7 +2268,7 @@
       }
     }, {
       "name" : "Energy Shield",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 100.0
@@ -2245,6 +2296,9 @@
         },
         "damageAbsorptionPercent" : {
           "value" : [ 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 15
         },
         "skillMaxLevel" : {
           "value" : 12
@@ -2295,7 +2349,7 @@
       }
     }, {
       "name" : "Concussive Blast",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "projectileFragmentsLaunchNumberMin" : {
           "value" : [ 2.0, 2.0, 2.0, 3.0, 3.0, 4.0, 4.0, 5.0, 5.0, 5.0, 6.0, 6.0 ]
@@ -2367,7 +2421,7 @@
       }
     }, {
       "name" : "Summon Wisp",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 20.0
@@ -2387,6 +2441,9 @@
         "skillConnectionSpacing" : {
           "value" : 62
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 20
+        },
         "skillMaxLevel" : {
           "value" : 16
         }
@@ -2400,7 +2457,7 @@
       }
     }, {
       "name" : "Storm Surge",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 6.0
@@ -2451,7 +2508,7 @@
       }
     } ], [ {
       "name" : "Chain Lightning",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "offensiveStunMin" : {
           "value" : 0.5
@@ -2501,6 +2558,9 @@
         "defensiveReflect" : {
           "value" : [ 50.0, 66.0, 82.0, 98.0, 114.0, 130.0, 146.0, 162.0, 180.0, 200.0, 220.0, 242.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 25
+        },
         "skillMaxLevel" : {
           "value" : 8
         }
@@ -2514,7 +2574,7 @@
       }
     }, {
       "name" : "Eye of the Storm",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "defensiveLightning" : {
           "value" : [ 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0 ]
@@ -2559,7 +2619,7 @@
       }
     } ], [ {
       "name" : "Arc Discharge",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "offensiveStunMin" : {
           "value" : 0.5
@@ -2591,7 +2651,7 @@
       "skillIcon" : null
     }, {
       "name" : "Lightning Dash",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 0.7
@@ -2674,7 +2734,7 @@
     "name" : "Earth",
     "skillTiers" : [ [ {
       "name" : "Flame Surge",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "projectileLaunchNumber" : {
           "value" : 3
@@ -2688,15 +2748,6 @@
         "offensiveSlowDefensiveAbilityDurationMin" : {
           "value" : 3.0
         },
-        "skillUltimateLevel" : {
-          "value" : 16
-        },
-        "projectileLaunchRotation" : {
-          "value" : 20.0
-        },
-        "offensiveFireMax" : {
-          "value" : [ 15.0, 18.0, 22.0, 27.0, 31.0, 34.0, 38.0, 43.0, 47.0, 50.0, 54.0, 59.0, 63.0, 66.0, 70.0, 75.0 ]
-        },
         "skillConnectionSpacing" : {
           "value" : 62
         },
@@ -2706,11 +2757,23 @@
         "offensiveSlowDefensiveAbilityMin" : {
           "value" : [ 5.0, 8.0, 11.0, 14.0, 17.0, 20.0, 23.0, 26.0, 29.0, 32.0, 35.0, 38.0, 41.0, 44.0, 47.0, 50.0 ]
         },
+        "skillMaxLevel" : {
+          "value" : 12
+        },
+        "skillUltimateLevel" : {
+          "value" : 16
+        },
+        "projectileLaunchRotation" : {
+          "value" : 20.0
+        },
+        "offensiveFireMax" : {
+          "value" : [ 15.0, 18.0, 22.0, 27.0, 31.0, 34.0, 38.0, 43.0, 47.0, 50.0, 54.0, 59.0, 63.0, 66.0, 70.0, 75.0 ]
+        },
         "offensiveFireMin" : {
           "value" : [ 8.0, 11.0, 13.0, 17.0, 20.0, 23.0, 25.0, 29.0, 32.0, 35.0, 38.0, 43.0, 45.0, 48.0, 53.0, 59.0 ]
         },
-        "skillMaxLevel" : {
-          "value" : 12
+        "skillMasteryLevelRequired" : {
+          "value" : 1
         }
       },
       "description" : "Three jets of flame erupt from the caster's hands each inflicting incinerating fire damage to enemies.",
@@ -2722,7 +2785,7 @@
       }
     }, {
       "name" : "Earth Enchantment",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 4.0
@@ -2763,6 +2826,9 @@
         "skillTargetRadius" : {
           "value" : [ 6.0, 6.6, 7.2, 7.8, 8.4, 9.0, 9.6, 10.2, 10.8, 11.4, 12.0, 12.6, 13.2, 13.8, 14.4, 15.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
+        },
         "offensiveSlowFireModifier" : {
           "value" : [ 12.0, 20.0, 28.0, 36.0, 44.0, 52.0, 60.0, 68.0, 76.0, 84.0, 92.0, 100.0, 109.0, 119.0, 130.0, 145.0 ]
         }
@@ -2776,7 +2842,7 @@
       }
     } ], [ {
       "name" : "Volcanic Orb",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 5.0
@@ -2808,6 +2874,9 @@
         "offensiveFireMin" : {
           "value" : [ 25.0, 31.0, 37.0, 43.0, 49.0, 55.0, 61.0, 67.0, 73.0, 79.0, 85.0, 91.0, 97.0, 103.0, 109.0, 115.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
+        },
         "skillMaxLevel" : {
           "value" : 12
         }
@@ -2821,7 +2890,7 @@
       }
     }, {
       "name" : "Heat Shield",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 100.0
@@ -2849,6 +2918,9 @@
         },
         "damageAbsorptionPercent" : {
           "value" : [ 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 15
         },
         "retaliationSlowFireMin" : {
           "value" : [ 1.4, 1.9, 2.5, 3.2, 4.0, 4.9, 6.0, 7.2, 8.5, 9.9, 11.4, 13.0, 14.7, 16.5, 18.4, 20.4 ]
@@ -2893,7 +2965,7 @@
       }
     }, {
       "name" : "Ring of Flame",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 4.0
@@ -2919,6 +2991,9 @@
         "skillTargetRadius" : {
           "value" : [ 1.5, 1.8, 2.0, 2.2, 2.4, 2.6, 2.7, 2.8, 2.9, 3.0, 3.1, 3.3, 3.4, 3.5, 3.6, 3.8 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
+        },
         "skillMaxLevel" : {
           "value" : 12
         }
@@ -2932,7 +3007,7 @@
       }
     } ], [ {
       "name" : "Summon Core Dweller",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 90.0
@@ -2951,6 +3026,9 @@
         },
         "skillConnectionSpacing" : {
           "value" : 62
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
         },
         "skillMaxLevel" : {
           "value" : 16
@@ -3001,7 +3079,7 @@
       }
     }, {
       "name" : "Stone Form",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 6.0
@@ -3027,6 +3105,9 @@
         "damageAbsorptionPercent" : {
           "value" : 100.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 5
+        },
         "skillMaxLevel" : {
           "value" : 12
         }
@@ -3040,7 +3121,7 @@
       }
     } ], [ {
       "name" : "Conflagration",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "offensiveSlowFireDurationMin" : {
           "value" : 3.0
@@ -3057,6 +3138,9 @@
         "offensiveSlowFireMin" : {
           "value" : [ 9.0, 13.3, 17.3, 23.0, 26.5, 30.8, 34.8, 40.0, 44.0, 48.3, 52.3, 58.0, 61.5, 65.8, 70.5 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
+        },
         "skillMaxLevel" : {
           "value" : 8
         }
@@ -3070,7 +3154,7 @@
       }
     }, {
       "name" : "Inner Fire",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillUltimateLevel" : {
           "value" : 12
@@ -3166,7 +3250,7 @@
       }
     } ], [ {
       "name" : "Fragmentation",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "projectileFragmentsLaunchNumberMin" : {
           "value" : [ 3.0, 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 8.0, 8.0 ]
@@ -3205,7 +3289,7 @@
       }
     }, {
       "name" : "Wildfire",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "offensiveSlowFireDurationMin" : {
           "value" : 1.0
@@ -3276,6 +3360,9 @@
         "offensiveFireMin" : {
           "value" : [ 4.0, 5.5, 6.5, 8.5, 10.0, 11.5, 12.5, 14.5, 16.0, 17.5, 19.0, 21.5, 22.5, 24.0, 26.5, 29.5 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 15
+        },
         "skillMaxLevel" : {
           "value" : 12
         }
@@ -3300,6 +3387,9 @@
         "skillUltimateLevel" : {
           "value" : 12
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 15
+        },
         "retaliationFireMin" : {
           "value" : [ 6.0, 10.0, 15.0, 19.0, 23.0, 28.0, 32.0, 36.0, 41.0, 45.0, 49.0, 54.0 ]
         },
@@ -3316,7 +3406,7 @@
       }
     } ], [ {
       "name" : "Volativity",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "offensivePhysicalModifier" : {
           "value" : [ 37.5, 41.5, 46.0, 52.0, 56.0, 60.0, 64.5, 70.5, 74.5, 78.5, 83.0, 89.0, 94.5, 101.5, 109.0, 122.5 ]
@@ -3355,7 +3445,7 @@
       }
     }, {
       "name" : "Metamorphosis",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillUltimateLevel" : {
           "value" : 12
@@ -3368,6 +3458,9 @@
         },
         "characterLife" : {
           "value" : [ 100.0, 150.0, 200.0, 250.0, 300.0, 350.0, 400.0, 450.0, 500.0, 550.0, 600.0, 650.0, 710.0, 790.0, 880.0, 1000.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 30
         },
         "defensiveProtectionModifier" : {
           "value" : [ 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 71.0, 79.0, 88.0, 100.0 ]
@@ -3385,7 +3478,7 @@
       }
     }, {
       "name" : "Eruption",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "projectileFragmentsLaunchNumberMin" : {
           "value" : [ 2.0, 3.0, 3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0 ]
@@ -3433,7 +3526,7 @@
       }
     } ], [ {
       "name" : "Meteor Rain",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "offensiveSlowFireDurationMin" : {
           "value" : 3.0
@@ -3486,7 +3579,7 @@
       "skillIcon" : null
     }, {
       "name" : "Fire Nova",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "offensiveSlowFireDurationMin" : {
           "value" : 3.0
@@ -3554,7 +3647,7 @@
     "name" : "Rogue",
     "skillTiers" : [ [ {
       "name" : "Envenom Weapon",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillWeaponTintBlue" : {
           "value" : 0.25
@@ -3583,6 +3676,9 @@
         "offensiveSlowPoisonDurationMin" : {
           "value" : 3.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
+        },
         "offensiveSlowPoisonMin" : {
           "value" : [ 8.2, 11.2, 14.2, 17.6, 22.2, 27.4, 33.2, 39.8, 47.2, 56.0, 65.8, 76.6, 88.4, 101.4, 115.6, 131.0 ]
         },
@@ -3599,7 +3695,7 @@
       }
     }, {
       "name" : "Calculated Strike",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "projectilePiercingChance" : {
           "value" : 100.0
@@ -3646,6 +3742,9 @@
         "skillChargeDuration" : {
           "value" : 6.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
+        },
         "Spear" : {
           "value" : 1
         }
@@ -3659,7 +3758,7 @@
       }
     }, {
       "name" : "Blade Honing",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillUltimateLevel" : {
           "value" : 10
@@ -3678,6 +3777,9 @@
         },
         "skillTargetRadius" : {
           "value" : 16.0
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
         },
         "skillMaxLevel" : {
           "value" : 6
@@ -3731,7 +3833,7 @@
       }
     }, {
       "name" : "Throwing Knife",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "projectileLaunchNumber" : {
           "value" : 1
@@ -3744,9 +3846,6 @@
         },
         "skillManaCost" : {
           "value" : [ 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0, 28.0, 29.0, 30.0, 31.0, 32.0, 33.0 ]
-        },
-        "skillUltimateLevel" : {
-          "value" : 16
         },
         "projectilePiercingChance" : {
           "value" : 10.0
@@ -3768,6 +3867,12 @@
         },
         "skillMaxLevel" : {
           "value" : 12
+        },
+        "skillUltimateLevel" : {
+          "value" : 16
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 5
         }
       },
       "description" : "Throw a piercing blade at your opponent capable of causing prolonged bleeding.",
@@ -3779,7 +3884,7 @@
       }
     }, {
       "name" : "Flash Powder",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "offensiveConfusionMax" : {
           "value" : 8.0
@@ -3827,7 +3932,7 @@
       }
     }, {
       "name" : "Disarm Traps",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "racialBonusPercentDefense" : {
           "value" : [ 10.0, 20.0, 29.0, 38.0, 46.0, 54.0, 61.0, 68.0, 74.0, 80.0 ]
@@ -3911,7 +4016,7 @@
       }
     }, {
       "name" : "Open Wound",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "offensiveSlowBleedingMin" : {
           "value" : [ 9.0, 16.0, 23.0, 31.0, 39.0, 47.0, 55.0, 64.0, 73.0, 83.0, 92.0, 103.0, 112.0, 123.0, 134.0, 147.0 ]
@@ -3953,7 +4058,7 @@
       }
     }, {
       "name" : "Poison Gas Bomb",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "projectileLaunchNumber" : {
           "value" : 1
@@ -4001,7 +4106,7 @@
       }
     }, {
       "name" : "Lay Trap",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillProjectileMissTimeToLive" : {
           "value" : 30.0
@@ -4047,6 +4152,9 @@
         },
         "skillProjectileNumber" : {
           "value" : 1
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
         }
       },
       "description" : "Drops a mechanical bolt trap that will trip when enemies draw near and rapidly fire out deadly bolts.",
@@ -4069,6 +4177,9 @@
         "skillUltimateLevel" : {
           "value" : 16
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 25
+        },
         "skillMaxLevel" : {
           "value" : 12
         }
@@ -4082,7 +4193,7 @@
       }
     }, {
       "name" : "Lethal Strike",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 12.0
@@ -4123,6 +4234,9 @@
         "skillProjectileNumber" : {
           "value" : 1
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
+        },
         "Spear" : {
           "value" : 1
         }
@@ -4143,6 +4257,9 @@
         },
         "skillUltimateLevel" : {
           "value" : 12
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
         },
         "skillManaCostReduction" : {
           "value" : [ 5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0 ]
@@ -4199,10 +4316,13 @@
       }
     }, {
       "name" : "Anatomy",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillUltimateLevel" : {
           "value" : 12
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 25
         },
         "offensiveSlowBleedingModifier" : {
           "value" : [ 36.0, 48.0, 60.0, 72.0, 84.0, 96.0, 108.0, 120.0, 136.0, 154.0, 175.0, 199.0 ]
@@ -4220,7 +4340,7 @@
       }
     }, {
       "name" : "Shrapnel",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "projectileFragmentsLaunchNumberMin" : {
           "value" : 9
@@ -4303,6 +4423,9 @@
         "skillUltimateLevel" : {
           "value" : 12
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
+        },
         "offensiveSlowBleedingModifier" : {
           "value" : [ 60.0, 95.0, 130.0, 165.0, 200.0, 235.0, 270.0, 305.0, 340.0, 375.0, 410.0, 445.0 ]
         },
@@ -4319,7 +4442,7 @@
       }
     }, {
       "name" : "Improved Firing Mechanism",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "projectilePiercing" : {
           "value" : [ 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0 ]
@@ -4335,6 +4458,9 @@
         },
         "offensivePierceModifier" : {
           "value" : [ 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 75.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 30
         },
         "skillMaxLevel" : {
           "value" : 8
@@ -4384,7 +4510,7 @@
       "skillIcon" : null
     }, {
       "name" : "Blade Barrier",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : [ 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0 ]
@@ -4458,7 +4584,7 @@
     "name" : "Defense",
     "skillTiers" : [ [ {
       "name" : "Armor Handling",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "characterArmorStrengthReqReduction" : {
           "value" : [ 8.0, 10.0, 13.0, 15.0, 17.0, 20.0, 22.0, 24.0, 27.0, 30.0 ]
@@ -4471,6 +4597,9 @@
         },
         "characterShieldStrengthReqReduction" : {
           "value" : [ 8.0, 10.0, 13.0, 15.0, 17.0, 20.0, 22.0, 24.0, 27.0, 30.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
         },
         "skillMaxLevel" : {
           "value" : 6
@@ -4485,7 +4614,7 @@
       }
     }, {
       "name" : "Battle Awareness",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 4.0
@@ -4511,6 +4640,9 @@
         "skillTargetRadius" : {
           "value" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 16.0, 16.0, 16.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
+        },
         "skillMaxLevel" : {
           "value" : 12
         }
@@ -4524,7 +4656,7 @@
       }
     }, {
       "name" : "Batter",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 4.0
@@ -4562,6 +4694,9 @@
         "skillProjectileNumber" : {
           "value" : 1
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
+        },
         "offensiveSlowAttackSpeedDurationMin" : {
           "value" : 8.0
         },
@@ -4578,7 +4713,7 @@
       }
     }, {
       "name" : "Concussive Blow",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "offensiveStunMin" : {
           "value" : [ 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5 ]
@@ -4591,6 +4726,9 @@
         },
         "offensiveStunModifier" : {
           "value" : [ 10.0, 16.0, 23.0, 31.0, 40.0, 50.0, 61.0, 73.0, 86.0, 100.0, 115.0, 130.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
         },
         "skillMaxLevel" : {
           "value" : 8
@@ -4611,7 +4749,7 @@
       }
     } ], [ {
       "name" : "Adrenaline",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : [ 10.0, 10.5, 11.0, 11.5, 12.0, 12.5, 13.0, 13.5, 14.0, 14.5, 15.0, 15.5, 16.0, 16.5, 17.0, 17.5 ]
@@ -4644,7 +4782,7 @@
       }
     }, {
       "name" : "Rally",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 10.0
@@ -4689,7 +4827,7 @@
       }
     }, {
       "name" : "Shield Smash",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillChanceWeight" : {
           "value" : [ 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 17.0, 18.0, 19.0, 20.0 ]
@@ -4718,6 +4856,9 @@
         "meleeOnly" : {
           "value" : 1
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 5
+        },
         "skillMaxLevel" : {
           "value" : 6
         }
@@ -4731,7 +4872,7 @@
       }
     }, {
       "name" : "Quick Recovery",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : [ 18.0, 20.0, 22.0, 25.0, 27.0, 29.0, 31.0, 34.0, 36.0, 38.0, 41.0, 45.0 ]
@@ -4756,6 +4897,9 @@
         },
         "defensiveBlockModifier" : {
           "value" : [ 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 19.0, 21.0, 23.0, 25.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 5
         },
         "characterDefensiveBlockRecoveryReduction" : {
           "value" : [ 25.0, 35.0, 44.0, 52.0, 59.0, 65.0, 70.0, 74.0, 77.0, 79.0, 80.0, 81.0 ]
@@ -4808,6 +4952,9 @@
         "defensiveBlockModifier" : {
           "value" : [ 5.0, 8.0, 10.0, 12.0, 15.0, 18.0, 19.0, 21.0, 23.0, 25.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 5
+        },
         "skillMaxLevel" : {
           "value" : 6
         }
@@ -4821,7 +4968,7 @@
       }
     }, {
       "name" : "Shield Charge",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 12.0
@@ -4867,6 +5014,9 @@
         },
         "skillProjectileNumber" : {
           "value" : 1
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
         }
       },
       "description" : "A running attack that slams into the enemy with your shield causing bonus damage and stunning them.",
@@ -4905,7 +5055,7 @@
       }
     }, {
       "name" : "Disable",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillChanceWeight" : {
           "value" : [ 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 17.0, 18.0, 19.0, 20.0 ]
@@ -4930,6 +5080,9 @@
         },
         "meleeOnly" : {
           "value" : 1
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 15
         },
         "offensiveSlowAttackSpeedDurationMin" : {
           "value" : 5.0
@@ -4963,6 +5116,9 @@
         },
         "skillTargetNumber" : {
           "value" : 3
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 15
         },
         "skillTargetAngle" : {
           "value" : [ 90.0, 95.0, 100.0, 105.0, 110.0, 115.0, 120.0, 125.0, 130.0, 135.0, 140.0, 145.0, 150.0, 155.0, 160.0 ]
@@ -5099,6 +5255,9 @@
         "defensiveReflect" : {
           "value" : [ 5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 30
+        },
         "skillMaxLevel" : {
           "value" : 12
         }
@@ -5112,7 +5271,7 @@
       }
     }, {
       "name" : "Colossus Form",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 24.0
@@ -5163,7 +5322,7 @@
       }
     }, {
       "name" : "Pulverize",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillChanceWeight" : {
           "value" : [ 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 17.0, 18.0, 19.0, 20.0 ]
@@ -5198,6 +5357,9 @@
         "skillProjectileNumber" : {
           "value" : 1
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 20
+        },
         "skillTargetAngle" : {
           "value" : 120.0
         },
@@ -5214,7 +5376,7 @@
       }
     } ], [ {
       "name" : "Unyielding Phalanx",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "spawnObjectsNumberOfRings" : {
           "value" : [ 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 8.0, 8.0, 8.0 ]
@@ -5261,7 +5423,7 @@
       "skillIcon" : null
     }, {
       "name" : "Perfect Block",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 1.1
@@ -5338,7 +5500,7 @@
     "name" : "Dream",
     "skillTiers" : [ [ {
       "name" : "Distortion Wave",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "waveDepth" : {
           "value" : 1.0
@@ -5382,6 +5544,9 @@
         "waveEndWidth" : {
           "value" : 5.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
+        },
         "waveTime" : {
           "value" : 1.0
         },
@@ -5394,7 +5559,7 @@
       "skillIcon" : null
     }, {
       "name" : "Psionic Touch",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "alwaysUseSpecialAnimation" : {
           "value" : 1
@@ -5439,7 +5604,7 @@
       }
     }, {
       "name" : "Sands of Sleep",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 4.0
@@ -5484,7 +5649,7 @@
       }
     } ], [ {
       "name" : "Trance of Empathy",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "exclusiveSkill" : {
           "value" : 1
@@ -5532,7 +5697,7 @@
       }
     }, {
       "name" : "Lucid Dream",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "offensivePhysicalModifier" : {
           "value" : [ 10.0, 12.0, 15.0, 18.0, 21.0, 23.0, 25.0, 28.0, 30.0, 33.0, 36.0, 39.0 ]
@@ -5561,7 +5726,7 @@
       "skillIcon" : null
     }, {
       "name" : "Phantom Strike",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 16.0
@@ -5648,7 +5813,7 @@
       }
     }, {
       "name" : "Psionic Burn",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "offensiveSlowRunSpeedMin" : {
           "value" : [ 9.0, 14.2, 17.5, 21.1, 24.9, 28.9, 33.1, 37.6, 42.4, 47.4, 52.8, 58.4 ]
@@ -5687,7 +5852,7 @@
       }
     }, {
       "name" : "Summon Nightmare",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 60.0
@@ -5788,7 +5953,7 @@
       }
     } ], [ {
       "name" : "Trance of Convalescence",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "exclusiveSkill" : {
           "value" : 1
@@ -5836,7 +6001,7 @@
       }
     }, {
       "name" : "Distort Reality",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 12.0
@@ -5884,7 +6049,7 @@
       }
     }, {
       "name" : "Hypnotic Gaze",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "offensiveTotalResistanceReductionPercentDurationMin" : {
           "value" : [ 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 8.5 ]
@@ -5920,7 +6085,7 @@
       }
     }, {
       "name" : "Distortion Field",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 15.0
@@ -6015,7 +6180,7 @@
       }
     } ], [ {
       "name" : "Trance of Wrath",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillActiveManaCost" : {
           "value" : 1.0
@@ -6111,7 +6276,7 @@
       }
     }, {
       "name" : "Master Mind",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillManaCost" : {
           "value" : 50.0
@@ -6170,7 +6335,7 @@
       "skillIcon" : null
     }, {
       "name" : "Dream Image",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 140.0
@@ -6223,7 +6388,7 @@
     "name" : "Warfare",
     "skillTiers" : [ [ {
       "name" : "Weapon Training",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "characterAttackSpeedModifier" : {
           "value" : [ 5.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 25.0 ]
@@ -6238,6 +6403,9 @@
           "value" : 10
         },
         "Sword" : {
+          "value" : 1
+        },
+        "skillMasteryLevelRequired" : {
           "value" : 1
         },
         "skillMaxLevel" : {
@@ -6259,7 +6427,7 @@
       }
     }, {
       "name" : "Onslaught",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillProjectileSpeedModifier" : {
           "value" : [ 15.0, 24.0, 33.0, 42.0, 51.0, 60.0, 69.0, 78.0, 87.0, 96.0, 105.0, 114.0 ]
@@ -6303,6 +6471,9 @@
         "skillChargeDuration" : {
           "value" : [ 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
+        },
         "Spear" : {
           "value" : 1
         }
@@ -6316,7 +6487,7 @@
       }
     }, {
       "name" : "Battle Rage",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "characterOffensiveAbilityModifier" : {
           "value" : 33.0
@@ -6352,7 +6523,7 @@
       }
     } ], [ {
       "name" : "Dodge Attacks",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillUltimateLevel" : {
           "value" : 12
@@ -6376,7 +6547,7 @@
       }
     }, {
       "name" : "Dual Wield",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillChanceWeight" : {
           "value" : [ 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0 ]
@@ -6448,7 +6619,7 @@
       }
     }, {
       "name" : "War Horn",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 18.0
@@ -6477,6 +6648,9 @@
         "expansionTime" : {
           "value" : 0.05
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 5
+        },
         "skillTargetRadius" : {
           "value" : [ 8.0, 8.4, 8.8, 9.2, 9.6, 10.0, 10.4, 10.8, 11.2, 11.6, 12.0, 12.4, 12.8, 13.2 ]
         },
@@ -6493,7 +6667,7 @@
       }
     } ], [ {
       "name" : "War Wind",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 8.0
@@ -6540,6 +6714,9 @@
         "skillProjectileNumber" : {
           "value" : 1
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 15
+        },
         "skillTargetAngle" : {
           "value" : 360.0
         },
@@ -6556,7 +6733,7 @@
       }
     }, {
       "name" : "Hew",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "offensivePhysicalModifier" : {
           "value" : 50.0
@@ -6612,6 +6789,9 @@
         "offensivePhysicalMax" : {
           "value" : [ 51.0, 76.0, 101.0, 126.0, 151.0, 177.0, 203.0, 229.0, 256.0, 283.0, 310.0, 338.0, 366.0, 394.0, 423.0, 452.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
+        },
         "skillMaxLevel" : {
           "value" : 12
         }
@@ -6625,7 +6805,7 @@
       }
     }, {
       "name" : "Battle Standard",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 60.0
@@ -6658,7 +6838,7 @@
       }
     } ], [ {
       "name" : "Cross Cut",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillChanceWeight" : {
           "value" : [ 3.0, 4.0, 6.0, 7.0, 9.0, 10.0, 11.0, 12.0, 13.0, 15.0 ]
@@ -6692,6 +6872,9 @@
         },
         "skillProjectileNumber" : {
           "value" : 1
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 24
         },
         "dualWieldOnly" : {
           "value" : 1
@@ -6765,6 +6948,9 @@
         "offensiveSlowBleedingDurationMin" : {
           "value" : 3.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 25
+        },
         "skillMaxLevel" : {
           "value" : 8
         },
@@ -6794,6 +6980,9 @@
         },
         "retaliationPhysicalMin" : {
           "value" : [ 54.0, 60.0, 69.0, 75.0, 90.0, 99.0, 105.0, 114.0, 120.0, 135.0, 144.0, 150.0, 159.0, 165.0, 183.0, 195.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 15
         },
         "skillMaxLevel" : {
           "value" : 12
@@ -6850,7 +7039,7 @@
       }
     }, {
       "name" : "Triumph",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "defensiveStun" : {
           "value" : -50.0
@@ -6901,7 +7090,7 @@
       }
     } ], [ {
       "name" : "Tumult",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillChanceWeight" : {
           "value" : [ 3.0, 4.0, 6.0, 7.0, 9.0, 10.0, 11.0, 12.0, 13.0, 15.0 ]
@@ -6938,6 +7127,9 @@
         },
         "skillProjectileNumber" : {
           "value" : 1
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 30
         },
         "dualWieldOnly" : {
           "value" : 1
@@ -6979,7 +7171,7 @@
       }
     }, {
       "name" : "Ancestral Horn",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "petBurstSpawn" : {
           "value" : [ 3.0, 3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0 ]
@@ -7001,6 +7193,9 @@
         },
         "cameraShakeAmplitude" : {
           "value" : 0.12
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 30
         },
         "skillMaxLevel" : {
           "value" : 16
@@ -7032,7 +7227,7 @@
       "skillIcon" : null
     }, {
       "name" : "Slam",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 7.0
@@ -7121,7 +7316,7 @@
     "name" : "Rune",
     "skillTiers" : [ [ {
       "name" : "Life Rune",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "defensiveBleeding" : {
           "value" : [ 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0 ]
@@ -7159,7 +7354,7 @@
       "skillIcon" : null
     }, {
       "name" : "Runeword: Feather",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "characterOffensiveAbility" : {
           "value" : [ 30.0, 45.0, 60.0, 75.0, 90.0, 105.0, 120.0, 135.0, 150.0, 165.0, 180.0, 195.0 ]
@@ -7170,6 +7365,9 @@
         "characterWeaponStrengthReqReduction" : {
           "value" : [ 14.0, 20.0, 26.0, 32.0, 37.0, 42.0, 47.0, 51.0, 55.0, 59.0, 62.0, 65.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
+        },
         "skillMaxLevel" : {
           "value" : 6
         }
@@ -7179,7 +7377,7 @@
       "skillIcon" : null
     }, {
       "name" : "Taunt",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 30.0
@@ -7217,7 +7415,7 @@
       "skillIcon" : null
     }, {
       "name" : "Rune Weapon",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillManaCost" : {
           "value" : 1.0
@@ -7261,6 +7459,9 @@
         "skillChargeDuration" : {
           "value" : [ 2.2, 2.1, 2.0, 1.9, 1.8, 1.7, 1.6, 1.5, 1.4, 1.3, 1.2, 1.1, 1.0, 0.9 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
+        },
         "Spear" : {
           "value" : 1
         },
@@ -7273,7 +7474,7 @@
       "skillIcon" : null
     } ], [ {
       "name" : "Thunder Strike",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 7.0
@@ -7329,6 +7530,9 @@
         "skillProjectileNumber" : {
           "value" : 5
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 15
+        },
         "skillTargetAngle" : {
           "value" : 250.0
         }
@@ -7338,7 +7542,7 @@
       "skillIcon" : null
     }, {
       "name" : "Runic Mines",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 10.0
@@ -7409,7 +7613,7 @@
       "skillIcon" : null
     }, {
       "name" : "Sacred Rage",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "defensiveTotalSpeedResistance" : {
           "value" : 50.0
@@ -7432,6 +7636,9 @@
         "skillCooldownReduction" : {
           "value" : [ 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 12
+        },
         "skillMaxLevel" : {
           "value" : 10
         },
@@ -7447,7 +7654,7 @@
       "skillIcon" : null
     } ], [ {
       "name" : "Unleash",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "offensiveConfusionMax" : {
           "value" : 3.0
@@ -7488,7 +7695,7 @@
       "skillIcon" : null
     }, {
       "name" : "Runeword: Explode",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillChanceWeight" : {
           "value" : [ 4.0, 6.0, 7.0, 9.0, 11.0, 13.0, 14.0, 16.0, 18.0, 20.0, 21.0, 23.0, 25.0, 27.0 ]
@@ -7529,7 +7736,7 @@
       "skillIcon" : null
     }, {
       "name" : "Frightening Power",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "offensiveTotalDamageReductionPercentMin" : {
           "value" : [ 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0 ]
@@ -7573,7 +7780,7 @@
       "skillIcon" : null
     }, {
       "name" : "Menhir Wall",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "spawnObjectsNumberOfRings" : {
           "value" : [ 3.0, 3.0, 4.0, 4.0, 5.0, 5.0, 6.0, 6.0, 7.0, 7.0, 8.0, 8.0, 9.0, 9.0 ]
@@ -7659,7 +7866,7 @@
       "skillIcon" : null
     }, {
       "name" : "Runeword: Burn",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "offensiveSlowFireDurationMin" : {
           "value" : 3.0
@@ -7688,7 +7895,7 @@
       "skillIcon" : null
     }, {
       "name" : "Seal of Fate",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 3.0
@@ -7779,7 +7986,7 @@
       "skillIcon" : null
     }, {
       "name" : "Reckless Offense",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillChanceWeight" : {
           "value" : [ 4.0, 6.0, 7.0, 9.0, 10.0, 12.0, 13.0, 15.0, 16.0, 18.0, 19.0, 21.0, 22.0, 24.0, 25.0, 27.0 ]
@@ -7820,7 +8027,7 @@
       "skillIcon" : null
     }, {
       "name" : "Runeword: Absorb",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "characterEnergyAbsorptionPercent" : {
           "value" : [ 23.0, 34.0, 45.0, 56.0, 67.0, 78.0, 89.0, 100.0, 111.0, 122.0, 133.0, 144.0, 155.0, 166.0 ]
@@ -7855,7 +8062,7 @@
       "skillIcon" : null
     } ], [ {
       "name" : "Transmutation",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillUltimateLevel" : {
           "value" : 10
@@ -7872,7 +8079,7 @@
       "skillIcon" : null
     }, {
       "name" : "Energy Armor",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "defensiveStun" : {
           "value" : 50.0
@@ -7912,6 +8119,9 @@
         },
         "skillTargetRadius" : {
           "value" : 5.0
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 15
         }
       },
       "description" : "Weave vast amounts of Energy into a layer of magical armor that shields you from physical attacks. {^f}PBAoE - should self-target automatically",
@@ -7919,7 +8129,7 @@
       "skillIcon" : null
     }, {
       "name" : "Guardian Stones",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "spawnObjectsNumberOfRings" : {
           "value" : 1
@@ -7964,7 +8174,7 @@
       }
     }, {
       "name" : "Aftershock",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "offensiveSlowBleedingMin" : {
           "value" : [ 22.0, 33.0, 44.0, 55.0, 66.0, 77.0, 88.0, 99.0, 110.0, 121.0, 132.0, 143.0, 154.0, 165.0 ]
@@ -8017,7 +8227,7 @@
       "skillIcon" : null
     } ], [ {
       "name" : "Rune Storm",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 120.0
@@ -8192,7 +8402,7 @@
     "name" : "Hunting",
     "skillTiers" : [ [ {
       "name" : "Wood Lore",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "characterAttackSpeedModifier" : {
           "value" : [ 5.0, 8.0, 12.0, 16.0, 20.0, 24.0, 26.0, 28.0, 30.0, 33.0 ]
@@ -8204,6 +8414,9 @@
           "value" : [ 62.0, 94.0, 126.0, 158.0, 190.0, 222.0, 254.0, 286.0, 318.0, 350.0 ]
         },
         "Bow" : {
+          "value" : 1
+        },
+        "skillMasteryLevelRequired" : {
           "value" : 1
         },
         "skillMaxLevel" : {
@@ -8225,7 +8438,7 @@
       }
     }, {
       "name" : "Ensnare",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : [ 3.0, 4.0, 5.1, 6.3, 7.6, 9.0, 10.5, 11.1, 12.8, 14.6 ]
@@ -8257,6 +8470,9 @@
         "characterRunSpeedModifier" : {
           "value" : -25.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 5
+        },
         "skillMaxLevel" : {
           "value" : 6
         }
@@ -8270,16 +8486,13 @@
       }
     }, {
       "name" : "Take Down",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 8.0
         },
         "skillManaCost" : {
           "value" : [ 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0, 48.0, 50.0, 52.0, 54.0, 56.0, 58.0, 60.0 ]
-        },
-        "skillUltimateLevel" : {
-          "value" : 16
         },
         "skillConnectionSpacing" : {
           "value" : 62
@@ -8290,9 +8503,6 @@
         "characterRunSpeedModifier" : {
           "value" : 300.0
         },
-        "skillProjectileNumber" : {
-          "value" : 1
-        },
         "offensivePierceMin" : {
           "value" : [ 25.0, 36.0, 48.0, 62.0, 72.0, 82.0, 91.0, 103.0, 112.0, 122.0, 131.0, 143.0, 152.0, 162.0, 173.0, 187.0 ]
         },
@@ -8301,6 +8511,15 @@
         },
         "skillMaxLevel" : {
           "value" : 12
+        },
+        "skillUltimateLevel" : {
+          "value" : 16
+        },
+        "skillProjectileNumber" : {
+          "value" : 1
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
         },
         "offensivePercentCurrentLifeMin" : {
           "value" : [ 8.0, 12.0, 15.0, 18.0, 21.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 45.0 ]
@@ -8318,7 +8537,7 @@
       }
     } ], [ {
       "name" : "Art of the Hunt",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 4.0
@@ -8360,7 +8579,7 @@
       }
     }, {
       "name" : "Marksmanship",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillProjectileSpeedModifier" : {
           "value" : [ 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0, 150.0, 160.0, 170.0, 180.0 ]
@@ -8383,6 +8602,9 @@
         "offensivePierceMin" : {
           "value" : [ 4.0, 8.0, 12.0, 16.0, 20.0, 24.0, 28.0, 33.0, 38.0, 43.0, 49.0, 55.0, 61.0, 67.0, 74.0, 81.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
+        },
         "skillMaxLevel" : {
           "value" : 12
         },
@@ -8399,7 +8621,7 @@
       }
     }, {
       "name" : "Herbal Remedy",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : [ 180.0, 240.0, 300.0, 360.0, 420.0, 480.0, 540.0, 600.0, 660.0, 720.0 ]
@@ -8415,6 +8637,9 @@
         },
         "cameraShakeAmplitude" : {
           "value" : 0.12
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 5
         },
         "defensivePoison" : {
           "value" : [ 30.0, 38.0, 46.0, 54.0, 66.0, 72.0, 80.0, 86.0, 92.0, 100.0 ]
@@ -8443,6 +8668,9 @@
         "offensiveSlowBleedingDurationMin" : {
           "value" : 1.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 24
+        },
         "skillMaxLevel" : {
           "value" : 8
         }
@@ -8456,11 +8684,8 @@
       }
     }, {
       "name" : "Call of the Hunt",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
-        "characterAttackSpeedModifier" : {
-          "value" : [ 15.0, 17.0, 19.0, 22.0, 24.0, 26.0, 28.0, 31.0, 33.0, 35.0, 37.0, 40.0 ]
-        },
         "skillActiveDuration" : {
           "value" : [ 28.0, 31.0, 33.0, 36.0, 42.0, 44.0, 47.0, 50.0, 52.0, 58.0, 60.0, 64.0, 66.0, 68.0, 75.0, 77.0, 80.0, 82.0, 84.0, 94.0 ]
         },
@@ -8473,9 +8698,6 @@
         "skillManaCost" : {
           "value" : [ 45.0, 47.0, 49.0, 51.0, 53.0, 55.0, 57.0, 59.0, 61.0, 63.0, 65.0, 67.0 ]
         },
-        "skillUltimateLevel" : {
-          "value" : 12
-        },
         "skillConnectionSpacing" : {
           "value" : 62
         },
@@ -8485,14 +8707,23 @@
         "offensiveSlowBleedingDurationMin" : {
           "value" : 3.0
         },
+        "skillMaxLevel" : {
+          "value" : 8
+        },
+        "characterAttackSpeedModifier" : {
+          "value" : [ 15.0, 17.0, 19.0, 22.0, 24.0, 26.0, 28.0, 31.0, 33.0, 35.0, 37.0, 40.0 ]
+        },
+        "skillUltimateLevel" : {
+          "value" : 12
+        },
         "racialBonusPercentDamage" : {
           "value" : 33.0
         },
         "skillTargetRadius" : {
           "value" : 15.0
         },
-        "skillMaxLevel" : {
-          "value" : 8
+        "skillMasteryLevelRequired" : {
+          "value" : 10
         }
       },
       "description" : "Those who answer the call of the hunt will fight with increased speed and cunning.",
@@ -8534,7 +8765,7 @@
       }
     }, {
       "name" : "Monster Lure",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 12.0
@@ -8556,6 +8787,9 @@
         },
         "skillConnectionSpacing" : {
           "value" : 62
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 5
         },
         "skillMaxLevel" : {
           "value" : 6
@@ -8594,16 +8828,10 @@
       }
     }, {
       "name" : "Study Prey",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 8.0
-        },
-        "debufSkill" : {
-          "value" : 1
-        },
-        "defensivePhysical" : {
-          "value" : [ -21.0, -26.0, -30.0, -34.0, -38.0, -42.0, -46.0, -50.0, -54.0, -58.0, -62.0, -66.0 ]
         },
         "skillCooldownTime" : {
           "value" : 8.0
@@ -8611,26 +8839,35 @@
         "skillManaCost" : {
           "value" : 35.0
         },
-        "skillUltimateLevel" : {
-          "value" : 12
-        },
         "skillConnectionSpacing" : {
           "value" : 62
         },
         "cameraShakeAmplitude" : {
           "value" : 0.12
         },
-        "excludeRacialDamage" : {
-          "value" : 1
-        },
         "defensivePierce" : {
           "value" : [ -21.0, -25.0, -29.0, -33.0, -38.0, -42.0, -46.0, -50.0, -54.0, -58.0, -62.0, -66.0 ]
+        },
+        "skillMaxLevel" : {
+          "value" : 8
+        },
+        "debufSkill" : {
+          "value" : 1
+        },
+        "defensivePhysical" : {
+          "value" : [ -21.0, -26.0, -30.0, -34.0, -38.0, -42.0, -46.0, -50.0, -54.0, -58.0, -62.0, -66.0 ]
+        },
+        "skillUltimateLevel" : {
+          "value" : 12
+        },
+        "excludeRacialDamage" : {
+          "value" : 1
         },
         "skillTargetRadius" : {
           "value" : 6.0
         },
-        "skillMaxLevel" : {
-          "value" : 8
+        "skillMasteryLevelRequired" : {
+          "value" : 1
         }
       },
       "description" : "By observing your prey from a distance you may discover its weakness, resulting in greater pierce damage.",
@@ -8659,6 +8896,9 @@
         "Bow" : {
           "value" : 1
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
+        },
         "offensiveSlowBleedingModifier" : {
           "value" : [ 9.0, 12.0, 15.0, 20.0, 23.0, 27.0, 30.0, 35.0, 38.0, 42.0, 45.0, 50.0 ]
         },
@@ -8675,7 +8915,7 @@
       }
     }, {
       "name" : "Gouge",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillChanceWeight" : {
           "value" : [ 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 17.0, 18.0, 19.0, 20.0 ]
@@ -8697,6 +8937,9 @@
         },
         "Bow" : {
           "value" : 1
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 5
         },
         "skillMaxLevel" : {
           "value" : 6
@@ -8752,6 +8995,9 @@
         "offensivePierceModifier" : {
           "value" : [ 58.0, 66.0, 77.0, 85.0, 93.0, 104.0, 112.0, 120.0, 131.0, 139.0, 147.0, 158.0, 166.0, 174.0, 185.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
+        },
         "offensiveSlowBleedingModifier" : {
           "value" : [ 58.0, 66.0, 77.0, 85.0, 93.0, 104.0, 112.0, 120.0, 131.0, 139.0, 147.0, 158.0, 166.0, 174.0, 185.0 ]
         },
@@ -8771,7 +9017,7 @@
       }
     }, {
       "name" : "Detonate",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "projectileLaunchNumber" : {
           "value" : 1
@@ -8858,7 +9104,7 @@
       }
     }, {
       "name" : "Scatter Shot Arrows",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "projectileFragmentsLaunchNumberMin" : {
           "value" : [ 3.0, 3.0, 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 8.0 ]
@@ -8884,6 +9130,9 @@
         "Bow" : {
           "value" : 1
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 25
+        },
         "skillMaxLevel" : {
           "value" : 12
         }
@@ -8897,7 +9146,7 @@
       }
     }, {
       "name" : "Volley",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillChanceWeight" : {
           "value" : [ 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 17.0, 18.0, 19.0, 20.0 ]
@@ -8913,6 +9162,9 @@
         },
         "Bow" : {
           "value" : 1
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 25
         },
         "skillMaxLevel" : {
           "value" : 6
@@ -8959,7 +9211,7 @@
       "skillIcon" : null
     }, {
       "name" : "Spear Dance",
-      "parent" : "Vanilla",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 18.0
@@ -9028,6 +9280,8 @@
     }
   } ],
   "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Vanilla.html",
+  "masteryLevels" : [ 1, 4, 10, 16, 24, 32, 40 ],
+  "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/",
   "mappedMasteries" : {
     "1" : "Nature",
     "2" : "Spirit",
@@ -9039,7 +9293,5 @@
     "8" : "Warfare",
     "9" : "Rune",
     "10" : "Hunting"
-  },
-  "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/",
-  "masteryLevels" : [ 1, 4, 10, 16, 24, 32, 40 ]
+  }
 }

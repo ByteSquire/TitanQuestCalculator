@@ -4,7 +4,7 @@
     "name" : "Nature",
     "skillTiers" : [ [ {
       "name" : "Regrowth",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 8.0
@@ -24,6 +24,9 @@
         "skillConnectionSpacing" : {
           "value" : 62
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
+        },
         "skillMaxLevel" : {
           "value" : 16
         }
@@ -37,7 +40,7 @@
       }
     }, {
       "name" : "Call of the Wild",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 16.0
@@ -57,6 +60,9 @@
         "skillConnectionSpacing" : {
           "value" : 62
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
+        },
         "skillMaxLevel" : {
           "value" : 16
         }
@@ -70,7 +76,7 @@
       }
     }, {
       "name" : "Elemental Flurry",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillProjectileSpeedModifier" : {
           "value" : 50.0
@@ -114,6 +120,9 @@
         "skillProjectileNumber" : {
           "value" : 1
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
+        },
         "characterPhysToElementalRatio" : {
           "value" : [ 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0, 35.0, 37.0, 39.0, 41.0, 43.0, 45.0, 47.0 ]
         },
@@ -141,6 +150,9 @@
         "skillCooldownReduction" : {
           "value" : [ 18.0, 26.0, 34.0, 42.0, 50.0, 57.0, 63.0, 68.0, 72.0, 75.0, 78.0, 80.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
+        },
         "skillMaxLevel" : {
           "value" : 8
         }
@@ -154,7 +166,7 @@
       }
     }, {
       "name" : "Heart of Oak",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "characterLifeModifier" : {
           "value" : [ 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0 ]
@@ -177,6 +189,9 @@
         "skillTargetRadius" : {
           "value" : 18.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
+        },
         "skillMaxLevel" : {
           "value" : 12
         },
@@ -193,7 +208,7 @@
       }
     }, {
       "name" : "Plague",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "contagionLimit" : {
           "value" : 2
@@ -256,7 +271,7 @@
       }
     }, {
       "name" : "Survival Instinct",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "offensivePhysicalModifier" : {
           "value" : [ 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0, 90.0, 95.0, 100.0, 105.0, 110.0 ]
@@ -272,6 +287,9 @@
         },
         "damageAbsorptionPercent" : {
           "value" : [ 35.5, 38.0, 40.5, 43.0, 45.5, 48.0, 50.5, 53.0, 55.5, 58.0, 60.5, 63.0, 65.5, 68.0, 70.5, 75.0, 77.5, 79.0, 81.5, 85.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 6
         },
         "skillMaxLevel" : {
           "value" : 16
@@ -289,7 +307,7 @@
       }
     } ], [ {
       "name" : "Quill Ward",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "spawnObjectsNumberOfRings" : {
           "value" : 1
@@ -337,7 +355,7 @@
       }
     }, {
       "name" : "Maul",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "offensiveSlowBleedingMin" : {
           "value" : [ 6.72, 10.08, 13.32, 17.16, 20.88, 24.84, 28.68, 33.12, 36.84, 40.8, 45.0, 49.8, 53.88, 58.44, 62.88, 67.92 ]
@@ -379,7 +397,7 @@
       }
     }, {
       "name" : "Elemental Burst",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillUltimateLevel" : {
           "value" : 16
@@ -412,7 +430,7 @@
       }
     } ], [ {
       "name" : "Dissemination",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillLifeBonus" : {
           "value" : [ 180.0, 260.0, 350.0, 440.0, 540.0, 640.0, 750.0, 860.0, 980.0, 1110.0, 1250.0, 1400.0, 1560.0, 1730.0, 1960.0, 2220.0 ]
@@ -425,6 +443,9 @@
         },
         "sparkChance" : {
           "value" : 100.0
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
         },
         "sparkMaxNumber" : {
           "value" : 7
@@ -442,7 +463,7 @@
       }
     }, {
       "name" : "Poisonous Quills",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillProjectileMissTimeToLive" : {
           "value" : 30.0
@@ -519,6 +540,9 @@
         "isPetDisplayable" : {
           "value" : 1
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 18
+        },
         "offensivePercentCurrentLifeChance" : {
           "value" : 5.0
         },
@@ -544,7 +568,7 @@
       }
     }, {
       "name" : "Sylvan Nymph",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 60.0
@@ -570,6 +594,9 @@
         "skillProjectileNumber" : {
           "value" : 1
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 15
+        },
         "skillMaxLevel" : {
           "value" : 16
         }
@@ -591,6 +618,9 @@
         "skillUltimateLevel" : {
           "value" : 10
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 15
+        },
         "skillManaCostReduction" : {
           "value" : [ 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0 ]
         },
@@ -607,7 +637,7 @@
       }
     }, {
       "name" : "Strength of the Pack",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "offensivePhysicalModifier" : {
           "value" : [ 15.0, 20.0, 24.0, 30.0, 34.0, 39.0, 43.0, 49.0, 53.0, 58.0, 62.0, 68.0, 72.0, 77.0, 82.0, 90.0 ]
@@ -652,7 +682,7 @@
       }
     }, {
       "name" : "Nature's Blessing",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : [ 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0 ]
@@ -703,7 +733,7 @@
       }
     } ], [ {
       "name" : "Sanctuary",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 18.0
@@ -753,6 +783,9 @@
         "defensiveElementalResistance" : {
           "value" : [ 5.0, 8.0, 10.0, 12.0, 15.0, 18.0, 21.0, 25.0, 28.0, 31.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 15
+        },
         "skillMaxLevel" : {
           "value" : 6
         }
@@ -780,6 +813,9 @@
         "defensiveElementalResistance" : {
           "value" : [ -12.0, -15.0, -19.0, -24.0, -27.0, -30.0, -34.0, -39.0, -42.0, -45.0, -49.0, -54.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 18
+        },
         "defensivePoison" : {
           "value" : [ -12.0, -15.0, -19.0, -24.0, -27.0, -30.0, -34.0, -39.0, -42.0, -45.0, -49.0, -54.0 ]
         },
@@ -796,7 +832,7 @@
       }
     }, {
       "name" : "Sylvan Protection",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "offensiveSlowRunSpeedMin" : {
           "value" : 75.0
@@ -862,7 +898,7 @@
       }
     } ], [ {
       "name" : "Overgrowth",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillManaCost" : {
           "value" : 10.0
@@ -895,7 +931,7 @@
       }
     }, {
       "name" : "Earthbind",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "offensiveSlowRunSpeedMin" : {
           "value" : 66.0
@@ -955,7 +991,7 @@
       }
     }, {
       "name" : "Force of Nature",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 360.0
@@ -977,6 +1013,9 @@
         },
         "skillConnectionSpacing" : {
           "value" : 62
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
         },
         "skillMaxLevel" : {
           "value" : 16
@@ -1021,7 +1060,7 @@
     "name" : "Spirit",
     "skillTiers" : [ [ {
       "name" : "Deathchill Aura",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 1.0
@@ -1072,7 +1111,7 @@
       }
     }, {
       "name" : "Bone Spire",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "projectileLaunchNumber" : {
           "value" : 1
@@ -1120,7 +1159,7 @@
       }
     }, {
       "name" : "Skeletal Soldier",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 8.0
@@ -1153,7 +1192,7 @@
       }
     }, {
       "name" : "Vision of Death",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "offensiveTotalDamageReductionPercentMin" : {
           "value" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 18.0 ]
@@ -1197,6 +1236,9 @@
         "expansionTime" : {
           "value" : 0.2
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 5
+        },
         "skillTargetRadius" : {
           "value" : 8.0
         }
@@ -1210,7 +1252,7 @@
       }
     }, {
       "name" : "Life Drain",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 6.0
@@ -1255,7 +1297,7 @@
       }
     } ], [ {
       "name" : "Insidious Miasma",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "defensiveSlowManaLeach" : {
           "value" : [ -20.0, -24.0, -28.0, -32.0, -36.0, -40.0, -44.0, -48.0, -52.0, -56.0, -60.0, -64.0 ]
@@ -1309,7 +1351,7 @@
       }
     }, {
       "name" : "Ternion Attack",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillManaCost" : {
           "value" : [ 30.0, 31.0, 31.0, 32.0, 32.0, 33.0, 33.0, 34.0, 34.0, 35.0, 35.0, 36.0, 36.0, 37.0, 37.0, 38.0 ]
@@ -1338,6 +1380,9 @@
         "offensiveTotalDamageModifier" : {
           "value" : [ -75.0, -70.0, -65.0, -60.0, -55.0, -50.0, -45.0, -40.0, -35.0, -30.0, -25.0, -20.0, -15.0, -10.0, -5.0, 0.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
+        },
         "skillMaxLevel" : {
           "value" : 12
         }
@@ -1351,7 +1396,7 @@
       }
     }, {
       "name" : "Spirit Lure",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "petBurstSpawn" : {
           "value" : 1
@@ -1380,6 +1425,9 @@
         "skillProjectileNumber" : {
           "value" : 1
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 5
+        },
         "skillMaxLevel" : {
           "value" : 8
         }
@@ -1393,7 +1441,7 @@
       }
     }, {
       "name" : "Spirit Ward",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "racialBonusPercentDefense" : {
           "value" : [ 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0 ]
@@ -1497,7 +1545,7 @@
       }
     }, {
       "name" : "Cascade",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillUltimateLevel" : {
           "value" : 14
@@ -1571,7 +1619,7 @@
       "skillIcon" : null
     }, {
       "name" : "Dark Covenant",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillActiveLifeCost" : {
           "value" : [ 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0 ]
@@ -1616,7 +1664,7 @@
       }
     }, {
       "name" : "Bone Fiend",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 14.0
@@ -1665,6 +1713,9 @@
         },
         "Staff" : {
           "value" : 1
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
         },
         "offensiveSlowBleedingModifier" : {
           "value" : [ 18.0, 26.0, 34.0, 42.0, 50.0, 58.0, 66.0, 74.0, 82.0, 90.0 ]
@@ -1721,7 +1772,7 @@
       }
     }, {
       "name" : "Liche King",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 60.0
@@ -1740,6 +1791,9 @@
         },
         "skillConnectionSpacing" : {
           "value" : 62
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 15
         },
         "skillMaxLevel" : {
           "value" : 16
@@ -1790,7 +1844,7 @@
       }
     }, {
       "name" : "Relentless Evil",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "offensivePhysicalModifier" : {
           "value" : [ 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0, 35.0 ]
@@ -1832,7 +1886,7 @@
       }
     } ], [ {
       "name" : "Death Nova",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 12.0
@@ -1883,7 +1937,7 @@
       }
     }, {
       "name" : "Circle of Power",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 60.0
@@ -1922,7 +1976,7 @@
       }
     }, {
       "name" : "Death Ward",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 3.0
@@ -1979,7 +2033,7 @@
       }
     } ], [ {
       "name" : "Soul Vortex",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "defensiveSlowManaLeach" : {
           "value" : 100.0
@@ -2069,7 +2123,7 @@
       }
     }, {
       "name" : "Wraith Shell",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "defensivePhysical" : {
           "value" : 33.0
@@ -2092,6 +2146,9 @@
         "damageAbsorptionPercent" : {
           "value" : [ 19.0, 24.0, 28.0, 33.0, 38.0, 42.0, 47.0, 51.0, 56.0, 61.0, 65.0, 70.0, 74.0, 79.0, 84.0, 88.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 20
+        },
         "skillMaxLevel" : {
           "value" : 12
         }
@@ -2105,7 +2162,7 @@
       }
     }, {
       "name" : "Outsider",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 360.0
@@ -2138,7 +2195,7 @@
       }
     }, {
       "name" : "Soul Drain",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillUltimateLevel" : {
           "value" : 10
@@ -2216,7 +2273,7 @@
     "name" : "Storm",
     "skillTiers" : [ [ {
       "name" : "Ice Orb",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "projectileLaunchNumber" : {
           "value" : 1
@@ -2254,6 +2311,9 @@
         "offensiveColdMax" : {
           "value" : [ 13.375, 17.75, 22.125, 26.5, 30.875, 35.25, 39.625, 44.0, 48.375, 52.75, 57.125, 64.875, 69.25, 73.625, 78.0, 85.75 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
+        },
         "offensiveSlowTotalSpeedDurationMin" : {
           "value" : 2.0
         }
@@ -2267,7 +2327,7 @@
       }
     }, {
       "name" : "Storm Nimbus",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillUltimateLevel" : {
           "value" : 14
@@ -2312,7 +2372,7 @@
       }
     }, {
       "name" : "Thunderball",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "offensiveStunMin" : {
           "value" : [ 1.5, 1.8, 2.1, 2.4, 2.7, 3.0, 3.3, 3.7, 4.0, 4.3, 4.6, 5.0 ]
@@ -2354,7 +2414,7 @@
       }
     }, {
       "name" : "Arctic Shell",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillUltimateLevel" : {
           "value" : 14
@@ -2459,7 +2519,7 @@
       }
     }, {
       "name" : "Storm Surge",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : [ 8.0, 7.7, 7.4, 7.1, 6.8, 6.5, 6.2, 5.9, 5.6, 5.3, 5.0, 4.7, 4.4, 4.1, 3.8, 3.5 ]
@@ -2555,7 +2615,7 @@
       }
     }, {
       "name" : "Freezing Blast",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : [ 3.0, 3.2, 3.4, 3.6, 3.8, 4.0, 4.2, 4.6, 4.8, 5.0, 5.2, 5.5 ]
@@ -2636,7 +2696,7 @@
       }
     }, {
       "name" : "Concussive Blast",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "projectileFragmentsLaunchNumberMin" : {
           "value" : [ 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 7.0, 7.0, 8.0 ]
@@ -2675,7 +2735,7 @@
       }
     }, {
       "name" : "Flash Freeze",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "retaliationSlowColdMin" : {
           "value" : [ 5.0, 7.0, 8.0, 9.0, 10.0, 12.0, 13.0, 14.0, 16.0, 17.0, 18.0, 20.0, 21.0, 22.0 ]
@@ -2722,6 +2782,9 @@
         "characterManaRegen" : {
           "value" : [ 20.0, 26.0, 32.0, 38.0, 44.0, 50.0, 56.0, 62.0, 68.0, 74.0, 80.0, 86.0, 92.0, 98.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 5
+        },
         "retaliationSlowRunSpeedDurationMin" : {
           "value" : 3.0
         },
@@ -2738,7 +2801,7 @@
       }
     } ], [ {
       "name" : "Lightning Bolt",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 12.0
@@ -2819,7 +2882,7 @@
       }
     }, {
       "name" : "Squall",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "offensiveSlowRunSpeedMin" : {
           "value" : [ 10.0, 13.0, 16.0, 19.0, 22.0, 25.0, 28.0, 31.0, 34.0, 37.0, 40.0, 43.0, 46.0, 49.0, 52.0, 55.0 ]
@@ -2912,7 +2975,7 @@
       }
     } ], [ {
       "name" : "Energy Shield",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : [ 90.0, 88.0, 86.0, 84.0, 82.0, 80.0, 78.0, 76.0, 74.0, 72.0, 70.0, 68.0, 66.0, 64.0, 62.0, 60.0 ]
@@ -2955,6 +3018,9 @@
         },
         "skillTargetRadius" : {
           "value" : 8.0
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 15
         }
       },
       "description" : "Creates a shield of energy that will nullify incoming damage from cold and lightning attacks.",
@@ -2966,7 +3032,7 @@
       }
     }, {
       "name" : "Lightning Dash",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 0.7
@@ -3032,7 +3098,7 @@
       }
     }, {
       "name" : "Storm Wisp",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 20.0
@@ -3052,6 +3118,9 @@
         "skillConnectionSpacing" : {
           "value" : 62
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 20
+        },
         "skillMaxLevel" : {
           "value" : 16
         }
@@ -3065,7 +3134,7 @@
       }
     }, {
       "name" : "Ice Burst",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillUltimateLevel" : {
           "value" : 12
@@ -3084,6 +3153,9 @@
         },
         "offensiveSlowColdDurationMin" : {
           "value" : 3.0
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 5
         },
         "skillTargetRadius" : {
           "value" : 5.0
@@ -3114,6 +3186,9 @@
         "skillCooldownReduction" : {
           "value" : [ 4.25, 5.0, 5.75, 6.5, 7.25, 8.0, 8.75, 9.5, 10.25, 11.0, 11.75, 12.5 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 25
+        },
         "characterManaRegenModifier" : {
           "value" : [ 48.0, 60.0, 72.0, 84.0, 96.0, 108.0, 120.0, 132.0, 144.0, 156.0, 168.0, 180.0 ]
         },
@@ -3130,7 +3205,7 @@
       }
     }, {
       "name" : "Thunder Clouds",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "offensiveTotalDamageReductionPercentMin" : {
           "value" : [ 12.5, 15.0, 17.5, 20.0, 22.5, 25.0, 27.5, 30.0, 32.5, 35.0, 37.5, 40.0 ]
@@ -3178,7 +3253,7 @@
       }
     }, {
       "name" : "Frost Nova",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 15.0
@@ -3274,7 +3349,7 @@
       }
     }, {
       "name" : "Chain Lightning",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "offensiveLightningModifier" : {
           "value" : [ 170.0, 192.0, 214.0, 236.0, 258.0, 280.0, 302.0, 324.0, 346.0, 368.0, 390.0, 412.0, 434.0, 456.0, 478.0, 500.0 ]
@@ -3322,7 +3397,7 @@
       }
     }, {
       "name" : "Eye of the Storm",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "defensiveLightning" : {
           "value" : [ 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0 ]
@@ -3402,7 +3477,7 @@
     "name" : "Earth",
     "skillTiers" : [ [ {
       "name" : "Flame Surge",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "projectileLaunchNumber" : {
           "value" : 3
@@ -3416,15 +3491,6 @@
         "offensiveSlowDefensiveAbilityDurationMin" : {
           "value" : 3.0
         },
-        "skillUltimateLevel" : {
-          "value" : 16
-        },
-        "projectileLaunchRotation" : {
-          "value" : 20.0
-        },
-        "offensiveFireMax" : {
-          "value" : [ 15.0, 18.0, 22.0, 27.0, 31.0, 34.0, 38.0, 43.0, 47.0, 50.0, 54.0, 59.0, 63.0, 66.0, 70.0, 75.0 ]
-        },
         "skillConnectionSpacing" : {
           "value" : 62
         },
@@ -3434,11 +3500,23 @@
         "offensiveSlowDefensiveAbilityMin" : {
           "value" : [ 5.0, 8.0, 11.0, 14.0, 17.0, 20.0, 23.0, 26.0, 29.0, 32.0, 35.0, 38.0, 41.0, 44.0, 47.0, 50.0 ]
         },
+        "skillMaxLevel" : {
+          "value" : 12
+        },
+        "skillUltimateLevel" : {
+          "value" : 16
+        },
+        "projectileLaunchRotation" : {
+          "value" : 20.0
+        },
+        "offensiveFireMax" : {
+          "value" : [ 15.0, 18.0, 22.0, 27.0, 31.0, 34.0, 38.0, 43.0, 47.0, 50.0, 54.0, 59.0, 63.0, 66.0, 70.0, 75.0 ]
+        },
         "offensiveFireMin" : {
           "value" : [ 8.0, 11.0, 13.0, 17.0, 20.0, 23.0, 25.0, 29.0, 32.0, 35.0, 38.0, 43.0, 45.0, 48.0, 53.0, 59.0 ]
         },
-        "skillMaxLevel" : {
-          "value" : 12
+        "skillMasteryLevelRequired" : {
+          "value" : 1
         }
       },
       "description" : "Three jets of flame erupt from the caster's hands each inflicting incinerating fire damage to enemies.",
@@ -3450,16 +3528,10 @@
       }
     }, {
       "name" : "Earth Enchantment",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 2.0
-        },
-        "skillUltimateLevel" : {
-          "value" : 16
-        },
-        "skillWeaponTintGreen" : {
-          "value" : 0.1
         },
         "characterManaLimitReserve" : {
           "value" : 50.0
@@ -3479,14 +3551,23 @@
         "cameraShakeAmplitude" : {
           "value" : 0.12
         },
+        "skillMaxLevel" : {
+          "value" : 12
+        },
+        "skillUltimateLevel" : {
+          "value" : 16
+        },
+        "skillWeaponTintGreen" : {
+          "value" : 0.1
+        },
         "offensiveFireMin" : {
           "value" : [ 5.0, 8.0, 11.0, 14.0, 17.0, 20.0, 23.0, 26.0, 29.0, 32.0, 35.0, 41.0, 45.0, 49.0, 54.0, 60.0 ]
         },
         "skillTargetRadius" : {
           "value" : [ 7.0, 7.4, 7.8, 8.2, 8.6, 9.0, 9.4, 9.8, 10.2, 10.6, 11.0, 11.4, 11.8, 12.2, 12.6, 13.0 ]
         },
-        "skillMaxLevel" : {
-          "value" : 12
+        "skillMasteryLevelRequired" : {
+          "value" : 1
         }
       },
       "description" : "Imbues your weapons and the weapons of nearby allies with the power of rock and flame.",
@@ -3498,7 +3579,7 @@
       }
     }, {
       "name" : "Ring of Flame",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "offensiveSlowFireDurationMin" : {
           "value" : 3.0
@@ -3506,17 +3587,11 @@
         "skillCooldownTime" : {
           "value" : 3.0
         },
-        "skillUltimateLevel" : {
-          "value" : 16
-        },
         "offensiveSlowFireMax" : {
           "value" : [ 5.06, 8.855, 12.65, 16.445, 21.505, 26.565, 31.625, 36.685, 43.01, 49.335, 58.19, 70.84, 93.61, 116.38, 144.21, 174.57 ]
         },
         "skillActiveManaCost" : {
           "value" : [ 1.0, 1.2, 1.4, 1.6, 1.8, 2.0, 2.2, 2.4, 2.6, 2.8, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0 ]
-        },
-        "offensiveSlowFireDurationMax" : {
-          "value" : 4.0
         },
         "skillConnectionSpacing" : {
           "value" : 62
@@ -3524,17 +3599,26 @@
         "cameraShakeAmplitude" : {
           "value" : 0.12
         },
-        "excludeRacialDamage" : {
-          "value" : 1
-        },
         "offensiveSlowFireMin" : {
           "value" : [ 1.8, 3.15, 4.5, 5.85, 7.65, 9.45, 11.25, 13.05, 15.3, 17.55, 20.7, 25.2, 33.3, 41.4, 51.3, 62.1 ]
+        },
+        "skillMaxLevel" : {
+          "value" : 12
+        },
+        "skillUltimateLevel" : {
+          "value" : 16
+        },
+        "offensiveSlowFireDurationMax" : {
+          "value" : 4.0
+        },
+        "excludeRacialDamage" : {
+          "value" : 1
         },
         "skillTargetRadius" : {
           "value" : [ 1.5, 1.8, 2.0, 2.2, 2.4, 2.6, 2.7, 2.8, 2.9, 3.0, 3.1, 3.3, 3.4, 3.5, 3.6, 3.8 ]
         },
-        "skillMaxLevel" : {
-          "value" : 12
+        "skillMasteryLevelRequired" : {
+          "value" : 10
         }
       },
       "description" : "Encircles you in a searing ring of flames burning all enemies that come within its radius.",
@@ -3546,7 +3630,7 @@
       }
     }, {
       "name" : "Rupture",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillManaCost" : {
           "value" : [ 16.5, 18.0, 19.5, 21.0, 22.5, 24.0, 25.5, 27.0, 28.5, 30.0, 31.5, 33.0, 34.5, 36.0, 37.5, 40.0 ]
@@ -3575,6 +3659,9 @@
         "skillProjectileNumber" : {
           "value" : 1
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
+        },
         "skillMaxLevel" : {
           "value" : 12
         }
@@ -3584,7 +3671,7 @@
       "skillIcon" : null
     } ], [ {
       "name" : "Volcanic Orb",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 4.0
@@ -3616,6 +3703,9 @@
         "offensiveFireMin" : {
           "value" : [ 25.0, 31.0, 37.0, 43.0, 49.0, 55.0, 61.0, 67.0, 73.0, 79.0, 85.0, 91.0, 97.0, 103.0, 109.0, 115.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
+        },
         "skillMaxLevel" : {
           "value" : 12
         }
@@ -3629,7 +3719,7 @@
       }
     }, {
       "name" : "Heat Shield",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : [ 90.0, 88.0, 86.0, 84.0, 82.0, 80.0, 78.0, 76.0, 74.0, 72.0, 70.0, 68.0, 66.0, 64.0, 62.0, 60.0 ]
@@ -3666,6 +3756,9 @@
         },
         "damageAbsorption" : {
           "value" : [ 520.0, 740.0, 960.0, 1180.0, 1400.0, 1620.0, 1840.0, 2060.0, 2280.0, 2500.0, 2720.0, 2940.0, 3160.0, 3380.0, 3600.0, 3820.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 15
         },
         "retaliationSlowFireMin" : {
           "value" : [ 3.1, 3.9, 4.8, 5.8, 6.9, 8.1, 9.5, 11.0, 12.6, 14.3, 16.1, 18.0, 20.0, 22.1, 24.3, 26.6 ]
@@ -3713,7 +3806,7 @@
       }
     } ], [ {
       "name" : "Core Dweller",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 90.0
@@ -3732,6 +3825,9 @@
         },
         "skillConnectionSpacing" : {
           "value" : 62
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
         },
         "skillMaxLevel" : {
           "value" : 16
@@ -3883,7 +3979,7 @@
       "skillIcon" : null
     } ], [ {
       "name" : "Conflagration",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "offensiveSlowFireDurationMin" : {
           "value" : 3.0
@@ -3900,6 +3996,9 @@
         "offensiveSlowFireMin" : {
           "value" : [ 9.0, 13.3, 17.3, 23.0, 26.5, 30.8, 34.8, 40.0, 44.0, 48.3, 52.3, 58.0, 61.5, 65.8, 70.5 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
+        },
         "skillMaxLevel" : {
           "value" : 8
         }
@@ -3913,7 +4012,7 @@
       }
     }, {
       "name" : "Inner Fire",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "characterAttackSpeedModifier" : {
           "value" : [ 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0 ]
@@ -3979,7 +4078,7 @@
       }
     }, {
       "name" : "Stone Form",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 6.0
@@ -4008,6 +4107,9 @@
         "damageAbsorptionPercent" : {
           "value" : 100.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 5
+        },
         "retaliationFireMin" : {
           "value" : [ 9.625, 16.5, 23.375, 30.25, 37.125, 44.0, 50.875, 57.75, 64.625, 71.5, 78.375, 85.25 ]
         },
@@ -4024,7 +4126,7 @@
       }
     } ], [ {
       "name" : "Fragmentation",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "projectileFragmentsLaunchNumberMin" : {
           "value" : [ 3.0, 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 8.0, 8.0 ]
@@ -4063,7 +4165,7 @@
       }
     }, {
       "name" : "Fracture",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "offensiveSlowFireDurationMin" : {
           "value" : 3.0
@@ -4161,6 +4263,9 @@
         "offensiveFireMin" : {
           "value" : [ 4.0, 5.5, 6.5, 8.5, 10.0, 11.5, 12.5, 14.5, 16.0, 17.5, 19.0, 21.5, 22.5, 24.0, 26.5, 29.5 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 15
+        },
         "skillMaxLevel" : {
           "value" : 12
         }
@@ -4174,7 +4279,7 @@
       }
     }, {
       "name" : "Spontaneous Combustion",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "offensiveStunMin" : {
           "value" : 1.0
@@ -4248,6 +4353,9 @@
         "offensiveProjectileFumbleMin" : {
           "value" : 66.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 15
+        },
         "offensiveSlowFireModifier" : {
           "value" : [ 23.0, 30.0, 37.0, 44.0, 51.0, 58.0, 65.0, 72.0, 79.0, 86.0, 93.0, 100.0 ]
         },
@@ -4260,7 +4368,7 @@
       "skillIcon" : null
     } ], [ {
       "name" : "Metamorphosis",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "defensivePhysical" : {
           "value" : [ 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 18.0, 19.0, 20.0, 21.0, 24.0 ]
@@ -4280,6 +4388,9 @@
         "offensiveTotalDamageModifier" : {
           "value" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 30
+        },
         "defensiveProtectionModifier" : {
           "value" : [ 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 71.0, 79.0, 88.0, 100.0 ]
         },
@@ -4296,7 +4407,7 @@
       }
     }, {
       "name" : "Fire Nova",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "offensiveSlowFireDurationMin" : {
           "value" : 3.0
@@ -4347,7 +4458,7 @@
       }
     }, {
       "name" : "Eruption",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "projectileFragmentsLaunchNumberMin" : {
           "value" : [ 2.0, 3.0, 3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0 ]
@@ -4395,7 +4506,7 @@
       }
     } ], [ {
       "name" : "Volatility",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "offensivePhysicalModifier" : {
           "value" : [ 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 70.0, 75.0, 80.0, 90.0, 100.0 ]
@@ -4437,7 +4548,7 @@
       }
     }, {
       "name" : "Molten Lava",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "offensiveSlowFireDurationMin" : {
           "value" : 5.0
@@ -4491,7 +4602,7 @@
       }
     }, {
       "name" : "Meteor",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "offensiveSlowFireDurationMin" : {
           "value" : 5.0
@@ -4593,7 +4704,7 @@
     "name" : "Occult",
     "skillTiers" : [ [ {
       "name" : "Envenom Weapon",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillWeaponTintBlue" : {
           "value" : 0.25
@@ -4646,6 +4757,9 @@
         "offensiveSlowPoisonDurationMin" : {
           "value" : 3.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
+        },
         "offensiveSlowPoisonMin" : {
           "value" : [ 3.6, 4.5, 5.4, 7.2, 9.0, 11.7, 14.4, 18.0, 21.6, 26.1, 30.6, 36.0, 41.4, 47.7, 54.0, 61.2 ]
         },
@@ -4662,7 +4776,7 @@
       }
     }, {
       "name" : "Calculated Strike",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : [ 6.0, 5.75, 5.5, 5.25, 5.0, 4.75, 4.5, 4.0, 3.25, 2.5, 1.75, 1.0 ]
@@ -4739,6 +4853,9 @@
         "offensiveProjectileFumbleDurationMin" : {
           "value" : 3.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
+        },
         "Spear" : {
           "value" : 1
         }
@@ -4752,7 +4869,7 @@
       }
     }, {
       "name" : "Agility",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "characterSpellCastSpeedModifier" : {
           "value" : [ 22.0, 30.0, 38.0, 46.0, 54.0, 65.0, 73.0, 81.0, 89.0, 100.0 ]
@@ -4782,14 +4899,8 @@
       }
     } ], [ {
       "name" : "Shadow Link",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
-        "skillActiveLifeCost" : {
-          "value" : [ 1.0, 1.0, 1.0, 1.2, 1.2, 1.2, 1.5, 1.5, 1.5, 1.9, 1.9, 2.0, 3.5, 5.0, 8.5, 12.0 ]
-        },
-        "skillUltimateLevel" : {
-          "value" : 16
-        },
         "defensiveLife" : {
           "value" : [ -5.0, -8.0, -11.0, -14.0, -17.0, -20.0, -23.0, -26.0, -29.0, -32.0, -35.0, -38.0, -41.0, -44.0, -47.0, -50.0 ]
         },
@@ -4802,20 +4913,29 @@
         "offensiveSlowLifeMin" : {
           "value" : [ 2.5, 3.4, 4.5, 5.7, 7.0, 8.5, 10.1, 11.9, 13.8, 15.9, 18.2, 20.6, 23.3, 26.1, 29.1, 32.3 ]
         },
+        "skillMaxLevel" : {
+          "value" : 12
+        },
+        "offensiveSlowLifeDurationMin" : {
+          "value" : 5.0
+        },
+        "skillActiveLifeCost" : {
+          "value" : [ 1.0, 1.0, 1.0, 1.2, 1.2, 1.2, 1.5, 1.5, 1.5, 1.9, 1.9, 2.0, 3.5, 5.0, 8.5, 12.0 ]
+        },
+        "skillUltimateLevel" : {
+          "value" : 16
+        },
         "characterManaRegen" : {
           "value" : [ 1.0, 1.0, 1.0, 1.2, 1.2, 1.2, 1.5, 1.5, 1.5, 1.9, 1.9, 2.0, 3.5, 5.0, 8.5, 18.0 ]
         },
         "skillTargetRadius" : {
           "value" : 5.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 5
+        },
         "offensiveLifeLeechMin" : {
           "value" : [ 1.2, 1.4, 1.6, 1.8, 2.0, 2.2, 2.4, 2.6, 2.8, 3.0, 3.2, 3.4, 4.6, 5.8, 7.0, 9.2 ]
-        },
-        "skillMaxLevel" : {
-          "value" : 12
-        },
-        "offensiveSlowLifeDurationMin" : {
-          "value" : 5.0
         },
         "offensivePierceRatioModifier" : {
           "value" : [ 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0, 90.0 ]
@@ -4830,7 +4950,7 @@
       }
     }, {
       "name" : "Throwing Knife",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "projectileLaunchNumber" : {
           "value" : 1
@@ -4843,9 +4963,6 @@
         },
         "skillManaCost" : {
           "value" : [ 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0, 28.0, 29.0, 30.0, 31.0, 32.0, 33.0 ]
-        },
-        "skillUltimateLevel" : {
-          "value" : 16
         },
         "projectilePiercingChance" : {
           "value" : 10.0
@@ -4867,6 +4984,12 @@
         },
         "skillMaxLevel" : {
           "value" : 12
+        },
+        "skillUltimateLevel" : {
+          "value" : 16
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 5
         }
       },
       "description" : "Throw a piercing blade at your opponent capable of causing prolonged bleeding.",
@@ -4878,7 +5001,7 @@
       }
     }, {
       "name" : "Flash Powder",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "offensiveConfusionMax" : {
           "value" : 8.0
@@ -4926,7 +5049,7 @@
       }
     }, {
       "name" : "Disarm Traps",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "racialBonusPercentDefense" : {
           "value" : [ 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ]
@@ -4979,7 +5102,7 @@
       }
     }, {
       "name" : "Blade Fury",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillChanceWeight" : {
           "value" : [ 12.0, 12.0, 13.0, 14.0, 14.0, 15.0, 16.0, 17.0, 17.0, 18.0, 19.0, 20.0 ]
@@ -5036,7 +5159,7 @@
       }
     }, {
       "name" : "Dual Blade Proficiency",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "characterOffensiveAbilityModifier" : {
           "value" : [ 5.0, 7.0, 9.0, 10.0, 12.0, 14.0, 16.0, 18.0, 19.0, 21.0, 23.0, 25.0 ]
@@ -5075,7 +5198,7 @@
       }
     }, {
       "name" : "Smoke Screen",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillProjectileMissTimeToLive" : {
           "value" : 30.0
@@ -5135,7 +5258,7 @@
       }
     }, {
       "name" : "Shadow Rifts",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "petBurstSpawn" : {
           "value" : [ 3.0, 3.0, 3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 6.0, 6.0 ]
@@ -5209,7 +5332,7 @@
       }
     }, {
       "name" : "Toxic Concoction",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "projectileFragmentsLaunchNumberMin" : {
           "value" : [ 6.0, 7.0, 7.0, 8.0, 8.0, 9.0, 9.0, 10.0, 10.0, 11.0, 11.0, 12.0 ]
@@ -5266,7 +5389,7 @@
       }
     }, {
       "name" : "Dual Ranged Proficiency",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillProjectileSpeedModifier" : {
           "value" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0 ]
@@ -5341,7 +5464,7 @@
       }
     }, {
       "name" : "Nether Strike",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 14.0
@@ -5394,6 +5517,9 @@
         "skillProjectileNumber" : {
           "value" : 1
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
+        },
         "Spear" : {
           "value" : 1
         }
@@ -5407,7 +5533,7 @@
       }
     }, {
       "name" : "Poisonous Gas",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "projectileFragmentsLaunchNumberMin" : {
           "value" : [ 3.0, 4.0, 4.0, 5.0, 5.0, 6.0, 6.0, 7.0, 7.0, 8.0, 8.0, 9.0 ]
@@ -5569,7 +5695,7 @@
       }
     }, {
       "name" : "Blade Barrier",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : [ 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0 ]
@@ -5629,7 +5755,7 @@
       }
     }, {
       "name" : "Shadow Stalker",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 60.0
@@ -5697,6 +5823,9 @@
         "offensiveSlowLifeModifier" : {
           "value" : [ 60.0, 95.0, 130.0, 165.0, 200.0, 235.0, 270.0, 305.0, 340.0, 375.0, 410.0, 445.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
+        },
         "offensiveSlowBleedingModifier" : {
           "value" : [ 60.0, 95.0, 130.0, 165.0, 200.0, 235.0, 270.0, 305.0, 340.0, 375.0, 410.0, 445.0 ]
         },
@@ -5713,7 +5842,7 @@
       }
     }, {
       "name" : "Aphotic Ichor",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "offensiveTotalDamageReductionPercentMin" : {
           "value" : [ 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0, 35.0, 37.0, 39.0, 41.0, 43.0, 45.0 ]
@@ -5767,7 +5896,7 @@
       }
     }, {
       "name" : "Channel",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "characterSpellCastSpeedModifier" : {
           "value" : [ 14.0, 17.0, 20.0, 23.0, 26.0, 29.0, 32.0, 35.0, 38.0, 41.0, 44.0, 47.0 ]
@@ -5824,7 +5953,7 @@
       }
     }, {
       "name" : "Shadow Bolts",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 5.0
@@ -5917,7 +6046,7 @@
     "name" : "Defense",
     "skillTiers" : [ [ {
       "name" : "Armor Handling",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "characterArmorStrengthReqReduction" : {
           "value" : [ 8.0, 10.0, 13.0, 15.0, 17.0, 20.0, 22.0, 24.0, 27.0, 30.0 ]
@@ -5930,6 +6059,9 @@
         },
         "characterShieldStrengthReqReduction" : {
           "value" : [ 8.0, 10.0, 13.0, 15.0, 17.0, 20.0, 22.0, 24.0, 27.0, 30.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
         },
         "skillMaxLevel" : {
           "value" : 6
@@ -5944,7 +6076,7 @@
       }
     }, {
       "name" : "Rally",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 10.0
@@ -5989,7 +6121,7 @@
       }
     }, {
       "name" : "Batter",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : [ 4.0, 3.9, 3.8, 3.7, 3.6, 3.5, 3.4, 3.3, 3.2, 3.1, 3.0, 2.9 ]
@@ -6030,6 +6162,9 @@
         "skillProjectileNumber" : {
           "value" : 1
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
+        },
         "skillTargetAngle" : {
           "value" : 195.0
         },
@@ -6049,7 +6184,7 @@
       }
     }, {
       "name" : "Concussive Blow",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "offensiveStunMin" : {
           "value" : [ 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5 ]
@@ -6062,6 +6197,9 @@
         },
         "offensiveStunModifier" : {
           "value" : [ 7.0, 14.0, 21.0, 28.0, 35.0, 42.0, 49.0, 56.0, 63.0, 70.0, 77.0, 84.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
         },
         "skillMaxLevel" : {
           "value" : 8
@@ -6079,7 +6217,7 @@
       }
     } ], [ {
       "name" : "Adrenaline",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 10.0
@@ -6112,7 +6250,7 @@
       }
     }, {
       "name" : "Battle Awareness",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 4.0
@@ -6138,6 +6276,9 @@
         "skillTargetRadius" : {
           "value" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 16.0, 16.0, 16.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
+        },
         "defensiveProtectionModifier" : {
           "value" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ]
         },
@@ -6154,13 +6295,16 @@
       }
     }, {
       "name" : "Hack",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillUltimateLevel" : {
           "value" : 12
         },
         "offensivePierceMin" : {
           "value" : [ 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 30.0, 35.0, 40.0, 45.0, 50.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
         },
         "skillMaxLevel" : {
           "value" : 8
@@ -6181,12 +6325,15 @@
       }
     }, {
       "name" : "Shield Training",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillUltimateLevel" : {
           "value" : 12
         },
         "Shield" : {
+          "value" : 1
+        },
+        "skillMasteryLevelRequired" : {
           "value" : 1
         },
         "characterDefensiveBlockRecoveryReduction" : {
@@ -6221,6 +6368,9 @@
         },
         "defensiveBlockModifier" : {
           "value" : [ 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 19.0, 21.0, 23.0, 25.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 5
         },
         "characterDefensiveBlockRecoveryReduction" : {
           "value" : [ 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0, 51.0, 54.0 ]
@@ -6265,7 +6415,7 @@
       }
     }, {
       "name" : "Shield Smash",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillChanceWeight" : {
           "value" : [ 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 17.0, 18.0, 19.0, 20.0 ]
@@ -6293,6 +6443,9 @@
         },
         "meleeOnly" : {
           "value" : 1
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 5
         },
         "skillMaxLevel" : {
           "value" : 6
@@ -6323,6 +6476,9 @@
         },
         "skillTargetNumber" : {
           "value" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0, 3.0, 3.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 15
         },
         "skillMaxLevel" : {
           "value" : 12
@@ -6378,6 +6534,9 @@
         "defensiveBlockModifier" : {
           "value" : [ 5.0, 8.0, 10.0, 12.0, 15.0, 18.0, 19.0, 21.0, 23.0, 25.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 5
+        },
         "skillMaxLevel" : {
           "value" : 6
         }
@@ -6391,7 +6550,7 @@
       }
     }, {
       "name" : "Shield Charge",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 12.0
@@ -6437,6 +6596,9 @@
         },
         "skillProjectileNumber" : {
           "value" : 1
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
         }
       },
       "description" : "A running attack that slams into the enemy with your shield causing bonus damage and stunning them.",
@@ -6462,6 +6624,9 @@
         "defensiveReflect" : {
           "value" : [ 5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 30
+        },
         "skillMaxLevel" : {
           "value" : 12
         }
@@ -6475,7 +6640,7 @@
       }
     }, {
       "name" : "Disable",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillChanceWeight" : {
           "value" : [ 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 17.0, 18.0, 19.0, 20.0 ]
@@ -6500,6 +6665,9 @@
         },
         "meleeOnly" : {
           "value" : 1
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 15
         },
         "offensiveSlowAttackSpeedDurationMin" : {
           "value" : 5.0
@@ -6559,7 +6727,7 @@
       }
     }, {
       "name" : "Cleave",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillChanceWeight" : {
           "value" : [ 8.0, 9.0, 9.0, 10.0, 10.0, 11.0, 11.0, 12.0, 13.0, 14.0, 14.0, 15.0 ]
@@ -6575,6 +6743,9 @@
         },
         "skillProjectileNumber" : {
           "value" : 1
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 15
         },
         "skillTargetAngle" : {
           "value" : 45.0
@@ -6667,7 +6838,7 @@
       }
     }, {
       "name" : "Heave",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillChanceWeight" : {
           "value" : [ 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 16.0, 17.0, 18.0, 19.0, 20.0 ]
@@ -6708,6 +6879,9 @@
         "skillProjectileNumber" : {
           "value" : 1
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
+        },
         "offensiveTauntMin" : {
           "value" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ]
         },
@@ -6724,7 +6898,7 @@
       }
     } ], [ {
       "name" : "Colossus Form",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 30.0
@@ -6778,7 +6952,7 @@
       }
     }, {
       "name" : "Pulverize",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillChanceWeight" : {
           "value" : [ 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 17.0, 18.0, 19.0, 20.0 ]
@@ -6813,6 +6987,9 @@
         "skillProjectileNumber" : {
           "value" : 1
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 20
+        },
         "skillTargetAngle" : {
           "value" : 120.0
         },
@@ -6829,7 +7006,7 @@
       }
     }, {
       "name" : "Perfect Block",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 2.0
@@ -6892,7 +7069,7 @@
       }
     }, {
       "name" : "Unyielding Phalanx",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "spawnObjectsNumberOfRings" : {
           "value" : [ 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 8.0, 8.0, 8.0 ]
@@ -6976,7 +7153,7 @@
     "name" : "Dream",
     "skillTiers" : [ [ {
       "name" : "Distortion Wave",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "waveDepth" : {
           "value" : 1.0
@@ -7020,6 +7197,9 @@
         "waveEndWidth" : {
           "value" : 5.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
+        },
         "waveTime" : {
           "value" : 1.0
         },
@@ -7032,7 +7212,7 @@
       "skillIcon" : null
     }, {
       "name" : "Psionic Touch",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "alwaysUseSpecialAnimation" : {
           "value" : 1
@@ -7077,7 +7257,7 @@
       }
     }, {
       "name" : "Premonition",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "characterOffensiveAbility" : {
           "value" : [ 31.0, 47.0, 63.0, 79.0, 95.0, 111.0, 127.0, 143.0, 159.0, 175.0 ]
@@ -7097,7 +7277,7 @@
       "skillIcon" : null
     }, {
       "name" : "Sands of Sleep",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 4.0
@@ -7142,7 +7322,7 @@
       }
     } ], [ {
       "name" : "Trance of Empathy",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillActiveManaCost" : {
           "value" : 1.0
@@ -7220,7 +7400,7 @@
       }
     }, {
       "name" : "Mind Breaker",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : [ 16.0, 15.75, 15.5, 15.25, 15.0, 14.75, 14.5, 14.25, 14.0, 13.75, 13.5, 13.25, 13.0, 12.75, 12.5, 12.25 ]
@@ -7306,7 +7486,7 @@
       }
     }, {
       "name" : "Phantom Strike",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 16.0
@@ -7393,7 +7573,7 @@
       }
     }, {
       "name" : "Distortion Field",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 15.0
@@ -7432,7 +7612,7 @@
       }
     } ], [ {
       "name" : "Trance of Convalescence",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "exclusiveSkill" : {
           "value" : 1
@@ -7480,7 +7660,7 @@
       }
     }, {
       "name" : "Psionic Burn",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillUltimateLevel" : {
           "value" : 12
@@ -7561,7 +7741,7 @@
       }
     }, {
       "name" : "Nightmare",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 60.0
@@ -7593,7 +7773,7 @@
       "skillIcon" : null
     } ], [ {
       "name" : "Distort Reality",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 16.0
@@ -7670,7 +7850,7 @@
       "skillIcon" : null
     }, {
       "name" : "Temporal Flux",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillUltimateLevel" : {
           "value" : 10
@@ -7694,7 +7874,7 @@
       }
     } ], [ {
       "name" : "Trance of Wrath",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillActiveManaCost" : {
           "value" : 1.0
@@ -7748,7 +7928,7 @@
       }
     }, {
       "name" : "Lucid Dream",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "offensivePhysicalModifier" : {
           "value" : [ 15.0, 19.0, 23.0, 27.0, 31.0, 35.0, 39.0, 45.0, 48.0, 51.0, 55.0, 60.0 ]
@@ -7777,7 +7957,7 @@
       "skillIcon" : null
     }, {
       "name" : "Dream Surge",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "offensiveConfusionMax" : {
           "value" : 9.0
@@ -7898,7 +8078,7 @@
       "skillIcon" : null
     }, {
       "name" : "Phantasm",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 180.0
@@ -7940,7 +8120,7 @@
       }
     }, {
       "name" : "Dream Image",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 140.0
@@ -8009,7 +8189,7 @@
     "name" : "Warfare",
     "skillTiers" : [ [ {
       "name" : "Dual Wield",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "offensivePhysicalModifier" : {
           "value" : [ 20.0, 23.0, 26.0, 29.0, 32.0, 38.0, 41.0, 44.0, 47.0, 55.0 ]
@@ -8054,7 +8234,7 @@
       }
     }, {
       "name" : "Onslaught",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillManaCost" : {
           "value" : 0.5
@@ -8104,6 +8284,9 @@
         "skillChargeDuration" : {
           "value" : [ 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
+        },
         "Spear" : {
           "value" : 1
         }
@@ -8117,7 +8300,7 @@
       }
     }, {
       "name" : "Weapon Training",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "characterAttackSpeedModifier" : {
           "value" : [ 5.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 25.0 ]
@@ -8132,6 +8315,9 @@
           "value" : 10
         },
         "Sword" : {
+          "value" : 1
+        },
+        "skillMasteryLevelRequired" : {
           "value" : 1
         },
         "skillMaxLevel" : {
@@ -8153,7 +8339,7 @@
       }
     } ], [ {
       "name" : "War Dance",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 12.0
@@ -8200,6 +8386,9 @@
         "skillProjectileNumber" : {
           "value" : 1
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 15
+        },
         "skillTargetAngle" : {
           "value" : 360.0
         },
@@ -8216,7 +8405,7 @@
       }
     }, {
       "name" : "Parry",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "Mace" : {
           "value" : 1
@@ -8273,7 +8462,7 @@
       }
     }, {
       "name" : "Battle Rage",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "characterOffensiveAbilityModifier" : {
           "value" : [ 12.5, 15.0, 17.5, 20.0, 22.5, 25.0, 27.5, 30.0, 32.5, 35.0, 37.5, 40.0, 42.5, 45.0, 47.5, 50.0 ]
@@ -8315,7 +8504,7 @@
       }
     }, {
       "name" : "Slam",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 14.0
@@ -8386,7 +8575,7 @@
       "skillIcon" : null
     } ], [ {
       "name" : "Hew",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillChanceWeight" : {
           "value" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 15.0 ]
@@ -8434,7 +8623,7 @@
       }
     }, {
       "name" : "War Horn",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "offensiveStunMin" : {
           "value" : [ 1.0, 1.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 4.0, 5.0 ]
@@ -8460,6 +8649,9 @@
         "cameraShakeAmplitude" : {
           "value" : 0.12
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 5
+        },
         "skillTargetRadius" : {
           "value" : [ 8.0, 8.4, 8.8, 9.2, 9.6, 10.0, 10.4, 10.8, 11.2, 11.6, 12.0, 12.4, 12.8, 13.2 ]
         },
@@ -8476,7 +8668,7 @@
       }
     }, {
       "name" : "Battle Standard",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 60.0
@@ -8551,7 +8743,7 @@
       }
     }, {
       "name" : "Cross Cut",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillChanceWeight" : {
           "value" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 15.0 ]
@@ -8573,6 +8765,9 @@
         },
         "skillProjectileNumber" : {
           "value" : 1
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 24
         },
         "dualWieldOnly" : {
           "value" : 1
@@ -8616,6 +8811,9 @@
         "offensivePhysicalMax" : {
           "value" : [ 51.0, 76.0, 101.0, 126.0, 151.0, 177.0, 203.0, 229.0, 256.0, 283.0, 310.0, 338.0, 366.0, 394.0, 423.0, 452.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
+        },
         "skillMaxLevel" : {
           "value" : 8
         },
@@ -8632,7 +8830,7 @@
       }
     }, {
       "name" : "Lineal Chains",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 6.0
@@ -8777,6 +8975,9 @@
         "retaliationPhysicalMin" : {
           "value" : [ 54.0, 60.0, 69.0, 75.0, 90.0, 99.0, 105.0, 114.0, 120.0, 135.0, 144.0, 150.0, 159.0, 165.0, 183.0, 195.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 15
+        },
         "characterDefensiveAbilityModifier" : {
           "value" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0 ]
         },
@@ -8796,7 +8997,7 @@
       }
     } ], [ {
       "name" : "Tumult",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillChanceWeight" : {
           "value" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 15.0 ]
@@ -8818,6 +9019,9 @@
         },
         "skillProjectileNumber" : {
           "value" : 1
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 30
         },
         "dualWieldOnly" : {
           "value" : 1
@@ -8841,7 +9045,7 @@
       }
     }, {
       "name" : "Triumph",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "offensivePhysicalModifier" : {
           "value" : [ -14.5, -18.0, -21.5, -25.0, -28.5, -32.0, -35.5, -39.0, -42.5, -46.0, -49.5, -53.0, -56.5, -60.0 ]
@@ -8882,7 +9086,7 @@
       "skillIcon" : null
     }, {
       "name" : "Doom Bond",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "offensiveSlowDefensiveReductionDurationMin" : {
           "value" : 6.0
@@ -8921,7 +9125,7 @@
       }
     }, {
       "name" : "Ancestral Horn",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "petBurstSpawn" : {
           "value" : [ 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0 ]
@@ -8944,6 +9148,9 @@
         "cameraShakeAmplitude" : {
           "value" : 0.12
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 30
+        },
         "skillMaxLevel" : {
           "value" : 16
         }
@@ -8957,7 +9164,7 @@
       }
     } ], [ {
       "name" : "Double Helix",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillChanceWeight" : {
           "value" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 15.0 ]
@@ -9160,7 +9367,7 @@
     "name" : "Runes",
     "skillTiers" : [ [ {
       "name" : "Rune Weapon",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillManaCost" : {
           "value" : 1.0
@@ -9204,6 +9411,9 @@
         "skillChargeDuration" : {
           "value" : [ 2.2, 2.1, 2.0, 1.9, 1.8, 1.7, 1.6, 1.5, 1.4, 1.3, 1.2, 1.1, 1.0, 0.9 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
+        },
         "Spear" : {
           "value" : 1
         },
@@ -9216,7 +9426,7 @@
       "skillIcon" : null
     }, {
       "name" : "Runeword: Feather",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "characterOffensiveAbility" : {
           "value" : [ 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0 ]
@@ -9227,6 +9437,9 @@
         "characterWeaponStrengthReqReduction" : {
           "value" : [ 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
+        },
         "skillMaxLevel" : {
           "value" : 8
         }
@@ -9236,7 +9449,7 @@
       "skillIcon" : null
     }, {
       "name" : "Rune of Life",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "defensiveBleeding" : {
           "value" : [ 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0 ]
@@ -9277,7 +9490,7 @@
       "skillIcon" : null
     } ], [ {
       "name" : "Thunder Strike",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 7.0
@@ -9333,6 +9546,9 @@
         "skillProjectileNumber" : {
           "value" : 4
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 15
+        },
         "skillTargetAngle" : {
           "value" : 250.0
         }
@@ -9365,7 +9581,7 @@
       "skillIcon" : null
     }, {
       "name" : "Sacred Rage",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "defensiveTotalSpeedResistance" : {
           "value" : 50.0
@@ -9388,6 +9604,9 @@
         "skillCooldownReduction" : {
           "value" : [ 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 12
+        },
         "skillMaxLevel" : {
           "value" : 10
         },
@@ -9403,7 +9622,7 @@
       "skillIcon" : null
     } ], [ {
       "name" : "Menhir Wall",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "spawnObjectsNumberOfRings" : {
           "value" : [ 3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 8.0, 8.0, 8.0, 9.0, 9.0 ]
@@ -9454,7 +9673,7 @@
       }
     }, {
       "name" : "Unleash",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "offensiveConfusionMax" : {
           "value" : 3.0
@@ -9495,7 +9714,7 @@
       "skillIcon" : null
     }, {
       "name" : "Runic Mines",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 10.0
@@ -9546,7 +9765,7 @@
       }
     }, {
       "name" : "Runeword: Explode",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillChanceWeight" : {
           "value" : [ 4.0, 6.0, 7.0, 9.0, 11.0, 13.0, 14.0, 16.0, 18.0, 20.0, 21.0, 23.0, 25.0, 27.0 ]
@@ -9622,7 +9841,7 @@
       "skillIcon" : null
     }, {
       "name" : "Runeword: Burn",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "offensiveSlowFireDurationMin" : {
           "value" : 3.0
@@ -9651,7 +9870,7 @@
       "skillIcon" : null
     }, {
       "name" : "Rune of Elements",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillUltimateLevel" : {
           "value" : 14
@@ -9678,7 +9897,7 @@
       }
     }, {
       "name" : "Dazzling Power",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "offensiveTotalDamageReductionPercentMin" : {
           "value" : [ 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0 ]
@@ -9722,7 +9941,7 @@
       "skillIcon" : null
     } ], [ {
       "name" : "Runic Golem",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "spawnObjectsNumberOfRings" : {
           "value" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0 ]
@@ -9807,7 +10026,7 @@
       "skillIcon" : null
     }, {
       "name" : "Seal of Fate",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 3.0
@@ -9902,7 +10121,7 @@
       }
     }, {
       "name" : "Transmutation",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillUltimateLevel" : {
           "value" : 10
@@ -9919,7 +10138,7 @@
       "skillIcon" : null
     }, {
       "name" : "Reckless Offense",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillChanceWeight" : {
           "value" : [ 4.0, 6.0, 7.0, 9.0, 10.0, 12.0, 13.0, 15.0, 16.0, 18.0, 19.0, 21.0, 22.0, 24.0, 25.0, 27.0 ]
@@ -9960,7 +10179,7 @@
       "skillIcon" : null
     }, {
       "name" : "Runeword: Absorb",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "characterEnergyAbsorptionPercent" : {
           "value" : [ 23.0, 34.0, 45.0, 56.0, 67.0, 78.0, 89.0, 100.0, 111.0, 122.0, 133.0, 144.0, 155.0, 166.0 ]
@@ -9995,7 +10214,7 @@
       "skillIcon" : null
     } ], [ {
       "name" : "Guardian Stones",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "spawnObjectsNumberOfRings" : {
           "value" : 1
@@ -10040,7 +10259,7 @@
       }
     }, {
       "name" : "Rune Storm",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 120.0
@@ -10162,7 +10381,7 @@
       "skillIcon" : null
     }, {
       "name" : "Energy Armor",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "defensiveStun" : {
           "value" : 50.0
@@ -10209,7 +10428,7 @@
       "skillIcon" : null
     }, {
       "name" : "Aftershock",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "offensiveSlowBleedingMin" : {
           "value" : [ 22.0, 33.0, 44.0, 55.0, 66.0, 77.0, 88.0, 99.0, 110.0, 121.0, 132.0, 143.0, 154.0, 165.0 ]
@@ -10304,7 +10523,7 @@
     "name" : "Hunting",
     "skillTiers" : [ [ {
       "name" : "Wood Lore",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "characterAttackSpeedModifier" : {
           "value" : [ 5.0, 8.0, 12.0, 16.0, 20.0, 24.0, 26.0, 28.0, 30.0, 33.0 ]
@@ -10319,6 +10538,9 @@
           "value" : 62
         },
         "Bow" : {
+          "value" : 1
+        },
+        "skillMasteryLevelRequired" : {
           "value" : 1
         },
         "characterDefensiveAbilityModifier" : {
@@ -10343,19 +10565,13 @@
       }
     }, {
       "name" : "Take Down",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
-        "offensivePhysicalModifier" : {
-          "value" : [ 26.0, 29.0, 32.0, 35.0, 38.0, 41.0, 44.0, 47.0, 50.0, 53.0, 56.0, 61.0, 64.0, 67.0, 70.0, 75.0 ]
-        },
         "skillCooldownTime" : {
           "value" : 8.0
         },
         "skillManaCost" : {
           "value" : [ 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0, 48.0, 50.0, 52.0, 54.0, 56.0, 58.0, 60.0 ]
-        },
-        "skillUltimateLevel" : {
-          "value" : 16
         },
         "skillConnectionSpacing" : {
           "value" : 62
@@ -10366,14 +10582,23 @@
         "characterRunSpeedModifier" : {
           "value" : 200.0
         },
-        "skillProjectileNumber" : {
-          "value" : 1
-        },
         "skillAllowsWarmUp" : {
           "value" : 1
         },
         "skillMaxLevel" : {
           "value" : 12
+        },
+        "offensivePhysicalModifier" : {
+          "value" : [ 26.0, 29.0, 32.0, 35.0, 38.0, 41.0, 44.0, 47.0, 50.0, 53.0, 56.0, 61.0, 64.0, 67.0, 70.0, 75.0 ]
+        },
+        "skillUltimateLevel" : {
+          "value" : 16
+        },
+        "skillProjectileNumber" : {
+          "value" : 1
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
         },
         "offensivePercentCurrentLifeMin" : {
           "value" : [ 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0 ]
@@ -10391,7 +10616,7 @@
       }
     }, {
       "name" : "Ensnare",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : [ 2.5, 3.3, 4.1, 4.9, 5.7, 6.5, 7.3, 8.1, 8.9, 10.0 ]
@@ -10423,6 +10648,9 @@
         "offensivePierceMin" : {
           "value" : [ 8.0, 13.0, 18.0, 23.0, 28.0, 33.0, 38.0, 43.0, 49.0, 56.0, 64.0, 75.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 5
+        },
         "skillMaxLevel" : {
           "value" : 6
         }
@@ -10436,7 +10664,7 @@
       }
     } ], [ {
       "name" : "Art of the Hunt",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 4.0
@@ -10481,7 +10709,7 @@
       }
     }, {
       "name" : "Marksmanship",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillProjectileSpeedModifier" : {
           "value" : [ 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0, 150.0, 160.0, 170.0, 180.0 ]
@@ -10507,6 +10735,9 @@
         "offensivePierceMin" : {
           "value" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 25.0, 28.0, 32.0, 36.0, 40.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
+        },
         "skillMaxLevel" : {
           "value" : 12
         },
@@ -10526,7 +10757,7 @@
       }
     }, {
       "name" : "Herbalism",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "offensiveSlowPoisonDurationModifier" : {
           "value" : [ 24.0, 32.0, 40.0, 48.0, 56.0, 66.0, 74.0, 82.0, 90.0, 100.0 ]
@@ -10536,6 +10767,9 @@
         },
         "characterLifeRegen" : {
           "value" : [ 3.0, 3.6, 4.2, 4.8, 5.4, 6.0, 6.6, 7.2, 7.8, 8.4 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 5
         },
         "defensivePoison" : {
           "value" : [ 28.0, 36.0, 44.0, 52.0, 60.0, 68.0, 76.0, 84.0, 92.0, 100.0 ]
@@ -10553,13 +10787,10 @@
       }
     } ], [ {
       "name" : "Call of the Hunt",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "characterOffensiveAbility" : {
           "value" : [ 10.0, 20.0, 30.0, 40.0, 55.0, 70.0, 85.0, 100.0, 115.0, 130.0, 145.0, 160.0 ]
-        },
-        "characterAttackSpeedModifier" : {
-          "value" : [ 15.0, 17.0, 19.0, 22.0, 24.0, 26.0, 28.0, 31.0, 33.0, 35.0, 37.0, 40.0 ]
         },
         "skillActiveDuration" : {
           "value" : [ 28.0, 31.0, 33.0, 36.0, 42.0, 44.0, 47.0, 50.0, 52.0, 58.0, 60.0, 64.0, 66.0, 68.0, 75.0, 77.0, 80.0, 82.0, 84.0, 94.0 ]
@@ -10573,9 +10804,6 @@
         "skillManaCost" : {
           "value" : [ 45.0, 47.0, 49.0, 51.0, 53.0, 55.0, 57.0, 59.0, 61.0, 63.0, 65.0, 67.0 ]
         },
-        "skillUltimateLevel" : {
-          "value" : 12
-        },
         "skillConnectionSpacing" : {
           "value" : 62
         },
@@ -10585,11 +10813,20 @@
         "offensiveSlowBleedingDurationMin" : {
           "value" : 3.0
         },
+        "skillMaxLevel" : {
+          "value" : 8
+        },
+        "characterAttackSpeedModifier" : {
+          "value" : [ 15.0, 17.0, 19.0, 22.0, 24.0, 26.0, 28.0, 31.0, 33.0, 35.0, 37.0, 40.0 ]
+        },
+        "skillUltimateLevel" : {
+          "value" : 12
+        },
         "skillTargetRadius" : {
           "value" : 15.0
         },
-        "skillMaxLevel" : {
-          "value" : 8
+        "skillMasteryLevelRequired" : {
+          "value" : 10
         }
       },
       "description" : "Those who answer the call of the hunt will fight with increased speed and cunning.",
@@ -10601,7 +10838,7 @@
       }
     }, {
       "name" : "Gouge",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillChanceWeight" : {
           "value" : [ 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 17.0, 18.0, 19.0, 20.0 ]
@@ -10623,6 +10860,9 @@
         },
         "Bow" : {
           "value" : 1
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 5
         },
         "skillMaxLevel" : {
           "value" : 6
@@ -10693,6 +10933,9 @@
         "offensiveSlowBleedingDurationMin" : {
           "value" : 3.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 24
+        },
         "characterDefensiveAbilityModifier" : {
           "value" : [ -28.0, -30.0, -32.0, -34.0, -36.0, -38.0, -40.0, -42.0, -44.0, -46.0, -48.0, -50.0 ]
         },
@@ -10736,7 +10979,7 @@
       }
     }, {
       "name" : "Lay Trap",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillProjectileMissTimeToLive" : {
           "value" : 30.0
@@ -10782,6 +11025,9 @@
         },
         "petLimit" : {
           "value" : [ 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
         }
       },
       "description" : "Drop a bolt trap that will trip when enemies draw near, rapidly firing out deadly arrows.",
@@ -10810,6 +11056,9 @@
         "Bow" : {
           "value" : 1
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
+        },
         "offensiveSlowBleedingModifier" : {
           "value" : [ 9.0, 12.0, 15.0, 20.0, 23.0, 27.0, 30.0, 35.0, 38.0, 42.0, 45.0, 50.0 ]
         },
@@ -10826,7 +11075,7 @@
       }
     }, {
       "name" : "Spear Tempest",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "offensiveConfusionMax" : {
           "value" : 6.0
@@ -10872,6 +11121,9 @@
         },
         "skillProjectileNumber" : {
           "value" : 1
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 30
         },
         "skillTargetAngle" : {
           "value" : 200.0
@@ -10930,6 +11182,9 @@
         "skillUltimateLevel" : {
           "value" : 12
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
+        },
         "skillManaCostReduction" : {
           "value" : [ 5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0 ]
         },
@@ -10960,6 +11215,9 @@
         "racialBonusPercentDamage" : {
           "value" : 33.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
+        },
         "offensiveSlowBleedingModifier" : {
           "value" : [ 58.0, 66.0, 77.0, 85.0, 93.0, 104.0, 112.0, 120.0, 131.0, 139.0, 147.0, 158.0, 166.0, 174.0, 185.0 ]
         },
@@ -10979,7 +11237,7 @@
       }
     }, {
       "name" : "Study Prey",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "defensiveBleeding" : {
           "value" : [ -21.0, -25.0, -29.0, -33.0, -38.0, -42.0, -46.0, -50.0, -54.0, -58.0, -62.0, -66.0 ]
@@ -10987,17 +11245,11 @@
         "skillActiveDuration" : {
           "value" : 5.0
         },
-        "debufSkill" : {
-          "value" : 1
-        },
         "skillCooldownTime" : {
           "value" : 8.0
         },
         "skillManaCost" : {
           "value" : 35.0
-        },
-        "skillUltimateLevel" : {
-          "value" : 12
         },
         "skillConnectionSpacing" : {
           "value" : 62
@@ -11005,17 +11257,26 @@
         "cameraShakeAmplitude" : {
           "value" : 0.12
         },
-        "excludeRacialDamage" : {
-          "value" : 1
-        },
         "defensivePierce" : {
           "value" : [ -21.0, -25.0, -29.0, -33.0, -38.0, -42.0, -46.0, -50.0, -54.0, -58.0, -62.0, -66.0 ]
+        },
+        "skillMaxLevel" : {
+          "value" : 8
+        },
+        "debufSkill" : {
+          "value" : 1
+        },
+        "skillUltimateLevel" : {
+          "value" : 12
+        },
+        "excludeRacialDamage" : {
+          "value" : 1
         },
         "skillTargetRadius" : {
           "value" : 3.0
         },
-        "skillMaxLevel" : {
-          "value" : 8
+        "skillMasteryLevelRequired" : {
+          "value" : 1
         }
       },
       "description" : "By observing your prey from a distance you may discover its weakness, resulting in greater pierce damage.",
@@ -11027,7 +11288,7 @@
       }
     } ], [ {
       "name" : "Scatter Shot Arrows",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "projectileFragmentsLaunchNumberMin" : {
           "value" : [ 3.0, 3.0, 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 8.0 ]
@@ -11053,6 +11314,9 @@
         "Bow" : {
           "value" : 1
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 25
+        },
         "skillMaxLevel" : {
           "value" : 12
         }
@@ -11066,7 +11330,7 @@
       }
     }, {
       "name" : "Cornered",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "defensiveStun" : {
           "value" : 120.0
@@ -11147,7 +11411,7 @@
       }
     } ], [ {
       "name" : "Improved Firing Mechanism",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "projectilePiercing" : {
           "value" : [ 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0 ]
@@ -11166,6 +11430,9 @@
         },
         "characterLife" : {
           "value" : [ 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0, 90.0, 95.0, 100.0, 105.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 30
         },
         "offensiveSlowBleedingModifier" : {
           "value" : [ 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0, 90.0 ]
@@ -11219,7 +11486,7 @@
       }
     }, {
       "name" : "Volley",
-      "parent" : "SoulvizierAERA",
+      "parent" : null,
       "attributes" : {
         "skillChanceWeight" : {
           "value" : [ 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 17.0, 18.0, 19.0, 20.0 ]
@@ -11235,6 +11502,9 @@
         },
         "Bow" : {
           "value" : 1
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 25
         },
         "skillMaxLevel" : {
           "value" : 6
@@ -11280,6 +11550,8 @@
     }
   } ],
   "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/SoulvizierAERA.html",
+  "masteryLevels" : [ 1, 4, 10, 16, 24, 32, 40 ],
+  "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/",
   "mappedMasteries" : {
     "1" : "Nature",
     "2" : "Spirit",
@@ -11291,7 +11563,5 @@
     "8" : "Warfare",
     "9" : "Runes",
     "10" : "Hunting"
-  },
-  "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/",
-  "masteryLevels" : [ 1, 4, 10, 16, 24, 32, 40 ]
+  }
 }

@@ -4,7 +4,7 @@
     "name" : "Aqua",
     "skillTiers" : [ [ {
       "name" : "Oceanic Might",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillManaCost" : {
           "value" : 1.0
@@ -42,6 +42,9 @@
         "offensiveSlowColdDurationMin" : {
           "value" : 3.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
+        },
         "skillTargetAngle" : {
           "value" : 45.0
         }
@@ -55,7 +58,7 @@
       }
     }, {
       "name" : "Mark of the Trident",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "characterAttackSpeedModifier" : {
           "value" : [ 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0 ]
@@ -68,6 +71,9 @@
         },
         "offensivePierceMin" : {
           "value" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
         },
         "skillMaxLevel" : {
           "value" : 8
@@ -85,7 +91,7 @@
       }
     }, {
       "name" : "Aquamancer's Bounty",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 120.0
@@ -111,6 +117,9 @@
         "offensiveColdMin" : {
           "value" : [ 10.0, 14.0, 18.0, 23.0, 28.0, 34.0, 39.0, 44.0, 50.0, 56.0, 62.0, 69.0, 75.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
+        },
         "skillMaxLevel" : {
           "value" : 9
         },
@@ -127,7 +136,7 @@
       }
     } ], [ {
       "name" : "Summon Water Spirit",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 20.0
@@ -146,6 +155,9 @@
         },
         "skillConnectionSpacing" : {
           "value" : 62
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
         },
         "skillMaxLevel" : {
           "value" : 20
@@ -177,6 +189,9 @@
         "retaliationSlowColdChance" : {
           "value" : 33.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 4
+        },
         "skillMaxLevel" : {
           "value" : 10
         }
@@ -190,7 +205,7 @@
       }
     }, {
       "name" : "Shore Uprising",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "projectileLaunchNumber" : {
           "value" : [ 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 8.0, 8.0, 8.0, 9.0, 9.0, 9.0, 9.0 ]
@@ -222,6 +237,9 @@
         "offensiveColdMin" : {
           "value" : [ 6.0, 9.0, 12.0, 15.0, 19.0, 22.0, 25.0, 28.0, 31.0, 34.0, 37.0, 40.0, 44.0, 47.0, 50.0, 53.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 4
+        },
         "skillMaxLevel" : {
           "value" : 12
         }
@@ -235,7 +253,7 @@
       }
     }, {
       "name" : "Environmental Adaptation",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "defensiveCold" : {
           "value" : [ 4.0, 7.0, 11.0, 14.0, 17.0, 20.0, 24.0, 27.0, 30.0, 33.0, 37.0, 40.0 ]
@@ -245,6 +263,9 @@
         },
         "defensiveFreeze" : {
           "value" : [ 8.0, 14.0, 22.0, 28.0, 34.0, 40.0, 48.0, 54.0, 60.0, 66.0, 74.0, 80.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 4
         },
         "defensivePoison" : {
           "value" : [ 4.0, 7.0, 11.0, 14.0, 17.0, 20.0, 24.0, 27.0, 30.0, 33.0, 37.0, 40.0 ]
@@ -276,6 +297,9 @@
         "skillUltimateLevel" : {
           "value" : 12
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
+        },
         "skillMaxLevel" : {
           "value" : 8
         },
@@ -292,7 +316,7 @@
       }
     }, {
       "name" : "Tsunami Spin",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillChanceWeight" : {
           "value" : [ 6.0, 8.0, 9.0, 10.0, 12.0, 13.0, 15.0, 16.0, 18.0, 20.0, 22.0, 24.0 ]
@@ -314,6 +338,9 @@
         },
         "offensiveSlowColdDurationMin" : {
           "value" : 3.0
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
         },
         "skillTargetAngle" : {
           "value" : 250.0
@@ -345,6 +372,9 @@
         "skillUltimateLevel" : {
           "value" : 10
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
+        },
         "skillMaxLevel" : {
           "value" : 6
         }
@@ -358,7 +388,7 @@
       }
     }, {
       "name" : "Scaly Skin",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "defensiveProtection" : {
           "value" : [ 6.0, 12.0, 18.0, 24.0, 30.0, 36.0, 42.0, 48.0, 54.0, 60.0 ]
@@ -371,6 +401,9 @@
         },
         "characterDexterity" : {
           "value" : [ 6.0, 12.0, 18.0, 24.0, 30.0, 36.0, 42.0, 48.0, 54.0, 60.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
         },
         "skillMaxLevel" : {
           "value" : 6
@@ -385,7 +418,7 @@
       }
     }, {
       "name" : "Hoarfrost",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : [ 3.0, 3.4, 3.8, 4.2, 4.6, 5.0, 5.4, 5.8, 6.2, 6.6, 7.0, 7.5 ]
@@ -425,6 +458,9 @@
         },
         "skillTargetRadius" : {
           "value" : [ 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
         }
       },
       "description" : "Conjure frost to trap your enemies in a thick layer of ice, preventing them to move or fight back but also protecting them from your own attacks.",
@@ -436,7 +472,7 @@
       }
     } ], [ {
       "name" : "Rain",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "dropOffset" : {
           "value" : 10.0
@@ -468,6 +504,9 @@
         "offensiveColdMin" : {
           "value" : [ 11.0, 14.6, 18.2, 20.8, 25.4, 29.0, 31.6, 35.2, 39.9, 44.5, 48.1, 52.8, 57.5, 63.2, 68.9, 72.5, 78.2 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 16
+        },
         "skillMaxLevel" : {
           "value" : 13
         }
@@ -481,7 +520,7 @@
       }
     }, {
       "name" : "Wash Out",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 2.0
@@ -509,6 +548,9 @@
         },
         "offensiveSlowOffensiveAbilityDurationMin" : {
           "value" : 5.0
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 16
         },
         "skillMaxLevel" : {
           "value" : 8
@@ -545,6 +587,9 @@
         },
         "offensiveFreezeChance" : {
           "value" : 5.0
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 16
         },
         "offensiveSlowTotalSpeedDurationMin" : {
           "value" : 3.0
@@ -588,6 +633,9 @@
         "offensiveSlowOffensiveAbilityDurationMin" : {
           "value" : 1.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 16
+        },
         "skillManaCostReduction" : {
           "value" : [ 4.0, 5.0, 7.0, 8.0, 9.0, 11.0, 12.0, 13.0, 15.0, 16.0, 17.0, 19.0, 20.0, 21.0, 23.0, 24.0 ]
         },
@@ -610,7 +658,7 @@
       }
     }, {
       "name" : "Hurricane's Spirit",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 1.0
@@ -651,6 +699,9 @@
         "skillTargetRadius" : {
           "value" : 5.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 16
+        },
         "defensiveProtectionModifier" : {
           "value" : [ -5.0, -7.0, -9.0, -11.0, -13.0, -15.0, -17.0, -18.0, -20.0, -22.0, -24.0, -26.0, -28.0, -30.0 ]
         }
@@ -669,14 +720,8 @@
         "skillProjectileSpeedModifier" : {
           "value" : 100.0
         },
-        "projectilePiercing" : {
-          "value" : [ 15.0, 18.0, 21.0, 25.0, 28.0, 31.0, 34.0, 37.0, 40.0, 44.0, 47.0, 50.0 ]
-        },
         "skillManaCost" : {
           "value" : 1.0
-        },
-        "skillUltimateLevel" : {
-          "value" : 12
         },
         "offensiveSlowColdModifier" : {
           "value" : [ 12.0, 16.0, 21.0, 25.0, 29.0, 34.0, 38.0, 43.0, 47.0, 51.0, 56.0, 60.0 ]
@@ -690,9 +735,6 @@
         "Bow" : {
           "value" : 1
         },
-        "offensiveFreezeChance" : {
-          "value" : [ 30.0, 32.0, 35.0, 37.0, 39.0, 41.0, 44.0, 46.0, 48.0, 50.0, 53.0, 55.0 ]
-        },
         "skillMaxLevel" : {
           "value" : 8
         },
@@ -701,6 +743,18 @@
         },
         "offensiveColdModifier" : {
           "value" : [ 12.0, 16.0, 21.0, 25.0, 29.0, 34.0, 38.0, 43.0, 47.0, 51.0, 56.0, 60.0 ]
+        },
+        "projectilePiercing" : {
+          "value" : [ 15.0, 18.0, 21.0, 25.0, 28.0, 31.0, 34.0, 37.0, 40.0, 44.0, 47.0, 50.0 ]
+        },
+        "skillUltimateLevel" : {
+          "value" : 12
+        },
+        "offensiveFreezeChance" : {
+          "value" : [ 30.0, 32.0, 35.0, 37.0, 39.0, 41.0, 44.0, 46.0, 48.0, 50.0, 53.0, 55.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 24
         }
       },
       "description" : "When using a ranged weapon, imbue your shots with biting cold, capable of freezing and impaling multiple targets at once.{^n}{^y}Requires a ranged weapon.",
@@ -732,6 +786,9 @@
         "offensivePhysicalMin" : {
           "value" : [ 16.0, 22.0, 28.0, 33.0, 39.0, 45.0, 51.0, 56.0, 62.0, 68.0, 74.0, 79.0, 85.0, 91.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 24
+        },
         "offensiveSlowTotalSpeedDurationMin" : {
           "value" : 3.0
         },
@@ -751,7 +808,7 @@
       }
     }, {
       "name" : "Magical Sea Sources",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillProjectileSpeedModifier" : {
           "value" : [ 6.0, 12.0, 18.0, 24.0, 30.0, 36.0, 42.0, 48.0, 54.0, 60.0, 66.0, 72.0, 78.0, 84.0 ]
@@ -761,6 +818,9 @@
         },
         "offensiveSlowColdModifier" : {
           "value" : [ 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 24
         },
         "offensiveLifeLeechMin" : {
           "value" : [ 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 8.0, 8.0 ]
@@ -781,7 +841,7 @@
       }
     }, {
       "name" : "Lunge",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "defensiveTotalSpeedResistance" : {
           "value" : 80.0
@@ -830,6 +890,9 @@
         },
         "skillProjectileNumber" : {
           "value" : 1
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 24
         }
       },
       "description" : "Dive forward and attack violently in melee range, and do so with unexisting cooldown constraints, allowing you to quickly travel around the battleground.{^n}{^y}Requires a melee weapon.",
@@ -841,7 +904,7 @@
       }
     } ], [ {
       "name" : "Tidal Wave",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 16.0
@@ -879,6 +942,9 @@
         "offensiveSlowColdDurationMin" : {
           "value" : 3.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 32
+        },
         "skillTargetRadius" : {
           "value" : 15.0
         }
@@ -906,6 +972,9 @@
         "offensiveTotalResistanceReductionAbsoluteMin" : {
           "value" : [ 4.0, 8.0, 12.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 32
+        },
         "skillMaxLevel" : {
           "value" : 3
         },
@@ -925,7 +994,7 @@
       }
     }, {
       "name" : "Tempest Spear",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "offensiveLightningModifier" : {
           "value" : [ 15.0, 20.0, 24.0, 28.0, 32.0, 35.0, 40.0, 44.0, 47.0, 51.0, 56.0, 60.0 ]
@@ -948,6 +1017,9 @@
         "skillProjectileNumber" : {
           "value" : 1
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 32
+        },
         "skillMaxLevel" : {
           "value" : 8
         },
@@ -964,7 +1036,7 @@
       }
     }, {
       "name" : "Water Rapids",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillProjectileSpeedModifier" : {
           "value" : 100.0
@@ -980,6 +1052,9 @@
         },
         "characterRunSpeedModifier" : {
           "value" : 25.0
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 32
         },
         "skillMaxLevel" : {
           "value" : 1
@@ -1014,6 +1089,9 @@
         "offensiveSlowBleedingDurationModifier" : {
           "value" : [ 12.0, 24.0, 36.0, 48.0, 60.0, 72.0, 84.0, 96.0, 108.0, 120.0, 132.0, 144.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 32
+        },
         "skillMaxLevel" : {
           "value" : 8
         },
@@ -1030,7 +1108,7 @@
       }
     }, {
       "name" : "Regenerative Shell",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 12.0
@@ -1055,6 +1133,9 @@
         },
         "characterDeflectProjectile" : {
           "value" : [ 8.0, 10.0, 12.0, 14.0, 16.0, 17.0, 19.0, 20.0, 22.0, 23.0, 25.0, 26.0, 28.0, 29.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 32
         },
         "skillMaxLevel" : {
           "value" : 10
@@ -1086,6 +1167,9 @@
         "offensiveSlowColdDurationModifier" : {
           "value" : [ 20.0, 25.0, 31.0, 36.0, 42.0, 47.0, 53.0, 58.0, 64.0, 69.0, 75.0, 80.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 40
+        },
         "skillMaxLevel" : {
           "value" : 8
         },
@@ -1102,7 +1186,7 @@
       }
     }, {
       "name" : "Hydrothermal Explosion",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "offensiveSlowFireDurationMin" : {
           "value" : 1.0
@@ -1157,6 +1241,9 @@
         },
         "offensiveSlowColdDurationMin" : {
           "value" : 1.0
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 40
         }
       },
       "description" : "Heat the water beneath the soil, causing a geyser to erupt, scorching anything that comes in contact with it.",
@@ -1184,6 +1271,9 @@
         },
         "offensiveTotalDamageModifier" : {
           "value" : [ -5.0, -6.0, -7.0, -8.0, -9.0, -11.0, -12.0, -13.0, -14.0, -15.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 40
         },
         "defensiveColdDuration" : {
           "value" : [ -25.0, -33.0, -42.0, -50.0, -58.0, -67.0, -75.0, -83.0, -92.0, -100.0 ]
@@ -1225,7 +1315,7 @@
     "name" : "Necromancy",
     "skillTiers" : [ [ {
       "name" : "Summon Undead Minion",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 6.0
@@ -1251,6 +1341,9 @@
         "skillConnectionSpacing" : {
           "value" : 62
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
+        },
         "skillMaxLevel" : {
           "value" : 16
         }
@@ -1264,7 +1357,7 @@
       }
     }, {
       "name" : "Forbidden Codex",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "characterWeaponDexterityReqReduction" : {
           "value" : [ 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0 ]
@@ -1274,6 +1367,9 @@
         },
         "characterWeaponStrengthReqReduction" : {
           "value" : [ 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
         },
         "characterWeaponIntelligenceReqReduction" : {
           "value" : [ 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0 ]
@@ -1291,7 +1387,7 @@
       }
     }, {
       "name" : "Banishing Spell",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "waveDepth" : {
           "value" : 1.0
@@ -1338,6 +1434,9 @@
         "racialBonusPercentDamage" : {
           "value" : [ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 140.0, 160.0, 180.0, 200.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
+        },
         "waveTime" : {
           "value" : 0.85
         },
@@ -1354,7 +1453,7 @@
       }
     }, {
       "name" : "Cold Hand of Death",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 4.0
@@ -1397,6 +1496,9 @@
         },
         "skillTargetRadius" : {
           "value" : 10.0
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
         }
       },
       "description" : "Cold and chilling magic wraps around the weapons of you and your allies, desecrating the foes touched by them with necrotic power.",
@@ -1408,7 +1510,7 @@
       }
     } ], [ {
       "name" : "Summon Undead Archer",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 8.0
@@ -1434,6 +1536,9 @@
         "skillConnectionSpacing" : {
           "value" : 62
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 4
+        },
         "skillMaxLevel" : {
           "value" : 16
         }
@@ -1447,7 +1552,7 @@
       }
     }, {
       "name" : "Skull Grenade",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : [ 8.0, 7.7, 7.4, 7.1, 6.8, 6.5, 6.2, 5.9, 5.6, 5.3, 5.0, 4.7, 4.4, 4.0 ]
@@ -1485,6 +1590,9 @@
         "skillProjectileNumber" : {
           "value" : 1
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 4
+        },
         "offensivePercentCurrentLifeMin" : {
           "value" : [ 8.0, 9.0, 10.0, 12.0, 13.0, 14.0, 15.0, 17.0, 18.0, 19.0, 20.0, 22.0, 23.0, 24.0 ]
         },
@@ -1501,7 +1609,7 @@
       }
     }, {
       "name" : "Vanquish Undead",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 2.0
@@ -1511,12 +1619,6 @@
         },
         "skillWeaponTintBlue" : {
           "value" : 0.5
-        },
-        "skillUltimateLevel" : {
-          "value" : 12
-        },
-        "skillWeaponTintGreen" : {
-          "value" : 0.4
         },
         "characterManaLimitReserve" : {
           "value" : 50.0
@@ -1530,14 +1632,23 @@
         "cameraShakeAmplitude" : {
           "value" : 0.12
         },
+        "skillMaxLevel" : {
+          "value" : 8
+        },
+        "skillUltimateLevel" : {
+          "value" : 12
+        },
+        "skillWeaponTintGreen" : {
+          "value" : 0.4
+        },
         "racialBonusPercentDamage" : {
           "value" : [ 10.0, 13.0, 16.0, 20.0, 23.0, 26.0, 29.0, 32.0, 35.0, 39.0, 42.0, 45.0 ]
         },
         "skillTargetRadius" : {
           "value" : [ 8.0, 8.75, 9.5, 10.25, 11.0, 11.75, 12.5, 13.25, 14.0, 14.75, 15.5, 16.25 ]
         },
-        "skillMaxLevel" : {
-          "value" : 8
+        "skillMasteryLevelRequired" : {
+          "value" : 4
         }
       },
       "description" : "Learn how to fend off the undead efficiently with a special aura that increases control over them.",
@@ -1549,7 +1660,7 @@
       }
     }, {
       "name" : "Early Grave",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillProjectileSpeedModifier" : {
           "value" : [ 5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0 ]
@@ -1559,6 +1670,9 @@
         },
         "skillUltimateLevel" : {
           "value" : 14
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 4
         },
         "skillMaxLevel" : {
           "value" : 10
@@ -1573,7 +1687,7 @@
       }
     } ], [ {
       "name" : "Summon Undead Wizard",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 10.0
@@ -1599,6 +1713,9 @@
         "skillConnectionSpacing" : {
           "value" : 62
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
+        },
         "skillMaxLevel" : {
           "value" : 16
         }
@@ -1612,7 +1729,7 @@
       }
     }, {
       "name" : "Impaling Bones",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 8.0
@@ -1652,6 +1769,9 @@
         },
         "offensiveSlowLifeModifier" : {
           "value" : [ -66.0, -60.0, -53.0, -47.0, -40.0, -34.0, -27.0, -21.0, -14.0, -8.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
         }
       },
       "description" : "Raises a row of piercing bone spires that tears your opponents' flesh.",
@@ -1663,7 +1783,7 @@
       }
     }, {
       "name" : "Bone Cage",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : [ 1.5, 1.7, 1.9, 2.1, 2.3, 2.5, 2.7, 2.9, 3.1, 3.3, 3.5, 3.7, 3.9, 4.1 ]
@@ -1709,6 +1829,9 @@
         },
         "skillUltimateLevel" : {
           "value" : 14
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
         }
       },
       "description" : "Snares your opponents in a cage of piercing bones, preventing any movement for a short while.",
@@ -1720,7 +1843,7 @@
       }
     }, {
       "name" : "Mana Source",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "defensiveSlowManaLeach" : {
           "value" : [ 5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0 ]
@@ -1743,6 +1866,9 @@
         "characterManaRegen" : {
           "value" : 5.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
+        },
         "characterManaRegenModifier" : {
           "value" : [ 75.0, 95.0, 120.0, 145.0, 165.0, 185.0, 210.0, 235.0, 255.0, 275.0, 300.0, 325.0 ]
         },
@@ -1759,7 +1885,7 @@
       }
     }, {
       "name" : "Skeletal Armor",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillUltimateLevel" : {
           "value" : 10
@@ -1769,6 +1895,9 @@
         },
         "defensivePierce" : {
           "value" : [ 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
         },
         "skillMaxLevel" : {
           "value" : 6
@@ -1783,7 +1912,7 @@
       }
     } ], [ {
       "name" : "Summon Undead Captain",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 30.0
@@ -1805,6 +1934,9 @@
         },
         "skillConnectionSpacing" : {
           "value" : 62
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 16
         },
         "skillMaxLevel" : {
           "value" : 16
@@ -1845,6 +1977,9 @@
         "offensiveSlowManaLeachMin" : {
           "value" : [ 13.0, 19.0, 26.0, 32.0, 38.0, 45.0, 51.0, 58.0, 64.0, 70.0, 77.0, 83.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 16
+        },
         "skillMaxLevel" : {
           "value" : 8
         }
@@ -1875,6 +2010,9 @@
         "characterManaLimitReserve" : {
           "value" : 75.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 16
+        },
         "skillMaxLevel" : {
           "value" : 8
         }
@@ -1899,6 +2037,9 @@
         "offensiveColdMin" : {
           "value" : [ 11.0, 17.0, 23.0, 29.0, 35.0, 41.0, 47.0, 54.0, 60.0, 66.0, 72.0, 78.0, 84.0, 90.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 16
+        },
         "skillMaxLevel" : {
           "value" : 10
         },
@@ -1915,7 +2056,7 @@
       }
     }, {
       "name" : "Death Ray",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 2.0
@@ -1955,6 +2096,9 @@
         },
         "offensiveLifeMin" : {
           "value" : [ 39.2, 52.64, 66.08, 79.52, 92.96, 106.4, 119.84, 133.28, 146.72, 160.16, 173.6, 187.04, 200.48, 213.92, 227.36, 240.8 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 16
         }
       },
       "description" : "Cast large amounts of necrotic energy into a small area that will soon explode with soul-crushing darkness.",
@@ -1983,6 +2127,9 @@
         "offensivePierceMin" : {
           "value" : [ 15.0, 20.5, 25.9, 31.4, 36.8, 42.3, 47.7, 53.2, 58.6, 64.1, 69.5, 75.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 24
+        },
         "skillMaxLevel" : {
           "value" : 8
         }
@@ -1996,7 +2143,7 @@
       }
     }, {
       "name" : "Gravestone ",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 80.0
@@ -2018,6 +2165,9 @@
         },
         "skillConnectionSpacing" : {
           "value" : 62
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 24
         },
         "skillMaxLevel" : {
           "value" : 10
@@ -2049,6 +2199,9 @@
         "offensiveSlowLifeMin" : {
           "value" : [ 12.0, 20.0, 27.0, 35.0, 42.0, 50.0, 57.0, 65.0, 72.0, 80.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 24
+        },
         "skillMaxLevel" : {
           "value" : 6
         },
@@ -2078,6 +2231,9 @@
         },
         "characterRunSpeedModifier" : {
           "value" : [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 24
         },
         "skillMaxLevel" : {
           "value" : 10
@@ -2112,6 +2268,9 @@
         "offensiveSleepMin" : {
           "value" : [ 2.0, 2.3, 2.6, 3.0, 3.3, 3.6, 3.9, 4.2, 4.5, 4.9, 5.2, 5.5 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 24
+        },
         "skillMaxLevel" : {
           "value" : 8
         }
@@ -2125,7 +2284,7 @@
       }
     } ], [ {
       "name" : "Ossein Recovery",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillUltimateLevel" : {
           "value" : 12
@@ -2138,6 +2297,9 @@
         },
         "cameraShakeAmplitude" : {
           "value" : 0.12
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 32
         },
         "skillMaxLevel" : {
           "value" : 8
@@ -2168,6 +2330,9 @@
         },
         "offensiveSlowLifeMin" : {
           "value" : [ 46.66667, 93.33334, 140.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 32
         },
         "skillMaxLevel" : {
           "value" : 3
@@ -2205,6 +2370,9 @@
         "defensivePierce" : {
           "value" : 25.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 32
+        },
         "defensivePoison" : {
           "value" : 25.0
         },
@@ -2221,7 +2389,7 @@
       }
     }, {
       "name" : "Spellbound Souls",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "defensivePhysical" : {
           "value" : [ 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0 ]
@@ -2234,6 +2402,9 @@
         },
         "characterDeflectProjectile" : {
           "value" : [ 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 32
         },
         "skillMaxLevel" : {
           "value" : 8
@@ -2248,7 +2419,7 @@
       }
     }, {
       "name" : "Devour Soul",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 24.0
@@ -2274,6 +2445,9 @@
         "offensiveSlowManaLeachMin" : {
           "value" : [ 122.0703, 166.0156, 205.0781, 249.0234, 292.9688, 332.0313, 375.9766, 415.0391, 458.9844, 502.9297, 541.9922, 585.9375 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 32
+        },
         "offensiveLifeLeechMin" : {
           "value" : [ 80.0, 95.0, 110.0, 125.0, 140.0, 155.0, 170.0, 185.0, 200.0, 215.0, 230.0, 245.0 ]
         },
@@ -2290,7 +2464,7 @@
       }
     } ], [ {
       "name" : "Necromania",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 20.0
@@ -2306,6 +2480,9 @@
         },
         "cameraShakeAmplitude" : {
           "value" : 0.12
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 40
         },
         "skillMaxLevel" : {
           "value" : 8
@@ -2343,6 +2520,9 @@
         "offensiveSlowLifeModifier" : {
           "value" : [ 12.0, 16.0, 21.0, 25.0, 29.0, 34.0, 38.0, 43.0, 47.0, 51.0, 56.0, 60.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 40
+        },
         "skillMaxLevel" : {
           "value" : 8
         }
@@ -2377,7 +2557,7 @@
     "name" : "Science",
     "skillTiers" : [ [ {
       "name" : "Rubblemaker",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "offensivePhysicalModifier" : {
           "value" : [ 4.0, 8.0, 11.0, 15.0, 19.0, 23.0, 26.0, 30.0, 34.0, 38.0, 41.0, 45.0 ]
@@ -2387,6 +2567,9 @@
         },
         "racialBonusPercentDamage" : {
           "value" : [ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
         },
         "skillMaxLevel" : {
           "value" : 8
@@ -2401,7 +2584,7 @@
       }
     }, {
       "name" : "Poison Weapons",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 4.0
@@ -2439,6 +2622,9 @@
         "offensiveSlowPoisonDurationMin" : {
           "value" : 3.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
+        },
         "offensiveSlowPoisonMin" : {
           "value" : [ 9.0, 14.0, 19.0, 23.0, 28.0, 33.0, 38.0, 42.0, 47.0, 52.0, 57.0, 61.0, 66.0, 71.0, 76.0, 80.0, 85.0, 90.0 ]
         }
@@ -2452,7 +2638,7 @@
       }
     }, {
       "name" : "Build Automaton",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 45.0
@@ -2472,6 +2658,9 @@
         "skillConnectionSpacing" : {
           "value" : 62
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
+        },
         "skillMaxLevel" : {
           "value" : 20
         }
@@ -2485,7 +2674,7 @@
       }
     }, {
       "name" : "Archive Studies",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "defensiveStun" : {
           "value" : [ 8.0, 11.2, 14.5, 17.7, 20.9, 24.2, 27.4, 30.6, 33.8, 37.1, 40.3, 43.5, 46.8, 50.0 ]
@@ -2498,6 +2687,9 @@
         },
         "characterIntelligence" : {
           "value" : [ 3.0, 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
         },
         "skillMaxLevel" : {
           "value" : 10
@@ -2512,7 +2704,7 @@
       }
     } ], [ {
       "name" : "Nature Familiarity",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "racialBonusPercentDefense" : {
           "value" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0 ]
@@ -2522,6 +2714,9 @@
         },
         "characterLifeRegen" : {
           "value" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 4
         },
         "skillMaxLevel" : {
           "value" : 8
@@ -2536,7 +2731,7 @@
       }
     }, {
       "name" : "Electrical Field",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 6.0
@@ -2562,6 +2757,9 @@
         "offensiveLightningMin" : {
           "value" : [ 12.0, 17.0, 21.0, 26.0, 30.0, 35.0, 39.0, 44.0, 48.0, 53.0, 57.0, 62.0, 66.0, 71.0, 75.0, 80.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 4
+        },
         "offensiveSlowLightningMin" : {
           "value" : [ 12.0, 19.0, 25.0, 32.0, 38.0, 45.0, 51.0, 58.0, 64.0, 71.0, 77.0, 84.0, 90.0, 97.0, 103.0, 110.0 ]
         },
@@ -2578,13 +2776,16 @@
       }
     }, {
       "name" : "Sprockets",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "defensiveTotalSpeedResistance" : {
           "value" : [ 40.0, 44.0, 47.0, 51.0, 55.0, 58.0, 62.0, 65.0, 69.0, 73.0, 76.0, 80.0 ]
         },
         "skillUltimateLevel" : {
           "value" : 12
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 4
         },
         "defensiveTrap" : {
           "value" : [ 40.0, 44.0, 47.0, 51.0, 55.0, 58.0, 62.0, 65.0, 69.0, 73.0, 76.0, 80.0 ]
@@ -2605,7 +2806,7 @@
       }
     }, {
       "name" : "Technological Advancement",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillProjectileSpeedModifier" : {
           "value" : [ 5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0 ]
@@ -2615,6 +2816,9 @@
         },
         "skillUltimateLevel" : {
           "value" : 14
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 4
         },
         "defensiveProtectionModifier" : {
           "value" : [ 2.0, 3.0, 4.0, 6.0, 7.0, 8.0, 9.0, 11.0, 12.0, 13.0, 14.0, 16.0, 17.0, 18.0 ]
@@ -2652,6 +2856,9 @@
         "offensivePetrifyChance" : {
           "value" : [ 10.0, 14.0, 18.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
+        },
         "skillMaxLevel" : {
           "value" : 3
         },
@@ -2688,6 +2895,9 @@
         "racialBonusPercentDamage" : {
           "value" : [ 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
+        },
         "skillMaxLevel" : {
           "value" : 10
         }
@@ -2701,19 +2911,13 @@
       }
     }, {
       "name" : "Atomic Burst",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 8.0
         },
-        "offensiveStunMin" : {
-          "value" : [ 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3.0, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4.0, 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 4.9, 5.0, 5.1, 5.2, 5.3, 5.4, 5.5, 5.6, 5.7, 5.8, 5.9, 6.0, 6.1, 6.2, 6.3, 6.4, 6.5, 6.6, 6.7, 6.8, 6.9, 7.0, 7.1, 7.2, 7.3, 7.4, 7.5, 7.6, 7.7, 7.8, 7.9, 8.0, 8.1, 8.2, 8.3, 8.4, 8.5, 8.6, 8.7, 8.8, 8.9, 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6, 9.7, 9.8, 9.9, 10.0, 10.1, 10.2, 10.3, 10.4, 10.5, 10.6, 10.7, 10.8, 10.9 ]
-        },
         "skillManaCost" : {
           "value" : [ 30.0, 36.0, 42.0, 48.0, 54.0, 60.0, 66.0, 72.0, 78.0, 84.0, 90.0, 96.0, 102.0, 108.0, 114.0, 120.0, 126.0, 132.0, 138.0, 144.0, 150.0, 156.0, 162.0, 168.0, 174.0, 180.0, 186.0, 192.0, 198.0, 204.0, 210.0, 216.0, 222.0, 228.0, 234.0, 240.0, 246.0, 252.0, 258.0, 264.0, 270.0, 276.0, 282.0, 288.0, 294.0, 300.0, 306.0, 312.0, 318.0, 324.0, 330.0, 336.0, 342.0, 348.0, 354.0, 360.0, 366.0, 372.0, 378.0, 384.0, 390.0, 396.0, 402.0, 408.0, 414.0, 420.0, 426.0, 432.0, 438.0, 444.0, 450.0, 456.0, 462.0, 468.0, 474.0, 480.0, 486.0, 492.0, 498.0, 504.0, 510.0, 516.0, 522.0, 528.0, 534.0, 540.0, 546.0, 552.0, 558.0, 564.0, 570.0, 576.0, 582.0, 588.0, 594.0, 600.0, 606.0, 612.0, 618.0, 624.0 ]
-        },
-        "skillUltimateLevel" : {
-          "value" : 100
         },
         "offensivePoisonMin" : {
           "value" : [ 15.0, 25.0, 35.0, 45.0, 55.0, 65.0, 75.0, 85.0, 95.0, 105.0, 115.0, 125.0, 135.0, 145.0, 155.0, 165.0, 175.0, 185.0, 195.0, 205.0, 215.0, 225.0, 235.0, 245.0, 255.0, 265.0, 275.0, 285.0, 295.0, 305.0, 315.0, 325.0, 335.0, 345.0, 355.0, 365.0, 375.0, 385.0, 395.0, 405.0, 415.0, 425.0, 435.0, 445.0, 455.0, 465.0, 475.0, 485.0, 495.0, 505.0, 515.0, 525.0, 535.0, 545.0, 555.0, 565.0, 575.0, 585.0, 595.0, 605.0, 615.0, 625.0, 635.0, 645.0, 655.0, 665.0, 675.0, 685.0, 695.0, 705.0, 715.0, 725.0, 735.0, 745.0, 755.0, 765.0, 775.0, 785.0, 795.0, 805.0, 815.0, 825.0, 835.0, 845.0, 855.0, 865.0, 875.0, 885.0, 895.0, 905.0, 915.0, 925.0, 935.0, 945.0, 955.0, 965.0, 975.0, 985.0, 995.0, 1005.0 ]
@@ -2724,12 +2928,6 @@
         "cameraShakeAmplitude" : {
           "value" : 0.12
         },
-        "offensiveLightningMin" : {
-          "value" : [ 15.0, 25.0, 35.0, 45.0, 55.0, 65.0, 75.0, 85.0, 95.0, 105.0, 115.0, 125.0, 135.0, 145.0, 155.0, 165.0, 175.0, 185.0, 195.0, 205.0, 215.0, 225.0, 235.0, 245.0, 255.0, 265.0, 275.0, 285.0, 295.0, 305.0, 315.0, 325.0, 335.0, 345.0, 355.0, 365.0, 375.0, 385.0, 395.0, 405.0, 415.0, 425.0, 435.0, 445.0, 455.0, 465.0, 475.0, 485.0, 495.0, 505.0, 515.0, 525.0, 535.0, 545.0, 555.0, 565.0, 575.0, 585.0, 595.0, 605.0, 615.0, 625.0, 635.0, 645.0, 655.0, 665.0, 675.0, 685.0, 695.0, 705.0, 715.0, 725.0, 735.0, 745.0, 755.0, 765.0, 775.0, 785.0, 795.0, 805.0, 815.0, 825.0, 835.0, 845.0, 855.0, 865.0, 875.0, 885.0, 895.0, 905.0, 915.0, 925.0, 935.0, 945.0, 955.0, 965.0, 975.0, 985.0, 995.0, 1005.0 ]
-        },
-        "sparkChance" : {
-          "value" : 100.0
-        },
         "sparkMaxNumber" : {
           "value" : [ 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 8.0, 8.0, 8.0, 9.0, 9.0, 9.0, 10.0, 10.0, 10.0, 11.0, 11.0, 11.0, 12.0, 12.0, 12.0, 13.0, 13.0, 13.0, 14.0, 14.0, 14.0, 15.0, 15.0, 15.0, 16.0, 16.0, 16.0, 17.0, 17.0, 17.0, 18.0, 18.0, 18.0, 19.0, 19.0, 19.0, 20.0, 20.0, 20.0, 21.0, 21.0, 21.0, 22.0, 22.0, 22.0, 23.0, 23.0, 23.0, 24.0, 24.0, 24.0, 25.0, 25.0, 25.0, 26.0, 26.0, 26.0, 27.0, 27.0, 27.0, 28.0, 28.0, 28.0, 29.0, 29.0, 29.0, 30.0, 30.0, 30.0, 31.0, 31.0, 31.0, 32.0, 32.0, 32.0, 33.0, 33.0, 33.0, 34.0, 34.0, 34.0, 35.0, 35.0, 35.0, 36.0, 36.0, 36.0, 37.0 ]
         },
@@ -2738,6 +2936,21 @@
         },
         "offensiveStunChance" : {
           "value" : [ 10.0, 10.5, 11.0, 11.5, 12.0, 12.5, 13.0, 13.5, 14.0, 14.5, 15.0, 15.5, 16.0, 16.5, 17.0, 17.5, 18.0, 18.5, 19.0, 19.5, 20.0, 20.5, 21.0, 21.5, 22.0, 22.5, 23.0, 23.5, 24.0, 24.5, 25.0, 25.5, 26.0, 26.5, 27.0, 27.5, 28.0, 28.5, 29.0, 29.5, 30.0, 30.5, 31.0, 31.5, 32.0, 32.5, 33.0, 33.5, 34.0, 34.5, 35.0, 35.5, 36.0, 36.5, 37.0, 37.5, 38.0, 38.5, 39.0, 39.5, 40.0, 40.5, 41.0, 41.5, 42.0, 42.5, 43.0, 43.5, 44.0, 44.5, 45.0, 45.5, 46.0, 46.5, 47.0, 47.5, 48.0, 48.5, 49.0, 49.5, 50.0, 50.5, 51.0, 51.5, 52.0, 52.5, 53.0, 53.5, 54.0, 54.5, 55.0, 55.5, 56.0, 56.5, 57.0, 57.5, 58.0, 58.5, 59.0, 59.5 ]
+        },
+        "offensiveStunMin" : {
+          "value" : [ 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3.0, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4.0, 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 4.9, 5.0, 5.1, 5.2, 5.3, 5.4, 5.5, 5.6, 5.7, 5.8, 5.9, 6.0, 6.1, 6.2, 6.3, 6.4, 6.5, 6.6, 6.7, 6.8, 6.9, 7.0, 7.1, 7.2, 7.3, 7.4, 7.5, 7.6, 7.7, 7.8, 7.9, 8.0, 8.1, 8.2, 8.3, 8.4, 8.5, 8.6, 8.7, 8.8, 8.9, 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6, 9.7, 9.8, 9.9, 10.0, 10.1, 10.2, 10.3, 10.4, 10.5, 10.6, 10.7, 10.8, 10.9 ]
+        },
+        "skillUltimateLevel" : {
+          "value" : 100
+        },
+        "offensiveLightningMin" : {
+          "value" : [ 15.0, 25.0, 35.0, 45.0, 55.0, 65.0, 75.0, 85.0, 95.0, 105.0, 115.0, 125.0, 135.0, 145.0, 155.0, 165.0, 175.0, 185.0, 195.0, 205.0, 215.0, 225.0, 235.0, 245.0, 255.0, 265.0, 275.0, 285.0, 295.0, 305.0, 315.0, 325.0, 335.0, 345.0, 355.0, 365.0, 375.0, 385.0, 395.0, 405.0, 415.0, 425.0, 435.0, 445.0, 455.0, 465.0, 475.0, 485.0, 495.0, 505.0, 515.0, 525.0, 535.0, 545.0, 555.0, 565.0, 575.0, 585.0, 595.0, 605.0, 615.0, 625.0, 635.0, 645.0, 655.0, 665.0, 675.0, 685.0, 695.0, 705.0, 715.0, 725.0, 735.0, 745.0, 755.0, 765.0, 775.0, 785.0, 795.0, 805.0, 815.0, 825.0, 835.0, 845.0, 855.0, 865.0, 875.0, 885.0, 895.0, 905.0, 915.0, 925.0, 935.0, 945.0, 955.0, 965.0, 975.0, 985.0, 995.0, 1005.0 ]
+        },
+        "sparkChance" : {
+          "value" : 100.0
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
         }
       },
       "description" : "An atom-powered beam, infused with the power of electricity and poison, bounces from target to target at lightning speed. {^n}{^y}Scales infinitely beyond the maximum level.",
@@ -2749,7 +2962,7 @@
       }
     }, {
       "name" : "Build Bolt Trap",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillProjectileMissTimeToLive" : {
           "value" : 30.0
@@ -2795,6 +3008,9 @@
         },
         "skillProjectileNumber" : {
           "value" : 1
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
         }
       },
       "description" : "Create a durable trap, which shoots poisonous piercing projectiles in all directions. Later levels increase the summon limit.",
@@ -2806,7 +3022,7 @@
       }
     }, {
       "name" : "Emergency Plan",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "offensiveTotalDamageReductionPercentMin" : {
           "value" : [ 8.0, 10.0, 11.0, 13.0, 14.0, 16.0, 17.0, 19.0, 20.0, 22.0, 23.0, 25.0 ]
@@ -2847,6 +3063,9 @@
         "skillProjectileNumber" : {
           "value" : 1
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
+        },
         "offensiveConfusionChance" : {
           "value" : [ 25.0, 29.0, 32.0, 36.0, 40.0, 44.0, 47.0, 51.0, 55.0, 59.0, 62.0, 66.0 ]
         },
@@ -2863,13 +3082,16 @@
       }
     } ], [ {
       "name" : "Ingenuity",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillUltimateLevel" : {
           "value" : 14
         },
         "skillManaCostReductionChance" : {
           "value" : [ 8.0, 12.0, 15.0, 19.0, 22.0, 26.0, 30.0, 33.0, 37.0, 41.0, 44.0, 48.0, 51.0, 55.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 16
         },
         "skillManaCostReduction" : {
           "value" : 50.0
@@ -2907,6 +3129,9 @@
         "offensiveSlowLightningModifier" : {
           "value" : 50.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 16
+        },
         "skillMaxLevel" : {
           "value" : 1
         }
@@ -2920,7 +3145,7 @@
       }
     }, {
       "name" : "Spinning Gears",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "offensiveTotalDamageReductionPercentMin" : {
           "value" : [ 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0 ]
@@ -2958,6 +3183,9 @@
         "skillProjectileNumber" : {
           "value" : 1
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 16
+        },
         "skillTargetAngle" : {
           "value" : 360.0
         },
@@ -2974,7 +3202,7 @@
       }
     }, {
       "name" : "Mutagen Prototype",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 25.0
@@ -3027,6 +3255,9 @@
         "offensiveSlowPoisonDurationMin" : {
           "value" : 3.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 16
+        },
         "offensiveSlowPoisonMin" : {
           "value" : [ 14.0, 18.0, 23.0, 27.0, 31.0, 36.0, 40.0, 44.0, 48.0, 53.0, 57.0, 61.0, 66.0, 70.0 ]
         }
@@ -3040,7 +3271,7 @@
       }
     }, {
       "name" : "Chemical Explosion",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "projectileFragmentsLaunchNumberMin" : {
           "value" : [ 3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 6.0, 7.0, 7.0 ]
@@ -3057,26 +3288,29 @@
         "projectileExplosionRadius" : {
           "value" : 1.0
         },
-        "skillUltimateLevel" : {
-          "value" : 16
-        },
-        "projectileFragmentsLaunchNumberMax" : {
-          "value" : [ 4.0, 4.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 8.0, 8.0, 9.0, 9.0 ]
-        },
         "offensivePoisonMin" : {
           "value" : [ 13.06875, 18.24844, 23.42813, 28.60781, 33.7875, 38.96719, 44.22656, 49.40625, 54.58594, 59.76563, 64.94531, 70.125 ]
         },
         "cameraShakeAmplitude" : {
           "value" : 0.12
         },
+        "skillMaxLevel" : {
+          "value" : 12
+        },
+        "skillUltimateLevel" : {
+          "value" : 16
+        },
+        "projectileFragmentsLaunchNumberMax" : {
+          "value" : [ 4.0, 4.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 8.0, 8.0, 9.0, 9.0 ]
+        },
         "offensiveSlowPoisonDurationMin" : {
           "value" : 3.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 16
+        },
         "offensiveSlowPoisonMin" : {
           "value" : [ 9.69505, 12.03753, 14.38, 16.72248, 19.06497, 21.40745, 23.78041, 26.12289, 28.46537, 30.80786, 33.15033, 35.49281 ]
-        },
-        "skillMaxLevel" : {
-          "value" : 12
         }
       },
       "description" : "Various chemicals react violently when mixed together and produce an explosion of dangerous acid.",
@@ -3107,6 +3341,9 @@
         },
         "racialBonusPercentDamage" : {
           "value" : 66.0
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 24
         },
         "skillMaxLevel" : {
           "value" : 8
@@ -3141,6 +3378,9 @@
         "characterLife" : {
           "value" : [ 40.0, 65.0, 91.0, 116.0, 142.0, 167.0, 193.0, 218.0, 244.0, 269.0, 295.0, 320.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 24
+        },
         "skillMaxLevel" : {
           "value" : 8
         }
@@ -3154,13 +3394,10 @@
       }
     }, {
       "name" : "Radioactive Core",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 4.0
-        },
-        "skillUltimateLevel" : {
-          "value" : 12
         },
         "offensivePoisonMin" : {
           "value" : [ 15.0, 22.0, 29.0, 35.0, 42.0, 49.0, 56.0, 63.0, 70.0, 76.0, 83.0, 90.0 ]
@@ -3174,6 +3411,12 @@
         "cameraShakeAmplitude" : {
           "value" : 0.12
         },
+        "skillMaxLevel" : {
+          "value" : 8
+        },
+        "skillUltimateLevel" : {
+          "value" : 12
+        },
         "excludeRacialDamage" : {
           "value" : 1
         },
@@ -3183,14 +3426,14 @@
         "skillTargetRadius" : {
           "value" : 5.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 24
+        },
         "defensivePoison" : {
           "value" : [ -10.0, -15.0, -19.0, -24.0, -28.0, -33.0, -37.0, -42.0, -46.0, -51.0, -55.0, -60.0 ]
         },
         "offensiveSlowPoisonMin" : {
           "value" : [ 16.0, 26.0, 36.0, 46.0, 56.0, 66.0, 75.0, 85.0, 95.0, 105.0, 115.0, 125.0 ]
-        },
-        "skillMaxLevel" : {
-          "value" : 8
         }
       },
       "description" : "Install a core of radioactive energy at the center of your automaton, causing irreparable damage to anyone standing too close.",
@@ -3202,7 +3445,7 @@
       }
     }, {
       "name" : "Build Electric Trap",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillProjectileMissTimeToLive" : {
           "value" : 30.0
@@ -3248,6 +3491,9 @@
         },
         "skillProjectileNumber" : {
           "value" : 1
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 24
         }
       },
       "description" : "Create a durable trap, which shoots stunning, charged projectiles, splitting into smaller fragments on contact. Later levels increase the summon limit.",
@@ -3288,6 +3534,9 @@
         "offensiveProjectileFumbleMin" : {
           "value" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 24
+        },
         "offensiveFumbleGlobal" : {
           "value" : 1
         },
@@ -3304,13 +3553,16 @@
       }
     } ], [ {
       "name" : "Miracle Solution",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillUltimateLevel" : {
           "value" : 10
         },
         "skillCooldownReduction" : {
           "value" : 50.0
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 32
         },
         "skillMaxLevel" : {
           "value" : 6
@@ -3328,7 +3580,7 @@
       }
     }, {
       "name" : "EMP",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 9.0
@@ -3357,6 +3609,9 @@
         "offensiveDisruptionMin" : {
           "value" : [ 2.0, 2.4, 2.7, 3.1, 3.5, 3.8, 4.2, 4.5, 4.9, 5.3, 5.6, 6.0, 6.4, 6.8, 7.1, 7.5 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 32
+        },
         "skillMaxLevel" : {
           "value" : 8
         }
@@ -3370,7 +3625,7 @@
       }
     }, {
       "name" : "Advanced Armor Craftsmanship",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillUltimateLevel" : {
           "value" : 10
@@ -3383,6 +3638,9 @@
         },
         "cameraShakeAmplitude" : {
           "value" : 0.12
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 32
         },
         "skillMaxLevel" : {
           "value" : 6
@@ -3414,6 +3672,9 @@
         "defensiveLife" : {
           "value" : -20.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 32
+        },
         "skillMaxLevel" : {
           "value" : 1
         },
@@ -3430,7 +3691,7 @@
       }
     }, {
       "name" : "Nanovirus",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "offensiveTotalDamageReductionPercentMin" : {
           "value" : [ 10.0, 12.0, 13.0, 15.0, 17.0, 18.0, 20.0, 22.0, 24.0, 25.0, 27.0, 29.0, 30.0, 32.0 ]
@@ -3483,6 +3744,9 @@
         "offensiveSlowLightningMin" : {
           "value" : [ 10.0, 15.0, 19.0, 24.0, 28.0, 33.0, 38.0, 42.0, 47.0, 52.0, 56.0, 61.0, 65.0, 70.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 32
+        },
         "offensiveSlowPoisonMin" : {
           "value" : [ 10.0, 15.0, 19.0, 24.0, 28.0, 33.0, 38.0, 42.0, 47.0, 52.0, 56.0, 61.0, 65.0, 70.0 ]
         }
@@ -3496,7 +3760,7 @@
       }
     } ], [ {
       "name" : "Black Widow",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "offensiveSlowPoisonModifier" : {
           "value" : [ 14.0, 20.0, 26.0, 32.0, 38.0, 44.0, 50.0, 56.0, 62.0, 68.0, 74.0, 80.0, 86.0, 92.0 ]
@@ -3534,6 +3798,9 @@
         "offensiveSlowPoisonDurationMin" : {
           "value" : 6.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 40
+        },
         "offensiveSlowPoisonMin" : {
           "value" : [ 52.0, 71.0, 90.0, 109.0, 128.0, 147.0, 166.0, 186.0, 205.0, 224.0, 243.0, 262.0, 281.0, 300.0 ]
         },
@@ -3563,6 +3830,9 @@
         },
         "defensiveElementalResistance" : {
           "value" : [ -5.0, -8.0, -11.0, -13.0, -16.0, -19.0, -22.0, -24.0, -27.0, -30.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 40
         },
         "defensivePoison" : {
           "value" : [ -10.0, -16.0, -21.0, -27.0, -32.0, -38.0, -43.0, -49.0, -54.0, -60.0 ]
@@ -3607,7 +3877,7 @@
     "name" : "Geomancy",
     "skillTiers" : [ [ {
       "name" : "Overpower",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "characterArmorStrengthReqReduction" : {
           "value" : [ 5.0, 6.0, 8.0, 9.0, 11.0, 12.0, 14.0, 15.0, 17.0, 18.0, 20.0, 21.0, 23.0, 24.0 ]
@@ -3620,6 +3890,9 @@
         },
         "defensiveBlockModifier" : {
           "value" : [ 5.0, 6.0, 7.0, 9.0, 10.0, 11.0, 13.0, 14.0, 15.0, 17.0, 18.0, 19.0, 21.0, 22.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
         },
         "skillMaxLevel" : {
           "value" : 10
@@ -3634,7 +3907,7 @@
       }
     }, {
       "name" : "Block",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 2.0
@@ -3663,6 +3936,9 @@
         "damageAbsorptionPercent" : {
           "value" : 100.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
+        },
         "skillMaxLevel" : {
           "value" : 8
         },
@@ -3679,7 +3955,7 @@
       }
     }, {
       "name" : "Boulder Toss",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 6.0
@@ -3725,6 +4001,9 @@
         },
         "skillProjectileNumber" : {
           "value" : 1
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
         }
       },
       "description" : "Quickly bring dirt and rocky mass together to form a large boulder and hurl it at your opponents.",
@@ -3736,7 +4015,7 @@
       }
     } ], [ {
       "name" : "Staggering Force",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "offensiveSlowDefensiveReductionGlobal" : {
           "value" : 1
@@ -3771,6 +4050,9 @@
         "offensivePhysicalGlobal" : {
           "value" : 1
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 4
+        },
         "offensivePhysicalXOR" : {
           "value" : 1
         },
@@ -3787,7 +4069,7 @@
       }
     }, {
       "name" : "Sharpstone Veil",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 5.0
@@ -3842,6 +4124,9 @@
         },
         "skillTargetRadius" : {
           "value" : [ 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 4
         }
       },
       "description" : "A set of razor-sharp rocks quickly orbits around you, reducing incoming damage and injuring nearby opponents.",
@@ -3870,6 +4155,9 @@
         "defensiveReflect" : {
           "value" : 200.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 4
+        },
         "skillMaxLevel" : {
           "value" : 1
         }
@@ -3883,7 +4171,7 @@
       }
     }, {
       "name" : "Shatter",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 6.0
@@ -3927,6 +4215,9 @@
         "skillProjectileNumber" : {
           "value" : 1
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 4
+        },
         "skillTargetAngle" : {
           "value" : 360.0
         }
@@ -3940,7 +4231,7 @@
       }
     } ], [ {
       "name" : "Worldbuilder's Aura",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 6.0
@@ -3983,6 +4274,9 @@
         },
         "characterIntelligence" : {
           "value" : [ 4.0, 7.0, 10.0, 13.0, 16.0, 19.0, 22.0, 25.0, 28.0, 31.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0, 51.0, 54.0, 57.0, 60.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
         }
       },
       "description" : "Connecting to the very core of nature serves as both a protective ward and an empowering essence.{^n}{^a}Cannot be dispelled.",
@@ -3994,7 +4288,7 @@
       }
     }, {
       "name" : "Summon Stone Golem",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 60.0
@@ -4014,6 +4308,9 @@
         "skillConnectionSpacing" : {
           "value" : 62
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
+        },
         "skillMaxLevel" : {
           "value" : 20
         }
@@ -4027,7 +4324,7 @@
       }
     }, {
       "name" : "Shield Expertise",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillUltimateLevel" : {
           "value" : 12
@@ -4037,6 +4334,9 @@
         },
         "characterDeflectProjectile" : {
           "value" : [ 5.0, 6.0, 7.0, 8.0, 10.0, 12.0, 13.0, 14.0, 16.0, 17.0, 19.0, 20.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
         },
         "characterDefensiveBlockRecoveryReduction" : {
           "value" : [ 5.0, 8.0, 10.0, 13.0, 15.0, 18.0, 20.0, 23.0, 25.0, 28.0, 30.0, 33.0 ]
@@ -4054,7 +4354,7 @@
       }
     }, {
       "name" : "Original Creation",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 200.0
@@ -4080,6 +4380,9 @@
         "damageAbsorptionPercent" : {
           "value" : [ 8.0, 10.0, 13.0, 15.0, 17.0, 20.0, 22.0, 24.0, 26.0, 29.0, 31.0, 33.0, 36.0, 38.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
+        },
         "skillMaxLevel" : {
           "value" : 10
         }
@@ -4093,7 +4396,7 @@
       }
     }, {
       "name" : "King of the Summit",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillUltimateLevel" : {
           "value" : 14
@@ -4106,6 +4409,9 @@
         },
         "cameraShakeAmplitude" : {
           "value" : 0.12
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
         },
         "skillMaxLevel" : {
           "value" : 10
@@ -4120,7 +4426,7 @@
       }
     } ], [ {
       "name" : "Bedrock",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillUltimateLevel" : {
           "value" : 13
@@ -4136,6 +4442,9 @@
         },
         "characterLife" : {
           "value" : [ 100.0, 200.0, 300.0, 400.0, 500.0, 600.0, 700.0, 800.0, 900.0, 1000.0, 1100.0, 1200.0, 1300.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 16
         },
         "characterManaRegenModifier" : {
           "value" : [ 8.0, 16.0, 23.0, 31.0, 39.0, 46.0, 54.0, 62.0, 69.0, 77.0, 85.0, 92.0, 100.0 ]
@@ -4164,6 +4473,9 @@
         "skillUltimateLevel" : {
           "value" : 10
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 16
+        },
         "skillMaxLevel" : {
           "value" : 6
         }
@@ -4177,7 +4489,7 @@
       }
     }, {
       "name" : "Violent Bash",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "offensivePhysicalModifier" : {
           "value" : [ 5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0 ]
@@ -4209,6 +4521,9 @@
         "offensiveTotalResistanceReductionAbsoluteMin" : {
           "value" : [ 5.0, 7.0, 8.0, 10.0, 12.0, 13.0, 15.0, 17.0, 18.0, 20.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 16
+        },
         "skillMaxLevel" : {
           "value" : 6
         }
@@ -4222,7 +4537,7 @@
       }
     }, {
       "name" : "Quake",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "offensiveTotalResistanceReductionPercentDurationMin" : {
           "value" : 4.0
@@ -4238,6 +4553,9 @@
         },
         "expansionTime" : {
           "value" : 0.1
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 16
         },
         "offensiveSlowOffensiveAbilityDurationMin" : {
           "value" : 4.0
@@ -4264,7 +4582,7 @@
       }
     }, {
       "name" : "Impervious",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 15.0
@@ -4293,6 +4611,9 @@
         "skillTargetRadius" : {
           "value" : 15.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 16
+        },
         "skillMaxLevel" : {
           "value" : 8
         }
@@ -4317,6 +4638,9 @@
         "characterManaLimitReserveReduction" : {
           "value" : [ 5.0, 7.0, 9.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 21.0, 23.0, 25.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 24
+        },
         "skillManaCostReduction" : {
           "value" : [ 3.0, 6.0, 8.0, 11.0, 14.0, 17.0, 19.0, 22.0, 25.0, 28.0, 30.0, 33.0 ]
         },
@@ -4336,25 +4660,16 @@
       }
     }, {
       "name" : "Stone Hurler",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 10.0
-        },
-        "cameraShakeDurationSecs" : {
-          "value" : 0.5
-        },
-        "offensiveStunMin" : {
-          "value" : 1.0
         },
         "skillManaCost" : {
           "value" : [ 37.5, 40.0, 43.75, 46.25, 50.0, 52.5, 56.25, 58.75, 62.5, 65.0, 68.75, 71.25, 75.0, 77.5, 79.0, 81.0, 83.0, 85.0, 87.0, 89.0, 91.0, 93.0 ]
         },
         "projectileExplosionRadius" : {
           "value" : 3.0
-        },
-        "skillUltimateLevel" : {
-          "value" : 14
         },
         "offensiveStunMax" : {
           "value" : 3.0
@@ -4365,14 +4680,26 @@
         "offensivePhysicalMin" : {
           "value" : [ 49.35, 56.7, 65.05, 72.4, 79.75, 88.1, 95.45, 102.8, 111.15, 118.5, 126.85, 134.2, 141.55, 149.9, 157.25, 164.6, 172.95, 180.3, 187.65, 195.0, 202.35, 209.7 ]
         },
-        "skillProjectileNumber" : {
-          "value" : 2
-        },
         "ragDollAmplification" : {
           "value" : 1.1
         },
         "skillMaxLevel" : {
           "value" : 10
+        },
+        "cameraShakeDurationSecs" : {
+          "value" : 0.5
+        },
+        "offensiveStunMin" : {
+          "value" : 1.0
+        },
+        "skillUltimateLevel" : {
+          "value" : 14
+        },
+        "skillProjectileNumber" : {
+          "value" : 2
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 24
         }
       },
       "description" : "Your golem may now toss large boulders at your opponents.",
@@ -4384,7 +4711,7 @@
       }
     }, {
       "name" : "Fissure",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "offensiveSlowRunSpeedMin" : {
           "value" : [ 20.0, 23.0, 26.0, 29.0, 32.0, 35.0, 38.0, 41.0, 44.0, 47.0, 50.0, 53.0, 56.0, 59.0, 62.0, 65.0, 68.0, 71.0, 74.0, 77.0, 80.0 ]
@@ -4431,6 +4758,9 @@
         "waveEndWidth" : {
           "value" : 3.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 24
+        },
         "waveTime" : {
           "value" : 1.25
         }
@@ -4444,7 +4774,7 @@
       }
     }, {
       "name" : "Stoneskin",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "defensiveBleeding" : {
           "value" : [ 5.0, 8.0, 12.0, 15.0, 18.0, 21.0, 25.0, 28.0, 31.0, 34.0, 38.0, 41.0 ]
@@ -4454,6 +4784,9 @@
         },
         "defensivePierce" : {
           "value" : [ 5.0, 8.0, 12.0, 15.0, 18.0, 21.0, 25.0, 28.0, 31.0, 34.0, 38.0, 41.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 24
         },
         "skillMaxLevel" : {
           "value" : 8
@@ -4479,6 +4812,9 @@
         "defensiveElementalResistance" : {
           "value" : [ 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 24
+        },
         "defensivePoison" : {
           "value" : [ 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0 ]
         },
@@ -4498,7 +4834,7 @@
       }
     } ], [ {
       "name" : "Pressurize",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 12.0
@@ -4547,6 +4883,9 @@
         },
         "skillProjectileNumber" : {
           "value" : 1
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 32
         }
       },
       "description" : "Rush at an enemy and pulverize it with a disabling shield slam. {^n}{^y}Requires a shield.",
@@ -4558,7 +4897,7 @@
       }
     }, {
       "name" : "Shockwave",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 10.0
@@ -4593,6 +4932,9 @@
         "expansionTime" : {
           "value" : 0.2
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 32
+        },
         "offensiveSlowLightningMin" : {
           "value" : [ 15.0, 23.75, 31.25, 40.0, 48.75, 57.5, 65.0, 73.75, 82.5, 90.0, 98.75, 107.5, 115.0, 123.75, 132.5, 141.25, 148.75, 158.3333, 166.0, 175.0, 185.0, 194.0 ]
         },
@@ -4625,6 +4967,9 @@
         },
         "skillUltimateLevel" : {
           "value" : 10
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 32
         },
         "skillMaxLevel" : {
           "value" : 6
@@ -4659,6 +5004,9 @@
         "defensiveSlowLifeLeach" : {
           "value" : [ 10.0, 13.0, 17.0, 20.0, 24.0, 27.0, 31.0, 34.0, 38.0, 41.0, 45.0, 48.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 32
+        },
         "skillMaxLevel" : {
           "value" : 8
         }
@@ -4672,7 +5020,7 @@
       }
     }, {
       "name" : "Titan Form",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 30.0
@@ -4712,6 +5060,9 @@
         },
         "actorScale" : {
           "value" : 2.3
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 32
         }
       },
       "description" : "Funnel the energy of the Earth into your body to turn into a powerful titan that possesses strength comparable to the original creators.",
@@ -4734,6 +5085,9 @@
         "skillUltimateLevel" : {
           "value" : 10
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 40
+        },
         "skillMaxLevel" : {
           "value" : 6
         },
@@ -4750,7 +5104,7 @@
       }
     }, {
       "name" : "Seismic Strength",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillManaCost" : {
           "value" : 1.0
@@ -4797,6 +5151,9 @@
         "skillChargeDuration" : {
           "value" : 5.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 40
+        },
         "skillTargetAngle" : {
           "value" : 360.0
         },
@@ -4813,7 +5170,7 @@
       }
     }, {
       "name" : "Meteorite",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "offensivePhysicalModifier" : {
           "value" : [ -20.0, -40.0, -60.0 ]
@@ -4841,6 +5198,9 @@
         },
         "offensiveFireMin" : {
           "value" : [ 75.0, 150.0, 225.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 40
         },
         "skillMaxLevel" : {
           "value" : 3
@@ -4879,7 +5239,7 @@
     "name" : "Chaos",
     "skillTiers" : [ [ {
       "name" : "Death Pulse",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 5.0
@@ -4908,6 +5268,9 @@
         "expansionTime" : {
           "value" : 0.001
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
+        },
         "skillTargetRadius" : {
           "value" : 5.0
         },
@@ -4924,7 +5287,7 @@
       }
     }, {
       "name" : "Twisted Mind",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "characterAttackSpeedModifier" : {
           "value" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0 ]
@@ -4934,6 +5297,9 @@
         },
         "skillUltimateLevel" : {
           "value" : 14
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
         },
         "characterManaRegenModifier" : {
           "value" : [ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0 ]
@@ -4951,7 +5317,7 @@
       }
     }, {
       "name" : "Befoul Weapons",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillUltimateLevel" : {
           "value" : 14
@@ -4980,6 +5346,9 @@
         "offensiveLifeMin" : {
           "value" : [ 8.0, 13.0, 18.0, 22.0, 27.0, 32.0, 37.0, 41.0, 46.0, 51.0, 56.0, 60.0, 65.0, 70.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
+        },
         "skillMaxLevel" : {
           "value" : 10
         }
@@ -4993,7 +5362,7 @@
       }
     }, {
       "name" : "Impure Blood",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "defensiveTotalSpeedResistance" : {
           "value" : [ 6.0, 11.0, 16.0, 21.0, 26.0, 31.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0 ]
@@ -5006,6 +5375,9 @@
         },
         "characterLifeRegen" : {
           "value" : [ 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
         },
         "skillMaxLevel" : {
           "value" : 8
@@ -5020,7 +5392,7 @@
       }
     } ], [ {
       "name" : "Dreadful Impact",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "waveDepth" : {
           "value" : 1.0
@@ -5067,6 +5439,9 @@
         "offensiveLifeMin" : {
           "value" : [ 15.0, 25.0, 34.0, 44.0, 54.0, 64.0, 73.0, 83.0, 93.0, 102.0, 112.0, 122.0, 131.0, 141.0, 151.0, 161.0, 170.0, 180.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 4
+        },
         "waveTime" : {
           "value" : 0.5
         }
@@ -5080,7 +5455,7 @@
       }
     }, {
       "name" : "Augmented Reflexes",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillUltimateLevel" : {
           "value" : 12
@@ -5090,6 +5465,9 @@
         },
         "characterRunSpeedModifier" : {
           "value" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 4
         },
         "characterDefensiveBlockRecoveryReduction" : {
           "value" : [ 5.0, 8.0, 10.0, 13.0, 15.0, 18.0, 20.0, 23.0, 25.0, 28.0, 30.0, 33.0 ]
@@ -5107,7 +5485,7 @@
       }
     }, {
       "name" : "Obscure Crescent",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "offensiveSlowBleedingMin" : {
           "value" : [ 14.0, 23.0, 33.0, 42.0, 52.0, 61.0, 71.0, 80.0, 90.0, 99.0, 109.0, 118.0, 128.0, 137.0, 147.0, 156.0 ]
@@ -5154,6 +5532,9 @@
         "skillProjectileNumber" : {
           "value" : 1
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 4
+        },
         "skillTargetAngle" : {
           "value" : 250.0
         },
@@ -5170,7 +5551,7 @@
       }
     }, {
       "name" : "Scream",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "characterAttackSpeedModifier" : {
           "value" : [ 10.0, 11.0, 13.0, 14.0, 15.0, 17.0, 18.0, 19.0, 21.0, 22.0, 23.0, 25.0, 26.0, 27.0, 29.0, 30.0 ]
@@ -5198,6 +5579,9 @@
         },
         "cameraShakeAmplitude" : {
           "value" : 0.12
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 4
         },
         "skillMaxLevel" : {
           "value" : 12
@@ -5238,6 +5622,9 @@
         "offensiveFearChance" : {
           "value" : [ 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
+        },
         "skillMaxLevel" : {
           "value" : 8
         }
@@ -5251,7 +5638,7 @@
       }
     }, {
       "name" : "Devil's Rush",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 8.0
@@ -5303,6 +5690,9 @@
         },
         "skillProjectileNumber" : {
           "value" : 1
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
         }
       },
       "description" : "Rush at an opponent with incredible agility to deliver a reliable and deadly blow.{^n}{^y}Requires a melee weapon.",
@@ -5331,6 +5721,9 @@
         "offensiveTotalResistanceReductionAbsoluteMin" : {
           "value" : [ 10.0, 12.0, 14.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 26.0, 28.0, 30.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
+        },
         "skillMaxLevel" : {
           "value" : 8
         },
@@ -5347,7 +5740,7 @@
       }
     }, {
       "name" : "Dividing Magic",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "projectileFragmentsLaunchNumberMin" : {
           "value" : [ 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 8.0, 8.0, 8.0, 9.0, 9.0, 9.0, 10.0, 10.0, 10.0, 11.0, 11.0, 11.0, 12.0, 12.0 ]
@@ -5387,6 +5780,9 @@
         },
         "offensiveLifeMin" : {
           "value" : [ 26.0, 37.0, 47.0, 58.0, 69.0, 80.0, 90.0, 101.0, 112.0, 123.0, 133.0, 144.0, 155.0, 166.0, 176.0, 187.0, 198.0, 209.0, 219.0, 230.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
         }
       },
       "description" : "Focus your arcane consciousness to make your projectiles divide into smaller ones upon impact.{^n}{^y}Requires a staff or a bow.",
@@ -5415,6 +5811,9 @@
         "offensivePierceMin" : {
           "value" : [ 10.0, 18.0, 27.0, 35.0, 44.0, 52.0, 61.0, 69.0, 78.0, 86.0, 95.0, 103.0, 112.0, 120.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 16
+        },
         "skillMaxLevel" : {
           "value" : 10
         }
@@ -5428,7 +5827,7 @@
       }
     }, {
       "name" : "Power Upsurge",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 30.0
@@ -5439,6 +5838,15 @@
         "skillManaCost" : {
           "value" : [ 52.5, 54.6, 57.75, 59.85, 63.0, 65.1, 68.25, 70.35, 73.5, 75.6, 78.75, 80.85 ]
         },
+        "skillConnectionSpacing" : {
+          "value" : 62
+        },
+        "cameraShakeAmplitude" : {
+          "value" : 0.12
+        },
+        "skillMaxLevel" : {
+          "value" : 8
+        },
         "skillUltimateLevel" : {
           "value" : 12
         },
@@ -5448,20 +5856,14 @@
         "offensiveLifeModifier" : {
           "value" : [ 25.0, 28.0, 31.0, 34.0, 37.0, 40.0, 43.0, 46.0, 49.0, 52.0, 55.0, 58.0, 61.0, 65.0, 68.0 ]
         },
-        "skillConnectionSpacing" : {
-          "value" : 62
-        },
-        "cameraShakeAmplitude" : {
-          "value" : 0.12
-        },
         "skillTargetRadius" : {
           "value" : 10.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 16
+        },
         "skillManaCostReduction" : {
           "value" : [ 5.0, 6.0, 8.0, 9.0, 10.0, 12.0, 13.0, 15.0, 16.0, 17.0, 19.0, 20.0 ]
-        },
-        "skillMaxLevel" : {
-          "value" : 8
         },
         "offensiveSlowBleedingModifier" : {
           "value" : [ 20.0, 28.0, 37.0, 45.0, 53.0, 62.0, 70.0, 79.0, 87.0, 95.0, 104.0, 112.0 ]
@@ -5476,7 +5878,7 @@
       }
     }, {
       "name" : "Fleshrender",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillChanceWeight" : {
           "value" : [ 6.0, 7.0, 9.0, 10.0, 11.0, 12.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ]
@@ -5514,6 +5916,9 @@
         "skillProjectileNumber" : {
           "value" : 1
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 16
+        },
         "dualWieldOnly" : {
           "value" : 1
         }
@@ -5527,7 +5932,7 @@
       }
     }, {
       "name" : "Wrath",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillManaCost" : {
           "value" : 1.0
@@ -5577,6 +5982,9 @@
         "skillChargeDuration" : {
           "value" : 0.84
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 16
+        },
         "Spear" : {
           "value" : 1
         }
@@ -5600,6 +6008,9 @@
         },
         "racialBonusPercentDamage" : {
           "value" : [ 50.0, 75.0, 100.0, 125.0, 150.0, 175.0, 200.0, 225.0, 250.0, 275.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 24
         },
         "offensiveLifeLeechMin" : {
           "value" : [ 3.0, 4.0, 5.0, 5.0, 6.0, 7.0, 8.0, 8.0, 9.0, 10.0 ]
@@ -5643,6 +6054,9 @@
         "meleeOnly" : {
           "value" : 1
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 24
+        },
         "skillTargetAngle" : {
           "value" : 360.0
         },
@@ -5670,6 +6084,9 @@
         "characterLife" : {
           "value" : [ 60.0, 101.0, 142.0, 182.0, 223.0, 263.0, 304.0, 344.0, 386.0, 427.0, 467.0, 508.0, 548.0, 589.0, 629.0, 670.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 24
+        },
         "skillMaxLevel" : {
           "value" : 12
         },
@@ -5686,7 +6103,7 @@
       }
     }, {
       "name" : "Sanguine Blast",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 3.0
@@ -5726,6 +6143,9 @@
         },
         "offensiveLifeMin" : {
           "value" : [ 108.0, 128.25, 148.5, 168.75, 189.0, 209.25, 229.5, 249.75, 267.75, 288.0, 308.25, 328.5, 348.75, 369.0, 389.25, 409.5 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 24
         }
       },
       "description" : "Canalize a fusion of chaotic power and demon blood into a powerful laser that seeks a poor creature and destroys it from the inside.{^n}{^y}Requires a staff.",
@@ -5744,6 +6164,9 @@
         },
         "skillCooldownReduction" : {
           "value" : 90.0
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 32
         },
         "skillMaxLevel" : {
           "value" : 6
@@ -5787,6 +6210,9 @@
         "offensiveSlowLifeModifier" : {
           "value" : 100.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 32
+        },
         "skillMaxLevel" : {
           "value" : 1
         },
@@ -5820,6 +6246,9 @@
         "offensiveTotalDamageModifier" : {
           "value" : [ 10.0, 12.0, 14.0, 16.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 30.0, 32.0, 34.0, 36.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 32
+        },
         "skillMaxLevel" : {
           "value" : 11
         },
@@ -5839,10 +6268,22 @@
       }
     }, {
       "name" : "Corruption",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "retaliationPercentCurrentLifeMin" : {
           "value" : [ 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0 ]
+        },
+        "retaliationSlowOffensiveAbilityDurationMin" : {
+          "value" : 3.0
+        },
+        "retaliationSlowOffensiveAbilityGlobal" : {
+          "value" : 1
+        },
+        "retaliationSlowOffensiveAbilityXOR" : {
+          "value" : 1
+        },
+        "skillMaxLevel" : {
+          "value" : 14
         },
         "skillUltimateLevel" : {
           "value" : 18
@@ -5856,26 +6297,17 @@
         "retaliationSlowOffensiveAbilityMin" : {
           "value" : [ 8.0, 10.0, 12.0, 14.0, 16.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 32.0, 34.0, 36.0, 38.0, 40.0 ]
         },
-        "retaliationSlowOffensiveAbilityDurationMin" : {
-          "value" : 3.0
-        },
         "retaliationSlowDefensiveAbilityGlobal" : {
           "value" : 1
         },
         "retaliationGlobalChance" : {
           "value" : 100.0
         },
-        "retaliationSlowOffensiveAbilityGlobal" : {
-          "value" : 1
-        },
         "retaliationSlowDefensiveAbilityXOR" : {
           "value" : 1
         },
-        "retaliationSlowOffensiveAbilityXOR" : {
-          "value" : 1
-        },
-        "skillMaxLevel" : {
-          "value" : 14
+        "skillMasteryLevelRequired" : {
+          "value" : 32
         }
       },
       "description" : "An aura of terror gathers around you; foes daring to approach can neither remain brave nor unscarred for too long.",
@@ -5887,7 +6319,7 @@
       }
     }, {
       "name" : "Insignia of Anguish",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 10.0
@@ -5934,6 +6366,9 @@
         "offensiveLifeMin" : {
           "value" : [ 35.0, 45.0, 56.0, 66.0, 77.0, 87.0, 97.0, 108.0, 118.0, 128.0, 139.0, 149.0, 160.0, 170.0, 181.0, 193.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 32
+        },
         "offensiveSlowTotalSpeedDurationMin" : {
           "value" : 3.0
         }
@@ -5963,6 +6398,9 @@
         },
         "offensiveSlowLifeMin" : {
           "value" : [ 33.66, 39.1, 44.88, 50.32, 56.1, 61.54, 66.98, 72.76, 78.2, 83.98, 89.42, 95.2, 100.64, 106.08, 111.86, 117.3, 123.08, 128.52 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 32
         },
         "skillMaxLevel" : {
           "value" : 14
@@ -6003,6 +6441,9 @@
         "offensiveSlowLifeModifier" : {
           "value" : [ -33.0, -66.0, -100.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 40
+        },
         "skillMaxLevel" : {
           "value" : 3
         }
@@ -6016,7 +6457,7 @@
       }
     }, {
       "name" : "Shadow Riposte",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 2.0
@@ -6056,6 +6497,9 @@
         },
         "skillTargetRadius" : {
           "value" : 8.0
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 40
         }
       },
       "description" : "Each blow you take can unleash a burst of concentrated dark magic that eradicates all nearby forms of life.",
@@ -6067,7 +6511,7 @@
       }
     }, {
       "name" : "Pandemonium",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 3.0
@@ -6089,6 +6533,9 @@
         },
         "offensiveTotalDamageModifier" : {
           "value" : [ 100.0, 118.0, 136.0, 155.0, 173.0, 191.0, 209.0, 227.0, 245.0, 264.0, 282.0, 300.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 40
         },
         "skillMaxLevel" : {
           "value" : 8
@@ -6132,6 +6579,9 @@
         "offensiveSlowLifeModifier" : {
           "value" : -50.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 40
+        },
         "skillMaxLevel" : {
           "value" : 1
         }
@@ -6166,7 +6616,7 @@
     "name" : "Barbarism",
     "skillTiers" : [ [ {
       "name" : "Berserker's Wrath",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillUltimateLevel" : {
           "value" : 14
@@ -6176,6 +6626,9 @@
         },
         "characterStrength" : {
           "value" : [ 6.0, 12.0, 18.0, 24.0, 30.0, 36.0, 42.0, 48.0, 54.0, 60.0, 66.0, 72.0, 78.0, 84.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
         },
         "skillMaxLevel" : {
           "value" : 10
@@ -6190,7 +6643,7 @@
       }
     }, {
       "name" : "Battle Momentum",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillProjectileSpeedModifier" : {
           "value" : [ 10.0, 16.0, 24.0, 30.0, 36.0, 43.0, 49.0, 57.0, 63.0, 69.0, 76.0, 82.0, 86.0, 90.0 ]
@@ -6216,6 +6669,9 @@
         "skillChargeDuration" : {
           "value" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
+        },
         "skillMaxLevel" : {
           "value" : 10
         }
@@ -6229,7 +6685,7 @@
       }
     }, {
       "name" : "Warlord's Challenge",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "offensiveTotalDamageReductionPercentMin" : {
           "value" : [ 20.0, 23.0, 26.0, 29.0, 32.0, 35.0, 38.0, 41.0, 44.0, 48.0 ]
@@ -6270,6 +6726,9 @@
         "expansionTime" : {
           "value" : 0.05
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
+        },
         "skillTargetRadius" : {
           "value" : 10.0
         },
@@ -6306,6 +6765,9 @@
         "offensiveTotalResistanceReductionAbsoluteMin" : {
           "value" : [ 10.0, 25.0, 40.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 4
+        },
         "skillMaxLevel" : {
           "value" : 3
         }
@@ -6319,7 +6781,7 @@
       }
     }, {
       "name" : "Ambidexterity",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "offensivePhysicalModifier" : {
           "value" : 15.0
@@ -6367,7 +6829,7 @@
       }
     }, {
       "name" : "Earthshock",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 1.0
@@ -6411,6 +6873,9 @@
         "Sword" : {
           "value" : 1
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 4
+        },
         "Spear" : {
           "value" : 1
         }
@@ -6424,7 +6889,7 @@
       }
     }, {
       "name" : "Combat Spirit",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "characterOffensiveAbility" : {
           "value" : [ 20.0, 33.0, 45.0, 58.0, 71.0, 83.0, 96.0, 109.0, 121.0, 134.0, 147.0, 159.0, 172.0, 185.0, 197.0, 210.0 ]
@@ -6453,6 +6918,9 @@
         "skillTargetRadius" : {
           "value" : 14.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 4
+        },
         "skillMaxLevel" : {
           "value" : 12
         }
@@ -6466,7 +6934,7 @@
       }
     }, {
       "name" : "Purge",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "defensiveSlowManaLeachDuration" : {
           "value" : 100.0
@@ -6516,6 +6984,9 @@
         "defensiveBleedingDuration" : {
           "value" : 100.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 4
+        },
         "defensiveColdDuration" : {
           "value" : 100.0
         }
@@ -6534,17 +7005,8 @@
         "offensiveSlowBleedingMin" : {
           "value" : [ 17.0, 24.0, 29.0, 36.0, 41.0, 46.0, 53.0, 59.0, 65.0, 71.0, 82.0, 91.0 ]
         },
-        "Mace" : {
-          "value" : 1
-        },
         "skillManaCost" : {
           "value" : 1.0
-        },
-        "skillUltimateLevel" : {
-          "value" : 12
-        },
-        "Sword" : {
-          "value" : 1
         },
         "offensiveSlowBleedingDurationMin" : {
           "value" : 3.0
@@ -6552,17 +7014,29 @@
         "skillMaxLevel" : {
           "value" : 8
         },
-        "offensiveSlowBleedingModifier" : {
-          "value" : [ 15.0, 20.0, 26.0, 31.0, 36.0, 42.0, 47.0, 52.0, 58.0, 63.0, 68.0, 73.0 ]
-        },
-        "offensiveSlowBleedingChance" : {
-          "value" : 25.0
-        },
         "Axe" : {
           "value" : 1
         },
         "RangedOneHand" : {
           "value" : 1
+        },
+        "Mace" : {
+          "value" : 1
+        },
+        "skillUltimateLevel" : {
+          "value" : 12
+        },
+        "Sword" : {
+          "value" : 1
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
+        },
+        "offensiveSlowBleedingModifier" : {
+          "value" : [ 15.0, 20.0, 26.0, 31.0, 36.0, 42.0, 47.0, 52.0, 58.0, 63.0, 68.0, 73.0 ]
+        },
+        "offensiveSlowBleedingChance" : {
+          "value" : 25.0
         },
         "Spear" : {
           "value" : 1
@@ -6603,6 +7077,9 @@
         "offensiveSlowOffensiveAbilityDurationMin" : {
           "value" : 3.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
+        },
         "skillMaxLevel" : {
           "value" : 8
         },
@@ -6622,25 +7099,10 @@
       }
     }, {
       "name" : "Ferocity",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 8.0
-        },
-        "defensivePhysical" : {
-          "value" : 33.0
-        },
-        "skillUltimateLevel" : {
-          "value" : 16
-        },
-        "notDispelable" : {
-          "value" : 1
-        },
-        "defensivePhysicalChance" : {
-          "value" : [ 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 33.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0, 48.0, 50.0 ]
-        },
-        "characterDodgePercent" : {
-          "value" : [ 4.0, 5.0, 5.0, 6.0, 6.0, 7.0, 7.0, 8.0, 8.0, 9.0, 9.0, 10.0, 10.0, 11.0, 11.0, 12.0 ]
         },
         "offensivePhysicalMin" : {
           "value" : [ 10.0, 16.0, 22.0, 28.0, 34.0, 40.0, 47.0, 54.0, 61.0, 68.0, 75.0, 82.0, 89.0, 96.0, 104.0, 111.0 ]
@@ -6659,6 +7121,24 @@
         },
         "lifeMonitorPercent" : {
           "value" : 40.0
+        },
+        "defensivePhysical" : {
+          "value" : 33.0
+        },
+        "skillUltimateLevel" : {
+          "value" : 16
+        },
+        "notDispelable" : {
+          "value" : 1
+        },
+        "defensivePhysicalChance" : {
+          "value" : [ 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 33.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0, 48.0, 50.0 ]
+        },
+        "characterDodgePercent" : {
+          "value" : [ 4.0, 5.0, 5.0, 6.0, 6.0, 7.0, 7.0, 8.0, 8.0, 9.0, 9.0, 10.0, 10.0, 11.0, 11.0, 12.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
         }
       },
       "description" : "Even when critically injured, you ignore the pain and open wounds to carry on with an unquestionable will to survive and a triumphant resolve.{^n}{^y}Remains active while health is low.{^n}{^a}Cannot be dispelled.",
@@ -6684,6 +7164,9 @@
         "characterManaLimitReserve" : {
           "value" : 25.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
+        },
         "skillMaxLevel" : {
           "value" : 6
         },
@@ -6700,7 +7183,7 @@
       }
     }, {
       "name" : "Dash",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 6.0
@@ -6744,6 +7227,9 @@
         "skillProjectileNumber" : {
           "value" : 1
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
+        },
         "offensiveSlowDefensiveReductionMin" : {
           "value" : [ 20.0, 37.0, 55.0, 72.0, 89.0, 107.0, 124.0, 141.0, 159.0, 176.0, 193.0, 211.0, 228.0, 245.0, 263.0, 280.0 ]
         }
@@ -6776,6 +7262,9 @@
         },
         "offensiveSlowDefensiveAbilityMin" : {
           "value" : 8.0
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 16
         },
         "offensiveSlowOffensiveAbilityDurationMin" : {
           "value" : 2.0
@@ -6813,6 +7302,9 @@
         "characterManaRegen" : {
           "value" : [ 1.5, 2.5, 3.4, 4.4, 5.3, 6.3, 7.2, 8.2, 9.1, 10.1, 11.0, 12.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 16
+        },
         "skillMaxLevel" : {
           "value" : 8
         }
@@ -6826,7 +7318,7 @@
       }
     }, {
       "name" : "Slash Flurry",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillChanceWeight" : {
           "value" : [ 5.0, 6.0, 6.0, 7.0, 7.0, 8.0, 9.0, 9.0, 10.0, 10.0, 11.0, 12.0, 12.0, 13.0, 13.0, 14.0 ]
@@ -6845,6 +7337,9 @@
         },
         "skillProjectileNumber" : {
           "value" : 1
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 16
         },
         "dualWieldOnly" : {
           "value" : 1
@@ -6879,6 +7374,9 @@
         "offensiveSlowBleedingDurationMin" : {
           "value" : 3.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 16
+        },
         "offensiveSlowAttackSpeedDurationMin" : {
           "value" : 3.0
         },
@@ -6895,7 +7393,7 @@
       }
     }, {
       "name" : "Treacherous Javelin",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "defensiveBleeding" : {
           "value" : [ -12.0, -15.0, -17.0, -20.0, -22.0, -25.0, -27.0, -30.0, -32.0, -35.0, -37.0, -40.0, -42.0, -45.0, -47.0, -50.0 ]
@@ -6945,6 +7443,9 @@
         "skillUltimateLevel" : {
           "value" : 16
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 16
+        },
         "defensiveProtectionModifier" : {
           "value" : [ -4.0, -5.0, -6.0, -7.0, -8.0, -9.0, -10.0, -11.0, -13.0, -14.0, -15.0, -16.0, -17.0, -18.0, -19.0, -20.0 ]
         }
@@ -6975,6 +7476,9 @@
         "skillUltimateLevel" : {
           "value" : 14
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 24
+        },
         "skillMaxLevel" : {
           "value" : 10
         },
@@ -6994,7 +7498,7 @@
       }
     }, {
       "name" : "Barrage",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillChanceWeight" : {
           "value" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ]
@@ -7010,6 +7514,9 @@
         },
         "skillProjectileNumber" : {
           "value" : 1
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 24
         },
         "dualWieldOnly" : {
           "value" : 1
@@ -7047,6 +7554,9 @@
         "offensiveSlowBleedingModifierChance" : {
           "value" : 30.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 24
+        },
         "offensiveSlowTotalSpeedDurationMin" : {
           "value" : 3.0
         },
@@ -7066,7 +7576,7 @@
       }
     }, {
       "name" : "Undying Fury",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 10.0
@@ -7094,6 +7604,9 @@
         },
         "damageAbsorptionPercent" : {
           "value" : [ 10.0, 11.0, 13.0, 14.0, 15.0, 17.0, 18.0, 19.0, 21.0, 22.0, 23.0, 25.0, 26.0, 27.0, 29.0, 30.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 24
         },
         "skillMaxLevel" : {
           "value" : 12
@@ -7124,6 +7637,9 @@
         },
         "offensiveSlowBleedingDurationMin" : {
           "value" : 3.0
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 24
         },
         "skillTargetAngle" : {
           "value" : 360.0
@@ -7158,6 +7674,9 @@
         "defensivePierce" : {
           "value" : [ 10.0, 14.0, 16.0, 18.0, 21.0, 23.0, 25.0, 27.0, 30.0, 32.0, 34.0, 37.0, 39.0, 41.0, 45.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 32
+        },
         "skillMaxLevel" : {
           "value" : 11
         }
@@ -7182,6 +7701,9 @@
         "skillCooldownReduction" : {
           "value" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 32
+        },
         "skillMaxLevel" : {
           "value" : 8
         }
@@ -7195,19 +7717,13 @@
       }
     }, {
       "name" : "Blade Blaze",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 10.0
         },
-        "cameraShakeDurationSecs" : {
-          "value" : 0.5
-        },
         "skillManaCost" : {
           "value" : [ 50.0, 58.0, 66.0, 74.0, 82.0, 90.0, 98.0, 106.0, 114.0, 122.0, 130.0, 138.0, 146.0, 154.0 ]
-        },
-        "skillUltimateLevel" : {
-          "value" : 14
         },
         "offensivePhysicalMin" : {
           "value" : [ 18.0, 27.0, 36.0, 45.0, 54.0, 63.0, 72.0, 81.0, 90.0, 99.0, 108.0, 117.0, 126.0, 135.0 ]
@@ -7221,17 +7737,26 @@
         "meleeOnly" : {
           "value" : 1
         },
-        "skillProjectileNumber" : {
-          "value" : 1
-        },
         "ragDollAmplification" : {
           "value" : 1.1
+        },
+        "skillMaxLevel" : {
+          "value" : 10
+        },
+        "cameraShakeDurationSecs" : {
+          "value" : 0.5
+        },
+        "skillUltimateLevel" : {
+          "value" : 14
+        },
+        "skillProjectileNumber" : {
+          "value" : 1
         },
         "dualWieldOnly" : {
           "value" : 1
         },
-        "skillMaxLevel" : {
-          "value" : 10
+        "skillMasteryLevelRequired" : {
+          "value" : 32
         }
       },
       "description" : "Attack with a blind rage, slaughtering a single victim with an avalanche of violent blows.{^n}{^y}Requires dual-wielding melee weapons.",
@@ -7243,7 +7768,7 @@
       }
     }, {
       "name" : "Stab Wound",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "offensivePierceGlobal" : {
           "value" : 1
@@ -7251,17 +7776,8 @@
         "offensiveSlowBleedingMin" : {
           "value" : [ 7.0, 10.0, 13.0, 16.0, 19.0, 22.0, 25.0, 28.0, 31.0, 34.0, 37.0, 40.0 ]
         },
-        "offensiveGlobalChance" : {
-          "value" : 33.0
-        },
-        "skillUltimateLevel" : {
-          "value" : 12
-        },
         "offensivePierceModifier" : {
           "value" : [ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0 ]
-        },
-        "Sword" : {
-          "value" : 1
         },
         "offensiveSlowBleedingDurationMin" : {
           "value" : 3.0
@@ -7274,6 +7790,18 @@
         },
         "RangedOneHand" : {
           "value" : 1
+        },
+        "offensiveGlobalChance" : {
+          "value" : 33.0
+        },
+        "skillUltimateLevel" : {
+          "value" : 12
+        },
+        "Sword" : {
+          "value" : 1
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 32
         },
         "Spear" : {
           "value" : 1
@@ -7291,7 +7819,7 @@
       }
     } ], [ {
       "name" : "Whirling Blades",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillChanceWeight" : {
           "value" : [ 5.0, 5.0, 6.0, 6.0, 7.0, 7.0, 8.0, 8.0, 9.0, 9.0, 10.0, 10.0 ]
@@ -7326,6 +7854,9 @@
         "offensiveTotalResistanceReductionAbsoluteMin" : {
           "value" : [ 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 40
+        },
         "dualWieldOnly" : {
           "value" : 1
         },
@@ -7359,6 +7890,9 @@
         "offensiveSlowLightningMin" : {
           "value" : 180.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 40
+        },
         "skillMaxLevel" : {
           "value" : 1
         }
@@ -7382,6 +7916,9 @@
         },
         "characterDodgePercent" : {
           "value" : [ 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 40
         },
         "offensiveLifeLeechMin" : {
           "value" : [ 5.0, 6.0, 7.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 16.0, 17.0, 18.0 ]
@@ -7420,13 +7957,16 @@
     "name" : "Time",
     "skillTiers" : [ [ {
       "name" : "Young Years",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "characterLifeModifier" : {
           "value" : [ -3.0, -5.0, -8.0, -10.0, -13.0, -15.0, -18.0, -20.0, -23.0, -25.0 ]
         },
         "skillUltimateLevel" : {
           "value" : 10
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
         },
         "skillMaxLevel" : {
           "value" : 6
@@ -7444,7 +7984,7 @@
       }
     }, {
       "name" : "Temporal Energy",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "offensiveSlowFireDurationMin" : {
           "value" : 3.0
@@ -7525,13 +8065,16 @@
       }
     }, {
       "name" : "Abiding Majesty",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillUltimateLevel" : {
           "value" : 10
         },
         "defensiveElementalResistance" : {
           "value" : [ 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
         },
         "skillManaCostReduction" : {
           "value" : [ 2.0, 4.0, 6.0, 7.0, 9.0, 11.0, 13.0, 14.0, 16.0, 18.0 ]
@@ -7549,7 +8092,7 @@
       }
     }, {
       "name" : "Echo",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "offensiveSlowFireDurationMin" : {
           "value" : 3.0
@@ -7603,13 +8146,16 @@
       }
     } ], [ {
       "name" : "Perenniality",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillUltimateLevel" : {
           "value" : 12
         },
         "defensiveAbsorptionModifier" : {
           "value" : [ 2.0, 3.0, 5.0, 6.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 4
         },
         "defensiveProtectionModifier" : {
           "value" : [ 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0 ]
@@ -7627,7 +8173,7 @@
       }
     }, {
       "name" : "Mend Wounds",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 4.0
@@ -7650,6 +8196,9 @@
         "cameraShakeAmplitude" : {
           "value" : 0.12
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 4
+        },
         "skillMaxLevel" : {
           "value" : 12
         }
@@ -7663,7 +8212,7 @@
       }
     }, {
       "name" : "Interdimensional Breach",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 15.0
@@ -7725,6 +8274,9 @@
         "offensiveSlowLightningMin" : {
           "value" : [ 22.0, 32.0, 41.0, 51.0, 61.0, 70.0, 80.0, 90.0, 99.0, 109.0, 119.0, 128.0, 138.0, 148.0, 157.0, 167.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 4
+        },
         "skillTargetAngle" : {
           "value" : 360.0
         },
@@ -7741,13 +8293,16 @@
       }
     }, {
       "name" : "Excellency",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillUltimateLevel" : {
           "value" : 10
         },
         "characterGlobalReqReduction" : {
           "value" : [ 2.0, 3.0, 5.0, 6.0, 8.0, 9.0, 11.0, 12.0, 14.0, 15.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 4
         },
         "skillMaxLevel" : {
           "value" : 6
@@ -7776,6 +8331,9 @@
         "skillActiveManaCost" : {
           "value" : [ 1.0, 1.0, 2.0, 2.0, 3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 5.0, 5.0, 6.0, 6.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
+        },
         "defensiveTrap" : {
           "value" : [ 8.0, 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0 ]
         },
@@ -7792,7 +8350,7 @@
       }
     }, {
       "name" : "Hourglass of Waning",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 10.0
@@ -7832,6 +8390,9 @@
         },
         "skillTargetRadius" : {
           "value" : 5.0
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
         }
       },
       "description" : "Turn the tides of time against your foes, aging them into foreseeable and feeble fools.",
@@ -7843,7 +8404,7 @@
       }
     }, {
       "name" : "Synchronism",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillChanceWeight" : {
           "value" : [ 5.0, 7.0, 9.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 21.0, 23.0, 25.0 ]
@@ -7860,6 +8421,9 @@
         "skillProjectileNumber" : {
           "value" : 5
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
+        },
         "skillMaxLevel" : {
           "value" : 8
         }
@@ -7873,7 +8437,7 @@
       }
     }, {
       "name" : "Cosmic Nebula",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "petBurstSpawn" : {
           "value" : 1
@@ -7902,6 +8466,9 @@
         "skillProjectileNumber" : {
           "value" : 1
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
+        },
         "skillMaxLevel" : {
           "value" : 12
         }
@@ -7926,6 +8493,9 @@
         "skillUltimateLevel" : {
           "value" : 12
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
+        },
         "skillMaxLevel" : {
           "value" : 8
         },
@@ -7942,7 +8512,7 @@
       }
     } ], [ {
       "name" : "Time Freeze",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "waveDepth" : {
           "value" : 1.0
@@ -7989,6 +8559,9 @@
         "offensivePetrifyMax" : {
           "value" : [ 2.4, 2.6, 2.8, 3.0, 3.2, 3.4, 3.6, 3.8, 4.0, 4.2, 4.4, 4.6 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 16
+        },
         "waveTime" : {
           "value" : 1.1
         }
@@ -8002,7 +8575,7 @@
       }
     }, {
       "name" : "Slowing Rift",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "offensiveSlowTotalSpeedMin" : {
           "value" : [ 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 23.0, 25.0, 26.0, 28.0, 30.0 ]
@@ -8030,6 +8603,9 @@
         },
         "skillTargetRadius" : {
           "value" : 7.0
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 16
         },
         "offensiveSlowTotalSpeedDurationMin" : {
           "value" : 1.0
@@ -8061,6 +8637,9 @@
         "offensiveSlowManaLeachMin" : {
           "value" : 24.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 16
+        },
         "skillMaxLevel" : {
           "value" : 1
         }
@@ -8074,7 +8653,7 @@
       }
     }, {
       "name" : "Seeker",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillUltimateLevel" : {
           "value" : 14
@@ -8084,6 +8663,9 @@
         },
         "characterRunSpeedModifier" : {
           "value" : [ 16.0, 24.0, 34.0, 46.0, 54.0, 64.0, 72.0, 82.0, 90.0, 102.0, 112.0, 120.0, 128.0, 136.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
         },
         "skillMaxLevel" : {
           "value" : 10
@@ -8098,7 +8680,7 @@
       }
     }, {
       "name" : "Chronophage",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "offensiveSlowTotalSpeedMin" : {
           "value" : [ 12.0, 14.5, 17.1, 19.6, 22.2, 24.7, 27.3, 29.8, 32.4, 34.9, 37.5, 40.0 ]
@@ -8117,6 +8699,9 @@
         },
         "offensivePetrifyChance" : {
           "value" : 25.0
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 16
         },
         "offensiveSlowTotalSpeedDurationMin" : {
           "value" : 3.0
@@ -8148,6 +8733,9 @@
         "skillActiveManaCost" : {
           "value" : [ 1.0, 1.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 6.0, 6.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 24
+        },
         "skillMaxLevel" : {
           "value" : 12
         },
@@ -8164,7 +8752,7 @@
       }
     }, {
       "name" : "Quickening",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 4.0
@@ -8193,6 +8781,9 @@
         "skillTargetRadius" : {
           "value" : 15.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 24
+        },
         "skillMaxLevel" : {
           "value" : 6
         }
@@ -8217,6 +8808,9 @@
         "skillUltimateLevel" : {
           "value" : 1
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 24
+        },
         "skillMaxLevel" : {
           "value" : 1
         },
@@ -8233,7 +8827,7 @@
       }
     }, {
       "name" : "Rise of the Ancestors",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "petBurstSpawn" : {
           "value" : 3
@@ -8256,6 +8850,9 @@
         "cameraShakeAmplitude" : {
           "value" : 0.12
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 24
+        },
         "skillMaxLevel" : {
           "value" : 16
         }
@@ -8269,7 +8866,7 @@
       }
     } ], [ {
       "name" : "Accelerate",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "defensiveFireDuration" : {
           "value" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ]
@@ -8294,6 +8891,9 @@
         },
         "defensiveLightningDuration" : {
           "value" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 32
         },
         "defensiveColdDuration" : {
           "value" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ]
@@ -8334,6 +8934,9 @@
         "offensiveSlowLightningMin" : {
           "value" : [ 4.0, 8.0, 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 32
+        },
         "skillMaxLevel" : {
           "value" : 10
         }
@@ -8347,7 +8950,7 @@
       }
     }, {
       "name" : "Astral Mergence",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 26.0
@@ -8373,6 +8976,9 @@
         "cameraShakeAmplitude" : {
           "value" : 0.12
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 32
+        },
         "skillMaxLevel" : {
           "value" : 8
         },
@@ -8397,6 +9003,9 @@
         "skillUltimateLevel" : {
           "value" : 16
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 32
+        },
         "skillMaxLevel" : {
           "value" : 12
         }
@@ -8410,7 +9019,7 @@
       }
     }, {
       "name" : "Upheaved Time",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "offensiveColdXOR" : {
           "value" : 1
@@ -8460,6 +9069,9 @@
         "offensiveFireChance" : {
           "value" : 33.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 32
+        },
         "offensiveLightningXOR" : {
           "value" : 1
         }
@@ -8473,7 +9085,7 @@
       }
     } ], [ {
       "name" : "Gravity Nova",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 3.0
@@ -8523,6 +9135,9 @@
         "offensiveLightningMin" : {
           "value" : [ 80.0, 108.0, 136.0, 164.0, 192.0, 220.0, 248.0, 276.0, 304.0, 332.0, 360.0, 388.0, 416.0, 444.0, 472.0, 500.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 40
+        },
         "offensiveSlowLightningMin" : {
           "value" : [ 7.5, 15.0, 22.5, 30.0, 37.5, 45.0, 52.5, 60.0, 67.5, 75.0, 82.5, 90.0, 97.5, 105.0, 112.5, 120.0 ]
         },
@@ -8539,7 +9154,7 @@
       }
     }, {
       "name" : "Eternize",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "offensiveSlowLifeDurationModifier" : {
           "value" : [ 12.0, 24.0, 36.0, 48.0, 60.0, 72.0, 84.0, 96.0, 108.0, 120.0, 132.0, 144.0, 156.0, 168.0 ]
@@ -8555,6 +9170,9 @@
         },
         "offensiveSlowBleedingDurationModifier" : {
           "value" : [ 12.0, 24.0, 36.0, 48.0, 60.0, 72.0, 84.0, 96.0, 108.0, 120.0, 132.0, 144.0, 156.0, 168.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 40
         },
         "skillMaxLevel" : {
           "value" : 10
@@ -8575,7 +9193,7 @@
       }
     }, {
       "name" : "Forgotten Knowledge",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 30.0
@@ -8600,6 +9218,9 @@
         },
         "skillTargetRadius" : {
           "value" : 12.0
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 40
         },
         "skillManaCostReduction" : {
           "value" : [ 5.0, 7.0, 8.0, 10.0, 11.0, 13.0, 14.0, 16.0, 17.0, 19.0, 20.0, 22.0, 23.0, 25.0 ]
@@ -8644,7 +9265,7 @@
     "name" : "Lifegiving",
     "skillTiers" : [ [ {
       "name" : "Gift of Life",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 5.0
@@ -8667,6 +9288,9 @@
         "skillTargetRadius" : {
           "value" : 3.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
+        },
         "skillMaxLevel" : {
           "value" : 12
         }
@@ -8680,7 +9304,7 @@
       }
     }, {
       "name" : "Fiery Strikes",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : [ 6.0, 5.9, 5.7, 5.6, 5.5, 5.4, 5.2, 5.1, 5.0, 4.9, 4.7, 4.6, 4.5, 4.4, 4.2, 4.1, 4.0, 3.9, 3.7, 3.6 ]
@@ -8723,6 +9347,9 @@
         },
         "offensiveFireMin" : {
           "value" : [ 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 43.0, 47.0, 52.0, 57.0, 61.0, 66.0, 72.0, 77.0, 82.0, 88.0, 94.0, 100.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
         }
       },
       "description" : "Charge heavenly power in your attacks to deal serious injuries and burns. {^y}Apply this skill to your left mouse button.{^n}{^y}Hits twice when used on melee range.{^n}{^y}Cooldown is reduced with more skill points.",
@@ -8734,13 +9361,16 @@
       }
     }, {
       "name" : "Pure Heart",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "racialBonusPercentDefense" : {
           "value" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0 ]
         },
         "skillUltimateLevel" : {
           "value" : 12
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
         },
         "defensivePoison" : {
           "value" : [ 6.0, 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0 ]
@@ -8758,13 +9388,16 @@
       }
     } ], [ {
       "name" : "Punishment",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "retaliationSlowFireDurationMin" : {
           "value" : 3.0
         },
         "skillUltimateLevel" : {
           "value" : 16
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 4
         },
         "retaliationSlowFireMin" : {
           "value" : [ 12.0, 16.0, 20.0, 27.0, 32.0, 38.0, 45.0, 51.0, 61.0, 70.0, 80.0, 90.0, 104.0, 120.0, 138.0, 155.0 ]
@@ -8785,7 +9418,7 @@
       }
     }, {
       "name" : "Torchbearer's Bastion",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "offensivePhysicalModifier" : {
           "value" : [ 8.0, 11.0, 13.0, 16.0, 19.0, 22.0, 24.0, 27.0, 30.0, 33.0, 35.0, 38.0 ]
@@ -8798,6 +9431,9 @@
         },
         "defensiveBlockModifier" : {
           "value" : [ 2.0, 3.0, 5.0, 6.0, 7.0, 8.0, 10.0, 11.0, 12.0, 13.0, 15.0, 16.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 4
         },
         "offensiveSlowFireModifier" : {
           "value" : [ 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0 ]
@@ -8815,7 +9451,7 @@
       }
     }, {
       "name" : "Godly Presence",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 3.0
@@ -8862,6 +9498,9 @@
         "skillTargetRadius" : {
           "value" : 14.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 4
+        },
         "characterMana" : {
           "value" : [ 10.0, 22.0, 34.0, 46.0, 58.0, 70.0, 82.0, 94.0, 106.0, 118.0, 130.0, 142.0, 154.0, 166.0, 178.0, 196.0, 214.0, 232.0, 250.0 ]
         }
@@ -8875,7 +9514,7 @@
       }
     }, {
       "name" : "Crystal Balls",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "offensiveSlowFireDurationMin" : {
           "value" : 3.0
@@ -8915,6 +9554,9 @@
         },
         "offensiveFireMin" : {
           "value" : [ 12.0, 21.0, 29.0, 38.0, 46.0, 55.0, 63.0, 72.0, 80.0, 89.0, 97.0, 106.0, 114.0, 123.0, 131.0, 140.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 4
         }
       },
       "description" : "Sends a wave of crystalline projectiles, imbued with elemental magic which damages enemies on contact.",
@@ -8937,6 +9579,9 @@
         "skillUltimateLevel" : {
           "value" : 1
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
+        },
         "offensiveLifeLeechMin" : {
           "value" : 8.0
         },
@@ -8953,7 +9598,7 @@
       }
     }, {
       "name" : "Guilt",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "retaliationLightningModifier" : {
           "value" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ]
@@ -8991,6 +9636,9 @@
         "retaliationSlowLightningModifier" : {
           "value" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
+        },
         "retaliationPoisonModifier" : {
           "value" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ]
         },
@@ -9010,7 +9658,7 @@
       }
     }, {
       "name" : "Screen of Light",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "offensiveSlowFireDurationMin" : {
           "value" : 1.0
@@ -9068,6 +9716,9 @@
         },
         "contagionRadius" : {
           "value" : 4.0
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
         }
       },
       "description" : "Assault your opponents with a violent flash of blinding light that weakens them and spreads to nearby enemies at light's speed.",
@@ -9090,6 +9741,9 @@
         "offensiveDisruptionMin" : {
           "value" : [ 1.0, 1.4, 1.8, 2.2, 2.5, 2.9, 3.3, 3.7, 4.1, 4.5, 4.8, 5.2, 5.6, 6.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
+        },
         "skillMaxLevel" : {
           "value" : 10
         },
@@ -9109,7 +9763,7 @@
       }
     }, {
       "name" : "Destiny Shield",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 10.0
@@ -9135,6 +9789,9 @@
         "retaliationSlowFireModifier" : {
           "value" : [ 15.0, 22.0, 29.0, 36.0, 43.0, 50.0, 57.0, 64.0, 71.0, 79.0, 86.0, 93.0, 100.0, 107.0, 114.0, 121.0, 128.0, 135.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
+        },
         "retaliationFireMin" : {
           "value" : [ 8.0, 10.0, 13.0, 15.0, 18.0, 20.0, 23.0, 25.0, 28.0, 30.0, 33.0, 35.0, 38.0, 40.0, 43.0, 45.0, 48.0, 50.0 ]
         },
@@ -9154,7 +9811,7 @@
       }
     } ], [ {
       "name" : "Radiant Orb",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 15.0
@@ -9179,6 +9836,9 @@
         },
         "damageAbsorption" : {
           "value" : [ 170.0, 301.0, 432.0, 564.0, 695.0, 826.0, 957.0, 1088.0, 1220.0, 1351.0, 1482.0, 1809.0, 2136.0, 2463.0, 2790.0, 3117.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 16
         },
         "skillMaxLevel" : {
           "value" : 12
@@ -9215,6 +9875,9 @@
         },
         "offensiveFireMin" : {
           "value" : [ 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 16
         },
         "skillMaxLevel" : {
           "value" : 8
@@ -9255,6 +9918,9 @@
         "offensiveDisruptionMin" : {
           "value" : [ 1.0, 1.2, 1.4, 1.6, 1.8, 2.0, 2.2, 2.4, 2.6, 2.8, 3.0, 3.2 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 16
+        },
         "skillMaxLevel" : {
           "value" : 8
         }
@@ -9279,6 +9945,9 @@
         "offensiveSlowManaLeachMin" : {
           "value" : [ 9.0, 12.0, 15.0, 18.0, 22.0, 25.0, 28.0, 31.0, 34.0, 37.0, 41.0, 44.0, 47.0, 50.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 16
+        },
         "skillMaxLevel" : {
           "value" : 10
         },
@@ -9298,7 +9967,7 @@
       }
     }, {
       "name" : "Vigor Reaper",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "defensiveSlowManaLeach" : {
           "value" : [ -12.0, -18.0, -24.0, -30.0, -36.0, -42.0, -48.0, -54.0, -60.0, -66.0, -72.0, -78.0 ]
@@ -9339,6 +10008,9 @@
         "skillTargetRadius" : {
           "value" : 5.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 16
+        },
         "characterMana" : {
           "value" : [ 25.0, 50.0, 75.0, 100.0, 125.0, 150.0, 175.0, 200.0, 225.0, 250.0, 275.0, 300.0 ]
         }
@@ -9352,13 +10024,16 @@
       }
     } ], [ {
       "name" : "Reciprocate",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillUltimateLevel" : {
           "value" : 12
         },
         "defensiveReflect" : {
           "value" : [ 12.0, 20.0, 28.0, 36.0, 44.0, 52.0, 60.0, 68.0, 76.0, 84.0, 92.0, 100.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 24
         },
         "skillMaxLevel" : {
           "value" : 8
@@ -9390,6 +10065,9 @@
         "characterDefensiveAbility" : {
           "value" : [ 15.0, 30.0, 45.0, 60.0, 75.0, 90.0, 105.0, 120.0, 135.0, 150.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 24
+        },
         "skillMaxLevel" : {
           "value" : 6
         }
@@ -9411,6 +10089,9 @@
         "skillCooldownReduction" : {
           "value" : [ 5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 24
+        },
         "skillManaCostReduction" : {
           "value" : [ 5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0 ]
         },
@@ -9427,7 +10108,7 @@
       }
     }, {
       "name" : "Angelic Altar",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 90.0
@@ -9450,6 +10131,9 @@
         "skillConnectionSpacing" : {
           "value" : 62
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 24
+        },
         "skillMaxLevel" : {
           "value" : 10
         }
@@ -9463,7 +10147,7 @@
       }
     }, {
       "name" : "Heavenly Order",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 45.0
@@ -9482,6 +10166,9 @@
         },
         "skillConnectionSpacing" : {
           "value" : 62
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 24
         },
         "skillMaxLevel" : {
           "value" : 20
@@ -9513,6 +10200,9 @@
         "characterDeflectProjectile" : {
           "value" : 20.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 32
+        },
         "skillMaxLevel" : {
           "value" : 1
         },
@@ -9529,7 +10219,7 @@
       }
     }, {
       "name" : "Fury of the Skies",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 4.0
@@ -9567,6 +10257,9 @@
         "sparkChance" : {
           "value" : 100.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 32
+        },
         "offensiveSlowLightningMin" : {
           "value" : [ 20.0, 35.0, 50.0, 65.0, 80.0, 95.0, 110.0, 125.0, 140.0, 155.0, 170.0, 185.0, 200.0, 215.0, 230.0, 245.0, 260.0 ]
         },
@@ -9583,28 +10276,16 @@
       }
     }, {
       "name" : "Strength Bestowal",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
-        "characterOffensiveAbilityModifier" : {
-          "value" : [ 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 20.0 ]
-        },
         "skillActiveDuration" : {
           "value" : 15.0
         },
         "skillCooldownTime" : {
           "value" : 180.0
         },
-        "cameraShakeDurationSecs" : {
-          "value" : 0.5
-        },
         "skillManaCost" : {
           "value" : [ 100.0, 110.0, 120.0, 130.0, 140.0, 150.0, 160.0, 170.0, 180.0, 190.0, 200.0, 210.0 ]
-        },
-        "skillUltimateLevel" : {
-          "value" : 12
-        },
-        "characterLifeRegenModifier" : {
-          "value" : [ 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 70.0, 80.0, 90.0, 100.0 ]
         },
         "cameraShakeAmplitude" : {
           "value" : 0.32
@@ -9617,6 +10298,21 @@
         },
         "skillMaxLevel" : {
           "value" : 8
+        },
+        "characterOffensiveAbilityModifier" : {
+          "value" : [ 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 20.0 ]
+        },
+        "cameraShakeDurationSecs" : {
+          "value" : 0.5
+        },
+        "skillUltimateLevel" : {
+          "value" : 12
+        },
+        "characterLifeRegenModifier" : {
+          "value" : [ 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 70.0, 80.0, 90.0, 100.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 32
         },
         "characterManaRegenModifier" : {
           "value" : [ 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 70.0, 80.0, 90.0, 100.0 ]
@@ -9654,6 +10350,9 @@
         "offensiveSlowLightningMin" : {
           "value" : 40.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 32
+        },
         "skillMaxLevel" : {
           "value" : 1
         }
@@ -9667,7 +10366,7 @@
       }
     }, {
       "name" : "Guardian Angel",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "defensiveProtection" : {
           "value" : [ 4.0, 7.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 30.0 ]
@@ -9678,11 +10377,11 @@
         "skillWeaponTintGreen" : {
           "value" : 0.1
         },
-        "notDispelable" : {
-          "value" : 1
-        },
         "defensiveAbsorptionModifier" : {
           "value" : [ 2.0, 4.0, 5.0, 7.0, 8.0, 10.0, 11.0, 13.0, 14.0, 16.0 ]
+        },
+        "notDispelable" : {
+          "value" : 1
         },
         "instantCast" : {
           "value" : 1
@@ -9698,6 +10397,9 @@
         },
         "skillTargetRadius" : {
           "value" : 15.0
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 32
         },
         "skillMaxLevel" : {
           "value" : 6
@@ -9726,6 +10428,9 @@
         "excludeRacialDamage" : {
           "value" : 1
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 32
+        },
         "characterDefensiveAbilityModifier" : {
           "value" : [ -5.0, -6.5, -8.0, -9.5, -11.0, -12.5, -14.0, -15.5, -17.0, -18.5, -20.0, -21.5, -23.0, -24.5, -26.0, -27.5 ]
         },
@@ -9742,7 +10447,7 @@
       }
     } ], [ {
       "name" : "Painkiller",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "defensiveBleeding" : {
           "value" : [ 10.0, 14.0, 18.0, 22.0, 25.0, 29.0, 33.0, 37.0, 41.0, 45.0, 48.0, 52.0, 56.0, 60.0 ]
@@ -9758,6 +10463,9 @@
         },
         "characterLifeRegen" : {
           "value" : [ 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 40
         },
         "skillMaxLevel" : {
           "value" : 10
@@ -9788,6 +10496,9 @@
         },
         "characterLifeRegen" : {
           "value" : [ 4.0, 6.0, 9.0, 11.0, 13.0, 16.0, 18.0, 21.0, 23.0, 25.0, 28.0, 30.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 40
         },
         "skillMaxLevel" : {
           "value" : 8
@@ -9823,7 +10534,7 @@
     "name" : "Witchcraft",
     "skillTiers" : [ [ {
       "name" : "School of Fire",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 3.0
@@ -9861,6 +10572,9 @@
         "skillTargetRadius" : {
           "value" : 16.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
+        },
         "offensiveSlowFireModifier" : {
           "value" : [ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0 ]
         }
@@ -9874,7 +10588,7 @@
       }
     }, {
       "name" : "School of Frost",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 3.0
@@ -9912,6 +10626,9 @@
         "skillTargetRadius" : {
           "value" : 16.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
+        },
         "characterMana" : {
           "value" : [ 30.0, 60.0, 90.0, 120.0, 150.0, 180.0, 210.0, 240.0, 270.0, 300.0, 330.0, 360.0, 390.0, 420.0 ]
         }
@@ -9925,7 +10642,7 @@
       }
     }, {
       "name" : "School of Lightning",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 3.0
@@ -9968,6 +10685,9 @@
         },
         "skillTargetRadius" : {
           "value" : 16.0
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
         }
       },
       "description" : "Learn the secrets of thunderous, electrifying spells, multiplying the strength of all lightning-based attacks around you.",
@@ -9979,7 +10699,7 @@
       }
     }, {
       "name" : "School of Poison",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "offensiveSlowPoisonDurationModifier" : {
           "value" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ]
@@ -10019,6 +10739,9 @@
         },
         "skillTargetRadius" : {
           "value" : 16.0
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
         }
       },
       "description" : "Learn the secrets of alchemy and toxins, increasing the potency of all poison-based damage inflicted by you and your allies.",
@@ -10030,16 +10753,10 @@
       }
     }, {
       "name" : "School of Shadows",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
-        "offensiveSlowLifeDurationModifier" : {
-          "value" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ]
-        },
         "skillCooldownTime" : {
           "value" : 3.0
-        },
-        "skillUltimateLevel" : {
-          "value" : 14
         },
         "characterManaLimitReserve" : {
           "value" : 75.0
@@ -10047,14 +10764,23 @@
         "skillActiveManaCost" : {
           "value" : 1.0
         },
-        "offensiveLifeModifier" : {
-          "value" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ]
-        },
         "skillConnectionSpacing" : {
           "value" : 62
         },
         "cameraShakeAmplitude" : {
           "value" : 0.12
+        },
+        "skillMaxLevel" : {
+          "value" : 10
+        },
+        "offensiveSlowLifeDurationModifier" : {
+          "value" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ]
+        },
+        "skillUltimateLevel" : {
+          "value" : 14
+        },
+        "offensiveLifeModifier" : {
+          "value" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ]
         },
         "offensiveLifeMin" : {
           "value" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ]
@@ -10065,8 +10791,8 @@
         "skillTargetRadius" : {
           "value" : 16.0
         },
-        "skillMaxLevel" : {
-          "value" : 10
+        "skillMasteryLevelRequired" : {
+          "value" : 1
         }
       },
       "description" : "Learn the secrets of the dark and chaos, improving the power of all vitality-based attacks near you.",
@@ -10092,6 +10818,9 @@
         "offensiveSlowLifeModifier" : {
           "value" : 33.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 4
+        },
         "skillMaxLevel" : {
           "value" : 1
         }
@@ -10105,22 +10834,16 @@
       }
     }, {
       "name" : "Triplicate",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillManaCost" : {
           "value" : [ 17.0, 20.0, 23.0, 26.0, 29.0, 32.0, 35.0, 38.0, 41.0, 43.0, 46.0, 49.0, 52.0, 55.0, 58.0, 60.0 ]
-        },
-        "skillUltimateLevel" : {
-          "value" : 14
         },
         "projectilePiercingChance" : {
           "value" : [ 13.0, 17.0, 21.0, 25.0, 29.0, 33.0, 37.0, 41.0, 45.0, 49.0, 53.0, 57.0, 61.0, 65.0 ]
         },
         "isPetDisplayable" : {
           "value" : 1
-        },
-        "driftMin" : {
-          "value" : 6.0
         },
         "skillConnectionSpacing" : {
           "value" : 62
@@ -10137,11 +10860,20 @@
         "offensiveTotalDamageModifier" : {
           "value" : [ -50.0, -45.0, -40.0, -35.0, -30.0, -25.0, -20.0, -17.0, -14.0, -11.0, -8.0, -5.0, -2.0, 0.0 ]
         },
+        "skillMaxLevel" : {
+          "value" : 10
+        },
+        "skillUltimateLevel" : {
+          "value" : 14
+        },
+        "driftMin" : {
+          "value" : 6.0
+        },
         "skillProjectileNumber" : {
           "value" : 3
         },
-        "skillMaxLevel" : {
-          "value" : 10
+        "skillMasteryLevelRequired" : {
+          "value" : 4
         }
       },
       "description" : "Your staff attacks get divided into three projectiles, increasing your area of attack.{^n}{^y}Requires a staff.",
@@ -10153,7 +10885,7 @@
       }
     }, {
       "name" : "Magic Gems",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "projectileLaunchNumber" : {
           "value" : [ 3.0, 3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 6.0 ]
@@ -10179,6 +10911,9 @@
         "offensiveLightningMin" : {
           "value" : [ 16.0, 23.0, 30.0, 37.0, 44.0, 52.0, 59.0, 66.0, 73.0, 80.0, 87.0, 94.0, 101.0, 108.0, 115.0, 123.0, 130.0, 137.0, 144.0, 151.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 4
+        },
         "skillMaxLevel" : {
           "value" : 16
         }
@@ -10192,7 +10927,7 @@
       }
     }, {
       "name" : "Rot Zone",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 8.0
@@ -10233,6 +10968,9 @@
         "offensiveSlowPoisonDurationMin" : {
           "value" : 3.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 4
+        },
         "offensiveSlowPoisonMin" : {
           "value" : [ 8.0, 15.0, 23.0, 30.0, 38.0, 45.0, 53.0, 60.0, 67.0, 73.0, 80.0, 86.0 ]
         },
@@ -10249,7 +10987,7 @@
       }
     }, {
       "name" : "Ice Blockade",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "offensiveSlowRunSpeedMin" : {
           "value" : [ 16.0, 19.0, 23.0, 26.0, 29.0, 32.0, 36.0, 39.0, 42.0, 45.0, 49.0, 52.0, 55.0, 58.0, 62.0, 65.0 ]
@@ -10299,6 +11037,9 @@
         "offensiveSlowColdDurationMin" : {
           "value" : 3.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 4
+        },
         "waveTime" : {
           "value" : 4.0
         }
@@ -10312,7 +11053,7 @@
       }
     } ], [ {
       "name" : "Conjured Steel",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "offensivePhysicalModifier" : {
           "value" : [ 6.0, 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0 ]
@@ -10328,6 +11069,9 @@
         },
         "Bow" : {
           "value" : 1
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
         },
         "characterPhysToElementalRatio" : {
           "value" : [ 8.0, 13.0, 17.0, 22.0, 27.0, 32.0, 36.0, 42.0, 46.0, 52.0, 55.0, 60.0 ]
@@ -10371,6 +11115,9 @@
         "offensivePetrifyChance" : {
           "value" : 5.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
+        },
         "skillMaxLevel" : {
           "value" : 1
         }
@@ -10384,7 +11131,7 @@
       }
     }, {
       "name" : "Sever Minds",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : [ 6.0, 6.0, 5.0, 5.0, 5.0, 5.0, 4.0, 4.0, 4.0, 4.0, 3.0, 3.0, 2.85, 2.7, 2.55, 2.4, 2.25, 2.1, 1.95, 1.8, 1.65, 1.5, 1.35, 1.2, 1.05, 0.9, 0.75, 0.6, 0.45, 0.3, 0.15, 0.0 ]
@@ -10432,7 +11179,7 @@
       }
     }, {
       "name" : "Reload",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 12.0
@@ -10449,6 +11196,9 @@
         "cameraShakeAmplitude" : {
           "value" : 0.12
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
+        },
         "skillMaxLevel" : {
           "value" : 8
         }
@@ -10462,7 +11212,7 @@
       }
     } ], [ {
       "name" : "Cone of Flames",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "waveDepth" : {
           "value" : 1.0
@@ -10506,6 +11256,9 @@
         "offensiveFireMin" : {
           "value" : [ 87.5, 108.5, 127.75, 148.75, 168.0, 189.0, 208.25, 229.25, 248.5, 269.5, 288.75, 309.75, 329.0, 350.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 16
+        },
         "waveTime" : {
           "value" : 1.25
         }
@@ -10530,6 +11283,9 @@
         "offensiveFreezeMin" : {
           "value" : [ 1.0, 1.3, 1.5, 1.8, 2.1, 2.4, 2.6, 2.9, 3.2, 3.5, 3.7, 4.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 16
+        },
         "skillMaxLevel" : {
           "value" : 8
         }
@@ -10543,7 +11299,7 @@
       }
     }, {
       "name" : "Electrostatic Veil",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "defensiveSlowManaLeach" : {
           "value" : [ 12.0, 19.0, 26.0, 32.0, 39.0, 46.0, 53.0, 59.0, 66.0, 72.0, 80.0, 86.0, 93.0, 100.0 ]
@@ -10595,6 +11351,9 @@
         },
         "characterManaRegen" : {
           "value" : [ 3.0, 5.0, 6.0, 8.0, 9.0, 11.0, 13.0, 14.0, 16.0, 18.0, 19.0, 21.0, 22.0, 24.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 16
         }
       },
       "description" : "When the situation calls for it, create an electrical veil around you, granting new energy to fight despite the hopelessness.{^n}{^y}Remains active while health is low.{^n}{^a}Cannot be dispelled.",
@@ -10623,6 +11382,9 @@
         "offensiveSlowFireMin" : {
           "value" : [ 20.0, 28.0, 36.0, 45.0, 53.0, 61.0, 69.0, 77.0, 85.0, 94.0, 102.0, 110.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 24
+        },
         "skillMaxLevel" : {
           "value" : 8
         },
@@ -10639,7 +11401,7 @@
       }
     }, {
       "name" : "Bouncing Plague",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillUltimateLevel" : {
           "value" : 12
@@ -10675,7 +11437,7 @@
       }
     }, {
       "name" : "Inner Turmoil",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "offensiveConfusionMax" : {
           "value" : [ 2.0, 2.3, 2.6, 2.9, 3.2, 3.5, 3.8, 4.2, 4.5, 4.8, 5.1, 5.4, 5.7, 6.0 ]
@@ -10697,6 +11459,9 @@
         },
         "offensiveSlowManaLeachMin" : {
           "value" : [ 9.0, 11.0, 13.0, 16.0, 18.0, 20.0, 22.0, 25.0, 27.0, 29.0, 31.0, 34.0, 36.0, 38.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 24
         },
         "skillTargetRadius" : {
           "value" : 5.0
@@ -10720,7 +11485,7 @@
       }
     }, {
       "name" : "Archmage's Cloak",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "characterLifeModifier" : {
           "value" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0 ]
@@ -10730,6 +11495,9 @@
         },
         "skillUltimateLevel" : {
           "value" : 10
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 24
         },
         "characterDefensiveAbilityModifier" : {
           "value" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0 ]
@@ -10747,7 +11515,7 @@
       }
     }, {
       "name" : "Ice Lance",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "projectileLaunchNumber" : {
           "value" : 1
@@ -10779,6 +11547,9 @@
         "offensivePierceMin" : {
           "value" : [ 50.0, 65.0, 81.0, 96.0, 112.0, 127.0, 143.0, 158.0, 174.0, 189.0, 205.0, 220.0, 236.0, 251.0, 267.0, 282.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 24
+        },
         "skillMaxLevel" : {
           "value" : 12
         }
@@ -10792,7 +11563,7 @@
       }
     } ], [ {
       "name" : "Horror",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "offensiveFumbleDurationMin" : {
           "value" : 4.0
@@ -10832,6 +11603,9 @@
         },
         "offensiveTotalResistanceReductionAbsoluteMin" : {
           "value" : [ 10.0, 12.0, 15.0, 17.0, 19.0, 21.0, 23.0, 26.0, 28.0, 30.0, 32.0, 35.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 32
         }
       },
       "description" : "Make fear and doubt arise in hearts of your victims, crippling and preventing them from counter-attacking.",
@@ -10843,7 +11617,7 @@
       }
     }, {
       "name" : "Outburst",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillUltimateLevel" : {
           "value" : 12
@@ -10856,6 +11630,9 @@
         },
         "expansionTime" : {
           "value" : 0.05
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 32
         },
         "offensiveSlowLightningMin" : {
           "value" : [ 10.0, 15.5, 20.9, 26.4, 31.8, 37.3, 42.7, 48.2, 53.6, 59.1, 64.5, 70.0 ]
@@ -10885,7 +11662,7 @@
       }
     }, {
       "name" : "Magma Barrier",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "spawnObjectsNumberOfRings" : {
           "value" : 5
@@ -10925,6 +11702,9 @@
         },
         "spawnObjectsRandomRotation" : {
           "value" : 1
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 32
         }
       },
       "description" : "Make magmatic stones rise from the ground, blocking the path of your enemies and burning them with intense heat.{^n}{^y}The aura does not activate if there is no enemy nearby.",
@@ -10936,7 +11716,7 @@
       }
     }, {
       "name" : "Physical Ward",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 10.0
@@ -10962,6 +11742,9 @@
         "defensivePierceChance" : {
           "value" : [ 8.0, 10.0, 11.0, 13.0, 15.0, 16.0, 18.0, 20.0, 22.0, 23.0, 25.0, 27.0, 28.0, 30.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 32
+        },
         "characterDefensiveAbilityModifier" : {
           "value" : [ 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0 ]
         },
@@ -10978,7 +11761,7 @@
       }
     }, {
       "name" : "Cryopulverization",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "projectileFragmentsLaunchNumberMin" : {
           "value" : [ 3.0, 3.0, 4.0, 4.0, 5.0, 5.0, 6.0, 6.0, 7.0, 7.0 ]
@@ -11017,7 +11800,7 @@
       }
     }, {
       "name" : "Gall Bomb",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "offensiveConfusionMax" : {
           "value" : [ 1.5, 1.7, 1.8, 2.0, 2.2, 2.4, 2.5, 2.7, 2.9, 3.1, 3.2, 3.4, 3.6, 3.7 ]
@@ -11055,6 +11838,9 @@
         "offensiveSlowPoisonDurationMin" : {
           "value" : 3.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 32
+        },
         "offensiveSlowPoisonMin" : {
           "value" : [ 25.0, 35.1, 45.2, 55.2, 65.3, 75.4, 85.5, 95.5, 105.6, 115.7, 125.8, 135.8, 145.9, 156.0 ]
         }
@@ -11068,16 +11854,10 @@
       }
     } ], [ {
       "name" : "Elemental Dominion",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 3.0
-        },
-        "exclusiveSkill" : {
-          "value" : 1
-        },
-        "skillUltimateLevel" : {
-          "value" : 14
         },
         "characterManaLimitReserve" : {
           "value" : 75.0
@@ -11088,23 +11868,32 @@
         "skillActiveManaCost" : {
           "value" : 1.0
         },
-        "retaliationElementalMin" : {
-          "value" : [ 5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0 ]
-        },
         "skillConnectionSpacing" : {
           "value" : 62
         },
         "cameraShakeAmplitude" : {
           "value" : 0.12
         },
-        "skillTargetRadius" : {
-          "value" : 16.0
-        },
         "skillMaxLevel" : {
           "value" : 10
         },
         "offensiveElementalMin" : {
           "value" : [ 10.0, 14.0, 18.0, 22.0, 25.0, 29.0, 33.0, 37.0, 41.0, 45.0, 48.0, 52.0, 56.0, 60.0 ]
+        },
+        "exclusiveSkill" : {
+          "value" : 1
+        },
+        "skillUltimateLevel" : {
+          "value" : 14
+        },
+        "retaliationElementalMin" : {
+          "value" : [ 5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0 ]
+        },
+        "skillTargetRadius" : {
+          "value" : 16.0
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 40
         }
       },
       "description" : "Merge the power of storms, blizzards and volcanos into a single, powerful aura that empowers you with unthinkable elemental power.",
@@ -11116,7 +11905,7 @@
       }
     }, {
       "name" : "Magical Catastrophe",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 60.0
@@ -11195,6 +11984,9 @@
         },
         "offensiveFireMin" : {
           "value" : [ 50.0, 64.0, 76.0, 90.0, 104.0, 116.0, 130.0, 144.0, 156.0, 170.0, 184.0, 196.0, 210.0, 224.0, 236.0, 250.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 40
         }
       },
       "description" : "In an attempt to produce the most powerful magic technique, fuse the power of all schools of magic into a singular, powerful pulse of arcane power, disintegrating everything in range.{^n}{^y}Requires a staff.",
@@ -11227,7 +12019,7 @@
     "name" : "Archery",
     "skillTiers" : [ [ {
       "name" : "Target Practice",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "characterAttackSpeedModifier" : {
           "value" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0 ]
@@ -11242,6 +12034,9 @@
           "value" : [ 2.0, 3.0, 4.0, 6.0, 7.0, 8.0, 9.0, 11.0, 12.0, 13.0, 14.0, 16.0, 17.0, 18.0 ]
         },
         "Bow" : {
+          "value" : 1
+        },
+        "skillMasteryLevelRequired" : {
           "value" : 1
         },
         "skillMaxLevel" : {
@@ -11260,7 +12055,7 @@
       }
     }, {
       "name" : "Raptor Hunter",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 30.0
@@ -11280,6 +12075,9 @@
         "skillConnectionSpacing" : {
           "value" : 62
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
+        },
         "skillMaxLevel" : {
           "value" : 18
         }
@@ -11293,13 +12091,13 @@
       }
     }, {
       "name" : "Hunting Net",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
-        "debufSkill" : {
-          "value" : 1
-        },
         "skillActiveDuration" : {
           "value" : [ 3.0, 4.0, 5.1, 6.3, 7.6, 9.0, 10.5, 11.1, 12.8, 14.6 ]
+        },
+        "debufSkill" : {
+          "value" : 1
         },
         "projectileLaunchNumber" : {
           "value" : 1
@@ -11310,11 +12108,11 @@
         "skillManaCost" : {
           "value" : [ 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 45.0, 49.0, 53.0, 57.0, 61.0, 65.0 ]
         },
-        "skillUltimateLevel" : {
-          "value" : 12
-        },
         "projectileExplosionRadius" : {
           "value" : [ 0.5, 0.6, 0.8, 0.9, 1.0, 1.2, 1.3, 1.5, 1.6, 1.7, 1.9, 2.0 ]
+        },
+        "skillUltimateLevel" : {
+          "value" : 12
         },
         "skillConnectionSpacing" : {
           "value" : 62
@@ -11324,6 +12122,9 @@
         },
         "offensiveTotalDamageModifier" : {
           "value" : [ -10.0, -13.0, -15.0, -18.0, -20.0, -23.0, -25.0, -28.0, -30.0, -33.0, -35.0, -38.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 1
         },
         "skillMaxLevel" : {
           "value" : 8
@@ -11338,7 +12139,7 @@
       }
     } ], [ {
       "name" : "Eagle Eye",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillManaCost" : {
           "value" : 1.0
@@ -11367,6 +12168,9 @@
         "offensivePierceMin" : {
           "value" : [ 6.0, 12.0, 19.0, 25.0, 31.0, 37.0, 44.0, 50.0, 56.0, 62.0, 69.0, 75.0, 81.0, 87.0, 94.0, 100.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 4
+        },
         "skillMaxLevel" : {
           "value" : 12
         },
@@ -11383,7 +12187,7 @@
       }
     }, {
       "name" : "Razor Sharpening",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 4.0
@@ -11427,6 +12231,9 @@
         "skillTargetRadius" : {
           "value" : [ 6.0, 6.0, 7.0, 7.0, 8.0, 8.0, 8.0, 9.0, 9.0, 10.0, 10.0, 10.0, 11.0, 11.0, 12.0, 12.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 4
+        },
         "Spear" : {
           "value" : 1
         },
@@ -11443,7 +12250,7 @@
       }
     }, {
       "name" : "Magical Winds",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "offensiveSlowRunSpeedMin" : {
           "value" : [ 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0, 48.0, 50.0 ]
@@ -11495,6 +12302,9 @@
         },
         "skillProjectileNumber" : {
           "value" : 1
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 4
         }
       },
       "description" : "Concentrate a great amount of magical energy in a single, powerful projectile that damages all enemies in its path.{^n}{^y}Requires a ranged weapon.{^n}{^y}Transfers flat damage outside of the wielded weapon.",
@@ -11506,7 +12316,7 @@
       }
     }, {
       "name" : "Monster Hunter",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "racialBonusPercentDefense" : {
           "value" : [ 3.0, 5.0, 6.0, 8.0, 9.0, 11.0, 12.0, 14.0, 15.0, 17.0, 18.0, 20.0 ]
@@ -11516,6 +12326,9 @@
         },
         "racialBonusPercentDamage" : {
           "value" : [ 5.0, 7.0, 10.0, 12.0, 14.0, 16.0, 19.0, 21.0, 23.0, 25.0, 28.0, 30.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 4
         },
         "skillMaxLevel" : {
           "value" : 8
@@ -11538,6 +12351,9 @@
         "offensiveSlowBleedingDurationModifier" : {
           "value" : [ 15.0, 20.0, 26.0, 31.0, 37.0, 42.0, 48.0, 53.0, 59.0, 64.0, 70.0, 75.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
+        },
         "offensiveSlowBleedingModifier" : {
           "value" : [ 15.0, 20.0, 26.0, 31.0, 37.0, 42.0, 48.0, 53.0, 59.0, 64.0, 70.0, 75.0 ]
         },
@@ -11559,23 +12375,11 @@
         "offensiveConfusionMax" : {
           "value" : [ 1.9, 2.0, 2.0, 2.1, 2.1, 2.3, 2.3, 2.4, 2.5, 2.6, 2.8, 3.0 ]
         },
-        "offensiveConfusionMin" : {
-          "value" : [ 0.4, 0.4, 0.5, 0.5, 0.6, 0.6, 0.8, 0.8, 0.9, 1.0, 1.1, 1.3 ]
-        },
-        "offensiveProjectileFumbleDurationMin" : {
-          "value" : 3.0
-        },
         "skillManaCost" : {
           "value" : [ 2.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 20.0, 22.0, 24.0, 27.0 ]
         },
-        "skillUltimateLevel" : {
-          "value" : 12
-        },
         "offensiveLightningMax" : {
           "value" : [ 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0, 150.0 ]
-        },
-        "offensiveLightningMin" : {
-          "value" : [ 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0 ]
         },
         "offensiveProjectileFumbleMin" : {
           "value" : [ 25.0, 27.0, 30.0, 32.0, 34.0, 36.0, 39.0, 41.0, 43.0, 45.0, 48.0, 50.0 ]
@@ -11583,11 +12387,26 @@
         "offensiveSlowOffensiveAbilityDurationMin" : {
           "value" : 3.0
         },
-        "offensiveConfusionChance" : {
-          "value" : [ 5.0, 7.0, 9.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 21.0, 23.0, 25.0 ]
-        },
         "skillMaxLevel" : {
           "value" : 8
+        },
+        "offensiveConfusionMin" : {
+          "value" : [ 0.4, 0.4, 0.5, 0.5, 0.6, 0.6, 0.8, 0.8, 0.9, 1.0, 1.1, 1.3 ]
+        },
+        "offensiveProjectileFumbleDurationMin" : {
+          "value" : 3.0
+        },
+        "skillUltimateLevel" : {
+          "value" : 12
+        },
+        "offensiveLightningMin" : {
+          "value" : [ 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
+        },
+        "offensiveConfusionChance" : {
+          "value" : [ 5.0, 7.0, 9.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 21.0, 23.0, 25.0 ]
         },
         "offensiveSlowOffensiveAbilityMin" : {
           "value" : [ 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0 ]
@@ -11602,7 +12421,7 @@
       }
     }, {
       "name" : "Split Shots",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 7.0
@@ -11610,14 +12429,8 @@
         "skillManaCost" : {
           "value" : [ 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0, 70.0, 75.0, 80.0, 85.0 ]
         },
-        "skillUltimateLevel" : {
-          "value" : 14
-        },
         "projectilePiercingChance" : {
           "value" : [ 12.0, 14.0, 16.0, 18.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 34.0, 36.0, 38.0, 40.0 ]
-        },
-        "driftMin" : {
-          "value" : 1.0
         },
         "driftMax" : {
           "value" : 4.0
@@ -11628,9 +12441,6 @@
         "offensiveTotalDamageModifier" : {
           "value" : [ -60.0, -55.0, -50.0, -45.0, -40.0, -35.0, -30.0, -25.0, -20.0, -15.0, -10.0, -5.0, 0.0, 5.0 ]
         },
-        "skillProjectileNumber" : {
-          "value" : 5
-        },
         "Bow" : {
           "value" : 1
         },
@@ -11639,6 +12449,18 @@
         },
         "RangedOneHand" : {
           "value" : 1
+        },
+        "skillUltimateLevel" : {
+          "value" : 14
+        },
+        "driftMin" : {
+          "value" : 1.0
+        },
+        "skillProjectileNumber" : {
+          "value" : 5
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
         }
       },
       "description" : "This special technique allows you to fire multiple projectiles at once to manage large groups more easily.{^n}{^y}Requires either a bow or a thrown weapon.",
@@ -11650,7 +12472,7 @@
       }
     }, {
       "name" : "Intimidating Screech",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 8.0
@@ -11690,6 +12512,9 @@
         },
         "skillTargetRadius" : {
           "value" : 8.0
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
         }
       },
       "description" : "The raptor's screech sends a shivering wave, which lowers enemies' resistance and damage dealt for a short while.",
@@ -11701,7 +12526,7 @@
       }
     }, {
       "name" : "Bandages",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "defensiveBleeding" : {
           "value" : [ 16.0, 22.0, 28.0, 34.0, 40.0, 46.0, 52.0, 58.0, 64.0, 70.0, 76.0, 82.0 ]
@@ -11733,6 +12558,9 @@
         "cameraShakeAmplitude" : {
           "value" : 0.12
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 10
+        },
         "skillMaxLevel" : {
           "value" : 8
         }
@@ -11760,6 +12588,9 @@
         "offensivePierceModifier" : {
           "value" : [ 5.0, 9.0, 13.0, 18.0, 22.0, 26.0, 30.0, 35.0, 39.0, 43.0, 47.0, 52.0, 56.0, 60.0 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 16
+        },
         "skillMaxLevel" : {
           "value" : 10
         }
@@ -11773,7 +12604,7 @@
       }
     }, {
       "name" : "Ranger's Prowess",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : [ 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0 ]
@@ -11813,6 +12644,9 @@
         },
         "skillTargetRadius" : {
           "value" : 14.0
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 16
         }
       },
       "description" : "Rangers can share their techniques with companions and allies, improving their damage output and speed for a short moment.",
@@ -11824,7 +12658,7 @@
       }
     }, {
       "name" : "Silver Feathers",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "offensiveFumbleDurationMin" : {
           "value" : [ 2.8, 2.9, 3.0, 3.1, 3.3, 3.4, 3.5, 3.7, 3.8, 3.9, 4.1, 4.2 ]
@@ -11876,6 +12710,9 @@
         },
         "projectileLaunchRotation" : {
           "value" : 12.0
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 16
         }
       },
       "description" : "Your raptor may now throw its piercing feathers to damage enemies from afar and disturb their eyesight.",
@@ -11887,7 +12724,7 @@
       }
     }, {
       "name" : "Storm of Arrows",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillActiveDuration" : {
           "value" : 3.0
@@ -11930,6 +12767,9 @@
         },
         "skillUltimateLevel" : {
           "value" : 14
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 16
         }
       },
       "description" : "Firing multiple arrows up in the sky allows unavoidable attacks from unsuspected angles.{^y} Inflicts damage twice per second.{^n}{^y}Requires a ranged weapon.{^n}{^y}Transfers flat damage outside of the wielded weapon.",
@@ -11941,7 +12781,7 @@
       }
     }, {
       "name" : "Survival Techniques",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillUltimateLevel" : {
           "value" : 12
@@ -11960,6 +12800,9 @@
         },
         "cameraShakeAmplitude" : {
           "value" : 0.12
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 16
         },
         "skillMaxLevel" : {
           "value" : 8
@@ -11988,26 +12831,29 @@
         "skillManaCost" : {
           "value" : 1.0
         },
-        "skillUltimateLevel" : {
-          "value" : 12
-        },
-        "offensiveSlowRunSpeedDurationMin" : {
-          "value" : 3.0
-        },
         "offensiveSlowRunSpeedChance" : {
           "value" : 33.0
         },
         "offensiveSlowBleedingDurationMin" : {
           "value" : 4.0
         },
+        "skillMaxLevel" : {
+          "value" : 8
+        },
+        "skillUltimateLevel" : {
+          "value" : 12
+        },
+        "offensiveSlowRunSpeedDurationMin" : {
+          "value" : 3.0
+        },
         "offensiveSlowPoisonDurationMin" : {
           "value" : 4.0
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 24
+        },
         "offensiveSlowPoisonMin" : {
           "value" : [ 9.0, 11.0, 12.0, 14.0, 16.0, 18.0, 19.0, 21.0, 23.0, 25.0, 26.0, 28.0 ]
-        },
-        "skillMaxLevel" : {
-          "value" : 8
         },
         "offensiveSlowBleedingModifier" : {
           "value" : [ 8.0, 11.0, 15.0, 18.0, 21.0, 25.0, 28.0, 32.0, 35.0, 38.0, 42.0, 45.0 ]
@@ -12030,6 +12876,9 @@
         "skillUltimateLevel" : {
           "value" : 1
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 24
+        },
         "offensiveLifeLeechMin" : {
           "value" : 35.0
         },
@@ -12046,7 +12895,7 @@
       }
     }, {
       "name" : "Divine Defiance",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "racialBonusPercentDefense" : {
           "value" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 12.0, 14.0, 16.0, 18.0, 20.0 ]
@@ -12056,6 +12905,9 @@
         },
         "racialBonusPercentDamage" : {
           "value" : [ 5.0, 8.0, 11.0, 13.0, 16.0, 19.0, 22.0, 24.0, 27.0, 30.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 24
         },
         "skillMaxLevel" : {
           "value" : 6
@@ -12070,13 +12922,16 @@
       }
     }, {
       "name" : "Scavenger",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillUltimateLevel" : {
           "value" : 12
         },
         "offensivePhysicalMin" : {
           "value" : [ 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 24
         },
         "offensiveLifeLeechMin" : {
           "value" : [ 3.0, 3.0, 4.0, 4.0, 5.0, 5.0, 6.0, 6.0, 7.0, 7.0, 8.0, 8.0 ]
@@ -12110,6 +12965,9 @@
         },
         "offensiveSlowRunSpeedDurationMin" : {
           "value" : 3.0
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 24
         },
         "skillMaxLevel" : {
           "value" : 6
@@ -12147,6 +13005,9 @@
         "offensiveStunMax" : {
           "value" : [ 1.2, 1.44, 1.56, 1.8, 1.92, 2.16, 2.28, 2.52, 2.64, 2.88, 3.0, 3.24, 3.36, 3.6 ]
         },
+        "skillMasteryLevelRequired" : {
+          "value" : 32
+        },
         "skillMaxLevel" : {
           "value" : 10
         },
@@ -12163,7 +13024,7 @@
       }
     }, {
       "name" : "Scorching Edge",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "offensivePhysicalModifier" : {
           "value" : [ 30.0, 60.0, 80.0 ]
@@ -12182,6 +13043,9 @@
         },
         "Bow" : {
           "value" : 1
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 32
         },
         "skillMaxLevel" : {
           "value" : 3
@@ -12204,20 +13068,11 @@
       "name" : "Devastating Shots",
       "parent" : "Ranger's Prowess",
       "attributes" : {
-        "offensivePierceRatioModifierChance" : {
-          "value" : 10.0
-        },
         "offensiveSlowBleedingMin" : {
           "value" : [ 36.0, 45.0, 53.0, 62.0, 70.0, 79.0, 88.0, 96.0, 105.0, 114.0, 122.0, 131.0, 139.0, 148.0 ]
         },
         "skillManaCost" : {
           "value" : [ 4.0, 6.0, 7.0, 9.0, 10.0, 12.0, 14.0, 15.0, 17.0, 19.0, 20.0, 22.0, 23.0, 25.0 ]
-        },
-        "skillUltimateLevel" : {
-          "value" : 14
-        },
-        "offensiveTotalDamageModifierChance" : {
-          "value" : 10.0
         },
         "offensiveSlowBleedingDurationMin" : {
           "value" : 3.0
@@ -12231,11 +13086,23 @@
         "skillMaxLevel" : {
           "value" : 10
         },
-        "offensiveSlowBleedingChance" : {
-          "value" : 10.0
-        },
         "RangedOneHand" : {
           "value" : 1
+        },
+        "offensivePierceRatioModifierChance" : {
+          "value" : 10.0
+        },
+        "skillUltimateLevel" : {
+          "value" : 14
+        },
+        "offensiveTotalDamageModifierChance" : {
+          "value" : 10.0
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 32
+        },
+        "offensiveSlowBleedingChance" : {
+          "value" : 10.0
         },
         "offensivePierceRatioModifier" : {
           "value" : [ 25.0, 31.0, 37.0, 42.0, 48.0, 54.0, 60.0, 65.0, 71.0, 77.0, 83.0, 88.0, 94.0, 100.0 ]
@@ -12250,22 +13117,13 @@
       }
     }, {
       "name" : "Light Armor Specialist",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "skillCooldownTime" : {
           "value" : 3.0
         },
         "skillWeaponTintBlue" : {
           "value" : 0.5
-        },
-        "defensiveProtection" : {
-          "value" : [ 10.0, 15.0, 18.0, 23.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 49.0, 54.0, 57.0, 62.0 ]
-        },
-        "skillUltimateLevel" : {
-          "value" : 14
-        },
-        "skillWeaponTintGreen" : {
-          "value" : 0.4
         },
         "characterManaLimitReserve" : {
           "value" : 100.0
@@ -12282,11 +13140,23 @@
         "defensivePierce" : {
           "value" : [ 8.0, 11.0, 13.0, 16.0, 18.0, 21.0, 24.0, 26.0, 29.0, 32.0, 34.0, 37.0, 39.0, 42.0 ]
         },
+        "skillMaxLevel" : {
+          "value" : 10
+        },
+        "defensiveProtection" : {
+          "value" : [ 10.0, 15.0, 18.0, 23.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 49.0, 54.0, 57.0, 62.0 ]
+        },
+        "skillUltimateLevel" : {
+          "value" : 14
+        },
+        "skillWeaponTintGreen" : {
+          "value" : 0.4
+        },
         "skillTargetRadius" : {
           "value" : 12.0
         },
-        "skillMaxLevel" : {
-          "value" : 10
+        "skillMasteryLevelRequired" : {
+          "value" : 32
         }
       },
       "description" : "Learn how to adjust and customize the armor pieces of you and your allies, allowing for faster movement and an increase in durability.",
@@ -12298,7 +13168,7 @@
       }
     }, {
       "name" : "Ominous Arrows",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "projectileLaunchNumber" : {
           "value" : 3
@@ -12356,6 +13226,9 @@
         },
         "offensiveLifeMin" : {
           "value" : [ 33.8, 47.5, 60.1, 73.7, 87.4, 100.0, 113.6, 126.3, 139.9, 153.5, 166.1, 179.8 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 32
         }
       },
       "description" : "Multiple piercing arrows, imbued with dreadful essence, explode in a small burst upon contact.{^n}{^y}Requires a ranged weapon.{^n}{^y}Transfers flat damage outside of the wielded weapon.",
@@ -12367,7 +13240,7 @@
       }
     } ], [ {
       "name" : "Dragon Arrow",
-      "parent" : "ShadowChampions",
+      "parent" : null,
       "attributes" : {
         "offensiveSlowFireDurationMin" : {
           "value" : 5.0
@@ -12422,6 +13295,9 @@
         },
         "offensiveFireMin" : {
           "value" : [ 51.0, 71.0, 89.0, 110.0, 129.0, 149.0, 168.0, 189.0, 209.0, 227.0, 247.0, 267.0, 287.0, 306.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 40
         }
       },
       "description" : "Launch a scorching, fiery arrow that explodes upon hitting the first enemy it encounters and deals a great deal of burn damage over time.{^n}{^y}Requires a ranged weapon.{^n}{^y}Transfers flat damage outside of the wielded weapon.",
@@ -12443,6 +13319,9 @@
         },
         "characterDeflectProjectile" : {
           "value" : [ 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 40
         },
         "defensiveTrap" : {
           "value" : [ 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 64.0, 68.0, 72.0, 76.0, 80.0 ]
@@ -12479,6 +13358,9 @@
         },
         "offensiveSlowLifeMin" : {
           "value" : [ 33.33333, 66.66666, 100.0 ]
+        },
+        "skillMasteryLevelRequired" : {
+          "value" : 40
         },
         "offensiveSlowBleedingModifier" : {
           "value" : [ -33.0, -66.0, -100.0 ]
@@ -12518,6 +13400,8 @@
     }
   } ],
   "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/ShadowChampions.html",
+  "masteryLevels" : [ 1, 4, 10, 16, 24, 32, 40 ],
+  "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/",
   "mappedMasteries" : {
     "1" : "Aqua",
     "2" : "Necromancy",
@@ -12529,7 +13413,5 @@
     "8" : "Lifegiving",
     "9" : "Witchcraft",
     "10" : "Archery"
-  },
-  "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/",
-  "masteryLevels" : [ 1, 4, 10, 16, 24, 32, 40 ]
+  }
 }
