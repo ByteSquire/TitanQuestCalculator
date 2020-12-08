@@ -1,7 +1,6 @@
 package de.bytesquire.titanquest.tqcalculator.main;
 
 import java.io.File;
-import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -38,11 +37,11 @@ public class Skill {
 
         mSkillName = aMSParser.getTags().get(mSkillParser.getSkillTag());
         mSkillDescription = aMSParser.getTags().get(mSkillParser.getSkillDescriptionTag());
-        mSkillIcon = aIconsParser.getIcon(mSkill.getAbsolutePath().split("database")[2].substring(1));
+        mSkillIcon = mSkillParser.getSkillIcon();
         isModifier = mSkillParser.isModifier();
 
         for (String skillAttribute : mSkillParser.getAttributes().keySet()) {
-            if (skillAttribute.equals("skillTier"))
+            if (skillAttribute.equals("skillTier") || skillAttribute.equals("skillMasteryLevelRequired"))
                 mSkillTier = (int) mSkillParser.getAttributes().get(skillAttribute).getValue();
             else
                 mSkillAttributes.put(skillAttribute, mSkillParser.getAttributes().get(skillAttribute));
