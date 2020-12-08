@@ -1,5 +1,8 @@
 package de.bytesquire.titanquest.tqcalculator.main;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties({ "name" })
 public class SkillIcon {
 
     private String mName;
