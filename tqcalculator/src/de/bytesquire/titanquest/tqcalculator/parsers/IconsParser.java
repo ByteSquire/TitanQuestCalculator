@@ -37,7 +37,7 @@ public class IconsParser {
                 SkillIcon tmp = new SkillIcon();
                 fileStream.forEach((str) -> {
                     if (str.split(",")[0].equals("skillName")) {
-                        tmp.setName(str.split(",")[1]);
+                        tmp.setName(str.split(",")[1].toLowerCase());
                     }
                     if (str.split(",")[0].equals("bitmapPositionX")) {
                         tmp.setPosX(Integer.parseInt(str.split(",")[1]));
@@ -77,7 +77,7 @@ public class IconsParser {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        
+
         try {
             DirectoryStream<Path> playerSkills = Files
                     .newDirectoryStream(Path.of(mModPath + "records/xpack/ui/skills/"));
@@ -98,7 +98,7 @@ public class IconsParser {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        
+
         try {
             DirectoryStream<Path> playerSkills = Files
                     .newDirectoryStream(Path.of(mModPath + "records/xpack2/ui/skills/"));
@@ -119,10 +119,37 @@ public class IconsParser {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        
+        try {
+            DirectoryStream<Path> playerSkills = Files
+                    .newDirectoryStream(Path.of(mModPath + "records/xpack3/ui/skills/"));
+            playerSkills.forEach((masteryPath) -> {
+                if (masteryPath.getFileName().toString().startsWith("mastery")) {
+                    try {
+                        DirectoryStream<Path> masterySkills = Files.newDirectoryStream(masteryPath);
+                        masterySkills.forEach((skillPath) -> {
+                            if (skillPath.getFileName().toString().startsWith("skill")) {
+                                mIconFiles.add(new File(skillPath.toAbsolutePath().toString()));
+                            }
+                        });
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+            });
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public SkillIcon getIcon(String skillName) {
-        return mIcons.get(skillName);
+        if (mIcons.containsKey(skillName)) {
+            return mIcons.get(skillName);
+        } else if (mIcons.containsKey(skillName.toLowerCase())){
+            return mIcons.get(skillName.toLowerCase());
+        } else {
+            return null;
+        }
     }
 
     public ArrayList<File> getIconFiles() {

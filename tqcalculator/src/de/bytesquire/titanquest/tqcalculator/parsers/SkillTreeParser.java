@@ -85,7 +85,9 @@ public class SkillTreeParser {
                         e.printStackTrace();
                     }
                 }
-                mSkills.set(index - 1, new File(mModDir + str.split(",")[1]));
+                if (!str.split(",")[1].contains("taunt")) {
+                    mSkills.set(index - 1, new File(mModDir + str.split(",")[1]));
+                }
             });
         } catch (FileNotFoundException e) {
             e.printStackTrace();

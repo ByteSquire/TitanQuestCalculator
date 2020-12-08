@@ -34,7 +34,7 @@ public class Mastery {
 
         for (File skill : mSkillTreeParser.getSkills()) {
             if (!(mSkillTreeParser.getSkills().indexOf(skill) == 0)) {
-                Skill tmp = new Skill(skill, mParentModName, (mParentModName + "/Masteries/" + mName), aMSParser, aIconsParser);
+                Skill tmp = new Skill(skill, null, (mParentModName + "/Masteries/" + mName), aMSParser, aIconsParser);
                 mSkills.add(tmp);
             } else {
                 mMastery = skill;

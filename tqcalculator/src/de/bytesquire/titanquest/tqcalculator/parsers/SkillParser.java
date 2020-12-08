@@ -17,7 +17,7 @@ import de.bytesquire.titanquest.tqcalculator.main.SkillIcon;
 public class SkillParser {
 
     private HashMap<String, SkillAttribute<?>> mAttributes;
-    public static final int COUNT_SKILLS = 26;
+    private ArrayList<File> mAdditionalFiles;
     private File mSkill;
     private String mParentPath;
     private String mSkillTag;
@@ -37,6 +37,7 @@ public class SkillParser {
         mIconsParser = aIconsParser;
 
         mAttributes = new HashMap<>();
+        mAdditionalFiles = new ArrayList<File>();
 
         mSkill = aSkill;
         mSkillIcon = mIconsParser.getIcon(mSkill.getAbsolutePath().split("database")[2].substring(1));
@@ -93,6 +94,7 @@ public class SkillParser {
                     mSkillTag = tmp.getSkillTag();
                     mSkillDescriptionTag = tmp.getSkillDescriptionTag();
                     mSkillIcon = tmp.getSkillIcon();
+                    mAdditionalFiles.addAll(tmp.getSkill());
                 }
                 if (str.split(",")[0].equals("Class") && str.split(",")[1].equals("Skill_Modifier"))
                     isModifier = true;
@@ -123,8 +125,14 @@ public class SkillParser {
 
     public SkillIcon getSkillIcon() {
         if (mIconsParser.getIcon(mSkill.getAbsolutePath().split("database")[2].substring(1)) != null) {
-            return mIconsParser.getIcon(mSkill.getAbsolutePath().split("database")[2].substring(1));
+            return mIconsParser.getIcon(mSkill.getAbsolutePath().split("database")[2].substring(1).toLowerCase());
+        } else {
+            System.out.println(mSkill.getAbsolutePath().split("database")[2].substring(1).toLowerCase());
         }
         return mSkillIcon;
+    }
+
+    public ArrayList<File> getAdditionalFiles() {
+        return mAdditionalFiles;
     }
 }

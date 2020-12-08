@@ -76,8 +76,8 @@ public class Cleaner {
         for (File f : mod.getIconsParser().getIconFiles()) {
             Path originPath = f.toPath();
 //          System.out.println(originLinksPath);
-            Path targetPath = Path.of(mod.getModDir().substring(0, mod.getModDir().length() - 1)
-                    + "-cleaned/" + f.getAbsolutePath().split(mod.getName())[1]);
+            Path targetPath = Path.of(mod.getModDir().substring(0, mod.getModDir().length() - 1) + "-cleaned/"
+                    + f.getAbsolutePath().split(mod.getName())[1]);
 //          System.out.println(targetLinksPath);
             try {
                 Files.createDirectories(Path.of(targetPath.toString().split(f.getName())[0]));
@@ -141,21 +141,19 @@ public class Cleaner {
     }
 
     private void cleanSkill(Skill skill, Mod mod, Mastery mastery) {
-        Path originPath = skill.getSkill().toPath();
-//        System.out.println(originPath);
-        Path targetPath = Path.of(mod.getModDir().substring(0, mod.getModDir().length() - 1) + "-cleaned/"
-                + skill.getSkill().toPath().toString().split(mod.getName())[1]);
-//        System.out.println(targetPath);
-        try {
-            Files.createDirectories(Path.of(targetPath.toString().split(skill.getSkill().getName())[0]));
-            Files.copy(originPath, targetPath);
-        } catch (IOException e) {
-            if (!(e instanceof java.nio.file.FileAlreadyExistsException))
-                e.printStackTrace();
-        }
-
-        if (skill.isBuff()) {
-            cleanSkill(skill.getBuff(), mod, mastery);
+        for (File skillFile : skill.getSkill()) {
+            Path originPath = skillFile.toPath();
+//            System.out.println(originPath);
+            Path targetPath = Path.of(mod.getModDir().substring(0, mod.getModDir().length() - 1) + "-cleaned/"
+                    + skillFile.toPath().toString().split(mod.getName())[1]);
+//            System.out.println(targetPath);
+            try {
+                Files.createDirectories(Path.of(targetPath.toString().split(skillFile.getName())[0]));
+                Files.copy(originPath, targetPath);
+            } catch (IOException e) {
+                if (!(e instanceof java.nio.file.FileAlreadyExistsException))
+                    e.printStackTrace();
+            }
         }
     }
 

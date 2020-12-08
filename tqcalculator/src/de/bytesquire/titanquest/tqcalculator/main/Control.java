@@ -160,10 +160,10 @@ public class Control {
                                     + mastery.getName() + "/"
                                     + ((skill.getName() == null) ? skill.toString() : skill.getName()) + ".html");
                             rootSkill = new HashMap<>();
-                            if (skill.isBuff()) {
-                                rootSkill.put("buffName", skill.getBuff().getName());
-                                rootSkill.put("buffAttributes", skill.getBuff().getAttributes());
-                            } else
+//                            if (skill.isBuff()) {
+//                                rootSkill.put("buffName", skill.getBuff().getName());
+//                                rootSkill.put("buffAttributes", skill.getBuff().getAttributes());
+//                            } else
                                 rootSkill.put("attributes", skill.getAttributes());
                             rootSkill.put("name", skill.getName());
                             rootSkill.put("description", skill.getDescription());
