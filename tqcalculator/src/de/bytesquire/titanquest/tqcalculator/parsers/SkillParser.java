@@ -12,6 +12,7 @@ import java.util.stream.Stream;
 import de.bytesquire.titanquest.tqcalculator.main.Control;
 import de.bytesquire.titanquest.tqcalculator.main.Skill;
 import de.bytesquire.titanquest.tqcalculator.main.SkillAttribute;
+import de.bytesquire.titanquest.tqcalculator.main.SkillIcon;
 
 public class SkillParser {
 
@@ -24,6 +25,7 @@ public class SkillParser {
     private ModStringsParser mMSParser;
     private IconsParser mIconsParser;
     private String mSkillDescriptionTag;
+    private SkillIcon mSkillIcon;
 
     public SkillParser(File aSkill, String aParentPath, ModStringsParser aMSParser, IconsParser aIconsParser) {
 
@@ -37,11 +39,11 @@ public class SkillParser {
         mAttributes = new HashMap<>();
 
         mSkill = aSkill;
+        mSkillIcon = mIconsParser.getIcon(mSkill.getAbsolutePath().split("database")[2].substring(1));
 
         initSkill();
     }
 
-    @SuppressWarnings("unchecked")
     private void initSkill() {
         try (BufferedReader skillReader = new BufferedReader(new FileReader(mSkill));) {
             Stream<String> fileStream = skillReader.lines();
@@ -80,19 +82,17 @@ public class SkillParser {
                 } catch (Exception e) {
                 }
                 if (str.split(",")[0].equals("petSkillName") || str.split(",")[0].equals("buffSkillName")) {
-                    String[] underscoredName = mSkill.getPath().split("_");
-                    String name = mSkill.getName().substring(0, mSkill.getName().length() - 4);
-                    if (underscoredName.length > 1)
-                        name = underscoredName[underscoredName.length - 1].substring(0,
-                                underscoredName[underscoredName.length - 1].length() - 4);
-                    mAttributes.put(name,
-                            new SkillAttribute<Skill>(new Skill(
-                                    new File(Control.DATABASES_DIR + mParentPath.split("/")[0] + "/database/"
-                                            + str.split(",")[1]),
-                                    mParentPath.split("/Masteries/")[0], mParentPath, mMSParser, mIconsParser)));
-                    mSkillTag = ((SkillAttribute<Skill>) mAttributes.get(name)).getValue().getSkillTag();
-                    mSkillDescriptionTag = ((SkillAttribute<Skill>) mAttributes.get(name)).getValue()
-                            .getSkillDescriptionTag();
+                    Skill tmp = new Skill(
+                            new File(Control.DATABASES_DIR + mParentPath.split("/")[0] + "/database/"
+                                    + str.split(",")[1]),
+                            mParentPath.split("/Masteries/")[0], mParentPath, mMSParser, mIconsParser);
+                    for (String skillAttribute : tmp.getAttributes().keySet()) {
+                        mAttributes.put(skillAttribute, tmp.getAttributes().get(skillAttribute));
+                    }
+                    mAttributes.put("skillTier", new SkillAttribute<>(tmp.getSkillTier()));
+                    mSkillTag = tmp.getSkillTag();
+                    mSkillDescriptionTag = tmp.getSkillDescriptionTag();
+                    mSkillIcon = tmp.getSkillIcon();
                 }
                 if (str.split(",")[0].equals("Class") && str.split(",")[1].equals("Skill_Modifier"))
                     isModifier = true;
@@ -119,5 +119,12 @@ public class SkillParser {
 
     public String getSkillDescriptionTag() {
         return mSkillDescriptionTag;
+    }
+
+    public SkillIcon getSkillIcon() {
+        if (mIconsParser.getIcon(mSkill.getAbsolutePath().split("database")[2].substring(1)) != null) {
+            return mIconsParser.getIcon(mSkill.getAbsolutePath().split("database")[2].substring(1));
+        }
+        return mSkillIcon;
     }
 }
