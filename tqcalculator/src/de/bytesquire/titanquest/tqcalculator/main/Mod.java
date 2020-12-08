@@ -14,7 +14,7 @@ import de.bytesquire.titanquest.tqcalculator.parsers.IconsParser;
 import de.bytesquire.titanquest.tqcalculator.parsers.ModParser;
 import de.bytesquire.titanquest.tqcalculator.parsers.ModStringsParser;
 
-@JsonIgnoreProperties({ "msparser", "character", "modDir", "links", "masteryLevel", "gameEngine" })
+@JsonIgnoreProperties({ "msparser", "character", "modDir", "links", "masteryLevel", "gameEngine", "iconsParser" })
 public class Mod {
 
     private ModParser mModParser;
