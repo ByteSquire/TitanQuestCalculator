@@ -77,11 +77,10 @@ function addSkillTier(panel, mastery, skillTier) {
 
 function addSkill(panel, mastery, skill) {
   panel.innerHTML +=
-    '\n<button class="skillButton">\n' +
-    "\t<img\n" +
-    '\t\tid="' +
+    '\n<button class="skillButton" id="' +
     skill.name +
-    '"\n' +
+    '">\n' +
+    "\t<img\n" +
     '\t\tclass="skillButtonImage"\n' +
     '\t\tsrc="' +
     mod.url +
@@ -91,4 +90,10 @@ function addSkill(panel, mastery, skill) {
     skill.name +
     '.png"\n' +
     "/>";
+  scaleButtonPositon(document.getElementById(skill.name), skill.skillIcon);
+}
+
+function scaleButtonPositon(button, iconPosition) {
+  button.style.top = iconPosition.posY/5.5 + "%";
+  button.style.left = iconPosition.posX/9.5 + "%";
 }
