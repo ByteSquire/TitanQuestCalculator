@@ -127,7 +127,7 @@ public class SkillParser {
         if (mIconsParser.getIcon(mSkill.getAbsolutePath().split("database")[2].substring(1)) != null) {
             return mIconsParser.getIcon(mSkill.getAbsolutePath().split("database")[2].substring(1).toLowerCase());
         } else {
-            System.out.println(mSkill.getAbsolutePath().split("database")[2].substring(1).toLowerCase());
+//            System.out.println(mSkill.getAbsolutePath().split("database")[2].substring(1).toLowerCase());
         }
         return mSkillIcon;
     }
