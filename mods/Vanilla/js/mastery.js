@@ -60,8 +60,12 @@ function setMasteries() {
 
 function setMasteryTiers() {
   for (var i = 1; i <= mod.masteryLevels.length; i++) {
-    document.getElementById("masteryTier" + i).innerHTML =
-      mod.masteryLevels[i - 1];
+    var x = document.getElementsByClassName("masteryTier");
+    var b;
+    for (b = 0; b < x.length; b++) {
+        if(x[b].innerHTML == i)
+            x[b].innerHTML = mod.masteryLevels[i - 1];
+    } 
   }
 }
 
@@ -94,6 +98,6 @@ function addSkill(panel, mastery, skill) {
 }
 
 function scaleButtonPositon(button, iconPosition) {
-  button.style.top = iconPosition.posY/5.5 + "%";
+  button.style.top = iconPosition.posY/5.4 + "%";
   button.style.left = iconPosition.posX/9.5 + "%";
 }
