@@ -1,47 +1,8 @@
 {
-  "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Vanilla.html",
-  "masteryLevels" : [ 1, 4, 10, 16, 24, 32, 40 ],
-  "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/",
-  "mappedMasteries" : {
-    "1" : "Nature",
-    "2" : "Spirit",
-    "3" : "Storm",
-    "4" : "Earth",
-    "5" : "Rogue",
-    "6" : "Defense",
-    "7" : "Dream",
-    "8" : "Warfare",
-    "9" : "Rune",
-    "10" : "Hunting"
-  },
   "name" : "Vanilla",
   "masteries" : [ {
-    "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Nature.html",
-    "masteryAttributes" : {
-      "characterLife" : {
-        "value" : [ 20.0, 40.0, 60.0, 80.0, 100.0, 120.0, 140.0, 160.0, 180.0, 200.0, 220.0, 240.0, 260.0, 280.0, 300.0, 320.0, 340.0, 360.0, 380.0, 400.0, 420.0, 440.0, 460.0, 480.0, 500.0, 520.0, 540.0, 560.0, 580.0, 600.0, 620.0, 640.0, 660.0, 680.0, 700.0, 720.0, 740.0, 760.0, 780.0, 800.0 ]
-      },
-      "characterIntelligence" : {
-        "value" : [ 2.5, 5.0, 7.5, 10.0, 12.5, 15.0, 17.5, 20.0, 22.5, 25.0, 27.5, 30.0, 32.5, 35.0, 37.5, 40.0, 42.5, 45.0, 47.5, 50.0, 52.5, 55.0, 57.5, 60.0, 62.5, 65.0, 67.5, 70.0, 72.5, 75.0, 77.5, 80.0, 82.5, 85.0, 87.5, 90.0, 92.5, 95.0, 97.5, 100.0 ]
-      },
-      "characterDexterity" : {
-        "value" : [ 1.5, 3.0, 4.5, 6.0, 7.5, 9.0, 10.5, 12.0, 13.5, 15.0, 16.5, 18.0, 19.5, 21.0, 22.5, 24.0, 25.5, 27.0, 28.5, 30.0, 31.5, 33.0, 34.5, 36.0, 37.5, 39.0, 40.5, 42.0, 43.5, 45.0, 46.5, 48.0, 49.5, 51.0, 52.5, 54.0, 55.5, 57.0, 58.5, 60.0 ]
-      },
-      "characterMana" : {
-        "value" : [ 16.0, 32.0, 48.0, 64.0, 80.0, 96.0, 112.0, 128.0, 144.0, 160.0, 176.0, 192.0, 208.0, 224.0, 240.0, 256.0, 272.0, 288.0, 304.0, 320.0, 336.0, 352.0, 368.0, 384.0, 400.0, 416.0, 432.0, 448.0, 464.0, 480.0, 496.0, 512.0, 528.0, 544.0, 560.0, 576.0, 592.0, 608.0, 624.0, 640.0 ]
-      },
-      "skillMaxLevel" : {
-        "value" : 40
-      }
-    },
     "name" : "Nature",
     "skillTiers" : [ [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Nature/Regrowth.html",
-      "skillIcon" : {
-        "posX" : 228,
-        "posY" : 403,
-        "circular" : false
-      },
       "name" : "Regrowth",
       "parent" : null,
       "attributes" : {
@@ -70,14 +31,13 @@
           "value" : 16
         }
       },
-      "description" : "A wave of healing energy rapidly restores lost life to the target ally."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Nature/Call of the Wild.html",
+      "description" : "A wave of healing energy rapidly restores lost life to the target ally.",
       "skillIcon" : {
-        "posX" : 428,
+        "circular" : false,
         "posY" : 403,
-        "circular" : false
-      },
+        "posX" : 228
+      }
+    }, {
       "name" : "Call of the Wild",
       "parent" : null,
       "attributes" : {
@@ -106,14 +66,13 @@
           "value" : 16
         }
       },
-      "description" : "Summons a wolf companion to fight with you in battle.  At higher levels more wolves can be controlled at once."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Nature/Accelerated Growth.html",
+      "description" : "Summons a wolf companion to fight with you in battle.  At higher levels more wolves can be controlled at once.",
       "skillIcon" : {
-        "posX" : 228,
-        "posY" : 341,
-        "circular" : true
-      },
+        "circular" : false,
+        "posY" : 403,
+        "posX" : 428
+      }
+    } ], [ {
       "name" : "Accelerated Growth",
       "parent" : "Regrowth",
       "attributes" : {
@@ -133,14 +92,13 @@
           "value" : 8
         }
       },
-      "description" : "Allows Regrowth to be cast more frequently."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Nature/Heart of Oak.html",
+      "description" : "Allows Regrowth to be cast more frequently.",
       "skillIcon" : {
-        "posX" : 128,
+        "circular" : true,
         "posY" : 341,
-        "circular" : false
-      },
+        "posX" : 228
+      }
+    }, {
       "name" : "Heart of Oak",
       "parent" : null,
       "attributes" : {
@@ -175,14 +133,13 @@
           "value" : 10.0
         }
       },
-      "description" : "Bolsters the life-force of yourself and nearby allies."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Nature/Plague.html",
+      "description" : "Bolsters the life-force of yourself and nearby allies.",
       "skillIcon" : {
-        "posX" : 628,
+        "circular" : false,
         "posY" : 341,
-        "circular" : false
-      },
+        "posX" : 128
+      }
+    }, {
       "name" : "Plague",
       "parent" : null,
       "attributes" : {
@@ -235,14 +192,13 @@
           "value" : [ 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0 ]
         }
       },
-      "description" : "Plague afflicts nearby enemies with a debilitating ailment that reduces their health and quickly spreads to other nearby creatures."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Nature/Maul.html",
+      "description" : "Plague afflicts nearby enemies with a debilitating ailment that reduces their health and quickly spreads to other nearby creatures.",
       "skillIcon" : {
-        "posX" : 428,
+        "circular" : false,
         "posY" : 341,
-        "circular" : true
-      },
+        "posX" : 628
+      }
+    }, {
       "name" : "Maul",
       "parent" : null,
       "attributes" : {
@@ -274,14 +230,13 @@
           "value" : [ 6.0, 6.0, 8.0, 8.0, 8.0, 10.0, 10.0, 10.0, 12.0, 12.0, 12.0, 13.0, 14.0, 15.0 ]
         }
       },
-      "description" : "A gnawing attack that rends enemy flesh causing bleed damage for a short duration."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Nature/Briar Ward.html",
+      "description" : "A gnawing attack that rends enemy flesh causing bleed damage for a short duration.",
       "skillIcon" : {
-        "posX" : 328,
-        "posY" : 279,
-        "circular" : false
-      },
+        "circular" : true,
+        "posY" : 341,
+        "posX" : 428
+      }
+    } ], [ {
       "name" : "Briar Ward",
       "parent" : null,
       "attributes" : {
@@ -319,14 +274,13 @@
           "value" : 16
         }
       },
-      "description" : "A protective grove of briars grows around you that enemies cannot pass through."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Nature/Fatigue.html",
+      "description" : "A protective grove of briars grows around you that enemies cannot pass through.",
       "skillIcon" : {
-        "posX" : 628,
+        "circular" : false,
         "posY" : 279,
-        "circular" : true
-      },
+        "posX" : 328
+      }
+    }, {
       "name" : "Fatigue",
       "parent" : "Plague",
       "attributes" : {
@@ -361,14 +315,13 @@
           "value" : [ -15.0, -18.0, -20.0, -23.0, -25.0, -28.0, -30.0, -33.0, -35.0, -38.0, -40.0, -45.0 ]
         }
       },
-      "description" : "Saps the strength from diseased enemies causing them to move more slowly and fight less effectively."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Nature/Survival Instinct.html",
+      "description" : "Saps the strength from diseased enemies causing them to move more slowly and fight less effectively.",
       "skillIcon" : {
-        "posX" : 428,
+        "circular" : true,
         "posY" : 279,
-        "circular" : true
-      },
+        "posX" : 628
+      }
+    }, {
       "name" : "Survival Instinct",
       "parent" : null,
       "attributes" : {
@@ -394,14 +347,13 @@
           "value" : 33.0
         }
       },
-      "description" : "An instinctual will to live is triggered whenever health is low."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Nature/Dissemination.html",
+      "description" : "An instinctual will to live is triggered whenever health is low.",
       "skillIcon" : {
-        "posX" : 228,
-        "posY" : 217,
-        "circular" : true
-      },
+        "circular" : true,
+        "posY" : 279,
+        "posX" : 428
+      }
+    } ], [ {
       "name" : "Dissemination",
       "parent" : null,
       "attributes" : {
@@ -427,14 +379,13 @@
           "value" : 12
         }
       },
-      "description" : "Causes regrowth energy to disseminate from the initial target and leap to additional nearby allies."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Nature/Stinging Nettle.html",
+      "description" : "Causes regrowth energy to disseminate from the initial target and leap to additional nearby allies.",
       "skillIcon" : {
-        "posX" : 328,
+        "circular" : true,
         "posY" : 217,
-        "circular" : true
-      },
+        "posX" : 228
+      }
+    }, {
       "name" : "Stinging Nettle",
       "parent" : null,
       "attributes" : {
@@ -451,14 +402,13 @@
           "value" : 8
         }
       },
-      "description" : "Causes enemies who hit the Briar Ward to suffer poisoning."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Nature/Tranquility of Water.html",
+      "description" : "Causes enemies who hit the Briar Ward to suffer poisoning.",
       "skillIcon" : {
-        "posX" : 128,
+        "circular" : true,
         "posY" : 217,
-        "circular" : true
-      },
+        "posX" : 328
+      }
+    }, {
       "name" : "Tranquility of Water",
       "parent" : "Heart of Oak",
       "attributes" : {
@@ -478,14 +428,13 @@
           "value" : 6
         }
       },
-      "description" : "Provides a chance to use skills at 50% reduced energy cost while under the effect of Heart of Oak."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Nature/Sylvan Nymph.html",
+      "description" : "Provides a chance to use skills at 50% reduced energy cost while under the effect of Heart of Oak.",
       "skillIcon" : {
-        "posX" : 528,
+        "circular" : true,
         "posY" : 217,
-        "circular" : false
-      },
+        "posX" : 128
+      }
+    }, {
       "name" : "Sylvan Nymph",
       "parent" : null,
       "attributes" : {
@@ -520,14 +469,13 @@
           "value" : 16
         }
       },
-      "description" : "Summons a powerful forest Nymph who can bring down enemies with her magical bow and cast enchantments to strengthen allies in battle."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Nature/Permanence of Stone.html",
+      "description" : "Summons a powerful forest Nymph who can bring down enemies with her magical bow and cast enchantments to strengthen allies in battle.",
       "skillIcon" : {
-        "posX" : 128,
-        "posY" : 155,
-        "circular" : true
-      },
+        "circular" : false,
+        "posY" : 217,
+        "posX" : 528
+      }
+    } ], [ {
       "name" : "Permanence of Stone",
       "parent" : "Tranquility of Water",
       "attributes" : {
@@ -547,14 +495,13 @@
           "value" : 6
         }
       },
-      "description" : "Protects allies from the elements, reducing the damage caused by elemental based attacks."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Nature/Susceptibility.html",
+      "description" : "Protects allies from the elements, reducing the damage caused by elemental based attacks.",
       "skillIcon" : {
-        "posX" : 628,
+        "circular" : true,
         "posY" : 155,
-        "circular" : true
-      },
+        "posX" : 128
+      }
+    }, {
       "name" : "Susceptibility",
       "parent" : "Fatigue",
       "attributes" : {
@@ -577,14 +524,13 @@
           "value" : 8
         }
       },
-      "description" : "Weakens the constitution of adjacent enemies making them more susceptible to physical and elemental damage."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Nature/Strength of the Pack.html",
+      "description" : "Weakens the constitution of adjacent enemies making them more susceptible to physical and elemental damage.",
       "skillIcon" : {
-        "posX" : 428,
+        "circular" : true,
         "posY" : 155,
-        "circular" : true
-      },
+        "posX" : 628
+      }
+    }, {
       "name" : "Strength of the Pack",
       "parent" : null,
       "attributes" : {
@@ -619,14 +565,13 @@
           "value" : 15.0
         }
       },
-      "description" : "The howl of your wolves emboldens the hearts of those who hear it causing them to fight more fiercely."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Nature/Overgrowth.html",
+      "description" : "The howl of your wolves emboldens the hearts of those who hear it causing them to fight more fiercely.",
       "skillIcon" : {
-        "posX" : 528,
+        "circular" : true,
         "posY" : 155,
-        "circular" : true
-      },
+        "posX" : 428
+      }
+    }, {
       "name" : "Overgrowth",
       "parent" : null,
       "attributes" : {
@@ -655,14 +600,13 @@
           "value" : 12
         }
       },
-      "description" : "Allows the Nymph to create a living shield around allies that absorbs damage and harms enemies that strike it."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Nature/Sanctuary.html",
+      "description" : "Allows the Nymph to create a living shield around allies that absorbs damage and harms enemies that strike it.",
       "skillIcon" : {
-        "posX" : 328,
-        "posY" : 93,
-        "circular" : true
-      },
+        "circular" : true,
+        "posY" : 155,
+        "posX" : 528
+      }
+    } ], [ {
       "name" : "Sanctuary",
       "parent" : null,
       "attributes" : {
@@ -691,14 +635,13 @@
           "value" : 8
         }
       },
-      "description" : "The power of the grove revitalizes those within and reduces the energy consumed by skill use."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Nature/Nature's Wrath.html",
+      "description" : "The power of the grove revitalizes those within and reduces the energy consumed by skill use.",
       "skillIcon" : {
-        "posX" : 528,
+        "circular" : true,
         "posY" : 93,
-        "circular" : true
-      },
+        "posX" : 328
+      }
+    }, {
       "name" : "Nature's Wrath",
       "parent" : null,
       "attributes" : {
@@ -733,14 +676,13 @@
           "value" : [ 33.0, 40.0, 46.0, 54.0, 60.0, 67.0, 73.0, 81.0, 87.0, 94.0, 100.0, 110.0, 119.0, 130.0, 141.0, 155.0 ]
         }
       },
-      "description" : "Imbues the Nymph's attacks with the power of the elements."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Nature/Refresh.html",
+      "description" : "Imbues the Nymph's attacks with the power of the elements.",
       "skillIcon" : {
-        "posX" : 228,
+        "circular" : true,
         "posY" : 93,
-        "circular" : false
-      },
+        "posX" : 528
+      }
+    }, {
       "name" : "Refresh",
       "parent" : null,
       "attributes" : {
@@ -763,14 +705,13 @@
           "value" : 12
         }
       },
-      "description" : "Subtracts time from recharging skills allowing you to use them more frequently."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Nature/Sylvan Protection.html",
+      "description" : "Subtracts time from recharging skills allowing you to use them more frequently.",
       "skillIcon" : {
-        "posX" : 528,
-        "posY" : 31,
-        "circular" : true
-      },
+        "circular" : false,
+        "posY" : 93,
+        "posX" : 228
+      }
+    } ], [ {
       "name" : "Sylvan Protection",
       "parent" : null,
       "attributes" : {
@@ -829,14 +770,13 @@
           "value" : [ 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0 ]
         }
       },
-      "description" : "The Nymph calls upon the vines of the undergrowth to keep enemies at bay."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Nature/Earthbind.html",
+      "description" : "The Nymph calls upon the vines of the undergrowth to keep enemies at bay.",
       "skillIcon" : {
-        "posX" : 328,
+        "circular" : true,
         "posY" : 31,
-        "circular" : false
-      },
+        "posX" : 528
+      }
+    }, {
       "name" : "Earthbind",
       "parent" : null,
       "attributes" : {
@@ -889,35 +829,33 @@
           "value" : 36.0
         }
       },
-      "description" : "Summons roots from the earth to slow and immobilize all foes around you."
-    } ] ]
-  }, {
-    "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Spirit.html",
+      "description" : "Summons roots from the earth to slow and immobilize all foes around you.",
+      "skillIcon" : {
+        "circular" : false,
+        "posY" : 31,
+        "posX" : 328
+      }
+    } ] ],
     "masteryAttributes" : {
       "characterLife" : {
         "value" : [ 20.0, 40.0, 60.0, 80.0, 100.0, 120.0, 140.0, 160.0, 180.0, 200.0, 220.0, 240.0, 260.0, 280.0, 300.0, 320.0, 340.0, 360.0, 380.0, 400.0, 420.0, 440.0, 460.0, 480.0, 500.0, 520.0, 540.0, 560.0, 580.0, 600.0, 620.0, 640.0, 660.0, 680.0, 700.0, 720.0, 740.0, 760.0, 780.0, 800.0 ]
       },
       "characterIntelligence" : {
-        "value" : [ 3.0, 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0, 51.0, 54.0, 57.0, 60.0, 63.0, 66.0, 69.0, 72.0, 75.0, 78.0, 81.0, 84.0, 87.0, 90.0, 93.0, 96.0, 99.0, 102.0, 105.0, 108.0, 111.0, 114.0, 117.0, 120.0 ]
+        "value" : [ 2.5, 5.0, 7.5, 10.0, 12.5, 15.0, 17.5, 20.0, 22.5, 25.0, 27.5, 30.0, 32.5, 35.0, 37.5, 40.0, 42.5, 45.0, 47.5, 50.0, 52.5, 55.0, 57.5, 60.0, 62.5, 65.0, 67.5, 70.0, 72.5, 75.0, 77.5, 80.0, 82.5, 85.0, 87.5, 90.0, 92.5, 95.0, 97.5, 100.0 ]
       },
       "characterDexterity" : {
         "value" : [ 1.5, 3.0, 4.5, 6.0, 7.5, 9.0, 10.5, 12.0, 13.5, 15.0, 16.5, 18.0, 19.5, 21.0, 22.5, 24.0, 25.5, 27.0, 28.5, 30.0, 31.5, 33.0, 34.5, 36.0, 37.5, 39.0, 40.5, 42.0, 43.5, 45.0, 46.5, 48.0, 49.5, 51.0, 52.5, 54.0, 55.5, 57.0, 58.5, 60.0 ]
       },
       "characterMana" : {
-        "value" : [ 8.0, 16.0, 24.0, 32.0, 40.0, 48.0, 56.0, 64.0, 72.0, 80.0, 88.0, 96.0, 104.0, 112.0, 120.0, 128.0, 136.0, 144.0, 152.0, 160.0, 168.0, 176.0, 184.0, 192.0, 200.0, 208.0, 216.0, 224.0, 232.0, 240.0, 248.0, 256.0, 264.0, 272.0, 280.0, 288.0, 296.0, 304.0, 312.0, 320.0 ]
+        "value" : [ 16.0, 32.0, 48.0, 64.0, 80.0, 96.0, 112.0, 128.0, 144.0, 160.0, 176.0, 192.0, 208.0, 224.0, 240.0, 256.0, 272.0, 288.0, 304.0, 320.0, 336.0, 352.0, 368.0, 384.0, 400.0, 416.0, 432.0, 448.0, 464.0, 480.0, 496.0, 512.0, 528.0, 544.0, 560.0, 576.0, 592.0, 608.0, 624.0, 640.0 ]
       },
       "skillMaxLevel" : {
         "value" : 40
       }
-    },
+    }
+  }, {
     "name" : "Spirit",
     "skillTiers" : [ [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Spirit/Deathchill Aura.html",
-      "skillIcon" : {
-        "posX" : 228,
-        "posY" : 403,
-        "circular" : false
-      },
       "name" : "Deathchill Aura",
       "parent" : null,
       "attributes" : {
@@ -964,14 +902,13 @@
           "value" : [ 1.0, 1.0, 2.0, 2.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0 ]
         }
       },
-      "description" : "A deathly chill radiates from the character slowing the attack and movement of enemies as it diminishes their life."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Spirit/Life Drain.html",
+      "description" : "A deathly chill radiates from the character slowing the attack and movement of enemies as it diminishes their life.",
       "skillIcon" : {
-        "posX" : 328,
+        "circular" : false,
         "posY" : 403,
-        "circular" : false
-      },
+        "posX" : 228
+      }
+    }, {
       "name" : "Life Drain",
       "parent" : null,
       "attributes" : {
@@ -1009,14 +946,13 @@
           "value" : 12
         }
       },
-      "description" : "Leaches life from an enemy to replenish your own."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Spirit/Vision of Death.html",
+      "description" : "Leaches life from an enemy to replenish your own.",
       "skillIcon" : {
-        "posX" : 428,
-        "posY" : 341,
-        "circular" : false
-      },
+        "circular" : false,
+        "posY" : 403,
+        "posX" : 328
+      }
+    } ], [ {
       "name" : "Vision of Death",
       "parent" : null,
       "attributes" : {
@@ -1066,14 +1002,13 @@
           "value" : 5
         }
       },
-      "description" : "Assaults the minds of surrounding enemies with images of their own death causing the weak-hearted to flee in horror and more resolute foes to fight less effectively."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Spirit/Ravages of Time.html",
+      "description" : "Assaults the minds of surrounding enemies with images of their own death causing the weak-hearted to flee in horror and more resolute foes to fight less effectively.",
       "skillIcon" : {
-        "posX" : 228,
+        "circular" : false,
         "posY" : 341,
-        "circular" : true
-      },
+        "posX" : 428
+      }
+    }, {
       "name" : "Ravages of Time",
       "parent" : "Deathchill Aura",
       "attributes" : {
@@ -1099,14 +1034,13 @@
           "value" : 8
         }
       },
-      "description" : "Accelerates the effects of time on adjacent enemies' equipment causing weapons to dull and armor to crumble."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Spirit/Ternion Attack.html",
+      "description" : "Accelerates the effects of time on adjacent enemies' equipment causing weapons to dull and armor to crumble.",
       "skillIcon" : {
-        "posX" : 128,
+        "circular" : true,
         "posY" : 341,
-        "circular" : false
-      },
+        "posX" : 228
+      }
+    }, {
       "name" : "Ternion Attack",
       "parent" : null,
       "attributes" : {
@@ -1144,14 +1078,13 @@
           "value" : 12
         }
       },
-      "description" : "This powerful wizard's trick causes your staff to shoot three projectiles by channeling magical energy into it.  Initially each hit is not as powerful as a normal attack but the effectiveness increases every level."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Spirit/Spirit Ward.html",
+      "description" : "This powerful wizard's trick causes your staff to shoot three projectiles by channeling magical energy into it.  Initially each hit is not as powerful as a normal attack but the effectiveness increases every level.",
       "skillIcon" : {
-        "posX" : 628,
+        "circular" : false,
         "posY" : 341,
-        "circular" : false
-      },
+        "posX" : 128
+      }
+    }, {
       "name" : "Spirit Ward",
       "parent" : null,
       "attributes" : {
@@ -1177,14 +1110,13 @@
           "value" : 8
         }
       },
-      "description" : "Casts a protective ward that will reduce the damage of undead attacks on the player and nearby allies."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Spirit/Dark Covenant.html",
+      "description" : "Casts a protective ward that will reduce the damage of undead attacks on the player and nearby allies.",
       "skillIcon" : {
-        "posX" : 428,
-        "posY" : 279,
-        "circular" : false
-      },
+        "circular" : false,
+        "posY" : 341,
+        "posX" : 628
+      }
+    } ], [ {
       "name" : "Dark Covenant",
       "parent" : null,
       "attributes" : {
@@ -1219,14 +1151,13 @@
           "value" : 10.0
         }
       },
-      "description" : "Mysterious otherworldly entities offer great power to Spirit Masters who can commune with them.  The cost, however, is measured in life."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Spirit/Cascade.html",
+      "description" : "Mysterious otherworldly entities offer great power to Spirit Masters who can commune with them.  The cost, however, is measured in life.",
       "skillIcon" : {
-        "posX" : 328,
+        "circular" : false,
         "posY" : 279,
-        "circular" : true
-      },
+        "posX" : 428
+      }
+    }, {
       "name" : "Cascade",
       "parent" : null,
       "attributes" : {
@@ -1255,14 +1186,13 @@
           "value" : 1
         }
       },
-      "description" : "Causes Life Drain to blast through the primary target and hit multiple enemies."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Spirit/Spirit Bane.html",
+      "description" : "Causes Life Drain to blast through the primary target and hit multiple enemies.",
       "skillIcon" : {
-        "posX" : 628,
+        "circular" : true,
         "posY" : 279,
-        "circular" : true
-      },
+        "posX" : 328
+      }
+    }, {
       "name" : "Spirit Bane",
       "parent" : "Spirit Ward",
       "attributes" : {
@@ -1282,14 +1212,13 @@
           "value" : 6
         }
       },
-      "description" : "Adds damage against undead to the attacks of those under the effects of Spirit Ward."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Spirit/Summon Liche King.html",
+      "description" : "Adds damage against undead to the attacks of those under the effects of Spirit Ward.",
       "skillIcon" : {
-        "posX" : 528,
+        "circular" : true,
         "posY" : 279,
-        "circular" : false
-      },
+        "posX" : 628
+      }
+    }, {
       "name" : "Summon Liche King",
       "parent" : null,
       "attributes" : {
@@ -1318,14 +1247,13 @@
           "value" : 16
         }
       },
-      "description" : "In ages past, powerful sorcerers learned how to cheat Hades and persist as undead liches long after death had robbed their bodies of life.  A dangerous practice of Theurgists is to bind the souls of these ancient liches to their will, thus acquiring their powers."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Spirit/Necrosis.html",
+      "description" : "In ages past, powerful sorcerers learned how to cheat Hades and persist as undead liches long after death had robbed their bodies of life.  A dangerous practice of Theurgists is to bind the souls of these ancient liches to their will, thus acquiring their powers.",
       "skillIcon" : {
-        "posX" : 228,
-        "posY" : 217,
-        "circular" : true
-      },
+        "circular" : false,
+        "posY" : 279,
+        "posX" : 528
+      }
+    } ], [ {
       "name" : "Necrosis",
       "parent" : "Ravages of Time",
       "attributes" : {
@@ -1351,14 +1279,13 @@
           "value" : 8
         }
       },
-      "description" : "Weakens the constitution of adjacent enemies making them more susceptible to attacks that directly damage their life such as vitality damage and life leaching."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Spirit/Arcane Lore.html",
+      "description" : "Weakens the constitution of adjacent enemies making them more susceptible to attacks that directly damage their life such as vitality damage and life leaching.",
       "skillIcon" : {
-        "posX" : 128,
+        "circular" : true,
         "posY" : 217,
-        "circular" : true
-      },
+        "posX" : 228
+      }
+    }, {
       "name" : "Arcane Lore",
       "parent" : "Ternion Attack",
       "attributes" : {
@@ -1384,14 +1311,13 @@
           "value" : [ 1.0, 1.2, 1.4, 1.58, 1.74, 1.88, 2.01, 2.13, 2.25, 2.38 ]
         }
       },
-      "description" : "The magic practitioners of older civilizations devised many insidious techniques to bolster the destructive capabilities of their magical staves.  Knowledge of these methods will unlock the true power of your staff attacks."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Spirit/Enslave Spirit.html",
+      "description" : "The magic practitioners of older civilizations devised many insidious techniques to bolster the destructive capabilities of their magical staves.  Knowledge of these methods will unlock the true power of your staff attacks.",
       "skillIcon" : {
-        "posX" : 328,
+        "circular" : true,
         "posY" : 217,
-        "circular" : false
-      },
+        "posX" : 128
+      }
+    }, {
       "name" : "Enslave Spirit",
       "parent" : null,
       "attributes" : {
@@ -1420,14 +1346,13 @@
           "value" : 12
         }
       },
-      "description" : "Slip through the barriers of your enemies' consciousness and dominate their mind, binding them to your will.  While enslaved your enemy will be forced to obey your commands but eventually they will regain control of their mind and turn against you.  {^y}Ineffective against monsters five or more levels above you."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Spirit/Death Nova.html",
+      "description" : "Slip through the barriers of your enemies' consciousness and dominate their mind, binding them to your will.  While enslaved your enemy will be forced to obey your commands but eventually they will regain control of their mind and turn against you.  {^y}Ineffective against monsters five or more levels above you.",
       "skillIcon" : {
-        "posX" : 528,
+        "circular" : false,
         "posY" : 217,
-        "circular" : true
-      },
+        "posX" : 328
+      }
+    }, {
       "name" : "Death Nova",
       "parent" : null,
       "attributes" : {
@@ -1462,14 +1387,13 @@
           "value" : 12
         }
       },
-      "description" : "Emits a wave of death that will deplete life from any living being it contacts."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Spirit/Circle of Power.html",
+      "description" : "Emits a wave of death that will deplete life from any living being it contacts.",
       "skillIcon" : {
-        "posX" : 628,
-        "posY" : 155,
-        "circular" : false
-      },
+        "circular" : true,
+        "posY" : 217,
+        "posX" : 528
+      }
+    } ], [ {
       "name" : "Circle of Power",
       "parent" : null,
       "attributes" : {
@@ -1501,14 +1425,13 @@
           "value" : 12
         }
       },
-      "description" : "Summons a totem that holds a powerful spirit, infusing you and all allies with great mental energy while standing close to it."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Spirit/Unearthly Power.html",
+      "description" : "Summons a totem that holds a powerful spirit, infusing you and all allies with great mental energy while standing close to it.",
       "skillIcon" : {
-        "posX" : 428,
+        "circular" : false,
         "posY" : 155,
-        "circular" : true
-      },
+        "posX" : 628
+      }
+    }, {
       "name" : "Unearthly Power",
       "parent" : "Dark Covenant",
       "attributes" : {
@@ -1534,14 +1457,13 @@
           "value" : 8
         }
       },
-      "description" : "Draw upon even greater otherworldly powers to augment yourself and allies in battle, but be wary of the cost exacted from your own vitality."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Spirit/Wraith Shell.html",
+      "description" : "Draw upon even greater otherworldly powers to augment yourself and allies in battle, but be wary of the cost exacted from your own vitality.",
       "skillIcon" : {
-        "posX" : 528,
+        "circular" : true,
         "posY" : 155,
-        "circular" : true
-      },
+        "posX" : 428
+      }
+    }, {
       "name" : "Wraith Shell",
       "parent" : null,
       "attributes" : {
@@ -1570,14 +1492,13 @@
           "value" : 12
         }
       },
-      "description" : "Allows the Liche King to diminish its corporeal presence making it less vulnerable to all types of damage."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Spirit/Death Ward.html",
+      "description" : "Allows the Liche King to diminish its corporeal presence making it less vulnerable to all types of damage.",
       "skillIcon" : {
-        "posX" : 128,
-        "posY" : 93,
-        "circular" : true
-      },
+        "circular" : true,
+        "posY" : 155,
+        "posX" : 528
+      }
+    } ], [ {
       "name" : "Death Ward",
       "parent" : null,
       "attributes" : {
@@ -1603,14 +1524,13 @@
           "value" : 15.0
         }
       },
-      "description" : "Places a magical ward on the player that protects them from death by granting additional life when their life gets dangerously low."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Spirit/Arcane Blast.html",
+      "description" : "Places a magical ward on the player that protects them from death by granting additional life when their life gets dangerously low.",
       "skillIcon" : {
-        "posX" : 528,
+        "circular" : true,
         "posY" : 93,
-        "circular" : true
-      },
+        "posX" : 128
+      }
+    }, {
       "name" : "Arcane Blast",
       "parent" : null,
       "attributes" : {
@@ -1654,14 +1574,13 @@
           "value" : 1.5
         }
       },
-      "description" : "Drawing upon ancient arcane craft the Liche King forms deadly bolts of elemental energy and launches them at enemies."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Spirit/Summon Outsider.html",
+      "description" : "Drawing upon ancient arcane craft the Liche King forms deadly bolts of elemental energy and launches them at enemies.",
       "skillIcon" : {
-        "posX" : 228,
+        "circular" : true,
         "posY" : 93,
-        "circular" : false
-      },
+        "posX" : 528
+      }
+    }, {
       "name" : "Summon Outsider",
       "parent" : null,
       "attributes" : {
@@ -1687,14 +1606,13 @@
           "value" : 16
         }
       },
-      "description" : "Calls forth a powerful extra-dimensional entity from beyond the ether.  The link can only be maintained for a short time."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Spirit/Soul Drain.html",
+      "description" : "Calls forth a powerful extra-dimensional entity from beyond the ether.  The link can only be maintained for a short time.",
       "skillIcon" : {
-        "posX" : 328,
-        "posY" : 31,
-        "circular" : true
-      },
+        "circular" : false,
+        "posY" : 93,
+        "posX" : 228
+      }
+    } ], [ {
       "name" : "Soul Drain",
       "parent" : null,
       "attributes" : {
@@ -1729,14 +1647,13 @@
           "value" : 1
         }
       },
-      "description" : "Cause Life Drain to explode outward, causing harm to body and soul."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Spirit/Soul Vortex.html",
+      "description" : "Cause Life Drain to explode outward, causing harm to body and soul.",
       "skillIcon" : {
-        "posX" : 628,
+        "circular" : true,
         "posY" : 31,
-        "circular" : false
-      },
+        "posX" : 328
+      }
+    }, {
       "name" : "Soul Vortex",
       "parent" : null,
       "attributes" : {
@@ -1795,35 +1712,33 @@
           "value" : 1.0
         }
       },
-      "description" : "Concentrate your Spirit power to voraciously absorb all life force and energy in your immediate surroundings."
-    } ] ]
-  }, {
-    "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Storm.html",
+      "description" : "Concentrate your Spirit power to voraciously absorb all life force and energy in your immediate surroundings.",
+      "skillIcon" : {
+        "circular" : false,
+        "posY" : 31,
+        "posX" : 628
+      }
+    } ] ],
     "masteryAttributes" : {
       "characterLife" : {
-        "value" : [ 21.0, 42.0, 63.0, 84.0, 105.0, 126.0, 147.0, 168.0, 189.0, 210.0, 231.0, 252.0, 273.0, 294.0, 315.0, 336.0, 357.0, 378.0, 399.0, 420.0, 441.0, 462.0, 483.0, 504.0, 525.0, 546.0, 567.0, 588.0, 609.0, 630.0, 651.0, 672.0, 693.0, 714.0, 735.0, 756.0, 777.0, 798.0, 819.0, 840.0 ]
+        "value" : [ 20.0, 40.0, 60.0, 80.0, 100.0, 120.0, 140.0, 160.0, 180.0, 200.0, 220.0, 240.0, 260.0, 280.0, 300.0, 320.0, 340.0, 360.0, 380.0, 400.0, 420.0, 440.0, 460.0, 480.0, 500.0, 520.0, 540.0, 560.0, 580.0, 600.0, 620.0, 640.0, 660.0, 680.0, 700.0, 720.0, 740.0, 760.0, 780.0, 800.0 ]
       },
       "characterIntelligence" : {
         "value" : [ 3.0, 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0, 51.0, 54.0, 57.0, 60.0, 63.0, 66.0, 69.0, 72.0, 75.0, 78.0, 81.0, 84.0, 87.0, 90.0, 93.0, 96.0, 99.0, 102.0, 105.0, 108.0, 111.0, 114.0, 117.0, 120.0 ]
       },
       "characterDexterity" : {
-        "value" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0, 28.0, 29.0, 30.0, 31.0, 32.0, 33.0, 34.0, 35.0, 36.0, 37.0, 38.0, 39.0, 40.0 ]
+        "value" : [ 1.5, 3.0, 4.5, 6.0, 7.5, 9.0, 10.5, 12.0, 13.5, 15.0, 16.5, 18.0, 19.5, 21.0, 22.5, 24.0, 25.5, 27.0, 28.5, 30.0, 31.5, 33.0, 34.5, 36.0, 37.5, 39.0, 40.5, 42.0, 43.5, 45.0, 46.5, 48.0, 49.5, 51.0, 52.5, 54.0, 55.5, 57.0, 58.5, 60.0 ]
       },
       "characterMana" : {
-        "value" : [ 15.0, 30.0, 45.0, 60.0, 75.0, 90.0, 105.0, 120.0, 135.0, 150.0, 165.0, 180.0, 195.0, 210.0, 225.0, 240.0, 255.0, 270.0, 285.0, 300.0, 315.0, 330.0, 345.0, 360.0, 375.0, 390.0, 405.0, 420.0, 435.0, 450.0, 465.0, 480.0, 495.0, 510.0, 525.0, 540.0, 555.0, 570.0, 585.0, 600.0 ]
+        "value" : [ 8.0, 16.0, 24.0, 32.0, 40.0, 48.0, 56.0, 64.0, 72.0, 80.0, 88.0, 96.0, 104.0, 112.0, 120.0, 128.0, 136.0, 144.0, 152.0, 160.0, 168.0, 176.0, 184.0, 192.0, 200.0, 208.0, 216.0, 224.0, 232.0, 240.0, 248.0, 256.0, 264.0, 272.0, 280.0, 288.0, 296.0, 304.0, 312.0, 320.0 ]
       },
       "skillMaxLevel" : {
         "value" : 40
       }
-    },
+    }
+  }, {
     "name" : "Storm",
     "skillTiers" : [ [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Storm/Ice Shard.html",
-      "skillIcon" : {
-        "posX" : 228,
-        "posY" : 403,
-        "circular" : false
-      },
       "name" : "Ice Shard",
       "parent" : null,
       "attributes" : {
@@ -1861,14 +1776,13 @@
           "value" : 12
         }
       },
-      "description" : "Projects a deadly shard of ice at the target inflicting cold damage and temporarily slowing them."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Storm/Storm Nimbus.html",
+      "description" : "Projects a deadly shard of ice at the target inflicting cold damage and temporarily slowing them.",
       "skillIcon" : {
-        "posX" : 528,
+        "circular" : false,
         "posY" : 403,
-        "circular" : false
-      },
+        "posX" : 228
+      }
+    }, {
       "name" : "Storm Nimbus",
       "parent" : null,
       "attributes" : {
@@ -1930,14 +1844,13 @@
           "value" : 1
         }
       },
-      "description" : "When active, the player is imbued with the power of the storm, causing their attacks to strike with cold and lightning damage."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Storm/Heart of Frost.html",
+      "description" : "When active, the player is imbued with the power of the storm, causing their attacks to strike with cold and lightning damage.",
       "skillIcon" : {
-        "posX" : 528,
-        "posY" : 341,
-        "circular" : true
-      },
+        "circular" : false,
+        "posY" : 403,
+        "posX" : 528
+      }
+    } ], [ {
       "name" : "Heart of Frost",
       "parent" : "Storm Nimbus",
       "attributes" : {
@@ -1969,14 +1882,13 @@
           "value" : [ 10.0, 16.0, 22.0, 28.0, 34.0, 40.0, 46.0, 52.0, 58.0, 64.0, 70.0, 76.0, 82.0, 88.0, 94.0, 100.0 ]
         }
       },
-      "description" : "When Storm Nimbus is active, the air around the player becomes icy cold and slows any attackers within its perimeter"
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Storm/Thunderball.html",
+      "description" : "When Storm Nimbus is active, the air around the player becomes icy cold and slows any attackers within its perimeter",
       "skillIcon" : {
-        "posX" : 328,
+        "circular" : true,
         "posY" : 341,
-        "circular" : false
-      },
+        "posX" : 528
+      }
+    }, {
       "name" : "Thunderball",
       "parent" : null,
       "attributes" : {
@@ -2020,14 +1932,13 @@
           "value" : 1
         }
       },
-      "description" : "Hurls a ball of electrical energy that damages and stuns enemies in a small blast radius."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Storm/Spell Breaker.html",
+      "description" : "Hurls a ball of electrical energy that damages and stuns enemies in a small blast radius.",
       "skillIcon" : {
-        "posX" : 128,
+        "circular" : false,
         "posY" : 341,
-        "circular" : false
-      },
+        "posX" : 328
+      }
+    }, {
       "name" : "Spell Breaker",
       "parent" : null,
       "attributes" : {
@@ -2065,14 +1976,13 @@
           "value" : [ 24.0, 32.0, 40.0, 50.0, 58.0, 66.0, 74.0, 84.0, 92.0, 100.0 ]
         }
       },
-      "description" : "A pulse of negatively charged energy dispels hostile enchantments on allies or, when cast on enemies, breaks their beneficial enchantments and negates a portion of their energy.  This attack inflicts bonus damage when used against Magical creatures."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Storm/Velocity.html",
+      "description" : "A pulse of negatively charged energy dispels hostile enchantments on allies or, when cast on enemies, breaks their beneficial enchantments and negates a portion of their energy.  This attack inflicts bonus damage when used against Magical creatures.",
       "skillIcon" : {
-        "posX" : 228,
-        "posY" : 279,
-        "circular" : true
-      },
+        "circular" : false,
+        "posY" : 341,
+        "posX" : 128
+      }
+    } ], [ {
       "name" : "Velocity",
       "parent" : "Ice Shard",
       "attributes" : {
@@ -2095,14 +2005,13 @@
           "value" : [ 10.0, 16.0, 22.0, 28.0, 34.0, 40.0, 46.0, 52.0, 58.0, 64.0, 70.0, 76.0, 82.0, 88.0 ]
         }
       },
-      "description" : "Increasing the speed and damage of Ice Shard. Gives each shard a chance to punch through its target and keep going."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Storm/Freezing Blast.html",
+      "description" : "Increasing the speed and damage of Ice Shard. Gives each shard a chance to punch through its target and keep going.",
       "skillIcon" : {
-        "posX" : 628,
+        "circular" : true,
         "posY" : 279,
-        "circular" : false
-      },
+        "posX" : 228
+      }
+    }, {
       "name" : "Freezing Blast",
       "parent" : null,
       "attributes" : {
@@ -2146,14 +2055,13 @@
           "value" : [ 1.8, 2.2, 2.6, 3.0, 3.4, 3.8, 4.2, 4.6, 5.0, 5.4, 5.8, 6.2 ]
         }
       },
-      "description" : "Encases enemies in ice, immobilizing them but also making them more difficult to damage."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Storm/Squall.html",
+      "description" : "Encases enemies in ice, immobilizing them but also making them more difficult to damage.",
       "skillIcon" : {
-        "posX" : 428,
+        "circular" : false,
         "posY" : 279,
-        "circular" : false
-      },
+        "posX" : 628
+      }
+    }, {
       "name" : "Squall",
       "parent" : null,
       "attributes" : {
@@ -2197,14 +2105,13 @@
           "value" : [ 3.0, 7.0, 11.0, 14.0, 18.0, 22.0, 25.0, 29.0, 33.0, 36.0, 40.0, 44.0, 47.0, 51.0, 55.0, 58.0 ]
         }
       },
-      "description" : "Creates a wind storm in the target area that decreases the projectile attack accuracy of enemies caught within it."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Storm/Spell Shock.html",
+      "description" : "Creates a wind storm in the target area that decreases the projectile attack accuracy of enemies caught within it.",
       "skillIcon" : {
-        "posX" : 128,
+        "circular" : false,
         "posY" : 279,
-        "circular" : true
-      },
+        "posX" : 428
+      }
+    }, {
       "name" : "Spell Shock",
       "parent" : "Spell Breaker",
       "attributes" : {
@@ -2233,14 +2140,13 @@
           "value" : 8
         }
       },
-      "description" : "Inflicts energy burn damage and disrupts enemy spell-casters' ability to use skills as their beneficial enchantments are abruptly shattered by Spell Breaker."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Storm/Lightning Bolt.html",
+      "description" : "Inflicts energy burn damage and disrupts enemy spell-casters' ability to use skills as their beneficial enchantments are abruptly shattered by Spell Breaker.",
       "skillIcon" : {
-        "posX" : 128,
-        "posY" : 217,
-        "circular" : false
-      },
+        "circular" : true,
+        "posY" : 279,
+        "posX" : 128
+      }
+    } ], [ {
       "name" : "Lightning Bolt",
       "parent" : null,
       "attributes" : {
@@ -2281,14 +2187,13 @@
           "value" : 12
         }
       },
-      "description" : "Calls down a powerful bolt of lightning from the heavens to decimate your target."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Storm/Static Charge.html",
+      "description" : "Calls down a powerful bolt of lightning from the heavens to decimate your target.",
       "skillIcon" : {
-        "posX" : 528,
+        "circular" : false,
         "posY" : 217,
-        "circular" : true
-      },
+        "posX" : 128
+      }
+    }, {
       "name" : "Static Charge",
       "parent" : "Heart of Frost",
       "attributes" : {
@@ -2314,14 +2219,13 @@
           "value" : 12
         }
       },
-      "description" : "Electrical energy builds inside the player while Storm Nimbus is active and passes through enemy weapons that come in contact, delivering a powerful shock."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Storm/Energy Shield.html",
+      "description" : "Electrical energy builds inside the player while Storm Nimbus is active and passes through enemy weapons that come in contact, delivering a powerful shock.",
       "skillIcon" : {
-        "posX" : 628,
+        "circular" : true,
         "posY" : 217,
-        "circular" : false
-      },
+        "posX" : 528
+      }
+    }, {
       "name" : "Energy Shield",
       "parent" : null,
       "attributes" : {
@@ -2359,14 +2263,13 @@
           "value" : 12
         }
       },
-      "description" : "Creates a shield of energy that will nullify incoming damage from elemental attacks."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Storm/Obscured Visibility.html",
+      "description" : "Creates a shield of energy that will nullify incoming damage from elemental attacks.",
       "skillIcon" : {
-        "posX" : 428,
+        "circular" : false,
         "posY" : 217,
-        "circular" : true
-      },
+        "posX" : 628
+      }
+    }, {
       "name" : "Obscured Visibility",
       "parent" : "Squall",
       "attributes" : {
@@ -2395,14 +2298,13 @@
           "value" : [ 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 33.0, 37.0, 41.0, 45.0 ]
         }
       },
-      "description" : "Reduced visibility inside the Squall makes it difficult for enemies to effectively attack or defend themselves."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Storm/Concussive Blast.html",
+      "description" : "Reduced visibility inside the Squall makes it difficult for enemies to effectively attack or defend themselves.",
       "skillIcon" : {
-        "posX" : 328,
+        "circular" : true,
         "posY" : 217,
-        "circular" : true
-      },
+        "posX" : 428
+      }
+    }, {
       "name" : "Concussive Blast",
       "parent" : null,
       "attributes" : {
@@ -2434,14 +2336,13 @@
           "value" : 8
         }
       },
-      "description" : "Enhances the power of Thunderball causing sparks to leap from the initial explosion.  Each spark that hits an enemy inflicts lightning damage and stuns."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Storm/Torrent.html",
+      "description" : "Enhances the power of Thunderball causing sparks to leap from the initial explosion.  Each spark that hits an enemy inflicts lightning damage and stuns.",
       "skillIcon" : {
-        "posX" : 228,
-        "posY" : 155,
-        "circular" : true
-      },
+        "circular" : true,
+        "posY" : 217,
+        "posX" : 328
+      }
+    } ], [ {
       "name" : "Torrent",
       "parent" : "Velocity",
       "attributes" : {
@@ -2467,14 +2368,13 @@
           "value" : 8
         }
       },
-      "description" : "Increases the number of shards cast, sending a deadly torrent at enemies."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Storm/Summon Wisp.html",
+      "description" : "Increases the number of shards cast, sending a deadly torrent at enemies.",
       "skillIcon" : {
-        "posX" : 328,
+        "circular" : true,
         "posY" : 155,
-        "circular" : false
-      },
+        "posX" : 228
+      }
+    }, {
       "name" : "Summon Wisp",
       "parent" : null,
       "attributes" : {
@@ -2503,14 +2403,13 @@
           "value" : 16
         }
       },
-      "description" : "Summon an immortal Storm Wisp from the atmosphere to battle your enemies."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Storm/Storm Surge.html",
+      "description" : "Summon an immortal Storm Wisp from the atmosphere to battle your enemies.",
       "skillIcon" : {
-        "posX" : 428,
+        "circular" : false,
         "posY" : 155,
-        "circular" : false
-      },
+        "posX" : 328
+      }
+    }, {
       "name" : "Storm Surge",
       "parent" : null,
       "attributes" : {
@@ -2554,14 +2453,13 @@
           "value" : 5.0
         }
       },
-      "description" : "When activated, each enemy hit has a chance of unleashing a violent squall of storm energy."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Storm/Chain Lightning.html",
+      "description" : "When activated, each enemy hit has a chance of unleashing a violent squall of storm energy.",
       "skillIcon" : {
-        "posX" : 128,
-        "posY" : 93,
-        "circular" : true
-      },
+        "circular" : false,
+        "posY" : 155,
+        "posX" : 428
+      }
+    } ], [ {
       "name" : "Chain Lightning",
       "parent" : null,
       "attributes" : {
@@ -2590,14 +2488,13 @@
           "value" : 12
         }
       },
-      "description" : "Causes electricity to leap from the target of your Lightning Bolt skill and strike additional nearby enemies."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Storm/Reflection.html",
+      "description" : "Causes electricity to leap from the target of your Lightning Bolt skill and strike additional nearby enemies.",
       "skillIcon" : {
-        "posX" : 628,
+        "circular" : true,
         "posY" : 93,
-        "circular" : true
-      },
+        "posX" : 128
+      }
+    }, {
       "name" : "Reflection",
       "parent" : "Energy Shield",
       "attributes" : {
@@ -2620,14 +2517,13 @@
           "value" : 8
         }
       },
-      "description" : "Gives Energy Shield the ability to reflect a portion of enemy attack damage back at them."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Storm/Eye of the Storm.html",
+      "description" : "Gives Energy Shield the ability to reflect a portion of enemy attack damage back at them.",
       "skillIcon" : {
-        "posX" : 328,
+        "circular" : true,
         "posY" : 93,
-        "circular" : true
-      },
+        "posX" : 628
+      }
+    }, {
       "name" : "Eye of the Storm",
       "parent" : null,
       "attributes" : {
@@ -2665,14 +2561,13 @@
           "value" : 8
         }
       },
-      "description" : "A wisp ability that increases elemental damage of all nearby allies for a duration and provides protection from lightning and cold damage."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Storm/Arc Discharge.html",
+      "description" : "A wisp ability that increases elemental damage of all nearby allies for a duration and provides protection from lightning and cold damage.",
       "skillIcon" : {
-        "posX" : 328,
-        "posY" : 31,
-        "circular" : true
-      },
+        "circular" : true,
+        "posY" : 93,
+        "posX" : 328
+      }
+    } ], [ {
       "name" : "Arc Discharge",
       "parent" : null,
       "attributes" : {
@@ -2701,14 +2596,13 @@
           "value" : 8
         }
       },
-      "description" : "Enhances the Wisp’s Thunderclap ability, generating tendrils of lightning."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Storm/Lightning Dash.html",
+      "description" : "Enhances the Wisp’s Thunderclap ability, generating tendrils of lightning.",
       "skillIcon" : {
-        "posX" : 528,
+        "circular" : true,
         "posY" : 31,
-        "circular" : false
-      },
+        "posX" : 328
+      }
+    }, {
       "name" : "Lightning Dash",
       "parent" : null,
       "attributes" : {
@@ -2767,35 +2661,33 @@
           "value" : 1
         }
       },
-      "description" : "Move between enemies at lightning speed, becoming hard to hit in the process. {^n}{^y}Assign this skill to your left mouse button."
-    } ] ]
-  }, {
-    "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Earth.html",
+      "description" : "Move between enemies at lightning speed, becoming hard to hit in the process. {^n}{^y}Assign this skill to your left mouse button.",
+      "skillIcon" : {
+        "circular" : false,
+        "posY" : 31,
+        "posX" : 528
+      }
+    } ] ],
     "masteryAttributes" : {
       "characterLife" : {
-        "value" : [ 22.5, 45.0, 67.5, 90.0, 112.5, 135.0, 157.5, 180.0, 202.5, 225.0, 247.5, 270.0, 292.5, 315.0, 337.5, 360.0, 382.5, 405.0, 427.5, 450.0, 472.5, 495.0, 517.5, 540.0, 562.5, 585.0, 607.5, 630.0, 652.5, 675.0, 697.5, 720.0, 742.5, 765.0, 787.5, 810.0, 832.5, 855.0, 877.5, 900.0 ]
+        "value" : [ 21.0, 42.0, 63.0, 84.0, 105.0, 126.0, 147.0, 168.0, 189.0, 210.0, 231.0, 252.0, 273.0, 294.0, 315.0, 336.0, 357.0, 378.0, 399.0, 420.0, 441.0, 462.0, 483.0, 504.0, 525.0, 546.0, 567.0, 588.0, 609.0, 630.0, 651.0, 672.0, 693.0, 714.0, 735.0, 756.0, 777.0, 798.0, 819.0, 840.0 ]
       },
       "characterIntelligence" : {
         "value" : [ 3.0, 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0, 51.0, 54.0, 57.0, 60.0, 63.0, 66.0, 69.0, 72.0, 75.0, 78.0, 81.0, 84.0, 87.0, 90.0, 93.0, 96.0, 99.0, 102.0, 105.0, 108.0, 111.0, 114.0, 117.0, 120.0 ]
       },
       "characterDexterity" : {
-        "value" : [ 1.5, 3.0, 4.5, 6.0, 7.5, 9.0, 10.5, 12.0, 13.5, 15.0, 16.5, 18.0, 19.5, 21.0, 22.5, 24.0, 25.5, 27.0, 28.5, 30.0, 31.5, 33.0, 34.5, 36.0, 37.5, 39.0, 40.5, 42.0, 43.5, 45.0, 46.5, 48.0, 49.5, 51.0, 52.5, 54.0, 55.5, 57.0, 58.5, 60.0 ]
+        "value" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0, 28.0, 29.0, 30.0, 31.0, 32.0, 33.0, 34.0, 35.0, 36.0, 37.0, 38.0, 39.0, 40.0 ]
       },
       "characterMana" : {
-        "value" : [ 6.0, 12.0, 18.0, 24.0, 30.0, 36.0, 42.0, 48.0, 54.0, 60.0, 66.0, 72.0, 78.0, 84.0, 90.0, 96.0, 102.0, 108.0, 114.0, 120.0, 126.0, 132.0, 138.0, 144.0, 150.0, 156.0, 162.0, 168.0, 174.0, 180.0, 186.0, 192.0, 198.0, 204.0, 210.0, 216.0, 222.0, 228.0, 234.0, 240.0 ]
+        "value" : [ 15.0, 30.0, 45.0, 60.0, 75.0, 90.0, 105.0, 120.0, 135.0, 150.0, 165.0, 180.0, 195.0, 210.0, 225.0, 240.0, 255.0, 270.0, 285.0, 300.0, 315.0, 330.0, 345.0, 360.0, 375.0, 390.0, 405.0, 420.0, 435.0, 450.0, 465.0, 480.0, 495.0, 510.0, 525.0, 540.0, 555.0, 570.0, 585.0, 600.0 ]
       },
       "skillMaxLevel" : {
         "value" : 40
       }
-    },
+    }
+  }, {
     "name" : "Earth",
     "skillTiers" : [ [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Earth/Flame Surge.html",
-      "skillIcon" : {
-        "posX" : 528,
-        "posY" : 403,
-        "circular" : false
-      },
       "name" : "Flame Surge",
       "parent" : null,
       "attributes" : {
@@ -2839,14 +2731,13 @@
           "value" : 1
         }
       },
-      "description" : "Three jets of flame erupt from the caster's hands each inflicting incinerating fire damage to enemies."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Earth/Earth Enchantment.html",
+      "description" : "Three jets of flame erupt from the caster's hands each inflicting incinerating fire damage to enemies.",
       "skillIcon" : {
-        "posX" : 128,
+        "circular" : false,
         "posY" : 403,
-        "circular" : false
-      },
+        "posX" : 528
+      }
+    }, {
       "name" : "Earth Enchantment",
       "parent" : null,
       "attributes" : {
@@ -2896,14 +2787,13 @@
           "value" : [ 12.0, 20.0, 28.0, 36.0, 44.0, 52.0, 60.0, 68.0, 76.0, 84.0, 92.0, 100.0, 109.0, 119.0, 130.0, 145.0 ]
         }
       },
-      "description" : "Imbues your weapons and the weapons of nearby allies with the power of rock and flame."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Earth/Volcanic Orb.html",
+      "description" : "Imbues your weapons and the weapons of nearby allies with the power of rock and flame.",
       "skillIcon" : {
-        "posX" : 628,
-        "posY" : 341,
-        "circular" : false
-      },
+        "circular" : false,
+        "posY" : 403,
+        "posX" : 128
+      }
+    } ], [ {
       "name" : "Volcanic Orb",
       "parent" : null,
       "attributes" : {
@@ -2944,14 +2834,13 @@
           "value" : 12
         }
       },
-      "description" : "Lobs a burning orb of fiery brimstone that explodes when it hits the ground inflicting fire and physical damage to enemies in a small radius."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Earth/Heat Shield.html",
+      "description" : "Lobs a burning orb of fiery brimstone that explodes when it hits the ground inflicting fire and physical damage to enemies in a small radius.",
       "skillIcon" : {
-        "posX" : 228,
+        "circular" : false,
         "posY" : 341,
-        "circular" : false
-      },
+        "posX" : 628
+      }
+    }, {
       "name" : "Heat Shield",
       "parent" : null,
       "attributes" : {
@@ -2992,14 +2881,13 @@
           "value" : 12
         }
       },
-      "description" : "Casts a protective heat shield on the target that absorbs damage, especially from fire."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Earth/Brimstone.html",
+      "description" : "Casts a protective heat shield on the target that absorbs damage, especially from fire.",
       "skillIcon" : {
-        "posX" : 128,
+        "circular" : false,
         "posY" : 341,
-        "circular" : true
-      },
+        "posX" : 228
+      }
+    }, {
       "name" : "Brimstone",
       "parent" : "Earth Enchantment",
       "attributes" : {
@@ -3019,14 +2907,13 @@
           "value" : 8
         }
       },
-      "description" : "Boosts the physical damage of attacks and provides a chance of causing critical fire damage while under the effects of Earth Enchantment."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Earth/Ring of Flame.html",
+      "description" : "Boosts the physical damage of attacks and provides a chance of causing critical fire damage while under the effects of Earth Enchantment.",
       "skillIcon" : {
-        "posX" : 428,
+        "circular" : true,
         "posY" : 341,
-        "circular" : false
-      },
+        "posX" : 128
+      }
+    }, {
       "name" : "Ring of Flame",
       "parent" : null,
       "attributes" : {
@@ -3061,14 +2948,13 @@
           "value" : 12
         }
       },
-      "description" : "Encircles you in a searing ring of flames burning all enemies that come within its radius."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Earth/Summon Core Dweller.html",
+      "description" : "Encircles you in a searing ring of flames burning all enemies that come within its radius.",
       "skillIcon" : {
-        "posX" : 328,
-        "posY" : 279,
-        "circular" : false
-      },
+        "circular" : false,
+        "posY" : 341,
+        "posX" : 428
+      }
+    } ], [ {
       "name" : "Summon Core Dweller",
       "parent" : null,
       "attributes" : {
@@ -3097,14 +2983,13 @@
           "value" : 16
         }
       },
-      "description" : "Draws forth a powerful elemental guardian from the Earth's fiery depths."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Earth/Barrage.html",
+      "description" : "Draws forth a powerful elemental guardian from the Earth's fiery depths.",
       "skillIcon" : {
-        "posX" : 528,
+        "circular" : false,
         "posY" : 279,
-        "circular" : true
-      },
+        "posX" : 328
+      }
+    }, {
       "name" : "Barrage",
       "parent" : "Flame Surge",
       "attributes" : {
@@ -3133,14 +3018,13 @@
           "value" : 8
         }
       },
-      "description" : "Reduces the recharge time of Flame Surge allowing it to be cast more frequently and efficiently."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Earth/Stone Form.html",
+      "description" : "Reduces the recharge time of Flame Surge allowing it to be cast more frequently and efficiently.",
       "skillIcon" : {
-        "posX" : 228,
+        "circular" : true,
         "posY" : 279,
-        "circular" : false
-      },
+        "posX" : 528
+      }
+    }, {
       "name" : "Stone Form",
       "parent" : null,
       "attributes" : {
@@ -3175,14 +3059,13 @@
           "value" : 12
         }
       },
-      "description" : "An impervious layer of rock envelops you for a short duration boosting regeneration but prohibiting movement."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Earth/Conflagration.html",
+      "description" : "An impervious layer of rock envelops you for a short duration boosting regeneration but prohibiting movement.",
       "skillIcon" : {
-        "posX" : 628,
-        "posY" : 217,
-        "circular" : true
-      },
+        "circular" : false,
+        "posY" : 279,
+        "posX" : 228
+      }
+    } ], [ {
       "name" : "Conflagration",
       "parent" : null,
       "attributes" : {
@@ -3208,14 +3091,13 @@
           "value" : 8
         }
       },
-      "description" : "Increases the explosion radius of Volcanic Orb and causes enemies hit by it to catch fire and suffer burn damage."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Earth/Inner Fire.html",
+      "description" : "Increases the explosion radius of Volcanic Orb and causes enemies hit by it to catch fire and suffer burn damage.",
       "skillIcon" : {
-        "posX" : 328,
+        "circular" : true,
         "posY" : 217,
-        "circular" : true
-      },
+        "posX" : 628
+      }
+    }, {
       "name" : "Inner Fire",
       "parent" : null,
       "attributes" : {
@@ -3241,14 +3123,13 @@
           "value" : [ 5.0, 6.0, 8.0, 9.0, 12.0, 14.0, 15.0, 17.0, 18.0, 21.0, 23.0, 24.0 ]
         }
       },
-      "description" : "Increases the Core Dweller's speed and adds fire damage to its attacks."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Earth/Stone Skin.html",
+      "description" : "Increases the Core Dweller's speed and adds fire damage to its attacks.",
       "skillIcon" : {
-        "posX" : 128,
+        "circular" : true,
         "posY" : 217,
-        "circular" : true
-      },
+        "posX" : 328
+      }
+    }, {
       "name" : "Stone Skin",
       "parent" : "Brimstone",
       "attributes" : {
@@ -3265,14 +3146,13 @@
           "value" : [ 2.0, 5.0, 7.0, 10.0, 12.0, 15.0, 17.0, 20.0, 22.0, 25.0, 27.0, 30.0, 33.0, 36.0 ]
         }
       },
-      "description" : "Tempers armor, increasing protection and fire resistance while under the effects of Earth Enchantment."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Earth/Soften Metal.html",
+      "description" : "Tempers armor, increasing protection and fire resistance while under the effects of Earth Enchantment.",
       "skillIcon" : {
-        "posX" : 428,
+        "circular" : true,
         "posY" : 217,
-        "circular" : true
-      },
+        "posX" : 128
+      }
+    }, {
       "name" : "Soften Metal",
       "parent" : "Ring of Flame",
       "attributes" : {
@@ -3304,14 +3184,13 @@
           "value" : [ 3.0, 5.0, 6.0, 8.0, 9.0, 11.0, 12.0, 15.0, 16.0, 18.0, 21.0, 25.0 ]
         }
       },
-      "description" : "Intense heat from the Ring of Flame softens the metal of enemy armor and weapons, decreasing their effectiveness."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Earth/Fragmentation.html",
+      "description" : "Intense heat from the Ring of Flame softens the metal of enemy armor and weapons, decreasing their effectiveness.",
       "skillIcon" : {
-        "posX" : 628,
-        "posY" : 155,
-        "circular" : true
-      },
+        "circular" : true,
+        "posY" : 217,
+        "posX" : 428
+      }
+    } ], [ {
       "name" : "Fragmentation",
       "parent" : null,
       "attributes" : {
@@ -3343,14 +3222,13 @@
           "value" : 12
         }
       },
-      "description" : "Causes the Volcanic Orb to violently explode on impact sending out fragments of rock that each inflict physical damage to the enemies they hit."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Earth/Wildfire.html",
+      "description" : "Causes the Volcanic Orb to violently explode on impact sending out fragments of rock that each inflict physical damage to the enemies they hit.",
       "skillIcon" : {
-        "posX" : 328,
+        "circular" : true,
         "posY" : 155,
-        "circular" : true
-      },
+        "posX" : 628
+      }
+    }, {
       "name" : "Wildfire",
       "parent" : null,
       "attributes" : {
@@ -3388,14 +3266,13 @@
           "value" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ]
         }
       },
-      "description" : "Allows the Core Dweller to ignite an area of ground causing severe burn damage to enemies within."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Earth/Flame Arch.html",
+      "description" : "Allows the Core Dweller to ignite an area of ground causing severe burn damage to enemies within.",
       "skillIcon" : {
-        "posX" : 528,
+        "circular" : true,
         "posY" : 155,
-        "circular" : true
-      },
+        "posX" : 328
+      }
+    }, {
       "name" : "Flame Arch",
       "parent" : "Barrage",
       "attributes" : {
@@ -3430,14 +3307,13 @@
           "value" : 12
         }
       },
-      "description" : "Increases the damage and number of flame jets created by Flame Surge."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Earth/Molten Rock.html",
+      "description" : "Increases the damage and number of flame jets created by Flame Surge.",
       "skillIcon" : {
-        "posX" : 228,
+        "circular" : true,
         "posY" : 155,
-        "circular" : true
-      },
+        "posX" : 528
+      }
+    }, {
       "name" : "Molten Rock",
       "parent" : "Stone Form",
       "attributes" : {
@@ -3460,14 +3336,13 @@
           "value" : 8
         }
       },
-      "description" : "Adds retaliation fire damage to Stone Form."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Earth/Volativity.html",
+      "description" : "Adds retaliation fire damage to Stone Form.",
       "skillIcon" : {
-        "posX" : 128,
-        "posY" : 93,
-        "circular" : true
-      },
+        "circular" : true,
+        "posY" : 155,
+        "posX" : 228
+      }
+    } ], [ {
       "name" : "Volativity",
       "parent" : null,
       "attributes" : {
@@ -3499,14 +3374,13 @@
           "value" : 12
         }
       },
-      "description" : "Enhanced by the volatile energy of the Earth, your fire attacks have a chance of inflicting greatly increased damage."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Earth/Metamorphosis.html",
+      "description" : "Enhanced by the volatile energy of the Earth, your fire attacks have a chance of inflicting greatly increased damage.",
       "skillIcon" : {
-        "posX" : 328,
+        "circular" : true,
         "posY" : 93,
-        "circular" : true
-      },
+        "posX" : 128
+      }
+    }, {
       "name" : "Metamorphosis",
       "parent" : null,
       "attributes" : {
@@ -3532,14 +3406,13 @@
           "value" : 8
         }
       },
-      "description" : "Under tremendous heat and pressure, the composition of the Core Dweller hardens making it more resistant to damage."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Earth/Eruption.html",
+      "description" : "Under tremendous heat and pressure, the composition of the Core Dweller hardens making it more resistant to damage.",
       "skillIcon" : {
-        "posX" : 628,
+        "circular" : true,
         "posY" : 93,
-        "circular" : false
-      },
+        "posX" : 328
+      }
+    }, {
       "name" : "Eruption",
       "parent" : null,
       "attributes" : {
@@ -3580,14 +3453,13 @@
           "value" : 12
         }
       },
-      "description" : "Volcanic fissures form in the ground, emitting deadly geysers of molten flame and fiery chunks of brimstone.  Each fragment inflicts physical and fire damage to the enemies it hits."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Earth/Meteor Rain.html",
+      "description" : "Volcanic fissures form in the ground, emitting deadly geysers of molten flame and fiery chunks of brimstone.  Each fragment inflicts physical and fire damage to the enemies it hits.",
       "skillIcon" : {
-        "posX" : 228,
-        "posY" : 31,
-        "circular" : false
-      },
+        "circular" : false,
+        "posY" : 93,
+        "posX" : 628
+      }
+    } ], [ {
       "name" : "Meteor Rain",
       "parent" : null,
       "attributes" : {
@@ -3637,14 +3509,13 @@
           "value" : 20.0
         }
       },
-      "description" : "Call down a shower of burning rocks from the heavens."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Earth/Fire Nova.html",
+      "description" : "Call down a shower of burning rocks from the heavens.",
       "skillIcon" : {
-        "posX" : 428,
+        "circular" : false,
         "posY" : 31,
-        "circular" : false
-      },
+        "posX" : 228
+      }
+    }, {
       "name" : "Fire Nova",
       "parent" : null,
       "attributes" : {
@@ -3688,32 +3559,33 @@
           "value" : 20.0
         }
       },
-      "description" : "Sends out a ring of flames that ignites everything in the area."
-    } ] ]
-  }, {
-    "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Rogue.html",
+      "description" : "Sends out a ring of flames that ignites everything in the area.",
+      "skillIcon" : {
+        "circular" : false,
+        "posY" : 31,
+        "posX" : 428
+      }
+    } ] ],
     "masteryAttributes" : {
       "characterLife" : {
-        "value" : [ 35.0, 70.0, 105.0, 140.0, 175.0, 210.0, 245.0, 280.0, 315.0, 350.0, 385.0, 420.0, 455.0, 490.0, 525.0, 560.0, 595.0, 630.0, 665.0, 700.0, 735.0, 770.0, 805.0, 840.0, 875.0, 910.0, 945.0, 980.0, 1015.0, 1050.0, 1085.0, 1120.0, 1155.0, 1190.0, 1225.0, 1260.0, 1295.0, 1330.0, 1365.0, 1400.0 ]
+        "value" : [ 22.5, 45.0, 67.5, 90.0, 112.5, 135.0, 157.5, 180.0, 202.5, 225.0, 247.5, 270.0, 292.5, 315.0, 337.5, 360.0, 382.5, 405.0, 427.5, 450.0, 472.5, 495.0, 517.5, 540.0, 562.5, 585.0, 607.5, 630.0, 652.5, 675.0, 697.5, 720.0, 742.5, 765.0, 787.5, 810.0, 832.5, 855.0, 877.5, 900.0 ]
+      },
+      "characterIntelligence" : {
+        "value" : [ 3.0, 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0, 51.0, 54.0, 57.0, 60.0, 63.0, 66.0, 69.0, 72.0, 75.0, 78.0, 81.0, 84.0, 87.0, 90.0, 93.0, 96.0, 99.0, 102.0, 105.0, 108.0, 111.0, 114.0, 117.0, 120.0 ]
       },
       "characterDexterity" : {
-        "value" : [ 2.5, 5.0, 7.5, 10.0, 12.5, 15.0, 17.5, 20.0, 22.5, 25.0, 27.5, 30.0, 32.5, 35.0, 37.5, 40.0, 42.5, 45.0, 47.5, 50.0, 52.5, 55.0, 57.5, 60.0, 62.5, 65.0, 67.5, 70.0, 72.5, 75.0, 77.5, 80.0, 82.5, 85.0, 87.5, 90.0, 92.5, 95.0, 97.5, 100.0 ]
+        "value" : [ 1.5, 3.0, 4.5, 6.0, 7.5, 9.0, 10.5, 12.0, 13.5, 15.0, 16.5, 18.0, 19.5, 21.0, 22.5, 24.0, 25.5, 27.0, 28.5, 30.0, 31.5, 33.0, 34.5, 36.0, 37.5, 39.0, 40.5, 42.0, 43.5, 45.0, 46.5, 48.0, 49.5, 51.0, 52.5, 54.0, 55.5, 57.0, 58.5, 60.0 ]
       },
-      "characterStrength" : {
-        "value" : [ 1.75, 3.5, 5.25, 7.0, 8.75, 10.5, 12.25, 14.0, 15.75, 17.5, 19.25, 21.0, 22.75, 24.5, 26.25, 28.0, 29.75, 31.5, 33.25, 35.0, 36.75, 38.5, 40.25, 42.0, 43.75, 45.5, 47.25, 49.0, 50.75, 52.5, 54.25, 56.0, 57.75, 59.5, 61.25, 63.0, 64.75, 66.5, 68.25, 70.0 ]
+      "characterMana" : {
+        "value" : [ 6.0, 12.0, 18.0, 24.0, 30.0, 36.0, 42.0, 48.0, 54.0, 60.0, 66.0, 72.0, 78.0, 84.0, 90.0, 96.0, 102.0, 108.0, 114.0, 120.0, 126.0, 132.0, 138.0, 144.0, 150.0, 156.0, 162.0, 168.0, 174.0, 180.0, 186.0, 192.0, 198.0, 204.0, 210.0, 216.0, 222.0, 228.0, 234.0, 240.0 ]
       },
       "skillMaxLevel" : {
         "value" : 40
       }
-    },
+    }
+  }, {
     "name" : "Rogue",
     "skillTiers" : [ [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Rogue/Envenom Weapon.html",
-      "skillIcon" : {
-        "posX" : 528,
-        "posY" : 403,
-        "circular" : false
-      },
       "name" : "Envenom Weapon",
       "parent" : null,
       "attributes" : {
@@ -3754,14 +3626,13 @@
           "value" : 12
         }
       },
-      "description" : "Coats your weapons with deadly poison while activated."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Rogue/Calculated Strike.html",
+      "description" : "Coats your weapons with deadly poison while activated.",
       "skillIcon" : {
-        "posX" : 128,
+        "circular" : false,
         "posY" : 403,
-        "circular" : false
-      },
+        "posX" : 528
+      }
+    }, {
       "name" : "Calculated Strike",
       "parent" : null,
       "attributes" : {
@@ -3817,14 +3688,13 @@
           "value" : 1
         }
       },
-      "description" : "Used in place of your normal attack, every fourth hit with calculated strike will deliver increased damage.{^y}  Assign this skill to your left mouse button."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Rogue/Blade Honing.html",
+      "description" : "Used in place of your normal attack, every fourth hit with calculated strike will deliver increased damage.{^y}  Assign this skill to your left mouse button.",
       "skillIcon" : {
-        "posX" : 228,
+        "circular" : false,
         "posY" : 403,
-        "circular" : false
-      },
+        "posX" : 128
+      }
+    }, {
       "name" : "Blade Honing",
       "parent" : null,
       "attributes" : {
@@ -3865,14 +3735,13 @@
           "value" : [ 16.0, 24.0, 32.0, 40.0, 48.0, 56.0, 64.0, 72.0, 80.0, 88.0 ]
         }
       },
-      "description" : "While active, this skill ensures that the blades of yourself and allies will remain razor sharp and inflict increased piercing damage."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Rogue/Nightshade.html",
+      "description" : "While active, this skill ensures that the blades of yourself and allies will remain razor sharp and inflict increased piercing damage.",
       "skillIcon" : {
-        "posX" : 528,
-        "posY" : 341,
-        "circular" : true
-      },
+        "circular" : false,
+        "posY" : 403,
+        "posX" : 228
+      }
+    } ], [ {
       "name" : "Nightshade",
       "parent" : "Envenom Weapon",
       "attributes" : {
@@ -3892,14 +3761,13 @@
           "value" : 8
         }
       },
-      "description" : "Oils harvested from deadly Nightshade plants give your Envenomed Weapons the ability to slow enemies."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Rogue/Throwing Knife.html",
+      "description" : "Oils harvested from deadly Nightshade plants give your Envenomed Weapons the ability to slow enemies.",
       "skillIcon" : {
-        "posX" : 328,
+        "circular" : true,
         "posY" : 341,
-        "circular" : false
-      },
+        "posX" : 528
+      }
+    }, {
       "name" : "Throwing Knife",
       "parent" : null,
       "attributes" : {
@@ -3943,14 +3811,13 @@
           "value" : 5
         }
       },
-      "description" : "Throw a piercing blade at your opponent capable of causing prolonged bleeding."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Rogue/Flash Powder.html",
+      "description" : "Throw a piercing blade at your opponent capable of causing prolonged bleeding.",
       "skillIcon" : {
-        "posX" : 628,
+        "circular" : false,
         "posY" : 341,
-        "circular" : false
-      },
+        "posX" : 328
+      }
+    }, {
       "name" : "Flash Powder",
       "parent" : null,
       "attributes" : {
@@ -3991,14 +3858,13 @@
           "value" : 8
         }
       },
-      "description" : "A magician's trick turned to more nefarious purposes, flash powder blinds adjacent enemies impairing their ability to hit with weapons and potentially disorienting them."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Rogue/Disarm Traps.html",
+      "description" : "A magician's trick turned to more nefarious purposes, flash powder blinds adjacent enemies impairing their ability to hit with weapons and potentially disorienting them.",
       "skillIcon" : {
-        "posX" : 428,
+        "circular" : false,
         "posY" : 341,
-        "circular" : true
-      },
+        "posX" : 628
+      }
+    }, {
       "name" : "Disarm Traps",
       "parent" : null,
       "attributes" : {
@@ -4015,14 +3881,13 @@
           "value" : 6
         }
       },
-      "description" : "Expertise with traps and magical devices allows the Rogue to easily disable them and avoid their damage."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Rogue/Lucky Hit.html",
+      "description" : "Expertise with traps and magical devices allows the Rogue to easily disable them and avoid their damage.",
       "skillIcon" : {
-        "posX" : 128,
-        "posY" : 279,
-        "circular" : true
-      },
+        "circular" : true,
+        "posY" : 341,
+        "posX" : 428
+      }
+    } ], [ {
       "name" : "Lucky Hit",
       "parent" : "Calculated Strike",
       "attributes" : {
@@ -4075,14 +3940,13 @@
           "value" : 1
         }
       },
-      "description" : "Uncommonly good fortune provides a chance that calculated strikes will slip past enemy armor causing tremendous damage."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Rogue/Open Wound.html",
+      "description" : "Uncommonly good fortune provides a chance that calculated strikes will slip past enemy armor causing tremendous damage.",
       "skillIcon" : {
-        "posX" : 228,
+        "circular" : true,
         "posY" : 279,
-        "circular" : true
-      },
+        "posX" : 128
+      }
+    }, {
       "name" : "Open Wound",
       "parent" : null,
       "attributes" : {
@@ -4117,14 +3981,13 @@
           "value" : 1
         }
       },
-      "description" : "Adds a chance that weapon attacks will inflict bleeding damage when using a sword, spear, bow, or axe."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Rogue/Poison Gas Bomb.html",
+      "description" : "Adds a chance that weapon attacks will inflict bleeding damage when using a sword, spear, bow, or axe.",
       "skillIcon" : {
-        "posX" : 628,
+        "circular" : true,
         "posY" : 279,
-        "circular" : false
-      },
+        "posX" : 228
+      }
+    }, {
       "name" : "Poison Gas Bomb",
       "parent" : null,
       "attributes" : {
@@ -4165,14 +4028,13 @@
           "value" : 12
         }
       },
-      "description" : "Lobs a bomb that will burst on impact releasing a cloud of toxic gas that damages enemies and impairs their attacks."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Rogue/Lay Trap.html",
+      "description" : "Lobs a bomb that will burst on impact releasing a cloud of toxic gas that damages enemies and impairs their attacks.",
       "skillIcon" : {
-        "posX" : 428,
+        "circular" : false,
         "posY" : 279,
-        "circular" : false
-      },
+        "posX" : 628
+      }
+    }, {
       "name" : "Lay Trap",
       "parent" : null,
       "attributes" : {
@@ -4225,14 +4087,13 @@
           "value" : 10
         }
       },
-      "description" : "Drops a mechanical bolt trap that will trip when enemies draw near and rapidly fire out deadly bolts."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Rogue/Toxin Distillation.html",
+      "description" : "Drops a mechanical bolt trap that will trip when enemies draw near and rapidly fire out deadly bolts.",
       "skillIcon" : {
-        "posX" : 528,
-        "posY" : 217,
-        "circular" : true
-      },
+        "circular" : false,
+        "posY" : 279,
+        "posX" : 428
+      }
+    } ], [ {
       "name" : "Toxin Distillation",
       "parent" : "Nightshade",
       "attributes" : {
@@ -4252,14 +4113,13 @@
           "value" : 12
         }
       },
-      "description" : "Learn alchemical processes to distill natural toxins, increasing the potency and duration of all poison attacks."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Rogue/Lethal Strike.html",
+      "description" : "Learn alchemical processes to distill natural toxins, increasing the potency and duration of all poison attacks.",
       "skillIcon" : {
-        "posX" : 128,
+        "circular" : true,
         "posY" : 217,
-        "circular" : false
-      },
+        "posX" : 528
+      }
+    }, {
       "name" : "Lethal Strike",
       "parent" : null,
       "attributes" : {
@@ -4309,14 +4169,13 @@
           "value" : 1
         }
       },
-      "description" : "A single deadly hit that multiplies the damage of a normal weapon attack."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Rogue/Rapid Construction.html",
+      "description" : "A single deadly hit that multiplies the damage of a normal weapon attack.",
       "skillIcon" : {
-        "posX" : 428,
+        "circular" : false,
         "posY" : 217,
-        "circular" : true
-      },
+        "posX" : 128
+      }
+    }, {
       "name" : "Rapid Construction",
       "parent" : "Lay Trap",
       "attributes" : {
@@ -4336,14 +4195,13 @@
           "value" : 8
         }
       },
-      "description" : "Expertise in assembling traps reduces the amount of time it takes to create a new trap after one has been set."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Rogue/Mandrake.html",
+      "description" : "Expertise in assembling traps reduces the amount of time it takes to create a new trap after one has been set.",
       "skillIcon" : {
-        "posX" : 528,
-        "posY" : 155,
-        "circular" : true
-      },
+        "circular" : true,
+        "posY" : 217,
+        "posX" : 428
+      }
+    } ], [ {
       "name" : "Mandrake",
       "parent" : "Toxin Distillation",
       "attributes" : {
@@ -4375,14 +4233,13 @@
           "value" : 8
         }
       },
-      "description" : "Adds a chance for poison to cloud an enemy's mind, sending them into a state of confusion."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Rogue/Anatomy.html",
+      "description" : "Adds a chance for poison to cloud an enemy's mind, sending them into a state of confusion.",
       "skillIcon" : {
-        "posX" : 228,
+        "circular" : true,
         "posY" : 155,
-        "circular" : true
-      },
+        "posX" : 528
+      }
+    }, {
       "name" : "Anatomy",
       "parent" : null,
       "attributes" : {
@@ -4399,14 +4256,13 @@
           "value" : 8
         }
       },
-      "description" : "With a deep knowledge of anatomy, attacks can be directed at vital points in the body increasing the chance and effectiveness of bleed damage."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Rogue/Shrapnel.html",
+      "description" : "With a deep knowledge of anatomy, attacks can be directed at vital points in the body increasing the chance and effectiveness of bleed damage.",
       "skillIcon" : {
-        "posX" : 628,
+        "circular" : true,
         "posY" : 155,
-        "circular" : true
-      },
+        "posX" : 228
+      }
+    }, {
       "name" : "Shrapnel",
       "parent" : null,
       "attributes" : {
@@ -4438,14 +4294,13 @@
           "value" : 12
         }
       },
-      "description" : "Packed with volatile liquid and metal scraps, the Poison Gas Bomb will explode violently on impact showering the area with deadly Shrapnel.  Each fragment of shrapnel inflicts piercing damage to the enemies it hits."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Rogue/Flurry of Knives.html",
+      "description" : "Packed with volatile liquid and metal scraps, the Poison Gas Bomb will explode violently on impact showering the area with deadly Shrapnel.  Each fragment of shrapnel inflicts piercing damage to the enemies it hits.",
       "skillIcon" : {
-        "posX" : 328,
-        "posY" : 93,
-        "circular" : true
-      },
+        "circular" : true,
+        "posY" : 155,
+        "posX" : 628
+      }
+    } ], [ {
       "name" : "Flurry of Knives",
       "parent" : "Throwing Knife",
       "attributes" : {
@@ -4468,14 +4323,13 @@
           "value" : 6
         }
       },
-      "description" : "Learn to throw additional knives at once and cut down enemies with a lethal flurry of razor-sharp metal."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Rogue/Mortal Wound.html",
+      "description" : "Learn to throw additional knives at once and cut down enemies with a lethal flurry of razor-sharp metal.",
       "skillIcon" : {
-        "posX" : 128,
+        "circular" : true,
         "posY" : 93,
-        "circular" : true
-      },
+        "posX" : 328
+      }
+    }, {
       "name" : "Mortal Wound",
       "parent" : "Lethal Strike",
       "attributes" : {
@@ -4501,14 +4355,13 @@
           "value" : 8
         }
       },
-      "description" : "Stuns victims of Lethal Strike and greatly magnifies the impact of poison and bleeding damage caused by the attack."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Rogue/Improved Firing Mechanism.html",
+      "description" : "Stuns victims of Lethal Strike and greatly magnifies the impact of poison and bleeding damage caused by the attack.",
       "skillIcon" : {
-        "posX" : 428,
+        "circular" : true,
         "posY" : 93,
-        "circular" : true
-      },
+        "posX" : 128
+      }
+    }, {
       "name" : "Improved Firing Mechanism",
       "parent" : null,
       "attributes" : {
@@ -4534,14 +4387,13 @@
           "value" : 8
         }
       },
-      "description" : "Modifications to the Bolt Trap increase the number of bolts fired per round."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Rogue/Poison Mayhem.html",
+      "description" : "Modifications to the Bolt Trap increase the number of bolts fired per round.",
       "skillIcon" : {
-        "posX" : 628,
-        "posY" : 31,
-        "circular" : true
-      },
+        "circular" : true,
+        "posY" : 93,
+        "posX" : 428
+      }
+    } ], [ {
       "name" : "Poison Mayhem",
       "parent" : "Shrapnel",
       "attributes" : {
@@ -4573,14 +4425,13 @@
           "value" : 8
         }
       },
-      "description" : "Throws multiple Poison Gas Bombs at a time."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Rogue/Blade Barrier.html",
+      "description" : "Throws multiple Poison Gas Bombs at a time.",
       "skillIcon" : {
-        "posX" : 228,
+        "circular" : true,
         "posY" : 31,
-        "circular" : false
-      },
+        "posX" : 628
+      }
+    }, {
       "name" : "Blade Barrier",
       "parent" : null,
       "attributes" : {
@@ -4633,32 +4484,30 @@
           "value" : [ 0.4, 0.8, 1.2, 1.6, 2.0, 2.4, 2.8, 3.2, 3.6, 4.0, 4.4, 4.8, 5.2, 5.6, 6.0, 6.4, 6.8, 7.2, 7.6, 8.0, 8.4, 8.8, 9.2, 9.6, 10.0, 10.4, 10.8, 11.2, 11.6, 12.0 ]
         }
       },
-      "description" : "Summons a field of whirling blades that can transmit effects like a regular weapon."
-    } ] ]
-  }, {
-    "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Defense.html",
+      "description" : "Summons a field of whirling blades that can transmit effects like a regular weapon.",
+      "skillIcon" : {
+        "circular" : false,
+        "posY" : 31,
+        "posX" : 228
+      }
+    } ] ],
     "masteryAttributes" : {
       "characterLife" : {
-        "value" : [ 50.0, 100.0, 150.0, 200.0, 250.0, 300.0, 350.0, 400.0, 450.0, 500.0, 550.0, 600.0, 650.0, 700.0, 750.0, 800.0, 850.0, 900.0, 950.0, 1000.0, 1050.0, 1100.0, 1150.0, 1200.0, 1250.0, 1300.0, 1350.0, 1400.0, 1450.0, 1500.0, 1550.0, 1600.0, 1650.0, 1700.0, 1750.0, 1800.0, 1850.0, 1900.0, 1950.0, 2000.0 ]
+        "value" : [ 35.0, 70.0, 105.0, 140.0, 175.0, 210.0, 245.0, 280.0, 315.0, 350.0, 385.0, 420.0, 455.0, 490.0, 525.0, 560.0, 595.0, 630.0, 665.0, 700.0, 735.0, 770.0, 805.0, 840.0, 875.0, 910.0, 945.0, 980.0, 1015.0, 1050.0, 1085.0, 1120.0, 1155.0, 1190.0, 1225.0, 1260.0, 1295.0, 1330.0, 1365.0, 1400.0 ]
       },
       "characterDexterity" : {
-        "value" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0, 48.0, 50.0, 52.0, 54.0, 56.0, 58.0, 60.0, 62.0, 64.0, 66.0, 68.0, 70.0, 72.0, 74.0, 76.0, 78.0, 80.0 ]
+        "value" : [ 2.5, 5.0, 7.5, 10.0, 12.5, 15.0, 17.5, 20.0, 22.5, 25.0, 27.5, 30.0, 32.5, 35.0, 37.5, 40.0, 42.5, 45.0, 47.5, 50.0, 52.5, 55.0, 57.5, 60.0, 62.5, 65.0, 67.5, 70.0, 72.5, 75.0, 77.5, 80.0, 82.5, 85.0, 87.5, 90.0, 92.5, 95.0, 97.5, 100.0 ]
       },
       "characterStrength" : {
-        "value" : [ 1.5, 3.0, 4.5, 6.0, 7.5, 9.0, 10.5, 12.0, 13.5, 15.0, 16.5, 18.0, 19.5, 21.0, 22.5, 24.0, 25.5, 27.0, 28.5, 30.0, 31.5, 33.0, 34.5, 36.0, 37.5, 39.0, 40.5, 42.0, 43.5, 45.0, 46.5, 48.0, 49.5, 51.0, 52.5, 54.0, 55.5, 57.0, 58.5, 60.0 ]
+        "value" : [ 1.75, 3.5, 5.25, 7.0, 8.75, 10.5, 12.25, 14.0, 15.75, 17.5, 19.25, 21.0, 22.75, 24.5, 26.25, 28.0, 29.75, 31.5, 33.25, 35.0, 36.75, 38.5, 40.25, 42.0, 43.75, 45.5, 47.25, 49.0, 50.75, 52.5, 54.25, 56.0, 57.75, 59.5, 61.25, 63.0, 64.75, 66.5, 68.25, 70.0 ]
       },
       "skillMaxLevel" : {
         "value" : 40
       }
-    },
+    }
+  }, {
     "name" : "Defense",
     "skillTiers" : [ [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Defense/Armor Handling.html",
-      "skillIcon" : {
-        "posX" : 628,
-        "posY" : 403,
-        "circular" : true
-      },
       "name" : "Armor Handling",
       "parent" : null,
       "attributes" : {
@@ -4681,14 +4530,13 @@
           "value" : 6
         }
       },
-      "description" : "Understanding how to properly adjust and move in armor allows you to wear heavier armor and shields than an untrained warrior of equivalent strength could manage."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Defense/Battle Awareness.html",
+      "description" : "Understanding how to properly adjust and move in armor allows you to wear heavier armor and shields than an untrained warrior of equivalent strength could manage.",
       "skillIcon" : {
-        "posX" : 328,
+        "circular" : true,
         "posY" : 403,
-        "circular" : false
-      },
+        "posX" : 628
+      }
+    }, {
       "name" : "Battle Awareness",
       "parent" : null,
       "attributes" : {
@@ -4723,14 +4571,13 @@
           "value" : 12
         }
       },
-      "description" : "Enter a state of heightened awareness that allows you and your nearby allies to perceive and respond to attacks more effectively."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Defense/Batter.html",
+      "description" : "Enter a state of heightened awareness that allows you and your nearby allies to perceive and respond to attacks more effectively.",
       "skillIcon" : {
-        "posX" : 528,
+        "circular" : false,
         "posY" : 403,
-        "circular" : false
-      },
+        "posX" : 328
+      }
+    }, {
       "name" : "Batter",
       "parent" : null,
       "attributes" : {
@@ -4780,14 +4627,13 @@
           "value" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ]
         }
       },
-      "description" : "A shield attack that hits for increased damage and slows enemies' attacks for a duration."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Defense/Concussive Blow.html",
+      "description" : "A shield attack that hits for increased damage and slows enemies' attacks for a duration.",
       "skillIcon" : {
-        "posX" : 128,
+        "circular" : false,
         "posY" : 403,
-        "circular" : true
-      },
+        "posX" : 528
+      }
+    }, {
       "name" : "Concussive Blow",
       "parent" : null,
       "attributes" : {
@@ -4816,14 +4662,13 @@
           "value" : 1
         }
       },
-      "description" : "Adds a chance for attacks to stun enemies and increases the duration of stun attacks when wielding a club or axe."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Defense/Adrenaline.html",
+      "description" : "Adds a chance for attacks to stun enemies and increases the duration of stun attacks when wielding a club or axe.",
       "skillIcon" : {
-        "posX" : 128,
-        "posY" : 341,
-        "circular" : true
-      },
+        "circular" : true,
+        "posY" : 403,
+        "posX" : 128
+      }
+    } ], [ {
       "name" : "Adrenaline",
       "parent" : null,
       "attributes" : {
@@ -4849,14 +4694,13 @@
           "value" : 12
         }
       },
-      "description" : "Each enemy hit has a chance of triggering an adrenaline rush that boosts life regeneration."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Defense/Rally.html",
+      "description" : "Each enemy hit has a chance of triggering an adrenaline rush that boosts life regeneration.",
       "skillIcon" : {
-        "posX" : 228,
+        "circular" : true,
         "posY" : 341,
-        "circular" : false
-      },
+        "posX" : 128
+      }
+    }, {
       "name" : "Rally",
       "parent" : null,
       "attributes" : {
@@ -4894,14 +4738,13 @@
           "value" : 12
         }
       },
-      "description" : "The resolute call of your horn can turn the tide of battle, inspiring all in its range to fight with renewed vitality."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Defense/Shield Smash.html",
+      "description" : "The resolute call of your horn can turn the tide of battle, inspiring all in its range to fight with renewed vitality.",
       "skillIcon" : {
-        "posX" : 628,
+        "circular" : false,
         "posY" : 341,
-        "circular" : true
-      },
+        "posX" : 228
+      }
+    }, {
       "name" : "Shield Smash",
       "parent" : null,
       "attributes" : {
@@ -4939,14 +4782,13 @@
           "value" : 6
         }
       },
-      "description" : "A shield fighting technique that inflicts damage with both the weapon and the shield."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Defense/Quick Recovery.html",
+      "description" : "A shield fighting technique that inflicts damage with both the weapon and the shield.",
       "skillIcon" : {
-        "posX" : 428,
+        "circular" : true,
         "posY" : 341,
-        "circular" : false
-      },
+        "posX" : 628
+      }
+    }, {
       "name" : "Quick Recovery",
       "parent" : null,
       "attributes" : {
@@ -4984,14 +4826,13 @@
           "value" : 8
         }
       },
-      "description" : "A strong shield arm allows you to block multiple attackers with amazing speed when necessary but it can only be kept up for a short time."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Defense/Resilience.html",
+      "description" : "A strong shield arm allows you to block multiple attackers with amazing speed when necessary but it can only be kept up for a short time.",
       "skillIcon" : {
-        "posX" : 128,
-        "posY" : 279,
-        "circular" : true
-      },
+        "circular" : false,
+        "posY" : 341,
+        "posX" : 428
+      }
+    } ], [ {
       "name" : "Resilience",
       "parent" : "Adrenaline",
       "attributes" : {
@@ -5005,14 +4846,13 @@
           "value" : 6
         }
       },
-      "description" : "Increases how often an Adrenaline rush can be triggered."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Defense/Focus.html",
+      "description" : "Increases how often an Adrenaline rush can be triggered.",
       "skillIcon" : {
-        "posX" : 328,
+        "circular" : true,
         "posY" : 279,
-        "circular" : true
-      },
+        "posX" : 128
+      }
+    }, {
       "name" : "Focus",
       "parent" : "Battle Awareness",
       "attributes" : {
@@ -5035,14 +4875,13 @@
           "value" : 6
         }
       },
-      "description" : "Focus allows you and your allies to react quickly to enemy attacks increasing the chance of a successful shield block."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Defense/Shield Charge.html",
+      "description" : "Focus allows you and your allies to react quickly to enemy attacks increasing the chance of a successful shield block.",
       "skillIcon" : {
-        "posX" : 428,
+        "circular" : true,
         "posY" : 279,
-        "circular" : false
-      },
+        "posX" : 328
+      }
+    }, {
       "name" : "Shield Charge",
       "parent" : null,
       "attributes" : {
@@ -5095,14 +4934,13 @@
           "value" : 10
         }
       },
-      "description" : "A running attack that slams into the enemy with your shield causing bonus damage and stunning them."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Defense/Inspiration.html",
+      "description" : "A running attack that slams into the enemy with your shield causing bonus damage and stunning them.",
       "skillIcon" : {
-        "posX" : 228,
-        "posY" : 217,
-        "circular" : true
-      },
+        "circular" : false,
+        "posY" : 279,
+        "posX" : 428
+      }
+    } ], [ {
       "name" : "Inspiration",
       "parent" : "Rally",
       "attributes" : {
@@ -5122,14 +4960,13 @@
           "value" : 10.0
         }
       },
-      "description" : "Gradually restores lost energy to allies allowing them to continue the fight."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Defense/Disable.html",
+      "description" : "Gradually restores lost energy to allies allowing them to continue the fight.",
       "skillIcon" : {
-        "posX" : 628,
+        "circular" : true,
         "posY" : 217,
-        "circular" : true
-      },
+        "posX" : 228
+      }
+    }, {
       "name" : "Disable",
       "parent" : null,
       "attributes" : {
@@ -5167,14 +5004,13 @@
           "value" : 6
         }
       },
-      "description" : "A fighting technique that utilizes the shield to crush foes and throw them off-balance."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Defense/Rend Armor.html",
+      "description" : "A fighting technique that utilizes the shield to crush foes and throw them off-balance.",
       "skillIcon" : {
-        "posX" : 528,
+        "circular" : true,
         "posY" : 217,
-        "circular" : true
-      },
+        "posX" : 628
+      }
+    }, {
       "name" : "Rend Armor",
       "parent" : "Batter",
       "attributes" : {
@@ -5206,14 +5042,13 @@
           "value" : [ 18.0, 36.0, 54.0, 72.0, 90.0, 108.0, 126.0, 144.0, 162.0, 180.0, 201.0, 225.0, 249.0, 276.0, 309.0, 345.0 ]
         }
       },
-      "description" : "Increases the effectiveness of Batter causing it to hit three targets with enough force to dent their armor."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Defense/Defensive Reaction.html",
+      "description" : "Increases the effectiveness of Batter causing it to hit three targets with enough force to dent their armor.",
       "skillIcon" : {
-        "posX" : 128,
-        "posY" : 155,
-        "circular" : true
-      },
+        "circular" : true,
+        "posY" : 217,
+        "posX" : 528
+      }
+    } ], [ {
       "name" : "Defensive Reaction",
       "parent" : "Resilience",
       "attributes" : {
@@ -5233,14 +5068,13 @@
           "value" : [ 4.0, 6.0, 8.0, 10.0, 14.0, 16.0, 18.0, 20.0, 22.0, 25.0, 26.0, 27.0, 28.0, 30.0, 33.0 ]
         }
       },
-      "description" : "Increases damage and attack speed during an adrenaline rush."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Defense/Iron Will.html",
+      "description" : "Increases damage and attack speed during an adrenaline rush.",
       "skillIcon" : {
-        "posX" : 328,
+        "circular" : true,
         "posY" : 155,
-        "circular" : true
-      },
+        "posX" : 128
+      }
+    }, {
       "name" : "Iron Will",
       "parent" : "Focus",
       "attributes" : {
@@ -5272,14 +5106,13 @@
           "value" : [ 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0 ]
         }
       },
-      "description" : "Grants allies the resolve to hold out against great adversity."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Defense/Disruption.html",
+      "description" : "Grants allies the resolve to hold out against great adversity.",
       "skillIcon" : {
-        "posX" : 428,
+        "circular" : true,
         "posY" : 155,
-        "circular" : true
-      },
+        "posX" : 328
+      }
+    }, {
       "name" : "Disruption",
       "parent" : "Shield Charge",
       "attributes" : {
@@ -5308,14 +5141,13 @@
           "value" : [ 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0 ]
         }
       },
-      "description" : "Increases the shock effect of Shield Charge, startling adjacent enemies and disrupting skill use for a time."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Defense/Defiance.html",
+      "description" : "Increases the shock effect of Shield Charge, startling adjacent enemies and disrupting skill use for a time.",
       "skillIcon" : {
-        "posX" : 228,
-        "posY" : 93,
-        "circular" : true
-      },
+        "circular" : true,
+        "posY" : 155,
+        "posX" : 428
+      }
+    } ], [ {
       "name" : "Defiance",
       "parent" : "Inspiration",
       "attributes" : {
@@ -5338,14 +5170,13 @@
           "value" : 12
         }
       },
-      "description" : "A percentage of all damage inflicted by enemies will be revisited back upon them for a short duration after using Rally."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Defense/Colossus Form.html",
+      "description" : "A percentage of all damage inflicted by enemies will be revisited back upon them for a short duration after using Rally.",
       "skillIcon" : {
-        "posX" : 528,
+        "circular" : true,
         "posY" : 93,
-        "circular" : false
-      },
+        "posX" : 228
+      }
+    }, {
       "name" : "Colossus Form",
       "parent" : null,
       "attributes" : {
@@ -5389,14 +5220,13 @@
           "value" : [ 30.0, 32.0, 35.0, 37.0, 40.0, 43.0, 46.0, 50.0, 53.0, 56.0, 60.0, 66.0 ]
         }
       },
-      "description" : "Assume the form of a towering Colossus and lay waste to your enemies."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Defense/Pulverize.html",
+      "description" : "Assume the form of a towering Colossus and lay waste to your enemies.",
       "skillIcon" : {
-        "posX" : 628,
+        "circular" : false,
         "posY" : 93,
-        "circular" : true
-      },
+        "posX" : 528
+      }
+    }, {
       "name" : "Pulverize",
       "parent" : null,
       "attributes" : {
@@ -5443,14 +5273,13 @@
           "value" : 50.0
         }
       },
-      "description" : "A fighting technique that utilizes the shield to slam into enemies, knocking them senseless."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Defense/Unyielding Phalanx.html",
+      "description" : "A fighting technique that utilizes the shield to slam into enemies, knocking them senseless.",
       "skillIcon" : {
-        "posX" : 128,
-        "posY" : 31,
-        "circular" : false
-      },
+        "circular" : true,
+        "posY" : 93,
+        "posX" : 628
+      }
+    } ], [ {
       "name" : "Unyielding Phalanx",
       "parent" : null,
       "attributes" : {
@@ -5494,14 +5323,13 @@
           "value" : 1.0
         }
       },
-      "description" : "Summon the shades of fallen comrades to form a line with you once more, engaging any enemy that dares to approach."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Defense/Perfect Block.html",
+      "description" : "Summon the shades of fallen comrades to form a line with you once more, engaging any enemy that dares to approach.",
       "skillIcon" : {
-        "posX" : 428,
+        "circular" : false,
         "posY" : 31,
-        "circular" : false
-      },
+        "posX" : 128
+      }
+    }, {
       "name" : "Perfect Block",
       "parent" : null,
       "attributes" : {
@@ -5557,35 +5385,30 @@
           "value" : 1.0
         }
       },
-      "description" : "Raise your shield to become temporarily invulnerable and stun any enemy attacking you in melee."
-    } ] ]
-  }, {
-    "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Dream.html",
+      "description" : "Raise your shield to become temporarily invulnerable and stun any enemy attacking you in melee.",
+      "skillIcon" : {
+        "circular" : false,
+        "posY" : 31,
+        "posX" : 428
+      }
+    } ] ],
     "masteryAttributes" : {
       "characterLife" : {
-        "value" : [ 35.0, 70.0, 105.0, 140.0, 175.0, 210.0, 245.0, 280.0, 315.0, 350.0, 385.0, 420.0, 455.0, 490.0, 525.0, 560.0, 595.0, 630.0, 665.0, 700.0, 735.0, 770.0, 805.0, 840.0, 875.0, 910.0, 945.0, 980.0, 1015.0, 1050.0, 1085.0, 1120.0, 1155.0, 1190.0, 1225.0, 1260.0, 1295.0, 1330.0, 1365.0, 1400.0 ]
+        "value" : [ 50.0, 100.0, 150.0, 200.0, 250.0, 300.0, 350.0, 400.0, 450.0, 500.0, 550.0, 600.0, 650.0, 700.0, 750.0, 800.0, 850.0, 900.0, 950.0, 1000.0, 1050.0, 1100.0, 1150.0, 1200.0, 1250.0, 1300.0, 1350.0, 1400.0, 1450.0, 1500.0, 1550.0, 1600.0, 1650.0, 1700.0, 1750.0, 1800.0, 1850.0, 1900.0, 1950.0, 2000.0 ]
       },
-      "characterIntelligence" : {
-        "value" : [ 1.75, 3.5, 5.25, 7.0, 8.75, 10.5, 12.25, 14.0, 15.75, 17.5, 19.25, 21.0, 22.75, 24.5, 26.25, 28.0, 29.75, 31.5, 33.25, 35.0, 36.75, 38.5, 40.25, 42.0, 43.75, 45.5, 47.25, 49.0, 50.75, 52.5, 54.25, 56.0, 57.75, 59.5, 61.25, 63.0, 64.75, 66.5, 68.25, 70.0 ]
-      },
-      "characterStrength" : {
+      "characterDexterity" : {
         "value" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0, 48.0, 50.0, 52.0, 54.0, 56.0, 58.0, 60.0, 62.0, 64.0, 66.0, 68.0, 70.0, 72.0, 74.0, 76.0, 78.0, 80.0 ]
       },
-      "characterMana" : {
-        "value" : [ 8.0, 16.0, 24.0, 32.0, 40.0, 48.0, 56.0, 64.0, 72.0, 80.0, 88.0, 96.0, 104.0, 112.0, 120.0, 128.0, 136.0, 144.0, 152.0, 160.0, 168.0, 176.0, 184.0, 192.0, 200.0, 208.0, 216.0, 224.0, 232.0, 240.0, 248.0, 256.0, 264.0, 272.0, 280.0, 288.0, 296.0, 304.0, 312.0, 320.0 ]
+      "characterStrength" : {
+        "value" : [ 1.5, 3.0, 4.5, 6.0, 7.5, 9.0, 10.5, 12.0, 13.5, 15.0, 16.5, 18.0, 19.5, 21.0, 22.5, 24.0, 25.5, 27.0, 28.5, 30.0, 31.5, 33.0, 34.5, 36.0, 37.5, 39.0, 40.5, 42.0, 43.5, 45.0, 46.5, 48.0, 49.5, 51.0, 52.5, 54.0, 55.5, 57.0, 58.5, 60.0 ]
       },
       "skillMaxLevel" : {
         "value" : 40
       }
-    },
+    }
+  }, {
     "name" : "Dream",
     "skillTiers" : [ [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Dream/Distortion Wave.html",
-      "skillIcon" : {
-        "posX" : 628,
-        "posY" : 403,
-        "circular" : false
-      },
       "name" : "Distortion Wave",
       "parent" : null,
       "attributes" : {
@@ -5641,14 +5464,13 @@
           "value" : 4.0
         }
       },
-      "description" : "A wave of force is projected outward that forms chaotic ripples in the fabric of reality and delivers devastating damage to the body and mind of enemies."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Dream/Psionic Touch.html",
+      "description" : "A wave of force is projected outward that forms chaotic ripples in the fabric of reality and delivers devastating damage to the body and mind of enemies.",
       "skillIcon" : {
-        "posX" : 428,
+        "circular" : false,
         "posY" : 403,
-        "circular" : false
-      },
+        "posX" : 628
+      }
+    }, {
       "name" : "Psionic Touch",
       "parent" : null,
       "attributes" : {
@@ -5686,14 +5508,13 @@
           "value" : 12
         }
       },
-      "description" : "Psionic energies focused within your weapons will create a bone shattering resonance when they contact your enemies. {^y}Assign this skill to your left mouse button."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Dream/Sands of Sleep.html",
+      "description" : "Psionic energies focused within your weapons will create a bone shattering resonance when they contact your enemies. {^y}Assign this skill to your left mouse button.",
       "skillIcon" : {
-        "posX" : 328,
+        "circular" : false,
         "posY" : 403,
-        "circular" : false
-      },
+        "posX" : 428
+      }
+    }, {
       "name" : "Sands of Sleep",
       "parent" : null,
       "attributes" : {
@@ -5731,14 +5552,13 @@
           "value" : 8
         }
       },
-      "description" : "Puts enemies to sleep, rendering them immobile for a duration or until awakened by an attack."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Dream/Trance of Empathy.html",
+      "description" : "Puts enemies to sleep, rendering them immobile for a duration or until awakened by an attack.",
       "skillIcon" : {
-        "posX" : 128,
-        "posY" : 341,
-        "circular" : false
-      },
+        "circular" : false,
+        "posY" : 403,
+        "posX" : 328
+      }
+    } ], [ {
       "name" : "Trance of Empathy",
       "parent" : null,
       "attributes" : {
@@ -5779,14 +5599,13 @@
           "value" : 12
         }
       },
-      "description" : "Force enemies to share the damage they inflict upon you by forming a telepathic link to their minds that conveys only pain and siphons life in retribution."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Dream/Lucid Dream.html",
+      "description" : "Force enemies to share the damage they inflict upon you by forming a telepathic link to their minds that conveys only pain and siphons life in retribution.",
       "skillIcon" : {
-        "posX" : 228,
+        "circular" : false,
         "posY" : 341,
-        "circular" : true
-      },
+        "posX" : 128
+      }
+    }, {
       "name" : "Lucid Dream",
       "parent" : null,
       "attributes" : {
@@ -5812,14 +5631,13 @@
           "value" : 8
         }
       },
-      "description" : "Increased conscious control over your dream state enhances abilities that derive power from the dream world."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Dream/Phantom Strike.html",
+      "description" : "Increased conscious control over your dream state enhances abilities that derive power from the dream world.",
       "skillIcon" : {
-        "posX" : 528,
+        "circular" : true,
         "posY" : 341,
-        "circular" : false
-      },
+        "posX" : 228
+      }
+    }, {
       "name" : "Phantom Strike",
       "parent" : null,
       "attributes" : {
@@ -5863,14 +5681,13 @@
           "value" : 1
         }
       },
-      "description" : "Vanish from the waking world and reappear  before a target enemy to deliver a monstrous attack."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Dream/Chaotic Resonance.html",
+      "description" : "Vanish from the waking world and reappear  before a target enemy to deliver a monstrous attack.",
       "skillIcon" : {
-        "posX" : 628,
-        "posY" : 279,
-        "circular" : true
-      },
+        "circular" : false,
+        "posY" : 341,
+        "posX" : 528
+      }
+    } ], [ {
       "name" : "Chaotic Resonance",
       "parent" : "Distortion Wave",
       "attributes" : {
@@ -5899,14 +5716,13 @@
           "value" : 5.0
         }
       },
-      "description" : "Amplifies the physical distortion effect, causing it to shatter armor and break bones."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Dream/Psionic Burn.html",
+      "description" : "Amplifies the physical distortion effect, causing it to shatter armor and break bones.",
       "skillIcon" : {
-        "posX" : 428,
+        "circular" : true,
         "posY" : 279,
-        "circular" : true
-      },
+        "posX" : 628
+      }
+    }, {
       "name" : "Psionic Burn",
       "parent" : null,
       "attributes" : {
@@ -5938,14 +5754,13 @@
           "value" : 8
         }
       },
-      "description" : "Psionic energy within the target ignites and explodes outward, burning through their material being and inflicting severe damage to adjacent targets."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Dream/Summon Nightmare.html",
+      "description" : "Psionic energy within the target ignites and explodes outward, burning through their material being and inflicting severe damage to adjacent targets.",
       "skillIcon" : {
-        "posX" : 328,
+        "circular" : true,
         "posY" : 279,
-        "circular" : false
-      },
+        "posX" : 428
+      }
+    }, {
       "name" : "Summon Nightmare",
       "parent" : null,
       "attributes" : {
@@ -5974,14 +5789,13 @@
           "value" : 16
         }
       },
-      "description" : "Calls forth a nightmarish phantasm from the dream world to serve as your familiar."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Dream/Premonition.html",
+      "description" : "Calls forth a nightmarish phantasm from the dream world to serve as your familiar.",
       "skillIcon" : {
-        "posX" : 228,
+        "circular" : false,
         "posY" : 279,
-        "circular" : true
-      },
+        "posX" : 328
+      }
+    }, {
       "name" : "Premonition",
       "parent" : "Lucid Dream",
       "attributes" : {
@@ -5998,14 +5812,13 @@
           "value" : 6
         }
       },
-      "description" : "A precognitive sense of the imminent future allows you to stay one step ahead of your enemies in combat."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Dream/Dream Stealer.html",
+      "description" : "A precognitive sense of the imminent future allows you to stay one step ahead of your enemies in combat.",
       "skillIcon" : {
-        "posX" : 528,
+        "circular" : true,
         "posY" : 279,
-        "circular" : true
-      },
+        "posX" : 228
+      }
+    }, {
       "name" : "Dream Stealer",
       "parent" : "Phantom Strike",
       "attributes" : {
@@ -6043,14 +5856,13 @@
           "value" : [ 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0 ]
         }
       },
-      "description" : "Devastate your enemies and steal their power by ripping the very dreams from their minds."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Dream/Trance of Convalescence.html",
+      "description" : "Devastate your enemies and steal their power by ripping the very dreams from their minds.",
       "skillIcon" : {
-        "posX" : 128,
-        "posY" : 217,
-        "circular" : false
-      },
+        "circular" : true,
+        "posY" : 279,
+        "posX" : 528
+      }
+    } ], [ {
       "name" : "Trance of Convalescence",
       "parent" : null,
       "attributes" : {
@@ -6091,14 +5903,13 @@
           "value" : 12
         }
       },
-      "description" : "A restful state of mind causes increased life recovery and damage absorption for the player and allies."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Dream/Distort Reality.html",
+      "description" : "A restful state of mind causes increased life recovery and damage absorption for the player and allies.",
       "skillIcon" : {
-        "posX" : 528,
+        "circular" : false,
         "posY" : 217,
-        "circular" : false
-      },
+        "posX" : 128
+      }
+    }, {
       "name" : "Distort Reality",
       "parent" : null,
       "attributes" : {
@@ -6139,14 +5950,13 @@
           "value" : 12
         }
       },
-      "description" : "Sends out a powerful ripple of distortion around the player that tears the fabric of reality, causing severe damage to enemies caught within it."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Dream/Hypnotic Gaze.html",
+      "description" : "Sends out a powerful ripple of distortion around the player that tears the fabric of reality, causing severe damage to enemies caught within it.",
       "skillIcon" : {
-        "posX" : 328,
+        "circular" : false,
         "posY" : 217,
-        "circular" : true
-      },
+        "posX" : 528
+      }
+    }, {
       "name" : "Hypnotic Gaze",
       "parent" : null,
       "attributes" : {
@@ -6175,14 +5985,13 @@
           "value" : 8
         }
       },
-      "description" : "The mesmerizing stare of the Nightmare is able to dominate lesser minds and throw them into a state of confusion, causing them to wander aimlessly and attack phantom images."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Dream/Distortion Field.html",
+      "description" : "The mesmerizing stare of the Nightmare is able to dominate lesser minds and throw them into a state of confusion, causing them to wander aimlessly and attack phantom images.",
       "skillIcon" : {
-        "posX" : 428,
+        "circular" : true,
         "posY" : 217,
-        "circular" : true
-      },
+        "posX" : 328
+      }
+    }, {
       "name" : "Distortion Field",
       "parent" : null,
       "attributes" : {
@@ -6214,14 +6023,13 @@
           "value" : 8
         }
       },
-      "description" : "A field of psionic power bends the fabric of reality around the player, negating some of the damage from enemy attacks and dealing retaliatory damage to enemies that strike you."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Dream/Psionic Immolation.html",
+      "description" : "A field of psionic power bends the fabric of reality around the player, negating some of the damage from enemy attacks and dealing retaliatory damage to enemies that strike you.",
       "skillIcon" : {
-        "posX" : 628,
-        "posY" : 155,
-        "circular" : true
-      },
+        "circular" : true,
+        "posY" : 217,
+        "posX" : 428
+      }
+    } ], [ {
       "name" : "Psionic Immolation",
       "parent" : "Chaotic Resonance",
       "attributes" : {
@@ -6247,14 +6055,13 @@
           "value" : 12
         }
       },
-      "description" : "Psionic energies ignite into a surge of electrical power that causes horrific burning over a short duration."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Dream/Temporal Flux.html",
+      "description" : "Psionic energies ignite into a surge of electrical power that causes horrific burning over a short duration.",
       "skillIcon" : {
-        "posX" : 228,
+        "circular" : true,
         "posY" : 155,
-        "circular" : true
-      },
+        "posX" : 628
+      }
+    }, {
       "name" : "Temporal Flux",
       "parent" : "Premonition",
       "attributes" : {
@@ -6274,14 +6081,13 @@
           "value" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 15.0, 16.0, 18.0 ]
         }
       },
-      "description" : "A subtle acceleration of time around the player allows them to move more quickly, anticipate attacks, and negate the slowing effects of enemy skills."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Dream/Trance of Wrath.html",
+      "description" : "A subtle acceleration of time around the player allows them to move more quickly, anticipate attacks, and negate the slowing effects of enemy skills.",
       "skillIcon" : {
-        "posX" : 128,
-        "posY" : 93,
-        "circular" : false
-      },
+        "circular" : true,
+        "posY" : 155,
+        "posX" : 228
+      }
+    } ], [ {
       "name" : "Trance of Wrath",
       "parent" : null,
       "attributes" : {
@@ -6331,14 +6137,13 @@
           "value" : [ 2.8, 3.0, 3.2, 3.4, 3.6, 3.8, 4.0, 4.2, 4.4, 4.6, 4.8, 5.0, 5.2, 5.4, 5.7, 6.0 ]
         }
       },
-      "description" : "Waves of negative psionic energy emanate from the player, disrupting enemy thoughts and burning through their physical being."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Dream/Temporal Rift.html",
+      "description" : "Waves of negative psionic energy emanate from the player, disrupting enemy thoughts and burning through their physical being.",
       "skillIcon" : {
-        "posX" : 528,
+        "circular" : false,
         "posY" : 93,
-        "circular" : true
-      },
+        "posX" : 128
+      }
+    }, {
       "name" : "Temporal Rift",
       "parent" : "Distort Reality",
       "attributes" : {
@@ -6370,14 +6175,13 @@
           "value" : 15.0
         }
       },
-      "description" : "Enhances the power of the distortion ripple, unleashing a surge of psionic energy that causes massive damage to enemies and temporarily freezes them in time."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Dream/Master Mind.html",
+      "description" : "Enhances the power of the distortion ripple, unleashing a surge of psionic energy that causes massive damage to enemies and temporarily freezes them in time.",
       "skillIcon" : {
-        "posX" : 328,
+        "circular" : true,
         "posY" : 93,
-        "circular" : true
-      },
+        "posX" : 528
+      }
+    }, {
       "name" : "Master Mind",
       "parent" : null,
       "attributes" : {
@@ -6406,14 +6210,13 @@
           "value" : 8
         }
       },
-      "description" : "The Nightmare is able to speak to the minds of your other minions and coordinate their attacks, making them more effective in combat."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Dream/Psionic Beam.html",
+      "description" : "The Nightmare is able to speak to the minds of your other minions and coordinate their attacks, making them more effective in combat.",
       "skillIcon" : {
-        "posX" : 428,
-        "posY" : 31,
-        "circular" : true
-      },
+        "circular" : true,
+        "posY" : 93,
+        "posX" : 328
+      }
+    } ], [ {
       "name" : "Psionic Beam",
       "parent" : "Psionic Touch",
       "attributes" : {
@@ -6433,14 +6236,13 @@
           "value" : 6
         }
       },
-      "description" : "Improve the psionic focus within your magic staff to channel a rapid-fire attack. {^n}{^y}Works only with Staves."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Dream/Dream Image.html",
+      "description" : "Improve the psionic focus within your magic staff to channel a rapid-fire attack. {^n}{^y}Works only with Staves.",
       "skillIcon" : {
-        "posX" : 228,
+        "circular" : true,
         "posY" : 31,
-        "circular" : false
-      },
+        "posX" : 428
+      }
+    }, {
       "name" : "Dream Image",
       "parent" : null,
       "attributes" : {
@@ -6469,32 +6271,33 @@
           "value" : 8
         }
       },
-      "description" : "Draws forth a mirror image of yourself from the dreamworld that briefly fights at your side."
-    } ] ]
-  }, {
-    "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Warfare.html",
+      "description" : "Draws forth a mirror image of yourself from the dreamworld that briefly fights at your side.",
+      "skillIcon" : {
+        "circular" : false,
+        "posY" : 31,
+        "posX" : 228
+      }
+    } ] ],
     "masteryAttributes" : {
       "characterLife" : {
-        "value" : [ 40.0, 80.0, 120.0, 160.0, 200.0, 240.0, 280.0, 320.0, 360.0, 400.0, 440.0, 480.0, 520.0, 560.0, 600.0, 640.0, 680.0, 720.0, 760.0, 800.0, 840.0, 880.0, 920.0, 960.0, 1000.0, 1040.0, 1080.0, 1120.0, 1160.0, 1200.0, 1240.0, 1280.0, 1320.0, 1360.0, 1400.0, 1440.0, 1480.0, 1520.0, 1560.0, 1600.0 ]
+        "value" : [ 35.0, 70.0, 105.0, 140.0, 175.0, 210.0, 245.0, 280.0, 315.0, 350.0, 385.0, 420.0, 455.0, 490.0, 525.0, 560.0, 595.0, 630.0, 665.0, 700.0, 735.0, 770.0, 805.0, 840.0, 875.0, 910.0, 945.0, 980.0, 1015.0, 1050.0, 1085.0, 1120.0, 1155.0, 1190.0, 1225.0, 1260.0, 1295.0, 1330.0, 1365.0, 1400.0 ]
       },
-      "characterDexterity" : {
-        "value" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0, 48.0, 50.0, 52.0, 54.0, 56.0, 58.0, 60.0, 62.0, 64.0, 66.0, 68.0, 70.0, 72.0, 74.0, 76.0, 78.0, 80.0 ]
+      "characterIntelligence" : {
+        "value" : [ 1.75, 3.5, 5.25, 7.0, 8.75, 10.5, 12.25, 14.0, 15.75, 17.5, 19.25, 21.0, 22.75, 24.5, 26.25, 28.0, 29.75, 31.5, 33.25, 35.0, 36.75, 38.5, 40.25, 42.0, 43.75, 45.5, 47.25, 49.0, 50.75, 52.5, 54.25, 56.0, 57.75, 59.5, 61.25, 63.0, 64.75, 66.5, 68.25, 70.0 ]
       },
       "characterStrength" : {
         "value" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0, 48.0, 50.0, 52.0, 54.0, 56.0, 58.0, 60.0, 62.0, 64.0, 66.0, 68.0, 70.0, 72.0, 74.0, 76.0, 78.0, 80.0 ]
       },
+      "characterMana" : {
+        "value" : [ 8.0, 16.0, 24.0, 32.0, 40.0, 48.0, 56.0, 64.0, 72.0, 80.0, 88.0, 96.0, 104.0, 112.0, 120.0, 128.0, 136.0, 144.0, 152.0, 160.0, 168.0, 176.0, 184.0, 192.0, 200.0, 208.0, 216.0, 224.0, 232.0, 240.0, 248.0, 256.0, 264.0, 272.0, 280.0, 288.0, 296.0, 304.0, 312.0, 320.0 ]
+      },
       "skillMaxLevel" : {
         "value" : 40
       }
-    },
+    }
+  }, {
     "name" : "Warfare",
     "skillTiers" : [ [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Warfare/Weapon Training.html",
-      "skillIcon" : {
-        "posX" : 128,
-        "posY" : 403,
-        "circular" : true
-      },
       "name" : "Weapon Training",
       "parent" : null,
       "attributes" : {
@@ -6526,14 +6329,13 @@
           "value" : 1
         }
       },
-      "description" : "Years of training with the sword, axe, and club allow you to attack faster and more accurately."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Warfare/Onslaught.html",
+      "description" : "Years of training with the sword, axe, and club allow you to attack faster and more accurately.",
       "skillIcon" : {
-        "posX" : 428,
+        "circular" : true,
         "posY" : 403,
-        "circular" : false
-      },
+        "posX" : 128
+      }
+    }, {
       "name" : "Onslaught",
       "parent" : null,
       "attributes" : {
@@ -6586,14 +6388,13 @@
           "value" : 1
         }
       },
-      "description" : "When used as your default weapon attack, Onslaught charges up as you hit enemies causing increased damage.  The first hit always charges Onslaught to the first level of the skill and it continues to charge until it reaches your current skill level. Onslaught dissipates rapidly when not attacking.  {^y}Assign this skill to your left mouse button."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Warfare/Battle Rage.html",
+      "description" : "When used as your default weapon attack, Onslaught charges up as you hit enemies causing increased damage.  The first hit always charges Onslaught to the first level of the skill and it continues to charge until it reaches your current skill level. Onslaught dissipates rapidly when not attacking.  {^y}Assign this skill to your left mouse button.",
       "skillIcon" : {
-        "posX" : 228,
+        "circular" : false,
         "posY" : 403,
-        "circular" : true
-      },
+        "posX" : 428
+      }
+    }, {
       "name" : "Battle Rage",
       "parent" : null,
       "attributes" : {
@@ -6622,14 +6423,13 @@
           "value" : 12
         }
       },
-      "description" : "Each enemy hit has a chance of sending you into a battle rage that adds bonus damage to attacks and increases Offensive Ability for a short duration."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Warfare/Dodge Attacks.html",
+      "description" : "Each enemy hit has a chance of sending you into a battle rage that adds bonus damage to attacks and increases Offensive Ability for a short duration.",
       "skillIcon" : {
-        "posX" : 328,
-        "posY" : 341,
-        "circular" : true
-      },
+        "circular" : true,
+        "posY" : 403,
+        "posX" : 228
+      }
+    } ], [ {
       "name" : "Dodge Attacks",
       "parent" : null,
       "attributes" : {
@@ -6646,14 +6446,13 @@
           "value" : 8
         }
       },
-      "description" : "Even the sturdiest armor has its chinks.  The best way to stay alive is to not get hit."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Warfare/Dual Wield.html",
+      "description" : "Even the sturdiest armor has its chinks.  The best way to stay alive is to not get hit.",
       "skillIcon" : {
-        "posX" : 128,
+        "circular" : true,
         "posY" : 341,
-        "circular" : true
-      },
+        "posX" : 328
+      }
+    }, {
       "name" : "Dual Wield",
       "parent" : null,
       "attributes" : {
@@ -6694,14 +6493,13 @@
           "value" : 1
         }
       },
-      "description" : "Learn to effectively wield two weapons and perform occasional double attacks."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Warfare/Ignore Pain.html",
+      "description" : "Learn to effectively wield two weapons and perform occasional double attacks.",
       "skillIcon" : {
-        "posX" : 428,
+        "circular" : true,
         "posY" : 341,
-        "circular" : true
-      },
+        "posX" : 128
+      }
+    }, {
       "name" : "Ignore Pain",
       "parent" : "Onslaught",
       "attributes" : {
@@ -6718,14 +6516,13 @@
           "value" : 6
         }
       },
-      "description" : "Total focus in the heat of battle allows you to ignore physical and piercing damage."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Warfare/War Horn.html",
+      "description" : "Total focus in the heat of battle allows you to ignore physical and piercing damage.",
       "skillIcon" : {
-        "posX" : 628,
+        "circular" : true,
         "posY" : 341,
-        "circular" : false
-      },
+        "posX" : 428
+      }
+    }, {
       "name" : "War Horn",
       "parent" : null,
       "attributes" : {
@@ -6766,14 +6563,13 @@
           "value" : 10
         }
       },
-      "description" : "The triumphant call of your war horn temporarily stuns enemies."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Warfare/War Wind.html",
+      "description" : "The triumphant call of your war horn temporarily stuns enemies.",
       "skillIcon" : {
-        "posX" : 528,
-        "posY" : 279,
-        "circular" : false
-      },
+        "circular" : false,
+        "posY" : 341,
+        "posX" : 628
+      }
+    } ], [ {
       "name" : "War Wind",
       "parent" : null,
       "attributes" : {
@@ -6832,14 +6628,13 @@
           "value" : 1
         }
       },
-      "description" : "Executes a devastating spinning attack that can damage up to four enemies.  Initially each hit is not as powerful as a normal attack but the effectiveness increases every level."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Warfare/Hew.html",
+      "description" : "Executes a devastating spinning attack that can damage up to four enemies.  Initially each hit is not as powerful as a normal attack but the effectiveness increases every level.",
       "skillIcon" : {
-        "posX" : 128,
+        "circular" : false,
         "posY" : 279,
-        "circular" : true
-      },
+        "posX" : 528
+      }
+    }, {
       "name" : "Hew",
       "parent" : null,
       "attributes" : {
@@ -6874,14 +6669,13 @@
           "value" : 1
         }
       },
-      "description" : "A Dual Wield melee strike that hits one target with both weapons."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Warfare/Crushing Blow.html",
+      "description" : "A Dual Wield melee strike that hits one target with both weapons.",
       "skillIcon" : {
-        "posX" : 228,
+        "circular" : true,
         "posY" : 279,
-        "circular" : true
-      },
+        "posX" : 128
+      }
+    }, {
       "name" : "Crushing Blow",
       "parent" : "Battle Rage",
       "attributes" : {
@@ -6904,14 +6698,13 @@
           "value" : 12
         }
       },
-      "description" : "Provides a chance for attacks to cause bonus damage while in Battle Rage."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Warfare/Battle Standard.html",
+      "description" : "Provides a chance for attacks to cause bonus damage while in Battle Rage.",
       "skillIcon" : {
-        "posX" : 328,
+        "circular" : true,
         "posY" : 279,
-        "circular" : false
-      },
+        "posX" : 228
+      }
+    }, {
       "name" : "Battle Standard",
       "parent" : null,
       "attributes" : {
@@ -6937,14 +6730,13 @@
           "value" : 10
         }
       },
-      "description" : "Throw down a mighty standard to embolden the hearts of nearby allies."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Warfare/Cross Cut.html",
+      "description" : "Throw down a mighty standard to embolden the hearts of nearby allies.",
       "skillIcon" : {
-        "posX" : 128,
-        "posY" : 217,
-        "circular" : true
-      },
+        "circular" : false,
+        "posY" : 279,
+        "posX" : 328
+      }
+    } ], [ {
       "name" : "Cross Cut",
       "parent" : null,
       "attributes" : {
@@ -6991,14 +6783,13 @@
           "value" : 90.0
         }
       },
-      "description" : "A Dual Wield technique that can hit up to 2 enemies with a cross-cutting scissor motion."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Warfare/Hamstring.html",
+      "description" : "A Dual Wield technique that can hit up to 2 enemies with a cross-cutting scissor motion.",
       "skillIcon" : {
-        "posX" : 428,
+        "circular" : true,
         "posY" : 217,
-        "circular" : true
-      },
+        "posX" : 128
+      }
+    }, {
       "name" : "Hamstring",
       "parent" : "Ignore Pain",
       "attributes" : {
@@ -7027,14 +6818,13 @@
           "value" : [ 16.0, 24.0, 32.0, 40.0, 48.0, 56.0, 64.0, 72.0, 80.0, 90.0 ]
         }
       },
-      "description" : "An attack aimed at the enemy's legs reduces their ability to run and increases their vulnerability for a short duration."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Warfare/Lacerate.html",
+      "description" : "An attack aimed at the enemy's legs reduces their ability to run and increases their vulnerability for a short duration.",
       "skillIcon" : {
-        "posX" : 528,
-        "posY" : 155,
-        "circular" : true
-      },
+        "circular" : true,
+        "posY" : 217,
+        "posX" : 428
+      }
+    } ], [ {
       "name" : "Lacerate",
       "parent" : "War Wind",
       "attributes" : {
@@ -7069,14 +6859,13 @@
           "value" : 1
         }
       },
-      "description" : "Adds bleeding damage to War Wind and increases the number of enemies hit.  Requires at least one sword, axe, or spear."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Warfare/Counter Attack.html",
+      "description" : "Adds bleeding damage to War Wind and increases the number of enemies hit.  Requires at least one sword, axe, or spear.",
       "skillIcon" : {
-        "posX" : 228,
+        "circular" : true,
         "posY" : 155,
-        "circular" : true
-      },
+        "posX" : 528
+      }
+    }, {
       "name" : "Counter Attack",
       "parent" : "Crushing Blow",
       "attributes" : {
@@ -7099,14 +6888,13 @@
           "value" : 15.0
         }
       },
-      "description" : "Provides a chance to counter attack an enemy after being hit in Battle Rage."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Warfare/Doom Horn.html",
+      "description" : "Provides a chance to counter attack an enemy after being hit in Battle Rage.",
       "skillIcon" : {
-        "posX" : 628,
+        "circular" : true,
         "posY" : 155,
-        "circular" : true
-      },
+        "posX" : 228
+      }
+    }, {
       "name" : "Doom Horn",
       "parent" : "War Horn",
       "attributes" : {
@@ -7138,14 +6926,13 @@
           "value" : [ 24.0, 32.0, 40.0, 48.0, 56.0, 66.0, 72.0, 80.0, 90.0, 100.0 ]
         }
       },
-      "description" : "Your War Horn heralds the doom of your enemies, shattering their nerves and reducing their ability to defend themselves."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Warfare/Triumph.html",
+      "description" : "Your War Horn heralds the doom of your enemies, shattering their nerves and reducing their ability to defend themselves.",
       "skillIcon" : {
-        "posX" : 328,
+        "circular" : true,
         "posY" : 155,
-        "circular" : true
-      },
+        "posX" : 628
+      }
+    }, {
       "name" : "Triumph",
       "parent" : null,
       "attributes" : {
@@ -7189,14 +6976,13 @@
           "value" : 12.0
         }
       },
-      "description" : "Seeing the inevitability of your triumph, enemies lose hope and the strength of their attack diminishes."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Warfare/Tumult.html",
+      "description" : "Seeing the inevitability of your triumph, enemies lose hope and the strength of their attack diminishes.",
       "skillIcon" : {
-        "posX" : 128,
-        "posY" : 93,
-        "circular" : true
-      },
+        "circular" : true,
+        "posY" : 155,
+        "posX" : 328
+      }
+    } ], [ {
       "name" : "Tumult",
       "parent" : null,
       "attributes" : {
@@ -7246,14 +7032,13 @@
           "value" : 360.0
         }
       },
-      "description" : "A Dual Wield technique that hits up to 3 adjacent enemies."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Warfare/Ardor.html",
+      "description" : "A Dual Wield technique that hits up to 3 adjacent enemies.",
       "skillIcon" : {
-        "posX" : 428,
+        "circular" : true,
         "posY" : 93,
-        "circular" : true
-      },
+        "posX" : 128
+      }
+    }, {
       "name" : "Ardor",
       "parent" : "Hamstring",
       "attributes" : {
@@ -7270,14 +7055,13 @@
           "value" : 6
         }
       },
-      "description" : "You build momentum as you drive your attack forward, attacking and moving more rapidly."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Warfare/Ancestral Horn.html",
+      "description" : "You build momentum as you drive your attack forward, attacking and moving more rapidly.",
       "skillIcon" : {
-        "posX" : 628,
+        "circular" : true,
         "posY" : 93,
-        "circular" : false
-      },
+        "posX" : 428
+      }
+    }, {
       "name" : "Ancestral Horn",
       "parent" : null,
       "attributes" : {
@@ -7309,14 +7093,13 @@
           "value" : 16
         }
       },
-      "description" : "The ominous call on this ancient heirloom will summon forth ghostly heroes of old from the Elysian Fields to do battle once more."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Warfare/Lasting Legacy.html",
+      "description" : "The ominous call on this ancient heirloom will summon forth ghostly heroes of old from the Elysian Fields to do battle once more.",
       "skillIcon" : {
-        "posX" : 628,
-        "posY" : 31,
-        "circular" : true
-      },
+        "circular" : false,
+        "posY" : 93,
+        "posX" : 628
+      }
+    } ], [ {
       "name" : "Lasting Legacy",
       "parent" : "Ancestral Horn",
       "attributes" : {
@@ -7330,14 +7113,13 @@
           "value" : 6
         }
       },
-      "description" : "Forming a deeper connection with your ancestors allows their spirits to remain at your side for longer."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Warfare/Slam.html",
+      "description" : "Forming a deeper connection with your ancestors allows their spirits to remain at your side for longer.",
       "skillIcon" : {
-        "posX" : 228,
+        "circular" : true,
         "posY" : 31,
-        "circular" : false
-      },
+        "posX" : 628
+      }
+    }, {
       "name" : "Slam",
       "parent" : null,
       "attributes" : {
@@ -7405,35 +7187,30 @@
           "value" : [ 1.5, 1.8, 2.1, 2.4, 2.7, 3.0, 3.3, 3.6, 3.9, 4.2, 4.5, 4.8, 5.1, 5.4, 5.7, 6.0 ]
         }
       },
-      "description" : "Hit all enemies in a straight line with staggering force, disrupting their aim and spellcasting."
-    } ] ]
-  }, {
-    "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Rune.html",
+      "description" : "Hit all enemies in a straight line with staggering force, disrupting their aim and spellcasting.",
+      "skillIcon" : {
+        "circular" : false,
+        "posY" : 31,
+        "posX" : 228
+      }
+    } ] ],
     "masteryAttributes" : {
       "characterLife" : {
-        "value" : [ 20.0, 40.0, 60.0, 80.0, 100.0, 120.0, 140.0, 160.0, 180.0, 200.0, 220.0, 240.0, 260.0, 280.0, 300.0, 320.0, 340.0, 360.0, 380.0, 400.0, 420.0, 440.0, 460.0, 480.0, 500.0, 520.0, 540.0, 560.0, 580.0, 600.0, 620.0, 640.0, 660.0, 680.0, 700.0, 720.0, 740.0, 760.0, 780.0, 800.0 ]
-      },
-      "characterIntelligence" : {
-        "value" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0, 48.0, 50.0, 52.0, 54.0, 56.0, 58.0, 60.0, 62.0, 64.0, 66.0, 68.0, 70.0, 72.0, 74.0, 76.0, 78.0, 80.0 ]
+        "value" : [ 40.0, 80.0, 120.0, 160.0, 200.0, 240.0, 280.0, 320.0, 360.0, 400.0, 440.0, 480.0, 520.0, 560.0, 600.0, 640.0, 680.0, 720.0, 760.0, 800.0, 840.0, 880.0, 920.0, 960.0, 1000.0, 1040.0, 1080.0, 1120.0, 1160.0, 1200.0, 1240.0, 1280.0, 1320.0, 1360.0, 1400.0, 1440.0, 1480.0, 1520.0, 1560.0, 1600.0 ]
       },
       "characterDexterity" : {
-        "value" : [ 1.5, 3.0, 4.5, 6.0, 7.5, 9.0, 10.5, 12.0, 13.5, 15.0, 16.5, 18.0, 19.5, 21.0, 22.5, 24.0, 25.5, 27.0, 28.5, 30.0, 31.5, 33.0, 34.5, 36.0, 37.5, 39.0, 40.5, 42.0, 43.5, 45.0, 46.5, 48.0, 49.5, 51.0, 52.5, 54.0, 55.5, 57.0, 58.5, 60.0 ]
+        "value" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0, 48.0, 50.0, 52.0, 54.0, 56.0, 58.0, 60.0, 62.0, 64.0, 66.0, 68.0, 70.0, 72.0, 74.0, 76.0, 78.0, 80.0 ]
       },
       "characterStrength" : {
-        "value" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0, 28.0, 29.0, 30.0, 31.0, 32.0, 33.0, 34.0, 35.0, 36.0, 37.0, 38.0, 39.0, 40.0 ]
+        "value" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0, 48.0, 50.0, 52.0, 54.0, 56.0, 58.0, 60.0, 62.0, 64.0, 66.0, 68.0, 70.0, 72.0, 74.0, 76.0, 78.0, 80.0 ]
       },
       "skillMaxLevel" : {
         "value" : 40
       }
-    },
+    }
+  }, {
     "name" : "Rune",
     "skillTiers" : [ [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Rune/Life Rune.html",
-      "skillIcon" : {
-        "posX" : 628,
-        "posY" : 403,
-        "circular" : false
-      },
       "name" : "Life Rune",
       "parent" : null,
       "attributes" : {
@@ -7468,14 +7245,13 @@
           "value" : [ 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 8.5, 9.0, 9.5, 10.0, 10.5, 11.0, 11.5 ]
         }
       },
-      "description" : "Cast the Rune of Life on yourself or allies to protect against dark magic and increase stamina."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Rune/Runeword: Feather.html",
+      "description" : "Cast the Rune of Life on yourself or allies to protect against dark magic and increase stamina.",
       "skillIcon" : {
-        "posX" : 328,
+        "circular" : false,
         "posY" : 403,
-        "circular" : true
-      },
+        "posX" : 628
+      }
+    }, {
       "name" : "Runeword: Feather",
       "parent" : null,
       "attributes" : {
@@ -7495,14 +7271,13 @@
           "value" : 6
         }
       },
-      "description" : "This basic engraving every Runemaster learns reduces the weight of a weapon or shield, letting them wield even heavy blades with grace and precision."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Rune/Rune Weapon.html",
+      "description" : "This basic engraving every Runemaster learns reduces the weight of a weapon or shield, letting them wield even heavy blades with grace and precision.",
       "skillIcon" : {
-        "posX" : 128,
+        "circular" : true,
         "posY" : 403,
-        "circular" : false
-      },
+        "posX" : 328
+      }
+    }, {
       "name" : "Rune Weapon",
       "parent" : null,
       "attributes" : {
@@ -7558,14 +7333,13 @@
           "value" : [ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0 ]
         }
       },
-      "description" : "In the rush of glorious combat, every strike pushes your mind further into an ecstatic state, increasing the force of your magical abilities. {^y}Assign this skill to your left mouse button.  {^f}Elemental% and ADctH apply twice"
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Rune/Thunder Strike.html",
+      "description" : "In the rush of glorious combat, every strike pushes your mind further into an ecstatic state, increasing the force of your magical abilities. {^y}Assign this skill to your left mouse button.  {^f}Elemental% and ADctH apply twice",
       "skillIcon" : {
-        "posX" : 428,
-        "posY" : 341,
-        "circular" : false
-      },
+        "circular" : false,
+        "posY" : 403,
+        "posX" : 128
+      }
+    } ], [ {
       "name" : "Thunder Strike",
       "parent" : null,
       "attributes" : {
@@ -7630,14 +7404,13 @@
           "value" : 250.0
         }
       },
-      "description" : "An arcane weapon technique that channels the power of a thunderbolt, hitting mutliple enemies with staggering force."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Rune/Runic Mines.html",
+      "description" : "An arcane weapon technique that channels the power of a thunderbolt, hitting mutliple enemies with staggering force.",
       "skillIcon" : {
-        "posX" : 528,
+        "circular" : false,
         "posY" : 341,
-        "circular" : false
-      },
+        "posX" : 428
+      }
+    }, {
       "name" : "Runic Mines",
       "parent" : null,
       "attributes" : {
@@ -7678,14 +7451,13 @@
           "value" : [ 18.0, 27.0, 36.0, 45.0, 54.0, 63.0, 72.0, 81.0, 90.0, 99.0, 108.0, 117.0, 126.0, 135.0, 144.0, 153.0 ]
         }
       },
-      "description" : "Casts a number of defensive runes on the ground around you that will detonate if enemies step on them. {^f}Currently pet workaround, needs projectiles."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Rune/Magical Charge.html",
+      "description" : "Casts a number of defensive runes on the ground around you that will detonate if enemies step on them. {^f}Currently pet workaround, needs projectiles.",
       "skillIcon" : {
-        "posX" : 128,
+        "circular" : false,
         "posY" : 341,
-        "circular" : true
-      },
+        "posX" : 528
+      }
+    }, {
       "name" : "Magical Charge",
       "parent" : "Rune Weapon",
       "attributes" : {
@@ -7705,14 +7477,13 @@
           "value" : [ 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0, 51.0, 54.0, 57.0, 60.0, 63.0 ]
         }
       },
-      "description" : "The power building up as you fight ignites your runed weapons with Elemental magic and burns anyone who touches you. {^f}Doubled"
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Rune/Sacred Rage.html",
+      "description" : "The power building up as you fight ignites your runed weapons with Elemental magic and burns anyone who touches you. {^f}Doubled",
       "skillIcon" : {
-        "posX" : 228,
+        "circular" : true,
         "posY" : 341,
-        "circular" : true
-      },
+        "posX" : 128
+      }
+    }, {
       "name" : "Sacred Rage",
       "parent" : null,
       "attributes" : {
@@ -7750,14 +7521,13 @@
           "value" : [ 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0 ]
         }
       },
-      "description" : "Being wounded in battle only accelerates the Berserker's transition into a frenzy, making enemies who failed to kill them soon regret the attempt. {^y}Remains active while health is low."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Rune/Unleash.html",
+      "description" : "Being wounded in battle only accelerates the Berserker's transition into a frenzy, making enemies who failed to kill them soon regret the attempt. {^y}Remains active while health is low.",
       "skillIcon" : {
-        "posX" : 428,
-        "posY" : 279,
-        "circular" : true
-      },
+        "circular" : true,
+        "posY" : 341,
+        "posX" : 228
+      }
+    } ], [ {
       "name" : "Unleash",
       "parent" : null,
       "attributes" : {
@@ -7795,14 +7565,13 @@
           "value" : 10
         }
       },
-      "description" : "Unleash the full force of the attack to electrocute and daze enemies across a wide area."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Rune/Runeword: Explode.html",
+      "description" : "Unleash the full force of the attack to electrocute and daze enemies across a wide area.",
       "skillIcon" : {
-        "posX" : 328,
+        "circular" : true,
         "posY" : 279,
-        "circular" : true
-      },
+        "posX" : 428
+      }
+    }, {
       "name" : "Runeword: Explode",
       "parent" : null,
       "attributes" : {
@@ -7840,14 +7609,13 @@
           "value" : 10
         }
       },
-      "description" : "Weapons inscribed with this powerful rune may cause a successful blow to explode outward, striking multiple enemies."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Rune/Frightening Power.html",
+      "description" : "Weapons inscribed with this powerful rune may cause a successful blow to explode outward, striking multiple enemies.",
       "skillIcon" : {
-        "posX" : 228,
+        "circular" : true,
         "posY" : 279,
-        "circular" : true
-      },
+        "posX" : 328
+      }
+    }, {
       "name" : "Frightening Power",
       "parent" : null,
       "attributes" : {
@@ -7888,14 +7656,13 @@
           "value" : [ 10.0, 19.0, 27.0, 34.0, 40.0, 45.0, 49.0, 52.0, 54.0, 55.0 ]
         }
       },
-      "description" : "Entering the rage lets out a terrifying scream that will send lesser enemies running. {^f}Bugged - should trigger when rage activates."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Rune/Menhir Wall.html",
+      "description" : "Entering the rage lets out a terrifying scream that will send lesser enemies running. {^f}Bugged - should trigger when rage activates.",
       "skillIcon" : {
-        "posX" : 628,
+        "circular" : true,
         "posY" : 279,
-        "circular" : false
-      },
+        "posX" : 228
+      }
+    }, {
       "name" : "Menhir Wall",
       "parent" : null,
       "attributes" : {
@@ -7939,14 +7706,13 @@
           "value" : 1
         }
       },
-      "description" : "Summon a wall of lesser rune stones to block and distract enemies. {^f}Should always be perpendicular to cast vector."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Rune/Energy Drain.html",
+      "description" : "Summon a wall of lesser rune stones to block and distract enemies. {^f}Should always be perpendicular to cast vector.",
       "skillIcon" : {
-        "posX" : 128,
-        "posY" : 217,
-        "circular" : true
-      },
+        "circular" : false,
+        "posY" : 279,
+        "posX" : 628
+      }
+    } ], [ {
       "name" : "Energy Drain",
       "parent" : "Magical Charge",
       "attributes" : {
@@ -7978,14 +7744,13 @@
           "value" : [ 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0 ]
         }
       },
-      "description" : "Advanced inscriptions on your weapon make it actively drain an enemy's energy, fueling yours while weakening their resolve. {^f}Doubled"
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Rune/Runeword: Burn.html",
+      "description" : "Advanced inscriptions on your weapon make it actively drain an enemy's energy, fueling yours while weakening their resolve. {^f}Doubled",
       "skillIcon" : {
-        "posX" : 328,
+        "circular" : true,
         "posY" : 217,
-        "circular" : true
-      },
+        "posX" : 128
+      }
+    }, {
       "name" : "Runeword: Burn",
       "parent" : null,
       "attributes" : {
@@ -8011,14 +7776,13 @@
           "value" : 10
         }
       },
-      "description" : "Makes your strikes explode with intense heat and projectiles break into burning fragments."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Rune/Seal of Fate.html",
+      "description" : "Makes your strikes explode with intense heat and projectiles break into burning fragments.",
       "skillIcon" : {
-        "posX" : 428,
+        "circular" : true,
         "posY" : 217,
-        "circular" : false
-      },
+        "posX" : 328
+      }
+    }, {
       "name" : "Seal of Fate",
       "parent" : null,
       "attributes" : {
@@ -8068,14 +7832,13 @@
           "value" : [ 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0 ]
         }
       },
-      "description" : "Take a few moments to draw an intricate sigil on the ground that will finally explode with tremendous force."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Rune/Freezing Mines.html",
+      "description" : "Take a few moments to draw an intricate sigil on the ground that will finally explode with tremendous force.",
       "skillIcon" : {
-        "posX" : 528,
-        "posY" : 155,
-        "circular" : true
-      },
+        "circular" : false,
+        "posY" : 217,
+        "posX" : 428
+      }
+    } ], [ {
       "name" : "Freezing Mines",
       "parent" : "Runic Mines",
       "attributes" : {
@@ -8110,14 +7873,13 @@
           "value" : 8
         }
       },
-      "description" : "Enhances the aspect of cold on your Runic Mines, causing enemies to be slowed and frozen."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Rune/Reckless Offense.html",
+      "description" : "Enhances the aspect of cold on your Runic Mines, causing enemies to be slowed and frozen.",
       "skillIcon" : {
-        "posX" : 228,
+        "circular" : true,
         "posY" : 155,
-        "circular" : true
-      },
+        "posX" : 528
+      }
+    }, {
       "name" : "Reckless Offense",
       "parent" : null,
       "attributes" : {
@@ -8155,14 +7917,13 @@
           "value" : 1
         }
       },
-      "description" : "Those who follow the way of the Berserkir fight with the mind of an enraged animal, and will forego the tactical considerations of a shield to wildly attack with weapons in both hands."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Rune/Runeword: Absorb.html",
+      "description" : "Those who follow the way of the Berserkir fight with the mind of an enraged animal, and will forego the tactical considerations of a shield to wildly attack with weapons in both hands.",
       "skillIcon" : {
-        "posX" : 328,
+        "circular" : true,
         "posY" : 155,
-        "circular" : true
-      },
+        "posX" : 228
+      }
+    }, {
       "name" : "Runeword: Absorb",
       "parent" : null,
       "attributes" : {
@@ -8194,14 +7955,13 @@
           "value" : 8
         }
       },
-      "description" : "Enchants your shield or magic staff with the ability to absorb the energy of enemy blows and spells, adding it to your own."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Rune/Transmutation.html",
+      "description" : "Enchants your shield or magic staff with the ability to absorb the energy of enemy blows and spells, adding it to your own.",
       "skillIcon" : {
-        "posX" : 128,
-        "posY" : 93,
-        "circular" : true
-      },
+        "circular" : true,
+        "posY" : 155,
+        "posX" : 328
+      }
+    } ], [ {
       "name" : "Transmutation",
       "parent" : null,
       "attributes" : {
@@ -8215,14 +7975,13 @@
           "value" : 6
         }
       },
-      "description" : "A master Runesmith is able to convert the very nature of their weapon, turning mere metal into a manifestation of Elemental magic."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Rune/Energy Armor.html",
+      "description" : "A master Runesmith is able to convert the very nature of their weapon, turning mere metal into a manifestation of Elemental magic.",
       "skillIcon" : {
-        "posX" : 228,
+        "circular" : true,
         "posY" : 93,
-        "circular" : false
-      },
+        "posX" : 128
+      }
+    }, {
       "name" : "Energy Armor",
       "parent" : null,
       "attributes" : {
@@ -8269,14 +8028,13 @@
           "value" : 15
         }
       },
-      "description" : "Weave vast amounts of Energy into a layer of magical armor that shields you from physical attacks. {^f}PBAoE - should self-target automatically"
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Rune/Guardian Stones.html",
+      "description" : "Weave vast amounts of Energy into a layer of magical armor that shields you from physical attacks. {^f}PBAoE - should self-target automatically",
       "skillIcon" : {
-        "posX" : 628,
+        "circular" : false,
         "posY" : 93,
-        "circular" : false
-      },
+        "posX" : 228
+      }
+    }, {
       "name" : "Guardian Stones",
       "parent" : null,
       "attributes" : {
@@ -8314,14 +8072,13 @@
           "value" : 12
         }
       },
-      "description" : "Summon a triangle of greater rune stones which will magically lash out at any hostile entering their sacred ground."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Rune/Aftershock.html",
+      "description" : "Summon a triangle of greater rune stones which will magically lash out at any hostile entering their sacred ground.",
       "skillIcon" : {
-        "posX" : 428,
+        "circular" : false,
         "posY" : 93,
-        "circular" : true
-      },
+        "posX" : 628
+      }
+    }, {
       "name" : "Aftershock",
       "parent" : null,
       "attributes" : {
@@ -8371,14 +8128,13 @@
           "value" : [ 140.0, 210.0, 280.0, 350.0, 420.0, 490.0, 560.0, 630.0, 700.0, 770.0, 840.0, 910.0, 980.0, 1050.0 ]
         }
       },
-      "description" : "The shock of the explosion leaves even those who survive it battered, bleeding and hardly able to fight."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Rune/Rune Storm.html",
+      "description" : "The shock of the explosion leaves even those who survive it battered, bleeding and hardly able to fight.",
       "skillIcon" : {
-        "posX" : 328,
-        "posY" : 31,
-        "circular" : false
-      },
+        "circular" : true,
+        "posY" : 93,
+        "posX" : 428
+      }
+    } ], [ {
       "name" : "Rune Storm",
       "parent" : null,
       "attributes" : {
@@ -8497,14 +8253,13 @@
           "value" : 15.0
         }
       },
-      "description" : "When the situation calls for it, combining mismatched runes can create a dangerous storm of unforeseen effects."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Rune/Rune Field.html",
+      "description" : "When the situation calls for it, combining mismatched runes can create a dangerous storm of unforeseen effects.",
       "skillIcon" : {
-        "posX" : 528,
+        "circular" : false,
         "posY" : 31,
-        "circular" : true
-      },
+        "posX" : 328
+      }
+    }, {
       "name" : "Rune Field",
       "parent" : "Freezing Mines",
       "attributes" : {
@@ -8533,32 +8288,33 @@
           "value" : 12
         }
       },
-      "description" : "Create more runes across a larger area."
-    } ] ]
-  }, {
-    "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Hunting.html",
+      "description" : "Create more runes across a larger area.",
+      "skillIcon" : {
+        "circular" : true,
+        "posY" : 31,
+        "posX" : 528
+      }
+    } ] ],
     "masteryAttributes" : {
       "characterLife" : {
-        "value" : [ 35.0, 70.0, 105.0, 140.0, 175.0, 210.0, 245.0, 280.0, 315.0, 350.0, 385.0, 420.0, 455.0, 490.0, 525.0, 560.0, 595.0, 630.0, 665.0, 700.0, 735.0, 770.0, 805.0, 840.0, 875.0, 910.0, 945.0, 980.0, 1015.0, 1050.0, 1085.0, 1120.0, 1155.0, 1190.0, 1225.0, 1260.0, 1295.0, 1330.0, 1365.0, 1400.0 ]
+        "value" : [ 20.0, 40.0, 60.0, 80.0, 100.0, 120.0, 140.0, 160.0, 180.0, 200.0, 220.0, 240.0, 260.0, 280.0, 300.0, 320.0, 340.0, 360.0, 380.0, 400.0, 420.0, 440.0, 460.0, 480.0, 500.0, 520.0, 540.0, 560.0, 580.0, 600.0, 620.0, 640.0, 660.0, 680.0, 700.0, 720.0, 740.0, 760.0, 780.0, 800.0 ]
+      },
+      "characterIntelligence" : {
+        "value" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0, 48.0, 50.0, 52.0, 54.0, 56.0, 58.0, 60.0, 62.0, 64.0, 66.0, 68.0, 70.0, 72.0, 74.0, 76.0, 78.0, 80.0 ]
       },
       "characterDexterity" : {
-        "value" : [ 2.5, 5.0, 7.5, 10.0, 12.5, 15.0, 17.5, 20.0, 22.5, 25.0, 27.5, 30.0, 32.5, 35.0, 37.5, 40.0, 42.5, 45.0, 47.5, 50.0, 52.5, 55.0, 57.5, 60.0, 62.5, 65.0, 67.5, 70.0, 72.5, 75.0, 77.5, 80.0, 82.5, 85.0, 87.5, 90.0, 92.5, 95.0, 97.5, 100.0 ]
+        "value" : [ 1.5, 3.0, 4.5, 6.0, 7.5, 9.0, 10.5, 12.0, 13.5, 15.0, 16.5, 18.0, 19.5, 21.0, 22.5, 24.0, 25.5, 27.0, 28.5, 30.0, 31.5, 33.0, 34.5, 36.0, 37.5, 39.0, 40.5, 42.0, 43.5, 45.0, 46.5, 48.0, 49.5, 51.0, 52.5, 54.0, 55.5, 57.0, 58.5, 60.0 ]
       },
       "characterStrength" : {
-        "value" : [ 1.75, 3.5, 5.25, 7.0, 8.75, 10.5, 12.25, 14.0, 15.75, 17.5, 19.25, 21.0, 22.75, 24.5, 26.25, 28.0, 29.75, 31.5, 33.25, 35.0, 36.75, 38.5, 40.25, 42.0, 43.75, 45.5, 47.25, 49.0, 50.75, 52.5, 54.25, 56.0, 57.75, 59.5, 61.25, 63.0, 64.75, 66.5, 68.25, 70.0 ]
+        "value" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0, 28.0, 29.0, 30.0, 31.0, 32.0, 33.0, 34.0, 35.0, 36.0, 37.0, 38.0, 39.0, 40.0 ]
       },
       "skillMaxLevel" : {
         "value" : 40
       }
-    },
+    }
+  }, {
     "name" : "Hunting",
     "skillTiers" : [ [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Hunting/Wood Lore.html",
-      "skillIcon" : {
-        "posX" : 628,
-        "posY" : 403,
-        "circular" : true
-      },
       "name" : "Wood Lore",
       "parent" : null,
       "attributes" : {
@@ -8587,14 +8343,13 @@
           "value" : 1
         }
       },
-      "description" : "Central to survival in the wilderness is the ability to hunt with bow and spear.  Great familiarity with these weapons allows you to wield them with exceptional speed and grace."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Hunting/Ensnare.html",
+      "description" : "Central to survival in the wilderness is the ability to hunt with bow and spear.  Great familiarity with these weapons allows you to wield them with exceptional speed and grace.",
       "skillIcon" : {
-        "posX" : 128,
+        "circular" : true,
         "posY" : 403,
-        "circular" : false
-      },
+        "posX" : 628
+      }
+    }, {
       "name" : "Ensnare",
       "parent" : null,
       "attributes" : {
@@ -8635,14 +8390,13 @@
           "value" : 6
         }
       },
-      "description" : "Casts a weighted net around the feet of an enemy holding them in place but not preventing them from attacking if you are within their range."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Hunting/Take Down.html",
+      "description" : "Casts a weighted net around the feet of an enemy holding them in place but not preventing them from attacking if you are within their range.",
       "skillIcon" : {
-        "posX" : 428,
+        "circular" : false,
         "posY" : 403,
-        "circular" : false
-      },
+        "posX" : 128
+      }
+    }, {
       "name" : "Take Down",
       "parent" : null,
       "attributes" : {
@@ -8686,14 +8440,13 @@
           "value" : 1
         }
       },
-      "description" : "A brutal thrust from your spear delivers devastating piercing damage to enemies and diminishes a portion of your enemy's total life."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Hunting/Art of the Hunt.html",
+      "description" : "A brutal thrust from your spear delivers devastating piercing damage to enemies and diminishes a portion of your enemy's total life.",
       "skillIcon" : {
-        "posX" : 528,
-        "posY" : 341,
-        "circular" : false
-      },
+        "circular" : false,
+        "posY" : 403,
+        "posX" : 428
+      }
+    } ], [ {
       "name" : "Art of the Hunt",
       "parent" : null,
       "attributes" : {
@@ -8728,14 +8481,13 @@
           "value" : 12
         }
       },
-      "description" : "Hunting experience gives you the edge when facing familiar quarry such as Animals and Beastmen."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Hunting/Marksmanship.html",
+      "description" : "Hunting experience gives you the edge when facing familiar quarry such as Animals and Beastmen.",
       "skillIcon" : {
-        "posX" : 328,
+        "circular" : false,
         "posY" : 341,
-        "circular" : false
-      },
+        "posX" : 528
+      }
+    }, {
       "name" : "Marksmanship",
       "parent" : null,
       "attributes" : {
@@ -8770,14 +8522,13 @@
           "value" : 1
         }
       },
-      "description" : "Marksmanship skill allows you to create and fire arrows that fly faster and increase pierce damage.  {^y}Assign this skill to your left mouse button."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Hunting/Herbal Remedy.html",
+      "description" : "Marksmanship skill allows you to create and fire arrows that fly faster and increase pierce damage.  {^y}Assign this skill to your left mouse button.",
       "skillIcon" : {
-        "posX" : 628,
+        "circular" : false,
         "posY" : 341,
-        "circular" : false
-      },
+        "posX" : 328
+      }
+    }, {
       "name" : "Herbal Remedy",
       "parent" : null,
       "attributes" : {
@@ -8806,14 +8557,13 @@
           "value" : 6
         }
       },
-      "description" : "Living off the land, you learn to identify and utilize medicinal plants to create healing salves.  When applied it will fortify against poison and healing is accelerated for a duration."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Hunting/Barbed Netting.html",
+      "description" : "Living off the land, you learn to identify and utilize medicinal plants to create healing salves.  When applied it will fortify against poison and healing is accelerated for a duration.",
       "skillIcon" : {
-        "posX" : 128,
-        "posY" : 279,
-        "circular" : true
-      },
+        "circular" : false,
+        "posY" : 341,
+        "posX" : 628
+      }
+    } ], [ {
       "name" : "Barbed Netting",
       "parent" : "Ensnare",
       "attributes" : {
@@ -8833,14 +8583,13 @@
           "value" : 8
         }
       },
-      "description" : "Barbed hooks on the hunter's Ensnare net tear into enemies as they struggle causing them to bleed."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Hunting/Call of the Hunt.html",
+      "description" : "Barbed hooks on the hunter's Ensnare net tear into enemies as they struggle causing them to bleed.",
       "skillIcon" : {
-        "posX" : 228,
+        "circular" : true,
         "posY" : 279,
-        "circular" : false
-      },
+        "posX" : 128
+      }
+    }, {
       "name" : "Call of the Hunt",
       "parent" : null,
       "attributes" : {
@@ -8884,14 +8633,13 @@
           "value" : 10
         }
       },
-      "description" : "Those who answer the call of the hunt will fight with increased speed and cunning."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Hunting/Eviscerate.html",
+      "description" : "Those who answer the call of the hunt will fight with increased speed and cunning.",
       "skillIcon" : {
-        "posX" : 428,
+        "circular" : false,
         "posY" : 279,
-        "circular" : true
-      },
+        "posX" : 228
+      }
+    }, {
       "name" : "Eviscerate",
       "parent" : "Take Down",
       "attributes" : {
@@ -8914,14 +8662,13 @@
           "value" : 1
         }
       },
-      "description" : "Targeting vital weak-points on your enemy causes sustained damage from bleeding."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Hunting/Monster Lure.html",
+      "description" : "Targeting vital weak-points on your enemy causes sustained damage from bleeding.",
       "skillIcon" : {
-        "posX" : 628,
+        "circular" : true,
         "posY" : 279,
-        "circular" : false
-      },
+        "posX" : 428
+      }
+    }, {
       "name" : "Monster Lure",
       "parent" : null,
       "attributes" : {
@@ -8953,14 +8700,13 @@
           "value" : 6
         }
       },
-      "description" : "Drops down a decoy to attract the attention of nearby monsters."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Hunting/Find Cover.html",
+      "description" : "Drops down a decoy to attract the attention of nearby monsters.",
       "skillIcon" : {
-        "posX" : 528,
-        "posY" : 217,
-        "circular" : true
-      },
+        "circular" : false,
+        "posY" : 279,
+        "posX" : 628
+      }
+    } ], [ {
       "name" : "Find Cover",
       "parent" : "Art of the Hunt",
       "attributes" : {
@@ -8977,14 +8723,13 @@
           "value" : 8
         }
       },
-      "description" : "Making use of available cover as you press your attack allows you to avoid unnecessary damage."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Hunting/Study Prey.html",
+      "description" : "Making use of available cover as you press your attack allows you to avoid unnecessary damage.",
       "skillIcon" : {
-        "posX" : 128,
+        "circular" : true,
         "posY" : 217,
-        "circular" : false
-      },
+        "posX" : 528
+      }
+    }, {
       "name" : "Study Prey",
       "parent" : null,
       "attributes" : {
@@ -9028,14 +8773,13 @@
           "value" : 1
         }
       },
-      "description" : "By observing your prey from a distance you may discover its weakness, resulting in greater pierce damage."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Hunting/Puncture Shot Arrows.html",
+      "description" : "By observing your prey from a distance you may discover its weakness, resulting in greater pierce damage.",
       "skillIcon" : {
-        "posX" : 328,
+        "circular" : false,
         "posY" : 217,
-        "circular" : true
-      },
+        "posX" : 128
+      }
+    }, {
       "name" : "Puncture Shot Arrows",
       "parent" : "Marksmanship",
       "attributes" : {
@@ -9064,14 +8808,13 @@
           "value" : 12
         }
       },
-      "description" : "Incorporating a more streamlined shaft into your arrows allows them to pass through targets and hit additional enemies in their path."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Hunting/Gouge.html",
+      "description" : "Incorporating a more streamlined shaft into your arrows allows them to pass through targets and hit additional enemies in their path.",
       "skillIcon" : {
-        "posX" : 428,
+        "circular" : true,
         "posY" : 217,
-        "circular" : true
-      },
+        "posX" : 328
+      }
+    }, {
       "name" : "Gouge",
       "parent" : null,
       "attributes" : {
@@ -9106,14 +8849,13 @@
           "value" : 1
         }
       },
-      "description" : "A combat technique that uses the spear or bow to inflict deep wounds that will result in prolonged bleeding."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Hunting/Trail Blazing.html",
+      "description" : "A combat technique that uses the spear or bow to inflict deep wounds that will result in prolonged bleeding.",
       "skillIcon" : {
-        "posX" : 528,
-        "posY" : 155,
-        "circular" : true
-      },
+        "circular" : true,
+        "posY" : 217,
+        "posX" : 428
+      }
+    } ], [ {
       "name" : "Trail Blazing",
       "parent" : "Find Cover",
       "attributes" : {
@@ -9133,14 +8875,13 @@
           "value" : 6
         }
       },
-      "description" : "Grants those who follow the hunt endurance to relentlessly track their quarry, preventing even the most tangled thicket from slowing pursuit."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Hunting/Exploit Weakness.html",
+      "description" : "Grants those who follow the hunt endurance to relentlessly track their quarry, preventing even the most tangled thicket from slowing pursuit.",
       "skillIcon" : {
-        "posX" : 228,
+        "circular" : true,
         "posY" : 155,
-        "circular" : true
-      },
+        "posX" : 528
+      }
+    }, {
       "name" : "Exploit Weakness",
       "parent" : "Call of the Hunt",
       "attributes" : {
@@ -9166,14 +8907,13 @@
           "value" : 1
         }
       },
-      "description" : "Take full advantage of your enemy's mistakes and vulnerable moments to inflict savage wounds."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Hunting/Detonate.html",
+      "description" : "Take full advantage of your enemy's mistakes and vulnerable moments to inflict savage wounds.",
       "skillIcon" : {
-        "posX" : 628,
+        "circular" : true,
         "posY" : 155,
-        "circular" : true
-      },
+        "posX" : 228
+      }
+    }, {
       "name" : "Detonate",
       "parent" : null,
       "attributes" : {
@@ -9220,14 +8960,13 @@
           "value" : [ 72.0, 84.0, 98.0, 116.0, 128.0, 140.0, 154.0, 172.0, 184.0, 196.0, 210.0, 228.0, 240.0, 252.0, 266.0, 284.0 ]
         }
       },
-      "description" : "Adds a hidden explosive charge to the monster lure causing it to detonate when destroyed.  In order to detonate the lure must be at full energy."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Hunting/Flush Out.html",
+      "description" : "Adds a hidden explosive charge to the monster lure causing it to detonate when destroyed.  In order to detonate the lure must be at full energy.",
       "skillIcon" : {
-        "posX" : 128,
-        "posY" : 93,
-        "circular" : true
-      },
+        "circular" : true,
+        "posY" : 155,
+        "posX" : 628
+      }
+    } ], [ {
       "name" : "Flush Out",
       "parent" : "Study Prey",
       "attributes" : {
@@ -9253,14 +8992,13 @@
           "value" : 6
         }
       },
-      "description" : "Draw your enemies into the open, making them more vulnerable to attack."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Hunting/Scatter Shot Arrows.html",
+      "description" : "Draw your enemies into the open, making them more vulnerable to attack.",
       "skillIcon" : {
-        "posX" : 328,
+        "circular" : true,
         "posY" : 93,
-        "circular" : true
-      },
+        "posX" : 128
+      }
+    }, {
       "name" : "Scatter Shot Arrows",
       "parent" : null,
       "attributes" : {
@@ -9295,14 +9033,13 @@
           "value" : 12
         }
       },
-      "description" : "A secret of master fletchers is the ability to craft special arrow heads that burst on impact sending out razor-sharp fragments in all directions."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Hunting/Volley.html",
+      "description" : "A secret of master fletchers is the ability to craft special arrow heads that burst on impact sending out razor-sharp fragments in all directions.",
       "skillIcon" : {
-        "posX" : 428,
+        "circular" : true,
         "posY" : 93,
-        "circular" : true
-      },
+        "posX" : 328
+      }
+    }, {
       "name" : "Volley",
       "parent" : null,
       "attributes" : {
@@ -9334,14 +9071,13 @@
           "value" : 1
         }
       },
-      "description" : "A combat technique that uses the spear or bow to rapidly strike three times."
-    } ], [ {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Hunting/Finesse.html",
+      "description" : "A combat technique that uses the spear or bow to rapidly strike three times.",
       "skillIcon" : {
-        "posX" : 228,
-        "posY" : 31,
-        "circular" : true
-      },
+        "circular" : true,
+        "posY" : 93,
+        "posX" : 428
+      }
+    } ], [ {
       "name" : "Finesse",
       "parent" : "Exploit Weakness",
       "attributes" : {
@@ -9364,14 +9100,13 @@
           "value" : [ 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0 ]
         }
       },
-      "description" : "Increases your group’s chances to inflict critical melee damage."
-    }, {
-      "urlLegacy" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/Masteries/Hunting/Spear Dance.html",
+      "description" : "Increases your group’s chances to inflict critical melee damage.",
       "skillIcon" : {
-        "posX" : 528,
+        "circular" : true,
         "posY" : 31,
-        "circular" : false
-      },
+        "posX" : 228
+      }
+    }, {
       "name" : "Spear Dance",
       "parent" : null,
       "attributes" : {
@@ -9421,7 +9156,40 @@
           "value" : 1
         }
       },
-      "description" : "An impressive display of spear mastery causes surrounding enemies to falter."
-    } ] ]
-  } ]
+      "description" : "An impressive display of spear mastery causes surrounding enemies to falter.",
+      "skillIcon" : {
+        "circular" : false,
+        "posY" : 31,
+        "posX" : 528
+      }
+    } ] ],
+    "masteryAttributes" : {
+      "characterLife" : {
+        "value" : [ 35.0, 70.0, 105.0, 140.0, 175.0, 210.0, 245.0, 280.0, 315.0, 350.0, 385.0, 420.0, 455.0, 490.0, 525.0, 560.0, 595.0, 630.0, 665.0, 700.0, 735.0, 770.0, 805.0, 840.0, 875.0, 910.0, 945.0, 980.0, 1015.0, 1050.0, 1085.0, 1120.0, 1155.0, 1190.0, 1225.0, 1260.0, 1295.0, 1330.0, 1365.0, 1400.0 ]
+      },
+      "characterDexterity" : {
+        "value" : [ 2.5, 5.0, 7.5, 10.0, 12.5, 15.0, 17.5, 20.0, 22.5, 25.0, 27.5, 30.0, 32.5, 35.0, 37.5, 40.0, 42.5, 45.0, 47.5, 50.0, 52.5, 55.0, 57.5, 60.0, 62.5, 65.0, 67.5, 70.0, 72.5, 75.0, 77.5, 80.0, 82.5, 85.0, 87.5, 90.0, 92.5, 95.0, 97.5, 100.0 ]
+      },
+      "characterStrength" : {
+        "value" : [ 1.75, 3.5, 5.25, 7.0, 8.75, 10.5, 12.25, 14.0, 15.75, 17.5, 19.25, 21.0, 22.75, 24.5, 26.25, 28.0, 29.75, 31.5, 33.25, 35.0, 36.75, 38.5, 40.25, 42.0, 43.75, 45.5, 47.25, 49.0, 50.75, 52.5, 54.25, 56.0, 57.75, 59.5, 61.25, 63.0, 64.75, 66.5, 68.25, 70.0 ]
+      },
+      "skillMaxLevel" : {
+        "value" : 40
+      }
+    }
+  } ],
+  "masteryLevels" : [ 1, 4, 10, 16, 24, 32, 40 ],
+  "mappedMasteries" : {
+    "1" : "Nature",
+    "2" : "Spirit",
+    "3" : "Storm",
+    "4" : "Earth",
+    "5" : "Rogue",
+    "6" : "Defense",
+    "7" : "Dream",
+    "8" : "Warfare",
+    "9" : "Rune",
+    "10" : "Hunting"
+  },
+  "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/Vanilla/"
 }
