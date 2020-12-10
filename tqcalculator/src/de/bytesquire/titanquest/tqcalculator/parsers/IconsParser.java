@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
+import java.nio.file.NoSuchFileException;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -119,7 +120,7 @@ public class IconsParser {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        
+
         try {
             DirectoryStream<Path> playerSkills = Files
                     .newDirectoryStream(Path.of(mModPath + "records/xpack3/ui/skills/"));
@@ -138,14 +139,15 @@ public class IconsParser {
                 }
             });
         } catch (IOException e) {
-            e.printStackTrace();
+            if (!(e instanceof NoSuchFileException))
+                e.printStackTrace();
         }
     }
 
     public SkillIcon getIcon(String skillName) {
         if (mIcons.containsKey(skillName)) {
             return mIcons.get(skillName);
-        } else if (mIcons.containsKey(skillName.toLowerCase())){
+        } else if (mIcons.containsKey(skillName.toLowerCase())) {
             return mIcons.get(skillName.toLowerCase());
         } else {
             return null;
