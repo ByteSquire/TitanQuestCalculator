@@ -4,7 +4,7 @@ var masteryIndex1 = 0;
 var mod;
 
 var xmlhttp = new XMLHttpRequest();
-var url = "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/SoulvizierAERA.json";
+var url = "SoulvizierAERA.json";
 
 xmlhttp.onreadystatechange = function () {
   if (this.readyState == 4 && this.status == 200) {

@@ -93,7 +93,9 @@ function addSkill(panel, mastery, skill) {
     "/" +
     skill.name +
     '.png"\n' +
-    "/>";
+    '/>\n' +
+    '<br>\n' +
+    '0/' + skill.attributes.skillMaxLevel.value;
   scaleButtonPositon(document.getElementById(skill.name), skill.skillIcon);
 }
 
