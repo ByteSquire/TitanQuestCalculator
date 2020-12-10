@@ -11,7 +11,7 @@ import de.bytesquire.titanquest.tqcalculator.parsers.ModStringsParser;
 import de.bytesquire.titanquest.tqcalculator.parsers.SkillParser;
 import de.bytesquire.titanquest.tqcalculator.parsers.SkillTreeParser;
 
-@JsonIgnoreProperties({ "mastery", "skillTree", "mSkills", "mSkillTreeParser" })
+@JsonIgnoreProperties({ "mastery", "skillTree", "mSkills", "mSkillTreeParser", "urlLegacy" })
 public class Mastery {
 
     private SkillTreeParser mSkillTreeParser;
