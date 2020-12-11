@@ -73,6 +73,7 @@ function addSkills(panel, mastery) {
   mastery.skillTiers.forEach((element) =>
     addSkillTier(panel, mastery, element)
   );
+  panel.getElementsByClassName("plusButton")[0].innerHTML += "\n0/" + mastery.masteryAttributes.skillMaxLevel.value;
 }
 
 function addSkillTier(panel, mastery, skillTier) {
@@ -83,7 +84,7 @@ function addSkill(panel, mastery, skill) {
   panel.innerHTML +=
     '\n<button class="skillButton" id="' +
     skill.name +
-    '">\n' +
+    '" onclick="skillClicked(this, true);" oncontextmenu="skillClicked(this, false);">\n' +
     "\t<img\n" +
     '\t\tclass="skillButtonImage"\n' +
     '\t\tsrc="' +
@@ -102,4 +103,34 @@ function addSkill(panel, mastery, skill) {
 function scaleButtonPositon(button, iconPosition) {
   button.style.top = iconPosition.posY/5.4 + "%";
   button.style.left = iconPosition.posX/9.5 + "%";
+}
+
+function plusClicked(button, left){
+   var splits = button.innerText.split("/");
+   var curr = Number(splits[0]);
+   var max = Number(splits[1]);
+   var updated = curr;
+   if(left){
+    if (curr < max)
+        updated = curr + 1;
+   } else {
+    if (curr > 0)
+        updated = curr - 1;
+   }
+   button.innerHTML = button.innerHTML.replace(curr, updated);
+}
+
+function skillClicked(button, left){
+   var splits = button.innerText.split("/");
+   var curr = Number(splits[0]);
+   var max = Number(splits[1]);
+   var updated = curr;
+   if(left){
+    if (curr < max)
+        updated = curr + 1;
+   } else {
+    if (curr > 0)
+        updated = curr - 1;
+   }
+   button.innerHTML = button.innerHTML.replace(curr, updated);
 }
