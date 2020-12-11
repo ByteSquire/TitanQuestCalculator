@@ -84,7 +84,8 @@ function addSkill(panel, mastery, skill) {
   panel.innerHTML +=
     '\n<button class="skillButton" id="' +
     skill.name +
-    '" onclick="skillClicked(this, true);" oncontextmenu="skillClicked(this, false);">\n' +
+    '" onclick="skillClicked(this, true);" oncontextmenu="skillClicked(this, false);"' + 
+    ' onmouseover="skillButtonPopup(this, event);" onmouseout="hidePopup();">\n' +
     "\t<img\n" +
     '\t\tclass="skillButtonImage"\n' +
     '\t\tsrc="' +
@@ -133,4 +134,42 @@ function skillClicked(button, left){
         updated = curr - 1;
    }
    button.innerHTML = button.innerHTML.replace(curr, updated);
+}
+
+function skillButtonPopup(button, event){
+    var pop = document.getElementById( 'pop' );
+
+    if( event ) {
+        var sx = event.pageX;
+        var sy = event.pageY;
+
+        pop.style.top = "" + sy + "px";
+        pop.style.left = "" + sx + "px";
+    }
+    pop.innerHTML = getSkillString(mod.masteries[m1 - 1].skillTiers[1][1], button);
+
+    pop.style.width = "10%";
+
+    pop.style.display = "block";
+}
+
+function getSkillString(skill, button){
+    var ret = "";
+    ret += '<span class="title">skill.name</span>\n';
+    ret += "<br>";
+    ret += '<span class="desc">skill.description</span>\n';
+    ret += "<br>";
+    ret += "<br>";
+    ret += '<span class="nextLevel">Next Level: ' + (Number(button.innerText.split("/")[0])+1) + '</span>';
+    ret += '<br>';
+    skill.attributes.forEach((value, key, map) => {
+        ret += key + ': ' + value + '\n';
+        ret += "<br>";
+    });
+    ret += '<br>';
+    return ret;
+}
+
+function hidePopup(){
+    document.getElementById("pop").style.display = "none";
 }
