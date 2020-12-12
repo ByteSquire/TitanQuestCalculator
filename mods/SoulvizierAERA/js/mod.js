@@ -48,7 +48,11 @@ function changeImage(button) {
 
 function submit(button) {
   if (active > 0) {
-    window.location.href += getMasteriesPage();
+    if(window.location.href.endsWith("index.html")){
+        window.location.href = window.location.href.replace("index.html", getMasteriesPage());
+    } else {
+        window.location.href += getMasteriesPage();
+    }
   }
 }
 

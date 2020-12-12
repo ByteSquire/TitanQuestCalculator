@@ -59,14 +59,11 @@ function setMasteries() {
 }
 
 function setMasteryTiers() {
-  for (var i = 1; i <= mod.masteryLevels.length; i++) {
-    var x = document.getElementsByClassName("masteryTier");
-    var b;
-    for (b = 0; b < x.length; b++) {
-        if(x[b].innerHTML == i)
-            x[b].innerHTML = mod.masteryLevels[i - 1];
-    } 
-  }
+  var x = document.getElementsByClassName("masteryTier");
+  for (var b = 0; b < mod.masteryLevels.length; b++) {
+    x[b].innerHTML = mod.masteryLevels[b];
+    x[b+mod.masteryLevels.length].innerHTML = mod.masteryLevels[b];
+  } 
 }
 
 function addSkills(panel, mastery) {
@@ -89,11 +86,10 @@ function addSkill(panel, mastery, skill) {
     "\t<img\n" +
     '\t\tclass="skillButtonImage"\n' +
     '\t\tsrc="' +
-    mod.url +
     "images/skills/" +
-    mastery.name +
+    mastery.name.toLowerCase() +
     "/" +
-    skill.name +
+    skill.name.replaceAll(" ", "_").replaceAll("'", "").toLowerCase() + 
     '.png"\n' +
     '/>\n' +
     '<br>\n' +
@@ -144,9 +140,19 @@ function skillButtonPopup(button, event){
         var sy = event.pageY;
 
         pop.style.top = "" + sy + "px";
-        pop.style.left = "" + sx + "px";
+        pop.style.left = "" + (sx+10) + "px";
     }
-    pop.innerHTML = getSkillString(mod.masteries[m1 - 1].skillTiers[1][1], button);
+    var masteryIndex = (button.parentElement.id == "panel1")? (m1-1) : (m2-1);
+    var tiers = mod.masteries[masteryIndex].skillTiers;
+    var skill;
+    tiers.forEach((tier) => {
+        tier.forEach((aSkill) => {
+            if(aSkill.name == button.id){
+                skill = aSkill;
+            }
+        });
+    });
+    pop.innerHTML = getSkillString(skill, button);
 
     pop.style.width = "10%";
 
@@ -155,16 +161,17 @@ function skillButtonPopup(button, event){
 
 function getSkillString(skill, button){
     var ret = "";
-    ret += '<span class="title">skill.name</span>\n';
-    ret += "<br>";
-    ret += '<span class="desc">skill.description</span>\n';
-    ret += "<br>";
-    ret += "<br>";
-    ret += '<span class="nextLevel">Next Level: ' + (Number(button.innerText.split("/")[0])+1) + '</span>';
-    ret += '<br>';
-    skill.attributes.forEach((value, key, map) => {
-        ret += key + ': ' + value + '\n';
-        ret += "<br>";
+    ret += '<span class="title">' + skill.name + '</span>\n';
+    ret += "<br>\n";
+    ret += '<span class="desc">' + skill.description.replaceAll("{^n}", "<br>\n") + '</span>\n';
+    ret += "<br>\n";
+    ret += "<br>\n";
+    ret += '<span class="nextLevel">Next Level: ' + (Number(button.innerText.split("/")[0])+1) + '</span>\n';
+    ret += '<br>\n';
+    var attr = Object.keys(skill.attributes);
+    attr.forEach((key) => {
+        ret += '<span class="skillAttribute">' + key + ': ' + skill.attributes[key].value + '</span>\n';
+        ret += "<br>\n";
     });
     ret += '<br>';
     return ret;

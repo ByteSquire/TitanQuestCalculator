@@ -179,7 +179,6 @@
 
 #pop
 {
-	width: 300px;
 	position: absolute;
 	border: 1px solid #CCCC00;
 	background-color: #000000;
@@ -187,5 +186,25 @@
 	filter: alpha(opacity=90); /* IE's opacity*/
 	opacity: 0.90;
 	z-index: 200;
-	font-size: 14px;
+	font-size: 10px;
+}
+
+.title {
+
+  color: white;
+}
+
+.desc {
+
+  color: white;
+}
+
+.nextLevel{
+
+  color: white;
+}
+
+.skillAttribute{
+  
+  color: white;
 }
