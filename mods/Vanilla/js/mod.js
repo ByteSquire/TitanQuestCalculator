@@ -1,27 +1,6 @@
 var active = 0;
 var masteryIndex0 = 0;
 var masteryIndex1 = 0;
-var mod;
-
-var xmlhttp = new XMLHttpRequest();
-var url = "Vanilla.json";
-
-xmlhttp.onreadystatechange = function () {
-  if (this.readyState == 4 && this.status == 200) {
-    mod = JSON.parse(this.responseText);
-    main();
-  }
-};
-xmlhttp.open("GET", url, true);
-xmlhttp.send();
-
-function main() {
-  document.getElementById("name").innerText = "Vanilla";
-  for (var i = 1; i < 11; i++) {
-    document.getElementById(i.toString()).innerHTML = document.getElementById(i.toString()).innerHTML.replaceAll(i.toString(), mod.mappedMasteries[i]);
-    document.getElementById(i.toString()).innerHTML = document.getElementById(i.toString()).innerHTML.replace("MasteryPage", "mods/Vanilla");
-  }
-}
 
 function changeImage(button) {
   switch (button.id) {
