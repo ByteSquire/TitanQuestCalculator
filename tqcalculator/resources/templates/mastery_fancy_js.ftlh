@@ -125,21 +125,6 @@ function plusClicked(button, left){
    button.innerHTML = button.innerHTML.replace(curr, updated);
 }
 
-function skillClicked(button, left){
-   var splits = button.innerText.split("/");
-   var curr = Number(splits[0]);
-   var max = Number(splits[1]);
-   var updated = curr;
-   if(left){
-    if (curr < max)
-        updated = curr + 1;
-   } else {
-    if (curr > 0)
-        updated = curr - 1;
-   }
-   button.innerHTML = button.innerHTML.replace(curr, updated);
-}
-
 function skillButtonPopup(button, event){
     var pop = document.getElementById( 'pop' );
 
@@ -160,29 +145,26 @@ function skillButtonPopup(button, event){
             }
         });
     });
-    pop.innerHTML = getSkillString(skill, button);
+    pop.innerHTML = getSkillString();
 
     pop.style.width = "10%";
 
     pop.style.display = "block";
 }
 
-function getSkillString(skill, button){
-    var ret = "";
-    ret += '<span class="title">' + skill.name + '</span>\n';
-    ret += "<br>\n";
-    ret += '<span class="desc">' + skill.description.replaceAll("{^n}", "<br>\n") + '</span>\n';
-    ret += "<br>\n";
-    ret += "<br>\n";
-    ret += '<span class="nextLevel">Next Level: ' + (Number(button.innerText.split("/")[0])+1) + '</span>\n';
-    ret += '<br>\n';
-    var attr = Object.keys(skill.attributes);
-    attr.forEach((key) => {
-        ret += '<span class="skillAttribute">' + key + ': ' + skill.attributes[key].value + '</span>\n';
-        ret += "<br>\n";
-    });
-    ret += '<br>';
-    return ret;
+function skillClicked(button, left){
+   var splits = button.innerText.split("/");
+   var curr = Number(splits[0]);
+   var max = Number(splits[1]);
+   var updated = curr;
+   if(left){
+    if (curr < max)
+        updated = curr + 1;
+   } else {
+    if (curr > 0)
+        updated = curr - 1;
+   }
+   button.innerHTML = button.innerHTML.replace(curr, updated);
 }
 
 function hidePopup(){
