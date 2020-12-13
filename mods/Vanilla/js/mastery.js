@@ -13,6 +13,9 @@ var m2 = new URLSearchParams(location.search).get("m2")
     : null
   : null;
 var mod;
+var pointsSpent = 0;
+var m1LevelReq;
+var m2LevelReq;
 
 var xmlhttp = new XMLHttpRequest();
 var url =
@@ -70,7 +73,7 @@ function addSkills(panel, mastery) {
   mastery.skillTiers.forEach((element) =>
     addSkillTier(panel, mastery, element)
   );
-  panel.getElementsByClassName("plusButton")[0].innerHTML += "\n0/" + mastery.masteryAttributes.skillMaxLevel.value;
+  panel.getElementsByClassName("plusButton")[0].innerHTML += "\n0/" + mastery.masteryAttributes.skillMaxLevel;
 }
 
 function addSkillTier(panel, mastery, skillTier) {
@@ -93,7 +96,7 @@ function addSkill(panel, mastery, skill) {
     '.png"\n' +
     '/>\n' +
     '<br>\n' +
-    '0/' + skill.attributes.skillMaxLevel.value;
+    '0/' + skill.attributes.skillMaxLevel;
   scaleButtonPositon(document.getElementById(skill.name), skill.skillIcon);
 }
 
@@ -103,18 +106,23 @@ function scaleButtonPositon(button, iconPosition) {
 }
 
 function plusClicked(button, left){
-   var splits = button.innerText.split("/");
-   var curr = Number(splits[0]);
-   var max = Number(splits[1]);
-   var updated = curr;
-   if(left){
-    if (curr < max)
-        updated = curr + 1;
-   } else {
-    if (curr > 0)
-        updated = curr - 1;
-   }
-   button.innerHTML = button.innerHTML.replace(curr, updated);
+    var splits = button.innerText.split("/");
+    var curr = Number(splits[0]);
+    var max = Number(splits[1]);
+    var updated = curr;
+    if(left){
+        if (curr < max){
+            updated = curr + 1;
+            pointsSpent++;
+        }
+    } else {
+        if (curr > 0){
+            updated = curr - 1;
+            pointsSpent--;
+        }
+    }
+    button.innerHTML = button.innerHTML.replace(curr, updated);
+    calcLevelReq();
 }
 
 function skillButtonPopup(button, event){
@@ -137,7 +145,7 @@ function skillButtonPopup(button, event){
             }
         });
     });
-    pop.innerHTML = getSkillString();
+    pop.innerHTML = getSkillString(skill, button.innerText.split("/")[0].replaceAll("\n", ""));
 
     pop.style.width = "10%";
 
@@ -145,20 +153,48 @@ function skillButtonPopup(button, event){
 }
 
 function skillClicked(button, left){
-   var splits = button.innerText.split("/");
-   var curr = Number(splits[0]);
-   var max = Number(splits[1]);
-   var updated = curr;
-   if(left){
-    if (curr < max)
-        updated = curr + 1;
-   } else {
-    if (curr > 0)
-        updated = curr - 1;
-   }
-   button.innerHTML = button.innerHTML.replace(curr, updated);
+    var splits = button.innerText.split("/");
+    var curr = Number(splits[0]);
+    var max = Number(splits[1]);
+    var updated = curr;
+    if(left){
+        if(canSkill(button)){
+            if (curr < max){
+                updated = curr + 1;
+                pointsSpent++;
+            }
+        }
+    } else {
+        if (curr > 0){
+            updated = curr - 1;
+            pointsSpent--;
+        }
+    }
+    button.innerHTML = button.innerHTML.replace(curr, updated);
+    calcLevelReq();
+   
 }
 
 function hidePopup(){
     document.getElementById("pop").style.display = "none";
+}
+
+function calcLevelReq(){
+    document.getElementById("lvl").innerText = 1 + Math.ceil(pointsSpent/3);
+}
+
+function canSkill(button){
+    var masteryLevel = button.parentElement.getElementsByClassName("plusButton")[0].innerText.split("/")[0].replaceAll("\n", "");
+    masteryLevel = Number(masteryLevel);
+    var masteryIndex = (Number(button.parentElement.id.split("panel")[1]) == 1)? m1 : m2;
+    var tiers = mod.masteries[Number(masteryIndex-1)].skillTiers;
+    var tier;
+    tiers.forEach((aTier) => {
+        aTier.forEach((aSkill) => {
+            if(aSkill.name == button.id){
+                tier = tiers.indexOf(aTier);
+            }
+        });
+    });
+    return (masteryLevel >= mod.masteryLevels[Number(tier)]);
 }
