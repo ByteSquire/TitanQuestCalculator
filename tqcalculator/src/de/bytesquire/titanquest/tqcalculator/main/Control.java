@@ -33,7 +33,7 @@ public class Control {
 
     private static Configuration mCfg = new Configuration(Configuration.VERSION_2_3_30);
 
-    private static Template home, mod, mastery, skill, mod_fancy, mod_fancy_js, mastery_fancy, mastery_fancy_js;
+    private static Template home, mod, mastery, skill, mod_fancy, mod_fancy_js, mastery_fancy, mastery_fancy_js, skill_fancy_js;
 
     private static Map<String, Object> rootHome, rootMod, rootMastery, rootSkill;
 
@@ -167,6 +167,7 @@ public class Control {
                             rootSkill.put("attributes", skill.getAttributes());
                             rootSkill.put("name", skill.getName());
                             rootSkill.put("description", skill.getDescription());
+                            rootSkill.put("ArrayList", ArrayList.class);
                             Control.skill.process(rootSkill, outSkill);
                         }
                 }
@@ -198,6 +199,10 @@ public class Control {
                 rootMastery = new HashMap<>();
                 rootMastery.put("name", mod.getName());
                 Control.mastery_fancy_js.process(rootMastery, outMasteryJs);
+                
+                Writer outSkillJs = new FileWriter(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/skill.js");
+                rootMastery = new HashMap<>();
+                Control.skill_fancy_js.process(rootMastery, outSkillJs);
             } catch (IOException | TemplateException e) {
                 e.printStackTrace();
                 mSuccess = false;
@@ -215,6 +220,7 @@ public class Control {
             mastery_fancy = mCfg.getTemplate("mastery_fancy.ftlh");
             mastery_fancy_js = mCfg.getTemplate("mastery_fancy_js.ftlh");
             skill = mCfg.getTemplate("skill.ftlh");
+            skill_fancy_js = mCfg.getTemplate("skill_fancy_js.ftlh");
         } catch (IOException e) {
             e.printStackTrace();
             mSuccess = false;
