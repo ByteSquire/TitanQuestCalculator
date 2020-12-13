@@ -13,6 +13,7 @@
     <table class="masteryTable">
       <tr>
         <td class="panels">
+          <div class="popup" id="pop"></div>
           <div class="disabled" id="panel1">
             <img
               class="masteryPanel"
