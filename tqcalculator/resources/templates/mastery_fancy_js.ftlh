@@ -73,7 +73,7 @@ function addSkills(panel, mastery) {
   mastery.skillTiers.forEach((element) =>
     addSkillTier(panel, mastery, element)
   );
-  panel.getElementsByClassName("plusButton")[0].innerHTML += "\n0/" + mastery.masteryAttributes.skillMaxLevel;
+  panel.getElementsByClassName("plusButton")[0].innerHTML += '<span class="buttonText">\n0/' + mastery.masteryAttributes.skillMaxLevel + '</span>';
 }
 
 function addSkillTier(panel, mastery, skillTier) {
@@ -103,8 +103,7 @@ function addSkill(panel, mastery, skill) {
     </#if>
     '.png"\n' +
     '/>\n' +
-    '<br>\n' +
-    '0/' + skill.attributes.skillMaxLevel;
+    '<span class="buttonText">0/' + skill.attributes.skillMaxLevel + '</span>';
   scaleButtonPositon(document.getElementById(skill.name), skill.skillIcon);
 }
 
