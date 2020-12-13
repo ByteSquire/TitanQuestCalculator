@@ -20,7 +20,7 @@
         </table>
     <#else>
     <#list attributes as attributeName, attributeValue>
-        <tr><td>${attributeName}<td>${attributeValue}
+        <tr><td>${attributeName}<td><#if ArrayList.isInstance(attributeValue)><#list attributeValue as value>${value} </#list><#else>${attributeValue}</#if>
     </#list>
     </#if>
     </table>
