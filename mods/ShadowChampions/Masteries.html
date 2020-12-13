@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/styles.css" />
 
     <script type="text/javascript" src="js/mastery.js"></script>
+    <script type="text/javascript" src="js/skill.js"></script>
   </head>
 
   <body oncontextmenu="return false">
