@@ -17,7 +17,7 @@ public class Skill {
     private SkillParser mSkillParser;
     private String mSkillName;
     private String mSkillDescription;
-    private HashMap<String, SkillAttribute<?>> mSkillAttributes;
+    private HashMap<String, Object> mSkillAttributes;
     private String mParentPath;
     private boolean isModifier;
     private String mParent;
@@ -47,7 +47,7 @@ public class Skill {
 
         for (String skillAttribute : mSkillParser.getAttributes().keySet()) {
             if (skillAttribute.equals("skillTier"))
-                mSkillTier = (int) mSkillParser.getAttributes().get(skillAttribute).getValue();
+                mSkillTier = (int) mSkillParser.getAttributes().get(skillAttribute);
             else
                 mSkillAttributes.put(skillAttribute, mSkillParser.getAttributes().get(skillAttribute));
         }
@@ -72,7 +72,7 @@ public class Skill {
         return mSkillParser.getSkillDescriptionTag();
     }
 
-    public Map<String, SkillAttribute<?>> getAttributes() {
+    public Map<String, Object> getAttributes() {
         return mSkillAttributes;
     }
 

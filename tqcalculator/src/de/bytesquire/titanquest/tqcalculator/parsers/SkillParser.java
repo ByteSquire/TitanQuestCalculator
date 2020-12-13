@@ -11,12 +11,11 @@ import java.util.stream.Stream;
 
 import de.bytesquire.titanquest.tqcalculator.main.Control;
 import de.bytesquire.titanquest.tqcalculator.main.Skill;
-import de.bytesquire.titanquest.tqcalculator.main.SkillAttribute;
 import de.bytesquire.titanquest.tqcalculator.main.SkillIcon;
 
 public class SkillParser {
 
-    private HashMap<String, SkillAttribute<?>> mAttributes;
+    private HashMap<String, Object> mAttributes;
     private ArrayList<File> mAdditionalFiles;
     private File mSkill;
     private String mParentPath;
@@ -59,7 +58,7 @@ public class SkillParser {
                     Integer value = Integer.parseInt(str.split(",")[1]);
                     if (value == 0)
                         return;
-                    mAttributes.put(str.split(",")[0], new SkillAttribute<Integer>(value));
+                    mAttributes.put(str.split(",")[0], value);
                     return;
                 } catch (Exception e) {
                 }
@@ -67,7 +66,7 @@ public class SkillParser {
                     Double value = Double.parseDouble(str.split(",")[1]);
                     if (value == 0.0)
                         return;
-                    mAttributes.put(str.split(",")[0], new SkillAttribute<Double>(value));
+                    mAttributes.put(str.split(",")[0], value);
                     return;
                 } catch (Exception e) {
                 }
@@ -78,7 +77,7 @@ public class SkillParser {
                     for (String e : str.split(",")[1].split(";")) {
                         value.add(Double.parseDouble(e));
                     }
-                    mAttributes.put(str.split(",")[0], new SkillAttribute<ArrayList<Double>>(value));
+                    mAttributes.put(str.split(",")[0], value);
                     return;
                 } catch (Exception e) {
                 }
@@ -90,7 +89,7 @@ public class SkillParser {
                     for (String skillAttribute : tmp.getAttributes().keySet()) {
                         mAttributes.put(skillAttribute, tmp.getAttributes().get(skillAttribute));
                     }
-                    mAttributes.put("skillTier", new SkillAttribute<>(tmp.getSkillTier()));
+                    mAttributes.put("skillTier", tmp.getSkillTier());
                     mSkillTag = tmp.getSkillTag();
                     mSkillDescriptionTag = tmp.getSkillDescriptionTag();
                     mSkillIcon = tmp.getSkillIcon();
@@ -107,7 +106,7 @@ public class SkillParser {
         }
     }
 
-    public HashMap<String, SkillAttribute<?>> getAttributes() {
+    public HashMap<String, Object> getAttributes() {
         return mAttributes;
     }
 

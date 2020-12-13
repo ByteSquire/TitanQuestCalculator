@@ -17,7 +17,7 @@ public class Mastery {
     private SkillTreeParser mSkillTreeParser;
     private ArrayList<Skill> mSkills;
     private ArrayList<ArrayList<Skill>> mSkillTiers;
-    private HashMap<String, SkillAttribute<?>> mMasteryAttributes;
+    private HashMap<String, Object> mMasteryAttributes;
     private String mName;
     private String mParentModName;
     private File mSkillTree;
@@ -81,7 +81,7 @@ public class Mastery {
         return mSkillTree;
     }
 
-    public HashMap<String, SkillAttribute<?>> getMasteryAttributes() {
+    public HashMap<String, Object> getMasteryAttributes() {
         return mMasteryAttributes;
     }
 
