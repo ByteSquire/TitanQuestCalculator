@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="../stylesheets/styles.css">
-    <link rel="stylesheet" href="../stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="../../stylesheets/styles.css">
+    <link rel="stylesheet" href="../../stylesheets/pygment_trac.css">
     <title>Titan Quest Calculator</title>
 </head>
 <body>
@@ -14,7 +14,5 @@
         <tr><td><a href="${mastery.urlLegacy}"><#if mastery.name??>${mastery.name}<#else>name</#if></a>
     </#list>
     </table>
-    
-    <script src="/TitanQuestCalculator/assets/js/scale.fix.js"></script>
 </body>
 </html>

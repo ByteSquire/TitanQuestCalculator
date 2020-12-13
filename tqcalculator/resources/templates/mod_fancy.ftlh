@@ -1,63 +1,38 @@
-var active = 0;
-var masteryIndex0 = 0;
-var masteryIndex1 = 0;
-var mod;
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Titan Quest Calculator</title>
 
-var xmlhttp = new XMLHttpRequest();
-var url = "${name}.json";
+    <link rel="stylesheet" type="text/css" href="../../css/styles.css" />
 
-xmlhttp.onreadystatechange = function () {
-  if (this.readyState == 4 && this.status == 200) {
-    mod = JSON.parse(this.responseText);
-    main();
-  }
-};
-xmlhttp.open("GET", url, true);
-xmlhttp.send();
+    <script type="text/javascript" src="js/mod.js"></script>
+  </head>
 
-function main() {
-  document.getElementById("name").innerText = "${name}";
-  for (var i = 1; i < 11; i++) {
-    document.getElementById(i.toString()).innerHTML = document.getElementById(i.toString()).innerHTML.replaceAll(i.toString(), mod.mappedMasteries[i]);
-    document.getElementById(i.toString()).innerHTML = document.getElementById(i.toString()).innerHTML.replace("MasteryPage", "mods/${name}");
-  }
-}
+  <body oncontextmenu="return false">
+    <h1 id="name" class="centered">${name}</h1>
+    <h2 class="centered">Choose one or two masteries</h2>
 
-function changeImage(button) {
-  switch (button.id) {
-    case masteryIndex0:
-      button.children[0].style.filter = "grayscale()";
-      active--;
-      masteryIndex0 = 0;
-      break;
-    case masteryIndex1:
-      button.children[0].style.filter = "grayscale()";
-      active--;
-      masteryIndex1 = 0;
-      break;
-    default:
-      if (active < 2) {
-        button.children[0].style.filter = "none";
-        if (masteryIndex0 == 0) masteryIndex0 = button.id;
-        else masteryIndex1 = button.id;
-        active++;
-      }
-      break;
-  }
-}
+    <div class="masteryOverview">
+    <#assign x = 1>
+    <#list masteries as mastery>
+      <button id="${x}" class="masteryButton" onclick="changeImage(this);">
+        <img
+          class="masteryImage"
+          src="images/masteries/${mastery.name}.png"
+        />
+        <br />
+        ${mastery.name}
+        <#assign x++>
+      </button>
+    </#list>
+    </div>
 
-function submit(button) {
-  if (active > 0) {
-    if(window.location.href.endsWith("index.html")){
-        window.location.href = window.location.href.replace("index.html", getMasteriesPage());
-    } else {
-        window.location.href += getMasteriesPage();
-    }
-  }
-}
-
-function getMasteriesPage() {
-  if (masteryIndex1 != 0)
-    return "Masteries.html?m1=" + masteryIndex0 + "&m2=" + masteryIndex1;
-  else return "Masteries.html?m1=" + masteryIndex0;
-}
+    <button class="submitButton" onclick="submit(this);">
+      <img
+        class="centered"
+        src="../../MasteryPage/images/button.jpg"
+      />
+    </button>
+  </body>
+</html>

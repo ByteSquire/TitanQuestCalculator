@@ -1,190 +1,111 @@
-var m1 = new URLSearchParams(location.search).get("m1")
-  ? new URLSearchParams(location.search).get("m1") <= 10
-    ? new URLSearchParams(location.search).get("m1") >= 1
-      ? new URLSearchParams(location.search).get("m1")
-      : null
-    : null
-  : null;
-var m2 = new URLSearchParams(location.search).get("m2")
-  ? new URLSearchParams(location.search).get("m2") <= 10
-    ? new URLSearchParams(location.search).get("m2") >= 1
-      ? new URLSearchParams(location.search).get("m2")
-      : null
-    : null
-  : null;
-var mod;
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Titan Quest Calculator - ${name}</title>
 
-var xmlhttp = new XMLHttpRequest();
-var url =
-  "https://bytesquire.github.io/TitanQuestCalculator/mods/${name}/${name}.json";
+    <link rel="stylesheet" type="text/css" href="../../css/styles.css" />
 
-xmlhttp.onreadystatechange = function () {
-  if (this.readyState == 4 && this.status == 200) {
-    mod = JSON.parse(this.responseText);
-    main();
-  }
-};
-xmlhttp.open("GET", url, true);
-xmlhttp.send();
+    <script type="text/javascript" src="js/mastery.js"></script>
+  </head>
 
-function main() {
-  setMasteries();
-  setMasteryTiers();
-  if (m1) addSkills(document.getElementById("panel1"), mod.masteries[m1 - 1]);
-  if (m2) addSkills(document.getElementById("panel2"), mod.masteries[m2 - 1]);
-}
-
-function setMasteries() {
-  if (m1) {
-    document.getElementById("panel1").style.display = "unset";
-    var mastery1 = mod.mappedMasteries[m1];
-    document.getElementById("mastery1").src = document
-      .getElementById("mastery1")
-      .src.replace("1", mastery1);
-    document.getElementById("mastery1").src = document
-      .getElementById("mastery1")
-      .src.replace("MasteryPage", "mods/${name}");
-  }
-
-  if (m2) {
-    document.getElementById("panel2").style.display = "unset";
-    var mastery2 = mod.mappedMasteries[m2];
-    document.getElementById("mastery2").src = document
-      .getElementById("mastery2")
-      .src.replace("2", mastery2);
-    document.getElementById("mastery2").src = document
-      .getElementById("mastery2")
-      .src.replace("MasteryPage", "mods/${name}");
-  }
-}
-
-function setMasteryTiers() {
-  var x = document.getElementsByClassName("masteryTier");
-  for (var b = 0; b < mod.masteryLevels.length; b++) {
-    x[b].innerHTML = mod.masteryLevels[b];
-    x[b+mod.masteryLevels.length].innerHTML = mod.masteryLevels[b];
-  } 
-}
-
-function addSkills(panel, mastery) {
-  mastery.skillTiers.forEach((element) =>
-    addSkillTier(panel, mastery, element)
-  );
-  panel.getElementsByClassName("plusButton")[0].innerHTML += "\n0/" + mastery.masteryAttributes.skillMaxLevel.value;
-}
-
-function addSkillTier(panel, mastery, skillTier) {
-  skillTier.forEach((element) => addSkill(panel, mastery, element));
-}
-
-function addSkill(panel, mastery, skill) {
-  panel.innerHTML +=
-    '\n<button class="skillButton" id="' +
-    skill.name +
-    '" onclick="skillClicked(this, true);" oncontextmenu="skillClicked(this, false);"' + 
-    ' onmouseover="skillButtonPopup(this, event);" onmouseout="hidePopup();">\n' +
-    "\t<img\n" +
-    '\t\tclass="skillButtonImage"\n' +
-    '\t\tsrc="' +
-    "images/skills/" +
-    <#if name=="ShadowChampions">
-    mastery.name.toLowerCase() +
-    <#else>
-    mastery.name +
-    </#if>
-    "/" +
-    <#if name=="ShadowChampions">
-    skill.name.replaceAll(" ", "_").replaceAll("'", "").toLowerCase() + 
-    <#else>
-    skill.name +
-    </#if>
-    '.png"\n' +
-    '/>\n' +
-    '<br>\n' +
-    '0/' + skill.attributes.skillMaxLevel.value;
-  scaleButtonPositon(document.getElementById(skill.name), skill.skillIcon);
-}
-
-function scaleButtonPositon(button, iconPosition) {
-  button.style.top = iconPosition.posY/5.4 + "%";
-  button.style.left = iconPosition.posX/9.5 + "%";
-}
-
-function plusClicked(button, left){
-   var splits = button.innerText.split("/");
-   var curr = Number(splits[0]);
-   var max = Number(splits[1]);
-   var updated = curr;
-   if(left){
-    if (curr < max)
-        updated = curr + 1;
-   } else {
-    if (curr > 0)
-        updated = curr - 1;
-   }
-   button.innerHTML = button.innerHTML.replace(curr, updated);
-}
-
-function skillClicked(button, left){
-   var splits = button.innerText.split("/");
-   var curr = Number(splits[0]);
-   var max = Number(splits[1]);
-   var updated = curr;
-   if(left){
-    if (curr < max)
-        updated = curr + 1;
-   } else {
-    if (curr > 0)
-        updated = curr - 1;
-   }
-   button.innerHTML = button.innerHTML.replace(curr, updated);
-}
-
-function skillButtonPopup(button, event){
-    var pop = document.getElementById( 'pop' );
-
-    if( event ) {
-        var sx = event.pageX;
-        var sy = event.pageY;
-
-        pop.style.top = "" + sy + "px";
-        pop.style.left = "" + (sx+10) + "px";
-    }
-    var masteryIndex = (button.parentElement.id == "panel1")? (m1-1) : (m2-1);
-    var tiers = mod.masteries[masteryIndex].skillTiers;
-    var skill;
-    tiers.forEach((tier) => {
-        tier.forEach((aSkill) => {
-            if(aSkill.name == button.id){
-                skill = aSkill;
-            }
-        });
-    });
-    pop.innerHTML = getSkillString(skill, button);
-
-    pop.style.width = "10%";
-
-    pop.style.display = "block";
-}
-
-function getSkillString(skill, button){
-    var ret = "";
-    ret += '<span class="title">' + skill.name + '</span>\n';
-    ret += "<br>\n";
-    ret += '<span class="desc">' + skill.description.replaceAll("{^n}", "<br>\n") + '</span>\n';
-    ret += "<br>\n";
-    ret += "<br>\n";
-    ret += '<span class="nextLevel">Next Level: ' + (Number(button.innerText.split("/")[0])+1) + '</span>\n';
-    ret += '<br>\n';
-    var attr = Object.keys(skill.attributes);
-    attr.forEach((key) => {
-        ret += '<span class="skillAttribute">' + key + ': ' + skill.attributes[key].value + '</span>\n';
-        ret += "<br>\n";
-    });
-    ret += '<br>';
-    return ret;
-}
-
-function hidePopup(){
-    document.getElementById("pop").style.display = "none";
-}
+  <body oncontextmenu="return false">
+    <table class="masteryTable">
+      <tr>
+        <td class="panels">
+          <div class="disabled" id="panel1">
+            <img
+              class="masteryPanel"
+              src="../../MasteryPage/images/masteries/panel/skillpanel.png"
+            />
+            <button class="plusButton" id="plusButton1" onclick="plusClicked(this, true);" oncontextmenu="plusClicked(this, false);">
+              <img
+                class="plusButtonImage"
+                src="../../MasteryPage/images/masteries/panel/plusbutton.png"
+              />
+            </button>
+            <img
+              class="masteryImagePanel"
+              id="mastery1"
+              src="../../MasteryPage/images/masteries/1.png"
+            />
+            <p class="masteryTier" id="masteryTier1">1</p>
+            <p class="masteryTier" id="masteryTier2">2</p>
+            <p class="masteryTier" id="masteryTier3">3</p>
+            <p class="masteryTier" id="masteryTier4">4</p>
+            <p class="masteryTier" id="masteryTier5">5</p>
+            <p class="masteryTier" id="masteryTier6">6</p>
+            <p class="masteryTier" id="masteryTier7">7</p>
+          </div>
+          <div class="disabled" id="panel2">
+            <img
+              class="masteryPanel"
+              src="../../MasteryPage/images/masteries/panel/skillpanel.png"
+            />
+            <button class="plusButton" id="plusButton2" onclick="plusClicked(this, true);" oncontextmenu="plusClicked(this, false);">
+              <img
+                class="plusButtonImage"
+                src="../../MasteryPage/images/masteries/panel/plusbutton.png"
+              />
+            </button>
+            <img
+              class="masteryImagePanel"
+              id="mastery2"
+              src="../../MasteryPage/images/masteries/2.png"
+            />
+            <p class="masteryTier" id="masteryTier1">1</p>
+            <p class="masteryTier" id="masteryTier2">2</p>
+            <p class="masteryTier" id="masteryTier3">3</p>
+            <p class="masteryTier" id="masteryTier4">4</p>
+            <p class="masteryTier" id="masteryTier5">5</p>
+            <p class="masteryTier" id="masteryTier6">6</p>
+            <p class="masteryTier" id="masteryTier7">7</p>
+          </div>
+        </td>
+        <td class="infos">
+          <div id="stats">
+            <table>
+              <tr>
+                <td>Level:</td>
+                <td><div id="lvl">1</div></td>
+                <td></td>
+                <td>Strength:</td>
+                <td><div id="str">50</div></td>
+              </tr>
+              <tr>
+                <td>Health:</td>
+                <td><div id="hp">500</div></td>
+                <td></td>
+                <td>Intelligence:</td>
+                <td><div id="int">50</div></td>
+              </tr>
+              <tr>
+                <td>Energy:</td>
+                <td><div id="mp">500</div></td>
+                <td></td>
+                <td>Dexterity:</td>
+                <td><div id="dex">50</div></td>
+              </tr>
+            </table>
+          </div>
+          <div id="skills gained">
+            <table>
+              <tr>
+                <td>Skill1:</td>
+                <td><div id="lvl">1</div></td>
+              </tr>
+              <tr>
+                <td>Skill2:</td>
+                <td><div id="lvl">1</div></td>
+              </tr>
+              <tr>
+                <td>Skill3:</td>
+                <td><div id="lvl">1</div></td>
+              </tr>
+            </table>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
