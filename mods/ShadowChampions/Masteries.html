@@ -31,13 +31,13 @@
               id="mastery1"
               src="../../MasteryPage/images/masteries/1.png"
             />
-            <p class="masteryTier" id="masteryTier1">1</p>
-            <p class="masteryTier" id="masteryTier2">2</p>
-            <p class="masteryTier" id="masteryTier3">3</p>
-            <p class="masteryTier" id="masteryTier4">4</p>
-            <p class="masteryTier" id="masteryTier5">5</p>
-            <p class="masteryTier" id="masteryTier6">6</p>
-            <p class="masteryTier" id="masteryTier7">7</p>
+            <span class="masteryTier" id="masteryTier1">1</span>
+            <span class="masteryTier" id="masteryTier2">2</span>
+            <span class="masteryTier" id="masteryTier3">3</span>
+            <span class="masteryTier" id="masteryTier4">4</span>
+            <span class="masteryTier" id="masteryTier5">5</span>
+            <span class="masteryTier" id="masteryTier6">6</span>
+            <span class="masteryTier" id="masteryTier7">7</span>
           </div>
           <div class="disabled" id="panel2">
             <img
@@ -55,13 +55,13 @@
               id="mastery2"
               src="../../MasteryPage/images/masteries/2.png"
             />
-            <p class="masteryTier" id="masteryTier1">1</p>
-            <p class="masteryTier" id="masteryTier2">2</p>
-            <p class="masteryTier" id="masteryTier3">3</p>
-            <p class="masteryTier" id="masteryTier4">4</p>
-            <p class="masteryTier" id="masteryTier5">5</p>
-            <p class="masteryTier" id="masteryTier6">6</p>
-            <p class="masteryTier" id="masteryTier7">7</p>
+            <span class="masteryTier" id="masteryTier1">1</span>
+            <span class="masteryTier" id="masteryTier2">2</span>
+            <span class="masteryTier" id="masteryTier3">3</span>
+            <span class="masteryTier" id="masteryTier4">4</span>
+            <span class="masteryTier" id="masteryTier5">5</span>
+            <span class="masteryTier" id="masteryTier6">6</span>
+            <span class="masteryTier" id="masteryTier7">7</span>
           </div>
         </td>
         <td class="infos">
