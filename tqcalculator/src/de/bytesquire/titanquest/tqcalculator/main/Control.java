@@ -33,7 +33,7 @@ public class Control {
 
     private static Configuration mCfg = new Configuration(Configuration.VERSION_2_3_30);
 
-    private static Template home, mod, mastery, skill, mod_fancy, mastery_fancy;
+    private static Template home, mod, mastery, skill, mod_fancy, mod_fancy_js, mastery_fancy, mastery_fancy_js;
 
     private static Map<String, Object> rootHome, rootMod, rootMastery, rootSkill;
 
@@ -164,7 +164,7 @@ public class Control {
 //                                rootSkill.put("buffName", skill.getBuff().getName());
 //                                rootSkill.put("buffAttributes", skill.getBuff().getAttributes());
 //                            } else
-                                rootSkill.put("attributes", skill.getAttributes());
+                            rootSkill.put("attributes", skill.getAttributes());
                             rootSkill.put("name", skill.getName());
                             rootSkill.put("description", skill.getDescription());
                             Control.skill.process(rootSkill, outSkill);
@@ -181,17 +181,23 @@ public class Control {
     private static void writeTemplates() {
         for (Mod mod : mMods) {
             try {
-                Writer outMod = new FileWriter(
-                        REPOSITORY_DIR + "mods/" + mod.getName() + "/js/mod.js");
+                Writer outMod = new FileWriter(REPOSITORY_DIR + "mods/" + mod.getName() + "/index.html");
                 rootMod = new HashMap<>();
                 rootMod.put("name", mod.getName());
+                rootMod.put("masteries", mod.getMasteries());
                 Control.mod_fancy.process(rootMod, outMod);
-                
-                Writer outMastery = new FileWriter(
-                        REPOSITORY_DIR + "mods/" + mod.getName() + "/js/mastery.js");
+                Writer outModJs = new FileWriter(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/mod.js");
+                rootMod = new HashMap<>();
+                Control.mod_fancy_js.process(rootMod, outModJs);
+
+                Writer outMastery = new FileWriter(REPOSITORY_DIR + "mods/" + mod.getName() + "/Masteries.html");
                 rootMastery = new HashMap<>();
                 rootMastery.put("name", mod.getName());
                 Control.mastery_fancy.process(rootMastery, outMastery);
+                Writer outMasteryJs = new FileWriter(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/mastery.js");
+                rootMastery = new HashMap<>();
+                rootMastery.put("name", mod.getName());
+                Control.mastery_fancy_js.process(rootMastery, outMasteryJs);
             } catch (IOException | TemplateException e) {
                 e.printStackTrace();
                 mSuccess = false;
@@ -204,8 +210,10 @@ public class Control {
             home = mCfg.getTemplate("home.ftlh");
             mod = mCfg.getTemplate("mod.ftlh");
             mod_fancy = mCfg.getTemplate("mod_fancy.ftlh");
+            mod_fancy_js = mCfg.getTemplate("mod_fancy_js.ftlh");
             mastery = mCfg.getTemplate("mastery.ftlh");
             mastery_fancy = mCfg.getTemplate("mastery_fancy.ftlh");
+            mastery_fancy_js = mCfg.getTemplate("mastery_fancy_js.ftlh");
             skill = mCfg.getTemplate("skill.ftlh");
         } catch (IOException e) {
             e.printStackTrace();
