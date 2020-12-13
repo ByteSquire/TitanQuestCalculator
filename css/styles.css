@@ -86,17 +86,16 @@
 
 .plusButton {
   bottom: 2.5%;
-  left: 2.4%;
+  left: 2.7%;
   position: absolute;
-  width: 9%;
-  height: 13%;
+  width: 8%;
+  height: 12%;
   min-width: 37px;
   min-height: 18px;
   background-color: transparent;
   border: none;
   cursor: pointer;
   color: white;
-  font-size: 60%;
 }
 
 .skillButton {
@@ -106,12 +105,16 @@
   cursor: pointer;
   width: 7%;
   height: 11%;
-  min-width: 33px;
-  min-height: 14px;
-  max-width: 66px;
-  max-height: 28px;
+  min-width: 30px;
+  min-height: 11px;
+  max-width: 99px;
+  max-height: 42px;
   color: white;
-  font-size: 60%;
+}
+
+.buttonText {
+  font-size: max(10px, 1vw);
+  text-align: center;
 }
 
 .skillButtonImage {
@@ -132,49 +135,49 @@
 
 .masteryTier {
   color: white;
-  font-size: calc(5px + 1vw);
+  font-size: max(14px, 1vw);
 }
 
 #masteryTier1 {
   position: absolute;
-  bottom: 21.4%;
-  left: 3.7%;
+  bottom: 25.1%;
+  left: 3.6%;
 }
 
 #masteryTier2 {
   position: absolute;
-  bottom: 32.9%;
-  left: 3.7%;
+  bottom: 36.4%;
+  left: 3.6%;
 }
 
 #masteryTier3 {
   position: absolute;
-  bottom: 44.2%;
-  left: 3.7%;
+  bottom: 47.8%;
+  left: 3.6%;
 }
 
 #masteryTier4 {
   position: absolute;
-  bottom: 55.9%;
-  left: 3.7%;
+  bottom: 59%;
+  left: 3.6%;
 }
 
 #masteryTier5 {
   position: absolute;
-  bottom: 67%;
-  left: 3.7%;
+  bottom: 70.8%;
+  left: 3.6%;
 }
 
 #masteryTier6 {
   position: absolute;
-  bottom: 78.4%;
-  left: 3.7%;
+  bottom: 82.1%;
+  left: 3.6%;
 }
 
 #masteryTier7 {
   position: absolute;
-  bottom: 90%;
-  left: 3.7%;
+  bottom: 93.6%;
+  left: 3.6%;
 }
 
 #pop
