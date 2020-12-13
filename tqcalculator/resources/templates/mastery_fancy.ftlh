@@ -38,6 +38,7 @@
             <span class="masteryTier" id="masteryTier5">5</span>
             <span class="masteryTier" id="masteryTier6">6</span>
             <span class="masteryTier" id="masteryTier7">7</span>
+            <div id="m0bar" class="bar"></div>
           </div>
           <div class="disabled" id="panel2">
             <img
@@ -62,6 +63,7 @@
             <span class="masteryTier" id="masteryTier5">5</span>
             <span class="masteryTier" id="masteryTier6">6</span>
             <span class="masteryTier" id="masteryTier7">7</span>
+            <div id="m0bar" class="bar"></div>
           </div>
         </td>
         <td class="infos">
