@@ -1,18 +1,4 @@
 {
-  "mappedMasteries" : {
-    "1" : "Nature",
-    "2" : "Spirit",
-    "3" : "Storm",
-    "4" : "Earth",
-    "5" : "Occult",
-    "6" : "Defense",
-    "7" : "Dream",
-    "8" : "Warfare",
-    "9" : "Runes",
-    "10" : "Hunting"
-  },
-  "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/",
-  "masteryLevels" : [ 1, 4, 10, 16, 24, 32, 40 ],
   "name" : "SoulvizierAERA",
   "masteries" : [ {
     "masteryAttributes" : {
@@ -27,11 +13,6 @@
     },
     "name" : "Nature",
     "skillTiers" : [ [ {
-      "skillIcon" : {
-        "posY" : 403,
-        "circular" : false,
-        "posX" : 198
-      },
       "name" : "Regrowth",
       "parent" : null,
       "attributes" : {
@@ -44,13 +25,13 @@
         "skillMasteryLevelRequired" : 1,
         "skillMaxLevel" : 16
       },
-      "description" : "A wave of healing energy rapidly restores lost life to the target ally."
-    }, {
+      "description" : "A wave of healing energy rapidly restores lost life to the target ally.",
       "skillIcon" : {
+        "posX" : 198,
         "posY" : 403,
-        "circular" : false,
-        "posX" : 462
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Call of the Wild",
       "parent" : null,
       "attributes" : {
@@ -63,13 +44,13 @@
         "skillMasteryLevelRequired" : 1,
         "skillMaxLevel" : 16
       },
-      "description" : "Summons a wolf companion to fight with you in battle.  At higher levels more wolves can be controlled at once."
-    }, {
+      "description" : "Summons a wolf companion to fight with you in battle.  At higher levels more wolves can be controlled at once.",
       "skillIcon" : {
+        "posX" : 462,
         "posY" : 403,
-        "circular" : false,
-        "posX" : 286
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Elemental Flurry",
       "parent" : null,
       "attributes" : {
@@ -91,13 +72,13 @@
         "characterPhysToElementalRatio" : [ 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0, 35.0, 37.0, 39.0, 41.0, 43.0, 45.0, 47.0 ],
         "offensivePierceRatioModifier" : -100.0
       },
-      "description" : "Allows the Wanderer to shoot elemental traits through its enemies. ^y(Bow Required) "
-    } ], [ {
+      "description" : "Allows the Wanderer to shoot elemental traits through its enemies. ^y(Bow Required) ",
       "skillIcon" : {
-        "posY" : 341,
-        "circular" : true,
-        "posX" : 198
-      },
+        "posX" : 286,
+        "posY" : 403,
+        "circular" : false
+      }
+    } ], [ {
       "name" : "Accelerated Growth",
       "parent" : "Regrowth",
       "attributes" : {
@@ -107,13 +88,13 @@
         "skillMasteryLevelRequired" : 1,
         "skillMaxLevel" : 8
       },
-      "description" : "Allows Regrowth to be cast more frequently. ^y(Flat reduced cooldown starts at level 2)"
-    }, {
+      "description" : "Allows Regrowth to be cast more frequently. ^y(Flat reduced cooldown starts at level 2)",
       "skillIcon" : {
+        "posX" : 198,
         "posY" : 341,
-        "circular" : false,
-        "posX" : 110
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Heart of Oak",
       "parent" : null,
       "attributes" : {
@@ -128,13 +109,13 @@
         "skillMaxLevel" : 12,
         "characterTotalSpeedModifier" : 10.0
       },
-      "description" : "Bolsters the life-force of yourself and nearby allies."
-    }, {
+      "description" : "Bolsters the life-force of yourself and nearby allies.",
       "skillIcon" : {
+        "posX" : 110,
         "posY" : 341,
-        "circular" : false,
-        "posX" : 638
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Plague",
       "parent" : null,
       "attributes" : {
@@ -156,13 +137,13 @@
         "offensiveSlowPoisonMin" : [ 3.0, 6.0, 9.0, 12.0, 16.0, 20.0, 24.0, 28.0, 33.0, 38.0, 43.0, 49.0 ],
         "offensivePercentCurrentLifeMin" : [ 1.0, 1.75, 2.5, 3.25, 4.0, 4.75, 5.5, 6.25, 7.0, 7.75, 8.5, 9.25, 10.0, 10.75, 11.5, 12.0 ]
       },
-      "description" : "Plague afflicts enemies with a debilitating ailment that reduces their health and quickly spreads to other nearby creatures. Higher levels increase both the duration and speed of contagion."
-    }, {
+      "description" : "Plague afflicts enemies with a debilitating ailment that reduces their health and quickly spreads to other nearby creatures. Higher levels increase both the duration and speed of contagion.",
       "skillIcon" : {
+        "posX" : 638,
         "posY" : 341,
-        "circular" : true,
-        "posX" : 462
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Survival Instinct",
       "parent" : null,
       "attributes" : {
@@ -175,13 +156,13 @@
         "skillMaxLevel" : 16,
         "lifeMonitorPercent" : 33.0
       },
-      "description" : "An instinctual will to live is triggered whenever health is low."
-    } ], [ {
+      "description" : "An instinctual will to live is triggered whenever health is low.",
       "skillIcon" : {
-        "posY" : 279,
-        "circular" : false,
-        "posX" : 374
-      },
+        "posX" : 462,
+        "posY" : 341,
+        "circular" : true
+      }
+    } ], [ {
       "name" : "Quill Ward",
       "parent" : null,
       "attributes" : {
@@ -198,13 +179,13 @@
         "spawnObjectsRandomRotation" : 1,
         "skillMaxLevel" : 16
       },
-      "description" : "A protective grove of quillvines grow around you, attacking nearby enemies with barbed branches."
-    }, {
+      "description" : "A protective grove of quillvines grow around you, attacking nearby enemies with barbed branches.",
       "skillIcon" : {
+        "posX" : 374,
         "posY" : 279,
-        "circular" : true,
-        "posX" : 462
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Maul",
       "parent" : null,
       "attributes" : {
@@ -219,13 +200,13 @@
         "skillMaxLevel" : 12,
         "offensivePercentCurrentLifeMin" : [ 6.0, 6.0, 8.0, 8.0, 8.0, 10.0, 10.0, 10.0, 12.0, 12.0, 12.0, 13.0, 14.0, 15.0 ]
       },
-      "description" : "A gnawing attack that rends enemy flesh causing bleed damage for a short duration."
-    }, {
+      "description" : "A gnawing attack that rends enemy flesh causing bleed damage for a short duration.",
       "skillIcon" : {
+        "posX" : 462,
         "posY" : 279,
-        "circular" : true,
-        "posX" : 286
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Elemental Burst",
       "parent" : null,
       "attributes" : {
@@ -237,13 +218,13 @@
         "skillMaxLevel" : 12,
         "offensiveElementalMin" : [ 20.0, 29.0, 38.0, 47.0, 56.0, 65.0, 74.0, 83.0, 92.0, 101.0, 110.0, 119.0, 128.0, 137.0, 146.0, 155.0 ]
       },
-      "description" : "Empowers the flurry of arrows with magical energies that burst on impact."
-    } ], [ {
+      "description" : "Empowers the flurry of arrows with magical energies that burst on impact.",
       "skillIcon" : {
-        "posY" : 217,
-        "circular" : true,
-        "posX" : 198
-      },
+        "posX" : 286,
+        "posY" : 279,
+        "circular" : true
+      }
+    } ], [ {
       "name" : "Dissemination",
       "parent" : null,
       "attributes" : {
@@ -255,13 +236,13 @@
         "sparkMaxNumber" : 7,
         "skillMaxLevel" : 12
       },
-      "description" : "Causes regrowth energy to disseminate from the initial target and leap to additional nearby allies."
-    }, {
+      "description" : "Causes regrowth energy to disseminate from the initial target and leap to additional nearby allies.",
       "skillIcon" : {
+        "posX" : 198,
         "posY" : 217,
-        "circular" : true,
-        "posX" : 374
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Poisonous Quills",
       "parent" : null,
       "attributes" : {
@@ -284,13 +265,13 @@
         "offensiveSlowPoisonMin" : [ 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0 ],
         "offensiveSlowAttackSpeedDurationMin" : 3.0
       },
-      "description" : "The Quill Ward grows poisonous quills, using them to attack enemies at a distance."
-    }, {
+      "description" : "The Quill Ward grows poisonous quills, using them to attack enemies at a distance.",
       "skillIcon" : {
+        "posX" : 374,
         "posY" : 217,
-        "circular" : true,
-        "posX" : 638
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Fatigue",
       "parent" : "Plague",
       "attributes" : {
@@ -304,13 +285,13 @@
         "offensivePercentCurrentLifeMin" : [ 50.0, 52.0, 55.0, 57.0, 61.0, 64.0, 66.0, 69.0, 71.0, 75.0, 78.0, 80.0 ],
         "characterTotalSpeedModifier" : [ -15.0, -18.0, -20.0, -23.0, -25.0, -28.0, -30.0, -33.0, -35.0, -38.0, -40.0, -45.0 ]
       },
-      "description" : "Saps the strength from diseased enemies causing them to move more slowly and fight less effectively."
-    }, {
+      "description" : "Saps the strength from diseased enemies causing them to move more slowly and fight less effectively.",
       "skillIcon" : {
+        "posX" : 638,
         "posY" : 217,
-        "circular" : false,
-        "posX" : 550
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Sylvan Nymph",
       "parent" : null,
       "attributes" : {
@@ -325,13 +306,13 @@
         "skillMasteryLevelRequired" : 15,
         "skillMaxLevel" : 16
       },
-      "description" : "Summons a powerful forest Nymph who can bring down enemies with her magical bow and cast enchantments to strengthen allies in battle.^y^nAt level 5, the Nymph learns Nature’s Grace, a rejuvenating and protective aura she can cast on the player and his allies.^y^nAt level 10, the Nymph learns Nature’s Wrath, a special skill that imbues her attacks with the power of the elements."
-    } ], [ {
+      "description" : "Summons a powerful forest Nymph who can bring down enemies with her magical bow and cast enchantments to strengthen allies in battle.^y^nAt level 5, the Nymph learns Nature’s Grace, a rejuvenating and protective aura she can cast on the player and his allies.^y^nAt level 10, the Nymph learns Nature’s Wrath, a special skill that imbues her attacks with the power of the elements.",
       "skillIcon" : {
-        "posY" : 155,
-        "circular" : true,
-        "posX" : 110
-      },
+        "posX" : 550,
+        "posY" : 217,
+        "circular" : false
+      }
+    } ], [ {
       "name" : "Tranquility of Water",
       "parent" : "Heart of Oak",
       "attributes" : {
@@ -341,13 +322,13 @@
         "skillManaCostReduction" : [ 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0 ],
         "skillMaxLevel" : 6
       },
-      "description" : "Reduces the energy cost of skills while under the effect of Heart of Oak."
-    }, {
+      "description" : "Reduces the energy cost of skills while under the effect of Heart of Oak.",
       "skillIcon" : {
+        "posX" : 110,
         "posY" : 155,
-        "circular" : true,
-        "posX" : 462
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Strength of the Pack",
       "parent" : null,
       "attributes" : {
@@ -363,13 +344,13 @@
         "skillMaxLevel" : 12,
         "characterTotalSpeedModifier" : 15.0
       },
-      "description" : "The howl of your wolves emboldens the hearts of those who hear it causing them to fight more fiercely."
-    }, {
+      "description" : "The howl of your wolves emboldens the hearts of those who hear it causing them to fight more fiercely.",
       "skillIcon" : {
+        "posX" : 462,
         "posY" : 155,
-        "circular" : false,
-        "posX" : 198
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Nature's Blessing",
       "parent" : null,
       "attributes" : {
@@ -387,13 +368,13 @@
         "skillCooldownReduction" : [ 7.85, 8.5, 9.15, 9.8, 10.45, 11.1, 11.75, 12.4, 13.05, 13.7, 14.35, 15.0, 15.65, 16.3, 16.95, 17.6 ],
         "skillTargetRadius" : 12.0
       },
-      "description" : "Entering a trance-like state of mind, the Wanderer can commune with natural entities and gain their protection for a time."
-    } ], [ {
+      "description" : "Entering a trance-like state of mind, the Wanderer can commune with natural entities and gain their protection for a time.",
       "skillIcon" : {
-        "posY" : 93,
-        "circular" : true,
-        "posX" : 374
-      },
+        "posX" : 198,
+        "posY" : 155,
+        "circular" : false
+      }
+    } ], [ {
       "name" : "Sanctuary",
       "parent" : null,
       "attributes" : {
@@ -406,13 +387,13 @@
         "characterManaRegenModifier" : [ 50.0, 68.0, 86.0, 104.0, 122.0, 140.0, 158.0, 176.0, 194.0, 212.0, 230.0, 248.0 ],
         "skillMaxLevel" : 8
       },
-      "description" : "The power of the grove revitalizes those within and reduces the energy consumed by skill use."
-    }, {
+      "description" : "The power of the grove revitalizes those within and reduces the energy consumed by skill use.",
       "skillIcon" : {
+        "posX" : 374,
         "posY" : 93,
-        "circular" : true,
-        "posX" : 110
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Permanence of Stone",
       "parent" : "Tranquility of Water",
       "attributes" : {
@@ -423,13 +404,13 @@
         "skillMasteryLevelRequired" : 15,
         "skillMaxLevel" : 6
       },
-      "description" : "Protects allies from the elements, reducing the damage caused by elemental based attacks."
-    }, {
+      "description" : "Protects allies from the elements, reducing the damage caused by elemental based attacks.",
       "skillIcon" : {
+        "posX" : 110,
         "posY" : 93,
-        "circular" : true,
-        "posX" : 638
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Susceptibility",
       "parent" : "Fatigue",
       "attributes" : {
@@ -441,13 +422,13 @@
         "defensivePoison" : [ -12.0, -15.0, -19.0, -24.0, -27.0, -30.0, -34.0, -39.0, -42.0, -45.0, -49.0, -54.0 ],
         "skillMaxLevel" : 8
       },
-      "description" : "Weakens the constitution of adjacent enemies."
-    }, {
+      "description" : "Weakens the constitution of adjacent enemies.",
       "skillIcon" : {
+        "posX" : 638,
         "posY" : 93,
-        "circular" : true,
-        "posX" : 550
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Sylvan Protection",
       "parent" : null,
       "attributes" : {
@@ -470,13 +451,13 @@
         "waveTime" : 0.8,
         "offensivePercentCurrentLifeMin" : [ 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0 ]
       },
-      "description" : "The Nymph calls upon the vines of the undergrowth to keep enemies at bay."
-    } ], [ {
+      "description" : "The Nymph calls upon the vines of the undergrowth to keep enemies at bay.",
       "skillIcon" : {
-        "posY" : 31,
-        "circular" : true,
-        "posX" : 550
-      },
+        "posX" : 550,
+        "posY" : 93,
+        "circular" : true
+      }
+    } ], [ {
       "name" : "Overgrowth",
       "parent" : null,
       "attributes" : {
@@ -488,13 +469,13 @@
         "skillTargetRadius" : 15.0,
         "skillMaxLevel" : 8
       },
-      "description" : "The Nymph is able to cast a vitalizing aura for your other minions, increasing their health and energy regeneration and strengthening their attacks."
-    }, {
+      "description" : "The Nymph is able to cast a vitalizing aura for your other minions, increasing their health and energy regeneration and strengthening their attacks.",
       "skillIcon" : {
+        "posX" : 550,
         "posY" : 31,
-        "circular" : false,
-        "posX" : 286
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Earthbind",
       "parent" : null,
       "attributes" : {
@@ -515,13 +496,13 @@
         "skillTargetRadius" : 22.0,
         "offensiveSlowPoisonMin" : 36.0
       },
-      "description" : "Summons roots from the earth to slow and immobilize all foes around you."
-    }, {
+      "description" : "Summons roots from the earth to slow and immobilize all foes around you.",
       "skillIcon" : {
+        "posX" : 286,
         "posY" : 31,
-        "circular" : false,
-        "posX" : 462
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Force of Nature",
       "parent" : null,
       "attributes" : {
@@ -535,7 +516,12 @@
         "skillMasteryLevelRequired" : 1,
         "skillMaxLevel" : 16
       },
-      "description" : "Calls forth an enormous and powerful Ascacophus to fight at your side for a duration."
+      "description" : "Calls forth an enormous and powerful Ascacophus to fight at your side for a duration.",
+      "skillIcon" : {
+        "posX" : 462,
+        "posY" : 31,
+        "circular" : false
+      }
     } ] ]
   }, {
     "masteryAttributes" : {
@@ -552,11 +538,6 @@
     },
     "name" : "Spirit",
     "skillTiers" : [ [ {
-      "skillIcon" : {
-        "posY" : 403,
-        "circular" : false,
-        "posX" : 286
-      },
       "name" : "Deathchill Aura",
       "parent" : null,
       "attributes" : {
@@ -574,13 +555,13 @@
         "excludeRacialDamage" : 1,
         "skillTargetRadius" : [ 2.8, 2.9, 3.0, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 4.0 ]
       },
-      "description" : "A deathly chill radiates from the character, slowing the attack and movement of enemies."
-    }, {
+      "description" : "A deathly chill radiates from the character, slowing the attack and movement of enemies.",
       "skillIcon" : {
+        "posX" : 286,
         "posY" : 403,
-        "circular" : false,
-        "posX" : 638
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Bone Spire",
       "parent" : null,
       "attributes" : {
@@ -597,13 +578,13 @@
         "offensivePierceMin" : [ 9.75, 11.7, 13.65, 15.6, 17.55, 19.5, 21.45, 23.4, 25.35, 27.3, 29.25, 31.2, 33.15, 35.1, 37.05, 39.0 ],
         "skillMaxLevel" : 12
       },
-      "description" : "Through your very essence, you raze a path ahead of you, spiring death up from the ground to attack the living. ^y(Counts as Weapon Attack)"
-    }, {
+      "description" : "Through your very essence, you raze a path ahead of you, spiring death up from the ground to attack the living. ^y(Counts as Weapon Attack)",
       "skillIcon" : {
+        "posX" : 638,
         "posY" : 403,
-        "circular" : false,
-        "posX" : 462
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Skeletal Soldier",
       "parent" : null,
       "attributes" : {
@@ -615,13 +596,13 @@
         "skillConnectionSpacing" : 62,
         "skillMaxLevel" : 16
       },
-      "description" : "The most murderous dead are the most eager to return to the world of the living. Even an inexperienced Necromancer can lure these malevolent souls into service."
-    }, {
+      "description" : "The most murderous dead are the most eager to return to the world of the living. Even an inexperienced Necromancer can lure these malevolent souls into service.",
       "skillIcon" : {
+        "posX" : 462,
         "posY" : 403,
-        "circular" : false,
-        "posX" : 374
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Vision of Death",
       "parent" : null,
       "attributes" : {
@@ -642,13 +623,13 @@
         "skillMasteryLevelRequired" : 5,
         "skillTargetRadius" : 8.0
       },
-      "description" : "Assaults the minds of surrounding enemies with images of their own death causing the weak-hearted to flee in horror and more resolute foes to fight less effectively."
-    }, {
+      "description" : "Assaults the minds of surrounding enemies with images of their own death causing the weak-hearted to flee in horror and more resolute foes to fight less effectively.",
       "skillIcon" : {
+        "posX" : 374,
         "posY" : 403,
-        "circular" : false,
-        "posX" : 198
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Life Drain",
       "parent" : null,
       "attributes" : {
@@ -664,13 +645,13 @@
         "offensiveLifeLeechMin" : [ 150.0, 160.0, 170.0, 180.0, 190.0, 200.0, 210.0, 220.0, 230.0, 240.0, 250.0, 260.0, 270.0, 280.0, 290.0, 300.0 ],
         "skillMaxLevel" : 12
       },
-      "description" : "Leaches life from an enemy to replenish your own."
-    } ], [ {
+      "description" : "Leaches life from an enemy to replenish your own.",
       "skillIcon" : {
-        "posY" : 341,
-        "circular" : false,
-        "posX" : 286
-      },
+        "posX" : 198,
+        "posY" : 403,
+        "circular" : false
+      }
+    } ], [ {
       "name" : "Insidious Miasma",
       "parent" : null,
       "attributes" : {
@@ -689,13 +670,13 @@
         "skillTargetRadius" : [ 2.8, 2.9, 3.0, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 4.0 ],
         "characterManaRegenModifier" : [ -20.0, -26.0, -32.0, -38.0, -44.0, -50.0, -56.0, -62.0, -68.0, -74.0, -80.0, -86.0 ]
       },
-      "description" : "Noxious vapors emanate from the caster, devitalizing enemies and leaving them vulnerable to parasitic attacks."
-    }, {
+      "description" : "Noxious vapors emanate from the caster, devitalizing enemies and leaving them vulnerable to parasitic attacks.",
       "skillIcon" : {
+        "posX" : 286,
         "posY" : 341,
-        "circular" : false,
-        "posX" : 110
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Ternion Attack",
       "parent" : null,
       "attributes" : {
@@ -711,13 +692,13 @@
         "skillMasteryLevelRequired" : 1,
         "skillMaxLevel" : 12
       },
-      "description" : "This powerful wizard's trick causes your staff to shoot three projectiles by channeling magical energy into it.  Initially each hit is not as powerful as a normal attack but the effectiveness increases every level."
-    }, {
+      "description" : "This powerful wizard's trick causes your staff to shoot three projectiles by channeling magical energy into it.  Initially each hit is not as powerful as a normal attack but the effectiveness increases every level.",
       "skillIcon" : {
+        "posX" : 110,
         "posY" : 341,
-        "circular" : false,
-        "posX" : 374
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Spirit Lure",
       "parent" : null,
       "attributes" : {
@@ -733,13 +714,13 @@
         "skillMasteryLevelRequired" : 5,
         "skillMaxLevel" : 8
       },
-      "description" : "Create a nefarious totem near the caster that lures monsters toward it and drains their life."
-    }, {
+      "description" : "Create a nefarious totem near the caster that lures monsters toward it and drains their life.",
       "skillIcon" : {
+        "posX" : 374,
         "posY" : 341,
-        "circular" : false,
-        "posX" : 550
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Spirit Ward",
       "parent" : null,
       "attributes" : {
@@ -752,13 +733,13 @@
         "skillTargetRadius" : [ 6.0, 6.5, 7.0, 7.5, 8.0, 8.5, 9.0, 9.5, 10.0, 10.5, 11.0, 11.5 ],
         "skillMaxLevel" : 8
       },
-      "description" : "Casts a protective ward that will reduce the damage of undead attacks on the player and nearby allies. Adds damage against undead to the attacks of those under the effects of Spirit Ward."
-    } ], [ {
+      "description" : "Casts a protective ward that will reduce the damage of undead attacks on the player and nearby allies. Adds damage against undead to the attacks of those under the effects of Spirit Ward.",
       "skillIcon" : {
-        "posY" : 279,
-        "circular" : true,
-        "posX" : 286
-      },
+        "posX" : 550,
+        "posY" : 341,
+        "circular" : false
+      }
+    } ], [ {
       "name" : "Ravages of Time",
       "parent" : "Insidious Miasma",
       "attributes" : {
@@ -771,13 +752,13 @@
         "offensiveTotalDamageReductionPercentDurationMin" : 1.0,
         "skillMaxLevel" : 8
       },
-      "description" : "Accelerates the effects of time on adjacent enemies' equipment causing weapons to dull and armor to crumble."
-    }, {
+      "description" : "Accelerates the effects of time on adjacent enemies' equipment causing weapons to dull and armor to crumble.",
       "skillIcon" : {
+        "posX" : 286,
         "posY" : 279,
-        "circular" : true,
-        "posX" : 638
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Mortal Conduit",
       "parent" : "Dire Barrage",
       "attributes" : {
@@ -790,13 +771,13 @@
         "offensiveLifeLeechMin" : [ 48.0, 53.0, 58.0, 62.0, 67.0, 72.0, 77.0, 82.0, 86.0, 91.0, 96.0, 101.0, 106.0, 110.0, 115.0, 120.0 ],
         "skillMaxLevel" : 10
       },
-      "description" : "Allows your bone spires to consume energy and transfer back life from the damage they deal."
-    }, {
+      "description" : "Allows your bone spires to consume energy and transfer back life from the damage they deal.",
       "skillIcon" : {
+        "posX" : 638,
         "posY" : 279,
-        "circular" : true,
-        "posX" : 198
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Cascade",
       "parent" : null,
       "attributes" : {
@@ -809,13 +790,13 @@
         "skillMaxLevel" : 10,
         "skipSkillLinking" : 1
       },
-      "description" : "Causes Life Drain to blast through the primary target and hit multiple enemies."
-    } ], [ {
+      "description" : "Causes Life Drain to blast through the primary target and hit multiple enemies.",
       "skillIcon" : {
-        "posY" : 217,
-        "circular" : true,
-        "posX" : 286
-      },
+        "posX" : 198,
+        "posY" : 279,
+        "circular" : true
+      }
+    } ], [ {
       "name" : "Wither",
       "parent" : "Deathchill Aura",
       "attributes" : {
@@ -830,13 +811,13 @@
         "skillMaxLevel" : 8,
         "offensivePercentCurrentLifeMin" : [ 1.5, 1.75, 2.0, 2.25, 2.5, 2.75, 3.0, 3.25, 3.5, 3.75, 4.0, 4.25 ]
       },
-      "description" : "Softens the constitution of nearby enemies, draining their life and energy, causing them to bleed through their skin."
-    }, {
+      "description" : "Softens the constitution of nearby enemies, draining their life and energy, causing them to bleed through their skin.",
       "skillIcon" : {
+        "posX" : 286,
         "posY" : 217,
-        "circular" : false,
-        "posX" : 374
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Dark Covenant",
       "parent" : null,
       "attributes" : {
@@ -852,13 +833,13 @@
         "skillMaxLevel" : 6,
         "characterTotalSpeedModifier" : [ 8.0, 9.0, 10.0, 11.0, 12.0, 14.0, 15.0, 16.0, 17.0, 20.0 ]
       },
-      "description" : "Mysterious, otherworldly entities offer great power to Necromancers who can commune with them. The cost, however, is measured in life."
-    }, {
+      "description" : "Mysterious, otherworldly entities offer great power to Necromancers who can commune with them. The cost, however, is measured in life.",
       "skillIcon" : {
+        "posX" : 374,
         "posY" : 217,
-        "circular" : false,
-        "posX" : 550
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Bone Fiend",
       "parent" : null,
       "attributes" : {
@@ -870,13 +851,13 @@
         "skillConnectionSpacing" : 62,
         "skillMaxLevel" : 16
       },
-      "description" : "The bone fiend is a horror so ancient its name has been forgotten. It draws its power from the souls of the dead, which it insatiably channels directly from the river Styx. Only an experienced Necromancer will be able to summon this entity."
-    }, {
+      "description" : "The bone fiend is a horror so ancient its name has been forgotten. It draws its power from the souls of the dead, which it insatiably channels directly from the river Styx. Only an experienced Necromancer will be able to summon this entity.",
       "skillIcon" : {
+        "posX" : 550,
         "posY" : 217,
-        "circular" : true,
-        "posX" : 110
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Arcane Lore",
       "parent" : "Ternion Attack",
       "attributes" : {
@@ -891,13 +872,13 @@
         "explosionRadius" : [ 1.0, 1.2, 1.4, 1.58, 1.74, 1.88, 2.01, 2.13, 2.25, 2.38 ],
         "offensiveColdModifier" : [ 18.0, 26.0, 34.0, 42.0, 50.0, 58.0, 66.0, 74.0, 82.0, 90.0 ]
       },
-      "description" : "The magic practitioners of older civilizations devised many insidious techniques to bolster the destructive capabilities of their magical staves.  Knowledge of these methods will unlock the true power of your staff attacks."
-    } ], [ {
+      "description" : "The magic practitioners of older civilizations devised many insidious techniques to bolster the destructive capabilities of their magical staves.  Knowledge of these methods will unlock the true power of your staff attacks.",
       "skillIcon" : {
-        "posY" : 155,
-        "circular" : true,
-        "posX" : 286
-      },
+        "posX" : 110,
+        "posY" : 217,
+        "circular" : true
+      }
+    } ], [ {
       "name" : "Necrosis",
       "parent" : "Ravages of Time",
       "attributes" : {
@@ -909,13 +890,13 @@
         "defensivePoison" : [ -26.0, -32.0, -38.0, -44.0, -50.0, -56.0, -62.0, -68.0, -74.0, -80.0, -86.0, -92.0 ],
         "skillMaxLevel" : 8
       },
-      "description" : "Weakens the constitution of adjacent enemies making them more susceptible to attacks that directly damage their life."
-    }, {
+      "description" : "Weakens the constitution of adjacent enemies making them more susceptible to attacks that directly damage their life.",
       "skillIcon" : {
+        "posX" : 286,
         "posY" : 155,
-        "circular" : false,
-        "posX" : 550
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Liche King",
       "parent" : null,
       "attributes" : {
@@ -928,13 +909,13 @@
         "skillMasteryLevelRequired" : 15,
         "skillMaxLevel" : 16
       },
-      "description" : "In ages past, powerful sorcerers learned how to cheat Hades and persist as undead liches long after death had robbed their bodies of life. A dangerous practice of the Necromancer is to bind the souls of these ancient liches to their will, thus acquiring their powers."
-    }, {
+      "description" : "In ages past, powerful sorcerers learned how to cheat Hades and persist as undead liches long after death had robbed their bodies of life. A dangerous practice of the Necromancer is to bind the souls of these ancient liches to their will, thus acquiring their powers.",
       "skillIcon" : {
+        "posX" : 550,
         "posY" : 155,
-        "circular" : true,
-        "posX" : 638
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Dire Barrage",
       "parent" : "Bone Spire",
       "attributes" : {
@@ -947,13 +928,13 @@
         "offensiveTrapChance" : [ 12.8, 15.6, 18.4, 21.2, 24.0, 26.8, 29.6, 32.4, 35.2, 38.0, 40.8, 43.6, 46.4, 49.2, 52.0, 54.8 ],
         "skillMaxLevel" : 12
       },
-      "description" : "Allows the Necromancer to burst multiple tracts of bone spires."
-    }, {
+      "description" : "Allows the Necromancer to burst multiple tracts of bone spires.",
       "skillIcon" : {
+        "posX" : 638,
         "posY" : 155,
-        "circular" : true,
-        "posX" : 462
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Relentless Evil",
       "parent" : null,
       "attributes" : {
@@ -968,13 +949,13 @@
         "offensiveTauntMin" : [ 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0 ],
         "characterTotalSpeedModifier" : [ 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0 ]
       },
-      "description" : "Grants skeletal soldiers the ability to empower themselves with the very carnage they wreak. ^n^yEscalating Charge: every attack past the first adds another level of bonus damage up to the current skill level. When fully charged, each attack deals double the displayed skill damage."
-    } ], [ {
+      "description" : "Grants skeletal soldiers the ability to empower themselves with the very carnage they wreak. ^n^yEscalating Charge: every attack past the first adds another level of bonus damage up to the current skill level. When fully charged, each attack deals double the displayed skill damage.",
       "skillIcon" : {
-        "posY" : 93,
-        "circular" : true,
-        "posX" : 550
-      },
+        "posX" : 462,
+        "posY" : 155,
+        "circular" : true
+      }
+    } ], [ {
       "name" : "Death Nova",
       "parent" : null,
       "attributes" : {
@@ -992,13 +973,13 @@
         "offensiveLifeLeechMin" : 50.0,
         "offensivePercentCurrentLifeMin" : [ 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 36.0, 38.0, 40.0, 42.0, 46.0 ]
       },
-      "description" : "Emits a wave of death that will deplete life from any living being it contacts."
-    }, {
+      "description" : "Emits a wave of death that will deplete life from any living being it contacts.",
       "skillIcon" : {
+        "posX" : 550,
         "posY" : 93,
-        "circular" : false,
-        "posX" : 110
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Circle of Power",
       "parent" : null,
       "attributes" : {
@@ -1012,13 +993,13 @@
         "skillConnectionSpacing" : 62,
         "skillMaxLevel" : 12
       },
-      "description" : "Summons a totem that holds a powerful spirit, infusing you and all allies with great mental energy while standing close to it."
-    }, {
+      "description" : "Summons a totem that holds a powerful spirit, infusing you and all allies with great mental energy while standing close to it.",
       "skillIcon" : {
+        "posX" : 110,
         "posY" : 93,
-        "circular" : true,
-        "posX" : 286
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Death Ward",
       "parent" : null,
       "attributes" : {
@@ -1038,13 +1019,13 @@
         "skillUltimateLevel" : 12,
         "notDispelable" : 1
       },
-      "description" : "Places a magical ward on the player that protects them from death by granting additional life and energy when their life gets dangerously low."
-    } ], [ {
+      "description" : "Places a magical ward on the player that protects them from death by granting additional life and energy when their life gets dangerously low.",
       "skillIcon" : {
-        "posY" : 31,
-        "circular" : false,
-        "posX" : 110
-      },
+        "posX" : 286,
+        "posY" : 93,
+        "circular" : true
+      }
+    } ], [ {
       "name" : "Soul Vortex",
       "parent" : null,
       "attributes" : {
@@ -1067,13 +1048,13 @@
         "skillTargetRadius" : 5.0,
         "offensiveSlowTotalSpeedDurationMin" : 1.0
       },
-      "description" : "Concentrate your Spirit power to voraciously absorb all life force and energy in your immediate surroundings."
-    }, {
+      "description" : "Concentrate your Spirit power to voraciously absorb all life force and energy in your immediate surroundings.",
       "skillIcon" : {
+        "posX" : 110,
         "posY" : 31,
-        "circular" : true,
-        "posX" : 374
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Unearthly Power",
       "parent" : "Dark Covenant",
       "attributes" : {
@@ -1082,13 +1063,13 @@
         "offensiveTotalDamageModifier" : [ 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 66.0 ],
         "skillMaxLevel" : 8
       },
-      "description" : "Draw upon even greater otherworldly powers to augment yourself and allies in battle, but be wary of the cost exacted from your own vitality."
-    }, {
+      "description" : "Draw upon even greater otherworldly powers to augment yourself and allies in battle, but be wary of the cost exacted from your own vitality.",
       "skillIcon" : {
+        "posX" : 374,
         "posY" : 31,
-        "circular" : true,
-        "posX" : 550
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Wraith Shell",
       "parent" : null,
       "attributes" : {
@@ -1102,13 +1083,13 @@
         "skillMasteryLevelRequired" : 20,
         "skillMaxLevel" : 12
       },
-      "description" : "Allows the Liche King to diminish its corporeal presence making it less vulnerable to all types of damage."
-    }, {
+      "description" : "Allows the Liche King to diminish its corporeal presence making it less vulnerable to all types of damage.",
       "skillIcon" : {
+        "posX" : 550,
         "posY" : 31,
-        "circular" : false,
-        "posX" : 462
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Outsider",
       "parent" : null,
       "attributes" : {
@@ -1120,13 +1101,13 @@
         "cameraShakeAmplitude" : 0.12,
         "skillMaxLevel" : 16
       },
-      "description" : "Calls forth a powerful extra-dimensional entity from beyond the ether.  The link can only be maintained for a short time."
-    }, {
+      "description" : "Calls forth a powerful extra-dimensional entity from beyond the ether.  The link can only be maintained for a short time.",
       "skillIcon" : {
+        "posX" : 462,
         "posY" : 31,
-        "circular" : true,
-        "posX" : 198
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Soul Drain",
       "parent" : null,
       "attributes" : {
@@ -1141,7 +1122,12 @@
         "offensiveManaBurnDrainMin" : [ 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0 ],
         "skipSkillLinking" : 1
       },
-      "description" : "Cause Life Drain to explode outward, causing harm to body and soul."
+      "description" : "Cause Life Drain to explode outward, causing harm to body and soul.",
+      "skillIcon" : {
+        "posX" : 198,
+        "posY" : 31,
+        "circular" : true
+      }
     } ] ]
   }, {
     "masteryAttributes" : {
@@ -1157,11 +1143,6 @@
     },
     "name" : "Storm",
     "skillTiers" : [ [ {
-      "skillIcon" : {
-        "posY" : 403,
-        "circular" : false,
-        "posX" : 550
-      },
       "name" : "Ice Orb",
       "parent" : null,
       "attributes" : {
@@ -1180,13 +1161,13 @@
         "skillMasteryLevelRequired" : 1,
         "offensiveSlowTotalSpeedDurationMin" : 2.0
       },
-      "description" : "Projects a deadly orb of ice at the target inflicting cold damage and temporarily slowing it."
-    }, {
+      "description" : "Projects a deadly orb of ice at the target inflicting cold damage and temporarily slowing it.",
       "skillIcon" : {
+        "posX" : 550,
         "posY" : 403,
-        "circular" : false,
-        "posX" : 110
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Storm Nimbus",
       "parent" : null,
       "attributes" : {
@@ -1202,13 +1183,13 @@
         "cameraShakeAmplitude" : 0.12,
         "skillMaxLevel" : 10
       },
-      "description" : "When active, the player and his pets are imbued with the power of the storm, causing their attacks to strike with lightning damage."
-    }, {
+      "description" : "When active, the player and his pets are imbued with the power of the storm, causing their attacks to strike with lightning damage.",
       "skillIcon" : {
+        "posX" : 110,
         "posY" : 403,
-        "circular" : false,
-        "posX" : 198
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Thunderball",
       "parent" : null,
       "attributes" : {
@@ -1223,13 +1204,13 @@
         "offensiveLightningMin" : [ 5.0, 12.0, 20.0, 29.0, 36.0, 43.0, 51.0, 60.0, 67.0, 74.0, 82.0, 91.0, 98.0, 105.0, 113.0, 122.0 ],
         "skillMaxLevel" : 12
       },
-      "description" : "Hurls a ball of electrical energy that damages and stuns enemies in a small blast radius."
-    }, {
+      "description" : "Hurls a ball of electrical energy that damages and stuns enemies in a small blast radius.",
       "skillIcon" : {
+        "posX" : 198,
         "posY" : 403,
-        "circular" : false,
-        "posX" : 638
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Arctic Shell",
       "parent" : null,
       "attributes" : {
@@ -1245,13 +1226,13 @@
         "offensiveColdMin" : [ 6.0, 9.0, 12.0, 16.0, 19.0, 22.0, 25.0, 29.0, 32.0, 35.0, 38.0, 42.0, 46.0, 51.0 ],
         "skillMaxLevel" : 10
       },
-      "description" : "When active, the player and his pets are imbued with a creeping frost that inflicts cold damage on attack."
-    } ], [ {
+      "description" : "When active, the player and his pets are imbued with a creeping frost that inflicts cold damage on attack.",
       "skillIcon" : {
-        "posY" : 341,
-        "circular" : true,
-        "posX" : 110
-      },
+        "posX" : 638,
+        "posY" : 403,
+        "circular" : false
+      }
+    } ], [ {
       "name" : "Static Charge",
       "parent" : "Storm Nimbus",
       "attributes" : {
@@ -1272,13 +1253,13 @@
         "offensiveSlowLightningMin" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0 ],
         "offensiveManaBurnDamageRatio" : [ 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 45.0 ]
       },
-      "description" : "Electrical energy builds inside the player while Storm Nimbus is active and passes through enemy weapons that come in contact, delivering a powerful shock."
-    }, {
+      "description" : "Electrical energy builds inside the player while Storm Nimbus is active and passes through enemy weapons that come in contact, delivering a powerful shock.",
       "skillIcon" : {
+        "posX" : 110,
         "posY" : 341,
-        "circular" : false,
-        "posX" : 286
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Storm Surge",
       "parent" : null,
       "attributes" : {
@@ -1295,13 +1276,13 @@
         "skillTargetRadius" : 5.0,
         "skillMaxLevel" : 12
       },
-      "description" : "When activated, each enemy hit has a chance of unleashing a violent squall of storm energy."
-    }, {
+      "description" : "When activated, each enemy hit has a chance of unleashing a violent squall of storm energy.",
       "skillIcon" : {
+        "posX" : 286,
         "posY" : 341,
-        "circular" : true,
-        "posX" : 638
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Heart of Frost",
       "parent" : "Arctic Shell",
       "attributes" : {
@@ -1318,13 +1299,13 @@
         "retaliationSlowRunSpeedMin" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0 ],
         "retaliationSlowAttackSpeedDurationMin" : 3.0
       },
-      "description" : "While Arctic Shell is active, the air around the player becomes icy cold and slows any attackers within its perimiter."
-    }, {
+      "description" : "While Arctic Shell is active, the air around the player becomes icy cold and slows any attackers within its perimiter.",
       "skillIcon" : {
+        "posX" : 638,
         "posY" : 341,
-        "circular" : false,
-        "posX" : 462
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Freezing Blast",
       "parent" : null,
       "attributes" : {
@@ -1342,13 +1323,13 @@
         "offensiveSlowColdDurationMin" : 6.0,
         "skillTargetRadius" : [ 1.8, 2.2, 2.6, 3.0, 3.4, 3.8, 4.2, 4.6, 5.0, 5.4, 5.8, 6.2 ]
       },
-      "description" : "Encases enemies in ice, immobilizing them but also making them more difficult to damage."
-    } ], [ {
+      "description" : "Encases enemies in ice, immobilizing them but also making them more difficult to damage.",
       "skillIcon" : {
-        "posY" : 279,
-        "circular" : true,
-        "posX" : 550
-      },
+        "posX" : 462,
+        "posY" : 341,
+        "circular" : false
+      }
+    } ], [ {
       "name" : "Frozen Orb",
       "parent" : "Ice Orb",
       "attributes" : {
@@ -1359,13 +1340,13 @@
         "offensiveFreezeChance" : [ 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0 ],
         "skillMaxLevel" : 8
       },
-      "description" : "Increases the damage of Ice Orb. Gives each orb a chance to freeze its target."
-    }, {
+      "description" : "Increases the damage of Ice Orb. Gives each orb a chance to freeze its target.",
       "skillIcon" : {
+        "posX" : 550,
         "posY" : 279,
-        "circular" : true,
-        "posX" : 198
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Concussive Blast",
       "parent" : null,
       "attributes" : {
@@ -1379,13 +1360,13 @@
         "offensiveLightningMin" : [ 4.0, 7.0, 10.0, 13.0, 16.0, 19.0, 22.0, 25.0, 28.0, 31.0, 34.0, 37.0 ],
         "skillMaxLevel" : 8
       },
-      "description" : "Enhances the power of Thunderball causing sparks to leap from the initial explosion. Each spark that hits an enemy inflicts electrical damage and stuns."
-    }, {
+      "description" : "Enhances the power of Thunderball causing sparks to leap from the initial explosion. Each spark that hits an enemy inflicts electrical damage and stuns.",
       "skillIcon" : {
+        "posX" : 198,
         "posY" : 279,
-        "circular" : false,
-        "posX" : 462
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Flash Freeze",
       "parent" : null,
       "attributes" : {
@@ -1408,13 +1389,13 @@
         "retaliationSlowRunSpeedDurationMin" : 3.0,
         "characterManaRegenModifier" : [ 100.0, 130.0, 160.0, 190.0, 220.0, 250.0, 280.0, 310.0, 340.0, 370.0, 400.0, 430.0, 460.0, 500.0 ]
       },
-      "description" : "Freeze yourself to briefly stop all bodily processes and quickly recover energy, while shielding yourself from damage."
-    } ], [ {
+      "description" : "Freeze yourself to briefly stop all bodily processes and quickly recover energy, while shielding yourself from damage.",
       "skillIcon" : {
-        "posY" : 217,
-        "circular" : false,
-        "posX" : 198
-      },
+        "posX" : 462,
+        "posY" : 279,
+        "circular" : false
+      }
+    } ], [ {
       "name" : "Lightning Bolt",
       "parent" : null,
       "attributes" : {
@@ -1432,13 +1413,13 @@
         "expansionTime" : 0.1,
         "skillTargetRadius" : [ 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0, 2.1, 2.2, 2.3, 2.4, 2.5 ]
       },
-      "description" : "Calls down a powerful bolt of lightning from the heavens to decimate your target."
-    }, {
+      "description" : "Calls down a powerful bolt of lightning from the heavens to decimate your target.",
       "skillIcon" : {
+        "posX" : 198,
         "posY" : 217,
-        "circular" : true,
-        "posX" : 110
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Electrical Conduit",
       "parent" : "Static Charge",
       "attributes" : {
@@ -1449,13 +1430,13 @@
         "offensiveSlowLightningModifier" : [ 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 36.0, 39.0, 42.0, 45.0, 50.0 ],
         "skillMaxLevel" : 8
       },
-      "description" : "While Storm Nimbus is active, the player can channel surrounding electrical energy, greatly increasing the damage of their attacks."
-    }, {
+      "description" : "While Storm Nimbus is active, the player can channel surrounding electrical energy, greatly increasing the damage of their attacks.",
       "skillIcon" : {
+        "posX" : 110,
         "posY" : 217,
-        "circular" : false,
-        "posX" : 374
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Squall",
       "parent" : null,
       "attributes" : {
@@ -1477,13 +1458,13 @@
         "offensiveColdMax" : [ 10.5, 12.0, 13.5, 15.0, 16.5, 18.0, 19.5, 21.0, 22.5, 24.0, 25.5, 27.0, 28.5, 30.0, 31.5, 33.0 ],
         "offensiveSlowAttackSpeedDurationMin" : 1.0
       },
-      "description" : "Creates a wind storm in the target area that decreases the projectile attack accuracy of enemies caught within it."
-    }, {
+      "description" : "Creates a wind storm in the target area that decreases the projectile attack accuracy of enemies caught within it.",
       "skillIcon" : {
+        "posX" : 374,
         "posY" : 217,
-        "circular" : true,
-        "posX" : 638
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Ice Song",
       "parent" : "Heart of Frost",
       "attributes" : {
@@ -1494,13 +1475,13 @@
         "skillMaxLevel" : 8,
         "offensiveColdModifier" : [ 14.0, 20.0, 26.0, 32.0, 38.0, 44.0, 50.0, 56.0, 62.0, 68.0, 74.0, 80.0 ]
       },
-      "description" : "The player becomes able to concentrate the power of their cold attacks, greatly increasing damage."
-    } ], [ {
+      "description" : "The player becomes able to concentrate the power of their cold attacks, greatly increasing damage.",
       "skillIcon" : {
-        "posY" : 155,
-        "circular" : false,
-        "posX" : 638
-      },
+        "posX" : 638,
+        "posY" : 217,
+        "circular" : true
+      }
+    } ], [ {
       "name" : "Energy Shield",
       "parent" : null,
       "attributes" : {
@@ -1520,13 +1501,13 @@
         "skillTargetRadius" : 8.0,
         "skillMasteryLevelRequired" : 15
       },
-      "description" : "Creates a shield of energy that will nullify incoming damage from cold and lightning attacks."
-    }, {
+      "description" : "Creates a shield of energy that will nullify incoming damage from cold and lightning attacks.",
       "skillIcon" : {
+        "posX" : 638,
         "posY" : 155,
-        "circular" : false,
-        "posX" : 286
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Lightning Dash",
       "parent" : null,
       "attributes" : {
@@ -1549,13 +1530,13 @@
         "skillProjectileNumber" : 1,
         "offensiveColdGlobal" : 1
       },
-      "description" : "Move between enemies at lightning speed, becoming hard to hit in the process. {^n}{^y}Assign this skill to your left mouse button."
-    }, {
+      "description" : "Move between enemies at lightning speed, becoming hard to hit in the process. {^n}{^y}Assign this skill to your left mouse button.",
       "skillIcon" : {
+        "posX" : 286,
         "posY" : 155,
-        "circular" : false,
-        "posX" : 110
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Storm Wisp",
       "parent" : null,
       "attributes" : {
@@ -1568,13 +1549,13 @@
         "skillMasteryLevelRequired" : 20,
         "skillMaxLevel" : 16
       },
-      "description" : "Summon an immortal Storm Wisp from the atmosphere to battle your enemies. ^y^nAt level 5, the Wisp learns Thunderclap.^nAt level 10, the Thunderclap is enhanced and generates tendrils of lightning."
-    }, {
+      "description" : "Summon an immortal Storm Wisp from the atmosphere to battle your enemies. ^y^nAt level 5, the Wisp learns Thunderclap.^nAt level 10, the Thunderclap is enhanced and generates tendrils of lightning.",
       "skillIcon" : {
+        "posX" : 110,
         "posY" : 155,
-        "circular" : true,
-        "posX" : 462
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Ice Burst",
       "parent" : null,
       "attributes" : {
@@ -1588,13 +1569,13 @@
         "skillTargetRadius" : 5.0,
         "skillMaxLevel" : 8
       },
-      "description" : "Creates a shell of ice around you that can encase nearby enemies for large amounts of cold damage."
-    } ], [ {
+      "description" : "Creates a shell of ice around you that can encase nearby enemies for large amounts of cold damage.",
       "skillIcon" : {
-        "posY" : 93,
-        "circular" : true,
-        "posX" : 638
-      },
+        "posX" : 462,
+        "posY" : 155,
+        "circular" : true
+      }
+    } ], [ {
       "name" : "Energy Resonance",
       "parent" : "Energy Shield",
       "attributes" : {
@@ -1607,13 +1588,13 @@
         "characterManaRegenModifier" : [ 48.0, 60.0, 72.0, 84.0, 96.0, 108.0, 120.0, 132.0, 144.0, 156.0, 168.0, 180.0 ],
         "skillMaxLevel" : 8
       },
-      "description" : "Brings the player in tune with energy channels, increasing energy regeneration and defense, and adds a chance that enemy attacks can reverberate back to the attacker."
-    }, {
+      "description" : "Brings the player in tune with energy channels, increasing energy regeneration and defense, and adds a chance that enemy attacks can reverberate back to the attacker.",
       "skillIcon" : {
+        "posX" : 638,
         "posY" : 93,
-        "circular" : true,
-        "posX" : 374
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Thunder Clouds",
       "parent" : null,
       "attributes" : {
@@ -1630,13 +1611,13 @@
         "offensiveTotalDamageReductionPercentDurationMin" : 3.0,
         "skillMaxLevel" : 8
       },
-      "description" : "Lightning strikes enemies within the squall, and the reduced visibility makes it difficult for enemies to defend themselves."
-    }, {
+      "description" : "Lightning strikes enemies within the squall, and the reduced visibility makes it difficult for enemies to defend themselves.",
       "skillIcon" : {
+        "posX" : 374,
         "posY" : 93,
-        "circular" : false,
-        "posX" : 462
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Frost Nova",
       "parent" : null,
       "attributes" : {
@@ -1657,13 +1638,13 @@
         "skillTargetRadius" : 10.0,
         "offensiveSlowTotalSpeedDurationMin" : [ 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4.0, 4.1, 4.2 ]
       },
-      "description" : "Casts an expanding ring of frost that slows and freezes your enemies."
-    } ], [ {
+      "description" : "Casts an expanding ring of frost that slows and freezes your enemies.",
       "skillIcon" : {
-        "posY" : 31,
-        "circular" : true,
-        "posX" : 550
-      },
+        "posX" : 462,
+        "posY" : 93,
+        "circular" : false
+      }
+    } ], [ {
       "name" : "Torrent",
       "parent" : "Frozen Orb",
       "attributes" : {
@@ -1676,13 +1657,13 @@
         "offensiveSlowColdDurationMin" : 3.0,
         "skillMaxLevel" : 8
       },
-      "description" : "Increases the number of orbs cast and adds frostburn damage, sending a deadly torrent at enemies."
-    }, {
+      "description" : "Increases the number of orbs cast and adds frostburn damage, sending a deadly torrent at enemies.",
       "skillIcon" : {
+        "posX" : 550,
         "posY" : 31,
-        "circular" : true,
-        "posX" : 198
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Chain Lightning",
       "parent" : null,
       "attributes" : {
@@ -1699,13 +1680,13 @@
         "sparkMaxNumber" : [ 5.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 7.0, 7.0, 8.0 ],
         "skillMaxLevel" : 12
       },
-      "description" : "Causes electricity to leap from the target of your Lightning Bolt skill and strike additional nearby enemies."
-    }, {
+      "description" : "Causes electricity to leap from the target of your Lightning Bolt skill and strike additional nearby enemies.",
       "skillIcon" : {
+        "posX" : 198,
         "posY" : 31,
-        "circular" : true,
-        "posX" : 110
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Eye of the Storm",
       "parent" : null,
       "attributes" : {
@@ -1723,7 +1704,12 @@
         "coldDamageQualifier" : 1,
         "skillTargetRadius" : 15.0
       },
-      "description" : "A wisp ability that increases the elemental damage of all nearby allies for a duration and provides protection from lightning and cold damage."
+      "description" : "A wisp ability that increases the elemental damage of all nearby allies for a duration and provides protection from lightning and cold damage.",
+      "skillIcon" : {
+        "posX" : 110,
+        "posY" : 31,
+        "circular" : true
+      }
     } ] ]
   }, {
     "masteryAttributes" : {
@@ -1739,11 +1725,6 @@
     },
     "name" : "Earth",
     "skillTiers" : [ [ {
-      "skillIcon" : {
-        "posY" : 403,
-        "circular" : false,
-        "posX" : 462
-      },
       "name" : "Flame Surge",
       "parent" : null,
       "attributes" : {
@@ -1761,13 +1742,13 @@
         "offensiveFireMin" : [ 8.0, 11.0, 13.0, 17.0, 20.0, 23.0, 25.0, 29.0, 32.0, 35.0, 38.0, 43.0, 45.0, 48.0, 53.0, 59.0 ],
         "skillMasteryLevelRequired" : 1
       },
-      "description" : "Three jets of flame erupt from the caster's hands each inflicting incinerating fire damage to enemies."
-    }, {
+      "description" : "Three jets of flame erupt from the caster's hands each inflicting incinerating fire damage to enemies.",
       "skillIcon" : {
+        "posX" : 462,
         "posY" : 403,
-        "circular" : false,
-        "posX" : 128
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Earth Enchantment",
       "parent" : null,
       "attributes" : {
@@ -1785,13 +1766,13 @@
         "skillTargetRadius" : [ 7.0, 7.4, 7.8, 8.2, 8.6, 9.0, 9.4, 9.8, 10.2, 10.6, 11.0, 11.4, 11.8, 12.2, 12.6, 13.0 ],
         "skillMasteryLevelRequired" : 1
       },
-      "description" : "Imbues your weapons and the weapons of nearby allies with the power of rock and flame."
-    }, {
+      "description" : "Imbues your weapons and the weapons of nearby allies with the power of rock and flame.",
       "skillIcon" : {
+        "posX" : 128,
         "posY" : 403,
-        "circular" : false,
-        "posX" : 374
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Ring of Flame",
       "parent" : null,
       "attributes" : {
@@ -1809,13 +1790,13 @@
         "skillTargetRadius" : [ 1.5, 1.8, 2.0, 2.2, 2.4, 2.6, 2.7, 2.8, 2.9, 3.0, 3.1, 3.3, 3.4, 3.5, 3.6, 3.8 ],
         "skillMasteryLevelRequired" : 10
       },
-      "description" : "Encircles you in a searing ring of flames burning all enemies that come within its radius."
-    }, {
+      "description" : "Encircles you in a searing ring of flames burning all enemies that come within its radius.",
       "skillIcon" : {
+        "posX" : 374,
         "posY" : 403,
-        "circular" : false,
-        "posX" : 550
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Rupture",
       "parent" : null,
       "attributes" : {
@@ -1831,13 +1812,13 @@
         "skillMasteryLevelRequired" : 1,
         "skillMaxLevel" : 12
       },
-      "description" : "Connects the player's tumultuous earth energies to their staff, causing projectiles to explode on impact. ^y(Staff Only)"
-    } ], [ {
+      "description" : "Connects the player's tumultuous earth energies to their staff, causing projectiles to explode on impact. ^y(Staff Only)",
       "skillIcon" : {
-        "posY" : 341,
-        "circular" : false,
-        "posX" : 638
-      },
+        "posX" : 550,
+        "posY" : 403,
+        "circular" : false
+      }
+    } ], [ {
       "name" : "Volcanic Orb",
       "parent" : null,
       "attributes" : {
@@ -1854,13 +1835,13 @@
         "skillMasteryLevelRequired" : 1,
         "skillMaxLevel" : 12
       },
-      "description" : "Lobs a burning orb of fiery brimstone that explodes when it hits the ground inflicting fire and physical damage to enemies in a small radius."
-    }, {
+      "description" : "Lobs a burning orb of fiery brimstone that explodes when it hits the ground inflicting fire and physical damage to enemies in a small radius.",
       "skillIcon" : {
+        "posX" : 638,
         "posY" : 341,
-        "circular" : false,
-        "posX" : 198
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Heat Shield",
       "parent" : null,
       "attributes" : {
@@ -1879,13 +1860,13 @@
         "skillMasteryLevelRequired" : 15,
         "retaliationSlowFireMin" : [ 3.1, 3.9, 4.8, 5.8, 6.9, 8.1, 9.5, 11.0, 12.6, 14.3, 16.1, 18.0, 20.0, 22.1, 24.3, 26.6 ]
       },
-      "description" : "Casts a protective heat shield on the target that absorbs fire damage, and allows it to resist physical damage."
-    }, {
+      "description" : "Casts a protective heat shield on the target that absorbs fire damage, and allows it to resist physical damage.",
       "skillIcon" : {
+        "posX" : 198,
         "posY" : 341,
-        "circular" : true,
-        "posX" : 128
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Brimstone",
       "parent" : "Earth Enchantment",
       "attributes" : {
@@ -1897,13 +1878,13 @@
         "offensiveSlowFireModifier" : [ 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 55.0, 60.0, 65.0, 70.0, 80.0 ],
         "skillMaxLevel" : 8
       },
-      "description" : "Boosts the physical damage of attacks and adds burn damage."
-    } ], [ {
+      "description" : "Boosts the physical damage of attacks and adds burn damage.",
       "skillIcon" : {
-        "posY" : 279,
-        "circular" : false,
-        "posX" : 286
-      },
+        "posX" : 128,
+        "posY" : 341,
+        "circular" : true
+      }
+    } ], [ {
       "name" : "Core Dweller",
       "parent" : null,
       "attributes" : {
@@ -1916,13 +1897,13 @@
         "skillMasteryLevelRequired" : 10,
         "skillMaxLevel" : 16
       },
-      "description" : "Draws forth a powerful elemental guardian from the Earth's fiery depths."
-    }, {
+      "description" : "Draws forth a powerful elemental guardian from the Earth's fiery depths.",
       "skillIcon" : {
+        "posX" : 286,
         "posY" : 279,
-        "circular" : true,
-        "posX" : 462
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Barrage",
       "parent" : "Flame Surge",
       "attributes" : {
@@ -1935,13 +1916,13 @@
         "skillManaCostReduction" : [ 9.0, 13.4, 17.8, 22.6, 27.4, 32.6, 37.8, 44.2, 51.0, 58.4, 66.0, 74.4 ],
         "skillMaxLevel" : 8
       },
-      "description" : "Reduces the recharge time of Flame Surge allowing it to be cast more frequently and efficiently. ^y(Reduced cooldown starts at level 2)"
-    }, {
+      "description" : "Reduces the recharge time of Flame Surge allowing it to be cast more frequently and efficiently. ^y(Reduced cooldown starts at level 2)",
       "skillIcon" : {
+        "posX" : 462,
         "posY" : 279,
-        "circular" : true,
-        "posX" : 198
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Heat Accretion",
       "parent" : "Heat Shield",
       "attributes" : {
@@ -1952,13 +1933,13 @@
         "offensiveStunModifier" : [ 10.0, 13.0, 16.0, 19.0, 22.0, 25.0, 28.0, 31.0, 34.0, 37.0, 40.0, 45.0 ],
         "skillMaxLevel" : 8
       },
-      "description" : "As the temperature rises inside the heat shield, the wounds heal faster, and nearby enemies take additional damage."
-    }, {
+      "description" : "As the temperature rises inside the heat shield, the wounds heal faster, and nearby enemies take additional damage.",
       "skillIcon" : {
+        "posX" : 198,
         "posY" : 279,
-        "circular" : true,
-        "posX" : 374
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Soften Metal",
       "parent" : "Ring of Flame",
       "attributes" : {
@@ -1974,13 +1955,13 @@
         "offensiveSlowDefensiveReductionMin" : [ 27.0, 36.0, 45.0, 54.0, 63.0, 72.0, 81.0, 99.0, 108.0, 117.0, 126.0, 144.0 ],
         "offensiveSlowOffensiveAbilityMin" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 13.0, 14.0, 15.0, 16.0, 18.0 ]
       },
-      "description" : "Intense heat from the Ring of Flame softens the metal of enemy armor and weapons, decreasing their effectiveness."
-    }, {
+      "description" : "Intense heat from the Ring of Flame softens the metal of enemy armor and weapons, decreasing their effectiveness.",
       "skillIcon" : {
+        "posX" : 374,
         "posY" : 279,
-        "circular" : true,
-        "posX" : 550
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Burning Bolts",
       "parent" : "Rupture",
       "attributes" : {
@@ -1991,13 +1972,13 @@
         "offensiveSlowFireMin" : [ 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0 ],
         "skillMaxLevel" : 8
       },
-      "description" : "Adds burn damage to staff attacks, and a chance to pass through enemies."
-    } ], [ {
+      "description" : "Adds burn damage to staff attacks, and a chance to pass through enemies.",
       "skillIcon" : {
-        "posY" : 217,
-        "circular" : true,
-        "posX" : 638
-      },
+        "posX" : 550,
+        "posY" : 279,
+        "circular" : true
+      }
+    } ], [ {
       "name" : "Conflagration",
       "parent" : null,
       "attributes" : {
@@ -2009,13 +1990,13 @@
         "skillMasteryLevelRequired" : 10,
         "skillMaxLevel" : 8
       },
-      "description" : "Increases the explosion radius of Volcanic Orb and causes enemies hit by it to catch fire and suffer burn damage."
-    }, {
+      "description" : "Increases the explosion radius of Volcanic Orb and causes enemies hit by it to catch fire and suffer burn damage.",
       "skillIcon" : {
+        "posX" : 638,
         "posY" : 217,
-        "circular" : true,
-        "posX" : 286
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Inner Fire",
       "parent" : null,
       "attributes" : {
@@ -2027,13 +2008,13 @@
         "characterManaRegenModifier" : [ 27.0, 38.0, 49.0, 60.0, 71.0, 82.0, 93.0, 104.0, 115.0, 126.0, 137.0, 150.0 ],
         "skillMaxLevel" : 8
       },
-      "description" : "Increases the Core Dweller's speed and adds fire damage to its attacks."
-    }, {
+      "description" : "Increases the Core Dweller's speed and adds fire damage to its attacks.",
       "skillIcon" : {
+        "posX" : 286,
         "posY" : 217,
-        "circular" : true,
-        "posX" : 128
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Stone Skin",
       "parent" : "Brimstone",
       "attributes" : {
@@ -2045,13 +2026,13 @@
         "skillMaxLevel" : 10,
         "defensiveFire" : [ 5.0, 8.0, 10.0, 13.0, 15.0, 18.0, 20.0, 23.0, 25.0, 28.0, 30.0, 33.0, 36.0, 40.0 ]
       },
-      "description" : "Tempers armor, increasing protection as well as fire and damage resistance while under the effects of Earth Enchantment."
-    }, {
+      "description" : "Tempers armor, increasing protection as well as fire and damage resistance while under the effects of Earth Enchantment.",
       "skillIcon" : {
+        "posX" : 128,
         "posY" : 217,
-        "circular" : false,
-        "posX" : 198
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Stone Form",
       "parent" : null,
       "attributes" : {
@@ -2068,13 +2049,13 @@
         "retaliationFireMin" : [ 9.625, 16.5, 23.375, 30.25, 37.125, 44.0, 50.875, 57.75, 64.625, 71.5, 78.375, 85.25 ],
         "skillMaxLevel" : 12
       },
-      "description" : "An impervious layer of rock envelops you for a short duration boosting regeneration but prohibiting movement."
-    } ], [ {
+      "description" : "An impervious layer of rock envelops you for a short duration boosting regeneration but prohibiting movement.",
       "skillIcon" : {
-        "posY" : 155,
-        "circular" : true,
-        "posX" : 638
-      },
+        "posX" : 198,
+        "posY" : 217,
+        "circular" : false
+      }
+    } ], [ {
       "name" : "Fragmentation",
       "parent" : null,
       "attributes" : {
@@ -2088,13 +2069,13 @@
         "offensiveFireMin" : [ 12.0, 16.0, 20.0, 25.0, 29.0, 33.0, 37.0, 42.0, 46.0, 50.0, 54.0, 59.0, 63.0, 67.0, 71.0, 76.0 ],
         "skillMaxLevel" : 12
       },
-      "description" : "Causes the Volcanic Orb to violently explode on impact sending out fragments of rock that each inflict physical damage to the enemies they hit."
-    }, {
+      "description" : "Causes the Volcanic Orb to violently explode on impact sending out fragments of rock that each inflict physical damage to the enemies they hit.",
       "skillIcon" : {
+        "posX" : 638,
         "posY" : 155,
-        "circular" : true,
-        "posX" : 286
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Fracture",
       "parent" : null,
       "attributes" : {
@@ -2119,13 +2100,13 @@
         "offensiveFireMax" : [ 22.1, 33.8, 45.5, 57.2, 68.9, 80.6, 92.3, 104.0, 115.7, 127.4, 139.1, 150.8 ],
         "offensiveFireMin" : [ 17.0, 26.0, 35.0, 44.0, 53.0, 62.0, 71.0, 80.0, 89.0, 98.0, 107.0, 116.0 ]
       },
-      "description" : "Allows the Core Dweller to disrupt the ground ahead of him, and draw up volcanic energies to decimate enemies in its path."
-    }, {
+      "description" : "Allows the Core Dweller to disrupt the ground ahead of him, and draw up volcanic energies to decimate enemies in its path.",
       "skillIcon" : {
+        "posX" : 286,
         "posY" : 155,
-        "circular" : true,
-        "posX" : 462
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Flame Arch",
       "parent" : "Barrage",
       "attributes" : {
@@ -2140,13 +2121,13 @@
         "skillMasteryLevelRequired" : 15,
         "skillMaxLevel" : 12
       },
-      "description" : "Increases the damage and number of flame jets created by Flame Surge."
-    }, {
+      "description" : "Increases the damage and number of flame jets created by Flame Surge.",
       "skillIcon" : {
+        "posX" : 462,
         "posY" : 155,
-        "circular" : false,
-        "posX" : 374
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Spontaneous Combustion",
       "parent" : null,
       "attributes" : {
@@ -2163,13 +2144,13 @@
         "skillTargetRadius" : 4.5,
         "skillMaxLevel" : 8
       },
-      "description" : "When active, each enemy hit has a chance of unleashing the violent earth energies inside you."
-    }, {
+      "description" : "When active, each enemy hit has a chance of unleashing the violent earth energies inside you.",
       "skillIcon" : {
+        "posX" : 374,
         "posY" : 155,
-        "circular" : true,
-        "posX" : 550
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Flare",
       "parent" : "Burning Bolts",
       "attributes" : {
@@ -2185,13 +2166,13 @@
         "offensiveSlowFireModifier" : [ 23.0, 30.0, 37.0, 44.0, 51.0, 58.0, 65.0, 72.0, 79.0, 86.0, 93.0, 100.0 ],
         "skillMaxLevel" : 8
       },
-      "description" : "Increases fire damage on staff attacks, turning the caster's staff into an instrument of destruction."
-    } ], [ {
+      "description" : "Increases fire damage on staff attacks, turning the caster's staff into an instrument of destruction.",
       "skillIcon" : {
-        "posY" : 93,
-        "circular" : true,
-        "posX" : 286
-      },
+        "posX" : 550,
+        "posY" : 155,
+        "circular" : true
+      }
+    } ], [ {
       "name" : "Metamorphosis",
       "parent" : null,
       "attributes" : {
@@ -2205,13 +2186,13 @@
         "defensiveProtectionModifier" : [ 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 71.0, 79.0, 88.0, 100.0 ],
         "skillMaxLevel" : 8
       },
-      "description" : "Under tremendous heat and pressure, the composition of the Core Dweller hardens making it more resistant to damage."
-    }, {
+      "description" : "Under tremendous heat and pressure, the composition of the Core Dweller hardens making it more resistant to damage.",
       "skillIcon" : {
+        "posX" : 286,
         "posY" : 93,
-        "circular" : false,
-        "posX" : 374
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Fire Nova",
       "parent" : null,
       "attributes" : {
@@ -2229,13 +2210,13 @@
         "offensiveFireMin" : [ 33.0, 37.0, 42.0, 48.0, 55.0, 63.0, 72.0, 82.0, 93.0, 105.0, 118.0, 132.0 ],
         "skillTargetRadius" : 20.0
       },
-      "description" : "Sends out a ring of flames that ignites everything in the area."
-    }, {
+      "description" : "Sends out a ring of flames that ignites everything in the area.",
       "skillIcon" : {
+        "posX" : 374,
         "posY" : 93,
-        "circular" : false,
-        "posX" : 638
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Eruption",
       "parent" : null,
       "attributes" : {
@@ -2252,13 +2233,13 @@
         "offensiveFireMin" : [ 28.0, 35.0, 41.0, 46.0, 53.0, 59.0, 64.0, 71.0, 77.0, 82.0, 89.0, 95.0, 100.0, 107.0, 113.0, 118.0 ],
         "skillMaxLevel" : 12
       },
-      "description" : "Volcanic fissures form in the ground, emitting deadly geysers of molten flame and fiery chunks of brimstone.  Each fragment inflicts physical and fire damage to the enemies it hits."
-    } ], [ {
+      "description" : "Volcanic fissures form in the ground, emitting deadly geysers of molten flame and fiery chunks of brimstone.  Each fragment inflicts physical and fire damage to the enemies it hits.",
       "skillIcon" : {
-        "posY" : 31,
-        "circular" : true,
-        "posX" : 128
-      },
+        "posX" : 638,
+        "posY" : 93,
+        "circular" : false
+      }
+    } ], [ {
       "name" : "Volatility",
       "parent" : null,
       "attributes" : {
@@ -2273,13 +2254,13 @@
         "offensiveSlowFireModifier" : [ 90.0, 108.0, 126.0, 144.0, 162.0, 180.0, 198.0, 222.0, 240.0, 258.0, 276.0, 300.0 ],
         "skillMaxLevel" : 8
       },
-      "description" : "Enhanced by the volatile energy of the earth, your attacks have a chance of inflicting greatly increased damage."
-    }, {
+      "description" : "Enhanced by the volatile energy of the earth, your attacks have a chance of inflicting greatly increased damage.",
       "skillIcon" : {
+        "posX" : 128,
         "posY" : 31,
-        "circular" : true,
-        "posX" : 638
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Molten Lava",
       "parent" : null,
       "attributes" : {
@@ -2298,13 +2279,13 @@
         "offensiveSlowOffensiveReductionMin" : [ 14.0, 20.0, 26.0, 32.0, 38.0, 44.0, 50.0, 56.0, 62.0, 68.0, 74.0, 80.0 ],
         "offensiveSlowDefensiveReductionMin" : [ 30.0, 39.0, 48.0, 57.0, 66.0, 75.0, 84.0, 93.0, 102.0, 111.0, 120.0, 130.0 ]
       },
-      "description" : "Causes lava to pour out of the fissure, dealing prolonged burn damage and hindering enemies."
-    }, {
+      "description" : "Causes lava to pour out of the fissure, dealing prolonged burn damage and hindering enemies.",
       "skillIcon" : {
+        "posX" : 638,
         "posY" : 31,
-        "circular" : false,
-        "posX" : 462
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Meteor",
       "parent" : null,
       "attributes" : {
@@ -2328,7 +2309,12 @@
         "offensiveFireMax" : [ 847.2, 916.8, 986.4, 1056.0, 1128.0, 1197.6, 1269.6, 1339.2, 1413.6, 1483.2, 1552.8, 1622.4, 1694.4, 1764.0, 1836.0, 1905.6 ],
         "offensiveFireMin" : [ 538.0, 590.0, 642.0, 694.0, 746.0, 798.0, 850.0, 902.0, 956.0, 1008.0, 1060.0, 1112.0, 1164.0, 1216.0, 1268.0, 1320.0 ]
       },
-      "description" : "Create an explosive meteor, whose impact will wreak unbelievable devastation over a large area."
+      "description" : "Create an explosive meteor, whose impact will wreak unbelievable devastation over a large area.",
+      "skillIcon" : {
+        "posX" : 462,
+        "posY" : 31,
+        "circular" : false
+      }
     } ] ]
   }, {
     "masteryAttributes" : {
@@ -2346,11 +2332,6 @@
     },
     "name" : "Occult",
     "skillTiers" : [ [ {
-      "skillIcon" : {
-        "posY" : 403,
-        "circular" : false,
-        "posX" : 198
-      },
       "name" : "Envenom Weapon",
       "parent" : null,
       "attributes" : {
@@ -2375,13 +2356,13 @@
         "offensiveSlowPoisonMin" : [ 3.6, 4.5, 5.4, 7.2, 9.0, 11.7, 14.4, 18.0, 21.6, 26.1, 30.6, 36.0, 41.4, 47.7, 54.0, 61.2 ],
         "Spear" : 1
       },
-      "description" : "Coats your weapons with deadly poison while activated."
-    }, {
+      "description" : "Coats your weapons with deadly poison while activated.",
       "skillIcon" : {
+        "posX" : 198,
         "posY" : 403,
-        "circular" : false,
-        "posX" : 638
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Calculated Strike",
       "parent" : null,
       "attributes" : {
@@ -2413,13 +2394,13 @@
         "skillMasteryLevelRequired" : 1,
         "Spear" : 1
       },
-      "description" : "A swift and potent attack that's difficult to avoid and damages the target's ability to retaliate. ^y(Doesn't work with staves or clubs)"
-    }, {
+      "description" : "A swift and potent attack that's difficult to avoid and damages the target's ability to retaliate. ^y(Doesn't work with staves or clubs)",
       "skillIcon" : {
+        "posX" : 638,
         "posY" : 403,
-        "circular" : true,
-        "posX" : 550
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Agility",
       "parent" : null,
       "attributes" : {
@@ -2430,13 +2411,13 @@
         "characterDefensiveAbilityModifier" : [ 6.0, 7.5, 9.0, 10.5, 12.0, 13.5, 15.0, 16.5, 18.0, 19.5 ],
         "skillMaxLevel" : 6
       },
-      "description" : "Years of training allows the Occultist to act deftly in combat and execute maneuvers with speed and precision."
-    } ], [ {
+      "description" : "Years of training allows the Occultist to act deftly in combat and execute maneuvers with speed and precision.",
       "skillIcon" : {
-        "posY" : 341,
-        "circular" : false,
-        "posX" : 286
-      },
+        "posX" : 550,
+        "posY" : 403,
+        "circular" : true
+      }
+    } ], [ {
       "name" : "Shadow Link",
       "parent" : null,
       "attributes" : {
@@ -2454,13 +2435,13 @@
         "offensiveLifeLeechMin" : [ 1.2, 1.4, 1.6, 1.8, 2.0, 2.2, 2.4, 2.6, 2.8, 3.0, 3.2, 3.4, 4.6, 5.8, 7.0, 9.2 ],
         "offensivePierceRatioModifier" : [ 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0, 90.0 ]
       },
-      "description" : "Keeps the Occultist and nearby allies connected to the shadow realm, increasing their energy regeneration and imbuing their weapons with the ability to penetrate deeper and to damage the life of their targets. This connection comes at a cost; the continuous exposure to these energies weakens the user's resistance and slowly drains their life."
-    }, {
+      "description" : "Keeps the Occultist and nearby allies connected to the shadow realm, increasing their energy regeneration and imbuing their weapons with the ability to penetrate deeper and to damage the life of their targets. This connection comes at a cost; the continuous exposure to these energies weakens the user's resistance and slowly drains their life.",
       "skillIcon" : {
+        "posX" : 286,
         "posY" : 341,
-        "circular" : false,
-        "posX" : 462
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Throwing Knife",
       "parent" : null,
       "attributes" : {
@@ -2478,13 +2459,13 @@
         "skillUltimateLevel" : 16,
         "skillMasteryLevelRequired" : 5
       },
-      "description" : "Throw a piercing blade at your opponent capable of causing prolonged bleeding."
-    }, {
+      "description" : "Throw a piercing blade at your opponent capable of causing prolonged bleeding.",
       "skillIcon" : {
+        "posX" : 462,
         "posY" : 341,
-        "circular" : false,
-        "posX" : 110
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Flash Powder",
       "parent" : null,
       "attributes" : {
@@ -2501,13 +2482,13 @@
         "offensiveConfusionChance" : [ 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0 ],
         "skillMaxLevel" : 8
       },
-      "description" : "A magician's trick turned to more nefarious purposes, flash powder blinds adjacent enemies impairing their ability to hit with weapons and potentially disorienting them."
-    }, {
+      "description" : "A magician's trick turned to more nefarious purposes, flash powder blinds adjacent enemies impairing their ability to hit with weapons and potentially disorienting them.",
       "skillIcon" : {
+        "posX" : 110,
         "posY" : 341,
-        "circular" : true,
-        "posX" : 374
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Disarm Traps",
       "parent" : null,
       "attributes" : {
@@ -2517,13 +2498,13 @@
         "racialBonusPercentDamage" : [ 20.0, 26.0, 32.0, 38.0, 44.0, 50.0, 56.0, 62.0, 68.0, 74.0 ],
         "skillMaxLevel" : 6
       },
-      "description" : "Expertise with traps and magical devices allows the Rogue to easily disable them and avoid their damage."
-    } ], [ {
+      "description" : "Expertise with traps and magical devices allows the Rogue to easily disable them and avoid their damage.",
       "skillIcon" : {
-        "posY" : 279,
-        "circular" : true,
-        "posX" : 198
-      },
+        "posX" : 374,
+        "posY" : 341,
+        "circular" : true
+      }
+    } ], [ {
       "name" : "Nightshade",
       "parent" : "Envenom Weapon",
       "attributes" : {
@@ -2534,13 +2515,13 @@
         "offensiveSlowTotalSpeedDurationMin" : 5.0,
         "skillMaxLevel" : 8
       },
-      "description" : "Oils harvested from deadly Nightshade plants give your Envenomed Weapons the ability to slow enemies."
-    }, {
+      "description" : "Oils harvested from deadly Nightshade plants give your Envenomed Weapons the ability to slow enemies.",
       "skillIcon" : {
+        "posX" : 198,
         "posY" : 279,
-        "circular" : true,
-        "posX" : 638
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Blade Fury",
       "parent" : null,
       "attributes" : {
@@ -2560,13 +2541,13 @@
         "skillProjectileNumber" : 1,
         "skillTargetAngle" : 90.0
       },
-      "description" : "A swift and potent multi-hit attack. ^y(Hits more targets at higher levels of the skill. Sword~Dagger/Axe Required)"
-    }, {
+      "description" : "A swift and potent multi-hit attack. ^y(Hits more targets at higher levels of the skill. Sword~Dagger/Axe Required)",
       "skillIcon" : {
+        "posX" : 638,
         "posY" : 279,
-        "circular" : true,
-        "posX" : 550
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Dual Blade Proficiency",
       "parent" : null,
       "attributes" : {
@@ -2580,13 +2561,13 @@
         "skillMaxLevel" : 8,
         "Axe" : 1
       },
-      "description" : "The Occultist is able to wield two blade melee weapons at once. With lighter blades, the Occultist can attack with greater proficiency and speed. ^y(Requires Dual wield of Swords~Daggers/Axes)"
-    }, {
+      "description" : "The Occultist is able to wield two blade melee weapons at once. With lighter blades, the Occultist can attack with greater proficiency and speed. ^y(Requires Dual wield of Swords~Daggers/Axes)",
       "skillIcon" : {
+        "posX" : 550,
         "posY" : 279,
-        "circular" : false,
-        "posX" : 110
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Smoke Screen",
       "parent" : null,
       "attributes" : {
@@ -2607,13 +2588,13 @@
         "petLimit" : 1,
         "skillProjectileNumber" : 1
       },
-      "description" : "Allows the Occultist to throw a trap that will cloud an area over with a debilitating, impenetrable smoke, making enemies fight less effectively. "
-    }, {
+      "description" : "Allows the Occultist to throw a trap that will cloud an area over with a debilitating, impenetrable smoke, making enemies fight less effectively. ",
       "skillIcon" : {
+        "posX" : 110,
         "posY" : 279,
-        "circular" : false,
-        "posX" : 374
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Shadow Rifts",
       "parent" : null,
       "attributes" : {
@@ -2630,13 +2611,13 @@
         "skillProjectileNumber" : 1,
         "skillMaxLevel" : 16
       },
-      "description" : "The Occultist opens multiple rifts, allowing shadow sprites to materialize. These highly unstable beings can't stay for long outside of the shadow realm, and leave the mortal world in a burst of energy."
-    } ], [ {
+      "description" : "The Occultist opens multiple rifts, allowing shadow sprites to materialize. These highly unstable beings can't stay for long outside of the shadow realm, and leave the mortal world in a burst of energy.",
       "skillIcon" : {
-        "posY" : 217,
-        "circular" : true,
-        "posX" : 286
-      },
+        "posX" : 374,
+        "posY" : 279,
+        "circular" : false
+      }
+    } ], [ {
       "name" : "Dark Invigoration",
       "parent" : "Shadow Link",
       "attributes" : {
@@ -2647,13 +2628,13 @@
         "offensiveSlowBleedingDurationMin" : 3.0,
         "skillMaxLevel" : 8
       },
-      "description" : "The Occultist's weapons are charged with dark energy, greatly increasing the power of their attacks."
-    }, {
+      "description" : "The Occultist's weapons are charged with dark energy, greatly increasing the power of their attacks.",
       "skillIcon" : {
+        "posX" : 286,
         "posY" : 217,
-        "circular" : false,
-        "posX" : 110
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Toxic Concoction",
       "parent" : null,
       "attributes" : {
@@ -2673,13 +2654,13 @@
         "projectileFragmentsLaunchNumberMax" : [ 9.0, 11.0, 11.0, 12.0, 12.0, 13.0, 13.0, 14.0, 14.0, 15.0, 15.0, 16.0 ],
         "skillProjectileNumber" : 1
       },
-      "description" : "Lobs a bomb that will explode on impact, discharging shrapnel in all directions. With a greater mastery level, you can invest in more lethal ingredients."
-    }, {
+      "description" : "Lobs a bomb that will explode on impact, discharging shrapnel in all directions. With a greater mastery level, you can invest in more lethal ingredients.",
       "skillIcon" : {
+        "posX" : 110,
         "posY" : 217,
-        "circular" : true,
-        "posX" : 550
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Dual Ranged Proficiency",
       "parent" : null,
       "attributes" : {
@@ -2692,13 +2673,13 @@
         "skillMaxLevel" : 8,
         "RangedOneHand" : 1
       },
-      "description" : "The Occultist is able to wield two ranged weapons at once. With lighter ranged weapons, the Occultist can attack with greater proficiency and speed. ^y(Requires Dual wield of One-hand Ranged Weapons)"
-    } ], [ {
+      "description" : "The Occultist is able to wield two ranged weapons at once. With lighter ranged weapons, the Occultist can attack with greater proficiency and speed. ^y(Requires Dual wield of One-hand Ranged Weapons)",
       "skillIcon" : {
-        "posY" : 155,
-        "circular" : true,
-        "posX" : 198
-      },
+        "posX" : 550,
+        "posY" : 217,
+        "circular" : true
+      }
+    } ], [ {
       "name" : "Mandrake",
       "parent" : "Nightshade",
       "attributes" : {
@@ -2712,13 +2693,13 @@
         "offensiveConfusionChance" : [ 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0 ],
         "skillMaxLevel" : 8
       },
-      "description" : "Adds a chance for poison to cloud an enemy's mind, sending them into a state of confusion."
-    }, {
+      "description" : "Adds a chance for poison to cloud an enemy's mind, sending them into a state of confusion.",
       "skillIcon" : {
+        "posX" : 198,
         "posY" : 155,
-        "circular" : false,
-        "posX" : 638
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Nether Strike",
       "parent" : null,
       "attributes" : {
@@ -2742,13 +2723,13 @@
         "skillMasteryLevelRequired" : 10,
         "Spear" : 1
       },
-      "description" : "Speed through the shadow realm unseen to deliver an attack with terrifying momentum that will greatly multiply damage and penetration. ^y(Doesn't work with staves)"
-    }, {
+      "description" : "Speed through the shadow realm unseen to deliver an attack with terrifying momentum that will greatly multiply damage and penetration. ^y(Doesn't work with staves)",
       "skillIcon" : {
+        "posX" : 638,
         "posY" : 155,
-        "circular" : true,
-        "posX" : 110
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Poisonous Gas",
       "parent" : null,
       "attributes" : {
@@ -2765,13 +2746,13 @@
         "offensiveSlowTotalSpeedDurationMin" : 6.0,
         "skillMaxLevel" : 8
       },
-      "description" : "Adds poison gas pellets to the toxic concoction."
-    }, {
+      "description" : "Adds poison gas pellets to the toxic concoction.",
       "skillIcon" : {
+        "posX" : 110,
         "posY" : 155,
-        "circular" : true,
-        "posX" : 374
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Nether Breach",
       "parent" : "Shadow Rifts",
       "attributes" : {
@@ -2781,13 +2762,13 @@
         "skillMaxLevel" : 8,
         "skillCooldownReductionChance" : [ 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0, 70.0, 74.0 ]
       },
-      "description" : "Widens the aperture to the shadow realm, allowing dark energies to pool more freely."
-    } ], [ {
+      "description" : "Widens the aperture to the shadow realm, allowing dark energies to pool more freely.",
       "skillIcon" : {
-        "posY" : 93,
-        "circular" : true,
-        "posX" : 198
-      },
+        "posX" : 374,
+        "posY" : 155,
+        "circular" : true
+      }
+    } ], [ {
       "name" : "Toxin Distillation",
       "parent" : "Mandrake",
       "attributes" : {
@@ -2796,13 +2777,13 @@
         "skillUltimateLevel" : 16,
         "skillMaxLevel" : 12
       },
-      "description" : "Learn alchemical processes to distill natural toxins, increasing the potency and duration of all poison attacks."
-    }, {
+      "description" : "Learn alchemical processes to distill natural toxins, increasing the potency and duration of all poison attacks.",
       "skillIcon" : {
+        "posX" : 198,
         "posY" : 93,
-        "circular" : true,
-        "posX" : 286
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Shadow Lore",
       "parent" : "Dark Invigoration",
       "attributes" : {
@@ -2814,13 +2795,13 @@
         "offensiveSlowBleedingModifier" : [ 66.0, 78.0, 90.0, 102.0, 114.0, 126.0, 138.0, 150.0, 162.0, 174.0, 186.0, 200.0 ],
         "skillMaxLevel" : 8
       },
-      "description" : "With a deeper understanding of these darker energies, the Occultist is able to channel them in greater quantities."
-    }, {
+      "description" : "With a deeper understanding of these darker energies, the Occultist is able to channel them in greater quantities.",
       "skillIcon" : {
+        "posX" : 286,
         "posY" : 93,
-        "circular" : true,
-        "posX" : 462
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Flurry of Knives",
       "parent" : "Throwing Knife",
       "attributes" : {
@@ -2831,13 +2812,13 @@
         "offensivePierceModifier" : [ 25.5, 30.0, 34.5, 39.0, 43.5, 48.0, 52.5, 57.0, 61.5, 66.0 ],
         "skillMaxLevel" : 6
       },
-      "description" : "Learn to throw additional knives at once and cut down enemies with a lethal flurry of razor-sharp metal."
-    }, {
+      "description" : "Learn to throw additional knives at once and cut down enemies with a lethal flurry of razor-sharp metal.",
       "skillIcon" : {
+        "posX" : 462,
         "posY" : 93,
-        "circular" : false,
-        "posX" : 550
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Blade Barrier",
       "parent" : null,
       "attributes" : {
@@ -2858,13 +2839,13 @@
         "spawnObjectsDistanceIncrement" : 4.0,
         "offensivePercentCurrentLifeMin" : [ 0.4, 0.8, 1.2, 1.6, 2.0, 2.4, 2.8, 3.2, 3.6, 4.0, 4.4, 4.8, 5.2, 5.6, 6.0, 6.4, 6.8, 7.2, 7.6, 8.0, 8.4, 8.8, 9.2, 9.6, 10.0, 10.4, 10.8, 11.2, 11.6, 12.0 ]
       },
-      "description" : "Summons a field of whirling blades that can transmit effects like a regular weapon."
-    }, {
+      "description" : "Summons a field of whirling blades that can transmit effects like a regular weapon.",
       "skillIcon" : {
+        "posX" : 550,
         "posY" : 93,
-        "circular" : false,
-        "posX" : 374
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Shadow Stalker",
       "parent" : null,
       "attributes" : {
@@ -2876,13 +2857,13 @@
         "skillConnectionSpacing" : 62,
         "skillMaxLevel" : 16
       },
-      "description" : "Summons a powerful demon to assist the Occultist. Even outside of the shadow realm, the stalker is able to subdue enemies with a barrage of life-damaging attacks.^y^nAt level 5, the Stalker learns Shadow Strike - displaces himself through the nether, dealing massive damage and paralyzing the enemy.^y^nAt level 10, the Stalker learns Shadow Rush, a temporary aura that greatly increases the damage and durability of the Stalker and any nearby allies.^y^nAt level 15, the Stalker learns Shadow Plague : infects a target, reducing a portion of its life instantly and slowing it for a few seconds--effect can leap to nearby enemies."
-    } ], [ {
+      "description" : "Summons a powerful demon to assist the Occultist. Even outside of the shadow realm, the stalker is able to subdue enemies with a barrage of life-damaging attacks.^y^nAt level 5, the Stalker learns Shadow Strike - displaces himself through the nether, dealing massive damage and paralyzing the enemy.^y^nAt level 10, the Stalker learns Shadow Rush, a temporary aura that greatly increases the damage and durability of the Stalker and any nearby allies.^y^nAt level 15, the Stalker learns Shadow Plague : infects a target, reducing a portion of its life instantly and slowing it for a few seconds--effect can leap to nearby enemies.",
       "skillIcon" : {
-        "posY" : 31,
-        "circular" : true,
-        "posX" : 638
-      },
+        "posX" : 374,
+        "posY" : 93,
+        "circular" : false
+      }
+    } ], [ {
       "name" : "Dark Vapors",
       "parent" : "Nether Strike",
       "attributes" : {
@@ -2901,13 +2882,13 @@
         "offensiveSlowBleedingModifier" : [ 60.0, 95.0, 130.0, 165.0, 200.0, 235.0, 270.0, 305.0, 340.0, 375.0, 410.0, 445.0 ],
         "Spear" : 1
       },
-      "description" : "Shadow energies cling to your weapon as you pass through the shadow realm, greatly increasing bleeding and life damage. ^y(Doesn't work with staves)"
-    }, {
+      "description" : "Shadow energies cling to your weapon as you pass through the shadow realm, greatly increasing bleeding and life damage. ^y(Doesn't work with staves)",
       "skillIcon" : {
+        "posX" : 638,
         "posY" : 31,
-        "circular" : true,
-        "posX" : 110
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Aphotic Ichor",
       "parent" : null,
       "attributes" : {
@@ -2926,13 +2907,13 @@
         "projectileFragmentsLaunchNumberMax" : [ 5.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 8.0, 8.0, 8.0, 9.0, 9.0, 9.0, 10.0, 10.0, 11.0 ],
         "skillUltimateLevel" : 16
       },
-      "description" : "Adds dark fragments to the toxic concoction, which explode into a noxious gas, lowering enemy constitution and causing life damage."
-    }, {
+      "description" : "Adds dark fragments to the toxic concoction, which explode into a noxious gas, lowering enemy constitution and causing life damage.",
       "skillIcon" : {
+        "posX" : 110,
         "posY" : 31,
-        "circular" : true,
-        "posX" : 374
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Channel",
       "parent" : null,
       "attributes" : {
@@ -2952,13 +2933,13 @@
         "allSkillEnhancement" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0 ],
         "skillManaCostReduction" : [ 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0 ]
       },
-      "description" : "Open a direct channel between the shadow stalker and the shadow realm to grant the demon increased capabilities.^n^yAlso adds a hidden 30% + 4% per level non-reducible resistance to Mana Burn."
-    }, {
+      "description" : "Open a direct channel between the shadow stalker and the shadow realm to grant the demon increased capabilities.^n^yAlso adds a hidden 30% + 4% per level non-reducible resistance to Mana Burn.",
       "skillIcon" : {
+        "posX" : 374,
         "posY" : 31,
-        "circular" : true,
-        "posX" : 462
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Shadow Bolts",
       "parent" : null,
       "attributes" : {
@@ -2977,7 +2958,12 @@
         "sparkChance" : 100.0,
         "offensivePercentCurrentLifeMin" : [ 2.75, 3.0, 3.25, 3.5, 3.75, 4.0, 4.25, 4.5, 4.75, 5.0, 5.25, 5.5 ]
       },
-      "description" : "The Shadow Stalker assaults a target with bolts of dark energy, dealing damage and paralyzing them momentarily."
+      "description" : "The Shadow Stalker assaults a target with bolts of dark energy, dealing damage and paralyzing them momentarily.",
+      "skillIcon" : {
+        "posX" : 462,
+        "posY" : 31,
+        "circular" : true
+      }
     } ] ]
   }, {
     "masteryAttributes" : {
@@ -2993,11 +2979,6 @@
     },
     "name" : "Defense",
     "skillTiers" : [ [ {
-      "skillIcon" : {
-        "posY" : 403,
-        "circular" : true,
-        "posX" : 286
-      },
       "name" : "Armor Handling",
       "parent" : null,
       "attributes" : {
@@ -3008,13 +2989,13 @@
         "skillMasteryLevelRequired" : 1,
         "skillMaxLevel" : 6
       },
-      "description" : "Understanding how to properly adjust and move in armor allows you to wear heavier armor and shields than an untrained warrior of equivalent strength could manage."
-    }, {
+      "description" : "Understanding how to properly adjust and move in armor allows you to wear heavier armor and shields than an untrained warrior of equivalent strength could manage.",
       "skillIcon" : {
+        "posX" : 286,
         "posY" : 403,
-        "circular" : false,
-        "posX" : 550
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Rally",
       "parent" : null,
       "attributes" : {
@@ -3030,13 +3011,13 @@
         "skillTargetRadius" : 10.0,
         "skillMaxLevel" : 12
       },
-      "description" : "The resolute call of your horn can turn the tide of battle, inspiring all in its range to fight with renewed vitality."
-    }, {
+      "description" : "The resolute call of your horn can turn the tide of battle, inspiring all in its range to fight with renewed vitality.",
       "skillIcon" : {
+        "posX" : 550,
         "posY" : 403,
-        "circular" : false,
-        "posX" : 374
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Batter",
       "parent" : null,
       "attributes" : {
@@ -3058,13 +3039,13 @@
         "offensiveSlowAttackSpeedDurationMin" : 8.0,
         "offensiveTauntMin" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ]
       },
-      "description" : "A shield attack that hits for increased damage and slows enemies' attacks for a duration. {^y^n}Can hit two targets at level 4 or more. Reduces cooldown and Energy cost with levels. "
-    }, {
+      "description" : "A shield attack that hits for increased damage and slows enemies' attacks for a duration. {^y^n}Can hit two targets at level 4 or more. Reduces cooldown and Energy cost with levels. ",
       "skillIcon" : {
+        "posX" : 374,
         "posY" : 403,
-        "circular" : true,
-        "posX" : 110
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Concussive Blow",
       "parent" : null,
       "attributes" : {
@@ -3076,13 +3057,13 @@
         "skillMaxLevel" : 8,
         "offensiveStunChance" : 8.0
       },
-      "description" : "While wielding a club-type weapon, this skill adds a chance to stun enemies on attack, and increases the duration of all stuns. ^y(Club/Mace/Maul/Hammer Required)"
-    } ], [ {
+      "description" : "While wielding a club-type weapon, this skill adds a chance to stun enemies on attack, and increases the duration of all stuns. ^y(Club/Mace/Maul/Hammer Required)",
       "skillIcon" : {
-        "posY" : 341,
-        "circular" : true,
-        "posX" : 286
-      },
+        "posX" : 110,
+        "posY" : 403,
+        "circular" : true
+      }
+    } ], [ {
       "name" : "Adrenaline",
       "parent" : null,
       "attributes" : {
@@ -3094,13 +3075,13 @@
         "onHitActivationChance" : 5.0,
         "skillMaxLevel" : 12
       },
-      "description" : "Each enemy hit has a chance of triggering an adrenaline rush that boosts life regeneration."
-    }, {
+      "description" : "Each enemy hit has a chance of triggering an adrenaline rush that boosts life regeneration.",
       "skillIcon" : {
+        "posX" : 286,
         "posY" : 341,
-        "circular" : false,
-        "posX" : 462
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Battle Awareness",
       "parent" : null,
       "attributes" : {
@@ -3116,13 +3097,13 @@
         "defensiveProtectionModifier" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ],
         "skillMaxLevel" : 12
       },
-      "description" : "Enter a state of heightened awareness that allows you and your nearby allies to perceive and respond to attacks more effectively."
-    }, {
+      "description" : "Enter a state of heightened awareness that allows you and your nearby allies to perceive and respond to attacks more effectively.",
       "skillIcon" : {
+        "posX" : 462,
         "posY" : 341,
-        "circular" : true,
-        "posX" : 198
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Hack",
       "parent" : null,
       "attributes" : {
@@ -3133,13 +3114,13 @@
         "Axe" : 1,
         "offensivePierceRatioModifier" : [ 15.0, 19.0, 23.0, 27.0, 31.0, 35.0, 39.0, 43.0, 47.0, 51.0, 55.0, 60.0 ]
       },
-      "description" : "Improves penetration when using melee axes, and adds a chance that axe attacks will chop through enemy armor. ^y(Axe Required)"
-    }, {
+      "description" : "Improves penetration when using melee axes, and adds a chance that axe attacks will chop through enemy armor. ^y(Axe Required)",
       "skillIcon" : {
+        "posX" : 198,
         "posY" : 341,
-        "circular" : true,
-        "posX" : 638
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Shield Training",
       "parent" : null,
       "attributes" : {
@@ -3150,13 +3131,13 @@
         "characterDefensiveAbilityModifier" : [ 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 21.0, 23.0, 25.0, 27.0, 32.0 ],
         "skillMaxLevel" : 8
       },
-      "description" : "Years of training allow you to utilize shields for a greater defensive advantage."
-    } ], [ {
+      "description" : "Years of training allow you to utilize shields for a greater defensive advantage.",
       "skillIcon" : {
-        "posY" : 279,
-        "circular" : true,
-        "posX" : 286
-      },
+        "posX" : 638,
+        "posY" : 341,
+        "circular" : true
+      }
+    } ], [ {
       "name" : "Quick Recovery",
       "parent" : "Adrenaline",
       "attributes" : {
@@ -3168,13 +3149,13 @@
         "characterDefensiveBlockRecoveryReduction" : [ 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0, 51.0, 54.0 ],
         "skillMaxLevel" : 6
       },
-      "description" : "A strong shield arm allows you to block multiple attackers with amazing speed when necessary but it can only be kept up for a short time."
-    }, {
+      "description" : "A strong shield arm allows you to block multiple attackers with amazing speed when necessary but it can only be kept up for a short time.",
       "skillIcon" : {
+        "posX" : 286,
         "posY" : 279,
-        "circular" : true,
-        "posX" : 550
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Inspiration",
       "parent" : "Rally",
       "attributes" : {
@@ -3184,13 +3165,13 @@
         "skillMaxLevel" : 6,
         "characterTotalSpeedModifier" : 10.0
       },
-      "description" : "Gradually restores lost energy to allies allowing them to continue the fight."
-    }, {
+      "description" : "Gradually restores lost energy to allies allowing them to continue the fight.",
       "skillIcon" : {
+        "posX" : 550,
         "posY" : 279,
-        "circular" : true,
-        "posX" : 638
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Shield Smash",
       "parent" : null,
       "attributes" : {
@@ -3206,13 +3187,13 @@
         "skillMasteryLevelRequired" : 5,
         "skillMaxLevel" : 6
       },
-      "description" : "A shield fighting technique that inflicts damage with both the weapon and the shield."
-    }, {
+      "description" : "A shield fighting technique that inflicts damage with both the weapon and the shield.",
       "skillIcon" : {
+        "posX" : 638,
         "posY" : 279,
-        "circular" : true,
-        "posX" : 374
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Rend Armor",
       "parent" : "Batter",
       "attributes" : {
@@ -3225,13 +3206,13 @@
         "skillMaxLevel" : 12,
         "offensiveSlowDefensiveReductionMin" : [ 18.0, 36.0, 54.0, 72.0, 90.0, 108.0, 126.0, 144.0, 162.0, 180.0, 201.0, 225.0, 249.0, 276.0, 309.0, 345.0 ]
       },
-      "description" : "Increases the effectiveness of Batter causing it to hit more targets with enough force to dent their armor."
-    } ], [ {
+      "description" : "Increases the effectiveness of Batter causing it to hit more targets with enough force to dent their armor.",
       "skillIcon" : {
-        "posY" : 217,
-        "circular" : true,
-        "posX" : 286
-      },
+        "posX" : 374,
+        "posY" : 279,
+        "circular" : true
+      }
+    } ], [ {
       "name" : "Resilience",
       "parent" : "Quick Recovery",
       "attributes" : {
@@ -3240,13 +3221,13 @@
         "skillCooldownReduction" : [ 30.0, 32.5, 35.0, 37.5, 40.0, 42.5, 45.0, 47.5, 50.0, 52.5 ],
         "skillMaxLevel" : 6
       },
-      "description" : "Increases how often an Adrenaline rush can be triggered."
-    }, {
+      "description" : "Increases how often an Adrenaline rush can be triggered.",
       "skillIcon" : {
+        "posX" : 286,
         "posY" : 217,
-        "circular" : true,
-        "posX" : 462
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Focus",
       "parent" : "Battle Awareness",
       "attributes" : {
@@ -3257,13 +3238,13 @@
         "skillMasteryLevelRequired" : 5,
         "skillMaxLevel" : 6
       },
-      "description" : "Focus allows you and your allies to react quickly to enemy attacks increasing the chance of a successful shield block."
-    }, {
+      "description" : "Focus allows you and your allies to react quickly to enemy attacks increasing the chance of a successful shield block.",
       "skillIcon" : {
+        "posX" : 462,
         "posY" : 217,
-        "circular" : false,
-        "posX" : 374
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Shield Charge",
       "parent" : null,
       "attributes" : {
@@ -3284,13 +3265,13 @@
         "skillProjectileNumber" : 1,
         "skillMasteryLevelRequired" : 10
       },
-      "description" : "A running attack that slams into the enemy with your shield causing bonus damage and stunning them."
-    } ], [ {
+      "description" : "A running attack that slams into the enemy with your shield causing bonus damage and stunning them.",
       "skillIcon" : {
-        "posY" : 155,
-        "circular" : true,
-        "posX" : 550
-      },
+        "posX" : 374,
+        "posY" : 217,
+        "circular" : false
+      }
+    } ], [ {
       "name" : "Defiance",
       "parent" : "Inspiration",
       "attributes" : {
@@ -3301,13 +3282,13 @@
         "skillMasteryLevelRequired" : 30,
         "skillMaxLevel" : 12
       },
-      "description" : "A percentage of all damage inflicted by enemies will be revisited back upon them for a short duration after using Rally."
-    }, {
+      "description" : "A percentage of all damage inflicted by enemies will be revisited back upon them for a short duration after using Rally.",
       "skillIcon" : {
+        "posX" : 550,
         "posY" : 155,
-        "circular" : true,
-        "posX" : 638
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Disable",
       "parent" : null,
       "attributes" : {
@@ -3323,13 +3304,13 @@
         "offensiveSlowAttackSpeedDurationMin" : 5.0,
         "skillMaxLevel" : 6
       },
-      "description" : "A fighting technique that utilizes the shield to crush foes and throw them off-balance."
-    }, {
+      "description" : "A fighting technique that utilizes the shield to crush foes and throw them off-balance.",
       "skillIcon" : {
+        "posX" : 638,
         "posY" : 155,
-        "circular" : true,
-        "posX" : 462
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Iron Will",
       "parent" : "Focus",
       "attributes" : {
@@ -3344,13 +3325,13 @@
         "skillMaxLevel" : 6,
         "defensiveSleep" : [ 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 43.5, 47.0, 50.5, 54.0 ]
       },
-      "description" : "Grants allies the resolve to hold out against great adversity."
-    }, {
+      "description" : "Grants allies the resolve to hold out against great adversity.",
       "skillIcon" : {
+        "posX" : 462,
         "posY" : 155,
-        "circular" : true,
-        "posX" : 198
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Cleave",
       "parent" : null,
       "attributes" : {
@@ -3365,13 +3346,13 @@
         "offensiveSlowBleedingModifier" : [ 70.0, 85.0, 100.0, 115.0, 130.0, 145.0, 160.0, 175.0, 190.0, 205.0, 220.0, 245.0 ],
         "Axe" : 1
       },
-      "description" : "A savage melee axe attack that strikes twice, landing both hands each time for a total of four hits. ^y(Axe Required)"
-    } ], [ {
+      "description" : "A savage melee axe attack that strikes twice, landing both hands each time for a total of four hits. ^y(Axe Required)",
       "skillIcon" : {
-        "posY" : 93,
-        "circular" : true,
-        "posX" : 286
-      },
+        "posX" : 198,
+        "posY" : 155,
+        "circular" : true
+      }
+    } ], [ {
       "name" : "Defensive Reaction",
       "parent" : "Resilience",
       "attributes" : {
@@ -3381,13 +3362,13 @@
         "skillUltimateLevel" : 12,
         "skillMaxLevel" : 8
       },
-      "description" : "Increases damage and attack speed during an adrenaline rush."
-    }, {
+      "description" : "Increases damage and attack speed during an adrenaline rush.",
       "skillIcon" : {
+        "posX" : 286,
         "posY" : 93,
-        "circular" : true,
-        "posX" : 374
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Disruption",
       "parent" : "Shield Charge",
       "attributes" : {
@@ -3402,13 +3383,13 @@
         "skillMaxLevel" : 6,
         "offensiveTauntMin" : [ 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0 ]
       },
-      "description" : "Increases the shock effect of Shield Charge, startling adjacent enemies and disrupting skill use for a time."
-    }, {
+      "description" : "Increases the shock effect of Shield Charge, startling adjacent enemies and disrupting skill use for a time.",
       "skillIcon" : {
+        "posX" : 374,
         "posY" : 93,
-        "circular" : true,
-        "posX" : 110
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Heave",
       "parent" : null,
       "attributes" : {
@@ -3429,13 +3410,13 @@
         "offensiveTauntMin" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ],
         "offensiveSlowDefensiveReductionMin" : [ 94.0, 110.0, 126.0, 142.0, 158.0, 174.0, 190.0, 206.0, 222.0, 238.0, 254.0, 270.0 ]
       },
-      "description" : "A slow and brutal attack that deals massive damage. ^y(Club/Mace/Maul/Hammer Required)"
-    } ], [ {
+      "description" : "A slow and brutal attack that deals massive damage. ^y(Club/Mace/Maul/Hammer Required)",
       "skillIcon" : {
-        "posY" : 31,
-        "circular" : false,
-        "posX" : 550
-      },
+        "posX" : 110,
+        "posY" : 93,
+        "circular" : true
+      }
+    } ], [ {
       "name" : "Colossus Form",
       "parent" : null,
       "attributes" : {
@@ -3454,13 +3435,13 @@
         "actorScale" : 1.6,
         "characterStrengthModifier" : [ 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0, 150.0 ]
       },
-      "description" : "Assume the form of a towering Colossus and lay waste to your enemies."
-    }, {
+      "description" : "Assume the form of a towering Colossus and lay waste to your enemies.",
       "skillIcon" : {
+        "posX" : 550,
         "posY" : 31,
-        "circular" : true,
-        "posX" : 638
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Pulverize",
       "parent" : null,
       "attributes" : {
@@ -3479,13 +3460,13 @@
         "skillTargetAngle" : 120.0,
         "offensiveSlowOffensiveAbilityMin" : 50.0
       },
-      "description" : "A fighting technique that utilizes the shield to slam into enemies, knocking them senseless."
-    }, {
+      "description" : "A fighting technique that utilizes the shield to slam into enemies, knocking them senseless.",
       "skillIcon" : {
+        "posX" : 638,
         "posY" : 31,
-        "circular" : false,
-        "posX" : 374
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Perfect Block",
       "parent" : null,
       "attributes" : {
@@ -3507,13 +3488,13 @@
         "instantCast" : 1,
         "retaliationStunMin" : 1.0
       },
-      "description" : "Raise your shield to become temporarily invulnerable and stun any enemy attacking you in melee."
-    }, {
+      "description" : "Raise your shield to become temporarily invulnerable and stun any enemy attacking you in melee.",
       "skillIcon" : {
+        "posX" : 374,
         "posY" : 31,
-        "circular" : false,
-        "posX" : 198
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Unyielding Phalanx",
       "parent" : null,
       "attributes" : {
@@ -3531,7 +3512,12 @@
         "spawnObjectsSpacingAngle" : 360.0,
         "spawnObjectsDistanceIncrement" : 1.0
       },
-      "description" : "Summon the shades of fallen comrades to form a line with you once more, engaging any enemy that dares to approach."
+      "description" : "Summon the shades of fallen comrades to form a line with you once more, engaging any enemy that dares to approach.",
+      "skillIcon" : {
+        "posX" : 198,
+        "posY" : 31,
+        "circular" : false
+      }
     } ] ]
   }, {
     "masteryAttributes" : {
@@ -3547,11 +3533,6 @@
     },
     "name" : "Dream",
     "skillTiers" : [ [ {
-      "skillIcon" : {
-        "posY" : 403,
-        "circular" : false,
-        "posX" : 638
-      },
       "name" : "Distortion Wave",
       "parent" : null,
       "attributes" : {
@@ -3573,13 +3554,13 @@
         "waveTime" : 1.0,
         "offensiveSlowTotalSpeedDurationMin" : 4.0
       },
-      "description" : "A wave of force is projected outward that forms chaotic ripples in the fabric of reality and delivers devastating damage to the body and mind of enemies."
-    }, {
+      "description" : "A wave of force is projected outward that forms chaotic ripples in the fabric of reality and delivers devastating damage to the body and mind of enemies.",
       "skillIcon" : {
+        "posX" : 638,
         "posY" : 403,
-        "circular" : false,
-        "posX" : 550
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Psionic Touch",
       "parent" : null,
       "attributes" : {
@@ -3595,13 +3576,13 @@
         "skillChargeDuration" : 10.0,
         "skillMaxLevel" : 12
       },
-      "description" : "Psionic energies focused within your weapons will create a bone shattering resonance when they contact your enemies. {^y}Assign this skill to your left mouse button."
-    }, {
+      "description" : "Psionic energies focused within your weapons will create a bone shattering resonance when they contact your enemies. {^y}Assign this skill to your left mouse button.",
       "skillIcon" : {
+        "posX" : 550,
         "posY" : 403,
-        "circular" : true,
-        "posX" : 198
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Premonition",
       "parent" : null,
       "attributes" : {
@@ -3610,13 +3591,13 @@
         "characterDefensiveAbility" : [ 31.0, 47.0, 63.0, 79.0, 95.0, 111.0, 127.0, 143.0, 159.0, 175.0 ],
         "skillMaxLevel" : 6
       },
-      "description" : "A precognitive sense of the imminent future allows you to stay one step ahead of your enemies in combat."
-    }, {
+      "description" : "A precognitive sense of the imminent future allows you to stay one step ahead of your enemies in combat.",
       "skillIcon" : {
+        "posX" : 198,
         "posY" : 403,
-        "circular" : false,
-        "posX" : 286
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Sands of Sleep",
       "parent" : null,
       "attributes" : {
@@ -3632,13 +3613,13 @@
         "sparkMaxNumber" : [ 3.0, 4.0, 4.0, 5.0, 5.0, 6.0, 6.0, 7.0, 7.0, 8.0, 8.0, 9.0 ],
         "skillMaxLevel" : 8
       },
-      "description" : "Puts enemies to sleep, rendering them immobile for a duration or until awakened by an attack."
-    } ], [ {
+      "description" : "Puts enemies to sleep, rendering them immobile for a duration or until awakened by an attack.",
       "skillIcon" : {
-        "posY" : 341,
-        "circular" : false,
-        "posX" : 110
-      },
+        "posX" : 286,
+        "posY" : 403,
+        "circular" : false
+      }
+    } ], [ {
       "name" : "Trance of Empathy",
       "parent" : null,
       "attributes" : {
@@ -3656,13 +3637,13 @@
         "skillTargetRadius" : 12.0,
         "offensiveLifeLeechMin" : [ 3.25, 3.5, 3.75, 4.0, 4.25, 4.5, 4.75, 5.0, 5.25, 5.5, 5.75, 6.0, 6.25, 6.5, 6.75, 7.0 ]
       },
-      "description" : "Force enemies to share the damage they inflict upon you by forming a telepathic link to their minds that conveys only pain and siphons life in retribution."
-    }, {
+      "description" : "Force enemies to share the damage they inflict upon you by forming a telepathic link to their minds that conveys only pain and siphons life in retribution.",
       "skillIcon" : {
+        "posX" : 110,
         "posY" : 341,
-        "circular" : true,
-        "posX" : 550
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Psionic Artery",
       "parent" : "Psionic Beam",
       "attributes" : {
@@ -3672,13 +3653,13 @@
         "skillMaxLevel" : 6,
         "offensivePercentCurrentLifeMin" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 15.0, 17.0, 19.0, 21.0, 23.0 ]
       },
-      "description" : "Allows the player to harmonize with the psionic resonance, greatly increasing effects that channel life and energy."
-    }, {
+      "description" : "Allows the player to harmonize with the psionic resonance, greatly increasing effects that channel life and energy.",
       "skillIcon" : {
+        "posX" : 550,
         "posY" : 341,
-        "circular" : false,
-        "posX" : 462
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Mind Breaker",
       "parent" : null,
       "attributes" : {
@@ -3695,13 +3676,13 @@
         "offensiveManaBurnDrainMin" : [ 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 64.0, 68.0, 72.0, 76.0, 80.0 ],
         "offensiveManaBurnDamageRatio" : [ 28.0, 36.0, 44.0, 52.0, 60.0, 68.0, 76.0, 84.0, 92.0, 100.0, 108.0, 116.0, 124.0, 132.0, 140.0, 148.0 ]
       },
-      "description" : "A psionic pulse of charged energy breaks enemy's concentration, causes damage, and dispels hostile enchantments on allies or beneficial enchantments on enemies."
-    } ], [ {
+      "description" : "A psionic pulse of charged energy breaks enemy's concentration, causes damage, and dispels hostile enchantments on allies or beneficial enchantments on enemies.",
       "skillIcon" : {
-        "posY" : 279,
-        "circular" : true,
-        "posX" : 638
-      },
+        "posX" : 462,
+        "posY" : 341,
+        "circular" : false
+      }
+    } ], [ {
       "name" : "Chaotic Resonance",
       "parent" : "Distortion Wave",
       "attributes" : {
@@ -3716,13 +3697,13 @@
         "offensiveSlowDefensiveReductionMin" : [ 25.0, 39.0, 55.0, 73.0, 93.0, 115.0, 140.0, 168.0, 200.0, 236.0, 277.0, 323.0 ],
         "offensiveSlowLifeDurationMin" : 5.0
       },
-      "description" : "Amplifies the physical distortion effect, causing it to shatter armor and break bones. Allows to cast the wave more frequently. ^y(Reduced cooldown starts at level 2) "
-    }, {
+      "description" : "Amplifies the physical distortion effect, causing it to shatter armor and break bones. Allows to cast the wave more frequently. ^y(Reduced cooldown starts at level 2) ",
       "skillIcon" : {
+        "posX" : 638,
         "posY" : 279,
-        "circular" : false,
-        "posX" : 374
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Phantom Strike",
       "parent" : null,
       "attributes" : {
@@ -3740,13 +3721,13 @@
         "skillProjectileNumber" : 1,
         "Spear" : 1
       },
-      "description" : "Vanish from the waking world and reappear  before a target enemy to deliver a monstrous attack."
-    }, {
+      "description" : "Vanish from the waking world and reappear  before a target enemy to deliver a monstrous attack.",
       "skillIcon" : {
+        "posX" : 374,
         "posY" : 279,
-        "circular" : true,
-        "posX" : 286
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Troubled Dreams",
       "parent" : "Sands of Sleep",
       "attributes" : {
@@ -3759,13 +3740,13 @@
         "skillMaxLevel" : 8,
         "offensiveSlowLifeDurationMin" : 5.0
       },
-      "description" : "The Sands of Sleep now torment afflicted enemies, and erode their constitution."
-    }, {
+      "description" : "The Sands of Sleep now torment afflicted enemies, and erode their constitution.",
       "skillIcon" : {
+        "posX" : 286,
         "posY" : 279,
-        "circular" : true,
-        "posX" : 198
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Distortion Field",
       "parent" : null,
       "attributes" : {
@@ -3779,13 +3760,13 @@
         "damageAbsorption" : [ 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0 ],
         "skillMaxLevel" : 6
       },
-      "description" : "A field of psionic power bends the fabric of reality around the player, negating some of the damage from enemy attacks and dealing retaliatory damage to enemies that strike you."
-    } ], [ {
+      "description" : "A field of psionic power bends the fabric of reality around the player, negating some of the damage from enemy attacks and dealing retaliatory damage to enemies that strike you.",
       "skillIcon" : {
-        "posY" : 217,
-        "circular" : false,
-        "posX" : 110
-      },
+        "posX" : 198,
+        "posY" : 279,
+        "circular" : true
+      }
+    } ], [ {
       "name" : "Trance of Convalescence",
       "parent" : null,
       "attributes" : {
@@ -3802,13 +3783,13 @@
         "skillTargetRadius" : 12.0,
         "skillMaxLevel" : 12
       },
-      "description" : "A restful state of mind causes increased life recovery and damage absorption for the player and allies."
-    }, {
+      "description" : "A restful state of mind causes increased life recovery and damage absorption for the player and allies.",
       "skillIcon" : {
+        "posX" : 110,
         "posY" : 217,
-        "circular" : true,
-        "posX" : 550
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Psionic Burn",
       "parent" : null,
       "attributes" : {
@@ -3821,13 +3802,13 @@
         "skillTargetRadius" : 3.5,
         "skillMaxLevel" : 8
       },
-      "description" : "Psionic energy within the target ignites and explodes outward, burning through their material being and inflicting severe damage to adjacent targets."
-    }, {
+      "description" : "Psionic energy within the target ignites and explodes outward, burning through their material being and inflicting severe damage to adjacent targets.",
       "skillIcon" : {
+        "posX" : 550,
         "posY" : 217,
-        "circular" : true,
-        "posX" : 374
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Dream Stealer",
       "parent" : "Phantom Strike",
       "attributes" : {
@@ -3843,13 +3824,13 @@
         "skillMaxLevel" : 8,
         "waveDistance" : [ 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0 ]
       },
-      "description" : "Devastate your enemies and steal their power by ripping the very dreams from their minds."
-    }, {
+      "description" : "Devastate your enemies and steal their power by ripping the very dreams from their minds.",
       "skillIcon" : {
+        "posX" : 374,
         "posY" : 217,
-        "circular" : false,
-        "posX" : 286
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Nightmare",
       "parent" : null,
       "attributes" : {
@@ -3862,13 +3843,13 @@
         "skillConnectionSpacing" : 62,
         "skillMaxLevel" : 16
       },
-      "description" : "Calls forth a nightmarish entity from the dream world to serve as your familiar."
-    } ], [ {
+      "description" : "Calls forth a nightmarish entity from the dream world to serve as your familiar.",
       "skillIcon" : {
-        "posY" : 155,
-        "circular" : false,
-        "posX" : 462
-      },
+        "posX" : 286,
+        "posY" : 217,
+        "circular" : false
+      }
+    } ], [ {
       "name" : "Distort Reality",
       "parent" : null,
       "attributes" : {
@@ -3886,13 +3867,13 @@
         "skillTargetRadius" : 8.0,
         "offensivePercentCurrentLifeMin" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ]
       },
-      "description" : "Sends out a powerful ripple of distortion around the player that tears the fabric of reality, causing severe damage to enemies caught within it."
-    }, {
+      "description" : "Sends out a powerful ripple of distortion around the player that tears the fabric of reality, causing severe damage to enemies caught within it.",
       "skillIcon" : {
+        "posX" : 462,
         "posY" : 155,
-        "circular" : true,
-        "posX" : 638
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Psionic Immolation",
       "parent" : "Chaotic Resonance",
       "attributes" : {
@@ -3903,13 +3884,13 @@
         "offensiveSlowLightningMin" : [ 24.0, 32.3, 40.9, 49.8, 59.1, 68.8, 78.9, 89.4, 100.3, 111.7, 123.6, 136.0, 149.0, 162.6, 176.8, 191.8 ],
         "skillMaxLevel" : 12
       },
-      "description" : "Psionic energies ignite into a surge of electrical power that causes horrific burning over a short duration. Allows to cast the wave more frequently. ^y(Reduced cooldown starts at level 2)"
-    }, {
+      "description" : "Psionic energies ignite into a surge of electrical power that causes horrific burning over a short duration. Allows to cast the wave more frequently. ^y(Reduced cooldown starts at level 2)",
       "skillIcon" : {
+        "posX" : 638,
         "posY" : 155,
-        "circular" : true,
-        "posX" : 198
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Temporal Flux",
       "parent" : null,
       "attributes" : {
@@ -3918,13 +3899,13 @@
         "skillMaxLevel" : 6,
         "characterTotalSpeedModifier" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0 ]
       },
-      "description" : "A subtle acceleration of time around the player allows them to move more quickly."
-    } ], [ {
+      "description" : "A subtle acceleration of time around the player allows them to move more quickly.",
       "skillIcon" : {
-        "posY" : 93,
-        "circular" : false,
-        "posX" : 110
-      },
+        "posX" : 198,
+        "posY" : 155,
+        "circular" : true
+      }
+    } ], [ {
       "name" : "Trance of Wrath",
       "parent" : null,
       "attributes" : {
@@ -3943,13 +3924,13 @@
         "offensiveLifeMin" : [ 6.0, 12.0, 18.0, 24.0, 30.0, 36.0, 42.0, 48.0, 54.0, 60.0, 66.0, 72.0, 78.0, 84.0, 90.0, 98.0 ],
         "skillTargetRadius" : [ 2.8, 3.0, 3.2, 3.4, 3.6, 3.8, 4.0, 4.2, 4.4, 4.6, 4.8, 5.0, 5.2, 5.4, 5.7, 6.0 ]
       },
-      "description" : "Waves of negative psionic energy emanate from the player, disrupting enemy thoughts and burning through their physical being."
-    }, {
+      "description" : "Waves of negative psionic energy emanate from the player, disrupting enemy thoughts and burning through their physical being.",
       "skillIcon" : {
+        "posX" : 110,
         "posY" : 93,
-        "circular" : true,
-        "posX" : 198
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Lucid Dream",
       "parent" : null,
       "attributes" : {
@@ -3961,13 +3942,13 @@
         "offensiveSlowLightningModifier" : [ 17.5, 24.0, 30.5, 37.0, 43.5, 50.0, 56.5, 65.0, 70.5, 76.0, 82.5, 90.0 ],
         "skillMaxLevel" : 8
       },
-      "description" : "Increased conscious control over your dream state enhances abilities that derive power from the dream world."
-    }, {
+      "description" : "Increased conscious control over your dream state enhances abilities that derive power from the dream world.",
       "skillIcon" : {
+        "posX" : 198,
         "posY" : 93,
-        "circular" : true,
-        "posX" : 286
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Dream Surge",
       "parent" : null,
       "attributes" : {
@@ -3989,13 +3970,13 @@
         "offensiveConfusionChance" : 33.0,
         "offensivePercentCurrentLifeMin" : [ 3.0, 3.8, 4.6, 5.4, 6.2, 7.0, 7.8, 8.6, 9.4, 10.2, 11.0, 12.0 ]
       },
-      "description" : "A ripple of energy from the dream world expands outward, damaging enemies."
-    } ], [ {
+      "description" : "A ripple of energy from the dream world expands outward, damaging enemies.",
       "skillIcon" : {
-        "posY" : 31,
-        "circular" : true,
-        "posX" : 462
-      },
+        "posX" : 286,
+        "posY" : 93,
+        "circular" : true
+      }
+    } ], [ {
       "name" : "Temporal Rift",
       "parent" : "Distort Reality",
       "attributes" : {
@@ -4008,13 +3989,13 @@
         "offensiveManaBurnDamageRatio" : [ 45.0, 60.0, 75.0, 90.0, 105.0, 120.0, 135.0, 150.0, 165.0, 180.0, 195.0, 210.0, 225.0, 240.0, 255.0, 270.0 ],
         "offensiveManaBurnDrainMin" : 15.0
       },
-      "description" : "Enhances the power of the distortion ripple, unleashing a surge of psionic energy that causes massive damage to enemies and temporarily freezes them in time."
-    }, {
+      "description" : "Enhances the power of the distortion ripple, unleashing a surge of psionic energy that causes massive damage to enemies and temporarily freezes them in time.",
       "skillIcon" : {
+        "posX" : 462,
         "posY" : 31,
-        "circular" : true,
-        "posX" : 550
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Psionic Beam",
       "parent" : "Psionic Touch",
       "attributes" : {
@@ -4025,13 +4006,13 @@
         "Staff" : 1,
         "skillMaxLevel" : 6
       },
-      "description" : "Improve the psionic focus within your magic staff to channel a rapid-fire attack. {^n}{^y}Works only with Staves."
-    }, {
+      "description" : "Improve the psionic focus within your magic staff to channel a rapid-fire attack. {^n}{^y}Works only with Staves.",
       "skillIcon" : {
+        "posX" : 550,
         "posY" : 31,
-        "circular" : false,
-        "posX" : 286
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Phantasm",
       "parent" : null,
       "attributes" : {
@@ -4046,13 +4027,13 @@
         "petLimit" : 1,
         "skillMaxLevel" : 16
       },
-      "description" : "Temporarily summon a phantasm from deep within the dream world, an entity that will derange the minds of your enemies and disturb the very fabric of reality."
-    }, {
+      "description" : "Temporarily summon a phantasm from deep within the dream world, an entity that will derange the minds of your enemies and disturb the very fabric of reality.",
       "skillIcon" : {
+        "posX" : 286,
         "posY" : 31,
-        "circular" : false,
-        "posX" : 374
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Dream Image",
       "parent" : null,
       "attributes" : {
@@ -4065,7 +4046,12 @@
         "skillConnectionSpacing" : 62,
         "skillMaxLevel" : 8
       },
-      "description" : "Draws forth a mirror image of yourself from the dreamworld that briefly fights at your side."
+      "description" : "Draws forth a mirror image of yourself from the dreamworld that briefly fights at your side.",
+      "skillIcon" : {
+        "posX" : 374,
+        "posY" : 31,
+        "circular" : false
+      }
     } ] ]
   }, {
     "masteryAttributes" : {
@@ -4081,11 +4067,6 @@
     },
     "name" : "Warfare",
     "skillTiers" : [ [ {
-      "skillIcon" : {
-        "posY" : 403,
-        "circular" : true,
-        "posX" : 110
-      },
       "name" : "Dual Wield",
       "parent" : null,
       "attributes" : {
@@ -4101,13 +4082,13 @@
         "skillMaxLevel" : 6,
         "Axe" : 1
       },
-      "description" : "Learn to effectively wield two melee weapons, and execute a multi-hit attack for increased damage."
-    }, {
+      "description" : "Learn to effectively wield two melee weapons, and execute a multi-hit attack for increased damage.",
       "skillIcon" : {
+        "posX" : 110,
         "posY" : 403,
-        "circular" : false,
-        "posX" : 374
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Onslaught",
       "parent" : null,
       "attributes" : {
@@ -4130,13 +4111,13 @@
         "skillMasteryLevelRequired" : 1,
         "Spear" : 1
       },
-      "description" : "Battle prowess increases as the warrior plunges deeper into the fight. ^n^yEscalating Charge: every attack past the first adds another level of bonus damage up to the current skill level. When fully charged, each attack deals double the displayed skill damage."
-    }, {
+      "description" : "Battle prowess increases as the warrior plunges deeper into the fight. ^n^yEscalating Charge: every attack past the first adds another level of bonus damage up to the current skill level. When fully charged, each attack deals double the displayed skill damage.",
       "skillIcon" : {
+        "posX" : 374,
         "posY" : 403,
-        "circular" : true,
-        "posX" : 462
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Weapon Training",
       "parent" : null,
       "attributes" : {
@@ -4150,13 +4131,13 @@
         "Axe" : 1,
         "RangedOneHand" : 1
       },
-      "description" : "Years of training with the sword, axe, and club allow you to attack faster and more accurately, and also grant some proficiency in throwing them."
-    } ], [ {
+      "description" : "Years of training with the sword, axe, and club allow you to attack faster and more accurately, and also grant some proficiency in throwing them.",
       "skillIcon" : {
-        "posY" : 341,
-        "circular" : false,
-        "posX" : 550
-      },
+        "posX" : 462,
+        "posY" : 403,
+        "circular" : true
+      }
+    } ], [ {
       "name" : "War Dance",
       "parent" : null,
       "attributes" : {
@@ -4179,13 +4160,13 @@
         "skillTargetAngle" : 360.0,
         "Spear" : 1
       },
-      "description" : "Executes a devastating spinning attack. Initially each hit is not as powerful as a normal attack but the effectiveness increases every level. ^y(Melee weapon Required)"
-    }, {
+      "description" : "Executes a devastating spinning attack. Initially each hit is not as powerful as a normal attack but the effectiveness increases every level. ^y(Melee weapon Required)",
       "skillIcon" : {
+        "posX" : 550,
         "posY" : 341,
-        "circular" : true,
-        "posX" : 110
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Parry",
       "parent" : null,
       "attributes" : {
@@ -4197,13 +4178,13 @@
         "skillMaxLevel" : 8,
         "Axe" : 1
       },
-      "description" : "Even the sturdiest armor has its chinks. The best way to stay alive is to not get hit. ^n^y(You need two melee weapons for this skill to work)"
-    }, {
+      "description" : "Even the sturdiest armor has its chinks. The best way to stay alive is to not get hit. ^n^y(You need two melee weapons for this skill to work)",
       "skillIcon" : {
+        "posX" : 110,
         "posY" : 341,
-        "circular" : true,
-        "posX" : 374
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Ignore Pain",
       "parent" : "Onslaught",
       "attributes" : {
@@ -4212,13 +4193,13 @@
         "defensivePierce" : [ 3.0, 6.0, 8.0, 10.0, 12.0, 15.0, 16.0, 17.0, 18.0, 20.0 ],
         "skillMaxLevel" : 6
       },
-      "description" : "Total focus in the heat of battle allows you to ignore physical and piercing damage."
-    }, {
+      "description" : "Total focus in the heat of battle allows you to ignore physical and piercing damage.",
       "skillIcon" : {
+        "posX" : 374,
         "posY" : 341,
-        "circular" : true,
-        "posX" : 198
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Battle Rage",
       "parent" : null,
       "attributes" : {
@@ -4233,13 +4214,13 @@
         "onHitActivationChance" : 15.0,
         "skillMaxLevel" : 12
       },
-      "description" : "Each enemy hit has a chance of sending you into a battle rage that adds bonus damage to attacks and increases Offensive Ability for a short duration."
-    }, {
+      "description" : "Each enemy hit has a chance of sending you into a battle rage that adds bonus damage to attacks and increases Offensive Ability for a short duration.",
       "skillIcon" : {
+        "posX" : 198,
         "posY" : 341,
-        "circular" : false,
-        "posX" : 462
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Slam",
       "parent" : null,
       "attributes" : {
@@ -4265,13 +4246,13 @@
         "offensivePercentCurrentLifeMin" : [ 7.0, 7.25, 7.5, 7.75, 8.0, 8.25, 8.5, 8.75, 9.0, 9.25, 9.5, 9.75, 10.0, 10.25, 10.5, 10.75 ],
         "Spear" : 1
       },
-      "description" : "Hit all enemies in a straight line with staggering force. ^y(The length of the line extends with levels. Melee weapon or Staff Required)"
-    } ], [ {
+      "description" : "Hit all enemies in a straight line with staggering force. ^y(The length of the line extends with levels. Melee weapon or Staff Required)",
       "skillIcon" : {
-        "posY" : 279,
-        "circular" : true,
-        "posX" : 110
-      },
+        "posX" : 462,
+        "posY" : 341,
+        "circular" : false
+      }
+    } ], [ {
       "name" : "Hew",
       "parent" : null,
       "attributes" : {
@@ -4288,13 +4269,13 @@
         "Axe" : 1,
         "offensivePierceRatioModifier" : [ 23.0, 31.0, 39.0, 47.0, 55.0, 63.0, 71.0, 79.0, 87.0, 95.0 ]
       },
-      "description" : "A dual-wield technique attack that bleeds the enemy.^n^y(You need two melee weapons for this skill to work)"
-    }, {
+      "description" : "A dual-wield technique attack that bleeds the enemy.^n^y(You need two melee weapons for this skill to work)",
       "skillIcon" : {
+        "posX" : 110,
         "posY" : 279,
-        "circular" : false,
-        "posX" : 638
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "War Horn",
       "parent" : null,
       "attributes" : {
@@ -4310,13 +4291,13 @@
         "skillTargetRadius" : [ 8.0, 8.4, 8.8, 9.2, 9.6, 10.0, 10.4, 10.8, 11.2, 11.6, 12.0, 12.4, 12.8, 13.2 ],
         "skillMaxLevel" : 10
       },
-      "description" : "The triumphant call of your war horn temporarily stuns enemies."
-    }, {
+      "description" : "The triumphant call of your war horn temporarily stuns enemies.",
       "skillIcon" : {
+        "posX" : 638,
         "posY" : 279,
-        "circular" : false,
-        "posX" : 286
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Battle Standard",
       "parent" : null,
       "attributes" : {
@@ -4328,13 +4309,13 @@
         "skillConnectionSpacing" : 62,
         "skillMaxLevel" : 10
       },
-      "description" : "Throw down a mighty standard to embolden the hearts of nearby allies."
-    } ], [ {
+      "description" : "Throw down a mighty standard to embolden the hearts of nearby allies.",
       "skillIcon" : {
-        "posY" : 217,
-        "circular" : true,
-        "posX" : 550
-      },
+        "posX" : 286,
+        "posY" : 279,
+        "circular" : false
+      }
+    } ], [ {
       "name" : "Lacerate",
       "parent" : "Finesse",
       "attributes" : {
@@ -4349,13 +4330,13 @@
         "Axe" : 1,
         "offensivePierceRatioModifier" : [ 34.0, 40.0, 46.0, 52.0, 58.0, 64.0, 70.0, 76.0, 82.0, 88.0, 94.0, 100.0 ]
       },
-      "description" : "Adds bleeding and piercing damage to War Dance. ^y(Sword~Dagger/Axe/Spear Required)"
-    }, {
+      "description" : "Adds bleeding and piercing damage to War Dance. ^y(Sword~Dagger/Axe/Spear Required)",
       "skillIcon" : {
+        "posX" : 550,
         "posY" : 217,
-        "circular" : true,
-        "posX" : 110
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Cross Cut",
       "parent" : null,
       "attributes" : {
@@ -4372,13 +4353,13 @@
         "skillMaxLevel" : 6,
         "Axe" : 1
       },
-      "description" : "A dual-wield technique that can hit up to 2 enemies with a cross-cutting scissor motion.^n^y(You need two melee weapons for this skill to work)"
-    }, {
+      "description" : "A dual-wield technique that can hit up to 2 enemies with a cross-cutting scissor motion.^n^y(You need two melee weapons for this skill to work)",
       "skillIcon" : {
+        "posX" : 110,
         "posY" : 217,
-        "circular" : true,
-        "posX" : 198
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Crushing Blow",
       "parent" : "Battle Rage",
       "attributes" : {
@@ -4392,13 +4373,13 @@
         "skillMaxLevel" : 8,
         "offensiveStunGlobal" : 1
       },
-      "description" : "Provides a chance for attacks to cause bonus damage while in Battle Rage."
-    }, {
+      "description" : "Provides a chance for attacks to cause bonus damage while in Battle Rage.",
       "skillIcon" : {
+        "posX" : 198,
         "posY" : 217,
-        "circular" : false,
-        "posX" : 638
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Lineal Chains",
       "parent" : null,
       "attributes" : {
@@ -4419,13 +4400,13 @@
         "offensiveSlowAttackSpeedDurationMin" : 6.0,
         "offensiveTauntMin" : [ 3.2, 3.4, 3.6, 3.8, 4.0, 4.2, 4.4, 4.6, 4.8, 5.0 ]
       },
-      "description" : "You bind chains at the enemy's legs, immobilizing them and hampering their ability to fight."
-    } ], [ {
+      "description" : "You bind chains at the enemy's legs, immobilizing them and hampering their ability to fight.",
       "skillIcon" : {
-        "posY" : 155,
-        "circular" : true,
-        "posX" : 550
-      },
+        "posX" : 638,
+        "posY" : 217,
+        "circular" : false
+      }
+    } ], [ {
       "name" : "Finesse",
       "parent" : "War Dance",
       "attributes" : {
@@ -4440,13 +4421,13 @@
         "Spear" : 1,
         "Axe" : 1
       },
-      "description" : "Execute War Dance more frequently and at a lesser cost, striking more enemies, where they are most vulnerable. ^y(Reduced cooldown starts at level 2. Melee weapon Required)"
-    }, {
+      "description" : "Execute War Dance more frequently and at a lesser cost, striking more enemies, where they are most vulnerable. ^y(Reduced cooldown starts at level 2. Melee weapon Required)",
       "skillIcon" : {
+        "posX" : 550,
         "posY" : 155,
-        "circular" : true,
-        "posX" : 374
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Heart of War",
       "parent" : "Ardor",
       "attributes" : {
@@ -4457,13 +4438,13 @@
         "characterLifeRegen" : [ 1.0, 1.2, 1.4, 1.6, 1.8, 2.0, 2.2, 2.4, 2.6, 3.0 ],
         "skillMaxLevel" : 6
       },
-      "description" : "As the battle rages on, you don't just &Ifeel &Smore alive; you &Iare&S more alive."
-    }, {
+      "description" : "As the battle rages on, you don't just &Ifeel &Smore alive; you &Iare&S more alive.",
       "skillIcon" : {
+        "posX" : 374,
         "posY" : 155,
-        "circular" : true,
-        "posX" : 198
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Counter Attack",
       "parent" : "Crushing Blow",
       "attributes" : {
@@ -4477,13 +4458,13 @@
         "skillMaxLevel" : 8,
         "retaliationPhysicalChance" : 25.0
       },
-      "description" : "Provides a chance to counter attack an enemy after being hit in Battle Rage."
-    } ], [ {
+      "description" : "Provides a chance to counter attack an enemy after being hit in Battle Rage.",
       "skillIcon" : {
-        "posY" : 93,
-        "circular" : true,
-        "posX" : 110
-      },
+        "posX" : 198,
+        "posY" : 155,
+        "circular" : true
+      }
+    } ], [ {
       "name" : "Tumult",
       "parent" : null,
       "attributes" : {
@@ -4500,13 +4481,13 @@
         "skillMaxLevel" : 6,
         "Axe" : 1
       },
-      "description" : "A dual-wield technique that hits up to 3 adjacent enemies.^n^y(You need two melee weapons for this skill to work)"
-    }, {
+      "description" : "A dual-wield technique that hits up to 3 adjacent enemies.^n^y(You need two melee weapons for this skill to work)",
       "skillIcon" : {
+        "posX" : 110,
         "posY" : 93,
-        "circular" : true,
-        "posX" : 286
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Triumph",
       "parent" : null,
       "attributes" : {
@@ -4522,13 +4503,13 @@
         "skillTargetRadius" : 12.0,
         "skillMaxLevel" : 10
       },
-      "description" : "Seeing the inevitability of your triumph, enemies lose hope and the strength of their attack diminishes."
-    }, {
+      "description" : "Seeing the inevitability of your triumph, enemies lose hope and the strength of their attack diminishes.",
       "skillIcon" : {
+        "posX" : 286,
         "posY" : 93,
-        "circular" : true,
-        "posX" : 638
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Doom Bond",
       "parent" : null,
       "attributes" : {
@@ -4542,13 +4523,13 @@
         "skillMaxLevel" : 6,
         "offensiveSlowDefensiveReductionMin" : [ 34.0, 40.0, 46.0, 52.0, 58.0, 65.0, 70.0, 76.0, 83.0, 90.0 ]
       },
-      "description" : "Your Lineal Chains herald the doom of your enemies, shattering their nerves and reducing their ability to defend themselves."
-    }, {
+      "description" : "Your Lineal Chains herald the doom of your enemies, shattering their nerves and reducing their ability to defend themselves.",
       "skillIcon" : {
+        "posX" : 638,
         "posY" : 93,
-        "circular" : false,
-        "posX" : 550
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Ancestral Horn",
       "parent" : null,
       "attributes" : {
@@ -4562,13 +4543,13 @@
         "skillMasteryLevelRequired" : 30,
         "skillMaxLevel" : 16
       },
-      "description" : "The ominous call on this ancient heirloom will summon forth ghostly heroes of old from the Elysian Fields to do battle once more."
-    } ], [ {
+      "description" : "The ominous call on this ancient heirloom will summon forth ghostly heroes of old from the Elysian Fields to do battle once more.",
       "skillIcon" : {
-        "posY" : 31,
-        "circular" : true,
-        "posX" : 110
-      },
+        "posX" : 550,
+        "posY" : 93,
+        "circular" : false
+      }
+    } ], [ {
       "name" : "Double Helix",
       "parent" : null,
       "attributes" : {
@@ -4589,13 +4570,13 @@
         "dualWieldOnly" : 1,
         "skillTargetAngle" : 360.0
       },
-      "description" : "Learn to leap up then spiral down, slashing all enemies around you with such speed and control that a whirlwind of energy strikes a second time as you hit the ground. ^n^y(You need two melee weapons for this skill to work)"
-    }, {
+      "description" : "Learn to leap up then spiral down, slashing all enemies around you with such speed and control that a whirlwind of energy strikes a second time as you hit the ground. ^n^y(You need two melee weapons for this skill to work)",
       "skillIcon" : {
+        "posX" : 110,
         "posY" : 31,
-        "circular" : true,
-        "posX" : 374
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Ardor",
       "parent" : "Ignore Pain",
       "attributes" : {
@@ -4604,13 +4585,13 @@
         "characterRunSpeedModifier" : [ 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 25.0 ],
         "skillMaxLevel" : 6
       },
-      "description" : "You build momentum as you drive your attack forward, attacking and moving more rapidly."
-    }, {
+      "description" : "You build momentum as you drive your attack forward, attacking and moving more rapidly.",
       "skillIcon" : {
+        "posX" : 374,
         "posY" : 31,
-        "circular" : true,
-        "posX" : 550
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Lasting Legacy",
       "parent" : "Ancestral Horn",
       "attributes" : {
@@ -4618,13 +4599,13 @@
         "skillUltimateLevel" : 12,
         "skillMaxLevel" : 8
       },
-      "description" : "Forming a deeper connection with your ancestors allows their spirits to remain at your side for longer."
-    }, {
+      "description" : "Forming a deeper connection with your ancestors allows their spirits to remain at your side for longer.",
       "skillIcon" : {
+        "posX" : 550,
         "posY" : 31,
-        "circular" : true,
-        "posX" : 462
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Fissure",
       "parent" : "Slam",
       "attributes" : {
@@ -4648,7 +4629,12 @@
         "offensiveDisruptionMax" : [ 1.9, 2.2, 2.5, 2.8, 3.1, 3.4, 3.7, 4.0, 4.3, 4.6, 4.9, 5.2 ],
         "Spear" : 1
       },
-      "description" : "Your slam can be cast more frequently, and creates a larger and more powerful fissure in the ground, disrupting the aim and spellcasting of your enemies. ^y^n(The width of the line extends with levels. Reduced cooldown starts at level 2)"
+      "description" : "Your slam can be cast more frequently, and creates a larger and more powerful fissure in the ground, disrupting the aim and spellcasting of your enemies. ^y^n(The width of the line extends with levels. Reduced cooldown starts at level 2)",
+      "skillIcon" : {
+        "posX" : 462,
+        "posY" : 31,
+        "circular" : true
+      }
     } ] ]
   }, {
     "masteryAttributes" : {
@@ -4667,11 +4653,6 @@
     },
     "name" : "Runes",
     "skillTiers" : [ [ {
-      "skillIcon" : {
-        "posY" : 403,
-        "circular" : false,
-        "posX" : 110
-      },
       "name" : "Rune Weapon",
       "parent" : null,
       "attributes" : {
@@ -4693,13 +4674,13 @@
         "Spear" : 1,
         "characterIntelligenceModifier" : [ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0 ]
       },
-      "description" : "In the rush of glorious combat, every strike you land pushes your mind further into an ecstatic state, increasing the force of all magical abilities.  {^n}{^y}Assign this skill to your left mouse button."
-    }, {
+      "description" : "In the rush of glorious combat, every strike you land pushes your mind further into an ecstatic state, increasing the force of all magical abilities.  {^n}{^y}Assign this skill to your left mouse button.",
       "skillIcon" : {
+        "posX" : 110,
         "posY" : 403,
-        "circular" : true,
-        "posX" : 286
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Runeword: Feather",
       "parent" : null,
       "attributes" : {
@@ -4709,13 +4690,13 @@
         "skillMasteryLevelRequired" : 1,
         "skillMaxLevel" : 8
       },
-      "description" : "This basic engraving reduces the weight of a weapon or shield, letting a Runemaster wield even heavy blades with grace and precision."
-    }, {
+      "description" : "This basic engraving reduces the weight of a weapon or shield, letting a Runemaster wield even heavy blades with grace and precision.",
       "skillIcon" : {
+        "posX" : 286,
         "posY" : 403,
-        "circular" : false,
-        "posX" : 374
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Rune of Life",
       "parent" : null,
       "attributes" : {
@@ -4731,13 +4712,13 @@
         "skillMaxLevel" : 10,
         "characterStrengthModifier" : [ 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 8.5, 9.0, 9.5, 10.0, 10.5, 11.0, 11.5 ]
       },
-      "description" : "Cast the Rune of Life to protect you against dark magic and increase stamina. ^yAt level 6 or more, the Rune grows as an aura around you, protecting your allies as well."
-    } ], [ {
+      "description" : "Cast the Rune of Life to protect you against dark magic and increase stamina. ^yAt level 6 or more, the Rune grows as an aura around you, protecting your allies as well.",
       "skillIcon" : {
-        "posY" : 341,
-        "circular" : false,
-        "posX" : 462
-      },
+        "posX" : 374,
+        "posY" : 403,
+        "circular" : false
+      }
+    } ], [ {
       "name" : "Thunder Strike",
       "parent" : null,
       "attributes" : {
@@ -4762,13 +4743,13 @@
         "skillMasteryLevelRequired" : 15,
         "skillTargetAngle" : 250.0
       },
-      "description" : "An arcane weapon technique that channels the power of thunder, hitting multiple enemies with staggering force."
-    }, {
+      "description" : "An arcane weapon technique that channels the power of thunder, hitting multiple enemies with staggering force.",
       "skillIcon" : {
+        "posX" : 462,
         "posY" : 341,
-        "circular" : true,
-        "posX" : 110
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Magical Charge",
       "parent" : "Rune Weapon",
       "attributes" : {
@@ -4778,13 +4759,13 @@
         "skillMaxLevel" : 16,
         "offensiveElementalMin" : [ 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0, 51.0, 54.0, 57.0, 60.0, 63.0 ]
       },
-      "description" : "The power building up as you fight ignites your runed weapons with Elemental magic and strikes out at anyone who touches you."
-    }, {
+      "description" : "The power building up as you fight ignites your runed weapons with Elemental magic and strikes out at anyone who touches you.",
       "skillIcon" : {
+        "posX" : 110,
         "posY" : 341,
-        "circular" : true,
-        "posX" : 198
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Sacred Rage",
       "parent" : null,
       "attributes" : {
@@ -4800,13 +4781,13 @@
         "lifeMonitorPercent" : 40.0,
         "characterTotalSpeedModifier" : [ 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0 ]
       },
-      "description" : "Being wounded in battle only accelerates your transition into a frenzy, making enemies who failed to land a killing blow soon regret the attempt. {^n}{^y}Remains active if health remains low."
-    } ], [ {
+      "description" : "Being wounded in battle only accelerates your transition into a frenzy, making enemies who failed to land a killing blow soon regret the attempt. {^n}{^y}Remains active if health remains low.",
       "skillIcon" : {
-        "posY" : 279,
-        "circular" : false,
-        "posX" : 638
-      },
+        "posX" : 198,
+        "posY" : 341,
+        "circular" : true
+      }
+    } ], [ {
       "name" : "Menhir Wall",
       "parent" : null,
       "attributes" : {
@@ -4824,13 +4805,13 @@
         "spawnObjectsDistanceIncrement" : 1.0,
         "spawnObjectsRandomRotation" : 1
       },
-      "description" : "Summon a wall of lesser rune stones to block and distract enemies.{^n}{^Y}These stones can cast elemental bolts, but need Energy to do so. The Runic Golem can provide it."
-    }, {
+      "description" : "Summon a wall of lesser rune stones to block and distract enemies.{^n}{^Y}These stones can cast elemental bolts, but need Energy to do so. The Runic Golem can provide it.",
       "skillIcon" : {
+        "posX" : 638,
         "posY" : 279,
-        "circular" : true,
-        "posX" : 462
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Unleash",
       "parent" : null,
       "attributes" : {
@@ -4846,13 +4827,13 @@
         "offensiveConfusionChance" : [ 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0 ],
         "skillMaxLevel" : 10
       },
-      "description" : "Unleash the full force of the thunderbolt to electrocute and daze enemies across a wide area."
-    }, {
+      "description" : "Unleash the full force of the thunderbolt to electrocute and daze enemies across a wide area.",
       "skillIcon" : {
+        "posX" : 462,
         "posY" : 279,
-        "circular" : false,
-        "posX" : 550
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Runic Mines",
       "parent" : null,
       "attributes" : {
@@ -4870,13 +4851,13 @@
         "spawnObjectsDistanceIncrement" : 1.0,
         "offensiveElementalMax" : [ 28.0, 41.0, 56.0, 73.0, 92.0, 113.0, 136.0, 161.0, 188.0, 217.0, 248.0, 281.0, 316.0, 353.0, 392.0, 433.0 ]
       },
-      "description" : "Cast a circle of defensive runes on the ground around you that will detonate if enemies step on them."
-    }, {
+      "description" : "Cast a circle of defensive runes on the ground around you that will detonate if enemies step on them.",
       "skillIcon" : {
+        "posX" : 550,
         "posY" : 279,
-        "circular" : true,
-        "posX" : 286
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Runeword: Explode",
       "parent" : null,
       "attributes" : {
@@ -4892,13 +4873,13 @@
         "skillTargetAngle" : 120.0,
         "skillMaxLevel" : 10
       },
-      "description" : "Weapons inscribed with this powerful rune may cause a successful hit to blast outward, striking multiple enemies."
-    } ], [ {
+      "description" : "Weapons inscribed with this powerful rune may cause a successful hit to blast outward, striking multiple enemies.",
       "skillIcon" : {
-        "posY" : 217,
-        "circular" : true,
-        "posX" : 110
-      },
+        "posX" : 286,
+        "posY" : 279,
+        "circular" : true
+      }
+    } ], [ {
       "name" : "Energy Drain",
       "parent" : "Magical Charge",
       "attributes" : {
@@ -4912,13 +4893,13 @@
         "skillMaxLevel" : 10,
         "offensiveSlowOffensiveAbilityMin" : [ 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0 ]
       },
-      "description" : "Advanced inscriptions on your weapon make it actively drain the enemy's energy, fueling your own while weakening their resolve."
-    }, {
+      "description" : "Advanced inscriptions on your weapon make it actively drain the enemy's energy, fueling your own while weakening their resolve.",
       "skillIcon" : {
+        "posX" : 110,
         "posY" : 217,
-        "circular" : true,
-        "posX" : 286
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Runeword: Burn",
       "parent" : null,
       "attributes" : {
@@ -4930,13 +4911,13 @@
         "offensiveSlowFireMin" : [ 9.5, 14.0, 19.0, 24.5, 30.5, 37.0, 44.0, 51.5, 59.5, 68.0, 77.0, 86.5, 96.5, 107.0, 118.0, 129.5 ],
         "skillMaxLevel" : 10
       },
-      "description" : "Makes your strikes explode with intense heat and projectiles break into burning fragments. {^n}{^Y}Burn damage works for all weapons. The fragments only work with ranged weapons."
-    }, {
+      "description" : "Makes your strikes explode with intense heat and projectiles break into burning fragments. {^n}{^Y}Burn damage works for all weapons. The fragments only work with ranged weapons.",
       "skillIcon" : {
+        "posX" : 286,
         "posY" : 217,
-        "circular" : false,
-        "posX" : 374
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Rune of Elements",
       "parent" : null,
       "attributes" : {
@@ -4946,13 +4927,13 @@
         "cameraShakeAmplitude" : 0.12,
         "skillMaxLevel" : 10
       },
-      "description" : "Cast the Rune of Elements to empower your allies with the destructive forces of nature."
-    }, {
+      "description" : "Cast the Rune of Elements to empower your allies with the destructive forces of nature.",
       "skillIcon" : {
+        "posX" : 374,
         "posY" : 217,
-        "circular" : true,
-        "posX" : 198
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Dazzling Power",
       "parent" : null,
       "attributes" : {
@@ -4969,13 +4950,13 @@
         "skillMaxLevel" : 6,
         "offensivePercentCurrentLifeMin" : [ 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0 ]
       },
-      "description" : "Entering the state of rage lets out a burst of pure energy, damaging enemies and blinding them."
-    } ], [ {
+      "description" : "Entering the state of rage lets out a burst of pure energy, damaging enemies and blinding them.",
       "skillIcon" : {
-        "posY" : 155,
-        "circular" : false,
-        "posX" : 638
-      },
+        "posX" : 198,
+        "posY" : 217,
+        "circular" : true
+      }
+    } ], [ {
       "name" : "Runic Golem",
       "parent" : null,
       "attributes" : {
@@ -4993,13 +4974,13 @@
         "spawnObjectsDistanceIncrement" : 1.15,
         "spawnObjectsRandomRotation" : 1
       },
-      "description" : "Call for a Runic Golem with a special affinity for energy. Two Golems can be summoned at higher levels.{^n}{^Y}Catalyst : the Golems improves the Energy of nearby allies. This allows the Menhir Wall to shoot elemental bolts."
-    }, {
+      "description" : "Call for a Runic Golem with a special affinity for energy. Two Golems can be summoned at higher levels.{^n}{^Y}Catalyst : the Golems improves the Energy of nearby allies. This allows the Menhir Wall to shoot elemental bolts.",
       "skillIcon" : {
+        "posX" : 638,
         "posY" : 155,
-        "circular" : true,
-        "posX" : 550
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Freezing Mines",
       "parent" : "Runic Mines",
       "attributes" : {
@@ -5014,13 +4995,13 @@
         "offensiveSlowTotalSpeedDurationMin" : 3.0,
         "skillMaxLevel" : 8
       },
-      "description" : "Enhances the aspect of Cold on your Runic Mines, causing enemies to be slowed and frozen."
-    }, {
+      "description" : "Enhances the aspect of Cold on your Runic Mines, causing enemies to be slowed and frozen.",
       "skillIcon" : {
+        "posX" : 550,
         "posY" : 155,
-        "circular" : false,
-        "posX" : 462
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Seal of Fate",
       "parent" : null,
       "attributes" : {
@@ -5040,13 +5021,13 @@
         "offensiveSlowTotalSpeedDurationMin" : 2.0,
         "offensivePercentCurrentLifeMin" : [ 18.0, 19.5, 21.0, 22.5, 24.0, 25.5, 27.0, 28.5, 30.0, 31.5, 33.0, 34.5, 36.0, 37.5, 39.0, 40.5 ]
       },
-      "description" : "Take a few moments to draw an intricate sigil on the ground that will then explode with tremendous force."
-    } ], [ {
+      "description" : "Take a few moments to draw an intricate sigil on the ground that will then explode with tremendous force.",
       "skillIcon" : {
-        "posY" : 93,
-        "circular" : true,
-        "posX" : 550
-      },
+        "posX" : 462,
+        "posY" : 155,
+        "circular" : false
+      }
+    } ], [ {
       "name" : "Rune Field",
       "parent" : "Freezing Mines",
       "attributes" : {
@@ -5061,13 +5042,13 @@
         "spacingAngle" : [ -12.0, -12.0, -12.0, 0.0, 0.0, 0.0, -12.0, -12.0, -12.0, -12.0, 0.0, 0.0, 0.0, -12.0, -12.0, -12.0 ],
         "skillMaxLevel" : 12
       },
-      "description" : "Create more runes across a larger area, with a chance of increased elemental damage."
-    }, {
+      "description" : "Create more runes across a larger area, with a chance of increased elemental damage.",
       "skillIcon" : {
+        "posX" : 550,
         "posY" : 93,
-        "circular" : true,
-        "posX" : 110
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Transmutation",
       "parent" : null,
       "attributes" : {
@@ -5075,13 +5056,13 @@
         "characterPhysToElementalRatio" : [ 18.0, 27.0, 36.0, 45.0, 54.0, 63.0, 72.0, 81.0, 90.0, 99.0 ],
         "skillMaxLevel" : 6
       },
-      "description" : "A master Runesmith is able to convert the very nature of their weapon, turning mere metal into a manifestation of Elemental magic. {^n}{^y}Reduces reliance on strength in favor of intelligence."
-    }, {
+      "description" : "A master Runesmith is able to convert the very nature of their weapon, turning mere metal into a manifestation of Elemental magic. {^n}{^y}Reduces reliance on strength in favor of intelligence.",
       "skillIcon" : {
+        "posX" : 110,
         "posY" : 93,
-        "circular" : true,
-        "posX" : 198
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Reckless Offense",
       "parent" : null,
       "attributes" : {
@@ -5097,13 +5078,13 @@
         "Axe" : 1,
         "RangedOneHand" : 1
       },
-      "description" : "Those who follow the way of the Berserkir fight with the mind of an enraged animal, and will forego the tactical subtleties of a shield to wildly attack with weapons in both hands. {^n}{^y}Allows and requires dual wielding."
-    }, {
+      "description" : "Those who follow the way of the Berserkir fight with the mind of an enraged animal, and will forego the tactical subtleties of a shield to wildly attack with weapons in both hands. {^n}{^y}Allows and requires dual wielding.",
       "skillIcon" : {
+        "posX" : 198,
         "posY" : 93,
-        "circular" : true,
-        "posX" : 286
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Runeword: Absorb",
       "parent" : null,
       "attributes" : {
@@ -5117,13 +5098,13 @@
         "retaliationSlowManaLeachMin" : [ 12.0, 18.0, 24.0, 30.0, 36.0, 42.0, 48.0, 54.0, 60.0, 66.0, 72.0, 78.0, 84.0, 90.0 ],
         "skillMaxLevel" : 8
       },
-      "description" : "Enchants a shield or a staff with the ability to absorb the energy of enemy blows and spells, adding it to your own."
-    } ], [ {
+      "description" : "Enchants a shield or a staff with the ability to absorb the energy of enemy blows and spells, adding it to your own.",
       "skillIcon" : {
-        "posY" : 31,
-        "circular" : false,
-        "posX" : 638
-      },
+        "posX" : 286,
+        "posY" : 93,
+        "circular" : true
+      }
+    } ], [ {
       "name" : "Guardian Stones",
       "parent" : null,
       "attributes" : {
@@ -5139,13 +5120,13 @@
         "spawnObjectsDistanceIncrement" : 1.0,
         "skillMaxLevel" : 12
       },
-      "description" : "Summons a Treudd of greater rune stones which will magically lash out at any hostiles entering their sacred ground."
-    }, {
+      "description" : "Summons a Treudd of greater rune stones which will magically lash out at any hostiles entering their sacred ground.",
       "skillIcon" : {
+        "posX" : 638,
         "posY" : 31,
-        "circular" : false,
-        "posX" : 286
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Rune Storm",
       "parent" : null,
       "attributes" : {
@@ -5188,13 +5169,13 @@
         "offensiveStunChance" : 20.0,
         "offensiveSlowColdChance" : 15.0
       },
-      "description" : "When the situation calls for it, combining mismatched runes can create a dangerous storm of unforeseen effects."
-    }, {
+      "description" : "When the situation calls for it, combining mismatched runes can create a dangerous storm of unforeseen effects.",
       "skillIcon" : {
+        "posX" : 286,
         "posY" : 31,
-        "circular" : false,
-        "posX" : 374
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Energy Armor",
       "parent" : null,
       "attributes" : {
@@ -5212,13 +5193,13 @@
         "damageAbsorption" : [ 80.0, 120.0, 180.0, 270.0, 405.0, 607.6, 911.2, 1367.0, 2050.4, 3075.6, 4613.2, 6920.0 ],
         "skillTargetRadius" : 5.0
       },
-      "description" : "Weave vast amounts of Energy into a layer of magical armor for yourself and nearby allies that protects against physical attacks."
-    }, {
+      "description" : "Weave vast amounts of Energy into a layer of magical armor for yourself and nearby allies that protects against physical attacks.",
       "skillIcon" : {
+        "posX" : 374,
         "posY" : 31,
-        "circular" : true,
-        "posX" : 462
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Aftershock",
       "parent" : null,
       "attributes" : {
@@ -5238,7 +5219,12 @@
         "offensiveSlowTotalSpeedDurationMin" : 4.0,
         "offensiveSlowDefensiveReductionMin" : [ 140.0, 200.0, 260.0, 320.0, 380.0, 440.0, 500.0, 560.0, 620.0, 680.0 ]
       },
-      "description" : "The shock of the explosion leaves even those who survive battered and vulnerable."
+      "description" : "The shock of the explosion leaves even those who survive battered and vulnerable.",
+      "skillIcon" : {
+        "posX" : 462,
+        "posY" : 31,
+        "circular" : true
+      }
     } ] ]
   }, {
     "masteryAttributes" : {
@@ -5253,11 +5239,6 @@
     },
     "name" : "Hunting",
     "skillTiers" : [ [ {
-      "skillIcon" : {
-        "posY" : 403,
-        "circular" : true,
-        "posX" : 374
-      },
       "name" : "Wood Lore",
       "parent" : null,
       "attributes" : {
@@ -5272,13 +5253,13 @@
         "Spear" : 1,
         "RangedOneHand" : 1
       },
-      "description" : "Central to survival in the wilderness is the ability to hunt with bow, spear, and throwing projectiles. Great familiarity with these weapons allows you to wield them with exceptional speed and grace. ^y(Spear, Bow or One-hand ranged weapon Required)"
-    }, {
+      "description" : "Central to survival in the wilderness is the ability to hunt with bow, spear, and throwing projectiles. Great familiarity with these weapons allows you to wield them with exceptional speed and grace. ^y(Spear, Bow or One-hand ranged weapon Required)",
       "skillIcon" : {
+        "posX" : 374,
         "posY" : 403,
-        "circular" : false,
-        "posX" : 462
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Take Down",
       "parent" : null,
       "attributes" : {
@@ -5296,13 +5277,13 @@
         "offensivePercentCurrentLifeMin" : [ 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0 ],
         "Spear" : 1
       },
-      "description" : "Speed toward enemies and deliver a brutal thrust with your spear. ^y(Spear Required)"
-    }, {
+      "description" : "Speed toward enemies and deliver a brutal thrust with your spear. ^y(Spear Required)",
       "skillIcon" : {
+        "posX" : 462,
         "posY" : 403,
-        "circular" : false,
-        "posX" : 110
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Ensnare",
       "parent" : null,
       "attributes" : {
@@ -5319,13 +5300,13 @@
         "skillMasteryLevelRequired" : 5,
         "skillMaxLevel" : 6
       },
-      "description" : "Casts a weighted net around the feet of enemies, holding them in place but not preventing them from attacking."
-    } ], [ {
+      "description" : "Casts a weighted net around the feet of enemies, holding them in place but not preventing them from attacking.",
       "skillIcon" : {
-        "posY" : 341,
-        "circular" : false,
-        "posX" : 550
-      },
+        "posX" : 110,
+        "posY" : 403,
+        "circular" : false
+      }
+    } ], [ {
       "name" : "Art of the Hunt",
       "parent" : null,
       "attributes" : {
@@ -5341,13 +5322,13 @@
         "offensiveSlowBleedingModifier" : [ 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0, 51.0, 54.0, 57.0, 60.0 ],
         "skillMaxLevel" : 12
       },
-      "description" : "Hunting experience gives you the edge when facing familiar quarry such as Animals and Beastmen."
-    }, {
+      "description" : "Hunting experience gives you the edge when facing familiar quarry such as Animals and Beastmen.",
       "skillIcon" : {
+        "posX" : 550,
         "posY" : 341,
-        "circular" : false,
-        "posX" : 286
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Marksmanship",
       "parent" : null,
       "attributes" : {
@@ -5364,13 +5345,13 @@
         "RangedOneHand" : 1,
         "offensivePierceRatioModifier" : [ 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0, 51.0, 54.0, 57.0, 60.0 ]
       },
-      "description" : "Marksmanship skill allows you to fire or throw projectiles that fly faster and increase pierce damage. {^n}{^y}(Bow or One-hand Ranged weapon Required). Assign this skill to your left mouse button."
-    }, {
+      "description" : "Marksmanship skill allows you to fire or throw projectiles that fly faster and increase pierce damage. {^n}{^y}(Bow or One-hand Ranged weapon Required). Assign this skill to your left mouse button.",
       "skillIcon" : {
+        "posX" : 286,
         "posY" : 341,
-        "circular" : true,
-        "posX" : 638
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Herbalism",
       "parent" : null,
       "attributes" : {
@@ -5381,13 +5362,13 @@
         "defensivePoison" : [ 28.0, 36.0, 44.0, 52.0, 60.0, 68.0, 76.0, 84.0, 92.0, 100.0 ],
         "skillMaxLevel" : 6
       },
-      "description" : "Living off the land, you learn to identify and utilize medicinal plants to create healing salves or fortify poisons to better assist you."
-    } ], [ {
+      "description" : "Living off the land, you learn to identify and utilize medicinal plants to create healing salves or fortify poisons to better assist you.",
       "skillIcon" : {
-        "posY" : 279,
-        "circular" : false,
-        "posX" : 198
-      },
+        "posX" : 638,
+        "posY" : 341,
+        "circular" : true
+      }
+    } ], [ {
       "name" : "Call of the Hunt",
       "parent" : null,
       "attributes" : {
@@ -5405,13 +5386,13 @@
         "skillTargetRadius" : 15.0,
         "skillMasteryLevelRequired" : 10
       },
-      "description" : "Those who answer the call of the hunt will fight with increased speed and cunning."
-    }, {
+      "description" : "Those who answer the call of the hunt will fight with increased speed and cunning.",
       "skillIcon" : {
+        "posX" : 198,
         "posY" : 279,
-        "circular" : true,
-        "posX" : 374
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Gouge",
       "parent" : null,
       "attributes" : {
@@ -5427,13 +5408,13 @@
         "offensivePierceRatioModifier" : [ 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0 ],
         "Spear" : 1
       },
-      "description" : "A combat technique that uses the spear or bow to inflict deep wounds that will result in prolonged bleeding. ^y(Spear or Bow Required)"
-    }, {
+      "description" : "A combat technique that uses the spear or bow to inflict deep wounds that will result in prolonged bleeding. ^y(Spear or Bow Required)",
       "skillIcon" : {
+        "posX" : 374,
         "posY" : 279,
-        "circular" : true,
-        "posX" : 462
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Eviscerate",
       "parent" : "Take Down",
       "attributes" : {
@@ -5446,13 +5427,13 @@
         "offensivePercentCurrentLifeMin" : [ 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0 ],
         "Spear" : 1
       },
-      "description" : "Target vital weak points on your enemy to deal devastating damage. ^y(Spear Required)"
-    }, {
+      "description" : "Target vital weak points on your enemy to deal devastating damage. ^y(Spear Required)",
       "skillIcon" : {
+        "posX" : 462,
         "posY" : 279,
-        "circular" : true,
-        "posX" : 110
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Barbed Netting",
       "parent" : "Ensnare",
       "attributes" : {
@@ -5465,13 +5446,13 @@
         "skillMaxLevel" : 8,
         "defensiveBleedingDurationModifier" : [ -23.5, -31.0, -38.5, -46.0, -53.5, -61.0, -68.5, -76.0, -83.5, -91.0, -98.5, -106.0 ]
       },
-      "description" : "Barbed hooks on the hunter's Ensnare net tear into enemies as they struggle causing them to bleed."
-    } ], [ {
+      "description" : "Barbed hooks on the hunter's Ensnare net tear into enemies as they struggle causing them to bleed.",
       "skillIcon" : {
-        "posY" : 217,
-        "circular" : true,
-        "posX" : 550
-      },
+        "posX" : 110,
+        "posY" : 279,
+        "circular" : true
+      }
+    } ], [ {
       "name" : "Find Cover",
       "parent" : "Art of the Hunt",
       "attributes" : {
@@ -5480,13 +5461,13 @@
         "characterDeflectProjectile" : [ 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0 ],
         "skillMaxLevel" : 8
       },
-      "description" : "Making use of available cover as you press your attack allows you to avoid unnecessary damage."
-    }, {
+      "description" : "Making use of available cover as you press your attack allows you to avoid unnecessary damage.",
       "skillIcon" : {
+        "posX" : 550,
         "posY" : 217,
-        "circular" : false,
-        "posX" : 638
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Lay Trap",
       "parent" : null,
       "attributes" : {
@@ -5507,13 +5488,13 @@
         "petLimit" : [ 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0 ],
         "skillMasteryLevelRequired" : 10
       },
-      "description" : "Drop a bolt trap that will trip when enemies draw near, rapidly firing out deadly arrows."
-    }, {
+      "description" : "Drop a bolt trap that will trip when enemies draw near, rapidly firing out deadly arrows.",
       "skillIcon" : {
+        "posX" : 638,
         "posY" : 217,
-        "circular" : true,
-        "posX" : 286
-      },
+        "circular" : false
+      }
+    }, {
       "name" : "Puncture Shot Arrows",
       "parent" : "Marksmanship",
       "attributes" : {
@@ -5526,13 +5507,13 @@
         "offensiveSlowBleedingModifier" : [ 9.0, 12.0, 15.0, 20.0, 23.0, 27.0, 30.0, 35.0, 38.0, 42.0, 45.0, 50.0 ],
         "skillMaxLevel" : 8
       },
-      "description" : "Incorporating a more streamlined shaft into your arrows allows them to pass through targets and hit additional enemies in their path. {^n}{^y}(Bow or One-hand Ranged weapon Required)"
-    }, {
+      "description" : "Incorporating a more streamlined shaft into your arrows allows them to pass through targets and hit additional enemies in their path. {^n}{^y}(Bow or One-hand Ranged weapon Required)",
       "skillIcon" : {
+        "posX" : 286,
         "posY" : 217,
-        "circular" : false,
-        "posX" : 462
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Spear Tempest",
       "parent" : null,
       "attributes" : {
@@ -5556,13 +5537,13 @@
         "offensiveConfusionChance" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0 ],
         "Spear" : 1
       },
-      "description" : "Execute a whirling multi-hit attack so fast and complex that enemies are caught off guard. ^y(Spear Required)"
-    } ], [ {
+      "description" : "Execute a whirling multi-hit attack so fast and complex that enemies are caught off guard. ^y(Spear Required)",
       "skillIcon" : {
-        "posY" : 155,
-        "circular" : true,
-        "posX" : 550
-      },
+        "posX" : 462,
+        "posY" : 217,
+        "circular" : false
+      }
+    } ], [ {
       "name" : "Trail Blazing",
       "parent" : "Find Cover",
       "attributes" : {
@@ -5573,13 +5554,13 @@
         "defensiveTrap" : [ 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0, 90.0, 100.0 ],
         "skillMaxLevel" : 6
       },
-      "description" : "Grants those who follow the hunt endurance to relentlessly track their quarry, preventing even the most tangled thicket from slowing pursuit."
-    }, {
+      "description" : "Grants those who follow the hunt endurance to relentlessly track their quarry, preventing even the most tangled thicket from slowing pursuit.",
       "skillIcon" : {
+        "posX" : 550,
         "posY" : 155,
-        "circular" : true,
-        "posX" : 638
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Rapid Construction",
       "parent" : "Lay Trap",
       "attributes" : {
@@ -5589,13 +5570,13 @@
         "skillManaCostReduction" : [ 5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0 ],
         "skillMaxLevel" : 8
       },
-      "description" : "Expertise in assembling traps reduces the amount of time it takes to create a new trap after one has been set."
-    }, {
+      "description" : "Expertise in assembling traps reduces the amount of time it takes to create a new trap after one has been set.",
       "skillIcon" : {
+        "posX" : 638,
         "posY" : 155,
-        "circular" : true,
-        "posX" : 198
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Exploit Weakness",
       "parent" : "Call of the Hunt",
       "attributes" : {
@@ -5608,13 +5589,13 @@
         "skillMaxLevel" : 10,
         "Spear" : 1
       },
-      "description" : "Take full advantage of your enemy's mistakes and vulnerable moments to inflict savage wounds."
-    }, {
+      "description" : "Take full advantage of your enemy's mistakes and vulnerable moments to inflict savage wounds.",
       "skillIcon" : {
+        "posX" : 198,
         "posY" : 155,
-        "circular" : false,
-        "posX" : 110
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Study Prey",
       "parent" : null,
       "attributes" : {
@@ -5632,13 +5613,13 @@
         "skillTargetRadius" : 3.0,
         "skillMasteryLevelRequired" : 1
       },
-      "description" : "By observing your prey from a distance you may discover its weakness, resulting in greater pierce damage."
-    } ], [ {
+      "description" : "By observing your prey from a distance you may discover its weakness, resulting in greater pierce damage.",
       "skillIcon" : {
-        "posY" : 93,
-        "circular" : true,
-        "posX" : 286
-      },
+        "posX" : 110,
+        "posY" : 155,
+        "circular" : false
+      }
+    } ], [ {
       "name" : "Scatter Shot Arrows",
       "parent" : null,
       "attributes" : {
@@ -5653,13 +5634,13 @@
         "skillMasteryLevelRequired" : 25,
         "skillMaxLevel" : 12
       },
-      "description" : "A secret of master fletchers is the ability to craft special arrow heads that burst on impact sending out razor-sharp fragments in all directions. {^n}{^y}(Bow or One-hand Ranged weapon Required)"
-    }, {
+      "description" : "A secret of master fletchers is the ability to craft special arrow heads that burst on impact sending out razor-sharp fragments in all directions. {^n}{^y}(Bow or One-hand Ranged weapon Required)",
       "skillIcon" : {
+        "posX" : 286,
         "posY" : 93,
-        "circular" : true,
-        "posX" : 198
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Cornered",
       "parent" : null,
       "attributes" : {
@@ -5676,13 +5657,13 @@
         "characterManaRegenModifier" : [ -68.0, -80.0, -92.0, -104.0, -116.0, -128.0, -140.0, -152.0, -164.0, -176.0, -188.0, -200.0 ],
         "lifeMonitorPercent" : 33.0
       },
-      "description" : "When overwhelmed in combat, the Hunter goes into a primal rage, fighting with beast-like ferocity at all costs."
-    }, {
+      "description" : "When overwhelmed in combat, the Hunter goes into a primal rage, fighting with beast-like ferocity at all costs.",
       "skillIcon" : {
+        "posX" : 198,
         "posY" : 93,
-        "circular" : true,
-        "posX" : 462
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Flayer",
       "parent" : "Spear Tempest",
       "attributes" : {
@@ -5694,13 +5675,13 @@
         "skillMaxLevel" : 8,
         "Spear" : 1
       },
-      "description" : "With snake-like control of your body, you learn to coil greater tension into your muscles and strike with lethal precision. ^y(Spear Required)          "
-    } ], [ {
+      "description" : "With snake-like control of your body, you learn to coil greater tension into your muscles and strike with lethal precision. ^y(Spear Required)          ",
       "skillIcon" : {
-        "posY" : 31,
-        "circular" : true,
-        "posX" : 638
-      },
+        "posX" : 462,
+        "posY" : 93,
+        "circular" : true
+      }
+    } ], [ {
       "name" : "Improved Firing Mechanism",
       "parent" : null,
       "attributes" : {
@@ -5714,13 +5695,13 @@
         "offensiveSlowBleedingModifier" : [ 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0, 90.0 ],
         "skillMaxLevel" : 8
       },
-      "description" : "Modifications to the Bolt Trap increase the number of bolts fired per round."
-    }, {
+      "description" : "Modifications to the Bolt Trap increase the number of bolts fired per round.",
       "skillIcon" : {
+        "posX" : 638,
         "posY" : 31,
-        "circular" : true,
-        "posX" : 110
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Flush Out",
       "parent" : "Study Prey",
       "attributes" : {
@@ -5733,13 +5714,13 @@
         "defensiveTrap" : [ -14.0, -18.0, -22.0, -26.0, -30.0, -36.0, -40.0, -44.0, -48.0, -54.0 ],
         "skillMaxLevel" : 6
       },
-      "description" : "Draw your enemies out into the open, making them more vulnerable to attack. (Improves the radius and duration of Study Prey)"
-    }, {
+      "description" : "Draw your enemies out into the open, making them more vulnerable to attack. (Improves the radius and duration of Study Prey)",
       "skillIcon" : {
+        "posX" : 110,
         "posY" : 31,
-        "circular" : true,
-        "posX" : 374
-      },
+        "circular" : true
+      }
+    }, {
       "name" : "Volley",
       "parent" : null,
       "attributes" : {
@@ -5752,7 +5733,26 @@
         "skillMaxLevel" : 6,
         "Spear" : 1
       },
-      "description" : "A combat technique that uses the spear or bow to rapidly strike three times. ^y(Spear or Bow Required)"
+      "description" : "A combat technique that uses the spear or bow to rapidly strike three times. ^y(Spear or Bow Required)",
+      "skillIcon" : {
+        "posX" : 374,
+        "posY" : 31,
+        "circular" : true
+      }
     } ] ]
-  } ]
+  } ],
+  "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/SoulvizierAERA/",
+  "mappedMasteries" : {
+    "1" : "Nature",
+    "2" : "Spirit",
+    "3" : "Storm",
+    "4" : "Earth",
+    "5" : "Occult",
+    "6" : "Defense",
+    "7" : "Dream",
+    "8" : "Warfare",
+    "9" : "Runes",
+    "10" : "Hunting"
+  },
+  "masteryLevels" : [ 1, 4, 10, 16, 24, 32, 40 ]
 }
