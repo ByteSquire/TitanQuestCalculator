@@ -1,10 +1,12 @@
-function getSkillString(skill, currLevel){
+function getPopupString(skill, currLevel, isSkill){
     currLevel = Number(currLevel);
     var ret = "";
     ret += '<span class="title">' + skill.name + '</span>\n';
     ret += "<br>\n";
-    ret += '<span class="desc">' + skill.description.replaceAll("{^n}", "<br>\n").replaceAll("{^y}", '<p style="color: yellow">').replaceAll("{^g}", '<p style="color: green">').replaceAll("{^a}", '<p style="color: cyan">').replaceAll("{^w}", '</p>') + '</span>\n';
-    ret += "<br>\n";
+    if(isSkill){
+        ret += '<span class="desc">' + skill.description.replaceAll("{^n}", "<br>\n").replaceAll("{^y}", '<p style="color: yellow">').replaceAll("{^g}", '<p style="color: green">').replaceAll("{^a}", '<p style="color: cyan">').replaceAll("{^w}", '</p>') + '</span>\n';
+        ret += "<br>\n";
+    }
     
     if(skill.attributes["requiredWeapons"]){
         ret += '<span class="" style="color: yellow">Only works with: ' + skill.attributes["requiredWeapons"] + '</span>';
@@ -14,10 +16,12 @@ function getSkillString(skill, currLevel){
     if(currLevel > 0){
         ret += '<br>\n';
         if(currLevel <= skill.attributes["skillMaxLevel"]){
-            document.getElementById(skill.name).getElementsByClassName("buttonText")[0].style.color = "white";
+            if(isSkill)
+                document.getElementById(skill.name).getElementsByClassName("buttonText")[0].style.color = "white";
             ret += '<span class="nextLevel">Level: ' + currLevel + '</span>\n';
         } else if(currLevel <= skill.attributes["skillUltimateLevel"]){
-            document.getElementById(skill.name).getElementsByClassName("buttonText")[0].style.color = "yellow";
+            if(isSkill)
+                document.getElementById(skill.name).getElementsByClassName("buttonText")[0].style.color = "yellow";
             ret += '<span class="nextLevel"><div style="color: yellow">Level: ' + currLevel + '</div></span>\n';
         }
         ret += '<br>\n';
