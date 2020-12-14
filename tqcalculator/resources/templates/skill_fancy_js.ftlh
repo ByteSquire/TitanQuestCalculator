@@ -6,8 +6,8 @@ function getSkillString(skill, currLevel){
     ret += '<span class="desc">' + skill.description.replaceAll("{^n}", "<br>\n").replaceAll("{^y}", '<p style="color: yellow">').replaceAll("{^g}", '<p style="color: green">').replaceAll("{^a}", '<p style="color: cyan">').replaceAll("{^w}", '</p>') + '</span>\n';
     ret += "<br>\n";
     
-    if(skill.requiredWeapons){
-        ret += '<span class="" style="color: yellow">Only works with: ' + skill.requiredWeapons + '</span>';
+    if(skill.attributes["requiredWeapons"]){
+        ret += '<span class="" style="color: yellow">Only works with: ' + skill.attributes["requiredWeapons"] + '</span>';
         ret += "<br>\n";
     }
     
@@ -20,6 +20,8 @@ function getSkillString(skill, currLevel){
         }
         var attr = Object.keys(skill.attributes);
         attr.forEach((key) => {
+            if(key == "requiredWeapons")
+                return;
             var value = skill.attributes[key];
             if(value.constructor === Array){
                 ret += '<span class="skillAttribute" style="color: gray">' + key + ':<br>\n' + value[currLevel-1] + '</span>\n';
@@ -42,6 +44,8 @@ function getSkillString(skill, currLevel){
     }
     var attr = Object.keys(skill.attributes);
     attr.forEach((key) => {
+        if(key == "requiredWeapons")
+            return;
         var value = skill.attributes[key];
         if(value.constructor === Array){
             ret += '<span class="skillAttribute">' + key + ':<br>\n' + value[currLevel] + '</span>\n';

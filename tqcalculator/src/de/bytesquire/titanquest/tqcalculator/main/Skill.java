@@ -13,7 +13,7 @@ import de.bytesquire.titanquest.tqcalculator.parsers.IconsParser;
 import de.bytesquire.titanquest.tqcalculator.parsers.ModStringsParser;
 import de.bytesquire.titanquest.tqcalculator.parsers.SkillParser;
 
-@JsonIgnoreProperties({ "skill", "buff", "skillTag", "skillDescriptionTag", "modifier", "skillTier", "urlLegacy" })
+@JsonIgnoreProperties({ "skill", "buff", "skillTag", "skillDescriptionTag", "modifier", "skillTier", "urlLegacy", "requiredWeapons" })
 @JsonInclude(Include.NON_NULL)
 public class Skill {
 
@@ -102,8 +102,10 @@ public class Skill {
                 mSkillAttributes.put(skillAttribute, mSkillParser.getAttributes().get(skillAttribute));
             }
         }
-        if (mRequiredWeapons.length() != 0)
+        if (mRequiredWeapons.length() != 0) {
             mRequiredWeapons.delete(mRequiredWeapons.length() - 2, mRequiredWeapons.length());
+            mSkillAttributes.put("requiredWeapons", mRequiredWeapons.toString());
+        }
     }
 
     @Override
