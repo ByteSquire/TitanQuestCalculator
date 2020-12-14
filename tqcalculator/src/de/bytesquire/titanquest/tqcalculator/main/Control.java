@@ -27,7 +27,7 @@ public class Control {
 
     public static final String DATABASES_DIR = Paths.get("").toAbsolutePath().toString() + "/resources/databases/";
 
-    public static final String REPOSITORY_DIR = Paths.get("").toAbsolutePath().toString().split("tqcalculator")[0];
+    public static final String REPOSITORY_DIR = Paths.get("").toAbsolutePath().toString() + "/tqcalculator/";
 
     private static ArrayList<Mod> mMods = new ArrayList<>();
 
@@ -47,6 +47,12 @@ public class Control {
 
         mSuccess = true;
 
+        try {
+            Files.createDirectories(Path.of(REPOSITORY_DIR));
+        } catch (IOException e1) {
+            e1.printStackTrace();
+        }
+        
         DirectoryStream<Path> databaseDir;
         try {
             databaseDir = Files.newDirectoryStream(Path.of(DATABASES_DIR));
@@ -188,6 +194,10 @@ public class Control {
                 rootMod = new HashMap<>();
                 rootMod.put("name", mod.getName());
                 rootMod.put("masteries", mod.getMasteries());
+                
+                Files.createDirectories(Path.of(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/"));
+                Files.createDirectories(Path.of(REPOSITORY_DIR + "mods/" + mod.getName() + "/images/"));
+                
                 Control.mod_fancy.process(rootMod, outMod);
                 Writer outModJs = new FileWriter(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/mod.js");
                 rootMod = new HashMap<>();
