@@ -128,26 +128,28 @@ function plusClicked(button, left){
             });
         }
     } else {
-        if (curr > 0){
-            updated = curr - 1;
-            pointsSpent--;
-            if(m1CurrTier != 0 || m2CurrTier != 0){
-                var matters = mod.masteryLevels[Number((matteringMastery == m1)? m1CurrTier-1 : m2CurrTier-1)]-1;
-                if(updated == matters){
-                    var currHeight = Number(button.parentElement.getElementsByClassName("bar")[0].style.height.split("%")[0]);
-                    button.parentElement.getElementsByClassName("bar")[0].style.height = (currHeight - (80/mod.masteryLevels.length)) + "%";
-                    if(button.parentElement.id.split("panel")[1] == 1)
-                        m1CurrTier--;
-                    else
-                        m2CurrTier--;
+        if (canDecreaseMastery(button.parentElement, mod.masteries[Number(matteringMastery)-1].skillTiers[(matteringMastery == m1)? m1CurrTier-1 : m2CurrTier-1]))
+            if (curr > 0){
+                updated = curr - 1;
+                pointsSpent--;
+                if(m1CurrTier != 0 || m2CurrTier != 0){
+                    var matters = mod.masteryLevels[Number((matteringMastery == m1)? m1CurrTier-1 : m2CurrTier-1)]-1;
+                    if(updated == matters){
+                        var currHeight = Number(button.parentElement.getElementsByClassName("bar")[0].style.height.split("%")[0]);
+                        button.parentElement.getElementsByClassName("bar")[0].style.height = (currHeight - (80/mod.masteryLevels.length)) + "%";
+                        if(button.parentElement.id.split("panel")[1] == 1)
+                            m1CurrTier--;
+                        else
+                            m2CurrTier--;
+                    }
                 }
+                if(updated == 0)
+                    button.parentElement.getElementsByClassName("bar")[0].style.height = "0%";
             }
-            if(updated == 0)
-                button.parentElement.getElementsByClassName("bar")[0].style.height = "0%";
-        }
     }
     button.innerHTML = button.innerHTML.replace(curr, updated);
     calcLevelReq();
+    updateSkills();
 }
 
 function skillButtonPopup(button, event){
@@ -182,17 +184,17 @@ function skillClicked(button, left){
     var curr = Number(splits[0]);
     var max = Number(splits[1]);
     var updated = curr;
-    if(left){
-        if(canSkill(button)){
+    if(canSkill(button)){
+        if(left){
             if (curr < max){
                 updated = curr + 1;
                 pointsSpent++;
             }
-        }
-    } else {
-        if (curr > 0){
-            updated = curr - 1;
-            pointsSpent--;
+        } else {
+            if (curr > 0){
+                updated = curr - 1;
+                pointsSpent--;
+            }
         }
     }
     button.innerHTML = button.innerHTML.replace(curr, updated);
@@ -222,4 +224,55 @@ function canSkill(button){
         });
     });
     return (masteryLevel >= mod.masteryLevels[Number(tier)]);
+}
+
+function canDecreaseMastery(panel, masteryTier){
+    var skillButtons = panel.getElementsByClassName("skillButton");
+    var activeSkillButtons = [];
+    for(var i = 0; i < skillButtons.length; i++){
+        var button = skillButtons[i];
+        var buttonLvl = button.innerText.split("/")[0].replaceAll("\n", "").replaceAll(" ", "");
+        if(buttonLvl != "0"){
+            activeSkillButtons.push(button);
+        }
+    }
+    
+    var ret = true;
+    masteryTier.forEach((skill) => {
+        activeSkillButtons.forEach((button) => {
+            if(button.id == skill.name){
+                ret = false;
+            }
+        });
+    });
+    return ret;
+}
+
+function updateSkills(){
+    var mastery1 = mod.masteries[m1-1];
+    var mastery2 = mod.masteries[m2-1];
+    
+    for (var i = 0; i < mastery1.skillTiers.length; i++){
+        if(mastery1)
+            if(i+1 <= m1CurrTier){
+                mastery1.skillTiers[i].forEach((skill) => {
+                    document.getElementById(skill.name).getElementsByClassName("skillButtonImage")[0].style.filter = "none";
+                });
+            } else {
+                mastery1.skillTiers[i].forEach((skill) => {
+                    document.getElementById(skill.name).getElementsByClassName("skillButtonImage")[0].style.filter = "grayscale()";
+                });
+            }
+        
+        if(mastery2)
+            if(i+1 <= m2CurrTier){
+                mastery2.skillTiers[i].forEach((skill) => {
+                    document.getElementById(skill.name).getElementsByClassName("skillButtonImage")[0].style.filter = "none";
+                });
+            } else {
+                mastery2.skillTiers[i].forEach((skill) => {
+                    document.getElementById(skill.name).getElementsByClassName("skillButtonImage")[0].style.filter = "grayscale()";
+                });
+            }
+    }
 }
