@@ -274,28 +274,25 @@ function calcBoni(attributes, lvl, increase){
             var value;
             if(increase){
                 if(lvl > 1)
-                    value = Math.trunc(Number(attributes[x][lvl-1])) - Math.trunc(Number(attributes[x][lvl-2]));
+                    value = Number(attributes[x][lvl-1]) - Number(attributes[x][lvl-2]);
                 else 
-                    value = Math.trunc(Number(attributes[x][lvl-1]));
+                    value = Number(attributes[x][lvl-1]);
                 if(lvl-1 > attributes[x].length-1)
                     return;
             } else {
                 if(lvl >= 1)
-                    value = Math.trunc(Number(attributes[x][lvl])) - Math.trunc(Number(attributes[x][lvl-1]));
+                    value = Number(attributes[x][lvl]) - Number(attributes[x][lvl-1]);
                 else {
                     if(changed)
-                        value = Math.trunc(Number(attributes[x][lvl]));
+                        value = Number(attributes[x][lvl]);
                     else
-                        value = Math.trunc(Number(attributes[x][lvl-1]));
+                        value = Number(attributes[x][lvl-1]);
                 }
                 if(lvl-1 >= attributes[x].length-1)
                     return;
-                if(!value.toString().startsWith("-"))
-                    value = "-" + value;
-                else
-                    value = value.toString().replace("-", "");
+                value *= -1;
             }
-            value = Math.trunc(Number(value));
+            value = Number(value);
             var attr = x.split("character")[1];
             switch(attr){
             case "Strength": str += value;

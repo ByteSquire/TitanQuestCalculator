@@ -14,8 +14,10 @@ function getSkillString(skill, currLevel){
     if(currLevel > 0){
         ret += '<br>\n';
         if(currLevel <= skill.attributes["skillMaxLevel"]){
+            document.getElementById(skill.name).getElementsByClassName("buttonText")[0].style.color = "white";
             ret += '<span class="nextLevel">Level: ' + currLevel + '</span>\n';
         } else if(currLevel <= skill.attributes["skillUltimateLevel"]){
+            document.getElementById(skill.name).getElementsByClassName("buttonText")[0].style.color = "yellow";
             ret += '<span class="nextLevel"><div style="color: yellow">Level: ' + currLevel + '</div></span>\n';
         }
         ret += '<br>\n';
