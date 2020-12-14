@@ -182,7 +182,7 @@ function skillButtonPopup(button, event){
             }
         });
     });
-    pop.innerHTML = getSkillString(skill, button.innerText.split("/")[0].replaceAll("\n", ""));
+    pop.innerHTML = getPopupString(skill, button.innerText.split("/")[0].replaceAll("\n", ""), true);
 
     pop.style.width = "10%";
 
@@ -201,7 +201,7 @@ function plusButtonPopup(button, event){
     }
     var masteryIndex = (button.parentElement.id == "panel1")? (m1-1) : (m2-1);
     var skill = { attributes: mod.masteries[masteryIndex].masteryAttributes, name: mod.masteries[masteryIndex].name, description: "" };
-    pop.innerHTML = getSkillString(skill, button.innerText.split("/")[0].replaceAll("\n", ""));
+    pop.innerHTML = getPopupString(skill, button.innerText.split("/")[0].replaceAll("\n", ""), false);
     
     pop.style.display = "block";
 }
