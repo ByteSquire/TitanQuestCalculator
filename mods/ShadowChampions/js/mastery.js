@@ -97,7 +97,7 @@ function addSkill(panel, mastery, skill) {
     skill.name.replaceAll(" ", "_").replaceAll("'", "").toLowerCase() + 
     '.png"\n' +
     '/>\n' +
-    '<span class="buttonText">0/' + skill.attributes.skillMaxLevel + '</span>';
+    '<span class="buttonText">0/' + skill.attributes.skillUltimateLevel + '</span>';
   scaleButtonPositon(document.getElementById(skill.name), skill.skillIcon);
 }
 
@@ -128,7 +128,7 @@ function plusClicked(button, left){
             });
         }
     } else {
-        if (canDecreaseMastery(button.parentElement, mod.masteries[Number(matteringMastery)-1].skillTiers[(matteringMastery == m1)? m1CurrTier-1 : m2CurrTier-1]))
+        if (canDecreaseMastery(button.parentElement, mod.masteries[Number(matteringMastery)-1].skillTiers[(matteringMastery == m1)? m1CurrTier-1 : m2CurrTier-1]), updated)
             if (curr > 0){
                 updated = curr - 1;
                 pointsSpent--;
@@ -226,7 +226,7 @@ function canSkill(button){
     return (masteryLevel >= mod.masteryLevels[Number(tier)]);
 }
 
-function canDecreaseMastery(panel, masteryTier){
+function canDecreaseMastery(panel, masteryTier, masteryLevel){
     var skillButtons = panel.getElementsByClassName("skillButton");
     var activeSkillButtons = [];
     for(var i = 0; i < skillButtons.length; i++){
@@ -245,6 +245,9 @@ function canDecreaseMastery(panel, masteryTier){
             }
         });
     });
+    if(!ret){
+        masteryLevel
+    }
     return ret;
 }
 
