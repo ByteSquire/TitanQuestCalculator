@@ -99,9 +99,9 @@ function addSkill(panel, mastery, skill) {
     </#if>
     "/" +
     <#if name=="ShadowChampions">
-    skill.name.replaceAll(" ", "_").replaceAll("'", "").toLowerCase() + 
+    skill.name.replaceAll(" ", "_").replaceAll("'", "").toLowerCase().replaceAll(":", "") + 
     <#else>
-    skill.name +
+    skill.name.replaceAll(":", "") +
     </#if>
     '.png"\n' +
     '/>\n' +

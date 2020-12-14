@@ -94,7 +94,7 @@ function addSkill(panel, mastery, skill) {
     "images/skills/" +
     mastery.name +
     "/" +
-    skill.name +
+    skill.name.replaceAll(":", "") +
     '.png"\n' +
     '/>\n' +
     '<span class="buttonText">0/' + skill.attributes.skillUltimateLevel + '</span>';
