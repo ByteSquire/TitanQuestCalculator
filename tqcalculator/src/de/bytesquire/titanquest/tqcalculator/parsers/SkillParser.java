@@ -48,17 +48,20 @@ public class SkillParser {
         try (BufferedReader skillReader = new BufferedReader(new FileReader(mSkill));) {
             Stream<String> fileStream = skillReader.lines();
             fileStream.forEach((str) -> {
-                if (str.split(",")[0].equals("skillDisplayName")) {
+                String attributeName = str.split(",")[0];
+                if(attributeName.equals("skillMasteryLevelRequired") || attributeName.startsWith("skillConnection"))
+                    return;
+                if (attributeName.equals("skillDisplayName")) {
                     mSkillTag = str.split(",")[1];
                 }
-                if (str.split(",")[0].equals("skillBaseDescription")) {
+                if (attributeName.equals("skillBaseDescription")) {
                     mSkillDescriptionTag = str.split(",")[1];
                 }
                 try {
                     Integer value = Integer.parseInt(str.split(",")[1]);
                     if (value == 0)
                         return;
-                    mAttributes.put(str.split(",")[0], value);
+                    mAttributes.put(attributeName, value);
                     return;
                 } catch (Exception e) {
                 }
@@ -66,7 +69,7 @@ public class SkillParser {
                     Double value = Double.parseDouble(str.split(",")[1]);
                     if (value == 0.0)
                         return;
-                    mAttributes.put(str.split(",")[0], value);
+                    mAttributes.put(attributeName, value);
                     return;
                 } catch (Exception e) {
                 }
@@ -77,11 +80,11 @@ public class SkillParser {
                     for (String e : str.split(",")[1].split(";")) {
                         value.add(Double.parseDouble(e));
                     }
-                    mAttributes.put(str.split(",")[0], value);
+                    mAttributes.put(attributeName, value);
                     return;
                 } catch (Exception e) {
                 }
-                if (str.split(",")[0].equals("petSkillName") || str.split(",")[0].equals("buffSkillName")) {
+                if (attributeName.equals("petSkillName") || attributeName.equals("buffSkillName")) {
                     Skill tmp = new Skill(
                             new File(Control.DATABASES_DIR + mParentPath.split("/")[0] + "/database/"
                                     + str.split(",")[1]),
@@ -95,7 +98,7 @@ public class SkillParser {
                     mSkillIcon = tmp.getSkillIcon();
                     mAdditionalFiles.addAll(tmp.getSkill());
                 }
-                if (str.split(",")[0].equals("Class") && str.split(",")[1].equals("Skill_Modifier"))
+                if (attributeName.equals("Class") && str.split(",")[1].equals("Skill_Modifier"))
                     isModifier = true;
 
             });

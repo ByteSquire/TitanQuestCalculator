@@ -6,12 +6,15 @@ import java.util.HashMap;
 import java.util.Map;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
 
 import de.bytesquire.titanquest.tqcalculator.parsers.IconsParser;
 import de.bytesquire.titanquest.tqcalculator.parsers.ModStringsParser;
 import de.bytesquire.titanquest.tqcalculator.parsers.SkillParser;
 
 @JsonIgnoreProperties({ "skill", "buff", "skillTag", "skillDescriptionTag", "modifier", "skillTier", "urlLegacy" })
+@JsonInclude(Include.NON_NULL)
 public class Skill {
 
     private SkillParser mSkillParser;
@@ -24,6 +27,7 @@ public class Skill {
     private ArrayList<File> mSkill;
     private int mSkillTier;
     private SkillIcon mSkillIcon;
+    private StringBuilder mRequiredWeapons;
 
     public Skill(File aSkill, String aParent, String aParentPath, ModStringsParser aMSParser,
             IconsParser aIconsParser) {
@@ -45,12 +49,61 @@ public class Skill {
             mSkill.addAll(mSkillParser.getAdditionalFiles());
         }
 
+        mRequiredWeapons = new StringBuilder();
         for (String skillAttribute : mSkillParser.getAttributes().keySet()) {
-            if (skillAttribute.equals("skillTier"))
+            switch (skillAttribute) {
+            case "skillTier":
                 mSkillTier = (int) mSkillParser.getAttributes().get(skillAttribute);
-            else
+                break;
+            case "Sword":
+                mRequiredWeapons.append(skillAttribute);
+                mRequiredWeapons.append(", ");
+                break;
+            case "Axe":
+                mRequiredWeapons.append(skillAttribute);
+                mRequiredWeapons.append(", ");
+                break;
+            case "Bow":
+                mRequiredWeapons.append(skillAttribute);
+                mRequiredWeapons.append(", ");
+                break;
+            case "Spear":
+                mRequiredWeapons.append(skillAttribute);
+                mRequiredWeapons.append(", ");
+                break;
+            case "Mace":
+                mRequiredWeapons.append(skillAttribute);
+                mRequiredWeapons.append(", ");
+                break;
+            case "Staff":
+                mRequiredWeapons.append(skillAttribute);
+                mRequiredWeapons.append(", ");
+                break;
+            case "Magical":
+                mRequiredWeapons.append(skillAttribute);
+                mRequiredWeapons.append(", ");
+                break;
+            case "Shield":
+                mRequiredWeapons.append(skillAttribute);
+                mRequiredWeapons.append(", ");
+                break;
+            case "RangedOneHand":
+                mRequiredWeapons.append("Thrown Weapon");
+                mRequiredWeapons.append(", ");
+                break;
+            case "dualWieldOnly":
+                mRequiredWeapons.append(skillAttribute);
+                mRequiredWeapons.append(", ");
+                break;
+            case "meleeOnly":
+                // mRequiredWeapons.append("Melee Only, ");
+                break;
+            default:
                 mSkillAttributes.put(skillAttribute, mSkillParser.getAttributes().get(skillAttribute));
+            }
         }
+        if (mRequiredWeapons.length() != 0)
+            mRequiredWeapons.delete(mRequiredWeapons.length() - 2, mRequiredWeapons.length());
     }
 
     @Override
@@ -109,6 +162,12 @@ public class Skill {
             return mSkillIcon;
         else
             return null;
+    }
+
+    public String getRequiredWeapons() {
+        if (mRequiredWeapons.length() == 0)
+            return null;
+        return mRequiredWeapons.toString();
     }
 
 }
