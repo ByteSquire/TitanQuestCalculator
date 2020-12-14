@@ -134,7 +134,7 @@ function plusClicked(button, left){
         } else
             return;
     } else {
-        if (canDecreaseMastery(button.parentElement, mod.masteries[Number(matteringMastery)-1].skillTiers[(matteringMastery == m1)? m1CurrTier-1 : m2CurrTier-1]), updated){
+        if (canDecreaseMastery(button.parentElement, mod.masteries[Number(matteringMastery)-1], (matteringMastery == m1)? m1CurrTier-1 : m2CurrTier-1, updated)){
             if (curr > 0){
                 updated = curr - 1;
                 pointsSpent--;
@@ -197,14 +197,12 @@ function plusButtonPopup(button, event){
         var sy = event.pageY;
 
         pop.style.top = "" + sy + "px";
-        pop.style.left = "" + (sx+10) + "px";
+        pop.style.left = "" + (sx+15) + "px";
     }
     var masteryIndex = (button.parentElement.id == "panel1")? (m1-1) : (m2-1);
     var skill = { attributes: mod.masteries[masteryIndex].masteryAttributes, name: mod.masteries[masteryIndex].name, description: "" };
     pop.innerHTML = getSkillString(skill, button.innerText.split("/")[0].replaceAll("\n", ""));
-
-    pop.style.width = "10%";
-
+    
     pop.style.display = "block";
 }
 
@@ -323,7 +321,10 @@ function canSkill(button){
     return (masteryLevel >= mod.masteryLevels[Number(tier)]);
 }
 
-function canDecreaseMastery(panel, masteryTier, masteryLevel){
+function canDecreaseMastery(panel, mastery,  masteryTier, masteryLevel){
+    if(masteryLevel > mod.masteryLevels[masteryTier]){
+        return true;
+    }
     var skillButtons = panel.getElementsByClassName("skillButton");
     var activeSkillButtons = [];
     for(var i = 0; i < skillButtons.length; i++){
@@ -335,7 +336,7 @@ function canDecreaseMastery(panel, masteryTier, masteryLevel){
     }
     
     var ret = true;
-    masteryTier.forEach((skill) => {
+    mastery.skillTiers[masteryTier].forEach((skill) => {
         activeSkillButtons.forEach((button) => {
             if(button.id == skill.name){
                 ret = false;
