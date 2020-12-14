@@ -23,9 +23,21 @@ function getSkillString(skill, currLevel){
         attr.forEach((key) => {
             if(key == "requiredWeapons")
                 return;
+            if(key == "skillMaxLevel")
+                return;
+            if(key == "skillUltimateLevel")
+                return;
             var value = skill.attributes[key];
             if(value.constructor === Array){
-                ret += '<span class="skillAttribute" style="color: gray">' + key + ':<br>\n' + value[currLevel-1] + '</span>\n';
+                if(value[currLevel-1] == 0)
+                    return;
+                var index = currLevel-1;
+                if(value[index] === undefined){
+                    index = value.length-1;
+                    if(value[index] === undefined)
+                        return;
+                }
+                ret += '<span class="skillAttribute" style="color: gray">' + key + ':<br>\n' + value[index] + '</span>\n';
                 ret += "<br>\n";
             } else {
                 ret += '<span class="skillAttribute" style="color: gray">' + key + ':<br>\n' + value + '</span>\n';
@@ -48,8 +60,14 @@ function getSkillString(skill, currLevel){
     attr.forEach((key) => {
         if(key == "requiredWeapons")
             return;
+        if(key == "skillMaxLevel")
+            return;
+        if(key == "skillUltimateLevel")
+            return;
         var value = skill.attributes[key];
         if(value.constructor === Array){
+            if(value[currLevel] == 0 || value[currLevel] === undefined)
+                return;
             ret += '<span class="skillAttribute">' + key + ':<br>\n' + value[currLevel] + '</span>\n';
             ret += "<br>\n";
         } else if(currLevel == 0) {

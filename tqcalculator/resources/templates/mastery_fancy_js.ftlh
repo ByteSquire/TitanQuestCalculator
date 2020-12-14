@@ -18,6 +18,11 @@ var m1LevelReq;
 var m2LevelReq;
 var m1CurrTier = 0;
 var m2CurrTier = 0;
+var str = 50;
+var int = 50;
+var dex = 50;
+var mp = 300;
+var hp = 300;
 
 var xmlhttp = new XMLHttpRequest();
 var url =
@@ -134,9 +139,10 @@ function plusClicked(button, left){
                         m2CurrTier++;
                 }
             });
-        }
+        } else
+            return;
     } else {
-        if (canDecreaseMastery(button.parentElement, mod.masteries[Number(matteringMastery)-1].skillTiers[(matteringMastery == m1)? m1CurrTier-1 : m2CurrTier-1]), updated)
+        if (canDecreaseMastery(button.parentElement, mod.masteries[Number(matteringMastery)-1].skillTiers[(matteringMastery == m1)? m1CurrTier-1 : m2CurrTier-1]), updated){
             if (curr > 0){
                 updated = curr - 1;
                 pointsSpent--;
@@ -153,10 +159,14 @@ function plusClicked(button, left){
                 }
                 if(updated == 0)
                     button.parentElement.getElementsByClassName("bar")[0].style.height = "0%";
-            }
+            } else
+                return;
+        } else
+            return;
     }
     button.innerHTML = button.innerHTML.replace(curr, updated);
     calcLevelReq();
+    calcBoni(mod.masteries[Number(matteringMastery)-1].masteryAttributes, updated, left);
     updateSkills();
 }
 
@@ -187,6 +197,25 @@ function skillButtonPopup(button, event){
     pop.style.display = "block";
 }
 
+function plusButtonPopup(button, event){
+    var pop = document.getElementById( 'pop' );
+
+    if( event ) {
+        var sx = event.pageX;
+        var sy = event.pageY;
+
+        pop.style.top = "" + sy + "px";
+        pop.style.left = "" + (sx+10) + "px";
+    }
+    var masteryIndex = (button.parentElement.id == "panel1")? (m1-1) : (m2-1);
+    var skill = { attributes: mod.masteries[masteryIndex].masteryAttributes, name: mod.masteries[masteryIndex].name, description: "" };
+    pop.innerHTML = getSkillString(skill, button.innerText.split("/")[0].replaceAll("\n", ""));
+
+    pop.style.width = "10%";
+
+    pop.style.display = "block";
+}
+
 function skillClicked(button, left){
     var splits = button.innerText.split("/");
     var curr = Number(splits[0]);
@@ -197,17 +226,31 @@ function skillClicked(button, left){
             if (curr < max){
                 updated = curr + 1;
                 pointsSpent++;
-            }
+            } else
+                return;
         } else {
             if (curr > 0){
                 updated = curr - 1;
                 pointsSpent--;
-            }
+            } else
+                return;
         }
-    }
+    } else
+        return;
     button.innerHTML = button.innerHTML.replace(curr, updated);
     calcLevelReq();
-   
+    
+    var masteryIndex = (button.parentElement.id == "panel1")? (m1-1) : (m2-1);
+    var tiers = mod.masteries[masteryIndex].skillTiers;
+    var skill;
+    tiers.forEach((tier) => {
+        tier.forEach((aSkill) => {
+            if(aSkill.name == button.id){
+                skill = aSkill;
+            }
+        });
+    });
+    calcBoni(skill.attributes, updated, left);
 }
 
 function hidePopup(){
@@ -216,6 +259,63 @@ function hidePopup(){
 
 function calcLevelReq(){
     document.getElementById("lvl").innerText = 1 + Math.ceil(pointsSpent/3);
+}
+
+function calcBoni(attributes, lvl, increase){
+    var attrs = Object.keys(attributes);
+    
+    var changed = false;
+    if(lvl == 0){
+        changed = true;
+    }
+    
+    attrs.forEach((x) => {
+        if(x.startsWith("character")){
+            var value;
+            if(increase){
+                if(lvl > 1)
+                    value = Math.trunc(Number(attributes[x][lvl-1])) - Math.trunc(Number(attributes[x][lvl-2]));
+                else 
+                    value = Math.trunc(Number(attributes[x][lvl-1]));
+                if(lvl-1 > attributes[x].length-1)
+                    return;
+            } else {
+                if(lvl >= 1)
+                    value = Math.trunc(Number(attributes[x][lvl])) - Math.trunc(Number(attributes[x][lvl-1]));
+                else {
+                    if(changed)
+                        value = Math.trunc(Number(attributes[x][lvl]));
+                    else
+                        value = Math.trunc(Number(attributes[x][lvl-1]));
+                }
+                if(lvl-1 >= attributes[x].length-1)
+                    return;
+                if(!value.toString().startsWith("-"))
+                    value = "-" + value;
+                else
+                    value = value.toString().replace("-", "");
+            }
+            value = Math.trunc(Number(value));
+            var attr = x.split("character")[1];
+            switch(attr){
+            case "Strength": str += value;
+                    break;
+            case "Intelligence": int += value;
+                    break;       
+            case "Dexterity": dex += value;
+                    break; 
+            case "Life": hp += value;
+                    break; 
+            case "Mana": mp += value;
+                    break; 
+            }
+        }
+    });
+    document.getElementById("hp").innerText = hp;
+    document.getElementById("mp").innerText = mp;
+    document.getElementById("dex").innerText = dex;
+    document.getElementById("str").innerText = str;
+    document.getElementById("int").innerText = int;
 }
 
 function canSkill(button){
@@ -253,9 +353,9 @@ function canDecreaseMastery(panel, masteryTier, masteryLevel){
             }
         });
     });
-    if(!ret){
-        masteryLevel
-    }
+    //if(!ret){
+    //    masteryLevel
+    //}
     return ret;
 }
 

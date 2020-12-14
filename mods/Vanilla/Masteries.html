@@ -20,7 +20,7 @@
               class="masteryPanel"
               src="../../MasteryPage/images/masteries/panel/skillpanel.png"
             />
-            <button class="plusButton" id="plusButton1" onclick="plusClicked(this, true);" oncontextmenu="plusClicked(this, false);">
+            <button class="plusButton" id="plusButton1" onclick="plusClicked(this, true);" oncontextmenu="plusClicked(this, false);" onmouseover="plusButtonPopup(this, event);" onmouseout="hidePopup();">
               <img
                 class="plusButtonImage"
                 src="../../MasteryPage/images/masteries/panel/plusbutton.png"
@@ -45,7 +45,7 @@
               class="masteryPanel"
               src="../../MasteryPage/images/masteries/panel/skillpanel.png"
             />
-            <button class="plusButton" id="plusButton2" onclick="plusClicked(this, true);" oncontextmenu="plusClicked(this, false);">
+            <button class="plusButton" id="plusButton2" onclick="plusClicked(this, true);" oncontextmenu="plusClicked(this, false);" onmouseover="plusButtonPopup(this, event);" onmouseout="hidePopup();">
               <img
                 class="plusButtonImage"
                 src="../../MasteryPage/images/masteries/panel/plusbutton.png"
@@ -78,14 +78,14 @@
               </tr>
               <tr>
                 <td>Health:</td>
-                <td><div id="hp">500</div></td>
+                <td><div id="hp">300</div></td>
                 <td></td>
                 <td>Intelligence:</td>
                 <td><div id="int">50</div></td>
               </tr>
               <tr>
                 <td>Energy:</td>
-                <td><div id="mp">500</div></td>
+                <td><div id="mp">300</div></td>
                 <td></td>
                 <td>Dexterity:</td>
                 <td><div id="dex">50</div></td>
