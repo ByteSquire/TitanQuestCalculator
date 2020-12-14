@@ -7,7 +7,7 @@ function getSkillString(skill, currLevel){
     ret += "<br>\n";
     
     if(skill.requiredWeapons){
-        ret += '<span class="" style="color: yellow">Only works with: ' + requiredWeapons + '</span>';
+        ret += '<span class="" style="color: yellow">Only works with: ' + skill.requiredWeapons + '</span>';
         ret += "<br>\n";
     }
     
