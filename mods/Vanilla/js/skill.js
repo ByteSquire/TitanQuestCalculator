@@ -18,6 +18,7 @@ function getSkillString(skill, currLevel){
         } else if(currLevel <= skill.attributes["skillUltimateLevel"]){
             ret += '<span class="nextLevel"><div style="color: yellow">Level: ' + currLevel + '</div></span>\n';
         }
+        ret += '<br>\n';
         var attr = Object.keys(skill.attributes);
         attr.forEach((key) => {
             if(key == "requiredWeapons")
@@ -42,6 +43,7 @@ function getSkillString(skill, currLevel){
     } else {
         return ret;
     }
+    ret += '<br>\n';
     var attr = Object.keys(skill.attributes);
     attr.forEach((key) => {
         if(key == "requiredWeapons")
