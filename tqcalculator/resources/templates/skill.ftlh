@@ -8,21 +8,12 @@
 <body>
     <h1><#if name??>${name}<#else>Error reading name</#if></h1>
     <h2><#if description??>${description}<#else>Error reading name</#if></h2>
+    <#if requiredWeapons??><h2 style="color: green">${requiredWeapons}</h2></#if>
 
     <table border=1.7>
-    <#if buffName??>
-        <tr><td>${buffName}
-        <td>
-        <table border=1.7>
-            <#list buffAttributes as buffAttributeName, buffAttributeValue>
-                <tr><td>${buffAttributeName}<td>${buffAttributeValue}
-            </#list>
-        </table>
-    <#else>
     <#list attributes as attributeName, attributeValue>
         <tr><td>${attributeName}<td><#if ArrayList.isInstance(attributeValue)><#list attributeValue as value>${value} </#list><#else>${attributeValue}</#if>
     </#list>
-    </#if>
     </table>
 </body>
 </html>
