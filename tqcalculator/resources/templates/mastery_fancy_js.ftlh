@@ -18,6 +18,7 @@ var m1LevelReq;
 var m2LevelReq;
 var m1CurrTier = 0;
 var m2CurrTier = 0;
+var globalPlus = 0;
 var str = 50;
 var int = 50;
 var dex = 50;
@@ -110,7 +111,8 @@ function addSkill(panel, mastery, skill) {
     </#if>
     '.png"\n' +
     '/>\n' +
-    '<span class="buttonText">0/' + skill.attributes.skillUltimateLevel + '</span>';
+    '<span class="buttonText">0/' + skill.attributes.skillUltimateLevel + '</span>' +
+    '<div class="disabled">0</div>';
   scaleButtonPositon(document.getElementById(skill.name), skill.skillIcon);
 }
 
@@ -214,27 +216,81 @@ function plusButtonPopup(button, event){
     pop.style.display = "block";
 }
 
+function allPlusButtonPopup(button, event){
+    var pop = document.getElementById( 'pop' );
+
+    if( event ) {
+        var sx = event.pageX;
+        var sy = event.pageY;
+
+        pop.style.top = "" + sy + "px";
+        pop.style.left = "" + (sx+15) + "px";
+    }
+    pop.innerHTML = '<span class="title">Adds ' + globalPlus + " to all skills of this mastery</span>";
+    
+    pop.style.display = "block";
+}
+
+function allPlusClicked(button, left) {
+    var curr = Number(button.innerText);
+
+    if(!left && globalPlus == 0)
+        return;
+    
+    if(left)
+        globalPlus++;
+    else
+        globalPlus--;
+        
+    var activeButtons = document.getElementsByClassName("skillButton"); 
+    
+    for(var i = 0; i < activeButtons.length; i++) {
+        var curr1 = Number(activeButtons[i].innerHTML.split('<div class="disabled">')[1].replace("</div>", ""));
+        if(curr1 > 0){
+            if(curr1+globalPlus > Number(activeButtons[i].innerText.split("/")[1]))
+                activeButtons[i].innerHTML = activeButtons[i].innerHTML.replace(Number(activeButtons[i].innerText.split("/")[0]), Number(activeButtons[i].innerText.split("/")[1]))
+            else
+                activeButtons[i].innerHTML = activeButtons[i].innerHTML.replace(Number(activeButtons[i].innerText.split("/")[0]), curr1+globalPlus);
+        }
+    }
+       
+    button.innerHTML = button.innerHTML.replace(curr, globalPlus);
+}
+
 function skillClicked(button, left){
     var splits = button.innerText.split("/");
     var curr = Number(splits[0]);
     var max = Number(splits[1]);
-    var updated = curr;
+    var localPointsSpent = Number(button.innerHTML.split('<div class="disabled">')[1].replace("</div>", ""));
     if(canSkill(button)){
         if(left){
-            if (curr < max){
-                updated = curr + 1;
+            if (localPointsSpent < max){
+                localPointsSpent = localPointsSpent + 1;
                 pointsSpent++;
             } else
                 return;
         } else {
-            if (curr > 0){
-                updated = curr - 1;
+            if (localPointsSpent > 0){
+                localPointsSpent = localPointsSpent - 1;
                 pointsSpent--;
             } else
                 return;
         }
     } else
         return;
+    
+    button.getElementsByClassName("disabled")[0].innerText = localPointsSpent;
+    var updated = localPointsSpent;
+    if(localPointsSpent > 0){
+        if(globalPlus > 0){
+            if(updated + globalPlus > max)
+                updated = max;
+            else
+                updated += globalPlus;
+        }
+    } else {
+        updated = 0;
+    }
     button.innerHTML = button.innerHTML.replace(curr, updated);
     calcLevelReq();
     
@@ -351,9 +407,6 @@ function canDecreaseMastery(panel, mastery,  masteryTier, masteryLevel){
             }
         });
     });
-    //if(!ret){
-    //    masteryLevel
-    //}
     return ret;
 }
 

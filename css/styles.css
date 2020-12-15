@@ -98,6 +98,21 @@
   line-height: 8px;
 }
 
+.allPlusButton {
+  bottom: 2.5%;
+  left: 10%;
+  position: absolute;
+  width: 4%;
+  height: 6%;
+  min-width: 13.5px;
+  min-height: 9px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  line-height: 8px;
+  color: white;
+}
+
 .skillButton {
   position: absolute;
   background-color: transparent;
@@ -123,6 +138,11 @@
 }
 
 .plusButtonImage {
+  width: 100%;
+}
+
+.allPlusButtonImage {
+  filter: brightness(0.5);
   width: 100%;
 }
 

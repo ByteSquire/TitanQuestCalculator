@@ -26,6 +26,13 @@
                 src="../../MasteryPage/images/masteries/panel/plusbutton.png"
               />
             </button>
+            <button class="allPlusButton" id="allPlusButton1" onclick="allPlusClicked(this, true);" oncontextmenu="allPlusClicked(this, false);" onmouseover="allPlusButtonPopup(this, event);" onmouseout="hidePopup();">
+              <img
+                class="allPlusButtonImage"
+                src="../../MasteryPage/images/masteries/panel/plusbutton.png"
+              />
+              0
+            </button>
             <img
               class="masteryImagePanel"
               id="mastery1"
@@ -50,6 +57,13 @@
                 class="plusButtonImage"
                 src="../../MasteryPage/images/masteries/panel/plusbutton.png"
               />
+            </button>
+            <button class="allPlusButton" id="allPlusButton1" onclick="allPlusClicked(this, true);" oncontextmenu="allPlusClicked(this, false);" onmouseover="allPlusButtonPopup(this, event);" onmouseout="hidePopup();">
+              <img
+                class="allPlusButtonImage"
+                src="../../MasteryPage/images/masteries/panel/plusbutton.png"
+              />
+              0
             </button>
             <img
               class="masteryImagePanel"

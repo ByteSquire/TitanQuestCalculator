@@ -50,7 +50,8 @@ function getPopupString(skill, currLevel, isSkill){
                 ret += "<br>\n";
             }
         });
-    }
+    } else if(isSkill)
+        document.getElementById(skill.name).getElementsByClassName("buttonText")[0].style.color = "white";
     
     ret += '<br>\n';
     
