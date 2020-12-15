@@ -18,7 +18,8 @@ var m1LevelReq;
 var m2LevelReq;
 var m1CurrTier = 0;
 var m2CurrTier = 0;
-var globalPlus = 0;
+var m1GlobalPlus = 0;
+var m2GlobalPlus = 0;
 var str = 50;
 var int = 50;
 var dex = 50;
@@ -218,14 +219,14 @@ function allPlusButtonPopup(button, event){
         pop.style.top = "" + sy + "px";
         pop.style.left = "" + (sx+15) + "px";
     }
-    pop.innerHTML = '<span class="title">Adds ' + globalPlus + " to all skills of this mastery</span>";
+    pop.innerHTML = '<span class="title">Adds ' + Number((button.parentElement.id == "panel1")? m1GlobalPlus : m2GlobalPlus) + " to all skills of this mastery</span>";
     
     pop.style.display = "block";
 }
 
 function allPlusClicked(button, left) {
     var curr = Number(button.innerText);
-
+    var globalPlus = (button.parentElement.id == "panel1")? m1GlobalPlus : m2GlobalPlus;
     if(!left && globalPlus == 0)
         return;
     
@@ -233,8 +234,13 @@ function allPlusClicked(button, left) {
         globalPlus++;
     else
         globalPlus--;
-        
-    var activeButtons = document.getElementsByClassName("skillButton"); 
+    
+    if(button.parentElement.id == "panel1")
+        m1GlobalPlus = globalPlus;
+    else
+        m2GlobalPlus = globalPlus;
+    
+    var activeButtons = button.parentElement.getElementsByClassName("skillButton"); 
     
     for(var i = 0; i < activeButtons.length; i++) {
         var curr1 = Number(activeButtons[i].innerHTML.split('<div class="disabled">')[1].replace("</div>", ""));
@@ -274,11 +280,11 @@ function skillClicked(button, left){
     button.getElementsByClassName("disabled")[0].innerText = localPointsSpent;
     var updated = localPointsSpent;
     if(localPointsSpent > 0){
-        if(globalPlus > 0){
-            if(updated + globalPlus > max)
+        if((button.parentElement.id == "panel1")? m1GlobalPlus : m2GlobalPlus > 0){
+            if(updated + Number((button.parentElement.id == "panel1")? m1GlobalPlus : m2GlobalPlus) > max)
                 updated = max;
             else
-                updated += globalPlus;
+                updated += (button.parentElement.id == "panel1")? m1GlobalPlus : m2GlobalPlus;
         }
     } else {
         updated = 0;
