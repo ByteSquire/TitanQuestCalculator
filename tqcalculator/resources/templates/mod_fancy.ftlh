@@ -34,5 +34,13 @@
         src="../../MasteryPage/images/button.jpg"
       />
     </button>
+    
+    <#if name=="Vanilla">
+    <div class="centered">
+        <br>
+        Huge thanks to the Titan Quest(TQ), TQ Ragnarok and TQ Atlantis developers for their awesome work
+        <br>
+        All images (apart from the submit button but including images on pages linked on this one) by said developers <a href="https://titanquestgame.com/">visit the official TQ site</a>
+    </#if>
   </body>
 </html>
