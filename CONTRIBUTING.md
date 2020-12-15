@@ -14,6 +14,8 @@
     - Building the maven project inside tqcalculator
     - Running the resulting program (located in the target directory) __ONCE__
     - Deleting all database directories in _tqcalculator/target/resources/databases_ __not__ named *modname*-cleaned and remove the -cleaned from the new directories
+    - Then copy the relevant directories into the _tqcalculator/resources/databases_ directory
+  - Add your images to the _tqcalculator/mods/modname/images_ directory (take a look at the other mods to reproduce the correct structure
   - Commit your changes with a message like ``[database] add -modname-``. [how to commit](https://github.com/git-guides/git-commit)
   - Push your local clone. [pushing a repo](https://docs.github.com/en/free-pro-team@latest/github/using-git/pushing-commits-to-a-remote-repository)
   - Create a [pull request](https://github.com/ByteSquire/TitanQuestCalculator/pulls). (you can take a look at [the example pull request](https://github.com/ByteSquire/TitanQuestCalculator/pull/1))
@@ -21,3 +23,4 @@
 
 ### If you do not want to create a Github account
   - Get in touch with me(@Zaphodgame) via the [Titan Forge discord channel](https://discord.gg/efFsGMJ8tn)
+  - Create an [issue](https://github.com/ByteSquire/TitanQuestCalculator/issues/new?assignees=ByteSquire&labels=&template=mod-addition.md&title=%5BModAddition%5D)
