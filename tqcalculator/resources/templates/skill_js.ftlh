@@ -33,12 +33,21 @@ function addSkill(panel, mastery, skill) {
     '/>\n' +
     '<span class="buttonText">0/' + skill.attributes.skillMaxLevel + '</span>' +
     '<div class="disabled">0</div>';
-  scaleButtonPositon(document.getElementById(skill.name), skill.skillIcon);
+  scaleButtonPosition(document.getElementById(skill.name), skill.skillIcon);
+  
+  panel.innerHTML += '<button class="skillPlusButton" id="' + skill.name + '+' + '" onmousedown="skillPlusClicked(this, event);" onmouseover="skillPlusButtonPopup(this, event);" onmouseout="hidePopup();">\n' +
+              ' <img\n' +
+              '   class="skillPlusButtonImage"\n' + 
+              '   src="../../MasteryPage/images/masteries/panel/plusbutton.png"\n' + 
+              ' />\n' +
+              ' 0\n' +
+              '</button>';
+  scaleButtonPosition(document.getElementById(skill.name + '+'), { posY: skill.skillIcon.posY, posX: skill.skillIcon.posX + 40 });
 }
 
-function scaleButtonPositon(button, iconPosition) {
+function scaleButtonPosition(button, iconPosition) {
   button.style.top = iconPosition.posY/5.4 + "%";
-  button.style.left = iconPosition.posX/9.5 + "%";
+  button.style.left = iconPosition.posX/9.3 + "%";
 }
 
 function updateSkills(){    
@@ -65,4 +74,31 @@ function updateSkills(){
                 });
             }
     }
+}
+
+function skillButtonPopup(button, event){
+    var pop = document.getElementById( 'pop' );
+
+    var pageHeight = getPageHeight();
+    if( event ) {
+        var pos = getPopupPos(event);
+        
+        pop.style.top = "" + pos.y + "px";
+        pop.style.left = "" + pos.x + "px";
+        pop.style.bottom = "unset";
+    }
+    var matteringMastery = (button.parentElement.id == "panel1")? m1 : m2;
+    var tiers = matteringMastery.skillTiers;
+    var skill;
+    tiers.forEach((tier) => {
+        tier.forEach((aSkill) => {
+            if(aSkill.name == button.id){
+                skill = aSkill;
+            }
+        });
+    });
+    pop.innerHTML = getPopupString(skill, button.innerText.split("/")[0].replaceAll("\n", ""), true);
+
+    pop.style.display = "block";
+    movePopupintoView(pop, pageHeight);
 }

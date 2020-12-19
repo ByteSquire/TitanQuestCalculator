@@ -240,6 +240,8 @@ public class Control {
                         Path.of(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/mod.js"), StandardCopyOption.REPLACE_EXISTING);
                 Files.copy(Path.of("resources/js/masteryTier_handler.js"),
                         Path.of(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/masteryTier_handler.js"), StandardCopyOption.REPLACE_EXISTING);
+                Files.copy(Path.of("resources/js/skillPlusButton_handler.js"),
+                        Path.of(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/skillPlusButton_handler.js"), StandardCopyOption.REPLACE_EXISTING);
             } catch (IOException | TemplateException e) {
                 e.printStackTrace();
                 mSuccess = false;

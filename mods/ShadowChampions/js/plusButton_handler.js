@@ -1,7 +1,5 @@
 var m1CurrTier = 0;
 var m2CurrTier = 0;
-var m1GlobalPlus = 0;
-var m2GlobalPlus = 0;
 
 function plusClicked(button, event){
     var splits = button.innerText.split("/");
@@ -76,46 +74,21 @@ function plusClicked(button, event){
     updateSkills();
 }
 
-function allPlusClicked(button, event) {
-    var curr = Number(button.innerText);
-    var globalPlus = (button.parentElement.id == "panel1")? m1GlobalPlus : m2GlobalPlus;
-    var left = event.button == 0;
+function plusButtonPopup(button, event){
+    var pop = document.getElementById( 'pop' );
     
-    if(!left && globalPlus == 0)
-        return;
-    
-    if(left)
-        globalPlus++;
-    else
-        globalPlus--;
-    
-    if(button.parentElement.id == "panel1")
-        m1GlobalPlus = globalPlus;
-    else
-        m2GlobalPlus = globalPlus;
-    
-    var activeButtons = button.parentElement.getElementsByClassName("skillButton"); 
-    
-    for(var i = 0; i < activeButtons.length; i++) {
-        var curr1 = Number(activeButtons[i].innerHTML.split('<div class="disabled">')[1].replace("</div>", ""));
-        if(curr1 > 0){
-            var matteringMastery = (button.parentElement.id == "panel1")? m1 : m2;
-            var tiers = matteringMastery.skillTiers;
-            var skill;
-            tiers.forEach((tier) => {
-                tier.forEach((aSkill) => {
-                    if(aSkill.name == activeButtons[i].id){
-                        skill = aSkill;
-                    }
-                });
-            });
+    var pageHeight = getPageHeight();
+    if( event ) {
+        var pos = getPopupPos(event);
         
-            if(curr1+globalPlus > skill.attributes.skillUltimateLevel)
-                activeButtons[i].innerHTML = activeButtons[i].innerHTML.replace(Number(activeButtons[i].innerText.split("/")[0]), skill.attributes.skillUltimateLevel)
-            else
-                activeButtons[i].innerHTML = activeButtons[i].innerHTML.replace(Number(activeButtons[i].innerText.split("/")[0]), curr1+globalPlus);
-        }
+        pop.style.top = "" + pos.y + "px";
+        pop.style.left = "" + pos.x + "px";
+        pop.style.bottom = "unset";
     }
-       
-    button.innerHTML = button.innerHTML.replace(curr, globalPlus);
+    var matteringMastery = (button.parentElement.id == "panel1")? m1 : m2;
+    var skill = { attributes: matteringMastery.masteryAttributes, name: matteringMastery.name, description: "" };
+    pop.innerHTML = getPopupString(skill, button.innerText.split("/")[0].replaceAll("\n", ""), false);
+    
+    pop.style.display = "block";
+    movePopupintoView(pop, pageHeight);
 }

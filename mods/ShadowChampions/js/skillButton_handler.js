@@ -53,11 +53,26 @@ function skillClicked(button, event){
             else
                 updated += (button.parentElement.id == "panel1")? m1GlobalPlus : m2GlobalPlus;
         }
+        if(Number(document.getElementById(skill.name + "+").innerText) > 0){
+            if(updated + Number(document.getElementById(skill.name + "+").innerText) > skill.attributes.skillUltimateLevel)
+                updated = skill.attributes.skillUltimateLevel;
+            else
+                updated += Number(document.getElementById(skill.name + "+").innerText);
+        }
     } else {
         updated = 0;
     }
-    button.innerHTML = button.innerHTML.replace(curr, updated);
+    updateSkillLevel(skill, updated);
     calcLevelReq();
     
     calcBoni(skill.attributes, curr, updated, event);
+}
+
+function updateSkillLevel(skill, updated){
+    var curr = Number(document.getElementById(skill.name).innerText.split("/")[0]);
+    if(updated <= skill.attributes["skillMaxLevel"])
+        document.getElementById(skill.name).getElementsByClassName("buttonText")[0].style.color = "white";
+    else
+        document.getElementById(skill.name).getElementsByClassName("buttonText")[0].style.color = "yellow";
+    document.getElementById(skill.name).innerHTML = document.getElementById(skill.name).innerHTML.replace(curr, updated);
 }
