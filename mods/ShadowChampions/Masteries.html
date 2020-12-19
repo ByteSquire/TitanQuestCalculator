@@ -25,13 +25,13 @@
               class="masteryPanel"
               src="../../MasteryPage/images/masteries/panel/skillpanel.png"
             />
-            <button class="plusButton" id="plusButton1" onclick="plusClicked(this, true);" oncontextmenu="plusClicked(this, false);" onmouseover="plusButtonPopup(this, event);" onmouseout="hidePopup();">
+            <button class="plusButton" id="plusButton1" onmousedown="plusClicked(this, event);" onmouseover="plusButtonPopup(this, event);" onmouseout="hidePopup();">
               <img
                 class="plusButtonImage"
                 src="../../MasteryPage/images/masteries/panel/plusbutton.png"
               />
             </button>
-            <button class="allPlusButton" id="allPlusButton1" onclick="allPlusClicked(this, true);" oncontextmenu="allPlusClicked(this, false);" onmouseover="allPlusButtonPopup(this, event);" onmouseout="hidePopup();">
+            <button class="allPlusButton" id="allPlusButton1" onmousedown="allPlusClicked(this, event);" onmouseover="allPlusButtonPopup(this, event);" onmouseout="hidePopup();">
               <img
                 class="allPlusButtonImage"
                 src="../../MasteryPage/images/masteries/panel/plusbutton.png"
@@ -57,13 +57,13 @@
               class="masteryPanel"
               src="../../MasteryPage/images/masteries/panel/skillpanel.png"
             />
-            <button class="plusButton" id="plusButton2" onclick="plusClicked(this, true);" oncontextmenu="plusClicked(this, false);" onmouseover="plusButtonPopup(this, event);" onmouseout="hidePopup();">
+            <button class="plusButton" id="plusButton2" onmousedown="plusClicked(this, true);" onmouseover="plusButtonPopup(this, event);" onmouseout="hidePopup();">
               <img
                 class="plusButtonImage"
                 src="../../MasteryPage/images/masteries/panel/plusbutton.png"
               />
             </button>
-            <button class="allPlusButton" id="allPlusButton1" onclick="allPlusClicked(this, true);" oncontextmenu="allPlusClicked(this, false);" onmouseover="allPlusButtonPopup(this, event);" onmouseout="hidePopup();">
+            <button class="allPlusButton" id="allPlusButton1" onmousedown="allPlusClicked(this, true);" onmouseover="allPlusButtonPopup(this, event);" onmouseout="hidePopup();">
               <img
                 class="allPlusButtonImage"
                 src="../../MasteryPage/images/masteries/panel/plusbutton.png"

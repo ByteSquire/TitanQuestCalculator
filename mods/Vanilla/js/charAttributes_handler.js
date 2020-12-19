@@ -6,53 +6,102 @@ var hp = 300;
 
 var pointsSpent = 0;
 
-function calcBoni(attributes, lvl, increase){
+function calcBoni(attributes, fromLevel, toLevel, event){
     var attrs = Object.keys(attributes);
+    var increase = event.button == 0;
     
     var changed = false;
+    var lvl = toLevel;
     if(lvl == 0){
         changed = true;
     }
     
-    attrs.forEach((x) => {
-        if(x.startsWith("character")){
-            var value;
+    if(event.shiftKey){
+        attrs.forEach((x) => {
+            if(toLevel > attributes[x].length)
+                toLevel = attributes[x].length;
+            if(fromLevel > attributes[x].length)
+                fromLevel = attributes[x].length;
+                
             if(increase){
-                if(lvl > 1)
-                    value = Number(attributes[x][lvl-1]) - Number(attributes[x][lvl-2]);
-                else 
-                    value = Number(attributes[x][lvl-1]);
-                if(lvl-1 > attributes[x].length-1)
-                    return;
-            } else {
-                if(lvl >= 1)
-                    value = Number(attributes[x][lvl]) - Number(attributes[x][lvl-1]);
-                else {
-                    if(changed)
-                        value = Number(attributes[x][lvl]);
-                    else
-                        value = Number(attributes[x][lvl-1]);
+                var value;
+                if(fromLevel > 0)
+                    value = Number(attributes[x][toLevel-1]) - Number(attributes[x][fromLevel-1]);
+                else
+                    value = Number(attributes[x][toLevel-1]);
+                value = Number(value);
+                var attr = x.split("character")[1];
+                switch(attr){
+                case "Strength": str += value;
+                        break;
+                case "Intelligence": int += value;
+                        break;       
+                case "Dexterity": dex += value;
+                        break; 
+                case "Life": hp += value;
+                        break; 
+                case "Mana": mp += value;
+                        break; 
                 }
-                if(lvl-1 >= attributes[x].length-1)
-                    return;
-                value *= -1;
+            } else{
+                var value = "-" + attributes[x][fromLevel-1];
+                value = Number(value);
+                var attr = x.split("character")[1];
+                switch(attr){
+                case "Strength": str += value;
+                        break;
+                case "Intelligence": int += value;
+                        break;       
+                case "Dexterity": dex += value;
+                        break; 
+                case "Life": hp += value;
+                        break; 
+                case "Mana": mp += value;
+                        break; 
+                }
             }
-            value = Number(value);
-            var attr = x.split("character")[1];
-            switch(attr){
-            case "Strength": str += value;
-                    break;
-            case "Intelligence": int += value;
-                    break;       
-            case "Dexterity": dex += value;
-                    break; 
-            case "Life": hp += value;
-                    break; 
-            case "Mana": mp += value;
-                    break; 
+        });
+    } else {
+        attrs.forEach((x) => {
+            if(x.startsWith("character")){
+                var value;
+                if(increase){
+                    if(lvl > 1)
+                        value = Number(attributes[x][lvl-1]) - Number(attributes[x][lvl-2]);
+                    else 
+                        value = Number(attributes[x][lvl-1]);
+                    if(lvl-1 > attributes[x].length-1)
+                        return;
+                } else {
+                    if(lvl >= 1)
+                        value = Number(attributes[x][lvl]) - Number(attributes[x][lvl-1]);
+                    else {
+                        if(changed)
+                            value = Number(attributes[x][lvl]);
+                        else
+                            value = Number(attributes[x][lvl-1]);
+                    }
+                    if(lvl-1 >= attributes[x].length-1)
+                        return;
+                    value *= -1;
+                }
+                value = Number(value);
+                var attr = x.split("character")[1];
+                switch(attr){
+                case "Strength": str += value;
+                        break;
+                case "Intelligence": int += value;
+                        break;       
+                case "Dexterity": dex += value;
+                        break; 
+                case "Life": hp += value;
+                        break; 
+                case "Mana": mp += value;
+                        break; 
+                }
             }
-        }
-    });
+        });
+    }
     document.getElementById("hp").innerText = hp;
     document.getElementById("mp").innerText = mp;
     document.getElementById("dex").innerText = dex;

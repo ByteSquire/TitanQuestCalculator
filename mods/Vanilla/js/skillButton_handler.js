@@ -1,19 +1,31 @@
-function skillClicked(button, left){
+function skillClicked(button, event){
     var splits = button.innerText.split("/");
     var curr = Number(splits[0]);
     var max = Number(splits[1]);
     var localPointsSpent = Number(button.innerHTML.split('<div class="disabled">')[1].replace("</div>", ""));
+    var left = event.button == 0;
+    
     if(canSkill(button)){
         if(left){
             if (localPointsSpent < max){
-                localPointsSpent = localPointsSpent + 1;
-                pointsSpent++;
+                if(event.shiftKey){
+                    localPointsSpent = max;
+                    pointsSpent += max - localPointsSpent;
+                } else {
+                    localPointsSpent = localPointsSpent + 1;
+                    pointsSpent++;
+                }
             } else
                 return;
         } else {
             if (localPointsSpent > 0){
-                localPointsSpent = localPointsSpent - 1;
-                pointsSpent--;
+                if(event.shiftKey){
+                    localPointsSpent = 0;
+                    pointsSpent -= localPointsSpent;
+                } else {
+                    localPointsSpent = localPointsSpent - 1;
+                    pointsSpent--;
+                }
             } else
                 return;
         }
@@ -45,5 +57,5 @@ function skillClicked(button, left){
             }
         });
     });
-    calcBoni(skill.attributes, updated, left);
+    calcBoni(skill.attributes, curr, updated, event);
 }

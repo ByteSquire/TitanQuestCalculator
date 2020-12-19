@@ -43,7 +43,7 @@ function init(){
 function setMasteries() {
   if (m1) {
     document.getElementById("panel1").style.display = "unset";
-    var mastery1 = mod.mappedMasteries[m1_id - 1];
+    var mastery1 = mod.mappedMasteries[m1_id];
     document.getElementById("mastery1").src = document
       .getElementById("mastery1")
       .src.replace("1", mastery1);
@@ -54,7 +54,7 @@ function setMasteries() {
 
   if (m2) {
     document.getElementById("panel2").style.display = "unset";
-    var mastery2 = mod.mappedMasteries[m2_id - 1];
+    var mastery2 = mod.mappedMasteries[m2_id];
     document.getElementById("mastery2").src = document
       .getElementById("mastery2")
       .src.replace("2", mastery2);
