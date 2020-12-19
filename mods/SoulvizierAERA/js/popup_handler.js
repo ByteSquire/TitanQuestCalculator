@@ -82,19 +82,18 @@ function getPopupString(skill, currLevel, isSkill){
             ret += "<br>\n";
         }
     });
-    ret += '<br>';
     return ret;
 }
 
 function skillButtonPopup(button, event){
     var pop = document.getElementById( 'pop' );
 
+    var pageHeight = getPageHeight();
     if( event ) {
-        var sx = event.pageX;
-        var sy = event.pageY;
-
-        pop.style.top = "" + sy + "px";
-        pop.style.left = "" + (sx+10) + "px";
+        var pos = getPopupPos(event);
+        
+        pop.style.top = "" + pos.y + "px";
+        pop.style.left = "" + pos.x + "px";
     }
     var matteringMastery = (button.parentElement.id == "panel1")? m1 : m2;
     var tiers = matteringMastery.skillTiers;
@@ -108,43 +107,62 @@ function skillButtonPopup(button, event){
     });
     pop.innerHTML = getPopupString(skill, button.innerText.split("/")[0].replaceAll("\n", ""), true);
 
-    pop.style.width = "10%";
-
     pop.style.display = "block";
+    movePopupintoView(pop, pageHeight);
 }
 
 function plusButtonPopup(button, event){
     var pop = document.getElementById( 'pop' );
-
+    
+    var pageHeight = getPageHeight();
     if( event ) {
-        var sx = event.pageX;
-        var sy = event.pageY;
-
-        pop.style.top = "" + sy + "px";
-        pop.style.left = "" + (sx+15) + "px";
+        var pos = getPopupPos(event);
+        
+        pop.style.top = "" + pos.y + "px";
+        pop.style.left = "" + pos.x + "px";
     }
     var matteringMastery = (button.parentElement.id == "panel1")? m1 : m2;
     var skill = { attributes: matteringMastery.masteryAttributes, name: matteringMastery.name, description: "" };
     pop.innerHTML = getPopupString(skill, button.innerText.split("/")[0].replaceAll("\n", ""), false);
     
     pop.style.display = "block";
+    movePopupintoView(pop, pageHeight);
 }
 
 function allPlusButtonPopup(button, event){
     var pop = document.getElementById( 'pop' );
 
+    var pageHeight = getPageHeight();
     if( event ) {
-        var sx = event.pageX;
-        var sy = event.pageY;
-
-        pop.style.top = "" + sy + "px";
-        pop.style.left = "" + (sx+15) + "px";
+        var pos = getPopupPos(event);
+        
+        pop.style.top = "" + pos.y + "px";
+        pop.style.left = "" + pos.x + "px";
     }
     pop.innerHTML = '<span class="title">Adds ' + Number((button.parentElement.id == "panel1")? m1GlobalPlus : m2GlobalPlus) + " to all skills of this mastery</span>";
     
     pop.style.display = "block";
+    movePopupintoView(pop, pageHeight);
+}
+
+function getPopupPos(event) {
+    return { x: Number(event.pageX)+15, y: event.pageY }
+}
+
+function movePopupintoView(pop, pageHeight){
+    var bottomPos = Number(pop.style.top.split("px")[0]) + pop.offsetHeight;
+    
+    if(bottomPos > pageHeight){
+        pop.style.top = "unset";
+        pop.style.bottom = "-" + window.pageYOffset + "px";
+    }
+}
+
+function getPageHeight() {
+    return window.innerHeight + window.pageYOffset;              
 }
 
 function hidePopup(){
     document.getElementById("pop").style.display = "none";
+    document.getElementById("pop").style.bottom = "unset";
 }
