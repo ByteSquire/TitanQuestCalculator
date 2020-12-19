@@ -110,8 +110,32 @@
                 <td>Dexterity:</td>
                 <td><div id="dex">50</div></td>
               </tr>
+              <tr>
+                <td><br></td>
+              </tr>
+              <tr>
+                <td>Right Click</td>
+                <td>Remove Point</td>
+              </tr>
+              <tr>
+                <td>Left Click</td>
+                <td>Add Point</td>
+              </tr>
+              <tr>
+                <td>Shift-Right Click</td>
+                <td>Reset Points</td>
+              </tr>
+              <tr>
+                <td>Shift-Left Click</td>
+                <td>Add Full Points<td>
+              </tr>
+              <tr>
+                <td>Click Mastery Tier</td>
+                <td>Set Points to Tier</td>
+              </tr>
             </table>
           </div>
+          <br>
           <div id="skills gained">
             <table>
               <tr>
