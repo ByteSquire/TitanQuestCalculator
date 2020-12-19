@@ -79,10 +79,10 @@ function calcBoni(attributes, fromLevel, toLevel, event){
                 } else {
                     if(lvl-1 >= attributes[x].length-1)
                         return;
-                    if(fromLevel > 0)
-                        value = Number(attributes[x][toLevel-1]) - Number(attributes[x][fromLevel-1]);
+                    if(toLevel > 0)
+                        value = "-" + Number(attributes[x][toLevel-1]) - Number(attributes[x][fromLevel-1]);
                     else
-                        value = Number(attributes[x][toLevel-1]);
+                        value = "-" + attributes[x][toLevel];
                 }
                 value = Number(value);
                 var attr = x.split("character")[1];
