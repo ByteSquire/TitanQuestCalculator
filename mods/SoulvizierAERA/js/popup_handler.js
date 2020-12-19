@@ -141,6 +141,7 @@ function skillButtonPopup(button, event){
         
         pop.style.top = "" + pos.y + "px";
         pop.style.left = "" + pos.x + "px";
+        pop.style.bottom = "unset";
     }
     var matteringMastery = (button.parentElement.id == "panel1")? m1 : m2;
     var tiers = matteringMastery.skillTiers;
@@ -167,6 +168,7 @@ function plusButtonPopup(button, event){
         
         pop.style.top = "" + pos.y + "px";
         pop.style.left = "" + pos.x + "px";
+        pop.style.bottom = "unset";
     }
     var matteringMastery = (button.parentElement.id == "panel1")? m1 : m2;
     var skill = { attributes: matteringMastery.masteryAttributes, name: matteringMastery.name, description: "" };
@@ -185,6 +187,7 @@ function allPlusButtonPopup(button, event){
         
         pop.style.top = "" + pos.y + "px";
         pop.style.left = "" + pos.x + "px";
+        pop.style.bottom = "unset";
     }
     pop.innerHTML = '<span class="title">Adds ' + Number((button.parentElement.id == "panel1")? m1GlobalPlus : m2GlobalPlus) + " to all skills of this mastery</span>";
     

@@ -13,8 +13,7 @@ function addSkill(panel, mastery, skill) {
   panel.innerHTML +=
     '\n<button class="skillButton" id="' +
     skill.name +
-    '" onmousedown="skillClicked(this, event);" oncontextmenu="skillClicked(this, false);"' + 
-    ' onmouseover="skillButtonPopup(this, event);" onmouseout="hidePopup();">\n' +
+    '" onmousedown="skillClicked(this, event);" onmouseover="skillButtonPopup(this, event);" onmouseout="hidePopup();">\n' +
     "\t<img\n" +
     '\t\tclass="skillButtonImage"\n' +
     '\t\tsrc="' +

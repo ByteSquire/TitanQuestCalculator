@@ -64,26 +64,25 @@ function calcBoni(attributes, fromLevel, toLevel, event){
     } else {
         attrs.forEach((x) => {
             if(x.startsWith("character")){
+                if(toLevel > attributes[x].length)
+                    toLevel = attributes[x].length;
+                if(fromLevel > attributes[x].length)
+                    fromLevel = attributes[x].length;
                 var value;
                 if(increase){
-                    if(lvl > 1)
-                        value = Number(attributes[x][lvl-1]) - Number(attributes[x][lvl-2]);
-                    else 
-                        value = Number(attributes[x][lvl-1]);
                     if(lvl-1 > attributes[x].length-1)
                         return;
+                    if(fromLevel > 0)
+                        value = Number(attributes[x][toLevel-1]) - Number(attributes[x][fromLevel-1]);
+                    else
+                        value = Number(attributes[x][toLevel-1]);
                 } else {
-                    if(lvl >= 1)
-                        value = Number(attributes[x][lvl]) - Number(attributes[x][lvl-1]);
-                    else {
-                        if(changed)
-                            value = Number(attributes[x][lvl]);
-                        else
-                            value = Number(attributes[x][lvl-1]);
-                    }
                     if(lvl-1 >= attributes[x].length-1)
                         return;
-                    value *= -1;
+                    if(fromLevel > 0)
+                        value = Number(attributes[x][toLevel-1]) - Number(attributes[x][fromLevel-1]);
+                    else
+                        value = Number(attributes[x][toLevel-1]);
                 }
                 value = Number(value);
                 var attr = x.split("character")[1];

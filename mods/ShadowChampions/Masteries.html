@@ -13,6 +13,7 @@
     <script type="text/javascript" src="js/skillButton_handler.js"></script>
     <script type="text/javascript" src="js/JSON_handler.js"></script>
     <script type="text/javascript" src="js/skill.js"></script>
+    <script type="text/javascript" src="js/masteryTier_handler.js"></script>
   </head>
 
   <body oncontextmenu="return false">
@@ -43,13 +44,13 @@
               id="mastery1"
               src="../../MasteryPage/images/masteries/1.png"
             />
-            <span class="masteryTier" id="masteryTier1">1</span>
-            <span class="masteryTier" id="masteryTier2">2</span>
-            <span class="masteryTier" id="masteryTier3">3</span>
-            <span class="masteryTier" id="masteryTier4">4</span>
-            <span class="masteryTier" id="masteryTier5">5</span>
-            <span class="masteryTier" id="masteryTier6">6</span>
-            <span class="masteryTier" id="masteryTier7">7</span>
+            <span class="masteryTier" id="masteryTier1" onmousedown="masteryTierClicked(this.parentElement, 0)">1</span>
+            <span class="masteryTier" id="masteryTier2" onmousedown="masteryTierClicked(this.parentElement, 1)">2</span>
+            <span class="masteryTier" id="masteryTier3" onmousedown="masteryTierClicked(this.parentElement, 2)">3</span>
+            <span class="masteryTier" id="masteryTier4" onmousedown="masteryTierClicked(this.parentElement, 3)">4</span>
+            <span class="masteryTier" id="masteryTier5" onmousedown="masteryTierClicked(this.parentElement, 4)">5</span>
+            <span class="masteryTier" id="masteryTier6" onmousedown="masteryTierClicked(this.parentElement, 5)">6</span>
+            <span class="masteryTier" id="masteryTier7" onmousedown="masteryTierClicked(this.parentElement, 6)">7</span>
             <div id="m0bar" class="bar"></div>
           </div>
           <div class="disabled" id="panel2">
@@ -57,13 +58,13 @@
               class="masteryPanel"
               src="../../MasteryPage/images/masteries/panel/skillpanel.png"
             />
-            <button class="plusButton" id="plusButton2" onmousedown="plusClicked(this, true);" onmouseover="plusButtonPopup(this, event);" onmouseout="hidePopup();">
+            <button class="plusButton" id="plusButton2" onmousedown="plusClicked(this, event);" onmouseover="plusButtonPopup(this, event);" onmouseout="hidePopup();">
               <img
                 class="plusButtonImage"
                 src="../../MasteryPage/images/masteries/panel/plusbutton.png"
               />
             </button>
-            <button class="allPlusButton" id="allPlusButton1" onmousedown="allPlusClicked(this, true);" onmouseover="allPlusButtonPopup(this, event);" onmouseout="hidePopup();">
+            <button class="allPlusButton" id="allPlusButton1" onmousedown="allPlusClicked(this, event);" onmouseover="allPlusButtonPopup(this, event);" onmouseout="hidePopup();">
               <img
                 class="allPlusButtonImage"
                 src="../../MasteryPage/images/masteries/panel/plusbutton.png"
@@ -75,13 +76,13 @@
               id="mastery2"
               src="../../MasteryPage/images/masteries/2.png"
             />
-            <span class="masteryTier" id="masteryTier1">1</span>
-            <span class="masteryTier" id="masteryTier2">2</span>
-            <span class="masteryTier" id="masteryTier3">3</span>
-            <span class="masteryTier" id="masteryTier4">4</span>
-            <span class="masteryTier" id="masteryTier5">5</span>
-            <span class="masteryTier" id="masteryTier6">6</span>
-            <span class="masteryTier" id="masteryTier7">7</span>
+            <span class="masteryTier" id="masteryTier1" onmousedown="masteryTierClicked(this.parentElement, 0)">1</span>
+            <span class="masteryTier" id="masteryTier2" onmousedown="masteryTierClicked(this.parentElement, 1)">2</span>
+            <span class="masteryTier" id="masteryTier3" onmousedown="masteryTierClicked(this.parentElement, 2)">3</span>
+            <span class="masteryTier" id="masteryTier4" onmousedown="masteryTierClicked(this.parentElement, 3)">4</span>
+            <span class="masteryTier" id="masteryTier5" onmousedown="masteryTierClicked(this.parentElement, 4)">5</span>
+            <span class="masteryTier" id="masteryTier6" onmousedown="masteryTierClicked(this.parentElement, 5)">6</span>
+            <span class="masteryTier" id="masteryTier7" onmousedown="masteryTierClicked(this.parentElement, 6)">7</span>
             <div id="m0bar" class="bar"></div>
           </div>
         </td>
