@@ -85,3 +85,66 @@ function getPopupString(skill, currLevel, isSkill){
     ret += '<br>';
     return ret;
 }
+
+function skillButtonPopup(button, event){
+    var pop = document.getElementById( 'pop' );
+
+    if( event ) {
+        var sx = event.pageX;
+        var sy = event.pageY;
+
+        pop.style.top = "" + sy + "px";
+        pop.style.left = "" + (sx+10) + "px";
+    }
+    var matteringMastery = (button.parentElement.id == "panel1")? m1 : m2;
+    var tiers = matteringMastery.skillTiers;
+    var skill;
+    tiers.forEach((tier) => {
+        tier.forEach((aSkill) => {
+            if(aSkill.name == button.id){
+                skill = aSkill;
+            }
+        });
+    });
+    pop.innerHTML = getPopupString(skill, button.innerText.split("/")[0].replaceAll("\n", ""), true);
+
+    pop.style.width = "10%";
+
+    pop.style.display = "block";
+}
+
+function plusButtonPopup(button, event){
+    var pop = document.getElementById( 'pop' );
+
+    if( event ) {
+        var sx = event.pageX;
+        var sy = event.pageY;
+
+        pop.style.top = "" + sy + "px";
+        pop.style.left = "" + (sx+15) + "px";
+    }
+    var matteringMastery = (button.parentElement.id == "panel1")? m1 : m2;
+    var skill = { attributes: matteringMastery.masteryAttributes, name: matteringMastery.name, description: "" };
+    pop.innerHTML = getPopupString(skill, button.innerText.split("/")[0].replaceAll("\n", ""), false);
+    
+    pop.style.display = "block";
+}
+
+function allPlusButtonPopup(button, event){
+    var pop = document.getElementById( 'pop' );
+
+    if( event ) {
+        var sx = event.pageX;
+        var sy = event.pageY;
+
+        pop.style.top = "" + sy + "px";
+        pop.style.left = "" + (sx+15) + "px";
+    }
+    pop.innerHTML = '<span class="title">Adds ' + Number((button.parentElement.id == "panel1")? m1GlobalPlus : m2GlobalPlus) + " to all skills of this mastery</span>";
+    
+    pop.style.display = "block";
+}
+
+function hidePopup(){
+    document.getElementById("pop").style.display = "none";
+}

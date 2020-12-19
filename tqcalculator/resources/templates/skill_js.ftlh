@@ -19,9 +19,17 @@ function addSkill(panel, mastery, skill) {
     '\t\tclass="skillButtonImage"\n' +
     '\t\tsrc="' +
     "images/skills/" +
-        mastery.name.toLowerCase() +
+    <#if name=="ShadowChampions">
+    mastery.name.toLowerCase() +
+    <#else>
+    mastery.name +
+    </#if>
     "/" +
+    <#if name=="ShadowChampions">
     skill.name.replaceAll(" ", "_").replaceAll("'", "").toLowerCase().replaceAll(":", "") + 
+    <#else>
+    skill.name.replaceAll(":", "") +
+    </#if>
     '.png"\n' +
     '/>\n' +
     '<span class="buttonText">0/' + skill.attributes.skillUltimateLevel + '</span>' +

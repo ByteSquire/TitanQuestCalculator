@@ -6,7 +6,12 @@
 
     <link rel="stylesheet" type="text/css" href="../../css/styles.css" />
 
-    <script type="text/javascript" src="js/mastery.js"></script>
+    <script type="text/javascript" src="js/booleans.js"></script>
+    <script type="text/javascript" src="js/charAttributes_handler.js"></script>
+    <script type="text/javascript" src="js/plusButton_handler.js"></script>
+    <script type="text/javascript" src="js/popup_handler.js"></script>
+    <script type="text/javascript" src="js/skillButton_handler.js"></script>
+    <script type="text/javascript" src="js/JSON_handler.js"></script>
     <script type="text/javascript" src="js/skill.js"></script>
   </head>
 

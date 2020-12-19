@@ -31,6 +31,7 @@ import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -56,8 +57,7 @@ public class Control {
 
     private static Configuration mCfg = new Configuration(Configuration.VERSION_2_3_30);
 
-    private static Template home, mod, mastery, skill, mod_fancy, mod_fancy_js, mastery_fancy, mastery_fancy_js,
-            skill_fancy_js;
+    private static Template home, mod, mastery, skill, mod_fancy, skill_js, mastery_fancy, json_handler;
 
     private static Map<String, Object> rootHome, rootMod, rootMastery, rootSkill;
 
@@ -182,12 +182,9 @@ public class Control {
                         for (Skill skill : mastery.getSkillTier(i)) {
                             Writer outSkill = new FileWriter(REPOSITORY_DIR + "mods/" + mod.getName() + "/Masteries/"
                                     + mastery.getName() + "/"
-                                    + ((skill.getName() == null) ? skill.toString() : skill.getName().replace(":", "")) + ".html");
+                                    + ((skill.getName() == null) ? skill.toString() : skill.getName().replace(":", ""))
+                                    + ".html");
                             rootSkill = new HashMap<>();
-//                            if (skill.isBuff()) {
-//                                rootSkill.put("buffName", skill.getBuff().getName());
-//                                rootSkill.put("buffAttributes", skill.getBuff().getAttributes());
-//                            } else
                             rootSkill.put("attributes", skill.getAttributes());
                             rootSkill.put("name", skill.getName());
                             rootSkill.put("description", skill.getDescription());
@@ -212,22 +209,35 @@ public class Control {
                 rootMod.put("name", mod.getName());
                 rootMod.put("masteries", mod.getMasteries());
                 Control.mod_fancy.process(rootMod, outMod);
-                Writer outModJs = new FileWriter(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/mod.js");
-                rootMod = new HashMap<>();
-                Control.mod_fancy_js.process(rootMod, outModJs);
 
                 Writer outMastery = new FileWriter(REPOSITORY_DIR + "mods/" + mod.getName() + "/Masteries.html");
                 rootMastery = new HashMap<>();
                 rootMastery.put("name", mod.getName());
                 Control.mastery_fancy.process(rootMastery, outMastery);
-                Writer outMasteryJs = new FileWriter(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/mastery.js");
+
+                Writer skillJs = new FileWriter(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/skill.js");
                 rootMastery = new HashMap<>();
                 rootMastery.put("name", mod.getName());
-                Control.mastery_fancy_js.process(rootMastery, outMasteryJs);
+                Control.skill_js.process(rootMastery, skillJs);
 
-                Writer outSkillJs = new FileWriter(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/skill.js");
-                rootMastery = new HashMap<>();
-                Control.skill_fancy_js.process(rootMastery, outSkillJs);
+                Writer json_handlerJs = new FileWriter(
+                        REPOSITORY_DIR + "mods/" + mod.getName() + "/js/JSON_handler.js");
+//                rootMastery = new HashMap<>();
+                rootMastery.put("name", mod.getName());
+                Control.json_handler.process(rootMastery, json_handlerJs);
+
+                Files.copy(Path.of("resources/js/booleans.js"),
+                        Path.of(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/booleans.js"), StandardCopyOption.REPLACE_EXISTING);
+                Files.copy(Path.of("resources/js/charAttributes_handler.js"),
+                        Path.of(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/charAttributes_handler.js"), StandardCopyOption.REPLACE_EXISTING);
+                Files.copy(Path.of("resources/js/plusButton_handler.js"),
+                        Path.of(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/plusButton_handler.js"), StandardCopyOption.REPLACE_EXISTING);
+                Files.copy(Path.of("resources/js/skillButton_handler.js"),
+                        Path.of(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/skillButton_handler.js"), StandardCopyOption.REPLACE_EXISTING);
+                Files.copy(Path.of("resources/js/popup_handler.js"),
+                        Path.of(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/popup_handler.js"), StandardCopyOption.REPLACE_EXISTING);
+                Files.copy(Path.of("resources/js/mod.js"),
+                        Path.of(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/mod.js"), StandardCopyOption.REPLACE_EXISTING);
             } catch (IOException | TemplateException e) {
                 e.printStackTrace();
                 mSuccess = false;
@@ -240,12 +250,11 @@ public class Control {
             home = mCfg.getTemplate("home.ftlh");
             mod = mCfg.getTemplate("mod.ftlh");
             mod_fancy = mCfg.getTemplate("mod_fancy.ftlh");
-            mod_fancy_js = mCfg.getTemplate("mod_fancy_js.ftlh");
             mastery = mCfg.getTemplate("mastery.ftlh");
             mastery_fancy = mCfg.getTemplate("mastery_fancy.ftlh");
-            mastery_fancy_js = mCfg.getTemplate("mastery_fancy_js.ftlh");
             skill = mCfg.getTemplate("skill.ftlh");
-            skill_fancy_js = mCfg.getTemplate("skill_fancy_js.ftlh");
+            skill_js = mCfg.getTemplate("skill_js.ftlh");
+            json_handler = mCfg.getTemplate("JSON_handler.ftlh");
         } catch (IOException e) {
             e.printStackTrace();
             mSuccess = false;

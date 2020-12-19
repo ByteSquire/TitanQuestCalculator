@@ -1,87 +1,61 @@
-function getPopupString(skill, currLevel, isSkill){
-    currLevel = Number(currLevel);
-    var ret = "";
-    ret += '<span class="title">' + skill.name + '</span>\n';
-    ret += "<br>\n";
-    if(isSkill){
-        ret += '<span class="desc">' + skill.description.replaceAll("{^n}", "<br>\n").replaceAll("{^y}", '<p style="color: yellow">').replaceAll("{^g}", '<p style="color: green">').replaceAll("{^a}", '<p style="color: cyan">').replaceAll("{^w}", '</p>').replaceAll("^n", "").replaceAll("^y", '<p style="color: yellow">') + '</span>\n';
-        ret += "<br>\n";
-    }
-    
-    if(skill.attributes["requiredWeapons"]){
-        ret += '<span class="" style="color: yellow">Only works with: ' + skill.attributes["requiredWeapons"] + '</span>';
-        ret += "<br>\n";
-    }
-    
-    if(currLevel > 0){
-        ret += '<br>\n';
-        if(currLevel <= skill.attributes["skillMaxLevel"]){
-            if(isSkill)
-                document.getElementById(skill.name).getElementsByClassName("buttonText")[0].style.color = "white";
-            ret += '<span class="nextLevel">Level: ' + currLevel + '</span>\n';
-        } else if(currLevel <= skill.attributes["skillUltimateLevel"]){
-            if(isSkill)
-                document.getElementById(skill.name).getElementsByClassName("buttonText")[0].style.color = "yellow";
-            ret += '<span class="nextLevel"><div style="color: yellow">Level: ' + currLevel + '</div></span>\n';
-        }
-        ret += '<br>\n';
-        var attr = Object.keys(skill.attributes);
-        attr.forEach((key) => {
-            if(key == "requiredWeapons")
-                return;
-            if(key == "skillMaxLevel")
-                return;
-            if(key == "skillUltimateLevel")
-                return;
-            var value = skill.attributes[key];
-            if(value.constructor === Array){
-                if(value[currLevel-1] == 0)
-                    return;
-                var index = currLevel-1;
-                if(value[index] === undefined){
-                    index = value.length-1;
-                    if(value[index] === undefined)
-                        return;
-                }
-                ret += '<span class="skillAttribute" style="color: gray">' + key + ':<br>\n' + value[index] + '</span>\n';
-                ret += "<br>\n";
+function addSkills(panel, mastery) {
+  mastery.skillTiers.forEach((element) =>
+    addSkillTier(panel, mastery, element)
+  );
+  panel.getElementsByClassName("plusButton")[0].innerHTML += '<span class="buttonText">\n0/' + mastery.masteryAttributes.skillMaxLevel + '</span>';
+}
+
+function addSkillTier(panel, mastery, skillTier) {
+  skillTier.forEach((element) => addSkill(panel, mastery, element));
+}
+
+function addSkill(panel, mastery, skill) {
+  panel.innerHTML +=
+    '\n<button class="skillButton" id="' +
+    skill.name +
+    '" onclick="skillClicked(this, true);" oncontextmenu="skillClicked(this, false);"' + 
+    ' onmouseover="skillButtonPopup(this, event);" onmouseout="hidePopup();">\n' +
+    "\t<img\n" +
+    '\t\tclass="skillButtonImage"\n' +
+    '\t\tsrc="' +
+    "images/skills/" +
+        mastery.name +
+    "/" +
+    skill.name.replaceAll(":", "") +
+    '.png"\n' +
+    '/>\n' +
+    '<span class="buttonText">0/' + skill.attributes.skillUltimateLevel + '</span>' +
+    '<div class="disabled">0</div>';
+  scaleButtonPositon(document.getElementById(skill.name), skill.skillIcon);
+}
+
+function scaleButtonPositon(button, iconPosition) {
+  button.style.top = iconPosition.posY/5.4 + "%";
+  button.style.left = iconPosition.posX/9.5 + "%";
+}
+
+function updateSkills(){    
+    for (var i = 0; i < m1.skillTiers.length; i++){
+        if(m1)
+            if(i+1 <= m1CurrTier){
+                m1.skillTiers[i].forEach((skill) => {
+                    document.getElementById(skill.name).getElementsByClassName("skillButtonImage")[0].style.filter = "none";
+                });
             } else {
-                ret += '<span class="skillAttribute" style="color: gray">' + key + ':<br>\n' + value + '</span>\n';
-                ret += "<br>\n";
+                m1.skillTiers[i].forEach((skill) => {
+                    document.getElementById(skill.name).getElementsByClassName("skillButtonImage")[0].style.filter = "grayscale()";
+                });
             }
-        });
-    } else if(isSkill)
-        document.getElementById(skill.name).getElementsByClassName("buttonText")[0].style.color = "white";
-    
-    ret += '<br>\n';
-    
-    if(currLevel+1 <= skill.attributes["skillMaxLevel"]){
-        ret += '<span class="nextLevel">Next Level: ' + (currLevel+1) + '</span>\n';
-    } else if(currLevel+1 <= skill.attributes["skillUltimateLevel"]){
-        ret += '<span class="nextLevel"><div style="color: yellow">Next Level: ' + (currLevel+1) + '</div></span>\n';
-    } else {
-        return ret;
+        
+        if(m2)
+            if(i+1 <= m2CurrTier){
+                m2.skillTiers[i].forEach((skill) => {
+                    document.getElementById(skill.name).getElementsByClassName("skillButtonImage")[0].style.filter = "none";
+                });
+            } else {
+                m2.skillTiers[i].forEach((skill) => {
+                    document.getElementById(skill.name).getElementsByClassName("skillButtonImage")[0].style.filter = "grayscale()";
+                });
+            }
     }
-    ret += '<br>\n';
-    var attr = Object.keys(skill.attributes);
-    attr.forEach((key) => {
-        if(key == "requiredWeapons")
-            return;
-        if(key == "skillMaxLevel")
-            return;
-        if(key == "skillUltimateLevel")
-            return;
-        var value = skill.attributes[key];
-        if(value.constructor === Array){
-            if(value[currLevel] == 0 || value[currLevel] === undefined)
-                return;
-            ret += '<span class="skillAttribute">' + key + ':<br>\n' + value[currLevel] + '</span>\n';
-            ret += "<br>\n";
-        } else if(currLevel == 0) {
-            ret += '<span class="skillAttribute">' + key + ':<br>\n' + value + '</span>\n';
-            ret += "<br>\n";
-        }
-    });
-    ret += '<br>';
-    return ret;
 }
