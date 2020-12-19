@@ -9,7 +9,7 @@ function getPopupString(skill, currLevel, isSkill){
     }
     
     if(skill.attributes["requiredWeapons"]){
-        ret += '<span class="" style="color: yellow">Only works with: ' + skill.attributes["requiredWeapons"] + '</span>';
+        ret += '<span class="" style="color: yellow">Works with: ' + skill.attributes["requiredWeapons"] + '</span>';
         ret += "<br>\n";
     }
     
