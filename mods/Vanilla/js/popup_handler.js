@@ -22,7 +22,7 @@ function getPopupString(skill, currLevel, isSkill){
         } else if(currLevel <= skill.attributes["skillUltimateLevel"]){
             if(isSkill)
                 document.getElementById(skill.name).getElementsByClassName("buttonText")[0].style.color = "yellow";
-            ret += '<span class="nextLevel"><div style="color: yellow">Level: ' + currLevel + '</div></span>\n';
+            ret += '<span class="nextLevel" style="color: yellow">Level: ' + currLevel + '</span>\n';
         }
         ret += '<br>\n';
         var attr = Object.keys(skill.attributes);
@@ -45,6 +45,30 @@ function getPopupString(skill, currLevel, isSkill){
                 }
                 ret += '<span class="skillAttribute" style="color: gray">' + key + ':<br>\n' + value[index] + '</span>\n';
                 ret += "<br>\n";
+            } else if(value.constructor === Object) {
+                if(value.min.constructor === Array){
+                    if(value.min[currLevel-1] == 0)
+                        return;
+                    var index = currLevel-1;
+                    if(value.min[index] === undefined){
+                        index = value.min.length-1;
+                        if(value.min[index] === undefined)
+                            return;
+                    }
+                    if(value.max === undefined){
+                        ret += '<span class="skillAttribute" style="color: gray">' + key + ':<br>\n' + value.min[index] + '</span>\n';
+                    } else {
+                        ret += '<span class="skillAttribute" style="color: gray">' + key + ':<br>\n' + value.min[index] + ' ~ ' + value.max[index] + '</span>\n';
+                    }
+                    ret += "<br>\n";
+                } else {
+                    if(value.max === undefined){
+                        ret += '<span class="skillAttribute" style="color: gray">' + key + ':<br>\n' + value.min + '</span>\n';
+                    } else {
+                        ret += '<span class="skillAttribute" style="color: gray">' + key + ':<br>\n' + value.min + ' ~ ' + value.max + '</span>\n';
+                    }
+                    ret += "<br>\n";
+                }
             } else {
                 ret += '<span class="skillAttribute" style="color: gray">' + key + ':<br>\n' + value + '</span>\n';
                 ret += "<br>\n";
@@ -58,7 +82,7 @@ function getPopupString(skill, currLevel, isSkill){
     if(currLevel+1 <= skill.attributes["skillMaxLevel"]){
         ret += '<span class="nextLevel">Next Level: ' + (currLevel+1) + '</span>\n';
     } else if(currLevel+1 <= skill.attributes["skillUltimateLevel"]){
-        ret += '<span class="nextLevel"><div style="color: yellow">Next Level: ' + (currLevel+1) + '</div></span>\n';
+        ret += '<span class="nextLevel" style="color: yellow">Next Level: ' + (currLevel+1) + '</span>\n';
     } else {
         return ret;
     }
@@ -77,6 +101,29 @@ function getPopupString(skill, currLevel, isSkill){
                 return;
             ret += '<span class="skillAttribute">' + key + ':<br>\n' + value[currLevel] + '</span>\n';
             ret += "<br>\n";
+        } else if(value.constructor === Object) {
+            if(value.min.constructor === Array){
+                if(value.min[currLevel] == 0 || value.min[currLevel] === undefined)
+                    return;
+                if(value.min[currLevel] === undefined){
+                    index = value.min.length-1;
+                    if(value.min[index] === undefined)
+                        return;
+                }
+                if(value.max === undefined){
+                    ret += '<span class="skillAttribute">' + key + ':<br>\n' + value.min[currLevel] + '</span>\n';
+                } else {
+                    ret += '<span class="skillAttribute">' + key + ':<br>\n' + value.min[currLevel] + ' ~ ' + value.max[currLevel] + '</span>\n';
+                }
+                ret += "<br>\n";
+            } else {
+                if(value.max === undefined){
+                    ret += '<span class="skillAttribute">' + key + ':<br>\n' + value.min + '</span>\n';
+                } else {
+                    ret += '<span class="skillAttribute">' + key + ':<br>\n' + value.min + ' ~ ' + value.max + '</span>\n';
+                }
+                ret += "<br>\n";
+            }
         } else if(currLevel == 0) {
             ret += '<span class="skillAttribute">' + key + ':<br>\n' + value + '</span>\n';
             ret += "<br>\n";

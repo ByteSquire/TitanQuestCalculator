@@ -13,7 +13,8 @@ import de.bytesquire.titanquest.tqcalculator.parsers.IconsParser;
 import de.bytesquire.titanquest.tqcalculator.parsers.ModStringsParser;
 import de.bytesquire.titanquest.tqcalculator.parsers.SkillParser;
 
-@JsonIgnoreProperties({ "skill", "buff", "skillTag", "skillDescriptionTag", "modifier", "skillTier", "urlLegacy", "requiredWeapons" })
+@JsonIgnoreProperties({ "skill", "buff", "skillTag", "skillDescriptionTag", "modifier", "skillTier", "urlLegacy",
+        "requiredWeapons" })
 @JsonInclude(Include.NON_NULL)
 public class Skill {
 
@@ -99,7 +100,29 @@ public class Skill {
                 // mRequiredWeapons.append("Melee Only, ");
                 break;
             default:
-                mSkillAttributes.put(skillAttribute, mSkillParser.getAttributes().get(skillAttribute));
+                if (skillAttribute.endsWith("Min")) {
+                    String skillAttributeType = skillAttribute.replace("Min", "");
+                    if (mSkillAttributes.containsKey(skillAttributeType)) {
+                        ((MinMaxAttribute) mSkillAttributes.get(skillAttributeType))
+                                .setMin(mSkillParser.getAttributes().get(skillAttribute));
+                    } else {
+                        MinMaxAttribute tmp = new MinMaxAttribute();
+                        tmp.setMin(mSkillParser.getAttributes().get(skillAttribute));
+                        mSkillAttributes.put(skillAttributeType, tmp);
+                    }
+                } else if (skillAttribute.endsWith("Max")) {
+                    String skillAttributeType = skillAttribute.replace("Max", "");
+                    if (mSkillAttributes.containsKey(skillAttributeType)) {
+                        ((MinMaxAttribute) mSkillAttributes.get(skillAttributeType))
+                                .setMax(mSkillParser.getAttributes().get(skillAttribute));
+                    } else {
+                        MinMaxAttribute tmp = new MinMaxAttribute();
+                        tmp.setMax(mSkillParser.getAttributes().get(skillAttribute));
+                        mSkillAttributes.put(skillAttributeType, tmp);
+                    }
+                } else
+                    mSkillAttributes.put(skillAttribute, mSkillParser.getAttributes().get(skillAttribute));
+                break;
             }
         }
         if (mRequiredWeapons.length() != 0) {
