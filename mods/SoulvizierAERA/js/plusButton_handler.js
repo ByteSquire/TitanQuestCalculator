@@ -76,9 +76,11 @@ function plusClicked(button, event){
     updateSkills();
 }
 
-function allPlusClicked(button, left) {
+function allPlusClicked(button, event) {
     var curr = Number(button.innerText);
     var globalPlus = (button.parentElement.id == "panel1")? m1GlobalPlus : m2GlobalPlus;
+    var left = event.button == 0;
+    
     if(!left && globalPlus == 0)
         return;
     
