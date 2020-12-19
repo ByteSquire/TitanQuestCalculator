@@ -15,6 +15,9 @@ function canSkill(button){
 }
 
 function canDecreaseMastery(panel, mastery,  masteryTier, masteryLevel){
+    if(masteryTier < 0){
+        return true;
+    }
     if(masteryLevel > mod.masteryLevels[masteryTier]){
         return true;
     }

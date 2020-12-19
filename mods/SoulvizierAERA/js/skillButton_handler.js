@@ -9,8 +9,8 @@ function skillClicked(button, event){
         if(left){
             if (localPointsSpent < max){
                 if(event.shiftKey){
-                    localPointsSpent = max;
                     pointsSpent += max - localPointsSpent;
+                    localPointsSpent = max;
                 } else {
                     localPointsSpent = localPointsSpent + 1;
                     pointsSpent++;
@@ -20,8 +20,8 @@ function skillClicked(button, event){
         } else {
             if (localPointsSpent > 0){
                 if(event.shiftKey){
-                    localPointsSpent = 0;
                     pointsSpent -= localPointsSpent;
+                    localPointsSpent = 0;
                 } else {
                     localPointsSpent = localPointsSpent - 1;
                     pointsSpent--;
@@ -34,18 +34,6 @@ function skillClicked(button, event){
     
     button.getElementsByClassName("disabled")[0].innerText = localPointsSpent;
     var updated = localPointsSpent;
-    if(localPointsSpent > 0){
-        if((button.parentElement.id == "panel1")? m1GlobalPlus : m2GlobalPlus > 0){
-            if(updated + Number((button.parentElement.id == "panel1")? m1GlobalPlus : m2GlobalPlus) > max)
-                updated = max;
-            else
-                updated += (button.parentElement.id == "panel1")? m1GlobalPlus : m2GlobalPlus;
-        }
-    } else {
-        updated = 0;
-    }
-    button.innerHTML = button.innerHTML.replace(curr, updated);
-    calcLevelReq();
     
     var matteringMastery = (button.parentElement.id == "panel1")? m1 : m2;
     var tiers = matteringMastery.skillTiers;
@@ -57,5 +45,19 @@ function skillClicked(button, event){
             }
         });
     });
+    
+    if(localPointsSpent > 0){
+        if((button.parentElement.id == "panel1")? m1GlobalPlus : m2GlobalPlus > 0){
+            if(updated + Number((button.parentElement.id == "panel1")? m1GlobalPlus : m2GlobalPlus) > skill.attributes.skillUltimateLevel)
+                updated = skill.attributes.skillUltimateLevel;
+            else
+                updated += (button.parentElement.id == "panel1")? m1GlobalPlus : m2GlobalPlus;
+        }
+    } else {
+        updated = 0;
+    }
+    button.innerHTML = button.innerHTML.replace(curr, updated);
+    calcLevelReq();
+    
     calcBoni(skill.attributes, curr, updated, event);
 }

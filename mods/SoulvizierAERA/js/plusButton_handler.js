@@ -99,8 +99,19 @@ function allPlusClicked(button, event) {
     for(var i = 0; i < activeButtons.length; i++) {
         var curr1 = Number(activeButtons[i].innerHTML.split('<div class="disabled">')[1].replace("</div>", ""));
         if(curr1 > 0){
-            if(curr1+globalPlus > Number(activeButtons[i].innerText.split("/")[1]))
-                activeButtons[i].innerHTML = activeButtons[i].innerHTML.replace(Number(activeButtons[i].innerText.split("/")[0]), Number(activeButtons[i].innerText.split("/")[1]))
+            var matteringMastery = (button.parentElement.id == "panel1")? m1 : m2;
+            var tiers = matteringMastery.skillTiers;
+            var skill;
+            tiers.forEach((tier) => {
+                tier.forEach((aSkill) => {
+                    if(aSkill.name == activeButtons[i].id){
+                        skill = aSkill;
+                    }
+                });
+            });
+        
+            if(curr1+globalPlus > skill.attributes.skillUltimateLevel)
+                activeButtons[i].innerHTML = activeButtons[i].innerHTML.replace(Number(activeButtons[i].innerText.split("/")[0]), skill.attributes.skillUltimateLevel)
             else
                 activeButtons[i].innerHTML = activeButtons[i].innerHTML.replace(Number(activeButtons[i].innerText.split("/")[0]), curr1+globalPlus);
         }

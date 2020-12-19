@@ -90,7 +90,7 @@
           <div id="stats">
             <table>
               <tr>
-                <td>Level:</td>
+                <td>Level required:</td>
                 <td><div id="lvl">1</div></td>
                 <td></td>
                 <td>Strength:</td>
