@@ -118,11 +118,14 @@ public class SkillParser {
             return true;
         if (attributeName.startsWith("drop"))
             return true;
+        if (attributeName.startsWith("skillConnection"))
+            return true;
+        if (attributeName.startsWith("spawnObjectsDistance"))
+            return true;
         switch (attributeName) {
         case "skillMasteryLevelRequired":
-        case "skillConnection":
         case "projectileLaunchRotation":
-        case "skillAllowsWarmup":
+        case "skillAllowsWarmUp":
         case "isPetDisplayable":
             return true;
         default:
