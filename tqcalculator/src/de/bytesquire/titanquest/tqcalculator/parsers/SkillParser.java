@@ -49,7 +49,7 @@ public class SkillParser {
             Stream<String> fileStream = skillReader.lines();
             fileStream.forEach((str) -> {
                 String attributeName = str.split(",")[0];
-                if(attributeName.equals("skillMasteryLevelRequired") || attributeName.startsWith("skillConnection"))
+                if (canBeIgnored(attributeName))
                     return;
                 if (attributeName.equals("skillDisplayName")) {
                     mSkillTag = str.split(",")[1];
@@ -106,6 +106,27 @@ public class SkillParser {
             e.printStackTrace();
         } catch (IOException e1) {
             e1.printStackTrace();
+        }
+    }
+
+    private boolean canBeIgnored(String attributeName) {
+        if (attributeName.startsWith("camera"))
+            return true;
+        if (attributeName.startsWith("ragDoll"))
+            return true;
+        if (attributeName.startsWith("skillWeaponTint"))
+            return true;
+        if (attributeName.startsWith("drop"))
+            return true;
+        switch (attributeName) {
+        case "skillMasteryLevelRequired":
+        case "skillConnection":
+        case "projectileLaunchRotation":
+        case "skillAllowsWarmup":
+        case "isPetDisplayable":
+            return true;
+        default:
+            return false;
         }
     }
 
