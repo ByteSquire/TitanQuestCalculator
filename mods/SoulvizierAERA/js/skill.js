@@ -39,7 +39,7 @@ function addSkill(panel, mastery, skill) {
 
 function scaleButtonPosition(button, iconPosition) {
   button.style.top = iconPosition.posY/5.4 + "%";
-  button.style.left = iconPosition.posX/9.3 + "%";
+  button.style.left = (iconPosition.posX-19)/8.65 + "%";
 }
 
 function updateSkills(){    

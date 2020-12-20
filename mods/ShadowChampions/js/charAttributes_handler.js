@@ -101,11 +101,11 @@ function calcBoni(attributes, fromLevel, toLevel, event){
             }
         });
     }
-    document.getElementById("hp").innerText = hp;
-    document.getElementById("mp").innerText = mp;
-    document.getElementById("dex").innerText = dex;
-    document.getElementById("str").innerText = str;
-    document.getElementById("int").innerText = int;
+    document.getElementById("hp").innerText = Math.floor(hp);
+    document.getElementById("mp").innerText = Math.floor(mp);
+    document.getElementById("dex").innerText = Math.floor(dex);
+    document.getElementById("str").innerText = Math.floor(str);
+    document.getElementById("int").innerText = Math.floor(int);
 }
 
 function calcLevelReq(){
