@@ -104,6 +104,15 @@ public class SkillParser {
                         mParentSkill.addAll(Arrays.asList(tmp.getParent()));
                     mAdditionalFiles.addAll(tmp.getSkill());
                 }
+                if (attributeName.equals("petBonusName")) {
+                    Skill tmp = new Skill(
+                            new File(Control.DATABASES_DIR + mParentPath.split("/")[0] + "/database/" + value), null,
+                            mParentPath, mMSParser, mIconsParser);
+                    for (String skillAttribute : tmp.getAttributes().keySet()) {
+                        mAttributes.put("pet" + skillAttribute, tmp.getAttributes().get(skillAttribute));
+                    }
+                    mAdditionalFiles.addAll(tmp.getSkill());
+                }
                 if (attributeName.equals("skillDependancy")) {
                     try {
                         String[] parentFiles = value.split(";");
