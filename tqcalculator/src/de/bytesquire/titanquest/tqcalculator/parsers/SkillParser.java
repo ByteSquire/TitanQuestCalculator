@@ -99,7 +99,7 @@ public class SkillParser {
                     mAdditionalFiles.addAll(tmp.getSkill());
                 }
                 if (attributeName.equals("Class")) {
-                    if(str.split(",")[1].equals("Skill_Modifier"))
+                    if(str.split(",")[1].endsWith("Modifier"))
                         isModifier = true;
                     if(str.split(",")[1].startsWith("SkillSecondary"))
                         isModifier = true;
