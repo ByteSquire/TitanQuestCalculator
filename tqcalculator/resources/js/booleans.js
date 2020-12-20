@@ -14,7 +14,12 @@ function canSkill(button){
         });
     });
     if(skill.parent){
-        return (masteryLevel >= mod.masteryLevels[Number(tier)]) && (Number(document.getElementById(skill.parent).innerText.split("/")[0]) > 0);
+        var ret = true;
+        for (var i = 0; i < skill.parent.length; i++) {
+            if(Number(document.getElementById(skill.parent[i]).innerText.split("/")[0]) == 0)
+                ret = false;
+        }
+        return (masteryLevel >= mod.masteryLevels[Number(tier)]) && ret;
     }
     return (masteryLevel >= mod.masteryLevels[Number(tier)]);
 }

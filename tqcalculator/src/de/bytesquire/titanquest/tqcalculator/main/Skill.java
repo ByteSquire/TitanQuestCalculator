@@ -24,13 +24,13 @@ public class Skill {
     private HashMap<String, Object> mSkillAttributes;
     private String mParentPath;
     private boolean isModifier;
-    private String mParent;
+    private String[] mParent;
     private ArrayList<File> mSkill;
     private int mSkillTier;
     private SkillIcon mSkillIcon;
     private StringBuilder mRequiredWeapons;
 
-    public Skill(File aSkill, String aParent, String aParentPath, ModStringsParser aMSParser,
+    public Skill(File aSkill, String[] aParent, String aParentPath, ModStringsParser aMSParser,
             IconsParser aIconsParser) {
         if (aSkill == null)
             return;
@@ -44,6 +44,10 @@ public class Skill {
         mSkillName = aMSParser.getTags().get(mSkillParser.getSkillTag());
         mSkillDescription = aMSParser.getTags().get(mSkillParser.getSkillDescriptionTag());
         mSkillIcon = mSkillParser.getSkillIcon();
+
+        if (mSkillParser.getParentSkill() != null) {
+            mParent = mSkillParser.getParentSkill();
+        }
         isModifier = mSkillParser.isModifier();
 
         if (mSkillParser.getAdditionalFiles().size() > 0) {
@@ -166,11 +170,11 @@ public class Skill {
         return isModifier;
     }
 
-    public String getParent() {
+    public String[] getParent() {
         return mParent;
     }
 
-    public void setParent(String mSkillParent) {
+    public void setParent(String[] mSkillParent) {
         this.mParent = mSkillParent;
     }
 
@@ -193,6 +197,11 @@ public class Skill {
         if (mRequiredWeapons.length() == 0)
             return null;
         return mRequiredWeapons.toString();
+    }
+
+    public void setParent(String name) {
+        if (mParent == null)
+            mParent = new String[] { name };
     }
 
 }
