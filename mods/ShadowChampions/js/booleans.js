@@ -4,13 +4,18 @@ function canSkill(button){
     var matteringMastery = (Number(button.parentElement.id.split("panel")[1]) == 1)? m1 : m2;
     var tiers = matteringMastery.skillTiers;
     var tier;
+    var skill;
     tiers.forEach((aTier) => {
         aTier.forEach((aSkill) => {
             if(aSkill.name == button.id){
                 tier = tiers.indexOf(aTier);
+                skill = aSkill;
             }
         });
     });
+    if(skill.parent){
+        return (Number(document.getElementById(skill.parent).innerText.split("/")[0]) > 0);
+    }
     return (masteryLevel >= mod.masteryLevels[Number(tier)]);
 }
 

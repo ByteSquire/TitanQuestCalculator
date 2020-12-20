@@ -44,7 +44,12 @@ public class Mastery {
 
         for (Skill skill : mSkills) {
             if (skill.isModifier()) {
-                skill.setParent(mSkills.get(mSkills.indexOf(skill) - 1).getName());
+                int i = 1;
+                Skill tmp = mSkills.get(mSkills.indexOf(skill) - i++);
+                while(tmp.isModifier()) {
+                    tmp = mSkills.get(mSkills.indexOf(skill) - i++);
+                }
+                skill.setParent(tmp.getName());
             }
             while (true) {
                 try {

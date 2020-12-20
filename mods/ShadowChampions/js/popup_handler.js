@@ -13,6 +13,13 @@ function getPopupString(skill, currLevel, isSkill){
         ret += "<br>\n";
     }
     
+    if(skill.parent){
+        if(Number(document.getElementById(skill.parent).innerText.split("/")[0]) == 0){
+            ret += '<span class="" style="color: red">Requires at least one point in: ' + skill.parent + '</span>';
+            ret += "<br>\n";
+        }
+    }
+    
     if(currLevel > 0){
         ret += '<br>\n';
         if(currLevel <= skill.attributes["skillMaxLevel"]){

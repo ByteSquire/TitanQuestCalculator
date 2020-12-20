@@ -234,7 +234,8 @@
 	z-index: 200;
 	font-size: max(14px, 0.75vw);
   height: min-content;
-  width: 25%;
+  width: max-content;
+  max-width: 25%;
 }
 
 .title {

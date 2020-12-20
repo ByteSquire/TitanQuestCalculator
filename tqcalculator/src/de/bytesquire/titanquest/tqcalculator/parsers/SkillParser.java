@@ -98,8 +98,12 @@ public class SkillParser {
                     mSkillIcon = tmp.getSkillIcon();
                     mAdditionalFiles.addAll(tmp.getSkill());
                 }
-                if (attributeName.equals("Class") && str.split(",")[1].equals("Skill_Modifier"))
-                    isModifier = true;
+                if (attributeName.equals("Class")) {
+                    if(str.split(",")[1].equals("Skill_Modifier"))
+                        isModifier = true;
+                    if(str.split(",")[1].startsWith("SkillSecondary"))
+                        isModifier = true;
+                }
 
             });
         } catch (FileNotFoundException e) {
