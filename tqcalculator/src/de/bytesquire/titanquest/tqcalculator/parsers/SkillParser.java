@@ -6,6 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.stream.Stream;
 
@@ -99,6 +100,8 @@ public class SkillParser {
                     mSkillDescriptionTag = tmp.getSkillDescriptionTag();
                     mSkillIcon = tmp.getSkillIcon();
                     mModifier = tmp.isModifier();
+                    if(tmp.getParent() != null)
+                        mParentSkill.addAll(Arrays.asList(tmp.getParent()));
                     mAdditionalFiles.addAll(tmp.getSkill());
                 }
                 if (attributeName.equals("skillDependancy")) {

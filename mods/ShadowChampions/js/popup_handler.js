@@ -58,19 +58,43 @@ function getPopupString(skill, currLevel, isSkill){
                 ret += "<br>\n";
             } else if(value.constructor === Object) {
                 if(value.min.constructor === Array){
-                    if(value.min[currLevel-1] == 0)
+                    if(value.max.constructor === Array){
+                        if(value.min[currLevel-1] == 0)
+                            return;
+                        var index = currLevel-1;
+                        if(value.min[index] === undefined){
+                            index = value.min.length-1;
+                            if(value.min[index] === undefined)
+                                return;
+                        }
+                        ret += '<span class="skillAttribute" style="color: gray">' + key + ': \n' + value.min[index] + ' ~ ' + value.max[index] + '</span>\n';
+                        ret += "<br>\n";
+                    } else {
+                        if(value.min[currLevel-1] == 0)
+                            return;
+                        var index = currLevel-1;
+                        if(value.min[index] === undefined){
+                            index = value.min.length-1;
+                            if(value.min[index] === undefined)
+                                return;
+                        }
+                        if(value.max === undefined){
+                            ret += '<span class="skillAttribute" style="color: gray">' + key + ': \n' + value.min[index] + '</span>\n';
+                        } else {
+                            ret += '<span class="skillAttribute" style="color: gray">' + key + ': \n' + value.min[index] + ' ~ ' + value.max + '</span>\n';
+                        }
+                        ret += "<br>\n";
+                    }
+                } else if(value.max.constructor === Array){
+                    if(value.min == 0)
                         return;
                     var index = currLevel-1;
-                    if(value.min[index] === undefined){
-                        index = value.min.length-1;
-                        if(value.min[index] === undefined)
+                    if(value.max[index] === undefined){
+                        index = value.max.length-1;
+                        if(value.max[index] === undefined)
                             return;
                     }
-                    if(value.max === undefined){
-                        ret += '<span class="skillAttribute" style="color: gray">' + key + ': \n' + value.min[index] + '</span>\n';
-                    } else {
-                        ret += '<span class="skillAttribute" style="color: gray">' + key + ': \n' + value.min[index] + ' ~ ' + value.max[index] + '</span>\n';
-                    }
+                    ret += '<span class="skillAttribute" style="color: gray">' + key + ': \n' + value.min + ' ~ ' + value.max[index] + '</span>\n';
                     ret += "<br>\n";
                 } else {
                     if(value.max === undefined){
