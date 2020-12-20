@@ -109,7 +109,7 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-  line-height: 10px;
+  line-height: max(9px, 0.8vw);
   font-size: max(10px, 1vw);
   color: white;
 }
@@ -117,12 +117,13 @@
 .skillPlusButton {
   position: absolute;
   width: 4%;
-  min-width: 20px;
-  min-height: 7px;
+  left: 20%;
+  min-width: 33px;
+  max-width: 55px;
   background-color: transparent;
   border: none;
   cursor: pointer;
-  line-height: 10px;
+  line-height: max(9px, 0.8vw);
   font-size: max(10px, 1vw);
   color: white;
 }
@@ -233,7 +234,7 @@
 	z-index: 200;
 	font-size: max(14px, 0.75vw);
   height: min-content;
-  width: 10%;
+  width: 25%;
 }
 
 .title {

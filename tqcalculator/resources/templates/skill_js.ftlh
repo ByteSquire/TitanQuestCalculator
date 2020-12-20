@@ -42,7 +42,7 @@ function addSkill(panel, mastery, skill) {
               ' />\n' +
               ' 0\n' +
               '</button>';
-  scaleButtonPosition(document.getElementById(skill.name + '+'), { posY: skill.skillIcon.posY, posX: skill.skillIcon.posX + 40 });
+  scaleButtonPosition(document.getElementById(skill.name + '+'), { posY: skill.skillIcon.posY + 4, posX: skill.skillIcon.posX - 20 });
 }
 
 function scaleButtonPosition(button, iconPosition) {
