@@ -80,7 +80,13 @@ public class Cleaner {
                     + f.getAbsolutePath().split(mod.getName())[1]);
 //          System.out.println(targetLinksPath);
             try {
-                Files.createDirectories(Path.of(targetPath.toString().split(f.getName())[0]));
+                Path tmp;
+                if (f.getName().contains("+")) {
+                    String tp = targetPath.toString();
+                    tmp = Path.of(tp.substring(0, tp.lastIndexOf(targetPath.getFileSystem().getSeparator())));
+                } else
+                    tmp = Path.of(targetPath.toString().split(f.getName())[0]);
+                Files.createDirectories(tmp);
                 Files.copy(originPath, targetPath);
             } catch (IOException e) {
                 if (!(e instanceof java.nio.file.FileAlreadyExistsException))
