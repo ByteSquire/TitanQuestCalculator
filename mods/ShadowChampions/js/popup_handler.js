@@ -54,10 +54,10 @@ function getPopupString(skill, currLevel, isSkill){
                     if(value[index] === undefined)
                         return;
                 }
-                ret += '<span class="skillAttribute" style="color: gray">' + value[index] + '\n' + key + '</span>\n';
+                ret += '<span class="skillAttribute" style="color: gray">' + formatAttribute(key, value[index]) + '</span>\n';
                 ret += "<br>\n";
             } else if(value.constructor === Object) {
-                if(value.min.constructor === Array){
+                if(value.min && value.min.constructor === Array){
                     if(value.max.constructor === Array){
                         if(value.min[currLevel-1] == 0)
                             return;
@@ -67,7 +67,7 @@ function getPopupString(skill, currLevel, isSkill){
                             if(value.min[index] === undefined)
                                 return;
                         }
-                        ret += '<span class="skillAttribute" style="color: gray">' + value.min[index] + ' ~ ' + value.max[index] + '\n' + key + '</span>\n';
+                        ret += '<span class="skillAttribute" style="color: gray">' + formatAttributeMinMax(key, value.min[index], value.max[index]) + '</span>\n';
                         ret += "<br>\n";
                     } else {
                         if(value.min[currLevel-1] == 0)
@@ -79,13 +79,13 @@ function getPopupString(skill, currLevel, isSkill){
                                 return;
                         }
                         if(value.max === undefined){
-                            ret += '<span class="skillAttribute" style="color: gray">' + value.min[index] + '\n' + key + '</span>\n';
+                            ret += '<span class="skillAttribute" style="color: gray">' + formatAttribute(key, value.min[index]) + '</span>\n';
                         } else {
-                            ret += '<span class="skillAttribute" style="color: gray">' + value.min[index] + ' ~ ' + value.max + '\n' + key + '</span>\n';
+                            ret += '<span class="skillAttribute" style="color: gray">' + formatAttributeMinMax(key, value.min[index], value.max) + '</span>\n';
                         }
                         ret += "<br>\n";
                     }
-                } else if(value.max.constructor === Array){
+                } else if(value.max && value.max.constructor === Array){
                     if(value.min == 0)
                         return;
                     var index = currLevel-1;
@@ -94,18 +94,18 @@ function getPopupString(skill, currLevel, isSkill){
                         if(value.max[index] === undefined)
                             return;
                     }
-                    ret += '<span class="skillAttribute" style="color: gray">' + value.min + ' ~ ' + value.max[index] + '\n' + key + '</span>\n';
+                    ret += '<span class="skillAttribute" style="color: gray">' + formatAttributeMinMax(key, value.min, value.max[index]) + '</span>\n';
                     ret += "<br>\n";
                 } else {
                     if(value.max === undefined){
-                        ret += '<span class="skillAttribute" style="color: gray">' + value.min + '\n' + key + '</span>\n';
+                        ret += '<span class="skillAttribute" style="color: gray">' + formatAttribute(key, value.min) + '</span>\n';
                     } else {
-                        ret += '<span class="skillAttribute" style="color: gray">' + value.min + ' ~ ' + value.max + '\n' + key + '</span>\n';
+                        ret += '<span class="skillAttribute" style="color: gray">' + formatAttributeMinMax(key, value.min, value.max) + '</span>\n';
                     }
                     ret += "<br>\n";
                 }
             } else {
-                ret += '<span class="skillAttribute" style="color: gray">' + value + '\n' + key + '</span>\n';
+                ret += '<span class="skillAttribute" style="color: gray">' + formatAttribute(key, value) + '</span>\n';
                 ret += "<br>\n";
             }
         });
@@ -134,10 +134,10 @@ function getPopupString(skill, currLevel, isSkill){
         if(value.constructor === Array){
             if(value[currLevel] == 0 || value[currLevel] === undefined)
                 return;
-            ret += '<span class="skillAttribute">' + value[currLevel] + '\n' + key + '</span>\n';
+            ret += '<span class="skillAttribute">' + formatAttribute(key, value[currLevel]) + '</span>\n';
             ret += "<br>\n";
         } else if(value.constructor === Object) {
-            if(value.min.constructor === Array){
+            if(value.min && value.min.constructor === Array){
                 if(value.min[currLevel] == 0 || value.min[currLevel] === undefined)
                     return;
                 if(value.min[currLevel] === undefined){
@@ -146,21 +146,21 @@ function getPopupString(skill, currLevel, isSkill){
                         return;
                 }
                 if(value.max === undefined){
-                    ret += '<span class="skillAttribute">' + value.min[currLevel] + '\n' + key + '</span>\n';
+                    ret += '<span class="skillAttribute">' + formatAttribute(key, value.min[currLevel]) + '</span>\n';
                 } else {
-                    ret += '<span class="skillAttribute">' + value.min[currLevel] + ' ~ ' + value.max[currLevel] + '\n' + key + '</span>\n';
+                    ret += '<span class="skillAttribute">' + formatAttributeMinMax(key, value.min[currLevel], value.max[currLevel]) + '</span>\n';
                 }
                 ret += "<br>\n";
             } else {
                 if(value.max === undefined){
-                    ret += '<span class="skillAttribute">' + value.min + '\n' + key + '</span>\n';
+                    ret += '<span class="skillAttribute">' + formatAttribute(key, value.min) + '</span>\n';
                 } else {
-                    ret += '<span class="skillAttribute">' + value.min + ' ~ ' + value.max + '\n' + key + '</span>\n';
+                    ret += '<span class="skillAttribute">' + formatAttributeMinMax(key, value.min, value.max) + '</span>\n';
                 }
                 ret += "<br>\n";
             }
         } else if(currLevel == 0) {
-            ret += '<span class="skillAttribute">' + value + '\n' + key + '</span>\n';
+            ret += '<span class="skillAttribute">' + formatAttribute(key, value) + '</span>\n';
             ret += "<br>\n";
         }
     });
@@ -187,4 +187,24 @@ function getPageHeight() {
 function hidePopup(){
     document.getElementById("pop").style.display = "none";
     document.getElementById("pop").style.bottom = "unset";
+}
+
+function formatAttribute(key, value){
+    if(key.includes("^a")){
+        key = key.replace("^a", '<span style="color: aqua">')
+        key += "</span>";
+    }
+    if(key.includes("${value}"))
+        return key.replace("${value}", value);
+    return value + key;
+}
+
+function formatAttributeMinMax(key, valueMin, valueMax){
+    if(key.includes("^a")){
+        key = key.replace("^a", '<span style="color: aqua">')
+        key += "</span>";
+    }
+    if(key.includes("${value}"))
+        return key.replace("${value}", valueMin + " ~ " + valueMax);
+    return valueMin + " ~ " + valueMax + key;
 }
