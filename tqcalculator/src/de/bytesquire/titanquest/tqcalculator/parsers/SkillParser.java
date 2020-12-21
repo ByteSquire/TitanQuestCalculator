@@ -88,6 +88,31 @@ public class SkillParser {
                         return;
                     }
                 }
+                if (attributeName.contains("Percent") || attributeName.contains("Chance")) {
+                    if (value.split(";").length > 1) {
+                        ArrayList<String> localList = new ArrayList<>();
+                        for (String e : value.split(";")) {
+                            Double eValue = Double.parseDouble(e);
+                            int eValueInt = eValue.intValue();
+                            if (eValue - eValueInt == 0)
+                                localList.add(eValueInt + "%");
+                            else
+                                localList.add(eValue + "%");
+                        }
+                        mAttributes.put(attributeName, localList);
+                        return;
+                    } else {
+                        Double eValue = Double.parseDouble(value.split(";")[0]);
+                        int eValueInt = eValue.intValue();
+                        if (eValue == 0)
+                            return;
+                        if (eValue - eValueInt == 0)
+                            mAttributes.put(attributeName, eValueInt + "%");
+                        else
+                            mAttributes.put(attributeName, eValue + "%");
+                        return;
+                    }
+                }
                 try {
                     Integer intValue = Integer.parseInt(value);
                     if (intValue == 0)
