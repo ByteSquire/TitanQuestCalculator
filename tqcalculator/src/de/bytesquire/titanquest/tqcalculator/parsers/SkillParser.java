@@ -129,7 +129,7 @@ public class SkillParser {
                         e.printStackTrace();
                     }
                 }
-                if (attributeName.equals("Class") && value.endsWith("Modifier"))
+                if (attributeName.equals("Class") && (value.endsWith("Modifier") || value.startsWith("SkillSecondary")))
                     mModifier = true;
             });
         } catch (FileNotFoundException e) {
