@@ -70,9 +70,12 @@ function skillClicked(button, event){
 
 function updateSkillLevel(skill, updated){
     var curr = Number(document.getElementById(skill.name).innerText.split("/")[0]);
-    if(updated <= skill.attributes["skillMaxLevel"])
+    if(updated <= skill.attributes["MaxLevel"])
         document.getElementById(skill.name).getElementsByClassName("buttonText")[0].style.color = "white";
-    else
+    else {
         document.getElementById(skill.name).getElementsByClassName("buttonText")[0].style.color = "yellow";
+        if(updated > skill.attributes["UltimateLevel"])
+            updated = skill.attributes["UltimateLevel"];
+    }
     document.getElementById(skill.name).innerHTML = document.getElementById(skill.name).innerHTML.replace(curr, updated);
 }
