@@ -30,9 +30,9 @@ function getPopupString(skill, currLevel, isSkill){
     
     if(currLevel > 0){
         ret += '<br>\n';
-        if(currLevel <= skill.attributes["skillMaxLevel"]){
+        if(currLevel <= skill.attributes["MaxLevel"]){
             ret += '<span class="nextLevel">Level: ' + currLevel + '</span>\n';
-        } else if(currLevel <= skill.attributes["skillUltimateLevel"]){
+        } else if(currLevel <= skill.attributes["UltimateLevel"]){
             ret += '<span class="nextLevel" style="color: yellow">Level: ' + currLevel + '</span>\n';
         }
         ret += '<br>\n';
@@ -40,9 +40,9 @@ function getPopupString(skill, currLevel, isSkill){
         attr.forEach((key) => {
             if(key == "requiredWeapons")
                 return;
-            if(key == "skillMaxLevel")
+            if(key == "MaxLevel")
                 return;
-            if(key == "skillUltimateLevel")
+            if(key == "UltimateLevel")
                 return;
             var value = skill.attributes[key];
             if(value.constructor === Array){
@@ -114,9 +114,9 @@ function getPopupString(skill, currLevel, isSkill){
     
     ret += '<br>\n';
     
-    if(currLevel+1 <= skill.attributes["skillMaxLevel"]){
+    if(currLevel+1 <= skill.attributes["MaxLevel"]){
         ret += '<span class="nextLevel">Next Level: ' + (currLevel+1) + '</span>\n';
-    } else if(currLevel+1 <= skill.attributes["skillUltimateLevel"]){
+    } else if(currLevel+1 <= skill.attributes["UltimateLevel"]){
         ret += '<span class="nextLevel" style="color: yellow">Next Level: ' + (currLevel+1) + '</span>\n';
     } else {
         return ret;
@@ -126,9 +126,9 @@ function getPopupString(skill, currLevel, isSkill){
     attr.forEach((key) => {
         if(key == "requiredWeapons")
             return;
-        if(key == "skillMaxLevel")
+        if(key == "MaxLevel")
             return;
-        if(key == "skillUltimateLevel")
+        if(key == "UltimateLevel")
             return;
         var value = skill.attributes[key];
         if(value.constructor === Array){

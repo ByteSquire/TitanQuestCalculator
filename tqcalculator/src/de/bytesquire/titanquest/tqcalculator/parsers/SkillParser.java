@@ -63,6 +63,29 @@ public class SkillParser {
                     mSkillDescriptionTag = value;
                     return;
                 }
+
+                attributeName = attributeName.replace("offensive", "Damage").replace("Slow", "Duration").replace("character", "Character");
+
+                if (attributeName.startsWith("skill")) {
+                    if (attributeName.equals("skillDependancy")) {
+                        try {
+                            String[] parentFiles = value.split(";");
+                            for (String string : parentFiles) {
+                                BufferedReader parentReader = new BufferedReader(new FileReader(new File(
+                                        Control.DATABASES_DIR + mParentPath.split("/")[0] + "/database/" + string)));
+                                Stream<String> parentFileStream = parentReader.lines();
+                                parentFileStream.filter(str1 -> str1.split(",")[0].equals("skillDisplayName"))
+                                        .forEach(name -> {
+                                            mParentSkill.add(mMSParser.getTags().get(name.split(",")[1]));
+                                        });
+                            }
+                        } catch (FileNotFoundException e) {
+                            e.printStackTrace();
+                        }
+                        return;
+                    }
+                }
+
                 if (attributeName.endsWith("Modifier")) {
                     if (value.split(";").length > 1) {
                         ArrayList<String> localList = new ArrayList<>();
@@ -165,23 +188,6 @@ public class SkillParser {
                         mAttributes.put("pet" + skillAttribute, tmp.getAttributes().get(skillAttribute));
                     }
                     mAdditionalFiles.addAll(tmp.getSkill());
-                    return;
-                }
-                if (attributeName.equals("skillDependancy")) {
-                    try {
-                        String[] parentFiles = value.split(";");
-                        for (String string : parentFiles) {
-                            BufferedReader parentReader = new BufferedReader(new FileReader(new File(
-                                    Control.DATABASES_DIR + mParentPath.split("/")[0] + "/database/" + string)));
-                            Stream<String> parentFileStream = parentReader.lines();
-                            parentFileStream.filter(str1 -> str1.split(",")[0].equals("skillDisplayName"))
-                                    .forEach(name -> {
-                                        mParentSkill.add(mMSParser.getTags().get(name.split(",")[1]));
-                                    });
-                        }
-                    } catch (FileNotFoundException e) {
-                        e.printStackTrace();
-                    }
                     return;
                 }
                 if (attributeName.equals("Class") && (value.endsWith("Modifier") || value.startsWith("SkillSecondary")))

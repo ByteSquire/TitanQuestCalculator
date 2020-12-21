@@ -134,6 +134,17 @@ public class Skill {
                             mSkillParser.getAttributes().get(skillAttribute));
                     break;
                 }
+                if (skillAttribute.endsWith("Modifier")) {
+                    mSkillAttributes.put(skillAttribute.replace("Modifier", ""),
+                            mSkillParser.getAttributes().get(skillAttribute));
+                    break;
+                }
+                if(skillAttribute.startsWith("skill")) {
+                    Object attr = mSkillParser.getAttributes().get(skillAttribute);
+                    skillAttribute = skillAttribute.replace("skill", "");
+                    mSkillAttributes.put(skillAttribute, attr);
+                    break;
+                }
                 mSkillAttributes.put(skillAttribute, mSkillParser.getAttributes().get(skillAttribute));
                 break;
             }

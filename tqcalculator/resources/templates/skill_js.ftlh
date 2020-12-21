@@ -31,7 +31,7 @@ function addSkill(panel, mastery, skill) {
     </#if>
     '.png"\n' +
     '/>\n' +
-    '<span class="buttonText">0/' + skill.attributes.skillMaxLevel + '</span>' +
+    '<span class="buttonText">0/' + skill.attributes.MaxLevel + '</span>' +
     '<div class="disabled">0</div>';
   scaleButtonPosition(document.getElementById(skill.name), skill.skillIcon);
   
