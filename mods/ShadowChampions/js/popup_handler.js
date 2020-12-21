@@ -148,7 +148,7 @@ function getPopupString(skill, currLevel, isSkill){
                 if(value.max === undefined){
                     ret += '<span class="skillAttribute">' + formatAttribute(key, value.min[currLevel]) + '</span>\n';
                 } else {
-                    ret += '<span class="skillAttribute">' + formatAttributeMinMax(key, value.min[currLevel], value.max[currLevel]) + '</span>\n';
+                    ret += '<span class="skillAttribute">' + formatAttributeMinMax(key, value.min[currLevel], value.max) + '</span>\n';
                 }
                 ret += "<br>\n";
             } else {
