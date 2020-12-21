@@ -2,7 +2,7 @@ function addSkills(panel, mastery) {
   mastery.skillTiers.forEach((element) =>
     addSkillTier(panel, mastery, element)
   );
-  panel.getElementsByClassName("plusButton")[0].innerHTML += '<span class="buttonText">\n0/' + mastery.masteryAttributes.skillMaxLevel + '</span>';
+  panel.getElementsByClassName("plusButton")[0].innerHTML += '<span class="buttonText">\n0/' + mastery.masteryAttributes.MaxLevel + '</span>';
 }
 
 function addSkillTier(panel, mastery, skillTier) {
