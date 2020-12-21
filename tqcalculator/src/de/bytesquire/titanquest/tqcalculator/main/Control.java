@@ -64,7 +64,7 @@ public class Control {
     private static boolean mSuccess;
 
     public static void main(String[] args) {
-
+        
         configFreemarker();
         getTemplates();
 

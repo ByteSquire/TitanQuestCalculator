@@ -57,9 +57,36 @@ public class SkillParser {
                     return;
                 if (attributeName.equals("skillDisplayName")) {
                     mSkillTag = value;
+                    return;
                 }
                 if (attributeName.equals("skillBaseDescription")) {
                     mSkillDescriptionTag = value;
+                    return;
+                }
+                if (attributeName.endsWith("Modifier")) {
+                    if (value.split(";").length > 1) {
+                        ArrayList<String> localList = new ArrayList<>();
+                        for (String e : value.split(";")) {
+                            Double eValue = Double.parseDouble(e);
+                            int eValueInt = eValue.intValue();
+                            if (eValue - eValueInt == 0)
+                                localList.add(eValue < 0 ? String.valueOf(eValueInt) : ("+" + eValueInt) + "%");
+                            else
+                                localList.add(eValue < 0 ? String.valueOf(eValue) : ("+" + eValue) + "%");
+                        }
+                        mAttributes.put(attributeName, localList);
+                        return;
+                    } else {
+                        Double eValue = Double.parseDouble(value.split(";")[0]);
+                        int eValueInt = eValue.intValue();
+                        if (eValue == 0)
+                            return;
+                        if (eValue - eValueInt == 0)
+                            mAttributes.put(attributeName, (eValue < 0 ? eValueInt : ("+" + eValueInt) + "%"));
+                        else
+                            mAttributes.put(attributeName, (eValue < 0 ? eValue : ("+" + eValue) + "%"));
+                        return;
+                    }
                 }
                 try {
                     Integer intValue = Integer.parseInt(value);
@@ -100,9 +127,10 @@ public class SkillParser {
                     mSkillDescriptionTag = tmp.getSkillDescriptionTag();
                     mSkillIcon = tmp.getSkillIcon();
                     mModifier = tmp.isModifier();
-                    if(tmp.getParent() != null)
+                    if (tmp.getParent() != null)
                         mParentSkill.addAll(Arrays.asList(tmp.getParent()));
                     mAdditionalFiles.addAll(tmp.getSkill());
+                    return;
                 }
                 if (attributeName.equals("petBonusName")) {
                     Skill tmp = new Skill(
@@ -112,6 +140,7 @@ public class SkillParser {
                         mAttributes.put("pet" + skillAttribute, tmp.getAttributes().get(skillAttribute));
                     }
                     mAdditionalFiles.addAll(tmp.getSkill());
+                    return;
                 }
                 if (attributeName.equals("skillDependancy")) {
                     try {
@@ -128,6 +157,7 @@ public class SkillParser {
                     } catch (FileNotFoundException e) {
                         e.printStackTrace();
                     }
+                    return;
                 }
                 if (attributeName.equals("Class") && (value.endsWith("Modifier") || value.startsWith("SkillSecondary")))
                     mModifier = true;
