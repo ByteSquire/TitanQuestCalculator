@@ -15,7 +15,7 @@ import de.bytesquire.titanquest.tqcalculator.parsers.ModStringsParser;
 import de.bytesquire.titanquest.tqcalculator.parsers.SkillParser;
 
 @JsonIgnoreProperties({ "skill", "buff", "skillTag", "skillDescriptionTag", "modifier", "skillTier", "urlLegacy",
-        "requiredWeapons" })
+        "requiredWeapons", "race" })
 @JsonInclude(Include.NON_NULL)
 public class Skill {
 
@@ -30,6 +30,7 @@ public class Skill {
     private int mSkillTier;
     private SkillIcon mSkillIcon;
     private StringBuilder mRequiredWeapons;
+    private String mRace;
 
     public Skill(File aSkill, String[] aParent, String aParentPath, ModStringsParser aMSParser,
             IconsParser aIconsParser) {
@@ -45,6 +46,7 @@ public class Skill {
         mSkillName = aMSParser.getTags().get(mSkillParser.getSkillTag());
         mSkillDescription = aMSParser.getTags().get(mSkillParser.getSkillDescriptionTag());
         mSkillIcon = mSkillParser.getSkillIcon();
+        mRace = mSkillParser.getRace();
 
         if (mSkillParser.getParentSkill() != null) {
             mParent = mSkillParser.getParentSkill();
@@ -144,6 +146,14 @@ public class Skill {
                     putAttribute(skillAttribute, attr);
                     break;
                 }
+                if (skillAttribute.startsWith("pet")) {
+                    Object attr = mSkillParser.getAttributes().get(skillAttribute);
+                    skillAttribute = skillAttribute.replace("pet", "SkillPet");
+                    putAttribute(skillAttribute, attr);
+                    break;
+                }
+                if (skillAttribute.contains("{%s1}"))
+                    skillAttribute = skillAttribute.replace("{%s1}", mRace);
                 putAttribute(skillAttribute, mSkillParser.getAttributes().get(skillAttribute));
                 break;
             }
@@ -155,9 +165,11 @@ public class Skill {
     }
 
     private void putAttribute(String key, Object value) {
-        if (AttributeNameParser.getMatch(key) != null)
+        if (AttributeNameParser.getMatch(key.replace("skill", "Skill")) != null)
+            key = AttributeNameParser.getMatch(key.replace("skill", "Skill"));
+        else if (AttributeNameParser.getMatch(key) != null)
             key = AttributeNameParser.getMatch(key);
-        if (key.endsWith("Duration"))
+        else if (key.endsWith("Duration"))
             if (AttributeNameParser.getMatch(key.substring(0, key.length() - "Duration".length())) != null)
                 key = key.replace(key.substring(0, key.length() - "Duration".length()),
                         AttributeNameParser.getMatch(key.substring(0, key.length() - "Duration".length())) + " ");
@@ -231,6 +243,10 @@ public class Skill {
     public void setParent(String name) {
         if (mParent == null)
             mParent = new String[] { name };
+    }
+
+    public String getRace() {
+        return mRace;
     }
 
 }

@@ -27,6 +27,7 @@ public class SkillParser {
     private SkillIcon mSkillIcon;
     private ArrayList<String> mParentSkill;
     private boolean mModifier = false;
+    private String mRace;
 
     public SkillParser(File aSkill, String aParentPath, ModStringsParser aMSParser, IconsParser aIconsParser) {
 
@@ -66,10 +67,8 @@ public class SkillParser {
 
                 attributeName = attributeName.replace("offensive", "Damage").replace("Slow", "Duration")
                         .replace("character", "Character").replace("defensive", "Defense").replace("projectile", "")
-                        .replace("retaliation", "Retaliation");
-//                if (attributeName.endsWith("Duration")) {
-//                    attributeName = attributeName.substring(0, attributeName.length() - "Duration".length());
-//                }
+                        .replace("retaliation", "Retaliation").replace("explosion", "Explosion")
+                        .replace("racial", "Racial").replace("spark", "Spark");
 
                 if (attributeName.startsWith("skill")) {
                     if (attributeName.equals("skillDependancy")) {
@@ -133,6 +132,8 @@ public class SkillParser {
                     if (tmp.getParent() != null)
                         mParentSkill.addAll(Arrays.asList(tmp.getParent()));
                     mAdditionalFiles.addAll(tmp.getSkill());
+                    if (tmp.getRace() != null)
+                        mRace = tmp.getRace();
                     return;
                 }
                 if (attributeName.equals("petBonusName")) {
@@ -144,6 +145,9 @@ public class SkillParser {
                     }
                     mAdditionalFiles.addAll(tmp.getSkill());
                     return;
+                }
+                if(attributeName.equals("RacialBonusRace")) {
+                    mRace = value;
                 }
                 if (attributeName.equals("Class") && (value.endsWith("Modifier") || value.startsWith("SkillSecondary")))
                     mModifier = true;
@@ -174,6 +178,7 @@ public class SkillParser {
         case "skillAllowsWarmUp":
         case "isPetDisplayable":
         case "expansionTime":
+        case "skipSkillLinking":
             return true;
         default:
             return false;
@@ -215,5 +220,9 @@ public class SkillParser {
 
     public boolean isModifier() {
         return mModifier;
+    }
+
+    public String getRace() {
+        return mRace;
     }
 }

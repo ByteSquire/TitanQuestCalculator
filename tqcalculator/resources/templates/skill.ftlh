@@ -12,7 +12,7 @@
 
     <table border=1.7>
     <#list attributes as attributeName, attributeValue>
-    <#if attributeName!="requiredWeapons">  <tr><td>${attributeName}<td><#if ArrayList.isInstance(attributeValue)><#list attributeValue as value>${value} </#list><#else>${attributeValue}</#if></#if>
+    <#if attributeName!="requiredWeapons">  <tr><td>${attributeName}<td><#if ArrayList.isInstance(attributeValue)><#list attributeValue as value>${value} </#list><#else><#if attributeValue??>${attributeValue}</#if></#if></#if>
     </#list>
     </table>
 </body>
