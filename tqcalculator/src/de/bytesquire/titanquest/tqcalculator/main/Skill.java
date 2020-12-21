@@ -169,10 +169,17 @@ public class Skill {
             key = AttributeNameParser.getMatch(key.replace("skill", "Skill"));
         else if (AttributeNameParser.getMatch(key) != null)
             key = AttributeNameParser.getMatch(key);
-        else if (key.endsWith("Duration"))
+        else if (key.endsWith("Duration")) {
             if (AttributeNameParser.getMatch(key.substring(0, key.length() - "Duration".length())) != null)
                 key = key.replace(key.substring(0, key.length() - "Duration".length()),
                         AttributeNameParser.getMatch(key.substring(0, key.length() - "Duration".length())) + " ");
+        } else if (key.startsWith("pet") || key.startsWith("SkillPet")) {
+            if (AttributeNameParser.getMatch(key.replace("pet", "").replace("SkillPet", "")) != null)
+                key = AttributeNameParser.getMatch(key.replace("pet", "").replace("SkillPet", ""));
+        }
+        if (!key.contains("${value}") && key.indexOf("{") > -1) {
+            key = key.substring(0, key.indexOf("{")) + "${value}" + key.substring(key.indexOf("}") + 1, key.length());
+        }
         mSkillAttributes.put(key, value);
     }
 

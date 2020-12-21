@@ -54,7 +54,7 @@ function getPopupString(skill, currLevel, isSkill){
                     if(value[index] === undefined)
                         return;
                 }
-                ret += '<span class="skillAttribute" style="color: gray">' + value[index] + '\n' + key + '</span>\n';
+                ret += '<span class="skillAttribute" style="color: gray">' + formatString(key, value) + '</span>\n';
                 ret += "<br>\n";
             } else if(value.constructor === Object) {
                 if(value.min.constructor === Array){
@@ -187,4 +187,8 @@ function getPageHeight() {
 function hidePopup(){
     document.getElementById("pop").style.display = "none";
     document.getElementById("pop").style.bottom = "unset";
+}
+
+function formatString(key, value){
+    return `${key}`;
 }

@@ -31,9 +31,9 @@ public class AttributeNameParser {
                         Stream<String> attributeNames = attributeNamesReader.lines();
 
                         attributeNames.forEach(str -> {
-                            if (!str.startsWith("//") && str.split("=").length > 1 && !str.startsWith("tag")) {
+                            if (!str.startsWith("//") && str.split("=").length > 1) {
                                 String key = str.split("=")[0];
-                                key = key.replace("xtag", "");
+                                key = key.replace("xtag", "").replace("tag", "");
                                 String value = str.split("=")[1];
                                 AttributeNameParser.attributeNames.put(key, value);
                             }

@@ -27,10 +27,10 @@ public class MinMaxAttribute {
     @Override
     public String toString() {
         StringBuilder ret = new StringBuilder();
-        ret.append("min: " + mMin.toString());
-        if (mMax != null) {
+        if (mMin != null)
+            ret.append("min: " + mMin.toString());
+        if (mMax != null)
             ret.append("\nmax: " + mMax.toString());
-        }
         return ret.toString();
     }
 }

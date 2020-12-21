@@ -68,7 +68,7 @@ public class SkillParser {
                 attributeName = attributeName.replace("offensive", "Damage").replace("Slow", "Duration")
                         .replace("character", "Character").replace("defensive", "Defense").replace("projectile", "")
                         .replace("retaliation", "Retaliation").replace("explosion", "Explosion")
-                        .replace("racial", "Racial").replace("spark", "Spark");
+                        .replace("racial", "Racial").replace("spark", "Spark").replace("spawnObjects", "SkillPet");
 
                 if (attributeName.startsWith("skill")) {
                     if (attributeName.equals("skillDependancy")) {
@@ -141,12 +141,12 @@ public class SkillParser {
                             new File(Control.DATABASES_DIR + mParentPath.split("/")[0] + "/database/" + value), null,
                             mParentPath, mMSParser, mIconsParser);
                     for (String skillAttribute : tmp.getAttributes().keySet()) {
-                        mAttributes.put("pet" + skillAttribute, tmp.getAttributes().get(skillAttribute));
+                        mAttributes.put("Pets: " + skillAttribute, tmp.getAttributes().get(skillAttribute));
                     }
                     mAdditionalFiles.addAll(tmp.getSkill());
                     return;
                 }
-                if(attributeName.equals("RacialBonusRace")) {
+                if (attributeName.equals("RacialBonusRace")) {
                     mRace = value;
                 }
                 if (attributeName.equals("Class") && (value.endsWith("Modifier") || value.startsWith("SkillSecondary")))
@@ -179,6 +179,7 @@ public class SkillParser {
         case "isPetDisplayable":
         case "expansionTime":
         case "skipSkillLinking":
+        case "instantCast":
             return true;
         default:
             return false;

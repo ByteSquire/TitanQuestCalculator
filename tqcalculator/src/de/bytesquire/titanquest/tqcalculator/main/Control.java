@@ -125,13 +125,14 @@ public class Control {
             }
         }
 
-        new Cleaner(mMods);
-
         writeTemplatesLegacy();
 
         writeTemplates();
+        
+        new Cleaner(mMods);
 
         showSuccess();
+
     }
 
     private static void showSuccess() {
