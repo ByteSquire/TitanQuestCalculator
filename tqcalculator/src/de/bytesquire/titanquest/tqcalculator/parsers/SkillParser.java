@@ -180,6 +180,7 @@ public class SkillParser {
         case "expansionTime":
         case "skipSkillLinking":
         case "instantCast":
+        case "targetCaster":
             return true;
         default:
             return false;
