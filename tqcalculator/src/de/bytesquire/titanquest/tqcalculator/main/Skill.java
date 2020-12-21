@@ -9,6 +9,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 
+import de.bytesquire.titanquest.tqcalculator.parsers.AttributeNameParser;
 import de.bytesquire.titanquest.tqcalculator.parsers.IconsParser;
 import de.bytesquire.titanquest.tqcalculator.parsers.ModStringsParser;
 import de.bytesquire.titanquest.tqcalculator.parsers.SkillParser;
@@ -106,6 +107,8 @@ public class Skill {
             default:
                 if (skillAttribute.endsWith("Min")) {
                     String skillAttributeType = skillAttribute.replace("Min", "");
+                    if (AttributeNameParser.getMatch(skillAttributeType) != null)
+                        skillAttributeType = AttributeNameParser.getMatch(skillAttributeType);
                     if (mSkillAttributes.containsKey(skillAttributeType)) {
                         if (mSkillAttributes.get(skillAttributeType) instanceof MinMaxAttribute)
                             ((MinMaxAttribute) mSkillAttributes.get(skillAttributeType))
@@ -113,11 +116,13 @@ public class Skill {
                     } else {
                         MinMaxAttribute tmp = new MinMaxAttribute();
                         tmp.setMin(mSkillParser.getAttributes().get(skillAttribute));
-                        mSkillAttributes.put(skillAttributeType, tmp);
+                        putAttribute(skillAttributeType, tmp);
                     }
                     break;
                 } else if (skillAttribute.endsWith("Max")) {
                     String skillAttributeType = skillAttribute.replace("Max", "");
+                    if (AttributeNameParser.getMatch(skillAttributeType) != null)
+                        skillAttributeType = AttributeNameParser.getMatch(skillAttributeType);
                     if (mSkillAttributes.containsKey(skillAttributeType)) {
                         if (mSkillAttributes.get(skillAttributeType) instanceof MinMaxAttribute)
                             ((MinMaxAttribute) mSkillAttributes.get(skillAttributeType))
@@ -125,34 +130,38 @@ public class Skill {
                     } else {
                         MinMaxAttribute tmp = new MinMaxAttribute();
                         tmp.setMax(mSkillParser.getAttributes().get(skillAttribute));
-                        mSkillAttributes.put(skillAttributeType, tmp);
+                        putAttribute(skillAttributeType, tmp);
                     }
                     break;
                 }
                 if (skillAttribute.endsWith("Modifier")) {
-                    mSkillAttributes.put(skillAttribute.replace("Modifier", ""),
-                            mSkillParser.getAttributes().get(skillAttribute));
+                    putAttribute(skillAttribute, mSkillParser.getAttributes().get(skillAttribute));
                     break;
                 }
-                if (skillAttribute.endsWith("Modifier")) {
-                    mSkillAttributes.put(skillAttribute.replace("Modifier", ""),
-                            mSkillParser.getAttributes().get(skillAttribute));
-                    break;
-                }
-                if(skillAttribute.startsWith("skill")) {
+                if (skillAttribute.startsWith("skill")) {
                     Object attr = mSkillParser.getAttributes().get(skillAttribute);
                     skillAttribute = skillAttribute.replace("skill", "");
-                    mSkillAttributes.put(skillAttribute, attr);
+                    putAttribute(skillAttribute, attr);
                     break;
                 }
-                mSkillAttributes.put(skillAttribute, mSkillParser.getAttributes().get(skillAttribute));
+                putAttribute(skillAttribute, mSkillParser.getAttributes().get(skillAttribute));
                 break;
             }
         }
         if (mRequiredWeapons.length() != 0) {
             mRequiredWeapons.delete(mRequiredWeapons.length() - 2, mRequiredWeapons.length());
-            mSkillAttributes.put("requiredWeapons", mRequiredWeapons.toString());
+            putAttribute("requiredWeapons", mRequiredWeapons.toString());
         }
+    }
+
+    private void putAttribute(String key, Object value) {
+        if (AttributeNameParser.getMatch(key) != null)
+            key = AttributeNameParser.getMatch(key);
+        if (key.endsWith("Duration"))
+            if (AttributeNameParser.getMatch(key.substring(0, key.length() - "Duration".length())) != null)
+                key = key.replace(key.substring(0, key.length() - "Duration".length()),
+                        AttributeNameParser.getMatch(key.substring(0, key.length() - "Duration".length())) + " ");
+        mSkillAttributes.put(key, value);
     }
 
     @Override

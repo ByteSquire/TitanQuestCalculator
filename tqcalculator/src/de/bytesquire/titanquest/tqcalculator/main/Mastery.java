@@ -8,7 +8,6 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import de.bytesquire.titanquest.tqcalculator.parsers.IconsParser;
 import de.bytesquire.titanquest.tqcalculator.parsers.ModStringsParser;
-import de.bytesquire.titanquest.tqcalculator.parsers.SkillParser;
 import de.bytesquire.titanquest.tqcalculator.parsers.SkillTreeParser;
 
 @JsonIgnoreProperties({ "mastery", "skillTree", "mSkills", "mSkillTreeParser", "urlLegacy" })
@@ -38,7 +37,7 @@ public class Mastery {
                 mSkills.add(tmp);
             } else {
                 mMastery = skill;
-                mMasteryAttributes = new SkillParser(skill, (mParentModName + "/Masteries/" + mName), aMSParser, aIconsParser).getAttributes();
+                mMasteryAttributes = (HashMap<String, Object>) new Skill(skill, null, (mParentModName + "/Masteries/" + mName), aMSParser, aIconsParser).getAttributes();
             }
         }
 

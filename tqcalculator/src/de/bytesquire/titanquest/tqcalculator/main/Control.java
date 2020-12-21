@@ -41,6 +41,7 @@ import javax.swing.JOptionPane;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import de.bytesquire.titanquest.tqcalculator.parsers.AttributeNameParser;
 import freemarker.template.*;
 
 //import templates.*;
@@ -64,9 +65,10 @@ public class Control {
     private static boolean mSuccess;
 
     public static void main(String[] args) {
-        
+
         configFreemarker();
         getTemplates();
+        AttributeNameParser.parseAttributeNames();
 
         mSuccess = true;
 
@@ -227,21 +229,29 @@ public class Control {
                 Control.json_handler.process(rootMastery, json_handlerJs);
 
                 Files.copy(Path.of("resources/js/booleans.js"),
-                        Path.of(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/booleans.js"), StandardCopyOption.REPLACE_EXISTING);
+                        Path.of(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/booleans.js"),
+                        StandardCopyOption.REPLACE_EXISTING);
                 Files.copy(Path.of("resources/js/charAttributes_handler.js"),
-                        Path.of(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/charAttributes_handler.js"), StandardCopyOption.REPLACE_EXISTING);
+                        Path.of(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/charAttributes_handler.js"),
+                        StandardCopyOption.REPLACE_EXISTING);
                 Files.copy(Path.of("resources/js/plusButton_handler.js"),
-                        Path.of(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/plusButton_handler.js"), StandardCopyOption.REPLACE_EXISTING);
+                        Path.of(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/plusButton_handler.js"),
+                        StandardCopyOption.REPLACE_EXISTING);
                 Files.copy(Path.of("resources/js/skillButton_handler.js"),
-                        Path.of(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/skillButton_handler.js"), StandardCopyOption.REPLACE_EXISTING);
+                        Path.of(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/skillButton_handler.js"),
+                        StandardCopyOption.REPLACE_EXISTING);
                 Files.copy(Path.of("resources/js/popup_handler.js"),
-                        Path.of(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/popup_handler.js"), StandardCopyOption.REPLACE_EXISTING);
+                        Path.of(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/popup_handler.js"),
+                        StandardCopyOption.REPLACE_EXISTING);
                 Files.copy(Path.of("resources/js/mod.js"),
-                        Path.of(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/mod.js"), StandardCopyOption.REPLACE_EXISTING);
+                        Path.of(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/mod.js"),
+                        StandardCopyOption.REPLACE_EXISTING);
                 Files.copy(Path.of("resources/js/masteryTier_handler.js"),
-                        Path.of(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/masteryTier_handler.js"), StandardCopyOption.REPLACE_EXISTING);
+                        Path.of(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/masteryTier_handler.js"),
+                        StandardCopyOption.REPLACE_EXISTING);
                 Files.copy(Path.of("resources/js/skillPlusButton_handler.js"),
-                        Path.of(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/skillPlusButton_handler.js"), StandardCopyOption.REPLACE_EXISTING);
+                        Path.of(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/skillPlusButton_handler.js"),
+                        StandardCopyOption.REPLACE_EXISTING);
             } catch (IOException | TemplateException e) {
                 e.printStackTrace();
                 mSuccess = false;
