@@ -134,7 +134,7 @@ function getPopupString(skill, currLevel, isSkill){
         if(value.constructor === Array){
             if(value[currLevel] == 0 || value[currLevel] === undefined)
                 return;
-            ret += '<span class="skillAttribute">' + key + ': \n' + value[currLevel] + '</span>\n';
+            ret += '<span class="skillAttribute">' + value[currLevel] + '\n' + key + '</span>\n';
             ret += "<br>\n";
         } else if(value.constructor === Object) {
             if(value.min.constructor === Array){
