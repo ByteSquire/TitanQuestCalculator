@@ -190,6 +190,7 @@ public class Control {
                             rootSkill = new HashMap<>();
                             rootSkill.put("attributes", skill.getAttributes());
                             rootSkill.put("petAttributes", skill.getPetAttributes());
+                            rootSkill.put("petSkills", skill.getPetSkills());
                             rootSkill.put("name", skill.getName());
                             rootSkill.put("description", skill.getDescription());
                             rootSkill.put("ArrayList", ArrayList.class);

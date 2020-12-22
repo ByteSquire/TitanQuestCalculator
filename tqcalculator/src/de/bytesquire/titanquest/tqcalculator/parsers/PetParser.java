@@ -13,24 +13,34 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 
+import de.bytesquire.titanquest.tqcalculator.main.Control;
 import de.bytesquire.titanquest.tqcalculator.main.MinMaxAttribute;
 import de.bytesquire.titanquest.tqcalculator.main.Skill;
 
-@JsonIgnoreProperties({ "skills" })
+@JsonIgnoreProperties({ "files", "additionalFiles" })
 @JsonInclude(Include.NON_NULL)
 public class PetParser {
 
     private HashMap<String, Object> mAttributes;
     private HashMap<String, Skill> mPetSkills;
     private File[] mSkills;
+    private ArrayList<File> mAdditionalFiles;
+    private String mParentPath;
+    private ModStringsParser mMSParser;
+    private IconsParser mIconsParser;
 
-    public PetParser(File[] files) {
+    public PetParser(File[] files, String aParentPath, ModStringsParser aMSParser, IconsParser aIconsParser) {
         if (files == null)
             return;
 
         mAttributes = new HashMap<>();
+        mPetSkills = new HashMap<>();
+        mAdditionalFiles = new ArrayList<>();
 
         mSkills = files;
+        mParentPath = aParentPath;
+        mMSParser = aMSParser;
+        mIconsParser = aIconsParser;
 
         initSkill();
     }
@@ -48,6 +58,19 @@ public class PetParser {
                     attributeName = attributeName.replace("character", "Character").replace("handHit", "")
                             .replace("footHit", "");
 
+                    if (attributeName.startsWith("skillName")) {
+                        if(value.contains(";"))
+                            return;
+                        Skill tmp = new Skill(
+                                new File(Control.DATABASES_DIR + mParentPath.split("/")[0] + "/database/" + value),
+                                null, mParentPath, mMSParser, mIconsParser);
+                        if(tmp.getName() == null)
+                            return;
+                        mPetSkills.put(tmp.getName(), tmp);
+                        mAdditionalFiles.addAll(tmp.getFiles());
+                        return;
+                    }
+
                     try {
                         Double doubleValue = Double.parseDouble(value);
                         if (doubleValue == 0.0)
@@ -56,7 +79,8 @@ public class PetParser {
                             String attributeType = attributeName.replace("Max", "").replace("Min", "");
                             if (mAttributes.containsKey(convertKey(attributeType))) {
                                 if (mAttributes.get(convertKey(attributeType)) instanceof MinMaxAttribute) {
-                                    MinMaxAttribute relevantObj = ((MinMaxAttribute) mAttributes.get(convertKey(attributeType)));
+                                    MinMaxAttribute relevantObj = ((MinMaxAttribute) mAttributes
+                                            .get(convertKey(attributeType)));
                                     if (attributeName.endsWith("Max"))
                                         relevantObj.addMax(doubleValue);
                                     else
@@ -94,6 +118,8 @@ public class PetParser {
     private boolean canBeIgnored(String attributeName) {
         if (attributeName.startsWith("character"))
             return false;
+        if (attributeName.startsWith("skillName"))
+            return false;
         switch (attributeName) {
         case "handHitDamageMax":
         case "handHitDamageMin":
@@ -123,7 +149,7 @@ public class PetParser {
         }
         mAttributes.put(key, value);
     }
-    
+
     private String convertKey(String key) {
         if (AttributeNameParser.getMatch(key) != null)
             key = AttributeNameParser.getMatch(key);
@@ -147,7 +173,7 @@ public class PetParser {
         return mAttributes;
     }
 
-    public File[] getSkills() {
+    public File[] getFiles() {
         return mSkills;
     }
 
@@ -160,5 +186,13 @@ public class PetParser {
             build.append("\n");
         });
         return build.toString();
+    }
+
+    public ArrayList<File> getAdditionalFiles() {
+        return mAdditionalFiles;
+    }
+
+    public HashMap<String, Skill> getPetSkills() {
+        return mPetSkills;
     }
 }

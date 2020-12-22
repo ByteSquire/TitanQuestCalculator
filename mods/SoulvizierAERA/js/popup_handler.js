@@ -26,6 +26,11 @@ function getPopupString(skill, currLevel, isSkill){
                 ret += "<br>\n";
             }
     }
+    var hasPet = false;
+    if(skill.petAttributes){
+        ret += '<table><td>';
+        hasPet = true;
+    }
     
     if(currLevel > 0){
         ret += '<br>\n';
@@ -100,8 +105,16 @@ function getPopupString(skill, currLevel, isSkill){
             }
         }
     });
+    if(hasPet)
+        ret += "<td>";
     if(skill.petAttributes)
         ret += formatPetAttributes(skill.petAttributes, currLevel, "white");
+    if(skill.petSkills){
+        ret += "<br>";
+        ret += formatPetSkills(skill.petSkills, currLevel, "white");
+    }
+    if(hasPet)
+        ret += "</table>";
     return ret;
 }
 

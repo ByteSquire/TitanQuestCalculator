@@ -1,5 +1,5 @@
 function getAttributeStringWithColour(key, value, index, colour){
-    return '<span style="color: ' + colour + '">' + getAttributeString(key, value, index) + '</span>';
+    return '<span class="skillAttribute" style="color: ' + colour + '">' + getAttributeString(key, value, index) + '</span>';
 }
 
 function getAttributeString(key, value, index){
@@ -92,11 +92,26 @@ function formatAttributeMinMax(key, valueMin, valueMax, index){
 }
 
 function formatPetAttributes(value, index, colour) {
-    var attr = Object.keys(value);
+    var attrs = Object.keys(value);
     var ret = '<span style="color: brown">Pet Attributes:</span><br>';
-    attr.forEach((key) => {
+    attrs.forEach((key) => {
         ret += getAttributeStringWithColour(key, value[key], index, colour).replace("+", "");
         ret += "<br>";
+    });
+    return ret;
+}
+
+function formatPetSkills(value, index, colour) {
+    var skills = Object.keys(value);
+    var ret = '<span style="color: brown">Pet Skills:</span><br>';
+    skills.forEach((key) => {
+        var skill = value[key];
+        var attrs = Object.keys(skill.attributes);
+        ret += '<span class="title">' + skill.name + '</span>\n<br>\n';
+        attrs.forEach((innerKey) => {
+            ret += getAttributeStringWithColour(key, skill.attributes[innerKey], index, colour);
+            ret += "<br>";
+        });
     });
     return ret;
 }

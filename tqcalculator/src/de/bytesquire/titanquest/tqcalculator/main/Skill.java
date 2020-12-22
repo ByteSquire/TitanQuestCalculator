@@ -14,7 +14,7 @@ import de.bytesquire.titanquest.tqcalculator.parsers.IconsParser;
 import de.bytesquire.titanquest.tqcalculator.parsers.ModStringsParser;
 import de.bytesquire.titanquest.tqcalculator.parsers.SkillParser;
 
-@JsonIgnoreProperties({ "skill", "buff", "skillTag", "skillDescriptionTag", "modifier", "skillTier", "urlLegacy",
+@JsonIgnoreProperties({ "files", "buff", "skillTag", "skillDescriptionTag", "modifier", "skillTier", "urlLegacy",
         "requiredWeapons", "race" })
 @JsonInclude(Include.NON_NULL)
 public class Skill {
@@ -24,6 +24,7 @@ public class Skill {
     private String mSkillDescription;
     private HashMap<String, Object> mSkillAttributes;
     private HashMap<String, Object> mPetAttributes;
+    private HashMap<String, Object> mPetSkills;
     private String mParentPath;
     private boolean isModifier;
     private String[] mParent;
@@ -44,7 +45,11 @@ public class Skill {
         mSkill.add(aSkill);
         mSkillParser = new SkillParser(aSkill, aParentPath, aMSParser, aIconsParser);
 
-        mSkillName = aMSParser.getTags().get(mSkillParser.getSkillTag());
+        String name;
+        if((name = aMSParser.getTags().get(mSkillParser.getSkillTag())) != null)
+            mSkillName = name;
+        else
+            mSkillName = mSkillParser.getSkillTag();
         mSkillDescription = aMSParser.getTags().get(mSkillParser.getSkillDescriptionTag());
         mSkillIcon = mSkillParser.getSkillIcon();
         mRace = mSkillParser.getRace();
@@ -109,6 +114,9 @@ public class Skill {
                 break;
             case "Pet Attributes:":
                 mPetAttributes = (HashMap<String, Object>) mSkillParser.getAttributes().get(skillAttribute);
+                break;
+            case "Pet Skills:":
+                mPetSkills = (HashMap<String, Object>) mSkillParser.getAttributes().get(skillAttribute);
                 break;
             default:
                 if (skillAttribute.endsWith("Min")) {
@@ -252,7 +260,7 @@ public class Skill {
         this.mParent = mSkillParent;
     }
 
-    public ArrayList<File> getSkill() {
+    public ArrayList<File> getFiles() {
         return mSkill;
     }
 
@@ -284,6 +292,10 @@ public class Skill {
 
     public HashMap<String, Object> getPetAttributes() {
         return mPetAttributes;
+    }
+
+    public HashMap<String, Object> getPetSkills() {
+        return mPetSkills;
     }
 
 }

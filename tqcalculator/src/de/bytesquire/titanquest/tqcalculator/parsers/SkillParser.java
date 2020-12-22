@@ -133,7 +133,7 @@ public class SkillParser {
                     mModifier = tmp.isModifier();
                     if (tmp.getParent() != null)
                         mParentSkill.addAll(Arrays.asList(tmp.getParent()));
-                    mAdditionalFiles.addAll(tmp.getSkill());
+                    mAdditionalFiles.addAll(tmp.getFiles());
                     if (tmp.getRace() != null)
                         mRace = tmp.getRace();
                     return;
@@ -144,9 +144,11 @@ public class SkillParser {
                     for (String file : value.split(";")) {
                         files[i++] = new File(Control.DATABASES_DIR + mParentPath.split("/")[0] + "/database/" + file);
                     }
-                    PetParser tmp = new PetParser(files);
+                    PetParser tmp = new PetParser(files, mParentPath, mMSParser, mIconsParser);
                     mAttributes.put("Pet Attributes:", tmp.getAttributes());
-                    mAdditionalFiles.addAll(Arrays.asList(tmp.getSkills()));
+                    mAttributes.put("Pet Skills:", tmp.getPetSkills());
+                    mAdditionalFiles.addAll(Arrays.asList(tmp.getFiles()));
+                    mAdditionalFiles.addAll(tmp.getAdditionalFiles());
                 }
                 if (attributeName.equals("petBonusName")) {
                     Skill tmp = new Skill(
@@ -155,7 +157,7 @@ public class SkillParser {
                     for (String skillAttribute : tmp.getAttributes().keySet()) {
                         mAttributes.put("Pets: " + skillAttribute, tmp.getAttributes().get(skillAttribute));
                     }
-                    mAdditionalFiles.addAll(tmp.getSkill());
+                    mAdditionalFiles.addAll(tmp.getFiles());
                     return;
                 }
                 if (attributeName.equals("RacialBonusRace")) {

@@ -155,7 +155,7 @@ public class Cleaner {
     }
 
     private void cleanSkill(Skill skill, Mod mod, Mastery mastery) {
-        for (File skillFile : skill.getSkill()) {
+        for (File skillFile : skill.getFiles()) {
             Path originPath = skillFile.toPath();
 //            System.out.println(originPath);
             Path targetPath = Path.of(mod.getModDir().substring(0, mod.getModDir().length() - 1) + "-cleaned/"
