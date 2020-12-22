@@ -78,23 +78,25 @@
 }
 
 .plusButton {
-  bottom: 2.4%;
-  left: 2.7%;
+  bottom: 12px;
+  left: 3%;
   position: absolute;
   width: 7.5%;
   min-width: 37px;
+  max-width: 125px;
   background-color: transparent;
   border: none;
   cursor: pointer;
-  line-height: 8px;
+  line-height: min(max(8px, 0.7vw), 25px);
 }
 
 .allPlusButton {
-  bottom: 4%;
+  bottom: 3%;
   left: 10%;
   position: absolute;
   width: 6%;
   min-width: 40px;
+  max-width: 100px;
   background-color: transparent;
   border: none;
   cursor: pointer;

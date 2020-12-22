@@ -69,7 +69,8 @@ public class SkillParser {
                         .replace("character", "Character").replace("defensive", "Defense")
                         .replace("projectileLaunch", "ProjectileLaunch").replace("projectile", "")
                         .replace("retaliation", "Retaliation").replace("explosion", "Explosion")
-                        .replace("racial", "Racial").replace("spark", "Spark").replace("spawnObjects", "SkillPet");
+                        .replace("racial", "Racial").replace("spark", "Spark").replace("spawnObjects", "SkillPet")
+                        .replace("damage", "Damage").replace("exclusive", "Exclusive");
 
                 if (attributeName.startsWith("skill")) {
                     if (attributeName.equals("skillDependancy")) {

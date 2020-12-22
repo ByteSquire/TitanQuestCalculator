@@ -152,8 +152,6 @@ public class Skill {
                     putAttribute(skillAttribute, attr);
                     break;
                 }
-                if (skillAttribute.contains("{%s1}"))
-                    skillAttribute = skillAttribute.replace("{%s1}", mRace);
                 putAttribute(skillAttribute, mSkillParser.getAttributes().get(skillAttribute));
                 break;
             }
@@ -176,7 +174,7 @@ public class Skill {
         } else if (key.startsWith("pet") || key.startsWith("SkillPet")) {
             if (AttributeNameParser.getMatch(key.replace("pet", "").replace("SkillPet", "")) != null)
                 key = AttributeNameParser.getMatch(key.replace("pet", "").replace("SkillPet", ""));
-        } else if(key.endsWith("Chance")) {
+        } else if (key.endsWith("Chance")) {
             if (AttributeNameParser.getMatch(key.substring(0, key.length() - "Chance".length())) != null)
                 key = key.replace(key.substring(0, key.length() - "Chance".length()),
                         AttributeNameParser.getMatch(key.substring(0, key.length() - "Chance".length())) + " ");
@@ -188,6 +186,12 @@ public class Skill {
             else
                 key = key.substring(0, key.indexOf("{")) + "${value}"
                         + key.substring(key.indexOf("}") + 1, key.length());
+        }
+        if (key.contains("{%s1}")) {
+            if (mRace == null)
+//                mRace = "Race not found";
+                return;
+            key = key.replace("{%s1}", mRace);
         }
         mSkillAttributes.put(key, value);
     }
