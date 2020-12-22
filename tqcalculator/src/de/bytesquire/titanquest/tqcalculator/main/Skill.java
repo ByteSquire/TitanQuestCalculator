@@ -165,8 +165,8 @@ public class Skill {
     }
 
     private void putAttribute(String key, Object value) {
-        if (AttributeNameParser.getMatch(key.replace("skill", "Skill")) != null)
-            key = AttributeNameParser.getMatch(key.replace("skill", "Skill"));
+        if (AttributeNameParser.getMatch(key.replace("skill", "")) != null)
+            key = AttributeNameParser.getMatch(key.replace("skill", ""));
         else if (AttributeNameParser.getMatch(key) != null)
             key = AttributeNameParser.getMatch(key);
         else if (key.endsWith("Duration")) {
@@ -176,6 +176,10 @@ public class Skill {
         } else if (key.startsWith("pet") || key.startsWith("SkillPet")) {
             if (AttributeNameParser.getMatch(key.replace("pet", "").replace("SkillPet", "")) != null)
                 key = AttributeNameParser.getMatch(key.replace("pet", "").replace("SkillPet", ""));
+        } else if(key.endsWith("Chance")) {
+            if (AttributeNameParser.getMatch(key.substring(0, key.length() - "Chance".length())) != null)
+                key = key.replace(key.substring(0, key.length() - "Chance".length()),
+                        AttributeNameParser.getMatch(key.substring(0, key.length() - "Chance".length())) + " ");
         }
         if (!key.contains("${value}") && key.indexOf("{") > -1) {
             if (key.contains("{%+"))
