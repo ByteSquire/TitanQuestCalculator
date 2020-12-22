@@ -16,7 +16,7 @@ function getAttributeString(key, value, index){
     if(value.constructor === Object){
         if(value.min){
             if(value.max)
-                return formatAttribteMinMax(ret, value.min, value.max, index);
+                return formatAttributeMinMax(ret, value.min, value.max, index);
             else
                 return formatAttribute(ret, value.min, index);
         } else if(value.max)
