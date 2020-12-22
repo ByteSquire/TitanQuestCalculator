@@ -1,5 +1,7 @@
 package de.bytesquire.titanquest.tqcalculator.main;
 
+import java.util.ArrayList;
+
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 
@@ -22,6 +24,18 @@ public class MinMaxAttribute {
 
     public void setMax(Object max) {
         this.mMax = max;
+    }
+
+    public void addMin(Object min) {
+        if (this.mMin == null)
+            this.mMin = new ArrayList<Object>();
+        ((ArrayList<Object>) this.mMin).add(min);
+    }
+
+    public void addMax(Object max) {
+        if (this.mMax == null)
+            this.mMax = new ArrayList<Object>();
+        ((ArrayList<Object>) this.mMax).add(max);
     }
 
     @Override

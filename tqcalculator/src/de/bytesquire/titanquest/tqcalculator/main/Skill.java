@@ -23,6 +23,7 @@ public class Skill {
     private String mSkillName;
     private String mSkillDescription;
     private HashMap<String, Object> mSkillAttributes;
+    private HashMap<String, Object> mPetAttributes;
     private String mParentPath;
     private boolean isModifier;
     private String[] mParent;
@@ -105,6 +106,9 @@ public class Skill {
                 break;
             case "meleeOnly":
                 // mRequiredWeapons.append("Melee Only, ");
+                break;
+            case "Pet Attributes:":
+                mPetAttributes = (HashMap<String, Object>) mSkillParser.getAttributes().get(skillAttribute);
                 break;
             default:
                 if (skillAttribute.endsWith("Min")) {
@@ -276,6 +280,10 @@ public class Skill {
 
     public String getRace() {
         return mRace;
+    }
+
+    public HashMap<String, Object> getPetAttributes() {
+        return mPetAttributes;
     }
 
 }

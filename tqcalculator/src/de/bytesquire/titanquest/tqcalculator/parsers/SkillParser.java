@@ -138,6 +138,16 @@ public class SkillParser {
                         mRace = tmp.getRace();
                     return;
                 }
+                if (attributeName.equals("SkillPet")) {
+                    File[] files = new File[value.split(";").length];
+                    int i = 0;
+                    for (String file : value.split(";")) {
+                        files[i++] = new File(Control.DATABASES_DIR + mParentPath.split("/")[0] + "/database/" + file);
+                    }
+                    PetParser tmp = new PetParser(files);
+                    mAttributes.put("Pet Attributes:", tmp.getAttributes());
+                    mAdditionalFiles.addAll(Arrays.asList(tmp.getSkills()));
+                }
                 if (attributeName.equals("petBonusName")) {
                     Skill tmp = new Skill(
                             new File(Control.DATABASES_DIR + mParentPath.split("/")[0] + "/database/" + value), null,

@@ -189,9 +189,11 @@ public class Control {
                                     + ".html");
                             rootSkill = new HashMap<>();
                             rootSkill.put("attributes", skill.getAttributes());
+                            rootSkill.put("petAttributes", skill.getPetAttributes());
                             rootSkill.put("name", skill.getName());
                             rootSkill.put("description", skill.getDescription());
                             rootSkill.put("ArrayList", ArrayList.class);
+                            rootSkill.put("HashMap", HashMap.class);
                             rootSkill.put("requiredWeapons", skill.getRequiredWeapons());
                             Control.skill.process(rootSkill, outSkill);
                         }

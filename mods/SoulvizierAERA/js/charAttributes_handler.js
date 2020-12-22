@@ -1,8 +1,13 @@
 var str = 50;
+var strPercent = 0;
 var int = 50;
+var intPercent = 0;
 var dex = 50;
+var dexPercent = 0;
 var mp = 300;
+var mpPercent = 0;
 var hp = 300;
+var hpPercent = 0;
 
 var pointsSpent = 0;
 
@@ -30,40 +35,16 @@ function calcBoni(attributes, fromLevel, toLevel, event){
                 else
                     value = Number(attributes[x][toLevel-1]);
                 value = Number(value);
-                var attr = x.split("character")[1];
-                switch(attr){
-                case "Strength": str += value;
-                        break;
-                case "Intelligence": int += value;
-                        break;       
-                case "Dexterity": dex += value;
-                        break; 
-                case "Life": hp += value;
-                        break; 
-                case "Mana": mp += value;
-                        break; 
-                }
+                updateAttributes(x, value);
             } else{
                 var value = "-" + attributes[x][fromLevel-1];
                 value = Number(value);
-                var attr = x.split("character")[1];
-                switch(attr){
-                case "Strength": str += value;
-                        break;
-                case "Intelligence": int += value;
-                        break;       
-                case "Dexterity": dex += value;
-                        break; 
-                case "Life": hp += value;
-                        break; 
-                case "Mana": mp += value;
-                        break; 
-                }
+                updateAttributes(x, value);
             }
         });
     } else {
         attrs.forEach((x) => {
-            if(x.startsWith("character")){
+            //if(x.startsWith("character")){
                 if(toLevel > attributes[x].length)
                     toLevel = attributes[x].length;
                 if(fromLevel > attributes[x].length)
@@ -85,29 +66,52 @@ function calcBoni(attributes, fromLevel, toLevel, event){
                         value = "-" + attributes[x][toLevel];
                 }
                 value = Number(value);
-                var attr = x.split("character")[1];
-                switch(attr){
-                case "Strength": str += value;
-                        break;
-                case "Intelligence": int += value;
-                        break;       
-                case "Dexterity": dex += value;
-                        break; 
-                case "Life": hp += value;
-                        break; 
-                case "Mana": mp += value;
-                        break; 
-                }
-            }
+                updateAttributes(x, value);
+            //}
         });
     }
-    document.getElementById("hp").innerText = Math.floor(hp);
-    document.getElementById("mp").innerText = Math.floor(mp);
-    document.getElementById("dex").innerText = Math.floor(dex);
-    document.getElementById("str").innerText = Math.floor(str);
-    document.getElementById("int").innerText = Math.floor(int);
+    updateUI();
 }
 
 function calcLevelReq(){
     document.getElementById("lvl").innerText = 1 + Math.ceil(pointsSpent/3);
+}
+
+function updateAttributes(x, value){
+    var attr = x.split(" ")[1];
+    if(!x.includes("%")){
+        switch(attr){
+        case "Strength": str += value;
+                break;
+        case "Intelligence": int += value;
+                break;       
+        case "Dexterity": dex += value;
+                break; 
+        case "Health": hp += value;
+                break; 
+        case "Energy": mp += value;
+                break; 
+        }
+    } else {
+        switch(attr){
+        case "Strength": strPercent += value;
+                break;
+        case "Intelligence": intPercent += value;
+                break;       
+        case "Dexterity": dexPercent += value;
+                break; 
+        case "Health": hpPercent += value;
+                break; 
+        case "Energy": mpPercent += value;
+                break; 
+        }
+    }
+}
+
+function updateUI(){
+    document.getElementById("hp").innerText = Math.floor(hp)    + "+" + Math.floor(hpPercent) + "%";
+    document.getElementById("mp").innerText = Math.floor(mp)    + "+" + Math.floor(mpPercent) + "%";
+    document.getElementById("dex").innerText = Math.floor(dex)  + "+" + Math.floor(dexPercent) + "%";
+    document.getElementById("str").innerText = Math.floor(str)  + "+" + Math.floor(strPercent) + "%";
+    document.getElementById("int").innerText = Math.floor(int)  + "+" + Math.floor(intPercent) + "%";
 }
