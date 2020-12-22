@@ -61,6 +61,8 @@ public class PetParser {
                     if (attributeName.startsWith("skillName")) {
                         if(value.contains(";"))
                             return;
+                        if(value.contains(" "))
+                            return;
                         Skill tmp = new Skill(
                                 new File(Control.DATABASES_DIR + mParentPath.split("/")[0] + "/database/" + value),
                                 null, mParentPath, mMSParser, mIconsParser);

@@ -28,7 +28,7 @@ public class Skill {
     private String mParentPath;
     private boolean isModifier;
     private String[] mParent;
-    private ArrayList<File> mSkill;
+    private ArrayList<File> mFiles;
     private int mSkillTier;
     private SkillIcon mSkillIcon;
     private StringBuilder mRequiredWeapons;
@@ -41,8 +41,8 @@ public class Skill {
         mSkillAttributes = new HashMap<>();
         mParentPath = aParentPath;
         mParent = aParent;
-        mSkill = new ArrayList<>();
-        mSkill.add(aSkill);
+        mFiles = new ArrayList<>();
+        mFiles.add(aSkill);
         mSkillParser = new SkillParser(aSkill, aParentPath, aMSParser, aIconsParser);
 
         String name;
@@ -60,7 +60,7 @@ public class Skill {
         isModifier = mSkillParser.isModifier();
 
         if (mSkillParser.getAdditionalFiles().size() > 0) {
-            mSkill.addAll(mSkillParser.getAdditionalFiles());
+            mFiles.addAll(mSkillParser.getAdditionalFiles());
         }
 
         mRequiredWeapons = new StringBuilder();
@@ -261,7 +261,7 @@ public class Skill {
     }
 
     public ArrayList<File> getFiles() {
-        return mSkill;
+        return mFiles;
     }
 
     public int getSkillTier() {
