@@ -14,6 +14,11 @@
     <#list attributes as attributeName, attributeValue>
     <#if attributeName!="requiredWeapons">  <tr><td>${attributeName}<td><#if ArrayList.isInstance(attributeValue)><#list attributeValue as value>${value} </#list><#else><#if attributeValue??>${attributeValue}</#if></#if></#if>
     </#list>
+    <#if petAttributes??>
+    <#list petAttributes as attributeName, attributeValue>
+      <tr><td>${attributeName}<td><#if ArrayList.isInstance(attributeValue)><#list attributeValue as value>${value} </#list><#else><#if attributeValue??>${attributeValue}</#if></#if>
+    </#list>
+    </#if>
     </table>
 </body>
 </html>

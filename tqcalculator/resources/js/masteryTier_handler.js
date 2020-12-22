@@ -23,6 +23,11 @@ function masteryTierClicked(panel, index){
     panel.getElementsByClassName("plusButton")[0].innerHTML = panel.getElementsByClassName("plusButton")[0].innerHTML.replace(curr, updated);
     panel.getElementsByClassName("bar")[0].style.height = (index+1) * (80/mod.masteryLevels.length) + "%";
     calcLevelReq();
+    var event;
+    if(curr > updated)
+        event = {"button" : 2};
+    else
+        event = {"button" : 0};
     calcBoni(matteringMastery.masteryAttributes, curr, updated, event);
     updateSkills();
 }
