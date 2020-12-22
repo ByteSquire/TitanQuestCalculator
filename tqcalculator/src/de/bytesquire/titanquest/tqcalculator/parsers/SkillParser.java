@@ -66,7 +66,8 @@ public class SkillParser {
                 }
 
                 attributeName = attributeName.replace("offensive", "Damage").replace("Slow", "Duration")
-                        .replace("character", "Character").replace("defensive", "Defense").replace("projectile", "")
+                        .replace("character", "Character").replace("defensive", "Defense")
+                        .replace("projectileLaunch", "ProjectileLaunch").replace("projectile", "")
                         .replace("retaliation", "Retaliation").replace("explosion", "Explosion")
                         .replace("racial", "Racial").replace("spark", "Spark").replace("spawnObjects", "SkillPet");
 
