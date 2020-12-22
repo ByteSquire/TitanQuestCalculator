@@ -178,7 +178,12 @@ public class Skill {
                 key = AttributeNameParser.getMatch(key.replace("pet", "").replace("SkillPet", ""));
         }
         if (!key.contains("${value}") && key.indexOf("{") > -1) {
-            key = key.substring(0, key.indexOf("{")) + "${value}" + key.substring(key.indexOf("}") + 1, key.length());
+            if (key.contains("{%+"))
+                key = key.substring(0, key.indexOf("{")) + "+${value}"
+                        + key.substring(key.indexOf("}") + 1, key.length());
+            else
+                key = key.substring(0, key.indexOf("{")) + "${value}"
+                        + key.substring(key.indexOf("}") + 1, key.length());
         }
         mSkillAttributes.put(key, value);
     }

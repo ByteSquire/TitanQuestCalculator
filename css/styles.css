@@ -78,10 +78,10 @@
 }
 
 .plusButton {
-  bottom: 2.5%;
+  bottom: 2.4%;
   left: 2.7%;
   position: absolute;
-  width: 8%;
+  width: 7.5%;
   min-width: 37px;
   background-color: transparent;
   border: none;
@@ -98,8 +98,8 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-  line-height: max(9px, 0.8vw);
-  font-size: max(10px, 1vw);
+  line-height: min(max(9px, 0.8vw), 28px);
+  font-size: min(max(10px, 1vw), 40px);
   color: white;
 }
 
@@ -112,8 +112,8 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-  line-height: max(9px, 0.8vw);
-  font-size: max(10px, 1vw);
+  line-height: min(max(9px, 0.8vw), 25px);
+  font-size: min(max(10px, 1vw), 40px);
   color: white;
 }
 
@@ -125,11 +125,11 @@
   width: 6%;
   min-width: 30px;
   max-width: 99px;
-  line-height: max(8px, 0.8vw);
+  line-height: min(max(8px, 0.8vw), 25px);
 }
 
 .buttonText {
-  font-size: max(10px, 1vw);
+  font-size: min(max(10px, 1vw), 40px);
   color: white;
 }
 
@@ -161,7 +161,7 @@
 
 .masteryTier {
   color: white;
-  font-size: max(14px, 1vw);
+  font-size: min(max(14px, 1vw), 40px);
   text-align: center;
   width: 2%;
 }

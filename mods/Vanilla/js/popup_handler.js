@@ -195,8 +195,12 @@ function formatAttribute(key, value){
         key += "</span>";
     }
     if(key.includes("${value}"))
-        return key.replace("${value}", value);
-    return value + key;
+        key = key.replace("${value}", value);
+    else
+        return value + key;
+    if(key.includes("+-"))
+        key = key.replace("+-", "-");
+    return key;
 }
 
 function formatAttributeMinMax(key, valueMin, valueMax){
@@ -205,6 +209,9 @@ function formatAttributeMinMax(key, valueMin, valueMax){
         key += "</span>";
     }
     if(key.includes("${value}"))
-        return key.replace("${value}", valueMin + " ~ " + valueMax);
-    return valueMin + " ~ " + valueMax + key;
+        key = key.replace("${value}", valueMin + " ~ " + valueMax);
+    var ret = valueMin + " ~ " + valueMax + key;
+    if(ret.includes("+-"))
+        ret = ret.replaceAll("+-", "-");
+    return ret;
 }
