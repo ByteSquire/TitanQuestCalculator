@@ -194,6 +194,10 @@ function formatAttribute(key, value){
         key = key.replace("^a", '<span style="color: aqua">')
         key += "</span>";
     }
+    if(key.includes("^o")){
+        key = key.replace("^o", '<span style="color: orange">')
+        key += "</span>";
+    }
     if(key.includes("${value}"))
         key = key.replace("${value}", value);
     else
@@ -206,6 +210,10 @@ function formatAttribute(key, value){
 function formatAttributeMinMax(key, valueMin, valueMax){
     if(key.includes("^a")){
         key = key.replace("^a", '<span style="color: aqua">')
+        key += "</span>";
+    }
+    if(key.includes("^o")){
+        key = key.replace("^o", '<span style="color: orange">')
         key += "</span>";
     }
     if(key.includes("${value}"))
