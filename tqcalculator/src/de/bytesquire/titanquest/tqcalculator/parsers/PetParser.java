@@ -14,12 +14,14 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 
 import de.bytesquire.titanquest.tqcalculator.main.MinMaxAttribute;
+import de.bytesquire.titanquest.tqcalculator.main.Skill;
 
 @JsonIgnoreProperties({ "skills" })
 @JsonInclude(Include.NON_NULL)
 public class PetParser {
 
     private HashMap<String, Object> mAttributes;
+    private HashMap<String, Skill> mPetSkills;
     private File[] mSkills;
 
     public PetParser(File[] files) {

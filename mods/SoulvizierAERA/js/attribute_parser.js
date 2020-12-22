@@ -91,12 +91,11 @@ function formatAttributeMinMax(key, valueMin, valueMax, index){
     return ret;
 }
 
-function formatPetAttributes(value, index) {
+function formatPetAttributes(value, index, colour) {
     var attr = Object.keys(value);
     var ret = '<span style="color: brown">Pet Attributes:</span><br>';
     attr.forEach((key) => {
-        ret += "    ";
-        ret += getAttributeStringWithColour(key, value, currLevel-1, "white");
+        ret += getAttributeStringWithColour(key, value[key], index, colour).replace("+", "");
         ret += "<br>";
     });
     return ret;

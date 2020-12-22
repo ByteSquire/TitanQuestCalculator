@@ -51,7 +51,7 @@ function getPopupString(skill, currLevel, isSkill){
             ret += '<br>\n';
         });
         if(skill.petAttributes)
-            ret += formatPetAttributes(skill.petAttributes, currLevel-1);
+            ret += formatPetAttributes(skill.petAttributes, currLevel-1, colour);
     }
     
     ret += '<br>\n';
@@ -101,7 +101,7 @@ function getPopupString(skill, currLevel, isSkill){
         }
     });
     if(skill.petAttributes)
-        ret += formatPetAttributes(skill.petAttributes, currLevel);
+        ret += formatPetAttributes(skill.petAttributes, currLevel, "white");
     return ret;
 }
 

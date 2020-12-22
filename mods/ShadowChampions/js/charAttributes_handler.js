@@ -23,51 +23,53 @@ function calcBoni(attributes, fromLevel, toLevel, event){
     
     if(event.shiftKey){
         attrs.forEach((x) => {
-            if(toLevel > attributes[x].length)
-                toLevel = attributes[x].length;
-            if(fromLevel > attributes[x].length)
-                fromLevel = attributes[x].length;
+            var _toLevel = toLevel;
+            var _fromLevel = fromLevel;
+            if(_toLevel > attributes[x].length)
+                _toLevel = attributes[x].length;
+            if(_fromLevel > attributes[x].length)
+                _fromLevel = attributes[x].length;
                 
             if(increase){
                 var value;
                 if(fromLevel > 0)
-                    value = Number(attributes[x][toLevel-1]) - Number(attributes[x][fromLevel-1]);
+                    value = Number(attributes[x][_toLevel-1]) - Number(attributes[x][_fromLevel-1]);
                 else
-                    value = Number(attributes[x][toLevel-1]);
+                    value = Number(attributes[x][_toLevel-1]);
                 value = Number(value);
                 updateAttributes(x, value);
             } else{
-                var value = "-" + attributes[x][fromLevel-1];
+                var value = "-" + attributes[x][_fromLevel-1];
                 value = Number(value);
                 updateAttributes(x, value);
             }
         });
     } else {
         attrs.forEach((x) => {
-            //if(x.startsWith("character")){
-                if(toLevel > attributes[x].length)
-                    toLevel = attributes[x].length;
-                if(fromLevel > attributes[x].length)
-                    fromLevel = attributes[x].length;
-                var value;
-                if(increase){
-                    if(lvl-1 > attributes[x].length-1)
-                        return;
-                    if(fromLevel > 0)
-                        value = Number(attributes[x][toLevel-1]) - Number(attributes[x][fromLevel-1]);
-                    else
-                        value = Number(attributes[x][toLevel-1]);
-                } else {
-                    if(lvl-1 >= attributes[x].length-1)
-                        return;
-                    if(toLevel > 0)
-                        value = Number(attributes[x][toLevel-1]) - Number(attributes[x][fromLevel-1]);
-                    else
-                        value = "-" + attributes[x][toLevel];
-                }
-                value = Number(value);
-                updateAttributes(x, value);
-            //}
+            var _toLevel = toLevel;
+            var _fromLevel = fromLevel;
+            if(_toLevel > attributes[x].length)
+                _toLevel = attributes[x].length;
+            if(_fromLevel > attributes[x].length)
+                _fromLevel = attributes[x].length;
+            var value;
+            if(increase){
+                if(lvl-1 > attributes[x].length-1)
+                    return;
+                if(fromLevel > 0)
+                    value = Number(attributes[x][_toLevel-1]) - Number(attributes[x][_fromLevel-1]);
+                else
+                    value = Number(attributes[x][_toLevel-1]);
+            } else {
+                if(lvl-1 >= attributes[x].length-1)
+                    return;
+                if(toLevel > 0)
+                    value = Number(attributes[x][_toLevel-1]) - Number(attributes[x][_fromLevel-1]);
+                else
+                    value = "-" + attributes[x][_toLevel];
+            }
+            value = Number(value);
+            updateAttributes(x, value);
         });
     }
     updateUI();
@@ -79,33 +81,34 @@ function calcLevelReq(){
 
 function updateAttributes(x, value){
     var attr = x.split(" ")[1];
-    if(!x.includes("%")){
-        switch(attr){
-        case "Strength": str += value;
-                break;
-        case "Intelligence": int += value;
-                break;       
-        case "Dexterity": dex += value;
-                break; 
-        case "Health": hp += value;
-                break; 
-        case "Energy": mp += value;
-                break; 
+    if(!x.includes("Regeneration"))
+        if(!x.includes("%")){
+            switch(attr){
+            case "Strength": str += value;
+                    break;
+            case "Intelligence": int += value;
+                    break;       
+            case "Dexterity": dex += value;
+                    break; 
+            case "Health": hp += value;
+                    break; 
+            case "Energy": mp += value;
+                    break; 
+            }
+        } else {
+            switch(attr){
+            case "Strength": strPercent += value;
+                    break;
+            case "Intelligence": intPercent += value;
+                    break;       
+            case "Dexterity": dexPercent += value;
+                    break; 
+            case "Health": hpPercent += value;
+                    break; 
+            case "Energy": mpPercent += value;
+                    break; 
+            }
         }
-    } else {
-        switch(attr){
-        case "Strength": strPercent += value;
-                break;
-        case "Intelligence": intPercent += value;
-                break;       
-        case "Dexterity": dexPercent += value;
-                break; 
-        case "Health": hpPercent += value;
-                break; 
-        case "Energy": mpPercent += value;
-                break; 
-        }
-    }
 }
 
 function updateUI(){
