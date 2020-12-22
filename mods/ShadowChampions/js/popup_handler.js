@@ -29,10 +29,13 @@ function getPopupString(skill, currLevel, isSkill){
     
     if(currLevel > 0){
         ret += '<br>\n';
+        var colour = "gray";
         if(currLevel <= skill.attributes["MaxLevel"]){
             ret += '<span class="nextLevel">Level: ' + currLevel + '</span>\n';
         } else if(currLevel <= skill.attributes["UltimateLevel"]){
             ret += '<span class="nextLevel" style="color: yellow">Level: ' + currLevel + '</span>\n';
+            if(currLevel == skill.attributes["UltimateLevel"])
+                colour = "white";
         }
         ret += '<br>\n';
         var attr = Object.keys(skill.attributes);
@@ -44,7 +47,8 @@ function getPopupString(skill, currLevel, isSkill){
             if(key == "UltimateLevel")
                 return;
             var value = skill.attributes[key];
-            ret += getAttributeStringWithColour(key, value, currLevel-1, "gray");
+            ret += getAttributeStringWithColour(key, value, currLevel-1, colour);
+            ret += '<br>\n';
         });
     }
     
@@ -67,8 +71,32 @@ function getPopupString(skill, currLevel, isSkill){
         if(key == "UltimateLevel")
             return;
         var value = skill.attributes[key];
-        ret += getAttributeStringWithColour(key, value, currLevel, "white");
-        ret += '<br>\n'
+        if(currLevel+1 == 1){
+            ret += getAttributeStringWithColour(key, value, currLevel, "white");
+            ret += '<br>\n';
+            return;
+        }   
+        if (value.constructor === Array){
+            ret += getAttributeStringWithColour(key, value, currLevel, "white");
+            ret += '<br>\n'
+        } else if(value.constructor === Object) {
+            if(value.min){
+                if(value.max){
+                    if(value.max.constructor === Array || value.min.constructor === Array){
+                        ret += getAttributeStringWithColour(key, value, currLevel, "white");
+                        ret += '<br>\n'
+                    }
+                } else {
+                    if(value.min.constructor === Array){
+                        ret += getAttributeStringWithColour(key, value, currLevel, "white");
+                        ret += '<br>\n'
+                    }   
+                }
+            } else if(value.max && value.max.constructor === Array){
+                ret += getAttributeStringWithColour(key, value, currLevel, "white");
+                ret += '<br>\n';
+            }
+        }
     });
     return ret;
 }
