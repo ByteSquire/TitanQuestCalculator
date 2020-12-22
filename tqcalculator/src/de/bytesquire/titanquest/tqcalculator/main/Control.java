@@ -253,6 +253,9 @@ public class Control {
                 Files.copy(Path.of("resources/js/skillPlusButton_handler.js"),
                         Path.of(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/skillPlusButton_handler.js"),
                         StandardCopyOption.REPLACE_EXISTING);
+                Files.copy(Path.of("resources/js/attribute_parser.js"),
+                        Path.of(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/attribute_parser.js"),
+                        StandardCopyOption.REPLACE_EXISTING);
             } catch (IOException | TemplateException e) {
                 e.printStackTrace();
                 mSuccess = false;

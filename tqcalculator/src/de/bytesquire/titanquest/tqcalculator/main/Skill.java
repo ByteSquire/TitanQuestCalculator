@@ -178,6 +178,15 @@ public class Skill {
             if (AttributeNameParser.getMatch(key.substring(0, key.length() - "Chance".length())) != null)
                 key = key.replace(key.substring(0, key.length() - "Chance".length()),
                         AttributeNameParser.getMatch(key.substring(0, key.length() - "Chance".length())) + " ");
+        } else if (key.endsWith("DurationModifier")) {
+            if (AttributeNameParser.getMatch(key.substring(0, key.length() - "DurationModifier".length())) != null)
+                key = "{%+.0f0}% Improved"
+                        + AttributeNameParser.getMatch(key.substring(0, key.length() - "DurationModifier".length()))
+                        + " Duration";
+        } else if (key.endsWith("Modifier")) {
+            if (AttributeNameParser.getMatch(key.substring(0, key.length() - "Modifier".length())) != null)
+                key = key.replace(key.substring(0, key.length() - "Modifier".length()),
+                        AttributeNameParser.getMatch(key.substring(0, key.length() - "Modifier".length())) + " ");
         }
         if (!key.contains("${value}") && key.indexOf("{") > -1) {
             if (key.contains("{%+"))

@@ -15,6 +15,7 @@
     <script type="text/javascript" src="js/skill.js"></script>
     <script type="text/javascript" src="js/masteryTier_handler.js"></script>
     <script type="text/javascript" src="js/skillPlusButton_handler.js"></script>
+    <script type="text/javascript" src="js/attribute_parser.js"></script>
   </head>
 
   <body oncontextmenu="return false">
@@ -65,7 +66,7 @@
                 src="../../MasteryPage/images/masteries/panel/plusbutton.png"
               />
             </button>
-            <button class="allPlusButton" id="allPlusButton1" onmousedown="allPlusClicked(this, event);" onmouseover="allPlusButtonPopup(this, event);" onmouseout="hidePopup();">
+            <button class="allPlusButton" id="allPlusButton2" onmousedown="allPlusClicked(this, event);" onmouseover="allPlusButtonPopup(this, event);" onmouseout="hidePopup();">
               <img
                 class="allPlusButtonImage"
                 src="../../MasteryPage/images/masteries/panel/plusbutton.png"
