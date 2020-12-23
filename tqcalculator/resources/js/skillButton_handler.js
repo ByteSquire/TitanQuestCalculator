@@ -18,14 +18,17 @@ function skillClicked(button, event){
             } else
                 return;
         } else {
-            if (localPointsSpent > 0){
-                if(event.shiftKey){
-                    pointsSpent -= localPointsSpent;
-                    localPointsSpent = 0;
-                } else {
-                    localPointsSpent = localPointsSpent - 1;
-                    pointsSpent--;
-                }
+            if(canDecreaseSkill(button)){
+                if (localPointsSpent > 0){
+                    if(event.shiftKey){
+                        pointsSpent -= localPointsSpent;
+                        localPointsSpent = 0;
+                    } else {
+                        localPointsSpent = localPointsSpent - 1;
+                        pointsSpent--;
+                    }
+                } else
+                    return;
             } else
                 return;
         }

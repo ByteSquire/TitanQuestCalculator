@@ -25,10 +25,10 @@ function getPopupString(skill, currLevel, skipNext){
                 ret += "<br>\n";
             }
     }
-    ret += '<br>\n';
     
     var colour = "white";
     if(currLevel > 0){
+        ret += '<br>\n';
         if(currLevel <= skill.attributes["MaxLevel"]){
             ret += '<span class="nextLevel">Level: ' + currLevel + '</span>\n';
         } else if(currLevel <= skill.attributes["UltimateLevel"]){
@@ -127,9 +127,13 @@ function hidePopup(){
 }
 
 function getPopupStringPet(skill, currLevel){
-    var hasPet = false;
-    var ret = '<span class="title">' + skill.name + '</span>\n<br>\n';
     if(skill.pet){
+        var ret = '<span class="title">' + skill.name + '</span>\n<br>\n';
+        if(currLevel == 0){
+            ret += '<span style="color: red">Invest at last one point into this skill to get info about it\'s pet</span>';
+            return ret;
+        }
+        currLevel -= 1;
         ret += '<table><tr style="vertical-align: top">';
         ret += '<td>';
         ret += formatPetAttributes(skill.pet.attributes, currLevel, "white");

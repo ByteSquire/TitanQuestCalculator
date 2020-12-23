@@ -99,6 +99,7 @@ function skillButtonPopup(button, event){
 }
 
 var petDisplayed = false;
+var lastTop = "unset";
 
 function shiftPressed(event){
     if(event.shiftKey){
@@ -119,9 +120,12 @@ function shiftPressed(event){
             });
         });
         if(!petDisplayed){
+            lastTop = pop.style.top;
             pop.innerHTML = getPopupStringPet(skill, Number(button.innerText.split("/")[0].replaceAll("\n", "")));
             petDisplayed = true;
         } else {
+            pop.style.top = lastTop;
+            pop.style.bottom = "unset";
             pop.innerHTML = getPopupString(skill, Number(button.innerText.split("/")[0].replaceAll("\n", "")));
             petDisplayed = false;
         }
