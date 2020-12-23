@@ -152,6 +152,10 @@ public class Skill {
                     putAttribute(skillAttribute, mSkillParser.getAttributes().get(skillAttribute));
                     break;
                 }
+                if (skillAttribute.endsWith("Qualifier")) {
+                    putAttribute("Protects against: " + skillAttribute.replace("Qualifier", ""), mSkillParser.getAttributes().get(skillAttribute));
+                    break;
+                }
                 if (skillAttribute.startsWith("skill")) {
                     Object attr = mSkillParser.getAttributes().get(skillAttribute);
                     skillAttribute = skillAttribute.replace("skill", "");

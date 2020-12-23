@@ -38,6 +38,8 @@ function formatAttribute(key, value, index){
     } else {
         if(key.includes("${value}"))
             ret = key.replace("${value}", value);
+        else if(value == 1)
+            ret = key;
         else
             ret = value + key;
     }
@@ -107,7 +109,7 @@ function formatPetSkills(value, index, colour) {
     skills.forEach((key) => {
         var skill = value[key];
         ret += "<td>";
-        ret += getPopupString(skill, index, true);
+        ret += getPopupString(skill, index);
         ret += "<br>";
         /*
         var attrs = Object.keys(skill.attributes);

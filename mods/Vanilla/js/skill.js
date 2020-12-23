@@ -89,7 +89,7 @@ function skillButtonPopup(button, event){
             }
         });
     });
-    pop.innerHTML = getPopupString(skill, button.innerText.split("/")[0].replaceAll("\n", ""), true);
+    pop.innerHTML = getPopupString(skill, button.innerText.split("/")[0].replaceAll("\n", ""));
 
     pop.style.display = "block";
     movePopupintoView(pop, pageHeight);

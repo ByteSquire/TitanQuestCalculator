@@ -195,6 +195,7 @@ public class SkillParser {
         case "skipSkillLinking":
         case "instantCast":
         case "targetCaster":
+        case "actorScaleTime":
             return true;
         default:
             return false;

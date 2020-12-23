@@ -87,7 +87,7 @@ function plusButtonPopup(button, event){
     }
     var matteringMastery = (button.parentElement.id == "panel1")? m1 : m2;
     var skill = { attributes: matteringMastery.masteryAttributes, name: matteringMastery.name, description: "" };
-    pop.innerHTML = getPopupString(skill, button.innerText.split("/")[0].replaceAll("\n", ""), false);
+    pop.innerHTML = getPopupString(skill, button.innerText.split("/")[0].replaceAll("\n", ""));
     
     pop.style.display = "block";
     movePopupintoView(pop, pageHeight);
