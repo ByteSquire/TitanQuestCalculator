@@ -46,7 +46,7 @@ public class Skill {
         mSkillParser = new SkillParser(aSkill, aParentPath, aMSParser, aIconsParser);
 
         String name;
-        if((name = aMSParser.getTags().get(mSkillParser.getSkillTag())) != null)
+        if ((name = aMSParser.getTags().get(mSkillParser.getSkillTag())) != null)
             mSkillName = name;
         else
             mSkillName = mSkillParser.getSkillTag();
@@ -153,7 +153,8 @@ public class Skill {
                     break;
                 }
                 if (skillAttribute.endsWith("Qualifier")) {
-                    putAttribute("Protects against: " + skillAttribute.replace("Qualifier", ""), mSkillParser.getAttributes().get(skillAttribute));
+                    putAttribute("Protects against: " + skillAttribute.replace("Qualifier", ""),
+                            mSkillParser.getAttributes().get(skillAttribute));
                     break;
                 }
                 if (skillAttribute.startsWith("skill")) {
@@ -286,8 +287,7 @@ public class Skill {
     }
 
     public void setParent(String name) {
-        if (mParent == null)
-            mParent = new String[] { name };
+        mParent = new String[] { name };
     }
 
     public String getRace() {
@@ -300,6 +300,16 @@ public class Skill {
 
     public HashMap<String, Object> getPetSkills() {
         return mPetSkills;
+    }
+
+    public void setParent(ArrayList<String> validParents) {
+        if(validParents.size() == 0) {
+            mParent = null;
+            return;
+        }
+        String[] tmp = new String[validParents.size()];
+        tmp = validParents.toArray(tmp);
+        setParent(tmp);
     }
 
 }

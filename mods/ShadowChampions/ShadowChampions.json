@@ -23,9 +23,9 @@
       },
       "description" : "The power of the ocean is invoked in your every fourth hit, blasting enemies with a powerful jet of water that instantly turns to ice. {^y}Apply this skill to your left mouse button.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 112,
         "posY" : 403,
-        "posX" : 112
+        "circular" : false
       }
     }, {
       "name" : "Mark of the Trident",
@@ -43,9 +43,9 @@
       },
       "description" : "Mastery of trident-like weapons has been a vital part of all Aquamancers' studies, thus improving their overall ability with using spears.{^n}{^y}Requires a spear.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 552,
         "posY" : 403,
-        "posX" : 552
+        "circular" : true
       }
     }, {
       "name" : "Aquamancer's Bounty",
@@ -66,9 +66,9 @@
       },
       "description" : "Temporarily increase your own power, or permeate an ally with the teachings of aquamancy, granting them control over water, even despite their lack of knowledge in this school of magic.{^n}{^y}Cooldown is reduced with more skill points.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 288,
         "posY" : 403,
-        "posX" : 288
+        "circular" : false
       }
     } ], [ {
       "name" : "Summon Water Spirit",
@@ -79,7 +79,22 @@
         "MaxLevel" : 20,
         "${value} Summon Limit " : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0 ]
       },
-      "description" : "You call upon a water spirit from the depths of an ocean that will follow you and aid you in taking down monsters with cold water. Later levels increase the summon limit.",
+      "petAttributes" : {
+        "+${value} Health" : [ 200.0, 230.0, 261.0, 291.0, 322.0, 352.0, 383.0, 413.0, 443.0, 474.0, 504.0, 535.0, 565.0, 596.0, 626.0, 657.0, 687.0, 717.0, 748.0, 778.0, 809.0, 839.0, 870.0, 900.0 ],
+        "+${value} Strength" : [ 59.0, 59.0, 59.0, 59.0, 59.0, 59.0, 59.0, 59.0, 59.0, 59.0, 59.0, 59.0, 59.0, 59.0, 59.0, 59.0, 59.0, 59.0, 59.0, 59.0, 59.0, 59.0, 59.0, 59.0 ],
+        "+${value} Health Regeneration per second" : [ 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5 ],
+        "+${value} Base Movement Speed" : [ 2.01, 2.01, 2.01, 2.01, 2.01, 2.01, 2.01, 2.01, 2.01, 2.01, 2.01, 2.01, 2.01, 2.01, 2.01, 2.01, 2.01, 2.01, 2.01, 2.01, 2.01, 2.01, 2.01, 2.01 ],
+        "+${value} Intelligence" : [ 57.45, 70.8, 84.15, 97.5, 110.85, 124.2, 137.55, 150.9, 164.25, 177.6, 190.95, 204.3, 217.65, 231.0, 245.4, 260.85, 274.2, 287.55, 305.1, 319.5, 322.0, 325.0, 328.0, 335.0 ],
+        "+${value} Base Casting Speed" : [ 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85 ],
+        "+${value} Energy" : [ 190.0, 212.0, 234.0, 25.0, 279.0, 301.0, 323.0, 345.0, 367.0, 390.0, 412.0, 434.0, 456.0, 475.0, 500.0, 523.0, 545.0, 567.0, 589.0, 611.0, 633.0, 656.0, 678.0, 700.0 ],
+        "+${value} Dexterity" : [ 92.30657, 100.5848, 108.863, 117.1413, 125.4195, 133.6977, 141.976, 150.2542, 158.5324, 166.8107, 175.0889, 183.3671, 191.6454, 199.9236, 208.2018, 216.48, 224.7583, 233.0365, 241.3147, 249.593, 251.0, 253.0, 255.0, 257.0 ],
+        "+${value} Energy Regeneration per second" : [ 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0 ],
+        "Damage" : {
+          "min" : [ 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0 ],
+          "max" : [ 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0 ]
+        },
+        "+${value} Base Attack Speed" : [ 0.79, 0.79, 0.79, 0.79, 0.79, 0.79, 0.79, 0.79, 0.79, 0.79, 0.79, 0.79, 0.79, 0.79, 0.79, 0.79, 0.79, 0.79, 0.79, 0.79, 0.79, 0.79, 0.79, 0.79 ]
+      },
       "petSkills" : {
         "Water Orb" : {
           "name" : "Water Orb",
@@ -194,26 +209,11 @@
           "description" : "Spirits born from enchanted water sources are able to use an enhanced arsenal of spells, alongside a life-leeching ability."
         }
       },
-      "petAttributes" : {
-        "+${value} Health" : [ 200.0, 230.0, 261.0, 291.0, 322.0, 352.0, 383.0, 413.0, 443.0, 474.0, 504.0, 535.0, 565.0, 596.0, 626.0, 657.0, 687.0, 717.0, 748.0, 778.0, 809.0, 839.0, 870.0, 900.0 ],
-        "+${value} Strength" : [ 59.0, 59.0, 59.0, 59.0, 59.0, 59.0, 59.0, 59.0, 59.0, 59.0, 59.0, 59.0, 59.0, 59.0, 59.0, 59.0, 59.0, 59.0, 59.0, 59.0, 59.0, 59.0, 59.0, 59.0 ],
-        "+${value} Health Regeneration per second" : [ 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5 ],
-        "+${value} Base Movement Speed" : [ 2.01, 2.01, 2.01, 2.01, 2.01, 2.01, 2.01, 2.01, 2.01, 2.01, 2.01, 2.01, 2.01, 2.01, 2.01, 2.01, 2.01, 2.01, 2.01, 2.01, 2.01, 2.01, 2.01, 2.01 ],
-        "+${value} Intelligence" : [ 57.45, 70.8, 84.15, 97.5, 110.85, 124.2, 137.55, 150.9, 164.25, 177.6, 190.95, 204.3, 217.65, 231.0, 245.4, 260.85, 274.2, 287.55, 305.1, 319.5, 322.0, 325.0, 328.0, 335.0 ],
-        "+${value} Base Casting Speed" : [ 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85 ],
-        "+${value} Energy" : [ 190.0, 212.0, 234.0, 25.0, 279.0, 301.0, 323.0, 345.0, 367.0, 390.0, 412.0, 434.0, 456.0, 475.0, 500.0, 523.0, 545.0, 567.0, 589.0, 611.0, 633.0, 656.0, 678.0, 700.0 ],
-        "+${value} Dexterity" : [ 92.30657, 100.5848, 108.863, 117.1413, 125.4195, 133.6977, 141.976, 150.2542, 158.5324, 166.8107, 175.0889, 183.3671, 191.6454, 199.9236, 208.2018, 216.48, 224.7583, 233.0365, 241.3147, 249.593, 251.0, 253.0, 255.0, 257.0 ],
-        "+${value} Energy Regeneration per second" : [ 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0 ],
-        "Damage" : {
-          "min" : [ 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0 ],
-          "max" : [ 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0 ]
-        },
-        "+${value} Base Attack Speed" : [ 0.79, 0.79, 0.79, 0.79, 0.79, 0.79, 0.79, 0.79, 0.79, 0.79, 0.79, 0.79, 0.79, 0.79, 0.79, 0.79, 0.79, 0.79, 0.79, 0.79, 0.79, 0.79, 0.79, 0.79 ]
-      },
+      "description" : "You call upon a water spirit from the depths of an ocean that will follow you and aid you in taking down monsters with cold water. Later levels increase the summon limit.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 464,
         "posY" : 341,
-        "posX" : 464
+        "circular" : false
       }
     }, {
       "name" : "Hypothermia",
@@ -232,9 +232,9 @@
       },
       "description" : "Lingering frost is brought upon your enemies, ensuring a slow and certain demise, crippling both the tough and the weak.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 288,
         "posY" : 341,
-        "posX" : 288
+        "circular" : true
       }
     }, {
       "name" : "Shore Uprising",
@@ -252,9 +252,9 @@
       },
       "description" : "Deliver a blow of concentrated water with the pressure capable of breaking bones.{^n}{^y}Cooldown is reduced with more skill points.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 376,
         "posY" : 341,
-        "posX" : 376
+        "circular" : false
       }
     }, {
       "name" : "Environmental Adaptation",
@@ -268,9 +268,9 @@
       },
       "description" : "Your body adapts to living in most climates and conditions; dry land, pollution and even underwater.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 200,
         "posY" : 341,
-        "posX" : 200
+        "circular" : true
       }
     } ], [ {
       "name" : "Rust",
@@ -288,9 +288,9 @@
       },
       "description" : "Concentrated water pulses cause metal armor to rust, almost completely negating its effectiveness.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 112,
         "posY" : 279,
-        "posX" : 112
+        "circular" : true
       }
     }, {
       "name" : "Tsunami Spin",
@@ -313,9 +313,9 @@
       },
       "description" : "A technique reserved to spear-wielders. This trick allows you to hit two enemies twice in a single attack.{^n}{^y}Requires a spear.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 552,
         "posY" : 279,
-        "posX" : 552
+        "circular" : true
       }
     }, {
       "name" : "Engulfment",
@@ -327,9 +327,9 @@
       },
       "description" : "A better understanding of aquamancy permits the extension of the duration of your blessings.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 288,
         "posY" : 279,
-        "posX" : 288
+        "circular" : true
       }
     }, {
       "name" : "Scaly Skin",
@@ -343,9 +343,9 @@
       },
       "description" : "Your skin becomes scaly and resilient, similar to that of a reptile, yet doesn't diminish your agility.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 200,
         "posY" : 279,
-        "posX" : 200
+        "circular" : true
       }
     }, {
       "name" : "Hoarfrost",
@@ -368,9 +368,9 @@
       },
       "description" : "Conjure frost to trap your enemies in a thick layer of ice, preventing them to move or fight back but also protecting them from your own attacks.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 640,
         "posY" : 279,
-        "posX" : 640
+        "circular" : false
       }
     } ], [ {
       "name" : "Rain",
@@ -388,9 +388,9 @@
       },
       "description" : "Cast large torrents of water on a specific zone, assaulting any hostile units with a cold and drenching rain.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 200,
         "posY" : 217,
-        "posX" : 200
+        "circular" : false
       }
     }, {
       "name" : "Wash Out",
@@ -414,9 +414,9 @@
       },
       "description" : "Blast enemies with a destabilizing pulse of water, effectively worsening the victims' fighting skills.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 464,
         "posY" : 217,
-        "posX" : 464
+        "circular" : true
       }
     }, {
       "name" : "Absolute Zero",
@@ -440,9 +440,9 @@
       },
       "description" : "Masterful control over water and ice allows your magic to reach the lowest temperatures.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 288,
         "posY" : 217,
-        "posX" : 288
+        "circular" : true
       }
     }, {
       "name" : "Ire of Storms",
@@ -468,9 +468,9 @@
       },
       "description" : "Heeding the call of the storms, your surging tides, ever increasing in power, are now allied with the wrath of the tempest.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 376,
         "posY" : 217,
-        "posX" : 376
+        "circular" : true
       }
     }, {
       "name" : "Hurricane's Spirit",
@@ -489,9 +489,9 @@
       },
       "description" : "With improved control over the water, cast a small but powerful vortex of water around you, similar to a hurricane, that will disable nearby enemies with its strong, chilling winds.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 640,
         "posY" : 217,
-        "posX" : 640
+        "circular" : false
       }
     } ], [ {
       "name" : "Flash Freeze",
@@ -512,9 +512,9 @@
       },
       "description" : "When using a ranged weapon, imbue your shots with biting cold, capable of freezing and impaling multiple targets at once.{^n}{^y}Requires a ranged weapon.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 112,
         "posY" : 155,
-        "posX" : 112
+        "circular" : true
       }
     }, {
       "name" : "Torrential Flow",
@@ -540,9 +540,9 @@
       },
       "description" : "Invoking rain with strength of a waterfall allows you to crush foes with immense power.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 200,
         "posY" : 155,
-        "posX" : 200
+        "circular" : true
       }
     }, {
       "name" : "Magical Sea Sources",
@@ -559,9 +559,9 @@
       },
       "description" : "Spirits born from enchanted water sources are able to use an enhanced arsenal of spells, alongside a life-leeching ability.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 464,
         "posY" : 155,
-        "posX" : 464
+        "circular" : true
       }
     }, {
       "name" : "Lunge",
@@ -583,9 +583,9 @@
       },
       "description" : "Dive forward and attack violently in melee range, and do so with unexisting cooldown constraints, allowing you to quickly travel around the battleground.{^n}{^y}Requires a melee weapon.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 376,
         "posY" : 155,
-        "posX" : 376
+        "circular" : false
       }
     } ], [ {
       "name" : "Tidal Wave",
@@ -613,9 +613,9 @@
       },
       "description" : "Summon a colossal, circular wave of water around you, violently disabling everyone caught in it.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 288,
         "posY" : 93,
-        "posX" : 288
+        "circular" : false
       }
     }, {
       "name" : "Acid Rain",
@@ -639,9 +639,9 @@
       },
       "description" : "{^g}Skill Modifier{^n}{^w}Toxic and acidic water chips away at your enemies' life force and resistances.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 200,
         "posY" : 93,
-        "posX" : 200
+        "circular" : true
       }
     }, {
       "name" : "Tempest Spear",
@@ -660,9 +660,9 @@
       },
       "description" : "A strong technique only usable by spear-wielders. Learn how to strike an enemy thrice in a row with unmatched speed and tempestuous force.{^n}{^y}Requires a spear.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 552,
         "posY" : 93,
-        "posX" : 552
+        "circular" : true
       }
     }, {
       "name" : "Water Rapids",
@@ -677,9 +677,9 @@
       },
       "description" : "{^g}Skill Modifier{^n}{^w}Mirroring the nature of water, your familiars are as fast as currents, yet as unstable as a lake's surface.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 464,
         "posY" : 93,
-        "posX" : 464
+        "circular" : true
       }
     }, {
       "name" : "Impale",
@@ -700,9 +700,9 @@
       },
       "description" : "Thrust your weapon forward to pierce through your enemies at a blinding speed, which results into lethal bloodbaths.{^n}{^y}Requires a spear.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 376,
         "posY" : 93,
-        "posX" : 376
+        "circular" : true
       }
     }, {
       "name" : "Regenerative Shell",
@@ -723,9 +723,9 @@
       },
       "description" : "Preventively creates an envelope of protective energy, blocking most attacks and reducing potential damage inflicted by hostile sources.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 112,
         "posY" : 93,
-        "posX" : 112
+        "circular" : true
       }
     } ], [ {
       "name" : "Dangerous Waters",
@@ -743,9 +743,9 @@
       },
       "description" : "The indomitable seas submerge your enemies in the coldest waves, freezing their whole bodies.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 288,
         "posY" : 31,
-        "posX" : 288
+        "circular" : true
       }
     }, {
       "name" : "Hydrothermal Explosion",
@@ -789,9 +789,9 @@
       },
       "description" : "Heat the water beneath the soil, causing a geyser to erupt, scorching anything that comes in contact with it.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 464,
         "posY" : 31,
-        "posX" : 464
+        "circular" : false
       }
     }, {
       "name" : "Aphotic Chasm",
@@ -807,9 +807,9 @@
       },
       "description" : "Draw the remaining bits of unexploited power from the deepest abyss of the seas, only accessible to the elite aquamancers, to exhaust and enfeeble monsters with enormous pressure.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 640,
         "posY" : 31,
-        "posX" : 640
+        "circular" : true
       }
     } ] ],
     "masteryAttributes" : {
@@ -832,7 +832,22 @@
         "MaxLevel" : 16,
         "${value} Summon Limit " : [ 1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0, 3.0, 3.0 ]
       },
-      "description" : "Invoke a weak but obedient skeletal pawn to fight for you for a short period of time. Later levels increase the summon limit.",
+      "petAttributes" : {
+        "+${value} Health" : [ 137.0, 153.0, 169.0, 185.0, 201.0, 218.0, 234.0, 250.0, 266.0, 282.0, 298.0, 314.0, 330.0, 346.0, 362.0, 379.0, 395.0, 411.0, 427.0, 443.0 ],
+        "+${value} Strength" : [ 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0 ],
+        "+${value} Health Regeneration per second" : [ 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5 ],
+        "+${value} Base Movement Speed" : [ 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88 ],
+        "+${value} Intelligence" : [ 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0 ],
+        "+${value} Base Casting Speed" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+        "+${value} Energy" : [ 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0 ],
+        "+${value} Dexterity" : [ 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0 ],
+        "+${value} Energy Regeneration per second" : [ 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0 ],
+        "Damage" : {
+          "min" : [ 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0 ],
+          "max" : [ 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0 ]
+        },
+        "+${value} Base Attack Speed" : [ 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89 ]
+      },
       "petSkills" : {
         "Early Grave" : {
           "name" : "Early Grave",
@@ -870,26 +885,11 @@
           }
         }
       },
-      "petAttributes" : {
-        "+${value} Health" : [ 137.0, 153.0, 169.0, 185.0, 201.0, 218.0, 234.0, 250.0, 266.0, 282.0, 298.0, 314.0, 330.0, 346.0, 362.0, 379.0, 395.0, 411.0, 427.0, 443.0 ],
-        "+${value} Strength" : [ 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0 ],
-        "+${value} Health Regeneration per second" : [ 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5 ],
-        "+${value} Base Movement Speed" : [ 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88 ],
-        "+${value} Intelligence" : [ 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0 ],
-        "+${value} Base Casting Speed" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-        "+${value} Energy" : [ 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0 ],
-        "+${value} Dexterity" : [ 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0 ],
-        "+${value} Energy Regeneration per second" : [ 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0 ],
-        "Damage" : {
-          "min" : [ 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0 ],
-          "max" : [ 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0 ]
-        },
-        "+${value} Base Attack Speed" : [ 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89 ]
-      },
+      "description" : "Invoke a weak but obedient skeletal pawn to fight for you for a short period of time. Later levels increase the summon limit.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 640,
         "posY" : 403,
-        "posX" : 640
+        "circular" : false
       }
     }, {
       "name" : "Forbidden Codex",
@@ -902,9 +902,9 @@
       },
       "description" : "Study the archives of the Forbidden Codex, learning how to best utilize all sorts of weapons. Necromancers can put this knowledge into practice, which can ultimately give them an advantage in combat.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 200,
         "posY" : 403,
-        "posX" : 200
+        "circular" : true
       }
     }, {
       "name" : "Banishing Spell",
@@ -934,9 +934,9 @@
       },
       "description" : "This surge of shadow energy effectively defeats the living and the dead alike.{^n}{^y}Cooldown is reduced with more skill points.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 376,
         "posY" : 403,
-        "posX" : 376
+        "circular" : false
       }
     }, {
       "name" : "Cold Hand of Death",
@@ -958,9 +958,9 @@
       },
       "description" : "Cold and chilling magic wraps around the weapons of you and your allies, desecrating the foes touched by them with necrotic power.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 464,
         "posY" : 403,
-        "posX" : 464
+        "circular" : false
       }
     } ], [ {
       "name" : "Summon Undead Archer",
@@ -972,7 +972,22 @@
         "MaxLevel" : 16,
         "${value} Summon Limit " : [ 1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0, 3.0, 3.0 ]
       },
-      "description" : "Invoke a skeletal archer that targets weak points and makes your opponents bleed for a short period of time. Later levels increase the summon limit.",
+      "petAttributes" : {
+        "+${value} Health" : [ 120.0, 135.0, 150.0, 165.0, 180.0, 195.0, 210.0, 225.0, 240.0, 265.0, 280.0, 305.0, 320.0, 335.0, 350.0, 365.0, 380.0, 405.0, 420.0, 435.0 ],
+        "+${value} Strength" : [ 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0 ],
+        "+${value} Health Regeneration per second" : [ 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5 ],
+        "+${value} Base Movement Speed" : [ 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88 ],
+        "+${value} Intelligence" : [ 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0 ],
+        "+${value} Base Casting Speed" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+        "+${value} Energy" : [ 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0, 90.0, 95.0, 100.0, 105.0, 110.0, 115.0, 120.0, 125.0, 130.0, 135.0, 140.0, 145.0 ],
+        "+${value} Dexterity" : [ 68.0, 73.0, 78.0, 83.0, 88.0, 93.0, 93.0, 93.0, 93.0, 93.0, 93.0, 93.0, 93.0, 93.0, 93.0, 93.0, 93.0, 93.0, 93.0, 93.0 ],
+        "+${value} Energy Regeneration per second" : [ 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0 ],
+        "Damage" : {
+          "min" : [ 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0 ],
+          "max" : [ 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0 ]
+        },
+        "+${value} Base Attack Speed" : [ 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89 ]
+      },
       "petSkills" : {
         "Early Grave" : {
           "name" : "Early Grave",
@@ -1037,26 +1052,11 @@
           }
         }
       },
-      "petAttributes" : {
-        "+${value} Health" : [ 120.0, 135.0, 150.0, 165.0, 180.0, 195.0, 210.0, 225.0, 240.0, 265.0, 280.0, 305.0, 320.0, 335.0, 350.0, 365.0, 380.0, 405.0, 420.0, 435.0 ],
-        "+${value} Strength" : [ 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0 ],
-        "+${value} Health Regeneration per second" : [ 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5 ],
-        "+${value} Base Movement Speed" : [ 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88 ],
-        "+${value} Intelligence" : [ 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0 ],
-        "+${value} Base Casting Speed" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-        "+${value} Energy" : [ 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0, 90.0, 95.0, 100.0, 105.0, 110.0, 115.0, 120.0, 125.0, 130.0, 135.0, 140.0, 145.0 ],
-        "+${value} Dexterity" : [ 68.0, 73.0, 78.0, 83.0, 88.0, 93.0, 93.0, 93.0, 93.0, 93.0, 93.0, 93.0, 93.0, 93.0, 93.0, 93.0, 93.0, 93.0, 93.0, 93.0 ],
-        "+${value} Energy Regeneration per second" : [ 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0 ],
-        "Damage" : {
-          "min" : [ 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0 ],
-          "max" : [ 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0 ]
-        },
-        "+${value} Base Attack Speed" : [ 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89 ]
-      },
+      "description" : "Invoke a skeletal archer that targets weak points and makes your opponents bleed for a short period of time. Later levels increase the summon limit.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 640,
         "posY" : 341,
-        "posX" : 640
+        "circular" : false
       }
     }, {
       "name" : "Skull Grenade",
@@ -1084,9 +1084,9 @@
       },
       "description" : "Throw a skull imbued with torturous fear, causing foes to panic, and in turn, becoming easy targets.{^n}{^y}Cooldown is reduced with more skill points.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 112,
         "posY" : 341,
-        "posX" : 112
+        "circular" : false
       }
     }, {
       "name" : "Vanquish Undead",
@@ -1102,9 +1102,9 @@
       },
       "description" : "Learn how to fend off the undead efficiently with a special aura that increases control over them.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 200,
         "posY" : 341,
-        "posX" : 200
+        "circular" : false
       }
     }, {
       "name" : "Early Grave",
@@ -1116,9 +1116,9 @@
       },
       "description" : "Although Necromancers rely on vicious magic, which tortures their foes to death, they always find a way to quicken the process.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 288,
         "posY" : 341,
-        "posX" : 288
+        "circular" : true
       }
     } ], [ {
       "name" : "Summon Undead Wizard",
@@ -1130,7 +1130,22 @@
         "MaxLevel" : 16,
         "${value} Summon Limit " : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0 ]
       },
-      "description" : "Invoke a long-dead wizard that casts powerful spells for a short period of time. Later levels increase the summon limit.",
+      "petAttributes" : {
+        "+${value} Health" : [ 180.0, 200.0, 220.0, 240.0, 260.0, 280.0, 300.0, 320.0, 340.0, 360.0, 380.0, 400.0, 420.0, 440.0, 460.0, 480.0, 500.0, 520.0, 540.0, 560.0 ],
+        "+${value} Strength" : [ 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0 ],
+        "+${value} Health Regeneration per second" : [ 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5 ],
+        "+${value} Base Movement Speed" : [ 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88 ],
+        "+${value} Intelligence" : [ 52.0, 59.0, 66.0, 73.0, 80.0, 87.0, 94.0, 101.0, 110.0, 117.0, 130.0, 137.0, 143.0, 151.0, 162.0, 172.0, 186.0, 201.0, 213.0, 226.0 ],
+        "+${value} Base Casting Speed" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+        "+${value} Energy" : [ 120.0, 135.0, 150.0, 165.0, 180.0, 195.0, 210.0, 240.0, 265.0, 300.0, 325.0, 350.0, 375.0, 400.0, 425.0, 450.0, 475.0, 500.0, 525.0, 550.0 ],
+        "+${value} Dexterity" : [ 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0 ],
+        "+${value} Energy Regeneration per second" : [ 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0 ],
+        "Damage" : {
+          "min" : [ 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0 ],
+          "max" : [ 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0 ]
+        },
+        "+${value} Base Attack Speed" : [ 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89 ]
+      },
       "petSkills" : {
         "Shock" : {
           "name" : "Shock",
@@ -1211,26 +1226,11 @@
           }
         }
       },
-      "petAttributes" : {
-        "+${value} Health" : [ 180.0, 200.0, 220.0, 240.0, 260.0, 280.0, 300.0, 320.0, 340.0, 360.0, 380.0, 400.0, 420.0, 440.0, 460.0, 480.0, 500.0, 520.0, 540.0, 560.0 ],
-        "+${value} Strength" : [ 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0 ],
-        "+${value} Health Regeneration per second" : [ 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5 ],
-        "+${value} Base Movement Speed" : [ 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88 ],
-        "+${value} Intelligence" : [ 52.0, 59.0, 66.0, 73.0, 80.0, 87.0, 94.0, 101.0, 110.0, 117.0, 130.0, 137.0, 143.0, 151.0, 162.0, 172.0, 186.0, 201.0, 213.0, 226.0 ],
-        "+${value} Base Casting Speed" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-        "+${value} Energy" : [ 120.0, 135.0, 150.0, 165.0, 180.0, 195.0, 210.0, 240.0, 265.0, 300.0, 325.0, 350.0, 375.0, 400.0, 425.0, 450.0, 475.0, 500.0, 525.0, 550.0 ],
-        "+${value} Dexterity" : [ 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0 ],
-        "+${value} Energy Regeneration per second" : [ 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0 ],
-        "Damage" : {
-          "min" : [ 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0 ],
-          "max" : [ 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0 ]
-        },
-        "+${value} Base Attack Speed" : [ 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89 ]
-      },
+      "description" : "Invoke a long-dead wizard that casts powerful spells for a short period of time. Later levels increase the summon limit.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 640,
         "posY" : 279,
-        "posX" : 640
+        "circular" : false
       }
     }, {
       "name" : "Impaling Bones",
@@ -1253,9 +1253,9 @@
       },
       "description" : "Raises a row of piercing bone spires that tears your opponents' flesh.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 112,
         "posY" : 279,
-        "posX" : 112
+        "circular" : false
       }
     }, {
       "name" : "Bone Cage",
@@ -1281,9 +1281,9 @@
       },
       "description" : "Snares your opponents in a cage of piercing bones, preventing any movement for a short while.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 288,
         "posY" : 279,
-        "posX" : 288
+        "circular" : false
       }
     }, {
       "name" : "Mana Source",
@@ -1299,9 +1299,9 @@
       },
       "description" : "Grants you the ability to gather magical energy out of seemingly nothing, empowering yourself and allowing you to cast spells tirelessly.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 376,
         "posY" : 279,
-        "posX" : 376
+        "circular" : false
       }
     }, {
       "name" : "Skeletal Armor",
@@ -1313,9 +1313,9 @@
       },
       "description" : "Adding a layer of hardened bones on top of your armor pieces proves itself useful to increase your survivability on the battlefield.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 552,
         "posY" : 279,
-        "posX" : 552
+        "circular" : true
       }
     } ], [ {
       "name" : "Summon Undead Captain",
@@ -1326,7 +1326,23 @@
         "MaxLevel" : 16,
         "${value} Summon Limit " : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ]
       },
-      "description" : "Invoke an ancient commander to inspire its allies for a short period of time.",
+      "petAttributes" : {
+        "+${value} Health" : [ 432.55, 474.0, 516.0, 558.0, 600.0, 643.0, 685.0, 727.0, 769.0, 811.0, 854.0, 896.0, 938.0, 980.0, 1022.0, 1065.0, 1107.0, 1149.0, 1191.0, 1234.0 ],
+        "+${value} Defensive Ability" : [ 5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0, 90.0, 95.0, 100.0 ],
+        "+${value} Strength" : [ 150.0, 150.0, 150.0, 150.0, 150.0, 150.0, 150.0, 150.0, 150.0, 150.0, 150.0, 150.0, 150.0, 150.0, 150.0, 150.0, 150.0, 150.0, 150.0, 150.0 ],
+        "+${value} Health Regeneration per second" : [ 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5 ],
+        "+${value} Base Movement Speed" : [ 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9 ],
+        "+${value} Intelligence" : [ 102.0, 102.0, 102.0, 102.0, 102.0, 102.0, 102.0, 102.0, 102.0, 102.0, 102.0, 102.0, 102.0, 102.0, 102.0, 102.0, 102.0, 102.0, 102.0, 102.0 ],
+        "+${value} Base Casting Speed" : [ 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2 ],
+        "+${value} Energy" : [ 250.0, 250.0, 250.0, 250.0, 250.0, 250.0, 250.0, 250.0, 250.0, 250.0, 250.0, 250.0, 250.0, 250.0, 250.0, 250.0, 250.0, 250.0, 250.0, 250.0 ],
+        "+${value} Dexterity" : [ 136.0, 136.0, 136.0, 136.0, 136.0, 136.0, 136.0, 136.0, 136.0, 136.0, 136.0, 136.0, 136.0, 136.0, 136.0, 136.0, 136.0, 136.0, 136.0, 136.0 ],
+        "+${value} Energy Regeneration per second" : [ 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0 ],
+        "Damage" : {
+          "min" : [ 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0 ],
+          "max" : [ 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0 ]
+        },
+        "+${value} Base Attack Speed" : [ 1.14, 1.14, 1.14, 1.14, 1.14, 1.14, 1.14, 1.14, 1.14, 1.14, 1.14, 1.14, 1.14, 1.14, 1.14, 1.14, 1.14, 1.14, 1.14, 1.14 ]
+      },
       "petSkills" : {
         "Jump Slash" : {
           "name" : "Jump Slash",
@@ -1407,27 +1423,11 @@
           }
         }
       },
-      "petAttributes" : {
-        "+${value} Health" : [ 432.55, 474.0, 516.0, 558.0, 600.0, 643.0, 685.0, 727.0, 769.0, 811.0, 854.0, 896.0, 938.0, 980.0, 1022.0, 1065.0, 1107.0, 1149.0, 1191.0, 1234.0 ],
-        "+${value} Defensive Ability" : [ 5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0, 90.0, 95.0, 100.0 ],
-        "+${value} Strength" : [ 150.0, 150.0, 150.0, 150.0, 150.0, 150.0, 150.0, 150.0, 150.0, 150.0, 150.0, 150.0, 150.0, 150.0, 150.0, 150.0, 150.0, 150.0, 150.0, 150.0 ],
-        "+${value} Health Regeneration per second" : [ 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5 ],
-        "+${value} Base Movement Speed" : [ 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9 ],
-        "+${value} Intelligence" : [ 102.0, 102.0, 102.0, 102.0, 102.0, 102.0, 102.0, 102.0, 102.0, 102.0, 102.0, 102.0, 102.0, 102.0, 102.0, 102.0, 102.0, 102.0, 102.0, 102.0 ],
-        "+${value} Base Casting Speed" : [ 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2 ],
-        "+${value} Energy" : [ 250.0, 250.0, 250.0, 250.0, 250.0, 250.0, 250.0, 250.0, 250.0, 250.0, 250.0, 250.0, 250.0, 250.0, 250.0, 250.0, 250.0, 250.0, 250.0, 250.0 ],
-        "+${value} Dexterity" : [ 136.0, 136.0, 136.0, 136.0, 136.0, 136.0, 136.0, 136.0, 136.0, 136.0, 136.0, 136.0, 136.0, 136.0, 136.0, 136.0, 136.0, 136.0, 136.0, 136.0 ],
-        "+${value} Energy Regeneration per second" : [ 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0 ],
-        "Damage" : {
-          "min" : [ 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0 ],
-          "max" : [ 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0 ]
-        },
-        "+${value} Base Attack Speed" : [ 1.14, 1.14, 1.14, 1.14, 1.14, 1.14, 1.14, 1.14, 1.14, 1.14, 1.14, 1.14, 1.14, 1.14, 1.14, 1.14, 1.14, 1.14, 1.14, 1.14 ]
-      },
+      "description" : "Invoke an ancient commander to inspire its allies for a short period of time.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 640,
         "posY" : 217,
-        "posX" : 640
+        "circular" : false
       }
     }, {
       "name" : "Doom Sealing",
@@ -1453,9 +1453,9 @@
       },
       "description" : "The bone spires, now inhabited by ghostly forces, terrorize and disrupt your opponents' spellcasting.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 112,
         "posY" : 217,
-        "posX" : 112
+        "circular" : true
       }
     }, {
       "name" : "Deathshield",
@@ -1470,9 +1470,9 @@
       },
       "description" : "Improve your ward to give protection from revenants' attacks and to expand reserves of mana.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 200,
         "posY" : 217,
-        "posX" : 200
+        "circular" : true
       }
     }, {
       "name" : "Soul Chill",
@@ -1488,9 +1488,9 @@
       },
       "description" : "Terrorize the very souls of your opponents with a chilling enchantment reserved to the strongest necromancers.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 464,
         "posY" : 217,
-        "posX" : 464
+        "circular" : true
       }
     }, {
       "name" : "Death Ray",
@@ -1514,9 +1514,9 @@
       },
       "description" : "Cast large amounts of necrotic energy into a small area that will soon explode with soul-crushing darkness.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 552,
         "posY" : 217,
-        "posX" : 552
+        "circular" : false
       }
     } ], [ {
       "name" : "Skewer",
@@ -1537,9 +1537,9 @@
       },
       "description" : "The row of sharpened bones becomes more effective at cutting flesh.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 112,
         "posY" : 155,
-        "posX" : 112
+        "circular" : true
       }
     }, {
       "name" : "Gravestone ",
@@ -1551,7 +1551,13 @@
         "MaxLevel" : 10,
         "${value} Summon Limit " : 1
       },
-      "description" : "Leave an enchanted, cursed gravestone as a grim reminder of what awaits your enemies.",
+      "petAttributes" : {
+        "+${value} Health" : [ 450.0, 512.0, 573.0, 635.0, 696.0, 758.0, 819.0, 881.0, 943.0, 1004.0, 1066.0, 1127.0, 1189.0, 1250.0 ],
+        "+${value} Health Regeneration per second" : [ 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0 ],
+        "+${value} Base Casting Speed" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+        "+${value}% Health Regeneration" : [ 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0 ],
+        "+${value} Base Attack Speed" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ]
+      },
       "petSkills" : {
         "Gravestone Aura" : {
           "name" : "Gravestone Aura",
@@ -1583,17 +1589,11 @@
           }
         }
       },
-      "petAttributes" : {
-        "+${value} Health" : [ 450.0, 512.0, 573.0, 635.0, 696.0, 758.0, 819.0, 881.0, 943.0, 1004.0, 1066.0, 1127.0, 1189.0, 1250.0 ],
-        "+${value} Health Regeneration per second" : [ 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0 ],
-        "+${value} Base Casting Speed" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-        "+${value}% Health Regeneration" : [ 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0 ],
-        "+${value} Base Attack Speed" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ]
-      },
+      "description" : "Leave an enchanted, cursed gravestone as a grim reminder of what awaits your enemies.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 200,
         "posY" : 155,
-        "posX" : 200
+        "circular" : false
       }
     }, {
       "name" : "Degeneracy",
@@ -1617,9 +1617,9 @@
       },
       "description" : "Augmented necrotic magic saps the vitality of your ensnared victims.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 288,
         "posY" : 155,
-        "posX" : 288
+        "circular" : true
       }
     }, {
       "name" : "Reaper's Avatar",
@@ -1633,9 +1633,9 @@
       },
       "description" : "Further embody the emblem of death and claim lives with unrivaled efficiency.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 464,
         "posY" : 155,
-        "posX" : 464
+        "circular" : true
       }
     }, {
       "name" : "Eternal Slumber",
@@ -1656,9 +1656,9 @@
       },
       "description" : "The final hour has come, and your enemies feel a cold, painful embrace that will carry them to their eternal rest.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 552,
         "posY" : 155,
-        "posX" : 552
+        "circular" : true
       }
     } ], [ {
       "name" : "Ossein Recovery",
@@ -1671,9 +1671,9 @@
       },
       "description" : "Fortify the bones of allied entities and render them more resistant to all blows.{^n}{^a}Cannot be dispelled.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 640,
         "posY" : 93,
-        "posX" : 640
+        "circular" : false
       }
     }, {
       "name" : "Soulflaying Magic",
@@ -1695,9 +1695,9 @@
       },
       "description" : "{^g}Skill Modifier{^n}{^w}Allows you to trade off all the physical pain for spiritual dolor, effectively increasing the damage done to your opponents' spirits but also decreases the damage done to their bodies.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 112,
         "posY" : 93,
-        "posX" : 112
+        "circular" : true
       }
     }, {
       "name" : "Impenetrable Ossuary",
@@ -1714,9 +1714,9 @@
       },
       "description" : "{^g}Skill Modifier{^n}{^w}The bone cage becomes much harder to break, prolonging its duration, yet inevitably protecting the enemies trapped inside.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 288,
         "posY" : 93,
-        "posX" : 288
+        "circular" : true
       }
     }, {
       "name" : "Spellbound Souls",
@@ -1729,9 +1729,9 @@
       },
       "description" : "Your countless victims are bound to your supremacy, obliged to serve you as a ward from incoming attacks.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 200,
         "posY" : 93,
-        "posX" : 200
+        "circular" : true
       }
     }, {
       "name" : "Devour Soul",
@@ -1758,9 +1758,9 @@
       },
       "description" : "A power from the darkness that allows you to destroy a soul in an instant and use its energy to recover your own.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 552,
         "posY" : 93,
-        "posX" : 552
+        "circular" : false
       }
     } ], [ {
       "name" : "Necromania",
@@ -1777,9 +1777,9 @@
       },
       "description" : "Awakening the undead makes their past regrets and vengeful desires reappear.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 640,
         "posY" : 31,
-        "posX" : 640
+        "circular" : false
       }
     }, {
       "name" : "Energy Rush",
@@ -1796,9 +1796,9 @@
       },
       "description" : "Overflowing with energy, your spells grow much more potent for a short period of time.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 376,
         "posY" : 31,
-        "posX" : 376
+        "circular" : true
       }
     } ] ],
     "masteryAttributes" : {
@@ -1820,9 +1820,9 @@
       },
       "description" : "You hit your foes precisely where it causes the most damage, and in turn, you become very efficient at dismantling mechanical devices.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 112,
         "posY" : 403,
-        "posX" : 112
+        "circular" : true
       }
     }, {
       "name" : "Poison Weapons",
@@ -1849,9 +1849,9 @@
       },
       "description" : "Profound knowledge of alchemy allowed you to develop a potent poison that brings deadly effects in mere seconds.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 288,
         "posY" : 403,
-        "posX" : 288
+        "circular" : false
       }
     }, {
       "name" : "Build Automaton",
@@ -1862,7 +1862,25 @@
         "MaxLevel" : 20,
         "${value} Summon Limit " : 1
       },
-      "description" : "Use scrap metal pieces to form a fully customizable battle automaton that obeys your orders and proves itself immensely powerful in battle.",
+      "petAttributes" : {
+        "+${value} Defensive Ability" : [ 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0 ],
+        "+${value} Base Movement Speed" : [ 1.405, 1.405, 1.405, 1.405, 1.405, 1.405, 1.405, 1.405, 1.405, 1.405, 1.405, 1.405, 1.405, 1.405, 1.405, 1.405, 1.405, 1.405, 1.405, 1.405, 1.405, 1.405, 1.405, 1.405 ],
+        "+${value} Intelligence" : [ 90.0, 90.0, 90.0, 95.0, 100.0, 104.0, 107.0, 110.0, 114.0, 117.0, 120.0, 123.0, 128.0, 131.0, 134.0, 137.0, 140.0, 140.0, 143.0, 143.0, 145.0, 146.0, 147.0, 148.0 ],
+        "+${value} Energy Regeneration per second" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+        "+${value} Base Attack Speed" : [ 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8 ],
+        "+${value} Health" : [ 556.4443, 634.0, 713.0, 791.0, 870.0, 948.0, 1027.0, 1106.0, 1185.0, 1263.0, 1342.0, 1420.0, 1499.0, 1577.0, 1657.0, 1735.0, 1814.0, 1892.0, 1971.0, 2049.0, 2129.0, 2207.0, 2286.0, 2364.0 ],
+        "+${value} Strength" : [ 140.0, 145.0, 150.0, 156.0, 162.0, 167.0, 172.0, 176.0, 181.0, 185.0, 190.0, 195.0, 200.0, 204.0, 209.0, 214.0, 219.0, 221.0, 225.0, 230.0, 234.0, 238.0, 242.0, 246.0 ],
+        "+${value} Offensive Ability" : [ 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0 ],
+        "+${value} Health Regeneration per second" : [ 3.0, 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0, 51.0, 54.0, 57.0, 60.0, 63.0, 66.0, 69.0, 72.0 ],
+        "+${value} Base Casting Speed" : [ 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3 ],
+        "+${value} Energy" : [ 150.0, 157.5, 165.375, 173.6438, 184.0624, 195.1061, 206.8125, 221.2894, 236.7796, 248.6186, 268.8064, 284.9348, 302.0309, 317.1324, 336.1604, 356.33, 377.7098, 400.3724, 420.391, 445.6145, 462.0, 484.0, 505.0, 525.0 ],
+        "+${value}% Movement Speed" : [ 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0 ],
+        "+${value} Dexterity" : [ 153.0368, 155.5456, 158.0544, 165.5808, 173.1072, 179.3792, 185.6512, 191.9232, 198.1952, 204.4672, 210.7392, 217.0112, 223.2832, 229.5552, 235.8272, 242.0992, 248.3712, 250.88, 257.152, 263.424, 267.0, 271.0, 275.0, 280.0 ],
+        "Damage" : {
+          "min" : [ 9.0, 13.0, 17.0, 21.0, 25.0, 29.0, 33.0, 37.0, 41.0, 45.0, 49.0, 53.0, 57.0, 61.0, 65.0, 69.0, 73.0, 77.0, 81.0, 85.0, 73.0, 77.0, 85.0, 81.0 ],
+          "max" : [ 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 64.0, 68.0, 72.0, 76.0, 80.0, 84.0, 88.0, 76.0, 80.0, 88.0, 84.0 ]
+        }
+      },
       "petSkills" : {
         "Resilient Plating" : {
           "name" : "Resilient Plating",
@@ -1969,29 +1987,11 @@
           }
         }
       },
-      "petAttributes" : {
-        "+${value} Defensive Ability" : [ 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0 ],
-        "+${value} Base Movement Speed" : [ 1.405, 1.405, 1.405, 1.405, 1.405, 1.405, 1.405, 1.405, 1.405, 1.405, 1.405, 1.405, 1.405, 1.405, 1.405, 1.405, 1.405, 1.405, 1.405, 1.405, 1.405, 1.405, 1.405, 1.405 ],
-        "+${value} Intelligence" : [ 90.0, 90.0, 90.0, 95.0, 100.0, 104.0, 107.0, 110.0, 114.0, 117.0, 120.0, 123.0, 128.0, 131.0, 134.0, 137.0, 140.0, 140.0, 143.0, 143.0, 145.0, 146.0, 147.0, 148.0 ],
-        "+${value} Energy Regeneration per second" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-        "+${value} Base Attack Speed" : [ 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8 ],
-        "+${value} Health" : [ 556.4443, 634.0, 713.0, 791.0, 870.0, 948.0, 1027.0, 1106.0, 1185.0, 1263.0, 1342.0, 1420.0, 1499.0, 1577.0, 1657.0, 1735.0, 1814.0, 1892.0, 1971.0, 2049.0, 2129.0, 2207.0, 2286.0, 2364.0 ],
-        "+${value} Strength" : [ 140.0, 145.0, 150.0, 156.0, 162.0, 167.0, 172.0, 176.0, 181.0, 185.0, 190.0, 195.0, 200.0, 204.0, 209.0, 214.0, 219.0, 221.0, 225.0, 230.0, 234.0, 238.0, 242.0, 246.0 ],
-        "+${value} Offensive Ability" : [ 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0 ],
-        "+${value} Health Regeneration per second" : [ 3.0, 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0, 51.0, 54.0, 57.0, 60.0, 63.0, 66.0, 69.0, 72.0 ],
-        "+${value} Base Casting Speed" : [ 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3 ],
-        "+${value} Energy" : [ 150.0, 157.5, 165.375, 173.6438, 184.0624, 195.1061, 206.8125, 221.2894, 236.7796, 248.6186, 268.8064, 284.9348, 302.0309, 317.1324, 336.1604, 356.33, 377.7098, 400.3724, 420.391, 445.6145, 462.0, 484.0, 505.0, 525.0 ],
-        "+${value}% Movement Speed" : [ 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0 ],
-        "+${value} Dexterity" : [ 153.0368, 155.5456, 158.0544, 165.5808, 173.1072, 179.3792, 185.6512, 191.9232, 198.1952, 204.4672, 210.7392, 217.0112, 223.2832, 229.5552, 235.8272, 242.0992, 248.3712, 250.88, 257.152, 263.424, 267.0, 271.0, 275.0, 280.0 ],
-        "Damage" : {
-          "min" : [ 9.0, 13.0, 17.0, 21.0, 25.0, 29.0, 33.0, 37.0, 41.0, 45.0, 49.0, 53.0, 57.0, 61.0, 65.0, 69.0, 73.0, 77.0, 81.0, 85.0, 73.0, 77.0, 85.0, 81.0 ],
-          "max" : [ 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 64.0, 68.0, 72.0, 76.0, 80.0, 84.0, 88.0, 76.0, 80.0, 88.0, 84.0 ]
-        }
-      },
+      "description" : "Use scrap metal pieces to form a fully customizable battle automaton that obeys your orders and proves itself immensely powerful in battle.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 200,
         "posY" : 403,
-        "posX" : 200
+        "circular" : false
       }
     }, {
       "name" : "Archive Studies",
@@ -2004,9 +2004,9 @@
       },
       "description" : "After reading thousands of volumes and tomes, you hold the knowledge of the world in your hands, granting you increased cunning and intelligence.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 552,
         "posY" : 403,
-        "posX" : 552
+        "circular" : true
       }
     } ], [ {
       "name" : "Nature Familiarity",
@@ -2018,9 +2018,9 @@
       },
       "description" : "Your past studies on biology prove useful during your journey, when it comes to knowing how to better deal with beasts and plants alike.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 464,
         "posY" : 341,
-        "posX" : 464
+        "circular" : true
       }
     }, {
       "name" : "Electrical Field",
@@ -2043,9 +2043,9 @@
       },
       "description" : "Cast a zone of electrifying energy, damaging enemies who find themselves caught in its radius.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 376,
         "posY" : 341,
-        "posX" : 376
+        "circular" : false
       }
     }, {
       "name" : "Sprockets",
@@ -2059,9 +2059,9 @@
       },
       "description" : "Study closely the plans of your automaton to figure new possible improvements to speed up its movements.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 200,
         "posY" : 341,
-        "posX" : 200
+        "circular" : true
       }
     }, {
       "name" : "Technological Advancement",
@@ -2075,9 +2075,9 @@
       },
       "description" : "Your knowledge and innovation give your weapons and gear an edge over your opponents.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 112,
         "posY" : 341,
-        "posX" : 112
+        "circular" : true
       }
     } ], [ {
       "name" : "Electrodynamics",
@@ -2099,9 +2099,9 @@
       },
       "description" : "{^g}Skill Modifier{^n}{^w}Craft a more potent variant of the electrical net that discharges quicker and needs more preparation time.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 376,
         "posY" : 279,
-        "posX" : 376
+        "circular" : true
       }
     }, {
       "name" : "Corrode",
@@ -2116,9 +2116,9 @@
       },
       "description" : "Enhance the poison with burning acid that melts both flesh and bones.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 288,
         "posY" : 279,
-        "posX" : 288
+        "circular" : true
       }
     }, {
       "name" : "Atomic Burst",
@@ -2143,9 +2143,9 @@
       },
       "description" : "An atom-powered beam, infused with the power of electricity and poison, bounces from target to target at lightning speed. {^n}{^y}Scales infinitely beyond the maximum level.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 112,
         "posY" : 279,
-        "posX" : 112
+        "circular" : false
       }
     }, {
       "name" : "Build Bolt Trap",
@@ -2165,7 +2165,14 @@
         "ProjectileMissTimeToLive" : 30.0,
         "m Radius" : 1.0
       },
-      "description" : "Create a durable trap, which shoots poisonous piercing projectiles in all directions. Later levels increase the summon limit.",
+      "petAttributes" : {
+        "+${value} Health" : [ 200.0, 246.0, 292.0, 338.0, 385.0, 431.0, 477.0, 523.0, 569.0, 615.0, 662.0, 708.0, 754.0, 800.0 ],
+        "+${value} Base Movement Speed" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+        "+${value} Base Casting Speed" : [ 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3 ],
+        "+${value} Energy" : [ 150.0, 177.0, 204.0, 231.0, 258.0, 285.0, 312.0, 338.0, 365.0, 392.0, 419.0, 446.0, 473.0, 500.0 ],
+        "+${value} Energy Regeneration per second" : [ 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0 ],
+        "+${value} Base Attack Speed" : [ 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3 ]
+      },
       "petSkills" : {
         "Build Bolt Trap" : {
           "name" : "Build Bolt Trap",
@@ -2201,18 +2208,11 @@
           }
         }
       },
-      "petAttributes" : {
-        "+${value} Health" : [ 200.0, 246.0, 292.0, 338.0, 385.0, 431.0, 477.0, 523.0, 569.0, 615.0, 662.0, 708.0, 754.0, 800.0 ],
-        "+${value} Base Movement Speed" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-        "+${value} Base Casting Speed" : [ 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3 ],
-        "+${value} Energy" : [ 150.0, 177.0, 204.0, 231.0, 258.0, 285.0, 312.0, 338.0, 365.0, 392.0, 419.0, 446.0, 473.0, 500.0 ],
-        "+${value} Energy Regeneration per second" : [ 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0 ],
-        "+${value} Base Attack Speed" : [ 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3 ]
-      },
+      "description" : "Create a durable trap, which shoots poisonous piercing projectiles in all directions. Later levels increase the summon limit.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 464,
         "posY" : 279,
-        "posX" : 464
+        "circular" : false
       }
     }, {
       "name" : "Emergency Plan",
@@ -2243,9 +2243,9 @@
       },
       "description" : "In case things don't go according to plan, this smokescreen allows you to escape almost any situation.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 552,
         "posY" : 279,
-        "posX" : 552
+        "circular" : false
       }
     } ], [ {
       "name" : "Ingenuity",
@@ -2257,9 +2257,9 @@
       },
       "description" : "With great experience, you learn how to do more with less resources.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 552,
         "posY" : 217,
-        "posX" : 552
+        "circular" : true
       }
     }, {
       "name" : "Powered Weapons",
@@ -2275,9 +2275,9 @@
       },
       "description" : "{^g}Skill Modifier{^n}{^w}Invent a method of constantly charging your blade. Liquids, however, won't sustain on the electrified surface as well as on bright iron.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 288,
         "posY" : 217,
-        "posX" : 288
+        "circular" : true
       }
     }, {
       "name" : "Spinning Gears",
@@ -2303,9 +2303,9 @@
       },
       "description" : "Implement rotating gears, allowing your automaton to attack multiple enemies at once.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 200,
         "posY" : 217,
-        "posX" : 200
+        "circular" : true
       }
     }, {
       "name" : "Mutagen Prototype",
@@ -2338,9 +2338,9 @@
       },
       "description" : "An injection of this serum empowers the attacks of its user with vicious poison, however, the dangerous substance filling their bodies lowers the odds of their survival. Use with caution.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 112,
         "posY" : 217,
-        "posX" : 112
+        "circular" : false
       }
     }, {
       "name" : "Chemical Explosion",
@@ -2366,9 +2366,9 @@
       },
       "description" : "Various chemicals react violently when mixed together and produce an explosion of dangerous acid.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 640,
         "posY" : 217,
-        "posX" : 640
+        "circular" : false
       }
     } ], [ {
       "name" : "Magnetize",
@@ -2388,9 +2388,9 @@
       },
       "description" : "The strong magnetism inside the field prevents enemies from leaving it, alongside an increase in electrical damage it deals.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 376,
         "posY" : 155,
-        "posX" : 376
+        "circular" : true
       }
     }, {
       "name" : "Antidote",
@@ -2406,9 +2406,9 @@
       },
       "description" : "Mastering the art of elixir-making, you are able to create an antidote which protects you from toxins and life-decaying attacks.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 288,
         "posY" : 155,
-        "posX" : 288
+        "circular" : true
       }
     }, {
       "name" : "Radioactive Core",
@@ -2432,9 +2432,9 @@
       },
       "description" : "Install a core of radioactive energy at the center of your automaton, causing irreparable damage to anyone standing too close.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 200,
         "posY" : 155,
-        "posX" : 200
+        "circular" : true
       }
     }, {
       "name" : "Build Electric Trap",
@@ -2455,7 +2455,14 @@
         "ProjectileMissTimeToLive" : 30.0,
         "m Radius" : 1.0
       },
-      "description" : "Create a durable trap, which shoots stunning, charged projectiles, splitting into smaller fragments on contact. Later levels increase the summon limit.",
+      "petAttributes" : {
+        "+${value} Health" : [ 200.0, 246.0, 292.0, 338.0, 385.0, 431.0, 477.0, 526.0, 569.0, 615.0, 662.0, 708.0, 754.0, 800.0 ],
+        "+${value} Base Movement Speed" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+        "+${value} Base Casting Speed" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+        "+${value} Energy" : [ 160.0, 188.0, 216.0, 245.0, 273.0, 301.0, 330.0, 357.0, 385.0, 414.0, 442.0, 470.0, 499.0, 527.0 ],
+        "+${value} Energy Regeneration per second" : [ 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0 ],
+        "+${value} Base Attack Speed" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ]
+      },
       "petSkills" : {
         "Resilient Plating" : {
           "name" : "Resilient Plating",
@@ -2495,18 +2502,11 @@
           "description" : "Create a durable trap, which shoots stunning, charged projectiles, splitting into smaller fragments on contact. Later levels increase the summon limit."
         }
       },
-      "petAttributes" : {
-        "+${value} Health" : [ 200.0, 246.0, 292.0, 338.0, 385.0, 431.0, 477.0, 526.0, 569.0, 615.0, 662.0, 708.0, 754.0, 800.0 ],
-        "+${value} Base Movement Speed" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-        "+${value} Base Casting Speed" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-        "+${value} Energy" : [ 160.0, 188.0, 216.0, 245.0, 273.0, 301.0, 330.0, 357.0, 385.0, 414.0, 442.0, 470.0, 499.0, 527.0 ],
-        "+${value} Energy Regeneration per second" : [ 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0 ],
-        "+${value} Base Attack Speed" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ]
-      },
+      "description" : "Create a durable trap, which shoots stunning, charged projectiles, splitting into smaller fragments on contact. Later levels increase the summon limit.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 464,
         "posY" : 155,
-        "posX" : 464
+        "circular" : false
       }
     }, {
       "name" : "Dazing Bacteria",
@@ -2536,9 +2536,9 @@
       },
       "description" : "Organisms infected by dangerous bacteria are afflicted with terrible side effects that make fighting a much harder task.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 640,
         "posY" : 155,
-        "posX" : 640
+        "circular" : true
       }
     } ], [ {
       "name" : "Miracle Solution",
@@ -2551,9 +2551,9 @@
       },
       "description" : "The best savants are resourceful and can achieve wonders with their skills.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 552,
         "posY" : 93,
-        "posX" : 552
+        "circular" : true
       }
     }, {
       "name" : "EMP",
@@ -2576,9 +2576,9 @@
       },
       "description" : "The automaton generates its own energy and can project stored electricity in the form of an electromagnetic pulse; the implosion severely electrifies anyone caught in the radius and disrupts any positive buffs.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 200,
         "posY" : 93,
-        "posX" : 200
+        "circular" : true
       }
     }, {
       "name" : "Advanced Armor Craftsmanship",
@@ -2591,9 +2591,9 @@
       },
       "description" : "Develop your skills in steel-working by crafting customized armor parts for your familiars' protection. Those armor pieces are perfectly adjusted to them and will not slow them down.{^n}{^a}Cannot be dispelled.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 464,
         "posY" : 93,
-        "posX" : 464
+        "circular" : false
       }
     }, {
       "name" : "Hazardous Alteration",
@@ -2608,9 +2608,9 @@
       },
       "description" : "{^g}Skill Modifier{^n}{^w}The mutagen's effects last for much longer, however it doesn't come without drawbacks to the user.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 112,
         "posY" : 93,
-        "posX" : 112
+        "circular" : true
       }
     }, {
       "name" : "Nanovirus",
@@ -2646,9 +2646,9 @@
       },
       "description" : "Send out nanomachines, which implant themselves in the heads your opponents, damaging their mind and causing long-lasting injuries.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 376,
         "posY" : 93,
-        "posX" : 376
+        "circular" : false
       }
     } ], [ {
       "name" : "Black Widow",
@@ -2678,9 +2678,9 @@
       },
       "description" : "Even the smallest dose of this substance heavily cripples anyone struck by a weapon covered in it.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 200,
         "posY" : 31,
-        "posX" : 200
+        "circular" : false
       }
     }, {
       "name" : "Last Stage",
@@ -2696,9 +2696,9 @@
       },
       "description" : "Ill and weak, your enemies can already feel the reaper's touch.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 376,
         "posY" : 31,
-        "posX" : 376
+        "circular" : true
       }
     } ] ],
     "masteryAttributes" : {
@@ -2722,9 +2722,9 @@
       },
       "description" : "Increased physical strength allows you to use heavy armor and lift your shield with less effort, thus making its usage more efficient.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 464,
         "posY" : 403,
-        "posX" : 464
+        "circular" : true
       }
     }, {
       "name" : "Block",
@@ -2743,9 +2743,9 @@
       },
       "description" : "For a brief moment, protect yourself inside an unbreakable wall of stone, nullifying all incoming damage. The enemies who attempt to attack you may get momentarily stunned.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 288,
         "posY" : 403,
-        "posX" : 288
+        "circular" : false
       }
     }, {
       "name" : "Boulder Toss",
@@ -2770,9 +2770,9 @@
       },
       "description" : "Quickly bring dirt and rocky mass together to form a large boulder and hurl it at your opponents.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 200,
         "posY" : 403,
-        "posX" : 200
+        "circular" : false
       }
     } ], [ {
       "name" : "Staggering Force",
@@ -2796,9 +2796,9 @@
       },
       "description" : "Geomancers' remarkable display of physical strength is capable of grinding bones into mere dust.{^n}{^y}Requires an axe or a club.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 112,
         "posY" : 341,
-        "posX" : 112
+        "circular" : true
       }
     }, {
       "name" : "Sharpstone Veil",
@@ -2834,9 +2834,9 @@
       },
       "description" : "A set of razor-sharp rocks quickly orbits around you, reducing incoming damage and injuring nearby opponents.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 376,
         "posY" : 341,
-        "posX" : 376
+        "circular" : false
       }
     }, {
       "name" : "Aftershock",
@@ -2851,9 +2851,9 @@
       },
       "description" : "{^g}Skill Modifier{^n}{^w}Extends the duration of the stone barrier briefly, granting it a painful revenge on those who strike it. However, it will consume your entire reserve of energy.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 288,
         "posY" : 341,
-        "posX" : 288
+        "circular" : true
       }
     }, {
       "name" : "Shatter",
@@ -2876,9 +2876,9 @@
       },
       "description" : "This shield technique can hit multiple targets in front of you, dealing high damage and incapacitating their skills. {^n}{^y}Requires a shield.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 552,
         "posY" : 341,
-        "posX" : 552
+        "circular" : false
       }
     } ], [ {
       "name" : "Worldbuilder's Aura",
@@ -2899,9 +2899,9 @@
       },
       "description" : "Connecting to the very core of nature serves as both a protective ward and an empowering essence.{^n}{^a}Cannot be dispelled.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 552,
         "posY" : 279,
-        "posX" : 552
+        "circular" : false
       }
     }, {
       "name" : "Summon Stone Golem",
@@ -2912,7 +2912,19 @@
         "MaxLevel" : 20,
         "${value} Summon Limit " : 1
       },
-      "description" : "Give life to mere pieces of stone and form a powerful golem that will fight by your side.",
+      "petAttributes" : {
+        "+${value} Health" : [ 656.5, 698.0, 740.0, 783.0, 825.0, 868.0, 910.0, 953.0, 995.0, 1037.0, 1080.0, 1122.0, 1165.0, 1207.0, 1250.0, 1292.0, 1335.0, 1377.0, 1419.0, 1462.0, 1504.0, 1547.0, 1589.0, 1632.0 ],
+        "+${value} Strength" : [ 178.0, 182.0, 186.0, 190.0, 194.0, 198.0, 208.0, 218.0, 228.0, 238.0, 248.0, 258.0, 268.0, 278.0, 288.0, 298.0, 308.0, 319.0, 328.0, 338.0, 348.0, 358.0, 368.0, 378.0 ],
+        "+${value} Offensive Ability" : [ 3.0, 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0, 51.0, 54.0, 57.0, 60.0, 63.0, 66.0, 69.0, 72.0 ],
+        "+${value} Health Regeneration per second" : [ 8.0, 9.5, 11.0, 12.5, 14.0, 15.5, 17.0, 18.5, 20.0, 21.5, 23.0, 24.5, 26.0, 27.5, 29.0, 30.5, 32.0, 33.5, 35.0, 36.5, 37.0, 38.0, 39.0, 40.0 ],
+        "+${value} Base Movement Speed" : [ 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1 ],
+        "+${value} Intelligence" : [ 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0 ],
+        "+${value} Base Casting Speed" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+        "+${value} Energy" : [ 120.0, 134.4, 150.528, 188.8223, 211.481, 236.8587, 265.2818, 297.1156, 332.7694, 372.7018, 395.0639, 419.0, 444.0, 471.0, 499.0, 529.0, 559.0, 595.0, 625.0, 653.0, 660.0, 671.0, 682.0, 694.0 ],
+        "+${value} Dexterity" : [ 65.0, 72.0, 79.0, 84.0, 89.0, 94.0, 99.0, 104.0, 109.0, 114.0, 119.0, 124.0, 129.0, 134.0, 139.0, 144.0, 149.0, 154.0, 159.0, 164.0, 169.0, 174.0, 179.0, 184.0 ],
+        "+${value} Energy Regeneration per second" : [ 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3.0, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4.0, 4.1, 4.2, 4.35, 4.5 ],
+        "+${value} Base Attack Speed" : [ 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1 ]
+      },
       "petSkills" : {
         "Shockwave" : {
           "name" : "Shockwave",
@@ -2998,23 +3010,11 @@
           "description" : "Build your golem out of the deepest rocks in the Earth's crust to make it more resistant to damage."
         }
       },
-      "petAttributes" : {
-        "+${value} Health" : [ 656.5, 698.0, 740.0, 783.0, 825.0, 868.0, 910.0, 953.0, 995.0, 1037.0, 1080.0, 1122.0, 1165.0, 1207.0, 1250.0, 1292.0, 1335.0, 1377.0, 1419.0, 1462.0, 1504.0, 1547.0, 1589.0, 1632.0 ],
-        "+${value} Strength" : [ 178.0, 182.0, 186.0, 190.0, 194.0, 198.0, 208.0, 218.0, 228.0, 238.0, 248.0, 258.0, 268.0, 278.0, 288.0, 298.0, 308.0, 319.0, 328.0, 338.0, 348.0, 358.0, 368.0, 378.0 ],
-        "+${value} Offensive Ability" : [ 3.0, 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0, 51.0, 54.0, 57.0, 60.0, 63.0, 66.0, 69.0, 72.0 ],
-        "+${value} Health Regeneration per second" : [ 8.0, 9.5, 11.0, 12.5, 14.0, 15.5, 17.0, 18.5, 20.0, 21.5, 23.0, 24.5, 26.0, 27.5, 29.0, 30.5, 32.0, 33.5, 35.0, 36.5, 37.0, 38.0, 39.0, 40.0 ],
-        "+${value} Base Movement Speed" : [ 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1 ],
-        "+${value} Intelligence" : [ 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0 ],
-        "+${value} Base Casting Speed" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-        "+${value} Energy" : [ 120.0, 134.4, 150.528, 188.8223, 211.481, 236.8587, 265.2818, 297.1156, 332.7694, 372.7018, 395.0639, 419.0, 444.0, 471.0, 499.0, 529.0, 559.0, 595.0, 625.0, 653.0, 660.0, 671.0, 682.0, 694.0 ],
-        "+${value} Dexterity" : [ 65.0, 72.0, 79.0, 84.0, 89.0, 94.0, 99.0, 104.0, 109.0, 114.0, 119.0, 124.0, 129.0, 134.0, 139.0, 144.0, 149.0, 154.0, 159.0, 164.0, 169.0, 174.0, 179.0, 184.0 ],
-        "+${value} Energy Regeneration per second" : [ 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3.0, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4.0, 4.1, 4.2, 4.35, 4.5 ],
-        "+${value} Base Attack Speed" : [ 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1 ]
-      },
+      "description" : "Give life to mere pieces of stone and form a powerful golem that will fight by your side.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 112,
         "posY" : 279,
-        "posX" : 112
+        "circular" : false
       }
     }, {
       "name" : "Shield Expertise",
@@ -3028,9 +3028,9 @@
       },
       "description" : "Block with your shield with unmatched dexterity to minimize the chances of getting injured. {^n}{^y}Requires a shield.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 464,
         "posY" : 279,
-        "posX" : 464
+        "circular" : true
       }
     }, {
       "name" : "Original Creation",
@@ -3046,9 +3046,9 @@
       },
       "description" : "Geomancers' ancient knowledge allows them to create a temporary connection to the core elements of nature, lessening the damage they and their allies take.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 288,
         "posY" : 279,
-        "posX" : 288
+        "circular" : false
       }
     }, {
       "name" : "King of the Summit",
@@ -3061,9 +3061,9 @@
       },
       "description" : "Lord and ruler of high summits, you may command your minions to victory with an inspiring presence that no one could immitate.{^n}{^a}Cannot be dispelled.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 640,
         "posY" : 279,
-        "posX" : 640
+        "circular" : false
       }
     } ], [ {
       "name" : "Bedrock",
@@ -3079,9 +3079,9 @@
       },
       "description" : "Build your golem out of the deepest rocks in the Earth's crust to make it more resistant to damage.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 112,
         "posY" : 217,
-        "posX" : 112
+        "circular" : true
       }
     }, {
       "name" : "Orogenesis",
@@ -3094,9 +3094,9 @@
       },
       "description" : "Sharpstone Veil may be used more often, but it also becomes more energy-hungry.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 376,
         "posY" : 217,
-        "posX" : 376
+        "circular" : true
       }
     }, {
       "name" : "Violent Bash",
@@ -3122,9 +3122,9 @@
       },
       "description" : "A ruthless, bone-crushing shield technique which reduces enemies' resilience as well as their precision. {^n}{^y}Requires a shield.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 464,
         "posY" : 217,
-        "posX" : 464
+        "circular" : true
       }
     }, {
       "name" : "Quake",
@@ -3151,9 +3151,9 @@
       },
       "description" : "The impact of your boulders emits an hindering shockwave that impacts your enemies' fighting skills. In order to be triggered, the impact of the boulder must hit at least one target.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 200,
         "posY" : 217,
-        "posX" : 200
+        "circular" : true
       }
     }, {
       "name" : "Impervious",
@@ -3171,9 +3171,9 @@
       },
       "description" : "Inspire your allies and grant them physical retaliation, which causes enemies to falter whenever they attempt to attack in close combat.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 640,
         "posY" : 217,
-        "posX" : 640
+        "circular" : false
       }
     } ], [ {
       "name" : "Earthen Energy",
@@ -3189,9 +3189,9 @@
       },
       "description" : "Knowledge and practice allow geomancers to manage and harness their energy better.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 552,
         "posY" : 155,
-        "posX" : 552
+        "circular" : true
       }
     }, {
       "name" : "Stone Hurler",
@@ -3213,9 +3213,9 @@
       },
       "description" : "Your golem may now toss large boulders at your opponents.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 112,
         "posY" : 155,
-        "posX" : 112
+        "circular" : true
       }
     }, {
       "name" : "Fissure",
@@ -3245,9 +3245,9 @@
       },
       "description" : "Deliver a mighty blow on the ground to break the soil under your ennemies and damage them.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 376,
         "posY" : 155,
-        "posX" : 376
+        "circular" : false
       }
     }, {
       "name" : "Stoneskin",
@@ -3259,9 +3259,9 @@
       },
       "description" : "Makes your skin as hard as stone, diminishing the effectiveness of all piercing attacks used on you.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 464,
         "posY" : 155,
-        "posX" : 464
+        "circular" : true
       }
     }, {
       "name" : "Entrench",
@@ -3276,9 +3276,9 @@
       },
       "description" : "The unbreakable might of the Geomancers is to be feared, as it allow them and their allies to survive restless assaults.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 640,
         "posY" : 155,
-        "posX" : 640
+        "circular" : true
       }
     } ], [ {
       "name" : "Pressurize",
@@ -3303,9 +3303,9 @@
       },
       "description" : "Rush at an enemy and pulverize it with a disabling shield slam. {^n}{^y}Requires a shield.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 464,
         "posY" : 93,
-        "posX" : 464
+        "circular" : false
       }
     }, {
       "name" : "Shockwave",
@@ -3334,9 +3334,9 @@
       },
       "description" : "Gives your golem the ability to shake the Earth with his brute force.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 112,
         "posY" : 93,
-        "posX" : 112
+        "circular" : true
       }
     }, {
       "name" : "Craggy Edges",
@@ -3355,9 +3355,9 @@
       },
       "description" : "Sharp rocky edges pierce your opponents, leaving their armor damaged and hinder their movement for longer.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 376,
         "posY" : 93,
-        "posX" : 376
+        "circular" : true
       }
     }, {
       "name" : "Primordial Force",
@@ -3372,9 +3372,9 @@
       },
       "description" : "Your link to nature grows stronger than ever, keeping your life forces and resolve at high levels.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 288,
         "posY" : 93,
-        "posX" : 288
+        "circular" : true
       }
     }, {
       "name" : "Titan Form",
@@ -3393,9 +3393,9 @@
       },
       "description" : "Funnel the energy of the Earth into your body to turn into a powerful titan that possesses strength comparable to the original creators.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 640,
         "posY" : 93,
-        "posX" : 640
+        "circular" : false
       }
     } ], [ {
       "name" : "Sundering",
@@ -3411,9 +3411,9 @@
       },
       "description" : "Seismic forces awake as you strike to unfurl calamitous damage.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 376,
         "posY" : 31,
-        "posX" : 376
+        "circular" : true
       }
     }, {
       "name" : "Seismic Strength",
@@ -3441,9 +3441,9 @@
       },
       "description" : "Charge the power of the Earth in your weapons, incapacitating multiple foes in a single attack. Later levels increase the number of targets hit at once. {^y}Apply this skill to your left mouse button.{^n}{^y}Requires a melee weapon.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 552,
         "posY" : 31,
-        "posX" : 552
+        "circular" : false
       }
     }, {
       "name" : "Meteorite",
@@ -3465,9 +3465,9 @@
       },
       "description" : "{^g}Skill Modifier{^n}{^w}Your boulder becomes a molten rock, splitting into smaller fragments upon impact, dealing high fire damage but no longer provides a reliable way to stun enemies.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 200,
         "posY" : 31,
-        "posX" : 200
+        "circular" : true
       }
     } ] ],
     "masteryAttributes" : {
@@ -3497,9 +3497,9 @@
       },
       "description" : "A ring of flesh-reaping energy violently strikes any foes around you.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 464,
         "posY" : 403,
-        "posX" : 464
+        "circular" : false
       }
     }, {
       "name" : "Twisted Mind",
@@ -3512,9 +3512,9 @@
       },
       "description" : "Your sanity slowly fades away, resulting in havoc-wreaking prowess along with loss of empathy.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 112,
         "posY" : 403,
-        "posX" : 112
+        "circular" : true
       }
     }, {
       "name" : "Befoul Weapons",
@@ -3530,9 +3530,9 @@
       },
       "description" : "The corruption growing inside you allows you to imbue your weapons with chaotic power.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 376,
         "posY" : 403,
-        "posX" : 376
+        "circular" : false
       }
     }, {
       "name" : "Impure Blood",
@@ -3545,9 +3545,9 @@
       },
       "description" : "By becoming familiar with the chaos, your whole body suffers drastic changes. Among other things, your blood turns impure and protects you from dark magic.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 288,
         "posY" : 403,
-        "posX" : 288
+        "circular" : true
       }
     } ], [ {
       "name" : "Dreadful Impact",
@@ -3576,9 +3576,9 @@
       },
       "description" : "Sends forth a wave of chaotic power that damages the body and the mind alike.{^n}{^y}Cooldown is reduced with more skill points.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 552,
         "posY" : 341,
-        "posX" : 552
+        "circular" : false
       }
     }, {
       "name" : "Augmented Reflexes",
@@ -3592,9 +3592,9 @@
       },
       "description" : "Increases your stamina to incredible levels, allowing you to stay on the offensive.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 288,
         "posY" : 341,
-        "posX" : 288
+        "circular" : true
       }
     }, {
       "name" : "Obscure Crescent",
@@ -3623,9 +3623,9 @@
       },
       "description" : "Reap the foes in front of you with a slashing attack.{^n}{^y}Requires a melee weapon.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 200,
         "posY" : 341,
-        "posX" : 200
+        "circular" : false
       }
     }, {
       "name" : "Scream",
@@ -3641,9 +3641,9 @@
       },
       "description" : "Embrace the corrupting chaos and let loose a powerful cry that makes you stronger.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 640,
         "posY" : 341,
-        "posX" : 640
+        "circular" : false
       }
     } ], [ {
       "name" : "Extreme Pressure",
@@ -3669,9 +3669,9 @@
       },
       "description" : "The damage of the shock is increased tenfold, leaving your enemies wounded and destabilized.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 552,
         "posY" : 279,
-        "posX" : 552
+        "circular" : true
       }
     }, {
       "name" : "Devil's Rush",
@@ -3693,9 +3693,9 @@
       },
       "description" : "Rush at an opponent with incredible agility to deliver a reliable and deadly blow.{^n}{^y}Requires a melee weapon.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 288,
         "posY" : 279,
-        "posX" : 288
+        "circular" : false
       }
     }, {
       "name" : "Unleashed Fury",
@@ -3717,9 +3717,9 @@
       },
       "description" : "The cursed touch of your weapons delivers a quick and gruesome death upon mortal beings.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 376,
         "posY" : 279,
-        "posX" : 376
+        "circular" : true
       }
     }, {
       "name" : "Dividing Magic",
@@ -3745,9 +3745,9 @@
       },
       "description" : "Focus your arcane consciousness to make your projectiles divide into smaller ones upon impact.{^n}{^y}Requires a staff or a bow.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 112,
         "posY" : 279,
-        "posX" : 112
+        "circular" : true
       }
     } ], [ {
       "name" : "Blood Harvest",
@@ -3768,9 +3768,9 @@
       },
       "description" : "Augments the speed of the pulse, causing an instant hemorrhage.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 464,
         "posY" : 217,
-        "posX" : 464
+        "circular" : true
       }
     }, {
       "name" : "Power Upsurge",
@@ -3788,9 +3788,9 @@
       },
       "description" : "Awakens your inner wrath and multiply the strength of all allies for a brief moment.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 200,
         "posY" : 217,
-        "posX" : 200
+        "circular" : false
       }
     }, {
       "name" : "Fleshrender",
@@ -3812,9 +3812,9 @@
       },
       "description" : "This dual-wielding technique reaps the flesh of your enemies with bloodletting strikes of unprecedented violence.{^n}{^y}Requires dual-wielding.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 112,
         "posY" : 217,
-        "posX" : 112
+        "circular" : true
       }
     }, {
       "name" : "Wrath",
@@ -3841,9 +3841,9 @@
       },
       "description" : "The rage takes over your mind and rewards violence with more violence. However, your reason, constantly fighting off your inner demons, is quick at taking back control. {^y}Apply this skill to your left mouse button.{^n}{^y}Requires a melee weapon.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 640,
         "posY" : 217,
-        "posX" : 640
+        "circular" : false
       }
     } ], [ {
       "name" : "Eradicate",
@@ -3859,9 +3859,9 @@
       },
       "description" : "Forces of neither life nor death can escape your wrath.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 464,
         "posY" : 155,
-        "posX" : 464
+        "circular" : true
       }
     }, {
       "name" : "Torturer's Delight",
@@ -3883,9 +3883,9 @@
       },
       "description" : "{^g}Skill Modifier{^n}{^w}The sole satisfaction of inflicting agonizing wounds upon multiple foes allows you to carry on the slaughter.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 288,
         "posY" : 155,
-        "posX" : 288
+        "circular" : true
       }
     }, {
       "name" : "Demon's Gift",
@@ -3899,9 +3899,9 @@
       },
       "description" : "Exceeding energy permeates your mind and reinforces your soul to overcome adversity with ease.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 376,
         "posY" : 155,
-        "posX" : 376
+        "circular" : true
       }
     }, {
       "name" : "Sanguine Blast",
@@ -3926,9 +3926,9 @@
       },
       "description" : "Canalize a fusion of chaotic power and demon blood into a powerful laser that seeks a poor creature and destroys it from the inside.{^n}{^y}Requires a staff.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 640,
         "posY" : 155,
-        "posX" : 640
+        "circular" : false
       }
     } ], [ {
       "name" : "Frenzy",
@@ -3941,9 +3941,9 @@
       },
       "description" : "Every cast of Death Pulse has a chance to recharge the skill almost instantly.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 464,
         "posY" : 93,
-        "posX" : 464
+        "circular" : true
       }
     }, {
       "name" : "Darkening Haze",
@@ -3963,9 +3963,9 @@
       },
       "description" : "{^g}Skill Modifier{^n}{^w}When one becomes dehumanized with the power of chaos, life has no worth when it is compared to promises of greater power.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 376,
         "posY" : 93,
-        "posX" : 376
+        "circular" : true
       }
     }, {
       "name" : "Everlasting Hatred",
@@ -3981,9 +3981,9 @@
       },
       "description" : "Overwhelming power fills your thoughts with rancor and hatred.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 200,
         "posY" : 93,
-        "posX" : 200
+        "circular" : true
       }
     }, {
       "name" : "Corruption",
@@ -4013,9 +4013,9 @@
       },
       "description" : "An aura of terror gathers around you; foes daring to approach can neither remain brave nor unscarred for too long.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 288,
         "posY" : 93,
-        "posX" : 288
+        "circular" : true
       }
     }, {
       "name" : "Insignia of Anguish",
@@ -4049,9 +4049,9 @@
       },
       "description" : "Starving forces of the underworld reach out to the ground's surface and corrupt the ground with hellish signs, eliminating anyone who gets too close.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 112,
         "posY" : 93,
-        "posX" : 112
+        "circular" : false
       }
     }, {
       "name" : "Atrocity",
@@ -4075,9 +4075,9 @@
       },
       "description" : "Desensitized as you have become, cruelty is now second nature.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 640,
         "posY" : 93,
-        "posX" : 640
+        "circular" : true
       }
     } ], [ {
       "name" : "Hellborn",
@@ -4100,9 +4100,9 @@
       },
       "description" : "{^g}Skill Modifier{^n}{^w}Although sibling to the mortal race, gazing into the depths of hell will quickly prove that you and the hellspawns have much more in common than you initially thought.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 552,
         "posY" : 31,
-        "posX" : 552
+        "circular" : true
       }
     }, {
       "name" : "Shadow Riposte",
@@ -4126,9 +4126,9 @@
       },
       "description" : "Each blow you take can unleash a burst of concentrated dark magic that eradicates all nearby forms of life.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 376,
         "posY" : 31,
-        "posX" : 376
+        "circular" : false
       }
     }, {
       "name" : "Pandemonium",
@@ -4142,9 +4142,9 @@
       },
       "description" : "Offer your whole self to the chaotic forces. Submerge your conscience in darkness. Allow it to increase your damage tremendously, but only for a mere moment.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 200,
         "posY" : 31,
-        "posX" : 200
+        "circular" : false
       }
     }, {
       "name" : "Frozen Sigils",
@@ -4169,9 +4169,9 @@
       },
       "description" : "{^g}Skill Modifier{^n}{^w}Bring forth a bone-breaking, frozen hell by creating sigils which explode almost instantly in an icy chaos.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 112,
         "posY" : 31,
-        "posX" : 112
+        "circular" : true
       }
     } ] ],
     "masteryAttributes" : {
@@ -4193,9 +4193,9 @@
       },
       "description" : "Give up logical thinking for brute strength, unleashing attacks of greater force.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 112,
         "posY" : 403,
-        "posX" : 112
+        "circular" : true
       }
     }, {
       "name" : "Battle Momentum",
@@ -4210,9 +4210,9 @@
       },
       "description" : "The act of fighting awakens the truculent warrior inside you, unlocking the full potential of your fighting skills in the heat of the battle. {^y}Apply this skill to your left mouse button.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 288,
         "posY" : 403,
-        "posX" : 288
+        "circular" : false
       }
     }, {
       "name" : "Warlord's Challenge",
@@ -4242,9 +4242,9 @@
       },
       "description" : "Taunt and weaken enemies with a fierce battle shout.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 464,
         "posY" : 403,
-        "posX" : 464
+        "circular" : false
       }
     } ], [ {
       "name" : "Tyrant's Shout",
@@ -4263,9 +4263,9 @@
       },
       "description" : "{^g}Skill Modifier{^n}{^w}This technique prioritizes raw damage output over usability to ensure that enemies are taken down before they pose a threat.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 464,
         "posY" : 341,
-        "posX" : 464
+        "circular" : true
       }
     }, {
       "name" : "Ambidexterity",
@@ -4279,9 +4279,9 @@
       },
       "description" : "Learn to effectively use two weapons and attack with both at the same time.{^n}{^y}Requires dual-wield.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 112,
         "posY" : 341,
-        "posX" : 112
+        "circular" : true
       }
     }, {
       "name" : "Earthshock",
@@ -4302,9 +4302,9 @@
       },
       "description" : "Slam the ground with extreme power, breaking the soil beneath your enemies.{^n}{^y}Requires a melee weapon or a staff.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 376,
         "posY" : 341,
-        "posX" : 376
+        "circular" : false
       }
     }, {
       "name" : "Combat Spirit",
@@ -4322,9 +4322,9 @@
       },
       "description" : "As an expert of melee weaponry and a fighting veteran, you inspire your allies to conquer and seek greater challenges.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 200,
         "posY" : 341,
-        "posX" : 200
+        "circular" : false
       }
     }, {
       "name" : "Purge",
@@ -4347,9 +4347,9 @@
       },
       "description" : "For a short moment, you are able to ignore grave injuries, preventing wounds and detrimental effects from lasting.{^n}{^y}Does not interrupt ongoing effects.{^n}{^y}Cooldown is reduced with more skill points.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 552,
         "posY" : 341,
-        "posX" : 552
+        "circular" : false
       }
     } ], [ {
       "name" : "Mutilating Edge",
@@ -4370,9 +4370,9 @@
       },
       "description" : "You strike violently, making a sanguine river flow; a bloodbath for your slain opponents to rot in.{^n}{^y}Requires either a melee or a one-handed ranged weapon.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 288,
         "posY" : 279,
-        "posX" : 288
+        "circular" : true
       }
     }, {
       "name" : "Battleground's Menace",
@@ -4402,9 +4402,9 @@
       },
       "description" : "Your indescribable wrath further incapacitates those enraged by the shout.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 464,
         "posY" : 279,
-        "posX" : 464
+        "circular" : true
       }
     }, {
       "name" : "Ferocity",
@@ -4425,9 +4425,9 @@
       },
       "description" : "Even when critically injured, you ignore the pain and open wounds to carry on with an unquestionable will to survive and a triumphant resolve.{^n}{^y}Remains active while health is low.{^n}{^a}Cannot be dispelled.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 552,
         "posY" : 279,
-        "posX" : 552
+        "circular" : true
       }
     }, {
       "name" : "Inhumane Physique",
@@ -4442,9 +4442,9 @@
       },
       "description" : "Strengthened constitution enhances the weapon proficiency of all allied units, allowing them to place critical strikes every so often.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 200,
         "posY" : 279,
-        "posX" : 200
+        "circular" : true
       }
     }, {
       "name" : "Dash",
@@ -4470,9 +4470,9 @@
       },
       "description" : "To seize the advantage in combat, rush to an enemy and attack it with a powerful bash of your weapon. Such quick attacks effectively catch foes off guard and go through their defences.{^n}{^y}Requires a melee weapon.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 640,
         "posY" : 279,
-        "posX" : 640
+        "circular" : false
       }
     } ], [ {
       "name" : "Impairing Hits",
@@ -4503,9 +4503,9 @@
       },
       "description" : "{^g}Skill Modifier{^n}{^w}Your fast swings confuse your foes who cannot foresee your next actions. Such strikes, however, are no crushing blows and therefore cause lesser wounds.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 288,
         "posY" : 217,
-        "posX" : 288
+        "circular" : true
       }
     }, {
       "name" : "Determination",
@@ -4519,9 +4519,9 @@
       },
       "description" : "A hero's tale is never written in one day. To develop skills worthy of a legend, one must display an unconditional determination.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 552,
         "posY" : 217,
-        "posX" : 552
+        "circular" : true
       }
     }, {
       "name" : "Slash Flurry",
@@ -4541,9 +4541,9 @@
       },
       "description" : "Hack your foes to pieces with this powerful dual-wielding technique, cutting through limbs like paper. {^n}{^y}Requires dual-wield.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 112,
         "posY" : 217,
-        "posX" : 112
+        "circular" : true
       }
     }, {
       "name" : "Landslide",
@@ -4567,9 +4567,9 @@
       },
       "description" : "The rumbling stones of Earthshock inflict open wounds and slow enemies down.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 376,
         "posY" : 217,
-        "posX" : 376
+        "circular" : true
       }
     }, {
       "name" : "Treacherous Javelin",
@@ -4598,9 +4598,9 @@
       },
       "description" : "Mark your target for certain demise with a piercing javelin throw.{^n}{^y}Each level also increases the maximum distance of the javelin.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 464,
         "posY" : 217,
-        "posX" : 464
+        "circular" : false
       }
     } ], [ {
       "name" : "Nerves of Steel",
@@ -4617,9 +4617,9 @@
       },
       "description" : "Physical injuries barely affect your fighting skills, as you remain surprisingly steady and focused, even in times of crisis.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 552,
         "posY" : 155,
-        "posX" : 552
+        "circular" : true
       }
     }, {
       "name" : "Barrage",
@@ -4635,9 +4635,9 @@
       },
       "description" : "Rapidly throw a flurry of weapons at your victims, bombarding them with unavoidable, flesh-cutting projectiles.{^n}{^y}Requires dual-wielding ranged weapons.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 112,
         "posY" : 155,
-        "posX" : 112
+        "circular" : true
       }
     }, {
       "name" : "Hemorrhage",
@@ -4663,9 +4663,9 @@
       },
       "description" : "Various strategies are used to cause grave bleeding, though barbarians often opt for the least subtle one: continuously striking hard.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 200,
         "posY" : 155,
-        "posX" : 200
+        "circular" : true
       }
     }, {
       "name" : "Undying Fury",
@@ -4681,9 +4681,9 @@
       },
       "description" : "Reduce all damage taken for a short period of time, continuing on a battle even against all odds.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 464,
         "posY" : 155,
-        "posX" : 464
+        "circular" : false
       }
     }, {
       "name" : "Cleave",
@@ -4703,9 +4703,9 @@
       },
       "description" : "Wide and swift swings of your weapon enables multiple hits to all nearby enemies.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 640,
         "posY" : 155,
-        "posX" : 640
+        "circular" : true
       }
     } ], [ {
       "name" : "Champion of the Pit",
@@ -4722,9 +4722,9 @@
       },
       "description" : "Years spent undefeated in the arena made you into a warrior of unprecedented resolve and talent.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 288,
         "posY" : 93,
-        "posX" : 288
+        "circular" : true
       }
     }, {
       "name" : "Steadfast Nature",
@@ -4737,9 +4737,9 @@
       },
       "description" : "Naturally unwavering and resilient, you always find the courage to continue the fight.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 552,
         "posY" : 93,
-        "posX" : 552
+        "circular" : true
       }
     }, {
       "name" : "Blade Blaze",
@@ -4756,9 +4756,9 @@
       },
       "description" : "Attack with a blind rage, slaughtering a single victim with an avalanche of violent blows.{^n}{^y}Requires dual-wielding melee weapons.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 200,
         "posY" : 93,
-        "posX" : 200
+        "circular" : false
       }
     }, {
       "name" : "Stab Wound",
@@ -4780,9 +4780,9 @@
       },
       "description" : "Whet your bladed weapons to inflict deeper wounds.{^n}{^y}Requires a sword, a thrown weapon or a spear.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 640,
         "posY" : 93,
-        "posX" : 640
+        "circular" : true
       }
     } ], [ {
       "name" : "Whirling Blades",
@@ -4804,9 +4804,9 @@
       },
       "description" : "A secret technique of the elite bladedancers, which allows you to spin around and hit all nearby enemies.{^n}{^y}Requires dual-wielding melee weapons.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 112,
         "posY" : 31,
-        "posX" : 112
+        "circular" : true
       }
     }, {
       "name" : "Mayhem",
@@ -4825,9 +4825,9 @@
       },
       "description" : "{^g}Skill Modifier{^n}{^w}Unleash thunderous destruction from ripping the ground apart.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 376,
         "posY" : 31,
-        "posX" : 376
+        "circular" : true
       }
     }, {
       "name" : "Untamable",
@@ -4844,9 +4844,9 @@
       },
       "description" : "The wrath of the barbarians turns them into uncontrollable killing machines.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 464,
         "posY" : 31,
-        "posX" : 464
+        "circular" : true
       }
     } ] ],
     "masteryAttributes" : {
@@ -4867,9 +4867,9 @@
       },
       "description" : "Remain quick-witted like in your youth, eager to experience and learn from your mistakes, all with a childlike curiosity.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 552,
         "posY" : 403,
-        "posX" : 552
+        "circular" : true
       }
     }, {
       "name" : "Temporal Energy",
@@ -4908,9 +4908,9 @@
       },
       "description" : "Wrap your weapons with ardent flux that causes lasting injuries upon contact.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 200,
         "posY" : 403,
-        "posX" : 200
+        "circular" : false
       }
     }, {
       "name" : "Abiding Majesty",
@@ -4922,9 +4922,9 @@
       },
       "description" : "Decades of practice have created a link between you and the universe, to a point where handling magical energy becomes easier than ever.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 288,
         "posY" : 403,
-        "posX" : 288
+        "circular" : true
       }
     }, {
       "name" : "Echo",
@@ -4956,9 +4956,9 @@
       },
       "description" : "Hurl a fast-travelling whirl of pain that, when it touches an enemy, hurts them with injuries from past battles.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 640,
         "posY" : 403,
-        "posX" : 640
+        "circular" : false
       }
     } ], [ {
       "name" : "Perenniality",
@@ -4970,9 +4970,9 @@
       },
       "description" : "An eternity spent fighting has rendered you partially insensible to pain.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 552,
         "posY" : 341,
-        "posX" : 552
+        "circular" : true
       }
     }, {
       "name" : "Mend Wounds",
@@ -4987,9 +4987,9 @@
       },
       "description" : "Greatly speed up the natural process of cicatrization, allowing to efficiently recover health, even in the midst of the battle.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 112,
         "posY" : 341,
-        "posX" : 112
+        "circular" : false
       }
     }, {
       "name" : "Interdimensional Breach",
@@ -5017,9 +5017,9 @@
       },
       "description" : "Tear a gap in your reality, allowing you to disappear and sneakily attack unaware victims.{^n}{^y}Requires a melee weapon.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 464,
         "posY" : 341,
-        "posX" : 464
+        "circular" : false
       }
     }, {
       "name" : "Excellency",
@@ -5031,9 +5031,9 @@
       },
       "description" : "You have ascended to another level of being that allows you to see the world differently and progress with no barriers.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 288,
         "posY" : 341,
-        "posX" : 288
+        "circular" : true
       }
     } ], [ {
       "name" : "Eye of the Mind",
@@ -5048,9 +5048,9 @@
       },
       "description" : "Your mindfulness allows you to predict your enemies' movements and always stay a step ahead of them.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 200,
         "posY" : 279,
-        "posX" : 200
+        "circular" : true
       }
     }, {
       "name" : "Hourglass of Waning",
@@ -5069,9 +5069,9 @@
       },
       "description" : "Turn the tides of time against your foes, aging them into foreseeable and feeble fools.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 288,
         "posY" : 279,
-        "posX" : 288
+        "circular" : false
       }
     }, {
       "name" : "Synchronism",
@@ -5084,9 +5084,9 @@
       },
       "description" : "Attacking the same enemy in multiple timelines with perfect synchronization can multiply the number of projectiles of your staff attacks.{^n}{^y}Requires a staff.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 112,
         "posY" : 279,
-        "posX" : 112
+        "circular" : true
       }
     }, {
       "name" : "Cosmic Nebula",
@@ -5101,7 +5101,18 @@
         " Summoned Immediately" : 1,
         "m Radius" : 1.0
       },
-      "description" : "Summon raging clouds of gas, alike cosmic nebulas, to obscure enemies' vision and burn their bodies in a relentless pursuit. {^n}{^y}This pet is invincible.",
+      "petAttributes" : {
+        "+${value} Health" : [ 200.0, 200.0, 200.0, 200.0, 200.0, 200.0, 200.0, 200.0, 200.0, 200.0, 200.0, 200.0, 200.0, 200.0, 200.0, 200.0 ],
+        "+${value} Strength" : [ 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0 ],
+        "+${value} Health Regeneration per second" : [ 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0 ],
+        "+${value} Base Movement Speed" : [ 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4 ],
+        "+${value} Intelligence" : [ 50.0, 70.0, 90.0, 110.0, 130.0, 150.0, 170.0, 190.0, 210.0, 230.0, 250.0, 270.0, 290.0, 310.0, 330.0, 350.0 ],
+        "+${value} Base Casting Speed" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+        "+${value} Energy" : [ 200.0, 200.0, 200.0, 200.0, 200.0, 200.0, 200.0, 200.0, 200.0, 200.0, 200.0, 200.0, 200.0, 200.0, 200.0, 200.0 ],
+        "+${value} Dexterity" : [ 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0 ],
+        "+${value} Energy Regeneration per second" : [ 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0 ],
+        "+${value} Base Attack Speed" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ]
+      },
       "petSkills" : {
         "Seeker" : {
           "name" : "Seeker",
@@ -5149,22 +5160,11 @@
           "description" : "Summon raging clouds of gas, alike cosmic nebulas, to obscure enemies' vision and burn their bodies in a relentless pursuit. {^n}{^y}This pet is invincible."
         }
       },
-      "petAttributes" : {
-        "+${value} Health" : [ 200.0, 200.0, 200.0, 200.0, 200.0, 200.0, 200.0, 200.0, 200.0, 200.0, 200.0, 200.0, 200.0, 200.0, 200.0, 200.0 ],
-        "+${value} Strength" : [ 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0 ],
-        "+${value} Health Regeneration per second" : [ 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0 ],
-        "+${value} Base Movement Speed" : [ 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4 ],
-        "+${value} Intelligence" : [ 50.0, 70.0, 90.0, 110.0, 130.0, 150.0, 170.0, 190.0, 210.0, 230.0, 250.0, 270.0, 290.0, 310.0, 330.0, 350.0 ],
-        "+${value} Base Casting Speed" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-        "+${value} Energy" : [ 200.0, 200.0, 200.0, 200.0, 200.0, 200.0, 200.0, 200.0, 200.0, 200.0, 200.0, 200.0, 200.0, 200.0, 200.0, 200.0 ],
-        "+${value} Dexterity" : [ 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0 ],
-        "+${value} Energy Regeneration per second" : [ 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0 ],
-        "+${value} Base Attack Speed" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ]
-      },
+      "description" : "Summon raging clouds of gas, alike cosmic nebulas, to obscure enemies' vision and burn their bodies in a relentless pursuit. {^n}{^y}This pet is invincible.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 376,
         "posY" : 279,
-        "posX" : 376
+        "circular" : false
       }
     }, {
       "name" : "Carve Reality",
@@ -5178,9 +5178,9 @@
       },
       "description" : "Perfected skills allow your echoes to explode over a larger radius and travel at lightspeed.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 640,
         "posY" : 279,
-        "posX" : 640
+        "circular" : true
       }
     } ], [ {
       "name" : "Time Freeze",
@@ -5201,9 +5201,9 @@
       },
       "description" : "Send a wave of temporal energy that immobilizes enemies in time and space, leaving them open to attacks.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 288,
         "posY" : 217,
-        "posX" : 288
+        "circular" : false
       }
     }, {
       "name" : "Slowing Rift",
@@ -5222,9 +5222,9 @@
       },
       "description" : "Massively slow down nearby foes with a wide field that distorts the current timeline in its area of effect.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 112,
         "posY" : 217,
-        "posX" : 112
+        "circular" : false
       }
     }, {
       "name" : "Devitalize",
@@ -5242,9 +5242,9 @@
       },
       "description" : "{^g}Skill Modifier{^n}{^w}Channel some of your lifetime into your weapon to augment the ardent flux surrounding it.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 200,
         "posY" : 217,
-        "posX" : 200
+        "circular" : true
       }
     }, {
       "name" : "Seeker",
@@ -5257,9 +5257,9 @@
       },
       "description" : "The summoned nebulas move quicker between enemies and burn them gravely.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 376,
         "posY" : 217,
-        "posX" : 376
+        "circular" : true
       }
     }, {
       "name" : "Chronophage",
@@ -5285,9 +5285,9 @@
       },
       "description" : "When your magic collides with hostile enemies, their movements are hindered and sometimes halted, and in result become unable to keep up with your reality.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 640,
         "posY" : 217,
-        "posX" : 640
+        "circular" : true
       }
     } ], [ {
       "name" : "Celestial Quintessence",
@@ -5303,9 +5303,9 @@
       },
       "description" : "Stellar energy gathers in your weapon, increasing all elemental damage dealt.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 200,
         "posY" : 155,
-        "posX" : 200
+        "circular" : true
       }
     }, {
       "name" : "Quickening",
@@ -5320,9 +5320,9 @@
       },
       "description" : "Share your time-controlling power with your minions, allowing them to use their skills more often.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 376,
         "posY" : 155,
-        "posX" : 376
+        "circular" : false
       }
     }, {
       "name" : "Timeless Power",
@@ -5336,9 +5336,9 @@
       },
       "description" : "{^g}Skill Modifier{^n}{^w}Uncover a technique which channels your weapon's physical damage into an unending electrical torture.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 464,
         "posY" : 155,
-        "posX" : 464
+        "circular" : true
       }
     }, {
       "name" : "Rise of the Ancestors",
@@ -5351,7 +5351,22 @@
         "${value} Summon Limit " : 3,
         " Summoned Immediately" : 3
       },
-      "description" : "Invoke powerful mages from the past era to take up fight anew alongside you. Those sorcerors can only be kept under your control for a brief moment.",
+      "petAttributes" : {
+        "+${value} Health" : [ 300.0, 330.0, 360.0, 390.0, 420.0, 450.0, 480.0, 510.0, 540.0, 570.0, 600.0, 630.0, 660.0, 690.0, 720.0, 750.0, 780.0, 810.0, 840.0, 870.0 ],
+        "+${value} Strength" : [ 88.0, 88.0, 88.0, 88.0, 88.0, 88.0, 88.0, 88.0, 88.0, 88.0, 88.0, 88.0, 88.0, 88.0, 88.0, 88.0, 88.0, 88.0, 88.0, 88.0 ],
+        "+${value} Health Regeneration per second" : [ 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5 ],
+        "+${value} Base Movement Speed" : [ 0.94, 0.94, 0.94, 0.94, 0.94, 0.94, 0.94, 0.94, 0.94, 0.94, 0.94, 0.94, 0.94, 0.94, 0.94, 0.94, 0.94, 0.94, 0.94, 0.94 ],
+        "+${value} Intelligence" : [ 102.0, 111.0, 120.0, 130.0, 141.0, 152.0, 164.0, 177.0, 190.0, 204.0, 219.0, 235.0, 198.0, 212.0, 227.0, 243.0, 245.0, 248.0, 252.0, 258.0 ],
+        "+${value} Base Casting Speed" : [ 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2 ],
+        "+${value} Energy" : [ 185.5, 194.875, 204.7188, 215.0547, 225.9074, 237.3028, 249.2679, 261.8313, 275.0229, 288.8741, 303.4178, 318.6886, 328.0, 336.0, 348.0, 366.0, 377.0, 388.0, 399.0, 410.0 ],
+        "+${value} Dexterity" : [ 65.0, 65.0, 65.0, 65.0, 65.0, 65.0, 65.0, 65.0, 65.0, 65.0, 65.0, 65.0, 65.0, 65.0, 65.0, 65.0, 65.0, 65.0, 65.0, 65.0 ],
+        "+${value} Energy Regeneration per second" : [ 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0 ],
+        "Damage" : {
+          "min" : [ 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0 ],
+          "max" : [ 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0 ]
+        },
+        "+${value} Base Attack Speed" : [ 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85 ]
+      },
       "petSkills" : {
         "Forgotten Knowledge" : {
           "name" : "Forgotten Knowledge",
@@ -5436,26 +5451,11 @@
           }
         }
       },
-      "petAttributes" : {
-        "+${value} Health" : [ 300.0, 330.0, 360.0, 390.0, 420.0, 450.0, 480.0, 510.0, 540.0, 570.0, 600.0, 630.0, 660.0, 690.0, 720.0, 750.0, 780.0, 810.0, 840.0, 870.0 ],
-        "+${value} Strength" : [ 88.0, 88.0, 88.0, 88.0, 88.0, 88.0, 88.0, 88.0, 88.0, 88.0, 88.0, 88.0, 88.0, 88.0, 88.0, 88.0, 88.0, 88.0, 88.0, 88.0 ],
-        "+${value} Health Regeneration per second" : [ 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5 ],
-        "+${value} Base Movement Speed" : [ 0.94, 0.94, 0.94, 0.94, 0.94, 0.94, 0.94, 0.94, 0.94, 0.94, 0.94, 0.94, 0.94, 0.94, 0.94, 0.94, 0.94, 0.94, 0.94, 0.94 ],
-        "+${value} Intelligence" : [ 102.0, 111.0, 120.0, 130.0, 141.0, 152.0, 164.0, 177.0, 190.0, 204.0, 219.0, 235.0, 198.0, 212.0, 227.0, 243.0, 245.0, 248.0, 252.0, 258.0 ],
-        "+${value} Base Casting Speed" : [ 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2 ],
-        "+${value} Energy" : [ 185.5, 194.875, 204.7188, 215.0547, 225.9074, 237.3028, 249.2679, 261.8313, 275.0229, 288.8741, 303.4178, 318.6886, 328.0, 336.0, 348.0, 366.0, 377.0, 388.0, 399.0, 410.0 ],
-        "+${value} Dexterity" : [ 65.0, 65.0, 65.0, 65.0, 65.0, 65.0, 65.0, 65.0, 65.0, 65.0, 65.0, 65.0, 65.0, 65.0, 65.0, 65.0, 65.0, 65.0, 65.0, 65.0 ],
-        "+${value} Energy Regeneration per second" : [ 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0 ],
-        "Damage" : {
-          "min" : [ 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0 ],
-          "max" : [ 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0 ]
-        },
-        "+${value} Base Attack Speed" : [ 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85 ]
-      },
+      "description" : "Invoke powerful mages from the past era to take up fight anew alongside you. Those sorcerors can only be kept under your control for a brief moment.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 288,
         "posY" : 155,
-        "posX" : 288
+        "circular" : false
       }
     } ], [ {
       "name" : "Accelerate",
@@ -5474,9 +5474,9 @@
       },
       "description" : "As you master controlling the flow of time, you become able to accelerate your own reality.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 552,
         "posY" : 93,
-        "posX" : 552
+        "circular" : true
       }
     }, {
       "name" : "Bewildering Speed",
@@ -5501,9 +5501,9 @@
       },
       "description" : "The energy from the distorted rift allows you to move at a higher speed, yet the enemies caught in it, who can't control it as well, get severely burnt and electrocuted.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 112,
         "posY" : 93,
-        "posX" : 112
+        "circular" : true
       }
     }, {
       "name" : "Astral Mergence",
@@ -5519,9 +5519,9 @@
       },
       "description" : "Connect to an alternative timeline, in order to briefly combine the powers with your other self.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 464,
         "posY" : 93,
-        "posX" : 464
+        "circular" : false
       }
     }, {
       "name" : "Timeless Sorcery",
@@ -5533,9 +5533,9 @@
       },
       "description" : "Strengthen the connection between the past and the present, binding the ancestors to your will for much longer.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 288,
         "posY" : 93,
-        "posX" : 288
+        "circular" : true
       }
     }, {
       "name" : "Upheaved Time",
@@ -5567,9 +5567,9 @@
       },
       "description" : "Redefine the laws of time and effortlessly assault your foes with memories that will harm evermore.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 640,
         "posY" : 93,
-        "posX" : 640
+        "circular" : true
       }
     } ], [ {
       "name" : "Gravity Nova",
@@ -5608,9 +5608,9 @@
       },
       "description" : "Modify the rules of time in a circular area, shattering and imploding everything inside.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 112,
         "posY" : 31,
-        "posX" : 112
+        "circular" : false
       }
     }, {
       "name" : "Eternize",
@@ -5627,9 +5627,9 @@
       },
       "description" : "Inflict wounds which cause your enemies to suffer eternally.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 552,
         "posY" : 31,
-        "posX" : 552
+        "circular" : true
       }
     }, {
       "name" : "Forgotten Knowledge",
@@ -5648,9 +5648,9 @@
       },
       "description" : "The spirits imbue you and your allies with long-lost secrets from the past, increasing all magical potential.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 288,
         "posY" : 31,
-        "posX" : 288
+        "circular" : true
       }
     } ] ],
     "masteryAttributes" : {
@@ -5675,9 +5675,9 @@
       },
       "description" : "Close the wounds and replenish the lost vigor of all close allies with a curing light.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 464,
         "posY" : 403,
-        "posX" : 464
+        "circular" : false
       }
     }, {
       "name" : "Fiery Strikes",
@@ -5699,9 +5699,9 @@
       },
       "description" : "Charge heavenly power in your attacks to deal serious injuries and burns. {^y}Apply this skill to your left mouse button.{^n}{^y}Hits twice when used on melee range.{^n}{^y}Cooldown is reduced with more skill points.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 376,
         "posY" : 403,
-        "posX" : 376
+        "circular" : false
       }
     }, {
       "name" : "Pure Heart",
@@ -5713,9 +5713,9 @@
       },
       "description" : "Strong-willed warriors always prevail when fighting for what they believe.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 112,
         "posY" : 403,
-        "posX" : 112
+        "circular" : true
       }
     } ], [ {
       "name" : "Punishment",
@@ -5732,9 +5732,9 @@
       },
       "description" : "Those who attempt to stop beneficence are sentenced to a punishment deserving of their sins.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 552,
         "posY" : 341,
-        "posX" : 552
+        "circular" : true
       }
     }, {
       "name" : "Torchbearer's Bastion",
@@ -5748,9 +5748,9 @@
       },
       "description" : "Wield your aegis as a victorious symbol, bolstering your defense and increasing the damage of your strikes. {^n}{^y}Requires a shield.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 112,
         "posY" : 341,
-        "posX" : 112
+        "circular" : true
       }
     }, {
       "name" : "Godly Presence",
@@ -5770,9 +5770,9 @@
       },
       "description" : "Powerful radiant energy emanates from you, strengthening all friendly entities.{^n}{^a}Cannot be dispelled.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 200,
         "posY" : 341,
-        "posX" : 200
+        "circular" : false
       }
     }, {
       "name" : "Crystal Balls",
@@ -5798,9 +5798,9 @@
       },
       "description" : "Sends a wave of crystalline projectiles, imbued with elemental magic which damages enemies on contact.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 288,
         "posY" : 341,
-        "posX" : 288
+        "circular" : false
       }
     } ], [ {
       "name" : "Depraved Act",
@@ -5816,9 +5816,9 @@
       },
       "description" : "{^g}Skill Modifier{^n}{^w}Go against the teachings of the light, sacrificing a part of your humanity for achieving higher power.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 200,
         "posY" : 279,
-        "posX" : 200
+        "circular" : true
       }
     }, {
       "name" : "Guilt",
@@ -5841,9 +5841,9 @@
       },
       "description" : "Regardless of the option they choose, your enemies shall regret their wretchedness.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 552,
         "posY" : 279,
-        "posX" : 552
+        "circular" : true
       }
     }, {
       "name" : "Screen of Light",
@@ -5880,9 +5880,9 @@
       },
       "description" : "Assault your opponents with a violent flash of blinding light that weakens them and spreads to nearby enemies at light's speed.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 112,
         "posY" : 279,
-        "posX" : 112
+        "circular" : false
       }
     }, {
       "name" : "Skyward Shock",
@@ -5901,9 +5901,9 @@
       },
       "description" : "Invisible forces from the sky upgrade your crystals to cripple the vital energy from your foes faster.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 288,
         "posY" : 279,
-        "posX" : 288
+        "circular" : true
       }
     }, {
       "name" : "Destiny Shield",
@@ -5924,9 +5924,9 @@
       },
       "description" : "Canalize your righteous energy into a layer of light that wraps your body and severly harms enemies that come into contact with it. ",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 640,
         "posY" : 279,
-        "posX" : 640
+        "circular" : false
       }
     } ], [ {
       "name" : "Radiant Orb",
@@ -5941,9 +5941,9 @@
       },
       "description" : "Creates a veil of light that absorbs a certain quantity of physical damage until it breaks.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 464,
         "posY" : 217,
-        "posX" : 464
+        "circular" : false
       }
     }, {
       "name" : "Celestial Armory",
@@ -5966,9 +5966,9 @@
       },
       "description" : "Bless all the weapons in range with a powerful angelic enchantment.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 200,
         "posY" : 217,
-        "posX" : 200
+        "circular" : true
       }
     }, {
       "name" : "Numbing Magic",
@@ -5998,9 +5998,9 @@
       },
       "description" : "Your foes get dazed and confused, which greatly stifles their fighting ability.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 112,
         "posY" : 217,
-        "posX" : 112
+        "circular" : true
       }
     }, {
       "name" : "Siphon",
@@ -6021,9 +6021,9 @@
       },
       "description" : "Use the energy of your enemies against them with a new siphonic proprety for your fiery attacks. ",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 376,
         "posY" : 217,
-        "posX" : 376
+        "circular" : true
       }
     }, {
       "name" : "Vigor Reaper",
@@ -6042,9 +6042,9 @@
       },
       "description" : "A little-known magical technique that consists in making the energy hidden deep inside your enemies surface, giving you full control over it.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 640,
         "posY" : 217,
-        "posX" : 640
+        "circular" : false
       }
     } ], [ {
       "name" : "Reciprocate",
@@ -6056,9 +6056,9 @@
       },
       "description" : "An eye for an eye, a tooth for a tooth. Anyone who attempts to harm you suffers just as much pain.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 552,
         "posY" : 155,
-        "posX" : 552
+        "circular" : true
       }
     }, {
       "name" : "Celerity",
@@ -6073,9 +6073,9 @@
       },
       "description" : "Empower your shield with a spell that grants great speed and agility.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 464,
         "posY" : 155,
-        "posX" : 464
+        "circular" : true
       }
     }, {
       "name" : "Diamond Rage",
@@ -6088,9 +6088,9 @@
       },
       "description" : "Diminishes the mental resources required to conjure the crystal balls.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 288,
         "posY" : 155,
-        "posX" : 288
+        "circular" : true
       }
     }, {
       "name" : "Angelic Altar",
@@ -6102,7 +6102,12 @@
         "MaxLevel" : 10,
         "${value} Summon Limit " : 1
       },
-      "description" : "Summon a heavenly shrine, which casts a large protective aura that lasts until the altar expires or breaks.{^n}{^a}Cannot be dispelled.",
+      "petAttributes" : {
+        "+${value} Health" : [ 375.0, 405.0, 440.0, 480.0, 525.0, 580.0, 635.0, 690.0, 747.5, 807.5, 875.0, 955.0, 1037.5, 1120.0 ],
+        "+${value} Health Regeneration per second" : [ 12.65, 16.1, 19.55, 23.0, 26.45, 29.9, 33.35, 36.8, 40.25, 43.7, 47.15, 50.6, 54.05, 57.5 ],
+        "+${value} Base Casting Speed" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+        "+${value} Base Attack Speed" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ]
+      },
       "petSkills" : {
         "Angelic Altar" : {
           "name" : "Angelic Altar",
@@ -6149,16 +6154,11 @@
           "description" : "The altar channels a powerful thunder which bounces to all nearby targets, seriously damaging them."
         }
       },
-      "petAttributes" : {
-        "+${value} Health" : [ 375.0, 405.0, 440.0, 480.0, 525.0, 580.0, 635.0, 690.0, 747.5, 807.5, 875.0, 955.0, 1037.5, 1120.0 ],
-        "+${value} Health Regeneration per second" : [ 12.65, 16.1, 19.55, 23.0, 26.45, 29.9, 33.35, 36.8, 40.25, 43.7, 47.15, 50.6, 54.05, 57.5 ],
-        "+${value} Base Casting Speed" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-        "+${value} Base Attack Speed" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ]
-      },
+      "description" : "Summon a heavenly shrine, which casts a large protective aura that lasts until the altar expires or breaks.{^n}{^a}Cannot be dispelled.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 200,
         "posY" : 155,
-        "posX" : 200
+        "circular" : false
       }
     }, {
       "name" : "Heavenly Order",
@@ -6169,7 +6169,21 @@
         "MaxLevel" : 20,
         "${value} Summon Limit " : 1
       },
-      "description" : "Call upon the skies to summon an archangel to assist you in your journey. Later levels unlock new spells for her to use.",
+      "petAttributes" : {
+        "+${value} Defensive Ability" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0, 48.0 ],
+        "+${value} Base Movement Speed" : [ 1.89, 1.89, 1.89, 1.89, 1.89, 1.89, 1.89, 1.89, 1.89, 1.89, 1.89, 1.89, 1.89, 1.89, 1.89, 1.89, 1.89, 1.89, 1.89, 1.89, 1.89, 1.89, 1.89, 1.89 ],
+        "+${value} Intelligence" : [ 260.92, 263.92, 266.92, 269.92, 272.92, 275.92, 278.92, 281.92, 284.92, 287.92, 290.92, 293.92, 296.92, 299.92, 302.92, 305.92, 308.92, 311.92, 314.92, 317.92, 319.0, 321.0, 323.0, 325.0 ],
+        "+${value} Energy Regeneration per second" : [ 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0 ],
+        "+${value} Base Attack Speed" : [ 0.95, 0.95, 0.95, 0.95, 0.95, 0.95, 0.95, 0.95, 0.95, 0.95, 0.95, 0.95, 0.95, 0.95, 0.95, 0.95, 0.95, 0.95, 0.95, 0.95, 0.95, 0.95, 0.95, 0.95 ],
+        "+${value} Health" : [ 750.0, 793.0, 837.0, 880.0, 923.0, 967.0, 1010.0, 1054.0, 1097.0, 1141.0, 1184.0, 1228.0, 1271.0, 1315.0, 1358.0, 1402.0, 1445.0, 1489.0, 1532.0, 1576.0, 1619.0, 1663.0, 1706.0, 1750.0 ],
+        "+${value} Strength" : [ 192.32, 194.32, 196.32, 198.32, 200.32, 202.32, 204.32, 206.32, 208.32, 210.32, 212.32, 214.32, 216.32, 218.32, 220.32, 222.32, 224.32, 226.32, 228.32, 230.32, 232.0, 233.0, 234.0, 236.0 ],
+        "+${value} Offensive Ability" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0, 48.0 ],
+        "+${value} Health Regeneration per second" : [ 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0 ],
+        "+${value} Base Casting Speed" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+        "+${value} Energy" : [ 1236.0, 1270.0, 1304.0, 1338.0, 1372.0, 1406.0, 1440.0, 1474.0, 1508.0, 1542.0, 1576.0, 1610.0, 1644.0, 1678.0, 1712.0, 1746.0, 1780.0, 1814.0, 1848.0, 1882.0, 1923.0, 1967.0, 1999.0, 2015.0 ],
+        "+${value}% Movement Speed" : [ 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0 ],
+        "+${value} Dexterity" : [ 298.48, 300.48, 302.48, 304.48, 306.48, 308.48, 310.48, 312.48, 314.48, 316.48, 318.48, 320.48, 322.48, 324.48, 326.48, 328.48, 330.48, 332.48, 334.48, 336.48, 338.0, 339.0, 340.0, 343.0 ]
+      },
       "petSkills" : {
         "Blessing" : {
           "name" : "Blessing",
@@ -6258,25 +6272,11 @@
           }
         }
       },
-      "petAttributes" : {
-        "+${value} Defensive Ability" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0, 48.0 ],
-        "+${value} Base Movement Speed" : [ 1.89, 1.89, 1.89, 1.89, 1.89, 1.89, 1.89, 1.89, 1.89, 1.89, 1.89, 1.89, 1.89, 1.89, 1.89, 1.89, 1.89, 1.89, 1.89, 1.89, 1.89, 1.89, 1.89, 1.89 ],
-        "+${value} Intelligence" : [ 260.92, 263.92, 266.92, 269.92, 272.92, 275.92, 278.92, 281.92, 284.92, 287.92, 290.92, 293.92, 296.92, 299.92, 302.92, 305.92, 308.92, 311.92, 314.92, 317.92, 319.0, 321.0, 323.0, 325.0 ],
-        "+${value} Energy Regeneration per second" : [ 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0 ],
-        "+${value} Base Attack Speed" : [ 0.95, 0.95, 0.95, 0.95, 0.95, 0.95, 0.95, 0.95, 0.95, 0.95, 0.95, 0.95, 0.95, 0.95, 0.95, 0.95, 0.95, 0.95, 0.95, 0.95, 0.95, 0.95, 0.95, 0.95 ],
-        "+${value} Health" : [ 750.0, 793.0, 837.0, 880.0, 923.0, 967.0, 1010.0, 1054.0, 1097.0, 1141.0, 1184.0, 1228.0, 1271.0, 1315.0, 1358.0, 1402.0, 1445.0, 1489.0, 1532.0, 1576.0, 1619.0, 1663.0, 1706.0, 1750.0 ],
-        "+${value} Strength" : [ 192.32, 194.32, 196.32, 198.32, 200.32, 202.32, 204.32, 206.32, 208.32, 210.32, 212.32, 214.32, 216.32, 218.32, 220.32, 222.32, 224.32, 226.32, 228.32, 230.32, 232.0, 233.0, 234.0, 236.0 ],
-        "+${value} Offensive Ability" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0, 48.0 ],
-        "+${value} Health Regeneration per second" : [ 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0 ],
-        "+${value} Base Casting Speed" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-        "+${value} Energy" : [ 1236.0, 1270.0, 1304.0, 1338.0, 1372.0, 1406.0, 1440.0, 1474.0, 1508.0, 1542.0, 1576.0, 1610.0, 1644.0, 1678.0, 1712.0, 1746.0, 1780.0, 1814.0, 1848.0, 1882.0, 1923.0, 1967.0, 1999.0, 2015.0 ],
-        "+${value}% Movement Speed" : [ 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0 ],
-        "+${value} Dexterity" : [ 298.48, 300.48, 302.48, 304.48, 306.48, 308.48, 310.48, 312.48, 314.48, 316.48, 318.48, 320.48, 322.48, 324.48, 326.48, 328.48, 330.48, 332.48, 334.48, 336.48, 338.0, 339.0, 340.0, 343.0 ]
-      },
+      "description" : "Call upon the skies to summon an archangel to assist you in your journey. Later levels unlock new spells for her to use.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 112,
         "posY" : 155,
-        "posX" : 112
+        "circular" : false
       }
     } ], [ {
       "name" : "Barricade",
@@ -6292,9 +6292,9 @@
       },
       "description" : "{^g}Skill Modifier{^n}{^w}Weave incredible amounts of light into your shield, building up an unbreakable defense. However, this additional layer of protection comes at a price; the shielded allies must invest more physical effort to make any kind of movement.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 464,
         "posY" : 93,
-        "posX" : 464
+        "circular" : true
       }
     }, {
       "name" : "Fury of the Skies",
@@ -6325,9 +6325,9 @@
       },
       "description" : "The altar channels a powerful thunder which bounces to all nearby targets, seriously damaging them.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 200,
         "posY" : 93,
-        "posX" : 200
+        "circular" : true
       }
     }, {
       "name" : "Strength Bestowal",
@@ -6345,9 +6345,9 @@
       },
       "description" : "Lend great amounts of power to a unique ally, allowing them to wreak havoc for a short period of time.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 288,
         "posY" : 93,
-        "posX" : 288
+        "circular" : false
       }
     }, {
       "name" : "Swift Retribution",
@@ -6370,9 +6370,9 @@
       },
       "description" : "{^g}Skill Modifier{^n}{^w}Conjure heavenly vengance upon your foes.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 376,
         "posY" : 93,
-        "posX" : 376
+        "circular" : true
       }
     }, {
       "name" : "Guardian Angel",
@@ -6387,9 +6387,9 @@
       },
       "description" : "The sole presence of the purest being fosters hope and empowers allied units.{^n}{^a}Cannot be dispelled.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 112,
         "posY" : 93,
-        "posX" : 112
+        "circular" : true
       }
     }, {
       "name" : "Exertion",
@@ -6404,9 +6404,9 @@
       },
       "description" : "Exhaust the stamina of your enemies, making them unable to proprely attack or defend themselves.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 640,
         "posY" : 93,
-        "posX" : 640
+        "circular" : true
       }
     } ], [ {
       "name" : "Painkiller",
@@ -6420,9 +6420,9 @@
       },
       "description" : "The best tool to survive is an unbreakable resolve.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 464,
         "posY" : 31,
-        "posX" : 464
+        "circular" : true
       }
     }, {
       "name" : "Purity",
@@ -6437,9 +6437,9 @@
       },
       "description" : "Push the limits of a mortal envelope further, banishing all evil from within the target's soul.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 288,
         "posY" : 31,
-        "posX" : 288
+        "circular" : true
       }
     } ] ],
     "masteryAttributes" : {
@@ -6467,9 +6467,9 @@
       },
       "description" : "Learn the secrets of emberlike, scorching spells, empowering all fire-based attacks around you.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 112,
         "posY" : 403,
-        "posX" : 112
+        "circular" : false
       }
     }, {
       "name" : "School of Frost",
@@ -6487,9 +6487,9 @@
       },
       "description" : "Learn the secrets of cold, chilling magic, boosting the lethality of all frost-based attacks near you.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 200,
         "posY" : 403,
-        "posX" : 200
+        "circular" : false
       }
     }, {
       "name" : "School of Lightning",
@@ -6507,9 +6507,9 @@
       },
       "description" : "Learn the secrets of thunderous, electrifying spells, multiplying the strength of all lightning-based attacks around you.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 288,
         "posY" : 403,
-        "posX" : 288
+        "circular" : false
       }
     }, {
       "name" : "School of Poison",
@@ -6529,9 +6529,9 @@
       },
       "description" : "Learn the secrets of alchemy and toxins, increasing the potency of all poison-based damage inflicted by you and your allies.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 376,
         "posY" : 403,
-        "posX" : 376
+        "circular" : false
       }
     }, {
       "name" : "School of Shadows",
@@ -6551,9 +6551,9 @@
       },
       "description" : "Learn the secrets of the dark and chaos, improving the power of all vitality-based attacks near you.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 464,
         "posY" : 403,
-        "posX" : 464
+        "circular" : false
       }
     } ], [ {
       "name" : "Dark Pact",
@@ -6567,9 +6567,9 @@
       },
       "description" : "{^g}Skill Modifier{^n}{^w}Abandon your own vitality to pursue your quest to find infinite magical power. ",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 464,
         "posY" : 341,
-        "posX" : 464
+        "circular" : true
       }
     }, {
       "name" : "Triplicate",
@@ -6588,9 +6588,9 @@
       },
       "description" : "Your staff attacks get divided into three projectiles, increasing your area of attack.{^n}{^y}Requires a staff.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 552,
         "posY" : 341,
-        "posX" : 552
+        "circular" : false
       }
     }, {
       "name" : "Magic Gems",
@@ -6606,9 +6606,9 @@
       },
       "description" : "Throw a set of magical gemstones at your opponents, releasing the stored tempestuous energy.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 288,
         "posY" : 341,
-        "posX" : 288
+        "circular" : false
       }
     }, {
       "name" : "Rot Zone",
@@ -6640,9 +6640,9 @@
       },
       "description" : "Plague the air of an area, to spread disease and death to those that inhale it.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 376,
         "posY" : 341,
-        "posX" : 376
+        "circular" : false
       }
     }, {
       "name" : "Ice Blockade",
@@ -6674,9 +6674,9 @@
       },
       "description" : "Form a wide, slow-moving wall of frost energy, damaging anything that passes through it.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 200,
         "posY" : 341,
-        "posX" : 200
+        "circular" : false
       }
     } ], [ {
       "name" : "Conjured Steel",
@@ -6689,9 +6689,9 @@
       },
       "description" : "Expert sorcerers are able to masterfully imbue all sorts of items with magic, even steel-crafted weapons.{^n}{^y}Requires any weapon that is not a staff.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 552,
         "posY" : 279,
-        "posX" : 552
+        "circular" : true
       }
     }, {
       "name" : "Supercharged Amethysts",
@@ -6708,9 +6708,9 @@
       },
       "description" : "{^g}Skill Modifier{^n}{^w}Charge a part of the gems in your palms, making them petrify the targets they come in contact with, however the damage of those gems gets completely nullified.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 288,
         "posY" : 279,
-        "posX" : 288
+        "circular" : true
       }
     }, {
       "name" : "Sever Minds",
@@ -6734,9 +6734,9 @@
       },
       "description" : "A shocking, darkened blast which shatters the minds of nearby foes into pieces.{^n}{^y}Cooldown is reduced with more skill points.{^n}{^y}Scales infinitely beyond the maximum level.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 464,
         "posY" : 279,
-        "posX" : 464
+        "circular" : false
       }
     }, {
       "name" : "Reload",
@@ -6749,9 +6749,9 @@
       },
       "description" : "With great practice, learn how to effectively recharge your abilities in the midst of the combat and enable deadly spell combos.{^n}{^y}Does not affect skills granted from items or artifacts.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 640,
         "posY" : 279,
-        "posX" : 640
+        "circular" : false
       }
     } ], [ {
       "name" : "Cone of Flames",
@@ -6777,9 +6777,9 @@
       },
       "description" : "Unleash a violent blast of fire, which burns to the bone the enemies it touches.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 112,
         "posY" : 217,
-        "posX" : 112
+        "circular" : false
       }
     }, {
       "name" : "Intense Frost",
@@ -6794,9 +6794,9 @@
       },
       "description" : "Freeze the opponents that cross your frost barrier on the spot, and increase the frost damage of your spell.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 200,
         "posY" : 217,
-        "posX" : 200
+        "circular" : true
       }
     }, {
       "name" : "Electrostatic Veil",
@@ -6822,9 +6822,9 @@
       },
       "description" : "When the situation calls for it, create an electrical veil around you, granting new energy to fight despite the hopelessness.{^n}{^y}Remains active while health is low.{^n}{^a}Cannot be dispelled.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 288,
         "posY" : 217,
-        "posX" : 288
+        "circular" : true
       }
     } ], [ {
       "name" : "Infinite Reach",
@@ -6844,9 +6844,9 @@
       },
       "description" : "Your spell has now an extended reach, allowing it to travel much further than usual.{^n}{^y}Every level increases the distance travelled by the wave.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 112,
         "posY" : 155,
-        "posX" : 112
+        "circular" : true
       }
     }, {
       "name" : "Bouncing Plague",
@@ -6869,9 +6869,9 @@
       },
       "description" : "Whenever Rot Zone inflicts damage, it will throw poisonous bolts towards the enemies near you, extending the plague's area of effect.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 376,
         "posY" : 155,
-        "posX" : 376
+        "circular" : true
       }
     }, {
       "name" : "Inner Turmoil",
@@ -6900,9 +6900,9 @@
       },
       "description" : "An explosion centered on the first target of your spell which devastates the psyches of all enemies caught in it.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 464,
         "posY" : 155,
-        "posX" : 464
+        "circular" : true
       }
     }, {
       "name" : "Archmage's Cloak",
@@ -6915,9 +6915,9 @@
       },
       "description" : "Those who understand the root of magic itself can utilize its power to increase their stamina and vitality alike.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 552,
         "posY" : 155,
-        "posX" : 552
+        "circular" : true
       }
     }, {
       "name" : "Ice Lance",
@@ -6938,9 +6938,9 @@
       },
       "description" : "Conjure a long and sharp block of ice that can be tossed like a javelin that explodes over a small area.{^n}{^y}Transfers flat damage outside of the wielded weapon.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 200,
         "posY" : 155,
-        "posX" : 200
+        "circular" : false
       }
     } ], [ {
       "name" : "Horror",
@@ -6972,9 +6972,9 @@
       },
       "description" : "Make fear and doubt arise in hearts of your victims, crippling and preventing them from counter-attacking.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 464,
         "posY" : 93,
-        "posX" : 464
+        "circular" : false
       }
     }, {
       "name" : "Outburst",
@@ -7002,9 +7002,9 @@
       },
       "description" : "Release stored lightning energy to blast all nearby enemies, draining their energy and causing severe electrocutions.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 288,
         "posY" : 93,
-        "posX" : 288
+        "circular" : true
       }
     }, {
       "name" : "Magma Barrier",
@@ -7020,7 +7020,14 @@
         "SkillPetUseAngleToCaster" : 1,
         "SkillPetNumberOfRings" : 5
       },
-      "description" : "Make magmatic stones rise from the ground, blocking the path of your enemies and burning them with intense heat.{^n}{^y}The aura does not activate if there is no enemy nearby.",
+      "petAttributes" : {
+        "+${value} Health" : [ 1300.0, 1447.0, 1594.0, 1742.0, 1891.0, 2039.0, 2185.0, 2333.0, 2482.0, 2629.0, 2777.0, 2924.0, 3072.0, 3220.0 ],
+        "+${value} Base Movement Speed" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+        "+${value} Base Casting Speed" : [ 9999.0, 9999.0, 9999.0, 9999.0, 9999.0, 9999.0, 9999.0, 9999.0, 9999.0, 9999.0, 9999.0, 9999.0, 9999.0, 9999.0 ],
+        "+${value} Energy" : [ 242.0, 324.0, 406.0, 488.0, 570.0, 652.0, 734.0, 816.0, 898.0, 980.0, 1062.0, 1144.0, 1226.0, 1308.0 ],
+        "+${value} Energy Regeneration per second" : [ 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0 ],
+        "+${value} Base Attack Speed" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ]
+      },
       "petSkills" : {
         "Burning Aura" : {
           "name" : "Burning Aura",
@@ -7048,18 +7055,11 @@
           }
         }
       },
-      "petAttributes" : {
-        "+${value} Health" : [ 1300.0, 1447.0, 1594.0, 1742.0, 1891.0, 2039.0, 2185.0, 2333.0, 2482.0, 2629.0, 2777.0, 2924.0, 3072.0, 3220.0 ],
-        "+${value} Base Movement Speed" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-        "+${value} Base Casting Speed" : [ 9999.0, 9999.0, 9999.0, 9999.0, 9999.0, 9999.0, 9999.0, 9999.0, 9999.0, 9999.0, 9999.0, 9999.0, 9999.0, 9999.0 ],
-        "+${value} Energy" : [ 242.0, 324.0, 406.0, 488.0, 570.0, 652.0, 734.0, 816.0, 898.0, 980.0, 1062.0, 1144.0, 1226.0, 1308.0 ],
-        "+${value} Energy Regeneration per second" : [ 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0 ],
-        "+${value} Base Attack Speed" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ]
-      },
+      "description" : "Make magmatic stones rise from the ground, blocking the path of your enemies and burning them with intense heat.{^n}{^y}The aura does not activate if there is no enemy nearby.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 112,
         "posY" : 93,
-        "posX" : 112
+        "circular" : false
       }
     }, {
       "name" : "Physical Ward",
@@ -7077,9 +7077,9 @@
       },
       "description" : "Upon taking damage, there's a chance that a defensive ward forms around you, protecting you physical and piercing damage.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 552,
         "posY" : 93,
-        "posX" : 552
+        "circular" : true
       }
     }, {
       "name" : "Cryopulverization",
@@ -7104,9 +7104,9 @@
       },
       "description" : "The ice javelin breaks with increased violence and shatters into sharp icicles.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 200,
         "posY" : 93,
-        "posX" : 200
+        "circular" : true
       }
     }, {
       "name" : "Gall Bomb",
@@ -7133,9 +7133,9 @@
       },
       "description" : "A dangerous acidic concoction composed of self-crafted elixirs imbued with magic becomes an explosive weapon, useful at disrupting enemies.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 376,
         "posY" : 93,
-        "posX" : 376
+        "circular" : false
       }
     } ], [ {
       "name" : "Elemental Dominion",
@@ -7157,9 +7157,9 @@
       },
       "description" : "Merge the power of storms, blizzards and volcanos into a single, powerful aura that empowers you with unthinkable elemental power.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 200,
         "posY" : 31,
-        "posX" : 200
+        "circular" : false
       }
     }, {
       "name" : "Magical Catastrophe",
@@ -7221,9 +7221,9 @@
       },
       "description" : "In an attempt to produce the most powerful magic technique, fuse the power of all schools of magic into a singular, powerful pulse of arcane power, disintegrating everything in range.{^n}{^y}Requires a staff.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 464,
         "posY" : 31,
-        "posX" : 464
+        "circular" : false
       }
     } ] ],
     "masteryAttributes" : {
@@ -7246,9 +7246,9 @@
       },
       "description" : "Learn to remain steady and shoot under all conditions and from all angles to always hit the mark.{^n}{^y}Requires a ranged weapon.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 464,
         "posY" : 403,
-        "posX" : 464
+        "circular" : true
       }
     }, {
       "name" : "Raptor Hunter",
@@ -7259,7 +7259,24 @@
         "MaxLevel" : 18,
         "${value} Summon Limit " : 1
       },
-      "description" : "Call upon a bird of prey to assist you in hunting down your victims.",
+      "petAttributes" : {
+        "+${value} Defensive Ability" : [ 2.66, 5.32, 7.98, 10.64, 13.3, 15.96, 18.62, 21.28, 23.94, 26.6, 29.26, 31.92, 34.58, 37.24, 39.9, 42.56, 45.22, 47.88, 50.0, 52.0, 55.0, 58.0 ],
+        "+${value} Base Movement Speed" : [ 1.24, 1.24, 1.24, 1.24, 1.24, 1.24, 1.24, 1.24, 1.24, 1.24, 1.24, 1.24, 1.24, 1.24, 1.24, 1.24, 1.24, 1.24, 1.24, 1.24, 1.24, 1.24 ],
+        "+${value} Intelligence" : [ 65.0, 68.0, 71.0, 74.0, 77.0, 80.0, 83.0, 86.0, 89.0, 92.0, 95.0, 98.0, 101.0, 104.0, 107.0, 110.0, 113.0, 116.0, 110.0, 107.0, 113.0, 116.0 ],
+        "+${value} Energy Regeneration per second" : [ 2.6, 3.2, 3.8, 4.4, 5.0, 5.6, 6.2, 6.8, 7.4, 8.0, 8.6, 9.2, 9.8, 10.4, 11.0, 11.6, 12.2, 12.8, 13.4, 14.0, 14.6, 15.2 ],
+        "+${value} Base Attack Speed" : [ 0.99, 0.99, 0.99, 0.99, 0.99, 0.99, 0.99, 0.99, 0.99, 0.99, 0.99, 0.99, 0.99, 0.99, 0.99, 0.99, 0.99, 0.99, 0.99, 0.99, 0.99, 0.99 ],
+        "+${value} Health" : [ 260.0, 314.0, 369.0, 423.0, 477.0, 531.0, 586.0, 640.0, 694.0, 749.0, 803.0, 857.0, 911.0, 966.0, 1020.0, 1074.0, 1129.0, 1183.0, 1237.0, 1291.0, 1346.0, 1400.0 ],
+        "+${value} Strength" : [ 79.56, 83.538, 87.7149, 92.10065, 96.70567, 101.541, 101.541, 106.618, 111.9489, 117.5464, 123.4237, 129.5948, 136.0746, 142.8783, 150.0222, 159.8715, 165.3995, 176.4262, 178.0, 180.0, 182.0, 184.0 ],
+        "+${value} Health Regeneration per second" : [ 9.45, 11.8125, 14.175, 16.5375, 18.9, 21.2625, 23.625, 25.9875, 28.35, 30.7125, 33.075, 35.4375, 37.8, 40.1625, 42.525, 44.8875, 47.25, 49.6125, 52.0, 54.0, 56.0, 59.0 ],
+        "+${value} Base Casting Speed" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+        "+${value} Energy" : [ 200.0, 210.0, 220.0, 230.0, 240.0, 250.0, 260.0, 270.0, 280.0, 290.0, 300.0, 310.0, 320.0, 330.0, 340.0, 350.0, 360.0, 370.0, 380.0, 390.0, 400.0, 410.0 ],
+        "+${value}% Movement Speed" : [ 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 16.0, 17.0, 18.0, 19.0, 17.0, 16.0, 18.0, 19.0 ],
+        "+${value} Dexterity" : [ 98.104, 103.9592, 110.0572, 116.41, 123.0305, 129.9321, 137.1286, 144.6351, 152.4668, 160.6402, 169.1722, 178.0808, 187.3848, 197.1041, 207.2593, 217.8722, 228.9659, 240.5641, 248.0, 256.0, 264.0, 272.0 ],
+        "Damage" : {
+          "min" : [ 7.84, 11.2, 14.56, 17.92, 21.28, 24.64, 28.0, 31.36, 34.72, 38.08, 41.44, 44.8, 48.16, 51.52, 54.88, 58.24, 61.6, 64.96, 66.0, 68.0, 70.0, 72.0 ],
+          "max" : [ 10.08, 13.44, 16.8, 20.16, 23.52, 26.88, 30.24, 33.6, 36.96, 40.32, 43.68, 47.04, 50.4, 53.76, 57.12, 60.48, 63.84, 67.2, 69.0, 71.0, 73.0, 75.0 ]
+        }
+      },
       "petSkills" : {
         "Intimidating Screech" : {
           "name" : "Intimidating Screech",
@@ -7363,28 +7380,11 @@
           "description" : "Feeding on the flesh of its sufferers and tracking those who attempt to flee becomes trivial to the most relentless raptors."
         }
       },
-      "petAttributes" : {
-        "+${value} Defensive Ability" : [ 2.66, 5.32, 7.98, 10.64, 13.3, 15.96, 18.62, 21.28, 23.94, 26.6, 29.26, 31.92, 34.58, 37.24, 39.9, 42.56, 45.22, 47.88, 50.0, 52.0, 55.0, 58.0 ],
-        "+${value} Base Movement Speed" : [ 1.24, 1.24, 1.24, 1.24, 1.24, 1.24, 1.24, 1.24, 1.24, 1.24, 1.24, 1.24, 1.24, 1.24, 1.24, 1.24, 1.24, 1.24, 1.24, 1.24, 1.24, 1.24 ],
-        "+${value} Intelligence" : [ 65.0, 68.0, 71.0, 74.0, 77.0, 80.0, 83.0, 86.0, 89.0, 92.0, 95.0, 98.0, 101.0, 104.0, 107.0, 110.0, 113.0, 116.0, 110.0, 107.0, 113.0, 116.0 ],
-        "+${value} Energy Regeneration per second" : [ 2.6, 3.2, 3.8, 4.4, 5.0, 5.6, 6.2, 6.8, 7.4, 8.0, 8.6, 9.2, 9.8, 10.4, 11.0, 11.6, 12.2, 12.8, 13.4, 14.0, 14.6, 15.2 ],
-        "+${value} Base Attack Speed" : [ 0.99, 0.99, 0.99, 0.99, 0.99, 0.99, 0.99, 0.99, 0.99, 0.99, 0.99, 0.99, 0.99, 0.99, 0.99, 0.99, 0.99, 0.99, 0.99, 0.99, 0.99, 0.99 ],
-        "+${value} Health" : [ 260.0, 314.0, 369.0, 423.0, 477.0, 531.0, 586.0, 640.0, 694.0, 749.0, 803.0, 857.0, 911.0, 966.0, 1020.0, 1074.0, 1129.0, 1183.0, 1237.0, 1291.0, 1346.0, 1400.0 ],
-        "+${value} Strength" : [ 79.56, 83.538, 87.7149, 92.10065, 96.70567, 101.541, 101.541, 106.618, 111.9489, 117.5464, 123.4237, 129.5948, 136.0746, 142.8783, 150.0222, 159.8715, 165.3995, 176.4262, 178.0, 180.0, 182.0, 184.0 ],
-        "+${value} Health Regeneration per second" : [ 9.45, 11.8125, 14.175, 16.5375, 18.9, 21.2625, 23.625, 25.9875, 28.35, 30.7125, 33.075, 35.4375, 37.8, 40.1625, 42.525, 44.8875, 47.25, 49.6125, 52.0, 54.0, 56.0, 59.0 ],
-        "+${value} Base Casting Speed" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-        "+${value} Energy" : [ 200.0, 210.0, 220.0, 230.0, 240.0, 250.0, 260.0, 270.0, 280.0, 290.0, 300.0, 310.0, 320.0, 330.0, 340.0, 350.0, 360.0, 370.0, 380.0, 390.0, 400.0, 410.0 ],
-        "+${value}% Movement Speed" : [ 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 16.0, 17.0, 18.0, 19.0, 17.0, 16.0, 18.0, 19.0 ],
-        "+${value} Dexterity" : [ 98.104, 103.9592, 110.0572, 116.41, 123.0305, 129.9321, 137.1286, 144.6351, 152.4668, 160.6402, 169.1722, 178.0808, 187.3848, 197.1041, 207.2593, 217.8722, 228.9659, 240.5641, 248.0, 256.0, 264.0, 272.0 ],
-        "Damage" : {
-          "min" : [ 7.84, 11.2, 14.56, 17.92, 21.28, 24.64, 28.0, 31.36, 34.72, 38.08, 41.44, 44.8, 48.16, 51.52, 54.88, 58.24, 61.6, 64.96, 66.0, 68.0, 70.0, 72.0 ],
-          "max" : [ 10.08, 13.44, 16.8, 20.16, 23.52, 26.88, 30.24, 33.6, 36.96, 40.32, 43.68, 47.04, 50.4, 53.76, 57.12, 60.48, 63.84, 67.2, 69.0, 71.0, 73.0, 75.0 ]
-        }
-      },
+      "description" : "Call upon a bird of prey to assist you in hunting down your victims.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 552,
         "posY" : 403,
-        "posX" : 552
+        "circular" : false
       }
     }, {
       "name" : "Hunting Net",
@@ -7401,9 +7401,9 @@
       },
       "description" : "Throw a hunting net, entangling an enemy, preventing them from taking a single step for a duration, as well as heavily reducing their damage output.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 200,
         "posY" : 403,
-        "posX" : 200
+        "circular" : false
       }
     } ], [ {
       "name" : "Eagle Eye",
@@ -7424,9 +7424,9 @@
       },
       "description" : "Firing rapidly allows you to enter a state of increased focus, replenishing your energy with ease and increasing the piercing damage of your projectiles. {^y}Apply this skill to your left mouse button.{^n}{^y}Requires a ranged weapon.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 112,
         "posY" : 341,
-        "posX" : 112
+        "circular" : false
       }
     }, {
       "name" : "Razor Sharpening",
@@ -7446,9 +7446,9 @@
       },
       "description" : "Increase the piercing potential of the weapons of the nearby allied units.{^n}{^y}Requires a bow, a thrown weapon, a sword or a spear.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 464,
         "posY" : 341,
-        "posX" : 464
+        "circular" : false
       }
     }, {
       "name" : "Magical Winds",
@@ -7477,9 +7477,9 @@
       },
       "description" : "Concentrate a great amount of magical energy in a single, powerful projectile that damages all enemies in its path.{^n}{^y}Requires a ranged weapon.{^n}{^y}Transfers flat damage outside of the wielded weapon.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 288,
         "posY" : 341,
-        "posX" : 288
+        "circular" : false
       }
     }, {
       "name" : "Monster Hunter",
@@ -7491,9 +7491,9 @@
       },
       "description" : "Special training allows you to face all kinds of demons and giants with no hesitation.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 376,
         "posY" : 341,
-        "posX" : 376
+        "circular" : true
       }
     } ], [ {
       "name" : "Bloodletting",
@@ -7506,9 +7506,9 @@
       },
       "description" : "Become an expert at causing internal bleeding with specialized fighting techniques using piercing weapons.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 464,
         "posY" : 279,
-        "posX" : 464
+        "circular" : true
       }
     }, {
       "name" : "Blinding Winds",
@@ -7541,9 +7541,9 @@
       },
       "description" : "Intense rays of light emerge from your projectiles, which blind your enemies, making them unable to aim properly or defend themselves. ",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 288,
         "posY" : 279,
-        "posX" : 288
+        "circular" : true
       }
     }, {
       "name" : "Split Shots",
@@ -7563,9 +7563,9 @@
       },
       "description" : "This special technique allows you to fire multiple projectiles at once to manage large groups more easily.{^n}{^y}Requires either a bow or a thrown weapon.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 200,
         "posY" : 279,
-        "posX" : 200
+        "circular" : false
       }
     }, {
       "name" : "Intimidating Screech",
@@ -7584,9 +7584,9 @@
       },
       "description" : "The raptor's screech sends a shivering wave, which lowers enemies' resistance and damage dealt for a short while.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 552,
         "posY" : 279,
-        "posX" : 552
+        "circular" : true
       }
     }, {
       "name" : "Bandages",
@@ -7604,9 +7604,9 @@
       },
       "description" : "While you venture in unknown regions, carrying a pack of bandages is useful, as they are effective for protecting wounds from aggravating and enable accelerated recovery. Additonally, they may be used on allied units.{^n}{^a}Cannot be dispelled.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 640,
         "posY" : 279,
-        "posX" : 640
+        "circular" : false
       }
     } ], [ {
       "name" : "Acute Precision",
@@ -7620,9 +7620,9 @@
       },
       "description" : "The projectiles of your ranged weapons pass through enemies and deal increased piercing damage.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 112,
         "posY" : 217,
-        "posX" : 112
+        "circular" : true
       }
     }, {
       "name" : "Ranger's Prowess",
@@ -7645,9 +7645,9 @@
       },
       "description" : "Rangers can share their techniques with companions and allies, improving their damage output and speed for a short moment.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 200,
         "posY" : 217,
-        "posX" : 200
+        "circular" : false
       }
     }, {
       "name" : "Silver Feathers",
@@ -7678,9 +7678,9 @@
       },
       "description" : "Your raptor may now throw its piercing feathers to damage enemies from afar and disturb their eyesight.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 552,
         "posY" : 217,
-        "posX" : 552
+        "circular" : true
       }
     }, {
       "name" : "Storm of Arrows",
@@ -7705,9 +7705,9 @@
       },
       "description" : "Firing multiple arrows up in the sky allows unavoidable attacks from unsuspected angles.{^y} Inflicts damage twice per second.{^n}{^y}Requires a ranged weapon.{^n}{^y}Transfers flat damage outside of the wielded weapon.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 640,
         "posY" : 217,
-        "posX" : 640
+        "circular" : false
       }
     }, {
       "name" : "Survival Techniques",
@@ -7721,9 +7721,9 @@
       },
       "description" : "As a master of survival in the wild, you may teach your allies the basics of survivability; this knowledge can be applied in combat to avoid more attacks than a regular fighter would.{^n}{^a}Cannot be dispelled.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 464,
         "posY" : 217,
-        "posX" : 464
+        "circular" : false
       }
     } ], [ {
       "name" : "Languid Death",
@@ -7756,9 +7756,9 @@
       },
       "description" : "With hunter's profound knowledge of poison lore, you find ingredients to prepare deadly substances which infect wounds, preventing them from regenerating.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 112,
         "posY" : 155,
-        "posX" : 112
+        "circular" : true
       }
     }, {
       "name" : "Vampire Shots",
@@ -7773,9 +7773,9 @@
       },
       "description" : "{^g}Skill Modifier{^n}{^w}Upgrade your magical shots to drain life from your enemies and restore yours. This technique, however, will greatly increase the energy required to cast the skill.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 288,
         "posY" : 155,
-        "posX" : 288
+        "circular" : true
       }
     }, {
       "name" : "Divine Defiance",
@@ -7788,9 +7788,9 @@
       },
       "description" : "The resolve of a monster slayer amplifies equally to the greatness of the challenge before them.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 376,
         "posY" : 155,
-        "posX" : 376
+        "circular" : true
       }
     }, {
       "name" : "Scavenger",
@@ -7808,9 +7808,9 @@
       },
       "description" : "Feeding on the flesh of its sufferers and tracking those who attempt to flee becomes trivial to the most relentless raptors.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 552,
         "posY" : 155,
-        "posX" : 552
+        "circular" : true
       }
     }, {
       "name" : "Tempest",
@@ -7831,9 +7831,9 @@
       },
       "description" : "Arrows flying through the sky absorb the elemental energy and deliver it on your unfortunate enemies.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 640,
         "posY" : 155,
-        "posX" : 640
+        "circular" : true
       }
     } ], [ {
       "name" : "Headshot",
@@ -7852,9 +7852,9 @@
       },
       "description" : "Shots perfectly aimed at the head may cause critical damage and knock out enemies.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 112,
         "posY" : 93,
-        "posX" : 112
+        "circular" : true
       }
     }, {
       "name" : "Scorching Edge",
@@ -7877,9 +7877,9 @@
       },
       "description" : "{^g}Passive Modifier{^n}{^w}Instead of sharpening your arrows, you dip them into ignited oil to melt your opponent's armor. However, the tar-like complexion of the arrow will make it dull.{^n}{^y}Requires a bow.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 464,
         "posY" : 93,
-        "posX" : 464
+        "circular" : true
       }
     }, {
       "name" : "Devastating Shots",
@@ -7903,9 +7903,9 @@
       },
       "description" : "Perfected skills with ranged weapons allows you to aim where your opponents least expect it in a blink of an eye and deal extraordinary damage.{^n}{^y}Requires either a bow or a thrown weapon.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 200,
         "posY" : 93,
-        "posX" : 200
+        "circular" : true
       }
     }, {
       "name" : "Light Armor Specialist",
@@ -7921,9 +7921,9 @@
       },
       "description" : "Learn how to adjust and customize the armor pieces of you and your allies, allowing for faster movement and an increase in durability.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 552,
         "posY" : 93,
-        "posX" : 552
+        "circular" : false
       }
     }, {
       "name" : "Ominous Arrows",
@@ -7953,9 +7953,9 @@
       },
       "description" : "Multiple piercing arrows, imbued with dreadful essence, explode in a small burst upon contact.{^n}{^y}Requires a ranged weapon.{^n}{^y}Transfers flat damage outside of the wielded weapon.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 288,
         "posY" : 93,
-        "posX" : 288
+        "circular" : false
       }
     } ], [ {
       "name" : "Dragon Arrow",
@@ -7989,9 +7989,9 @@
       },
       "description" : "Launch a scorching, fiery arrow that explodes upon hitting the first enemy it encounters and deals a great deal of burn damage over time.{^n}{^y}Requires a ranged weapon.{^n}{^y}Transfers flat damage outside of the wielded weapon.",
       "skillIcon" : {
-        "circular" : false,
+        "posX" : 464,
         "posY" : 31,
-        "posX" : 464
+        "circular" : false
       }
     }, {
       "name" : "Astuteness",
@@ -8006,9 +8006,9 @@
       },
       "description" : "Having more cunning and cleverness than your opponents allows you to use different defensive strategies to outsmart your foes.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 552,
         "posY" : 31,
-        "posX" : 552
+        "circular" : true
       }
     }, {
       "name" : "Confined Technique",
@@ -8031,9 +8031,9 @@
       },
       "description" : "{^g}Skill Modifier{^n}{^w}Studying the dark arts, your arrows become ethereal and they tear their victims soul apart, albeit not their body.",
       "skillIcon" : {
-        "circular" : true,
+        "posX" : 288,
         "posY" : 31,
-        "posX" : 288
+        "circular" : true
       }
     } ] ],
     "masteryAttributes" : {
@@ -8044,6 +8044,7 @@
       "MaxLevel" : 40
     }
   } ],
+  "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/",
   "mappedMasteries" : {
     "1" : "Aqua",
     "2" : "Necromancy",
@@ -8056,6 +8057,5 @@
     "9" : "Witchcraft",
     "10" : "Archery"
   },
-  "url" : "https://bytesquire.github.io/TitanQuestCalculator/mods/ShadowChampions/",
   "masteryLevels" : [ 1, 4, 10, 16, 24, 32, 40 ]
 }
