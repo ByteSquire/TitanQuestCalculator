@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html onkeydown="shiftPressed(event);">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Titan Quest Calculator - ${name}</title>
@@ -18,7 +18,7 @@
     <script type="text/javascript" src="js/attribute_parser.js"></script>
   </head>
 
-  <body oncontextmenu="return false" onkeydown="shiftPressed(event);">
+  <body oncontextmenu="return false">
     <table class="masteryTable">
       <tr>
         <td class="panels">

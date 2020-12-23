@@ -37,12 +37,11 @@ function calcBoni(attributes, fromLevel, toLevel, event){
                 else
                     value = Number(attributes[x][_toLevel-1]);
                 value = Number(value);
-                updateAttributes(x, value);
             } else{
                 var value = "-" + attributes[x][_fromLevel-1];
                 value = Number(value);
-                updateAttributes(x, value);
             }
+            updateAttributes(x, value);
         });
     } else {
         attrs.forEach((x) => {
@@ -80,6 +79,8 @@ function calcLevelReq(){
 }
 
 function updateAttributes(x, value){
+    if(!x.startsWith("+") && !x.startsWith("-"))
+        return;
     var attr = x.split(" ")[1];
     if(!x.includes("Regeneration"))
         if(!x.includes("%")){

@@ -123,7 +123,7 @@ function formatPetSkills(value, index, colour) {
         }
         if(index >= value.petSkillLevels[key].length)
             index = value.petSkillLevels[key].length-1;
-        ret += getPopupString(skill, value.petSkillLevels[key][index]);
+        ret += getPopupString(skill, value.petSkillLevels[key][index], true);
         ret += "<br>";
     });
     return ret;
