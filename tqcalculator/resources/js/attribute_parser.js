@@ -112,6 +112,7 @@ function formatPetSkills(value, index, colour) {
         if(i%4 == 0){
             ret += '<tr style="vertical-align: top">';
         }
+        i++;
         ret += "<td>";
         if(value.petSkillLevels[key] === undefined){
             ret += '<span class="title">' + skill.name + '</span>\n';
@@ -124,7 +125,6 @@ function formatPetSkills(value, index, colour) {
             index = value.petSkillLevels[key].length-1;
         ret += getPopupString(skill, value.petSkillLevels[key][index]);
         ret += "<br>";
-        i++;
     });
     return ret;
 }
