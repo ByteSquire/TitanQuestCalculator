@@ -105,21 +105,17 @@ function formatPetAttributes(value, index, colour) {
 
 function formatPetSkills(value, index, colour) {
     var skills = Object.keys(value);
-    var ret = '<table><tr><td><span style="color: brown">Pet Skills:</span><br><tr>';
+    var ret = '<table><tr style="vertical-align: top"><td><span style="color: brown">Pet Skills:</span><br><tr style="vertical-align: top">';
+    var i = 1;
     skills.forEach((key) => {
         var skill = value[key];
+        if(i%4 == 0){
+            ret += '<tr style="vertical-align: top">';
+        }
         ret += "<td>";
         ret += getPopupString(skill, index);
         ret += "<br>";
-        /*
-        var attrs = Object.keys(skill.attributes);
-        ret += '<span class="title">' + skill.name + '</span>\n<br>\n';
-        attrs.forEach((innerKey) => {
-            ret += getAttributeStringWithColour(innerKey, skill.attributes[innerKey], index, colour);
-            ret += "<br>";
-        });
-        */
+        i++;
     });
-    ret += "</table>";
     return ret;
 }

@@ -18,7 +18,7 @@
     <script type="text/javascript" src="js/attribute_parser.js"></script>
   </head>
 
-  <body oncontextmenu="return false">
+  <body oncontextmenu="return false" onkeydown="shiftPressed(event);">
     <table class="masteryTable">
       <tr>
         <td class="panels">

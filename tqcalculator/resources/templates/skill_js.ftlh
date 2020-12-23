@@ -97,8 +97,40 @@ function skillButtonPopup(button, event){
             }
         });
     });
-    pop.innerHTML = getPopupString(skill, button.innerText.split("/")[0].replaceAll("\n", ""));
+    pop.innerHTML = getPopupString(skill, Number(button.innerText.split("/")[0].replaceAll("\n", "")));
 
     pop.style.display = "block";
     movePopupintoView(pop, pageHeight);
+}
+
+var petDisplayed = false;
+
+function shiftPressed(event){
+    if(event.shiftKey){
+        var pop = document.getElementById("pop");
+        if(pop.style.display == "none")
+            return;
+            
+        var button = document.getElementById(pop.getElementsByClassName("title")[0].innerText);
+        
+        var matteringMastery = (button.parentElement.id == "panel1")? m1 : m2;
+        var tiers = matteringMastery.skillTiers;
+        var skill;
+        tiers.forEach((tier) => {
+            tier.forEach((aSkill) => {
+                if(aSkill.name == button.id){
+                    skill = aSkill;
+                }
+            });
+        });
+        if(!petDisplayed){
+            pop.innerHTML = getPopupStringPet(skill, Number(button.innerText.split("/")[0].replaceAll("\n", "")));
+            petDisplayed = true;
+        } else {
+            pop.innerHTML = getPopupString(skill, Number(button.innerText.split("/")[0].replaceAll("\n", "")));
+            petDisplayed = false;
+        }
+        pop.style.display = "block";
+        movePopupintoView(pop, getPageHeight());
+    }
 }

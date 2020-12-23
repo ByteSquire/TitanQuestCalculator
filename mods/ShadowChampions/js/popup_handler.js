@@ -1,5 +1,4 @@
 function getPopupString(skill, currLevel){
-    currLevel = Number(currLevel);
     var ret = '<span class="title">' + skill.name + '</span>\n';
     ret += "<br>\n";
     if(skill.description){
@@ -26,11 +25,6 @@ function getPopupString(skill, currLevel){
                 ret += "<br>\n";
             }
     }
-    var hasPet = false;
-    if(skill.petAttributes){
-        ret += '<table><td>';
-        hasPet = true;
-    }
     
     if(currLevel > 0){
         ret += '<br>\n';
@@ -55,8 +49,6 @@ function getPopupString(skill, currLevel){
             ret += getAttributeStringWithColour(key, value, currLevel-1, colour);
             ret += '<br>\n';
         });
-        if(skill.petAttributes)
-            ret += formatPetAttributes(skill.petAttributes, currLevel-1, colour);
     }
     
     ret += '<br>\n';
@@ -105,16 +97,6 @@ function getPopupString(skill, currLevel){
             }
         }
     });
-    if(hasPet)
-        ret += "<td>";
-    if(skill.petAttributes)
-        ret += formatPetAttributes(skill.petAttributes, currLevel, "white");
-    if(skill.petSkills){
-        ret += "<br>";
-        ret += formatPetSkills(skill.petSkills, currLevel, "white");
-    }
-    if(hasPet)
-        ret += "</table>";
     return ret;
 }
 
@@ -138,4 +120,20 @@ function getPageHeight() {
 function hidePopup(){
     document.getElementById("pop").style.display = "none";
     document.getElementById("pop").style.bottom = "unset";
+}
+
+function getPopupStringPet(skill, currLevel){
+    var hasPet = false;
+    var ret = '<span class="title">' + skill.name + '</span>\n<br>\n';
+    if(skill.petAttributes){
+        ret += '<table><tr style="vertical-align: top">';
+        ret += '<td>';
+        ret += formatPetAttributes(skill.petAttributes, currLevel, "white");
+        if(skill.petSkills){
+            ret += "<td>";
+            ret += formatPetSkills(skill.petSkills, currLevel, "white");
+        }
+    } else
+        return getPopupString(skill, currLevel);
+    return ret;
 }
