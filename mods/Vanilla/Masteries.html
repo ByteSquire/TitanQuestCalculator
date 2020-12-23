@@ -116,6 +116,9 @@
                 <td><br></td>
               </tr>
               <tr>
+                <td><span style="color: green; font-weight: bold">Controls:</span></td>
+              </tr>
+              <tr>
                 <td>Right Click</td>
                 <td>Remove Point</td>
               </tr>
@@ -134,6 +137,10 @@
               <tr>
                 <td>Click Mastery Tier</td>
                 <td>Set Points to Tier</td>
+              </tr>
+              <tr>
+                <td>Press Shift over Skill</td>
+                <td>Display Pet Info</td>
               </tr>
             </table>
           </div>

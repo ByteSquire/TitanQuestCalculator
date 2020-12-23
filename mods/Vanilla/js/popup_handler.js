@@ -120,18 +120,19 @@ function getPageHeight() {
 function hidePopup(){
     document.getElementById("pop").style.display = "none";
     document.getElementById("pop").style.bottom = "unset";
+    petDisplayed = false;
 }
 
 function getPopupStringPet(skill, currLevel){
     var hasPet = false;
     var ret = '<span class="title">' + skill.name + '</span>\n<br>\n';
-    if(skill.petAttributes){
+    if(skill.Pet){
         ret += '<table><tr style="vertical-align: top">';
         ret += '<td>';
-        ret += formatPetAttributes(skill.petAttributes, currLevel, "white");
+        ret += formatPetAttributes(skill.Pet.attributes, currLevel, "white");
         if(skill.petSkills){
             ret += "<td>";
-            ret += formatPetSkills(skill.petSkills, currLevel, "white");
+            ret += formatPetSkills(skill.Pet, currLevel, "white");
         }
     } else
         return getPopupString(skill, currLevel);

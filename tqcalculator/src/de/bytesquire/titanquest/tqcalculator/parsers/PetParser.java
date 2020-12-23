@@ -23,6 +23,9 @@ public class PetParser {
 
     private HashMap<String, Object> mAttributes;
     private HashMap<String, Skill> mPetSkills;
+    private HashMap<Integer, String> mSkillNameIndexMap;
+    private HashMap<String, ArrayList<Integer>> mPetSkillLevels;
+    private HashMap<Integer, ArrayList<Integer>> mSkillLevelIndexMap;
     private File[] mSkills;
     private ArrayList<File> mAdditionalFiles;
     private String mParentPath;
@@ -36,6 +39,9 @@ public class PetParser {
         mAttributes = new HashMap<>();
         mPetSkills = new HashMap<>();
         mAdditionalFiles = new ArrayList<>();
+        mPetSkillLevels = new HashMap<>();
+        mSkillNameIndexMap = new HashMap<>();
+        mSkillLevelIndexMap = new HashMap<>();
 
         mSkills = files;
         mParentPath = aParentPath;
@@ -43,6 +49,13 @@ public class PetParser {
         mIconsParser = aIconsParser;
 
         initSkill();
+
+        for (Integer i : mSkillNameIndexMap.keySet()) {
+            if (mSkillLevelIndexMap.get(i) != null) {
+                mPetSkillLevels.put(mSkillNameIndexMap.get(i), mSkillLevelIndexMap.get(i));
+            }
+        }
+
     }
 
     private void initSkill() {
@@ -59,18 +72,34 @@ public class PetParser {
                             .replace("footHit", "");
 
                     if (attributeName.startsWith("skillName")) {
-                        if(value.contains(";"))
+                        if (value.contains(";"))
                             return;
-                        if(value.contains(" "))
+                        if (value.contains(" "))
                             return;
                         Skill tmp = new Skill(
                                 new File(Control.DATABASES_DIR + mParentPath.split("/")[0] + "/database/" + value),
                                 null, mParentPath, mMSParser, mIconsParser);
-                        if(tmp.getName() == null)
+                        if (tmp.getName() == null)
                             return;
                         mPetSkills.put(tmp.getName(), tmp);
+
+                        mSkillNameIndexMap.put(Integer.parseInt(attributeName.split("skillName")[1]), tmp.getName());
+
                         mAdditionalFiles.addAll(tmp.getFiles());
                         return;
+                    }
+
+                    if (attributeName.startsWith("skillLevel")) {
+                        Integer lvl = Integer.parseInt(value.split(";")[0]);
+                        if (lvl == 0)
+                            return;
+                        if (mSkillLevelIndexMap.containsKey(Integer.parseInt(attributeName.split("skillLevel")[1])))
+                            mSkillLevelIndexMap.get(Integer.parseInt(attributeName.split("skillLevel")[1])).add(lvl);
+                        else {
+                            ArrayList<Integer> tmp = new ArrayList<>();
+                            tmp.add(lvl);
+                            mSkillLevelIndexMap.put(Integer.parseInt(attributeName.split("skillLevel")[1]), tmp);
+                        }
                     }
 
                     try {
@@ -121,6 +150,8 @@ public class PetParser {
         if (attributeName.startsWith("character"))
             return false;
         if (attributeName.startsWith("skillName"))
+            return false;
+        if (attributeName.startsWith("skillLevel"))
             return false;
         switch (attributeName) {
         case "handHitDamageMax":
@@ -196,5 +227,9 @@ public class PetParser {
 
     public HashMap<String, Skill> getPetSkills() {
         return mPetSkills;
+    }
+
+    public HashMap<String, ArrayList<Integer>> getPetSkillLevels() {
+        return mPetSkillLevels;
     }
 }

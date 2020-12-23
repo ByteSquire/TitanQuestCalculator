@@ -145,8 +145,7 @@ public class SkillParser {
                         files[i++] = new File(Control.DATABASES_DIR + mParentPath.split("/")[0] + "/database/" + file);
                     }
                     PetParser tmp = new PetParser(files, mParentPath, mMSParser, mIconsParser);
-                    mAttributes.put("Pet Attributes:", tmp.getAttributes());
-                    mAttributes.put("Pet Skills:", tmp.getPetSkills());
+                    mAttributes.put("Pet", tmp);
                     mAdditionalFiles.addAll(Arrays.asList(tmp.getFiles()));
                     mAdditionalFiles.addAll(tmp.getAdditionalFiles());
                 }

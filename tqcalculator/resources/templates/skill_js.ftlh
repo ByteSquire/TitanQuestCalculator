@@ -97,8 +97,11 @@ function skillButtonPopup(button, event){
             }
         });
     });
-    pop.innerHTML = getPopupString(skill, Number(button.innerText.split("/")[0].replaceAll("\n", "")));
-
+    if(!petDisplayed){
+        pop.innerHTML = getPopupString(skill, Number(button.innerText.split("/")[0].replaceAll("\n", "")));
+    } else {
+        pop.innerHTML = getPopupStringPet(skill, Number(button.innerText.split("/")[0].replaceAll("\n", "")));
+    }
     pop.style.display = "block";
     movePopupintoView(pop, pageHeight);
 }

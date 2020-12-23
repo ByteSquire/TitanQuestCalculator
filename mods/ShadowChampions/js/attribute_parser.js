@@ -104,7 +104,7 @@ function formatPetAttributes(value, index, colour) {
 }
 
 function formatPetSkills(value, index, colour) {
-    var skills = Object.keys(value);
+    var skills = Object.keys(value.petSkills);
     var ret = '<table><tr style="vertical-align: top"><td><span style="color: brown">Pet Skills:</span><br><tr style="vertical-align: top">';
     var i = 1;
     skills.forEach((key) => {
@@ -113,7 +113,14 @@ function formatPetSkills(value, index, colour) {
             ret += '<tr style="vertical-align: top">';
         }
         ret += "<td>";
-        ret += getPopupString(skill, index);
+        if(value.petSkillLevels[key] === undefined){
+            ret += '<span class="title">' + skill.name + '</span>\n';
+            ret += '<br>\n';
+            ret += '<span class="desc">Boni depend on the points you invested</span>\n';
+            ret += '<br>\n';
+            return;
+        }
+        ret += getPopupString(skill, value.petSkillLevels[key]);
         ret += "<br>";
         i++;
     });
