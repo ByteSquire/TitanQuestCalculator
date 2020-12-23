@@ -100,6 +100,7 @@ public class PetParser {
                             tmp.add(lvl);
                             mSkillLevelIndexMap.put(Integer.parseInt(attributeName.split("skillLevel")[1]), tmp);
                         }
+                        return;
                     }
 
                     try {

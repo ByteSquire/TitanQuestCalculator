@@ -108,7 +108,7 @@ function formatPetSkills(value, index, colour) {
     var ret = '<table><tr style="vertical-align: top"><td><span style="color: brown">Pet Skills:</span><br><tr style="vertical-align: top">';
     var i = 1;
     skills.forEach((key) => {
-        var skill = value[key];
+        var skill = value.petSkills[key];
         if(i%4 == 0){
             ret += '<tr style="vertical-align: top">';
         }
@@ -120,7 +120,9 @@ function formatPetSkills(value, index, colour) {
             ret += '<br>\n';
             return;
         }
-        ret += getPopupString(skill, value.petSkillLevels[key]);
+        if(index >= value.petSkillLevels[key].length)
+            index = value.petSkillLevels[key].length-1;
+        ret += getPopupString(skill, value.petSkillLevels[key][index]);
         ret += "<br>";
         i++;
     });
