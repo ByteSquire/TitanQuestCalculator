@@ -12,6 +12,7 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import de.bytesquire.titanquest.tqcalculator.parsers.AttributeNameParser;
 import de.bytesquire.titanquest.tqcalculator.parsers.IconsParser;
 import de.bytesquire.titanquest.tqcalculator.parsers.ModStringsParser;
+import de.bytesquire.titanquest.tqcalculator.parsers.PetParser;
 import de.bytesquire.titanquest.tqcalculator.parsers.SkillParser;
 
 @JsonIgnoreProperties({ "files", "buff", "skillTag", "skillDescriptionTag", "modifier", "skillTier", "urlLegacy",
@@ -23,8 +24,7 @@ public class Skill {
     private String mSkillName;
     private String mSkillDescription;
     private HashMap<String, Object> mSkillAttributes;
-    private HashMap<String, Object> mPetAttributes;
-    private HashMap<String, Object> mPetSkills;
+    private PetParser mPet;
     private String mParentPath;
     private boolean isModifier;
     private String[] mParent;
@@ -112,11 +112,8 @@ public class Skill {
             case "meleeOnly":
                 // mRequiredWeapons.append("Melee Only, ");
                 break;
-            case "Pet Attributes:":
-                mPetAttributes = (HashMap<String, Object>) mSkillParser.getAttributes().get(skillAttribute);
-                break;
-            case "Pet Skills:":
-                mPetSkills = (HashMap<String, Object>) mSkillParser.getAttributes().get(skillAttribute);
+            case "Pet":
+                mPet = (PetParser) mSkillParser.getAttributes().get(skillAttribute);
                 break;
             default:
                 if (skillAttribute.endsWith("Min")) {
@@ -294,12 +291,8 @@ public class Skill {
         return mRace;
     }
 
-    public HashMap<String, Object> getPetAttributes() {
-        return mPetAttributes;
-    }
-
-    public HashMap<String, Object> getPetSkills() {
-        return mPetSkills;
+    public PetParser getPet() {
+        return mPet;
     }
 
     public void setParent(ArrayList<String> validParents) {

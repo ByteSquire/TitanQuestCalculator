@@ -126,13 +126,13 @@ function hidePopup(){
 function getPopupStringPet(skill, currLevel){
     var hasPet = false;
     var ret = '<span class="title">' + skill.name + '</span>\n<br>\n';
-    if(skill.Pet){
+    if(skill.pet){
         ret += '<table><tr style="vertical-align: top">';
         ret += '<td>';
-        ret += formatPetAttributes(skill.Pet.attributes, currLevel, "white");
+        ret += formatPetAttributes(skill.pet.attributes, currLevel, "white");
         if(skill.petSkills){
             ret += "<td>";
-            ret += formatPetSkills(skill.Pet, currLevel, "white");
+            ret += formatPetSkills(skill.pet, currLevel, "white");
         }
     } else
         return getPopupString(skill, currLevel);
