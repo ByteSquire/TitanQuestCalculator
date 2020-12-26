@@ -145,10 +145,6 @@ public class Skill {
                     }
                     break;
                 }
-                if (skillAttribute.endsWith("Modifier")) {
-                    putAttribute(skillAttribute, mSkillParser.getAttributes().get(skillAttribute));
-                    break;
-                }
                 if (skillAttribute.endsWith("Qualifier")) {
                     putAttribute("Protects against: " + skillAttribute.replace("Qualifier", ""),
                             mSkillParser.getAttributes().get(skillAttribute));
@@ -166,6 +162,10 @@ public class Skill {
                     putAttribute(skillAttribute, attr);
                     break;
                 }
+                if (mSkillAttributes.containsKey(skillAttribute)) {
+                    if (mSkillAttributes.get(skillAttribute) instanceof AttributeWithSecondValue)
+                        putAttributeWithSecondValue(skillAttribute, mSkillParser.getAttributes().get(skillAttribute));
+                }
                 putAttribute(skillAttribute, mSkillParser.getAttributes().get(skillAttribute));
                 break;
             }
@@ -181,17 +181,19 @@ public class Skill {
             key = AttributeNameParser.getMatch(key.replace("skill", ""));
         else if (AttributeNameParser.getMatch(key) != null)
             key = AttributeNameParser.getMatch(key);
-        else if (key.endsWith("Duration")) {
+        else if (key.endsWith("Duration") && !key.endsWith(" Duration")) {
             if (AttributeNameParser.getMatch(key.substring(0, key.length() - "Duration".length())) != null)
-                key = key.replace(key.substring(0, key.length() - "Duration".length()),
-                        AttributeNameParser.getMatch(key.substring(0, key.length() - "Duration".length())) + " ");
+                key = AttributeNameParser.getMatch(key.substring(0, key.length() - "Duration".length()));
+            putAttributeWithSecondValue1(key, value);
+            return;
         } else if (key.startsWith("pet") || key.startsWith("SkillPet")) {
             if (AttributeNameParser.getMatch(key.replace("pet", "").replace("SkillPet", "")) != null)
                 key = AttributeNameParser.getMatch(key.replace("pet", "").replace("SkillPet", ""));
         } else if (key.endsWith("Chance")) {
             if (AttributeNameParser.getMatch(key.substring(0, key.length() - "Chance".length())) != null)
-                key = key.replace(key.substring(0, key.length() - "Chance".length()),
-                        AttributeNameParser.getMatch(key.substring(0, key.length() - "Chance".length())) + " ");
+                key = AttributeNameParser.getMatch(key.substring(0, key.length() - "Chance".length()));
+            putAttributeWithSecondValue(key, value);
+            return;
         } else if (key.endsWith("DurationModifier")) {
             if (AttributeNameParser.getMatch(key.substring(0, key.length() - "DurationModifier".length())) != null)
                 key = "{%+.0f0}% Improved"
@@ -217,6 +219,68 @@ public class Skill {
             key = key.replace("{%s1}", mRace);
         }
         mSkillAttributes.put(key, value);
+    }
+
+    private void putChanceBasedAttributes() {
+
+    }
+
+    private void putAttributeWithSecondValue1(String key, Object value1) {
+        if (!key.contains("${value}") && key.indexOf("{") > -1) {
+            if (key.contains("{%+"))
+                key = key.substring(0, key.indexOf("{")) + "+${value}"
+                        + key.substring(key.indexOf("}") + 1, key.length());
+            else
+                key = key.substring(0, key.indexOf("{")) + "${value}"
+                        + key.substring(key.indexOf("}") + 1, key.length());
+        }
+        if (mSkillAttributes.containsKey(key)) {
+            if (mSkillAttributes.get(key) instanceof AttributeWithSecondValue)
+                ((AttributeWithSecondValue) mSkillAttributes.get(key)).setValue1(value1);
+            else {
+                Object value0 = mSkillAttributes.get(key);
+                AttributeWithSecondValue tmp = new AttributeWithSecondValue();
+                tmp.setValue0(value0);
+                tmp.setValue1(value1);
+                tmp.setKey("${value0}" + key + " over ${value1} Second(s)");
+                mSkillAttributes.put(key, tmp);
+            }
+        } else {
+            AttributeWithSecondValue tmp = new AttributeWithSecondValue();
+            tmp.setValue1(value1);
+            tmp.setKey("${value0}" + key + " over ${value1} Second(s)");
+            mSkillAttributes.put(key, tmp);
+        }
+    }
+
+    private void putAttributeWithSecondValue(String key, Object value) {
+        if (!key.contains("${value}") && key.indexOf("{") > -1) {
+            if (key.contains("{%+"))
+                key = key.substring(0, key.indexOf("{")) + "+${value}"
+                        + key.substring(key.indexOf("}") + 1, key.length());
+            else
+                key = key.substring(0, key.indexOf("{")) + "${value}"
+                        + key.substring(key.indexOf("}") + 1, key.length());
+        }
+        if (mSkillAttributes.containsKey(key)) {
+            if (mSkillAttributes.get(key) instanceof AttributeWithSecondValue) {
+                AttributeWithSecondValue curr = (AttributeWithSecondValue) mSkillAttributes.get(key);
+                if (curr.getValue0() == null)
+                    curr.setValue0(value);
+                else
+                    curr.setValue1(value);
+            }
+        } else {
+            AttributeWithSecondValue tmp = new AttributeWithSecondValue();
+            tmp.setValue0(value);
+            String descKey;
+            if(!key.contains("${value}"))
+                descKey = "${value1}" + key;
+            else
+                descKey = key.replace("value", "value1");
+            tmp.setKey("${value0}% Chance of: " + descKey);
+            mSkillAttributes.put(key, tmp);
+        }
     }
 
     @Override
@@ -296,7 +360,7 @@ public class Skill {
     }
 
     public void setParent(ArrayList<String> validParents) {
-        if(validParents.size() == 0) {
+        if (validParents.size() == 0) {
             mParent = null;
             return;
         }
