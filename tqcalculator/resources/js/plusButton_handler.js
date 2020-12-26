@@ -36,7 +36,7 @@ function plusClicked(button, event){
         } else
             return;
     } else {
-        if (canDecreaseMastery(button.parentElement, matteringMastery, (matteringMastery == m1)? m1CurrTier-1 : m2CurrTier-1, updated)){
+        if (canDecreaseMastery(button.parentElement, matteringMastery, (matteringMastery == m1)? m1CurrTier-1 : m2CurrTier-1, curr)){
             if (curr > 0){
                 if(event.shiftKey){
                     updated = 0;

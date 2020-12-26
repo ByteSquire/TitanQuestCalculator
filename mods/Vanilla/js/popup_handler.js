@@ -114,6 +114,7 @@ function movePopupintoView(pop, pageHeight){
         pop.style.top = "unset";
         pop.style.bottom = "-" + window.pageYOffset + "px";
     }
+    lastTop = pop.style.top;
 }
 
 function getPageHeight() {

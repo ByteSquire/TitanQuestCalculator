@@ -140,7 +140,7 @@
               </tr>
               <tr>
                 <td>Press Shift over Skill</td>
-                <td>Display Pet Info</td>
+                <td>Toggle Pet Info</td>
               </tr>
             </table>
           </div>

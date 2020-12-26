@@ -21,9 +21,18 @@ function getAttributeString(key, value, index){
                 return formatAttribute(ret, value.min, index);
         } else if(value.max)
                 return formatAttribute(ret, value.max, index);
+        else if(value.value0)
+            formatAttributeWithSecondValue(value, index);
     }
     
     return formatAttribute(ret, value, index);
+}
+
+function formatAttributeWithSecondValue(value, index){
+    var ret = value.key;
+    ret = getAttributeString(ret.replace("value0", "value"), value.value0, index);
+    ret = getAttributeString(ret.replace("value1", "value"), value.value1, index); 
+    return ret;
 }
 
 function formatAttribute(key, value, index){

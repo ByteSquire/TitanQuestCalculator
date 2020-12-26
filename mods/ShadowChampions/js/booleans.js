@@ -24,9 +24,9 @@ function canSkill(button){
     return (masteryLevel >= mod.masteryLevels[Number(tier)]);
 }
 
-function canDecreaseSkill(button){
-    var masteryLevel = button.parentElement.getElementsByClassName("plusButton")[0].innerText.split("/")[0].replaceAll("\n", "");
-    masteryLevel = Number(masteryLevel);
+function canDecreaseSkill(button, shift){
+    if(Number(button.getElementsByClassName("disabled")[0].innerText) > 1 && !shift)
+        return true;
     var matteringMastery = (Number(button.parentElement.id.split("panel")[1]) == 1)? m1 : m2;
     var tiers = matteringMastery.skillTiers;
     var tier;
@@ -52,11 +52,11 @@ function canDecreaseSkill(button){
     return ret;
 }
 
-function canDecreaseMastery(panel, mastery,  masteryTier, masteryLevel){
+function canDecreaseMastery(panel, mastery,  masteryTier, masteryLevel, shift){
     if(masteryTier < 0){
         return true;
     }
-    if(masteryLevel > mod.masteryLevels[masteryTier]){
+    if(masteryLevel > mod.masteryLevels[masteryTier] && !shift){
         return true;
     }
     var skillButtons = panel.getElementsByClassName("skillButton");
