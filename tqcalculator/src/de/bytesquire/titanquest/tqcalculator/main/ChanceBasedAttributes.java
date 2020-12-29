@@ -1,31 +1,38 @@
 package de.bytesquire.titanquest.tqcalculator.main;
 
-import java.util.ArrayList;
+import java.util.HashMap;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties({ "key" })
 public class ChanceBasedAttributes {
 
-    protected double value;
+    protected Object chance;
     protected String key;
-    protected ArrayList<Object> values;
+    protected HashMap<String, Object> values;
 
-    public Double getValue() {
-        return value;
+    public ChanceBasedAttributes() {
+        this.values = new HashMap<String, Object>();
+    }
+
+    public Object getChance() {
+        return chance;
     }
 
     public String getKey() {
         return key;
     }
 
-    public ArrayList<Object> getValues() {
+    public HashMap<String, Object> getValues() {
         return values;
     }
 
-    public void setChance(double chance) {
-        this.value = chance;
+    public void setChance(Object chance) {
+        this.chance = chance;
     }
 
-    public void setValues(ArrayList<Object> values) {
-        this.values = values;
+    public void addValue(String key, Object value) {
+        this.values.put(key, value);
     }
 
     public void setXOR(boolean xor) {

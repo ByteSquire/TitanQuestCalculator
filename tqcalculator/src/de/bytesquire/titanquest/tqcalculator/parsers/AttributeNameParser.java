@@ -53,6 +53,7 @@ public class AttributeNameParser {
     }
 
     public static String getMatch(String key) {
-        return attributeNames.get(key);
+        String ret = attributeNames.get(key);
+        return ret;
     }
 }

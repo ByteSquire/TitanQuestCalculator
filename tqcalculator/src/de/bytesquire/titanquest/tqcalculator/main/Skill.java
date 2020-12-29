@@ -33,6 +33,9 @@ public class Skill {
     private SkillIcon mSkillIcon;
     private StringBuilder mRequiredWeapons;
     private String mRace;
+    private ChanceBasedAttributes mCBA;
+    private ArrayList<String> mCBANames;
+    private boolean mCBAXOR;
 
     public Skill(File aSkill, String[] aParent, String aParentPath, ModStringsParser aMSParser,
             IconsParser aIconsParser) {
@@ -62,6 +65,10 @@ public class Skill {
         if (mSkillParser.getAdditionalFiles().size() > 0) {
             mFiles.addAll(mSkillParser.getAdditionalFiles());
         }
+
+        mCBA = new ChanceBasedAttributes();
+        mCBANames = new ArrayList<String>();
+        mCBAXOR = false;
 
         mRequiredWeapons = new StringBuilder();
         for (String skillAttribute : mSkillParser.getAttributes().keySet()) {
@@ -116,6 +123,27 @@ public class Skill {
                 mPet = (PetParser) mSkillParser.getAttributes().get(skillAttribute);
                 break;
             default:
+                if (skillAttribute.equals("DamageGlobalChance")) {
+                    mCBA.setChance(mSkillParser.getAttributes().get(skillAttribute));
+                    break;
+                }
+                if (skillAttribute.endsWith("Global")) {
+                    String skillAttributeType = skillAttribute.replace("Global", "");
+                    if (AttributeNameParser.getMatch(skillAttributeType) != null)
+                        skillAttributeType = AttributeNameParser.getMatch(skillAttributeType);
+                    else {
+                        if (skillAttributeType.equals("DamageTotalDamage"))
+                            skillAttributeType += "Modifier";
+                        if (AttributeNameParser.getMatch(skillAttributeType) != null)
+                            skillAttributeType = AttributeNameParser.getMatch(skillAttributeType);
+                    }
+                    mCBANames.add(skillAttributeType);
+                    break;
+                }
+                if (skillAttribute.endsWith("XOR")) {
+                    mCBAXOR = true;
+                    break;
+                }
                 if (skillAttribute.endsWith("Min")) {
                     String skillAttributeType = skillAttribute.replace("Min", "");
                     if (AttributeNameParser.getMatch(skillAttributeType) != null)
@@ -133,8 +161,8 @@ public class Skill {
                         MinMaxAttribute tmp = new MinMaxAttribute();
                         tmp.setMin(mSkillParser.getAttributes().get(skillAttribute));
                         putAttribute(skillAttributeType, tmp);
-                        break;
                     }
+                    break;
                 } else if (skillAttribute.endsWith("Max")) {
                     String skillAttributeType = skillAttribute.replace("Max", "");
                     if (AttributeNameParser.getMatch(skillAttributeType) != null)
@@ -180,9 +208,18 @@ public class Skill {
                 break;
             }
         }
-        if (mRequiredWeapons.length() != 0) {
+        if (mRequiredWeapons.length() > 0) {
             mRequiredWeapons.delete(mRequiredWeapons.length() - 2, mRequiredWeapons.length());
             putAttribute("requiredWeapons", mRequiredWeapons.toString());
+        }
+        if (mCBANames.size() > 0) {
+            mCBA.setXOR(mCBAXOR);
+            for (String string : mCBANames) {
+                Object attr = mSkillAttributes.get(string);
+                mCBA.addValue(string, attr);
+                mSkillAttributes.remove(attr);
+            }
+            mSkillAttributes.put(mCBA.getKey(), mCBA);
         }
     }
 
@@ -199,7 +236,7 @@ public class Skill {
         } else if (key.startsWith("pet") || key.startsWith("SkillPet")) {
             if (AttributeNameParser.getMatch(key.replace("pet", "").replace("SkillPet", "")) != null)
                 key = AttributeNameParser.getMatch(key.replace("pet", "").replace("SkillPet", ""));
-        } else if (key.endsWith("Chance")) {
+        } else if (key.endsWith("Chance") && !key.equals("projectilePiercingChance")) {
             if (AttributeNameParser.getMatch(key.substring(0, key.length() - "Chance".length())) != null)
                 key = AttributeNameParser.getMatch(key.substring(0, key.length() - "Chance".length()));
             putAttributeWithSecondValue(key, value);

@@ -67,10 +67,10 @@ public class SkillParser {
 
                 attributeName = attributeName.replace("offensive", "Damage").replace("Slow", "Duration")
                         .replace("character", "Character").replace("defensive", "Defense")
-                        .replace("projectileLaunch", "ProjectileLaunch").replace("projectile", "")
-                        .replace("retaliation", "Retaliation").replace("explosion", "Explosion")
-                        .replace("racial", "Racial").replace("spark", "Spark").replace("spawnObjects", "SkillPet")
-                        .replace("damage", "Damage").replace("exclusive", "Exclusive").replace("life", "Life");
+                        .replace("projectile", "Projectile").replace("retaliation", "Retaliation")
+                        .replace("explosion", "Explosion").replace("racial", "Racial").replace("spark", "Spark")
+                        .replace("spawnObjects", "SkillPet").replace("damage", "Damage")
+                        .replace("exclusive", "Exclusive").replace("life", "Life");
 
                 if (attributeName.startsWith("skill")) {
                     if (attributeName.equals("skillDependancy")) {
@@ -195,6 +195,8 @@ public class SkillParser {
         case "instantCast":
         case "targetCaster":
         case "actorScaleTime":
+        case "projectileHitTimeToLive":
+        case "projectileMissTimeToLive":
             return true;
         default:
             return false;
