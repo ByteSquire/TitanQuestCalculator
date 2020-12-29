@@ -124,12 +124,17 @@ public class Skill {
                         if (mSkillAttributes.get(skillAttributeType) instanceof MinMaxAttribute)
                             ((MinMaxAttribute) mSkillAttributes.get(skillAttributeType))
                                     .setMin(mSkillParser.getAttributes().get(skillAttribute));
+                        else {
+                            MinMaxAttribute tmp = new MinMaxAttribute();
+                            tmp.setMin(mSkillParser.getAttributes().get(skillAttribute));
+                            putAttributeWithSecondValue(skillAttributeType, tmp);
+                        }
                     } else {
                         MinMaxAttribute tmp = new MinMaxAttribute();
                         tmp.setMin(mSkillParser.getAttributes().get(skillAttribute));
                         putAttribute(skillAttributeType, tmp);
+                        break;
                     }
-                    break;
                 } else if (skillAttribute.endsWith("Max")) {
                     String skillAttributeType = skillAttribute.replace("Max", "");
                     if (AttributeNameParser.getMatch(skillAttributeType) != null)
@@ -138,6 +143,11 @@ public class Skill {
                         if (mSkillAttributes.get(skillAttributeType) instanceof MinMaxAttribute)
                             ((MinMaxAttribute) mSkillAttributes.get(skillAttributeType))
                                     .setMax(mSkillParser.getAttributes().get(skillAttribute));
+                        else {
+                            MinMaxAttribute tmp = new MinMaxAttribute();
+                            tmp.setMax(mSkillParser.getAttributes().get(skillAttribute));
+                            putAttributeWithSecondValue(skillAttributeType, tmp);
+                        }
                     } else {
                         MinMaxAttribute tmp = new MinMaxAttribute();
                         tmp.setMax(mSkillParser.getAttributes().get(skillAttribute));
@@ -274,7 +284,7 @@ public class Skill {
             AttributeWithSecondValue tmp = new AttributeWithSecondValue();
             tmp.setValue0(value);
             String descKey;
-            if(!key.contains("${value}"))
+            if (!key.contains("${value}"))
                 descKey = "${value1}" + key;
             else
                 descKey = key.replace("value", "value1");
