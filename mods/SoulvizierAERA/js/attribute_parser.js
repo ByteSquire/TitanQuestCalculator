@@ -23,6 +23,8 @@ function getAttributeString(key, value, index){
             return formatAttribute(ret, value.max, index);
         else if(value.value0 || value.value1)
             return formatAttributeWithSecondValue(value, index);
+        else if(value.chance)
+            return formatChanceBasedAttributes(key, value, index);
     }
     
     return formatAttribute(ret, value, index);
@@ -34,6 +36,17 @@ function formatAttributeWithSecondValue(value, index){
         ret = getAttributeString(ret.replace("value0", "value"), value.value0, index);
     if(value.value1)
         ret = getAttributeString(ret.replace("value1", "value"), value.value1, index); 
+    return ret;
+}
+
+function formatChanceBasedAttributes(key, value, index){
+    var ret = '<span>' + key.replace("${value}", value.chance) + '</span><br>\n';
+    ret += "<br>\n";
+    var attrKeys = Object.keys(value.values);
+    attrKeys.forEach((attrKey) => {
+        ret += getAttributeString(key, value.values[attrKey], index);
+        ret += '<br>\n';
+    });
     return ret;
 }
 
