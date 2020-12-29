@@ -40,7 +40,13 @@ function formatAttributeWithSecondValue(value, index){
 }
 
 function formatChanceBasedAttributes(key, value, index){
-    var ret = '<span>' + key.replace("${value}", value.chance) + '</span>\n';
+    var ret;
+    if(value.chance.constructor === Array){
+        if(index >= value.chance.length)
+            index = value.chance.length-1;
+        ret = '<span>' + key.replace("${value}", value.chance[index]) + '</span>\n';
+    } else
+        ret = '<span>' + key.replace("${value}", value.chance) + '</span>\n';
     ret += "<br>\n";
     var attrKeys = Object.keys(value.values);
     attrKeys.forEach((attrKey) => {

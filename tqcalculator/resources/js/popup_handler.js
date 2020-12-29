@@ -86,25 +86,36 @@ function getPopupString(skill, currLevel, skipNext){
             ret += getAttributeStringWithColour(key, value, currLevel, colour);
             ret += '<br>\n'
         } else if(value.constructor === Object) {
-            if(value.min){
-                if(value.max){
-                    if(value.max.constructor === Array || value.min.constructor === Array){
-                        ret += getAttributeStringWithColour(key, value, currLevel, colour);
-                        ret += '<br>\n'
-                    }
-                } else {
-                    if(value.min.constructor === Array){
-                        ret += getAttributeStringWithColour(key, value, currLevel, colour);
-                        ret += '<br>\n'
-                    }   
-                }
-            } else if(value.max && value.max.constructor === Array){
+            if(checkForArray(value)){
                 ret += getAttributeStringWithColour(key, value, currLevel, colour);
                 ret += '<br>\n';
             }
         }
     });
     return ret;
+}
+
+function checkForArray(value){
+    if(value.min){
+        if(value.max){
+            if(value.max.constructor === Array || value.min.constructor === Array)
+                return true;
+        } else {
+            if(value.min.constructor === Array)
+                return true;
+        }
+    } else if(value.max && value.max.constructor === Array)
+        return true;
+    else if(value.chance && value.chance.constructor === Array)
+        return true;
+    else if(value.value0 && value.value0.constructor === Array || value.value1 && value.value1.constructor === Array)
+        return true;
+    else if(value.value0 && value.value0.constructor === Object)
+        return checkForArray(value.value0);
+    else if(value.value0 && value.value1.constructor === Object)
+        return checkForArray(value.value1);
+        
+    return false;
 }
 
 function getPopupPos(event) {

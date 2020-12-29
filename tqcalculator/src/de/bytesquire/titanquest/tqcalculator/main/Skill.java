@@ -129,16 +129,19 @@ public class Skill {
                 }
                 if (skillAttribute.endsWith("Global")) {
                     String skillAttributeType = skillAttribute.replace("Global", "");
+                    String skillAttributeTypeModifier = skillAttributeType + "Modifier";
                     if (AttributeNameParser.getMatch(skillAttributeType) != null)
                         skillAttributeType = AttributeNameParser.getMatch(skillAttributeType);
-                    else {
-                        if (skillAttributeType.equals("DamageTotalDamage"))
-                            skillAttributeType += "Modifier";
-                        if (AttributeNameParser.getMatch(skillAttributeType) != null)
-                            skillAttributeType = AttributeNameParser.getMatch(skillAttributeType);
-                    }
+                    else if (AttributeNameParser.getMatch(skillAttributeType) != null)
+                        skillAttributeType = AttributeNameParser.getMatch(skillAttributeType);
+
                     skillAttributeType = formatKey(skillAttributeType);
                     mCBANames.add(skillAttributeType);
+                    if (AttributeNameParser.getMatch(skillAttributeTypeModifier) != null) {
+                        skillAttributeTypeModifier = AttributeNameParser.getMatch(skillAttributeTypeModifier);
+                        skillAttributeTypeModifier = formatKey(skillAttributeTypeModifier);
+                        mCBANames.add(skillAttributeTypeModifier);
+                    }
                     break;
                 }
                 if (skillAttribute.endsWith("XOR")) {
@@ -209,7 +212,9 @@ public class Skill {
                 break;
             }
         }
-        if (mRequiredWeapons.length() > 0) {
+        if (mRequiredWeapons.length() > 0)
+
+        {
             mRequiredWeapons.delete(mRequiredWeapons.length() - 2, mRequiredWeapons.length());
             putAttribute("requiredWeapons", mRequiredWeapons.toString());
         }
