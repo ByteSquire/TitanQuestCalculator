@@ -3,8 +3,11 @@ package de.bytesquire.titanquest.tqcalculator.main;
 import java.util.HashMap;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
 
 @JsonIgnoreProperties({ "key" })
+@JsonInclude(Include.NON_NULL)
 public class ChanceBasedAttributes {
 
     protected Object chance;
@@ -37,8 +40,8 @@ public class ChanceBasedAttributes {
 
     public void setXOR(boolean xor) {
         if (xor)
-            key = "{%.0f}% Chance for one of the following:";
+            key = "${value}% Chance for one of the following:";
         else
-            key = "{%.0f}% Chance for all of the following:";
+            key = "${value}% Chance for all of the following:";
     }
 }

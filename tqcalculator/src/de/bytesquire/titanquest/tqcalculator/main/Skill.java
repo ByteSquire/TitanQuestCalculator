@@ -137,6 +137,7 @@ public class Skill {
                         if (AttributeNameParser.getMatch(skillAttributeType) != null)
                             skillAttributeType = AttributeNameParser.getMatch(skillAttributeType);
                     }
+                    skillAttributeType = formatKey(skillAttributeType);
                     mCBANames.add(skillAttributeType);
                     break;
                 }
@@ -216,8 +217,10 @@ public class Skill {
             mCBA.setXOR(mCBAXOR);
             for (String string : mCBANames) {
                 Object attr = mSkillAttributes.get(string);
+                if(attr == null)
+                    continue;
                 mCBA.addValue(string, attr);
-                mSkillAttributes.remove(attr);
+                mSkillAttributes.remove(string);
             }
             mSkillAttributes.put(mCBA.getKey(), mCBA);
         }
@@ -251,14 +254,7 @@ public class Skill {
                 key = key.replace(key.substring(0, key.length() - "Modifier".length()),
                         AttributeNameParser.getMatch(key.substring(0, key.length() - "Modifier".length())) + " ");
         }
-        if (!key.contains("${value}") && key.indexOf("{") > -1) {
-            if (key.contains("{%+"))
-                key = key.substring(0, key.indexOf("{")) + "+${value}"
-                        + key.substring(key.indexOf("}") + 1, key.length());
-            else
-                key = key.substring(0, key.indexOf("{")) + "${value}"
-                        + key.substring(key.indexOf("}") + 1, key.length());
-        }
+        key = formatKey(key);
         if (key.contains("{%s1}")) {
             if (mRace == null)
 //                mRace = "Race not found";
@@ -268,8 +264,16 @@ public class Skill {
         mSkillAttributes.put(key, value);
     }
 
-    private void putChanceBasedAttributes() {
-
+    private String formatKey(String key) {
+        if (!key.contains("${value}") && key.indexOf("{") > -1) {
+            if (key.contains("{%+"))
+                key = key.substring(0, key.indexOf("{")) + "+${value}"
+                        + key.substring(key.indexOf("}") + 1, key.length());
+            else
+                key = key.substring(0, key.indexOf("{")) + "${value}"
+                        + key.substring(key.indexOf("}") + 1, key.length());
+        }
+        return key;
     }
 
     private void putAttributeWithSecondValue1(String key, Object value1) {
