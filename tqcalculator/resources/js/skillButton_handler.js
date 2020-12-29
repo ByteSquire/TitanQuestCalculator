@@ -65,13 +65,11 @@ function skillClicked(button, event){
     } else {
         updated = 0;
     }
-    updateSkillLevel(skill, updated);
+    updateSkillLevel(skill, updated, event);
     calcLevelReq();
-    
-    calcBoni(skill.attributes, curr, updated, event);
 }
 
-function updateSkillLevel(skill, updated){
+function updateSkillLevel(skill, updated, event){
     var curr = Number(document.getElementById(skill.name).innerText.split("/")[0]);
     if(updated <= skill.attributes["MaxLevel"])
         document.getElementById(skill.name).getElementsByClassName("buttonText")[0].style.color = "white";
@@ -81,4 +79,5 @@ function updateSkillLevel(skill, updated){
             updated = skill.attributes["UltimateLevel"];
     }
     document.getElementById(skill.name).innerHTML = document.getElementById(skill.name).innerHTML.replace(curr, updated);
+    calcBoni(skill.attributes, curr, updated, event);
 }

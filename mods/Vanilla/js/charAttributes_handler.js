@@ -15,12 +15,6 @@ function calcBoni(attributes, fromLevel, toLevel, event){
     var attrs = Object.keys(attributes);
     var increase = event.button == 0;
     
-    var changed = false;
-    var lvl = toLevel;
-    if(lvl == 0){
-        changed = true;
-    }
-    
     if(event.shiftKey){
         attrs.forEach((x) => {
             var _toLevel = toLevel;
@@ -28,19 +22,28 @@ function calcBoni(attributes, fromLevel, toLevel, event){
             if(_toLevel > attributes[x].length)
                 _toLevel = attributes[x].length;
             if(_fromLevel > attributes[x].length)
-                _fromLevel = attributes[x].length;
-                
-            if(increase){
-                var value;
-                if(fromLevel > 0)
-                    value = Number(attributes[x][_toLevel-1]) - Number(attributes[x][_fromLevel-1]);
-                else
-                    value = Number(attributes[x][_toLevel-1]);
-                value = Number(value);
-            } else{
-                var value = "-" + attributes[x][_fromLevel-1];
-                value = Number(value);
+                _fromLevel = attributes[x].length;   
+            var value;
+            
+            if(attributes[x].constructor === Array){
+                if(increase){
+                    if(fromLevel > 0)
+                        value = Number(attributes[x][_toLevel-1]) - Number(attributes[x][_fromLevel-1]);
+                    else
+                        value = attributes[x][_toLevel-1];
+                } else{
+                    value = (-1) * Number(attributes[x][_fromLevel-1]);
+                }
+            } else {
+                if(increase){
+                    if(fromLevel == 0 && toLevel == 1){
+                        value = attributes[x];
+                    }
+                } else {
+                    value = (-1) * Number(attributes[x]);
+                }
             }
+            value = Number(value);
             updateAttributes(x, value);
         });
     } else {
@@ -52,20 +55,33 @@ function calcBoni(attributes, fromLevel, toLevel, event){
             if(_fromLevel > attributes[x].length)
                 _fromLevel = attributes[x].length;
             var value;
-            if(increase){
-                if(lvl-1 > attributes[x].length-1)
-                    return;
-                if(fromLevel > 0)
-                    value = Number(attributes[x][_toLevel-1]) - Number(attributes[x][_fromLevel-1]);
-                else
-                    value = Number(attributes[x][_toLevel-1]);
+            
+            if(attributes[x].constructor === Array){
+                if(increase){
+                    if(toLevel > attributes[x].length)
+                        return;
+                    if(fromLevel > 0)
+                        value = Number(attributes[x][_toLevel-1]) - Number(attributes[x][_fromLevel-1]);
+                    else
+                        value = attributes[x][_toLevel-1];
+                } else {
+                    if(toLevel >= attributes[x].length)
+                        return;
+                    if(toLevel > 0)
+                        value = Number(attributes[x][_toLevel-1]) - Number(attributes[x][_fromLevel-1]);
+                    else
+                        value = (-1) * Number(attributes[x][_fromLevel-1]);
+                }
             } else {
-                if(lvl-1 >= attributes[x].length-1)
-                    return;
-                if(toLevel > 0)
-                    value = Number(attributes[x][_toLevel-1]) - Number(attributes[x][_fromLevel-1]);
-                else
-                    value = "-" + attributes[x][_toLevel];
+                if(increase){
+                    if(fromLevel == 0 && toLevel == 1){
+                        value = attributes[x];
+                    }
+                } else {
+                    if(fromLevel == 1 && toLevel == 0){
+                        value = (-1) * Number(attributes[x]);
+                    }
+                }
             }
             value = Number(value);
             updateAttributes(x, value);

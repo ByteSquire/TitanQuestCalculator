@@ -37,9 +37,9 @@ function allPlusClicked(button, event) {
             });
         
             if(curr2+globalPlus > skill.attributes.skillUltimateLevel)
-                updateSkillLevel(skill, skill.attributes.skillUltimateLevel);
+                updateSkillLevel(skill, skill.attributes.skillUltimateLevel, event);
             else
-                updateSkillLevel(skill, curr2 + globalPlus);
+                updateSkillLevel(skill, curr2 + globalPlus, event);
         }
     }
        
@@ -96,9 +96,9 @@ function skillPlusClicked(button, event) {
         });
     
         if(curr2+localPlus > skillObj.attributes.skillUltimateLevel)
-            updateSkillLevel(skillObj, skillObj.attributes.skillUltimateLevel);
+            updateSkillLevel(skillObj, skillObj.attributes.skillUltimateLevel, event);
         else
-            updateSkillLevel(skillObj, curr2 + localPlus);
+            updateSkillLevel(skillObj, curr2 + localPlus, event);
     }
        
     button.innerHTML = button.innerHTML.replace(curr, localPlus);
