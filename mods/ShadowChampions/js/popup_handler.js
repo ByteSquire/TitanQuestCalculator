@@ -46,6 +46,8 @@ function getPopupString(skill, currLevel, skipNext){
             if(key == "UltimateLevel")
                 return;
             var value = skill.attributes[key];
+            if(value.key && value.key === undefined)
+                return;
             ret += getAttributeStringWithColour(key, value, currLevel-1, colour);
             ret += '<br>\n';
         });
@@ -73,6 +75,8 @@ function getPopupString(skill, currLevel, skipNext){
         if(key == "UltimateLevel")
             return;
         var value = skill.attributes[key];
+        if(value.key && value.key === undefined)
+            return;
         if(currLevel+1 == 1){
             ret += getAttributeStringWithColour(key, value, currLevel, colour);
             ret += '<br>\n';
