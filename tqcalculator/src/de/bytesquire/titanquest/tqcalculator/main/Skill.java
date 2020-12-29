@@ -217,7 +217,7 @@ public class Skill {
             mCBA.setXOR(mCBAXOR);
             for (String string : mCBANames) {
                 Object attr = mSkillAttributes.get(string);
-                if(attr == null)
+                if (attr == null)
                     continue;
                 mCBA.addValue(string, attr);
                 mSkillAttributes.remove(string);

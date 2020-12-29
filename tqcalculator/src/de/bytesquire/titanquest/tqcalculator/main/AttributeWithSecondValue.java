@@ -1,5 +1,9 @@
 package de.bytesquire.titanquest.tqcalculator.main;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
+
+@JsonInclude(Include.NON_NULL)
 public class AttributeWithSecondValue {
 
     private Object value0;
@@ -7,14 +11,20 @@ public class AttributeWithSecondValue {
     private String key;
 
     public Object getValue0() {
+        if (value1 == null)
+            return null;
         return value0;
     }
 
     public Object getValue1() {
+        if (value0 == null)
+            return null;
         return value1;
     }
-    
+
     public String getKey() {
+        if (value0 == null || value1 == null)
+            return null;
         return key;
     }
 
@@ -25,7 +35,7 @@ public class AttributeWithSecondValue {
     public void setValue0(Object value) {
         this.value0 = value;
     }
-    
+
     public void setKey(String value) {
         this.key = value;
     }
