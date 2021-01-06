@@ -7,7 +7,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.stream.Stream;
 
 import de.bytesquire.titanquest.tqcalculator.main.Control;
@@ -16,7 +16,7 @@ import de.bytesquire.titanquest.tqcalculator.main.SkillIcon;
 
 public class SkillParser {
 
-    private HashMap<String, Object> mAttributes;
+    private LinkedHashMap<String, Object> mAttributes;
     private ArrayList<File> mAdditionalFiles;
     private File mSkill;
     private String mParentPath;
@@ -38,7 +38,7 @@ public class SkillParser {
         mMSParser = aMSParser;
         mIconsParser = aIconsParser;
 
-        mAttributes = new HashMap<>();
+        mAttributes = new LinkedHashMap<>();
         mAdditionalFiles = new ArrayList<File>();
         mParentSkill = new ArrayList<String>();
 
@@ -130,7 +130,7 @@ public class SkillParser {
                     mSkillTag = tmp.getSkillTag();
                     mSkillDescriptionTag = tmp.getSkillDescriptionTag();
                     mSkillIcon = tmp.getSkillIcon();
-                    mModifier = tmp.isModifier();
+                    mModifier = tmp.isModifier() || mModifier;
                     if (tmp.getParent() != null)
                         mParentSkill.addAll(Arrays.asList(tmp.getParent()));
                     mAdditionalFiles.addAll(tmp.getFiles());
@@ -162,7 +162,9 @@ public class SkillParser {
                 if (attributeName.equals("RacialBonusRace")) {
                     mRace = value;
                 }
-                if (attributeName.equals("Class") && (value.endsWith("Modifier") || value.startsWith("SkillSecondary")))
+                if (attributeName.equals("Class") && (value.endsWith("Modifier")))
+                    mModifier = true;
+                if(value.startsWith("SkillSecondary"))
                     mModifier = true;
             });
         } catch (FileNotFoundException e) {
@@ -185,6 +187,10 @@ public class SkillParser {
             return true;
         if (attributeName.startsWith("spawnObjectsDistance"))
             return true;
+        if (attributeName.startsWith("skillProjectile") && attributeName.endsWith("TimeToLive"))
+            return true;
+        if (attributeName.endsWith("NumberOfRings"))
+            return true;
         switch (attributeName) {
         case "skillMasteryLevelRequired":
         case "projectileLaunchRotation":
@@ -203,7 +209,7 @@ public class SkillParser {
         }
     }
 
-    public HashMap<String, Object> getAttributes() {
+    public LinkedHashMap<String, Object> getAttributes() {
         return mAttributes;
     }
 
