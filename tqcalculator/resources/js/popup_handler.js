@@ -25,7 +25,7 @@ function getPopupString(skill, currLevel, skipNext){
     }
     
     if(skill.exclusiveSkill){
-        ret += '<span class="" style="color: orange">Excluse Skill - Only one Exclusive Skill can be active at a time</span>';
+        ret += '<span class="" style="color: orange">Exclusive Skill - Only one Exclusive Skill can be active at a time</span>';
         ret += "<br>\n";
     }
     
