@@ -3217,15 +3217,13 @@
         "posX" : 288
       },
       "attributes" : {
-        "Protects against: Fire Damage" : 1,
         " Energy Cost" : [ 50.0, 52.24, 54.48, 57.84, 60.08, 62.32, 65.68, 67.92, 70.16, 73.52, 75.76, 78.0, 81.36, 83.6, 85.84, 90.2, 96.0, 102.0 ],
-        "Protects against: Lightning Damage" : 1,
         "MaxLevel" : 10,
-        "Protects against: Cold Damage" : 1,
         " Second Duration" : 200.0,
         "UltimateLevel" : 14,
         "${value}% Damage Absorption" : [ 8.0, 10.0, 13.0, 15.0, 17.0, 20.0, 22.0, 24.0, 26.0, 29.0, 31.0, 33.0, 36.0, 38.0 ]
-      }
+      },
+      "protectsAgainst" : [ " Fire Damage", " Lightning Damage", " Cold Damage" ]
     }, {
       "name" : "King of the Summit",
       "description" : "Lord and ruler of high summits, you may command your minions to victory with an inspiring presence that no one could immitate.{^n}{^a}Cannot be dispelled.",
@@ -6272,9 +6270,9 @@
         " Energy Cost" : [ 100.0, 193.0, 287.0, 380.0, 473.0, 567.0, 660.0, 753.0, 847.0, 940.0, 1033.0, 1127.0, 1220.0, 1313.0, 1407.0, 1500.0 ],
         "MaxLevel" : 12,
         "^a${value} Second(s) Recharge" : 15.0,
-        "UltimateLevel" : 16,
-        "Protects against: Physical Damage" : 1
-      }
+        "UltimateLevel" : 16
+      },
+      "protectsAgainst" : [ " Physical Damage" ]
     }, {
       "name" : "Celestial Armory",
       "description" : "Bless all the weapons in range with a powerful angelic enchantment.",
@@ -7156,7 +7154,6 @@
         },
         "${value}% Reduction in Energy Leech Duration" : [ 12.0, 19.0, 26.0, 32.0, 39.0, 46.0, 53.0, 59.0, 66.0, 72.0, 80.0, 86.0, 93.0, 100.0 ],
         "${value} Energy Restored" : [ 100.0, 154.0, 208.0, 262.0, 315.0, 369.0, 423.0, 477.0, 531.0, 585.0, 638.0, 692.0, 746.0, 800.0 ],
-        "Protects against: Lightning Damage" : 1,
         "${value}% Lightning Resistance" : [ 12.0, 19.0, 26.0, 32.0, 39.0, 46.0, 53.0, 59.0, 66.0, 72.0, 80.0, 86.0, 93.0, 100.0 ],
         "MaxLevel" : 10,
         "^a${value} Second(s) Recharge" : 10.0,
@@ -7165,7 +7162,8 @@
         "+${value}% Total Speed" : [ 5.0, 7.0, 10.0, 12.0, 15.0, 17.0, 19.0, 22.0, 24.0, 26.0, 29.0, 31.0, 34.0, 36.0 ],
         "+${value}% Total Damage" : [ 5.0, 7.0, 10.0, 12.0, 15.0, 17.0, 19.0, 22.0, 24.0, 26.0, 29.0, 31.0, 34.0, 36.0 ],
         "${value}% Damage Absorption" : [ 6.0, 9.0, 13.0, 16.0, 20.0, 23.0, 26.0, 30.0, 33.0, 36.0, 40.0, 43.0, 47.0, 50.0 ]
-      }
+      },
+      "protectsAgainst" : [ " Lightning Damage" ]
     } ], [ {
       "name" : "Infinite Reach",
       "description" : "Your spell has now an extended reach, allowing it to travel much further than usual.{^n}{^y}Every level increases the distance travelled by the wave.",

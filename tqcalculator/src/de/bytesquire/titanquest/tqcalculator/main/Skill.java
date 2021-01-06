@@ -19,8 +19,8 @@ import de.bytesquire.titanquest.tqcalculator.parsers.SkillParser;
 @JsonIgnoreProperties({ "files", "buff", "skillTag", "skillDescriptionTag", "modifier", "skillTier", "urlLegacy",
         "requiredWeapons", "race" })
 @JsonInclude(Include.NON_NULL)
-@JsonPropertyOrder({ "name", "description", "doesNotIncludeRacialDamage", "exclusiveSkill", "notDispellable", "parent",
-        "skillIcon", "attributes", "pet" })
+@JsonPropertyOrder({ "name", "description", "doesNotIncludeRacialDamage", "exclusiveSkill", "notDispellable",
+        "protectsAgainst", "parent", "skillIcon", "attributes", "pet" })
 public class Skill {
 
     private SkillParser mSkillParser;
@@ -42,6 +42,7 @@ public class Skill {
     private Boolean mDoesNotIncludeRacialDamage;
     private Boolean mExclusiveSkill;
     private Boolean mNotDispellable;
+    private ArrayList<String> mProtectsAgainst;
 
     public Skill(File aSkill, String[] aParent, String aParentPath, ModStringsParser aMSParser,
             IconsParser aIconsParser) {
@@ -70,6 +71,9 @@ public class Skill {
         mNotDispellable = mSkillParser.getNotDispellable();
         mDoesNotIncludeRacialDamage = mSkillParser.getDoesNotIncludeRacialDamage();
         mExclusiveSkill = mSkillParser.getExclusiveSkill();
+        mProtectsAgainst = mSkillParser.getProtectsAgainst();
+        if (mProtectsAgainst == null)
+            mProtectsAgainst = new ArrayList<>();
 
         if (mSkillParser.getAdditionalFiles().size() > 0) {
             mFiles.addAll(mSkillParser.getAdditionalFiles());
@@ -206,17 +210,15 @@ public class Skill {
                     break;
                 }
                 if (skillAttribute.endsWith("Qualifier")) {
-                    String dmgQualifier;
                     String dmgKey = skillAttribute.replace("Qualifier", "");
                     dmgKey = dmgKey.substring(0, 1).toUpperCase() + dmgKey.substring(1, dmgKey.length());
                     dmgKey = dmgKey.replace("Bleeding", "DurationBleeding");
                     dmgKey = "Damage" + dmgKey.replace("Damage", "");
+                    String dmgQualifier;
                     if ((dmgQualifier = AttributeNameParser.getMatch(dmgKey)) != null)
-                        putAttribute("Protects against:" + dmgQualifier,
-                                mSkillParser.getAttributes().get(skillAttribute));
+                        mProtectsAgainst.add(dmgQualifier);
                     else
-                        putAttribute("Protects against: " + skillAttribute.replace("Qualifier", ""),
-                                mSkillParser.getAttributes().get(skillAttribute));
+                        mProtectsAgainst.add(skillAttribute.replace("Qualifier", ""));
                     break;
                 }
                 if (skillAttribute.startsWith("skill")) {
@@ -462,6 +464,12 @@ public class Skill {
         String[] tmp = new String[validParents.size()];
         tmp = validParents.toArray(tmp);
         setParent(tmp);
+    }
+
+    public ArrayList<String> getProtectsAgainst() {
+        if (mProtectsAgainst.size() == 0)
+            return null;
+        return mProtectsAgainst;
     }
 
 }

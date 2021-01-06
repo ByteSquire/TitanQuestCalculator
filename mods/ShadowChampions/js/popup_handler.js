@@ -2,7 +2,7 @@ function getPopupString(skill, currLevel, skipNext){
     var ret = '<span class="title">' + skill.name + '</span>\n';
     ret += "<br>\n";
     if(skill.description){
-        ret += '<span class="desc">' + skill.description.replaceAll("{^n}", "<br>\n").replaceAll("{^y}", '<p style="color: yellow">').replaceAll("{^g}", '<p style="color: green">').replaceAll("{^a}", '<p style="color: cyan">').replaceAll("{^w}", '</p>').replaceAll("^n", "").replaceAll("^y", '<p style="color: yellow">') + '</span>\n';
+        ret += '<span class="desc">' + skill.description.replaceAll("{^n}", "<br>\n").replaceAll("{^y}", '<p style="color: yellow">').replaceAll("{^g}", '<p style="color: green">').replaceAll("{^a}", '<p style="color: cyan">').replaceAll("{^w}", '</p>').replaceAll("{^Y}", '<p style="color: yellow">').replaceAll("^Y", '<p style="color: yellow">').replaceAll("^n", "").replaceAll("^y", '<p style="color: yellow">') + '</span>\n';
         ret += "<br>\n";
     }
     
@@ -11,7 +11,7 @@ function getPopupString(skill, currLevel, skipNext){
         ret += "<br>\n";
     }
     
-    if(skill.notDispellable || skill.doesNotIncludeRacialDamage || skill.exclusiveSkill)
+    if(skill.notDispellable || skill.doesNotIncludeRacialDamage || skill.exclusiveSkill || skill.protectsAgainst)
         ret += "<br>\n";
     
     if(skill.notDispellable){
@@ -27,6 +27,15 @@ function getPopupString(skill, currLevel, skipNext){
     if(skill.exclusiveSkill){
         ret += '<span class="" style="color: orange">Excluse Skill - Only one Exclusive Skill can be active at a time</span>';
         ret += "<br>\n";
+    }
+    
+    if(skill.protectsAgainst){
+        ret += '<spanc class="" style="color: green">Protects Against:</span>';
+        ret += "<br>\n";
+        skill.protectsAgainst.forEach((dmgType) => {
+            ret += dmgType;
+            ret += "<br>\n";
+        });
     }
     
     if(skill.parent){
@@ -63,12 +72,6 @@ function getPopupString(skill, currLevel, skipNext){
             if(key == "MaxLevel")
                 return;
             if(key == "UltimateLevel")
-                return;
-            if(key == "notDispellable")
-                return;
-            if(key == "doesNotIncludeRacialDamage")
-                return;
-            if(key == "exclusiveSkill")
                 return;
             var value = skill.attributes[key];
             if(value.key === null)

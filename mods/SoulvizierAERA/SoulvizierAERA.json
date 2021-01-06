@@ -2626,14 +2626,13 @@
         "${value}% Damage Reflected" : [ 38.0, 51.0, 64.0, 77.0, 90.0, 103.0, 116.0, 129.0, 142.0, 155.0, 168.0, 181.0, 194.0, 207.0, 220.0, 233.0 ],
         "${value} Damage Absorption" : [ 520.0, 740.0, 960.0, 1180.0, 1400.0, 1620.0, 1840.0, 2060.0, 2280.0, 2500.0, 2720.0, 2940.0, 3160.0, 3380.0, 3600.0, 3820.0 ],
         " Energy Cost" : [ 90.0, 94.0, 98.0, 102.0, 106.0, 110.0, 114.0, 118.0, 122.0, 126.0, 130.0, 134.0, 138.0, 142.0, 146.0, 150.0 ],
-        "Protects against: Lightning Damage" : 1,
         "MaxLevel" : 12,
-        "Protects against: Cold Damage" : 1,
         "m Radius" : 8.0,
         "^a${value} Second(s) Recharge" : [ 90.0, 88.0, 86.0, 84.0, 82.0, 80.0, 78.0, 76.0, 74.0, 72.0, 70.0, 68.0, 66.0, 64.0, 62.0, 60.0 ],
         "UltimateLevel" : 16,
         "${value}% Damage Absorption" : [ 35.0, 37.0, 39.0, 41.0, 43.0, 45.0, 47.0, 49.0, 51.0, 53.0, 55.0, 57.0, 59.0, 61.0, 63.0, 65.0 ]
-      }
+      },
+      "protectsAgainst" : [ " Lightning Damage", " Cold Damage" ]
     }, {
       "name" : "Lightning Dash",
       "description" : "Move between enemies at lightning speed, becoming hard to hit in the process. {^n}{^y}Assign this skill to your left mouse button.",
@@ -2705,16 +2704,15 @@
             "description" : "A wisp ability that increases the elemental damage of all nearby allies for a duration and provides protection from lightning and cold damage.",
             "attributes" : {
               "+${value}% Elemental Damages" : [ 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0, 150.0, 160.0, 170.0, 185.0, 200.0 ],
-              "Protects against: Lightning Damage" : 1,
               "${value}% Lightning Resistance" : [ 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0 ],
               "MaxLevel" : 8,
-              "Protects against: Cold Damage" : 1,
               "m Radius" : 15.0,
               "^a${value} Second(s) Recharge" : 10.0,
               " Second Duration" : [ 12.5, 13.0, 13.5, 14.0, 14.5, 15.0, 15.5, 16.0, 16.5, 17.0, 17.5, 18.0 ],
               "UltimateLevel" : 12,
               "${value}% Cold Resistance" : [ 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0 ]
-            }
+            },
+            "protectsAgainst" : [ " Lightning Damage", " Cold Damage" ]
           },
           "Plasma Burn" : {
             "name" : "Plasma Burn",
@@ -2955,16 +2953,15 @@
       },
       "attributes" : {
         "+${value}% Elemental Damages" : [ 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0, 150.0, 160.0, 170.0, 185.0, 200.0 ],
-        "Protects against: Lightning Damage" : 1,
         "${value}% Lightning Resistance" : [ 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0 ],
         "MaxLevel" : 8,
-        "Protects against: Cold Damage" : 1,
         "m Radius" : 15.0,
         "^a${value} Second(s) Recharge" : 10.0,
         " Second Duration" : [ 12.5, 13.0, 13.5, 14.0, 14.5, 15.0, 15.5, 16.0, 16.5, 17.0, 17.5, 18.0 ],
         "UltimateLevel" : 12,
         "${value}% Cold Resistance" : [ 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0 ]
-      }
+      },
+      "protectsAgainst" : [ " Lightning Damage", " Cold Damage" ]
     } ] ]
   }, {
     "name" : "Earth",
@@ -3095,7 +3092,6 @@
         "posX" : 198
       },
       "attributes" : {
-        "Protects against: Fire Damage" : 1,
         " Energy Cost" : [ 75.0, 77.0, 79.0, 82.0, 84.0, 86.0, 89.0, 91.0, 93.0, 96.0, 98.0, 100.0, 103.0, 105.0, 107.0, 110.0 ],
         "MaxLevel" : 12,
         " Burn Retaliation" : {
@@ -3113,7 +3109,8 @@
         "${value} Damage Absorption" : [ 520.0, 740.0, 960.0, 1180.0, 1400.0, 1620.0, 1840.0, 2060.0, 2280.0, 2500.0, 2720.0, 2940.0, 3160.0, 3380.0, 3600.0, 3820.0 ],
         "${value}% Physical Resistance" : [ 10.63, 11.26, 11.89, 12.52, 13.15, 13.78, 14.41, 15.04, 15.67, 16.3, 16.93, 17.56, 18.19, 18.82, 19.45, 20.08 ],
         "${value}% Damage Absorption" : [ 35.0, 37.0, 39.0, 41.0, 43.0, 45.0, 47.0, 49.0, 51.0, 53.0, 55.0, 57.0, 59.0, 61.0, 63.0, 65.0 ]
-      }
+      },
+      "protectsAgainst" : [ " Fire Damage" ]
     }, {
       "name" : "Brimstone",
       "description" : "Boosts the physical damage of attacks and adds burn damage.",
@@ -7824,17 +7821,15 @@
         "posX" : 374
       },
       "attributes" : {
-        "Protects against: Piercing Damage" : 1,
         "${value} Damage Absorption" : [ 80.0, 120.0, 180.0, 270.0, 405.0, 607.6, 911.2, 1367.0, 2050.4, 3075.6, 4613.2, 6920.0 ],
         " Energy Cost" : [ 40.0, 60.0, 90.0, 135.0, 202.5, 303.8, 455.6, 683.5, 1025.2, 1537.8, 2306.6, 3460.0 ],
         "MaxLevel" : 8,
         "m Radius" : 5.0,
         "^a${value} Second(s) Recharge" : 25.0,
         "UltimateLevel" : 12,
-        "Protects against: Bleeding Damage" : 1,
-        "Protects against: Physical Damage" : 1,
         "${value}% Stun Resistance" : 50.0
-      }
+      },
+      "protectsAgainst" : [ " Piercing Damage", " Bleeding Damage", " Physical Damage" ]
     }, {
       "name" : "Aftershock",
       "description" : "The shock of the explosion leaves even those who survive battered and vulnerable.",
