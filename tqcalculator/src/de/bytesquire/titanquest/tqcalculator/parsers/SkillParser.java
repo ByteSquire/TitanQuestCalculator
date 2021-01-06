@@ -164,7 +164,7 @@ public class SkillParser {
                 }
                 if (attributeName.equals("Class") && (value.endsWith("Modifier")))
                     mModifier = true;
-                if(value.startsWith("SkillSecondary"))
+                if (value.startsWith("SkillSecondary"))
                     mModifier = true;
             });
         } catch (FileNotFoundException e) {
@@ -203,6 +203,7 @@ public class SkillParser {
         case "actorScaleTime":
         case "projectileHitTimeToLive":
         case "projectileMissTimeToLive":
+        case "debufSkill":
             return true;
         default:
             return false;
