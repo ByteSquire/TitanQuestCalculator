@@ -69,8 +69,7 @@ public class SkillParser {
                         .replace("character", "Character").replace("defensive", "Defense")
                         .replace("projectile", "Projectile").replace("retaliation", "Retaliation")
                         .replace("explosion", "Explosion").replace("racial", "Racial").replace("spark", "Spark")
-                        .replace("spawnObjects", "SkillPet").replace("damage", "Damage")
-                        .replace("exclusive", "Exclusive").replace("life", "Life");
+                        .replace("spawnObjects", "SkillPet").replace("damage", "Damage").replace("life", "Life");
 
                 if (attributeName.startsWith("skill")) {
                     if (attributeName.equals("skillDependancy")) {
@@ -207,6 +206,7 @@ public class SkillParser {
         case "projectileMissTimeToLive":
         case "debufSkill":
         case "alwaysUseSpecialAnimation":
+        case "hideFromUI":
             return true;
         default:
             return false;

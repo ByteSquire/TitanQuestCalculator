@@ -19,7 +19,8 @@ import de.bytesquire.titanquest.tqcalculator.parsers.SkillParser;
 @JsonIgnoreProperties({ "files", "buff", "skillTag", "skillDescriptionTag", "modifier", "skillTier", "urlLegacy",
         "requiredWeapons", "race" })
 @JsonInclude(Include.NON_NULL)
-@JsonPropertyOrder({ "name", "description", "parent", "skillIcon", "attributes", "pet" })
+@JsonPropertyOrder({ "name", "description", "doesNotIncludeRacialDamage", "exclusiveSkill", "notDispellable", "parent",
+        "skillIcon", "attributes", "pet" })
 public class Skill {
 
     private SkillParser mSkillParser;
@@ -38,6 +39,9 @@ public class Skill {
     private ChanceBasedAttributes mCBA;
     private ArrayList<String> mCBANames;
     private boolean mCBAXOR;
+    private Boolean mDoesNotIncludeRacialDamage;
+    private Boolean mExclusiveSkill;
+    private Boolean mNotDispellable;
 
     public Skill(File aSkill, String[] aParent, String aParentPath, ModStringsParser aMSParser,
             IconsParser aIconsParser) {
@@ -124,6 +128,15 @@ public class Skill {
             case "Pet":
                 mPet = (PetParser) mSkillParser.getAttributes().get(skillAttribute);
                 break;
+            case "notDispelable":
+                mNotDispellable = true;
+                break;
+            case "excludeRacialDamage":
+                mDoesNotIncludeRacialDamage = true;
+                break;
+            case "exclusiveSkill":
+                mExclusiveSkill = true;
+                break;
             default:
                 if (skillAttribute.equals("DamageGlobalChance")) {
                     mCBA.setChance(mSkillParser.getAttributes().get(skillAttribute));
@@ -190,8 +203,17 @@ public class Skill {
                     break;
                 }
                 if (skillAttribute.endsWith("Qualifier")) {
-                    putAttribute("Protects against: " + skillAttribute.replace("Qualifier", ""),
-                            mSkillParser.getAttributes().get(skillAttribute));
+                    String dmgQualifier;
+                    String dmgKey = skillAttribute.replace("Qualifier", "");
+                    dmgKey = dmgKey.substring(0, 1).toUpperCase() + dmgKey.substring(1, dmgKey.length());
+                    dmgKey = dmgKey.replace("Bleeding", "DurationBleeding");
+                    dmgKey = "Damage" + dmgKey.replace("Damage", "");
+                    if ((dmgQualifier = AttributeNameParser.getMatch(dmgKey)) != null)
+                        putAttribute("Protects against:" + dmgQualifier,
+                                mSkillParser.getAttributes().get(skillAttribute));
+                    else
+                        putAttribute("Protects against: " + skillAttribute.replace("Qualifier", ""),
+                                mSkillParser.getAttributes().get(skillAttribute));
                     break;
                 }
                 if (skillAttribute.startsWith("skill")) {
@@ -415,6 +437,18 @@ public class Skill {
 
     public PetParser getPet() {
         return mPet;
+    }
+
+    public Boolean isDoesNotIncludeRacialDamage() {
+        return mDoesNotIncludeRacialDamage;
+    }
+
+    public Boolean isExclusiveSkill() {
+        return mExclusiveSkill;
+    }
+
+    public Boolean isNotDispellable() {
+        return mNotDispellable;
     }
 
     public void setParent(ArrayList<String> validParents) {

@@ -11,6 +11,21 @@ function getPopupString(skill, currLevel, skipNext){
         ret += "<br>\n";
     }
     
+    if(skill.notDispellable){
+        ret += '<span class="" style="color: cyan">Cannot be dispelled</span>';
+        ret += "<br>\n";
+    }
+    
+    if(skill.doesNotIncludeRacialDamage){
+        ret += '<span class="" style="color: orange">Does not include Racial Damage</span>';
+        ret += "<br>\n";
+    }
+    
+    if(skill.exclusiveSkill){
+        ret += '<span class="" style="color: orange">Excluse Skill - Only one Exclusive Skill can be active at a time</span>';
+        ret += "<br>\n";
+    }
+    
     if(skill.parent){
         if(skill.parent.constructor === Array)
             for (var i = 0; i < skill.parent.length; i++) {
@@ -45,6 +60,12 @@ function getPopupString(skill, currLevel, skipNext){
             if(key == "MaxLevel")
                 return;
             if(key == "UltimateLevel")
+                return;
+            if(key == "notDispellable")
+                return;
+            if(key == "doesNotIncludeRacialDamage")
+                return;
+            if(key == "exclusiveSkill")
                 return;
             var value = skill.attributes[key];
             if(value.key === null)

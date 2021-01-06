@@ -11,6 +11,7 @@ import java.util.stream.Stream;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 
 import de.bytesquire.titanquest.tqcalculator.main.Control;
@@ -19,6 +20,7 @@ import de.bytesquire.titanquest.tqcalculator.main.Skill;
 
 @JsonIgnoreProperties({ "files", "additionalFiles" })
 @JsonInclude(Include.NON_NULL)
+@JsonPropertyOrder({ "attributes", "petSkills", "petSkillLevels" })
 public class PetParser {
 
     private LinkedHashMap<String, Object> mAttributes;
