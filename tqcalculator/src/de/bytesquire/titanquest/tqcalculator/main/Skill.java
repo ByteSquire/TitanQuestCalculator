@@ -19,7 +19,7 @@ import de.bytesquire.titanquest.tqcalculator.parsers.SkillParser;
 @JsonIgnoreProperties({ "files", "buff", "skillTag", "skillDescriptionTag", "modifier", "skillTier", "urlLegacy",
         "requiredWeapons", "race" })
 @JsonInclude(Include.NON_NULL)
-@JsonPropertyOrder({ "name", "description", "parent", "skillIcon", "attributes" })
+@JsonPropertyOrder({ "name", "description", "parent", "skillIcon", "attributes", "pet" })
 public class Skill {
 
     private SkillParser mSkillParser;
