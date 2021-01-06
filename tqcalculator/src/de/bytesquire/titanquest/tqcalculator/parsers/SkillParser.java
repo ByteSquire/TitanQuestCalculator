@@ -198,6 +198,12 @@ public class SkillParser {
             return true;
         if (attributeName.startsWith("wave"))
             return true;
+        if (attributeName.endsWith("AngleToCaster"))
+            return true;
+        if (attributeName.endsWith("SpacingAngle"))
+            return true;
+        if (attributeName.endsWith("RandomRotation"))
+            return true;
         switch (attributeName) {
         case "skillMasteryLevelRequired":
         case "projectileLaunchRotation":

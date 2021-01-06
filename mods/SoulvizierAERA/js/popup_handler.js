@@ -11,6 +11,9 @@ function getPopupString(skill, currLevel, skipNext){
         ret += "<br>\n";
     }
     
+    if(skill.notDispellable || skill.doesNotIncludeRacialDamage || skill.exclusiveSkill)
+        ret += "<br>\n";
+    
     if(skill.notDispellable){
         ret += '<span class="" style="color: cyan">Cannot be dispelled</span>';
         ret += "<br>\n";
