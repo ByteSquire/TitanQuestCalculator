@@ -33,7 +33,7 @@ function getPopupString(skill, currLevel, skipNext){
         ret += '<span class="" style="color: green">Protects Against:</span>';
         ret += "<br>\n";
         skill.protectsAgainst.forEach((dmgType) => {
-            ret += dmgType;
+            ret += '<span class="desc" style="color: green">' + dmgType + '</span>';
             ret += "<br>\n";
         });
     }
@@ -174,7 +174,7 @@ function getPopupStringPet(skill, currLevel){
     if(skill.pet){
         var ret = '<span class="title">' + skill.name + '</span>\n<br>\n';
         if(currLevel == 0){
-            ret += '<span style="color: red">Invest at last one point into this skill to get info about it\'s pet</span>';
+            ret += '<span style="color: red">Invest at least one point into this skill to get info about it\'s pet</span>';
             return ret;
         }
         currLevel -= 1;
