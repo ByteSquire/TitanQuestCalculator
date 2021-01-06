@@ -753,6 +753,7 @@
     "skillTiers" : [ [ {
       "name" : "Deathchill Aura",
       "description" : "A deathly chill radiates from the character slowing the attack and movement of enemies as it diminishes their life.",
+      "doesNotIncludeRacialDamage" : true,
       "skillIcon" : {
         "posY" : 403,
         "posX" : 228
@@ -1196,6 +1197,7 @@
           "Circle of Power" : {
             "name" : "Circle of Power",
             "description" : "Summons a totem that holds a powerful spirit, infusing you and all allies with great mental energy while standing close to it.",
+            "notDispellable" : true,
             "attributes" : {
               "+${value}% Vitality Damage" : 100.0,
               "-${value}% Energy Cost" : [ 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0, 51.0, 54.0, 57.0, 60.0 ],
@@ -3848,6 +3850,8 @@
     } ], [ {
       "name" : "Trance of Empathy",
       "description" : "Force enemies to share the damage they inflict upon you by forming a telepathic link to their minds that conveys only pain and siphons life in retribution.",
+      "doesNotIncludeRacialDamage" : true,
+      "exclusiveSkill" : true,
       "skillIcon" : {
         "posY" : 341,
         "posX" : 128
@@ -4134,6 +4138,8 @@
     } ], [ {
       "name" : "Trance of Convalescence",
       "description" : "A restful state of mind causes increased life recovery and damage absorption for the player and allies.",
+      "doesNotIncludeRacialDamage" : true,
+      "exclusiveSkill" : true,
       "skillIcon" : {
         "posY" : 217,
         "posX" : 128
@@ -4174,6 +4180,7 @@
     }, {
       "name" : "Hypnotic Gaze",
       "description" : "The mesmerizing stare of the Nightmare is able to dominate lesser minds and throw them into a state of confusion, causing them to wander aimlessly and attack phantom images.",
+      "doesNotIncludeRacialDamage" : true,
       "parent" : [ "Summon Nightmare" ],
       "skillIcon" : {
         "posY" : 217,
@@ -5973,6 +5980,7 @@
     }, {
       "name" : "Study Prey",
       "description" : "By observing your prey from a distance you may discover its weakness, resulting in greater pierce damage.",
+      "doesNotIncludeRacialDamage" : true,
       "skillIcon" : {
         "posY" : 217,
         "posX" : 128

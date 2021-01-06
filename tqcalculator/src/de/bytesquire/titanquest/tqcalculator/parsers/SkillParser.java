@@ -28,6 +28,9 @@ public class SkillParser {
     private ArrayList<String> mParentSkill;
     private boolean mModifier = false;
     private String mRace;
+    private Boolean mDoesNotIncludeRacialDamage;
+    private Boolean mExclusiveSkill;
+    private Boolean mNotDispellable;
 
     public SkillParser(File aSkill, String aParentPath, ModStringsParser aMSParser, IconsParser aIconsParser) {
 
@@ -130,6 +133,9 @@ public class SkillParser {
                     mSkillDescriptionTag = tmp.getSkillDescriptionTag();
                     mSkillIcon = tmp.getSkillIcon();
                     mModifier = tmp.isModifier() || mModifier;
+                    mDoesNotIncludeRacialDamage = tmp.isDoesNotIncludeRacialDamage();
+                    mExclusiveSkill = tmp.isExclusiveSkill();
+                    mNotDispellable = tmp.isNotDispellable();
                     if (tmp.getParent() != null)
                         mParentSkill.addAll(Arrays.asList(tmp.getParent()));
                     mAdditionalFiles.addAll(tmp.getFiles());
@@ -252,5 +258,17 @@ public class SkillParser {
 
     public String getRace() {
         return mRace;
+    }
+
+    public Boolean getNotDispellable() {
+        return mNotDispellable;
+    }
+
+    public Boolean getExclusiveSkill() {
+        return mExclusiveSkill;
+    }
+
+    public Boolean getDoesNotIncludeRacialDamage() {
+        return mDoesNotIncludeRacialDamage;
     }
 }

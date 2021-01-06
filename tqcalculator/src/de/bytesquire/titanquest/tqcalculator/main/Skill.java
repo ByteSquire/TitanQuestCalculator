@@ -67,6 +67,9 @@ public class Skill {
             mParent = mSkillParser.getParentSkill();
         }
         isModifier = mSkillParser.isModifier();
+        mNotDispellable = mSkillParser.getNotDispellable();
+        mDoesNotIncludeRacialDamage = mSkillParser.getDoesNotIncludeRacialDamage();
+        mExclusiveSkill = mSkillParser.getExclusiveSkill();
 
         if (mSkillParser.getAdditionalFiles().size() > 0) {
             mFiles.addAll(mSkillParser.getAdditionalFiles());

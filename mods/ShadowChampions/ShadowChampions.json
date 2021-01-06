@@ -1772,6 +1772,7 @@
     } ], [ {
       "name" : "Ossein Recovery",
       "description" : "Fortify the bones of allied entities and render them more resistant to all blows.{^n}{^a}Cannot be dispelled.",
+      "notDispellable" : true,
       "parent" : [ "Summon Undead Minion", "Summon Undead Archer", "Summon Undead Wizard", "Summon Undead Captain" ],
       "skillIcon" : {
         "posY" : 93,
@@ -2556,6 +2557,7 @@
     }, {
       "name" : "Radioactive Core",
       "description" : "Install a core of radioactive energy at the center of your automaton, causing irreparable damage to anyone standing too close.",
+      "doesNotIncludeRacialDamage" : true,
       "parent" : [ "Build Automaton" ],
       "skillIcon" : {
         "posY" : 155,
@@ -2735,6 +2737,7 @@
     }, {
       "name" : "Advanced Armor Craftsmanship",
       "description" : "Develop your skills in steel-working by crafting customized armor parts for your familiars' protection. Those armor pieces are perfectly adjusted to them and will not slow them down.{^n}{^a}Cannot be dispelled.",
+      "notDispellable" : true,
       "skillIcon" : {
         "posY" : 93,
         "posX" : 464
@@ -3226,6 +3229,7 @@
     }, {
       "name" : "King of the Summit",
       "description" : "Lord and ruler of high summits, you may command your minions to victory with an inspiring presence that no one could immitate.{^n}{^a}Cannot be dispelled.",
+      "notDispellable" : true,
       "skillIcon" : {
         "posY" : 279,
         "posX" : 640
@@ -5326,6 +5330,7 @@
     }, {
       "name" : "Hourglass of Waning",
       "description" : "Turn the tides of time against your foes, aging them into foreseeable and feeble fools.",
+      "doesNotIncludeRacialDamage" : true,
       "skillIcon" : {
         "posY" : 279,
         "posX" : 288
@@ -5400,6 +5405,7 @@
           "Cosmic Nebula" : {
             "name" : "Cosmic Nebula",
             "description" : "Summon raging clouds of gas, alike cosmic nebulas, to obscure enemies' vision and burn their bodies in a relentless pursuit. {^n}{^y}This pet is invincible.",
+            "doesNotIncludeRacialDamage" : true,
             "attributes" : {
               "% Chance to Fumble attacks" : {
                 "value0" : {
@@ -6077,6 +6083,7 @@
     }, {
       "name" : "Godly Presence",
       "description" : "Powerful radiant energy emanates from you, strengthening all friendly entities.{^n}{^a}Cannot be dispelled.",
+      "notDispellable" : true,
       "skillIcon" : {
         "posY" : 341,
         "posX" : 200
@@ -6361,6 +6368,7 @@
     }, {
       "name" : "Vigor Reaper",
       "description" : "A little-known magical technique that consists in making the energy hidden deep inside your enemies surface, giving you full control over it.",
+      "doesNotIncludeRacialDamage" : true,
       "skillIcon" : {
         "posY" : 217,
         "posX" : 640
@@ -6445,6 +6453,7 @@
           "Angelic Altar" : {
             "name" : "Angelic Altar",
             "description" : "Summon a heavenly shrine, which casts a large protective aura that lasts until the altar expires or breaks.{^n}{^a}Cannot be dispelled.",
+            "notDispellable" : true,
             "attributes" : {
               "${value}% Poison Resistance" : [ 15.0, 18.0, 20.0, 23.0, 25.0, 28.0, 30.0, 33.0, 36.0, 38.0, 41.0, 43.0, 46.0, 49.0, 51.0, 54.0, 56.0, 59.0, 61.0, 64.0, 66.0, 68.0 ],
               "MaxLevel" : 22,
@@ -6539,6 +6548,7 @@
           "Guardian Angel" : {
             "name" : "Guardian Angel",
             "description" : "The sole presence of the purest being fosters hope and empowers allied units.{^n}{^a}Cannot be dispelled.",
+            "notDispellable" : true,
             "attributes" : {
               "+${value} Health" : [ 20.0, 40.0, 60.0, 80.0, 100.0, 120.0, 140.0, 160.0, 180.0, 200.0 ],
               "${value} Armor" : [ 4.0, 7.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 30.0 ],
@@ -6722,6 +6732,7 @@
     }, {
       "name" : "Guardian Angel",
       "description" : "The sole presence of the purest being fosters hope and empowers allied units.{^n}{^a}Cannot be dispelled.",
+      "notDispellable" : true,
       "parent" : [ "Heavenly Order" ],
       "skillIcon" : {
         "posY" : 93,
@@ -6795,6 +6806,7 @@
     "skillTiers" : [ [ {
       "name" : "School of Fire",
       "description" : "Learn the secrets of emberlike, scorching spells, empowering all fire-based attacks around you.",
+      "exclusiveSkill" : true,
       "skillIcon" : {
         "posY" : 403,
         "posX" : 112
@@ -6813,6 +6825,7 @@
     }, {
       "name" : "School of Frost",
       "description" : "Learn the secrets of cold, chilling magic, boosting the lethality of all frost-based attacks near you.",
+      "exclusiveSkill" : true,
       "skillIcon" : {
         "posY" : 403,
         "posX" : 200
@@ -6831,6 +6844,7 @@
     }, {
       "name" : "School of Lightning",
       "description" : "Learn the secrets of thunderous, electrifying spells, multiplying the strength of all lightning-based attacks around you.",
+      "exclusiveSkill" : true,
       "skillIcon" : {
         "posY" : 403,
         "posX" : 288
@@ -7496,6 +7510,7 @@
     } ], [ {
       "name" : "Elemental Dominion",
       "description" : "Merge the power of storms, blizzards and volcanos into a single, powerful aura that empowers you with unthinkable elemental power.",
+      "exclusiveSkill" : true,
       "skillIcon" : {
         "posY" : 31,
         "posX" : 200
@@ -7654,6 +7669,7 @@
           "Intimidating Screech" : {
             "name" : "Intimidating Screech",
             "description" : "The raptor's screech sends a shivering wave, which lowers enemies' resistance and damage dealt for a short while.",
+            "doesNotIncludeRacialDamage" : true,
             "attributes" : {
               " Energy Cost" : 40.0,
               "MaxLevel" : 10,
@@ -7947,6 +7963,7 @@
     }, {
       "name" : "Intimidating Screech",
       "description" : "The raptor's screech sends a shivering wave, which lowers enemies' resistance and damage dealt for a short while.",
+      "doesNotIncludeRacialDamage" : true,
       "parent" : [ "Raptor Hunter" ],
       "skillIcon" : {
         "posY" : 279,
@@ -7965,6 +7982,7 @@
     }, {
       "name" : "Bandages",
       "description" : "While you venture in unknown regions, carrying a pack of bandages is useful, as they are effective for protecting wounds from aggravating and enable accelerated recovery. Additonally, they may be used on allied units.{^n}{^a}Cannot be dispelled.",
+      "notDispellable" : true,
       "skillIcon" : {
         "posY" : 279,
         "posX" : 640
@@ -8002,6 +8020,7 @@
     }, {
       "name" : "Ranger's Prowess",
       "description" : "Rangers can share their techniques with companions and allies, improving their damage output and speed for a short moment.",
+      "notDispellable" : true,
       "skillIcon" : {
         "posY" : 217,
         "posX" : 200
@@ -8092,6 +8111,7 @@
     }, {
       "name" : "Survival Techniques",
       "description" : "As a master of survival in the wild, you may teach your allies the basics of survivability; this knowledge can be applied in combat to avoid more attacks than a regular fighter would.{^n}{^a}Cannot be dispelled.",
+      "notDispellable" : true,
       "skillIcon" : {
         "posY" : 217,
         "posX" : 464
