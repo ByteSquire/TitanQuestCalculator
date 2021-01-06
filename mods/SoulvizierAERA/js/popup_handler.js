@@ -30,7 +30,7 @@ function getPopupString(skill, currLevel, skipNext){
     }
     
     if(skill.protectsAgainst){
-        ret += '<spanc class="" style="color: green">Protects Against:</span>';
+        ret += '<span class="" style="color: green">Protects Against:</span>';
         ret += "<br>\n";
         skill.protectsAgainst.forEach((dmgType) => {
             ret += dmgType;
