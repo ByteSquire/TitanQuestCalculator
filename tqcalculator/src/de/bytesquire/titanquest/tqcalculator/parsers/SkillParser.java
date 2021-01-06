@@ -191,6 +191,8 @@ public class SkillParser {
             return true;
         if (attributeName.endsWith("NumberOfRings"))
             return true;
+        if (attributeName.startsWith("wave"))
+            return true;
         switch (attributeName) {
         case "skillMasteryLevelRequired":
         case "projectileLaunchRotation":
@@ -204,6 +206,7 @@ public class SkillParser {
         case "projectileHitTimeToLive":
         case "projectileMissTimeToLive":
         case "debufSkill":
+        case "alwaysUseSpecialAnimation":
             return true;
         default:
             return false;
