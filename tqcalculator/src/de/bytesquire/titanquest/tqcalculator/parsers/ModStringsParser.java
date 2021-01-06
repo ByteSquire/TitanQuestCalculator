@@ -9,7 +9,7 @@ import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.stream.Stream;
 
@@ -17,11 +17,11 @@ import org.mozilla.universalchardet.UniversalDetector;
 
 public class ModStringsParser {
 
-    private HashMap<String, String> tags;
+    private LinkedHashMap<String, String> tags;
     private ArrayList<File> mModStrings;
 
     public ModStringsParser(String aModStringsPath) {
-        tags = new HashMap<>();
+        tags = new LinkedHashMap<>();
         mModStrings = new ArrayList<File>();
 
         try {

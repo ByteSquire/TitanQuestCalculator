@@ -10,7 +10,7 @@ import java.nio.file.Files;
 import java.nio.file.NoSuchFileException;
 import java.nio.file.Path;
 import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.stream.Stream;
 
 import de.bytesquire.titanquest.tqcalculator.main.SkillIcon;
@@ -18,12 +18,12 @@ import de.bytesquire.titanquest.tqcalculator.main.SkillIcon;
 public class IconsParser {
 
     private ArrayList<File> mIconFiles;
-    private HashMap<String, SkillIcon> mIcons;
+    private LinkedHashMap<String, SkillIcon> mIcons;
     private String mModPath;
 
     public IconsParser(String aModPath) {
         mIconFiles = new ArrayList<>();
-        mIcons = new HashMap<>();
+        mIcons = new LinkedHashMap<>();
         mModPath = aModPath;
 
         initFiles();

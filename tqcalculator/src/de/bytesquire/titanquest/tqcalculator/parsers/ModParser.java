@@ -7,7 +7,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.stream.Stream;
 
@@ -23,12 +23,12 @@ public class ModParser {
     public static final int COUNT_MASTERIES = 10;
     public static final int COUNT_QUEST_REWARD_TREES = 1;
     private String mModdir;
-    private HashMap<String, String> mLinks;
+    private LinkedHashMap<String, String> mLinks;
     private ArrayList<Integer> mMasteryTiers;
 
     public ModParser(String aModdir) {
         mSkillTrees = new ArrayList<>();
-        mLinks = new HashMap<>();
+        mLinks = new LinkedHashMap<>();
         mMasteryTiers = new ArrayList<>();
         mModdir = aModdir;
 

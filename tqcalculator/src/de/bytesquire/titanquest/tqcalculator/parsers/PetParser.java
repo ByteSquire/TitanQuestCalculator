@@ -6,7 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.stream.Stream;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
@@ -21,11 +21,11 @@ import de.bytesquire.titanquest.tqcalculator.main.Skill;
 @JsonInclude(Include.NON_NULL)
 public class PetParser {
 
-    private HashMap<String, Object> mAttributes;
-    private HashMap<String, Skill> mPetSkills;
-    private HashMap<Integer, String> mSkillNameIndexMap;
-    private HashMap<String, ArrayList<Integer>> mPetSkillLevels;
-    private HashMap<Integer, ArrayList<Integer>> mSkillLevelIndexMap;
+    private LinkedHashMap<String, Object> mAttributes;
+    private LinkedHashMap<String, Skill> mPetSkills;
+    private LinkedHashMap<Integer, String> mSkillNameIndexMap;
+    private LinkedHashMap<String, ArrayList<Integer>> mPetSkillLevels;
+    private LinkedHashMap<Integer, ArrayList<Integer>> mSkillLevelIndexMap;
     private File[] mSkills;
     private ArrayList<File> mAdditionalFiles;
     private String mParentPath;
@@ -36,12 +36,12 @@ public class PetParser {
         if (files == null)
             return;
 
-        mAttributes = new HashMap<>();
-        mPetSkills = new HashMap<>();
+        mAttributes = new LinkedHashMap<>();
+        mPetSkills = new LinkedHashMap<>();
         mAdditionalFiles = new ArrayList<>();
-        mPetSkillLevels = new HashMap<>();
-        mSkillNameIndexMap = new HashMap<>();
-        mSkillLevelIndexMap = new HashMap<>();
+        mPetSkillLevels = new LinkedHashMap<>();
+        mSkillNameIndexMap = new LinkedHashMap<>();
+        mSkillLevelIndexMap = new LinkedHashMap<>();
 
         mSkills = files;
         mParentPath = aParentPath;
@@ -203,7 +203,7 @@ public class PetParser {
         return key;
     }
 
-    public HashMap<String, Object> getAttributes() {
+    public LinkedHashMap<String, Object> getAttributes() {
         return mAttributes;
     }
 
@@ -226,11 +226,11 @@ public class PetParser {
         return mAdditionalFiles;
     }
 
-    public HashMap<String, Skill> getPetSkills() {
+    public LinkedHashMap<String, Skill> getPetSkills() {
         return mPetSkills;
     }
 
-    public HashMap<String, ArrayList<Integer>> getPetSkillLevels() {
+    public LinkedHashMap<String, ArrayList<Integer>> getPetSkillLevels() {
         return mPetSkillLevels;
     }
 }

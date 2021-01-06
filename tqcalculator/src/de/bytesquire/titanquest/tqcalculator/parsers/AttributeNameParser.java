@@ -8,7 +8,7 @@ import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.stream.Stream;
 
 import org.mozilla.universalchardet.UniversalDetector;
@@ -18,7 +18,7 @@ public class AttributeNameParser {
     public static final Path ATTRIBUTE_NAME_DIR = Path
             .of(Paths.get("").toAbsolutePath().toString() + "/resources/attributeNames");
 
-    private static HashMap<String, String> attributeNames = new HashMap<>();
+    private static LinkedHashMap<String, String> attributeNames = new LinkedHashMap<>();
 
     public static void parseAttributeNames() {
         try {
