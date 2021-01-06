@@ -2,21 +2,23 @@ package de.bytesquire.titanquest.tqcalculator.main;
 
 import java.io.File;
 import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 import de.bytesquire.titanquest.tqcalculator.parsers.IconsParser;
 import de.bytesquire.titanquest.tqcalculator.parsers.ModStringsParser;
 import de.bytesquire.titanquest.tqcalculator.parsers.SkillTreeParser;
 
 @JsonIgnoreProperties({ "mastery", "skillTree", "mSkills", "mSkillTreeParser", "urlLegacy" })
+@JsonPropertyOrder({ "name", "masteryAttributes", "skillTiers" })
 public class Mastery {
 
     private SkillTreeParser mSkillTreeParser;
     private ArrayList<Skill> mSkills;
     private ArrayList<ArrayList<Skill>> mSkillTiers;
-    private HashMap<String, Object> mMasteryAttributes;
+    private LinkedHashMap<String, Object> mMasteryAttributes;
     private String mName;
     private String mParentModName;
     private File mSkillTree;
@@ -38,12 +40,15 @@ public class Mastery {
                 mSkills.add(tmp);
             } else {
                 mMastery = skill;
-                mMasteryAttributes = (HashMap<String, Object>) new Skill(skill, null,
+                mMasteryAttributes = (LinkedHashMap<String, Object>) new Skill(skill, null,
                         (mParentModName + "/Masteries/" + mName), aMSParser, aIconsParser).getAttributes();
             }
         }
 
         for (Skill skill : mSkills) {
+            if(skill.getName().equals("Eye of the Storm")) {
+                System.out.println("hi");
+            }
             if (skill.isModifier()) {
                 if (skill.getParent() != null) {
                     ArrayList<String> validParents = new ArrayList<>();
@@ -104,7 +109,7 @@ public class Mastery {
         return mSkillTree;
     }
 
-    public HashMap<String, Object> getMasteryAttributes() {
+    public LinkedHashMap<String, Object> getMasteryAttributes() {
         return mMasteryAttributes;
     }
 

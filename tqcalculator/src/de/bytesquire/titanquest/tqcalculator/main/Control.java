@@ -33,7 +33,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 import javax.swing.JFrame;
@@ -86,14 +86,14 @@ public class Control {
             mSuccess = false;
         }
 
-        HashMap<String, String> links = new HashMap<>();
+        LinkedHashMap<String, String> links = new LinkedHashMap<>();
         for (Mod mod : mMods) {
             for (String linkString : mod.getLinks().keySet()) {
                 links.put(linkString, mod.getLinks().get(linkString));
             }
         }
 
-        rootHome = new HashMap<>();
+        rootHome = new LinkedHashMap<>();
         rootHome.put("links", links);
         rootHome.put("mods", mMods);
         try {
@@ -168,7 +168,7 @@ public class Control {
             for (Mod mod : mMods) {
                 Writer outMod = new FileWriter(
                         REPOSITORY_DIR + "mods/" + mod.getName() + "/" + mod.getName() + ".html");
-                rootMod = new HashMap<>();
+                rootMod = new LinkedHashMap<>();
                 rootMod.put("masteries", mod.getMasteries());
                 rootMod.put("name", mod.getName());
                 Control.mod.process(rootMod, outMod);
@@ -176,7 +176,7 @@ public class Control {
                 for (Mastery mastery : mod.getMasteries()) {
                     Writer outMastery = new FileWriter(
                             REPOSITORY_DIR + "mods/" + mod.getName() + "/Masteries/" + mastery.getName() + ".html");
-                    rootMastery = new HashMap<>();
+                    rootMastery = new LinkedHashMap<>();
                     rootMastery.put("skills", mastery.getSkillTiers());
                     rootMastery.put("name", mastery.getName());
                     Control.mastery.process(rootMastery, outMastery);
@@ -187,12 +187,12 @@ public class Control {
                                     + mastery.getName() + "/"
                                     + ((skill.getName() == null) ? skill.toString() : skill.getName().replace(":", ""))
                                     + ".html");
-                            rootSkill = new HashMap<>();
+                            rootSkill = new LinkedHashMap<>();
                             rootSkill.put("attributes", skill.getAttributes());
                             rootSkill.put("name", skill.getName());
                             rootSkill.put("description", skill.getDescription());
                             rootSkill.put("ArrayList", ArrayList.class);
-                            rootSkill.put("HashMap", HashMap.class);
+                            rootSkill.put("LinkedHashMap", LinkedHashMap.class);
                             rootSkill.put("requiredWeapons", skill.getRequiredWeapons());
                             Control.skill.process(rootSkill, outSkill);
                         }
@@ -209,24 +209,24 @@ public class Control {
         for (Mod mod : mMods) {
             try {
                 Writer outMod = new FileWriter(REPOSITORY_DIR + "mods/" + mod.getName() + "/index.html");
-                rootMod = new HashMap<>();
+                rootMod = new LinkedHashMap<>();
                 rootMod.put("name", mod.getName());
                 rootMod.put("masteries", mod.getMasteries());
                 Control.mod_fancy.process(rootMod, outMod);
 
                 Writer outMastery = new FileWriter(REPOSITORY_DIR + "mods/" + mod.getName() + "/Masteries.html");
-                rootMastery = new HashMap<>();
+                rootMastery = new LinkedHashMap<>();
                 rootMastery.put("name", mod.getName());
                 Control.mastery_fancy.process(rootMastery, outMastery);
 
                 Writer skillJs = new FileWriter(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/skill.js");
-                rootMastery = new HashMap<>();
+                rootMastery = new LinkedHashMap<>();
                 rootMastery.put("name", mod.getName());
                 Control.skill_js.process(rootMastery, skillJs);
 
                 Writer json_handlerJs = new FileWriter(
                         REPOSITORY_DIR + "mods/" + mod.getName() + "/js/JSON_handler.js");
-//                rootMastery = new HashMap<>();
+//                rootMastery = new LinkedHashMap<>();
                 rootMastery.put("name", mod.getName());
                 Control.json_handler.process(rootMastery, json_handlerJs);
 

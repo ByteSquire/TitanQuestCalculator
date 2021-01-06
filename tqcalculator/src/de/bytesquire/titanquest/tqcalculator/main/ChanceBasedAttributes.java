@@ -1,6 +1,6 @@
 package de.bytesquire.titanquest.tqcalculator.main;
 
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -12,10 +12,10 @@ public class ChanceBasedAttributes {
 
     protected Object chance;
     protected String key;
-    protected HashMap<String, Object> values;
+    protected LinkedHashMap<String, Object> values;
 
     public ChanceBasedAttributes() {
-        this.values = new HashMap<String, Object>();
+        this.values = new LinkedHashMap<String, Object>();
     }
 
     public Object getChance() {
@@ -26,7 +26,7 @@ public class ChanceBasedAttributes {
         return key;
     }
 
-    public HashMap<String, Object> getValues() {
+    public LinkedHashMap<String, Object> getValues() {
         return values;
     }
 

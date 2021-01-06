@@ -4,24 +4,26 @@ import java.io.File;
 import java.nio.file.Paths;
 import java.security.InvalidParameterException;
 import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 import de.bytesquire.titanquest.tqcalculator.parsers.IconsParser;
 import de.bytesquire.titanquest.tqcalculator.parsers.ModParser;
 import de.bytesquire.titanquest.tqcalculator.parsers.ModStringsParser;
 
-@JsonIgnoreProperties({ "msparser", "character", "modDir", "links", "masteryLevel", "gameEngine", "iconsParser", "urlLegacy" })
+@JsonIgnoreProperties({ "msparser", "character", "modDir", "links", "masteryLevel", "gameEngine", "iconsParser", "urlLegacy", "url" })
+@JsonPropertyOrder({ "name", "mappedMasteries", "masteryLevels", "masteries" })
 public class Mod {
 
     private ModParser mModParser;
     private ModStringsParser mMSParser;
     private IconsParser mIconsParser;
     private ArrayList<Mastery> mMasteries;
-    private HashMap<Integer, String> mMappedMasteries;
+    private LinkedHashMap<Integer, String> mMappedMasteries;
     private String mModName, mModDir;
     private Map<String, String> mLinks;
     private File mCharacter;
@@ -32,7 +34,7 @@ public class Mod {
         if (aModName == null)
             return;
         mMasteries = new ArrayList<Mastery>();
-        mMappedMasteries = new HashMap<Integer, String>();
+        mMappedMasteries = new LinkedHashMap<Integer, String>();
         mModName = aModName;
         mModDir = aModDir;
         mMSParser = new ModStringsParser(aModDir + "/text/");
@@ -95,7 +97,7 @@ public class Mod {
         return mCharacter;
     }
 
-    public HashMap<Integer, String> getMappedMasteries() {
+    public LinkedHashMap<Integer, String> getMappedMasteries() {
         return mMappedMasteries;
     }
 

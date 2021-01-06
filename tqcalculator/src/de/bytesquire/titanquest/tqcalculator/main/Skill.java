@@ -2,12 +2,13 @@ package de.bytesquire.titanquest.tqcalculator.main;
 
 import java.io.File;
 import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 import de.bytesquire.titanquest.tqcalculator.parsers.AttributeNameParser;
 import de.bytesquire.titanquest.tqcalculator.parsers.IconsParser;
@@ -18,12 +19,13 @@ import de.bytesquire.titanquest.tqcalculator.parsers.SkillParser;
 @JsonIgnoreProperties({ "files", "buff", "skillTag", "skillDescriptionTag", "modifier", "skillTier", "urlLegacy",
         "requiredWeapons", "race" })
 @JsonInclude(Include.NON_NULL)
+@JsonPropertyOrder({ "name", "description", "parent", "skillIcon", "attributes" })
 public class Skill {
 
     private SkillParser mSkillParser;
     private String mSkillName;
     private String mSkillDescription;
-    private HashMap<String, Object> mSkillAttributes;
+    private LinkedHashMap<String, Object> mSkillAttributes;
     private PetParser mPet;
     private String mParentPath;
     private boolean isModifier;
@@ -41,7 +43,7 @@ public class Skill {
             IconsParser aIconsParser) {
         if (aSkill == null)
             return;
-        mSkillAttributes = new HashMap<>();
+        mSkillAttributes = new LinkedHashMap<>();
         mParentPath = aParentPath;
         mParent = aParent;
         mFiles = new ArrayList<>();
