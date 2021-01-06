@@ -14,12 +14,13 @@ function getPopupString(skill, currLevel, skipNext){
     if(skill.parent){
         if(skill.parent.constructor === Array)
             for (var i = 0; i < skill.parent.length; i++) {
-                if(Number(document.getElementById(skill.parent[i]).innerText.split("/")[0]) == 0){
-                    ret += '<span class="" style="color: red">Requires at least one point in: ' + skill.parent[i] + '</span>';
-                    ret += "<br>\n";
-                }
+                if(document.getElementById(skill.parent[i]))
+                    if(Number(document.getElementById(skill.parent[i]).innerText.split("/")[0]) == 0){
+                        ret += '<span class="" style="color: red">Requires at least one point in: ' + skill.parent[i] + '</span>';
+                        ret += "<br>\n";
+                    }
             }
-        else
+        else if(document.getElementById(skill.parent))
             if(Number(document.getElementById(skill.parent).innerText.split("/")[0]) == 0){
                 ret += '<span class="" style="color: red">Requires at least one point in: ' + skill.parent + '</span>';
                 ret += "<br>\n";
