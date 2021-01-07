@@ -219,6 +219,8 @@ public class SkillParser {
         case "debufSkill":
         case "alwaysUseSpecialAnimation":
         case "hideFromUI":
+        case "headVelocity":
+        case "tailVelocity":
             return true;
         default:
             return false;
