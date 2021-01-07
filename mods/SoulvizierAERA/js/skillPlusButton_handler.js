@@ -11,8 +11,12 @@ function allPlusClicked(button, event) {
     
     if(left)
         globalPlus++;
-    else
-        globalPlus--;
+    else{
+        if(event.shiftKey)
+            globalPlus = 0;
+        else
+            globalPlus--;
+    }
     
     if(button.parentElement.id == "panel1")
         m1GlobalPlus = globalPlus;
@@ -73,9 +77,12 @@ function skillPlusClicked(button, event) {
     
     if(left)
         localPlus++;
-    else
-        localPlus--;
-    
+    else{
+        if(event.shiftKey)
+            localPlus = 0;
+        else
+            localPlus--;
+    }
     var skill = document.getElementById(button.id.split("+")[0]);
     var curr1 = Number(skill.innerHTML.split('<div class="disabled">')[1].replace("</div>", ""));
     var curr2;

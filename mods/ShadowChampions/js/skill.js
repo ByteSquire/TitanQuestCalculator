@@ -109,6 +109,9 @@ function shiftPressed(event){
             
         var button = document.getElementById(pop.getElementsByClassName("title")[0].innerText);
         
+        if(!button)
+            return;
+        
         var matteringMastery = (button.parentElement.id == "panel1")? m1 : m2;
         var tiers = matteringMastery.skillTiers;
         var skill;
