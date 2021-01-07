@@ -18,7 +18,7 @@ function skillClicked(button, event){
             } else
                 return;
         } else {
-            if(canDecreaseSkill(button)){
+            if(canDecreaseSkill(button, event.shiftKey)){
                 if (localPointsSpent > 0){
                     if(event.shiftKey){
                         pointsSpent -= localPointsSpent;
