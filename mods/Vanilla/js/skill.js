@@ -123,7 +123,8 @@ function shiftPressed(event){
             });
         });
         if(!petDisplayed){
-            lastTop = pop.style.top;
+            if(pop.style.top != "unset")
+                lastTop = pop.style.top;
             pop.innerHTML = getPopupStringPet(skill, Number(button.innerText.split("/")[0].replaceAll("\n", "")));
             petDisplayed = true;
         } else {

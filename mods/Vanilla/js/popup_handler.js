@@ -164,8 +164,7 @@ function getPopupString(skill, currLevel, skipNext){
         }
     });
     
-    if(currLevel > 0 && currLevel+1 <= skill.attributes["UltimateLevel"])
-        ret += '</table>\n';
+    ret += '</tr></table>\n';
     
     return ret;
 }
@@ -212,7 +211,6 @@ function movePopupintoView(pop, pageHeight){
         pop.style.top = "unset";
         pop.style.bottom = "-" + window.pageYOffset + "px";
     }
-    lastTop = pop.style.top;
 }
 
 function getPageHeight() {
@@ -240,6 +238,7 @@ function getPopupStringPet(skill, currLevel){
             ret += "<td>";
             ret += formatPetSkills(skill.pet, currLevel, "white");
         }
+        ret += '</table>';
     } else
         return getPopupString(skill, currLevel);
     return ret;
