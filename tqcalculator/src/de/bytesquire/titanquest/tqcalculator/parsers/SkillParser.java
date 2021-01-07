@@ -160,19 +160,17 @@ public class SkillParser {
                     Skill tmp = new Skill(
                             new File(Control.DATABASES_DIR + mParentPath.split("/")[0] + "/database/" + value), null,
                             mParentPath, mMSParser, mIconsParser);
-                    for (String skillAttribute : tmp.getAttributes().keySet()) {
-                        mAttributes.put("Pets: " + skillAttribute, tmp.getAttributes().get(skillAttribute));
-                    }
+                    mAttributes.put("Bonus to all Pets:", tmp.getAttributes());
                     mAdditionalFiles.addAll(tmp.getFiles());
                     return;
                 }
                 if (attributeName.equals("RacialBonusRace")) {
                     mRace = value;
                 }
-                if (attributeName.equals("Class") && (value.endsWith("Modifier")))
-                    mModifier = true;
-                if (value.startsWith("SkillSecondary"))
-                    mModifier = true;
+                if (attributeName.equals("Class")) {
+                    if (value.endsWith("Modifier") || value.startsWith("SkillSecondary"))
+                        mModifier = true;
+                }
             });
         } catch (FileNotFoundException e) {
             e.printStackTrace();
