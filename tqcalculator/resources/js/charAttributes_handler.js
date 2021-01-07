@@ -90,5 +90,9 @@ function updateUI(){
     document.getElementById("dex").innerText = Math.floor(dex)  + "+" + Math.floor(dexPercent) + "%";
     document.getElementById("str").innerText = Math.floor(str)  + "+" + Math.floor(strPercent) + "%";
     document.getElementById("int").innerText = Math.floor(int)  + "+" + Math.floor(intPercent) + "%";
-    document.getElementById("pointsLeft").innerText = maxPoints-pointsSpent;
+    var pointsLeft = maxPoints-pointsSpent
+    if(pointsLeft < 0)
+        document.getElementById("pointsLeft").innerHTML = '<span style="color: red">' + pointsLeft + '</span>';
+    else
+        document.getElementById("pointsLeft").innerText = pointsLeft;
 }
