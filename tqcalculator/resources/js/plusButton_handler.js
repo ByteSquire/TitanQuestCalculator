@@ -36,9 +36,10 @@ function plusClicked(button, event){
         } else
             return;
     } else {
-        if (canDecreaseMastery(button.parentElement, matteringMastery, (matteringMastery == m1)? m1CurrTier-1 : m2CurrTier-1, curr)){
-            if (curr > 0){
-                if(event.shiftKey){
+        if (curr > 0){
+            var minRequiredMasteryTier = getMinMasteryTier(button.parentElement, matteringMastery);
+            if(event.shiftKey){
+                if(minRequiredMasteryTier == -1){
                     updated = 0;
                     pointsSpent -= curr;
                     button.parentElement.getElementsByClassName("bar")[0].style.height = "0%";
@@ -46,31 +47,40 @@ function plusClicked(button, event){
                         m1CurrTier = 0;
                     else
                         m2CurrTier = 0;
-                } else {
-                    updated = curr - 1;
-                    pointsSpent--;
-                    if(m1CurrTier != 0 || m2CurrTier != 0){
-                        var matters = mod.masteryLevels[Number((matteringMastery == m1)? m1CurrTier-1 : m2CurrTier-1)]-1;
-                        if(updated == matters){
-                            var currHeight = Number(button.parentElement.getElementsByClassName("bar")[0].style.height.split("%")[0]);
-                            button.parentElement.getElementsByClassName("bar")[0].style.height = (currHeight - (80/mod.masteryLevels.length)) + "%";
-                            if(button.parentElement.id.split("panel")[1] == 1)
-                                m1CurrTier--;
-                            else
-                                m2CurrTier--;
-                        }
+                } else{
+                    updated = mod.masteryLevels[minRequiredMasteryTier];
+                    pointsSpent -= (curr-updated);
+                    button.parentElement.getElementsByClassName("bar")[0].style.height = (minRequiredMasteryTier+1) * (80/mod.masteryLevels.length) + "%";
+                    if(matteringMastery == m1)
+                        m1CurrTier = minRequiredMasteryTier+1;
+                    else
+                        m2CurrTier = minRequiredMasteryTier+1;
+                }
+            } else {
+                updated = curr - 1;
+                if(updated < mod.masteryLevels[minRequiredMasteryTier])
+                    return;
+                pointsSpent--;
+                if(m1CurrTier != 0 || m2CurrTier != 0){
+                    var matters = mod.masteryLevels[Number((matteringMastery == m1)? m1CurrTier-1 : m2CurrTier-1)]-1;
+                    if(updated == matters){
+                        var currHeight = Number(button.parentElement.getElementsByClassName("bar")[0].style.height.split("%")[0]);
+                        button.parentElement.getElementsByClassName("bar")[0].style.height = (currHeight - (80/mod.masteryLevels.length)) + "%";
+                        if(button.parentElement.id.split("panel")[1] == 1)
+                            m1CurrTier--;
+                        else
+                            m2CurrTier--;
                     }
                 }
-                if(updated == 0)
-                    button.parentElement.getElementsByClassName("bar")[0].style.height = "0%";
-            } else
-                return;
+            }
+        if(updated == 0)
+            button.parentElement.getElementsByClassName("bar")[0].style.height = "0%";
         } else
             return;
     }
     button.innerHTML = button.innerHTML.replace(curr, updated);
     calcLevelReq();
-    calcBoni(matteringMastery.masteryAttributes, curr, updated, event);
+    calcBoni(matteringMastery.masteryAttributes, curr, updated);
     updateSkills();
 }
 
@@ -91,4 +101,29 @@ function plusButtonPopup(button, event){
     
     pop.style.display = "block";
     movePopupintoView(pop, pageHeight);
+}
+
+function getMinMasteryTier(panel, mastery){
+    var skillButtons = panel.getElementsByClassName("skillButton");
+    var activeSkillButtons = [];
+    for(var i = 0; i < skillButtons.length; i++){
+        var button = skillButtons[i];
+        var buttonLvl = button.innerText.split("/")[0].replaceAll("\n", "").replaceAll(" ", "");
+        if(buttonLvl != "0"){
+            activeSkillButtons.push(button);
+        }
+    }
+    
+    var minReqMasteryTier = -1;
+    for(var i = 0; i < mod.masteryLevels.length; i++){
+        mastery.skillTiers[i].forEach((skill) => {
+            activeSkillButtons.forEach((button) => {
+                if(button.id == skill.name){
+                    minReqMasteryTier = i;
+                }
+            });
+        });
+    }
+    
+    return minReqMasteryTier;
 }
