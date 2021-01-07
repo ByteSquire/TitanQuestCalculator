@@ -46,9 +46,6 @@ public class Mastery {
         }
 
         for (Skill skill : mSkills) {
-            if(skill.getName().equals("Eye of the Storm")) {
-                System.out.println("hi");
-            }
             if (skill.isModifier()) {
                 if (skill.getParent() != null) {
                     ArrayList<String> validParents = new ArrayList<>();
