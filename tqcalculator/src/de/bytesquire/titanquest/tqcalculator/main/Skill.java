@@ -178,7 +178,7 @@ public class Skill {
                         if (mSkillAttributes.get(skillAttributeType) instanceof MinMaxAttribute)
                             ((MinMaxAttribute) mSkillAttributes.get(skillAttributeType))
                                     .setMin(mSkillParser.getAttributes().get(skillAttribute));
-                        else {
+                        else if (mSkillAttributes.get(skillAttributeType) instanceof AttributeWithSecondValue) {
                             MinMaxAttribute tmp = new MinMaxAttribute();
                             tmp.setMin(mSkillParser.getAttributes().get(skillAttribute));
                             putAttributeWithSecondValue(skillAttributeType, tmp);
@@ -197,7 +197,7 @@ public class Skill {
                         if (mSkillAttributes.get(skillAttributeType) instanceof MinMaxAttribute)
                             ((MinMaxAttribute) mSkillAttributes.get(skillAttributeType))
                                     .setMax(mSkillParser.getAttributes().get(skillAttribute));
-                        else {
+                        else if (mSkillAttributes.get(skillAttributeType) instanceof AttributeWithSecondValue) {
                             MinMaxAttribute tmp = new MinMaxAttribute();
                             tmp.setMax(mSkillParser.getAttributes().get(skillAttribute));
                             putAttributeWithSecondValue(skillAttributeType, tmp);
@@ -241,9 +241,7 @@ public class Skill {
                 break;
             }
         }
-        if (mRequiredWeapons.length() > 0)
-
-        {
+        if (mRequiredWeapons.length() > 0) {
             mRequiredWeapons.delete(mRequiredWeapons.length() - 2, mRequiredWeapons.length());
             putAttribute("requiredWeapons", mRequiredWeapons.toString());
         }
@@ -354,6 +352,17 @@ public class Skill {
                     curr.setValue0(value);
                 else
                     curr.setValue1(value);
+            } else {
+                AttributeWithSecondValue tmp = new AttributeWithSecondValue();
+                tmp.setValue0(value);
+                tmp.setValue1(mSkillAttributes.get(key));
+                String descKey;
+                if (!key.contains("${value}"))
+                    descKey = "${value1}" + key;
+                else
+                    descKey = key.replace("value", "value1");
+                tmp.setKey("${value0}% Chance of: " + descKey);
+                mSkillAttributes.put(key, tmp);
             }
         } else {
             AttributeWithSecondValue tmp = new AttributeWithSecondValue();
