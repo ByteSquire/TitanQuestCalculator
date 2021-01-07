@@ -76,7 +76,17 @@ function getPopupString(skill, currLevel, skipNext){
             var value = skill.attributes[key];
             if(value.key === null)
                 return;
-            ret += getAttributeStringWithColour(key, value, currLevel-1, colour);
+            if(key == "Bonus to all Pets:"){
+                var petAttr = Object.keys(value);
+                petAttr.forEach((petKey) => {
+                    var petValue = value[key];
+                    if(petValue.key === null)
+                        return;
+                    ret += getAttributeStringWithColour(petKey, petValue, currLevel-1, colour);
+                    ret += '<br>\n';
+                });
+            } else
+                ret += getAttributeStringWithColour(key, value, currLevel-1, colour);
             ret += '<br>\n';
         });
     }
@@ -106,16 +116,46 @@ function getPopupString(skill, currLevel, skipNext){
         if(value.key === null)
             return;
         if(currLevel+1 == 1){
-            ret += getAttributeStringWithColour(key, value, currLevel, colour);
+            if(key == "Bonus to all Pets:"){
+                var petAttr = Object.keys(value);
+                petAttr.forEach((petKey) => {
+                    var petValue = value[key];
+                    if(petValue.key === null)
+                        return;
+                    ret += getAttributeStringWithColour(petKey, petValue, currLevel-1, colour);
+                    ret += '<br>\n';
+                });
+            } else
+                ret += getAttributeStringWithColour(key, value, currLevel, colour);
             ret += '<br>\n';
             return;
         }   
         if (value.constructor === Array){
-            ret += getAttributeStringWithColour(key, value, currLevel, colour);
+            if(key == "Bonus to all Pets:"){
+                var petAttr = Object.keys(value);
+                petAttr.forEach((petKey) => {
+                    var petValue = value[key];
+                    if(petValue.key === null)
+                        return;
+                    ret += getAttributeStringWithColour(petKey, petValue, currLevel-1, colour);
+                    ret += '<br>\n';
+                });
+            } else
+                ret += getAttributeStringWithColour(key, value, currLevel, colour);
             ret += '<br>\n'
         } else if(value.constructor === Object) {
             if(checkForArray(value)){
-                ret += getAttributeStringWithColour(key, value, currLevel, colour);
+                if(key == "Bonus to all Pets:"){
+                    var petAttr = Object.keys(value);
+                    petAttr.forEach((petKey) => {
+                        var petValue = value[key];
+                        if(petValue.key === null)
+                            return;
+                        ret += getAttributeStringWithColour(petKey, petValue, currLevel-1, colour);
+                        ret += '<br>\n';
+                    });
+                } else
+                    ret += getAttributeStringWithColour(key, value, currLevel, colour);
                 ret += '<br>\n';
             }
         }
