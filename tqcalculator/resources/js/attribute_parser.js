@@ -50,9 +50,10 @@ function formatChanceBasedAttributes(key, value, index){
     ret += "<br>\n";
     var attrKeys = Object.keys(value.values);
     attrKeys.forEach((attrKey) => {
-        ret += getAttributeString(attrKey, value.values[attrKey], index);
+        ret += '<span>' + getAttributeString(attrKey, value.values[attrKey], index) + '</span>\n';
         ret += '<br>\n';
     });
+    ret = ret.substring(0, ret.length-5);
     return ret;
 }
 
