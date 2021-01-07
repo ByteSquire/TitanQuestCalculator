@@ -10,6 +10,7 @@ var hp = 300;
 var hpPercent = 0;
 
 var pointsSpent = 0;
+var maxPoints = 252;
 
 function calcBoni(attributes, fromLevel, toLevel){
     var attrs = Object.keys(attributes);
@@ -89,4 +90,5 @@ function updateUI(){
     document.getElementById("dex").innerText = Math.floor(dex)  + "+" + Math.floor(dexPercent) + "%";
     document.getElementById("str").innerText = Math.floor(str)  + "+" + Math.floor(strPercent) + "%";
     document.getElementById("int").innerText = Math.floor(int)  + "+" + Math.floor(intPercent) + "%";
+    document.getElementById("pointsLeft").innerText = maxPoints-pointsSpent;
 }

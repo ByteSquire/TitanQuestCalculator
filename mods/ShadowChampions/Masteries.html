@@ -94,23 +94,24 @@
               <tr>
                 <td>Level required:</td>
                 <td><div id="lvl">1</div></td>
-                <td></td>
-                <td>Strength:</td>
-                <td><div id="str">50</div></td>
+                <td>Maximum level:</td>
+                <td><div id="maxLevel">85</div></td>
+                <td>Points left:</td>
+                <td><div id="pointsLeft">252</div></td>
               </tr>
               <tr>
                 <td>Health:</td>
-                <td><div id="hp">300</div></td>
-                <td></td>
-                <td>Intelligence:</td>
-                <td><div id="int">50</div></td>
+                <td><div id="hp">300+0%</div></td>
+                <td>Energy:</td>
+                <td><div id="mp">300+0%</div></td>
               </tr>
               <tr>
-                <td>Energy:</td>
-                <td><div id="mp">300</div></td>
-                <td></td>
+                <td>Intelligence:</td>
+                <td><div id="int">50+0%</div></td>
+                <td>Strength:</td>
+                <td><div id="str">50+0%</div></td>
                 <td>Dexterity:</td>
-                <td><div id="dex">50</div></td>
+                <td><div id="dex">50+0%</div></td>
               </tr>
               <tr>
                 <td><br></td>
