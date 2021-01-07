@@ -2618,6 +2618,7 @@
     } ], [ {
       "name" : "Energy Shield",
       "description" : "Creates a shield of energy that will nullify incoming damage from cold and lightning attacks.",
+      "protectsAgainst" : [ " Lightning Damage", " Cold Damage" ],
       "skillIcon" : {
         "posY" : 155,
         "posX" : 638
@@ -2631,8 +2632,7 @@
         "^a${value} Second(s) Recharge" : [ 90.0, 88.0, 86.0, 84.0, 82.0, 80.0, 78.0, 76.0, 74.0, 72.0, 70.0, 68.0, 66.0, 64.0, 62.0, 60.0 ],
         "UltimateLevel" : 16,
         "${value}% Damage Absorption" : [ 35.0, 37.0, 39.0, 41.0, 43.0, 45.0, 47.0, 49.0, 51.0, 53.0, 55.0, 57.0, 59.0, 61.0, 63.0, 65.0 ]
-      },
-      "protectsAgainst" : [ " Lightning Damage", " Cold Damage" ]
+      }
     }, {
       "name" : "Lightning Dash",
       "description" : "Move between enemies at lightning speed, becoming hard to hit in the process. {^n}{^y}Assign this skill to your left mouse button.",
@@ -2702,6 +2702,7 @@
           "Eye of the Storm" : {
             "name" : "Eye of the Storm",
             "description" : "A wisp ability that increases the elemental damage of all nearby allies for a duration and provides protection from lightning and cold damage.",
+            "protectsAgainst" : [ " Lightning Damage", " Cold Damage" ],
             "attributes" : {
               "+${value}% Elemental Damages" : [ 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0, 150.0, 160.0, 170.0, 185.0, 200.0 ],
               "${value}% Lightning Resistance" : [ 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0 ],
@@ -2711,8 +2712,7 @@
               " Second Duration" : [ 12.5, 13.0, 13.5, 14.0, 14.5, 15.0, 15.5, 16.0, 16.5, 17.0, 17.5, 18.0 ],
               "UltimateLevel" : 12,
               "${value}% Cold Resistance" : [ 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0 ]
-            },
-            "protectsAgainst" : [ " Lightning Damage", " Cold Damage" ]
+            }
           },
           "Plasma Burn" : {
             "name" : "Plasma Burn",
@@ -2946,6 +2946,7 @@
     }, {
       "name" : "Eye of the Storm",
       "description" : "A wisp ability that increases the elemental damage of all nearby allies for a duration and provides protection from lightning and cold damage.",
+      "protectsAgainst" : [ " Lightning Damage", " Cold Damage" ],
       "parent" : [ "Storm Wisp" ],
       "skillIcon" : {
         "posY" : 31,
@@ -2960,8 +2961,7 @@
         " Second Duration" : [ 12.5, 13.0, 13.5, 14.0, 14.5, 15.0, 15.5, 16.0, 16.5, 17.0, 17.5, 18.0 ],
         "UltimateLevel" : 12,
         "${value}% Cold Resistance" : [ 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0 ]
-      },
-      "protectsAgainst" : [ " Lightning Damage", " Cold Damage" ]
+      }
     } ] ]
   }, {
     "name" : "Earth",
@@ -3087,6 +3087,7 @@
     }, {
       "name" : "Heat Shield",
       "description" : "Casts a protective heat shield on the target that absorbs fire damage, and allows it to resist physical damage.",
+      "protectsAgainst" : [ " Fire Damage" ],
       "skillIcon" : {
         "posY" : 341,
         "posX" : 198
@@ -3109,8 +3110,7 @@
         "${value} Damage Absorption" : [ 520.0, 740.0, 960.0, 1180.0, 1400.0, 1620.0, 1840.0, 2060.0, 2280.0, 2500.0, 2720.0, 2940.0, 3160.0, 3380.0, 3600.0, 3820.0 ],
         "${value}% Physical Resistance" : [ 10.63, 11.26, 11.89, 12.52, 13.15, 13.78, 14.41, 15.04, 15.67, 16.3, 16.93, 17.56, 18.19, 18.82, 19.45, 20.08 ],
         "${value}% Damage Absorption" : [ 35.0, 37.0, 39.0, 41.0, 43.0, 45.0, 47.0, 49.0, 51.0, 53.0, 55.0, 57.0, 59.0, 61.0, 63.0, 65.0 ]
-      },
-      "protectsAgainst" : [ " Fire Damage" ]
+      }
     }, {
       "name" : "Brimstone",
       "description" : "Boosts the physical damage of attacks and adds burn damage.",
@@ -7816,6 +7816,7 @@
     }, {
       "name" : "Energy Armor",
       "description" : "Weave vast amounts of Energy into a layer of magical armor for yourself and nearby allies that protects against physical attacks.",
+      "protectsAgainst" : [ " Piercing Damage", " Bleeding Damage", " Physical Damage" ],
       "skillIcon" : {
         "posY" : 31,
         "posX" : 374
@@ -7828,8 +7829,7 @@
         "^a${value} Second(s) Recharge" : 25.0,
         "UltimateLevel" : 12,
         "${value}% Stun Resistance" : 50.0
-      },
-      "protectsAgainst" : [ " Piercing Damage", " Bleeding Damage", " Physical Damage" ]
+      }
     }, {
       "name" : "Aftershock",
       "description" : "The shock of the explosion leaves even those who survive battered and vulnerable.",

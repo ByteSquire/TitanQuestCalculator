@@ -11,82 +11,37 @@ var hpPercent = 0;
 
 var pointsSpent = 0;
 
-function calcBoni(attributes, fromLevel, toLevel, event){
+function calcBoni(attributes, fromLevel, toLevel){
     var attrs = Object.keys(attributes);
-    var increase = event.button == 0;
     
-    if(event.shiftKey){
-        attrs.forEach((x) => {
-            var _toLevel = toLevel;
-            var _fromLevel = fromLevel;
-            if(_toLevel > attributes[x].length)
-                _toLevel = attributes[x].length;
-            if(_fromLevel > attributes[x].length)
-                _fromLevel = attributes[x].length;   
-            var value;
-            
-            if(attributes[x].constructor === Array){
-                if(increase){
-                    if(fromLevel > 0)
-                        value = Number(attributes[x][_toLevel-1]) - Number(attributes[x][_fromLevel-1]);
-                    else
-                        value = attributes[x][_toLevel-1];
-                } else{
-                    value = (-1) * Number(attributes[x][_fromLevel-1]);
-                }
+    attrs.forEach((x) => {
+        var _toLevel = toLevel;
+        var _fromLevel = fromLevel;
+        if(_toLevel > attributes[x].length)
+            _toLevel = attributes[x].length;
+        if(_fromLevel > attributes[x].length)
+            _fromLevel = attributes[x].length;
+        var value;
+        
+        if(attributes[x].constructor === Array){
+            if(toLevel == 0){
+                value = (-1) * Number(attributes[x][_fromLevel-1]);
+            } else if(fromLevel == 0){
+                value = Number(attributes[x][_toLevel-1]);
             } else {
-                if(increase){
-                    if(fromLevel == 0 && toLevel == 1){
-                        value = attributes[x];
-                    }
-                } else {
-                    value = (-1) * Number(attributes[x]);
-                }
+                value = Number(attributes[x][_toLevel-1]) - Number(attributes[x][_fromLevel-1]);
             }
-            value = Number(value);
-            updateAttributes(x, value);
-        });
-    } else {
-        attrs.forEach((x) => {
-            var _toLevel = toLevel;
-            var _fromLevel = fromLevel;
-            if(_toLevel > attributes[x].length)
-                _toLevel = attributes[x].length;
-            if(_fromLevel > attributes[x].length)
-                _fromLevel = attributes[x].length;
-            var value;
-            
-            if(attributes[x].constructor === Array){
-                if(increase){
-                    if(toLevel > attributes[x].length)
-                        return;
-                    if(fromLevel > 0)
-                        value = Number(attributes[x][_toLevel-1]) - Number(attributes[x][_fromLevel-1]);
-                    else
-                        value = attributes[x][_toLevel-1];
-                } else {
-                    if(toLevel >= attributes[x].length)
-                        return;
-                    if(toLevel > 0)
-                        value = Number(attributes[x][_toLevel-1]) - Number(attributes[x][_fromLevel-1]);
-                    else
-                        value = (-1) * Number(attributes[x][_fromLevel-1]);
-                }
-            } else {
-                if(increase){
-                    if(fromLevel == 0 && toLevel == 1){
-                        value = attributes[x];
-                    }
-                } else {
-                    if(fromLevel == 1 && toLevel == 0){
-                        value = (-1) * Number(attributes[x]);
-                    }
-                }
+        } else {
+            if(fromLevel == 1 && toLevel == 0){
+                value = (-1) * Number(attributes[x]);
             }
-            value = Number(value);
-            updateAttributes(x, value);
-        });
-    }
+            if(fromLevel == 0 && toLevel == 1){
+                value = Number(attributes[x]);
+            }
+        }
+        value = Number(value);
+        updateAttributes(x, value);
+    });
     updateUI();
 }
 

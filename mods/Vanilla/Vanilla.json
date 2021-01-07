@@ -1788,6 +1788,7 @@
     }, {
       "name" : "Energy Shield",
       "description" : "Creates a shield of energy that will nullify incoming damage from elemental attacks.",
+      "protectsAgainst" : [ " Lightning Damage", " Cold Damage" ],
       "skillIcon" : {
         "posY" : 217,
         "posX" : 628
@@ -1799,8 +1800,7 @@
         " Second Duration" : 100.0,
         "UltimateLevel" : 16,
         "${value}% Damage Absorption" : [ 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0 ]
-      },
-      "protectsAgainst" : [ " Lightning Damage", " Cold Damage" ]
+      }
     }, {
       "name" : "Obscured Visibility",
       "description" : "Reduced visibility inside the Squall makes it difficult for enemies to effectively attack or defend themselves.",
@@ -2205,6 +2205,7 @@
     }, {
       "name" : "Heat Shield",
       "description" : "Casts a protective heat shield on the target that absorbs damage, especially from fire.",
+      "protectsAgainst" : [ " Fire Damage" ],
       "skillIcon" : {
         "posY" : 341,
         "posX" : 228
@@ -2226,8 +2227,7 @@
         "UltimateLevel" : 16,
         "${value}% Physical Resistance" : 15.0,
         "${value}% Damage Absorption" : [ 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0 ]
-      },
-      "protectsAgainst" : [ " Fire Damage" ]
+      }
     }, {
       "name" : "Brimstone",
       "description" : "Boosts the physical damage of attacks and provides a chance of causing critical fire damage while under the effects of Earth Enchantment.",
@@ -5449,6 +5449,7 @@
     }, {
       "name" : "Energy Armor",
       "description" : "Weave vast amounts of Energy into a layer of magical armor that shields you from physical attacks. {^f}PBAoE - should self-target automatically",
+      "protectsAgainst" : [ " Piercing Damage", " Bleeding Damage", " Physical Damage" ],
       "skillIcon" : {
         "posY" : 93,
         "posX" : 228
@@ -5461,8 +5462,7 @@
         "^a${value} Second(s) Recharge" : 25.0,
         "UltimateLevel" : 12,
         "${value}% Stun Resistance" : 50.0
-      },
-      "protectsAgainst" : [ " Piercing Damage", " Bleeding Damage", " Physical Damage" ]
+      }
     }, {
       "name" : "Guardian Stones",
       "description" : "Summon a triangle of greater rune stones which will magically lash out at any hostile entering their sacred ground.",

@@ -51,31 +51,3 @@ function canDecreaseSkill(button, shift){
     });
     return ret;
 }
-
-function canDecreaseMastery(panel, mastery,  masteryTier, masteryLevel, shift){
-    if(masteryTier < 0){
-        return true;
-    }
-    if(masteryLevel > mod.masteryLevels[masteryTier] && !shift){
-        return true;
-    }
-    var skillButtons = panel.getElementsByClassName("skillButton");
-    var activeSkillButtons = [];
-    for(var i = 0; i < skillButtons.length; i++){
-        var button = skillButtons[i];
-        var buttonLvl = button.innerText.split("/")[0].replaceAll("\n", "").replaceAll(" ", "");
-        if(buttonLvl != "0"){
-            activeSkillButtons.push(button);
-        }
-    }
-    
-    var ret = true;
-    mastery.skillTiers[masteryTier].forEach((skill) => {
-        activeSkillButtons.forEach((button) => {
-            if(button.id == skill.name){
-                ret = false;
-            }
-        });
-    });
-    return ret;
-}

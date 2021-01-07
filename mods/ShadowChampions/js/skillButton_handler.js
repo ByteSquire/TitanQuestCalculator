@@ -79,5 +79,5 @@ function updateSkillLevel(skill, updated, event){
             updated = skill.attributes["UltimateLevel"];
     }
     document.getElementById(skill.name).innerHTML = document.getElementById(skill.name).innerHTML.replace(curr, updated);
-    calcBoni(skill.attributes, curr, updated, event);
+    calcBoni(skill.attributes, curr, updated);
 }

@@ -3212,6 +3212,7 @@
     }, {
       "name" : "Original Creation",
       "description" : "Geomancers' ancient knowledge allows them to create a temporary connection to the core elements of nature, lessening the damage they and their allies take.",
+      "protectsAgainst" : [ " Fire Damage", " Lightning Damage", " Cold Damage" ],
       "skillIcon" : {
         "posY" : 279,
         "posX" : 288
@@ -3222,8 +3223,7 @@
         " Second Duration" : 200.0,
         "UltimateLevel" : 14,
         "${value}% Damage Absorption" : [ 8.0, 10.0, 13.0, 15.0, 17.0, 20.0, 22.0, 24.0, 26.0, 29.0, 31.0, 33.0, 36.0, 38.0 ]
-      },
-      "protectsAgainst" : [ " Fire Damage", " Lightning Damage", " Cold Damage" ]
+      }
     }, {
       "name" : "King of the Summit",
       "description" : "Lord and ruler of high summits, you may command your minions to victory with an inspiring presence that no one could immitate.{^n}{^a}Cannot be dispelled.",
@@ -6260,6 +6260,7 @@
     } ], [ {
       "name" : "Radiant Orb",
       "description" : "Creates a veil of light that absorbs a certain quantity of physical damage until it breaks.",
+      "protectsAgainst" : [ " Physical Damage" ],
       "skillIcon" : {
         "posY" : 217,
         "posX" : 464
@@ -6271,8 +6272,7 @@
         "MaxLevel" : 12,
         "^a${value} Second(s) Recharge" : 15.0,
         "UltimateLevel" : 16
-      },
-      "protectsAgainst" : [ " Physical Damage" ]
+      }
     }, {
       "name" : "Celestial Armory",
       "description" : "Bless all the weapons in range with a powerful angelic enchantment.",
@@ -7141,6 +7141,7 @@
       "name" : "Electrostatic Veil",
       "description" : "When the situation calls for it, create an electrical veil around you, granting new energy to fight despite the hopelessness.{^n}{^y}Remains active while health is low.{^n}{^a}Cannot be dispelled.",
       "notDispellable" : true,
+      "protectsAgainst" : [ " Lightning Damage" ],
       "skillIcon" : {
         "posY" : 217,
         "posX" : 288
@@ -7162,8 +7163,7 @@
         "+${value}% Total Speed" : [ 5.0, 7.0, 10.0, 12.0, 15.0, 17.0, 19.0, 22.0, 24.0, 26.0, 29.0, 31.0, 34.0, 36.0 ],
         "+${value}% Total Damage" : [ 5.0, 7.0, 10.0, 12.0, 15.0, 17.0, 19.0, 22.0, 24.0, 26.0, 29.0, 31.0, 34.0, 36.0 ],
         "${value}% Damage Absorption" : [ 6.0, 9.0, 13.0, 16.0, 20.0, 23.0, 26.0, 30.0, 33.0, 36.0, 40.0, 43.0, 47.0, 50.0 ]
-      },
-      "protectsAgainst" : [ " Lightning Damage" ]
+      }
     } ], [ {
       "name" : "Infinite Reach",
       "description" : "Your spell has now an extended reach, allowing it to travel much further than usual.{^n}{^y}Every level increases the distance travelled by the wave.",
