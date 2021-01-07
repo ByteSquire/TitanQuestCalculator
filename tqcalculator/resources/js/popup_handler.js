@@ -54,9 +54,13 @@ function getPopupString(skill, currLevel, skipNext){
             }
     }
     
+    ret += '<br>\n';
+    ret += '<table>\n';
+    
     var colour = "white";
-    if(currLevel > 0){
-        ret += '<br>\n';
+    if(currLevel > 0){        
+        ret += '<tr style="vertical-align: top"><td>';
+        
         if(currLevel <= skill.attributes["MaxLevel"]){
             ret += '<span class="nextLevel">Level: ' + currLevel + '</span>\n';
         } else if(currLevel <= skill.attributes["UltimateLevel"]){
@@ -77,12 +81,14 @@ function getPopupString(skill, currLevel, skipNext){
             if(value.key === null)
                 return;
             if(key == "Bonus to all Pets:"){
+                ret += '<span style="color: orange">Bonus to all Pets:</span>\n';
+                ret += "<br>\n";
                 var petAttr = Object.keys(value);
                 petAttr.forEach((petKey) => {
-                    var petValue = value[key];
+                    var petValue = value[petKey];
                     if(petValue.key === null)
                         return;
-                    ret += getAttributeStringWithColour(petKey, petValue, currLevel-1, colour);
+                    ret += getAttributeStringWithColour(petKey, petValue, currLevel-1, "lightskyblue");
                     ret += '<br>\n';
                 });
             } else
@@ -94,15 +100,16 @@ function getPopupString(skill, currLevel, skipNext){
     if(skipNext)
         return ret;
     
-    ret += '<br>\n';
     if(currLevel+1 <= skill.attributes["MaxLevel"]){
+        ret += '<td>';
         ret += '<span class="nextLevel">Next Level: ' + (currLevel+1) + '</span>\n';
     } else if(currLevel+1 <= skill.attributes["UltimateLevel"]){
+        ret += '<td>';
         ret += '<span class="nextLevel" style="color: yellow">Next Level: ' + (currLevel+1) + '</span>\n';
     } else {
         return ret;
     }
-    ret += '<br>\n';
+    ret += '<br>\n';    
     var attr = Object.keys(skill.attributes);
     colour = "gray";
     attr.forEach((key) => {
@@ -115,51 +122,51 @@ function getPopupString(skill, currLevel, skipNext){
         var value = skill.attributes[key];
         if(value.key === null)
             return;
-        if(currLevel+1 == 1){
-            if(key == "Bonus to all Pets:"){
-                var petAttr = Object.keys(value);
-                petAttr.forEach((petKey) => {
-                    var petValue = value[key];
-                    if(petValue.key === null)
-                        return;
-                    ret += getAttributeStringWithColour(petKey, petValue, currLevel-1, colour);
+        if(key == "Bonus to all Pets:"){
+            ret += '<span style="color: orange">Bonus to all Pets:</span>\n';
+            ret += "<br>\n";
+            var petAttr = Object.keys(value);
+            petAttr.forEach((petKey) => {
+                var petValue = value[petKey];
+                if(petValue.key === null)
+                    return;
+                if(currLevel+1 == 1){
+                    ret += getAttributeStringWithColour(petKey, petValue, currLevel, colour);
                     ret += '<br>\n';
-                });
-            } else
-                ret += getAttributeStringWithColour(key, value, currLevel, colour);
-            ret += '<br>\n';
-            return;
-        }   
-        if (value.constructor === Array){
-            if(key == "Bonus to all Pets:"){
-                var petAttr = Object.keys(value);
-                petAttr.forEach((petKey) => {
-                    var petValue = value[key];
-                    if(petValue.key === null)
-                        return;
-                    ret += getAttributeStringWithColour(petKey, petValue, currLevel-1, colour);
+                    return;
+                }   
+                if (petValue.constructor === Array){
+                    ret += getAttributeStringWithColour(petKey, petValue, currLevel, colour);
                     ret += '<br>\n';
-                });
-            } else
-                ret += getAttributeStringWithColour(key, value, currLevel, colour);
-            ret += '<br>\n'
-        } else if(value.constructor === Object) {
-            if(checkForArray(value)){
-                if(key == "Bonus to all Pets:"){
-                    var petAttr = Object.keys(value);
-                    petAttr.forEach((petKey) => {
-                        var petValue = value[key];
-                        if(petValue.key === null)
-                            return;
-                        ret += getAttributeStringWithColour(petKey, petValue, currLevel-1, colour);
+                } else if(petValue.constructor === Object) {
+                    if(checkForArray(petValue)){
+                        ret += getAttributeStringWithColour(petKey, petValue, currLevel, colour);
                         ret += '<br>\n';
-                    });
-                } else
-                    ret += getAttributeStringWithColour(key, value, currLevel, colour);
+                    }
+                }
+            });
+            ret += '<br>\n';
+        } else {
+            if(currLevel+1 == 1){
+                ret += getAttributeStringWithColour(key, value, currLevel, colour);
                 ret += '<br>\n';
+                return;
+            }   
+            if (value.constructor === Array){
+                ret += getAttributeStringWithColour(key, value, currLevel, colour);
+                ret += '<br>\n';
+            } else if(value.constructor === Object) {
+                if(checkForArray(value)){
+                    ret += getAttributeStringWithColour(key, value, currLevel, colour);
+                    ret += '<br>\n';
+                }
             }
         }
     });
+    
+    if(currLevel > 0 && currLevel+1 <= skill.attributes["UltimateLevel"])
+        ret += '</table>\n';
+    
     return ret;
 }
 
@@ -182,6 +189,14 @@ function checkForArray(value){
         return checkForArray(value.value0);
     else if(value.value0 && value.value1.constructor === Object)
         return checkForArray(value.value1);
+    else if(value.values){
+        var ret = false;
+        var keys = Object.keys(value.values);
+        keys.forEach((key) => {
+            ret = checkForArray(value.values[key]);
+        });
+        return ret;
+    }
         
     return false;
 }
