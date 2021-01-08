@@ -3,7 +3,8 @@ function getPopupString(skill, currLevel, skipNext){
     ret += "<br>\n";
     if(skill.description){
         ret += '<span class="desc">' + skill.description.replaceAll("{^n}", "<br>\n").replaceAll("{^y}", '<span style="color: yellow">').replaceAll("{^g}", '<span style="color: green">').replaceAll("{^a}", '<span style="color: cyan">').replaceAll("{^w}", '</span>').replaceAll("{^Y}", '<span style="color: yellow">').replaceAll("^Y", '<span style="color: yellow">').replaceAll("^n", "<br>\n").replaceAll("^y", '<span style="color: yellow">') + '</span>\n';
-        ret += "<br>\n";
+        if (!ret.endsWith("<br>\n"))
+            ret += "<br>\n";
     }
     
     if(skill.parent){
@@ -50,10 +51,9 @@ function getPopupString(skill, currLevel, skipNext){
     if(skill.protectsAgainst){
         ret += "<br>\n";
         ret += '<span class="" style="color: green">Protects Against:</span>\n';
-        ret += "<br>\n";
         skill.protectsAgainst.forEach((dmgType) => {
-            ret += '<span class="desc" style="color: green">' + dmgType + '</span>\n';
             ret += "<br>\n";
+            ret += '<span class="desc" style="color: green">' + dmgType + '</span>\n';
         });
     }
     
