@@ -185,6 +185,8 @@ public class SkillParser {
     private boolean canBeIgnored(String attributeName) {
         if (attributeName.startsWith("camera"))
             return true;
+        if (attributeName.startsWith("drift"))
+            return true;
         if (attributeName.startsWith("ragDoll"))
             return true;
         if (attributeName.startsWith("skillWeaponTint"))
@@ -224,7 +226,6 @@ public class SkillParser {
         case "hideFromUI":
         case "headVelocity":
         case "tailVelocity":
-        case "drift":
             return true;
         default:
             return false;
