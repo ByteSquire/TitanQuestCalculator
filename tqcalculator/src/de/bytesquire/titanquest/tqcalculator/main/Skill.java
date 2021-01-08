@@ -2,6 +2,9 @@ package de.bytesquire.titanquest.tqcalculator.main;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -402,7 +405,8 @@ public class Skill {
     }
 
     public Map<String, Object> getAttributes() {
-        return mSkillAttributes;
+        Map<String, Object> ret = sortAttributes();
+        return ret;
     }
 
     public String getUrlLegacy() {
@@ -488,6 +492,38 @@ public class Skill {
 
     public Boolean getProjectileUsesAllDamage() {
         return mProjectileUsesAllDamage;
+    }
+
+    private Map<String, Object> sortAttributes() {
+        ArrayList<String> entries = new ArrayList<String>(mSkillAttributes.keySet());
+        Collections.sort(entries, new AttributesComparator());
+        Map<String, Object> sortedMap = new LinkedHashMap<String, Object>();
+        for (String entry : entries) {
+            sortedMap.put(entry, mSkillAttributes.get(entry));
+        }
+
+        return sortedMap;
+    }
+
+}
+
+class AttributesComparator implements Comparator<String> {
+
+    private static final ArrayList<String> order = new ArrayList<String>(
+            Arrays.asList(new String[] { "^a${value} Second(s) Recharge", "${value} Energy Reserved", " Energy Cost",
+                    " Active Energy Cost per Second", " Second Duration", "m Radius", " Charge Levels",
+                    "Launches ${value} Projectile(s)", "+${value} Health", "+${value} Energy", "Bonus to all Pets:" }));
+
+    public int compare(String str1, String str2) {
+        int index1 = 0;
+        int index2 = 0;
+        if (order.indexOf(str1) > -1)
+            index1 = order.size() - order.indexOf(str1);
+        if (order.indexOf(str2) > -1)
+            index2 = order.size() - order.indexOf(str2);
+        if (index1 == 0 && index2 == 0)
+            return str1.compareTo(str2);
+        return index2 - index1;
     }
 
 }
