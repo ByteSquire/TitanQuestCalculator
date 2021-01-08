@@ -3,6 +3,7 @@ package de.bytesquire.titanquest.tqcalculator.main;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
+import java.util.Map;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
@@ -106,7 +107,7 @@ public class Mastery {
         return mSkillTree;
     }
 
-    public LinkedHashMap<String, Object> getMasteryAttributes() {
+    public Map<String, Object> getMasteryAttributes() {
         return mMasteryAttributes;
     }
 
