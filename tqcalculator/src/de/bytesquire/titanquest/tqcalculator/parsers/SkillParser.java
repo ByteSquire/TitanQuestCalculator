@@ -74,7 +74,8 @@ public class SkillParser {
                         .replace("character", "Character").replace("defensive", "Defense")
                         .replace("projectile", "Projectile").replace("retaliation", "Retaliation")
                         .replace("explosion", "Explosion").replace("racial", "Racial").replace("spark", "Spark")
-                        .replace("spawnObjects", "SkillPet").replace("damage", "Damage").replace("life", "Life");
+                        .replace("spawnObjects", "SkillPet").replace("damage", "Damage").replace("life", "Life")
+                        .replace("numProjectiles", "ProjectileNumber");
 
                 if (attributeName.startsWith("skill")) {
                     if (attributeName.equals("skillDependancy")) {
@@ -223,6 +224,7 @@ public class SkillParser {
         case "hideFromUI":
         case "headVelocity":
         case "tailVelocity":
+        case "drift":
             return true;
         default:
             return false;
@@ -281,7 +283,7 @@ public class SkillParser {
     public Boolean getDoesNotIncludeRacialDamage() {
         return mDoesNotIncludeRacialDamage;
     }
-    
+
     public Boolean getProjectileUsesAllDamage() {
         return mProjectileUsesAllDamage;
     }
