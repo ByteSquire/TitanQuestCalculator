@@ -20,7 +20,7 @@ import de.bytesquire.titanquest.tqcalculator.parsers.SkillParser;
         "requiredWeapons", "race" })
 @JsonInclude(Include.NON_NULL)
 @JsonPropertyOrder({ "name", "description", "doesNotIncludeRacialDamage", "exclusiveSkill", "notDispellable",
-        "protectsAgainst", "parent", "skillIcon", "attributes", "pet" })
+        "projectileUsesAllDamage", "protectsAgainst", "parent", "skillIcon", "attributes", "pet" })
 public class Skill {
 
     private SkillParser mSkillParser;
@@ -42,6 +42,7 @@ public class Skill {
     private Boolean mDoesNotIncludeRacialDamage;
     private Boolean mExclusiveSkill;
     private Boolean mNotDispellable;
+    private Boolean mProjectileUsesAllDamage;
     private ArrayList<String> mProtectsAgainst;
 
     public Skill(File aSkill, String[] aParent, String aParentPath, ModStringsParser aMSParser,
@@ -71,6 +72,7 @@ public class Skill {
         mNotDispellable = mSkillParser.getNotDispellable();
         mDoesNotIncludeRacialDamage = mSkillParser.getDoesNotIncludeRacialDamage();
         mExclusiveSkill = mSkillParser.getExclusiveSkill();
+        mProjectileUsesAllDamage = mSkillParser.getProjectileUsesAllDamage();
         mProtectsAgainst = mSkillParser.getProtectsAgainst();
         if (mProtectsAgainst == null)
             mProtectsAgainst = new ArrayList<>();
@@ -143,6 +145,9 @@ public class Skill {
                 break;
             case "exclusiveSkill":
                 mExclusiveSkill = true;
+                break;
+            case "ProjectileUsesAllDamage":
+                mProjectileUsesAllDamage = true;
                 break;
             default:
                 if (skillAttribute.equals("DamageGlobalChance")) {
@@ -479,6 +484,10 @@ public class Skill {
         if (mProtectsAgainst.size() == 0)
             return null;
         return mProtectsAgainst;
+    }
+
+    public Boolean getProjectileUsesAllDamage() {
+        return mProjectileUsesAllDamage;
     }
 
 }

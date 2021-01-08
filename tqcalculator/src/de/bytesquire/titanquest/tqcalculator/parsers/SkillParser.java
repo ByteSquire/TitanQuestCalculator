@@ -31,6 +31,7 @@ public class SkillParser {
     private Boolean mDoesNotIncludeRacialDamage;
     private Boolean mExclusiveSkill;
     private Boolean mNotDispellable;
+    private Boolean mProjectileUsesAllDamage;
     private ArrayList<String> mProtectsAgainst;
 
     public SkillParser(File aSkill, String aParentPath, ModStringsParser aMSParser, IconsParser aIconsParser) {
@@ -138,6 +139,7 @@ public class SkillParser {
                     mExclusiveSkill = tmp.isExclusiveSkill();
                     mNotDispellable = tmp.isNotDispellable();
                     mProtectsAgainst = tmp.getProtectsAgainst();
+                    mProjectileUsesAllDamage = tmp.getProjectileUsesAllDamage();
                     if (tmp.getParent() != null)
                         mParentSkill.addAll(Arrays.asList(tmp.getParent()));
                     mAdditionalFiles.addAll(tmp.getFiles());
@@ -278,6 +280,10 @@ public class SkillParser {
 
     public Boolean getDoesNotIncludeRacialDamage() {
         return mDoesNotIncludeRacialDamage;
+    }
+    
+    public Boolean getProjectileUsesAllDamage() {
+        return mProjectileUsesAllDamage;
     }
 
     public ArrayList<String> getProtectsAgainst() {
