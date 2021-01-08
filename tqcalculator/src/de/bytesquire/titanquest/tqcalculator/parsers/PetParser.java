@@ -70,8 +70,8 @@ public class PetParser {
                     if (canBeIgnored(attributeName))
                         return;
 
-                    attributeName = attributeName.replace("character", "Character").replace("handHit", "")
-                            .replace("footHit", "");
+                    attributeName = attributeName.replace("character", "Character").replace("handHit", " ")
+                            .replace("footHit", " ");
 
                     if (attributeName.startsWith("skillName")) {
                         if (value.contains(";"))
