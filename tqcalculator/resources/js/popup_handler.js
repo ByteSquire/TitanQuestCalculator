@@ -2,45 +2,8 @@ function getPopupString(skill, currLevel, skipNext){
     var ret = '<span class="title">' + skill.name + '</span>\n';
     ret += "<br>\n";
     if(skill.description){
-        ret += '<span class="desc">' + skill.description.replaceAll("{^n}", "<br>\n").replaceAll("{^y}", '<p style="color: yellow">').replaceAll("{^g}", '<p style="color: green">').replaceAll("{^a}", '<p style="color: cyan">').replaceAll("{^w}", '</p>').replaceAll("{^Y}", '<p style="color: yellow">').replaceAll("^Y", '<p style="color: yellow">').replaceAll("^n", "").replaceAll("^y", '<p style="color: yellow">') + '</span>\n';
+        ret += '<span class="desc">' + skill.description.replaceAll("{^n}", "<br>\n").replaceAll("{^y}", '<span style="color: yellow">').replaceAll("{^g}", '<span style="color: green">').replaceAll("{^a}", '<span style="color: cyan">').replaceAll("{^w}", '</span>').replaceAll("{^Y}", '<span style="color: yellow">').replaceAll("^Y", '<span style="color: yellow">').replaceAll("^n", "<br>\n").replaceAll("^y", '<span style="color: yellow">') + '</span>\n';
         ret += "<br>\n";
-    }
-    
-    if(skill.attributes["requiredWeapons"]){
-        ret += '<span class="" style="color: yellow">Works with: ' + skill.attributes["requiredWeapons"] + '</span>';
-        ret += "<br>\n";
-    }
-    
-    if(skill.notDispellable || skill.doesNotIncludeRacialDamage || skill.exclusiveSkill || skill.protectsAgainst)
-        ret += "<br>\n";
-    
-    if(skill.notDispellable){
-        ret += '<span class="" style="color: cyan">Cannot be dispelled</span>';
-        ret += "<br>\n";
-    }
-    
-    if(skill.doesNotIncludeRacialDamage){
-        ret += '<span class="" style="color: orange">Does not include Racial Damage</span>';
-        ret += "<br>\n";
-    }
-    
-    if(skill.exclusiveSkill){
-        ret += '<span class="" style="color: orange">Exclusive Skill - Only one Exclusive Skill can be active at a time</span>';
-        ret += "<br>\n";
-    }
-    
-    if(skill.projectileUsesAllDamage){
-        ret += '<span class="" style="color: orange">Projectile uses All(Weapon) Damage</span>';
-        ret += "<br>\n";
-    }
-    
-    if(skill.protectsAgainst){
-        ret += '<span class="" style="color: green">Protects Against:</span>';
-        ret += "<br>\n";
-        skill.protectsAgainst.forEach((dmgType) => {
-            ret += '<span class="desc" style="color: green">' + dmgType + '</span>';
-            ret += "<br>\n";
-        });
     }
     
     if(skill.parent){
@@ -57,6 +20,41 @@ function getPopupString(skill, currLevel, skipNext){
                 ret += '<span class="" style="color: red">Requires at least one point in: ' + skill.parent + '</span>';
                 ret += "<br>\n";
             }
+    }
+    
+    if(skill.attributes["requiredWeapons"]){
+        ret += "<br>\n";
+        ret += '<span class="" style="color: yellow">Works with: ' + skill.attributes["requiredWeapons"] + '</span>\n';
+    }
+    
+    if(skill.notDispellable){
+        ret += "<br>\n";
+        ret += '<span class="" style="color: cyan">Cannot be dispelled</span>\n';
+    }
+    
+    if(skill.doesNotIncludeRacialDamage){
+        ret += "<br>\n";
+        ret += '<span class="" style="color: orange">Does not include Racial Damage</span>\n';
+    }
+    
+    if(skill.exclusiveSkill){
+        ret += "<br>\n";
+        ret += '<span class="" style="color: orange">Exclusive Skill - Only one Exclusive Skill can be active at a time</span>\n';
+    }
+    
+    if(skill.projectileUsesAllDamage){
+        ret += "<br>\n";
+        ret += '<span class="" style="color: orange">Projectile uses All(Weapon) Damage</span>\n';
+    }
+    
+    if(skill.protectsAgainst){
+        ret += "<br>\n";
+        ret += '<span class="" style="color: green">Protects Against:</span>\n';
+        ret += "<br>\n";
+        skill.protectsAgainst.forEach((dmgType) => {
+            ret += '<span class="desc" style="color: green">' + dmgType + '</span>\n';
+            ret += "<br>\n";
+        });
     }
     
     ret += '<br>\n';
