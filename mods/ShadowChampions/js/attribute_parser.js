@@ -59,6 +59,18 @@ function formatChanceBasedAttributes(key, value, index){
 
 function formatAttribute(key, value, index){
     var ret = key;
+    if(key.includes("over") && !key.includes("value1")){
+        if(key.includes(" ~ ")){
+            var dpsMin = key.split(" ~ ")[0];
+            var dpsMax = key.split(" ~ ")[1].split(" ")[0];
+            if(!isNaN(dpsMin) && !isNaN(dpsMax))
+                key = key.replace(dpsMin, (Number(dpsMin)*value).toFixed(1)).replace(dpsMax, (Number(dpsMax)*value).toFixed(1));
+        } else {
+            var dps = key.split(" ")[0];
+            if(!isNaN(dps))
+                key = key.replace(dps, (Number(dps)*value).toFixed(1));
+        }
+    }
     if(value.constructor === Array){
         if(index >= value.length)
             index = value.length-1;
@@ -69,8 +81,6 @@ function formatAttribute(key, value, index){
     } else {
         if(key.includes("${value}"))
             ret = key.replace("${value}", value);
-        //else if(value == 1)
-        //    ret = key;
         else
             ret = value + key;
     }
@@ -81,6 +91,18 @@ function formatAttribute(key, value, index){
 
 function formatAttributeMinMax(key, valueMin, valueMax, index){
     var ret = key;
+    if(key.includes("over") && !key.includes("value1")){
+        if(key.includes(" ~ ")){
+            var dpsMin = key.split(" ~ ")[0];
+            var dpsMax = key.split(" ~ ")[1];
+            if(!isNaN(dpsMin) && !isNaN(dpsMax))
+                key = key.replace(dpsMin, (Number(dpsMin)*valueMin).toFixed(1)).replace(dpsMax, (Number(dpsMax)*valueMax).toFixed(1));
+        } else {
+            var dps = key.split(" ")[0];
+            if(!isNaN(dps))
+                key = key.replace(dps, ((Number(dps)*valueMin).toFixed(1) + " ~ " + (Number(dps)*valueMax).toFixed(1)));
+        }
+    }
     if(valueMin.constructor === Array){
         if(valueMax.constructor === Array){
             var indexMin = index;
