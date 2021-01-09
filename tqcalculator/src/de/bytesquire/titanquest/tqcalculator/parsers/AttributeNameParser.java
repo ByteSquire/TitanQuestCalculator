@@ -33,7 +33,10 @@ public class AttributeNameParser {
                         attributeNames.forEach(str -> {
                             if (!str.startsWith("//") && str.split("=").length > 1) {
                                 String key = str.split("=")[0];
-                                key = key.replace("xtag", "").replace("tag", "");
+                                if(key.startsWith("xtag"))
+                                    key = key.substring(4, key.length());
+                                if(key.startsWith("tag"))
+                                    key = key.substring(3, key.length());
                                 String value = str.split("=")[1];
                                 AttributeNameParser.attributeNames.put(key, value);
                             }
