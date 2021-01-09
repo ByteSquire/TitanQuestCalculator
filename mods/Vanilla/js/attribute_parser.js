@@ -60,15 +60,23 @@ function formatChanceBasedAttributes(key, value, index){
 function formatAttribute(key, value, index){
     var ret = key;
     if(key.includes("over") && !key.includes("value1")){
+        var _value;
+        if(value.constructor === Array){
+            if(index >= value.length)
+                index = value.length-1;
+            _value = value[index];
+        } else {
+            _value = value;
+        }
         if(key.includes(" ~ ")){
             var dpsMin = key.split(" ~ ")[0];
             var dpsMax = key.split(" ~ ")[1].split(" ")[0];
             if(!isNaN(dpsMin) && !isNaN(dpsMax))
-                key = key.replace(dpsMin, (Number(dpsMin)*value).toFixed(1)).replace(dpsMax, (Number(dpsMax)*value).toFixed(1));
+                key = key.replace(dpsMin, (Number(dpsMin)*value).toFixed(1)).replace(dpsMax, (Number(dpsMax)*_value).toFixed(1));
         } else {
             var dps = key.split(" ")[0];
             if(!isNaN(dps))
-                key = key.replace(dps, (Number(dps)*value).toFixed(1));
+                key = key.replace(dps, (Number(dps)*_value).toFixed(1));
         }
     }
     if(value.constructor === Array){

@@ -298,11 +298,11 @@
           "max" : [ 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0 ]
         },
         "MaxLevel" : 12,
+        "Spreads every ${value} Second(s)" : [ 1.5, 1.48, 1.46, 1.44, 1.42, 1.4, 1.38, 1.36, 1.34, 1.32, 1.3, 1.28, 1.26, 1.24, 1.22, 1.2 ],
+        "Spreads to up to ${value} targets at a time" : 2,
+        "Spreads to up to ${value} targets total" : 6,
         "UltimateLevel" : 16,
-        "contagionInterval" : [ 1.5, 1.48, 1.46, 1.44, 1.42, 1.4, 1.38, 1.36, 1.34, 1.32, 1.3, 1.28, 1.26, 1.24, 1.22, 1.2 ],
-        "contagionLimit" : 2,
-        "contagionMaxSpread" : 6,
-        "contagionRadius" : [ 3.1, 3.25, 3.4, 3.55, 3.7, 3.85, 4.0, 4.15, 4.3, 4.45, 4.6, 4.75, 4.9, 5.05, 5.2, 5.35 ]
+        "m between each target" : [ 3.1, 3.25, 3.4, 3.55, 3.7, 3.85, 4.0, 4.15, 4.3, 4.45, 4.6, 4.75, 4.9, 5.05, 5.2, 5.35 ]
       }
     }, {
       "name" : "Survival Instinct",
@@ -2305,7 +2305,7 @@
           "value1" : {
             "min" : [ 54.0, 66.0, 78.0, 90.0, 102.0, 114.0, 126.0, 138.0, 150.0, 162.0, 174.0, 186.0 ]
           },
-          "key" : "${value0}% Chance of: ${value1} Lightning Retaliation"
+          "key" : "${value0}% Chance of ${value1} Lightning Retaliation"
         },
         "${value}% Chance for all of the following:" : {
           "chance" : [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 15.0, 16.0, 17.0, 18.0, 20.0 ],
@@ -2376,7 +2376,7 @@
           "value1" : {
             "min" : [ 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0, 2.1 ]
           },
-          "key" : "${value0}% Chance of: ${value1} second(s) of Freeze"
+          "key" : "${value0}% Chance of ${value1} second(s) of Freeze"
         },
         "% Slowed" : {
           "value0" : {
@@ -2454,7 +2454,7 @@
           "value1" : {
             "min" : 0.3
           },
-          "key" : "${value0}% Chance of: ${value1} second(s) of Freeze"
+          "key" : "${value0}% Chance of ${value1} second(s) of Freeze"
         },
         "MaxLevel" : 8,
         "UltimateLevel" : 12
@@ -2645,7 +2645,7 @@
         "${value}% Damage Reflected" : {
           "value0" : [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0 ],
           "value1" : [ 38.0, 51.0, 64.0, 77.0, 90.0, 103.0, 116.0, 129.0, 142.0, 155.0, 168.0, 181.0, 194.0, 207.0, 220.0, 233.0 ],
-          "key" : "${value0}% Chance of: ${value1}% Damage Reflected"
+          "key" : "${value0}% Chance of ${value1}% Damage Reflected"
         },
         "MaxLevel" : 12,
         "UltimateLevel" : 16
@@ -2893,7 +2893,7 @@
           "value1" : {
             "max" : [ 2.65, 2.8, 2.95, 3.1, 3.25, 3.4, 3.55, 3.7, 3.85, 4.0, 4.15, 4.3 ]
           },
-          "key" : "${value0}% Chance of: ${value1} second(s) of Freeze"
+          "key" : "${value0}% Chance of ${value1} second(s) of Freeze"
         },
         "% Slowed" : {
           "value0" : {
@@ -3080,7 +3080,7 @@
         "+${value}% Elemental Damages" : {
           "value0" : [ 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0, 35.0 ],
           "value1" : 50.0,
-          "key" : "${value0}% Chance of: +${value1}% Elemental Damages"
+          "key" : "${value0}% Chance of +${value1}% Elemental Damages"
         },
         "MaxLevel" : 12,
         "UltimateLevel" : 16,
@@ -3611,7 +3611,7 @@
           "value1" : {
             "min" : 1.0
           },
-          "key" : "${value0}% Chance of: ${value1} second(s) of Fear"
+          "key" : "${value0}% Chance of ${value1} second(s) of Fear"
         },
         "${value} Projectile(s)" : [ 1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0, 3.0, 3.0, 4.0, 4.0, 4.0 ],
         "MaxLevel" : 12,
@@ -4036,7 +4036,7 @@
             "min" : 3.0,
             "max" : 8.0
           },
-          "key" : "${value0}% Chance of: ${value1} second(s) of Confusion"
+          "key" : "${value0}% Chance of ${value1} second(s) of Confusion"
         },
         "% Chance to Fumble attacks" : {
           "value0" : {
@@ -4390,7 +4390,7 @@
             "min" : [ 1.8, 1.8, 1.8, 1.8, 1.8, 1.8, 1.8, 1.8, 1.8, 1.8, 1.8, 1.8 ],
             "max" : [ 2.4, 2.8, 3.2, 3.5, 3.9, 4.3, 4.6, 5.0, 5.4, 5.7, 6.1, 6.5 ]
           },
-          "key" : "${value0}% Chance of: ${value1} second(s) of Confusion"
+          "key" : "${value0}% Chance of ${value1} second(s) of Confusion"
         },
         "% Chance to Fumble attacks" : {
           "value0" : {
@@ -4631,7 +4631,7 @@
                 "value1" : {
                   "min" : 5.0
                 },
-                "key" : "${value0}% Chance of: ${value1} second(s) of Stun"
+                "key" : "${value0}% Chance of ${value1} second(s) of Stun"
               },
               "${value}% Energy Drained" : {
                 "min" : 35.0
@@ -4643,11 +4643,11 @@
               },
               "+${value}% Total Speed" : -100.0,
               "MaxLevel" : 20,
+              "Spreads every ${value} Second(s)" : 0.5,
+              "Spreads to up to ${value} targets at a time" : 2,
+              "Spreads to up to ${value} targets total" : 8,
               "UltimateLevel" : 20,
-              "contagionInterval" : 0.5,
-              "contagionLimit" : 2,
-              "contagionMaxSpread" : 8,
-              "contagionRadius" : [ 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0 ]
+              "m between each target" : [ 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0 ]
             }
           },
           "Shadow Rush" : {
@@ -5971,7 +5971,7 @@
                   "min" : 3.0,
                   "max" : 9.0
                 },
-                "key" : "${value0}% Chance of: ${value1} second(s) of Confusion"
+                "key" : "${value0}% Chance of ${value1} second(s) of Confusion"
               },
               "${value} Projectile(s)" : 10,
               "${value}% Chance to pass through Enemies" : 100.0,
@@ -6140,7 +6140,7 @@
             "min" : 3.0,
             "max" : 9.0
           },
-          "key" : "${value0}% Chance of: ${value1} second(s) of Confusion"
+          "key" : "${value0}% Chance of ${value1} second(s) of Confusion"
         },
         "${value} Projectile(s)" : 10,
         "${value}% Chance to pass through Enemies" : 100.0,
@@ -6305,7 +6305,7 @@
                   "min" : 6.0,
                   "max" : 12.0
                 },
-                "key" : "${value0}% Chance of: ${value1} second(s) of Confusion"
+                "key" : "${value0}% Chance of ${value1} second(s) of Confusion"
               },
               " second(s) of Sleep" : {
                 "value0" : 50.0,
@@ -6857,7 +6857,7 @@
             "min" : [ 54.0, 60.0, 69.0, 75.0, 90.0, 99.0, 105.0, 114.0, 120.0, 135.0, 144.0, 150.0, 159.0, 165.0, 183.0, 195.0 ],
             "max" : [ 93.0, 105.0, 117.0, 129.0, 153.0, 168.0, 192.0, 213.0, 231.0, 267.0, 294.0, 324.0, 357.0, 387.0, 429.0, 468.0 ]
           },
-          "key" : "${value0}% Chance of: ${value1} Physical Retaliation"
+          "key" : "${value0}% Chance of ${value1} Physical Retaliation"
         },
         "${value}% Absorption of Spell Energy" : [ 34.0, 40.0, 46.0, 52.0, 58.0, 64.0, 70.0, 76.0, 82.0, 88.0, 94.0, 100.0 ],
         "${value}% Chance to Dodge Attacks" : [ 3.6, 4.0, 4.4, 4.8, 5.2, 5.6, 6.0, 6.4, 6.8, 7.2, 7.6, 8.0 ],
@@ -7268,7 +7268,7 @@
             "min" : 1.0,
             "max" : 3.0
           },
-          "key" : "${value0}% Chance of: ${value1} second(s) of Confusion"
+          "key" : "${value0}% Chance of ${value1} second(s) of Confusion"
         },
         " second(s) of Skill Disruption" : {
           "min" : 1.0
@@ -7403,7 +7403,7 @@
               "min" : [ 6.0, 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0 ],
               "max" : [ 10.0, 14.5, 19.0, 23.5, 28.0, 32.5, 37.0, 41.5, 46.0, 50.5, 55.0, 59.5, 64.0, 68.5 ]
             },
-            "key" : "${value0}% Chance of: ${value1} Elemental Retaliation"
+            "key" : "${value0}% Chance of ${value1} Elemental Retaliation"
           },
           "+${value}% Attack Speed" : [ 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0 ]
         },
@@ -7625,7 +7625,7 @@
             "min" : 0.2,
             "max" : 2.0
           },
-          "key" : "${value0}% Chance of: ${value1} second(s) of Freeze"
+          "key" : "${value0}% Chance of ${value1} second(s) of Freeze"
         },
         "% Slowed" : {
           "value0" : {
@@ -7687,7 +7687,7 @@
         "+${value}% Elemental Damages" : {
           "value0" : [ 25.0, 27.0, 29.0, 31.0, 33.0, 35.0, 37.0, 39.0, 41.0, 43.0, 45.0, 47.0, 49.0, 51.0, 53.0, 55.0 ],
           "value1" : [ 12.0, 26.4, 39.0, 43.2, 53.4, 63.0, 66.0, 73.8, 81.0, 87.6, 88.8, 94.8, 100.2, 100.8, 105.6, 109.8 ],
-          "key" : "${value0}% Chance of: +${value1}% Elemental Damages"
+          "key" : "${value0}% Chance of +${value1}% Elemental Damages"
         },
         "MaxLevel" : 12,
         "UltimateLevel" : 16,
@@ -7840,7 +7840,7 @@
           "value1" : {
             "min" : [ 8.0, 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 64.0, 68.0, 72.0, 76.0, 80.0, 84.0, 88.0, 92.0, 96.0, 100.0, 104.0, 108.0, 112.0, 116.0, 120.0, 124.0 ]
           },
-          "key" : "${value0}% Chance of: ${value1} Electrical Burn Damage"
+          "key" : "${value0}% Chance of ${value1} Electrical Burn Damage"
         },
         " Elemental Retaliation" : {
           "min" : [ 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0 ]
@@ -7850,7 +7850,7 @@
           "value1" : {
             "min" : [ 8.0, 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 64.0, 68.0, 72.0, 76.0, 80.0, 84.0, 88.0, 92.0, 96.0, 100.0, 104.0, 108.0, 112.0, 116.0, 120.0, 124.0 ]
           },
-          "key" : "${value0}% Chance of: ${value1} Frostburn Damage"
+          "key" : "${value0}% Chance of ${value1} Frostburn Damage"
         },
         " Physical Damage" : {
           "min" : [ 30.0, 45.0, 60.0, 75.0, 90.0, 105.0, 120.0, 135.0, 150.0, 165.0, 180.0, 195.0 ]
@@ -7870,7 +7870,7 @@
               "value1" : {
                 "min" : 1.0
               },
-              "key" : "${value0}% Chance of: ${value1} second(s) of Confusion"
+              "key" : "${value0}% Chance of ${value1} second(s) of Confusion"
             },
             " second(s) of Skill Disruption" : {
               "value0" : 20.0,
@@ -7884,7 +7884,7 @@
               "value1" : {
                 "min" : 1.0
               },
-              "key" : "${value0}% Chance of: ${value1} second(s) of Fear"
+              "key" : "${value0}% Chance of ${value1} second(s) of Fear"
             }
           }
         },
@@ -8317,7 +8317,7 @@
             "min" : 3.0,
             "max" : 6.0
           },
-          "key" : "${value0}% Chance of: ${value1} second(s) of Confusion"
+          "key" : "${value0}% Chance of ${value1} second(s) of Confusion"
         },
         "${value} Arc of Attack" : 200.0,
         "${value} Target Maximum" : 6,

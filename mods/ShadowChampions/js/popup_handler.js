@@ -45,7 +45,7 @@ function getPopupString(skill, currLevel, skipNext){
     
     if(skill.projectileUsesAllDamage){
         ret += "<br>\n";
-        ret += '<span class="" style="color: orange">Projectile uses All(Weapon) Damage</span>\n';
+        ret += '<span class="" style="color: orange">Projectile uses All Damage</span>\n';
     }
     
     if(skill.protectsAgainst){
