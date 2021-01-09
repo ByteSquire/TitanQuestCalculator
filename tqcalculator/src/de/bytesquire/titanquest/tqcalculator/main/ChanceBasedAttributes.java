@@ -44,4 +44,27 @@ public class ChanceBasedAttributes {
         else
             key = "${value}% Chance for all of the following:";
     }
+
+    @Override
+    public String toString() {
+        StringBuilder ret = new StringBuilder();
+        if (chance == null)
+            return "";
+        ret.append(key.replace("${value}", chance.toString()));
+        ret.append("\n");
+        values.forEach((str, obj) -> {
+            try {
+                if (obj instanceof MinMaxAttribute || obj instanceof AttributeWithSecondValue) {
+                    ret.append(obj.toString());
+                    return;
+                }
+                if (str.contains("${value}"))
+                    ret.append(str.replace("${value}", obj.toString()));
+                else
+                    ret.append(obj.toString()).append(str);
+            } catch (NullPointerException e) {
+            }
+        });
+        return ret.toString();
+    }
 }

@@ -31,4 +31,13 @@ public class AttributeWithSecondValue {
     public void setKey(String value) {
         this.key = value;
     }
+
+    @Override
+    public String toString() {
+        try {
+            return key.replace("${value0}", value0.toString()).replace("${value1}", value1.toString());
+        } catch (NullPointerException e) {
+            return "";
+        }
+    }
 }
