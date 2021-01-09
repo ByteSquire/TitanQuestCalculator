@@ -226,6 +226,7 @@ public class SkillParser {
         case "hideFromUI":
         case "headVelocity":
         case "tailVelocity":
+        case "skillProjectileTargetGroundOnly":
             return true;
         default:
             return false;
