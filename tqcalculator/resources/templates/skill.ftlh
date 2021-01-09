@@ -12,26 +12,8 @@
 
     <table border=1.7>
     <#list attributes as attributeName, attributeValue>
-    <#if attributeName!="requiredWeapons">  <tr><td>${attributeName}<td><#if ArrayList.isInstance(attributeValue)><#list attributeValue as value>${value} </#list><#else><#if attributeValue??>${attributeValue}</#if></#if></#if>
+    <#if attributeName!="requiredWeapons">  <tr><td>${attributeName}<td><#if ArrayList.isInstance(attributeValue)><#list attributeValue as value>${value} </#list><#else><#if attributeValue??><#if LinkedHashMap.isInstance(attributeValue)><#list attributeValue as key, value>${key}:<#if ArrayList.isInstance(value)><#list value as _value>${_value} </#list><#else><#if attributeValue??>${value}</#if></#if> </#list><#else><#if attributeValue??>${attributeValue}</#if></#if></#if></#if></#if>
     </#list>
-    <#if petAttributes??>
-    <tr><td>Pet Attributes:
-    <td><table border=1.7>
-    <#list petAttributes as attributeName, attributeValue>
-      <tr><td>${attributeName}<td><#if ArrayList.isInstance(attributeValue)><#list attributeValue as value>${value} </#list><#else><#if attributeValue??>${attributeValue}</#if></#if>
-    </#list>
-    </table>
-    </#if>
-    <#--
-    <#if petSkills??>
-    <tr><td>Pet Skills:
-    <td><table border=1.7>
-    <#list petSkills as attributeName, attributeValue>
-      <tr><td>${attributeName}<td><#if ArrayList.isInstance(attributeValue)><#list attributeValue as value>${value} </#list><#else><#if attributeValue??>${attributeValue}</#if></#if>
-    </#list>
-    </table>
-    </#if>
-    -->
     </table>
 </body>
 </html>
