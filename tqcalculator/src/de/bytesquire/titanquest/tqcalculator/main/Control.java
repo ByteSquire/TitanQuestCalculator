@@ -217,6 +217,7 @@ public class Control {
                 Writer outMastery = new FileWriter(REPOSITORY_DIR + "mods/" + mod.getName() + "/Masteries.html");
                 rootMastery = new LinkedHashMap<>();
                 rootMastery.put("name", mod.getName());
+                rootMastery.put("questSkillPoints", mod.getQuestSkillPoints());
                 Control.mastery_fancy.process(rootMastery, outMastery);
 
                 Writer skillJs = new FileWriter(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/skill.js");

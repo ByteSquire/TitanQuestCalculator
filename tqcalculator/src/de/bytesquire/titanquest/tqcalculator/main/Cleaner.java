@@ -71,6 +71,7 @@ public class Cleaner {
 
             cleanModStrings(mod);
             cleanIcons(mod);
+            cleanQuestSkillPoints(mod);
 
             for (Mastery mastery : mod.getMasteries()) {
                 cleanMastery(mastery, mod);
@@ -110,6 +111,26 @@ public class Cleaner {
                 Path tmp = Path.of(tp.substring(0, tp.lastIndexOf(targetStringsPath.getFileSystem().getSeparator())));
                 Files.createDirectories(tmp);
                 Files.copy(originStringsPath, targetStringsPath);
+            } catch (IOException e) {
+                if (!(e instanceof java.nio.file.FileAlreadyExistsException))
+                    e.printStackTrace();
+            }
+        }
+    }
+    
+    private void cleanQuestSkillPoints(Mod mod) {
+        ArrayList<File> questSkillFiles = mod.getModParser().getQuestSkillFiles();
+        for (File questSkillFile : questSkillFiles) {
+            Path originQuestSkillFilePath = questSkillFile.toPath();
+//            System.out.println(originStringsPath);
+            Path targetQuestSkillFilePath = Path.of(mod.getModDir().substring(0, mod.getModDir().length() - 1)
+                    + "-cleaned/questSkillPoints/" + questSkillFile.getName());
+//            System.out.println(targetStringsPath);
+            try {
+                String tp = targetQuestSkillFilePath.toString();
+                Path tmp = Path.of(tp.substring(0, tp.lastIndexOf(targetQuestSkillFilePath.getFileSystem().getSeparator())));
+                Files.createDirectories(tmp);
+                Files.copy(originQuestSkillFilePath, targetQuestSkillFilePath);
             } catch (IOException e) {
                 if (!(e instanceof java.nio.file.FileAlreadyExistsException))
                     e.printStackTrace();

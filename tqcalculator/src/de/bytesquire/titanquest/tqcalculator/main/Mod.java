@@ -15,7 +15,8 @@ import de.bytesquire.titanquest.tqcalculator.parsers.IconsParser;
 import de.bytesquire.titanquest.tqcalculator.parsers.ModParser;
 import de.bytesquire.titanquest.tqcalculator.parsers.ModStringsParser;
 
-@JsonIgnoreProperties({ "msparser", "character", "modDir", "links", "masteryLevel", "gameEngine", "iconsParser", "urlLegacy", "url" })
+@JsonIgnoreProperties({ "msparser", "character", "modDir", "links", "masteryLevel", "gameEngine", "iconsParser",
+        "urlLegacy", "url", "questSkillPoints", "modParser" })
 @JsonPropertyOrder({ "name", "mappedMasteries", "masteryLevels", "masteries" })
 public class Mod {
 
@@ -29,6 +30,7 @@ public class Mod {
     private File mCharacter;
     private File mGameEngine;
     private ArrayList<Integer> mMasteryTiers;
+    private Map<String, ArrayList<ArrayList<String>>> mQuestSkillPoints;
 
     public Mod(String aModName, String aModDir) {
         if (aModName == null)
@@ -43,6 +45,7 @@ public class Mod {
         mLinks = mModParser.getLinks();
         mCharacter = mModParser.getCharacter();
         mMasteryTiers = mModParser.getMasteryTiers();
+        mQuestSkillPoints = mModParser.getQuestSkillPoints();
         mGameEngine = mModParser.getGameEngine();
 
         int i = 1;
@@ -111,5 +114,13 @@ public class Mod {
 
     public IconsParser getIconsParser() {
         return mIconsParser;
+    }
+
+    public Map<String, ArrayList<ArrayList<String>>> getQuestSkillPoints() {
+        return mQuestSkillPoints;
+    }
+    
+    public ModParser getModParser() {
+        return mModParser;
     }
 }
