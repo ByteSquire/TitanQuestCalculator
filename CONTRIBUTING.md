@@ -4,6 +4,7 @@
   - Open your local clone of your forked repo.
   - Put your mod from CustomMaps into the _tqcalculator/resources/databases_ directory.
   - Put your modstrings.txt in a folder called text. (you can take a look at the other mods for reference)
+  - Put your skill points rewarded by quests in a txt file inside the _questSkillPoints_ folder. (you can take a look at the other mods for reference and the vanilla points)
   - Delete the assets and source directories as they are not required and would bloat the repo.
   - If you have any kind of uncommon directory structure and are familiar with git please have a look at the .gitignore in the databases directory to avoid bloating the repo.
   - Feel free to put some relevant links in a links.txt inside your mod directory. (I suggest copying one of the existing links.txt from another mod)
