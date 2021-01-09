@@ -3,9 +3,11 @@ package de.bytesquire.titanquest.tqcalculator.main;
 import java.util.ArrayList;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 
 @JsonInclude(Include.NON_NULL)
+@JsonPropertyOrder({ "min", "max"})
 public class MinMaxAttribute {
     private Object mMin;
     private Object mMax;
