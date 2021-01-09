@@ -100,8 +100,10 @@ function getPopupString(skill, currLevel, skipNext){
         });
     }
     
-    if(skipNext)
+    if(skipNext){
+        ret += '</tr></table>\n';
         return ret;
+    }
     
     if(currLevel+1 <= skill.attributes["MaxLevel"]){
         ret += '<td>';
