@@ -24,4 +24,6 @@
 
 ### If you do not want to create a Github account
   - Get in touch with me(@Zaphodgame) via the [Titan Forge discord channel](https://discord.gg/efFsGMJ8tn)
+
+### If you're just lazy
   - Create an [issue](https://github.com/ByteSquire/TitanQuestCalculator/issues/new?assignees=ByteSquire&labels=&template=mod-addition.md&title=%5BModAddition%5D)
