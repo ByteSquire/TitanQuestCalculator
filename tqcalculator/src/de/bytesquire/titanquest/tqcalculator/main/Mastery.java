@@ -96,7 +96,7 @@ public class Mastery {
     }
 
     public String getUrlLegacy() {
-        return Control.URL + "/mods/" + mParentModName + "/Masteries/" + getName() + ".html";
+        return "Masteries/" + getName() + ".html";
     }
 
     public File getMastery() {
