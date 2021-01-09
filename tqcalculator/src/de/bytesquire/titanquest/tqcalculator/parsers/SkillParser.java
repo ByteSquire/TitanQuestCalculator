@@ -91,7 +91,7 @@ public class SkillParser {
                                         });
                             }
                         } catch (FileNotFoundException e) {
-                            e.printStackTrace();
+                            System.err.println(e.getMessage());
                         }
                         return;
                     }
@@ -176,7 +176,7 @@ public class SkillParser {
                 }
             });
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            System.err.println(e.getMessage());
         } catch (IOException e1) {
             e1.printStackTrace();
         }
