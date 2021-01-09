@@ -10,6 +10,7 @@ var hp = 300;
 var hpPercent = 0;
 
 var pointsSpent = 0;
+var bonusPoints = 0;
 var maxPoints = 252;
 
 function calcBoni(attributes, fromLevel, toLevel){
@@ -46,8 +47,18 @@ function calcBoni(attributes, fromLevel, toLevel){
     updateUI();
 }
 
-function calcLevelReq(){
-    document.getElementById("lvl").innerText = 1 + Math.ceil(pointsSpent/3);
+function calcLevelReq() {
+    if(pointsSpent > 0)
+        document.getElementById("lvl").innerText = 1 + Math.ceil(pointsSpent/3);
+    else
+        document.getElementById("lvl").innerText = 1 + Math.floor(pointsSpent/3);
+}
+
+function pointsSelected(select){
+    var diff = select.value - bonusPoints;
+    bonusPoints = select.value;
+    pointsSpent -= diff;
+    calcLevelReq();
 }
 
 function updateAttributes(x, value){

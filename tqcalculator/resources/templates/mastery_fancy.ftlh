@@ -117,6 +117,23 @@
                 <td><br></td>
               </tr>
               <tr>
+                <td>Quest Skill Points:</td>
+                <td>
+                    <select id="questPoints" onchange="pointsSelected(this)">
+                    <#list questSkillPoints as key, value>
+                        <optgroup label="${key}">
+                        <#list value as _value>
+                            <option value="${_value[0]}">${_value[1]}</option>
+                        </#list>
+                        </optgroup>
+                    </#list>
+                    </select>
+                </td>
+              </tr>
+              <tr>
+                <td><br></td>
+              </tr>
+              <tr>
                 <td><span style="color: green; font-weight: bold">Controls:</span></td>
               </tr>
               <tr>
