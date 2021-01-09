@@ -11,24 +11,19 @@
     
 
     <table border=1.7>
-      <tr><td>offensiveSlowFireDurationMin<td>1
-      <tr><td>contagionLimit<td>4
-      <tr><td>skillActiveDuration<td>6
-      <tr><td>skillCooldownTime<td>10
-      <tr><td>skillManaCost<td>63,21 65,982 67,83 70,602 72,45 75,222 77,07 79,842 81,69 84,462 86,31 
-      <tr><td>cameraShakeAmplitude<td>0,12
-      <tr><td>contagionInterval<td>0,15
-      <tr><td>offensiveSlowFireMin<td>7 9 11 14 16 18 20 22 25 27 29 
-      <tr><td>skillMaxLevel<td>7
-      <tr><td>offensiveTotalResistanceReductionAbsoluteDurationMin<td>1
-      <tr><td>offensiveTotalDamageReductionAbsoluteMin<td>8 14 20 26 32 38 44 50 58 62 70 
-      <tr><td>debufSkill<td>1
-      <tr><td>contagionMaxSpread<td>99
-      <tr><td>skillUltimateLevel<td>11
-      <tr><td>characterLifeRegenModifier<td>-25 -30 -35 -40 -45 -50 -55 -60 -65 -70 -75 
-      <tr><td>offensiveTotalDamageReductionAbsoluteDurationMin<td>1
-      <tr><td>offensiveTotalResistanceReductionAbsoluteMin<td>6 7 8 10 11 12 13 14 15 16 18 
-      <tr><td>contagionRadius<td>4
+      <tr><td>^a${value} Second(s) Recharge<td>10
+      <tr><td> Energy Cost<td>63,21 65,982 67,83 70,602 72,45 75,222 77,07 79,842 81,69 84,462 86,31 
+      <tr><td> Second Duration<td>6
+      <tr><td> Burn Damage<td>min: [7.0, 9.0, 11.0, 14.0, 16.0, 18.0, 20.0, 22.0, 25.0, 27.0, 29.0] Burn Damage over min: 1.0 Second(s)
+      <tr><td> Reduced Damage<td>min: [8.0, 14.0, 20.0, 26.0, 32.0, 38.0, 44.0, 50.0, 58.0, 62.0, 70.0] Reduced Damage over min: 1.0 Second(s)
+      <tr><td> Reduced Resistances<td>min: [6.0, 7.0, 8.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 18.0] Reduced Resistances over min: 1.0 Second(s)
+      <tr><td>+${value}% Health Regeneration<td>-25 -30 -35 -40 -45 -50 -55 -60 -65 -70 -75 
+      <tr><td>MaxLevel<td>7
+      <tr><td>Spreads every ${value} Second(s)<td>0,15
+      <tr><td>Spreads to up to ${value} targets at a time<td>4
+      <tr><td>Spreads to up to ${value} targets total<td>99
+      <tr><td>UltimateLevel<td>11
+      <tr><td>m between each target<td>4
     </table>
 </body>
 </html>

@@ -1,8 +1,10 @@
 package de.bytesquire.titanquest.tqcalculator.main;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-@JsonIgnoreProperties({ "name" })
+@JsonIgnoreProperties({ "name", "circular" })
+@JsonPropertyOrder({ "poxX", "posY" })
 public class SkillIcon {
 
     private String mName;

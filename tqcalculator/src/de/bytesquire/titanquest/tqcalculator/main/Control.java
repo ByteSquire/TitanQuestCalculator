@@ -1,3 +1,26 @@
+/* MIT License
+ * 
+ * Copyright (c) 2020 Felix Körner
+ * 
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ * 
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ * 
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+
 package de.bytesquire.titanquest.tqcalculator.main;
 
 import java.io.File;
@@ -8,8 +31,9 @@ import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 import javax.swing.JFrame;
@@ -17,6 +41,7 @@ import javax.swing.JOptionPane;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import de.bytesquire.titanquest.tqcalculator.parsers.AttributeNameParser;
 import freemarker.template.*;
 
 //import templates.*;
@@ -33,8 +58,7 @@ public class Control {
 
     private static Configuration mCfg = new Configuration(Configuration.VERSION_2_3_30);
 
-    private static Template home, mod, mastery, skill, mod_fancy, mod_fancy_js, mastery_fancy, mastery_fancy_js,
-            skill_fancy_js;
+    private static Template home, mod, mastery, skill, mod_fancy, skill_js, mastery_fancy, json_handler;
 
     private static Map<String, Object> rootHome, rootMod, rootMastery, rootSkill;
 
@@ -44,6 +68,7 @@ public class Control {
 
         configFreemarker();
         getTemplates();
+        AttributeNameParser.parseAttributeNames();
 
         mSuccess = true;
 
@@ -67,14 +92,14 @@ public class Control {
             mSuccess = false;
         }
 
-        HashMap<String, String> links = new HashMap<>();
+        LinkedHashMap<String, String> links = new LinkedHashMap<>();
         for (Mod mod : mMods) {
             for (String linkString : mod.getLinks().keySet()) {
                 links.put(linkString, mod.getLinks().get(linkString));
             }
         }
 
-        rootHome = new HashMap<>();
+        rootHome = new LinkedHashMap<>();
         rootHome.put("links", links);
         rootHome.put("mods", mMods);
         try {
@@ -106,13 +131,14 @@ public class Control {
             }
         }
 
-        new Cleaner(mMods);
-
         writeTemplatesLegacy();
 
         writeTemplates();
+        
+        new Cleaner(mMods);
 
         showSuccess();
+
     }
 
     private static void showSuccess() {
@@ -148,7 +174,7 @@ public class Control {
             for (Mod mod : mMods) {
                 Writer outMod = new FileWriter(
                         REPOSITORY_DIR + "mods/" + mod.getName() + "/" + mod.getName() + ".html");
-                rootMod = new HashMap<>();
+                rootMod = new LinkedHashMap<>();
                 rootMod.put("masteries", mod.getMasteries());
                 rootMod.put("name", mod.getName());
                 Control.mod.process(rootMod, outMod);
@@ -156,7 +182,7 @@ public class Control {
                 for (Mastery mastery : mod.getMasteries()) {
                     Writer outMastery = new FileWriter(
                             REPOSITORY_DIR + "mods/" + mod.getName() + "/Masteries/" + mastery.getName() + ".html");
-                    rootMastery = new HashMap<>();
+                    rootMastery = new LinkedHashMap<>();
                     rootMastery.put("skills", mastery.getSkillTiers());
                     rootMastery.put("name", mastery.getName());
                     Control.mastery.process(rootMastery, outMastery);
@@ -165,16 +191,14 @@ public class Control {
                         for (Skill skill : mastery.getSkillTier(i)) {
                             Writer outSkill = new FileWriter(REPOSITORY_DIR + "mods/" + mod.getName() + "/Masteries/"
                                     + mastery.getName() + "/"
-                                    + ((skill.getName() == null) ? skill.toString() : skill.getName().replace(":", "")) + ".html");
-                            rootSkill = new HashMap<>();
-//                            if (skill.isBuff()) {
-//                                rootSkill.put("buffName", skill.getBuff().getName());
-//                                rootSkill.put("buffAttributes", skill.getBuff().getAttributes());
-//                            } else
+                                    + ((skill.getName() == null) ? skill.toString() : skill.getName().replace(":", ""))
+                                    + ".html");
+                            rootSkill = new LinkedHashMap<>();
                             rootSkill.put("attributes", skill.getAttributes());
                             rootSkill.put("name", skill.getName());
                             rootSkill.put("description", skill.getDescription());
                             rootSkill.put("ArrayList", ArrayList.class);
+                            rootSkill.put("LinkedHashMap", LinkedHashMap.class);
                             rootSkill.put("requiredWeapons", skill.getRequiredWeapons());
                             Control.skill.process(rootSkill, outSkill);
                         }
@@ -191,7 +215,7 @@ public class Control {
         for (Mod mod : mMods) {
             try {
                 Writer outMod = new FileWriter(REPOSITORY_DIR + "mods/" + mod.getName() + "/index.html");
-                rootMod = new HashMap<>();
+                rootMod = new LinkedHashMap<>();
                 rootMod.put("name", mod.getName());
                 rootMod.put("masteries", mod.getMasteries());
                 
@@ -199,22 +223,51 @@ public class Control {
                 Files.createDirectories(Path.of(REPOSITORY_DIR + "mods/" + mod.getName() + "/images/"));
                 
                 Control.mod_fancy.process(rootMod, outMod);
-                Writer outModJs = new FileWriter(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/mod.js");
-                rootMod = new HashMap<>();
-                Control.mod_fancy_js.process(rootMod, outModJs);
 
                 Writer outMastery = new FileWriter(REPOSITORY_DIR + "mods/" + mod.getName() + "/Masteries.html");
-                rootMastery = new HashMap<>();
+                rootMastery = new LinkedHashMap<>();
                 rootMastery.put("name", mod.getName());
+                rootMastery.put("questSkillPoints", mod.getQuestSkillPoints());
                 Control.mastery_fancy.process(rootMastery, outMastery);
-                Writer outMasteryJs = new FileWriter(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/mastery.js");
-                rootMastery = new HashMap<>();
-                rootMastery.put("name", mod.getName());
-                Control.mastery_fancy_js.process(rootMastery, outMasteryJs);
 
-                Writer outSkillJs = new FileWriter(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/skill.js");
-                rootMastery = new HashMap<>();
-                Control.skill_fancy_js.process(rootMastery, outSkillJs);
+                Writer skillJs = new FileWriter(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/skill.js");
+                rootMastery = new LinkedHashMap<>();
+                rootMastery.put("name", mod.getName());
+                Control.skill_js.process(rootMastery, skillJs);
+
+                Writer json_handlerJs = new FileWriter(
+                        REPOSITORY_DIR + "mods/" + mod.getName() + "/js/JSON_handler.js");
+//                rootMastery = new LinkedHashMap<>();
+                rootMastery.put("name", mod.getName());
+                Control.json_handler.process(rootMastery, json_handlerJs);
+
+                Files.copy(Path.of("resources/js/booleans.js"),
+                        Path.of(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/booleans.js"),
+                        StandardCopyOption.REPLACE_EXISTING);
+                Files.copy(Path.of("resources/js/charAttributes_handler.js"),
+                        Path.of(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/charAttributes_handler.js"),
+                        StandardCopyOption.REPLACE_EXISTING);
+                Files.copy(Path.of("resources/js/plusButton_handler.js"),
+                        Path.of(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/plusButton_handler.js"),
+                        StandardCopyOption.REPLACE_EXISTING);
+                Files.copy(Path.of("resources/js/skillButton_handler.js"),
+                        Path.of(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/skillButton_handler.js"),
+                        StandardCopyOption.REPLACE_EXISTING);
+                Files.copy(Path.of("resources/js/popup_handler.js"),
+                        Path.of(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/popup_handler.js"),
+                        StandardCopyOption.REPLACE_EXISTING);
+                Files.copy(Path.of("resources/js/mod.js"),
+                        Path.of(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/mod.js"),
+                        StandardCopyOption.REPLACE_EXISTING);
+                Files.copy(Path.of("resources/js/masteryTier_handler.js"),
+                        Path.of(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/masteryTier_handler.js"),
+                        StandardCopyOption.REPLACE_EXISTING);
+                Files.copy(Path.of("resources/js/skillPlusButton_handler.js"),
+                        Path.of(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/skillPlusButton_handler.js"),
+                        StandardCopyOption.REPLACE_EXISTING);
+                Files.copy(Path.of("resources/js/attribute_parser.js"),
+                        Path.of(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/attribute_parser.js"),
+                        StandardCopyOption.REPLACE_EXISTING);
             } catch (IOException | TemplateException e) {
                 e.printStackTrace();
                 mSuccess = false;
@@ -227,12 +280,11 @@ public class Control {
             home = mCfg.getTemplate("home.ftlh");
             mod = mCfg.getTemplate("mod.ftlh");
             mod_fancy = mCfg.getTemplate("mod_fancy.ftlh");
-            mod_fancy_js = mCfg.getTemplate("mod_fancy_js.ftlh");
             mastery = mCfg.getTemplate("mastery.ftlh");
             mastery_fancy = mCfg.getTemplate("mastery_fancy.ftlh");
-            mastery_fancy_js = mCfg.getTemplate("mastery_fancy_js.ftlh");
             skill = mCfg.getTemplate("skill.ftlh");
-            skill_fancy_js = mCfg.getTemplate("skill_fancy_js.ftlh");
+            skill_js = mCfg.getTemplate("skill_js.ftlh");
+            json_handler = mCfg.getTemplate("JSON_handler.ftlh");
         } catch (IOException e) {
             e.printStackTrace();
             mSuccess = false;

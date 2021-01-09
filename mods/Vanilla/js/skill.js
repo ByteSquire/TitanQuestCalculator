@@ -1,86 +1,139 @@
-function getPopupString(skill, currLevel, isSkill){
-    currLevel = Number(currLevel);
-    var ret = "";
-    ret += '<span class="title">' + skill.name + '</span>\n';
-    ret += "<br>\n";
-    if(isSkill){
-        ret += '<span class="desc">' + skill.description.replaceAll("{^n}", "<br>\n").replaceAll("{^y}", '<p style="color: yellow">').replaceAll("{^g}", '<p style="color: green">').replaceAll("{^a}", '<p style="color: cyan">').replaceAll("{^w}", '</p>') + '</span>\n';
-        ret += "<br>\n";
-    }
-    
-    if(skill.attributes["requiredWeapons"]){
-        ret += '<span class="" style="color: yellow">Only works with: ' + skill.attributes["requiredWeapons"] + '</span>';
-        ret += "<br>\n";
-    }
-    
-    if(currLevel > 0){
-        ret += '<br>\n';
-        if(currLevel <= skill.attributes["skillMaxLevel"]){
-            if(isSkill)
-                document.getElementById(skill.name).getElementsByClassName("buttonText")[0].style.color = "white";
-            ret += '<span class="nextLevel">Level: ' + currLevel + '</span>\n';
-        } else if(currLevel <= skill.attributes["skillUltimateLevel"]){
-            if(isSkill)
-                document.getElementById(skill.name).getElementsByClassName("buttonText")[0].style.color = "yellow";
-            ret += '<span class="nextLevel"><div style="color: yellow">Level: ' + currLevel + '</div></span>\n';
-        }
-        ret += '<br>\n';
-        var attr = Object.keys(skill.attributes);
-        attr.forEach((key) => {
-            if(key == "requiredWeapons")
-                return;
-            if(key == "skillMaxLevel")
-                return;
-            if(key == "skillUltimateLevel")
-                return;
-            var value = skill.attributes[key];
-            if(value.constructor === Array){
-                if(value[currLevel-1] == 0)
-                    return;
-                var index = currLevel-1;
-                if(value[index] === undefined){
-                    index = value.length-1;
-                    if(value[index] === undefined)
-                        return;
-                }
-                ret += '<span class="skillAttribute" style="color: gray">' + key + ':<br>\n' + value[index] + '</span>\n';
-                ret += "<br>\n";
+function addSkills(panel, mastery) {
+  mastery.skillTiers.forEach((element) =>
+    addSkillTier(panel, mastery, element)
+  );
+  panel.getElementsByClassName("plusButton")[0].innerHTML += '<span class="buttonText">\n0/' + mastery.masteryAttributes.MaxLevel + '</span>';
+}
+
+function addSkillTier(panel, mastery, skillTier) {
+  skillTier.forEach((element) => addSkill(panel, mastery, element));
+}
+
+function addSkill(panel, mastery, skill) {
+  panel.innerHTML +=
+    '\n<button class="skillButton" id="' +
+    skill.name +
+    '" onmousedown="skillClicked(this, event);" onmouseover="skillButtonPopup(this, event);" onmouseout="hidePopup();">\n' +
+    "\t<img\n" +
+    '\t\tclass="skillButtonImage"\n' +
+    '\t\tsrc="' +
+    "images/skills/" +
+        mastery.name +
+    "/" +
+    skill.name.replaceAll(":", "") +
+    '.png"\n' +
+    '/>\n' +
+    '<span class="buttonText">0/' + skill.attributes.MaxLevel + '</span>' +
+    '<div class="disabled">0</div>';
+  scaleButtonPosition(document.getElementById(skill.name), skill.skillIcon);
+  
+  panel.innerHTML += '<button class="skillPlusButton" id="' + skill.name + '+' + '" onmousedown="skillPlusClicked(this, event);" onmouseover="skillPlusButtonPopup(this, event);" onmouseout="hidePopup();">\n' +
+              ' <img\n' +
+              '   class="skillPlusButtonImage"\n' + 
+              '   src="../../MasteryPage/images/masteries/panel/plusbutton.png"\n' + 
+              ' />\n' +
+              ' 0\n' +
+              '</button>';
+  scaleButtonPosition(document.getElementById(skill.name + '+'), { posY: skill.skillIcon.posY + 4, posX: skill.skillIcon.posX - 20 });
+}
+
+function scaleButtonPosition(button, iconPosition) {
+  button.style.top = iconPosition.posY/5.4 + "%";
+  button.style.left = (iconPosition.posX-19)/8.65 + "%";
+}
+
+function updateSkills(){    
+    for (var i = 0; i < m1.skillTiers.length; i++){
+        if(m1)
+            if(i+1 <= m1CurrTier){
+                m1.skillTiers[i].forEach((skill) => {
+                    document.getElementById(skill.name).getElementsByClassName("skillButtonImage")[0].style.filter = "none";
+                });
             } else {
-                ret += '<span class="skillAttribute" style="color: gray">' + key + ':<br>\n' + value + '</span>\n';
-                ret += "<br>\n";
+                m1.skillTiers[i].forEach((skill) => {
+                    document.getElementById(skill.name).getElementsByClassName("skillButtonImage")[0].style.filter = "grayscale()";
+                });
+            }
+        
+        if(m2)
+            if(i+1 <= m2CurrTier){
+                m2.skillTiers[i].forEach((skill) => {
+                    document.getElementById(skill.name).getElementsByClassName("skillButtonImage")[0].style.filter = "none";
+                });
+            } else {
+                m2.skillTiers[i].forEach((skill) => {
+                    document.getElementById(skill.name).getElementsByClassName("skillButtonImage")[0].style.filter = "grayscale()";
+                });
+            }
+    }
+}
+
+function skillButtonPopup(button, event){
+    var pop = document.getElementById( 'pop' );
+
+    var pageHeight = getPageHeight();
+    if( event ) {
+        var pos = getPopupPos(event);
+        
+        pop.style.top = "" + pos.y + "px";
+        pop.style.left = "" + pos.x + "px";
+        pop.style.bottom = "unset";
+    }
+    var matteringMastery = (button.parentElement.id == "panel1")? m1 : m2;
+    var tiers = matteringMastery.skillTiers;
+    var skill;
+    tiers.forEach((tier) => {
+        tier.forEach((aSkill) => {
+            if(aSkill.name == button.id){
+                skill = aSkill;
             }
         });
-    }
-    
-    ret += '<br>\n';
-    
-    if(currLevel+1 <= skill.attributes["skillMaxLevel"]){
-        ret += '<span class="nextLevel">Next Level: ' + (currLevel+1) + '</span>\n';
-    } else if(currLevel+1 <= skill.attributes["skillUltimateLevel"]){
-        ret += '<span class="nextLevel"><div style="color: yellow">Next Level: ' + (currLevel+1) + '</div></span>\n';
-    } else {
-        return ret;
-    }
-    ret += '<br>\n';
-    var attr = Object.keys(skill.attributes);
-    attr.forEach((key) => {
-        if(key == "requiredWeapons")
-            return;
-        if(key == "skillMaxLevel")
-            return;
-        if(key == "skillUltimateLevel")
-            return;
-        var value = skill.attributes[key];
-        if(value.constructor === Array){
-            if(value[currLevel] == 0 || value[currLevel] === undefined)
-                return;
-            ret += '<span class="skillAttribute">' + key + ':<br>\n' + value[currLevel] + '</span>\n';
-            ret += "<br>\n";
-        } else if(currLevel == 0) {
-            ret += '<span class="skillAttribute">' + key + ':<br>\n' + value + '</span>\n';
-            ret += "<br>\n";
-        }
     });
-    ret += '<br>';
-    return ret;
+    if(!petDisplayed){
+        pop.innerHTML = getPopupString(skill, Number(button.innerText.split("/")[0].replaceAll("\n", "")));
+    } else {
+        pop.innerHTML = getPopupStringPet(skill, Number(button.innerText.split("/")[0].replaceAll("\n", "")));
+    }
+    pop.style.display = "block";
+    movePopupintoView(pop, pageHeight);
+}
+
+var petDisplayed = false;
+var lastTop = "unset";
+
+function shiftPressed(event){
+    if(event.shiftKey){
+        var pop = document.getElementById("pop");
+        if(pop.style.display == "none")
+            return;
+            
+        var button = document.getElementById(pop.getElementsByClassName("title")[0].innerText);
+        
+        if(!button)
+            return;
+        
+        var matteringMastery = (button.parentElement.id == "panel1")? m1 : m2;
+        var tiers = matteringMastery.skillTiers;
+        var skill;
+        tiers.forEach((tier) => {
+            tier.forEach((aSkill) => {
+                if(aSkill.name == button.id){
+                    skill = aSkill;
+                }
+            });
+        });
+        if(!petDisplayed){
+            if(pop.style.top != "unset")
+                lastTop = pop.style.top;
+            pop.innerHTML = getPopupStringPet(skill, Number(button.innerText.split("/")[0].replaceAll("\n", "")));
+            petDisplayed = true;
+        } else {
+            pop.style.top = lastTop;
+            pop.style.bottom = "unset";
+            pop.innerHTML = getPopupString(skill, Number(button.innerText.split("/")[0].replaceAll("\n", "")));
+            petDisplayed = false;
+        }
+        pop.style.display = "block";
+        movePopupintoView(pop, getPageHeight());
+    }
 }

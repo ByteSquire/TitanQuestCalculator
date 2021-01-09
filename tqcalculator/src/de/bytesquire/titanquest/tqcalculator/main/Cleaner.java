@@ -30,7 +30,9 @@ public class Cleaner {
                     + "-cleaned/database/records/xpack/creatures/pc/malepc01.dbr");
 //            System.out.println(targetPath);
             try {
-                Files.createDirectories(Path.of(targetPath.toString().split("malepc01.dbr")[0]));
+                String tp = targetPath.toString();
+                Path tmp = Path.of(tp.substring(0, tp.lastIndexOf(targetPath.getFileSystem().getSeparator())));
+                Files.createDirectories(tmp);
                 Files.copy(originPath, targetPath);
             } catch (IOException e) {
                 if (!(e instanceof java.nio.file.FileAlreadyExistsException))
@@ -43,7 +45,9 @@ public class Cleaner {
                     .of(mod.getModDir().substring(0, mod.getModDir().length() - 1) + "-cleaned/links.txt");
 //          System.out.println(targetLinksPath);
             try {
-                Files.createDirectories(Path.of(targetLinksPath.toString().split("links.txt")[0]));
+                String tp = targetLinksPath.toString();
+                Path tmp = Path.of(tp.substring(0, tp.lastIndexOf(targetPath.getFileSystem().getSeparator())));
+                Files.createDirectories(tmp);
                 Files.copy(originLinksPath, targetLinksPath);
             } catch (IOException e) {
                 if (!(e instanceof java.nio.file.FileAlreadyExistsException))
@@ -56,7 +60,9 @@ public class Cleaner {
                     + "-cleaned/database/records/game/gameengine.dbr");
 //          System.out.println(targetLinksPath);
             try {
-                Files.createDirectories(Path.of(targetGameEnginePath.toString().split("gameengine.dbr")[0]));
+                String tp = targetGameEnginePath.toString();
+                Path tmp = Path.of(tp.substring(0, tp.lastIndexOf(targetPath.getFileSystem().getSeparator())));
+                Files.createDirectories(tmp);
                 Files.copy(originGameEnginePath, targetGameEnginePath);
             } catch (IOException e) {
                 if (!(e instanceof java.nio.file.FileAlreadyExistsException))
@@ -65,6 +71,7 @@ public class Cleaner {
 
             cleanModStrings(mod);
             cleanIcons(mod);
+            cleanQuestSkillPoints(mod);
 
             for (Mastery mastery : mod.getMasteries()) {
                 cleanMastery(mastery, mod);
@@ -80,7 +87,9 @@ public class Cleaner {
                     + f.getAbsolutePath().split(mod.getName())[1]);
 //          System.out.println(targetLinksPath);
             try {
-                Files.createDirectories(Path.of(targetPath.toString().split(f.getName())[0]));
+                String tp = targetPath.toString();
+                Path tmp = Path.of(tp.substring(0, tp.lastIndexOf(targetPath.getFileSystem().getSeparator())));
+                Files.createDirectories(tmp);
                 Files.copy(originPath, targetPath);
             } catch (IOException e) {
                 if (!(e instanceof java.nio.file.FileAlreadyExistsException))
@@ -98,8 +107,30 @@ public class Cleaner {
                     + "-cleaned/text/" + modString.getName());
 //            System.out.println(targetStringsPath);
             try {
-                Files.createDirectories(Path.of(targetStringsPath.toString().split(modString.getName())[0]));
+                String tp = targetStringsPath.toString();
+                Path tmp = Path.of(tp.substring(0, tp.lastIndexOf(targetStringsPath.getFileSystem().getSeparator())));
+                Files.createDirectories(tmp);
                 Files.copy(originStringsPath, targetStringsPath);
+            } catch (IOException e) {
+                if (!(e instanceof java.nio.file.FileAlreadyExistsException))
+                    e.printStackTrace();
+            }
+        }
+    }
+    
+    private void cleanQuestSkillPoints(Mod mod) {
+        ArrayList<File> questSkillFiles = mod.getModParser().getQuestSkillFiles();
+        for (File questSkillFile : questSkillFiles) {
+            Path originQuestSkillFilePath = questSkillFile.toPath();
+//            System.out.println(originStringsPath);
+            Path targetQuestSkillFilePath = Path.of(mod.getModDir().substring(0, mod.getModDir().length() - 1)
+                    + "-cleaned/questSkillPoints/" + questSkillFile.getName());
+//            System.out.println(targetStringsPath);
+            try {
+                String tp = targetQuestSkillFilePath.toString();
+                Path tmp = Path.of(tp.substring(0, tp.lastIndexOf(targetQuestSkillFilePath.getFileSystem().getSeparator())));
+                Files.createDirectories(tmp);
+                Files.copy(originQuestSkillFilePath, targetQuestSkillFilePath);
             } catch (IOException e) {
                 if (!(e instanceof java.nio.file.FileAlreadyExistsException))
                     e.printStackTrace();
@@ -114,7 +145,9 @@ public class Cleaner {
                 + mastery.getMastery().toPath().toString().split(mod.getName())[1]);
 //        System.out.println(targetPath);
         try {
-            Files.createDirectories(Path.of(targetMasteryPath.toString().split(mastery.getMastery().getName())[0]));
+            String tp = targetMasteryPath.toString();
+            Path tmp = Path.of(tp.substring(0, tp.lastIndexOf(targetMasteryPath.getFileSystem().getSeparator())));
+            Files.createDirectories(tmp);
             Files.copy(originMasteryPath, targetMasteryPath);
         } catch (IOException e) {
             if (!(e instanceof java.nio.file.FileAlreadyExistsException))
@@ -127,7 +160,9 @@ public class Cleaner {
                 + mastery.getSkillTree().toPath().toString().split(mod.getName())[1]);
 //      System.out.println(targetPath);
         try {
-            Files.createDirectories(Path.of(targetTreePath.toString().split(mastery.getSkillTree().getName())[0]));
+            String tp = targetTreePath.toString();
+            Path tmp = Path.of(tp.substring(0, tp.lastIndexOf(targetMasteryPath.getFileSystem().getSeparator())));
+            Files.createDirectories(tmp);
             Files.copy(originTreePath, targetTreePath);
         } catch (IOException e) {
             if (!(e instanceof java.nio.file.FileAlreadyExistsException))
@@ -141,14 +176,16 @@ public class Cleaner {
     }
 
     private void cleanSkill(Skill skill, Mod mod, Mastery mastery) {
-        for (File skillFile : skill.getSkill()) {
+        for (File skillFile : skill.getFiles()) {
             Path originPath = skillFile.toPath();
 //            System.out.println(originPath);
             Path targetPath = Path.of(mod.getModDir().substring(0, mod.getModDir().length() - 1) + "-cleaned/"
                     + skillFile.toPath().toString().split(mod.getName())[1]);
 //            System.out.println(targetPath);
             try {
-                Files.createDirectories(Path.of(targetPath.toString().split(skillFile.getName())[0]));
+                String tp = targetPath.toString();
+                Path tmp = Path.of(tp.substring(0, tp.lastIndexOf(targetPath.getFileSystem().getSeparator())));
+                Files.createDirectories(tmp);
                 Files.copy(originPath, targetPath);
             } catch (IOException e) {
                 if (!(e instanceof java.nio.file.FileAlreadyExistsException))

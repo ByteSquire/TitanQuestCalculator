@@ -6,7 +6,8 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.Arrays;
+import java.util.LinkedHashMap;
 import java.util.stream.Stream;
 
 import de.bytesquire.titanquest.tqcalculator.main.Control;
@@ -15,16 +16,23 @@ import de.bytesquire.titanquest.tqcalculator.main.SkillIcon;
 
 public class SkillParser {
 
-    private HashMap<String, Object> mAttributes;
+    private LinkedHashMap<String, Object> mAttributes;
     private ArrayList<File> mAdditionalFiles;
     private File mSkill;
     private String mParentPath;
     private String mSkillTag;
-    private boolean isModifier = false;
     private ModStringsParser mMSParser;
     private IconsParser mIconsParser;
     private String mSkillDescriptionTag;
     private SkillIcon mSkillIcon;
+    private ArrayList<String> mParentSkill;
+    private boolean mModifier = false;
+    private String mRace;
+    private Boolean mDoesNotIncludeRacialDamage;
+    private Boolean mExclusiveSkill;
+    private Boolean mNotDispellable;
+    private Boolean mProjectileUsesAllDamage;
+    private ArrayList<String> mProtectsAgainst;
 
     public SkillParser(File aSkill, String aParentPath, ModStringsParser aMSParser, IconsParser aIconsParser) {
 
@@ -35,8 +43,9 @@ public class SkillParser {
         mMSParser = aMSParser;
         mIconsParser = aIconsParser;
 
-        mAttributes = new HashMap<>();
+        mAttributes = new LinkedHashMap<>();
         mAdditionalFiles = new ArrayList<File>();
+        mParentSkill = new ArrayList<String>();
 
         mSkill = aSkill;
         mSkillIcon = mIconsParser.getIcon(mSkill.getAbsolutePath().split("database")[2].substring(1));
@@ -49,46 +58,76 @@ public class SkillParser {
             Stream<String> fileStream = skillReader.lines();
             fileStream.forEach((str) -> {
                 String attributeName = str.split(",")[0];
-                if(attributeName.equals("skillMasteryLevelRequired") || attributeName.startsWith("skillConnection"))
+                String value = str.split(",")[1];
+                if (canBeIgnored(attributeName))
                     return;
                 if (attributeName.equals("skillDisplayName")) {
-                    mSkillTag = str.split(",")[1];
+                    mSkillTag = value;
+                    return;
                 }
                 if (attributeName.equals("skillBaseDescription")) {
-                    mSkillDescriptionTag = str.split(",")[1];
-                }
-                try {
-                    Integer value = Integer.parseInt(str.split(",")[1]);
-                    if (value == 0)
-                        return;
-                    mAttributes.put(attributeName, value);
+                    mSkillDescriptionTag = value;
                     return;
-                } catch (Exception e) {
                 }
-                try {
-                    Double value = Double.parseDouble(str.split(",")[1]);
-                    if (value == 0.0)
+
+                attributeName = attributeName.replace("offensive", "Damage").replace("Slow", "Duration")
+                        .replace("character", "Character").replace("defensive", "Defense")
+                        .replace("projectile", "Projectile").replace("retaliation", "Retaliation")
+                        .replace("explosion", "Explosion").replace("racial", "Racial").replace("spark", "Spark")
+                        .replace("spawnObjects", "SkillPet").replace("damage", "Damage").replace("life", "Life")
+                        .replace("numProjectiles", "ProjectileNumber");
+
+                if (attributeName.startsWith("skill")) {
+                    if (attributeName.equals("skillDependancy")) {
+                        try {
+                            String[] parentFiles = value.split(";");
+                            for (String string : parentFiles) {
+                                BufferedReader parentReader = new BufferedReader(new FileReader(new File(
+                                        Control.DATABASES_DIR + mParentPath.split("/")[0] + "/database/" + string)));
+                                Stream<String> parentFileStream = parentReader.lines();
+                                parentFileStream.filter(str1 -> str1.split(",")[0].equals("skillDisplayName"))
+                                        .forEach(name -> {
+                                            mParentSkill.add(mMSParser.getTags().get(name.split(",")[1]));
+                                        });
+                            }
+                        } catch (FileNotFoundException e) {
+                            System.err.println(e.getMessage());
+                        }
                         return;
-                    mAttributes.put(attributeName, value);
-                    return;
-                } catch (Exception e) {
-                }
-                try {
-                    if (str.split(",")[1].split(";").length == 0)
-                        return;
-                    ArrayList<Double> value = new ArrayList<Double>();
-                    for (String e : str.split(",")[1].split(";")) {
-                        value.add(Double.parseDouble(e));
                     }
-                    mAttributes.put(attributeName, value);
+                }
+
+                try {
+                    Integer intValue = Integer.parseInt(value);
+                    if (intValue == 0)
+                        return;
+                    mAttributes.put(attributeName, intValue);
+                    return;
+                } catch (Exception e) {
+                }
+                try {
+                    Double doubleValue = Double.parseDouble(value);
+                    if (doubleValue == 0.0)
+                        return;
+                    mAttributes.put(attributeName, doubleValue);
+                    return;
+                } catch (Exception e) {
+                }
+                try {
+                    if (value.split(";").length == 0)
+                        return;
+                    ArrayList<Double> values = new ArrayList<Double>();
+                    for (String e : value.split(";")) {
+                        values.add(Double.parseDouble(e));
+                    }
+                    mAttributes.put(attributeName, values);
                     return;
                 } catch (Exception e) {
                 }
                 if (attributeName.equals("petSkillName") || attributeName.equals("buffSkillName")) {
                     Skill tmp = new Skill(
-                            new File(Control.DATABASES_DIR + mParentPath.split("/")[0] + "/database/"
-                                    + str.split(",")[1]),
-                            mParentPath.split("/Masteries/")[0], mParentPath, mMSParser, mIconsParser);
+                            new File(Control.DATABASES_DIR + mParentPath.split("/")[0] + "/database/" + value), null,
+                            mParentPath, mMSParser, mIconsParser);
                     for (String skillAttribute : tmp.getAttributes().keySet()) {
                         mAttributes.put(skillAttribute, tmp.getAttributes().get(skillAttribute));
                     }
@@ -96,29 +135,109 @@ public class SkillParser {
                     mSkillTag = tmp.getSkillTag();
                     mSkillDescriptionTag = tmp.getSkillDescriptionTag();
                     mSkillIcon = tmp.getSkillIcon();
-                    mAdditionalFiles.addAll(tmp.getSkill());
+                    mModifier = tmp.isModifier() || mModifier;
+                    mDoesNotIncludeRacialDamage = tmp.isDoesNotIncludeRacialDamage();
+                    mExclusiveSkill = tmp.isExclusiveSkill();
+                    mNotDispellable = tmp.isNotDispellable();
+                    mProtectsAgainst = tmp.getProtectsAgainst();
+                    mProjectileUsesAllDamage = tmp.getProjectileUsesAllDamage();
+                    if (tmp.getParent() != null)
+                        mParentSkill.addAll(Arrays.asList(tmp.getParent()));
+                    mAdditionalFiles.addAll(tmp.getFiles());
+                    if (tmp.getRace() != null)
+                        mRace = tmp.getRace();
+                    return;
                 }
-                if (attributeName.equals("Class") && str.split(",")[1].equals("Skill_Modifier"))
-                    isModifier = true;
-
+                if (attributeName.equals("SkillPet")) {
+                    File[] files = new File[value.split(";").length];
+                    int i = 0;
+                    for (String file : value.split(";")) {
+                        files[i++] = new File(Control.DATABASES_DIR + mParentPath.split("/")[0] + "/database/" + file);
+                    }
+                    PetParser tmp = new PetParser(files, mParentPath, mMSParser, mIconsParser);
+                    mAttributes.put("Pet", tmp);
+                    mAdditionalFiles.addAll(Arrays.asList(tmp.getFiles()));
+                    mAdditionalFiles.addAll(tmp.getAdditionalFiles());
+                }
+                if (attributeName.equals("petBonusName")) {
+                    Skill tmp = new Skill(
+                            new File(Control.DATABASES_DIR + mParentPath.split("/")[0] + "/database/" + value), null,
+                            mParentPath, mMSParser, mIconsParser);
+                    mAttributes.put("Bonus to all Pets:", tmp.getAttributes());
+                    mAdditionalFiles.addAll(tmp.getFiles());
+                    return;
+                }
+                if (attributeName.equals("RacialBonusRace")) {
+                    mRace = value;
+                }
+                if (attributeName.equals("Class")) {
+                    if (value.endsWith("Modifier") || value.startsWith("SkillSecondary"))
+                        mModifier = true;
+                }
             });
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            System.err.println(e.getMessage());
         } catch (IOException e1) {
             e1.printStackTrace();
         }
     }
 
-    public HashMap<String, Object> getAttributes() {
+    private boolean canBeIgnored(String attributeName) {
+        if (attributeName.startsWith("camera"))
+            return true;
+        if (attributeName.startsWith("drift"))
+            return true;
+        if (attributeName.startsWith("ragDoll"))
+            return true;
+        if (attributeName.startsWith("skillWeaponTint"))
+            return true;
+        if (attributeName.startsWith("drop"))
+            return true;
+        if (attributeName.startsWith("skillConnection"))
+            return true;
+        if (attributeName.startsWith("spawnObjectsDistance"))
+            return true;
+        if (attributeName.startsWith("skillProjectile") && attributeName.endsWith("TimeToLive"))
+            return true;
+        if (attributeName.endsWith("NumberOfRings"))
+            return true;
+        if (attributeName.startsWith("wave"))
+            return true;
+        if (attributeName.endsWith("AngleToCaster"))
+            return true;
+        if (attributeName.endsWith("SpacingAngle"))
+            return true;
+        if (attributeName.endsWith("RandomRotation"))
+            return true;
+        switch (attributeName) {
+        case "skillMasteryLevelRequired":
+        case "projectileLaunchRotation":
+        case "skillAllowsWarmUp":
+        case "isPetDisplayable":
+        case "expansionTime":
+        case "skipSkillLinking":
+        case "instantCast":
+        case "targetCaster":
+        case "actorScaleTime":
+        case "projectileHitTimeToLive":
+        case "projectileMissTimeToLive":
+        case "debufSkill":
+        case "alwaysUseSpecialAnimation":
+        case "hideFromUI":
+        case "headVelocity":
+        case "tailVelocity":
+            return true;
+        default:
+            return false;
+        }
+    }
+
+    public LinkedHashMap<String, Object> getAttributes() {
         return mAttributes;
     }
 
     public String getSkillTag() {
         return mSkillTag;
-    }
-
-    public boolean isModifier() {
-        return isModifier;
     }
 
     public String getSkillDescriptionTag() {
@@ -136,5 +255,41 @@ public class SkillParser {
 
     public ArrayList<File> getAdditionalFiles() {
         return mAdditionalFiles;
+    }
+
+    public String[] getParentSkill() {
+        if (mParentSkill.size() == 0)
+            return null;
+        String[] tmp = new String[mParentSkill.size()];
+        /* tmp = */mParentSkill.toArray(tmp);
+        return tmp;
+    }
+
+    public boolean isModifier() {
+        return mModifier;
+    }
+
+    public String getRace() {
+        return mRace;
+    }
+
+    public Boolean getNotDispellable() {
+        return mNotDispellable;
+    }
+
+    public Boolean getExclusiveSkill() {
+        return mExclusiveSkill;
+    }
+
+    public Boolean getDoesNotIncludeRacialDamage() {
+        return mDoesNotIncludeRacialDamage;
+    }
+
+    public Boolean getProjectileUsesAllDamage() {
+        return mProjectileUsesAllDamage;
+    }
+
+    public ArrayList<String> getProtectsAgainst() {
+        return mProtectsAgainst;
     }
 }
