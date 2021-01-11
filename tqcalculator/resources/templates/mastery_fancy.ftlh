@@ -16,6 +16,7 @@
     <script type="text/javascript" src="js/masteryTier_handler.js"></script>
     <script type="text/javascript" src="js/skillPlusButton_handler.js"></script>
     <script type="text/javascript" src="js/attribute_parser.js"></script>
+    <script type="text/javascript" src="js/resetMastery_handler.js"></script>
   </head>
 
   <body oncontextmenu="return false">
@@ -40,6 +41,9 @@
                 src="../../MasteryPage/images/masteries/panel/plusbutton.png"
               />
               0
+            </button>
+            <button class="resetButton" id="resetMastery1" onmousedown="resetClicked(this);">
+              Reset Mastery
             </button>
             <img
               class="masteryImagePanel"
@@ -72,6 +76,9 @@
                 src="../../MasteryPage/images/masteries/panel/plusbutton.png"
               />
               0
+            </button>
+            <button class="resetButton" id="resetMastery2" onmousedown="resetClicked(this);">
+              Reset Mastery
             </button>
             <img
               class="masteryImagePanel"
