@@ -1088,7 +1088,7 @@
           }
         },
         "petSkillLevels" : {
-          "Soul Blight" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ],
+          "Soul Blight" : [ 0, 0, 0, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ],
           "Spectral Bolt" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ]
         }
       }
@@ -1401,8 +1401,8 @@
         },
         "petSkillLevels" : {
           "Ether Strike" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ],
-          "Storm Surge" : [ 1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 6 ],
-          "Lightning Bolt" : [ 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 7 ]
+          "Storm Surge" : [ 0, 0, 0, 0, 0, 1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 6 ],
+          "Lightning Bolt" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 7 ]
         }
       }
     } ], [ {
@@ -1994,8 +1994,8 @@
         "petSkillLevels" : {
           "Dodge Attacks" : [ 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99 ],
           "Plasma Burn" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ],
-          "Arc Discharge" : [ 5 ],
-          "Thunderclap" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ]
+          "Arc Discharge" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+          "Thunderclap" : [ 0, 0, 0, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ]
         }
       }
     }, {
@@ -2412,7 +2412,7 @@
         "petSkillLevels" : {
           "Provoke" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ],
           "Basic Attack" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ],
-          "Concussive Blow" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 ]
+          "Concussive Blow" : [ 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 ]
         }
       }
     }, {
@@ -3441,11 +3441,11 @@
         "posX" : 628
       },
       "attributes" : {
+        "${value}% Chance to be Used" : [ 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 17.0, 18.0, 19.0, 20.0 ],
         "Launches ${value} Projectile(s)" : 1,
         " Physical Damage" : {
           "min" : [ 12.0, 15.0, 18.0, 22.0, 26.0, 31.0, 37.0, 44.0, 52.0, 61.0 ]
         },
-        "${value}% Chance to be Used" : [ 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 17.0, 18.0, 19.0, 20.0 ],
         "% reduced Defensive Ability" : {
           "value0" : {
             "min" : 50.0
@@ -3551,11 +3551,11 @@
         "posX" : 628
       },
       "attributes" : {
+        "${value}% Chance to be Used" : [ 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 17.0, 18.0, 19.0, 20.0 ],
         "Launches ${value} Projectile(s)" : 1,
         " Physical Damage" : {
           "min" : [ 12.0, 15.0, 18.0, 22.0, 26.0, 31.0, 37.0, 44.0, 52.0, 61.0 ]
         },
-        "${value}% Chance to be Used" : [ 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 17.0, 18.0, 19.0, 20.0 ],
         "% Slower Attack" : {
           "value0" : {
             "min" : 50.0
@@ -3693,6 +3693,7 @@
         "posX" : 628
       },
       "attributes" : {
+        "${value}% Chance to be Used" : [ 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 17.0, 18.0, 19.0, 20.0 ],
         "Launches ${value} Projectile(s)" : 1,
         " Physical Damage" : {
           "min" : [ 4.5, 7.5, 10.5, 14.0, 17.5, 21.0, 25.0, 29.0, 33.0, 37.5 ],
@@ -3703,7 +3704,6 @@
         },
         "${value} Arc of Attack" : 120.0,
         "${value} Target Maximum" : 3,
-        "${value}% Chance to be Used" : [ 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 17.0, 18.0, 19.0, 20.0 ],
         "% reduced Offensive Ability" : {
           "value0" : {
             "min" : 50.0
@@ -4111,7 +4111,7 @@
         "petSkillLevels" : {
           "Psionic Beam" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ],
           "Dodge Attacks" : [ 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53 ],
-          "Dream Surge" : [ 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ],
+          "Dream Surge" : [ 0, 0, 0, 0, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ],
           "Distort Reality" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ]
         }
       }
@@ -4587,11 +4587,11 @@
         "posX" : 128
       },
       "attributes" : {
+        "${value}% Chance to be Used" : [ 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0 ],
         "Launches ${value} Projectile(s)" : 1,
         " Physical Damage" : {
           "min" : 10.0
         },
-        "${value}% Chance to be Used" : [ 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0 ],
         "MaxLevel" : 6,
         "UltimateLevel" : 10,
         "requiredWeapons" : "dualWieldOnly, Sword, Axe, Mace, Thrown Weapon"
@@ -4657,8 +4657,8 @@
         "posX" : 128
       },
       "attributes" : {
-        "Launches ${value} Projectile(s)" : 1,
         "${value}% Chance to be Used" : [ 3.0, 4.0, 6.0, 7.0, 9.0, 10.0, 11.0, 12.0, 13.0, 15.0 ],
+        "Launches ${value} Projectile(s)" : 1,
         "+${value}% Physical Damage" : 50.0,
         "MaxLevel" : 6,
         "UltimateLevel" : 10,
@@ -4748,6 +4748,7 @@
         "posX" : 128
       },
       "attributes" : {
+        "${value}% Chance to be Used" : [ 3.0, 4.0, 6.0, 7.0, 9.0, 10.0, 11.0, 12.0, 13.0, 15.0 ],
         "Launches ${value} Projectile(s)" : 1,
         " Bleeding Damage" : {
           "value0" : {
@@ -4760,7 +4761,6 @@
         },
         "${value} Arc of Attack" : 90.0,
         "${value} Target Maximum" : 2,
-        "${value}% Chance to be Used" : [ 3.0, 4.0, 6.0, 7.0, 9.0, 10.0, 11.0, 12.0, 13.0, 15.0 ],
         "MaxLevel" : 6,
         "UltimateLevel" : 10,
         "requiredWeapons" : "dualWieldOnly, Sword, Axe, Mace"
@@ -4904,6 +4904,7 @@
         "posX" : 128
       },
       "attributes" : {
+        "${value}% Chance to be Used" : [ 3.0, 4.0, 6.0, 7.0, 9.0, 10.0, 11.0, 12.0, 13.0, 15.0 ],
         "Launches ${value} Projectile(s)" : 1,
         " Bleeding Damage" : {
           "value0" : {
@@ -4919,7 +4920,6 @@
         },
         "${value} Arc of Attack" : 360.0,
         "${value} Target Maximum" : 3,
-        "${value}% Chance to be Used" : [ 3.0, 4.0, 6.0, 7.0, 9.0, 10.0, 11.0, 12.0, 13.0, 15.0 ],
         "MaxLevel" : 6,
         "UltimateLevel" : 10,
         "requiredWeapons" : "dualWieldOnly, Sword, Axe, Mace"
@@ -5224,6 +5224,7 @@
         "posX" : 328
       },
       "attributes" : {
+        "${value}% Chance to be Used" : [ 4.0, 6.0, 7.0, 9.0, 11.0, 13.0, 14.0, 16.0, 18.0, 20.0, 21.0, 23.0, 25.0, 27.0 ],
         "m Radius" : 2.5,
         "Launches ${value} Projectile(s)" : 1,
         " Fire Damage" : {
@@ -5236,7 +5237,6 @@
           "min" : 0.5
         },
         "${value} Arc of Attack" : 120.0,
-        "${value}% Chance to be Used" : [ 4.0, 6.0, 7.0, 9.0, 11.0, 13.0, 14.0, 16.0, 18.0, 20.0, 21.0, 23.0, 25.0, 27.0 ],
         "MaxLevel" : 10,
         "UltimateLevel" : 14
       }
@@ -5445,8 +5445,8 @@
         "posX" : 228
       },
       "attributes" : {
-        "Launches ${value} Projectile(s)" : 1,
         "${value}% Chance to be Used" : [ 4.0, 6.0, 7.0, 9.0, 10.0, 12.0, 13.0, 15.0, 16.0, 18.0, 19.0, 21.0, 22.0, 24.0, 25.0, 27.0 ],
+        "Launches ${value} Projectile(s)" : 1,
         "+${value}% Total Damage" : 100.0,
         "MaxLevel" : 12,
         "UltimateLevel" : 16,
@@ -6062,6 +6062,7 @@
         "posX" : 428
       },
       "attributes" : {
+        "${value}% Chance to be Used" : [ 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 17.0, 18.0, 19.0, 20.0 ],
         "Launches ${value} Projectile(s)" : 1,
         " Bleeding Damage" : {
           "value0" : {
@@ -6072,7 +6073,6 @@
           },
           "key" : "${value0} Bleeding Damage over ${value1} Second(s)"
         },
-        "${value}% Chance to be Used" : [ 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 17.0, 18.0, 19.0, 20.0 ],
         "MaxLevel" : 6,
         "UltimateLevel" : 10,
         "requiredWeapons" : "Bow, Spear"
@@ -6189,8 +6189,8 @@
         "posX" : 428
       },
       "attributes" : {
-        "Launches ${value} Projectile(s)" : 3,
         "${value}% Chance to be Used" : [ 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 17.0, 18.0, 19.0, 20.0 ],
+        "Launches ${value} Projectile(s)" : 3,
         "MaxLevel" : 6,
         "UltimateLevel" : 10,
         "requiredWeapons" : "Bow, Spear, Thrown Weapon"
