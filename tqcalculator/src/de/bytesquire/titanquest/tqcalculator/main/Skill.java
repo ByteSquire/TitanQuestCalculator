@@ -511,7 +511,7 @@ class AttributesComparator implements Comparator<String> {
 
     private static final ArrayList<String> order = new ArrayList<String>(
             Arrays.asList(new String[] { "^a${value} Second(s) Recharge", "${value} Energy Reserved", " Energy Cost",
-                    " Active Energy Cost per Second", " Second Duration", "m Radius", " Charge Levels",
+                    " Active Energy Cost per Second", "${value}% Chance to be Used", " Second Duration", "m Radius", " Charge Levels",
                     "Launches ${value} Projectile(s)", "+${value} Health", "+${value} Energy", "Bonus to all Pets:" }));
 
     public int compare(String str1, String str2) {
