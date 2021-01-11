@@ -171,21 +171,28 @@ function formatPetSkills(value, index, colour) {
     var i = 0;
     skills.forEach((key) => {
         var skill = value.petSkills[key];
+        if(value.petSkillLevels[key] === undefined){
+        //    ret += '<span class="title">' + skill.name + '</span>\n';
+        //    ret += '<br>\n';
+        //    ret += '<span class="desc">Boni depend on the points you invested</span>\n';
+        //    ret += '</td>';
+            return;
+        }
         if(i !=0 && i%4 == 0){
             ret += '<tr style="vertical-align: top">';
         }
         i++;
         ret += '<td style="min-width: fit-content">';
-        if(value.petSkillLevels[key] === undefined){
-            ret += '<span class="title">' + skill.name + '</span>\n';
-            ret += '<br>\n';
-            ret += '<span class="desc">Boni depend on the points you invested</span>\n';
-            ret += '</td>';
-            return;
-        }
         var tmpIndex = index;
         if(tmpIndex >= value.petSkillLevels[key].length)
             tmpIndex = value.petSkillLevels[key].length-1;
+        if(value.petSkillLevels[key][tmpIndex] == 0){
+            ret += '<span class="title">' + skill.name + '</span>\n';
+            ret += '<br>\n';
+            ret += '<span class="desc">Pet has not learned this skill yet</span>\n';
+            ret += '</td>';
+            return;
+        }
         ret += getPopupString(skill, value.petSkillLevels[key][tmpIndex], true);
         ret += '</td>';
     });
