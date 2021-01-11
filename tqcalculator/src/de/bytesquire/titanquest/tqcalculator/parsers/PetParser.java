@@ -54,7 +54,15 @@ public class PetParser {
 
         for (Integer i : mSkillNameIndexMap.keySet()) {
             if (mSkillLevelIndexMap.get(i) != null) {
-                mPetSkillLevels.put(mSkillNameIndexMap.get(i), mSkillLevelIndexMap.get(i));
+                boolean canLearn = false;
+                for (Integer a : mSkillLevelIndexMap.get(i)) {
+                    if (a > 0) {
+                        canLearn = true;
+                        break;
+                    }
+                }
+                if (canLearn)
+                    mPetSkillLevels.put(mSkillNameIndexMap.get(i), mSkillLevelIndexMap.get(i));
             }
         }
 
@@ -92,8 +100,8 @@ public class PetParser {
 
                     if (attributeName.startsWith("skillLevel")) {
                         Integer lvl = Integer.parseInt(value.split(";")[0]);
-                        if (lvl == 0)
-                            return;
+//                        if (lvl == 0)
+//                            return;
                         if (mSkillLevelIndexMap.containsKey(Integer.parseInt(attributeName.split("skillLevel")[1])))
                             mSkillLevelIndexMap.get(Integer.parseInt(attributeName.split("skillLevel")[1])).add(lvl);
                         else {
