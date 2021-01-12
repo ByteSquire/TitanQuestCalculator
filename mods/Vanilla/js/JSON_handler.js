@@ -35,9 +35,16 @@ function init(){
   
   if (m1) addSkills(document.getElementById("panel1"), m1);
   if (m2) addSkills(document.getElementById("panel2"), m2);
-  
+  setClassName();
   setMasteries();
   setMasteryTiers();
+}
+
+function setClassName(){
+    var titleElement = document.getElementsByTagName("title")[0];
+    var header = document.getElementById("className");
+    titleElement.innerText = titleElement.innerText.replace("ClassName", "test");
+    header.innerText = header.innerText.replace("ClassName", "test");
 }
 
 function setMasteries() {
