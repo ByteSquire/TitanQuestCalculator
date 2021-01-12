@@ -2,7 +2,7 @@
 <html onkeydown="shiftPressed(event);">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Titan Quest Calculator - ${name}</title>
+    <title>Titan Quest Calculator - ClassName</title>
 
     <link rel="stylesheet" type="text/css" href="../../css/styles.css" />
 
@@ -20,6 +20,7 @@
   </head>
 
   <body oncontextmenu="return false">
+    <h1 id="className" class="centered">ClassName</h1>
     <table class="masteryTable">
       <tr>
         <td class="panels">
