@@ -43,8 +43,21 @@ function init(){
 function setClassName(){
     var titleElement = document.getElementsByTagName("title")[0];
     var header = document.getElementById("className");
-    titleElement.innerText = titleElement.innerText.replace("ClassName", "test");
-    header.innerText = header.innerText.replace("ClassName", "test");
+    var index1 = 0;
+    var index2 = 0;
+    
+    if(m1)
+        index1 = m1_id;
+    if(m2)
+        index2 = m2_id;
+    if(index1 > index2){
+        var tmp = index1;
+        index1 = index2;
+        index2 = tmp;
+    }
+    
+    titleElement.innerText = titleElement.innerText.replace("ClassName", mod.classNames[index1][index2]);
+    header.innerText = header.innerText.replace("ClassName", mod.classNames[index1][index2]);
 }
 
 function setMasteries() {
