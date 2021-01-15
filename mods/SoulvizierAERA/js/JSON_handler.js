@@ -50,7 +50,7 @@ function setClassName(){
         index1 = m1_id;
     if(m2)
         index2 = m2_id;
-    if(index2 != 0 && index1 > index2){
+    if(index2 != 0 && Number(index1) > Number(index2)){
         var tmp = index1;
         index1 = index2;
         index2 = tmp;
