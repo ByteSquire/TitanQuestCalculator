@@ -39,8 +39,14 @@ public class ModStringsParser {
                             Stream<String> fileStream = skillReader.lines();
                             fileStream.forEach((str) -> {
                                 if (!str.isBlank())
-                                    if (str.split("=").length > 1)
-                                        tags.put(str.split("=")[0], str.split("=")[1].split("//")[0]);
+                                    if (str.split("=").length > 1) {
+                                        String key = str.split("=")[0];
+                                        String value = str.split("=")[1];
+                                        if (value.split("//").length > 0)
+                                            tags.put(key, value.split("//")[0]);
+                                        else
+                                            tags.put(key, value);
+                                    }
                             });
                         } catch (Exception e) {
                             e.printStackTrace();
