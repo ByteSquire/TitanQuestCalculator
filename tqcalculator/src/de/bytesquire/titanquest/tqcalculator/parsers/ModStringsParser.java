@@ -40,7 +40,7 @@ public class ModStringsParser {
                             fileStream.forEach((str) -> {
                                 if (!str.isBlank())
                                     if (str.split("=").length > 1)
-                                        tags.put(str.split("=")[0], str.split("=")[1]);
+                                        tags.put(str.split("=")[0], str.split("=")[1].split("//")[0]);
                             });
                         } catch (Exception e) {
                             e.printStackTrace();
