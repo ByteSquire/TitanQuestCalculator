@@ -13,7 +13,7 @@
     "10" : "Hunting"
   },
   "masteryLevels" : [ 1, 4, 10, 16, 24, 32, 40 ],
-  "classNames" : [ [ "Mastery parameters missing", null, null, null, null, null, null, null, null, null, null ], [ "Wanderer", null, "Soothsayer", "Druid", "Summoner", "Illusionist", "Guardian", "Ritualist", "Champion", "Skinchanger", "Ranger" ], [ "Theurgist", null, null, "Oracle", "Conjurer", "Warlock", "Spellbinder", "Diviner", "Spellbreaker", "Shaman ", "Bone Charmer" ], [ "Stormcaller", null, null, null, "Elementalist", "Sorcerer", "Paladin", "Prophet", "Thane", "Thunderer", "Sage" ], [ "Pyromancer", null, null, null, null, "Magician", "Juggernaut", "Evoker", "Battlemage", "Stonespeaker", "Avenger" ], [ "Rogue", null, null, null, null, null, "Corsair", "Dreamkiller", "Assassin", "Trickster", "Brigand" ], [ "Defender", null, null, null, null, null, null, "Templar", "Conqueror", "Runesmith", "Warden" ], [ "Seer", null, null, null, null, null, null, null, null, "Seidr Worker ", null ], [ "Warrior", null, null, null, null, null, null, null, null, "Berserker", "Slayer" ], [ "Runemaster", null, null, null, null, null, null, null, null, null, "Dragon Hunter" ], [ "Hunter", null, null, null, null, null, null, null, null, null, null ] ],
+  "classNames" : [ [ "Mastery parameters missing", null, null, null, null, null, null, null, null, null, null ], [ "Wanderer", null, "Soothsayer", "Druid", "Summoner", "Illusionist", "Guardian", "Ritualist", "Champion", "Skinchanger", "Ranger" ], [ "Theurgist", null, null, "Oracle", "Conjurer", "Warlock", "Spellbinder", "Diviner", "Spellbreaker", "Shaman", "Bone Charmer" ], [ "Stormcaller", null, null, null, "Elementalist", "Sorcerer", "Paladin", "Prophet", "Thane", "Thunderer", "Sage" ], [ "Pyromancer", null, null, null, null, "Magician", "Juggernaut", "Evoker", "Battlemage", "Stonespeaker", "Avenger" ], [ "Rogue", null, null, null, null, null, "Corsair", "Dreamkiller", "Assassin", "Trickster", "Brigand" ], [ "Defender", null, null, null, null, null, null, "Templar", "Conqueror", "Runesmith", "Warden" ], [ "Seer", null, null, null, null, null, null, null, null, "Seidr Worker", null ], [ "Warrior", null, null, null, null, null, null, null, null, "Berserker", "Slayer" ], [ "Runemaster", null, null, null, null, null, null, null, null, null, "Dragon Hunter" ], [ "Hunter", null, null, null, null, null, null, null, null, null, null ] ],
   "masteries" : [ {
     "name" : "Nature",
     "masteryAttributes" : {
@@ -2828,7 +2828,7 @@
       }
     }, {
       "name" : "Blade Honing",
-      "description" : "While active, this skill ensures that the blades of yourself and allies will remain razor sharp and inflict increased piercing damage.",
+      "description" : "While active, this skill ensures that any bladed weapons used by yourself and allies will remain razor sharp and inflict increased piercing damage.",
       "skillIcon" : {
         "posY" : 403,
         "posX" : 228
@@ -2973,7 +2973,7 @@
       }
     }, {
       "name" : "Open Wound",
-      "description" : "Adds a chance that weapon attacks will inflict bleeding damage when using a sword, spear, bow, or axe.",
+      "description" : "Adds a chance to inflict bleeding damage when attacking with a sharp or pointed weapon.",
       "skillIcon" : {
         "posY" : 279,
         "posX" : 228
@@ -4514,7 +4514,7 @@
     },
     "skillTiers" : [ [ {
       "name" : "Weapon Training",
-      "description" : "Years of training with the sword, axe, and club allow you to attack faster and more accurately.",
+      "description" : "Years of training with the sword, axe, and club allow you to attack faster and more accurately, and also grant some proficiency in throwing them.",
       "skillIcon" : {
         "posY" : 403,
         "posX" : 128
@@ -4582,7 +4582,7 @@
       }
     }, {
       "name" : "Dual Wield",
-      "description" : "Learn to effectively wield two weapons and perform occasional double attacks.",
+      "description" : "Learn to effectively wield two weapons and perform occasional double attacks or throws.",
       "skillIcon" : {
         "posY" : 341,
         "posX" : 128
@@ -5045,7 +5045,7 @@
       "MaxLevel" : 40
     },
     "skillTiers" : [ [ {
-      "name" : "Life Rune",
+      "name" : "Rune of Life",
       "description" : "Cast the Rune of Life on yourself or allies to protect against dark magic and increase stamina.",
       "skillIcon" : {
         "posY" : 403,
@@ -5066,7 +5066,7 @@
       }
     }, {
       "name" : "Runeword: Feather",
-      "description" : "This basic engraving every Runemaster learns reduces the weight of a weapon or shield, letting them wield even heavy blades with grace and precision.",
+      "description" : "This basic engraving reduces the weight of a weapon or shield, letting a Runemaster wield even heavy blades with grace and precision.",
       "skillIcon" : {
         "posY" : 403,
         "posX" : 328
@@ -5079,7 +5079,7 @@
       }
     }, {
       "name" : "Rune Weapon",
-      "description" : "In the rush of glorious combat, every strike pushes your mind further into an ecstatic state, increasing the force of your magical abilities. {^y}Assign this skill to your left mouse button.  {^f}Elemental% and ADctH apply twice",
+      "description" : "In the rush of glorious combat, every strike you land pushes your mind further into an ecstatic state, increasing the force of all magical abilities.  {^n}{^y}Assign this skill to your left mouse button.",
       "skillIcon" : {
         "posY" : 403,
         "posX" : 128
@@ -5097,7 +5097,7 @@
       }
     } ], [ {
       "name" : "Thunder Strike",
-      "description" : "An arcane weapon technique that channels the power of a thunderbolt, hitting mutliple enemies with staggering force.",
+      "description" : "An arcane weapon technique that channels the power of thunder, hitting multiple enemies with staggering force.",
       "skillIcon" : {
         "posY" : 341,
         "posX" : 428
@@ -5123,7 +5123,7 @@
       }
     }, {
       "name" : "Runic Mines",
-      "description" : "Casts a number of defensive runes on the ground around you that will detonate if enemies step on them. {^f}Currently pet workaround, needs projectiles.",
+      "description" : "Cast a circle of defensive runes on the ground around you that will detonate if enemies step on them.",
       "skillIcon" : {
         "posY" : 341,
         "posX" : 528
@@ -5142,7 +5142,7 @@
       }
     }, {
       "name" : "Magical Charge",
-      "description" : "The power building up as you fight ignites your runed weapons with Elemental magic and burns anyone who touches you. {^f}Doubled",
+      "description" : "The power building up as you fight ignites your runed weapons with Elemental magic and strikes out at anyone who touches you.",
       "parent" : [ "Rune Weapon" ],
       "skillIcon" : {
         "posY" : 341,
@@ -5161,7 +5161,7 @@
       }
     }, {
       "name" : "Sacred Rage",
-      "description" : "Being wounded in battle only accelerates the Berserker's transition into a frenzy, making enemies who failed to kill them soon regret the attempt. {^y}Remains active while health is low.",
+      "description" : "Being wounded in battle only accelerates your transition into a frenzy, making enemies who failed to land a killing blow soon regret the attempt. {^n}{^y}Remains active if health remains low.",
       "skillIcon" : {
         "posY" : 341,
         "posX" : 228
@@ -5179,7 +5179,7 @@
       }
     } ], [ {
       "name" : "Unleash",
-      "description" : "Unleash the full force of the attack to electrocute and daze enemies across a wide area.",
+      "description" : "Unleash the full force of the thunderbolt to electrocute and daze enemies across a wide area.",
       "parent" : [ "Thunder Strike" ],
       "skillIcon" : {
         "posY" : 279,
@@ -5219,7 +5219,7 @@
       }
     }, {
       "name" : "Runeword: Explode",
-      "description" : "Weapons inscribed with this powerful rune may cause a successful blow to explode outward, striking multiple enemies.",
+      "description" : "Weapons inscribed with this powerful rune may cause a successful hit to blast outward, striking multiple enemies.",
       "skillIcon" : {
         "posY" : 279,
         "posX" : 328
@@ -5243,7 +5243,7 @@
       }
     }, {
       "name" : "Frightening Power",
-      "description" : "Entering the rage lets out a terrifying scream that will send lesser enemies running. {^f}Bugged - should trigger when rage activates.",
+      "description" : "Entering the state of rage lets out a terrifying scream that will send lesser enemies running.",
       "parent" : [ "Sacred Rage" ],
       "skillIcon" : {
         "posY" : 279,
@@ -5283,7 +5283,7 @@
       }
     }, {
       "name" : "Menhir Wall",
-      "description" : "Summon a wall of lesser rune stones to block and distract enemies. {^f}Should always be perpendicular to cast vector.",
+      "description" : "Summons a barrier of lesser rune stones to block and distract enemies.",
       "skillIcon" : {
         "posY" : 279,
         "posX" : 628
@@ -5302,7 +5302,7 @@
       }
     } ], [ {
       "name" : "Energy Drain",
-      "description" : "Advanced inscriptions on your weapon make it actively drain an enemy's energy, fueling yours while weakening their resolve. {^f}Doubled",
+      "description" : "Advanced inscriptions on your weapon make it actively drain the enemy's energy, fueling your own while weakening their resolve.",
       "parent" : [ "Rune Weapon" ],
       "skillIcon" : {
         "posY" : 217,
@@ -5344,7 +5344,7 @@
       }
     }, {
       "name" : "Runeword: Burn",
-      "description" : "Makes your strikes explode with intense heat and projectiles break into burning fragments.",
+      "description" : "Makes your strikes explode with intense heat, and projectiles break into burning fragments.",
       "parent" : [ "Runeword: Explode" ],
       "skillIcon" : {
         "posY" : 217,
@@ -5369,7 +5369,7 @@
       }
     }, {
       "name" : "Seal of Fate",
-      "description" : "Take a few moments to draw an intricate sigil on the ground that will finally explode with tremendous force.",
+      "description" : "Take a few moments to draw an intricate sigil on the ground that will then explode with tremendous force.",
       "skillIcon" : {
         "posY" : 217,
         "posX" : 428
@@ -5401,7 +5401,7 @@
       }
     } ], [ {
       "name" : "Freezing Mines",
-      "description" : "Enhances the aspect of cold on your Runic Mines, causing enemies to be slowed and frozen.",
+      "description" : "Enhances the aspect of Cold on your Runic Mines, causing enemies to be slowed and frozen.",
       "parent" : [ "Runic Mines" ],
       "skillIcon" : {
         "posY" : 155,
@@ -5440,7 +5440,7 @@
       }
     }, {
       "name" : "Reckless Offense",
-      "description" : "Those who follow the way of the Berserkir fight with the mind of an enraged animal, and will forego the tactical considerations of a shield to wildly attack with weapons in both hands.",
+      "description" : "Those who follow the way of the Berserkir fight with the mind of an enraged animal, and will forego the tactical subtleties of a shield to wildly attack with weapons in both hands. {^n}{^y}Allows and requires dual wielding.",
       "skillIcon" : {
         "posY" : 155,
         "posX" : 228
@@ -5455,7 +5455,7 @@
       }
     }, {
       "name" : "Runeword: Absorb",
-      "description" : "Enchants your shield or magic staff with the ability to absorb the energy of enemy blows and spells, adding it to your own.",
+      "description" : "Enchants a shield or a staff with the ability to absorb the energy of enemy blows and spells, adding it to your own.",
       "skillIcon" : {
         "posY" : 155,
         "posX" : 328
@@ -5478,7 +5478,7 @@
       }
     } ], [ {
       "name" : "Transmutation",
-      "description" : "A master Runesmith is able to convert the very nature of their weapon, turning mere metal into a manifestation of Elemental magic.",
+      "description" : "A master Runesmith is able to convert the very nature of their weapon, turning mere metal into a manifestation of Elemental magic. {^n}{^y}Reduces reliance on strength in favor of intelligence.",
       "parent" : [ "Rune Weapon" ],
       "skillIcon" : {
         "posY" : 93,
@@ -5491,7 +5491,7 @@
       }
     }, {
       "name" : "Energy Armor",
-      "description" : "Weave vast amounts of Energy into a layer of magical armor that shields you from physical attacks. {^f}PBAoE - should self-target automatically",
+      "description" : "Weave vast amounts of Energy into a layer of magical armor for yourself and nearby allies that protects against physical attacks.",
       "protectsAgainst" : [ " Piercing Damage", " Bleeding Damage", " Physical Damage" ],
       "skillIcon" : {
         "posY" : 93,
@@ -5508,7 +5508,7 @@
       }
     }, {
       "name" : "Guardian Stones",
-      "description" : "Summon a triangle of greater rune stones which will magically lash out at any hostile entering their sacred ground.",
+      "description" : "Summons a Treudd of greater rune stones which will magically lash out at any hostiles entering their sacred ground.",
       "doesNotIncludeRacialDamage" : true,
       "parent" : [ "Menhir Wall" ],
       "skillIcon" : {
@@ -5599,7 +5599,7 @@
       }
     }, {
       "name" : "Aftershock",
-      "description" : "The shock of the explosion leaves even those who survive it battered, bleeding and hardly able to fight.",
+      "description" : "The shock of the explosion leaves even those who survive battered and vulnerable.",
       "parent" : [ "Seal of Fate" ],
       "skillIcon" : {
         "posY" : 93,
@@ -5771,7 +5771,7 @@
     },
     "skillTiers" : [ [ {
       "name" : "Wood Lore",
-      "description" : "Central to survival in the wilderness is the ability to hunt with bow and spear.  Great familiarity with these weapons allows you to wield them with exceptional speed and grace.",
+      "description" : "Central to survival in the wilderness is the ability to hunt with bow, spear or thrown objects.  Great familiarity with these traditional weapons allows you to wield them with exceptional speed and grace.",
       "skillIcon" : {
         "posY" : 403,
         "posX" : 628
@@ -5841,7 +5841,7 @@
       }
     }, {
       "name" : "Marksmanship",
-      "description" : "Marksmanship skill allows you to create and fire arrows that fly faster and increase pierce damage.  {^y}Assign this skill to your left mouse button.",
+      "description" : "Marksmanship skill allows you to fire or throw projectiles that fly faster and increase pierce damage.  {^n}{^y}Assign this skill to your left mouse button.",
       "skillIcon" : {
         "posY" : 341,
         "posX" : 328
@@ -6184,7 +6184,7 @@
       }
     }, {
       "name" : "Volley",
-      "description" : "A combat technique that uses the spear or bow to rapidly strike three times.",
+      "description" : "A combat technique that uses the spear, bow or throwing weapons to rapidly strike three times.",
       "skillIcon" : {
         "posY" : 93,
         "posX" : 428
