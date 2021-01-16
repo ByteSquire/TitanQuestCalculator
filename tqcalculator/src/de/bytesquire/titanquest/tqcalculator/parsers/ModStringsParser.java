@@ -10,22 +10,35 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
-import java.util.Map;
 import java.util.stream.Stream;
 
 import org.mozilla.universalchardet.UniversalDetector;
 
+import de.bytesquire.titanquest.tqcalculator.main.Control;
+
 public class ModStringsParser {
 
     private LinkedHashMap<String, String> tags;
+    private LinkedHashMap<String, String> defaultTags;
     private ArrayList<File> mModStrings;
 
     public ModStringsParser(String aModStringsPath) {
         tags = new LinkedHashMap<>();
         mModStrings = new ArrayList<File>();
+        defaultTags = new LinkedHashMap<>();
 
+        tags = parseTextFile(aModStringsPath, true);
+        defaultTags = parseTextFile(Control.DATABASES_DIR + "Vanilla/text/");
+    }
+
+    private LinkedHashMap<String, String> parseTextFile(String filePath) {
+        return parseTextFile(filePath, false);
+    }
+
+    private LinkedHashMap<String, String> parseTextFile(String filePath, boolean save) {
+        LinkedHashMap<String, String> _tags = new LinkedHashMap<String, String>();
         try {
-            DirectoryStream<Path> modStringsDir = Files.newDirectoryStream(Path.of(aModStringsPath));
+            DirectoryStream<Path> modStringsDir = Files.newDirectoryStream(Path.of(filePath));
 
             modStringsDir.forEach((textFile) -> {
                 if (textFile != null) {
@@ -43,9 +56,9 @@ public class ModStringsParser {
                                         String key = str.split("=")[0];
                                         String value = str.split("=")[1];
                                         if (value.split("//").length > 0)
-                                            tags.put(key, value.split("//")[0]);
+                                            _tags.put(key, value.split("//")[0]);
                                         else
-                                            tags.put(key, value);
+                                            _tags.put(key, value);
                                     }
                             });
                         } catch (Exception e) {
@@ -54,20 +67,24 @@ public class ModStringsParser {
                     } catch (IOException e1) {
                         e1.printStackTrace();
                     }
-                    mModStrings.add(textFile.toFile());
+                    if (save)
+                        mModStrings.add(textFile.toFile());
                 }
             });
         } catch (IOException e1) {
             e1.printStackTrace();
         }
-
-    }
-
-    public Map<String, String> getTags() {
-        return tags;
+        return _tags;
     }
 
     public ArrayList<File> getModStrings() {
         return mModStrings;
+    }
+
+    public String getMatch(String element) {
+        if (tags.containsKey(element))
+            return tags.get(element);
+        else
+            return defaultTags.get(element);
     }
 }
