@@ -65,74 +65,79 @@ public class Mod {
 
     private void initClassNames() {
         mClassNames = new String[11][11];
-        Map<String, String> modStrings = mMSParser.getTags();
 
         mClassNames[0][0] = "Mastery parameters missing";
-        
-        mClassNames[1][0] = modStrings.get("tagCClass02");
-        mClassNames[2][0] = modStrings.get("tagCClass01");
-        mClassNames[3][0] = modStrings.get("tagCClass05");
-        mClassNames[4][0] = modStrings.get("tagCClass06");
-        mClassNames[5][0] = modStrings.get("tagCClass03");
-        mClassNames[6][0] = modStrings.get("tagCClass07");
-        mClassNames[7][0] = modStrings.get("xtagCharacterClass01");
-        mClassNames[8][0] = modStrings.get("tagCClass08");
-        mClassNames[9][0] = modStrings.get("x2tagCClass01");
-        mClassNames[10][0] = modStrings.get("tagCClass04");
 
-        mClassNames[1][2] = modStrings.get("tagCClass36");
-        mClassNames[1][3] = modStrings.get("tagCClass28");
-        mClassNames[1][4] = modStrings.get("tagCClass23");
-        mClassNames[1][5] = modStrings.get("tagCClass35");
-        mClassNames[1][6] = modStrings.get("tagCClass17");
-        mClassNames[1][7] = modStrings.get("xtagCharacterClass08");
-        mClassNames[1][8] = modStrings.get("tagCClass10");
-        mClassNames[1][9] = modStrings.get("x2tagCClass08");
-        mClassNames[1][10] = modStrings.get("tagCClass32");
+        setIfNotNull(mClassNames, 1, 0, "tagCClass02");
+        setIfNotNull(mClassNames, 2, 0, "tagCClass01");
+        setIfNotNull(mClassNames, 3, 0, "tagCClass05");
+        setIfNotNull(mClassNames, 4, 0, "tagCClass06");
+        setIfNotNull(mClassNames, 5, 0, "tagCClass03");
+        setIfNotNull(mClassNames, 6, 0, "tagCClass07");
+        setIfNotNull(mClassNames, 7, 0, "xtagCharacterClass01");
+        setIfNotNull(mClassNames, 8, 0, "tagCClass08");
+        setIfNotNull(mClassNames, 9, 0, "x2tag_class_rm_rm");
+        setIfNotNull(mClassNames, 10, 0, "tagCClass04");
 
-        mClassNames[2][3] = modStrings.get("tagCClass27");
-        mClassNames[2][4] = modStrings.get("tagCClass22");
-        mClassNames[2][5] = modStrings.get("tagCClass34");
-        mClassNames[2][6] = modStrings.get("tagCClass16");
-        mClassNames[2][7] = modStrings.get("xtagCharacterClass09");
-        mClassNames[2][8] = modStrings.get("tagCClass09");
-        mClassNames[2][9] = modStrings.get("x2tagCClass09");
-        mClassNames[2][10] = modStrings.get("tagCClass31");
+        setIfNotNull(mClassNames, 1, 2, "tagCClass36");
+        setIfNotNull(mClassNames, 1, 3, "tagCClass28");
+        setIfNotNull(mClassNames, 1, 4, "tagCClass23");
+        setIfNotNull(mClassNames, 1, 5, "tagCClass35");
+        setIfNotNull(mClassNames, 1, 6, "tagCClass17");
+        setIfNotNull(mClassNames, 1, 7, "xtagCharacterClass08");
+        setIfNotNull(mClassNames, 1, 8, "tagCClass10");
+        setIfNotNull(mClassNames, 1, 9, "x2tag_class_nature_rm");
+        setIfNotNull(mClassNames, 1, 10, "tagCClass32");
 
-        mClassNames[3][4] = modStrings.get("tagCClass26");
-        mClassNames[3][5] = modStrings.get("tagCClass29");
-        mClassNames[3][6] = modStrings.get("tagCClass20");
-        mClassNames[3][7] = modStrings.get("xtagCharacterClass05");
-        mClassNames[3][8] = modStrings.get("tagCClass13");
-        mClassNames[3][9] = modStrings.get("x2tagCClass05");
-        mClassNames[3][10] = modStrings.get("tagCClass30");
+        setIfNotNull(mClassNames, 2, 3, "tagCClass27");
+        setIfNotNull(mClassNames, 2, 4, "tagCClass22");
+        setIfNotNull(mClassNames, 2, 5, "tagCClass34");
+        setIfNotNull(mClassNames, 2, 6, "tagCClass16");
+        setIfNotNull(mClassNames, 2, 7, "xtagCharacterClass09");
+        setIfNotNull(mClassNames, 2, 8, "tagCClass09");
+        setIfNotNull(mClassNames, 2, 9, "x2tag_class_spirit_rm");
+        setIfNotNull(mClassNames, 2, 10, "tagCClass31");
 
-        mClassNames[4][5] = modStrings.get("tagCClass24");
-        mClassNames[4][6] = modStrings.get("tagCClass21");
-        mClassNames[4][7] = modStrings.get("xtagCharacterClass04");
-        mClassNames[4][8] = modStrings.get("tagCClass14");
-        mClassNames[4][9] = modStrings.get("x2tagCClass04");
-        mClassNames[4][10] = modStrings.get("tagCClass25");
+        setIfNotNull(mClassNames, 3, 4, "tagCClass26");
+        setIfNotNull(mClassNames, 3, 5, "tagCClass29");
+        setIfNotNull(mClassNames, 3, 6, "tagCClass20");
+        setIfNotNull(mClassNames, 3, 7, "xtagCharacterClass05");
+        setIfNotNull(mClassNames, 3, 8, "tagCClass13");
+        setIfNotNull(mClassNames, 3, 9, "x2tag_class_storm_rm");
+        setIfNotNull(mClassNames, 3, 10, "tagCClass30");
 
-        mClassNames[5][6] = modStrings.get("tagCClass18");
-        mClassNames[5][7] = modStrings.get("xtagCharacterClass07");
-        mClassNames[5][8] = modStrings.get("tagCClass11");
-        mClassNames[5][9] = modStrings.get("x2tagCClass07");
-        mClassNames[5][10] = modStrings.get("tagCClass33");
+        setIfNotNull(mClassNames, 4, 5, "tagCClass24");
+        setIfNotNull(mClassNames, 4, 6, "tagCClass21");
+        setIfNotNull(mClassNames, 4, 7, "xtagCharacterClass04");
+        setIfNotNull(mClassNames, 4, 8, "tagCClass14");
+        setIfNotNull(mClassNames, 4, 9, "x2tag_class_earth_rm");
+        setIfNotNull(mClassNames, 4, 10, "tagCClass25");
 
-        mClassNames[6][7] = modStrings.get("xtagCharacterClass03");
-        mClassNames[6][8] = modStrings.get("tagCClass15");
-        mClassNames[6][9] = modStrings.get("x2tagCClass03");
-        mClassNames[6][10] = modStrings.get("tagCClass19");
+        setIfNotNull(mClassNames, 5, 6, "tagCClass18");
+        setIfNotNull(mClassNames, 5, 7, "xtagCharacterClass07");
+        setIfNotNull(mClassNames, 5, 8, "tagCClass11");
+        setIfNotNull(mClassNames, 5, 9, "x2tag_class_stealth_rm");
+        setIfNotNull(mClassNames, 5, 10, "tagCClass33");
 
-        mClassNames[7][8] = modStrings.get("xtagCClass02");
-        mClassNames[7][9] = modStrings.get("x2tagCClass10");
-        mClassNames[7][10] = modStrings.get("xtagCClass06");
+        setIfNotNull(mClassNames, 6, 7, "xtagCharacterClass03");
+        setIfNotNull(mClassNames, 6, 8, "tagCClass15");
+        setIfNotNull(mClassNames, 6, 9, "x2tag_class_defense_rm");
+        setIfNotNull(mClassNames, 6, 10, "tagCClass19");
 
-        mClassNames[8][9] = modStrings.get("x2tagCClass02");
-        mClassNames[8][10] = modStrings.get("tagCClass12");
+        setIfNotNull(mClassNames, 7, 8, "xtagCClass02");
+        setIfNotNull(mClassNames, 7, 9, "x2tag_class_dream_rm");
+        setIfNotNull(mClassNames, 7, 10, "xtagCClass06");
 
-        mClassNames[9][10] = modStrings.get("x2tagCClass06");
+        setIfNotNull(mClassNames, 8, 9, "x2tag_class_warfare_rm");
+        setIfNotNull(mClassNames, 8, 10, "tagCClass12");
+
+        setIfNotNull(mClassNames, 9, 10, "x2tag_class_hunting_rm");
+    }
+
+    private void setIfNotNull(String[][] arr, int index0, int index1, String element) {
+        String match = mMSParser.getMatch(element);
+        if (match != null)
+            arr[index0][index1] = match;
     }
 
     public List<Mastery> getMasteries() {
