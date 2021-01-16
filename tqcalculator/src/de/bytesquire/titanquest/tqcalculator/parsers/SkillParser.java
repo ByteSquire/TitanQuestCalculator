@@ -87,7 +87,7 @@ public class SkillParser {
                                 Stream<String> parentFileStream = parentReader.lines();
                                 parentFileStream.filter(str1 -> str1.split(",")[0].equals("skillDisplayName"))
                                         .forEach(name -> {
-                                            mParentSkill.add(mMSParser.getTags().get(name.split(",")[1]));
+                                            mParentSkill.add(mMSParser.getMatch(name.split(",")[1]));
                                         });
                             }
                         } catch (FileNotFoundException e) {

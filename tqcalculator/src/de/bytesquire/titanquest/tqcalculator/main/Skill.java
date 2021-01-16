@@ -60,11 +60,11 @@ public class Skill {
         mSkillParser = new SkillParser(aSkill, aParentPath, aMSParser, aIconsParser);
 
         String name;
-        if ((name = aMSParser.getTags().get(mSkillParser.getSkillTag())) != null)
+        if ((name = aMSParser.getMatch(mSkillParser.getSkillTag())) != null)
             mSkillName = name;
         else
             mSkillName = mSkillParser.getSkillTag();
-        mSkillDescription = aMSParser.getTags().get(mSkillParser.getSkillDescriptionTag());
+        mSkillDescription = aMSParser.getMatch(mSkillParser.getSkillDescriptionTag());
         mSkillIcon = mSkillParser.getSkillIcon();
         mRace = mSkillParser.getRace();
 
@@ -511,8 +511,9 @@ class AttributesComparator implements Comparator<String> {
 
     private static final ArrayList<String> order = new ArrayList<String>(
             Arrays.asList(new String[] { "^a${value} Second(s) Recharge", "${value} Energy Reserved", " Energy Cost",
-                    " Active Energy Cost per Second", "${value}% Chance to be Used", " Second Duration", "m Radius", " Charge Levels",
-                    "Launches ${value} Projectile(s)", "+${value} Health", "+${value} Energy", "Bonus to all Pets:" }));
+                    " Active Energy Cost per Second", "${value}% Chance to be Used", " Second Duration", "m Radius",
+                    " Charge Levels", "Launches ${value} Projectile(s)", "+${value} Health", "+${value} Energy",
+                    "Bonus to all Pets:" }));
 
     public int compare(String str1, String str2) {
         int index1 = 0;
