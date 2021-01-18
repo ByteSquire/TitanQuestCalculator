@@ -1784,12 +1784,12 @@
       },
       "attributes" : {
         "${value} Energy Reserved" : 25.0,
-        " Lightning Retaliation" : {
+        " Lightning Damage Retaliation" : {
           "value0" : 15.0,
           "value1" : {
             "min" : [ 54.0, 66.0, 78.0, 90.0, 102.0, 114.0, 126.0, 138.0, 150.0, 162.0, 174.0, 186.0, 200.0, 216.0, 233.0, 251.0 ]
           },
-          "key" : "${value0}% Chance of ${value1} Lightning Retaliation"
+          "key" : "${value0}% Chance of ${value1} Lightning Damage Retaliation"
         },
         "+${value}% Electrical Burn Damage " : [ 10.0, 16.0, 22.0, 28.0, 34.0, 40.0, 46.0, 52.0, 58.0, 64.0, 70.0, 76.0, 82.0, 88.0, 94.0, 100.0 ],
         "+${value}% Lightning Damage" : [ 10.0, 16.0, 22.0, 28.0, 34.0, 40.0, 46.0, 52.0, 58.0, 64.0, 70.0, 76.0, 82.0, 88.0, 94.0, 100.0 ],
@@ -2642,7 +2642,7 @@
       "attributes" : {
         " Energy Cost" : [ 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0 ],
         " Second Duration" : 2.0,
-        " Fire Retaliation" : {
+        " Fire Damage Retaliation" : {
           "min" : [ 6.0, 10.0, 15.0, 19.0, 23.0, 28.0, 32.0, 36.0, 41.0, 45.0, 49.0, 54.0 ]
         },
         "MaxLevel" : 8,
@@ -5153,7 +5153,7 @@
         " Elemental Damage" : {
           "min" : [ 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0, 51.0, 54.0, 57.0, 60.0, 63.0 ]
         },
-        " Elemental Retaliation" : {
+        " Elemental Damage Retaliation" : {
           "min" : [ 12.0, 18.0, 24.0, 30.0, 36.0, 42.0, 48.0, 54.0, 60.0, 66.0, 72.0, 78.0, 84.0, 90.0, 96.0, 102.0, 108.0, 114.0, 120.0, 126.0 ]
         },
         "MaxLevel" : 16,
@@ -5687,7 +5687,7 @@
           },
           "key" : "${value0}% Chance of ${value1} Electrical Burn Damage"
         },
-        " Elemental Retaliation" : {
+        " Elemental Damage Retaliation" : {
           "min" : [ 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0 ]
         },
         " Frostburn Damage" : {
