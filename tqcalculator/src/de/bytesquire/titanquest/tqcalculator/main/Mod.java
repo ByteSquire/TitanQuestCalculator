@@ -124,9 +124,9 @@ public class Mod {
         setIfNotNull(mClassNames, 6, 9, "x2tag_class_defense_rm");
         setIfNotNull(mClassNames, 6, 10, "tagCClass19");
 
-        setIfNotNull(mClassNames, 7, 8, "xtagCClass02");
+        setIfNotNull(mClassNames, 7, 8, "xtagCharacterClass02");
         setIfNotNull(mClassNames, 7, 9, "x2tag_class_dream_rm");
-        setIfNotNull(mClassNames, 7, 10, "xtagCClass06");
+        setIfNotNull(mClassNames, 7, 10, "xtagCharacterClass06");
 
         setIfNotNull(mClassNames, 8, 9, "x2tag_class_warfare_rm");
         setIfNotNull(mClassNames, 8, 10, "tagCClass12");
