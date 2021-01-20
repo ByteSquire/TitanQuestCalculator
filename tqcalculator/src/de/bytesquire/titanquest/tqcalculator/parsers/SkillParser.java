@@ -227,6 +227,9 @@ public class SkillParser {
         case "headVelocity":
         case "tailVelocity":
         case "skillProjectileTargetGroundOnly":
+        case "numRings":
+        case "distanceIncrement":
+        case "spacingAngle":
             return true;
         default:
             return false;
