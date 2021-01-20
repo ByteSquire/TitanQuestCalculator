@@ -1,6 +1,6 @@
 package de.bytesquire.titanquest.tqcalculator.main;
 
-public class AttributeWithSecondValue {
+public class AttributeWithSecondValue implements HasKey{
 
     private Object value0;
     private Object value1;
@@ -14,6 +14,7 @@ public class AttributeWithSecondValue {
         return value1;
     }
 
+    @Override
     public String getKey() {
         if (value0 == null || value1 == null)
             return null;

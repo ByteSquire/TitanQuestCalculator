@@ -8,7 +8,7 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 
 @JsonIgnoreProperties({ "key" })
 @JsonInclude(Include.NON_NULL)
-public class ChanceBasedAttributes {
+public class ChanceBasedAttributes implements HasKey{
 
     protected Object chance;
     protected String key;
@@ -22,6 +22,7 @@ public class ChanceBasedAttributes {
         return chance;
     }
 
+    @Override
     public String getKey() {
         return key;
     }

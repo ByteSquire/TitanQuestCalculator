@@ -7,6 +7,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.Map.Entry;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -495,11 +496,11 @@ public class Skill {
     }
 
     private Map<String, Object> sortAttributes() {
-        ArrayList<String> entries = new ArrayList<String>(mSkillAttributes.keySet());
+        ArrayList<Entry<String, Object>> entries = new ArrayList<>(mSkillAttributes.entrySet());
         Collections.sort(entries, new AttributesComparator());
         Map<String, Object> sortedMap = new LinkedHashMap<String, Object>();
-        for (String entry : entries) {
-            sortedMap.put(entry, mSkillAttributes.get(entry));
+        for (Entry<String, Object> entry : entries) {
+            sortedMap.put(entry.getKey(), entry.getValue());
         }
 
         return sortedMap;
@@ -507,23 +508,46 @@ public class Skill {
 
 }
 
-class AttributesComparator implements Comparator<String> {
+class AttributesComparator implements Comparator<Entry<String, Object>> {
 
     private static final ArrayList<String> order = new ArrayList<String>(
             Arrays.asList(new String[] { "^a${value} Second(s) Recharge", "${value} Energy Reserved", " Energy Cost",
                     " Active Energy Cost per Second", "${value}% Chance to be Used", " Second Duration", "m Radius",
                     " Charge Levels", "Launches ${value} Projectile(s)", "+${value} Health", "+${value} Energy",
-                    "Bonus to all Pets:" }));
+                    "+${value} Strength", "+${value} Intelligence", "+${value} Dexterity", "+${value}% Strength",
+                    "+${value}% Intelligence", "+${value}% Dexterity" }));
 
-    public int compare(String str1, String str2) {
+    private static final ArrayList<String> orderBottomUp = new ArrayList<String>(
+            Arrays.asList(new String[] { "Bonus to all Pets:", "${value}% Chance for one of the following:",
+                    "${value}% Chance for all of the following:" }));
+
+    public int compare(Entry<String, Object> entry1, Entry<String, Object> entry2) {
+        String str1 = entry1.getKey();
+        String str2 = entry2.getKey();
+
+        if (entry1.getValue() instanceof HasKey) {
+            String tmp = ((HasKey) entry1.getValue()).getKey();
+            if (tmp != null)
+                str1 = tmp;
+        }
+        if (entry2.getValue() instanceof HasKey) {
+            String tmp = ((HasKey) entry2.getValue()).getKey();
+            if (tmp != null)
+                str2 = tmp;
+        }
+
         int index1 = 0;
         int index2 = 0;
         if (order.indexOf(str1) > -1)
             index1 = order.size() - order.indexOf(str1);
         if (order.indexOf(str2) > -1)
             index2 = order.size() - order.indexOf(str2);
+        if (orderBottomUp.indexOf(str1) > -1)
+            index1 = (-1) * (orderBottomUp.size() - orderBottomUp.indexOf(str1));
+        if (orderBottomUp.indexOf(str2) > -1)
+            index2 = (-1) * (orderBottomUp.size() - orderBottomUp.indexOf(str2));
         if (index1 == 0 && index2 == 0)
-            return str1.compareTo(str2);
+            return str1.replaceAll("\\$\\{value[0-1]\\}", "").compareTo(str2.replaceAll("\\$\\{value[0-1]\\}", ""));
         return index2 - index1;
     }
 
