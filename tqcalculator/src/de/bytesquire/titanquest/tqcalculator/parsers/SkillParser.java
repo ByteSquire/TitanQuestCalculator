@@ -75,7 +75,7 @@ public class SkillParser {
                         .replace("projectile", "Projectile").replace("retaliation", "Retaliation")
                         .replace("explosion", "Explosion").replace("racial", "Racial").replace("spark", "Spark")
                         .replace("spawnObjects", "SkillPet").replace("damage", "Damage").replace("life", "Life")
-                        .replace("numProjectiles", "ProjectileNumber");
+                        .replace("numProjectiles", "ProjectileNumber").replace("RatioAdder", "Modifier");
 
                 if (attributeName.startsWith("skill")) {
                     if (attributeName.equals("skillDependancy")) {
