@@ -53,7 +53,7 @@ function formatChanceBasedAttributes(key, value, index){
         ret += '<span>' + getAttributeString(attrKey, value.values[attrKey], index) + '</span>\n';
         ret += '<br>\n';
     });
-    ret = ret.substring(0, ret.length-5);
+    //ret = ret.substring(0, ret.length-5);
     return ret;
 }
 
