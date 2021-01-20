@@ -379,7 +379,7 @@ public class Skill {
                 descKey = "${value1}" + key;
             else
                 descKey = key.replace("value", "value1");
-            tmp.setKey("${value0}% Chance of: " + descKey);
+            tmp.setKey("${value0}% Chance of " + descKey);
             mSkillAttributes.put(key, tmp);
         }
     }
