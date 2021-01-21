@@ -98,7 +98,7 @@
         </td>
         <td class="infos">
           <div id="stats">
-            <table>
+            <table class="tableWithSpacing">
               <tr>
                 <td>Level required:</td>
                 <td><div id="lvl">1</div></td>
@@ -124,6 +124,8 @@
               <tr>
                 <td><br></td>
               </tr>
+            </table>
+            <table>
               <tr>
                 <td>Quest Skill Points:</td>
                 <td>
@@ -138,9 +140,9 @@
                     </select>
                 </td>
               </tr>
-              <tr>
-                <td><br></td>
-              </tr>
+            </table>
+            <br>
+            <table>
               <tr>
                 <td><span style="color: green; font-weight: bold">Controls:</span></td>
               </tr>
