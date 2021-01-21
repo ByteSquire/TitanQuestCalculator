@@ -224,16 +224,15 @@
   left: 3%;
 }
 
-#pop
-{
-	position: absolute;
-	border: 1px solid #CCCC00;
-	background-color: #000000;
-	padding: 5px;
-	filter: alpha(opacity=90); /* IE's opacity*/
-	opacity: 0.90;
-	z-index: 200;
-	font-size: max(14px, 0.75vw);
+#pop {
+  position: absolute;
+  border: 1px solid #cccc00;
+  background-color: #000000;
+  padding: 5px;
+  filter: alpha(opacity=90); /* IE's opacity*/
+  opacity: 0.9;
+  z-index: 200;
+  font-size: max(14px, 0.75vw);
   height: min-content;
   width: max-content;
   max-width: 40%;
@@ -245,27 +244,27 @@
 }
 
 .desc {
-
   color: white;
 }
 
-.nextLevel{
-
+.nextLevel {
   color: white;
 }
 
-.skillAttribute{
-  
+.skillAttribute {
   color: white;
 }
 
-.bar
-{
+.bar {
   background-image: url("../MasteryPage/images/masteries/panel/bar.jpg");
   background-size: 100%;
   position: absolute;
-	bottom: 15.5%;
-	left: 5%;
-	width: 3.2%;
+  bottom: 15.5%;
+  left: 5%;
+  width: 3.2%;
   height: 0%;
+}
+
+.tableWithSpacing {
+  border-spacing: 10px;
 }
