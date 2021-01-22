@@ -17,6 +17,7 @@
     <script type="text/javascript" src="js/skillPlusButton_handler.js"></script>
     <script type="text/javascript" src="js/attribute_parser.js"></script>
     <script type="text/javascript" src="js/resetMastery_handler.js"></script>
+    <script type="text/javascript" src="js/skillConnector.js"></script>
   </head>
 
   <body oncontextmenu="return false">
