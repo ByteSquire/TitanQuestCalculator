@@ -280,6 +280,9 @@ public class Skill {
         } else if (key.startsWith("pet") || key.startsWith("SkillPet")) {
             if (AttributeNameParser.getMatch(key.replace("pet", "").replace("SkillPet", "")) != null)
                 key = AttributeNameParser.getMatch(key.replace("pet", "").replace("SkillPet", ""));
+        } else if (key.equals("onHitActivationChance")) {
+            if (AttributeNameParser.getMatch("ActivationChance") != null)
+                key = AttributeNameParser.getMatch("ActivationChance");
         } else if (key.endsWith("Chance") && !key.equals("projectilePiercingChance")) {
             if (AttributeNameParser.getMatch(key.substring(0, key.length() - "Chance".length())) != null)
                 key = AttributeNameParser.getMatch(key.substring(0, key.length() - "Chance".length()));
@@ -510,12 +513,12 @@ public class Skill {
 
 class AttributesComparator implements Comparator<Entry<String, Object>> {
 
-    private static final ArrayList<String> order = new ArrayList<String>(
-            Arrays.asList(new String[] { "^a${value} Second(s) Recharge", "${value} Energy Reserved", " Energy Cost",
-                    " Active Energy Cost per Second", "${value}% Chance to be Used", " Second Duration", "m Radius",
-                    " Charge Levels", "Launches ${value} Projectile(s)", "+${value} Health", "+${value} Energy",
-                    "+${value} Strength", "+${value} Intelligence", "+${value} Dexterity", "+${value}% Strength",
-                    "+${value}% Intelligence", "+${value}% Dexterity" }));
+    private static final ArrayList<String> order = new ArrayList<String>(Arrays
+            .asList(new String[] { "^a${value} Second(s) Recharge", "% Chance of Activating", "${value} Energy Reserved",
+                    " Energy Cost", " Active Energy Cost per Second", "${value}% Chance to be Used", " Second Duration",
+                    "m Radius", " Charge Levels", "Launches ${value} Projectile(s)", "+${value} Health",
+                    "+${value} Energy", "+${value} Strength", "+${value} Intelligence", "+${value} Dexterity",
+                    "+${value}% Strength", "+${value}% Intelligence", "+${value}% Dexterity" }));
 
     private static final ArrayList<String> orderBottomUp = new ArrayList<String>(
             Arrays.asList(new String[] { "Bonus to all Pets:", "${value}% Chance for one of the following:",
