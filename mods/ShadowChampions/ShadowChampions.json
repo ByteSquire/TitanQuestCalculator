@@ -768,6 +768,7 @@
       },
       "attributes" : {
         "^a${value} Second(s) Recharge" : 40.0,
+        "% Chance of Activating" : 8.0,
         " Second Duration" : 12.0,
         "${value}% Chance to Avoid Projectiles" : [ 8.0, 10.0, 12.0, 14.0, 16.0, 17.0, 19.0, 20.0, 22.0, 23.0, 25.0, 26.0, 28.0, 29.0 ],
         "${value}% Chance to Dodge Attacks" : [ 8.0, 10.0, 12.0, 14.0, 16.0, 17.0, 19.0, 20.0, 22.0, 23.0, 25.0, 26.0, 28.0, 29.0 ],
@@ -775,11 +776,6 @@
         "+${value} Health Regeneration per second" : [ 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0 ],
         "MaxLevel" : 10,
         "UltimateLevel" : 14,
-        "onHitActivationChance" : {
-          "value0" : 8.0,
-          "value1" : null,
-          "key" : null
-        },
         "Bonus to all Pets:" : {
           "${value}% Chance to Avoid Projectiles" : [ 8.0, 10.0, 12.0, 14.0, 16.0, 17.0, 19.0, 20.0, 22.0, 23.0, 25.0, 26.0, 28.0, 29.0 ],
           "${value}% Chance to Dodge Attacks" : [ 8.0, 10.0, 12.0, 14.0, 16.0, 17.0, 19.0, 20.0, 22.0, 23.0, 25.0, 26.0, 28.0, 29.0 ],
@@ -4360,6 +4356,7 @@
       },
       "attributes" : {
         "^a${value} Second(s) Recharge" : 2.0,
+        "% Chance of Activating" : 8.0,
         "${value} Energy Reserved" : 150.0,
         " Active Energy Cost per Second" : 1.0,
         "m Radius" : 8.0,
@@ -4377,12 +4374,7 @@
           "key" : null
         },
         "MaxLevel" : 12,
-        "UltimateLevel" : 16,
-        "onHitActivationChance" : {
-          "value0" : 8.0,
-          "value1" : null,
-          "key" : null
-        }
+        "UltimateLevel" : 16
       }
     }, {
       "name" : "Pandemonium",
@@ -7494,17 +7486,13 @@
       },
       "attributes" : {
         "^a${value} Second(s) Recharge" : 30.0,
+        "% Chance of Activating" : 8.0,
         " Second Duration" : 10.0,
         "${value}% Physical Resistance" : 100.0,
         "${value}% Pierce Resistance" : 100.0,
         "+${value}% Defensive Ability" : [ 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0 ],
         "MaxLevel" : 10,
-        "UltimateLevel" : 14,
-        "onHitActivationChance" : {
-          "value0" : 8.0,
-          "value1" : null,
-          "key" : null
-        }
+        "UltimateLevel" : 14
       }
     }, {
       "name" : "Cryopulverization",

@@ -1356,6 +1356,7 @@
             },
             "attributes" : {
               "^a${value} Second(s) Recharge" : 6.0,
+              "% Chance of Activating" : 15.0,
               "${value} Energy Reserved" : 150.0,
               "m Radius" : 5.0,
               " Cold Damage" : {
@@ -1369,12 +1370,7 @@
                 "min" : 1.5
               },
               "MaxLevel" : 12,
-              "UltimateLevel" : 16,
-              "onHitActivationChance" : {
-                "value0" : 15.0,
-                "value1" : null,
-                "key" : null
-              }
+              "UltimateLevel" : 16
             }
           },
           "Lightning Bolt" : {
@@ -2008,6 +2004,7 @@
       },
       "attributes" : {
         "^a${value} Second(s) Recharge" : 6.0,
+        "% Chance of Activating" : 15.0,
         "${value} Energy Reserved" : 150.0,
         "m Radius" : 5.0,
         " Cold Damage" : {
@@ -2021,12 +2018,7 @@
           "min" : 1.5
         },
         "MaxLevel" : 12,
-        "UltimateLevel" : 16,
-        "onHitActivationChance" : {
-          "value0" : 15.0,
-          "value1" : null,
-          "key" : null
-        }
+        "UltimateLevel" : 16
       }
     } ], [ {
       "name" : "Chain Lightning",
@@ -3406,15 +3398,11 @@
       },
       "attributes" : {
         "^a${value} Second(s) Recharge" : 30.0,
+        "% Chance of Activating" : 5.0,
         " Second Duration" : [ 10.0, 10.5, 11.0, 11.5, 12.0, 12.5, 13.0, 13.5, 14.0, 14.5, 15.0, 15.5, 16.0, 16.5, 17.0, 17.5 ],
         "+${value} Health Regeneration per second" : [ 5.0, 8.0, 11.0, 14.0, 17.0, 19.0, 21.0, 24.0, 26.0, 28.0, 30.0, 33.0, 35.0, 38.0, 41.0, 45.0 ],
         "MaxLevel" : 12,
-        "UltimateLevel" : 16,
-        "onHitActivationChance" : {
-          "value0" : 5.0,
-          "value1" : null,
-          "key" : null
-        }
+        "UltimateLevel" : 16
       }
     }, {
       "name" : "Rally",
@@ -4238,6 +4226,7 @@
       },
       "attributes" : {
         "^a${value} Second(s) Recharge" : 30.0,
+        "% Chance of Activating" : 5.0,
         " Second Duration" : 15.0,
         " Physical Retaliation" : {
           "min" : [ 3.0, 7.0, 11.0, 17.0, 23.0, 30.0, 37.0, 45.0, 53.0, 64.0, 75.0, 88.0 ]
@@ -4245,12 +4234,7 @@
         "${value} Damage Absorption" : [ 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0, 51.0 ],
         "${value}% Damage Absorption" : [ 9.0, 10.5, 12.0, 13.5, 15.0, 16.5, 18.0, 19.5, 21.0, 22.5, 24.0, 25.5 ],
         "MaxLevel" : 8,
-        "UltimateLevel" : 12,
-        "onHitActivationChance" : {
-          "value0" : 5.0,
-          "value1" : null,
-          "key" : null
-        }
+        "UltimateLevel" : 12
       }
     } ], [ {
       "name" : "Psionic Immolation",
@@ -4552,18 +4536,14 @@
       },
       "attributes" : {
         "^a${value} Second(s) Recharge" : 12.0,
+        "% Chance of Activating" : 8.0,
         " Second Duration" : 10.0,
         " Physical Damage" : {
           "min" : [ 8.0, 14.0, 20.0, 26.0, 33.0, 40.0, 46.0, 54.0, 61.0, 68.0, 75.0, 84.0, 91.0, 98.0, 106.0, 115.0 ]
         },
         "+${value}% Offensive Ability" : 33.0,
         "MaxLevel" : 12,
-        "UltimateLevel" : 16,
-        "onHitActivationChance" : {
-          "value0" : 8.0,
-          "value1" : null,
-          "key" : null
-        }
+        "UltimateLevel" : 16
       }
     } ], [ {
       "name" : "Dodge Attacks",
