@@ -36,8 +36,10 @@ function formatAttributeWithSecondValue(value, index){
         ret = getAttributeString(ret.replace("value0", "value"), value.value0, index);
     if(value.value1){
         if(value.value1.constructor === Object && value.value1.value0){
-            ret = getAttributeString(ret.replace("value1", "value"), value.value1.value0, index);
-            ret = getAttributeString(ret.replace("value2", "value"), value.value1.value1, index);
+            var innerKey = value.value1.key;
+            innerKey = getAttributeString(innerKey.replace("value0", "value"), value.value1.value0, index);
+            innerKey = getAttributeString(innerKey.replace("value1", "value"), value.value1.value1, index);
+            ret = ret.split("of")[0] + "of " + innerKey;
         }else
             ret = getAttributeString(ret.replace("value1", "value"), value.value1, index); 
     }
