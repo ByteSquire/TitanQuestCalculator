@@ -190,7 +190,7 @@ public class Skill {
                         else if (mSkillAttributes.get(skillAttributeType) instanceof AttributeWithSecondValue) {
                             MinMaxAttribute tmp = new MinMaxAttribute();
                             tmp.setMin(mSkillParser.getAttributes().get(skillAttribute));
-                            putAttributeWithSecondValue(skillAttributeType, tmp);
+                            putAttributeWithSecondValueDamage(skillAttributeType, tmp);
                         }
                     } else {
                         MinMaxAttribute tmp = new MinMaxAttribute();
@@ -209,7 +209,7 @@ public class Skill {
                         else if (mSkillAttributes.get(skillAttributeType) instanceof AttributeWithSecondValue) {
                             MinMaxAttribute tmp = new MinMaxAttribute();
                             tmp.setMax(mSkillParser.getAttributes().get(skillAttribute));
-                            putAttributeWithSecondValue(skillAttributeType, tmp);
+                            putAttributeWithSecondValueDamage(skillAttributeType, tmp);
                         }
                     } else {
                         MinMaxAttribute tmp = new MinMaxAttribute();
@@ -244,7 +244,8 @@ public class Skill {
                 }
                 if (mSkillAttributes.containsKey(skillAttribute)) {
                     if (mSkillAttributes.get(skillAttribute) instanceof AttributeWithSecondValue)
-                        putAttributeWithSecondValue(skillAttribute, mSkillParser.getAttributes().get(skillAttribute));
+                        putAttributeWithSecondValueDamage(skillAttribute,
+                                mSkillParser.getAttributes().get(skillAttribute));
                 }
                 putAttribute(skillAttribute, mSkillParser.getAttributes().get(skillAttribute));
                 break;
@@ -275,7 +276,7 @@ public class Skill {
         else if (key.endsWith("Duration") && !key.endsWith(" Duration")) {
             if (AttributeNameParser.getMatch(key.substring(0, key.length() - "Duration".length())) != null)
                 key = AttributeNameParser.getMatch(key.substring(0, key.length() - "Duration".length()));
-            putAttributeWithSecondValue1(key, value);
+            putAttributeDuration(key, value);
             return;
         } else if (key.startsWith("pet") || key.startsWith("SkillPet")) {
             if (AttributeNameParser.getMatch(key.replace("pet", "").replace("SkillPet", "")) != null)
@@ -286,7 +287,7 @@ public class Skill {
         } else if (key.endsWith("Chance") && !key.equals("projectilePiercingChance")) {
             if (AttributeNameParser.getMatch(key.substring(0, key.length() - "Chance".length())) != null)
                 key = AttributeNameParser.getMatch(key.substring(0, key.length() - "Chance".length()));
-            putAttributeWithSecondValue(key, value);
+            putAttributeChance(key, value);
             return;
         } else if (key.endsWith("DurationModifier")) {
             if (AttributeNameParser.getMatch(key.substring(0, key.length() - "DurationModifier".length())) != null)
@@ -319,72 +320,166 @@ public class Skill {
         return key;
     }
 
-    private void putAttributeWithSecondValue1(String key, Object value1) {
-        if (!key.contains("${value}") && key.indexOf("{") > -1) {
-            if (key.contains("{%+"))
-                key = key.substring(0, key.indexOf("{")) + "+${value}"
-                        + key.substring(key.indexOf("}") + 1, key.length());
-            else
-                key = key.substring(0, key.indexOf("{")) + "${value}"
-                        + key.substring(key.indexOf("}") + 1, key.length());
-        }
+    private void putAttributeDuration(String key, Object value1) {
+        key = formatKey(key);
         if (mSkillAttributes.containsKey(key)) {
-            if (mSkillAttributes.get(key) instanceof AttributeWithSecondValue)
-                ((AttributeWithSecondValue) mSkillAttributes.get(key)).setValue1(value1);
-            else {
+            if (mSkillAttributes.get(key) instanceof AttributeWithSecondValue) {
+                AttributeWithSecondValue curr = (AttributeWithSecondValue) mSkillAttributes.get(key);
+                if (curr.getValue1() == null) {
+                    AttributeWithDuration tmp = new AttributeWithDuration();
+                    tmp.setValue1(value1);
+                    tmp.setKey(key);
+                    curr.setValue1(tmp);
+                } else if (curr.getValue1() instanceof AttributeWithDuration && value1 instanceof MinMaxAttribute) {
+                    MinMaxAttribute valueMinMax = (MinMaxAttribute) value1;
+                    MinMaxAttribute currMinMax = (MinMaxAttribute) ((AttributeWithSecondValue) curr.getValue1())
+                            .getValue1();
+                    if (valueMinMax.getMin() != null)
+                        currMinMax.setMin(valueMinMax.getMin());
+                    else
+                        currMinMax.setMax(valueMinMax.getMax());
+                } else if (curr.getValue1() instanceof MinMaxAttribute && value1 instanceof MinMaxAttribute) {
+                    MinMaxAttribute valueMinMax = (MinMaxAttribute) value1;
+                    MinMaxAttribute currMinMax = (MinMaxAttribute) curr.getValue1();
+                    if (valueMinMax.getMin() != null)
+                        currMinMax.setMin(valueMinMax.getMin());
+                    else
+                        currMinMax.setMax(valueMinMax.getMax());
+                } else {
+                    AttributeWithSecondValue tmp = new AttributeWithChance();
+                    tmp.setValue0(curr.getValue0());
+                    tmp.setValue1(value1);
+                    tmp.setKey(key);
+                    curr.setValue1(tmp);
+                }
+            } else {
                 Object value0 = mSkillAttributes.get(key);
-                AttributeWithSecondValue tmp = new AttributeWithSecondValue();
+                AttributeWithSecondValue tmp = new AttributeWithDuration();
                 tmp.setValue0(value0);
                 tmp.setValue1(value1);
-                tmp.setKey("${value0}" + key + " over ${value1} Second(s)");
+                tmp.setKey(key);
                 mSkillAttributes.put(key, tmp);
             }
         } else {
-            AttributeWithSecondValue tmp = new AttributeWithSecondValue();
+            AttributeWithSecondValue tmp = new AttributeWithDuration();
             tmp.setValue1(value1);
-            tmp.setKey("${value0}" + key + " over ${value1} Second(s)");
+            tmp.setKey(key);
             mSkillAttributes.put(key, tmp);
         }
     }
 
-    private void putAttributeWithSecondValue(String key, Object value) {
-        if (!key.contains("${value}") && key.indexOf("{") > -1) {
-            if (key.contains("{%+"))
-                key = key.substring(0, key.indexOf("{")) + "+${value}"
-                        + key.substring(key.indexOf("}") + 1, key.length());
-            else
-                key = key.substring(0, key.indexOf("{")) + "${value}"
-                        + key.substring(key.indexOf("}") + 1, key.length());
-        }
+    private void putAttributeChance(String key, Object value0) {
+        key = formatKey(key);
         if (mSkillAttributes.containsKey(key)) {
             if (mSkillAttributes.get(key) instanceof AttributeWithSecondValue) {
                 AttributeWithSecondValue curr = (AttributeWithSecondValue) mSkillAttributes.get(key);
                 if (curr.getValue0() == null)
-                    curr.setValue0(value);
-                else
-                    curr.setValue1(value);
+                    curr.setValue0(value0);
+                else if (curr instanceof AttributeWithChance && curr.getValue0() instanceof MinMaxAttribute
+                        && value0 instanceof MinMaxAttribute) {
+                    MinMaxAttribute valueMinMax = (MinMaxAttribute) value0;
+                    MinMaxAttribute currMinMax = (MinMaxAttribute) curr.getValue0();
+                    if (valueMinMax.getMin() != null)
+                        currMinMax.setMin(valueMinMax.getMin());
+                    else
+                        currMinMax.setMax(valueMinMax.getMax());
+                } else {
+                    AttributeWithSecondValue tmp = new AttributeWithChance();
+                    tmp.setValue0(value0);
+                    tmp.setValue1(curr);
+                    tmp.setKey(key);
+                    mSkillAttributes.put(key, tmp);
+                }
             } else {
-                AttributeWithSecondValue tmp = new AttributeWithSecondValue();
-                tmp.setValue0(value);
-                tmp.setValue1(mSkillAttributes.get(key));
-                String descKey;
-                if (!key.contains("${value}"))
-                    descKey = "${value1}" + key;
-                else
-                    descKey = key.replace("value", "value1");
-                tmp.setKey("${value0}% Chance of " + descKey);
+                Object value1 = mSkillAttributes.get(key);
+                AttributeWithSecondValue tmp = new AttributeWithChance();
+                tmp.setValue0(value0);
+                tmp.setValue1(value1);
+                tmp.setKey(key);
                 mSkillAttributes.put(key, tmp);
             }
         } else {
-            AttributeWithSecondValue tmp = new AttributeWithSecondValue();
-            tmp.setValue0(value);
-            String descKey;
-            if (!key.contains("${value}"))
-                descKey = "${value1}" + key;
-            else
-                descKey = key.replace("value", "value1");
-            tmp.setKey("${value0}% Chance of " + descKey);
+            AttributeWithSecondValue tmp = new AttributeWithChance();
+            tmp.setValue0(value0);
+            tmp.setKey(key);
             mSkillAttributes.put(key, tmp);
+        }
+    }
+
+    private void putAttributeWithSecondValueDamage(String key, Object damage) {
+        key = formatKey(key);
+
+        AttributeWithSecondValue curr = (AttributeWithSecondValue) mSkillAttributes.get(key);
+
+        if (damage instanceof MinMaxAttribute) {
+            MinMaxAttribute damageMinMax = (MinMaxAttribute) damage;
+            if (curr instanceof AttributeWithChance) {
+                if (curr.getValue1() == null)
+                    curr.setValue1(damage);
+                else if (curr.getValue1() instanceof MinMaxAttribute) {
+                    MinMaxAttribute currMinMax = (MinMaxAttribute) curr.getValue1();
+                    if (damageMinMax.getMin() != null)
+                        currMinMax.setMin(damageMinMax.getMin());
+                    else
+                        currMinMax.setMax(damageMinMax.getMax());
+                } else if (curr.getValue1() instanceof AttributeWithDuration) {
+                    AttributeWithDuration currDuration = (AttributeWithDuration) curr.getValue1();
+                    if (currDuration.getValue0() instanceof MinMaxAttribute) {
+                        MinMaxAttribute currDamageMinMax = (MinMaxAttribute) currDuration.getValue0();
+                        if (damageMinMax.getMax() != null)
+                            currDamageMinMax.setMax(damageMinMax.getMax());
+                        else
+                            currDamageMinMax.setMin(damageMinMax.getMin());
+                    }
+                } else {
+                    AttributeWithSecondValue tmp = new AttributeWithDuration();
+                    tmp.setKey(key);
+                    tmp.setValue0(damage);
+                    tmp.setValue1(curr.getValue1());
+                    curr.setValue1(tmp);
+                }
+            } else {
+                if (curr.getValue0() == null)
+                    curr.setValue0(damage);
+                else if (curr.getValue0() instanceof MinMaxAttribute) {
+                    MinMaxAttribute currMinMax = (MinMaxAttribute) curr.getValue0();
+                    if (damageMinMax.getMin() != null)
+                        currMinMax.setMin(damageMinMax.getMin());
+                    else
+                        currMinMax.setMax(damageMinMax.getMax());
+                } else {
+                    AttributeWithSecondValue tmp = new AttributeWithChance();
+                    tmp.setKey(key);
+                    tmp.setValue0(curr.getValue0());
+                    tmp.setValue1(damage);
+                    curr.setValue0(tmp);
+                }
+            }
+        } else {
+            if (curr instanceof AttributeWithChance) {
+                if (curr.getValue1() == null)
+                    curr.setValue1(damage);
+                else if (curr.getValue1() instanceof AttributeWithDuration) {
+                    AttributeWithDuration currDuration = (AttributeWithDuration) curr.getValue1();
+                    currDuration.setValue0(damage);
+                }else {
+                    AttributeWithSecondValue tmp = new AttributeWithDuration();
+                    tmp.setKey(key);
+                    tmp.setValue0(damage);
+                    tmp.setValue1(curr.getValue1());
+                    curr.setValue1(tmp);
+                }
+            } else {
+                if (curr.getValue0() == null)
+                    curr.setValue0(damage);
+                else {
+                    AttributeWithSecondValue tmp = new AttributeWithChance();
+                    tmp.setKey(key);
+                    tmp.setValue0(curr.getValue0());
+                    tmp.setValue1(damage);
+                    curr.setValue0(tmp);
+                }
+            }
         }
     }
 
@@ -513,8 +608,8 @@ public class Skill {
 
 class AttributesComparator implements Comparator<Entry<String, Object>> {
 
-    private static final ArrayList<String> order = new ArrayList<String>(Arrays
-            .asList(new String[] { "^a${value} Second(s) Recharge", "% Chance of Activating", "${value} Energy Reserved",
+    private static final ArrayList<String> order = new ArrayList<String>(Arrays.asList(
+            new String[] { "^a${value} Second(s) Recharge", "% Chance of Activating", "${value} Energy Reserved",
                     " Energy Cost", " Active Energy Cost per Second", "${value}% Chance to be Used", " Second Duration",
                     "m Radius", " Charge Levels", "Launches ${value} Projectile(s)", "+${value} Health",
                     "+${value} Energy", "+${value} Strength", "+${value} Intelligence", "+${value} Dexterity",
