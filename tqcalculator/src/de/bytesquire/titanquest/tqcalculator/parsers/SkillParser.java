@@ -10,9 +10,7 @@ import java.util.Arrays;
 import java.util.LinkedHashMap;
 import java.util.stream.Stream;
 
-import de.bytesquire.titanquest.tqcalculator.main.Control;
-import de.bytesquire.titanquest.tqcalculator.main.Skill;
-import de.bytesquire.titanquest.tqcalculator.main.SkillIcon;
+import de.bytesquire.titanquest.tqcalculator.main.*;
 
 public class SkillParser {
 

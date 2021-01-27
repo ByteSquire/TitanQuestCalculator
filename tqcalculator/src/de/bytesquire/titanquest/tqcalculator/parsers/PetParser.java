@@ -14,9 +14,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 
-import de.bytesquire.titanquest.tqcalculator.main.Control;
-import de.bytesquire.titanquest.tqcalculator.main.MinMaxAttribute;
-import de.bytesquire.titanquest.tqcalculator.main.Skill;
+import de.bytesquire.titanquest.tqcalculator.main.*;
 
 @JsonIgnoreProperties({ "files", "additionalFiles" })
 @JsonInclude(Include.NON_NULL)
@@ -128,7 +126,7 @@ public class PetParser {
                                         relevantObj.addMin(doubleValue);
                                 }
                             } else {
-                                MinMaxAttribute tmp = new MinMaxAttribute();
+                                MinMaxAttribute tmp = new MinMaxAttribute(null, null);
                                 if (attributeName.endsWith("Max"))
                                     tmp.addMax(doubleValue);
                                 else

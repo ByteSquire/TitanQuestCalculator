@@ -4,30 +4,31 @@ import java.util.LinkedHashMap;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 
 @JsonIgnoreProperties({ "key" })
 @JsonInclude(Include.NON_NULL)
-public class ChanceBasedAttributes implements HasKey{
+@JsonPropertyOrder({ "chance", "values" })
+public class ChanceBasedAttributes {
 
     protected Object chance;
     protected String key;
-    protected LinkedHashMap<String, Object> values;
+    protected LinkedHashMap<String, SkillAttribute> values;
 
     public ChanceBasedAttributes() {
-        this.values = new LinkedHashMap<String, Object>();
+        this.values = new LinkedHashMap<>();
     }
 
     public Object getChance() {
         return chance;
     }
 
-    @Override
     public String getKey() {
         return key;
     }
 
-    public LinkedHashMap<String, Object> getValues() {
+    public LinkedHashMap<String, SkillAttribute> getValues() {
         return values;
     }
 
@@ -35,7 +36,9 @@ public class ChanceBasedAttributes implements HasKey{
         this.chance = chance;
     }
 
-    public void addValue(String key, Object value) {
+    public void addValue(String key, SkillAttribute value) {
+        if (key == null)
+            return;
         this.values.put(key, value);
     }
 
@@ -54,17 +57,7 @@ public class ChanceBasedAttributes implements HasKey{
         ret.append(key.replace("${value}", chance.toString()));
         ret.append("\n");
         values.forEach((str, obj) -> {
-            try {
-                if (obj instanceof MinMaxAttribute || obj instanceof AttributeWithSecondValue) {
-                    ret.append(obj.toString());
-                    return;
-                }
-                if (str.contains("${value}"))
-                    ret.append(str.replace("${value}", obj.toString()));
-                else
-                    ret.append(obj.toString()).append(str);
-            } catch (NullPointerException e) {
-            }
+            ret.append(obj.toString());
         });
         return ret.toString();
     }
