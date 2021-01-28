@@ -125,11 +125,11 @@ public class Control {
             }
         }
 
+        new Cleaner(mMods);
+
         writeTemplatesLegacy();
 
         writeTemplates();
-
-        new Cleaner(mMods);
 
         showSuccess();
 
@@ -143,14 +143,6 @@ public class Control {
             JOptionPane.showMessageDialog(tmp, "Error", "Parse Database", JOptionPane.ERROR_MESSAGE);
         tmp.dispose();
     }
-
-    /*
-     * private static void writeMasteryToJSON(Mastery mastery, Path masteryPath) {
-     * ObjectMapper mapper = new ObjectMapper(); try {
-     * mapper.writerWithDefaultPrettyPrinter().writeValue(new
-     * File(masteryPath.toString() + ".json"), mastery); } catch (IOException e) {
-     * e.printStackTrace(); mSuccess = false; } }
-     */
 
     private static void writeModToJSON(Mod mod, Path modPath) {
         ObjectMapper mapper = new ObjectMapper();
