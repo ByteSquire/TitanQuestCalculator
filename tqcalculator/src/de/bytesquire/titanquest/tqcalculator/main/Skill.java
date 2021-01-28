@@ -223,7 +223,7 @@ public class Skill {
                 SkillAttribute attr = mAttributeBuilder.get(string);
                 if (attr == null)
                     continue;
-                mCBA.addValue(attr.getKey(), attr);
+                mCBA.addValue(attr.getKey(), attr.getObject());
                 mAttributeBuilder.remove(string);
             }
             mSkillAttributes.put(mCBA.getKey(), mCBA);
