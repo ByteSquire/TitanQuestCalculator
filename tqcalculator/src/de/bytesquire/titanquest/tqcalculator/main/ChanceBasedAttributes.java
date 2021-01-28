@@ -44,9 +44,9 @@ public class ChanceBasedAttributes {
 
     public void setXOR(boolean xor) {
         if (xor)
-            key = "${value}% Chance for one of the following:";
+            key = "${chance}% Chance for one of the following:";
         else
-            key = "${value}% Chance for all of the following:";
+            key = "${chance}% Chance for all of the following:";
     }
 
     @Override
@@ -54,13 +54,14 @@ public class ChanceBasedAttributes {
         StringBuilder ret = new StringBuilder();
         if (chance == null)
             return "";
-        ret.append(key.replace("${value}", chance.toString()));
-        ret.append("\n");
+        ret.append(key.replace("${chance}", chance.toString()));
+        ret.append("<br>\n");
         values.forEach((str, obj) -> {
             if (obj instanceof SkillAttribute)
                 ret.append(obj.toString());
             else
                 ret.append(str.replace("${value}", obj.toString()));
+            ret.append("<br>\n");
         });
         return ret.toString();
     }
