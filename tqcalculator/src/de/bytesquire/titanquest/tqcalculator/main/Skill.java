@@ -48,7 +48,7 @@ public class Skill {
 
     public Skill(File aSkill, String[] aParent, String aParentPath, ModStringsParser aMSParser,
             IconsParser aIconsParser) {
-        if (aSkill == null)
+        if (!aSkill.exists())
             return;
         mAttributeBuilder = new LinkedHashMap<>();
         mSkillAttributes = new LinkedHashMap<>();
@@ -64,7 +64,8 @@ public class Skill {
         else
             mSkillName = mSkillParser.getSkillTag();
         if (mSkillName == null)
-            return;
+            mSkillName = aSkill.getName().replace(".dbr", "");
+
         mSkillDescription = aMSParser.getMatch(mSkillParser.getSkillDescriptionTag());
         mSkillIcon = mSkillParser.getSkillIcon();
         mRace = mSkillParser.getRace();
@@ -149,38 +150,6 @@ public class Skill {
                     mCBAXOR = true;
                     break;
                 }
-                if (skillAttribute.endsWith("Min")) {
-                    skillAttribute = skillAttribute.substring(0, skillAttribute.length() - "Min".length());
-                    MinMaxAttribute tmp = new MinMaxAttribute(value, null);
-                    if (skillAttribute.endsWith("Duration")) {
-                        skillAttribute = skillAttribute.substring(0, skillAttribute.length() - "Duration".length());
-                        putAttributeMinMaxDuration(skillAttribute, tmp);
-                        break;
-                    }
-                    if (skillAttribute.endsWith("Chance")) {
-                        skillAttribute = skillAttribute.substring(0, skillAttribute.length() - "Chance".length());
-                        putAttributeMinMaxChance(skillAttribute, tmp);
-                        break;
-                    }
-                    putAttributeMinMaxDamage(skillAttribute, tmp);
-                    break;
-                }
-                if (skillAttribute.endsWith("Max")) {
-                    skillAttribute = skillAttribute.substring(0, skillAttribute.length() - "Max".length());
-                    MinMaxAttribute tmp = new MinMaxAttribute(null, value);
-                    if (skillAttribute.endsWith("Duration")) {
-                        skillAttribute = skillAttribute.substring(0, skillAttribute.length() - "Duration".length());
-                        putAttributeMinMaxDuration(skillAttribute, tmp);
-                        break;
-                    }
-                    if (skillAttribute.endsWith("Chance")) {
-                        skillAttribute = skillAttribute.substring(0, skillAttribute.length() - "Chance".length());
-                        putAttributeMinMaxChance(skillAttribute, tmp);
-                        break;
-                    }
-                    putAttributeMinMaxDamage(skillAttribute, tmp);
-                    break;
-                }
                 if (skillAttribute.endsWith("Qualifier")) {
                     String dmgKey = skillAttribute.replace("Qualifier", "");
                     dmgKey = dmgKey.substring(0, 1).toUpperCase() + dmgKey.substring(1, dmgKey.length());
@@ -193,22 +162,6 @@ public class Skill {
                         mProtectsAgainst.add(skillAttribute.replace("Qualifier", ""));
                     break;
                 }
-                if (skillAttribute.startsWith("skill")) {
-                    skillAttribute = skillAttribute.replace("skill", "");
-                    putAttribute(skillAttribute, value);
-                    break;
-                }
-                if (skillAttribute.startsWith("pet")) {
-                    skillAttribute = skillAttribute.replace("pet", "SkillPet");
-                    putAttribute(skillAttribute, value);
-                    break;
-                }
-//                if (mAttributeBuilder.containsKey(skillAttribute)) {
-//                    if (mAttributeBuilder.get(skillAttribute) instanceof AttributeWithSecondValue) {
-//                        putAttributeDamage(skillAttribute, value);
-//                        break;
-//                    }
-//                }
                 putAttribute(skillAttribute, value);
                 break;
             }
@@ -237,37 +190,78 @@ public class Skill {
     }
 
     private void putAttribute(String key, Object value) {
+        if (key.startsWith("skill")) {
+            key = key.replace("skill", "");
+        }
+        if (key.startsWith("pet")) {
+            key = key.replace("pet", "SkillPet");
+        }
         if (key.contains("{%s1}")) {
             if (mRace != null)
                 key = key.replace("{%s1}", mRace);
         }
-        if (!key.contains("%") && !key.contains("+") && ((key.contains("Damage") && key.contains("Duration")
-                && !key.endsWith("Chance") && !key.endsWith("Duration") && !key.endsWith("Modifier")))) {
-            putAttributeDurationDamage(key, value);
+        if (key.endsWith("Min")) {
+            key = key.substring(0, key.length() - "Min".length());
+            MinMaxAttribute tmp = new MinMaxAttribute(value, null);
+            if (key.endsWith("Duration")) {
+                key = key.substring(0, key.length() - "Duration".length());
+                putAttributeMinMaxDuration(key, tmp);
+                return;
+            }
+            if (key.endsWith("Chance")) {
+                key = key.substring(0, key.length() - "Chance".length());
+                putAttributeMinMaxChance(key, tmp);
+                return;
+            }
+            if (key.startsWith("DamageDuration")) {
+                putAttributeMinMaxDurationDamage(key, tmp);
+                return;
+            }
+            putAttributeMinMaxDamage(key, tmp);
+            return;
+        }
+        if (key.endsWith("Max")) {
+            key = key.substring(0, key.length() - "Max".length());
+            MinMaxAttribute tmp = new MinMaxAttribute(null, value);
+            if (key.endsWith("Duration")) {
+                key = key.substring(0, key.length() - "Duration".length());
+                putAttributeMinMaxDuration(key, tmp);
+                return;
+            }
+            if (key.endsWith("Chance")) {
+                key = key.substring(0, key.length() - "Chance".length());
+                putAttributeMinMaxChance(key, tmp);
+                return;
+            }
+            if (key.startsWith("DamageDuration")) {
+                putAttributeMinMaxDurationDamage(key, tmp);
+                return;
+            }
+            putAttributeMinMaxDamage(key, tmp);
             return;
         }
         if (key.contains("Damage") && key.endsWith("Duration") && !key.endsWith(" Duration")) {
             key = key.substring(0, key.length() - "Duration".length());
             putAttributeDuration(key, value);
             return;
-//      } else if (key.startsWith("pet") || key.startsWith("SkillPet")) {
-//          key = key.replace("pet", "").replace("SkillPet", "");
-        } else if (key.endsWith("Chance") && !key.equals("projectilePiercingChance")) {
+        }
+        if (key.endsWith("Chance") && !key.equals("projectilePiercingChance")) {
             key = key.substring(0, key.length() - "Chance".length());
             putAttributeChance(key, value);
             return;
-        } else if (key.endsWith("DurationModifier")) {
+        }
+        if (key.endsWith("DurationModifier")) {
             if (AttributeNameParser.getMatch(key.substring(0, key.length() - "DurationModifier".length())) != null)
                 key = "{%+.0f0}% Improved"
                         + AttributeNameParser.getMatch(key.substring(0, key.length() - "DurationModifier".length()))
                         + " Duration";
         }
-//      else if (key.endsWith("Modifier")) {
-//          if (AttributeNameParser.getMatch(key.substring(0, key.length() - "Modifier".length())) != null)
-//              key = key.replace(key.substring(0, key.length() - "Modifier".length()),
-//                      AttributeNameParser.getMatch(key.substring(0, key.length() - "Modifier".length())) + " ");
-//      }
-        if (key.equals("MaxLevel") || key.equals("UltimateLevel") || key.equals("requiredWeapons"))
+        if (key.startsWith("DamageDuration") && !key.endsWith("Modifier")) {
+            putAttributeDurationDamage(key, value);
+            return;
+        }
+        if (key.equals("MaxLevel") || key.equals("UltimateLevel") || key.equals("requiredWeapons")
+                || key.equals("Bonus to all Pets:"))
             mSkillAttributes.put(key, value);
         else
             putAttributeDamage(key, value);
@@ -283,6 +277,21 @@ public class Skill {
                 curr.setValue(value);
         } else {
             SkillAttribute tmp = new SkillAttribute(key, value);
+            mAttributeBuilder.put(key, tmp);
+        }
+    }
+
+    private void putAttributeMinMaxDurationDamage(String key, MinMaxAttribute value) {
+        if (mAttributeBuilder.containsKey(key)) {
+            SkillAttribute curr = mAttributeBuilder.get(key);
+            curr.setType(AttributeType.DURATION);
+            if (curr.getValue() instanceof MinMaxAttribute)
+                ((MinMaxAttribute) curr.getValue()).setMinMax(value);
+            else
+                curr.setValue(value);
+        } else {
+            SkillAttribute tmp = new SkillAttribute(key, value);
+            tmp.setType(AttributeType.DURATION);
             mAttributeBuilder.put(key, tmp);
         }
     }
@@ -476,7 +485,6 @@ public class Skill {
 
         return sortedMap;
     }
-
 }
 
 class AttributesComparator implements Comparator<Entry<String, Object>> {
@@ -489,8 +497,8 @@ class AttributesComparator implements Comparator<Entry<String, Object>> {
             "+${value} Dexterity", "+${value}% Strength", "+${value}% Intelligence", "+${value}% Dexterity" }));
 
     private static final ArrayList<String> orderBottomUp = new ArrayList<String>(
-            Arrays.asList(new String[] { "Bonus to all Pets:", "${value}% Chance for one of the following:",
-                    "${value}% Chance for all of the following:" }));
+            Arrays.asList(new String[] { "Bonus to all Pets:", "${chance}% Chance for one of the following:",
+                    "${chance}% Chance for all of the following:" }));
 
     public int compare(Entry<String, Object> entry1, Entry<String, Object> entry2) {
         String str1 = entry1.getKey();
