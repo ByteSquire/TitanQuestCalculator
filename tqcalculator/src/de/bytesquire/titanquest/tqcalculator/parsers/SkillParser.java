@@ -164,6 +164,8 @@ public class SkillParser {
                     Skill tmp = new Skill(
                             new File(Control.DATABASES_DIR + mParentPath.split("/")[0] + "/database/" + value), null,
                             mParentPath, mMSParser, mIconsParser);
+                    if (tmp.getName() == null)
+                        return;
                     mAttributes.put("Bonus to all Pets:", tmp.getAttributes());
                     mAdditionalFiles.addAll(tmp.getFiles());
                     return;
