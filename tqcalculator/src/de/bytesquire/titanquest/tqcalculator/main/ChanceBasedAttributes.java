@@ -14,7 +14,7 @@ public class ChanceBasedAttributes {
 
     protected Object chance;
     protected String key;
-    protected LinkedHashMap<String, SkillAttribute> values;
+    protected LinkedHashMap<String, Object> values;
 
     public ChanceBasedAttributes() {
         this.values = new LinkedHashMap<>();
@@ -28,7 +28,7 @@ public class ChanceBasedAttributes {
         return key;
     }
 
-    public LinkedHashMap<String, SkillAttribute> getValues() {
+    public LinkedHashMap<String, Object> getValues() {
         return values;
     }
 
@@ -36,7 +36,7 @@ public class ChanceBasedAttributes {
         this.chance = chance;
     }
 
-    public void addValue(String key, SkillAttribute value) {
+    public void addValue(String key, Object value) {
         if (key == null)
             return;
         this.values.put(key, value);
@@ -57,7 +57,10 @@ public class ChanceBasedAttributes {
         ret.append(key.replace("${value}", chance.toString()));
         ret.append("\n");
         values.forEach((str, obj) -> {
-            ret.append(obj.toString());
+            if (obj instanceof SkillAttribute)
+                ret.append(obj.toString());
+            else
+                ret.append(str.replace("${value}", obj.toString()));
         });
         return ret.toString();
     }
