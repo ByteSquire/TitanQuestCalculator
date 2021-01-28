@@ -486,14 +486,7 @@
         "posX" : 376
       },
       "attributes" : {
-        "${value} Lightning Damage" : {
-          "min" : [ 6.0, 9.0, 12.0, 15.0, 19.0, 22.0, 25.0, 28.0, 31.0, 34.0, 37.0, 40.0, 44.0, 47.0, 50.0, 53.0 ],
-          "max" : [ 10.0, 13.0, 16.0, 20.0, 23.0, 26.0, 29.0, 32.0, 36.0, 39.0, 42.0, 45.0, 48.0, 52.0, 55.0, 58.0 ]
-        },
-        "-${value}% Energy Cost" : [ 4.0, 5.0, 7.0, 8.0, 9.0, 11.0, 12.0, 13.0, 15.0, 16.0, 17.0, 19.0, 20.0, 21.0, 23.0, 24.0 ],
-        "MaxLevel" : 12,
-        "UltimateLevel" : 16,
-        "${value}% Chance for all of the following:" : {
+        "${chance}% Chance for all of the following:" : {
           "chance" : 20.0,
           "values" : {
             "+${value}% Cold Damage" : [ 50.0, 67.0, 83.0, 100.0, 117.0, 133.0, 150.0, 167.0, 183.0, 200.0, 217.0, 233.0, 250.0, 267.0, 283.0, 300.0 ],
@@ -506,7 +499,14 @@
               }
             }
           }
-        }
+        },
+        "${value} Lightning Damage" : {
+          "min" : [ 6.0, 9.0, 12.0, 15.0, 19.0, 22.0, 25.0, 28.0, 31.0, 34.0, 37.0, 40.0, 44.0, 47.0, 50.0, 53.0 ],
+          "max" : [ 10.0, 13.0, 16.0, 20.0, 23.0, 26.0, 29.0, 32.0, 36.0, 39.0, 42.0, 45.0, 48.0, 52.0, 55.0, 58.0 ]
+        },
+        "-${value}% Energy Cost" : [ 4.0, 5.0, 7.0, 8.0, 9.0, 11.0, 12.0, 13.0, 15.0, 16.0, 17.0, 19.0, 20.0, 21.0, 23.0, 24.0 ],
+        "MaxLevel" : 12,
+        "UltimateLevel" : 16
       }
     }, {
       "name" : "Hurricane's Spirit",
@@ -2619,12 +2619,7 @@
       },
       "attributes" : {
         "${value} Energy Cost" : [ 3.0, 5.0, 8.0, 10.0, 13.0, 15.0, 18.0, 20.0, 23.0, 25.0, 28.0, 30.0, 33.0, 35.0 ],
-        "${value} Lightning Damage" : {
-          "min" : [ 15.0, 20.0, 26.0, 31.0, 36.0, 42.0, 47.0, 52.0, 57.0, 63.0, 68.0, 73.0, 79.0, 84.0 ]
-        },
-        "MaxLevel" : 10,
-        "UltimateLevel" : 14,
-        "${value}% Chance for all of the following:" : {
+        "${chance}% Chance for all of the following:" : {
           "chance" : [ 6.25, 6.75, 7.25, 7.75, 8.125, 8.625, 9.125, 9.625, 10.125, 10.625, 11.0, 11.5, 12.0, 12.5 ],
           "values" : {
             "${value}% Chance of Impaired Aim over ${duration} Second(s)" : {
@@ -2644,7 +2639,12 @@
               }
             }
           }
-        }
+        },
+        "${value} Lightning Damage" : {
+          "min" : [ 15.0, 20.0, 26.0, 31.0, 36.0, 42.0, 47.0, 52.0, 57.0, 63.0, 68.0, 73.0, 79.0, 84.0 ]
+        },
+        "MaxLevel" : 10,
+        "UltimateLevel" : 14
       }
     } ], [ {
       "name" : "Miracle Solution",
@@ -2892,11 +2892,7 @@
         "posX" : 112
       },
       "attributes" : {
-        "+${value}% Stun Duration" : [ 8.0, 10.0, 12.0, 14.0, 17.0, 19.0, 21.0, 23.0, 26.0, 28.0, 30.0, 34.0 ],
-        "MaxLevel" : 8,
-        "UltimateLevel" : 12,
-        "requiredWeapons" : "Axe, Mace",
-        "${value}% Chance for one of the following:" : {
+        "${chance}% Chance for one of the following:" : {
           "chance" : 50.0,
           "values" : {
             "${value} Reduced Armor over ${duration} Second(s)" : {
@@ -2909,7 +2905,11 @@
             },
             "+${value}% Physical Damage" : [ 10.0, 13.0, 15.0, 18.0, 21.0, 24.0, 26.0, 29.0, 32.0, 35.0, 37.0, 40.0 ]
           }
-        }
+        },
+        "+${value}% Stun Duration" : [ 8.0, 10.0, 12.0, 14.0, 17.0, 19.0, 21.0, 23.0, 26.0, 28.0, 30.0, 34.0 ],
+        "MaxLevel" : 8,
+        "UltimateLevel" : 12,
+        "requiredWeapons" : "Axe, Mace"
       }
     }, {
       "name" : "Sharpstone Veil",
@@ -4089,12 +4089,7 @@
         "posX" : 288
       },
       "attributes" : {
-        "${value}% Health Reduction Retaliation" : {
-          "min" : [ 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0 ]
-        },
-        "MaxLevel" : 14,
-        "UltimateLevel" : 18,
-        "${value}% Chance for one of the following:" : {
+        "${chance}% Chance for one of the following:" : {
           "values" : {
             "${value}% Reduced Offensive Ability Retaliation over ${duration} Second(s)" : {
               "value" : {
@@ -4113,7 +4108,12 @@
               }
             }
           }
-        }
+        },
+        "${value}% Health Reduction Retaliation" : {
+          "min" : [ 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0 ]
+        },
+        "MaxLevel" : 14,
+        "UltimateLevel" : 18
       }
     }, {
       "name" : "Insignia of Anguish",
@@ -4482,12 +4482,7 @@
       },
       "attributes" : {
         "${value} Energy Cost" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0 ],
-        "${value}% Reduction to Enemy's Health" : {
-          "min" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0 ]
-        },
-        "MaxLevel" : 8,
-        "UltimateLevel" : 12,
-        "${value}% Chance for all of the following:" : {
+        "${chance}% Chance for all of the following:" : {
           "chance" : [ 15.0, 20.0, 26.0, 31.0, 37.0, 42.0, 48.0, 53.0, 59.0, 64.0, 70.0, 75.0 ],
           "values" : {
             "${value}% reduced Offensive Ability over ${duration} Second(s)" : {
@@ -4507,7 +4502,12 @@
               }
             }
           }
-        }
+        },
+        "${value}% Reduction to Enemy's Health" : {
+          "min" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0 ]
+        },
+        "MaxLevel" : 8,
+        "UltimateLevel" : 12
       }
     }, {
       "name" : "Ferocity",
@@ -4873,6 +4873,13 @@
         "posX" : 640
       },
       "attributes" : {
+        "${chance}% Chance for all of the following:" : {
+          "chance" : 33.0,
+          "values" : {
+            "+${value}% increased Pierce Ratio" : [ 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0, 150.0 ],
+            "+${value}% Pierce Damage" : [ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0 ]
+          }
+        },
         "${value} Bleeding Damage over ${duration} Second(s)" : {
           "value" : {
             "min" : [ 7.0, 10.0, 13.0, 16.0, 19.0, 22.0, 25.0, 28.0, 31.0, 34.0, 37.0, 40.0 ]
@@ -4883,14 +4890,7 @@
         },
         "MaxLevel" : 8,
         "UltimateLevel" : 12,
-        "requiredWeapons" : "Sword, Spear, Thrown Weapon",
-        "${value}% Chance for all of the following:" : {
-          "chance" : 33.0,
-          "values" : {
-            "+${value}% increased Pierce Ratio" : [ 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0, 150.0 ],
-            "+${value}% Pierce Damage" : [ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0 ]
-          }
-        }
+        "requiredWeapons" : "Sword, Spear, Thrown Weapon"
       }
     } ], [ {
       "name" : "Whirling Blades",
@@ -4990,9 +4990,7 @@
       },
       "attributes" : {
         "${value} Active Energy Cost per Second" : [ 3.0, 4.0, 4.0, 5.0, 5.0, 6.0, 7.0, 7.0, 8.0, 8.0, 9.0, 10.0, 10.0, 11.0, 11.0, 12.0 ],
-        "MaxLevel" : 12,
-        "UltimateLevel" : 16,
-        "${value}% Chance for one of the following:" : {
+        "${chance}% Chance for one of the following:" : {
           "chance" : 100.0,
           "values" : {
             "${chance}% Chance of ${value} Electrical Burn Damage over ${duration} Second(s)" : {
@@ -5023,7 +5021,9 @@
               }
             }
           }
-        }
+        },
+        "MaxLevel" : 12,
+        "UltimateLevel" : 16
       }
     }, {
       "name" : "Abiding Majesty",
@@ -5674,9 +5674,7 @@
       "attributes" : {
         "^a${value} Second(s) Recharge" : [ 0.0, -0.5, -1.2, -1.7, -2.3, -2.8, -3.4, -3.9, -4.5, -5.0 ],
         "${value} Energy Cost" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0 ],
-        "MaxLevel" : 6,
-        "UltimateLevel" : 10,
-        "${value}% Chance for one of the following:" : {
+        "${chance}% Chance for one of the following:" : {
           "chance" : 100.0,
           "values" : {
             "${chance}% Chance of ${value} Cold Damage" : {
@@ -5698,7 +5696,9 @@
               }
             }
           }
-        }
+        },
+        "MaxLevel" : 6,
+        "UltimateLevel" : 10
       }
     } ], [ {
       "name" : "Gravity Nova",
@@ -6747,15 +6747,7 @@
         "${value} Energy Cost" : [ 43.0, 45.0, 49.0, 53.0, 55.0, 60.0, 63.0, 67.0, 72.0, 75.0, 79.0, 85.0 ],
         "${value} Second Duration" : 8.0,
         "${value}m Radius" : 5.0,
-        "${value} Instant Poison Damage" : {
-          "min" : [ 10.0, 23.0, 35.0, 48.0, 61.0, 74.0, 86.0, 99.0, 112.0, 125.0, 137.0, 150.0 ]
-        },
-        "${value} Vitality Damage" : {
-          "min" : [ 10.0, 23.0, 35.0, 48.0, 61.0, 74.0, 86.0, 99.0, 112.0, 125.0, 137.0, 150.0 ]
-        },
-        "MaxLevel" : 8,
-        "UltimateLevel" : 12,
-        "${value}% Chance for all of the following:" : {
+        "${chance}% Chance for all of the following:" : {
           "chance" : 15.0,
           "values" : {
             "${value} Poison Damage over ${duration} Second(s)" : {
@@ -6770,7 +6762,15 @@
               "min" : [ 5.0, 7.0, 10.0, 12.0, 14.0, 16.0, 19.0, 21.0, 23.0, 25.0, 28.0, 30.0 ]
             }
           }
-        }
+        },
+        "${value} Instant Poison Damage" : {
+          "min" : [ 10.0, 23.0, 35.0, 48.0, 61.0, 74.0, 86.0, 99.0, 112.0, 125.0, 137.0, 150.0 ]
+        },
+        "${value} Vitality Damage" : {
+          "min" : [ 10.0, 23.0, 35.0, 48.0, 61.0, 74.0, 86.0, 99.0, 112.0, 125.0, 137.0, 150.0 ]
+        },
+        "MaxLevel" : 8,
+        "UltimateLevel" : 12
       }
     }, {
       "name" : "Ice Blockade",

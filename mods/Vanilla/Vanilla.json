@@ -1487,10 +1487,7 @@
       "attributes" : {
         "${value} Energy Reserved" : 75.0,
         "${value} Active Energy Cost per Second" : 1.0,
-        "${value}Bonus to all Pets:" : { },
-        "MaxLevel" : 10,
-        "UltimateLevel" : 14,
-        "${value}% Chance for one of the following:" : {
+        "${chance}% Chance for one of the following:" : {
           "chance" : 100.0,
           "values" : {
             "${chance}% Chance of ${value} Cold Damage" : {
@@ -1507,7 +1504,10 @@
               }
             }
           }
-        }
+        },
+        "${value}Bonus to all Pets:" : { },
+        "MaxLevel" : 10,
+        "UltimateLevel" : 14
       }
     } ], [ {
       "name" : "Heart of Frost",
@@ -2044,12 +2044,7 @@
         "^a${value} Second(s) Recharge" : 0.7,
         "${value} Energy Cost" : 20.0,
         "Launches ${value} Projectile(s)" : 1,
-        "${value}% Chance to Avoid Projectiles" : [ 10.0, 20.0, 29.0, 38.0, 46.0, 54.0, 61.0, 68.0, 74.0, 80.0 ],
-        "${value}% Chance to Dodge Attacks" : [ 10.0, 20.0, 29.0, 38.0, 46.0, 54.0, 61.0, 68.0, 74.0, 80.0 ],
-        "+${value}% Movement Speed" : 444.0,
-        "MaxLevel" : 6,
-        "UltimateLevel" : 10,
-        "${value}% Chance for all of the following:" : {
+        "${chance}% Chance for all of the following:" : {
           "chance" : [ 5.0, 8.0, 11.0, 14.0, 17.0, 20.0, 23.0, 26.0, 29.0, 32.0 ],
           "values" : {
             "${value} second(s) of Freeze" : {
@@ -2060,7 +2055,12 @@
             },
             "+${value}% Total Damage" : 200.0
           }
-        }
+        },
+        "${value}% Chance to Avoid Projectiles" : [ 10.0, 20.0, 29.0, 38.0, 46.0, 54.0, 61.0, 68.0, 74.0, 80.0 ],
+        "${value}% Chance to Dodge Attacks" : [ 10.0, 20.0, 29.0, 38.0, 46.0, 54.0, 61.0, 68.0, 74.0, 80.0 ],
+        "+${value}% Movement Speed" : 444.0,
+        "MaxLevel" : 6,
+        "UltimateLevel" : 10
       }
     } ] ]
   }, {
@@ -2572,16 +2572,16 @@
         "posX" : 128
       },
       "attributes" : {
-        "MaxLevel" : 12,
-        "UltimateLevel" : 16,
-        "${value}% Chance for all of the following:" : {
+        "${chance}% Chance for all of the following:" : {
           "chance" : 33.0,
           "values" : {
             "+${value}% Fire Damage" : [ 75.0, 83.0, 92.0, 104.0, 112.0, 120.0, 129.0, 141.0, 149.0, 157.0, 166.0, 178.0, 189.0, 203.0, 218.0, 245.0 ],
             "+${value}% Burn Damage " : [ 75.0, 83.0, 92.0, 104.0, 112.0, 120.0, 129.0, 141.0, 149.0, 157.0, 166.0, 178.0, 189.0, 203.0, 218.0, 245.0 ],
             "+${value}% Physical Damage" : [ 37.5, 41.5, 46.0, 52.0, 56.0, 60.0, 64.5, 70.5, 74.5, 78.5, 83.0, 89.0, 94.5, 101.5, 109.0, 122.5 ]
           }
-        }
+        },
+        "MaxLevel" : 12,
+        "UltimateLevel" : 16
       }
     }, {
       "name" : "Metamorphosis",
@@ -2855,9 +2855,7 @@
         "posX" : 128
       },
       "attributes" : {
-        "MaxLevel" : 6,
-        "UltimateLevel" : 10,
-        "${value}% Chance for one of the following:" : {
+        "${chance}% Chance for one of the following:" : {
           "chance" : 44.0,
           "values" : {
             "${chance}% Chance of ${value} Bleeding Damage over ${duration} Second(s)" : {
@@ -2880,7 +2878,9 @@
               }
             }
           }
-        }
+        },
+        "MaxLevel" : 6,
+        "UltimateLevel" : 10
       }
     }, {
       "name" : "Open Wound",
@@ -5479,6 +5479,35 @@
         "${value} Energy Cost" : 300.0,
         "${value} Second Duration" : 10.0,
         "${value}m Radius" : [ 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 8.5, 9.0, 9.5, 10.0 ],
+        "${chance}% Chance for one of the following:" : {
+          "chance" : 100.0,
+          "values" : {
+            "${chance}% Chance of ${value} second(s) of Stun" : {
+              "chance" : 20.0,
+              "value" : {
+                "min" : 1.0
+              }
+            },
+            "${chance}% Chance of ${value} second(s) of Confusion" : {
+              "chance" : 20.0,
+              "value" : {
+                "min" : 1.0
+              }
+            },
+            "${chance}% Chance of ${value} second(s) of Skill Disruption" : {
+              "chance" : 20.0,
+              "value" : {
+                "min" : 1.0
+              }
+            },
+            "${chance}% Chance of ${value} second(s) of Fear" : {
+              "chance" : 20.0,
+              "value" : {
+                "min" : 1.0
+              }
+            }
+          }
+        },
         "${chance}% Chance of ${value} Burn Damage" : {
           "chance" : 15.0,
           "value" : {
@@ -5510,36 +5539,7 @@
           "min" : [ 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0 ]
         },
         "MaxLevel" : 6,
-        "UltimateLevel" : 10,
-        "${value}% Chance for one of the following:" : {
-          "chance" : 100.0,
-          "values" : {
-            "${chance}% Chance of ${value} second(s) of Stun" : {
-              "chance" : 20.0,
-              "value" : {
-                "min" : 1.0
-              }
-            },
-            "${chance}% Chance of ${value} second(s) of Confusion" : {
-              "chance" : 20.0,
-              "value" : {
-                "min" : 1.0
-              }
-            },
-            "${chance}% Chance of ${value} second(s) of Skill Disruption" : {
-              "chance" : 20.0,
-              "value" : {
-                "min" : 1.0
-              }
-            },
-            "${chance}% Chance of ${value} second(s) of Fear" : {
-              "chance" : 20.0,
-              "value" : {
-                "min" : 1.0
-              }
-            }
-          }
-        }
+        "UltimateLevel" : 10
       }
     }, {
       "name" : "Rune Field",

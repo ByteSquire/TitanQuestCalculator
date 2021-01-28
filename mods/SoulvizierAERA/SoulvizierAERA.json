@@ -2225,18 +2225,7 @@
         "${value} Energy Reserved" : 25.0,
         "${value} Active Energy Cost per Second" : 1.0,
         " (${value}% of lost Energy as Damage)" : [ 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 45.0 ],
-        "${chance}% Chance of ${value} Lightning Damage Retaliation" : {
-          "chance" : 15.0,
-          "value" : {
-            "min" : [ 54.0, 66.0, 78.0, 90.0, 102.0, 114.0, 126.0, 138.0, 150.0, 162.0, 174.0, 186.0 ]
-          }
-        },
-        "${value}% Energy Drained" : {
-          "min" : [ 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0 ]
-        },
-        "MaxLevel" : 8,
-        "UltimateLevel" : 12,
-        "${value}% Chance for all of the following:" : {
+        "${chance}% Chance for all of the following:" : {
           "chance" : [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 15.0, 16.0, 17.0, 18.0, 20.0 ],
           "values" : {
             "${value} Electrical Burn Damage over ${duration} Second(s)" : {
@@ -2252,7 +2241,18 @@
               "min" : 4.0
             }
           }
-        }
+        },
+        "${chance}% Chance of ${value} Lightning Damage Retaliation" : {
+          "chance" : 15.0,
+          "value" : {
+            "min" : [ 54.0, 66.0, 78.0, 90.0, 102.0, 114.0, 126.0, 138.0, 150.0, 162.0, 174.0, 186.0 ]
+          }
+        },
+        "${value}% Energy Drained" : {
+          "min" : [ 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0 ]
+        },
+        "MaxLevel" : 8,
+        "UltimateLevel" : 12
       }
     }, {
       "name" : "Storm Surge",
@@ -2567,12 +2567,7 @@
         "^a${value} Second(s) Recharge" : 0.7,
         "${value} Energy Cost" : 20.0,
         "Launches ${value} Projectile(s)" : 1,
-        "${value}% Chance to Avoid Projectiles" : [ 10.0, 20.0, 29.0, 38.0, 46.0, 54.0, 61.0, 68.0, 74.0, 80.0 ],
-        "${value}% Chance to Dodge Attacks" : [ 10.0, 20.0, 29.0, 38.0, 46.0, 54.0, 61.0, 68.0, 74.0, 80.0 ],
-        "+${value}% Movement Speed" : 444.0,
-        "MaxLevel" : 6,
-        "UltimateLevel" : 10,
-        "${value}% Chance for all of the following:" : {
+        "${chance}% Chance for all of the following:" : {
           "chance" : [ 5.0, 8.0, 11.0, 14.0, 17.0, 20.0, 23.0, 26.0, 29.0, 32.0 ],
           "values" : {
             "${value} second(s) of Freeze" : {
@@ -2583,7 +2578,12 @@
             },
             "+${value}% Total Damage" : 200.0
           }
-        }
+        },
+        "${value}% Chance to Avoid Projectiles" : [ 10.0, 20.0, 29.0, 38.0, 46.0, 54.0, 61.0, 68.0, 74.0, 80.0 ],
+        "${value}% Chance to Dodge Attacks" : [ 10.0, 20.0, 29.0, 38.0, 46.0, 54.0, 61.0, 68.0, 74.0, 80.0 ],
+        "+${value}% Movement Speed" : 444.0,
+        "MaxLevel" : 6,
+        "UltimateLevel" : 10
       }
     }, {
       "name" : "Storm Wisp",
@@ -3638,16 +3638,16 @@
         "posX" : 128
       },
       "attributes" : {
-        "MaxLevel" : 8,
-        "UltimateLevel" : 12,
-        "${value}% Chance for all of the following:" : {
+        "${chance}% Chance for all of the following:" : {
           "chance" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 33.0 ],
           "values" : {
             "+${value}% Fire Damage" : [ 90.0, 108.0, 126.0, 144.0, 162.0, 180.0, 198.0, 222.0, 240.0, 258.0, 276.0, 300.0 ],
             "+${value}% Burn Damage " : [ 90.0, 108.0, 126.0, 144.0, 162.0, 180.0, 198.0, 222.0, 240.0, 258.0, 276.0, 300.0 ],
             "+${value}% Physical Damage" : [ 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 70.0, 75.0, 80.0, 90.0, 100.0 ]
           }
-        }
+        },
+        "MaxLevel" : 8,
+        "UltimateLevel" : 12
       }
     }, {
       "name" : "Molten Lava",
@@ -6550,9 +6550,7 @@
         "posX" : 198
       },
       "attributes" : {
-        "MaxLevel" : 8,
-        "UltimateLevel" : 12,
-        "${value}% Chance for all of the following:" : {
+        "${chance}% Chance for all of the following:" : {
           "chance" : 33.0,
           "values" : {
             "+${value}% Stun Duration" : [ 29.0, 33.0, 37.0, 41.0, 45.0, 49.0, 53.0, 57.0, 61.0, 66.0, 71.0, 75.0 ],
@@ -6561,7 +6559,9 @@
               "max" : [ 51.0, 76.0, 101.0, 126.0, 151.0, 177.0, 203.0, 229.0, 256.0, 283.0, 310.0, 338.0, 366.0, 394.0, 423.0, 452.0 ]
             }
           }
-        }
+        },
+        "MaxLevel" : 8,
+        "UltimateLevel" : 12
       }
     }, {
       "name" : "Lineal Chains",
@@ -7556,6 +7556,35 @@
         "${value} Energy Cost" : 300.0,
         "${value} Second Duration" : 10.0,
         "${value}m Radius" : [ 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 8.5, 9.0, 9.5, 10.0 ],
+        "${chance}% Chance for one of the following:" : {
+          "chance" : 100.0,
+          "values" : {
+            "${chance}% Chance of ${value} second(s) of Stun" : {
+              "chance" : 20.0,
+              "value" : {
+                "min" : 1.0
+              }
+            },
+            "${chance}% Chance of ${value} second(s) of Confusion" : {
+              "chance" : 20.0,
+              "value" : {
+                "min" : 1.0
+              }
+            },
+            "${chance}% Chance of ${value} second(s) of Skill Disruption" : {
+              "chance" : 20.0,
+              "value" : {
+                "min" : 1.0
+              }
+            },
+            "${chance}% Chance of ${value} second(s) of Fear" : {
+              "chance" : 20.0,
+              "value" : {
+                "min" : 1.0
+              }
+            }
+          }
+        },
         "${chance}% Chance of ${value} Burn Damage" : {
           "chance" : 15.0,
           "value" : {
@@ -7587,36 +7616,7 @@
           "min" : [ 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0 ]
         },
         "MaxLevel" : 6,
-        "UltimateLevel" : 10,
-        "${value}% Chance for one of the following:" : {
-          "chance" : 100.0,
-          "values" : {
-            "${chance}% Chance of ${value} second(s) of Stun" : {
-              "chance" : 20.0,
-              "value" : {
-                "min" : 1.0
-              }
-            },
-            "${chance}% Chance of ${value} second(s) of Confusion" : {
-              "chance" : 20.0,
-              "value" : {
-                "min" : 1.0
-              }
-            },
-            "${chance}% Chance of ${value} second(s) of Skill Disruption" : {
-              "chance" : 20.0,
-              "value" : {
-                "min" : 1.0
-              }
-            },
-            "${chance}% Chance of ${value} second(s) of Fear" : {
-              "chance" : 20.0,
-              "value" : {
-                "min" : 1.0
-              }
-            }
-          }
-        }
+        "UltimateLevel" : 10
       }
     }, {
       "name" : "Energy Armor",
