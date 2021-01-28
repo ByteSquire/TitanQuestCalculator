@@ -15,7 +15,7 @@ import de.bytesquire.titanquest.tqcalculator.main.*;
 public class SkillParser {
 
     private LinkedHashMap<String, Object> mAttributes;
-    private ArrayList<File> mAdditionalFiles;
+    private ArrayList<String> mAdditionalFiles;
     private File mSkill;
     private String mParentPath;
     private String mSkillTag;
@@ -42,7 +42,7 @@ public class SkillParser {
         mIconsParser = aIconsParser;
 
         mAttributes = new LinkedHashMap<>();
-        mAdditionalFiles = new ArrayList<File>();
+        mAdditionalFiles = new ArrayList<String>();
         mParentSkill = new ArrayList<String>();
 
         mSkill = aSkill;
@@ -77,9 +77,9 @@ public class SkillParser {
 
                 if (attributeName.startsWith("skill")) {
                     if (attributeName.equals("skillDependancy")) {
-                        try {
-                            String[] parentFiles = value.split(";");
-                            for (String string : parentFiles) {
+                        String[] parentFiles = value.split(";");
+                        for (String string : parentFiles) {
+                            try {
                                 BufferedReader parentReader = new BufferedReader(new FileReader(new File(
                                         Control.DATABASES_DIR + mParentPath.split("/")[0] + "/database/" + string)));
                                 Stream<String> parentFileStream = parentReader.lines();
@@ -87,9 +87,13 @@ public class SkillParser {
                                         .forEach(name -> {
                                             mParentSkill.add(mMSParser.getMatch(name.split(",")[1]));
                                         });
+                            } catch (FileNotFoundException e) {
+                                System.err.println("missing file: " + e.getMessage()
+                                        .split(Control.DATABASES_DIR.replace("\\", "\\\\").replace("/", "\\\\"))[1]
+                                                .split(".dbr ")[0]);
+                                if (getSkillTag() == null)
+                                    System.err.println("But that's fine, as the skill is unused\n");
                             }
-                        } catch (FileNotFoundException e) {
-                            System.err.println(e.getMessage());
                         }
                         return;
                     }
@@ -154,8 +158,7 @@ public class SkillParser {
                     }
                     PetParser tmp = new PetParser(files, mParentPath, mMSParser, mIconsParser);
                     mAttributes.put("Pet", tmp);
-                    mAdditionalFiles.addAll(Arrays.asList(tmp.getFiles()));
-                    mAdditionalFiles.addAll(tmp.getAdditionalFiles());
+                    mAdditionalFiles.addAll(tmp.getFiles());
                 }
                 if (attributeName.equals("petBonusName")) {
                     Skill tmp = new Skill(
@@ -174,7 +177,11 @@ public class SkillParser {
                 }
             });
         } catch (FileNotFoundException e) {
-            System.err.println(e.getMessage());
+            System.err.println("missing file: "
+                    + e.getMessage().split(Control.DATABASES_DIR.replace("\\", "\\\\").replace("/", "\\\\"))[1]
+                            .split(".dbr ")[0]);
+            if (getSkillTag() == null)
+                System.err.println("But that's fine, as the skill is unused\n");
         } catch (IOException e1) {
             e1.printStackTrace();
         }
@@ -255,7 +262,7 @@ public class SkillParser {
         return mSkillIcon;
     }
 
-    public ArrayList<File> getAdditionalFiles() {
+    public ArrayList<String> getAdditionalFiles() {
         return mAdditionalFiles;
     }
 

@@ -27,7 +27,7 @@ public class PetParser {
     private LinkedHashMap<String, ArrayList<Integer>> mPetSkillLevels;
     private LinkedHashMap<Integer, ArrayList<Integer>> mSkillLevelIndexMap;
     private File[] mSkills;
-    private ArrayList<File> mAdditionalFiles;
+    private ArrayList<String> mAdditionalFiles;
     private String mParentPath;
     private ModStringsParser mMSParser;
     private IconsParser mIconsParser;
@@ -86,8 +86,9 @@ public class PetParser {
                         Skill tmp = new Skill(
                                 new File(Control.DATABASES_DIR + mParentPath.split("/")[0] + "/database/" + value),
                                 null, mParentPath, mMSParser, mIconsParser);
-                        if (tmp.getName() == null)
+                        if (tmp.getName() == null) {
                             return;
+                        }
                         mPetSkills.put(tmp.getName(), tmp);
 
                         mSkillNameIndexMap.put(Integer.parseInt(attributeName.split("skillName")[1]), tmp.getName());
@@ -214,8 +215,17 @@ public class PetParser {
         return mAttributes;
     }
 
-    public File[] getFiles() {
-        return mSkills;
+    public ArrayList<String> getFiles() {
+        ArrayList<String> ret = new ArrayList<>();
+        for (String string : mAdditionalFiles) {
+            if (!ret.contains(string))
+                ret.add(string);
+        }
+        for (File f : mSkills) {
+            if (!ret.contains(f.getAbsolutePath()))
+                ret.add(f.getAbsolutePath());
+        }
+        return ret;
     }
 
     @Override
@@ -227,10 +237,6 @@ public class PetParser {
             build.append("\n");
         });
         return build.toString();
-    }
-
-    public ArrayList<File> getAdditionalFiles() {
-        return mAdditionalFiles;
     }
 
     public LinkedHashMap<String, Skill> getPetSkills() {

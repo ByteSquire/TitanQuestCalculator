@@ -32,7 +32,7 @@ public class Skill {
     private String mParentPath;
     private boolean isModifier;
     private String[] mParent;
-    private ArrayList<File> mFiles;
+    private ArrayList<String> mFiles;
     private int mSkillTier;
     private SkillIcon mSkillIcon;
     private StringBuilder mRequiredWeapons;
@@ -55,7 +55,7 @@ public class Skill {
         mParentPath = aParentPath;
         mParent = aParent;
         mFiles = new ArrayList<>();
-        mFiles.add(aSkill);
+        mFiles.add(aSkill.getAbsolutePath());
         mSkillParser = new SkillParser(aSkill, aParentPath, aMSParser, aIconsParser);
 
         String name;
@@ -401,7 +401,7 @@ public class Skill {
         this.mParent = mSkillParent;
     }
 
-    public ArrayList<File> getFiles() {
+    public ArrayList<String> getFiles() {
         return mFiles;
     }
 
