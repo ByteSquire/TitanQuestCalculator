@@ -47,22 +47,22 @@ public class Mastery {
         }
 
         for (Skill skill : mSkills) {
-            if (skill.isModifier()) {
-                if (skill.getParent() != null) {
-                    ArrayList<String> validParents = new ArrayList<>();
-                    for (String parent : skill.getParent()) {
-                        boolean containsParent = false;
-                        for (Skill masterySkill : mSkills) {
-                            if (masterySkill.getName().equals(parent)) {
-                                containsParent = true;
-                            }
-                        }
-                        if (containsParent) {
-                            validParents.add(parent);
+            if (skill.getParent() != null) {
+                ArrayList<String> validParents = new ArrayList<>();
+                for (String parent : skill.getParent()) {
+                    boolean containsParent = false;
+                    for (Skill masterySkill : mSkills) {
+                        if (masterySkill.getName().equals(parent)) {
+                            containsParent = true;
                         }
                     }
-                    skill.setParent(validParents);
+                    if (containsParent) {
+                        validParents.add(parent);
+                    }
                 }
+                skill.setParent(validParents);
+            }
+            if (skill.isModifier()) {
                 if (skill.getParent() == null) {
                     int i = 1;
                     Skill tmp = mSkills.get(mSkills.indexOf(skill) - i++);
