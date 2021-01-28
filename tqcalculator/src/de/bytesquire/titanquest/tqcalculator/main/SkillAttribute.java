@@ -97,16 +97,16 @@ public class SkillAttribute {
             case CHANCE_DURATION:
                 if (mValue == null || mDuration == null || mChance == null)
                     return "";
-                return getKey().replace("${chance}", mChance.toString()).replace("${damage}", mValue.toString())
+                return getKey().replace("${chance}", mChance.toString()).replace("${value}", mValue.toString())
                         .replace("${duration}", mDuration.toString());
             case CHANCE:
                 if (mValue == null || mChance == null)
                     return "";
-                return getKey().replace("${chance}", mChance.toString()).replace("${damage}", mValue.toString());
+                return getKey().replace("${chance}", mChance.toString()).replace("${value}", mValue.toString());
             case DURATION:
                 if (mValue == null || mDuration == null)
                     return "";
-                return getKey().replace("${damage}", mValue.toString()).replace("${duration}", mDuration.toString());
+                return getKey().replace("${value}", mValue.toString()).replace("${duration}", mDuration.toString());
             }
         }
         return "";
