@@ -68,12 +68,12 @@ public class SkillParser {
                     return;
                 }
 
-                attributeName = attributeName.replace("offensive", "Damage").replace("Slow", "Duration")
-                        .replace("character", "Character").replace("defensive", "Defense")
+                attributeName = attributeName.replace("character", "Character").replace("defensive", "Defense")
                         .replace("projectile", "Projectile").replace("retaliation", "Retaliation")
                         .replace("explosion", "Explosion").replace("racial", "Racial").replace("spark", "Spark")
-                        .replace("spawnObjects", "SkillPet").replace("damage", "Damage").replace("life", "Life")
-                        .replace("numProjectiles", "ProjectileNumber").replace("RatioAdder", "Modifier");
+                        .replace("damage", "Damage").replace("life", "Life").replace("refresh", "Refresh")
+                        .replace("spawnObjects", "SkillPet").replace("numProjectiles", "ProjectileNumber")
+                        .replace("RatioAdder", "Modifier").replace("offensive", "Damage").replace("Slow", "Duration");
 
                 if (attributeName.startsWith("skill")) {
                     if (attributeName.equals("skillDependancy")) {
