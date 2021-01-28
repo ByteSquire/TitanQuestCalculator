@@ -112,6 +112,8 @@ public class PetParser {
                     }
 
                     try {
+                        if (value.contains(";"))
+                            value = value.split(";")[0];
                         Double doubleValue = Double.parseDouble(value);
                         if (doubleValue == 0.0)
                             return;
@@ -144,7 +146,10 @@ public class PetParser {
                             }
                         }
                         return;
+                    } catch (NumberFormatException e) {
+                        //System.err.println("Pet attribute Number error: " + e.getMessage());
                     } catch (Exception e) {
+                        System.err.println("Pet error: " + e.getMessage());
                     }
                 });
             } catch (FileNotFoundException e) {
