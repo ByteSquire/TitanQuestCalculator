@@ -150,18 +150,18 @@ public class SkillAttribute {
         case CHANCE:
             if (aType.equals(AttributeType.DURATION))
                 mType = AttributeType.CHANCE_DURATION;
-            mKey = formatKey(mKey);
-            return;
+            break;
         case DURATION:
             if (aType.equals(AttributeType.CHANCE))
                 mType = AttributeType.CHANCE_DURATION;
-            mKey = formatKey(mKey);
-            return;
+            break;
+        case CHANCE_DURATION:
+            break;
         default:
             this.mType = aType;
-            mKey = formatKey(mKey);
-            return;
+            break;
         }
+        mKey = formatKey(mKey);
     }
 
     public Object getObject() {
