@@ -112,11 +112,11 @@
               "${value} Energy Cost" : 24.0,
               "Launches ${value} Projectile(s)" : 1,
               "${value} Bleeding Damage over ${duration} Second(s)" : {
-                "duration" : {
-                  "min" : 3.0
-                },
                 "value" : {
                   "min" : [ 5.6, 9.4, 13.1, 17.3, 21.4, 25.7, 29.9, 34.6, 38.7, 43.0, 47.5, 52.5, 56.9, 61.7, 66.4, 71.6 ]
+                },
+                "duration" : {
+                  "min" : 3.0
                 }
               },
               "${value} Piercing Damage" : {
@@ -189,11 +189,11 @@
         "${value} Energy Cost" : [ 65.0, 68.0, 70.0, 73.0, 75.0, 78.0, 80.0, 83.0, 85.0, 88.0, 90.0, 93.0 ],
         "${value} Second Duration" : [ 3.0, 3.4, 4.0, 4.3, 4.7, 5.3, 5.6, 6.0, 6.6, 6.9, 7.3, 8.0 ],
         "${value} Poison Damage over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 1.0
-          },
           "value" : {
             "min" : [ 3.0, 6.0, 9.0, 12.0, 16.0, 20.0, 24.0, 28.0, 33.0, 38.0, 43.0, 49.0 ]
+          },
+          "duration" : {
+            "min" : 1.0
           }
         },
         "${value}% Reduction to Enemy's Health" : {
@@ -219,11 +219,11 @@
         "${value} Energy Cost" : 24.0,
         "Launches ${value} Projectile(s)" : 1,
         "${value} Bleeding Damage over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 3.0
-          },
           "value" : {
             "min" : [ 5.6, 9.4, 13.1, 17.3, 21.4, 25.7, 29.9, 34.6, 38.7, 43.0, 47.5, 52.5, 56.9, 61.7, 66.4, 71.6 ]
+          },
+          "duration" : {
+            "min" : 3.0
           }
         },
         "${value} Piercing Damage" : {
@@ -257,11 +257,11 @@
             "description" : "Causes enemies who hit the Briar Ward to suffer poisoning.",
             "attributes" : {
               "${value} Poison Retaliation over ${duration} Second(s)" : {
-                "duration" : {
-                  "min" : 6.0
-                },
                 "value" : {
                   "min" : [ 5.0, 8.0, 11.0, 14.0, 17.0, 20.0, 23.0, 26.0, 29.0, 32.0, 35.0, 38.0 ]
+                },
+                "duration" : {
+                  "min" : 6.0
                 }
               },
               "MaxLevel" : 8,
@@ -301,19 +301,19 @@
           }
         },
         "${value} Reduced Physical Damage over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 3.0
-          },
           "value" : {
             "min" : [ 3.0, 5.0, 6.0, 8.0, 9.0, 11.0, 12.0, 15.0, 16.0, 17.0, 18.0, 21.0 ]
+          },
+          "duration" : {
+            "min" : 3.0
           }
         },
         "${value}% Reduced Damage over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 3.0
-          },
           "value" : {
             "min" : [ 15.0, 18.0, 20.0, 23.0, 28.0, 31.0, 34.0, 36.0, 39.0, 45.0, 47.0, 50.0 ]
+          },
+          "duration" : {
+            "min" : 3.0
           }
         },
         "+${value}% Total Speed" : [ -15.0, -18.0, -20.0, -23.0, -25.0, -28.0, -30.0, -33.0, -35.0, -38.0, -40.0, -45.0 ],
@@ -361,11 +361,11 @@
       },
       "attributes" : {
         "${value} Poison Retaliation over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 6.0
-          },
           "value" : {
             "min" : [ 5.0, 8.0, 11.0, 14.0, 17.0, 20.0, 23.0, 26.0, 29.0, 32.0, 35.0, 38.0 ]
+          },
+          "duration" : {
+            "min" : 6.0
           }
         },
         "MaxLevel" : 8,
@@ -462,19 +462,19 @@
                 "min" : [ 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0 ]
               },
               "${value}% Slower Movement over ${duration} Second(s)" : {
-                "duration" : {
-                  "min" : [ 2.0, 2.25, 2.5, 2.75, 3.0, 3.25, 3.5, 3.75, 4.0, 4.25, 4.5, 4.75 ]
-                },
                 "value" : {
                   "min" : 75.0
+                },
+                "duration" : {
+                  "min" : [ 2.0, 2.25, 2.5, 2.75, 3.0, 3.25, 3.5, 3.75, 4.0, 4.25, 4.5, 4.75 ]
                 }
               },
               "${value}% reduced Defensive Ability over ${duration} Second(s)" : {
-                "duration" : {
-                  "min" : [ 1.0, 1.25, 1.5, 1.75, 2.0, 2.25, 2.5, 2.75, 3.0, 3.25, 3.5, 3.75 ]
-                },
                 "value" : {
                   "min" : 66.0
+                },
+                "duration" : {
+                  "min" : [ 1.0, 1.25, 1.5, 1.75, 2.0, 2.25, 2.5, 2.75, 3.0, 3.25, 3.5, 3.75 ]
                 }
               },
               "MaxLevel" : 8,
@@ -636,7 +636,7 @@
       "attributes" : {
         "^a${value} Second(s) Recharge" : [ 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0, 28.0, 29.0, 30.0, 31.0, 32.0, 33.0, 34.0, 35.0 ],
         "${value} Energy Cost" : [ 30.0, 45.0, 60.0, 75.0, 90.0, 105.0, 120.0, 135.0, 150.0, 165.0, 180.0, 195.0, 210.0, 225.0, 240.0, 255.0 ],
-        "${value}refreshTime" : [ 8.0, 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 64.0, 68.0 ],
+        "-${value} Second(s) to all Recharge Times" : [ 8.0, 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 64.0, 68.0 ],
         "MaxLevel" : 12,
         "UltimateLevel" : 16
       }
@@ -665,19 +665,19 @@
           "min" : [ 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0 ]
         },
         "${value}% Slower Movement over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : [ 2.0, 2.25, 2.5, 2.75, 3.0, 3.25, 3.5, 3.75, 4.0, 4.25, 4.5, 4.75 ]
-          },
           "value" : {
             "min" : 75.0
+          },
+          "duration" : {
+            "min" : [ 2.0, 2.25, 2.5, 2.75, 3.0, 3.25, 3.5, 3.75, 4.0, 4.25, 4.5, 4.75 ]
           }
         },
         "${value}% reduced Defensive Ability over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : [ 1.0, 1.25, 1.5, 1.75, 2.0, 2.25, 2.5, 2.75, 3.0, 3.25, 3.5, 3.75 ]
-          },
           "value" : {
             "min" : 66.0
+          },
+          "duration" : {
+            "min" : [ 1.0, 1.25, 1.5, 1.75, 2.0, 2.25, 2.5, 2.75, 3.0, 3.25, 3.5, 3.75 ]
           }
         },
         "MaxLevel" : 8,
@@ -695,31 +695,31 @@
         "${value} Energy Cost" : [ 130.0, 136.0, 142.0, 148.0, 154.0, 160.0, 166.0, 172.0, 178.0, 184.0, 190.0, 196.0, 202.0, 208.0, 214.0, 220.0, 226.0, 232.0, 238.0, 244.0 ],
         "${value}m Radius" : 22.0,
         "${value} Poison Damage over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : [ 1.0, 1.3, 1.6, 1.9, 2.2, 2.5, 2.9, 3.3, 3.7, 4.1, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0 ]
-          },
           "value" : {
             "min" : 36.0,
             "max" : 48.0
+          },
+          "duration" : {
+            "min" : [ 1.0, 1.3, 1.6, 1.9, 2.2, 2.5, 2.9, 3.3, 3.7, 4.1, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0 ]
           }
         },
         "${value} second(s) of Immobilization" : {
           "min" : [ 1.0, 1.3, 1.6, 1.9, 2.2, 2.5, 2.9, 3.3, 3.7, 4.1, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0 ]
         },
         "${value}% Slower Movement over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : [ 2.0, 2.3, 2.6, 2.9, 3.2, 3.5, 3.9, 4.3, 4.7, 5.1, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0 ]
-          },
           "value" : {
             "min" : 66.0
+          },
+          "duration" : {
+            "min" : [ 2.0, 2.3, 2.6, 2.9, 3.2, 3.5, 3.9, 4.3, 4.7, 5.1, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0 ]
           }
         },
         "${value}% reduced Defensive Ability over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : [ 1.0, 1.3, 1.6, 1.9, 2.2, 2.5, 2.9, 3.3, 3.7, 4.1, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0 ]
-          },
           "value" : {
             "min" : 50.0
+          },
+          "duration" : {
+            "min" : [ 1.0, 1.3, 1.6, 1.9, 2.2, 2.5, 2.9, 3.3, 3.7, 4.1, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0 ]
           }
         },
         "MaxLevel" : 12,
@@ -792,27 +792,27 @@
           "min" : [ 3.0, 3.5, 4.1, 4.6, 5.2, 5.9, 6.4, 7.0, 7.5, 8.1 ]
         },
         "${value}% Chance of Impaired Aim over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : [ 3.0, 3.6, 4.2, 4.8, 5.4, 6.0, 7.0, 8.0 ]
-          },
           "value" : {
             "min" : 66.0
+          },
+          "duration" : {
+            "min" : [ 3.0, 3.6, 4.2, 4.8, 5.4, 6.0, 7.0, 8.0 ]
           }
         },
         "${value}% Chance to Fumble attacks over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : [ 3.0, 3.6, 4.2, 4.8, 5.4, 6.0, 7.0, 8.0 ]
-          },
           "value" : {
             "min" : 66.0
+          },
+          "duration" : {
+            "min" : [ 3.0, 3.6, 4.2, 4.8, 5.4, 6.0, 7.0, 8.0 ]
           }
         },
         "${value}% Reduced Damage over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : [ 3.0, 3.6, 4.2, 4.8, 5.4, 6.0, 7.0, 8.0 ]
-          },
           "value" : {
             "min" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 18.0 ]
+          },
+          "duration" : {
+            "min" : [ 3.0, 3.6, 4.2, 4.8, 5.4, 6.0, 7.0, 8.0 ]
           }
         },
         "MaxLevel" : 6,
@@ -830,11 +830,11 @@
       "attributes" : {
         "${value} Active Energy Cost per Second" : 0.5,
         "${value}% Reduced Damage over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 1.0
-          },
           "value" : {
             "min" : [ 10.0, 15.0, 18.0, 22.0, 25.0, 29.0, 32.0, 36.0, 39.0, 41.0, 43.0, 45.0 ]
+          },
+          "duration" : {
+            "min" : 1.0
           }
         },
         "+${value}% Armor Absorption" : [ -11.0, -15.0, -18.0, -22.0, -25.0, -29.0, -32.0, -36.0, -39.0, -41.0, -43.0, -45.0 ],
@@ -973,11 +973,11 @@
                 "min" : 1.0
               },
               "${value}% Slowed over ${duration} Second(s)" : {
-                "duration" : {
-                  "min" : 1.5
-                },
                 "value" : {
                   "min" : 15.0
+                },
+                "duration" : {
+                  "min" : 1.5
                 }
               },
               "MaxLevel" : 16,
@@ -1004,11 +1004,11 @@
               "${value}m Radius" : 6.0,
               "Launches ${value} Projectile(s)" : 1,
               "${value}% Reduced Resistances over ${duration} Second(s)" : {
-                "duration" : {
-                  "min" : 8.0
-                },
                 "value" : {
                   "min" : [ 15.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0, 70.0, 75.0, 78.0, 82.0, 86.0, 90.0 ]
+                },
+                "duration" : {
+                  "min" : 8.0
                 }
               },
               "${value}% Reduction to Enemy's Health" : {
@@ -1257,11 +1257,11 @@
           "min" : 1.0
         },
         "${value}% Slowed over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 1.5
-          },
           "value" : {
             "min" : 15.0
+          },
+          "duration" : {
+            "min" : 1.5
           }
         },
         "MaxLevel" : 16,
@@ -1414,29 +1414,29 @@
         "${value} Second Duration" : 4.0,
         "${value}m Radius" : 5.0,
         "${value} Energy Leech over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 1.0
-          },
           "value" : {
             "min" : [ 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 64.0 ]
+          },
+          "duration" : {
+            "min" : 1.0
           }
         },
         "${value} Life Leech over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 1.0
-          },
           "value" : {
             "min" : [ 36.0, 48.0, 60.0, 72.0, 84.0, 96.0, 108.0, 120.0, 132.0, 144.0, 156.0, 168.0, 180.0, 192.0 ]
+          },
+          "duration" : {
+            "min" : 1.0
           }
         },
         "${value}% Reduction in Energy Leech Duration" : 100.0,
         "${value}% Reduction in Life Leech Duration" : 100.0,
         "${value}% Slowed over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 1.0
-          },
           "value" : {
             "min" : 50.0
+          },
+          "duration" : {
+            "min" : 1.0
           }
         },
         "MaxLevel" : 10,
@@ -1467,11 +1467,11 @@
         },
         "${value} Projectile(s)" : 1,
         "${value}% Slowed over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 1.5
-          },
           "value" : {
             "min" : 15.0
+          },
+          "duration" : {
+            "min" : 1.5
           }
         },
         "MaxLevel" : 12,
@@ -1520,19 +1520,19 @@
       "attributes" : {
         "${value} Energy Reserved" : 25.0,
         "${value}% Slowed Attack Retaliation over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 3.0
-          },
           "value" : {
             "min" : [ 10.0, 15.0, 19.0, 24.0, 27.0, 31.0, 34.0, 38.0, 41.0, 43.0, 46.0, 50.0, 52.0, 54.0, 56.0, 60.0 ]
+          },
+          "duration" : {
+            "min" : 3.0
           }
         },
         "${value}% Slowed Movement Retaliation over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 3.0
-          },
           "value" : {
             "min" : [ 10.0, 15.0, 19.0, 24.0, 27.0, 31.0, 34.0, 38.0, 41.0, 43.0, 46.0, 50.0, 52.0, 54.0, 56.0, 60.0 ]
+          },
+          "duration" : {
+            "min" : 3.0
           }
         },
         "+${value}% Cold Damage" : [ 10.0, 16.0, 22.0, 28.0, 34.0, 40.0, 46.0, 52.0, 58.0, 64.0, 70.0, 76.0, 82.0, 88.0, 94.0, 100.0 ],
@@ -1560,11 +1560,11 @@
           "min" : [ 1.5, 1.8, 2.1, 2.5, 2.8, 3.1, 3.4, 3.8, 4.1, 4.4, 4.7, 5.1 ]
         },
         "${value}% reduced Defensive Ability over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : [ 1.5, 1.8, 2.1, 2.5, 2.8, 3.1, 3.4, 3.8, 4.1, 4.4, 4.7, 5.1 ]
-          },
           "value" : {
             "min" : 25.0
+          },
+          "duration" : {
+            "min" : [ 1.5, 1.8, 2.1, 2.5, 2.8, 3.1, 3.4, 3.8, 4.1, 4.4, 4.7, 5.1 ]
           }
         },
         "MaxLevel" : 12,
@@ -1621,11 +1621,11 @@
         "${value} Second Duration" : [ 3.0, 3.4, 3.8, 4.2, 4.6, 5.0, 5.4, 5.8, 6.2, 6.6, 7.0, 7.5 ],
         "${value}m Radius" : [ 1.8, 2.2, 2.6, 3.0, 3.4, 3.8, 4.2, 4.6, 5.0, 5.4, 5.8, 6.2 ],
         "${value} Frostburn Damage over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 1.0
-          },
           "value" : {
             "min" : [ 3.0, 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0 ]
+          },
+          "duration" : {
+            "min" : 1.0
           }
         },
         "${value}% Damage Absorption" : 66.0,
@@ -1654,11 +1654,11 @@
           }
         },
         "${value}% Chance of Impaired Aim over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 1.0
-          },
           "value" : {
             "min" : [ 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0, 90.0, 95.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0 ]
+          },
+          "duration" : {
+            "min" : 1.0
           }
         },
         "MaxLevel" : 12,
@@ -1676,10 +1676,10 @@
       "attributes" : {
         "${value} Energy Cost" : [ 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0 ],
         "${value} Electrical Burn Damage over ${duration} Second(s)" : {
-          "duration" : {
+          "value" : {
             "min" : [ 3.0, 3.6, 4.2, 4.8, 5.4, 6.0, 6.6, 7.2, 7.8, 8.4 ]
           },
-          "value" : {
+          "duration" : {
             "min" : [ 3.0, 3.6, 4.2, 4.8, 5.4, 6.0, 6.6, 7.2, 7.8, 8.4 ]
           }
         },
@@ -1759,19 +1759,19 @@
       "attributes" : {
         "${value} Energy Cost" : [ 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0 ],
         "${value}% Reduced Damage over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 6.0
-          },
           "value" : {
             "min" : [ 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 33.0, 37.0, 41.0, 45.0 ]
+          },
+          "duration" : {
+            "min" : 6.0
           }
         },
         "${value}% Reduced Resistances over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 6.0
-          },
           "value" : {
             "min" : [ 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 33.0, 37.0, 41.0, 45.0 ]
+          },
+          "duration" : {
+            "min" : 6.0
           }
         },
         "${value}% reduced Offensive Ability" : {
@@ -1816,11 +1816,11 @@
       "attributes" : {
         "${value} Energy Cost" : [ 14.0, 16.0, 22.0, 24.0, 30.0, 32.0, 34.0, 40.0, 42.0, 44.0, 46.0, 52.0 ],
         "${value} Frostburn Damage over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 3.0
-          },
           "value" : {
             "min" : [ 8.0, 14.0, 19.0, 26.0, 34.0, 42.0, 51.0, 62.0, 74.0, 89.0, 105.0, 123.0 ]
+          },
+          "duration" : {
+            "min" : 3.0
           }
         },
         "${value} Projectile(s)" : [ 1.0, 1.0, 2.0, 2.0, 3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 4.0, 5.0 ],
@@ -2094,11 +2094,11 @@
         },
         "${value} Projectile(s)" : 3,
         "${value}% reduced Defensive Ability over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 3.0
-          },
           "value" : {
             "min" : [ 5.0, 8.0, 11.0, 14.0, 17.0, 20.0, 23.0, 26.0, 29.0, 32.0, 35.0, 38.0, 41.0, 44.0, 47.0, 50.0 ]
+          },
+          "duration" : {
+            "min" : 3.0
           }
         },
         "MaxLevel" : 12,
@@ -2160,11 +2160,11 @@
         "${value} Energy Cost" : [ 45.0, 47.0, 49.0, 52.0, 54.0, 56.0, 59.0, 61.0, 63.0, 66.0, 68.0, 70.0, 73.0, 75.0, 77.0, 80.0 ],
         "${value} Second Duration" : 100.0,
         "${value} Burn Retaliation over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 3.0
-          },
           "value" : {
             "min" : [ 1.4, 1.9, 2.5, 3.2, 4.0, 4.9, 6.0, 7.2, 8.5, 9.9, 11.4, 13.0, 14.7, 16.5, 18.4, 20.4 ]
+          },
+          "duration" : {
+            "min" : 3.0
           }
         },
         "${value}% Damage Absorption" : [ 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0 ],
@@ -2182,11 +2182,11 @@
       },
       "attributes" : {
         "${value} Burn Damage over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 3.0
-          },
           "value" : {
             "min" : [ 6.4, 9.1, 12.1, 15.4, 19.0, 22.9, 27.4, 32.5, 38.2, 44.8, 52.3, 60.7 ]
+          },
+          "duration" : {
+            "min" : 3.0
           }
         },
         "+${value}% Physical Damage" : [ 5.0, 7.0, 9.0, 12.0, 14.0, 16.0, 18.0, 21.0, 23.0, 25.0, 27.0, 30.0 ],
@@ -2300,20 +2300,20 @@
               "${value} Second Duration" : 5.0,
               "${value}m Radius" : 4.0,
               "${value} Burn Damage over ${duration} Second(s)" : {
-                "duration" : {
-                  "min" : 1.0
-                },
                 "value" : {
                   "min" : [ 16.0, 20.0, 24.0, 29.0, 33.0, 37.0, 41.0, 46.0, 50.0, 55.0, 59.0, 65.0, 70.0, 76.0, 83.0, 92.0, 102.0, 113.0, 125.0, 138.0 ],
                   "max" : [ 25.0, 30.0, 35.0, 41.0, 46.0, 51.0, 56.0, 62.0, 67.0, 73.0, 78.0, 85.0, 91.0, 98.0, 106.0, 116.0, 127.0, 139.0, 152.0, 166.0 ]
+                },
+                "duration" : {
+                  "min" : 1.0
                 }
               },
               "${value}% reduced Offensive Ability over ${duration} Second(s)" : {
-                "duration" : {
-                  "min" : 1.0
-                },
                 "value" : {
                   "min" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ]
+                },
+                "duration" : {
+                  "min" : 1.0
                 }
               },
               "MaxLevel" : 12,
@@ -2353,12 +2353,12 @@
       "attributes" : {
         "^a${value} Second(s) Recharge" : [ -0.6, -1.2, -1.8, -2.4, -3.0, -3.6, -4.2, -4.8, -5.4, -6.0, -6.0, -6.0 ],
         "${value} Burn Damage over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 3.0
-          },
           "value" : {
             "min" : [ 4.5, 6.7, 8.9, 11.3, 13.7, 16.3, 18.9, 22.1, 25.5, 29.2, 33.0, 37.2 ],
             "max" : [ 13.5, 20.1, 26.7, 33.9, 41.1, 48.9, 56.7, 66.3, 76.5, 87.6, 99.0, 111.6 ]
+          },
+          "duration" : {
+            "min" : 3.0
           }
         },
         "${value}% Chance to pass through Enemies" : [ 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0, 90.0, 95.0, 100.0 ],
@@ -2394,11 +2394,11 @@
         "${value} Energy Cost" : [ 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0 ],
         "${value}m Radius" : 4.0,
         "${value} Burn Damage over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 3.0
-          },
           "value" : {
             "min" : [ 9.0, 13.3, 17.3, 23.0, 26.5, 30.8, 34.8, 40.0, 44.0, 48.3, 52.3, 58.0, 61.5, 65.8, 70.5 ]
+          },
+          "duration" : {
+            "min" : 3.0
           }
         },
         "MaxLevel" : 8,
@@ -2452,19 +2452,19 @@
           "min" : [ 3.0, 6.0, 8.0, 10.0, 13.0, 16.0, 19.0, 23.0, 26.0, 31.0, 36.0, 45.0 ]
         },
         "${value} Reduced Armor over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 3.0
-          },
           "value" : {
             "min" : [ 21.0, 30.0, 40.0, 53.0, 65.0, 78.0, 94.0, 110.0, 126.0, 146.0, 169.0, 206.0 ]
+          },
+          "duration" : {
+            "min" : 3.0
           }
         },
         "${value}% reduced Offensive Ability over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 3.0
-          },
           "value" : {
             "min" : [ 3.0, 5.0, 6.0, 8.0, 9.0, 11.0, 12.0, 15.0, 16.0, 18.0, 21.0, 25.0 ]
+          },
+          "duration" : {
+            "min" : 3.0
           }
         },
         "MaxLevel" : 8,
@@ -2510,20 +2510,20 @@
         "${value} Second Duration" : 5.0,
         "${value}m Radius" : 4.0,
         "${value} Burn Damage over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 1.0
-          },
           "value" : {
             "min" : [ 16.0, 20.0, 24.0, 29.0, 33.0, 37.0, 41.0, 46.0, 50.0, 55.0, 59.0, 65.0, 70.0, 76.0, 83.0, 92.0, 102.0, 113.0, 125.0, 138.0 ],
             "max" : [ 25.0, 30.0, 35.0, 41.0, 46.0, 51.0, 56.0, 62.0, 67.0, 73.0, 78.0, 85.0, 91.0, 98.0, 106.0, 116.0, 127.0, 139.0, 152.0, 166.0 ]
+          },
+          "duration" : {
+            "min" : 1.0
           }
         },
         "${value}% reduced Offensive Ability over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 1.0
-          },
           "value" : {
             "min" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ]
+          },
+          "duration" : {
+            "min" : 1.0
           }
         },
         "MaxLevel" : 12,
@@ -2651,11 +2651,11 @@
         "${value}m Radius" : 3.5,
         "Launches ${value} Projectile(s)" : 8,
         "${value} Burn Damage over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 3.0
-          },
           "value" : {
             "min" : [ 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 64.0, 68.0, 72.0, 76.0, 80.0 ]
+          },
+          "duration" : {
+            "min" : 3.0
           }
         },
         "${value} Physical Damage" : {
@@ -2680,22 +2680,22 @@
         "${value} Energy Cost" : [ 130.0, 150.0, 170.0, 190.0, 210.0, 230.0, 250.0, 270.0, 290.0, 310.0, 330.0, 350.0 ],
         "${value}m Radius" : 20.0,
         "${value} Burn Damage over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 3.0
-          },
           "value" : {
             "min" : [ 33.0, 37.0, 42.0, 48.0, 55.0, 63.0, 72.0, 82.0, 93.0, 105.0, 118.0, 132.0 ]
+          },
+          "duration" : {
+            "min" : 3.0
           }
         },
         "${value} Fire Damage" : {
           "min" : [ 33.0, 37.0, 42.0, 48.0, 55.0, 63.0, 72.0, 82.0, 93.0, 105.0, 118.0, 132.0 ]
         },
         "${value}% Chance of Impaired Aim over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 3.0
-          },
           "value" : {
             "min" : [ 11.0, 12.7, 14.3, 16.0, 17.6, 19.3, 21.0, 22.6, 24.3, 26.0, 27.6, 29.3 ]
+          },
+          "duration" : {
+            "min" : 3.0
           }
         },
         "MaxLevel" : 8,
@@ -2721,11 +2721,11 @@
         "${value} Energy Reserved" : 50.0,
         "${value} Active Energy Cost per Second" : 1.0,
         "${value} Poison Damage over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 3.0
-          },
           "value" : {
             "min" : [ 8.2, 11.2, 14.2, 17.6, 22.2, 27.4, 33.2, 39.8, 47.2, 56.0, 65.8, 76.6, 88.4, 101.4, 115.6, 131.0 ]
+          },
+          "duration" : {
+            "min" : 3.0
           }
         },
         "MaxLevel" : 12,
@@ -2778,11 +2778,11 @@
       },
       "attributes" : {
         "${value}% Slowed over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 5.0
-          },
           "value" : {
             "min" : [ 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 39.0, 41.0, 43.0, 46.0, 50.0 ]
+          },
+          "duration" : {
+            "min" : 5.0
           }
         },
         "+${value}% Poison Damage " : [ 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0 ],
@@ -2801,11 +2801,11 @@
         "^a${value} Second(s) Recharge" : [ 6.0, 5.6, 5.2, 4.8, 4.4, 4.0, 3.6, 3.2, 2.8, 2.4, 2.0, 1.6, 1.2, 0.8, 0.4, 0.0 ],
         "${value} Energy Cost" : [ 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0, 28.0, 29.0, 30.0, 31.0, 32.0, 33.0 ],
         "${value} Bleeding Damage over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 3.0
-          },
           "value" : {
             "min" : [ 16.0, 21.0, 26.0, 30.0, 35.0, 40.0, 44.0, 49.0, 54.0, 58.0, 63.0, 68.0, 72.0, 77.0, 82.0, 90.0 ]
+          },
+          "duration" : {
+            "min" : 3.0
           }
         },
         "${value} Piercing Damage" : {
@@ -2835,11 +2835,11 @@
           }
         },
         "${value}% Chance to Fumble attacks over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 8.0
-          },
           "value" : {
             "min" : [ 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0 ]
+          },
+          "duration" : {
+            "min" : 8.0
           }
         },
         "MaxLevel" : 8,
@@ -2874,11 +2874,11 @@
           "values" : {
             "${chance}% Chance of ${value} Bleeding Damage over ${duration} Second(s)" : {
               "chance" : 34.0,
-              "duration" : {
-                "min" : 3.0
-              },
               "value" : {
                 "min" : [ 40.0, 56.0, 74.0, 94.0, 116.0, 138.0, 160.0, 186.0, 216.0, 248.0 ]
+              },
+              "duration" : {
+                "min" : 3.0
               }
             },
             "${chance}% Chance of +${value}% Pierce Damage" : {
@@ -2904,11 +2904,11 @@
       "attributes" : {
         "${chance}% Chance of ${value} Bleeding Damage over ${duration} Second(s)" : {
           "chance" : 33.0,
-          "duration" : {
-            "min" : 3.0
-          },
           "value" : {
             "min" : [ 9.0, 16.0, 23.0, 31.0, 39.0, 47.0, 55.0, 64.0, 73.0, 83.0, 92.0, 103.0, 112.0, 123.0, 134.0, 147.0 ]
+          },
+          "duration" : {
+            "min" : 3.0
           }
         },
         "MaxLevel" : 12,
@@ -2927,20 +2927,20 @@
         "${value} Energy Cost" : [ 45.0, 47.0, 49.0, 52.0, 54.0, 56.0, 59.0, 61.0, 63.0, 66.0, 68.0, 70.0, 73.0, 75.0, 77.0, 80.0 ],
         "${value}m Radius" : [ 3.2, 3.4, 3.6, 3.8, 4.0, 4.2, 4.4, 4.6, 4.8, 5.0, 5.2, 5.4, 5.6, 5.8, 6.0, 6.2 ],
         "${value} Poison Damage over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 4.0
-          },
           "value" : {
             "min" : [ 32.8, 36.0, 39.6, 43.6, 48.2, 53.4, 59.2, 65.6, 72.6, 80.2, 88.4, 97.4, 107.2, 117.8, 129.2, 141.4 ]
+          },
+          "duration" : {
+            "min" : 4.0
           }
         },
         "${value} Projectile(s)" : 1,
         "${value}% Slowed over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 6.0
-          },
           "value" : {
             "min" : 33.0
+          },
+          "duration" : {
+            "min" : 6.0
           }
         },
         "MaxLevel" : 12,
@@ -3070,11 +3070,11 @@
           }
         },
         "${value}% Chance to Fumble attacks over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 3.0
-          },
           "value" : {
             "min" : [ 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0 ]
+          },
+          "duration" : {
+            "min" : 3.0
           }
         },
         "MaxLevel" : 8,
@@ -3104,11 +3104,11 @@
         "${value} Energy Cost" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ],
         "${value}m Radius" : 1.5,
         "${value} Bleeding Damage over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 4.0
-          },
           "value" : {
             "min" : [ 18.29, 21.6, 24.94, 28.26, 31.59, 34.9, 38.24, 41.56, 44.89, 48.2, 51.54, 54.86, 58.19, 61.51, 64.84, 74.81 ]
+          },
+          "duration" : {
+            "min" : 4.0
           }
         },
         "${value} Fragments" : {
@@ -3187,11 +3187,11 @@
         },
         "${value} Projectile(s)" : [ 1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0, 4.0 ],
         "${value}% Chance of Impaired Aim over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : [ 0.0, 4.0 ]
-          },
           "value" : {
             "min" : [ 0.0, 5.0, 10.0, 10.0, 15.0, 20.0, 20.0, 25.0, 30.0, 30.0, 35.0, 40.0 ]
+          },
+          "duration" : {
+            "min" : [ 0.0, 4.0 ]
           }
         },
         "MaxLevel" : 8,
@@ -3211,11 +3211,11 @@
         "${value} Second Duration" : [ 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0 ],
         "${value}m Radius" : 2.5,
         "${value} Bleeding Damage over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 1.0
-          },
           "value" : {
             "min" : [ 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0 ]
+          },
+          "duration" : {
+            "min" : 1.0
           }
         },
         "${value} Piercing Damage" : {
@@ -3284,11 +3284,11 @@
           "min" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ]
         },
         "${value}% Slower Attack over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 8.0
-          },
           "value" : {
             "min" : [ 18.0, 20.0, 23.0, 25.0, 30.0, 33.0, 35.0, 38.0, 40.0, 45.0, 48.0, 50.0, 53.0, 55.0, 60.0, 63.0, 65.0, 68.0, 70.0, 75.0 ]
+          },
+          "duration" : {
+            "min" : 8.0
           }
         },
         "+${value}% Physical Damage" : [ 3.0, 4.0, 6.0, 7.0, 8.0, 10.0, 11.0, 12.0, 14.0, 15.0, 16.0, 18.0, 19.0, 21.0, 23.0, 25.0 ],
@@ -3361,11 +3361,11 @@
           "min" : [ 12.0, 15.0, 18.0, 22.0, 26.0, 31.0, 37.0, 44.0, 52.0, 61.0 ]
         },
         "${value}% reduced Defensive Ability over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 3.0
-          },
           "value" : {
             "min" : 50.0
+          },
+          "duration" : {
+            "min" : 3.0
           }
         },
         "MaxLevel" : 6,
@@ -3470,11 +3470,11 @@
           "min" : [ 12.0, 15.0, 18.0, 22.0, 26.0, 31.0, 37.0, 44.0, 52.0, 61.0 ]
         },
         "${value}% Slower Attack over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 5.0
-          },
           "value" : {
             "min" : 50.0
+          },
+          "duration" : {
+            "min" : 5.0
           }
         },
         "MaxLevel" : 6,
@@ -3493,11 +3493,11 @@
         "${value} Energy Cost" : 15.0,
         "${value} Arc of Attack" : [ 90.0, 95.0, 100.0, 105.0, 110.0, 115.0, 120.0, 125.0, 130.0, 135.0, 140.0, 145.0, 150.0, 155.0, 160.0 ],
         "${value} Reduced Armor over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 5.0
-          },
           "value" : {
             "min" : [ 18.0, 36.0, 54.0, 72.0, 90.0, 108.0, 126.0, 144.0, 162.0, 180.0, 201.0, 225.0, 249.0, 276.0, 309.0, 345.0 ]
+          },
+          "duration" : {
+            "min" : 5.0
           }
         },
         "${value} Target Maximum" : 3,
@@ -3616,11 +3616,11 @@
           "min" : 3.0
         },
         "${value}% reduced Offensive Ability over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 3.0
-          },
           "value" : {
             "min" : 50.0
+          },
+          "duration" : {
+            "min" : 3.0
           }
         },
         "MaxLevel" : 6,
@@ -3665,11 +3665,11 @@
                 "min" : 100.0
               },
               "${value}% Slower Movement over ${duration} Second(s)" : {
-                "duration" : {
-                  "min" : 2.0
-                },
                 "value" : {
                   "min" : 40.0
+                },
+                "duration" : {
+                  "min" : 2.0
                 }
               },
               "${value}m max Distance" : 6.0,
@@ -3731,11 +3731,11 @@
           "min" : [ 10.2, 15.3, 21.25, 27.2, 36.55, 55.25, 66.3, 78.2, 91.8, 106.25, 121.55, 140.25, 164.05, 191.25, 222.7, 259.25 ]
         },
         "${value}% Slowed over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 4.0
-          },
           "value" : {
             "min" : [ 15.0, 20.63, 25.88, 30.75, 35.25, 39.38, 43.13, 46.5, 49.5, 52.13, 54.38, 56.25, 57.75, 58.88, 59.63, 60.0 ]
+          },
+          "duration" : {
+            "min" : 4.0
           }
         },
         "MaxLevel" : 12,
@@ -3844,11 +3844,11 @@
           "min" : [ 15.6, 23.4, 32.5, 41.6, 55.9, 84.5, 101.7, 119.6, 140.4, 162.5, 185.9, 214.5 ]
         },
         "${value} Reduced Armor over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 5.0
-          },
           "value" : {
             "min" : [ 25.0, 39.0, 55.0, 73.0, 93.0, 115.0, 140.0, 168.0, 200.0, 236.0, 277.0, 323.0 ]
+          },
+          "duration" : {
+            "min" : 5.0
           }
         },
         "MaxLevel" : 8,
@@ -3865,19 +3865,19 @@
       "attributes" : {
         "${value}m Radius" : 3.5,
         "${value} Electrical Burn Damage over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 4.0
-          },
           "value" : {
             "min" : [ 9.0, 14.2, 17.5, 21.1, 24.9, 28.9, 33.1, 37.6, 42.4, 47.4, 52.8, 58.4 ]
+          },
+          "duration" : {
+            "min" : 4.0
           }
         },
         "${value}% Slower Movement over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 4.0
-          },
           "value" : {
             "min" : [ 9.0, 14.2, 17.5, 21.1, 24.9, 28.9, 33.1, 37.6, 42.4, 47.4, 52.8, 58.4 ]
+          },
+          "duration" : {
+            "min" : 4.0
           }
         },
         "+${value}% Damage to {%s1}" : [ 8.0, 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0 ],
@@ -3987,11 +3987,11 @@
                 "min" : [ 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 8.5 ]
               },
               "${value}% Reduced Resistances over ${duration} Second(s)" : {
-                "duration" : {
-                  "min" : [ 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 8.5 ]
-                },
                 "value" : {
                   "min" : [ 6.0, 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0 ]
+                },
+                "duration" : {
+                  "min" : [ 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 8.5 ]
                 }
               },
               "MaxLevel" : 8,
@@ -4032,11 +4032,11 @@
         "${value} Energy Cost" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0 ],
         "${value} Arc of Attack" : 360.0,
         "${value} Energy Leech over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 3.0
-          },
           "value" : {
             "min" : [ 30.0, 45.0, 60.0, 75.0, 90.0, 105.0, 120.0, 135.0, 150.0, 165.0, 180.0, 195.0 ]
+          },
+          "duration" : {
+            "min" : 3.0
           }
         },
         "${value} Physical Damage" : {
@@ -4106,11 +4106,11 @@
           "min" : [ 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 8.5 ]
         },
         "${value}% Reduced Resistances over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : [ 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 8.5 ]
-          },
           "value" : {
             "min" : [ 6.0, 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0 ]
+          },
+          "duration" : {
+            "min" : [ 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 8.5 ]
           }
         },
         "MaxLevel" : 8,
@@ -4147,11 +4147,11 @@
         "^a${value} Second(s) Recharge" : -3.0,
         "${value} Energy Cost" : [ 18.0, 26.0, 34.0, 42.0, 50.0, 58.0, 66.0, 74.0, 82.0, 90.0, 95.0, 99.0, 102.0, 104.0, 106.0, 108.0 ],
         "${value} Electrical Burn Damage over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 4.0
-          },
           "value" : {
             "min" : [ 24.0, 32.3, 40.9, 49.8, 59.1, 68.8, 78.9, 89.4, 100.3, 111.7, 123.6, 136.0, 149.0, 162.6, 176.8, 191.8 ]
+          },
+          "duration" : {
+            "min" : 4.0
           }
         },
         "+${value}% Damage to {%s1}" : 50.0,
@@ -4186,22 +4186,22 @@
         "${value} Active Energy Cost per Second" : 1.0,
         "${value}m Radius" : [ 2.8, 3.0, 3.2, 3.4, 3.6, 3.8, 4.0, 4.2, 4.4, 4.6, 4.8, 5.0, 5.2, 5.4, 5.7, 6.0 ],
         "${value} Electrical Burn Damage over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 4.0
-          },
           "value" : {
             "min" : [ 6.5, 9.4, 12.2, 15.3, 18.3, 21.4, 25.1, 28.7, 32.6, 36.7, 40.8, 45.6, 50.6, 55.6, 61.0, 66.3 ]
+          },
+          "duration" : {
+            "min" : 4.0
           }
         },
         "${value} second(s) of Skill Disruption" : {
           "min" : 1.0
         },
         "${value}% Reduced Resistances over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 4.0
-          },
           "value" : {
             "min" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0 ]
+          },
+          "duration" : {
+            "min" : 4.0
           }
         },
         "+${value}% Less Damage from {%s1}" : 100.0,
@@ -4220,11 +4220,11 @@
         "${value} Energy Cost" : [ 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ],
         " (${value}% of lost Energy as Damage)" : [ 45.0, 60.0, 75.0, 90.0, 105.0, 120.0, 135.0, 150.0, 165.0, 180.0, 195.0, 210.0 ],
         "${value} Electrical Burn Damage over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 4.0
-          },
           "value" : {
             "min" : [ 36.018, 42.688, 50.025, 57.362, 65.366, 74.037, 82.041, 92.046, 101.384, 111.389, 122.061, 132.733, 144.072, 156.078, 168.084, 180.757 ]
+          },
+          "duration" : {
+            "min" : 4.0
           }
         },
         "${value} second(s) of Petrify" : {
@@ -4306,19 +4306,19 @@
             "attributes" : {
               "${value}m Radius" : 3.5,
               "${value} Electrical Burn Damage over ${duration} Second(s)" : {
-                "duration" : {
-                  "min" : 4.0
-                },
                 "value" : {
                   "min" : [ 9.0, 14.2, 17.5, 21.1, 24.9, 28.9, 33.1, 37.6, 42.4, 47.4, 52.8, 58.4 ]
+                },
+                "duration" : {
+                  "min" : 4.0
                 }
               },
               "${value}% Slower Movement over ${duration} Second(s)" : {
-                "duration" : {
-                  "min" : 4.0
-                },
                 "value" : {
                   "min" : [ 9.0, 14.2, 17.5, 21.1, 24.9, 28.9, 33.1, 37.6, 42.4, 47.4, 52.8, 58.4 ]
+                },
+                "duration" : {
+                  "min" : 4.0
                 }
               },
               "+${value}% Damage to {%s1}" : [ 8.0, 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0 ],
@@ -4622,11 +4622,11 @@
         "Launches ${value} Projectile(s)" : 1,
         "${value} Arc of Attack" : 90.0,
         "${value} Bleeding Damage over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 3.0
-          },
           "value" : {
             "min" : [ 7.47, 14.94, 19.92, 24.9, 32.37, 39.84, 49.8, 59.76, 72.21, 87.15 ]
+          },
+          "duration" : {
+            "min" : 3.0
           }
         },
         "${value} Target Maximum" : 2,
@@ -4644,27 +4644,27 @@
       },
       "attributes" : {
         "${value} Reduced Armor over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 6.0
-          },
           "value" : {
             "min" : [ 16.0, 24.0, 32.0, 40.0, 48.0, 56.0, 64.0, 72.0, 80.0, 90.0 ]
+          },
+          "duration" : {
+            "min" : 6.0
           }
         },
         "${value}% Slower Movement over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 5.0
-          },
           "value" : {
             "min" : [ 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0 ]
+          },
+          "duration" : {
+            "min" : 5.0
           }
         },
         "${value}% reduced Defensive Ability over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 3.0
-          },
           "value" : {
             "min" : [ 8.0, 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0 ]
+          },
+          "duration" : {
+            "min" : 3.0
           }
         },
         "MaxLevel" : 6,
@@ -4681,11 +4681,11 @@
       "attributes" : {
         "${value} Energy Cost" : [ 12.0, 14.0, 17.0, 19.0, 21.0, 24.0, 26.0, 28.0, 31.0, 33.0, 35.0, 38.0 ],
         "${value} Bleeding Damage over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 3.0
-          },
           "value" : {
             "min" : [ 25.4, 31.4, 37.5, 44.0, 49.5, 57.1, 64.9, 73.0, 81.2, 89.8, 99.6, 110.1 ]
+          },
+          "duration" : {
+            "min" : 3.0
           }
         },
         "${value} Target Maximum" : [ 1.0, 1.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 5.0 ],
@@ -4724,11 +4724,11 @@
       "attributes" : {
         "${value} Energy Cost" : 20.0,
         "${value} Reduced Armor over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 10.0
-          },
           "value" : {
             "min" : [ 24.0, 32.0, 40.0, 48.0, 56.0, 66.0, 72.0, 80.0, 90.0, 100.0 ]
+          },
+          "duration" : {
+            "min" : 10.0
           }
         },
         "${value} Reduced Resistances" : {
@@ -4771,11 +4771,11 @@
         "Launches ${value} Projectile(s)" : 1,
         "${value} Arc of Attack" : 360.0,
         "${value} Bleeding Damage over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 3.0
-          },
           "value" : {
             "min" : [ 5.81, 11.786, 15.936, 20.252, 26.062, 32.038, 39.508, 47.144, 56.274, 67.23 ]
+          },
+          "duration" : {
+            "min" : 3.0
           }
         },
         "${value} Target Maximum" : 3,
@@ -4881,12 +4881,12 @@
           "max" : 2.0
         },
         "${value}% Chance of Impaired Aim over ${duration} Second(s)" : {
+          "value" : {
+            "min" : 70.0
+          },
           "duration" : {
             "min" : [ 1.0, 1.2, 1.4, 1.6, 1.8, 2.0, 2.2, 2.4, 2.6, 2.8, 3.0, 3.2, 3.4, 3.6, 3.8, 4.0 ],
             "max" : [ 1.5, 1.8, 2.1, 2.4, 2.7, 3.0, 3.3, 3.6, 3.9, 4.2, 4.5, 4.8, 5.1, 5.4, 5.7, 6.0 ]
-          },
-          "value" : {
-            "min" : 70.0
           }
         },
         "${value}% Reduction to Enemy's Health" : {
@@ -5055,11 +5055,11 @@
           }
         },
         "${value} Electrical Burn Damage over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 1.0
-          },
           "value" : {
             "min" : [ 32.0, 48.0, 64.0, 80.0, 96.0, 112.0, 128.0, 144.0, 160.0, 176.0, 192.0, 208.0, 224.0, 240.0 ]
+          },
+          "duration" : {
+            "min" : 1.0
           }
         },
         "${value} second(s) of Skill Disruption" : {
@@ -5113,11 +5113,11 @@
           "min" : 66.0
         },
         "${value}% Reduced Damage over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 3.0
-          },
           "value" : {
             "min" : [ 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0 ]
+          },
+          "duration" : {
+            "min" : 3.0
           }
         },
         "${value}% Reduction to Enemy's Health" : {
@@ -5155,30 +5155,30 @@
       },
       "attributes" : {
         "${value} Energy Leech over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 1.0
-          },
           "value" : {
             "min" : [ 12.0, 18.0, 24.0, 30.0, 36.0, 42.0, 48.0, 54.0, 60.0, 66.0, 72.0, 78.0, 84.0, 90.0 ]
+          },
+          "duration" : {
+            "min" : 1.0
           }
         },
         "${value}% Slowed over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 3.0
-          },
           "value" : {
             "min" : [ 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0 ]
+          },
+          "duration" : {
+            "min" : 3.0
           }
         },
         "${value}% of Attack damage converted to Health" : {
           "min" : 4.0
         },
         "${value}% reduced Offensive Ability over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 3.0
-          },
           "value" : {
             "min" : [ 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0 ]
+          },
+          "duration" : {
+            "min" : 3.0
           }
         },
         "MaxLevel" : 10,
@@ -5195,11 +5195,11 @@
       "attributes" : {
         "${value}m Radius" : 0.5,
         "${value} Burn Damage over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 3.0
-          },
           "value" : {
             "min" : [ 9.5, 14.0, 19.0, 24.5, 30.5, 37.0, 44.0, 51.5, 59.5, 68.0, 77.0, 86.5, 96.5, 107.0, 118.0, 129.5 ]
+          },
+          "duration" : {
+            "min" : 3.0
           }
         },
         "${value} Fragments" : {
@@ -5252,19 +5252,19 @@
           }
         },
         "${value} Frostburn Damage over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 3.0
-          },
           "value" : {
             "min" : [ 12.0, 18.0, 24.0, 30.0, 36.0, 42.0, 48.0, 54.0, 60.0, 66.0, 72.0, 78.0, 84.0, 90.0 ]
+          },
+          "duration" : {
+            "min" : 3.0
           }
         },
         "${value}% Slowed over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 3.0
-          },
           "value" : {
             "min" : [ 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 64.0, 68.0, 72.0 ]
+          },
+          "duration" : {
+            "min" : 3.0
           }
         },
         "MaxLevel" : 8,
@@ -5294,11 +5294,11 @@
       },
       "attributes" : {
         "${value} Energy Leech Retaliation over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 1.0
-          },
           "value" : {
             "min" : [ 12.0, 18.0, 24.0, 30.0, 36.0, 42.0, 48.0, 54.0, 60.0, 66.0, 72.0, 78.0, 84.0, 90.0 ]
+          },
+          "duration" : {
+            "min" : 1.0
           }
         },
         "${value}% Absorption of Spell Energy" : [ 23.0, 34.0, 45.0, 56.0, 67.0, 78.0, 89.0, 100.0, 111.0, 122.0, 133.0, 144.0, 155.0, 166.0 ],
@@ -5431,49 +5431,49 @@
       "attributes" : {
         "${value}m Radius" : 4.0,
         "${value} Bleeding Damage over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 4.0
-          },
           "value" : {
             "min" : [ 22.0, 33.0, 44.0, 55.0, 66.0, 77.0, 88.0, 99.0, 110.0, 121.0, 132.0, 143.0, 154.0, 165.0 ]
+          },
+          "duration" : {
+            "min" : 4.0
           }
         },
         "${value} Burn Damage" : {
           "min" : [ 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0 ]
         },
         "${value} Reduced Armor over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 4.0
-          },
           "value" : {
             "min" : [ 140.0, 210.0, 280.0, 350.0, 420.0, 490.0, 560.0, 630.0, 700.0, 770.0, 840.0, 910.0, 980.0, 1050.0 ]
+          },
+          "duration" : {
+            "min" : 4.0
           }
         },
         "${value} Reduced Resistances over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 4.0
-          },
           "value" : {
             "min" : [ 14.0, 21.0, 28.0, 35.0, 42.0, 49.0, 56.0, 63.0, 70.0, 77.0, 84.0, 91.0, 98.0, 105.0 ]
+          },
+          "duration" : {
+            "min" : 4.0
           }
         },
         "${value} second(s) of Skill Disruption" : {
           "min" : 4.0
         },
         "${value}% Chance of Impaired Aim over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 4.0
-          },
           "value" : {
             "min" : 60.0
+          },
+          "duration" : {
+            "min" : 4.0
           }
         },
         "${value}% Slowed over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 4.0
-          },
           "value" : {
             "min" : 20.0
+          },
+          "duration" : {
+            "min" : 4.0
           }
         },
         "MaxLevel" : 6,
@@ -5689,11 +5689,11 @@
       },
       "attributes" : {
         "${value} Bleeding Damage over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 1.0
-          },
           "value" : {
             "min" : [ 17.5, 24.5, 33.0, 40.0, 47.0, 55.5, 62.5, 69.5, 78.0, 85.0, 92.0, 100.5 ]
+          },
+          "duration" : {
+            "min" : 1.0
           }
         },
         "MaxLevel" : 8,
@@ -5712,11 +5712,11 @@
         "${value} Second Duration" : [ 28.0, 31.0, 33.0, 36.0, 42.0, 44.0, 47.0, 50.0, 52.0, 58.0, 60.0, 64.0, 66.0, 68.0, 75.0, 77.0, 80.0, 82.0, 84.0, 94.0 ],
         "${value}m Radius" : 15.0,
         "${value} Bleeding Damage over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 3.0
-          },
           "value" : {
             "min" : [ 6.1, 7.4, 8.6, 10.1, 11.3, 12.6, 13.8, 15.4, 16.8, 18.5, 20.6, 23.3 ]
+          },
+          "duration" : {
+            "min" : 3.0
           }
         },
         "+${value}% Attack Speed" : [ 15.0, 17.0, 19.0, 22.0, 24.0, 26.0, 28.0, 31.0, 33.0, 35.0, 37.0, 40.0 ],
@@ -5735,11 +5735,11 @@
       "attributes" : {
         "${value} Energy Cost" : 5.0,
         "${value} Bleeding Damage over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 3.0
-          },
           "value" : {
             "min" : [ 27.5, 37.5, 50.0, 60.0, 70.0, 82.5, 92.5, 102.5, 115.0, 125.0, 135.0, 147.5, 157.5, 167.5, 180.0 ]
+          },
+          "duration" : {
+            "min" : 3.0
           }
         },
         "MaxLevel" : 10,
@@ -5871,11 +5871,11 @@
         "${value}% Chance to be Used" : [ 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 17.0, 18.0, 19.0, 20.0 ],
         "Launches ${value} Projectile(s)" : 1,
         "${value} Bleeding Damage over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 3.0
-          },
           "value" : {
             "min" : [ 24.0, 36.0, 49.5, 64.5, 81.0, 99.0, 118.5, 139.5, 162.0, 187.5 ]
+          },
+          "duration" : {
+            "min" : 3.0
           }
         },
         "MaxLevel" : 6,
@@ -5968,11 +5968,11 @@
       "attributes" : {
         "${value} Energy Cost" : 1.0,
         "${value} Bleeding Damage over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 3.0
-          },
           "value" : {
             "min" : [ 4.0, 6.4, 8.8, 11.7, 14.7, 17.9, 21.3, 25.3, 29.3, 33.6, 38.1, 43.2, 48.5, 54.4, 60.8, 67.7 ]
+          },
+          "duration" : {
+            "min" : 3.0
           }
         },
         "${value} Fragments" : {
@@ -6040,11 +6040,11 @@
         },
         "${value} Arc of Attack" : 360.0,
         "${value}% Slower Attack over ${duration} Second(s)" : {
-          "duration" : {
-            "min" : 2.0
-          },
           "value" : {
             "min" : [ -50.0, -50.0, -50.0, -50.0, -50.0, -50.0, -50.0, -50.0, -50.0, -50.0, -50.0, -50.0, -50.0, -50.0, -50.0, -50.0 ]
+          },
+          "duration" : {
+            "min" : 2.0
           }
         },
         "+${value}% Physical Damage" : [ -20.0, -16.0, -12.0, -8.0, -4.0, 0.0, 4.0, 8.0, 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0 ],
