@@ -44,7 +44,7 @@ function formatSkillAttribute(key, value, index){
 }
 
 function formatCurrValue(value, index){
-    var ret = getCurrValue(value);
+    var ret = getCurrValue(value, index);
     if(ret.constructor === Object){
         return ret.min + " ~ " + ret.max;
     } else
@@ -52,7 +52,7 @@ function formatCurrValue(value, index){
 }
 
 function formatCurrValueScaled(value, duration, index){
-    var ret = getCurrValueScaled(value, duration);
+    var ret = getCurrValueScaled(value, duration, index);
     if(ret.constructor === Object){
         return ret.min + " ~ " + ret.max;
     } else
@@ -74,7 +74,7 @@ function formatChanceBasedAttributes(key, value, index){
 
 function formatAttribute(key, value, index){
     var ret = key;
-    if(value.includes("${value}"))
+    if(key.includes("${value}"))
         ret = ret.replace("${value}", getCurrValue(value, index));
     else
         ret = getCurrValue(value, index) + ret;
@@ -120,13 +120,13 @@ function getCurrValue(value, index){
 
 function getCurrValueScaled(value, duration, index){
     var scaledValue = value;
-    var ret = getCurrValue(value);
+    var ret = getCurrValue(value, index);
     var scaleFactor = getCurrValue(duration, index);
     if(scaleFactor.constructor === Object){
-        ret = { "min": getCurrValueScaled(ret, scaleFactor.min), "max": getCurrValueScaled(ret, scaleFactor.max) };
+        ret = { "min": getCurrValueScaled(ret, scaleFactor.min, index), "max": getCurrValueScaled(ret, scaleFactor.max, index) };
     } else if(scaleFactor != 1.0){
         if(ret.constructor === Object){
-            ret = { "min": getCurrValueScaled(ret.min, scaleFactor), "max": getCurrValueScaled(ret.max, scaleFactor) };
+            ret = { "min": getCurrValueScaled(ret.min, scaleFactor, index), "max": getCurrValueScaled(ret.max, scaleFactor, index) };
         } if(ret.constructor === Array){
             var _index = index;
             if(_index >= ret.length)

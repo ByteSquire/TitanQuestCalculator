@@ -21,11 +21,13 @@
       "+${value} Energy" : [ 16.0, 32.0, 48.0, 64.0, 80.0, 96.0, 112.0, 128.0, 144.0, 160.0, 176.0, 192.0, 208.0, 224.0, 240.0, 256.0, 272.0, 288.0, 304.0, 320.0, 336.0, 352.0, 368.0, 384.0, 400.0, 416.0, 432.0, 448.0, 464.0, 480.0, 496.0, 512.0, 528.0, 544.0, 560.0, 576.0, 592.0, 608.0, 624.0, 640.0 ],
       "+${value} Intelligence" : [ 2.0, 5.0, 7.0, 10.0, 12.0, 15.0, 17.0, 20.0, 22.0, 25.0, 27.0, 30.0, 32.0, 35.0, 37.0, 40.0, 42.0, 45.0, 47.0, 50.0, 52.0, 55.0, 57.0, 60.0, 62.0, 65.0, 67.0, 70.0, 72.0, 75.0, 77.0, 80.0, 82.0, 85.0, 88.0, 90.0, 93.0, 95.0, 98.0, 100.0 ],
       "+${value} Dexterity" : [ 1.0, 3.0, 4.0, 6.0, 7.0, 9.0, 10.0, 12.0, 13.0, 15.0, 16.0, 18.0, 19.0, 21.0, 22.0, 24.0, 25.0, 27.0, 28.0, 30.0, 31.0, 33.0, 34.0, 36.0, 37.0, 39.0, 40.0, 42.0, 43.0, 45.0, 46.0, 48.0, 51.0, 53.0, 54.0, 56.0, 57.0, 59.0, 60.0 ],
-      "${value}Bonus to all Pets:" : { },
       "+${value} Health Regeneration per second" : [ 0.3, 0.6, 0.9, 1.2, 1.5, 1.8, 2.1, 2.4, 2.7, 3.0, 3.3, 3.6, 3.9, 4.2, 4.5, 4.8, 5.1, 5.4, 5.7, 6.0, 6.3, 6.6, 6.9, 7.2, 7.5, 7.8, 8.1, 8.4, 8.7, 9.0, 9.3, 9.6, 9.9, 10.2, 10.5, 10.8, 11.1, 11.4, 11.7, 12.0 ],
       "+${value}% Health" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.3, 2.6, 3.9, 5.2, 6.5, 7.8, 9.1, 10.4, 11.7, 13.0, 14.3, 15.6, 16.9, 18.2, 19.5, 20.8, 22.1, 23.4, 24.7, 26.0 ],
       "+${value}% Health Regeneration" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 4.8, 9.6, 14.4, 19.2, 24.0, 28.8, 33.6, 38.4, 43.2, 48.0, 52.8, 57.6, 62.4, 67.2, 72.0, 76.8, 81.6, 86.4, 91.2, 96.0 ],
-      "MaxLevel" : 60
+      "MaxLevel" : 60,
+      "Bonus to all Pets:" : {
+        "+${value}% Total Speed" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.65, 1.3, 1.95, 2.6, 3.25, 3.9, 4.55, 5.2, 5.85, 6.5, 7.15, 7.8, 8.45, 9.1, 9.75, 10.4, 11.05, 11.7, 12.35, 13.0 ]
+      }
     },
     "skillTiers" : [ [ {
       "name" : "Regrowth",
@@ -89,6 +91,20 @@
               "UltimateLevel" : 16
             }
           },
+          "Pet_DifficultyDamageScaling_leg" : {
+            "name" : "Pet_DifficultyDamageScaling_leg",
+            "attributes" : {
+              "+${value} Strength" : 300.0,
+              "+${value} Intelligence" : 390.0,
+              "+${value}% Bleeding Damage " : 60.0,
+              "+${value}% Energy Leech " : 60.0,
+              "+${value}% Instant Poison Damage" : 60.0,
+              "+${value}% Life Leech " : 60.0,
+              "+${value}% Pierce Damage" : 60.0,
+              "+${value}% Poison Damage " : 60.0,
+              "MaxLevel" : 1
+            }
+          },
           "Dodge Attacks" : {
             "name" : "Dodge Attacks",
             "description" : "Even the sturdiest armor has its chinks.  The best way to stay alive is to not get hit.",
@@ -96,6 +112,20 @@
               "${value}% Chance to Avoid Projectiles" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0, 28.0, 29.0, 30.0, 31.0, 32.0, 33.0, 34.0, 35.0, 36.0, 37.0, 38.0, 39.0, 40.0, 41.0, 42.0, 43.0, 44.0, 45.0, 46.0, 47.0, 48.0, 49.0, 50.0, 51.0, 52.0, 53.0, 54.0, 55.0, 56.0, 57.0, 58.0, 59.0, 60.0, 61.0, 62.0, 63.0, 64.0, 65.0, 66.0, 67.0, 68.0, 69.0, 70.0, 71.0, 72.0, 73.0, 74.0, 75.0, 76.0, 77.0, 78.0, 79.0, 80.0, 81.0, 82.0, 83.0, 84.0, 85.0, 86.0, 87.0, 88.0, 89.0, 90.0, 91.0, 92.0, 93.0, 94.0, 95.0, 96.0, 97.0, 98.0, 99.0, 100.0 ],
               "${value}% Chance to Dodge Attacks" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0, 28.0, 29.0, 30.0, 31.0, 32.0, 33.0, 34.0, 35.0, 36.0, 37.0, 38.0, 39.0, 40.0, 41.0, 42.0, 43.0, 44.0, 45.0, 46.0, 47.0, 48.0, 49.0, 50.0, 51.0, 52.0, 53.0, 54.0, 55.0, 56.0, 57.0, 58.0, 59.0, 60.0, 61.0, 62.0, 63.0, 64.0, 65.0, 66.0, 67.0, 68.0, 69.0, 70.0, 71.0, 72.0, 73.0, 74.0, 75.0, 76.0, 77.0, 78.0, 79.0, 80.0, 81.0, 82.0, 83.0, 84.0, 85.0, 86.0, 87.0, 88.0, 89.0, 90.0, 91.0, 92.0, 93.0, 94.0, 95.0, 96.0, 97.0, 98.0, 99.0, 100.0 ],
               "MaxLevel" : 100
+            }
+          },
+          "Pet_DifficultyDamageScaling_epic" : {
+            "name" : "Pet_DifficultyDamageScaling_epic",
+            "attributes" : {
+              "+${value} Strength" : 150.0,
+              "+${value} Intelligence" : 195.0,
+              "+${value}% Bleeding Damage " : 30.0,
+              "+${value}% Energy Leech " : 30.0,
+              "+${value}% Instant Poison Damage" : 30.0,
+              "+${value}% Life Leech " : 30.0,
+              "+${value}% Pierce Damage" : 30.0,
+              "+${value}% Poison Damage " : 30.0,
+              "MaxLevel" : 1
             }
           },
           "Maul" : {
@@ -349,6 +379,34 @@
           "+${value} Base Attack Speed" : [ 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88 ]
         },
         "petSkills" : {
+          "Pet_DifficultyDamageScaling_leg" : {
+            "name" : "Pet_DifficultyDamageScaling_leg",
+            "attributes" : {
+              "+${value} Strength" : 300.0,
+              "+${value} Intelligence" : 390.0,
+              "+${value}% Bleeding Damage " : 60.0,
+              "+${value}% Energy Leech " : 60.0,
+              "+${value}% Instant Poison Damage" : 60.0,
+              "+${value}% Life Leech " : 60.0,
+              "+${value}% Pierce Damage" : 60.0,
+              "+${value}% Poison Damage " : 60.0,
+              "MaxLevel" : 1
+            }
+          },
+          "Pet_DifficultyDamageScaling_epic" : {
+            "name" : "Pet_DifficultyDamageScaling_epic",
+            "attributes" : {
+              "+${value} Strength" : 150.0,
+              "+${value} Intelligence" : 195.0,
+              "+${value}% Bleeding Damage " : 30.0,
+              "+${value}% Energy Leech " : 30.0,
+              "+${value}% Instant Poison Damage" : 30.0,
+              "+${value}% Life Leech " : 30.0,
+              "+${value}% Pierce Damage" : 30.0,
+              "+${value}% Poison Damage " : 30.0,
+              "MaxLevel" : 1
+            }
+          },
           "Poisonous Quills" : {
             "name" : "Poisonous Quills",
             "description" : "The Quill Ward grows poisonous quills, using them to attack enemies at a distance.",
@@ -647,6 +705,34 @@
               "UltimateLevel" : 12
             }
           },
+          "Pet_DifficultyDamageScaling_leg" : {
+            "name" : "Pet_DifficultyDamageScaling_leg",
+            "attributes" : {
+              "+${value} Strength" : 300.0,
+              "+${value} Intelligence" : 390.0,
+              "+${value}% Bleeding Damage " : 60.0,
+              "+${value}% Energy Leech " : 60.0,
+              "+${value}% Instant Poison Damage" : 60.0,
+              "+${value}% Life Leech " : 60.0,
+              "+${value}% Pierce Damage" : 60.0,
+              "+${value}% Poison Damage " : 60.0,
+              "MaxLevel" : 1
+            }
+          },
+          "Pet_DifficultyDamageScaling_epic" : {
+            "name" : "Pet_DifficultyDamageScaling_epic",
+            "attributes" : {
+              "+${value} Strength" : 150.0,
+              "+${value} Intelligence" : 195.0,
+              "+${value}% Bleeding Damage " : 30.0,
+              "+${value}% Energy Leech " : 30.0,
+              "+${value}% Instant Poison Damage" : 30.0,
+              "+${value}% Life Leech " : 30.0,
+              "+${value}% Pierce Damage" : 30.0,
+              "+${value}% Poison Damage " : 30.0,
+              "MaxLevel" : 1
+            }
+          },
           "Bow Attack" : {
             "name" : "Bow Attack",
             "projectileUsesAllDamage" : true,
@@ -669,9 +755,13 @@
             "attributes" : {
               "${value} Energy Cost" : 10.0,
               "${value}m Radius" : 15.0,
-              "${value}Bonus to all Pets:" : { },
               "MaxLevel" : 8,
-              "UltimateLevel" : 12
+              "UltimateLevel" : 12,
+              "Bonus to all Pets:" : {
+                "+${value}% Energy Regeneration" : [ 30.0, 45.0, 60.0, 75.0, 90.0, 105.0, 120.0, 135.0, 150.0, 165.0, 180.0, 195.0 ],
+                "+${value}% Health Regeneration" : [ 30.0, 45.0, 60.0, 75.0, 90.0, 105.0, 120.0, 135.0, 150.0, 165.0, 180.0, 195.0 ],
+                "+${value}% Total Damage" : [ 5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0 ]
+              }
             }
           },
           "Nature's Grace" : {
@@ -852,9 +942,13 @@
       "attributes" : {
         "${value} Energy Cost" : 10.0,
         "${value}m Radius" : 15.0,
-        "${value}Bonus to all Pets:" : { },
         "MaxLevel" : 8,
-        "UltimateLevel" : 12
+        "UltimateLevel" : 12,
+        "Bonus to all Pets:" : {
+          "+${value}% Energy Regeneration" : [ 30.0, 45.0, 60.0, 75.0, 90.0, 105.0, 120.0, 135.0, 150.0, 165.0, 180.0, 195.0 ],
+          "+${value}% Health Regeneration" : [ 30.0, 45.0, 60.0, 75.0, 90.0, 105.0, 120.0, 135.0, 150.0, 165.0, 180.0, 195.0 ],
+          "+${value}% Total Damage" : [ 5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0 ]
+        }
       }
     }, {
       "name" : "Earthbind",
@@ -959,6 +1053,16 @@
               "UltimateLevel" : 20
             }
           },
+          "Ascacophus_BleedDamageImmunity" : {
+            "name" : "Ascacophus_BleedDamageImmunity",
+            "attributes" : {
+              "${value}% Bleeding Resistance" : 1000.0,
+              "${value}% Reduced Petrify Duration" : 50.0,
+              "${value}% Slow Resistance" : 50.0,
+              "${value}% Stun Resistance" : 50.0,
+              "MaxLevel" : 1
+            }
+          },
           "Coiling Roots" : {
             "name" : "Coiling Roots",
             "notDispellable" : true,
@@ -984,6 +1088,41 @@
               },
               "MaxLevel" : 20,
               "UltimateLevel" : 20
+            }
+          },
+          "Pet_DifficultyDamageScaling_leg" : {
+            "name" : "Pet_DifficultyDamageScaling_leg",
+            "attributes" : {
+              "+${value} Strength" : 300.0,
+              "+${value} Intelligence" : 390.0,
+              "+${value}% Bleeding Damage " : 60.0,
+              "+${value}% Energy Leech " : 60.0,
+              "+${value}% Instant Poison Damage" : 60.0,
+              "+${value}% Life Leech " : 60.0,
+              "+${value}% Pierce Damage" : 60.0,
+              "+${value}% Poison Damage " : 60.0,
+              "MaxLevel" : 1
+            }
+          },
+          "ElementalResistance_10xLevel" : {
+            "name" : "ElementalResistance_10xLevel",
+            "attributes" : {
+              "${value}% Elemental Resistance" : [ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0 ],
+              "MaxLevel" : 10
+            }
+          },
+          "Pet_DifficultyDamageScaling_epic" : {
+            "name" : "Pet_DifficultyDamageScaling_epic",
+            "attributes" : {
+              "+${value} Strength" : 150.0,
+              "+${value} Intelligence" : 195.0,
+              "+${value}% Bleeding Damage " : 30.0,
+              "+${value}% Energy Leech " : 30.0,
+              "+${value}% Instant Poison Damage" : 30.0,
+              "+${value}% Life Leech " : 30.0,
+              "+${value}% Pierce Damage" : 30.0,
+              "+${value}% Poison Damage " : 30.0,
+              "MaxLevel" : 1
             }
           },
           "Physical Attack" : {
@@ -1016,6 +1155,7 @@
         "petSkillLevels" : {
           "Stomp" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ],
           "Attributes" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ],
+          "Ascacophus_BleedDamageImmunity" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
           "Coiling Roots" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ],
           "Physical Attack" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ]
         }
@@ -1529,6 +1669,31 @@
               "MaxLevel" : 20
             }
           },
+          "bonescourge_pound" : {
+            "name" : "bonescourge_pound",
+            "attributes" : {
+              "^a${value} Second(s) Recharge" : 12.0,
+              "${value}m Radius" : 5.0,
+              "${value} Bleeding Damage over ${duration} Second(s)" : {
+                "value" : {
+                  "min" : [ 36.0, 42.0, 48.0, 54.0, 60.0, 66.0, 72.0, 78.0, 84.0, 90.0, 96.0, 102.0, 108.0, 114.0, 120.0, 126.0, 132.0, 138.0, 144.0, 150.0 ]
+                },
+                "duration" : {
+                  "min" : 1.0
+                }
+              },
+              "${value} Physical Damage" : {
+                "min" : [ 21.0, 26.0, 31.0, 36.0, 41.0, 46.0, 51.0, 56.0, 61.0, 66.0, 71.0, 76.0, 81.0, 86.0, 91.0, 96.0, 101.0, 106.0, 111.0, 116.0 ]
+              },
+              "${value} Vitality Damage" : {
+                "min" : [ 21.0, 26.0, 31.0, 36.0, 41.0, 46.0, 51.0, 56.0, 61.0, 66.0, 71.0, 76.0, 81.0, 86.0, 91.0, 96.0, 101.0, 106.0, 111.0, 116.0 ]
+              },
+              "${value}% Reduction to Enemy's Health" : {
+                "min" : [ 10.5, 11.0, 11.5, 12.0, 12.5, 13.0, 13.5, 14.0, 14.5, 15.0, 15.5, 16.0, 16.5, 17.0, 17.5, 18.0, 18.5, 19.0, 19.5, 20.0 ]
+              },
+              "MaxLevel" : 30
+            }
+          },
           "Attributes" : {
             "name" : "Attributes",
             "attributes" : {
@@ -1585,6 +1750,7 @@
         },
         "petSkillLevels" : {
           "Soul Spear" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ],
+          "bonescourge_pound" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ],
           "Attributes" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ],
           "Soul Blast" : [ 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ]
         }
@@ -1677,6 +1843,38 @@
               "UltimateLevel" : 25
             }
           },
+          "Pet_DifficultyDamageScaling_epic" : {
+            "name" : "Pet_DifficultyDamageScaling_epic",
+            "attributes" : {
+              "+${value} Strength" : 150.0,
+              "+${value} Intelligence" : 195.0,
+              "+${value}% Bleeding Damage " : 30.0,
+              "+${value}% Energy Leech " : 30.0,
+              "+${value}% Instant Poison Damage" : 30.0,
+              "+${value}% Life Leech " : 30.0,
+              "+${value}% Pierce Damage" : 30.0,
+              "+${value}% Poison Damage " : 30.0,
+              "MaxLevel" : 1
+            }
+          },
+          "drxwraithlord_defaultattack" : {
+            "name" : "drxwraithlord_defaultattack",
+            "projectileUsesAllDamage" : true,
+            "attributes" : {
+              "Launches ${value} Projectile(s)" : 1,
+              "${value} Cold Damage" : {
+                "min" : [ 21.0, 24.0, 28.0, 32.0, 36.0, 39.0, 43.0, 47.0, 51.0, 54.0, 58.0, 62.0, 66.0, 69.0, 73.0, 78.0, 83.0, 89.0, 96.0, 115.0 ]
+              },
+              "${value} Vitality Damage" : {
+                "min" : [ 15.6, 19.2, 22.8, 25.6, 29.2, 32.8, 35.6, 39.2, 42.8, 45.6, 49.2, 52.8, 55.6, 59.2, 62.8, 65.6, 69.2, 72.8, 75.6, 79.2, 82.8, 85.6, 89.2, 92.8, 95.6 ]
+              },
+              "${value}% of Attack damage converted to Health" : {
+                "min" : 10.0
+              },
+              "MaxLevel" : 20,
+              "UltimateLevel" : 20
+            }
+          },
           "Wraith Shell" : {
             "name" : "Wraith Shell",
             "description" : "Allows the Liche King to diminish its corporeal presence making it less vulnerable to all types of damage.",
@@ -1711,6 +1909,20 @@
               },
               "MaxLevel" : 20,
               "UltimateLevel" : 20
+            }
+          },
+          "Pet_DifficultyDamageScaling_leg" : {
+            "name" : "Pet_DifficultyDamageScaling_leg",
+            "attributes" : {
+              "+${value} Strength" : 300.0,
+              "+${value} Intelligence" : 390.0,
+              "+${value}% Bleeding Damage " : 60.0,
+              "+${value}% Energy Leech " : 60.0,
+              "+${value}% Instant Poison Damage" : 60.0,
+              "+${value}% Life Leech " : 60.0,
+              "+${value}% Pierce Damage" : 60.0,
+              "+${value}% Poison Damage " : 60.0,
+              "MaxLevel" : 1
             }
           },
           "Greater Domain" : {
@@ -1756,6 +1968,7 @@
         },
         "petSkillLevels" : {
           "Spectral Bolt" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ],
+          "drxwraithlord_defaultattack" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ],
           "Soul Blight" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ]
         }
       }
@@ -2044,6 +2257,34 @@
               "UltimateLevel" : 20
             }
           },
+          "Pet_DifficultyDamageScaling_epic" : {
+            "name" : "Pet_DifficultyDamageScaling_epic",
+            "attributes" : {
+              "+${value} Strength" : 150.0,
+              "+${value} Intelligence" : 195.0,
+              "+${value}% Bleeding Damage " : 30.0,
+              "+${value}% Energy Leech " : 30.0,
+              "+${value}% Instant Poison Damage" : 30.0,
+              "+${value}% Life Leech " : 30.0,
+              "+${value}% Pierce Damage" : 30.0,
+              "+${value}% Poison Damage " : 30.0,
+              "MaxLevel" : 1
+            }
+          },
+          "Pet_DifficultyDamageScaling_leg" : {
+            "name" : "Pet_DifficultyDamageScaling_leg",
+            "attributes" : {
+              "+${value} Strength" : 300.0,
+              "+${value} Intelligence" : 390.0,
+              "+${value}% Bleeding Damage " : 60.0,
+              "+${value}% Energy Leech " : 60.0,
+              "+${value}% Instant Poison Damage" : 60.0,
+              "+${value}% Life Leech " : 60.0,
+              "+${value}% Pierce Damage" : 60.0,
+              "+${value}% Poison Damage " : 60.0,
+              "MaxLevel" : 1
+            }
+          },
           "Storm Surge" : {
             "name" : "Storm Surge",
             "description" : "When activated, each enemy hit has a chance of unleashing a violent squall of storm energy.",
@@ -2170,9 +2411,14 @@
           "min" : [ 1.0, 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0 ],
           "max" : [ 21.0, 27.0, 33.0, 38.0, 44.0, 50.0, 55.0, 61.0, 67.0, 75.0, 81.0, 87.0, 95.0, 107.0 ]
         },
-        "${value}Bonus to all Pets:" : { },
         "MaxLevel" : 10,
-        "UltimateLevel" : 14
+        "UltimateLevel" : 14,
+        "Bonus to all Pets:" : {
+          "${value} Lightning Damage" : {
+            "min" : [ 1.0, 1.5, 2.5, 3.5, 4.5, 5.5, 6.5, 7.5, 8.5, 9.5, 10.5, 11.5, 12.5, 13.5 ],
+            "max" : [ 10.5, 13.5, 16.5, 19.0, 22.0, 25.0, 27.5, 30.5, 33.5, 37.5, 40.5, 43.5, 47.5, 53.5 ]
+          }
+        }
       }
     }, {
       "name" : "Thunderball",
@@ -2209,9 +2455,14 @@
           "min" : [ 6.0, 9.0, 12.0, 16.0, 19.0, 22.0, 25.0, 29.0, 32.0, 35.0, 38.0, 42.0, 46.0, 51.0 ],
           "max" : [ 7.0, 11.0, 15.0, 19.0, 23.0, 27.0, 31.0, 35.0, 39.0, 43.0, 47.0, 51.0, 55.0, 59.0 ]
         },
-        "${value}Bonus to all Pets:" : { },
         "MaxLevel" : 10,
-        "UltimateLevel" : 14
+        "UltimateLevel" : 14,
+        "Bonus to all Pets:" : {
+          "${value} Cold Damage" : {
+            "min" : [ 2.25, 3.75, 5.25, 7.5, 9.0, 10.5, 12.0, 14.25, 15.75, 17.25, 18.75, 21.0, 23.25, 26.25 ],
+            "max" : [ 4.75, 6.25, 7.75, 10.0, 11.5, 13.0, 14.5, 16.75, 18.25, 20.25, 22.25, 24.5, 26.75, 30.75 ]
+          }
+        }
       }
     } ], [ {
       "name" : "Static Charge",
@@ -2225,6 +2476,17 @@
         "${value} Energy Reserved" : 25.0,
         "${value} Active Energy Cost per Second" : 1.0,
         " (${value}% of lost Energy as Damage)" : [ 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 45.0 ],
+        "${chance}% Chance of ${value} Lightning Damage Retaliation" : {
+          "chance" : 15.0,
+          "value" : {
+            "min" : [ 54.0, 66.0, 78.0, 90.0, 102.0, 114.0, 126.0, 138.0, 150.0, 162.0, 174.0, 186.0 ]
+          }
+        },
+        "${value}% Energy Drained" : {
+          "min" : [ 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0 ]
+        },
+        "MaxLevel" : 8,
+        "UltimateLevel" : 12,
         "${chance}% Chance for all of the following:" : {
           "chance" : [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 15.0, 16.0, 17.0, 18.0, 20.0 ],
           "values" : {
@@ -2241,18 +2503,7 @@
               "min" : 4.0
             }
           }
-        },
-        "${chance}% Chance of ${value} Lightning Damage Retaliation" : {
-          "chance" : 15.0,
-          "value" : {
-            "min" : [ 54.0, 66.0, 78.0, 90.0, 102.0, 114.0, 126.0, 138.0, 150.0, 162.0, 174.0, 186.0 ]
-          }
-        },
-        "${value}% Energy Drained" : {
-          "min" : [ 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0 ]
-        },
-        "MaxLevel" : 8,
-        "UltimateLevel" : 12
+        }
       }
     }, {
       "name" : "Storm Surge",
@@ -2567,6 +2818,11 @@
         "^a${value} Second(s) Recharge" : 0.7,
         "${value} Energy Cost" : 20.0,
         "Launches ${value} Projectile(s)" : 1,
+        "${value}% Chance to Avoid Projectiles" : [ 10.0, 20.0, 29.0, 38.0, 46.0, 54.0, 61.0, 68.0, 74.0, 80.0 ],
+        "${value}% Chance to Dodge Attacks" : [ 10.0, 20.0, 29.0, 38.0, 46.0, 54.0, 61.0, 68.0, 74.0, 80.0 ],
+        "+${value}% Movement Speed" : 444.0,
+        "MaxLevel" : 6,
+        "UltimateLevel" : 10,
         "${chance}% Chance for all of the following:" : {
           "chance" : [ 5.0, 8.0, 11.0, 14.0, 17.0, 20.0, 23.0, 26.0, 29.0, 32.0 ],
           "values" : {
@@ -2578,12 +2834,7 @@
             },
             "+${value}% Total Damage" : 200.0
           }
-        },
-        "${value}% Chance to Avoid Projectiles" : [ 10.0, 20.0, 29.0, 38.0, 46.0, 54.0, 61.0, 68.0, 74.0, 80.0 ],
-        "${value}% Chance to Dodge Attacks" : [ 10.0, 20.0, 29.0, 38.0, 46.0, 54.0, 61.0, 68.0, 74.0, 80.0 ],
-        "+${value}% Movement Speed" : 444.0,
-        "MaxLevel" : 6,
-        "UltimateLevel" : 10
+        }
       }
     }, {
       "name" : "Storm Wisp",
@@ -2613,6 +2864,20 @@
           "+${value} Base Attack Speed" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ]
         },
         "petSkills" : {
+          "Pet_DifficultyDamageScaling_epic" : {
+            "name" : "Pet_DifficultyDamageScaling_epic",
+            "attributes" : {
+              "+${value} Strength" : 150.0,
+              "+${value} Intelligence" : 195.0,
+              "+${value}% Bleeding Damage " : 30.0,
+              "+${value}% Energy Leech " : 30.0,
+              "+${value}% Instant Poison Damage" : 30.0,
+              "+${value}% Life Leech " : 30.0,
+              "+${value}% Pierce Damage" : 30.0,
+              "+${value}% Poison Damage " : 30.0,
+              "MaxLevel" : 1
+            }
+          },
           "Dodge Attacks" : {
             "name" : "Dodge Attacks",
             "description" : "Even the sturdiest armor has its chinks.  The best way to stay alive is to not get hit.",
@@ -2635,6 +2900,20 @@
               "+${value}% Elemental Damages" : [ 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0, 150.0, 160.0, 170.0, 185.0, 200.0 ],
               "MaxLevel" : 8,
               "UltimateLevel" : 12
+            }
+          },
+          "Pet_DifficultyDamageScaling_leg" : {
+            "name" : "Pet_DifficultyDamageScaling_leg",
+            "attributes" : {
+              "+${value} Strength" : 300.0,
+              "+${value} Intelligence" : 390.0,
+              "+${value}% Bleeding Damage " : 60.0,
+              "+${value}% Energy Leech " : 60.0,
+              "+${value}% Instant Poison Damage" : 60.0,
+              "+${value}% Life Leech " : 60.0,
+              "+${value}% Pierce Damage" : 60.0,
+              "+${value}% Poison Damage " : 60.0,
+              "MaxLevel" : 1
             }
           },
           "Plasma Burn" : {
@@ -3122,6 +3401,20 @@
               "UltimateLevel" : 20
             }
           },
+          "Pet_DifficultyDamageScaling_leg" : {
+            "name" : "Pet_DifficultyDamageScaling_leg",
+            "attributes" : {
+              "+${value} Strength" : 300.0,
+              "+${value} Intelligence" : 390.0,
+              "+${value}% Bleeding Damage " : 60.0,
+              "+${value}% Energy Leech " : 60.0,
+              "+${value}% Instant Poison Damage" : 60.0,
+              "+${value}% Life Leech " : 60.0,
+              "+${value}% Pierce Damage" : 60.0,
+              "+${value}% Poison Damage " : 60.0,
+              "MaxLevel" : 1
+            }
+          },
           "Blazing Boulder" : {
             "name" : "Blazing Boulder",
             "attributes" : {
@@ -3140,6 +3433,20 @@
               },
               "MaxLevel" : 20,
               "UltimateLevel" : 20
+            }
+          },
+          "Pet_DifficultyDamageScaling_epic" : {
+            "name" : "Pet_DifficultyDamageScaling_epic",
+            "attributes" : {
+              "+${value} Strength" : 150.0,
+              "+${value} Intelligence" : 195.0,
+              "+${value}% Bleeding Damage " : 30.0,
+              "+${value}% Energy Leech " : 30.0,
+              "+${value}% Instant Poison Damage" : 30.0,
+              "+${value}% Life Leech " : 30.0,
+              "+${value}% Pierce Damage" : 30.0,
+              "+${value}% Poison Damage " : 30.0,
+              "MaxLevel" : 1
             }
           },
           "Fracture" : {
@@ -3638,6 +3945,8 @@
         "posX" : 128
       },
       "attributes" : {
+        "MaxLevel" : 8,
+        "UltimateLevel" : 12,
         "${chance}% Chance for all of the following:" : {
           "chance" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 33.0 ],
           "values" : {
@@ -3645,9 +3954,7 @@
             "+${value}% Burn Damage " : [ 90.0, 108.0, 126.0, 144.0, 162.0, 180.0, 198.0, 222.0, 240.0, 258.0, 276.0, 300.0 ],
             "+${value}% Physical Damage" : [ 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 70.0, 75.0, 80.0, 90.0, 100.0 ]
           }
-        },
-        "MaxLevel" : 8,
-        "UltimateLevel" : 12
+        }
       }
     }, {
       "name" : "Molten Lava",
@@ -4107,6 +4414,20 @@
           "+${value} Base Attack Speed" : [ 2.85, 2.85, 2.85, 2.85, 2.85, 2.85, 2.85, 2.85, 2.85, 2.85, 2.85, 2.85, 2.85, 2.85, 2.85, 2.85, 2.85, 2.85, 2.85, 2.85 ]
         },
         "petSkills" : {
+          "Pet_DifficultyDamageScaling_leg" : {
+            "name" : "Pet_DifficultyDamageScaling_leg",
+            "attributes" : {
+              "+${value} Strength" : 300.0,
+              "+${value} Intelligence" : 390.0,
+              "+${value}% Bleeding Damage " : 60.0,
+              "+${value}% Energy Leech " : 60.0,
+              "+${value}% Instant Poison Damage" : 60.0,
+              "+${value}% Life Leech " : 60.0,
+              "+${value}% Pierce Damage" : 60.0,
+              "+${value}% Poison Damage " : 60.0,
+              "MaxLevel" : 1
+            }
+          },
           "Detonate" : {
             "name" : "Detonate",
             "doesNotIncludeRacialDamage" : true,
@@ -4143,6 +4464,20 @@
               },
               "MaxLevel" : 20,
               "UltimateLevel" : 20
+            }
+          },
+          "Pet_DifficultyDamageScaling_epic" : {
+            "name" : "Pet_DifficultyDamageScaling_epic",
+            "attributes" : {
+              "+${value} Strength" : 150.0,
+              "+${value} Intelligence" : 195.0,
+              "+${value}% Bleeding Damage " : 30.0,
+              "+${value}% Energy Leech " : 30.0,
+              "+${value}% Instant Poison Damage" : 30.0,
+              "+${value}% Life Leech " : 30.0,
+              "+${value}% Pierce Damage" : 30.0,
+              "+${value}% Poison Damage " : 30.0,
+              "MaxLevel" : 1
             }
           },
           "Maul" : {
@@ -4469,6 +4804,20 @@
               "UltimateLevel" : 22
             }
           },
+          "Pet_DifficultyDamageScaling_leg" : {
+            "name" : "Pet_DifficultyDamageScaling_leg",
+            "attributes" : {
+              "+${value} Strength" : 300.0,
+              "+${value} Intelligence" : 390.0,
+              "+${value}% Bleeding Damage " : 60.0,
+              "+${value}% Energy Leech " : 60.0,
+              "+${value}% Instant Poison Damage" : 60.0,
+              "+${value}% Life Leech " : 60.0,
+              "+${value}% Pierce Damage" : 60.0,
+              "+${value}% Poison Damage " : 60.0,
+              "MaxLevel" : 1
+            }
+          },
           "Shadow Plague" : {
             "name" : "Shadow Plague",
             "description" : "The Shadow Stalker infects a target, reducing a portion of its life instantly and slowing it for a few seconds--effect can leap to nearby enemies.",
@@ -4569,6 +4918,20 @@
               "Affects up to ${value} targets" : [ 2.0, 2.0, 3.0, 3.0, 4.0, 4.0, 5.0, 5.0, 6.0, 6.0, 7.0, 7.0 ],
               "MaxLevel" : 8,
               "UltimateLevel" : 12
+            }
+          },
+          "Pet_DifficultyDamageScaling_epic" : {
+            "name" : "Pet_DifficultyDamageScaling_epic",
+            "attributes" : {
+              "+${value} Strength" : 150.0,
+              "+${value} Intelligence" : 195.0,
+              "+${value}% Bleeding Damage " : 30.0,
+              "+${value}% Energy Leech " : 30.0,
+              "+${value}% Instant Poison Damage" : 30.0,
+              "+${value}% Life Leech " : 30.0,
+              "+${value}% Pierce Damage" : 30.0,
+              "+${value}% Poison Damage " : 30.0,
+              "MaxLevel" : 1
             }
           },
           "Shadow Strike" : {
@@ -5318,6 +5681,68 @@
           "+${value} Base Attack Speed" : [ 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3 ]
         },
         "petSkills" : {
+          "Pet_DifficultyDamageScaling_leg" : {
+            "name" : "Pet_DifficultyDamageScaling_leg",
+            "attributes" : {
+              "+${value} Strength" : 300.0,
+              "+${value} Intelligence" : 390.0,
+              "+${value}% Bleeding Damage " : 60.0,
+              "+${value}% Energy Leech " : 60.0,
+              "+${value}% Instant Poison Damage" : 60.0,
+              "+${value}% Life Leech " : 60.0,
+              "+${value}% Pierce Damage" : 60.0,
+              "+${value}% Poison Damage " : 60.0,
+              "MaxLevel" : 1
+            }
+          },
+          "Pet_DifficultyDamageScaling_epic" : {
+            "name" : "Pet_DifficultyDamageScaling_epic",
+            "attributes" : {
+              "+${value} Strength" : 150.0,
+              "+${value} Intelligence" : 195.0,
+              "+${value}% Bleeding Damage " : 30.0,
+              "+${value}% Energy Leech " : 30.0,
+              "+${value}% Instant Poison Damage" : 30.0,
+              "+${value}% Life Leech " : 30.0,
+              "+${value}% Pierce Damage" : 30.0,
+              "+${value}% Poison Damage " : 30.0,
+              "MaxLevel" : 1
+            }
+          },
+          "phalanx_meleePassive" : {
+            "name" : "phalanx_meleePassive",
+            "attributes" : {
+              "${chance}% Chance of ${value} second(s) of Stun" : {
+                "chance" : 20.0,
+                "value" : {
+                  "min" : 0.5
+                }
+              },
+              "${value} Physical Damage" : {
+                "min" : [ 0.7, 1.4, 2.1, 2.8, 3.5, 4.2, 4.9, 5.6, 6.3, 7.0, 7.7, 8.4, 9.1, 9.8, 10.5, 11.2, 11.9, 12.6, 13.3, 14.0, 14.7, 15.4, 16.1, 16.8, 17.5, 18.2, 18.9, 19.6, 20.3, 21.0, 21.7, 22.4, 23.1, 23.8, 24.5, 25.2, 25.9, 26.6, 27.3, 28.0, 28.7, 29.4, 30.1, 30.8, 31.5, 32.2, 32.9, 33.6, 34.3, 35.0, 35.7, 36.4, 37.1, 37.8, 38.5, 39.2, 39.9, 40.6, 41.3, 42.0, 42.7, 43.4, 44.1, 44.8, 45.5, 46.2, 46.9, 47.6, 48.3, 49.0, 49.7, 50.4, 51.1, 51.8, 52.5, 53.2, 53.9, 54.6, 55.3, 56.0, 56.7, 57.4, 58.1, 58.8, 59.5, 60.2, 60.9, 61.6, 62.3, 63.0, 63.7, 64.4, 65.1, 65.8, 66.5, 67.2, 67.9, 68.6, 69.3, 70.0, 70.7, 71.4, 72.1, 72.8, 73.5, 74.2, 74.9, 75.6, 76.3, 77.0, 77.7, 78.4, 79.1, 79.8, 80.5, 81.2, 81.9, 82.6, 83.3, 84.0, 84.7, 85.4, 86.1, 86.8, 87.5, 88.2, 88.9, 89.6, 90.3, 91.0, 91.7, 92.4, 93.1, 93.8, 94.5, 95.2, 95.9, 96.6, 97.3, 98.0, 98.7, 99.4, 100.1, 100.8, 101.5, 102.2, 102.9, 103.6, 104.3, 105.0, 105.7, 106.4, 107.1, 107.8, 108.5, 109.2, 109.9, 110.6, 111.3, 112.0, 112.7, 113.4, 114.1, 114.8, 115.5, 116.2, 116.9, 117.6, 118.3, 119.0, 119.7, 120.4, 121.1, 121.8, 122.5, 123.2, 123.9, 124.6, 125.3, 126.0, 126.7, 127.4, 128.1, 128.8, 129.5, 130.2, 130.9, 131.6, 132.3, 133.0, 133.7, 134.4, 135.1, 135.8, 136.5, 137.2, 137.9, 138.6, 139.3, 140.0, 140.7, 141.4, 142.1, 142.8, 143.5, 144.2, 144.9, 145.6, 146.3, 147.0, 147.7, 148.4, 149.1, 149.8, 150.5, 151.2, 151.9, 152.6, 153.3, 154.0, 154.7, 155.4, 156.1, 156.8, 157.5, 158.2, 158.9, 159.6, 160.3, 161.0, 161.7, 162.4, 163.1, 163.8, 164.5, 165.2, 165.9, 166.6, 167.3, 168.0, 168.7, 169.4, 170.1, 170.8, 171.5, 172.2, 172.9, 173.6, 174.3, 175.0, 175.7, 176.4, 177.1, 177.8, 178.5, 179.2, 179.9, 180.6, 181.3, 182.0, 182.7, 183.4, 184.1, 184.8, 185.5, 186.2, 186.9, 187.6, 188.3, 189.0, 189.7, 190.4, 191.1, 191.8, 192.5, 193.2, 193.9, 194.6, 195.3, 196.0, 196.7, 197.4, 198.1, 198.8, 199.5, 200.2, 200.9, 201.6, 202.3, 203.0, 203.7, 204.4, 205.1, 205.8, 206.5, 207.2, 207.9, 208.6, 209.3, 210.0, 210.7, 211.4, 212.1, 212.8, 213.5, 214.2, 214.9, 215.6, 216.3, 217.0, 217.7, 218.4, 219.1, 219.8, 220.5, 221.2, 221.9, 222.6, 223.3, 224.0, 224.7, 225.4, 226.1, 226.8, 227.5, 228.2, 228.9, 229.6, 230.3, 231.0, 231.7, 232.4, 233.1, 233.8, 234.5, 235.2, 235.9, 236.6, 237.3, 238.0, 238.7, 239.4, 240.1, 240.8, 241.5, 242.2, 242.9, 243.6, 244.3, 245.0, 245.7, 246.4, 247.1, 247.8, 248.5, 249.2, 249.9, 250.6, 251.3, 252.0, 252.7, 253.4, 254.1, 254.8, 255.5, 256.2, 256.9, 257.6, 258.3, 259.0, 259.7, 260.4, 261.1, 261.8, 262.5, 263.2, 263.9, 264.6, 265.3, 266.0, 266.7, 267.4, 268.1, 268.8, 269.5, 270.2, 270.9, 271.6, 272.3, 273.0, 273.7, 274.4, 275.1, 275.8, 276.5, 277.2, 277.9, 278.6, 279.3, 280.0, 280.7, 281.4, 282.1, 282.8, 283.5, 284.2, 284.9, 285.6, 286.3, 287.0, 287.7, 288.4, 289.1, 289.8, 290.5, 291.2, 291.9, 292.6, 293.3, 294.0, 294.7, 295.4, 296.1, 296.8, 297.5, 298.2, 298.9, 299.6, 300.3, 301.0, 301.7, 302.4, 303.1, 303.8, 304.5, 305.2, 305.9, 306.6, 307.3, 308.0, 308.7, 309.4, 310.1, 310.8, 311.5, 312.2, 312.9, 313.6, 314.3, 315.0, 315.7, 316.4, 317.1, 317.8, 318.5, 319.2, 319.9, 320.6, 321.3, 322.0, 322.7, 323.4, 324.1, 324.8, 325.5, 326.2, 326.9, 327.6, 328.3, 329.0, 329.7, 330.4, 331.1, 331.8, 332.5, 333.2, 333.9, 334.6, 335.3, 336.0, 336.7, 337.4, 338.1, 338.8, 339.5, 340.2, 340.9, 341.6, 342.3, 343.0, 343.7, 344.4, 345.1, 345.8, 346.5, 347.2, 347.9, 348.6, 349.3, 350.0, 350.7, 351.4, 352.1, 352.8, 353.5, 354.2, 354.9, 355.6, 356.3, 357.0, 357.7, 358.4, 359.1, 359.8, 360.5, 361.2, 361.9, 362.6, 363.3, 364.0, 364.7, 365.4, 366.1, 366.8, 367.5, 368.2, 368.9, 369.6, 370.3, 371.0, 371.7, 372.4, 373.1, 373.8, 374.5, 375.2, 375.9, 376.6, 377.3, 378.0, 378.7, 379.4, 380.1, 380.8, 381.5, 382.2, 382.9, 383.6, 384.3, 385.0, 385.7, 386.4, 387.1, 387.8, 388.5, 389.2, 389.9, 390.6, 391.3, 392.0, 392.7, 393.4, 394.1, 394.8, 395.5, 396.2, 396.9, 397.6, 398.3, 399.0, 399.7, 400.4, 401.1, 401.8, 402.5, 403.2, 403.9, 404.6, 405.3, 406.0, 406.7, 407.4, 408.1, 408.8, 409.5, 410.2, 410.9, 411.6, 412.3, 413.0, 413.7, 414.4, 415.1, 415.8, 416.5, 417.2, 417.9, 418.6, 419.3, 420.0, 420.7, 421.4, 422.1, 422.8, 423.5, 424.2, 424.9, 425.6, 426.3, 427.0, 427.7, 428.4, 429.1, 429.8, 430.5, 431.2, 431.9, 432.6, 433.3, 434.0, 434.7, 435.4, 436.1, 436.8, 437.5, 438.2, 438.9, 439.6, 440.3, 441.0, 441.7, 442.4, 443.1, 443.8, 444.5, 445.2, 445.9, 446.6, 447.3, 448.0, 448.7, 449.4, 450.1, 450.8, 451.5, 452.2, 452.9, 453.6, 454.3, 455.0, 455.7, 456.4, 457.1, 457.8, 458.5, 459.2, 459.9, 460.6, 461.3, 462.0, 462.7, 463.4, 464.1, 464.8, 465.5, 466.2, 466.9, 467.6, 468.3, 469.0, 469.7, 470.4, 471.1, 471.8, 472.5, 473.2, 473.9, 474.6, 475.3, 476.0, 476.7, 477.4, 478.1, 478.8, 479.5, 480.2, 480.9, 481.6, 482.3, 483.0, 483.7, 484.4, 485.1, 485.8, 486.5, 487.2, 487.9, 488.6, 489.3, 490.0, 490.7, 491.4, 492.1, 492.8, 493.5, 494.2, 494.9, 495.6, 496.3, 497.0, 497.7, 498.4, 499.1, 499.8, 500.5, 501.2, 501.9, 502.6, 503.3, 504.0, 504.7, 505.4, 506.1, 506.8, 507.5, 508.2, 508.9, 509.6, 510.3, 511.0, 511.7, 512.4, 513.1, 513.8, 514.5, 515.2, 515.9, 516.6, 517.3, 518.0, 518.7, 519.4, 520.1, 520.8, 521.5, 522.2, 522.9, 523.6, 524.3, 525.0, 525.7, 526.4, 527.1, 527.8, 528.5, 529.2, 529.9, 530.6, 531.3, 532.0, 532.7, 533.4, 534.1, 534.8, 535.5, 536.2, 536.9, 537.6, 538.3, 539.0, 539.7, 540.4, 541.1, 541.8, 542.5, 543.2, 543.9, 544.6, 545.3, 546.0, 546.7, 547.4, 548.1, 548.8, 549.5, 550.2, 550.9, 551.6, 552.3, 553.0, 553.7, 554.4, 555.1, 555.8, 556.5, 557.2, 557.9, 558.6, 559.3, 560.0, 560.7, 561.4, 562.1, 562.8, 563.5, 564.2, 564.9, 565.6, 566.3, 567.0, 567.7, 568.4, 569.1, 569.8, 570.5, 571.2, 571.9, 572.6, 573.3, 574.0, 574.7, 575.4, 576.1, 576.8, 577.5, 578.2, 578.9, 579.6, 580.3, 581.0, 581.7, 582.4, 583.1, 583.8, 584.5, 585.2, 585.9, 586.6, 587.3, 588.0, 588.7, 589.4, 590.1, 590.8, 591.5, 592.2, 592.9, 593.6, 594.3, 595.0, 595.7, 596.4, 597.1, 597.8, 598.5, 599.2, 599.9, 600.6, 601.3, 602.0, 602.7, 603.4, 604.1, 604.8, 605.5, 606.2, 606.9, 607.6, 608.3, 609.0, 609.7, 610.4, 611.1, 611.8, 612.5, 613.2, 613.9, 614.6, 615.3, 616.0, 616.7, 617.4, 618.1, 618.8, 619.5, 620.2, 620.9, 621.6, 622.3, 623.0, 623.7, 624.4, 625.1, 625.8, 626.5, 627.2, 627.9, 628.6, 629.3, 630.0, 630.7, 631.4, 632.1, 632.8, 633.5, 634.2, 634.9, 635.6, 636.3, 637.0, 637.7, 638.4, 639.1, 639.8, 640.5, 641.2, 641.9, 642.6, 643.3, 644.0, 644.7, 645.4, 646.1, 646.8, 647.5, 648.2, 648.9, 649.6, 650.3, 651.0, 651.7, 652.4, 653.1, 653.8, 654.5, 655.2, 655.9, 656.6, 657.3, 658.0, 658.7, 659.4, 660.1, 660.8, 661.5, 662.2, 662.9, 663.6, 664.3, 665.0, 665.7, 666.4, 667.1, 667.8, 668.5, 669.2, 669.9, 670.6, 671.3, 672.0, 672.7, 673.4, 674.1, 674.8, 675.5, 676.2, 676.9, 677.6, 678.3, 679.0, 679.7, 680.4, 681.1, 681.8, 682.5, 683.2, 683.9, 684.6, 685.3, 686.0, 686.7, 687.4, 688.1, 688.8, 689.5, 690.2, 690.9, 691.6, 692.3, 693.0, 693.7, 694.4, 695.1, 695.8, 696.5, 697.2, 697.9, 698.6, 699.3, 700.0 ]
+              },
+              "${value} Piercing Damage" : {
+                "min" : [ 0.3, 0.6, 0.9, 1.2, 1.5, 1.8, 2.1, 2.4, 2.7, 3.0, 3.3, 3.6, 3.9, 4.2, 4.5, 4.8, 5.1, 5.4, 5.7, 6.0, 6.3, 6.6, 6.9, 7.2, 7.5, 7.8, 8.1, 8.4, 8.7, 9.0, 9.3, 9.6, 9.9, 10.2, 10.5, 10.8, 11.1, 11.4, 11.7, 12.0, 12.3, 12.6, 12.9, 13.2, 13.5, 13.8, 14.1, 14.4, 14.7, 15.0, 15.3, 15.6, 15.9, 16.2, 16.5, 16.8, 17.1, 17.4, 17.7, 18.0, 18.3, 18.6, 18.9, 19.2, 19.5, 19.8, 20.1, 20.4, 20.7, 21.0, 21.3, 21.6, 21.9, 22.2, 22.5, 22.8, 23.1, 23.4, 23.7, 24.0, 24.3, 24.6, 24.9, 25.2, 25.5, 25.8, 26.1, 26.4, 26.7, 27.0, 27.3, 27.6, 27.9, 28.2, 28.5, 28.8, 29.1, 29.4, 29.7, 30.0, 30.3, 30.6, 30.9, 31.2, 31.5, 31.8, 32.1, 32.4, 32.7, 33.0, 33.3, 33.6, 33.9, 34.2, 34.5, 34.8, 35.1, 35.4, 35.7, 36.0, 36.3, 36.6, 36.9, 37.2, 37.5, 37.8, 38.1, 38.4, 38.7, 39.0, 39.3, 39.6, 39.9, 40.2, 40.5, 40.8, 41.1, 41.4, 41.7, 42.0, 42.3, 42.6, 42.9, 43.2, 43.5, 43.8, 44.1, 44.4, 44.7, 45.0, 45.3, 45.6, 45.9, 46.2, 46.5, 46.8, 47.1, 47.4, 47.7, 48.0, 48.3, 48.6, 48.9, 49.2, 49.5, 49.8, 50.1, 50.4, 50.7, 51.0, 51.3, 51.6, 51.9, 52.2, 52.5, 52.8, 53.1, 53.4, 53.7, 54.0, 54.3, 54.6, 54.9, 55.2, 55.5, 55.8, 56.1, 56.4, 56.7, 57.0, 57.3, 57.6, 57.9, 58.2, 58.5, 58.8, 59.1, 59.4, 59.7, 60.0, 60.3, 60.6, 60.9, 61.2, 61.5, 61.8, 62.1, 62.4, 62.7, 63.0, 63.3, 63.6, 63.9, 64.2, 64.5, 64.8, 65.1, 65.4, 65.7, 66.0, 66.3, 66.6, 66.9, 67.2, 67.5, 67.8, 68.1, 68.4, 68.7, 69.0, 69.3, 69.6, 69.9, 70.2, 70.5, 70.8, 71.1, 71.4, 71.7, 72.0, 72.3, 72.6, 72.9, 73.2, 73.5, 73.8, 74.1, 74.4, 74.7, 75.0, 75.3, 75.6, 75.9, 76.2, 76.5, 76.8, 77.1, 77.4, 77.7, 78.0, 78.3, 78.6, 78.9, 79.2, 79.5, 79.8, 80.1, 80.4, 80.7, 81.0, 81.3, 81.6, 81.9, 82.2, 82.5, 82.8, 83.1, 83.4, 83.7, 84.0, 84.3, 84.6, 84.9, 85.2, 85.5, 85.8, 86.1, 86.4, 86.7, 87.0, 87.3, 87.6, 87.9, 88.2, 88.5, 88.8, 89.1, 89.4, 89.7, 90.0, 90.3, 90.6, 90.9, 91.2, 91.5, 91.8, 92.1, 92.4, 92.7, 93.0, 93.3, 93.6, 93.9, 94.2, 94.5, 94.8, 95.1, 95.4, 95.7, 96.0, 96.3, 96.6, 96.9, 97.2, 97.5, 97.8, 98.1, 98.4, 98.7, 99.0, 99.3, 99.6, 99.9, 100.2, 100.5, 100.8, 101.1, 101.4, 101.7, 102.0, 102.3, 102.6, 102.9, 103.2, 103.5, 103.8, 104.1, 104.4, 104.7, 105.0, 105.3, 105.6, 105.9, 106.2, 106.5, 106.8, 107.1, 107.4, 107.7, 108.0, 108.3, 108.6, 108.9, 109.2, 109.5, 109.8, 110.1, 110.4, 110.7, 111.0, 111.3, 111.6, 111.9, 112.2, 112.5, 112.8, 113.1, 113.4, 113.7, 114.0, 114.3, 114.6, 114.9, 115.2, 115.5, 115.8, 116.1, 116.4, 116.7, 117.0, 117.3, 117.6, 117.9, 118.2, 118.5, 118.8, 119.1, 119.4, 119.7, 120.0, 120.3, 120.6, 120.9, 121.2, 121.5, 121.8, 122.1, 122.4, 122.7, 123.0, 123.3, 123.6, 123.9, 124.2, 124.5, 124.8, 125.1, 125.4, 125.7, 126.0, 126.3, 126.6, 126.9, 127.2, 127.5, 127.8, 128.1, 128.4, 128.7, 129.0, 129.3, 129.6, 129.9, 130.2, 130.5, 130.8, 131.1, 131.4, 131.7, 132.0, 132.3, 132.6, 132.9, 133.2, 133.5, 133.8, 134.1, 134.4, 134.7, 135.0, 135.3, 135.6, 135.9, 136.2, 136.5, 136.8, 137.1, 137.4, 137.7, 138.0, 138.3, 138.6, 138.9, 139.2, 139.5, 139.8, 140.1, 140.4, 140.7, 141.0, 141.3, 141.6, 141.9, 142.2, 142.5, 142.8, 143.1, 143.4, 143.7, 144.0, 144.3, 144.6, 144.9, 145.2, 145.5, 145.8, 146.1, 146.4, 146.7, 147.0, 147.3, 147.6, 147.9, 148.2, 148.5, 148.8, 149.1, 149.4, 149.7, 150.0, 150.3, 150.6, 150.9, 151.2, 151.5, 151.8, 152.1, 152.4, 152.7, 153.0, 153.3, 153.6, 153.9, 154.2, 154.5, 154.8, 155.1, 155.4, 155.7, 156.0, 156.3, 156.6, 156.9, 157.2, 157.5, 157.8, 158.1, 158.4, 158.7, 159.0, 159.3, 159.6, 159.9, 160.2, 160.5, 160.8, 161.1, 161.4, 161.7, 162.0, 162.3, 162.6, 162.9, 163.2, 163.5, 163.8, 164.1, 164.4, 164.7, 165.0, 165.3, 165.6, 165.9, 166.2, 166.5, 166.8, 167.1, 167.4, 167.7, 168.0, 168.3, 168.6, 168.9, 169.2, 169.5, 169.8, 170.1, 170.4, 170.7, 171.0, 171.3, 171.6, 171.9, 172.2, 172.5, 172.8, 173.1, 173.4, 173.7, 174.0, 174.3, 174.6, 174.9, 175.2, 175.5, 175.8, 176.1, 176.4, 176.7, 177.0, 177.3, 177.6, 177.9, 178.2, 178.5, 178.8, 179.1, 179.4, 179.7, 180.0, 180.3, 180.6, 180.9, 181.2, 181.5, 181.8, 182.1, 182.4, 182.7, 183.0, 183.3, 183.6, 183.9, 184.2, 184.5, 184.8, 185.1, 185.4, 185.7, 186.0, 186.3, 186.6, 186.9, 187.2, 187.5, 187.8, 188.1, 188.4, 188.7, 189.0, 189.3, 189.6, 189.9, 190.2, 190.5, 190.8, 191.1, 191.4, 191.7, 192.0, 192.3, 192.6, 192.9, 193.2, 193.5, 193.8, 194.1, 194.4, 194.7, 195.0, 195.3, 195.6, 195.9, 196.2, 196.5, 196.8, 197.1, 197.4, 197.7, 198.0, 198.3, 198.6, 198.9, 199.2, 199.5, 199.8, 200.1, 200.4, 200.7, 201.0, 201.3, 201.6, 201.9, 202.2, 202.5, 202.8, 203.1, 203.4, 203.7, 204.0, 204.3, 204.6, 204.9, 205.2, 205.5, 205.8, 206.1, 206.4, 206.7, 207.0, 207.3, 207.6, 207.9, 208.2, 208.5, 208.8, 209.1, 209.4, 209.7, 210.0, 210.3, 210.6, 210.9, 211.2, 211.5, 211.8, 212.1, 212.4, 212.7, 213.0, 213.3, 213.6, 213.9, 214.2, 214.5, 214.8, 215.1, 215.4, 215.7, 216.0, 216.3, 216.6, 216.9, 217.2, 217.5, 217.8, 218.1, 218.4, 218.7, 219.0, 219.3, 219.6, 219.9, 220.2, 220.5, 220.8, 221.1, 221.4, 221.7, 222.0, 222.3, 222.6, 222.9, 223.2, 223.5, 223.8, 224.1, 224.4, 224.7, 225.0, 225.3, 225.6, 225.9, 226.2, 226.5, 226.8, 227.1, 227.4, 227.7, 228.0, 228.3, 228.6, 228.9, 229.2, 229.5, 229.8, 230.1, 230.4, 230.7, 231.0, 231.3, 231.6, 231.9, 232.2, 232.5, 232.8, 233.1, 233.4, 233.7, 234.0, 234.3, 234.6, 234.9, 235.2, 235.5, 235.8, 236.1, 236.4, 236.7, 237.0, 237.3, 237.6, 237.9, 238.2, 238.5, 238.8, 239.1, 239.4, 239.7, 240.0, 240.3, 240.6, 240.9, 241.2, 241.5, 241.8, 242.1, 242.4, 242.7, 243.0, 243.3, 243.6, 243.9, 244.2, 244.5, 244.8, 245.1, 245.4, 245.7, 246.0, 246.3, 246.6, 246.9, 247.2, 247.5, 247.8, 248.1, 248.4, 248.7, 249.0, 249.3, 249.6, 249.9, 250.2, 250.5, 250.8, 251.1, 251.4, 251.7, 252.0, 252.3, 252.6, 252.9, 253.2, 253.5, 253.8, 254.1, 254.4, 254.7, 255.0, 255.3, 255.6, 255.9, 256.2, 256.5, 256.8, 257.1, 257.4, 257.7, 258.0, 258.3, 258.6, 258.9, 259.2, 259.5, 259.8, 260.1, 260.4, 260.7, 261.0, 261.3, 261.6, 261.9, 262.2, 262.5, 262.8, 263.1, 263.4, 263.7, 264.0, 264.3, 264.6, 264.9, 265.2, 265.5, 265.8, 266.1, 266.4, 266.7, 267.0, 267.3, 267.6, 267.9, 268.2, 268.5, 268.8, 269.1, 269.4, 269.7, 270.0, 270.3, 270.6, 270.9, 271.2, 271.5, 271.8, 272.1, 272.4, 272.7, 273.0, 273.3, 273.6, 273.9, 274.2, 274.5, 274.8, 275.1, 275.4, 275.7, 276.0, 276.3, 276.6, 276.9, 277.2, 277.5, 277.8, 278.1, 278.4, 278.7, 279.0, 279.3, 279.6, 279.9, 280.2, 280.5, 280.8, 281.1, 281.4, 281.7, 282.0, 282.3, 282.6, 282.9, 283.2, 283.5, 283.8, 284.1, 284.4, 284.7, 285.0, 285.3, 285.6, 285.9, 286.2, 286.5, 286.8, 287.1, 287.4, 287.7, 288.0, 288.3, 288.6, 288.9, 289.2, 289.5, 289.8, 290.1, 290.4, 290.7, 291.0, 291.3, 291.6, 291.9, 292.2, 292.5, 292.8, 293.1, 293.4, 293.7, 294.0, 294.3, 294.6, 294.9, 295.2, 295.5, 295.8, 296.1, 296.4, 296.7, 297.0, 297.3, 297.6, 297.9, 298.2, 298.5, 298.8, 299.1, 299.4, 299.7, 300.0 ]
+              },
+              "${value} Taunt" : {
+                "min" : 100.0
+              },
+              "${value}% Reduced Fear Duration (for Pets/Traps)" : 100.0,
+              "${value}% Skill Disruption Protection" : 1000.0,
+              "${value}% Sleep Resistance" : 100.0,
+              "${value}% Slower Movement over ${duration} Second(s)" : {
+                "value" : {
+                  "min" : 40.0
+                },
+                "duration" : {
+                  "min" : 2.0
+                }
+              },
+              "+${value}% Shield Block Chance" : 50.0,
+              "MaxLevel" : 1000,
+              "UltimateLevel" : 1000
+            }
+          },
           "Basic Attack" : {
             "name" : "Basic Attack",
             "attributes" : {
@@ -5345,6 +5770,7 @@
           }
         },
         "petSkillLevels" : {
+          "phalanx_meleePassive" : [ 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200 ],
           "Basic Attack" : [ 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200 ]
         }
       }
@@ -5489,9 +5915,6 @@
         "${value} Energy Cost" : [ 46.0, 49.5, 53.0, 56.5, 60.0, 63.5, 67.0, 70.5, 74.0, 77.5, 81.0, 84.5, 88.0, 91.5, 95.0, 98.5 ],
         "${value}m Radius" : 6.0,
         " (${value}% of lost Energy as Damage)" : [ 28.0, 36.0, 44.0, 52.0, 60.0, 68.0, 76.0, 84.0, 92.0, 100.0, 108.0, 116.0, 124.0, 132.0, 140.0, 148.0 ],
-        "${value} Electrical Burn Damage" : {
-          "min" : [ 7.0, 11.5, 16.0, 20.5, 25.0, 29.5, 34.0, 38.5, 43.0, 47.5, 52.0, 56.5, 61.0, 65.5, 70.0, 74.5 ]
-        },
         "${value} second(s) of Skill Disruption" : {
           "min" : [ 2.05, 2.5, 2.95, 3.4, 3.85, 4.3, 4.75, 5.2, 5.65, 6.1, 6.55, 7.0, 7.45, 7.9, 8.35, 8.8 ]
         },
@@ -5716,6 +6139,20 @@
               "UltimateLevel" : 20
             }
           },
+          "Pet_DifficultyDamageScaling_epic" : {
+            "name" : "Pet_DifficultyDamageScaling_epic",
+            "attributes" : {
+              "+${value} Strength" : 150.0,
+              "+${value} Intelligence" : 195.0,
+              "+${value}% Bleeding Damage " : 30.0,
+              "+${value}% Energy Leech " : 30.0,
+              "+${value}% Instant Poison Damage" : 30.0,
+              "+${value}% Life Leech " : 30.0,
+              "+${value}% Pierce Damage" : 30.0,
+              "+${value}% Poison Damage " : 30.0,
+              "MaxLevel" : 1
+            }
+          },
           "Dodge Attacks" : {
             "name" : "Dodge Attacks",
             "description" : "Even the sturdiest armor has its chinks.  The best way to stay alive is to not get hit.",
@@ -5723,6 +6160,20 @@
               "${value}% Chance to Avoid Projectiles" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0, 28.0, 29.0, 30.0, 31.0, 32.0, 33.0, 34.0, 35.0, 36.0, 37.0, 38.0, 39.0, 40.0, 41.0, 42.0, 43.0, 44.0, 45.0, 46.0, 47.0, 48.0, 49.0, 50.0, 51.0, 52.0, 53.0, 54.0, 55.0, 56.0, 57.0, 58.0, 59.0, 60.0, 61.0, 62.0, 63.0, 64.0, 65.0, 66.0, 67.0, 68.0, 69.0, 70.0, 71.0, 72.0, 73.0, 74.0, 75.0, 76.0, 77.0, 78.0, 79.0, 80.0, 81.0, 82.0, 83.0, 84.0, 85.0, 86.0, 87.0, 88.0, 89.0, 90.0, 91.0, 92.0, 93.0, 94.0, 95.0, 96.0, 97.0, 98.0, 99.0, 100.0 ],
               "${value}% Chance to Dodge Attacks" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0, 28.0, 29.0, 30.0, 31.0, 32.0, 33.0, 34.0, 35.0, 36.0, 37.0, 38.0, 39.0, 40.0, 41.0, 42.0, 43.0, 44.0, 45.0, 46.0, 47.0, 48.0, 49.0, 50.0, 51.0, 52.0, 53.0, 54.0, 55.0, 56.0, 57.0, 58.0, 59.0, 60.0, 61.0, 62.0, 63.0, 64.0, 65.0, 66.0, 67.0, 68.0, 69.0, 70.0, 71.0, 72.0, 73.0, 74.0, 75.0, 76.0, 77.0, 78.0, 79.0, 80.0, 81.0, 82.0, 83.0, 84.0, 85.0, 86.0, 87.0, 88.0, 89.0, 90.0, 91.0, 92.0, 93.0, 94.0, 95.0, 96.0, 97.0, 98.0, 99.0, 100.0 ],
               "MaxLevel" : 100
+            }
+          },
+          "Pet_DifficultyDamageScaling_leg" : {
+            "name" : "Pet_DifficultyDamageScaling_leg",
+            "attributes" : {
+              "+${value} Strength" : 300.0,
+              "+${value} Intelligence" : 390.0,
+              "+${value}% Bleeding Damage " : 60.0,
+              "+${value}% Energy Leech " : 60.0,
+              "+${value}% Instant Poison Damage" : 60.0,
+              "+${value}% Life Leech " : 60.0,
+              "+${value}% Pierce Damage" : 60.0,
+              "+${value}% Poison Damage " : 60.0,
+              "MaxLevel" : 1
             }
           },
           "Hypnotic Gaze" : {
@@ -6041,6 +6492,20 @@
               "UltimateLevel" : 20
             }
           },
+          "Pet_DifficultyDamageScaling_epic" : {
+            "name" : "Pet_DifficultyDamageScaling_epic",
+            "attributes" : {
+              "+${value} Strength" : 150.0,
+              "+${value} Intelligence" : 195.0,
+              "+${value}% Bleeding Damage " : 30.0,
+              "+${value}% Energy Leech " : 30.0,
+              "+${value}% Instant Poison Damage" : 30.0,
+              "+${value}% Life Leech " : 30.0,
+              "+${value}% Pierce Damage" : 30.0,
+              "+${value}% Poison Damage " : 30.0,
+              "MaxLevel" : 1
+            }
+          },
           "Psionic Beam" : {
             "name" : "Psionic Beam",
             "attributes" : {
@@ -6084,6 +6549,20 @@
               "${value}% Chance to Avoid Projectiles" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0, 28.0, 29.0, 30.0, 31.0, 32.0, 33.0, 34.0, 35.0, 36.0, 37.0, 38.0, 39.0, 40.0, 41.0, 42.0, 43.0, 44.0, 45.0, 46.0, 47.0, 48.0, 49.0, 50.0, 51.0, 52.0, 53.0, 54.0, 55.0, 56.0, 57.0, 58.0, 59.0, 60.0, 61.0, 62.0, 63.0, 64.0, 65.0, 66.0, 67.0, 68.0, 69.0, 70.0, 71.0, 72.0, 73.0, 74.0, 75.0, 76.0, 77.0, 78.0, 79.0, 80.0, 81.0, 82.0, 83.0, 84.0, 85.0, 86.0, 87.0, 88.0, 89.0, 90.0, 91.0, 92.0, 93.0, 94.0, 95.0, 96.0, 97.0, 98.0, 99.0, 100.0 ],
               "${value}% Chance to Dodge Attacks" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0, 28.0, 29.0, 30.0, 31.0, 32.0, 33.0, 34.0, 35.0, 36.0, 37.0, 38.0, 39.0, 40.0, 41.0, 42.0, 43.0, 44.0, 45.0, 46.0, 47.0, 48.0, 49.0, 50.0, 51.0, 52.0, 53.0, 54.0, 55.0, 56.0, 57.0, 58.0, 59.0, 60.0, 61.0, 62.0, 63.0, 64.0, 65.0, 66.0, 67.0, 68.0, 69.0, 70.0, 71.0, 72.0, 73.0, 74.0, 75.0, 76.0, 77.0, 78.0, 79.0, 80.0, 81.0, 82.0, 83.0, 84.0, 85.0, 86.0, 87.0, 88.0, 89.0, 90.0, 91.0, 92.0, 93.0, 94.0, 95.0, 96.0, 97.0, 98.0, 99.0, 100.0 ],
               "MaxLevel" : 100
+            }
+          },
+          "Pet_DifficultyDamageScaling_leg" : {
+            "name" : "Pet_DifficultyDamageScaling_leg",
+            "attributes" : {
+              "+${value} Strength" : 300.0,
+              "+${value} Intelligence" : 390.0,
+              "+${value}% Bleeding Damage " : 60.0,
+              "+${value}% Energy Leech " : 60.0,
+              "+${value}% Instant Poison Damage" : 60.0,
+              "+${value}% Life Leech " : 60.0,
+              "+${value}% Pierce Damage" : 60.0,
+              "+${value}% Poison Damage " : 60.0,
+              "MaxLevel" : 1
             }
           },
           "Disturbance" : {
@@ -6147,7 +6626,9 @@
       },
       "pet" : {
         "attributes" : {
+          "+${value} Health Regeneration per second" : [ 10.0 ],
           "+${value} Intelligence" : [ 650.0 ],
+          "+${value} Energy" : [ 750.0 ],
           "+${value} Base Casting Speed" : [ 1.5 ],
           "+${value} Strength" : [ 500.0 ],
           "+${value} Base Movement Speed" : [ 1.2 ],
@@ -6155,7 +6636,9 @@
             "min" : [ 384.0 ],
             "max" : [ 480.0 ]
           },
+          "+${value} Health" : [ 1500.0 ],
           "+${value} Dexterity" : [ 400.0 ],
+          "+${value} Energy Regeneration per second" : [ 15.0 ],
           "+${value} Base Attack Speed" : [ 1.2 ]
         },
         "petSkills" : {
@@ -6205,6 +6688,20 @@
               "UltimateLevel" : 16
             }
           },
+          "ElementalResistance_10xLevel" : {
+            "name" : "ElementalResistance_10xLevel",
+            "attributes" : {
+              "${value}% Elemental Resistance" : [ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0 ],
+              "MaxLevel" : 10
+            }
+          },
+          "dreamcopypet_petskill_aura" : {
+            "name" : "dreamcopypet_petskill_aura",
+            "attributes" : {
+              "MaxLevel" : 20,
+              "UltimateLevel" : 20
+            }
+          },
           "Distort Reality" : {
             "name" : "Distort Reality",
             "description" : "Sends out a powerful ripple of distortion around the player that tears the fabric of reality, causing severe damage to enemies caught within it.",
@@ -6237,6 +6734,7 @@
         "petSkillLevels" : {
           "Psionic Burn" : [ 8 ],
           "Psionic Touch" : [ 8 ],
+          "dreamcopypet_petskill_aura" : [ 1 ],
           "Distort Reality" : [ 12 ]
         }
       }
@@ -6550,6 +7048,8 @@
         "posX" : 198
       },
       "attributes" : {
+        "MaxLevel" : 8,
+        "UltimateLevel" : 12,
         "${chance}% Chance for all of the following:" : {
           "chance" : 33.0,
           "values" : {
@@ -6559,9 +7059,7 @@
               "max" : [ 51.0, 76.0, 101.0, 126.0, 151.0, 177.0, 203.0, 229.0, 256.0, 283.0, 310.0, 338.0, 366.0, 394.0, 423.0, 452.0 ]
             }
           }
-        },
-        "MaxLevel" : 8,
-        "UltimateLevel" : 12
+        }
       }
     }, {
       "name" : "Lineal Chains",
@@ -6756,6 +7254,34 @@
               },
               "MaxLevel" : 20,
               "UltimateLevel" : 20
+            }
+          },
+          "Pet_DifficultyDamageScaling_epic" : {
+            "name" : "Pet_DifficultyDamageScaling_epic",
+            "attributes" : {
+              "+${value} Strength" : 150.0,
+              "+${value} Intelligence" : 195.0,
+              "+${value}% Bleeding Damage " : 30.0,
+              "+${value}% Energy Leech " : 30.0,
+              "+${value}% Instant Poison Damage" : 30.0,
+              "+${value}% Life Leech " : 30.0,
+              "+${value}% Pierce Damage" : 30.0,
+              "+${value}% Poison Damage " : 30.0,
+              "MaxLevel" : 1
+            }
+          },
+          "Pet_DifficultyDamageScaling_leg" : {
+            "name" : "Pet_DifficultyDamageScaling_leg",
+            "attributes" : {
+              "+${value} Strength" : 300.0,
+              "+${value} Intelligence" : 390.0,
+              "+${value}% Bleeding Damage " : 60.0,
+              "+${value}% Energy Leech " : 60.0,
+              "+${value}% Instant Poison Damage" : 60.0,
+              "+${value}% Life Leech " : 60.0,
+              "+${value}% Pierce Damage" : 60.0,
+              "+${value}% Poison Damage " : 60.0,
+              "MaxLevel" : 1
             }
           }
         },
@@ -6996,6 +7522,7 @@
           "+${value} Intelligence" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
           "+${value} Energy" : [ 60.0, 60.0, 60.0, 60.0, 60.0, 60.0, 60.0, 60.0, 60.0, 60.0, 60.0, 60.0, 60.0, 60.0, 60.0, 60.0, 60.0, 60.0, 60.0, 60.0 ],
           "+${value} Base Casting Speed" : [ 500.0, 500.0, 500.0, 500.0, 500.0, 500.0, 500.0, 500.0, 500.0, 500.0, 500.0, 500.0, 500.0, 500.0, 500.0, 500.0, 500.0, 500.0, 500.0, 500.0 ],
+          "+${value} Health" : [ 150.0, 200.0, 250.0, 300.0, 350.0, 400.0, 450.0, 500.0, 550.0, 600.0, 650.0, 700.0, 750.0, 800.0, 850.0, 900.0, 950.0, 1000.0, 1050.0, 1100.0 ],
           "+${value} Energy Regeneration per second" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
           "+${value} Base Attack Speed" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ]
         },
@@ -7012,10 +7539,43 @@
               "Affects up to ${value} targets" : 4,
               "MaxLevel" : 20
             }
+          },
+          "mana_scaling_legendary" : {
+            "name" : "mana_scaling_legendary",
+            "attributes" : {
+              "+${value}% Energy" : -200.0,
+              "MaxLevel" : 1,
+              "UltimateLevel" : 1
+            }
+          },
+          "mana_scaling_epic" : {
+            "name" : "mana_scaling_epic",
+            "attributes" : {
+              "+${value}% Energy" : -100.0,
+              "MaxLevel" : 1,
+              "UltimateLevel" : 1
+            }
+          },
+          "wallstone_retaliation" : {
+            "name" : "wallstone_retaliation",
+            "doesNotIncludeRacialDamage" : true,
+            "attributes" : {
+              "${value} Energy Reserved" : 20.0,
+              "${chance}% Chance of ${value} Stun Retaliation" : {
+                "chance" : 25.0,
+                "value" : {
+                  "min" : [ 0.8, 0.9, 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7 ],
+                  "max" : [ 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3.0 ]
+                }
+              },
+              "MaxLevel" : 16,
+              "UltimateLevel" : 20
+            }
           }
         },
         "petSkillLevels" : {
-          "Lesser Elemental Lightning" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ]
+          "Lesser Elemental Lightning" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ],
+          "wallstone_retaliation" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ]
         }
       }
     }, {
@@ -7166,9 +7726,18 @@
       "attributes" : {
         "${value} Energy Reserved" : [ 60.0, 68.0, 76.0, 84.0, 92.0, 100.0, 108.0, 116.0, 124.0, 132.0, 140.0, 148.0, 156.0, 164.0 ],
         "${value} Active Energy Cost per Second" : [ 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0, 2.1, 2.2, 2.3 ],
-        "${value}Bonus to all Pets:" : { },
         "MaxLevel" : 10,
-        "UltimateLevel" : 14
+        "UltimateLevel" : 14,
+        "Bonus to all Pets:" : {
+          "${chance}% Chance of ${value} Elemental Damage Retaliation" : {
+            "chance" : [ 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0 ],
+            "value" : {
+              "min" : [ 6.0, 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0 ],
+              "max" : [ 10.0, 14.5, 19.0, 23.5, 28.0, 32.5, 37.0, 41.5, 46.0, 50.5, 55.0, 59.5, 64.0, 68.5 ]
+            }
+          },
+          "+${value}% Attack Speed" : [ 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0 ]
+        }
       }
     }, {
       "name" : "Dazzling Power",
@@ -7246,6 +7815,32 @@
           "+${value}% Movement Speed" : [ -5.0, -5.0, -5.0, -5.0, -5.0, -10.0, -10.0, -10.0, -10.0, -10.0, -15.0, -15.0, -15.0, -15.0, -15.0 ]
         },
         "petSkills" : {
+          "_drx_runegolem_petskill_retaliation" : {
+            "name" : "_drx_runegolem_petskill_retaliation",
+            "doesNotIncludeRacialDamage" : true,
+            "attributes" : {
+              "${chance}% Chance of ${value} Elemental Damage Retaliation" : {
+                "chance" : [ 12.0, 13.0, 15.0, 16.0, 18.0, 19.0, 21.0, 22.0, 24.0, 25.0, 27.0, 28.0, 30.0, 31.0, 33.0, 34.0, 36.0, 37.0, 39.0, 40.0 ],
+                "value" : {
+                  "min" : [ 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0, 35.0, 37.0, 39.0, 41.0, 43.0 ],
+                  "max" : [ 8.0, 11.0, 14.0, 17.0, 20.0, 23.0, 26.0, 29.0, 32.0, 35.0, 38.0, 41.0, 44.0, 47.0, 50.0, 53.0, 56.0, 59.0, 62.0, 65.0 ]
+                }
+              },
+              "${chance}% Chance of ${value} Stun Retaliation" : {
+                "chance" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 12.0 ],
+                "value" : {
+                  "min" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 3.0 ],
+                  "max" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 6.0 ]
+                }
+              },
+              "${chance}% Chance of ${value}% Damage Reflected" : {
+                "chance" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 12.0 ],
+                "value" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 50.0 ]
+              },
+              "MaxLevel" : 20,
+              "UltimateLevel" : 20
+            }
+          },
           "Catalyst Aura" : {
             "name" : "Catalyst Aura",
             "description" : "Grants energy and reduces energy reservations from aura skills.",
@@ -7258,6 +7853,30 @@
               "+${value}% Energy" : [ 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 8.5, 9.0, 9.5, 10.0 ],
               "MaxLevel" : 20,
               "UltimateLevel" : 20
+            }
+          },
+          "_drx_runegolem_petskill_resists" : {
+            "name" : "_drx_runegolem_petskill_resists",
+            "protectsAgainst" : [ " Instant Poison Damage", " Vitality Damage", " Bleeding Damage" ],
+            "attributes" : {
+              "${value}% Bleeding Resistance" : 35.0,
+              "${value}% Cold Resistance" : 25.0,
+              "${value}% Damage Absorption" : 50.0,
+              "${value}% Fire Resistance" : 25.0,
+              "${value}% Health Reduction Resistance" : 50.0,
+              "${value}% Lightning Resistance" : [ -50.0, -50.0, -50.0, -50.0, -50.0, -50.0, -50.0, -50.0, -50.0, -50.0, -50.0, -50.0, -50.0, -50.0, -50.0, -50.0, -50.0, -50.0, -50.0, -56.0, -56.0, -56.0, -56.0, -56.0, -56.0, -56.0, -56.0, -56.0, -56.0, -56.0, -56.0, -56.0, -56.0, -56.0, -56.0, -56.0, -56.0, -56.0, -56.0, -69.0 ],
+              "${value}% Physical Resistance" : 20.0,
+              "${value}% Pierce Resistance" : 50.0,
+              "${value}% Poison Resistance" : 35.0,
+              "${value}% Reduced Entrapment Duration" : 50.0,
+              "${value}% Reduced Petrify Duration" : 1000.0,
+              "${value}% Reduction in Energy Leech Duration" : 1000.0,
+              "${value}% Reduction in Life Leech Duration" : 1000.0,
+              "${value}% Skill Disruption Protection" : 1000.0,
+              "${value}% Sleep Resistance" : 1000.0,
+              "${value}% Vitality Damage Resistance" : 35.0,
+              "MaxLevel" : 40,
+              "UltimateLevel" : 40
             }
           },
           "Cleave" : {
@@ -7283,6 +7902,34 @@
               },
               "MaxLevel" : 20,
               "UltimateLevel" : 20
+            }
+          },
+          "Pet_DifficultyDamageScaling_epic" : {
+            "name" : "Pet_DifficultyDamageScaling_epic",
+            "attributes" : {
+              "+${value} Strength" : 150.0,
+              "+${value} Intelligence" : 195.0,
+              "+${value}% Bleeding Damage " : 30.0,
+              "+${value}% Energy Leech " : 30.0,
+              "+${value}% Instant Poison Damage" : 30.0,
+              "+${value}% Life Leech " : 30.0,
+              "+${value}% Pierce Damage" : 30.0,
+              "+${value}% Poison Damage " : 30.0,
+              "MaxLevel" : 1
+            }
+          },
+          "Pet_DifficultyDamageScaling_leg" : {
+            "name" : "Pet_DifficultyDamageScaling_leg",
+            "attributes" : {
+              "+${value} Strength" : 300.0,
+              "+${value} Intelligence" : 390.0,
+              "+${value}% Bleeding Damage " : 60.0,
+              "+${value}% Energy Leech " : 60.0,
+              "+${value}% Instant Poison Damage" : 60.0,
+              "+${value}% Life Leech " : 60.0,
+              "+${value}% Pierce Damage" : 60.0,
+              "+${value}% Poison Damage " : 60.0,
+              "MaxLevel" : 1
             }
           },
           "Rune Weapon" : {
@@ -7345,6 +7992,7 @@
         },
         "petSkillLevels" : {
           "Catalyst Aura" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ],
+          "_drx_runegolem_petskill_resists" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
           "Cleave" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
           "Provoke" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ],
           "Rune Weapon" : [ 1, 1, 2, 2, 3, 3, 3, 4, 4, 5, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 ],
@@ -7556,6 +8204,20 @@
         "${value} Energy Cost" : 300.0,
         "${value} Second Duration" : 10.0,
         "${value}m Radius" : [ 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 8.5, 9.0, 9.5, 10.0 ],
+        "${value} Elemental Damage Retaliation" : {
+          "min" : [ 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0 ]
+        },
+        "${value} Physical Damage" : {
+          "min" : [ 30.0, 45.0, 60.0, 75.0, 90.0, 105.0, 120.0, 135.0, 150.0, 165.0, 180.0, 195.0 ]
+        },
+        "${value}% Chance of Impaired Aim" : {
+          "min" : [ 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0 ]
+        },
+        "${value}% Chance to Fumble attacks" : {
+          "min" : [ 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0 ]
+        },
+        "MaxLevel" : 6,
+        "UltimateLevel" : 10,
         "${chance}% Chance for one of the following:" : {
           "chance" : 100.0,
           "values" : {
@@ -7584,39 +8246,7 @@
               }
             }
           }
-        },
-        "${chance}% Chance of ${value} Burn Damage" : {
-          "chance" : 15.0,
-          "value" : {
-            "min" : [ 8.0, 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 64.0, 68.0, 72.0, 76.0, 80.0, 84.0, 88.0, 92.0, 96.0, 100.0, 104.0, 108.0, 112.0, 116.0, 120.0, 124.0 ]
-          }
-        },
-        "${chance}% Chance of ${value} Electrical Burn Damage" : {
-          "chance" : 15.0,
-          "value" : {
-            "min" : [ 8.0, 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 64.0, 68.0, 72.0, 76.0, 80.0, 84.0, 88.0, 92.0, 96.0, 100.0, 104.0, 108.0, 112.0, 116.0, 120.0, 124.0 ]
-          }
-        },
-        "${chance}% Chance of ${value} Frostburn Damage" : {
-          "chance" : 15.0,
-          "value" : {
-            "min" : [ 8.0, 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 64.0, 68.0, 72.0, 76.0, 80.0, 84.0, 88.0, 92.0, 96.0, 100.0, 104.0, 108.0, 112.0, 116.0, 120.0, 124.0 ]
-          }
-        },
-        "${value} Elemental Damage Retaliation" : {
-          "min" : [ 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0 ]
-        },
-        "${value} Physical Damage" : {
-          "min" : [ 30.0, 45.0, 60.0, 75.0, 90.0, 105.0, 120.0, 135.0, 150.0, 165.0, 180.0, 195.0 ]
-        },
-        "${value}% Chance of Impaired Aim" : {
-          "min" : [ 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0 ]
-        },
-        "${value}% Chance to Fumble attacks" : {
-          "min" : [ 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0 ]
-        },
-        "MaxLevel" : 6,
-        "UltimateLevel" : 10
+        }
       }
     }, {
       "name" : "Energy Armor",
@@ -7652,9 +8282,6 @@
           "duration" : {
             "min" : 4.0
           }
-        },
-        "${value} Burn Damage" : {
-          "min" : [ 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0 ]
         },
         "${value} Reduced Armor over ${duration} Second(s)" : {
           "value" : {
@@ -7951,6 +8578,34 @@
           "+${value} Base Attack Speed" : [ 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1 ]
         },
         "petSkills" : {
+          "Pet_DifficultyDamageScaling_epic" : {
+            "name" : "Pet_DifficultyDamageScaling_epic",
+            "attributes" : {
+              "+${value} Strength" : 150.0,
+              "+${value} Intelligence" : 195.0,
+              "+${value}% Bleeding Damage " : 30.0,
+              "+${value}% Energy Leech " : 30.0,
+              "+${value}% Instant Poison Damage" : 30.0,
+              "+${value}% Life Leech " : 30.0,
+              "+${value}% Pierce Damage" : 30.0,
+              "+${value}% Poison Damage " : 30.0,
+              "MaxLevel" : 1
+            }
+          },
+          "Pet_DifficultyDamageScaling_leg" : {
+            "name" : "Pet_DifficultyDamageScaling_leg",
+            "attributes" : {
+              "+${value} Strength" : 300.0,
+              "+${value} Intelligence" : 390.0,
+              "+${value}% Bleeding Damage " : 60.0,
+              "+${value}% Energy Leech " : 60.0,
+              "+${value}% Instant Poison Damage" : 60.0,
+              "+${value}% Life Leech " : 60.0,
+              "+${value}% Pierce Damage" : 60.0,
+              "+${value}% Poison Damage " : 60.0,
+              "MaxLevel" : 1
+            }
+          },
           "Lay Trap" : {
             "name" : "Lay Trap",
             "description" : "Drops a mechanical bolt trap that will trip when enemies draw near and rapidly fire out deadly bolts.",
