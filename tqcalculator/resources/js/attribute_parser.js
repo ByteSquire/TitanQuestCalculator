@@ -61,14 +61,18 @@ function formatCurrValueScaled(value, duration, index){
 
 function formatChanceBasedAttributes(key, value, index){
     var ret = "";
-    ret += "<br>\n";
-    ret += '<span>' + key.replace("${chance}", getCurrValue(value.chance, index)) + '</span>\n';
+    ret += '<div style="indent-text: inherit">';
+    ret += '<span style="color: #DE5825">' + key.replace("${chance}", getCurrValue(value.chance, index)) + '</span>\n';
     
     var attrKeys = Object.keys(value.values);
     attrKeys.forEach((attrKey) => {
-        ret += '<br>\n';
-        ret += '<span>' + getAttributeString(attrKey, value.values[attrKey], index) + '</span>\n';
+        ret += '<div class="indentedAttribute">';
+        ret += '<span style="color: lightskyblue">' + getAttributeString(attrKey, value.values[attrKey], index) + '</span>\n';
+        ret += "</div>";
+        //ret += '<br>\n';
     });
+    ret += '</div>';
+    //ret = ret.substring(0, ret.length-"<br>\n".length);
     return ret;
 }
 
@@ -156,10 +160,6 @@ function formatPetSkills(value, index, colour) {
     skills.forEach((key) => {
         var skill = value.petSkills[key];
         if(value.petSkillLevels[key] === undefined){
-        //    ret += '<span class="title">' + skill.name + '</span>\n';
-        //    ret += '<br>\n';
-        //    ret += '<span class="desc">Boni depend on the points you invested</span>\n';
-        //    ret += '</td>';
             return;
         }
         if(i !=0 && i%4 == 0){
