@@ -418,7 +418,7 @@
           }
         },
         "${value}% Damage Absorption" : 70.0,
-        "${value}DefenseFireDuration" : 100.0,
+        "${value}% Reduction in Burn Duration" : 100.0,
         "MaxLevel" : 8,
         "UltimateLevel" : 12
       }
@@ -868,8 +868,8 @@
       "attributes" : {
         "${value} Energy Reserved" : [ 50.0, 56.0, 61.0, 67.0, 72.0, 78.0, 83.0, 89.0, 94.0, 100.0 ],
         "${value}% Reduced Freeze Duration" : [ -10.0, -16.0, -21.0, -27.0, -32.0, -38.0, -43.0, -49.0, -54.0, -60.0 ],
+        "${value}% Reduction in Frostburn Duration" : [ -25.0, -33.0, -42.0, -50.0, -58.0, -67.0, -75.0, -83.0, -92.0, -100.0 ],
         "${value}% Slow Resistance" : [ -10.0, -16.0, -21.0, -27.0, -32.0, -38.0, -43.0, -49.0, -54.0, -60.0 ],
-        "${value}DefenseColdDuration" : [ -25.0, -33.0, -42.0, -50.0, -58.0, -67.0, -75.0, -83.0, -92.0, -100.0 ],
         "+${value}% Total Damage" : [ -5.0, -6.0, -7.0, -8.0, -9.0, -11.0, -12.0, -13.0, -14.0, -15.0 ],
         "MaxLevel" : 6,
         "UltimateLevel" : 10
@@ -1414,7 +1414,7 @@
       "attributes" : {
         "^a${value} Second(s) Recharge" : 30.0,
         "${value} Second Duration" : 10.0,
-        "${value}% Reduction in Energy Leech Duration" : [ 5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0 ],
+        "${value}% Energy Leech Resistance" : [ 5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0 ],
         "+${value} Energy Regeneration per second" : 5.0,
         "+${value}% Energy Regeneration" : [ 75.0, 95.0, 120.0, 145.0, 165.0, 185.0, 210.0, 235.0, 255.0, 275.0, 300.0, 325.0 ],
         "+${value}% Movement Speed" : [ 3.0, 5.0, 6.0, 8.0, 9.0, 11.0, 12.0, 14.0, 15.0, 17.0, 18.0, 20.0 ],
@@ -2616,8 +2616,8 @@
       "attributes" : {
         "${value} Energy Reserved" : 50.0,
         "+${value} Health" : [ 40.0, 65.0, 91.0, 116.0, 142.0, 167.0, 193.0, 218.0, 244.0, 269.0, 295.0, 320.0 ],
-        "${value}DefenseLifeDuration" : [ 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ],
-        "${value}DefensePoisonDuration" : [ 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ],
+        "${value}% Reduction in Poison Duration" : [ 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ],
+        "${value}% Reduction in Vitality Decay Duration" : [ 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ],
         "+${value}% Health" : [ 3.0, 4.0, 5.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 14.0, 15.0, 16.0 ],
         "MaxLevel" : 8,
         "UltimateLevel" : 12
@@ -2848,8 +2848,8 @@
       },
       "attributes" : {
         "${value} Second Duration" : 65.0,
+        "${value}% Energy Leech Resistance" : -20.0,
         "${value}% Fire Resistance" : -20.0,
-        "${value}% Reduction in Energy Leech Duration" : -20.0,
         "${value}% Vitality Damage Resistance" : -20.0,
         "MaxLevel" : 1,
         "UltimateLevel" : 1
@@ -3082,7 +3082,6 @@
         "${value}% Piercing Damage" : {
           "min" : 20.0
         },
-        "${value}DefenseAbsorption" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 34.0, 36.0, 38.0 ],
         "MaxLevel" : 10,
         "UltimateLevel" : 14
       }
@@ -3638,8 +3637,8 @@
       },
       "attributes" : {
         "${value} Energy Cost" : [ 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0 ],
-        "${value}% Reduction in Energy Leech Duration" : [ 10.0, 13.0, 17.0, 20.0, 24.0, 27.0, 31.0, 34.0, 38.0, 41.0, 45.0, 48.0 ],
-        "${value}% Reduction in Life Leech Duration" : [ 10.0, 13.0, 17.0, 20.0, 24.0, 27.0, 31.0, 34.0, 38.0, 41.0, 45.0, 48.0 ],
+        "${value}% Energy Leech Resistance" : [ 10.0, 13.0, 17.0, 20.0, 24.0, 27.0, 31.0, 34.0, 38.0, 41.0, 45.0, 48.0 ],
+        "${value}% Life Leech Resistance" : [ 10.0, 13.0, 17.0, 20.0, 24.0, 27.0, 31.0, 34.0, 38.0, 41.0, 45.0, 48.0 ],
         "+${value} Offensive Ability" : [ 20.0, 40.0, 60.0, 80.0, 100.0, 120.0, 140.0, 160.0, 180.0, 200.0, 220.0, 240.0 ],
         "MaxLevel" : 8,
         "UltimateLevel" : 12
@@ -4214,8 +4213,8 @@
         "posX" : 376
       },
       "attributes" : {
-        "${value}DefenseDurationLifeLeachDuration" : -300.0,
-        "${value}DefenseDurationManaLeachDuration" : -300.0,
+        "${value}% Reduction in Energy Leech Duration" : -300.0,
+        "${value}% Reduction in Life Leech Duration" : -300.0,
         "+${value}% Bleeding Damage " : 100.0,
         "+${value}% Energy Leech " : -300.0,
         "+${value}% Energy Regeneration" : -300.0,
@@ -4599,14 +4598,14 @@
         "${value} Energy Cost" : [ 50.0, 52.0, 53.0, 55.0, 57.0, 58.0, 60.0, 62.0, 63.0, 65.0 ],
         "${value} Second Duration" : 4.0,
         "${value}% Damage Absorption" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0 ],
-        "${value}DefenseBleedingDuration" : 100.0,
-        "${value}DefenseColdDuration" : 100.0,
-        "${value}DefenseDurationLifeLeachDuration" : 100.0,
-        "${value}DefenseDurationManaLeachDuration" : 100.0,
-        "${value}DefenseFireDuration" : 100.0,
-        "${value}DefenseLifeDuration" : 100.0,
-        "${value}DefenseLightningDuration" : 100.0,
-        "${value}DefensePoisonDuration" : 100.0,
+        "${value}% Reduction in Bleeding Duration" : 100.0,
+        "${value}% Reduction in Burn Duration" : 100.0,
+        "${value}% Reduction in Energy Leech Duration" : 100.0,
+        "${value}% Reduction in Frostburn Duration" : 100.0,
+        "${value}% Reduction in Life Leech Duration" : 100.0,
+        "${value}% Reduction in Lightning Duration" : 100.0,
+        "${value}% Reduction in Poison Duration" : 100.0,
+        "${value}% Reduction in Vitality Decay Duration" : 100.0,
         "MaxLevel" : 6,
         "UltimateLevel" : 10
       }
@@ -5813,14 +5812,14 @@
         "posX" : 552
       },
       "attributes" : {
-        "${value}DefenseBleedingDuration" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ],
-        "${value}DefenseColdDuration" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ],
-        "${value}DefenseDurationLifeLeachDuration" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ],
-        "${value}DefenseDurationManaLeachDuration" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ],
-        "${value}DefenseFireDuration" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ],
-        "${value}DefenseLifeDuration" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ],
-        "${value}DefenseLightningDuration" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ],
-        "${value}DefensePoisonDuration" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ],
+        "${value}% Reduction in Bleeding Duration" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ],
+        "${value}% Reduction in Burn Duration" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ],
+        "${value}% Reduction in Energy Leech Duration" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ],
+        "${value}% Reduction in Frostburn Duration" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ],
+        "${value}% Reduction in Life Leech Duration" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ],
+        "${value}% Reduction in Lightning Duration" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ],
+        "${value}% Reduction in Poison Duration" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ],
+        "${value}% Reduction in Vitality Decay Duration" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ],
         "MaxLevel" : 10,
         "UltimateLevel" : 14
       }
@@ -6384,7 +6383,7 @@
         "${value} Second Duration" : 1.0,
         "${value}m Radius" : 5.0,
         "+${value} Energy" : [ 25.0, 50.0, 75.0, 100.0, 125.0, 150.0, 175.0, 200.0, 225.0, 250.0, 275.0, 300.0 ],
-        "${value}% Reduction in Energy Leech Duration" : [ -12.0, -18.0, -24.0, -30.0, -36.0, -42.0, -48.0, -54.0, -60.0, -66.0, -72.0, -78.0 ],
+        "${value}% Energy Leech Resistance" : [ -12.0, -18.0, -24.0, -30.0, -36.0, -42.0, -48.0, -54.0, -60.0, -66.0, -72.0, -78.0 ],
         "+${value} Energy Regeneration per second" : [ 2.0, 2.9, 3.8, 4.7, 5.6, 6.5, 7.4, 8.3, 9.2, 10.1, 11.0, 11.9 ],
         "+${value}% Energy" : [ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0 ],
         "MaxLevel" : 8,
@@ -6813,7 +6812,6 @@
       "attributes" : {
         "${value}% Bleeding Resistance" : [ 10.0, 14.0, 18.0, 22.0, 25.0, 29.0, 33.0, 37.0, 41.0, 45.0, 48.0, 52.0, 56.0, 60.0 ],
         "${value}% Physical Resistance" : [ 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0 ],
-        "${value}DefenseAbsorption" : 20.0,
         "+${value} Health Regeneration per second" : [ 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0 ],
         "MaxLevel" : 10,
         "UltimateLevel" : 14
@@ -7191,8 +7189,8 @@
           "max" : [ 18.0, 29.0, 40.0, 51.0, 62.0, 73.0, 84.0, 94.0, 105.0, 116.0, 127.0, 138.0, 149.0, 160.0 ]
         },
         "${value}% Damage Absorption" : [ 6.0, 9.0, 13.0, 16.0, 20.0, 23.0, 26.0, 30.0, 33.0, 36.0, 40.0, 43.0, 47.0, 50.0 ],
+        "${value}% Energy Leech Resistance" : [ 12.0, 19.0, 26.0, 32.0, 39.0, 46.0, 53.0, 59.0, 66.0, 72.0, 80.0, 86.0, 93.0, 100.0 ],
         "${value}% Lightning Resistance" : [ 12.0, 19.0, 26.0, 32.0, 39.0, 46.0, 53.0, 59.0, 66.0, 72.0, 80.0, 86.0, 93.0, 100.0 ],
-        "${value}% Reduction in Energy Leech Duration" : [ 12.0, 19.0, 26.0, 32.0, 39.0, 46.0, 53.0, 59.0, 66.0, 72.0, 80.0, 86.0, 93.0, 100.0 ],
         "+${value} Energy Regeneration per second" : [ 3.0, 5.0, 6.0, 8.0, 9.0, 11.0, 13.0, 14.0, 16.0, 18.0, 19.0, 21.0, 22.0, 24.0 ],
         "+${value}% Total Damage" : [ 5.0, 7.0, 10.0, 12.0, 15.0, 17.0, 19.0, 22.0, 24.0, 26.0, 29.0, 31.0, 34.0, 36.0 ],
         "+${value}% Total Speed" : [ 5.0, 7.0, 10.0, 12.0, 15.0, 17.0, 19.0, 22.0, 24.0, 26.0, 29.0, 31.0, 34.0, 36.0 ],
@@ -8044,7 +8042,7 @@
         "${value} Second Duration" : 300.0,
         "${value} Health Restored" : [ 100.0, 225.0, 350.0, 475.0, 600.0, 725.0, 850.0, 975.0, 1100.0, 1225.0, 1350.0, 1475.0 ],
         "${value}% Bleeding Resistance" : [ 16.0, 22.0, 28.0, 34.0, 40.0, 46.0, 52.0, 58.0, 64.0, 70.0, 76.0, 82.0 ],
-        "${value}DefensePoisonDuration" : [ 1.5, 3.0, 4.5, 6.0, 7.5, 9.0, 10.5, 12.0, 13.5, 15.0, 16.5, 18.0 ],
+        "${value}% Reduction in Poison Duration" : [ 1.5, 3.0, 4.5, 6.0, 7.5, 9.0, 10.5, 12.0, 13.5, 15.0, 16.5, 18.0 ],
         "+${value} Health Regeneration per second" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ],
         "MaxLevel" : 8,
         "UltimateLevel" : 12

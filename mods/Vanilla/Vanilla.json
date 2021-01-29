@@ -1127,7 +1127,7 @@
       "attributes" : {
         "${value} Active Energy Cost per Second" : 0.5,
         "${value}% Bleeding Resistance" : [ -23.0, -32.0, -39.0, -48.0, -56.0, -65.0, -72.0, -81.0, -89.0, -98.0, -107.0, -119.0 ],
-        "${value}% Reduction in Life Leech Duration" : [ -23.0, -32.0, -39.0, -48.0, -56.0, -65.0, -72.0, -81.0, -89.0, -98.0, -107.0, -119.0 ],
+        "${value}% Life Leech Resistance" : [ -23.0, -32.0, -39.0, -48.0, -56.0, -65.0, -72.0, -81.0, -89.0, -98.0, -107.0, -119.0 ],
         "${value}% Vitality Damage Resistance" : [ -23.0, -32.0, -39.0, -48.0, -56.0, -65.0, -72.0, -81.0, -89.0, -98.0, -107.0, -119.0 ],
         "MaxLevel" : 8,
         "UltimateLevel" : 12
@@ -1491,8 +1491,8 @@
             "min" : 1.0
           }
         },
-        "${value}% Reduction in Energy Leech Duration" : 100.0,
-        "${value}% Reduction in Life Leech Duration" : 100.0,
+        "${value}% Energy Leech Resistance" : 100.0,
+        "${value}% Life Leech Resistance" : 100.0,
         "${value}% Slowed over ${duration} Second(s)" : {
           "value" : {
             "min" : 50.0
