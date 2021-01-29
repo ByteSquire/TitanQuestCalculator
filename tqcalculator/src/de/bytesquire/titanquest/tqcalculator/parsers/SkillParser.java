@@ -237,6 +237,7 @@ public class SkillParser {
         case "numRings":
         case "distanceIncrement":
         case "spacingAngle":
+        case "defensiveAbsorption": //doesn't work in game
             return true;
         default:
             return false;
