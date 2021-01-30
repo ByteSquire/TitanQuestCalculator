@@ -12,16 +12,18 @@ import de.bytesquire.titanquest.tqcalculator.parsers.AttributeNameParser;
 @JsonPropertyOrder({ "chance", "value", "duration" })
 public class SkillAttribute {
 
-    private String mKey;
+    private String mKey, mRace;
     private Object mChance, mValue, mDuration;
     private AttributeType mType;
 
-    public SkillAttribute(String aKey, AttributeType aType) {
+    public SkillAttribute(String aRace, String aKey, AttributeType aType) {
+        mRace = aRace;
         mType = aType;
         setKey(aKey);
     }
 
-    public SkillAttribute(String aKey, Object aValue, AttributeType aType) {
+    public SkillAttribute(String aRace, String aKey, Object aValue, AttributeType aType) {
+        mRace = aRace;
         mType = aType;
         setKey(aKey);
         switch (mType) {
@@ -36,7 +38,8 @@ public class SkillAttribute {
         }
     }
 
-    public SkillAttribute(String aKey, Object aDamage) {
+    public SkillAttribute(String aRace, String aKey, Object aDamage) {
+        mRace = aRace;
         mType = AttributeType.DEFAULT;
         setKey(aKey);
         setValue(aDamage);
@@ -61,6 +64,10 @@ public class SkillAttribute {
                             + key.substring(key.indexOf("}") + 1, key.length());
             } else
                 key = "${value}" + key;
+        }
+        if (key.contains("{%s1}")) {
+            if (mRace != null)
+                key = key.replace("{%s1}", mRace);
         }
         switch (mType) {
         case DURATION:

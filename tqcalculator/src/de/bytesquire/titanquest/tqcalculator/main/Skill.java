@@ -68,7 +68,8 @@ public class Skill {
 
         mSkillDescription = aMSParser.getMatch(mSkillParser.getSkillDescriptionTag());
         mSkillIcon = mSkillParser.getSkillIcon();
-        mRace = mSkillParser.getRace();
+        if (mSkillParser.getRace() != null)
+            mRace = mSkillParser.getRace().replace(";", " & ");
 
         if (mSkillParser.getParentSkill() != null) {
             mParent = mSkillParser.getParentSkill();
@@ -196,10 +197,6 @@ public class Skill {
         if (key.startsWith("pet")) {
             key = key.replace("pet", "SkillPet");
         }
-        if (key.contains("{%s1}")) {
-            if (mRace != null)
-                key = key.replace("{%s1}", mRace);
-        }
         if (key.endsWith("Min")) {
             key = key.substring(0, key.length() - "Min".length());
             MinMaxAttribute tmp = new MinMaxAttribute(value, null);
@@ -276,7 +273,7 @@ public class Skill {
             else
                 curr.setValue(value);
         } else {
-            SkillAttribute tmp = new SkillAttribute(key, value);
+            SkillAttribute tmp = new SkillAttribute(mRace, key, value);
             mAttributeBuilder.put(key, tmp);
         }
     }
@@ -290,7 +287,7 @@ public class Skill {
             else
                 curr.setValue(value);
         } else {
-            SkillAttribute tmp = new SkillAttribute(key, value);
+            SkillAttribute tmp = new SkillAttribute(mRace, key, value);
             tmp.setType(AttributeType.DURATION);
             mAttributeBuilder.put(key, tmp);
         }
@@ -305,7 +302,7 @@ public class Skill {
             else
                 curr.setDuration(value);
         } else {
-            SkillAttribute tmp = new SkillAttribute(key, value, AttributeType.DURATION);
+            SkillAttribute tmp = new SkillAttribute(mRace, key, value, AttributeType.DURATION);
             mAttributeBuilder.put(key, tmp);
         }
     }
@@ -319,7 +316,7 @@ public class Skill {
             else
                 curr.setChance(value);
         } else {
-            SkillAttribute tmp = new SkillAttribute(key, value, AttributeType.CHANCE);
+            SkillAttribute tmp = new SkillAttribute(mRace, key, value, AttributeType.CHANCE);
             mAttributeBuilder.put(key, tmp);
         }
     }
@@ -329,7 +326,7 @@ public class Skill {
             SkillAttribute curr = mAttributeBuilder.get(key);
             curr.setChance(value);
         } else {
-            SkillAttribute tmp = new SkillAttribute(key, value, AttributeType.CHANCE);
+            SkillAttribute tmp = new SkillAttribute(mRace, key, value, AttributeType.CHANCE);
             mAttributeBuilder.put(key, tmp);
         }
     }
@@ -339,7 +336,7 @@ public class Skill {
             SkillAttribute curr = mAttributeBuilder.get(key);
             curr.setDuration(value);
         } else {
-            SkillAttribute tmp = new SkillAttribute(key, value, AttributeType.DURATION);
+            SkillAttribute tmp = new SkillAttribute(mRace, key, value, AttributeType.DURATION);
             mAttributeBuilder.put(key, tmp);
         }
     }
@@ -349,7 +346,8 @@ public class Skill {
             SkillAttribute curr = mAttributeBuilder.get(key);
             curr.setValue(value);
         } else {
-            mAttributeBuilder.put(key, new SkillAttribute(key, value));
+            SkillAttribute tmp = new SkillAttribute(mRace, key, value);
+            mAttributeBuilder.put(key, tmp);
         }
     }
 
@@ -359,8 +357,7 @@ public class Skill {
             curr.setValue(value);
             curr.setType(AttributeType.DURATION);
         } else {
-            SkillAttribute tmp = new SkillAttribute(key, AttributeType.DURATION);
-            tmp.setValue(value);
+            SkillAttribute tmp = new SkillAttribute(mRace, key, AttributeType.DURATION);
             mAttributeBuilder.put(key, tmp);
         }
     }
