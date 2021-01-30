@@ -14,9 +14,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 
-import de.bytesquire.titanquest.tqcalculator.main.Control;
-import de.bytesquire.titanquest.tqcalculator.main.MinMaxAttribute;
-import de.bytesquire.titanquest.tqcalculator.main.Skill;
+import de.bytesquire.titanquest.tqcalculator.main.*;
 
 @JsonIgnoreProperties({ "files", "additionalFiles" })
 @JsonInclude(Include.NON_NULL)
@@ -29,7 +27,7 @@ public class PetParser {
     private LinkedHashMap<String, ArrayList<Integer>> mPetSkillLevels;
     private LinkedHashMap<Integer, ArrayList<Integer>> mSkillLevelIndexMap;
     private File[] mSkills;
-    private ArrayList<File> mAdditionalFiles;
+    private ArrayList<String> mAdditionalFiles;
     private String mParentPath;
     private ModStringsParser mMSParser;
     private IconsParser mIconsParser;
@@ -54,7 +52,15 @@ public class PetParser {
 
         for (Integer i : mSkillNameIndexMap.keySet()) {
             if (mSkillLevelIndexMap.get(i) != null) {
-                mPetSkillLevels.put(mSkillNameIndexMap.get(i), mSkillLevelIndexMap.get(i));
+                boolean canLearn = false;
+                for (Integer a : mSkillLevelIndexMap.get(i)) {
+                    if (a > 0) {
+                        canLearn = true;
+                        break;
+                    }
+                }
+                if (canLearn)
+                    mPetSkillLevels.put(mSkillNameIndexMap.get(i), mSkillLevelIndexMap.get(i));
             }
         }
 
@@ -80,8 +86,9 @@ public class PetParser {
                         Skill tmp = new Skill(
                                 new File(Control.DATABASES_DIR + mParentPath.split("/")[0] + "/database/" + value),
                                 null, mParentPath, mMSParser, mIconsParser);
-                        if (tmp.getName() == null)
+                        if (tmp.getName() == null) {
                             return;
+                        }
                         mPetSkills.put(tmp.getName(), tmp);
 
                         mSkillNameIndexMap.put(Integer.parseInt(attributeName.split("skillName")[1]), tmp.getName());
@@ -92,8 +99,8 @@ public class PetParser {
 
                     if (attributeName.startsWith("skillLevel")) {
                         Integer lvl = Integer.parseInt(value.split(";")[0]);
-                        if (lvl == 0)
-                            return;
+//                        if (lvl == 0)
+//                            return;
                         if (mSkillLevelIndexMap.containsKey(Integer.parseInt(attributeName.split("skillLevel")[1])))
                             mSkillLevelIndexMap.get(Integer.parseInt(attributeName.split("skillLevel")[1])).add(lvl);
                         else {
@@ -105,6 +112,8 @@ public class PetParser {
                     }
 
                     try {
+                        if (value.contains(";"))
+                            value = value.split(";")[0];
                         Double doubleValue = Double.parseDouble(value);
                         if (doubleValue == 0.0)
                             return;
@@ -120,7 +129,7 @@ public class PetParser {
                                         relevantObj.addMin(doubleValue);
                                 }
                             } else {
-                                MinMaxAttribute tmp = new MinMaxAttribute();
+                                MinMaxAttribute tmp = new MinMaxAttribute(null, null);
                                 if (attributeName.endsWith("Max"))
                                     tmp.addMax(doubleValue);
                                 else
@@ -137,7 +146,10 @@ public class PetParser {
                             }
                         }
                         return;
+                    } catch (NumberFormatException e) {
+                        //System.err.println("Pet attribute Number error: " + e.getMessage());
                     } catch (Exception e) {
+                        System.err.println("Pet error: " + e.getMessage());
                     }
                 });
             } catch (FileNotFoundException e) {
@@ -208,8 +220,17 @@ public class PetParser {
         return mAttributes;
     }
 
-    public File[] getFiles() {
-        return mSkills;
+    public ArrayList<String> getFiles() {
+        ArrayList<String> ret = new ArrayList<>();
+        for (String string : mAdditionalFiles) {
+            if (!ret.contains(string))
+                ret.add(string);
+        }
+        for (File f : mSkills) {
+            if (!ret.contains(f.getAbsolutePath()))
+                ret.add(f.getAbsolutePath());
+        }
+        return ret;
     }
 
     @Override
@@ -221,10 +242,6 @@ public class PetParser {
             build.append("\n");
         });
         return build.toString();
-    }
-
-    public ArrayList<File> getAdditionalFiles() {
-        return mAdditionalFiles;
     }
 
     public LinkedHashMap<String, Skill> getPetSkills() {

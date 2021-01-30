@@ -17,7 +17,7 @@ import de.bytesquire.titanquest.tqcalculator.parsers.ModStringsParser;
 
 @JsonIgnoreProperties({ "msparser", "character", "modDir", "links", "masteryLevel", "gameEngine", "iconsParser",
         "urlLegacy", "url", "questSkillPoints", "modParser" })
-@JsonPropertyOrder({ "name", "mappedMasteries", "masteryLevels", "masteries" })
+@JsonPropertyOrder({ "name", "mappedMasteries", "masteryLevels", "classNames", "masteries" })
 public class Mod {
 
     private ModParser mModParser;
@@ -31,6 +31,7 @@ public class Mod {
     private File mGameEngine;
     private ArrayList<Integer> mMasteryTiers;
     private Map<String, ArrayList<ArrayList<String>>> mQuestSkillPoints;
+    private String[][] mClassNames;
 
     public Mod(String aModName, String aModDir) {
         if (aModName == null)
@@ -40,6 +41,8 @@ public class Mod {
         mModName = aModName;
         mModDir = aModDir;
         mMSParser = new ModStringsParser(aModDir + "/text/");
+        initClassNames();
+
         mIconsParser = new IconsParser(aModDir + "/database/");
         mModParser = new ModParser(aModDir);
         mLinks = mModParser.getLinks();
@@ -58,6 +61,83 @@ public class Mod {
                 mMappedMasteries.put(i++, tmp.getName());
             }
         }
+    }
+
+    private void initClassNames() {
+        mClassNames = new String[11][11];
+
+        mClassNames[0][0] = "Mastery parameters missing or invalid";
+
+        setIfNotNull(mClassNames, 1, 0, "tagCClass02");
+        setIfNotNull(mClassNames, 2, 0, "tagCClass01");
+        setIfNotNull(mClassNames, 3, 0, "tagCClass05");
+        setIfNotNull(mClassNames, 4, 0, "tagCClass06");
+        setIfNotNull(mClassNames, 5, 0, "tagCClass03");
+        setIfNotNull(mClassNames, 6, 0, "tagCClass07");
+        setIfNotNull(mClassNames, 7, 0, "xtagCharacterClass01");
+        setIfNotNull(mClassNames, 8, 0, "tagCClass08");
+        setIfNotNull(mClassNames, 9, 0, "x2tag_class_rm_rm");
+        setIfNotNull(mClassNames, 10, 0, "tagCClass04");
+
+        setIfNotNull(mClassNames, 1, 2, "tagCClass36");
+        setIfNotNull(mClassNames, 1, 3, "tagCClass28");
+        setIfNotNull(mClassNames, 1, 4, "tagCClass23");
+        setIfNotNull(mClassNames, 1, 5, "tagCClass35");
+        setIfNotNull(mClassNames, 1, 6, "tagCClass17");
+        setIfNotNull(mClassNames, 1, 7, "xtagCharacterClass08");
+        setIfNotNull(mClassNames, 1, 8, "tagCClass10");
+        setIfNotNull(mClassNames, 1, 9, "x2tag_class_nature_rm");
+        setIfNotNull(mClassNames, 1, 10, "tagCClass32");
+
+        setIfNotNull(mClassNames, 2, 3, "tagCClass27");
+        setIfNotNull(mClassNames, 2, 4, "tagCClass22");
+        setIfNotNull(mClassNames, 2, 5, "tagCClass34");
+        setIfNotNull(mClassNames, 2, 6, "tagCClass16");
+        setIfNotNull(mClassNames, 2, 7, "xtagCharacterClass09");
+        setIfNotNull(mClassNames, 2, 8, "tagCClass09");
+        setIfNotNull(mClassNames, 2, 9, "x2tag_class_spirit_rm");
+        setIfNotNull(mClassNames, 2, 10, "tagCClass31");
+
+        setIfNotNull(mClassNames, 3, 4, "tagCClass26");
+        setIfNotNull(mClassNames, 3, 5, "tagCClass29");
+        setIfNotNull(mClassNames, 3, 6, "tagCClass20");
+        setIfNotNull(mClassNames, 3, 7, "xtagCharacterClass05");
+        setIfNotNull(mClassNames, 3, 8, "tagCClass13");
+        setIfNotNull(mClassNames, 3, 9, "x2tag_class_storm_rm");
+        setIfNotNull(mClassNames, 3, 10, "tagCClass30");
+
+        setIfNotNull(mClassNames, 4, 5, "tagCClass24");
+        setIfNotNull(mClassNames, 4, 6, "tagCClass21");
+        setIfNotNull(mClassNames, 4, 7, "xtagCharacterClass04");
+        setIfNotNull(mClassNames, 4, 8, "tagCClass14");
+        setIfNotNull(mClassNames, 4, 9, "x2tag_class_earth_rm");
+        setIfNotNull(mClassNames, 4, 10, "tagCClass25");
+
+        setIfNotNull(mClassNames, 5, 6, "tagCClass18");
+        setIfNotNull(mClassNames, 5, 7, "xtagCharacterClass07");
+        setIfNotNull(mClassNames, 5, 8, "tagCClass11");
+        setIfNotNull(mClassNames, 5, 9, "x2tag_class_stealth_rm");
+        setIfNotNull(mClassNames, 5, 10, "tagCClass33");
+
+        setIfNotNull(mClassNames, 6, 7, "xtagCharacterClass03");
+        setIfNotNull(mClassNames, 6, 8, "tagCClass15");
+        setIfNotNull(mClassNames, 6, 9, "x2tag_class_defense_rm");
+        setIfNotNull(mClassNames, 6, 10, "tagCClass19");
+
+        setIfNotNull(mClassNames, 7, 8, "xtagCharacterClass02");
+        setIfNotNull(mClassNames, 7, 9, "x2tag_class_dream_rm");
+        setIfNotNull(mClassNames, 7, 10, "xtagCharacterClass06");
+
+        setIfNotNull(mClassNames, 8, 9, "x2tag_class_warfare_rm");
+        setIfNotNull(mClassNames, 8, 10, "tagCClass12");
+
+        setIfNotNull(mClassNames, 9, 10, "x2tag_class_hunting_rm");
+    }
+
+    private void setIfNotNull(String[][] arr, int index0, int index1, String element) {
+        String match = mMSParser.getMatch(element);
+        if (match != null)
+            arr[index0][index1] = match;
     }
 
     public List<Mastery> getMasteries() {
@@ -119,8 +199,12 @@ public class Mod {
     public Map<String, ArrayList<ArrayList<String>>> getQuestSkillPoints() {
         return mQuestSkillPoints;
     }
-    
+
     public ModParser getModParser() {
         return mModParser;
+    }
+
+    public String[][] getClassNames() {
+        return mClassNames;
     }
 }

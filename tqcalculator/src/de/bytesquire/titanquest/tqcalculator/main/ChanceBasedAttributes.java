@@ -4,10 +4,12 @@ import java.util.LinkedHashMap;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 
 @JsonIgnoreProperties({ "key" })
 @JsonInclude(Include.NON_NULL)
+@JsonPropertyOrder({ "chance", "values" })
 public class ChanceBasedAttributes {
 
     protected Object chance;
@@ -15,7 +17,7 @@ public class ChanceBasedAttributes {
     protected LinkedHashMap<String, Object> values;
 
     public ChanceBasedAttributes() {
-        this.values = new LinkedHashMap<String, Object>();
+        this.values = new LinkedHashMap<>();
     }
 
     public Object getChance() {
@@ -35,14 +37,16 @@ public class ChanceBasedAttributes {
     }
 
     public void addValue(String key, Object value) {
+        if (key == null)
+            return;
         this.values.put(key, value);
     }
 
     public void setXOR(boolean xor) {
         if (xor)
-            key = "${value}% Chance for one of the following:";
+            key = "${chance}% Chance for one of the following:";
         else
-            key = "${value}% Chance for all of the following:";
+            key = "${chance}% Chance for all of the following:";
     }
 
     @Override
@@ -50,20 +54,14 @@ public class ChanceBasedAttributes {
         StringBuilder ret = new StringBuilder();
         if (chance == null)
             return "";
-        ret.append(key.replace("${value}", chance.toString()));
-        ret.append("\n");
+        ret.append(key.replace("${chance}", chance.toString()));
+        ret.append("<br>\n");
         values.forEach((str, obj) -> {
-            try {
-                if (obj instanceof MinMaxAttribute || obj instanceof AttributeWithSecondValue) {
-                    ret.append(obj.toString());
-                    return;
-                }
-                if (str.contains("${value}"))
-                    ret.append(str.replace("${value}", obj.toString()));
-                else
-                    ret.append(obj.toString()).append(str);
-            } catch (NullPointerException e) {
-            }
+            if (obj instanceof SkillAttribute)
+                ret.append(obj.toString());
+            else
+                ret.append(str.replace("${value}", obj.toString()));
+            ret.append("<br>\n");
         });
         return ret.toString();
     }

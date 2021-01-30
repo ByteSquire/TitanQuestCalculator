@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -117,7 +118,7 @@ public class Cleaner {
             }
         }
     }
-    
+
     private void cleanQuestSkillPoints(Mod mod) {
         ArrayList<File> questSkillFiles = mod.getModParser().getQuestSkillFiles();
         for (File questSkillFile : questSkillFiles) {
@@ -128,7 +129,8 @@ public class Cleaner {
 //            System.out.println(targetStringsPath);
             try {
                 String tp = targetQuestSkillFilePath.toString();
-                Path tmp = Path.of(tp.substring(0, tp.lastIndexOf(targetQuestSkillFilePath.getFileSystem().getSeparator())));
+                Path tmp = Path
+                        .of(tp.substring(0, tp.lastIndexOf(targetQuestSkillFilePath.getFileSystem().getSeparator())));
                 Files.createDirectories(tmp);
                 Files.copy(originQuestSkillFilePath, targetQuestSkillFilePath);
             } catch (IOException e) {
@@ -176,11 +178,11 @@ public class Cleaner {
     }
 
     private void cleanSkill(Skill skill, Mod mod, Mastery mastery) {
-        for (File skillFile : skill.getFiles()) {
-            Path originPath = skillFile.toPath();
+        for (String skillFile : skill.getFiles()) {
+            Path originPath = Paths.get(skillFile);
 //            System.out.println(originPath);
-            Path targetPath = Path.of(mod.getModDir().substring(0, mod.getModDir().length() - 1) + "-cleaned/"
-                    + skillFile.toPath().toString().split(mod.getName())[1]);
+            Path targetPath = Paths.get(mod.getModDir().substring(0, mod.getModDir().length() - 1) + "-cleaned",
+                    skillFile.split(mod.getName())[1]);
 //            System.out.println(targetPath);
             try {
                 String tp = targetPath.toString();

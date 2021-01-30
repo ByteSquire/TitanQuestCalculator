@@ -33,7 +33,7 @@ public class Mastery {
         mSkillTiers = new ArrayList<>();
         mSkills = new ArrayList<>();
 
-        mName = aMSParser.getTags().get(mSkillTreeParser.getMasteryTag()).split(" Mastery")[0];
+        mName = aMSParser.getMatch(mSkillTreeParser.getMasteryTag()).split(" Mastery")[0];
 
         for (File skill : mSkillTreeParser.getSkills()) {
             if (!(mSkillTreeParser.getSkills().indexOf(skill) == 0)) {
@@ -47,22 +47,22 @@ public class Mastery {
         }
 
         for (Skill skill : mSkills) {
-            if (skill.isModifier()) {
-                if (skill.getParent() != null) {
-                    ArrayList<String> validParents = new ArrayList<>();
-                    for (String parent : skill.getParent()) {
-                        boolean containsParent = false;
-                        for (Skill masterySkill : mSkills) {
-                            if (masterySkill.getName().equals(parent)) {
-                                containsParent = true;
-                            }
-                        }
-                        if (containsParent) {
-                            validParents.add(parent);
+            if (skill.getParent() != null) {
+                ArrayList<String> validParents = new ArrayList<>();
+                for (String parent : skill.getParent()) {
+                    boolean containsParent = false;
+                    for (Skill masterySkill : mSkills) {
+                        if (masterySkill.getName().equals(parent)) {
+                            containsParent = true;
                         }
                     }
-                    skill.setParent(validParents);
+                    if (containsParent) {
+                        validParents.add(parent);
+                    }
                 }
+                skill.setParent(validParents);
+            }
+            if (skill.isModifier()) {
                 if (skill.getParent() == null) {
                     int i = 1;
                     Skill tmp = mSkills.get(mSkills.indexOf(skill) - i++);

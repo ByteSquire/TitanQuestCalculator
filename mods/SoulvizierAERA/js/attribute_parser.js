@@ -21,77 +21,67 @@ function getAttributeString(key, value, index){
                 return formatAttribute(ret, value.min, index);
         } else if(value.max)
             return formatAttribute(ret, value.max, index);
-        else if(value.value0 || value.value1)
-            return formatAttributeWithSecondValue(value, index);
-        else if(value.chance)
+        else if(value.values)
             return formatChanceBasedAttributes(key, value, index);
+        else
+            return formatSkillAttribute(key, value, index);
     }
     
     return formatAttribute(ret, value, index);
 }
 
-function formatAttributeWithSecondValue(value, index){
-    var ret = value.key;
-    if(value.value0)
-        ret = getAttributeString(ret.replace("value0", "value"), value.value0, index);
-    if(value.value1)
-        ret = getAttributeString(ret.replace("value1", "value"), value.value1, index); 
+function formatSkillAttribute(key, value, index){
+    var ret = key;
+    if(value.chance)
+        ret = ret.replace("${chance}", formatCurrValue(value.chance, index));
+    if(value.duration){
+        if(value.value)
+            ret = ret.replace("${value}", formatCurrValueScaled(value.value, value.duration, index));
+        ret = ret.replace("${duration}", formatCurrValue(value.duration, index));
+    } else if(value.value)
+        ret = ret.replace("${value}", formatCurrValue(value.value, index));
     return ret;
 }
 
-function formatChanceBasedAttributes(key, value, index){
-    var ret;
-    if(value.chance.constructor === Array){
-        if(index >= value.chance.length)
-            index = value.chance.length-1;
-        ret = '<span>' + key.replace("${value}", value.chance[index]) + '</span>\n';
+function formatCurrValue(value, index){
+    var ret = getCurrValue(value, index);
+    if(ret.constructor === Object){
+        return ret.min + " ~ " + ret.max;
     } else
-        ret = '<span>' + key.replace("${value}", value.chance) + '</span>\n';
-    ret += "<br>\n";
+        return ret;
+}
+
+function formatCurrValueScaled(value, duration, index){
+    var ret = getCurrValueScaled(value, duration, index);
+    if(ret.constructor === Object){
+        return ret.min + " ~ " + ret.max;
+    } else
+        return ret;
+}
+
+function formatChanceBasedAttributes(key, value, index){
+    var ret = "";
+    ret += '<div style="indent-text: inherit">';
+    ret += '<span style="color: #DE5825">' + key.replace("${chance}", getCurrValue(value.chance, index)) + '</span>\n';
+    
     var attrKeys = Object.keys(value.values);
     attrKeys.forEach((attrKey) => {
-        ret += '<span>' + getAttributeString(attrKey, value.values[attrKey], index) + '</span>\n';
-        ret += '<br>\n';
+        ret += '<div class="indentedAttribute">';
+        ret += '<span style="color: lightskyblue">' + getAttributeString(attrKey, value.values[attrKey], index) + '</span>\n';
+        ret += "</div>";
+        //ret += '<br>\n';
     });
-    ret = ret.substring(0, ret.length-5);
+    ret += '</div>';
+    //ret = ret.substring(0, ret.length-"<br>\n".length);
     return ret;
 }
 
 function formatAttribute(key, value, index){
     var ret = key;
-    if(key.includes("over") && !key.includes("value1")){
-        var _value;
-        if(value.constructor === Array){
-            if(index >= value.length)
-                index = value.length-1;
-            _value = value[index];
-        } else {
-            _value = value;
-        }
-        if(key.includes(" ~ ")){
-            var dpsMin = key.split(" ~ ")[0];
-            var dpsMax = key.split(" ~ ")[1].split(" ")[0];
-            if(!isNaN(dpsMin) && !isNaN(dpsMax))
-                key = key.replace(dpsMin, (Number(dpsMin)*value).toFixed(1)).replace(dpsMax, (Number(dpsMax)*_value).toFixed(1));
-        } else {
-            var dps = key.split(" ")[0];
-            if(!isNaN(dps))
-                key = key.replace(dps, (Number(dps)*_value).toFixed(1));
-        }
-    }
-    if(value.constructor === Array){
-        if(index >= value.length)
-            index = value.length-1;
-        if(key.includes("${value}"))
-            ret = key.replace("${value}", value[index]);
-        else
-            ret = value[index] + key;
-    } else {
-        if(key.includes("${value}"))
-            ret = key.replace("${value}", value);
-        else
-            ret = value + key;
-    }
+    if(key.includes("${value}"))
+        ret = ret.replace("${value}", getCurrValue(value, index));
+    else
+        ret = getCurrValue(value, index) + ret;
     if(ret.includes("+-"))
         ret = ret.replace("+-", "-");
     return ret;
@@ -99,58 +89,56 @@ function formatAttribute(key, value, index){
 
 function formatAttributeMinMax(key, valueMin, valueMax, index){
     var ret = key;
-    if(key.includes("over") && !key.includes("value1")){
-        if(key.includes(" ~ ")){
-            var dpsMin = key.split(" ~ ")[0];
-            var dpsMax = key.split(" ~ ")[1];
-            if(!isNaN(dpsMin) && !isNaN(dpsMax))
-                key = key.replace(dpsMin, (Number(dpsMin)*valueMin).toFixed(1)).replace(dpsMax, (Number(dpsMax)*valueMax).toFixed(1));
-        } else {
-            var dps = key.split(" ")[0];
-            if(!isNaN(dps))
-                key = key.replace(dps, ((Number(dps)*valueMin).toFixed(1) + " ~ " + (Number(dps)*valueMax).toFixed(1)));
-        }
-    }
-    if(valueMin.constructor === Array){
-        if(valueMax.constructor === Array){
-            var indexMin = index;
-            var indexMax = index;
-            if(indexMax >= valueMax.length)
-                indexMax = valueMax.length-1;
-            if(indexMin >= valueMin.length)
-                indexMin = valueMin.length-1;
-            if(key.includes("${value}"))
-                ret = key.replace("${value}", valueMin[indexMin] + " ~ " + valueMax[indexMax]);
-            else
-                ret = valueMin[indexMin] + " ~ " + valueMax[indexMax] + key;
-        } else {
-            var indexMin = index;
-            if(indexMin >= valueMin.length)
-                indexMin = valueMin.length-1;
-            if(key.includes("${value}"))
-                ret = key.replace("${value}", valueMin[indexMin] + " ~ " + valueMax);
-            else
-                ret = valueMin[indexMin] + " ~ " + valueMax + key;
-        }
-    } else {
-        if(valueMax.constructor === Array){
-            var indexMax = index;
-            if(indexMax >= valueMax.length)
-                indexMax = valueMax.length-1;
-            if(key.includes("${value}"))
-                key = key.replace("${value}", valueMin + " ~ " + valueMax[indexMax]);
-            else
-                ret = valueMin + " ~ " + valueMax[indexMax] + key;
-        } else {
-            if(key.includes("${value}"))
-                ret = key.replace("${value}", valueMin + " ~ " + valueMax);
-            else
-                ret = valueMin + " ~ " + valueMax + key;
-        }
-    }
     
+    if(key.includes("${value}"))
+        ret = key.replace("${value}", getCurrValue(valueMin, index) + " ~ " + getCurrValue(valueMax, index));
+    else
+        ret = getCurrValue(valueMin, index) + " ~ " + getCurrValue(valueMax, index) + key;
+            
     if(ret.includes("+-"))
         ret = ret.replaceAll("+-", "-");
+    return ret;
+}
+
+function getCurrValueMinMax(valueMinMax, index){
+    return { "min": getCurrValue(valueMinMax.min, index), "max": getCurrValue(valueMinMax.max, index)};
+}
+
+function getCurrValue(value, index){
+    var ret = value;
+    if(ret.min){
+        if(ret.max)
+            return getCurrValueMinMax(value, index);
+        else
+            ret = ret.min;
+    } else if(ret.max)
+        ret = ret.max;
+    if(ret.constructor === Array){
+        var _index = index;
+        if(_index >= ret.length)
+            _index = ret.length-1;
+        ret = ret[_index];
+    }
+    return ret;
+}
+
+function getCurrValueScaled(value, duration, index){
+    var scaledValue = value;
+    var ret = getCurrValue(value, index);
+    var scaleFactor = getCurrValue(duration, index);
+    if(scaleFactor.constructor === Object){
+        ret = { "min": getCurrValueScaled(ret, scaleFactor.min, index), "max": getCurrValueScaled(ret, scaleFactor.max, index) };
+    } else if(scaleFactor != 1.0){
+        if(ret.constructor === Object){
+            ret = { "min": getCurrValueScaled(ret.min, scaleFactor, index), "max": getCurrValueScaled(ret.max, scaleFactor, index) };
+        } if(ret.constructor === Array){
+            var _index = index;
+            if(_index >= ret.length)
+                _index = ret.length-1;
+            scaledValue = ret[_index] * scaleFactor;
+        } else
+            scaledValue *= scaleFactor;
+    }
     return ret;
 }
 
@@ -166,26 +154,31 @@ function formatPetAttributes(value, index, colour) {
 
 function formatPetSkills(value, index, colour) {
     var skills = Object.keys(value.petSkills);
-    var ret = '<span style="color: brown">Pet Skills:</span>';
-    ret += '<table><tr style="vertical-align: top">';
+    var ret = '<span style="color: brown">Pet Skills:</span>\n';
+    ret += '<table>\n<tr style="vertical-align: top">';
     var i = 0;
     skills.forEach((key) => {
         var skill = value.petSkills[key];
+        if(value.petSkillLevels[key] === undefined){
+            return;
+        }
         if(i !=0 && i%4 == 0){
             ret += '<tr style="vertical-align: top">';
         }
         i++;
-        ret += "<td>";
-        if(value.petSkillLevels[key] === undefined){
-            ret += '<span class="title">' + skill.name + '</span>\n';
-            ret += '<br>\n';
-            ret += '<span class="desc">Boni depend on the points you invested</span>\n';
-            return;
-        }
+        ret += '<td style="min-width: fit-content">';
         var tmpIndex = index;
         if(tmpIndex >= value.petSkillLevels[key].length)
             tmpIndex = value.petSkillLevels[key].length-1;
+        if(value.petSkillLevels[key][tmpIndex] == 0){
+            ret += '<span class="title">' + skill.name + '</span>\n';
+            ret += '<br>\n';
+            ret += '<span class="desc">Pet has not learned this skill yet</span>\n';
+            ret += '</td>';
+            return;
+        }
         ret += getPopupString(skill, value.petSkillLevels[key][tmpIndex], true);
+        ret += '</td>';
     });
     ret += '</table>';
     return ret;

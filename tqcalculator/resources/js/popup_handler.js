@@ -58,7 +58,7 @@ function getPopupString(skill, currLevel, skipNext){
     }
     
     ret += '<br>\n';
-    ret += '<table>\n';
+    ret += '<table style="width: 100%">\n';
     
     var colour = "white";
     if(currLevel > 0){        
@@ -85,14 +85,17 @@ function getPopupString(skill, currLevel, skipNext){
                 return;
             if(key == "Bonus to all Pets:"){
                 ret += '<span style="color: orange">Bonus to all Pets:</span>\n';
-                ret += "<br>\n";
                 var petAttr = Object.keys(value);
                 petAttr.forEach((petKey) => {
                     var petValue = value[petKey];
                     if(petValue.key === null)
                         return;
-                    ret += getAttributeStringWithColour(petKey, petValue, currLevel-1, "lightskyblue");
-                    ret += '<br>\n';
+                    var str = getAttributeStringWithColour(petKey, petValue, currLevel-1, "lightskyblue");
+                    if(str.startsWith("<br>\n"))
+                        str.substring(6, str.length);
+                    ret += '<div class="indentedAttribute">';
+                    ret += str;
+                    ret += '</div>';
                 });
             } else
                 ret += getAttributeStringWithColour(key, value, currLevel-1, colour);
@@ -100,8 +103,13 @@ function getPopupString(skill, currLevel, skipNext){
         });
     }
     
-    if(skipNext)
+    if(ret.endsWith("<br>\n"))
+        ret = ret.substring(0, ret.length - "<br>\n".length);
+    
+    if(skipNext){
+        ret += '</tr></table>\n';
         return ret;
+    }
     
     if(currLevel+1 <= skill.attributes["MaxLevel"]){
         ret += '<td>';
@@ -127,24 +135,35 @@ function getPopupString(skill, currLevel, skipNext){
             return;
         if(key == "Bonus to all Pets:"){
             ret += '<span style="color: orange">Bonus to all Pets:</span>\n';
-            ret += "<br>\n";
             var petAttr = Object.keys(value);
             petAttr.forEach((petKey) => {
                 var petValue = value[petKey];
                 if(petValue.key === null)
                     return;
                 if(currLevel+1 == 1){
-                    ret += getAttributeStringWithColour(petKey, petValue, currLevel, colour);
-                    ret += '<br>\n';
+                    var str = getAttributeStringWithColour(petKey, petValue, currLevel, colour);
+                    if(str.startsWith("<br>\n"))
+                        str.substring(6, str.length);
+                    ret += '<div class="indentedAttribute">';
+                    ret += str;
+                    ret += '</div>';
                     return;
                 }   
                 if (petValue.constructor === Array){
-                    ret += getAttributeStringWithColour(petKey, petValue, currLevel, colour);
-                    ret += '<br>\n';
+                    var str = getAttributeStringWithColour(petKey, petValue, currLevel, colour);
+                    if(str.startsWith("<br>\n"))
+                        str.substring(6, str.length);
+                    ret += '<div class="indentedAttribute">';
+                    ret += str;
+                    ret += '</div>';
                 } else if(petValue.constructor === Object) {
                     if(checkForArray(petValue)){
-                        ret += getAttributeStringWithColour(petKey, petValue, currLevel, colour);
-                        ret += '<br>\n';
+                        var str = getAttributeStringWithColour(petKey, petValue, currLevel, colour);
+                        if(str.startsWith("<br>\n"))
+                            str.substring(6, str.length);
+                        ret += '<div class="indentedAttribute">';
+                        ret += str;
+                        ret += '</div>';
                     }
                 }
             });
@@ -161,11 +180,14 @@ function getPopupString(skill, currLevel, skipNext){
             } else if(value.constructor === Object) {
                 if(checkForArray(value)){
                     ret += getAttributeStringWithColour(key, value, currLevel, colour);
-                    ret += '<br>\n';
+                ret += '<br>\n';
                 }
             }
         }
     });
+    
+    if(ret.endsWith("<br>\n"))
+        ret = ret.substring(0, ret.length - "<br>\n".length);
     
     ret += '</tr></table>\n';
     
@@ -183,15 +205,19 @@ function checkForArray(value){
         }
     } else if(value.max && value.max.constructor === Array)
         return true;
-    else if(value.chance && value.chance.constructor === Array)
+    if(value.chance && value.chance.constructor === Array)
         return true;
-    else if(value.value0 && value.value0.constructor === Array || value.value1 && value.value1.constructor === Array)
+    if(value.chance && value.chance.constructor === Object)
+        return checkForArray(value.chance);
+    if(value.value && value.value.constructor === Array)
         return true;
-    else if(value.value0 && value.value0.constructor === Object)
-        return checkForArray(value.value0);
-    else if(value.value0 && value.value1.constructor === Object)
-        return checkForArray(value.value1);
-    else if(value.values){
+    if(value.value && value.value.constructor === Object)
+        return checkForArray(value.value);
+    if(value.duration && value.duration.constructor === Array)
+        return true;
+    if(value.duration && value.duration.constructor === Object)
+        return checkForArray(value.duration);
+    if(value.values){
         var ret = false;
         var keys = Object.keys(value.values);
         keys.forEach((key) => {

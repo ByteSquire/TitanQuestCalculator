@@ -2,7 +2,7 @@
 <html onkeydown="shiftPressed(event);">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Titan Quest Calculator - Vanilla</title>
+    <title>Titan Quest Calculator - ClassName</title>
 
     <link rel="stylesheet" type="text/css" href="../../css/styles.css" />
 
@@ -16,9 +16,12 @@
     <script type="text/javascript" src="js/masteryTier_handler.js"></script>
     <script type="text/javascript" src="js/skillPlusButton_handler.js"></script>
     <script type="text/javascript" src="js/attribute_parser.js"></script>
+    <script type="text/javascript" src="js/resetMastery_handler.js"></script>
+    <script type="text/javascript" src="js/skillConnector.js"></script>
   </head>
 
   <body oncontextmenu="return false">
+    <h1 id="className" class="centered">ClassName</h1>
     <table class="masteryTable">
       <tr>
         <td class="panels">
@@ -40,6 +43,9 @@
                 src="../../MasteryPage/images/masteries/panel/plusbutton.png"
               />
               0
+            </button>
+            <button class="resetButton" id="resetMastery1" onmousedown="resetClicked(this);">
+              Reset Mastery
             </button>
             <img
               class="masteryImagePanel"
@@ -73,6 +79,9 @@
               />
               0
             </button>
+            <button class="resetButton" id="resetMastery2" onmousedown="resetClicked(this);">
+              Reset Mastery
+            </button>
             <img
               class="masteryImagePanel"
               id="mastery2"
@@ -90,7 +99,7 @@
         </td>
         <td class="infos">
           <div id="stats">
-            <table>
+            <table class="tableWithSpacing">
               <tr>
                 <td>Level required:</td>
                 <td><div id="lvl">1</div></td>
@@ -106,9 +115,9 @@
                 <td><div id="mp">300+0%</div></td>
               </tr>
               <tr>
-                <td>Intelligence:</td>
-                <td><div id="int">50+0%</div></td>
                 <td>Strength:</td>
+                <td><div id="int">50+0%</div></td>
+                <td>Intelligence:</td>
                 <td><div id="str">50+0%</div></td>
                 <td>Dexterity:</td>
                 <td><div id="dex">50+0%</div></td>
@@ -116,11 +125,13 @@
               <tr>
                 <td><br></td>
               </tr>
+            </table>
+            <table>
               <tr>
                 <td>Quest Skill Points:</td>
                 <td>
                     <select id="questPoints" onchange="pointsSelected(this)">
-                        <optgroup label="Titan Quest">
+                                            <optgroup label="Titan Quest">
                             <option value="0">0</option>
                             <option value="1">1 - Act 1 Normal</option>
                             <option value="2">2</option>
@@ -305,9 +316,9 @@
                     </select>
                 </td>
               </tr>
-              <tr>
-                <td><br></td>
-              </tr>
+            </table>
+            <br>
+            <table>
               <tr>
                 <td><span style="color: green; font-weight: bold">Controls:</span></td>
               </tr>
