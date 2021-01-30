@@ -135,7 +135,7 @@ public class Skill {
                 break;
             default:
                 Object value = mSkillParser.getAttributes().get(skillAttribute);
-                if (skillAttribute.equals("DamageGlobalChance")) {
+                if (skillAttribute.endsWith("GlobalChance")) {
                     mCBA.setChance(value);
                     break;
                 }
