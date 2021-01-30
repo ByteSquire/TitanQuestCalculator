@@ -21,12 +21,11 @@ function drawSkillConnection(panel, fromSkillButton, toSkillButton) {
     var destination = Number(vh.style.top.replace("%", ""));
     var leftOffset = Number(hv.style.left.replace("%", "")) + 0.1 + "%";
 
-    for(var i = origin; i < destination; i++) {
-        var tmp = document.createElement("img");
-        tmp.src = "../../MasteryPage/images/masteries/panel/vertical.png";
-        tmp.style.top = i + "%";
-        tmp.style.left = leftOffset;
-        tmp.classList.add("skillConnectionStraight");
-        panel.appendChild(tmp);
-    }
+    var v = document.createElement("img");
+    v.src = "../../MasteryPage/images/masteries/panel/vertical.png";
+    v.style.top = origin + "%";
+    v.style.left = leftOffset;
+    v.style.height = destination-origin + "%";
+    v.classList.add("skillConnectionStraight");
+    panel.appendChild(v);
 }
