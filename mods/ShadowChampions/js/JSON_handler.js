@@ -1,17 +1,5 @@
-var m1_id = new URLSearchParams(location.search).get("m1")
-  ? new URLSearchParams(location.search).get("m1") <= 10
-    ? new URLSearchParams(location.search).get("m1") >= 1
-      ? new URLSearchParams(location.search).get("m1")
-      : null
-    : null
-  : null;
-var m2_id = new URLSearchParams(location.search).get("m2")
-  ? new URLSearchParams(location.search).get("m2") <= 10
-    ? new URLSearchParams(location.search).get("m2") >= 1
-      ? new URLSearchParams(location.search).get("m2")
-      : null
-    : null
-  : null;
+var m1_id = new URLSearchParams(location.search).get("m1");
+var m2_id = new URLSearchParams(location.search).get("m2");
 var mod;
 var m1;
 var m2;
@@ -30,6 +18,11 @@ xmlhttp.open("GET", url, true);
 xmlhttp.send();
 
 function init(){
+  if(m1_id > 10 || m1_id < 1 || Number.isNaN(m1_id))
+    m1_id = null;
+  if(m2_id > 10 || m2_id < 1 || Number.isNaN(m2_id))
+    m2_id = null;
+    
   m1 = mod.masteries[m1_id - 1];
   m2 = mod.masteries[m2_id - 1];
   
