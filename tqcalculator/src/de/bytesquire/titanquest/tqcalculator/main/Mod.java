@@ -66,7 +66,7 @@ public class Mod {
     private void initClassNames() {
         mClassNames = new String[11][11];
 
-        mClassNames[0][0] = "Mastery parameters missing";
+        mClassNames[0][0] = "Mastery parameters missing or invalid";
 
         setIfNotNull(mClassNames, 1, 0, "tagCClass02");
         setIfNotNull(mClassNames, 2, 0, "tagCClass01");
