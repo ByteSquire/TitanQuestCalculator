@@ -952,8 +952,8 @@
       },
       "attributes" : {
         "${value} Active Energy Cost per Second" : [ 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9 ],
-        "+${value} Damage to {%s1}" : [ 9.0, 13.0, 17.0, 21.0, 25.0, 29.0, 33.0, 37.0, 41.0, 45.0 ],
-        "+${value}% Damage to {%s1}" : [ 20.0, 27.0, 35.0, 44.0, 54.0, 65.0, 77.0, 90.0, 104.0, 119.0 ],
+        "+${value} Damage to Undead" : [ 9.0, 13.0, 17.0, 21.0, 25.0, 29.0, 33.0, 37.0, 41.0, 45.0 ],
+        "+${value}% Damage to Undead" : [ 20.0, 27.0, 35.0, 44.0, 54.0, 65.0, 77.0, 90.0, 104.0, 119.0 ],
         "MaxLevel" : 6,
         "UltimateLevel" : 10
       }
@@ -1458,7 +1458,7 @@
         "${value}% Reduction to Enemy's Health" : {
           "min" : [ 12.0, 18.0, 24.0, 30.0, 36.0, 42.0, 48.0, 54.0, 60.0, 66.0 ]
         },
-        "+${value}% Damage to {%s1}" : 200.0,
+        "+${value}% Damage to Ghost" : 200.0,
         "MaxLevel" : 6,
         "UltimateLevel" : 10
       }
@@ -1669,7 +1669,7 @@
         "${value}% Energy Drained" : {
           "min" : [ 24.0, 32.0, 40.0, 50.0, 58.0, 66.0, 74.0, 84.0, 92.0, 100.0 ]
         },
-        "+${value}% Damage to {%s1}" : 50.0,
+        "+${value}% Damage to Magical" : 50.0,
         "MaxLevel" : 6,
         "UltimateLevel" : 10
       }
@@ -2947,8 +2947,8 @@
         "posX" : 428
       },
       "attributes" : {
-        "+${value}% Damage to {%s1}" : [ 20.0, 40.0, 61.0, 82.0, 105.0, 128.0, 154.0, 180.0, 210.0, 240.0 ],
-        "+${value}% Less Damage from {%s1}" : [ 10.0, 20.0, 29.0, 38.0, 46.0, 54.0, 61.0, 68.0, 74.0, 80.0 ],
+        "+${value}% Damage to Device & Construct" : [ 20.0, 40.0, 61.0, 82.0, 105.0, 128.0, 154.0, 180.0, 210.0, 240.0 ],
+        "+${value}% Less Damage from Device & Construct" : [ 10.0, 20.0, 29.0, 38.0, 46.0, 54.0, 61.0, 68.0, 74.0, 80.0 ],
         "MaxLevel" : 6,
         "UltimateLevel" : 10
       }
@@ -4038,7 +4038,7 @@
             "min" : 4.0
           }
         },
-        "+${value}% Damage to {%s1}" : [ 8.0, 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0 ],
+        "+${value}% Damage to Demon" : [ 8.0, 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0 ],
         "MaxLevel" : 8,
         "UltimateLevel" : 12
       }
@@ -4330,7 +4330,7 @@
             "min" : 4.0
           }
         },
-        "+${value}% Damage to {%s1}" : 50.0,
+        "+${value}% Damage to Demon" : 50.0,
         "MaxLevel" : 12,
         "UltimateLevel" : 16
       }
@@ -4409,7 +4409,7 @@
         "${value}% Energy Drained" : {
           "min" : 15.0
         },
-        "+${value} Damage to {%s1}" : [ 27.0, 38.0, 49.0, 60.0, 72.0, 85.0, 97.0, 112.0, 126.0, 141.0, 157.0, 173.0, 190.0, 208.0, 226.0, 245.0 ],
+        "+${value} Damage to Demon" : [ 27.0, 38.0, 49.0, 60.0, 72.0, 85.0, 97.0, 112.0, 126.0, 141.0, 157.0, 173.0, 190.0, 208.0, 226.0, 245.0 ],
         "MaxLevel" : 12,
         "UltimateLevel" : 16
       }
@@ -4505,7 +4505,7 @@
                   "min" : 4.0
                 }
               },
-              "+${value}% Damage to {%s1}" : [ 8.0, 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0 ],
+              "+${value}% Damage to Demon" : [ 8.0, 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0 ],
               "MaxLevel" : 8,
               "UltimateLevel" : 12
             }
@@ -5462,7 +5462,7 @@
         "${value}% Reduction to Enemy's Health" : {
           "min" : [ 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0 ]
         },
-        "+${value}% Damage to {%s1}" : 100.0,
+        "+${value}% Damage to Device" : 100.0,
         "MaxLevel" : 12,
         "UltimateLevel" : 16
       }
@@ -5852,7 +5852,7 @@
         "^a${value} Second(s) Recharge" : 4.0,
         "${value} Energy Reserved" : 75.0,
         "${value}m Radius" : 15.0,
-        "+${value} Damage to Beastman;Beast" : [ 3.0, 5.0, 8.0, 10.0, 12.0, 15.0, 17.0, 19.0, 22.0, 25.0, 27.0, 30.0, 34.0, 39.0, 45.0, 51.0 ],
+        "+${value} Damage to Beastman & Beast" : [ 3.0, 5.0, 8.0, 10.0, 12.0, 15.0, 17.0, 19.0, 22.0, 25.0, 27.0, 30.0, 34.0, 39.0, 45.0, 51.0 ],
         "+${value}% Bleeding Damage " : [ 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0, 51.0, 54.0, 57.0, 60.0 ],
         "+${value}% Pierce Damage" : [ 12.0, 18.0, 23.0, 30.0, 34.0, 40.0, 45.0, 52.0, 56.0, 62.0, 67.0, 75.0, 83.0, 91.0, 101.0, 115.0 ],
         "MaxLevel" : 12,
@@ -5931,7 +5931,7 @@
           }
         },
         "+${value}% Attack Speed" : [ 15.0, 17.0, 19.0, 22.0, 24.0, 26.0, 28.0, 31.0, 33.0, 35.0, 37.0, 40.0 ],
-        "+${value}% Damage to Beastman;Beast" : 33.0,
+        "+${value}% Damage to Beastman & Beast" : 33.0,
         "MaxLevel" : 8,
         "UltimateLevel" : 12
       }
