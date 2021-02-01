@@ -18,6 +18,7 @@
     <script type="text/javascript" src="js/attribute_parser.js"></script>
     <script type="text/javascript" src="js/resetMastery_handler.js"></script>
     <script type="text/javascript" src="js/skillConnector.js"></script>
+    <script type="text/javascript" src="js/save_handler.js"></script>
   </head>
 
   <body oncontextmenu="return false">
@@ -126,53 +127,55 @@
                 <td><br></td>
               </tr>
             </table>
-            <table>
-              <tr>
-                <td>Quest Skill Points:</td>
-                <td>
-                    <select id="questPoints" onchange="pointsSelected(this)">
-                    <#list questSkillPoints as key, value>
-                        <optgroup label="${key}">
-                        <#list value as _value>
-                            <option value="${_value[0]}">${_value[1]}</option>
-                        </#list>
-                        </optgroup>
-                    </#list>
-                    </select>
-                </td>
-              </tr>
-            </table>
-            <br>
-            <table>
-              <tr>
-                <td><span style="color: green; font-weight: bold">Controls:</span></td>
-              </tr>
-              <tr>
-                <td>Right Click</td>
-                <td>Remove Point</td>
-              </tr>
-              <tr>
-                <td>Left Click</td>
-                <td>Add Point</td>
-              </tr>
-              <tr>
-                <td>Shift-Right Click</td>
-                <td>Reset Points</td>
-              </tr>
-              <tr>
-                <td>Shift-Left Click</td>
-                <td>Add Full Points<td>
-              </tr>
-              <tr>
-                <td>Click Mastery Tier</td>
-                <td>Set Points to Tier</td>
-              </tr>
-              <tr>
-                <td>Press Shift over Skill</td>
-                <td>Toggle Pet Info</td>
-              </tr>
-            </table>
           </div>
+        <label>QuestSkillPoints:
+            <select id="questPoints" onchange="pointsSelected(this)">
+            <#list questSkillPoints as key, value>
+                <optgroup label="${key}">
+                <#list value as _value>
+                    <option value="${_value[0]}">${_value[1]}</option>
+                </#list>
+                </optgroup>
+            </#list>
+            </select>
+        </label>
+        <br><br>
+        <table>
+          <tr>
+            <td><span style="color: green; font-weight: bold">Controls:</span></td>
+          </tr>
+          <tr>
+            <td>Right Click</td>
+            <td>Remove Point</td>
+          </tr>
+          <tr>
+            <td>Left Click</td>
+            <td>Add Point</td>
+          </tr>
+          <tr>
+            <td>Shift-Right Click</td>
+            <td>Reset Points</td>
+          </tr>
+          <tr>
+            <td>Shift-Left Click</td>
+            <td>Add Full Points<td>
+          </tr>
+          <tr>
+            <td>Click Mastery Tier</td>
+            <td>Set Points to Tier</td>
+          </tr>
+          <tr>
+            <td>Press Shift over Skill</td>
+            <td>Toggle Pet Info</td>
+          </tr>
+        </table>
+        <br>
+        <button id="saveButton" onclick="saveClicked();">Generate save/share link</button>
+        <br>
+        <label style="display: none">Save/Share this configuration:
+            <input type="text" id="saveLink" onclick="this.select();" style="font-size:8pt;width:100%;">
+        </label>
+          <!--
           <br>
           <div id="skills gained">
             <table>
@@ -190,6 +193,7 @@
               </tr>
             </table>
           </div>
+          -->
         </td>
       </tr>
     </table>
