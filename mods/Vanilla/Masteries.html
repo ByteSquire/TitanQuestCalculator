@@ -117,9 +117,9 @@
               </tr>
               <tr>
                 <td>Strength:</td>
-                <td><div id="int">50+0%</div></td>
-                <td>Intelligence:</td>
                 <td><div id="str">50+0%</div></td>
+                <td>Intelligence:</td>
+                <td><div id="int">50+0%</div></td>
                 <td>Dexterity:</td>
                 <td><div id="dex">50+0%</div></td>
               </tr>
