@@ -18,6 +18,7 @@
     <script type="text/javascript" src="js/attribute_parser.js"></script>
     <script type="text/javascript" src="js/resetMastery_handler.js"></script>
     <script type="text/javascript" src="js/skillConnector.js"></script>
+    <script type="text/javascript" src="js/save_handler.js"></script>
   </head>
 
   <body oncontextmenu="return false">
@@ -126,228 +127,230 @@
                 <td><br></td>
               </tr>
             </table>
-            <table>
-              <tr>
-                <td>Quest Skill Points:</td>
-                <td>
-                    <select id="questPoints" onchange="pointsSelected(this)">
-                                            <optgroup label="Titan Quest">
-                            <option value="0">0</option>
-                            <option value="1">1 - Act 1 Normal</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5 - Act 2 Normal</option>
-                            <option value="5">5 - All Normal</option>
-                            <option value="6">6 - Act 1 Epic</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10 - Act 2 Epic</option>
-                            <option value="10">10 - All Epic</option>
-                            <option value="11">11</option>
-                            <option value="13">13</option>
-                            <option value="14">14</option>
-                            <option value="15">15 - Act 2 Legendary</option>
-                            <option value="15">15 - All Legendary</option>
-                        </optgroup>
-                        <optgroup label="Immortal Throne">
-                            <option value="0">0</option>
-                            <option value="1">1 - Act 1 Normal</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5 - Act 2 Normal</option>
-                            <option value="6">6</option>
-                            <option value="7">7 - Act 4 Normal</option>
-                            <option value="7">7 - All Normal</option>
-                            <option value="8">8 - Act 1 Epic</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
-                            <option value="11">11</option>
-                            <option value="12">12 - Act 2 Epic</option>
-                            <option value="13">13</option>
-                            <option value="14">14 - Act 4 Epic</option>
-                            <option value="14">14 - All Epic</option>
-                            <option value="15">15 - Act 1 Legendary</option>
-                            <option value="16">16</option>
-                            <option value="17">17</option>
-                            <option value="18">18</option>
-                            <option value="19">19 - Act 2 Legendary</option>
-                            <option value="20">20</option>
-                            <option value="21">21 - Act 4 Legendary</option>
-                            <option value="21">21 - All Legendary</option>
-                        </optgroup>
-                        <optgroup label="Ragnarok">
-                            <option value="0">0</option>
-                            <option value="1">1 - Act 1 Normal</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5 - Act 2 Normal</option>
-                            <option value="6">6</option>
-                            <option value="7">7 - Act 4 Normal</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10 - Act 5 Normal</option>
-                            <option value="10">10 - All Normal</option>
-                            <option value="11">11 - Act 1 Epic</option>
-                            <option value="13">13</option>
-                            <option value="14">14</option>
-                            <option value="15">15 - Act 2 Epic</option>
-                            <option value="15">15</option>
-                            <option value="16">16</option>
-                            <option value="17">17 - Act 4 Epic</option>
-                            <option value="18">18</option>
-                            <option value="19">19</option>
-                            <option value="20">20 - Act 5 Epic</option>
-                            <option value="20">20 - All Epic</option>
-                            <option value="21">21 - Act 1 Legendary</option>
-                            <option value="22">22</option>
-                            <option value="23">23</option>
-                            <option value="24">24</option>
-                            <option value="25">25 - Act 2 Legendary</option>
-                            <option value="26">26</option>
-                            <option value="27">27 - Act 4 Legendary</option>
-                            <option value="28">28</option>
-                            <option value="29">29</option>
-                            <option value="30">30 - Act 5 Legendary</option>
-                            <option value="30">30 - All Legendary</option>
-                        </optgroup>
-                        <optgroup label="ALL">
-                            <option value="0">0</option>
-                            <option value="1">1 - Act 1 Normal</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5 - Act 2 Normal</option>
-                            <option value="5">5 - All Normal</option>
-                            <option value="6">6 - Act 1 Epic</option>
-                            <option value="7">7 - Act 4 Normal (IM)</option>
-                            <option value="7">7 - All Normal (IM)</option>
-                            <option value="8">8 - Act 1 Epic (IM)</option>
-                            <option value="9">9</option>
-                            <option value="10">10 - Act 5 Normal (RR)</option>
-                            <option value="10">10 - All Normal (RR)</option>
-                            <option value="10">10 - Act 2 Epic</option>
-                            <option value="10">10 - All Epic</option>
-                            <option value="11">11 - Act 1 Epic (RR)</option>
-                            <option value="11">11 - Act 1 Legendary</option>
-                            <option value="12">12 - Act 2 Epic (IM)</option>
-                            <option value="13">13</option>
-                            <option value="14">14 - Act 4 Epic (IM)</option>
-                            <option value="14">14 - All Epic (IM)</option>
-                            <option value="15">15 - Act 2 Epic (RR)</option>
-                            <option value="15">15 - Act 1 Legendary (IM)</option>
-                            <option value="15">15 - Act 2 Legendary</option>
-                            <option value="15">15 - All Legendary</option>
-                            <option value="16">16</option>
-                            <option value="17">17 - Act 4 Epic (RR)</option>
-                            <option value="18">18</option>
-                            <option value="19">19 - Act 2 Legendary (IM)</option>
-                            <option value="20">20 - Act 5 Epic (RR)</option>
-                            <option value="20">20 - All Epic (RR)</option>
-                            <option value="21">21 - Act 1 Legendary (RR)</option>
-                            <option value="21">21 - Act 4 Legendary (IM)</option>
-                            <option value="21">21 - All Legendary (IM)</option>
-                            <option value="22">22</option>
-                            <option value="23">23</option>
-                            <option value="24">24</option>
-                            <option value="25">25 - Act 2 Legendary (RR)</option>
-                            <option value="26">26</option>
-                            <option value="27">27 - Act 4 Legendary (RR)</option>
-                            <option value="28">28</option>
-                            <option value="29">29</option>
-                            <option value="30">30 - Act 5 Legendary (RR)</option>
-                            <option value="30">30 - All Legendary (RR)</option>
-                        </optgroup>
-                        <optgroup label="CUSTOM">
-                            <option value="0">0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
-                            <option value="11">11</option>
-                            <option value="12">12</option>
-                            <option value="13">13</option>
-                            <option value="14">14</option>
-                            <option value="15">15</option>
-                            <option value="16">16</option>
-                            <option value="17">17</option>
-                            <option value="18">18</option>
-                            <option value="19">19</option>
-                            <option value="20">20</option>
-                            <option value="21">21</option>
-                            <option value="22">22</option>
-                            <option value="23">23</option>
-                            <option value="24">24</option>
-                            <option value="25">25</option>
-                            <option value="26">26</option>
-                            <option value="27">27</option>
-                            <option value="28">28</option>
-                            <option value="29">29</option>
-                            <option value="30">30</option>
-                            <option value="31">31</option>
-                            <option value="32">32</option>
-                            <option value="33">33</option>
-                            <option value="34">34</option>
-                            <option value="35">35</option>
-                            <option value="36">36</option>
-                            <option value="37">37</option>
-                            <option value="38">38</option>
-                            <option value="39">39</option>
-                            <option value="41">41</option>
-                            <option value="42">42</option>
-                            <option value="43">43</option>
-                            <option value="44">44</option>
-                            <option value="45">45</option>
-                            <option value="46">46</option>
-                            <option value="47">47</option>
-                            <option value="48">48</option>
-                            <option value="49">49</option>
-                            <option value="50">50</option>
-                        </optgroup>
-                    </select>
-                </td>
-              </tr>
-            </table>
-            <br>
-            <table>
-              <tr>
-                <td><span style="color: green; font-weight: bold">Controls:</span></td>
-              </tr>
-              <tr>
-                <td>Right Click</td>
-                <td>Remove Point</td>
-              </tr>
-              <tr>
-                <td>Left Click</td>
-                <td>Add Point</td>
-              </tr>
-              <tr>
-                <td>Shift-Right Click</td>
-                <td>Reset Points</td>
-              </tr>
-              <tr>
-                <td>Shift-Left Click</td>
-                <td>Add Full Points<td>
-              </tr>
-              <tr>
-                <td>Click Mastery Tier</td>
-                <td>Set Points to Tier</td>
-              </tr>
-              <tr>
-                <td>Press Shift over Skill</td>
-                <td>Toggle Pet Info</td>
-              </tr>
-            </table>
           </div>
+        <label>QuestSkillPoints:
+            <select id="questPoints" onchange="pointsSelected(this)">
+                            <optgroup label="Titan Quest">
+                    <option value="0">0</option>
+                    <option value="1">1 - Act 1 Normal</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 - Act 2 Normal</option>
+                    <option value="5">5 - All Normal</option>
+                    <option value="6">6 - Act 1 Epic</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10 - Act 2 Epic</option>
+                    <option value="10">10 - All Epic</option>
+                    <option value="11">11</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15 - Act 2 Legendary</option>
+                    <option value="15">15 - All Legendary</option>
+                </optgroup>
+                <optgroup label="Immortal Throne">
+                    <option value="0">0</option>
+                    <option value="1">1 - Act 1 Normal</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 - Act 2 Normal</option>
+                    <option value="6">6</option>
+                    <option value="7">7 - Act 4 Normal</option>
+                    <option value="7">7 - All Normal</option>
+                    <option value="8">8 - Act 1 Epic</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12 - Act 2 Epic</option>
+                    <option value="13">13</option>
+                    <option value="14">14 - Act 4 Epic</option>
+                    <option value="14">14 - All Epic</option>
+                    <option value="15">15 - Act 1 Legendary</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19 - Act 2 Legendary</option>
+                    <option value="20">20</option>
+                    <option value="21">21 - Act 4 Legendary</option>
+                    <option value="21">21 - All Legendary</option>
+                </optgroup>
+                <optgroup label="Ragnarok">
+                    <option value="0">0</option>
+                    <option value="1">1 - Act 1 Normal</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 - Act 2 Normal</option>
+                    <option value="6">6</option>
+                    <option value="7">7 - Act 4 Normal</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10 - Act 5 Normal</option>
+                    <option value="10">10 - All Normal</option>
+                    <option value="11">11 - Act 1 Epic</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15 - Act 2 Epic</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17 - Act 4 Epic</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20 - Act 5 Epic</option>
+                    <option value="20">20 - All Epic</option>
+                    <option value="21">21 - Act 1 Legendary</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25 - Act 2 Legendary</option>
+                    <option value="26">26</option>
+                    <option value="27">27 - Act 4 Legendary</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30 - Act 5 Legendary</option>
+                    <option value="30">30 - All Legendary</option>
+                </optgroup>
+                <optgroup label="ALL">
+                    <option value="0">0</option>
+                    <option value="1">1 - Act 1 Normal</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 - Act 2 Normal</option>
+                    <option value="5">5 - All Normal</option>
+                    <option value="6">6 - Act 1 Epic</option>
+                    <option value="7">7 - Act 4 Normal (IM)</option>
+                    <option value="7">7 - All Normal (IM)</option>
+                    <option value="8">8 - Act 1 Epic (IM)</option>
+                    <option value="9">9</option>
+                    <option value="10">10 - Act 5 Normal (RR)</option>
+                    <option value="10">10 - All Normal (RR)</option>
+                    <option value="10">10 - Act 2 Epic</option>
+                    <option value="10">10 - All Epic</option>
+                    <option value="11">11 - Act 1 Epic (RR)</option>
+                    <option value="11">11 - Act 1 Legendary</option>
+                    <option value="12">12 - Act 2 Epic (IM)</option>
+                    <option value="13">13</option>
+                    <option value="14">14 - Act 4 Epic (IM)</option>
+                    <option value="14">14 - All Epic (IM)</option>
+                    <option value="15">15 - Act 2 Epic (RR)</option>
+                    <option value="15">15 - Act 1 Legendary (IM)</option>
+                    <option value="15">15 - Act 2 Legendary</option>
+                    <option value="15">15 - All Legendary</option>
+                    <option value="16">16</option>
+                    <option value="17">17 - Act 4 Epic (RR)</option>
+                    <option value="18">18</option>
+                    <option value="19">19 - Act 2 Legendary (IM)</option>
+                    <option value="20">20 - Act 5 Epic (RR)</option>
+                    <option value="20">20 - All Epic (RR)</option>
+                    <option value="21">21 - Act 1 Legendary (RR)</option>
+                    <option value="21">21 - Act 4 Legendary (IM)</option>
+                    <option value="21">21 - All Legendary (IM)</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25 - Act 2 Legendary (RR)</option>
+                    <option value="26">26</option>
+                    <option value="27">27 - Act 4 Legendary (RR)</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30 - Act 5 Legendary (RR)</option>
+                    <option value="30">30 - All Legendary (RR)</option>
+                </optgroup>
+                <optgroup label="CUSTOM">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                    <option value="32">32</option>
+                    <option value="33">33</option>
+                    <option value="34">34</option>
+                    <option value="35">35</option>
+                    <option value="36">36</option>
+                    <option value="37">37</option>
+                    <option value="38">38</option>
+                    <option value="39">39</option>
+                    <option value="41">41</option>
+                    <option value="42">42</option>
+                    <option value="43">43</option>
+                    <option value="44">44</option>
+                    <option value="45">45</option>
+                    <option value="46">46</option>
+                    <option value="47">47</option>
+                    <option value="48">48</option>
+                    <option value="49">49</option>
+                    <option value="50">50</option>
+                </optgroup>
+            </select>
+        </label>
+        <br><br>
+        <table>
+          <tr>
+            <td><span style="color: green; font-weight: bold">Controls:</span></td>
+          </tr>
+          <tr>
+            <td>Right Click</td>
+            <td>Remove Point</td>
+          </tr>
+          <tr>
+            <td>Left Click</td>
+            <td>Add Point</td>
+          </tr>
+          <tr>
+            <td>Shift-Right Click</td>
+            <td>Reset Points</td>
+          </tr>
+          <tr>
+            <td>Shift-Left Click</td>
+            <td>Add Full Points<td>
+          </tr>
+          <tr>
+            <td>Click Mastery Tier</td>
+            <td>Set Points to Tier</td>
+          </tr>
+          <tr>
+            <td>Press Shift over Skill</td>
+            <td>Toggle Pet Info</td>
+          </tr>
+        </table>
+        <br>
+        <button id="saveButton" onclick="saveClicked();">Generate save/share link</button>
+        <br>
+        <label style="display: none">Save/Share this configuration:
+            <input type="text" id="saveLink" onclick="this.select();" style="font-size:8pt;width:100%;">
+        </label>
+          <!--
           <br>
           <div id="skills gained">
             <table>
@@ -365,6 +368,7 @@
               </tr>
             </table>
           </div>
+          -->
         </td>
       </tr>
     </table>

@@ -40,14 +40,7 @@ function skillClicked(button, event){
     
     var matteringMastery = (button.parentElement.id == "panel1")? m1 : m2;
     var tiers = matteringMastery.skillTiers;
-    var skill;
-    tiers.forEach((tier) => {
-        tier.forEach((aSkill) => {
-            if(aSkill.name == button.id){
-                skill = aSkill;
-            }
-        });
-    });
+    var skill = getSkillByName(matteringMastery, button.id);
     
     if(localPointsSpent > 0){
         if((button.parentElement.id == "panel1")? m1GlobalPlus : m2GlobalPlus > 0){

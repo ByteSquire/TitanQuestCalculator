@@ -1,5 +1,6 @@
 var m1_id = new URLSearchParams(location.search).get("m1");
 var m2_id = new URLSearchParams(location.search).get("m2");
+var config_string = new URLSearchParams(location.search).get("config");
 var mod;
 var m1;
 var m2;
@@ -31,6 +32,16 @@ function init(){
   setClassName();
   setMasteries();
   setMasteryTiers();
+  
+  if(m1){
+      var config;
+      try{
+        config = JSON.parse(config_string);
+        loadConfig(config);
+      } catch(err){
+        document.getElementsByTagName("title")[0].innerText += ' <span style="color: red">Error parsing config!</span>';
+      }
+  }
 }
 
 function setClassName(){

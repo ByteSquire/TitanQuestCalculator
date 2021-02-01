@@ -3,16 +3,12 @@ function canSkill(button){
     masteryLevel = Number(masteryLevel);
     var matteringMastery = (Number(button.parentElement.id.split("panel")[1]) == 1)? m1 : m2;
     var tiers = matteringMastery.skillTiers;
+    var skill = getSkillByName(matteringMastery, button.id);
     var tier;
-    var skill;
-    tiers.forEach((aTier) => {
-        aTier.forEach((aSkill) => {
-            if(aSkill.name == button.id){
-                tier = tiers.indexOf(aTier);
-                skill = aSkill;
-            }
-        });
-    });
+    for(var i = 0; i < tiers.length; i++){
+        if(tiers[i].includes(skill))
+            tier = i;
+    }
     if(skill.parent){
         var ret = true;
         for (var i = 0; i < skill.parent.length; i++) {
