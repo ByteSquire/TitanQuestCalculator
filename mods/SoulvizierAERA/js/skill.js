@@ -10,34 +10,53 @@ function addSkillTier(panel, mastery, skillTier) {
 }
 
 function addSkill(panel, mastery, skill) {
-  panel.innerHTML +=
-    '\n<button class="skillButton" id="' +
-    skill.name +
-    '" onmousedown="skillClicked(this, event);" onmouseover="skillButtonPopup(this, event);" onmouseout="hidePopup();">\n' +
-    "\t<img\n" +
-    '\t\tclass="skillButtonImage"\n' +
-    '\t\tsrc="' +
-    "images/skills/" +
-        mastery.name +
-    "/" +
-    skill.name.replaceAll(":", "") +
-    '.png"\n' +
-    '/>\n' +
-    '<span class="buttonText">0/' + skill.attributes.MaxLevel + '</span>' +
-    '<div class="disabled">0</div>';
-  scaleButtonPosition(document.getElementById(skill.name), skill.skillIcon);
+    var skillButton = document.createElement("button");
+    skillButton.classList.add("skillButton");
+    skillButton.id = skill.name;
+    skillButton.addEventListener("mousedown", () => {skillClicked(event.currentTarget, event);});
+    skillButton.addEventListener("mouseover", () => {skillButtonPopup(event.currentTarget, event);});
+    skillButton.addEventListener("mouseout",  () => {hidePopup();});
+    
+    var skillImage = document.createElement("img");
+    skillImage.classList.add("skillButtonImage");
+    skillImage.src = "images/skills/" +
+        mastery.name + "/" + skill.name.replaceAll(":", "")
+    + ".png";
+    skillButton.appendChild(skillImage);
+    
+    var skillLevelSpan = document.createElement("span");
+    skillLevelSpan.classList.add("buttonText");
+    skillLevelSpan.innerText = "0/" + skill.attributes.MaxLevel;
+    skillButton.appendChild(skillLevelSpan);
+    
+    var actualPointsSpent = document.createElement("div");
+    actualPointsSpent.classList.add("disabled");
+    actualPointsSpent.innerText = "0";
+    skillButton.appendChild(actualPointsSpent);
+    
+    scaleButtonPosition(skillButton, skill.skillIcon);
   
-  panel.innerHTML += '<button class="skillPlusButton" id="' + skill.name + '+' + '" onmousedown="skillPlusClicked(this, event);" onmouseover="skillPlusButtonPopup(this, event);" onmouseout="hidePopup();">\n' +
-              ' <img\n' +
-              '   class="skillPlusButtonImage"\n' + 
-              '   src="../../MasteryPage/images/masteries/panel/plusbutton.png"\n' + 
-              ' />\n' +
-              ' 0\n' +
-              '</button>';
-  scaleButtonPosition(document.getElementById(skill.name + '+'), { posY: skill.skillIcon.posY + 4, posX: skill.skillIcon.posX - 20 });
-  if(skill.parent){
-    drawSkillConnection(panel, document.getElementById(skill.name), document.getElementById(skill.parent[0]));
-  }
+    var skillPlusButton = document.createElement("button");
+    skillPlusButton.classList.add("skillPlusButton");
+    skillPlusButton.id = skill.name + "+";
+    skillPlusButton.addEventListener("mousedown", () => {skillPlusClicked(event.currentTarget, event);});
+    skillPlusButton.addEventListener("mouseover", () => {skillPlusButtonPopup(event.currentTarget, event);});
+    skillPlusButton.addEventListener("mouseout",  () => {hidePopup();});
+    
+    var skillPlusButtonImage = document.createElement("img");
+    skillPlusButtonImage.classList.add("skillPlusButtonImage");
+    skillPlusButtonImage.src = "../../MasteryPage/images/masteries/panel/plusbutton.png";
+    skillPlusButton.appendChild(skillPlusButtonImage);
+    
+    skillPlusButton.innerHTML += "0";
+    scaleButtonPosition(skillPlusButton, { posY: skill.skillIcon.posY + 4, posX: skill.skillIcon.posX - 20 });
+    
+    panel.appendChild(skillButton);
+    panel.appendChild(skillPlusButton);
+    
+    if(skill.parent){
+        drawSkillConnection(panel, skillButton, document.getElementById(skill.parent[0]));
+    }
 }
 
 function scaleButtonPosition(button, iconPosition) {
@@ -83,15 +102,8 @@ function skillButtonPopup(button, event){
         pop.style.bottom = "unset";
     }
     var matteringMastery = (button.parentElement.id == "panel1")? m1 : m2;
-    var tiers = matteringMastery.skillTiers;
-    var skill;
-    tiers.forEach((tier) => {
-        tier.forEach((aSkill) => {
-            if(aSkill.name == button.id){
-                skill = aSkill;
-            }
-        });
-    });
+    var skill = getSkillByName(matteringMastery, button.id);
+    
     if(!petDisplayed){
         pop.innerHTML = getPopupString(skill, Number(button.innerText.split("/")[0].replaceAll("\n", "")));
     } else {
@@ -116,15 +128,8 @@ function shiftPressed(event){
             return;
         
         var matteringMastery = (button.parentElement.id == "panel1")? m1 : m2;
-        var tiers = matteringMastery.skillTiers;
-        var skill;
-        tiers.forEach((tier) => {
-            tier.forEach((aSkill) => {
-                if(aSkill.name == button.id){
-                    skill = aSkill;
-                }
-            });
-        });
+        var skill = getSkillByName(matteringMastery, button.id);
+        
         if(!petDisplayed){
             if(pop.style.top != "unset")
                 lastTop = pop.style.top;
@@ -139,4 +144,17 @@ function shiftPressed(event){
         pop.style.display = "block";
         movePopupintoView(pop, getPageHeight());
     }
+}
+
+function getSkillByName(mastery, skillName){
+    var tiers = mastery.skillTiers;
+    var skill;
+    tiers.forEach((tier) => {
+        tier.forEach((aSkill) => {
+            if(aSkill.name == skillName){
+                skill = aSkill;
+            }
+        });
+    });
+    return skill;
 }
