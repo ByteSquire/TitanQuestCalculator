@@ -64,7 +64,7 @@ function loadConfig(config){
             }
         }
     } else {
-        document.getElementsByTagName("title")[0].innerText += ' <span style="color: red">Error reading config!</span>';
+        document.getElementById("className").innerHTML += ' <span style="color: red">Error reading config!</span>';
         return;    
     }
 

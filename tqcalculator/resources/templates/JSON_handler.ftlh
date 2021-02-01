@@ -33,13 +33,13 @@ function init(){
   setMasteries();
   setMasteryTiers();
   
-  if(m1){
+  if(m1 && config_string){
       var config;
       try{
         config = JSON.parse(config_string);
         loadConfig(config);
       } catch(err){
-        document.getElementsByTagName("title")[0].innerText += ' <span style="color: red">Error parsing config!</span>';
+        document.getElementById("className").innerHTML += ' <span style="color: red">Error parsing config!</span>';
       }
   }
 }
