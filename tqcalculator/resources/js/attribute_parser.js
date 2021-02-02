@@ -1,8 +1,8 @@
 function getAttributeStringWithColour(key, value, index, colour){
-    return '<span class="skillAttribute" style="color: ' + colour + '">' + getAttributeString(key, value, index) + '</span>';
+    return '<span class="skillAttribute" style="color: ' + colour + '">' + getAttributeString(key, value, index, colour) + '</span>';
 }
 
-function getAttributeString(key, value, index){
+function getAttributeString(key, value, index, colour){
     var ret = key;
     if(key.includes("^a")){
         ret = key.replace("^a", '<span style="color: aqua">')
@@ -22,7 +22,7 @@ function getAttributeString(key, value, index){
         } else if(value.max)
             return formatAttribute(ret, value.max, index);
         else if(value.values)
-            return formatChanceBasedAttributes(key, value, index);
+            return formatChanceBasedAttributes(key, value, index, colour);
         else
             return formatSkillAttribute(key, value, index);
     }
@@ -59,15 +59,21 @@ function formatCurrValueScaled(value, duration, index){
         return ret;
 }
 
-function formatChanceBasedAttributes(key, value, index){
+function formatChanceBasedAttributes(key, value, index, colour){
     var ret = "";
     ret += '<div style="indent-text: inherit">';
-    ret += '<span style="color: #DE5825">' + key.replace("${chance}", getCurrValue(value.chance, index)) + '</span>\n';
-    
+    if(colour == "gray")
+        ret += key.replace("${chance}", getCurrValue(value.chance, index));
+    else
+        ret += '<span style="color: #DE5825">' + key.replace("${chance}", getCurrValue(value.chance, index)) + '</span>\n';
+
     var attrKeys = Object.keys(value.values);
     attrKeys.forEach((attrKey) => {
         ret += '<div class="indentedAttribute">';
-        ret += '<span style="color: lightskyblue">' + getAttributeString(attrKey, value.values[attrKey], index) + '</span>\n';
+        if(colour == "gray")
+            ret += getAttributeString(attrKey, value.values[attrKey], index);
+        else
+            ret += '<span style="color: lightskyblue">' + getAttributeString(attrKey, value.values[attrKey], index) + '</span>\n';
         ret += "</div>";
         //ret += '<br>\n';
     });
