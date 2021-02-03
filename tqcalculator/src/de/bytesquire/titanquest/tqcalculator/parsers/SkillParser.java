@@ -204,17 +204,19 @@ public class SkillParser {
             return true;
         if (attributeName.startsWith("spawnObjectsDistance"))
             return true;
+        if (attributeName.startsWith("wave"))
+            return true;
         if (attributeName.startsWith("skillProjectile") && attributeName.endsWith("TimeToLive"))
             return true;
         if (attributeName.endsWith("NumberOfRings"))
-            return true;
-        if (attributeName.startsWith("wave"))
             return true;
         if (attributeName.endsWith("AngleToCaster"))
             return true;
         if (attributeName.endsWith("SpacingAngle"))
             return true;
         if (attributeName.endsWith("RandomRotation"))
+            return true;
+        if (attributeName.endsWith("DurationMax")) // doesn't work in game
             return true;
         switch (attributeName) {
         case "skillMasteryLevelRequired":
