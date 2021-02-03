@@ -129,21 +129,23 @@ function getCurrValue(value, index){
 }
 
 function getCurrValueScaled(value, duration, index){
-    var scaledValue = value;
     var ret = getCurrValue(value, index);
     var scaleFactor = getCurrValue(duration, index);
     if(scaleFactor.constructor === Object){
-        ret = { "min": getCurrValueScaled(ret, scaleFactor.min, index), "max": getCurrValueScaled(ret, scaleFactor.max, index) };
+        if(ret.constructor === Object)
+            ret = { "min": getCurrValueScaled(ret.min, scaleFactor.min, index), "max": getCurrValueScaled(ret.max, scaleFactor.max, index) };
+        else
+            ret = { "min": getCurrValueScaled(ret, scaleFactor.min, index), "max": getCurrValueScaled(ret, scaleFactor.max, index) };
     } else if(scaleFactor != 1.0){
         if(ret.constructor === Object){
             ret = { "min": getCurrValueScaled(ret.min, scaleFactor, index), "max": getCurrValueScaled(ret.max, scaleFactor, index) };
-        } if(ret.constructor === Array){
+        } else if(ret.constructor === Array){
             var _index = index;
             if(_index >= ret.length)
                 _index = ret.length-1;
-            scaledValue = ret[_index] * scaleFactor;
+            ret = ret[_index] * scaleFactor;
         } else
-            scaledValue *= scaleFactor;
+            ret *= scaleFactor;
     }
     return ret;
 }
