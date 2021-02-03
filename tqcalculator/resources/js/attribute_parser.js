@@ -35,10 +35,13 @@ function formatSkillAttribute(key, value, index){
     if(value.chance)
         ret = ret.replace("${chance}", formatCurrValue(value.chance, index));
     if(value.duration){
-        if(value.value)
-            ret = ret.replace("${value}", formatCurrValueScaled(value.value, value.duration, index));
         ret = ret.replace("${duration}", formatCurrValue(value.duration, index));
-    } else if(value.value)
+        if(value.value && !key.includes("${value}%")){
+            ret = ret.replace("${value}", formatCurrValueScaled(value.value, value.duration, index));
+            return ret;
+        }
+    }
+    if(value.value)
         ret = ret.replace("${value}", formatCurrValue(value.value, index));
     return ret;
 }
