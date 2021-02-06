@@ -247,7 +247,7 @@ public class Skill {
             putAttributeChance(key, value);
             return;
         }
-        if (key.endsWith("DurationModifier")) {
+        if (key.startsWith("Damage") && key.endsWith("DurationModifier")) {
             if (AttributeNameParser.getMatch(key.substring(0, key.length() - "DurationModifier".length())) != null)
                 key = "{%+.0f0}% Improved"
                         + AttributeNameParser.getMatch(key.substring(0, key.length() - "DurationModifier".length()))
