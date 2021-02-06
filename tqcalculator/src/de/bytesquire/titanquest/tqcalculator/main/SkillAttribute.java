@@ -54,6 +54,8 @@ public class SkillAttribute {
     }
 
     protected String formatKey(String key) {
+        if (key == null)
+            return null;
         if (!key.contains("value")) {
             if (key.indexOf("{") > -1) {
                 if (key.contains("{%+"))
@@ -68,6 +70,8 @@ public class SkillAttribute {
         if (key.contains("{%s1}")) {
             if (mRace != null)
                 key = key.replace("{%s1}", mRace);
+            else
+                return null;
         }
         switch (mType) {
         case DURATION:
