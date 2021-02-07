@@ -128,7 +128,7 @@
               </tr>
             </table>
           </div>
-        <label>QuestSkillPoints:
+        <label>Quest Skill Points:
             <select id="questPoints" onchange="pointsSelected(this)">
             <#list questSkillPoints as key, value>
                 <optgroup label="${key}">
