@@ -242,7 +242,7 @@ public class Skill {
             putAttributeDuration(key, value);
             return;
         }
-        if (key.endsWith("Chance") && !key.equals("projectilePiercingChance")) {
+        if (key.endsWith("Chance") && !key.equals("projectilePiercingChance") && !key.equals("onHitActivationChance")) {
             key = key.substring(0, key.length() - "Chance".length());
             putAttributeChance(key, value);
             return;
