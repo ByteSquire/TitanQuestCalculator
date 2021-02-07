@@ -1391,6 +1391,7 @@
             },
             "attributes" : {
               "^a${value} Second(s) Recharge" : 6.0,
+              "${value}% Chance of Activating" : 15.0,
               "${value} Energy Reserved" : 150.0,
               "${value}m Radius" : 5.0,
               "${value} Cold Damage" : {
@@ -2033,6 +2034,7 @@
       },
       "attributes" : {
         "^a${value} Second(s) Recharge" : 6.0,
+        "${value}% Chance of Activating" : 15.0,
         "${value} Energy Reserved" : 150.0,
         "${value}m Radius" : 5.0,
         "${value} Cold Damage" : {
@@ -3433,6 +3435,7 @@
       },
       "attributes" : {
         "^a${value} Second(s) Recharge" : 30.0,
+        "${value}% Chance of Activating" : 5.0,
         "${value} Second Duration" : [ 10.0, 10.5, 11.0, 11.5, 12.0, 12.5, 13.0, 13.5, 14.0, 14.5, 15.0, 15.5, 16.0, 16.5, 17.0, 17.5 ],
         "+${value} Health Regeneration per second" : [ 5.0, 8.0, 11.0, 14.0, 17.0, 19.0, 21.0, 24.0, 26.0, 28.0, 30.0, 33.0, 35.0, 38.0, 41.0, 45.0 ],
         "MaxLevel" : 12,
@@ -4302,6 +4305,7 @@
       },
       "attributes" : {
         "^a${value} Second(s) Recharge" : 30.0,
+        "${value}% Chance of Activating" : 5.0,
         "${value} Second Duration" : 15.0,
         "${value} Damage Absorption" : [ 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0, 51.0 ],
         "${value} Physical Retaliation" : {
@@ -4624,6 +4628,7 @@
       },
       "attributes" : {
         "^a${value} Second(s) Recharge" : 12.0,
+        "${value}% Chance of Activating" : 8.0,
         "${value} Second Duration" : 10.0,
         "${value} Physical Damage" : {
           "min" : [ 8.0, 14.0, 20.0, 26.0, 33.0, 40.0, 46.0, 54.0, 61.0, 68.0, 75.0, 84.0, 91.0, 98.0, 106.0, 115.0 ]
