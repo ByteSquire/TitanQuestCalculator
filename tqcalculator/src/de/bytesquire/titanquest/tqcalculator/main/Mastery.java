@@ -12,7 +12,7 @@ import de.bytesquire.titanquest.tqcalculator.parsers.IconsParser;
 import de.bytesquire.titanquest.tqcalculator.parsers.ModStringsParser;
 import de.bytesquire.titanquest.tqcalculator.parsers.SkillTreeParser;
 
-@JsonIgnoreProperties({ "mastery", "skillTree", "mSkills", "mSkillTreeParser", "urlLegacy" })
+@JsonIgnoreProperties({ "masteryFiles", "skillTree", "mSkills", "mSkillTreeParser", "urlLegacy" })
 @JsonPropertyOrder({ "name", "masteryAttributes", "skillTiers" })
 public class Mastery {
 
@@ -23,7 +23,7 @@ public class Mastery {
     private String mName;
     private String mParentModName;
     private File mSkillTree;
-    private File mMastery;
+    private ArrayList<String> mMasteryFiles;
 
     public Mastery(File aSkillTree, String aModDir, String aModName, ModStringsParser aMSParser,
             IconsParser aIconsParser) {
@@ -40,9 +40,9 @@ public class Mastery {
                 Skill tmp = new Skill(skill, null, (mParentModName + "/Masteries/" + mName), aMSParser, aIconsParser);
                 mSkills.add(tmp);
             } else {
-                mMastery = skill;
-                mMasteryAttributes = (LinkedHashMap<String, Object>) new Skill(skill, null,
-                        (mParentModName + "/Masteries/" + mName), aMSParser, aIconsParser).getAttributes();
+                Skill tmp = new Skill(skill, null, (mParentModName + "/Masteries/" + mName), aMSParser, aIconsParser);
+                mMasteryAttributes = (LinkedHashMap<String, Object>) tmp.getAttributes();
+                mMasteryFiles = tmp.getFiles();
             }
         }
 
@@ -99,8 +99,8 @@ public class Mastery {
         return "Masteries/" + getName() + ".html";
     }
 
-    public File getMastery() {
-        return mMastery;
+    public ArrayList<String> getMasteryFiles() {
+        return mMasteryFiles;
     }
 
     public File getSkillTree() {
