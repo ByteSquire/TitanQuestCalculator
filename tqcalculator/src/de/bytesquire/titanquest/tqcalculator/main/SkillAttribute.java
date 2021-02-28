@@ -26,7 +26,7 @@ public class SkillAttribute {
         mRace = aRace;
         mType = aType;
         setKey(aKey);
-        switch (mType) {
+        switch (aType) {
         case CHANCE:
             setChance(aValue);
             break;
@@ -100,22 +100,22 @@ public class SkillAttribute {
     @Override
     public String toString() {
         if (getKey() != null) {
+            if (mValue == null)
+                return "";
             switch (mType) {
             case DEFAULT:
-                if (mValue == null)
-                    return "";
                 return getKey().replace("${value}", mValue.toString());
             case CHANCE_DURATION:
-                if (mValue == null || mDuration == null || mChance == null)
+                if (mDuration == null || mChance == null)
                     return "";
                 return getKey().replace("${chance}", mChance.toString()).replace("${value}", mValue.toString())
                         .replace("${duration}", mDuration.toString());
             case CHANCE:
-                if (mValue == null || mChance == null)
+                if (mChance == null)
                     return "";
                 return getKey().replace("${chance}", mChance.toString()).replace("${value}", mValue.toString());
             case DURATION:
-                if (mValue == null || mDuration == null)
+                if (mDuration == null)
                     return "";
                 return getKey().replace("${value}", mValue.toString()).replace("${duration}", mDuration.toString());
             }
@@ -124,7 +124,7 @@ public class SkillAttribute {
     }
 
     public String getKey() {
-        if (isValid())
+        if (mKey != null && isValid())
             return mKey;
         else
             return null;
