@@ -141,19 +141,21 @@ public class Cleaner {
     }
 
     private void cleanMastery(Mastery mastery, Mod mod) {
-        Path originMasteryPath = mastery.getMastery().toPath();
+        for (String path : mastery.getMasteryFiles()) {
+            Path originMasteryPath = Path.of(path);
 //        System.out.println(originPath);
-        Path targetMasteryPath = Path.of(mod.getModDir().substring(0, mod.getModDir().length() - 1) + "-cleaned/"
-                + mastery.getMastery().toPath().toString().split(mod.getName())[1]);
+            Path targetMasteryPath = Path.of(mod.getModDir().substring(0, mod.getModDir().length() - 1) + "-cleaned/"
+                    + path.split(mod.getName())[1]);
 //        System.out.println(targetPath);
-        try {
-            String tp = targetMasteryPath.toString();
-            Path tmp = Path.of(tp.substring(0, tp.lastIndexOf(targetMasteryPath.getFileSystem().getSeparator())));
-            Files.createDirectories(tmp);
-            Files.copy(originMasteryPath, targetMasteryPath);
-        } catch (IOException e) {
-            if (!(e instanceof java.nio.file.FileAlreadyExistsException))
-                e.printStackTrace();
+            try {
+                String tp = targetMasteryPath.toString();
+                Path tmp = Path.of(tp.substring(0, tp.lastIndexOf(targetMasteryPath.getFileSystem().getSeparator())));
+                Files.createDirectories(tmp);
+                Files.copy(originMasteryPath, targetMasteryPath);
+            } catch (IOException e) {
+                if (!(e instanceof java.nio.file.FileAlreadyExistsException))
+                    e.printStackTrace();
+            }
         }
 
         Path originTreePath = mastery.getSkillTree().toPath();
@@ -163,7 +165,7 @@ public class Cleaner {
 //      System.out.println(targetPath);
         try {
             String tp = targetTreePath.toString();
-            Path tmp = Path.of(tp.substring(0, tp.lastIndexOf(targetMasteryPath.getFileSystem().getSeparator())));
+            Path tmp = Path.of(tp.substring(0, tp.lastIndexOf(targetTreePath.getFileSystem().getSeparator())));
             Files.createDirectories(tmp);
             Files.copy(originTreePath, targetTreePath);
         } catch (IOException e) {
