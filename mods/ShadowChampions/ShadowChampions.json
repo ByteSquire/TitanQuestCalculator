@@ -1430,8 +1430,9 @@
         "posX" : 552
       },
       "attributes" : {
-        "+${value} Health" : [ 35.0, 70.0, 105.0, 140.0, 175.0, 210.0, 245.0, 280.0, 315.0, 350.0 ],
+        "+${value} Health" : [ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0 ],
         "${value}% Pierce Resistance" : [ 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0 ],
+        "+${value}% Health" : [ 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ],
         "MaxLevel" : 6,
         "UltimateLevel" : 10
       }
@@ -4487,9 +4488,12 @@
       "attributes" : {
         "${value} Energy Cost" : 1.0,
         "${value} Charge Levels" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0 ],
-        "${value} Second(s) Charge Level Duration" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+        "${value} Physical Damage" : {
+          "min" : [ 5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0 ]
+        },
+        "${value} Second(s) Charge Level Duration" : [ 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0 ],
         "${value}% Increase in Projectile Speed" : [ 10.0, 16.0, 24.0, 30.0, 36.0, 43.0, 49.0, 57.0, 63.0, 69.0, 76.0, 82.0, 86.0, 90.0 ],
-        "+${value}% Attack Speed" : [ 6.0, 10.0, 13.0, 17.0, 21.0, 24.0, 28.0, 32.0, 36.0, 39.0, 43.0, 47.0, 50.0, 54.0 ],
+        "+${value}% Attack Speed" : [ 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0 ],
         "MaxLevel" : 10,
         "UltimateLevel" : 14
       }
@@ -4560,7 +4564,9 @@
       "attributes" : {
         "${value}% Chance to be Used" : [ 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0 ],
         "Launches ${value} Projectile(s)" : 1,
-        "+${value}% Physical Damage" : 15.0,
+        "${value} Physical Damage" : {
+          "min" : [ 5.0, 7.0, 9.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0 ]
+        },
         "MaxLevel" : 6,
         "UltimateLevel" : 10,
         "requiredWeapons" : "Dual Wield Only, Sword, Axe, Mace, Thrown Weapon"
@@ -4640,10 +4646,9 @@
       },
       "attributes" : {
         "${value} Energy Cost" : 1.0,
-        "${chance}% Chance of ${value} Bleeding Damage over ${duration} Second(s)" : {
-          "chance" : 25.0,
+        "${value} Bleeding Damage over ${duration} Second(s)" : {
           "value" : {
-            "min" : [ 17.0, 24.0, 29.0, 36.0, 41.0, 46.0, 53.0, 59.0, 65.0, 71.0, 82.0, 91.0 ]
+            "min" : [ 11.0, 16.0, 19.0, 24.0, 27.0, 31.0, 36.0, 40.0, 44.0, 48.0, 55.0, 61.0 ]
           },
           "duration" : {
             "min" : 3.0
@@ -4771,32 +4776,31 @@
         "posX" : 288
       },
       "attributes" : {
-        "${value} Energy Cost" : 1.0,
+        "${value}% Chance to Fumble attacks over ${duration} Second(s)" : {
+          "value" : {
+            "min" : 15.0
+          },
+          "duration" : {
+            "min" : 5.0
+          }
+        },
         "${value}% Slowed over ${duration} Second(s)" : {
           "value" : {
             "min" : 10.0
           },
           "duration" : {
-            "min" : 2.0
-          }
-        },
-        "${value}% reduced Defensive Ability over ${duration} Second(s)" : {
-          "value" : {
-            "min" : 8.0
-          },
-          "duration" : {
-            "min" : 2.0
+            "min" : 5.0
           }
         },
         "${value}% reduced Offensive Ability over ${duration} Second(s)" : {
           "value" : {
-            "min" : 8.0
+            "min" : 10.0
           },
           "duration" : {
-            "min" : 2.0
+            "min" : 5.0
           }
         },
-        "+${value}% Total Damage" : -15.0,
+        "+${value}% Total Damage" : -10.0,
         "MaxLevel" : 1,
         "UltimateLevel" : 1
       }
@@ -5016,11 +5020,9 @@
       },
       "attributes" : {
         "${value} Energy Cost" : 1.0,
-        "${value} Physical Damage" : {
-          "min" : [ 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 32.0, 34.0, 37.0, 39.0, 41.0, 44.0 ]
-        },
         "${value}% Pierce Resistance" : [ 10.0, 14.0, 16.0, 18.0, 21.0, 23.0, 25.0, 27.0, 30.0, 32.0, 34.0, 37.0, 39.0, 41.0, 45.0 ],
         "${value}% Skill Disruption Protection" : [ 18.0, 22.0, 26.0, 30.0, 36.0, 40.0, 44.0, 48.0, 53.0, 59.0, 63.0, 67.0, 71.0, 76.0, 80.0 ],
+        "+${value}% Physical Damage" : [ 10.0, 12.5, 15.0, 17.5, 20.0, 22.5, 25.0, 27.5, 30.0, 32.5, 35.0, 37.5, 40.0, 42.5, 45.0 ],
         "MaxLevel" : 11,
         "UltimateLevel" : 15
       }
@@ -5066,7 +5068,7 @@
       "attributes" : {
         "${value} Bleeding Damage over ${duration} Second(s)" : {
           "value" : {
-            "min" : [ 7.0, 10.0, 13.0, 16.0, 19.0, 22.0, 25.0, 28.0, 31.0, 34.0, 37.0, 40.0 ]
+            "min" : [ 10.5, 15.0, 19.5, 24.0, 28.5, 33.0, 37.5, 42.0, 46.5, 51.0, 55.5, 60.0 ]
           },
           "duration" : {
             "min" : 3.0
@@ -5559,7 +5561,7 @@
         "${value}m Radius" : 7.0,
         "${value}% Slowed over ${duration} Second(s)" : {
           "value" : {
-            "min" : [ 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 23.0, 25.0, 26.0, 28.0, 30.0 ]
+            "min" : [ 10.0, 13.0, 16.0, 19.0, 21.0, 24.0, 27.0, 31.0, 33.0, 35.0, 37.0, 40.0 ]
           },
           "duration" : {
             "min" : 1.0
