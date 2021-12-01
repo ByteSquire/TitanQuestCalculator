@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html onkeydown="shiftPressed(event);">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Titan Quest Calculator - ClassName</title>
+
+    <link rel="stylesheet" type="text/css" href="../../css/styles.css" />
+
+    <script type="text/javascript" src="js/booleans.js"></script>
+    <script type="text/javascript" src="js/charAttributes_handler.js"></script>
+    <script type="text/javascript" src="js/plusButton_handler.js"></script>
+    <script type="text/javascript" src="js/popup_handler.js"></script>
+    <script type="text/javascript" src="js/skillButton_handler.js"></script>
+    <script type="text/javascript" src="js/JSON_handler.js"></script>
+    <script type="text/javascript" src="js/skill.js"></script>
+    <script type="text/javascript" src="js/masteryTier_handler.js"></script>
+    <script type="text/javascript" src="js/skillPlusButton_handler.js"></script>
+    <script type="text/javascript" src="js/attribute_parser.js"></script>
+    <script type="text/javascript" src="js/resetMastery_handler.js"></script>
+    <script type="text/javascript" src="js/skillConnector.js"></script>
+    <script type="text/javascript" src="js/save_handler.js"></script>
+  </head>
+
+  <body oncontextmenu="return false">
+    <h1 id="className" class="centered">ClassName</h1>
+    <table class="masteryTable">
+      <tr>
+        <td class="panels">
+          <div style="display: none" id="pop"></div>
+          <div class="disabled" id="panel1">
+            <img
+              class="masteryPanel"
+              src="../../MasteryPage/images/masteries/panel/skillpanel.png"
+            />
+            <button class="plusButton" id="plusButton1" onmousedown="plusClicked(this, event);" onmouseover="plusButtonPopup(this, event);" onmouseout="hidePopup();">
+              <img
+                class="plusButtonImage"
+                src="../../MasteryPage/images/masteries/panel/plusbutton.png"
+              />
+            </button>
+            <button class="allPlusButton" id="allPlusButton1" onmousedown="allPlusClicked(this, event);" onmouseover="allPlusButtonPopup(this, event);" onmouseout="hidePopup();">
+              <img
+                class="allPlusButtonImage"
+                src="../../MasteryPage/images/masteries/panel/plusbutton.png"
+              />
+              0
+            </button>
+            <button class="resetButton" id="resetMastery1" onmousedown="resetClicked(this);">
+              Reset Mastery
+            </button>
+            <img
+              class="masteryImagePanel"
+              id="mastery1"
+              src="../../MasteryPage/images/masteries/1.png"
+            />
+            <span class="masteryTier" id="masteryTier1" onmousedown="masteryTierClicked(this.parentElement, 0)">1</span>
+            <span class="masteryTier" id="masteryTier2" onmousedown="masteryTierClicked(this.parentElement, 1)">2</span>
+            <span class="masteryTier" id="masteryTier3" onmousedown="masteryTierClicked(this.parentElement, 2)">3</span>
+            <span class="masteryTier" id="masteryTier4" onmousedown="masteryTierClicked(this.parentElement, 3)">4</span>
+            <span class="masteryTier" id="masteryTier5" onmousedown="masteryTierClicked(this.parentElement, 4)">5</span>
+            <span class="masteryTier" id="masteryTier6" onmousedown="masteryTierClicked(this.parentElement, 5)">6</span>
+            <span class="masteryTier" id="masteryTier7" onmousedown="masteryTierClicked(this.parentElement, 6)">7</span>
+            <div id="m0bar" class="bar"></div>
+          </div>
+          <div class="disabled" id="panel2">
+            <img
+              class="masteryPanel"
+              src="../../MasteryPage/images/masteries/panel/skillpanel.png"
+            />
+            <button class="plusButton" id="plusButton2" onmousedown="plusClicked(this, event);" onmouseover="plusButtonPopup(this, event);" onmouseout="hidePopup();">
+              <img
+                class="plusButtonImage"
+                src="../../MasteryPage/images/masteries/panel/plusbutton.png"
+              />
+            </button>
+            <button class="allPlusButton" id="allPlusButton2" onmousedown="allPlusClicked(this, event);" onmouseover="allPlusButtonPopup(this, event);" onmouseout="hidePopup();">
+              <img
+                class="allPlusButtonImage"
+                src="../../MasteryPage/images/masteries/panel/plusbutton.png"
+              />
+              0
+            </button>
+            <button class="resetButton" id="resetMastery2" onmousedown="resetClicked(this);">
+              Reset Mastery
+            </button>
+            <img
+              class="masteryImagePanel"
+              id="mastery2"
+              src="../../MasteryPage/images/masteries/2.png"
+            />
+            <span class="masteryTier" id="masteryTier1" onmousedown="masteryTierClicked(this.parentElement, 0)">1</span>
+            <span class="masteryTier" id="masteryTier2" onmousedown="masteryTierClicked(this.parentElement, 1)">2</span>
+            <span class="masteryTier" id="masteryTier3" onmousedown="masteryTierClicked(this.parentElement, 2)">3</span>
+            <span class="masteryTier" id="masteryTier4" onmousedown="masteryTierClicked(this.parentElement, 3)">4</span>
+            <span class="masteryTier" id="masteryTier5" onmousedown="masteryTierClicked(this.parentElement, 4)">5</span>
+            <span class="masteryTier" id="masteryTier6" onmousedown="masteryTierClicked(this.parentElement, 5)">6</span>
+            <span class="masteryTier" id="masteryTier7" onmousedown="masteryTierClicked(this.parentElement, 6)">7</span>
+            <div id="m0bar" class="bar"></div>
+          </div>
+        </td>
+        <td class="infos">
+          <div id="stats">
+            <table class="tableWithSpacing">
+              <tr>
+                <td>Level required:</td>
+                <td><div id="lvl">1</div></td>
+                <td>Maximum level:</td>
+                <td><div id="maxLevel">85</div></td>
+                <td>Points left:</td>
+                <td><div id="pointsLeft">252</div></td>
+              </tr>
+              <tr>
+                <td>Health:</td>
+                <td><div id="hp">300+0%</div></td>
+                <td>Energy:</td>
+                <td><div id="mp">300+0%</div></td>
+              </tr>
+              <tr>
+                <td>Strength:</td>
+                <td><div id="str">50+0%</div></td>
+                <td>Intelligence:</td>
+                <td><div id="int">50+0%</div></td>
+                <td>Dexterity:</td>
+                <td><div id="dex">50+0%</div></td>
+              </tr>
+              <tr>
+                <td><br></td>
+              </tr>
+            </table>
+          </div>
+        <label>Quest Skill Points:
+            <select id="questPoints" onchange="pointsSelected(this)">
+                            <optgroup label="Titan Quest">
+                    <option value="0">0</option>
+                    <option value="1">1 - Act 1 Normal</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 - Act 2 Normal</option>
+                    <option value="5">5 - All Normal</option>
+                    <option value="6">6 - Act 1 Epic</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10 - Act 2 Epic</option>
+                    <option value="10">10 - All Epic</option>
+                    <option value="11">11</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15 - Act 2 Legendary</option>
+                    <option value="15">15 - All Legendary</option>
+                </optgroup>
+                <optgroup label="Immortal Throne">
+                    <option value="0">0</option>
+                    <option value="1">1 - Act 1 Normal</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 - Act 2 Normal</option>
+                    <option value="6">6</option>
+                    <option value="7">7 - Act 4 Normal</option>
+                    <option value="7">7 - All Normal</option>
+                    <option value="8">8 - Act 1 Epic</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12 - Act 2 Epic</option>
+                    <option value="13">13</option>
+                    <option value="14">14 - Act 4 Epic</option>
+                    <option value="14">14 - All Epic</option>
+                    <option value="15">15 - Act 1 Legendary</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19 - Act 2 Legendary</option>
+                    <option value="20">20</option>
+                    <option value="21">21 - Act 4 Legendary</option>
+                    <option value="21">21 - All Legendary</option>
+                </optgroup>
+                <optgroup label="Ragnarok">
+                    <option value="0">0</option>
+                    <option value="1">1 - Act 1 Normal</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 - Act 2 Normal</option>
+                    <option value="6">6</option>
+                    <option value="7">7 - Act 4 Normal</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10 - Act 5 Normal</option>
+                    <option value="10">10 - All Normal</option>
+                    <option value="11">11 - Act 1 Epic</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15 - Act 2 Epic</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17 - Act 4 Epic</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20 - Act 5 Epic</option>
+                    <option value="20">20 - All Epic</option>
+                    <option value="21">21 - Act 1 Legendary</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25 - Act 2 Legendary</option>
+                    <option value="26">26</option>
+                    <option value="27">27 - Act 4 Legendary</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30 - Act 5 Legendary</option>
+                    <option value="30">30 - All Legendary</option>
+                </optgroup>
+                <optgroup label="ALL">
+                    <option value="0">0</option>
+                    <option value="1">1 - Act 1 Normal</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 - Act 2 Normal</option>
+                    <option value="5">5 - All Normal</option>
+                    <option value="6">6 - Act 1 Epic</option>
+                    <option value="7">7 - Act 4 Normal (IM)</option>
+                    <option value="7">7 - All Normal (IM)</option>
+                    <option value="8">8 - Act 1 Epic (IM)</option>
+                    <option value="9">9</option>
+                    <option value="10">10 - Act 5 Normal (RR)</option>
+                    <option value="10">10 - All Normal (RR)</option>
+                    <option value="10">10 - Act 2 Epic</option>
+                    <option value="10">10 - All Epic</option>
+                    <option value="11">11 - Act 1 Epic (RR)</option>
+                    <option value="11">11 - Act 1 Legendary</option>
+                    <option value="12">12 - Act 2 Epic (IM)</option>
+                    <option value="13">13</option>
+                    <option value="14">14 - Act 4 Epic (IM)</option>
+                    <option value="14">14 - All Epic (IM)</option>
+                    <option value="15">15 - Act 2 Epic (RR)</option>
+                    <option value="15">15 - Act 1 Legendary (IM)</option>
+                    <option value="15">15 - Act 2 Legendary</option>
+                    <option value="15">15 - All Legendary</option>
+                    <option value="16">16</option>
+                    <option value="17">17 - Act 4 Epic (RR)</option>
+                    <option value="18">18</option>
+                    <option value="19">19 - Act 2 Legendary (IM)</option>
+                    <option value="20">20 - Act 5 Epic (RR)</option>
+                    <option value="20">20 - All Epic (RR)</option>
+                    <option value="21">21 - Act 1 Legendary (RR)</option>
+                    <option value="21">21 - Act 4 Legendary (IM)</option>
+                    <option value="21">21 - All Legendary (IM)</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25 - Act 2 Legendary (RR)</option>
+                    <option value="26">26</option>
+                    <option value="27">27 - Act 4 Legendary (RR)</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30 - Act 5 Legendary (RR)</option>
+                    <option value="30">30 - All Legendary (RR)</option>
+                </optgroup>
+                <optgroup label="CUSTOM">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                    <option value="32">32</option>
+                    <option value="33">33</option>
+                    <option value="34">34</option>
+                    <option value="35">35</option>
+                    <option value="36">36</option>
+                    <option value="37">37</option>
+                    <option value="38">38</option>
+                    <option value="39">39</option>
+                    <option value="41">41</option>
+                    <option value="42">42</option>
+                    <option value="43">43</option>
+                    <option value="44">44</option>
+                    <option value="45">45</option>
+                    <option value="46">46</option>
+                    <option value="47">47</option>
+                    <option value="48">48</option>
+                    <option value="49">49</option>
+                    <option value="50">50</option>
+                </optgroup>
+            </select>
+        </label>
+        <br><br>
+        <table>
+          <tr>
+            <td><span style="color: green; font-weight: bold">Controls:</span></td>
+          </tr>
+          <tr>
+            <td>Right Click</td>
+            <td>Remove Point</td>
+          </tr>
+          <tr>
+            <td>Left Click</td>
+            <td>Add Point</td>
+          </tr>
+          <tr>
+            <td>Shift-Right Click</td>
+            <td>Reset Points</td>
+          </tr>
+          <tr>
+            <td>Shift-Left Click</td>
+            <td>Add Full Points<td>
+          </tr>
+          <tr>
+            <td>Click Mastery Tier</td>
+            <td>Set Points to Tier</td>
+          </tr>
+          <tr>
+            <td>Press Shift over Skill</td>
+            <td>Toggle Pet Info</td>
+          </tr>
+        </table>
+        <br>
+        <button id="saveButton" onclick="saveClicked();">Generate save/share link</button>
+        <br>
+        <label style="display: none">Save/Share this configuration:
+            <input type="text" id="saveLink" onclick="this.select();" style="font-size:8pt;width:100%;">
+        </label>
+          <!--
+          <br>
+          <div id="skills gained">
+            <table>
+              <tr>
+                <td>Skill1:</td>
+                <td><div id="lvl">1</div></td>
+              </tr>
+              <tr>
+                <td>Skill2:</td>
+                <td><div id="lvl">1</div></td>
+              </tr>
+              <tr>
+                <td>Skill3:</td>
+                <td><div id="lvl">1</div></td>
+              </tr>
+            </table>
+          </div>
+          -->
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
