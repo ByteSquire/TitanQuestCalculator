@@ -1,6 +1,7 @@
 package de.bytesquire.titanquest.tqcalculator.main;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -47,7 +48,7 @@ public class Skill {
     private ArrayList<String> mProtectsAgainst;
 
     public Skill(File aSkill, String[] aParent, String aParentPath, ModStringsParser aMSParser,
-            IconsParser aIconsParser) {
+            IconsParser aIconsParser) throws FileNotFoundException {
         if (!aSkill.exists())
             return;
         mAttributeBuilder = new LinkedHashMap<>();
@@ -56,6 +57,9 @@ public class Skill {
         mParent = aParent;
         mFiles = new ArrayList<>();
         mFiles.add(aSkill.getAbsolutePath());
+        
+        if(!aSkill.exists() || aSkill.isDirectory())
+            throw new FileNotFoundException(aSkill.getAbsolutePath());
         mSkillParser = new SkillParser(aSkill, aParentPath, aMSParser, aIconsParser);
 
         String name;

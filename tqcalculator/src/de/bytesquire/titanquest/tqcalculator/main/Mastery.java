@@ -1,6 +1,7 @@
 package de.bytesquire.titanquest.tqcalculator.main;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -37,10 +38,22 @@ public class Mastery {
 
         for (File skill : mSkillTreeParser.getSkills()) {
             if (!(mSkillTreeParser.getSkills().indexOf(skill) == 0)) {
-                Skill tmp = new Skill(skill, null, (mParentModName + "/Masteries/" + mName), aMSParser, aIconsParser);
+                Skill tmp;
+                try {
+                    tmp = new Skill(skill, null, (mParentModName + "/Masteries/" + mName), aMSParser, aIconsParser);
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                    continue;
+                }
                 mSkills.add(tmp);
             } else {
-                Skill tmp = new Skill(skill, null, (mParentModName + "/Masteries/" + mName), aMSParser, aIconsParser);
+                Skill tmp;
+                try {
+                    tmp = new Skill(skill, null, (mParentModName + "/Masteries/" + mName), aMSParser, aIconsParser);
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                    continue;
+                }
                 mMasteryAttributes = (LinkedHashMap<String, Object>) tmp.getAttributes();
                 mMasteryFiles = tmp.getFiles();
             }
