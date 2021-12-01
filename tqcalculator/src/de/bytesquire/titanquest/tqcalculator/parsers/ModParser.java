@@ -29,12 +29,15 @@ public class ModParser {
     private ArrayList<File> mSkillTrees;
     private File mCharacter;
     private File mGameEngine;
+    private File mPlayerLevels;
     public static final int COUNT_MASTERIES = 10;
     public static final int COUNT_QUEST_REWARD_TREES = 1;
     private String mModDir;
     private LinkedHashMap<String, String> mLinks;
     private TreeMap<String, ArrayList<ArrayList<String>>> mQuestSkillPoints;
     private ArrayList<Integer> mMasteryTiers;
+    private Integer mSkillPointIncrement;
+    // private int mMaxLevel;
     private ArrayList<File> mQuestSkillFiles;
 
     public ModParser(String aModdir) {
@@ -49,6 +52,7 @@ public class ModParser {
         initLinks();
         initQuestSkillPoints();
         initEngine();
+        initPlayerLevels();
     }
 
     private int compareQuestFiles(String s1, String s2) {
@@ -109,34 +113,75 @@ public class ModParser {
     }
 
     private void initEngine() {
-        mGameEngine = new File(mModDir + "database/records/game/gameengine.dbr");
-        try (BufferedReader characterReader = new BufferedReader(new FileReader(mGameEngine));) {
-            Stream<String> fileStream = characterReader.lines();
-            fileStream.filter((str) -> str.startsWith("skillMasteryTierLevel")).forEach((str) -> {
-                for (String tierLevel : str.split(",")[1].split(";")) {
-                    mMasteryTiers.add(Integer.parseInt(tierLevel));
-                }
-            });
-        } catch (FileNotFoundException e) {
-            if (!initEngine(true))
-                e.printStackTrace();
-        } catch (IOException e1) {
-            e1.printStackTrace();
-        }
+        initEngine(false);
     }
 
     private boolean initEngine(boolean vanilla) {
-        mGameEngine = new File(Control.DATABASES_DIR + "Vanilla/database/records/game/gameengine.dbr");
+        if (vanilla)
+            mGameEngine = new File(Control.DATABASES_DIR + "Vanilla/database/records/game/gameengine.dbr");
+        else
+            mGameEngine = new File(mModDir + "database/records/game/gameengine.dbr");
+
         try (BufferedReader characterReader = new BufferedReader(new FileReader(mGameEngine));) {
             Stream<String> fileStream = characterReader.lines();
             fileStream.filter((str) -> str.startsWith("skillMasteryTierLevel")).forEach((str) -> {
-                for (String tierLevel : str.split(",")[1].split(";")) {
+                for (String tierLevel : str.split(",", -1)[1].split(";")) {
                     mMasteryTiers.add(Integer.parseInt(tierLevel));
                 }
             });
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
-            return false;
+            if (!vanilla)
+                return initEngine(true);
+            else {
+                e.printStackTrace();
+                return false;
+            }
+        } catch (IOException e1) {
+            e1.printStackTrace();
+        }
+        return true;
+    }
+
+    private void initPlayerLevels() {
+        initPlayerLevels(false);
+    }
+
+    private boolean initPlayerLevels(boolean vanilla) {
+        if (vanilla)
+            mPlayerLevels = new File(Control.DATABASES_DIR + "Vanilla/database/records/creature/pc/playerlevels.dbr");
+        else
+            mPlayerLevels = new File(mModDir + "database/records/creature/pc/playerlevels.dbr");
+
+        try (BufferedReader characterReader = new BufferedReader(new FileReader(mPlayerLevels));) {
+            Stream<String> fileStream = characterReader.lines();
+            fileStream.forEach((str) -> {
+                if (str.startsWith("skillModifierPoints")) {
+                    String value = str.split(",", -1)[1];
+                    if (value.isEmpty())
+                        return;
+                    try {
+                        mSkillPointIncrement = Integer.parseInt(value);
+                    } catch (NumberFormatException e) {
+                        e.printStackTrace();
+                    }
+                }
+                // Maybe implement in the future if THQ Nordic is nice
+                /*
+                 * if (str.startsWith("maxPlayerLevel")) { String value = str.split(",", -1)[1];
+                 * if (value.isEmpty()) return; try { mSkillPointIncrement =
+                 * Integer.parseInt(value); } catch (NumberFormatException e) {
+                 * e.printStackTrace(); } }
+                 */
+            });
+            if (mSkillPointIncrement == null)
+                throw new FileNotFoundException("Could not read skillModifierPoints from playerlevels.dbr");
+        } catch (FileNotFoundException e) {
+            if (!vanilla)
+                return initPlayerLevels(true);
+            else {
+                e.printStackTrace();
+                return false;
+            }
         } catch (IOException e1) {
             e1.printStackTrace();
         }
@@ -155,7 +200,7 @@ public class ModParser {
                     } catch (NumberFormatException e) {
                     }
                 }
-                mSkillTrees.add(/* index - 1, */new File(mModDir + "database" + SEPARATOR + str.split(",")[1]));
+                mSkillTrees.add(/* index - 1, */new File(mModDir + "database" + SEPARATOR + str.split(",", -1)[1]));
             });
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -198,6 +243,14 @@ public class ModParser {
 
     public File getGameEngine() {
         return mGameEngine;
+    }
+
+    public File getPlayerLevels() {
+        return mPlayerLevels;
+    }
+    
+    public Integer getSkillPointIncrement() {
+        return mSkillPointIncrement;
     }
 
     public Map<String, ArrayList<ArrayList<String>>> getQuestSkillPoints() {

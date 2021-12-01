@@ -69,6 +69,21 @@ public class Cleaner {
                 if (!(e instanceof java.nio.file.FileAlreadyExistsException))
                     e.printStackTrace();
             }
+            
+            Path originPlayerLevelsPath = mod.getPlayerLevels().toPath();
+//          System.out.println(originLinksPath);
+            Path targetPlayerLevelsPath = Path.of(mod.getModDir().substring(0, mod.getModDir().length() - 1)
+                    + "-cleaned/database/records/creature/pc/playerlevels.dbr");
+//          System.out.println(targetLinksPath);
+            try {
+                String tp = targetPlayerLevelsPath.toString();
+                Path tmp = Path.of(tp.substring(0, tp.lastIndexOf(targetPath.getFileSystem().getSeparator())));
+                Files.createDirectories(tmp);
+                Files.copy(originPlayerLevelsPath, targetPlayerLevelsPath);
+            } catch (IOException e) {
+                if (!(e instanceof java.nio.file.FileAlreadyExistsException))
+                    e.printStackTrace();
+            }
 
             cleanModStrings(mod);
             cleanIcons(mod);

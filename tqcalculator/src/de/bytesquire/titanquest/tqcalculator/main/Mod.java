@@ -15,9 +15,9 @@ import de.bytesquire.titanquest.tqcalculator.parsers.IconsParser;
 import de.bytesquire.titanquest.tqcalculator.parsers.ModParser;
 import de.bytesquire.titanquest.tqcalculator.parsers.ModStringsParser;
 
-@JsonIgnoreProperties({ "msparser", "character", "modDir", "links", "masteryLevel", "gameEngine", "iconsParser",
+@JsonIgnoreProperties({ "msparser", "character", "modDir", "links", "masteryLevel", "gameEngine", "playerLevels", "iconsParser",
         "urlLegacy", "url", "questSkillPoints", "modParser" })
-@JsonPropertyOrder({ "name", "mappedMasteries", "masteryLevels", "classNames", "masteries" })
+@JsonPropertyOrder({ "name", "mappedMasteries", "masteryLevels", "skillPointIncrement", "maxLevel", "classNames", "masteries" })
 public class Mod {
 
     private ModParser mModParser;
@@ -29,7 +29,10 @@ public class Mod {
     private Map<String, String> mLinks;
     private File mCharacter;
     private File mGameEngine;
+    private File mPlayerLevels;
     private ArrayList<Integer> mMasteryTiers;
+    private Integer mSkillPointIncrement;
+    private int mMaxLevel = 85; // maybe THQ Nordic is nice
     private Map<String, ArrayList<ArrayList<String>>> mQuestSkillPoints;
     private String[][] mClassNames;
 
@@ -50,6 +53,8 @@ public class Mod {
         mMasteryTiers = mModParser.getMasteryTiers();
         mQuestSkillPoints = mModParser.getQuestSkillPoints();
         mGameEngine = mModParser.getGameEngine();
+        mPlayerLevels = mModParser.getPlayerLevels();
+        mSkillPointIncrement = mModParser.getSkillPointIncrement();
 
         int i = 1;
         for (File skillTree : mModParser.getSkillTrees()) {
@@ -192,6 +197,10 @@ public class Mod {
         return mGameEngine;
     }
 
+    public File getPlayerLevels() {
+        return mPlayerLevels;
+    }
+
     public IconsParser getIconsParser() {
         return mIconsParser;
     }
@@ -206,5 +215,13 @@ public class Mod {
 
     public String[][] getClassNames() {
         return mClassNames;
+    }
+
+    public Integer getSkillPointIncrement() {
+        return mSkillPointIncrement;
+    }
+    
+    public Integer getMaxLevel() {
+        return mMaxLevel;
     }
 }
