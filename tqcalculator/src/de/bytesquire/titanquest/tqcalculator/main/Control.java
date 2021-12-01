@@ -118,6 +118,12 @@ public class Control {
                 try {
                     Path out = Path.of(REPOSITORY_DIR + "mods/" + mod.getName() + "/Masteries/" + mastery.getName());
                     Files.createDirectories(out);
+                    
+                    out = Path.of(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/");
+                    Files.createDirectories(out);
+                    
+                    out = Path.of(REPOSITORY_DIR + "mods/" + mod.getName() + "/images/");
+                    Files.createDirectories(out);
                 } catch (IOException e) {
                     e.printStackTrace();
                     mSuccess = false;
