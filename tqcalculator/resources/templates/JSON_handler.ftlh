@@ -32,6 +32,7 @@ function init(){
   setClassName();
   setMasteries();
   setMasteryTiers();
+  setSkillPoints(mod);
   
   if(m1 && config_string){
       var config;
