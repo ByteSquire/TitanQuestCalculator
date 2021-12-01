@@ -1,21 +1,10 @@
 {
   "name" : "CataclysmChaos",
-  "mappedMasteries" : {
-    "1" : "Gladiator",
-    "2" : "Rift Walker",
-    "3" : "Illusionist",
-    "4" : "Mirror Knight",
-    "5" : "Tidecaller",
-    "6" : "Tempest",
-    "7" : "Vampire",
-    "8" : "Plaguelord",
-    "9" : "Angel",
-    "10" : "Ritualist"
-  },
+  "mappedMasteries" : [ "Gladiator", "Mirror Knight", "Tidecaller", "Tempest", "Vampire", "Plaguelord", "Angel", "Ritualist", "Rift Walker", "Illusionist" ],
   "masteryLevels" : [ 1, 4, 10, 16, 24, 32, 40 ],
   "skillPointIncrement" : 5,
   "maxLevel" : 85,
-  "classNames" : [ [ "Mastery parameters missing or invalid", null, null, null, null, null, null, null, null, null, null ], [ "Angel", null, "Heretic", "Sorcerer", "Elementalist", "Fallen Angel", "Crusader", "Infernalist", "Paladin", "Saint", "Plague Priest" ], [ "Ritualist", null, null, "Wizard", "Sea Witch", "Soul Devourer", "Demon Warrior", "Hellbringer", "Blackblade", "Cultist", "Defiler" ], [ "Tempest", null, null, null, "Typhoon", "Stormblood", "Stormbringer", "Electromancer", "God of Storms", "Whisperer", "Pandemic" ], [ "Tidecaller", null, null, null, null, "Blood Mage", "Nautilus", "Cryomancer", "Pirate", "Siren", "Swamp Sage" ], [ "Vampire", null, null, null, null, null, "Dark Knight", "Phantom", "Shadowwalker", "Trickster", "Ghoul" ], [ "Mirror Knight", null, null, null, null, null, null, "Golem", "Champion", "Mirage", "Immortal" ], [ "Rift Walker", null, null, null, null, null, null, null, "Monk", "Traveller of Worlds", "World Eater" ], [ "Gladiator", null, null, null, null, null, null, null, null, "Imposter", "Dread Lord" ], [ "Illusionist", null, null, null, null, null, null, null, null, null, "Infester" ], [ "Plaguelord", null, null, null, null, null, null, null, null, null, null ] ],
+  "classNames" : [ [ "Mastery parameters missing or invalid", null, null, null, null, null, null, null, null, null, null ], [ "Gladiator", null, null, null, null, null, null, null, "Dread Lord", null, "Imposter" ], [ "Mirror Knight", "Champion", null, null, null, null, null, null, "Immortal", "Golem", "Mirage" ], [ "Tidecaller", "Pirate", "Nautilus", null, null, "Blood Mage", null, null, "Swamp Sage", "Cryomancer", "Siren" ], [ "Tempest", "God of Storms", "Stormbringer", "Typhoon", null, "Stormblood", null, null, "Pandemic", "Electromancer", "Whisperer" ], [ "Vampire", "Shadowwalker", "Dark Knight", null, null, null, null, null, "Ghoul", "Phantom", "Trickster" ], [ "Angel", "Paladin", "Crusader", "Elementalist", "Sorcerer", "Fallen Angel", null, "Heretic", "Plague Priest", "Infernalist", "Saint" ], [ "Ritualist", "Blackblade", "Demon Warrior", "Sea Witch", "Wizard", "Soul Devourer", null, null, "Defiler", "Hellbringer", "Cultist" ], [ "Plaguelord", null, null, null, null, null, null, null, null, null, null ], [ "Rift Walker", "Monk", null, null, null, null, null, null, "World Eater", null, "Traveller of Worlds" ], [ "Illusionist", null, null, null, null, null, null, null, "Infester", null, null ] ],
   "masteries" : [ {
     "name" : "Gladiator",
     "masteryAttributes" : {
@@ -397,991 +386,6 @@
         "+${value}% Total Damage" : [ 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0 ],
         "MaxLevel" : 8,
         "UltimateLevel" : 12
-      }
-    } ] ]
-  }, {
-    "name" : "Rift Walker",
-    "masteryAttributes" : {
-      "+${value} Health" : [ 35.0, 70.0, 105.0, 140.0, 175.0, 210.0, 245.0, 280.0, 315.0, 350.0, 385.0, 420.0, 455.0, 490.0, 525.0, 560.0, 595.0, 630.0, 665.0, 700.0, 735.0, 770.0, 805.0, 840.0, 875.0, 910.0, 945.0, 980.0, 1015.0, 1050.0, 1085.0, 1120.0, 1155.0, 1190.0, 1225.0, 1260.0, 1295.0, 1330.0, 1365.0, 1400.0 ],
-      "+${value} Energy" : [ 8.0, 16.0, 24.0, 32.0, 40.0, 48.0, 56.0, 64.0, 72.0, 80.0, 88.0, 96.0, 104.0, 112.0, 120.0, 128.0, 136.0, 144.0, 152.0, 160.0, 168.0, 176.0, 184.0, 192.0, 200.0, 208.0, 216.0, 224.0, 232.0, 240.0, 248.0, 256.0, 264.0, 272.0, 280.0, 288.0, 296.0, 304.0, 312.0, 320.0 ],
-      "+${value} Strength" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0, 48.0, 50.0, 52.0, 54.0, 56.0, 58.0, 60.0, 62.0, 64.0, 66.0, 68.0, 70.0, 72.0, 74.0, 76.0, 78.0, 80.0 ],
-      "+${value} Intelligence" : [ 1.75, 3.5, 5.25, 7.0, 8.75, 10.5, 12.25, 14.0, 15.75, 17.5, 19.25, 21.0, 22.75, 24.5, 26.25, 28.0, 29.75, 31.5, 33.25, 35.0, 36.75, 38.5, 40.25, 42.0, 43.75, 45.5, 47.25, 49.0, 50.75, 52.5, 54.25, 56.0, 57.75, 59.5, 61.25, 63.0, 64.75, 66.5, 68.25, 70.0 ],
-      "MaxLevel" : 40
-    },
-    "skillTiers" : [ [ {
-      "name" : "Rifts",
-      "description" : "The Rift Walker creates six rifts around them that are connected to other dimensions. However, they are too unstable to be used for traveling. Any body part of a creature that touches one of the rifts is cut of and transferred to another plain.",
-      "projectileUsesAllDamage" : true,
-      "skillIcon" : {
-        "posY" : 403,
-        "posX" : 228
-      },
-      "attributes" : {
-        "^a${value} Second(s) Recharge" : 10.0,
-        "${value} Energy Cost" : [ 60.0, 62.0, 64.0, 66.0, 68.0, 70.0, 72.0, 74.0, 76.0, 78.0, 80.0, 82.0, 84.0, 86.0 ],
-        "${value} Second Duration" : [ 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0 ],
-        "${value}m Radius" : 2.0,
-        "${value} Physical Damage" : {
-          "min" : [ 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0, 51.0 ]
-        },
-        "MaxLevel" : 12,
-        "UltimateLevel" : 16
-      }
-    }, {
-      "name" : "Jump!",
-      "description" : "The Rift Walker connects their body to the plain of storms, allowing them to rush through space as if they were ethereal.",
-      "skillIcon" : {
-        "posY" : 403,
-        "posX" : 428
-      },
-      "attributes" : {
-        "^a${value} Second(s) Recharge" : 2.0,
-        "${value} Energy Cost" : 5.0,
-        "Launches ${value} Projectile(s)" : 1,
-        "${value} Physical Damage" : {
-          "min" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0 ]
-        },
-        "+${value}% Movement Speed" : 500.0,
-        "+${value}% Total Damage" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0 ],
-        "MaxLevel" : 12,
-        "UltimateLevel" : 16
-      }
-    }, {
-      "name" : "Interdimensional Weapons",
-      "description" : "The Rift Walker reforges their weapons in different dimensions. Allowing them to easily carry the weight of one weapon in each hand and also enhancing their destructive power with elemental energy.",
-      "skillIcon" : {
-        "posY" : 403,
-        "posX" : 628
-      },
-      "attributes" : {
-        "${value}% Chance to be Used" : [ 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0 ],
-        "Launches ${value} Projectile(s)" : 1,
-        "MaxLevel" : 6,
-        "UltimateLevel" : 10,
-        "requiredWeapons" : "Axe, Mace, Thrown Weapon, Sword, Dual Wield Only",
-        "${chance}% Chance for one of the following:" : {
-          "chance" : 100.0,
-          "values" : {
-            "${chance}% Chance of ${value} Cold Damage" : {
-              "chance" : 33.33,
-              "value" : {
-                "min" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0 ],
-                "max" : [ 4.0, 8.0, 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0 ]
-              }
-            },
-            "${chance}% Chance of ${value} Fire Damage" : {
-              "chance" : 33.33,
-              "value" : {
-                "min" : [ 3.0, 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0 ]
-              }
-            },
-            "${chance}% Chance of ${value} Lightning Damage" : {
-              "chance" : 33.33,
-              "value" : {
-                "min" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0 ],
-                "max" : [ 5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0 ]
-              }
-            }
-          }
-        }
-      }
-    } ], [ {
-      "name" : "Void Slash",
-      "description" : "A breach opens from the blade of the Rift Walker when they strike, causing interdimensional energy to flow out and damage anything in its path.",
-      "skillIcon" : {
-        "posY" : 341,
-        "posX" : 128
-      },
-      "attributes" : {
-        "^a${value} Second(s) Recharge" : 6.0,
-        "${value} Energy Cost" : [ 40.0, 42.0, 44.0, 46.0, 48.0, 50.0, 52.0, 54.0, 56.0, 58.0, 60.0, 62.0, 64.0, 66.0, 68.0, 70.0 ],
-        "${value} Physical Damage" : {
-          "min" : [ 12.0, 24.0, 36.0, 48.0, 60.0, 72.0, 84.0, 96.0, 108.0, 120.0, 132.0, 144.0, 156.0, 168.0, 180.0, 192.0 ]
-        },
-        "MaxLevel" : 12,
-        "UltimateLevel" : 16
-      }
-    }, {
-      "name" : "Anomaly",
-      "description" : "The body of the Rift Walker is infused with dimensional energy. Disrupting its stability by hurting the Rift Walker, might cause a portal to open spontaneously, unleashing destructive energy in a radius around them.",
-      "skillIcon" : {
-        "posY" : 341,
-        "posX" : 328
-      },
-      "attributes" : {
-        "^a${value} Second(s) Recharge" : 8.0,
-        "${value}% Chance of Activating" : 25.0,
-        "${value} Energy Reserved" : 100.0,
-        "${value}m Radius" : 3.0,
-        "${value} Physical Damage" : {
-          "min" : [ 15.0, 30.0, 45.0, 60.0, 75.0, 90.0, 105.0, 120.0, 135.0, 150.0, 165.0, 180.0, 195.0, 210.0 ]
-        },
-        "MaxLevel" : 10,
-        "UltimateLevel" : 14
-      }
-    }, {
-      "name" : "Storm Dimension",
-      "description" : "The Rift Walker has an affinity to the storm dimension, allowing them to move faster and enhance their lightning spells.",
-      "doesNotIncludeRacialDamage" : true,
-      "exclusiveSkill" : true,
-      "skillIcon" : {
-        "posY" : 341,
-        "posX" : 528
-      },
-      "attributes" : {
-        "${value} Active Energy Cost per Second" : 1.0,
-        "${value}m Radius" : 12.0,
-        "+${value}% Electrical Burn Damage " : [ 20.0, 26.0, 32.0, 38.0, 44.0, 50.0, 56.0, 62.0, 68.0, 74.0, 80.0, 86.0 ],
-        "+${value}% Lightning Damage" : [ 20.0, 26.0, 32.0, 38.0, 44.0, 50.0, 56.0, 62.0, 68.0, 74.0, 80.0, 86.0 ],
-        "+${value}% Movement Speed" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0 ],
-        "+${value}% Physical Damage" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0 ],
-        "MaxLevel" : 8,
-        "UltimateLevel" : 12
-      }
-    } ], [ {
-      "name" : "Cold Rifts",
-      "description" : "The rifts are enhanced with an unstable connection to the dimension of frost, causing them to emit ice cold air.",
-      "parent" : [ "Rifts" ],
-      "skillIcon" : {
-        "posY" : 279,
-        "posX" : 228
-      },
-      "attributes" : {
-        "${value} Cold Damage" : {
-          "min" : [ 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0 ]
-        },
-        "${value} Frostburn Damage over ${duration} Second(s)" : {
-          "value" : {
-            "min" : [ 5.0, 8.0, 11.0, 14.0, 17.0, 20.0, 23.0, 26.0, 29.0, 32.0 ]
-          },
-          "duration" : {
-            "min" : 3.0
-          }
-        },
-        "MaxLevel" : 6,
-        "UltimateLevel" : 10
-      }
-    }, {
-      "name" : "Explosive Shift",
-      "description" : "When fully reappearing in reality, an explosion of storm energy is unleashed from the Rift Walker's weapon.",
-      "parent" : [ "Jump!" ],
-      "skillIcon" : {
-        "posY" : 279,
-        "posX" : 428
-      },
-      "attributes" : {
-        "${value} Arc of Attack" : [ 90.0, 98.0, 106.0, 114.0, 122.0, 130.0, 138.0, 146.0, 154.0, 162.0, 170.0, 178.0, 186.0, 194.0, 202.0, 210.0 ],
-        "${value} Electrical Burn Damage over ${duration} Second(s)" : {
-          "value" : {
-            "min" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0 ],
-            "max" : [ 8.0, 11.0, 14.0, 17.0, 20.0, 23.0, 26.0, 29.0, 32.0, 35.0, 38.0, 41.0, 44.0, 47.0, 50.0, 53.0 ]
-          },
-          "duration" : {
-            "min" : 3
-          }
-        },
-        "${value} Lightning Damage" : {
-          "min" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0 ],
-          "max" : [ 7.0, 10.0, 13.0, 16.0, 19.0, 22.0, 25.0, 28.0, 31.0, 34.0, 37.0, 40.0, 43.0, 46.0, 49.0, 52.0 ]
-        },
-        "MaxLevel" : 12,
-        "UltimateLevel" : 16
-      }
-    }, {
-      "name" : "Teleport Attack",
-      "description" : "The Rift Walker vanishes to another dimension, preparing an ambush. When they reappear, they immediately strike the weak spot of an enemy with devastating precision.",
-      "skillIcon" : {
-        "posY" : 279,
-        "posX" : 628
-      },
-      "attributes" : {
-        "^a${value} Second(s) Recharge" : 24.0,
-        "${value} Energy Cost" : [ 52.0, 54.0, 56.0, 58.0, 60.0, 62.0, 64.0, 66.0, 68.0, 70.0, 72.0, 74.0, 76.0, 78.0, 80.0, 82.0 ],
-        "Launches ${value} Projectile(s)" : 1,
-        "+${value}% Total Damage" : [ 200.0, 220.0, 240.0, 260.0, 280.0, 300.0, 320.0, 340.0, 360.0, 380.0, 400.0, 420.0, 440.0, 460.0, 480.0, 500.0 ],
-        "MaxLevel" : 12,
-        "UltimateLevel" : 16
-      }
-    } ], [ {
-      "name" : "Burning Rifts",
-      "description" : "The plain of fire is connected to the rifts. This connection causes the rifts to burn anything they touch.",
-      "parent" : [ "Rifts" ],
-      "skillIcon" : {
-        "posY" : 217,
-        "posX" : 228
-      },
-      "attributes" : {
-        "${value} Burn Damage over ${duration} Second(s)" : {
-          "value" : {
-            "min" : [ 6.0, 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0 ]
-          },
-          "duration" : {
-            "min" : 3.0
-          }
-        },
-        "${value} Fire Damage" : {
-          "min" : [ 7.0, 11.0, 15.0, 19.0, 23.0, 27.0, 31.0, 35.0, 39.0, 43.0, 47.0, 51.0, 55.0, 59.0, 63.0, 67.0 ]
-        },
-        "MaxLevel" : 12,
-        "UltimateLevel" : 16
-      }
-    }, {
-      "name" : "Vacuum",
-      "description" : "The breach absorbs any air nearby, making it impossible for any spell caster to speak magical words.",
-      "parent" : [ "Void Slash" ],
-      "skillIcon" : {
-        "posY" : 217,
-        "posX" : 128
-      },
-      "attributes" : {
-        "${value} second(s) of Skill Disruption" : {
-          "min" : [ 1.0, 1.4, 1.8, 2.2, 2.6, 3.0, 3.2, 3.4, 3.7, 4.0 ]
-        },
-        "+${value}% Total Damage" : [ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0 ],
-        "MaxLevel" : 6,
-        "UltimateLevel" : 10
-      }
-    }, {
-      "name" : "Heat Aberration",
-      "description" : "The anomaly has an affinity to the dimension of fire, causing the portal to emit high heat that melts away armor.",
-      "parent" : [ "Anomaly" ],
-      "skillIcon" : {
-        "posY" : 217,
-        "posX" : 328
-      },
-      "attributes" : {
-        "${value} Fire Damage" : {
-          "min" : [ 15.0, 30.0, 45.0, 60.0, 75.0, 90.0, 105.0, 120.0, 135.0, 150.0, 165.0, 180.0, 195.0, 210.0 ]
-        },
-        "${value}% Reduced Resistances over ${duration} Second(s)" : {
-          "value" : {
-            "min" : [ 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0 ]
-          },
-          "duration" : {
-            "min" : 3.0
-          }
-        },
-        "MaxLevel" : 10,
-        "UltimateLevel" : 14
-      }
-    }, {
-      "name" : "Frost Dimension",
-      "description" : "The Rift Walker has an affinity to the frost dimension. Their armor is coated in ice crystals which greatly enhances its defensive capabilities and strengthens the Rift Walker's frost spells.",
-      "doesNotIncludeRacialDamage" : true,
-      "exclusiveSkill" : true,
-      "skillIcon" : {
-        "posY" : 217,
-        "posX" : 528
-      },
-      "attributes" : {
-        "${value} Active Energy Cost per Second" : 1.0,
-        "${value}m Radius" : 12.0,
-        "${value} Armor" : [ 10.0, 16.0, 22.0, 28.0, 34.0, 40.0, 46.0, 52.0, 58.0, 64.0, 70.0, 76.0 ],
-        "+${value}% Armor Protection" : [ 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0 ],
-        "+${value}% Cold Damage" : [ 20.0, 26.0, 32.0, 38.0, 44.0, 50.0, 56.0, 62.0, 68.0, 74.0, 80.0, 86.0 ],
-        "+${value}% Frostburn Damage " : [ 20.0, 26.0, 32.0, 38.0, 44.0, 50.0, 56.0, 62.0, 68.0, 74.0, 80.0, 86.0 ],
-        "+${value}% Physical Damage" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0 ],
-        "MaxLevel" : 8,
-        "UltimateLevel" : 12
-      }
-    } ], [ {
-      "name" : "IceBreach",
-      "description" : "The breach is connected to the dimension of ice, causing frost to emmit from the breach that freezes flesh in an instant.",
-      "parent" : [ "Void Slash" ],
-      "skillIcon" : {
-        "posY" : 155,
-        "posX" : 128
-      },
-      "attributes" : {
-        "${value} Cold Damage" : {
-          "min" : [ 45.0, 70.0, 95.0, 120.0, 145.0, 170.0, 195.0, 220.0, 245.0, 270.0, 295.0, 320.0, 345.0, 370.0, 395.0, 420.0 ]
-        },
-        "${value}% Slowed over ${duration} Second(s)" : {
-          "value" : {
-            "min" : [ 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0 ]
-          },
-          "duration" : {
-            "min" : 3
-          }
-        },
-        "MaxLevel" : 12,
-        "UltimateLevel" : 16
-      }
-    }, {
-      "name" : "Portal to Hell",
-      "description" : "Even the plain of eternal punishment was part of the Rift Walker's expeditions to other dimensions. They open a portal to hell that unleashes fire at the world of the living.",
-      "skillIcon" : {
-        "posY" : 155,
-        "posX" : 228
-      },
-      "attributes" : {
-        "^a${value} Second(s) Recharge" : 20.0,
-        "${value} Energy Cost" : [ 80.0, 83.0, 86.0, 89.0, 92.0, 95.0, 98.0, 101.0, 104.0, 107.0, 110.0, 113.0, 116.0, 119.0, 122.0, 125.0 ],
-        "${value} Second Duration" : 10.0,
-        "${value}m Radius" : 3.0,
-        "${value} Fire Damage" : {
-          "min" : [ 27.0, 34.0, 41.0, 48.0, 55.0, 62.0, 69.0, 76.0, 83.0, 90.0, 97.0, 104.0, 111.0, 118.0, 125.0, 132.0 ]
-        },
-        "${value} Fragments" : {
-          "min" : [ 2.0, 3.0, 3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0 ],
-          "max" : [ 3.0, 4.0, 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 6.0, 7.0, 7.0, 8.0 ]
-        },
-        "${value} Physical Damage" : {
-          "min" : [ 24.0, 30.0, 36.0, 42.0, 48.0, 54.0, 60.0, 66.0, 72.0, 78.0, 84.0, 90.0, 96.0, 102.0, 108.0, 114.0 ]
-        },
-        "MaxLevel" : 12,
-        "UltimateLevel" : 16
-      }
-    }, {
-      "name" : "Partial Shift",
-      "description" : "When hit, the Rift Walker might send parts of their body to another plain, making it much harder to harm them and even granting them easier access to spell energy.",
-      "protectsAgainst" : [ " Elemental Damage", " Physical Damage", " Piercing Damage" ],
-      "skillIcon" : {
-        "posY" : 155,
-        "posX" : 428
-      },
-      "attributes" : {
-        "^a${value} Second(s) Recharge" : 20.0,
-        "${value}% Chance of Activating" : 20.0,
-        "${value} Second Duration" : 5.0,
-        "${value} Damage Absorption" : [ 120.0, 160.0, 200.0, 240.0, 280.0, 320.0, 360.0, 400.0, 440.0, 480.0, 520.0, 560.0 ],
-        "${value}% Damage Absorption" : [ 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0 ],
-        "+${value}% Casting Speed" : [ 3.0, 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0 ],
-        "MaxLevel" : 8,
-        "UltimateLevel" : 12
-      }
-    }, {
-      "name" : "Inferno Dimension",
-      "description" : "The Rift Walker has an affinity to the frost dimension. They fully embrace the destructive power of fire, not only strengthening their fire spells, but increasing all damage they cause.",
-      "doesNotIncludeRacialDamage" : true,
-      "exclusiveSkill" : true,
-      "skillIcon" : {
-        "posY" : 155,
-        "posX" : 528
-      },
-      "attributes" : {
-        "${value} Active Energy Cost per Second" : 1.0,
-        "${value}m Radius" : 12.0,
-        "+${value}% Burn Damage " : [ 20.0, 26.0, 32.0, 38.0, 44.0, 50.0, 56.0, 62.0, 68.0, 74.0, 80.0, 86.0 ],
-        "+${value}% Fire Damage" : [ 20.0, 26.0, 32.0, 38.0, 44.0, 50.0, 56.0, 62.0, 68.0, 74.0, 80.0, 86.0 ],
-        "+${value}% Physical Damage" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0 ],
-        "+${value}% Total Damage" : [ 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0 ],
-        "MaxLevel" : 8,
-        "UltimateLevel" : 12
-      }
-    } ], [ {
-      "name" : "Blink",
-      "description" : "With time, the Rift Walker learns how to recover faster from travelling to other dimensions and even bring destructive forces with them when they return.",
-      "parent" : [ "Teleport Attack" ],
-      "skillIcon" : {
-        "posY" : 93,
-        "posX" : 628
-      },
-      "attributes" : {
-        "^a${value} Second(s) Recharge" : [ -1.0, -2.0, -3.0, -4.0, -5.0, -6.0, -7.0, -8.0, -9.0, -10.0, -11.0, -12.0, -13.0, -14.0 ],
-        "${value} Lightning Damage" : {
-          "min" : [ 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0, 150.0 ],
-          "max" : [ 100.0, 140.0, 180.0, 220.0, 260.0, 300.0, 340.0, 380.0, 420.0, 460.0, 500.0, 540.0, 580.0, 620.0 ]
-        },
-        "MaxLevel" : 10,
-        "UltimateLevel" : 14
-      }
-    }, {
-      "name" : "Master of Worlds",
-      "description" : "For a short time, the Rift Walker connects their mind and body to all dimensions simultaneously, letting them ascend to a god. In this state, every hit is empowered by elemental energy and all spells benefit from a massive increase in power.",
-      "skillIcon" : {
-        "posY" : 93,
-        "posX" : 328
-      },
-      "attributes" : {
-        "^a${value} Second(s) Recharge" : 150.0,
-        "${value} Energy Cost" : [ 100.0, 105.0, 110.0, 115.0, 120.0, 125.0, 130.0, 135.0, 140.0, 145.0, 150.0, 155.0, 160.0, 165.0, 170.0, 175.0 ],
-        "${value} Second Duration" : 15.0,
-        "${value} Cold Damage" : {
-          "min" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0 ],
-          "max" : [ 4.0, 8.0, 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 64.0 ]
-        },
-        "${value} Fire Damage" : {
-          "min" : [ 3.0, 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0 ]
-        },
-        "${value} Lightning Damage" : {
-          "min" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0 ],
-          "max" : [ 5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0 ]
-        },
-        "${value} Physical Damage" : {
-          "min" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0 ]
-        },
-        "+${value}% Cold Damage" : [ 13.0, 18.0, 23.0, 28.0, 33.0, 38.0, 43.0, 48.0, 53.0, 58.0, 63.0, 68.0, 73.0, 78.0, 83.0, 88.0 ],
-        "+${value}% Fire Damage" : [ 13.0, 18.0, 23.0, 28.0, 33.0, 38.0, 43.0, 48.0, 53.0, 58.0, 63.0, 68.0, 73.0, 78.0, 83.0, 88.0 ],
-        "+${value}% Lightning Damage" : [ 13.0, 18.0, 23.0, 28.0, 33.0, 38.0, 43.0, 48.0, 53.0, 58.0, 63.0, 68.0, 73.0, 78.0, 83.0, 88.0 ],
-        "+${value}% Physical Damage" : [ 13.0, 18.0, 23.0, 28.0, 33.0, 38.0, 43.0, 48.0, 53.0, 58.0, 63.0, 68.0, 73.0, 78.0, 83.0, 88.0 ],
-        "MaxLevel" : 12,
-        "UltimateLevel" : 16
-      }
-    }, {
-      "name" : "Time Travel",
-      "description" : "After all, travelling between dimensions is not much different from travelling time. The Rift Walker learned how to return a few seconds to the past to regain strength.",
-      "skillIcon" : {
-        "posY" : 93,
-        "posX" : 428
-      },
-      "attributes" : {
-        "^a${value} Second(s) Recharge" : [ 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0 ],
-        "${value} Energy Cost" : [ 30.0, 45.0, 60.0, 75.0, 90.0, 105.0, 120.0, 135.0, 150.0, 165.0, 180.0, 195.0, 210.0, 225.0, 240.0, 255.0 ],
-        "-${value} Second(s) to all Recharge Times" : [ 10.0, 16.0, 22.0, 28.0, 34.0, 40.0, 46.0, 52.0, 58.0, 64.0, 70.0, 76.0 ],
-        "MaxLevel" : 8,
-        "UltimateLevel" : 12
-      }
-    } ], [ {
-      "name" : "Dimensional Chasm",
-      "description" : "Opening a portal to the void is risky but also brings the potential to inflict massive damage. The chasm is connected to multiple dimension and emits energy in a very large radius. Better stay away if a Rift Walker chooses to open a dimensional chasm.",
-      "doesNotIncludeRacialDamage" : true,
-      "skillIcon" : {
-        "posY" : 31,
-        "posX" : 128
-      },
-      "attributes" : {
-        "^a${value} Second(s) Recharge" : 120.0,
-        "${value} Energy Cost" : [ 150.0, 155.0, 160.0, 165.0, 170.0, 175.0, 180.0, 185.0, 190.0, 195.0, 200.0, 205.0, 210.0, 215.0, 220.0, 225.0 ],
-        "${value} Second Duration" : 10.0,
-        "${value}m Radius" : 10.0,
-        "${value} Cold Damage" : {
-          "min" : [ 14.0, 19.0, 24.0, 29.0, 34.0, 39.0, 44.0, 49.0, 54.0, 59.0, 64.0, 69.0, 74.0, 79.0, 84.0, 89.0 ],
-          "max" : [ 24.0, 33.0, 42.0, 51.0, 60.0, 69.0, 78.0, 87.0, 96.0, 105.0, 114.0, 123.0, 132.0, 141.0, 150.0, 159.0 ]
-        },
-        "${value} Fire Damage" : {
-          "min" : [ 20.0, 27.0, 34.0, 41.0, 48.0, 55.0, 62.0, 69.0, 76.0, 83.0, 90.0, 97.0, 104.0, 111.0, 118.0, 125.0 ]
-        },
-        "${value} Lightning Damage" : {
-          "min" : [ 8.0, 11.0, 14.0, 17.0, 20.0, 23.0, 26.0, 29.0, 32.0, 35.0, 38.0, 41.0, 44.0, 47.0, 50.0, 53.0 ],
-          "max" : [ 30.0, 41.0, 52.0, 63.0, 74.0, 85.0, 96.0, 107.0, 118.0, 129.0, 140.0, 151.0, 162.0, 173.0, 184.0, 195.0 ]
-        },
-        "${value} Physical Damage" : {
-          "min" : [ 40.0, 55.0, 70.0, 85.0, 100.0, 115.0, 130.0, 145.0, 160.0, 175.0, 190.0, 205.0, 220.0, 235.0, 250.0, 265.0 ]
-        },
-        "MaxLevel" : 12,
-        "UltimateLevel" : 16
-      }
-    }, {
-      "name" : "Immortality",
-      "description" : "Some Rift Walkers exist in multiple plains at the same time, making it impossible to kill them. In times of immediate danger, they will simply send a part of their essence to another plain to become immortal for a short time.",
-      "skillIcon" : {
-        "posY" : 31,
-        "posX" : 528
-      },
-      "attributes" : {
-        "^a${value} Second(s) Recharge" : [ 120.0, 112.0, 104.0, 96.0, 88.0, 80.0, 72.0, 64.0, 60.0, 56.0, 53.0, 50.0 ],
-        "${value} Second Duration" : 5.0,
-        "${value}% Damage Absorption" : 100,
-        "Activates when Health drops below ${value}%" : 25.0,
-        "MaxLevel" : 8,
-        "UltimateLevel" : 12
-      }
-    } ] ]
-  }, {
-    "name" : "Illusionist",
-    "masteryAttributes" : {
-      "+${value} Health" : [ 20.0, 40.0, 60.0, 80.0, 100.0, 120.0, 140.0, 160.0, 180.0, 200.0, 220.0, 240.0, 260.0, 280.0, 300.0, 320.0, 340.0, 360.0, 380.0, 400.0, 420.0, 440.0, 460.0, 480.0, 500.0, 520.0, 540.0, 560.0, 580.0, 600.0, 620.0, 640.0, 660.0, 680.0, 700.0, 720.0, 740.0, 760.0, 780.0, 800.0 ],
-      "+${value} Strength" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0, 28.0, 29.0, 30.0, 31.0, 32.0, 33.0, 34.0, 35.0, 36.0, 37.0, 38.0, 39.0, 40.0 ],
-      "+${value} Intelligence" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0, 48.0, 50.0, 52.0, 54.0, 56.0, 58.0, 60.0, 62.0, 64.0, 66.0, 68.0, 70.0, 72.0, 74.0, 76.0, 78.0, 80.0 ],
-      "+${value} Dexterity" : [ 1.5, 3.0, 4.5, 6.0, 7.5, 9.0, 10.5, 12.0, 13.5, 15.0, 16.5, 18.0, 19.5, 21.0, 22.5, 24.0, 25.5, 27.0, 28.5, 30.0, 31.5, 33.0, 34.5, 36.0, 37.5, 39.0, 40.5, 42.0, 43.5, 45.0, 46.5, 48.0, 49.5, 51.0, 52.5, 54.0, 55.5, 57.0, 58.5, 60.0 ],
-      "MaxLevel" : 40
-    },
-    "skillTiers" : [ [ {
-      "name" : "Decoy",
-      "description" : "The Illusionist creates multiple decoys of themselves to confuse and distract enemies. The decoys might be weaker than the original but they will still use their weapons to attack.",
-      "skillIcon" : {
-        "posY" : 403,
-        "posX" : 128
-      },
-      "attributes" : {
-        "^a${value} Second(s) Recharge" : 25.0,
-        "${value} Energy Cost" : [ 60.0, 64.0, 68.0, 72.0, 76.0, 80.0, 84.0, 88.0, 92.0, 96.0 ],
-        "${value} Summon Limit " : [ 2.0, 2.0, 4.0, 4.0, 4.0, 6.0, 6.0, 6.0, 8.0, 8.0 ],
-        "${value} Summoned Immediately" : [ 1.0, 1.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0, 4.0, 4.0 ],
-        "Life Time ${value} Seconds" : [ 10.0, 11.0, 11.0, 12.0, 13.0, 13.0, 14.0, 15.0, 15.0, 16.0 ],
-        "MaxLevel" : 6,
-        "UltimateLevel" : 10
-      },
-      "pet" : {
-        "attributes" : {
-          "+${value} Base Attack Speed" : [ 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1 ],
-          "+${value} Dexterity" : [ 80.0, 92.0, 104.0, 116.0, 128.0, 140.0, 152.0, 164.0, 176.0, 188.0 ],
-          "+${value} Intelligence" : [ 80.0, 92.0, 104.0, 116.0, 128.0, 140.0, 152.0, 164.0, 176.0, 188.0 ],
-          "+${value} Health" : [ 160.0, 200.0, 240.0, 280.0, 280.0, 360.0, 400.0, 440.0, 480.0, 520.0 ],
-          "+${value} Health Regeneration per second" : [ 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5 ],
-          "+${value} Energy" : [ 50.0, 55.0, 60.0, 65.0, 65.0, 75.0, 80.0, 85.0, 90.0, 95.0 ],
-          "+${value} Energy Regeneration per second" : [ 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0 ],
-          "+${value} Base Movement Speed" : [ 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2 ],
-          "+${value} Base Casting Speed" : [ 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2 ],
-          "+${value} Strength" : [ 80.0, 92.0, 104.0, 116.0, 128.0, 140.0, 152.0, 164.0, 176.0, 188.0 ],
-          " Bonus Damage on Hand Attacks" : {
-            "min" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0 ],
-            "max" : [ 5.0, 8.0, 11.0, 14.0, 17.0, 20.0, 23.0, 26.0, 29.0, 32.0 ]
-          }
-        },
-        "petSkills" : {
-          "Pet_DifficultyDamageScaling" : {
-            "name" : "Pet_DifficultyDamageScaling",
-            "attributes" : {
-              "+${value} Strength" : [ 150.0, 300.0 ],
-              "+${value} Intelligence" : [ 195.0, 390.0 ],
-              "+${value} Dexterity" : [ 100.0, 200.0 ],
-              "${value}% Damage Absorption" : [ 25.0, 50.0 ],
-              "+${value}% Bleeding Damage " : [ 30.0, 60.0 ],
-              "+${value}% Energy Leech " : [ 30.0, 60.0 ],
-              "+${value}% Instant Poison Damage" : [ 30.0, 60.0 ],
-              "+${value}% Life Leech " : [ 30.0, 60.0 ],
-              "+${value}% Pierce Damage" : [ 30.0, 60.0 ],
-              "+${value}% Poison Damage " : [ 30.0, 60.0 ],
-              "+${value}% Total Damage" : [ 30.0, 60.0 ],
-              "MaxLevel" : 2
-            }
-          },
-          "Unstable Illusions" : {
-            "name" : "Unstable Illusions",
-            "description" : "The Illusionist infuses their decoys with unstable elemental energy that unleashes in an explosion when the decoy is destroyed.",
-            "attributes" : {
-              "${value}m Radius" : 5.0,
-              "${value} Elemental Damage" : {
-                "min" : [ 18.0, 27.0, 36.0, 45.0, 54.0, 63.0, 72.0, 81.0, 90.0, 99.0, 108.0, 117.0, 126.0, 135.0, 144.0, 153.0 ],
-                "max" : [ 26.0, 39.0, 52.0, 65.0, 78.0, 91.0, 104.0, 117.0, 130.0, 143.0, 156.0, 169.0, 182.0, 195.0, 208.0, 221.0 ]
-              },
-              "${value} Projectile(s)" : 1,
-              "MaxLevel" : 12,
-              "UltimateLevel" : 16
-            }
-          },
-          "decoy_petskill_aura" : {
-            "name" : "decoy_petskill_aura",
-            "attributes" : {
-              "MaxLevel" : 20,
-              "UltimateLevel" : 20
-            }
-          }
-        },
-        "petSkillLevels" : {
-          "decoy_petskill_aura" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ]
-        }
-      }
-    }, {
-      "name" : "Shockwave",
-      "description" : "The Illusionist emits a shockwave from their fingertips that strikes foes as if it was made of solid matter.",
-      "skillIcon" : {
-        "posY" : 403,
-        "posX" : 228
-      },
-      "attributes" : {
-        "^a${value} Second(s) Recharge" : 8.0,
-        "${value} Energy Cost" : [ 40.0, 42.0, 44.0, 46.0, 48.0, 50.0, 52.0, 54.0, 56.0, 58.0, 60.0, 62.0, 64.0, 66.0, 68.0, 70.0 ],
-        "${value} Physical Damage" : {
-          "min" : [ 14.0, 20.0, 26.0, 32.0, 38.0, 44.0, 50.0, 56.0, 62.0, 68.0, 74.0, 80.0, 86.0, 92.0, 98.0, 104.0 ]
-        },
-        "MaxLevel" : 12,
-        "UltimateLevel" : 16
-      }
-    }, {
-      "name" : "Mind over Matter",
-      "description" : "The Illusionist mastered the art of controlling strengthening the mind and body of allies with beneficial illusions.",
-      "skillIcon" : {
-        "posY" : 403,
-        "posX" : 328
-      },
-      "attributes" : {
-        "${value} Energy Cost" : [ 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0, 70.0, 74.0 ],
-        "${value} Second Duration" : 300.0,
-        "+${value}% Strength" : [ 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0 ],
-        "${value}% Skill Disruption Protection" : [ 12.0, 20.0, 28.0, 36.0, 44.0, 52.0, 60.0, 68.0, 76.0, 84.0, 92.0, 100.0 ],
-        "+${value}% Casting Speed" : [ 14.0, 22.0, 30.0, 38.0, 46.0, 54.0, 62.0, 70.0, 78.0, 86.0, 94.0, 102.0 ],
-        "MaxLevel" : 8,
-        "UltimateLevel" : 12
-      }
-    }, {
-      "name" : "Mind Blast",
-      "description" : "The Illusionist sends out a concentrated thought to attack a foes mind.",
-      "skillIcon" : {
-        "posY" : 403,
-        "posX" : 528
-      },
-      "attributes" : {
-        "^a${value} Second(s) Recharge" : 5,
-        "${value} Energy Cost" : [ 25.0, 26.0, 27.0, 28.0, 29.0, 30.0, 31.0, 32.0, 33.0, 34.0, 35.0, 36.0, 37.0, 38.0, 39.0, 40.0 ],
-        "${value} Physical Damage" : {
-          "min" : [ 40.0, 65.0, 90.0, 115.0, 140.0, 165.0, 190.0, 215.0, 240.0, 265.0, 290.0, 315.0, 340.0, 365.0, 390.0, 415.0 ]
-        },
-        "MaxLevel" : 12,
-        "UltimateLevel" : 16
-      }
-    } ], [ {
-      "name" : "Unstable Illusions",
-      "description" : "The Illusionist infuses their decoys with unstable elemental energy that unleashes in an explosion when the decoy is destroyed.",
-      "parent" : [ "Decoy" ],
-      "skillIcon" : {
-        "posY" : 341,
-        "posX" : 128
-      },
-      "attributes" : {
-        "${value}m Radius" : 5.0,
-        "${value} Elemental Damage" : {
-          "min" : [ 18.0, 27.0, 36.0, 45.0, 54.0, 63.0, 72.0, 81.0, 90.0, 99.0, 108.0, 117.0, 126.0, 135.0, 144.0, 153.0 ],
-          "max" : [ 26.0, 39.0, 52.0, 65.0, 78.0, 91.0, 104.0, 117.0, 130.0, 143.0, 156.0, 169.0, 182.0, 195.0, 208.0, 221.0 ]
-        },
-        "${value} Projectile(s)" : 1,
-        "MaxLevel" : 12,
-        "UltimateLevel" : 16
-      }
-    }, {
-      "name" : "Teleport",
-      "description" : "The Illusionist teleports behind an enemy before sending them to sleep with a gentle touch.",
-      "skillIcon" : {
-        "posY" : 341,
-        "posX" : 328
-      },
-      "attributes" : {
-        "^a${value} Second(s) Recharge" : [ 20.0, 19.0, 18.0, 17.0, 16.0, 15.0, 14.0, 13.0, 12.0, 11.0 ],
-        "${value} Energy Cost" : 50.0,
-        "${value} second(s) of Sleep" : {
-          "min" : [ 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ],
-          "max" : [ 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0 ]
-        },
-        "MaxLevel" : 6,
-        "UltimateLevel" : 10
-      }
-    }, {
-      "name" : "Confusing Mist",
-      "description" : "A colourful mist is conjured in a large area. Creatures cought in this mist might see strange images distracting them from any target they might persue at the moment.",
-      "doesNotIncludeRacialDamage" : true,
-      "skillIcon" : {
-        "posY" : 341,
-        "posX" : 628
-      },
-      "attributes" : {
-        "^a${value} Second(s) Recharge" : 12.0,
-        "${value} Energy Cost" : [ 54.0, 57.0, 60.0, 64.0, 67.0, 70.0, 74.0, 77.0, 80.0, 84.0, 87.0, 90.0 ],
-        "${value} Second Duration" : 6.0,
-        "${value}m Radius" : 8.0,
-        "${chance}% Chance of ${value}% Chance of Impaired Aim over ${duration} Second(s)" : {
-          "chance" : [ 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0 ],
-          "value" : {
-            "min" : [ 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0 ],
-            "max" : [ 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 64.0 ]
-          },
-          "duration" : {
-            "min" : [ 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0, 2.1 ]
-          }
-        },
-        "${chance}% Chance of ${value}% Chance to Fumble attacks over ${duration} Second(s)" : {
-          "chance" : [ 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0 ],
-          "value" : {
-            "min" : [ 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0 ],
-            "max" : [ 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 64.0 ]
-          },
-          "duration" : {
-            "min" : [ 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0, 2.1 ]
-          }
-        },
-        "MaxLevel" : 8,
-        "UltimateLevel" : 12
-      }
-    } ], [ {
-      "name" : "Mind Destruction",
-      "description" : "The mind blast is strengthened further by unleashing elemental energy inside an enemy's head.",
-      "parent" : [ "Mind Blast" ],
-      "skillIcon" : {
-        "posY" : 279,
-        "posX" : 528
-      },
-      "attributes" : {
-        "${value} Elemental Damage" : {
-          "min" : [ 40.0, 60.0, 80.0, 100.0, 120.0, 140.0, 160.0, 180.0, 200.0, 220.0, 240.0, 260.0, 280.0, 300.0 ],
-          "max" : [ 60.0, 90.0, 120.0, 150.0, 180.0, 210.0, 240.0, 270.0, 300.0, 330.0, 360.0, 390.0, 420.0, 450.0 ]
-        },
-        "MaxLevel" : 10,
-        "UltimateLevel" : 14
-      }
-    }, {
-      "name" : "Hyperfocus",
-      "description" : "By focusing the concentration for a short time, the Illusionist is capable to greatly enhance their mental capacity.",
-      "skillIcon" : {
-        "posY" : 279,
-        "posX" : 328
-      },
-      "attributes" : {
-        "^a${value} Second(s) Recharge" : 60.0,
-        "${value} Energy Cost" : 100.0,
-        "${value} Second Duration" : 10.0,
-        "+${value}% Intelligence" : [ 20.0, 28.0, 36.0, 44.0, 52.0, 60.0, 68.0, 76.0, 84.0, 92.0, 100.0, 108.0, 116.0, 124.0 ],
-        "+${value}% Energy Regeneration" : [ 100.0, 150.0, 200.0, 250.0, 300.0, 350.0, 400.0, 450.0, 500.0, 550.0, 600.0, 650.0, 700.0, 750.0 ],
-        "MaxLevel" : 10,
-        "UltimateLevel" : 14
-      }
-    }, {
-      "name" : "Mental Blockade",
-      "description" : "A wall of purple, slow moving gas is conjured in front of the Illusionist. Creatures the touch the illusion feel like they have a solid wall right in front of their face.",
-      "skillIcon" : {
-        "posY" : 279,
-        "posX" : 428
-      },
-      "attributes" : {
-        "^a${value} Second(s) Recharge" : 8.0,
-        "${value} Energy Cost" : [ 50.0, 52.0, 54.0, 56.0, 58.0, 60.0, 62.0, 64.0, 66.0, 68.0, 70.0, 72.0 ],
-        "${value} second(s) of Immobilization" : {
-          "min" : [ 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5 ]
-        },
-        "MaxLevel" : 6,
-        "UltimateLevel" : 10
-      }
-    } ], [ {
-      "name" : "Stunning Magic",
-      "description" : "The shockwave hits enemies with great force, making them unable to act for a brief moment.",
-      "parent" : [ "Shockwave" ],
-      "skillIcon" : {
-        "posY" : 217,
-        "posX" : 228
-      },
-      "attributes" : {
-        "${chance}% Chance of ${value} second(s) of Confusion" : {
-          "chance" : [ 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0 ],
-          "value" : {
-            "min" : [ 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5 ],
-            "max" : [ 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ]
-          }
-        },
-        "${value} second(s) of Stun" : {
-          "min" : [ 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.3, 3.6, 4.0, 4.5 ]
-        },
-        "MaxLevel" : 6,
-        "UltimateLevel" : 10
-      }
-    }, {
-      "name" : "Chromatic Mist",
-      "description" : "The illusions in the mist are charged with elemental magic and might unleash a strike of fire, ice or lightning at enemies within the mist.",
-      "parent" : [ "Confusing Mist" ],
-      "skillIcon" : {
-        "posY" : 217,
-        "posX" : 628
-      },
-      "attributes" : {
-        "MaxLevel" : 12,
-        "UltimateLevel" : 16,
-        "${chance}% Chance for one of the following:" : {
-          "chance" : [ 40.0, 42.0, 44.0, 46.0, 48.0, 50.0, 52.0, 54.0, 56.0, 58.0, 60.0, 62.0, 64.0, 66.0, 68.0, 70.0 ],
-          "values" : {
-            "${chance}% Chance of ${value} Cold Damage" : {
-              "chance" : 33.33,
-              "value" : {
-                "min" : [ 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0, 48.0, 50.0, 52.0, 54.0 ],
-                "max" : [ 36.0, 44.0, 52.0, 60.0, 68.0, 76.0, 84.0, 92.0, 100.0, 108.0, 116.0, 124.0, 132.0, 140.0, 148.0, 156.0 ]
-              }
-            },
-            "${chance}% Chance of ${value} Fire Damage" : {
-              "chance" : 33.33,
-              "value" : {
-                "min" : [ 30.0, 36.0, 42.0, 48.0, 54.0, 60.0, 66.0, 72.0, 78.0, 84.0, 90.0, 96.0, 102.0, 108.0, 114.0, 120.0 ]
-              }
-            },
-            "${chance}% Chance of ${value} Lightning Damage" : {
-              "chance" : 33.33,
-              "value" : {
-                "min" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-                "max" : [ 60.0, 72.0, 84.0, 96.0, 108.0, 120.0, 132.0, 144.0, 156.0, 168.0, 180.0, 192.0, 204.0, 216.0, 228.0, 240.0 ]
-              }
-            }
-          }
-        }
-      }
-    }, {
-      "name" : "Painful Thoughts",
-      "description" : "Creatures touched by the wall actually believe they just run into an obstacle. This thought is strong enough to actually harm their bodies.",
-      "parent" : [ "Mental Blockade" ],
-      "skillIcon" : {
-        "posY" : 217,
-        "posX" : 428
-      },
-      "attributes" : {
-        "${value} Second Duration" : [ 2.0, 2.5, 3.0, 3.5, 4.0, 5.0, 5.5, 6.0, 6.5, 7.0 ],
-        "${value} Elemental Damage" : {
-          "min" : [ 10.0, 13.0, 16.0, 19.0, 22.0, 25.0, 28.0, 31.0, 34.0, 37.0, 40.0, 43.0 ]
-        },
-        "${value} Physical Damage" : {
-          "min" : [ 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0 ]
-        },
-        "MaxLevel" : 8,
-        "UltimateLevel" : 12
-      }
-    } ], [ {
-      "name" : "Colorful Illusion",
-      "description" : "The shockwave is infused with elemental magic that causes even greater damage.",
-      "parent" : [ "Shockwave" ],
-      "skillIcon" : {
-        "posY" : 155,
-        "posX" : 228
-      },
-      "attributes" : {
-        "${value} Elemental Damage" : {
-          "min" : [ 20.0, 35.0, 50.0, 65.0, 80.0, 95.0, 110.0, 125.0, 140.0, 155.0, 170.0, 185.0 ]
-        },
-        "+${value}% Total Damage" : [ 20.0, 28.0, 36.0, 44.0, 52.0, 60.0, 68.0, 76.0, 84.0, 92.0, 100.0, 108.0 ],
-        "MaxLevel" : 8,
-        "UltimateLevel" : 12
-      }
-    }, {
-      "name" : "Eternal Mist",
-      "description" : "The mist persists for a much longer time and the illusions within are enhanced with even greater damaging power.",
-      "parent" : [ "Confusing Mist" ],
-      "skillIcon" : {
-        "posY" : 155,
-        "posX" : 628
-      },
-      "attributes" : {
-        "${value} Second Duration" : [ 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0 ],
-        "+${value}% Elemental Damages" : [ 20.0, 28.0, 36.0, 44.0, 52.0, 60.0, 68.0, 76.0, 84.0, 92.0, 100.0, 108.0 ],
-        "MaxLevel" : 8,
-        "UltimateLevel" : 12
-      }
-    }, {
-      "name" : "Clone Self",
-      "description" : "The Illusionist creates an actual copy of themselves. It might just be an illusion, but it is impossible to tell the difference from the original. The illusion even imitates the spells of their creator.",
-      "skillIcon" : {
-        "posY" : 155,
-        "posX" : 328
-      },
-      "attributes" : {
-        "^a${value} Second(s) Recharge" : 120.0,
-        "${value} Energy Cost" : [ 100.0, 105.0, 110.0, 115.0, 120.0, 125.0, 130.0, 135.0, 140.0, 145.0, 150.0, 155.0, 160.0, 165.0, 170.0, 175.0 ],
-        "${value} Summon Limit " : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0, 3.0 ],
-        "${value} Summoned Immediately" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0, 3.0 ],
-        "Life Time ${value} Seconds" : [ 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0, 28.0, 29.0, 30.0 ],
-        "MaxLevel" : 12,
-        "UltimateLevel" : 16
-      },
-      "pet" : {
-        "attributes" : {
-          "+${value} Base Attack Speed" : [ 1.2 ],
-          "+${value} Dexterity" : [ 400.0 ],
-          "+${value} Intelligence" : [ 650.0 ],
-          "+${value} Health" : [ 1500.0 ],
-          "+${value} Health Regeneration per second" : [ 10.0 ],
-          "+${value} Energy" : [ 750.0 ],
-          "+${value} Energy Regeneration per second" : [ 15.0 ],
-          "+${value} Base Movement Speed" : [ 1.2 ],
-          "+${value} Base Casting Speed" : [ 1.5 ],
-          "+${value} Strength" : [ 500.0 ],
-          " Bonus Damage on Hand Attacks" : {
-            "min" : [ 384.0 ],
-            "max" : [ 480.0 ]
-          }
-        },
-        "petSkills" : {
-          "clone_petskill_aura" : {
-            "name" : "clone_petskill_aura",
-            "attributes" : {
-              "MaxLevel" : 20,
-              "UltimateLevel" : 20
-            }
-          }
-        },
-        "petSkillLevels" : {
-          "clone_petskill_aura" : [ 1 ]
-        }
-      }
-    }, {
-      "name" : "Mind Control",
-      "description" : "By creating false memories and feelings in the mind of an enemy, the Illusionist tricks them to believe they are allies. Eventually, the creature will realize it has been charmed and turn against the mage who tricked them.",
-      "doesNotIncludeRacialDamage" : true,
-      "skillIcon" : {
-        "posY" : 155,
-        "posX" : 528
-      },
-      "attributes" : {
-        "^a${value} Second(s) Recharge" : 120.0,
-        "${value} Energy Cost" : [ 70.0, 72.0, 74.0, 76.0, 78.0, 80.0, 82.0, 84.0, 86.0, 88.0, 90.0, 92.0, 94.0, 96.0, 98.0, 100.0 ],
-        "${value} second(s) of Mind Control" : {
-          "min" : [ 30.0, 45.0, 60.0, 75.0, 90.0, 105.0, 120.0, 135.0, 150.0, 165.0, 180.0, 195.0, 210.0, 225.0, 240.0, 255.0, 270.0, 285.0, 300.0, 315.0 ]
-        },
-        "MaxLevel" : 16,
-        "UltimateLevel" : 20
-      }
-    } ], [ {
-      "name" : "Army of Mirages",
-      "description" : "Mastering the art of illusions allows the Illusionist to create countless copies of themselves.",
-      "parent" : [ "Decoy" ],
-      "skillIcon" : {
-        "posY" : 93,
-        "posX" : 128
-      },
-      "attributes" : {
-        "^a${value} Second(s) Recharge" : [ -3.0, -5.0, -7.0, -9.0, -11.0, -13.0, -15.0, -17.0, -19.0, -21.0 ],
-        "Life Time ${value} Seconds" : [ 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0 ],
-        "MaxLevel" : 6,
-        "UltimateLevel" : 10
-      }
-    }, {
-      "name" : "Mind Slave",
-      "description" : "The mind bending magic is much more subtle, making it much harder for the victim to realize they are manipulated by illusions.",
-      "parent" : [ "Mind Control" ],
-      "skillIcon" : {
-        "posY" : 93,
-        "posX" : 528
-      },
-      "attributes" : {
-        "^a${value} Second(s) Recharge" : [ -10.0, -20.0, -30.0, -40.0, -50.0, -60.0, -65.0, -70.0, -75.0, -80.0 ],
-        "MaxLevel" : 6,
-        "UltimateLevel" : 10
-      }
-    }, {
-      "name" : "Karma",
-      "description" : "Hitting an Illusionist is never a good idea. They might learn to store elemental energy in their body that unleashes at every foe nearby when the Illusionist is being hurt.",
-      "skillIcon" : {
-        "posY" : 93,
-        "posX" : 428
-      },
-      "attributes" : {
-        "^a${value} Second(s) Recharge" : 12.0,
-        "${value}% Chance of Activating" : 30.0,
-        "${value} Energy Reserved" : 100.0,
-        "${value}m Radius" : 5.0,
-        "${value} Elemental Damage" : {
-          "min" : [ 50.0, 64.0, 78.0, 92.0, 106.0, 120.0, 134.0, 148.0, 162.0, 176.0, 190.0, 204.0, 218.0, 232.0, 246.0, 260.0 ]
-        },
-        "${value} second(s) of Petrify" : {
-          "min" : [ 1.5, 1.6, 1.7, 1.8, 1.9, 2.0, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3.0 ]
-        },
-        "MaxLevel" : 12,
-        "UltimateLevel" : 16
-      }
-    } ], [ {
-      "name" : "Master of Clones",
-      "description" : "By further refining the spell, the Illusionist is capable to keep the illusion of themselves alive for much longer.",
-      "parent" : [ "Clone Self" ],
-      "skillIcon" : {
-        "posY" : 31,
-        "posX" : 328
-      },
-      "attributes" : {
-        "^a${value} Second(s) Recharge" : [ -10.0, -17.0, -24.0, -31.0, -38.0, -45.0, -52.0, -59.0, -66.0, -73.0, -80.0, -87.0 ],
-        "Life Time ${value} Seconds" : [ 5.0, 9.0, 13.0, 17.0, 21.0, 25.0, 29.0, 33.0, 37.0, 41.0, 45.0, 49.0 ],
-        "MaxLevel" : 8,
-        "UltimateLevel" : 12
-      }
-    }, {
-      "name" : "Mental Blade",
-      "description" : "Pure mental energy is channeled into a weapon for a short time, even morphing parts of the physical components into pure energy.",
-      "skillIcon" : {
-        "posY" : 31,
-        "posX" : 428
-      },
-      "attributes" : {
-        "^a${value} Second(s) Recharge" : 150.0,
-        "${value} Energy Cost" : [ 70.0, 72.0, 74.0, 76.0, 78.0, 80.0, 82.0, 84.0, 86.0, 88.0, 90.0, 92.0, 94.0, 96.0, 98.0, 100.0 ],
-        "${value} Second Duration" : 20.0,
-        "${value} Elemental Damage" : {
-          "min" : [ 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0, 90.0, 95.0, 100.0, 105.0 ],
-          "max" : [ 50.0, 57.0, 64.0, 71.0, 78.0, 85.0, 92.0, 99.0, 106.0, 113.0, 120.0, 127.0, 134.0, 141.0, 148.0, 155.0 ]
-        },
-        "${value}% Weapon Base Damage becomes Elemental" : [ 33.0, 36.0, 39.0, 42.0, 45.0, 48.0, 51.0, 54.0, 57.0, 60.0, 63.0, 66.0, 69.0, 72.0, 75.0, 78.0 ],
-        "MaxLevel" : 12,
-        "UltimateLevel" : 16
       }
     } ] ]
   }, {
@@ -5462,6 +4466,991 @@
         "petSkillLevels" : {
           "Basic Attack" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ]
         }
+      }
+    } ] ]
+  }, {
+    "name" : "Rift Walker",
+    "masteryAttributes" : {
+      "+${value} Health" : [ 35.0, 70.0, 105.0, 140.0, 175.0, 210.0, 245.0, 280.0, 315.0, 350.0, 385.0, 420.0, 455.0, 490.0, 525.0, 560.0, 595.0, 630.0, 665.0, 700.0, 735.0, 770.0, 805.0, 840.0, 875.0, 910.0, 945.0, 980.0, 1015.0, 1050.0, 1085.0, 1120.0, 1155.0, 1190.0, 1225.0, 1260.0, 1295.0, 1330.0, 1365.0, 1400.0 ],
+      "+${value} Energy" : [ 8.0, 16.0, 24.0, 32.0, 40.0, 48.0, 56.0, 64.0, 72.0, 80.0, 88.0, 96.0, 104.0, 112.0, 120.0, 128.0, 136.0, 144.0, 152.0, 160.0, 168.0, 176.0, 184.0, 192.0, 200.0, 208.0, 216.0, 224.0, 232.0, 240.0, 248.0, 256.0, 264.0, 272.0, 280.0, 288.0, 296.0, 304.0, 312.0, 320.0 ],
+      "+${value} Strength" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0, 48.0, 50.0, 52.0, 54.0, 56.0, 58.0, 60.0, 62.0, 64.0, 66.0, 68.0, 70.0, 72.0, 74.0, 76.0, 78.0, 80.0 ],
+      "+${value} Intelligence" : [ 1.75, 3.5, 5.25, 7.0, 8.75, 10.5, 12.25, 14.0, 15.75, 17.5, 19.25, 21.0, 22.75, 24.5, 26.25, 28.0, 29.75, 31.5, 33.25, 35.0, 36.75, 38.5, 40.25, 42.0, 43.75, 45.5, 47.25, 49.0, 50.75, 52.5, 54.25, 56.0, 57.75, 59.5, 61.25, 63.0, 64.75, 66.5, 68.25, 70.0 ],
+      "MaxLevel" : 40
+    },
+    "skillTiers" : [ [ {
+      "name" : "Rifts",
+      "description" : "The Rift Walker creates six rifts around them that are connected to other dimensions. However, they are too unstable to be used for traveling. Any body part of a creature that touches one of the rifts is cut of and transferred to another plain.",
+      "projectileUsesAllDamage" : true,
+      "skillIcon" : {
+        "posY" : 403,
+        "posX" : 228
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : 10.0,
+        "${value} Energy Cost" : [ 60.0, 62.0, 64.0, 66.0, 68.0, 70.0, 72.0, 74.0, 76.0, 78.0, 80.0, 82.0, 84.0, 86.0 ],
+        "${value} Second Duration" : [ 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0 ],
+        "${value}m Radius" : 2.0,
+        "${value} Physical Damage" : {
+          "min" : [ 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0, 51.0 ]
+        },
+        "MaxLevel" : 12,
+        "UltimateLevel" : 16
+      }
+    }, {
+      "name" : "Jump!",
+      "description" : "The Rift Walker connects their body to the plain of storms, allowing them to rush through space as if they were ethereal.",
+      "skillIcon" : {
+        "posY" : 403,
+        "posX" : 428
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : 2.0,
+        "${value} Energy Cost" : 5.0,
+        "Launches ${value} Projectile(s)" : 1,
+        "${value} Physical Damage" : {
+          "min" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0 ]
+        },
+        "+${value}% Movement Speed" : 500.0,
+        "+${value}% Total Damage" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0 ],
+        "MaxLevel" : 12,
+        "UltimateLevel" : 16
+      }
+    }, {
+      "name" : "Interdimensional Weapons",
+      "description" : "The Rift Walker reforges their weapons in different dimensions. Allowing them to easily carry the weight of one weapon in each hand and also enhancing their destructive power with elemental energy.",
+      "skillIcon" : {
+        "posY" : 403,
+        "posX" : 628
+      },
+      "attributes" : {
+        "${value}% Chance to be Used" : [ 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0 ],
+        "Launches ${value} Projectile(s)" : 1,
+        "MaxLevel" : 6,
+        "UltimateLevel" : 10,
+        "requiredWeapons" : "Axe, Mace, Thrown Weapon, Sword, Dual Wield Only",
+        "${chance}% Chance for one of the following:" : {
+          "chance" : 100.0,
+          "values" : {
+            "${chance}% Chance of ${value} Cold Damage" : {
+              "chance" : 33.33,
+              "value" : {
+                "min" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0 ],
+                "max" : [ 4.0, 8.0, 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0 ]
+              }
+            },
+            "${chance}% Chance of ${value} Fire Damage" : {
+              "chance" : 33.33,
+              "value" : {
+                "min" : [ 3.0, 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0 ]
+              }
+            },
+            "${chance}% Chance of ${value} Lightning Damage" : {
+              "chance" : 33.33,
+              "value" : {
+                "min" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0 ],
+                "max" : [ 5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0 ]
+              }
+            }
+          }
+        }
+      }
+    } ], [ {
+      "name" : "Void Slash",
+      "description" : "A breach opens from the blade of the Rift Walker when they strike, causing interdimensional energy to flow out and damage anything in its path.",
+      "skillIcon" : {
+        "posY" : 341,
+        "posX" : 128
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : 6.0,
+        "${value} Energy Cost" : [ 40.0, 42.0, 44.0, 46.0, 48.0, 50.0, 52.0, 54.0, 56.0, 58.0, 60.0, 62.0, 64.0, 66.0, 68.0, 70.0 ],
+        "${value} Physical Damage" : {
+          "min" : [ 12.0, 24.0, 36.0, 48.0, 60.0, 72.0, 84.0, 96.0, 108.0, 120.0, 132.0, 144.0, 156.0, 168.0, 180.0, 192.0 ]
+        },
+        "MaxLevel" : 12,
+        "UltimateLevel" : 16
+      }
+    }, {
+      "name" : "Anomaly",
+      "description" : "The body of the Rift Walker is infused with dimensional energy. Disrupting its stability by hurting the Rift Walker, might cause a portal to open spontaneously, unleashing destructive energy in a radius around them.",
+      "skillIcon" : {
+        "posY" : 341,
+        "posX" : 328
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : 8.0,
+        "${value}% Chance of Activating" : 25.0,
+        "${value} Energy Reserved" : 100.0,
+        "${value}m Radius" : 3.0,
+        "${value} Physical Damage" : {
+          "min" : [ 15.0, 30.0, 45.0, 60.0, 75.0, 90.0, 105.0, 120.0, 135.0, 150.0, 165.0, 180.0, 195.0, 210.0 ]
+        },
+        "MaxLevel" : 10,
+        "UltimateLevel" : 14
+      }
+    }, {
+      "name" : "Storm Dimension",
+      "description" : "The Rift Walker has an affinity to the storm dimension, allowing them to move faster and enhance their lightning spells.",
+      "doesNotIncludeRacialDamage" : true,
+      "exclusiveSkill" : true,
+      "skillIcon" : {
+        "posY" : 341,
+        "posX" : 528
+      },
+      "attributes" : {
+        "${value} Active Energy Cost per Second" : 1.0,
+        "${value}m Radius" : 12.0,
+        "+${value}% Electrical Burn Damage " : [ 20.0, 26.0, 32.0, 38.0, 44.0, 50.0, 56.0, 62.0, 68.0, 74.0, 80.0, 86.0 ],
+        "+${value}% Lightning Damage" : [ 20.0, 26.0, 32.0, 38.0, 44.0, 50.0, 56.0, 62.0, 68.0, 74.0, 80.0, 86.0 ],
+        "+${value}% Movement Speed" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0 ],
+        "+${value}% Physical Damage" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0 ],
+        "MaxLevel" : 8,
+        "UltimateLevel" : 12
+      }
+    } ], [ {
+      "name" : "Cold Rifts",
+      "description" : "The rifts are enhanced with an unstable connection to the dimension of frost, causing them to emit ice cold air.",
+      "parent" : [ "Rifts" ],
+      "skillIcon" : {
+        "posY" : 279,
+        "posX" : 228
+      },
+      "attributes" : {
+        "${value} Cold Damage" : {
+          "min" : [ 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0 ]
+        },
+        "${value} Frostburn Damage over ${duration} Second(s)" : {
+          "value" : {
+            "min" : [ 5.0, 8.0, 11.0, 14.0, 17.0, 20.0, 23.0, 26.0, 29.0, 32.0 ]
+          },
+          "duration" : {
+            "min" : 3.0
+          }
+        },
+        "MaxLevel" : 6,
+        "UltimateLevel" : 10
+      }
+    }, {
+      "name" : "Explosive Shift",
+      "description" : "When fully reappearing in reality, an explosion of storm energy is unleashed from the Rift Walker's weapon.",
+      "parent" : [ "Jump!" ],
+      "skillIcon" : {
+        "posY" : 279,
+        "posX" : 428
+      },
+      "attributes" : {
+        "${value} Arc of Attack" : [ 90.0, 98.0, 106.0, 114.0, 122.0, 130.0, 138.0, 146.0, 154.0, 162.0, 170.0, 178.0, 186.0, 194.0, 202.0, 210.0 ],
+        "${value} Electrical Burn Damage over ${duration} Second(s)" : {
+          "value" : {
+            "min" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0 ],
+            "max" : [ 8.0, 11.0, 14.0, 17.0, 20.0, 23.0, 26.0, 29.0, 32.0, 35.0, 38.0, 41.0, 44.0, 47.0, 50.0, 53.0 ]
+          },
+          "duration" : {
+            "min" : 3
+          }
+        },
+        "${value} Lightning Damage" : {
+          "min" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0 ],
+          "max" : [ 7.0, 10.0, 13.0, 16.0, 19.0, 22.0, 25.0, 28.0, 31.0, 34.0, 37.0, 40.0, 43.0, 46.0, 49.0, 52.0 ]
+        },
+        "MaxLevel" : 12,
+        "UltimateLevel" : 16
+      }
+    }, {
+      "name" : "Teleport Attack",
+      "description" : "The Rift Walker vanishes to another dimension, preparing an ambush. When they reappear, they immediately strike the weak spot of an enemy with devastating precision.",
+      "skillIcon" : {
+        "posY" : 279,
+        "posX" : 628
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : 24.0,
+        "${value} Energy Cost" : [ 52.0, 54.0, 56.0, 58.0, 60.0, 62.0, 64.0, 66.0, 68.0, 70.0, 72.0, 74.0, 76.0, 78.0, 80.0, 82.0 ],
+        "Launches ${value} Projectile(s)" : 1,
+        "+${value}% Total Damage" : [ 200.0, 220.0, 240.0, 260.0, 280.0, 300.0, 320.0, 340.0, 360.0, 380.0, 400.0, 420.0, 440.0, 460.0, 480.0, 500.0 ],
+        "MaxLevel" : 12,
+        "UltimateLevel" : 16
+      }
+    } ], [ {
+      "name" : "Burning Rifts",
+      "description" : "The plain of fire is connected to the rifts. This connection causes the rifts to burn anything they touch.",
+      "parent" : [ "Rifts" ],
+      "skillIcon" : {
+        "posY" : 217,
+        "posX" : 228
+      },
+      "attributes" : {
+        "${value} Burn Damage over ${duration} Second(s)" : {
+          "value" : {
+            "min" : [ 6.0, 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0 ]
+          },
+          "duration" : {
+            "min" : 3.0
+          }
+        },
+        "${value} Fire Damage" : {
+          "min" : [ 7.0, 11.0, 15.0, 19.0, 23.0, 27.0, 31.0, 35.0, 39.0, 43.0, 47.0, 51.0, 55.0, 59.0, 63.0, 67.0 ]
+        },
+        "MaxLevel" : 12,
+        "UltimateLevel" : 16
+      }
+    }, {
+      "name" : "Vacuum",
+      "description" : "The breach absorbs any air nearby, making it impossible for any spell caster to speak magical words.",
+      "parent" : [ "Void Slash" ],
+      "skillIcon" : {
+        "posY" : 217,
+        "posX" : 128
+      },
+      "attributes" : {
+        "${value} second(s) of Skill Disruption" : {
+          "min" : [ 1.0, 1.4, 1.8, 2.2, 2.6, 3.0, 3.2, 3.4, 3.7, 4.0 ]
+        },
+        "+${value}% Total Damage" : [ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0 ],
+        "MaxLevel" : 6,
+        "UltimateLevel" : 10
+      }
+    }, {
+      "name" : "Heat Aberration",
+      "description" : "The anomaly has an affinity to the dimension of fire, causing the portal to emit high heat that melts away armor.",
+      "parent" : [ "Anomaly" ],
+      "skillIcon" : {
+        "posY" : 217,
+        "posX" : 328
+      },
+      "attributes" : {
+        "${value} Fire Damage" : {
+          "min" : [ 15.0, 30.0, 45.0, 60.0, 75.0, 90.0, 105.0, 120.0, 135.0, 150.0, 165.0, 180.0, 195.0, 210.0 ]
+        },
+        "${value}% Reduced Resistances over ${duration} Second(s)" : {
+          "value" : {
+            "min" : [ 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0 ]
+          },
+          "duration" : {
+            "min" : 3.0
+          }
+        },
+        "MaxLevel" : 10,
+        "UltimateLevel" : 14
+      }
+    }, {
+      "name" : "Frost Dimension",
+      "description" : "The Rift Walker has an affinity to the frost dimension. Their armor is coated in ice crystals which greatly enhances its defensive capabilities and strengthens the Rift Walker's frost spells.",
+      "doesNotIncludeRacialDamage" : true,
+      "exclusiveSkill" : true,
+      "skillIcon" : {
+        "posY" : 217,
+        "posX" : 528
+      },
+      "attributes" : {
+        "${value} Active Energy Cost per Second" : 1.0,
+        "${value}m Radius" : 12.0,
+        "${value} Armor" : [ 10.0, 16.0, 22.0, 28.0, 34.0, 40.0, 46.0, 52.0, 58.0, 64.0, 70.0, 76.0 ],
+        "+${value}% Armor Protection" : [ 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0 ],
+        "+${value}% Cold Damage" : [ 20.0, 26.0, 32.0, 38.0, 44.0, 50.0, 56.0, 62.0, 68.0, 74.0, 80.0, 86.0 ],
+        "+${value}% Frostburn Damage " : [ 20.0, 26.0, 32.0, 38.0, 44.0, 50.0, 56.0, 62.0, 68.0, 74.0, 80.0, 86.0 ],
+        "+${value}% Physical Damage" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0 ],
+        "MaxLevel" : 8,
+        "UltimateLevel" : 12
+      }
+    } ], [ {
+      "name" : "IceBreach",
+      "description" : "The breach is connected to the dimension of ice, causing frost to emmit from the breach that freezes flesh in an instant.",
+      "parent" : [ "Void Slash" ],
+      "skillIcon" : {
+        "posY" : 155,
+        "posX" : 128
+      },
+      "attributes" : {
+        "${value} Cold Damage" : {
+          "min" : [ 45.0, 70.0, 95.0, 120.0, 145.0, 170.0, 195.0, 220.0, 245.0, 270.0, 295.0, 320.0, 345.0, 370.0, 395.0, 420.0 ]
+        },
+        "${value}% Slowed over ${duration} Second(s)" : {
+          "value" : {
+            "min" : [ 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0 ]
+          },
+          "duration" : {
+            "min" : 3
+          }
+        },
+        "MaxLevel" : 12,
+        "UltimateLevel" : 16
+      }
+    }, {
+      "name" : "Portal to Hell",
+      "description" : "Even the plain of eternal punishment was part of the Rift Walker's expeditions to other dimensions. They open a portal to hell that unleashes fire at the world of the living.",
+      "skillIcon" : {
+        "posY" : 155,
+        "posX" : 228
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : 20.0,
+        "${value} Energy Cost" : [ 80.0, 83.0, 86.0, 89.0, 92.0, 95.0, 98.0, 101.0, 104.0, 107.0, 110.0, 113.0, 116.0, 119.0, 122.0, 125.0 ],
+        "${value} Second Duration" : 10.0,
+        "${value}m Radius" : 3.0,
+        "${value} Fire Damage" : {
+          "min" : [ 27.0, 34.0, 41.0, 48.0, 55.0, 62.0, 69.0, 76.0, 83.0, 90.0, 97.0, 104.0, 111.0, 118.0, 125.0, 132.0 ]
+        },
+        "${value} Fragments" : {
+          "min" : [ 2.0, 3.0, 3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0 ],
+          "max" : [ 3.0, 4.0, 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 6.0, 7.0, 7.0, 8.0 ]
+        },
+        "${value} Physical Damage" : {
+          "min" : [ 24.0, 30.0, 36.0, 42.0, 48.0, 54.0, 60.0, 66.0, 72.0, 78.0, 84.0, 90.0, 96.0, 102.0, 108.0, 114.0 ]
+        },
+        "MaxLevel" : 12,
+        "UltimateLevel" : 16
+      }
+    }, {
+      "name" : "Partial Shift",
+      "description" : "When hit, the Rift Walker might send parts of their body to another plain, making it much harder to harm them and even granting them easier access to spell energy.",
+      "protectsAgainst" : [ " Elemental Damage", " Physical Damage", " Piercing Damage" ],
+      "skillIcon" : {
+        "posY" : 155,
+        "posX" : 428
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : 20.0,
+        "${value}% Chance of Activating" : 20.0,
+        "${value} Second Duration" : 5.0,
+        "${value} Damage Absorption" : [ 120.0, 160.0, 200.0, 240.0, 280.0, 320.0, 360.0, 400.0, 440.0, 480.0, 520.0, 560.0 ],
+        "${value}% Damage Absorption" : [ 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0 ],
+        "+${value}% Casting Speed" : [ 3.0, 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0 ],
+        "MaxLevel" : 8,
+        "UltimateLevel" : 12
+      }
+    }, {
+      "name" : "Inferno Dimension",
+      "description" : "The Rift Walker has an affinity to the frost dimension. They fully embrace the destructive power of fire, not only strengthening their fire spells, but increasing all damage they cause.",
+      "doesNotIncludeRacialDamage" : true,
+      "exclusiveSkill" : true,
+      "skillIcon" : {
+        "posY" : 155,
+        "posX" : 528
+      },
+      "attributes" : {
+        "${value} Active Energy Cost per Second" : 1.0,
+        "${value}m Radius" : 12.0,
+        "+${value}% Burn Damage " : [ 20.0, 26.0, 32.0, 38.0, 44.0, 50.0, 56.0, 62.0, 68.0, 74.0, 80.0, 86.0 ],
+        "+${value}% Fire Damage" : [ 20.0, 26.0, 32.0, 38.0, 44.0, 50.0, 56.0, 62.0, 68.0, 74.0, 80.0, 86.0 ],
+        "+${value}% Physical Damage" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0 ],
+        "+${value}% Total Damage" : [ 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0 ],
+        "MaxLevel" : 8,
+        "UltimateLevel" : 12
+      }
+    } ], [ {
+      "name" : "Blink",
+      "description" : "With time, the Rift Walker learns how to recover faster from travelling to other dimensions and even bring destructive forces with them when they return.",
+      "parent" : [ "Teleport Attack" ],
+      "skillIcon" : {
+        "posY" : 93,
+        "posX" : 628
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : [ -1.0, -2.0, -3.0, -4.0, -5.0, -6.0, -7.0, -8.0, -9.0, -10.0, -11.0, -12.0, -13.0, -14.0 ],
+        "${value} Lightning Damage" : {
+          "min" : [ 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0, 150.0 ],
+          "max" : [ 100.0, 140.0, 180.0, 220.0, 260.0, 300.0, 340.0, 380.0, 420.0, 460.0, 500.0, 540.0, 580.0, 620.0 ]
+        },
+        "MaxLevel" : 10,
+        "UltimateLevel" : 14
+      }
+    }, {
+      "name" : "Master of Worlds",
+      "description" : "For a short time, the Rift Walker connects their mind and body to all dimensions simultaneously, letting them ascend to a god. In this state, every hit is empowered by elemental energy and all spells benefit from a massive increase in power.",
+      "skillIcon" : {
+        "posY" : 93,
+        "posX" : 328
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : 150.0,
+        "${value} Energy Cost" : [ 100.0, 105.0, 110.0, 115.0, 120.0, 125.0, 130.0, 135.0, 140.0, 145.0, 150.0, 155.0, 160.0, 165.0, 170.0, 175.0 ],
+        "${value} Second Duration" : 15.0,
+        "${value} Cold Damage" : {
+          "min" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0 ],
+          "max" : [ 4.0, 8.0, 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 64.0 ]
+        },
+        "${value} Fire Damage" : {
+          "min" : [ 3.0, 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0 ]
+        },
+        "${value} Lightning Damage" : {
+          "min" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0 ],
+          "max" : [ 5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0 ]
+        },
+        "${value} Physical Damage" : {
+          "min" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0 ]
+        },
+        "+${value}% Cold Damage" : [ 13.0, 18.0, 23.0, 28.0, 33.0, 38.0, 43.0, 48.0, 53.0, 58.0, 63.0, 68.0, 73.0, 78.0, 83.0, 88.0 ],
+        "+${value}% Fire Damage" : [ 13.0, 18.0, 23.0, 28.0, 33.0, 38.0, 43.0, 48.0, 53.0, 58.0, 63.0, 68.0, 73.0, 78.0, 83.0, 88.0 ],
+        "+${value}% Lightning Damage" : [ 13.0, 18.0, 23.0, 28.0, 33.0, 38.0, 43.0, 48.0, 53.0, 58.0, 63.0, 68.0, 73.0, 78.0, 83.0, 88.0 ],
+        "+${value}% Physical Damage" : [ 13.0, 18.0, 23.0, 28.0, 33.0, 38.0, 43.0, 48.0, 53.0, 58.0, 63.0, 68.0, 73.0, 78.0, 83.0, 88.0 ],
+        "MaxLevel" : 12,
+        "UltimateLevel" : 16
+      }
+    }, {
+      "name" : "Time Travel",
+      "description" : "After all, travelling between dimensions is not much different from travelling time. The Rift Walker learned how to return a few seconds to the past to regain strength.",
+      "skillIcon" : {
+        "posY" : 93,
+        "posX" : 428
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : [ 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0 ],
+        "${value} Energy Cost" : [ 30.0, 45.0, 60.0, 75.0, 90.0, 105.0, 120.0, 135.0, 150.0, 165.0, 180.0, 195.0, 210.0, 225.0, 240.0, 255.0 ],
+        "-${value} Second(s) to all Recharge Times" : [ 10.0, 16.0, 22.0, 28.0, 34.0, 40.0, 46.0, 52.0, 58.0, 64.0, 70.0, 76.0 ],
+        "MaxLevel" : 8,
+        "UltimateLevel" : 12
+      }
+    } ], [ {
+      "name" : "Dimensional Chasm",
+      "description" : "Opening a portal to the void is risky but also brings the potential to inflict massive damage. The chasm is connected to multiple dimension and emits energy in a very large radius. Better stay away if a Rift Walker chooses to open a dimensional chasm.",
+      "doesNotIncludeRacialDamage" : true,
+      "skillIcon" : {
+        "posY" : 31,
+        "posX" : 128
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : 120.0,
+        "${value} Energy Cost" : [ 150.0, 155.0, 160.0, 165.0, 170.0, 175.0, 180.0, 185.0, 190.0, 195.0, 200.0, 205.0, 210.0, 215.0, 220.0, 225.0 ],
+        "${value} Second Duration" : 10.0,
+        "${value}m Radius" : 10.0,
+        "${value} Cold Damage" : {
+          "min" : [ 14.0, 19.0, 24.0, 29.0, 34.0, 39.0, 44.0, 49.0, 54.0, 59.0, 64.0, 69.0, 74.0, 79.0, 84.0, 89.0 ],
+          "max" : [ 24.0, 33.0, 42.0, 51.0, 60.0, 69.0, 78.0, 87.0, 96.0, 105.0, 114.0, 123.0, 132.0, 141.0, 150.0, 159.0 ]
+        },
+        "${value} Fire Damage" : {
+          "min" : [ 20.0, 27.0, 34.0, 41.0, 48.0, 55.0, 62.0, 69.0, 76.0, 83.0, 90.0, 97.0, 104.0, 111.0, 118.0, 125.0 ]
+        },
+        "${value} Lightning Damage" : {
+          "min" : [ 8.0, 11.0, 14.0, 17.0, 20.0, 23.0, 26.0, 29.0, 32.0, 35.0, 38.0, 41.0, 44.0, 47.0, 50.0, 53.0 ],
+          "max" : [ 30.0, 41.0, 52.0, 63.0, 74.0, 85.0, 96.0, 107.0, 118.0, 129.0, 140.0, 151.0, 162.0, 173.0, 184.0, 195.0 ]
+        },
+        "${value} Physical Damage" : {
+          "min" : [ 40.0, 55.0, 70.0, 85.0, 100.0, 115.0, 130.0, 145.0, 160.0, 175.0, 190.0, 205.0, 220.0, 235.0, 250.0, 265.0 ]
+        },
+        "MaxLevel" : 12,
+        "UltimateLevel" : 16
+      }
+    }, {
+      "name" : "Immortality",
+      "description" : "Some Rift Walkers exist in multiple plains at the same time, making it impossible to kill them. In times of immediate danger, they will simply send a part of their essence to another plain to become immortal for a short time.",
+      "skillIcon" : {
+        "posY" : 31,
+        "posX" : 528
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : [ 120.0, 112.0, 104.0, 96.0, 88.0, 80.0, 72.0, 64.0, 60.0, 56.0, 53.0, 50.0 ],
+        "${value} Second Duration" : 5.0,
+        "${value}% Damage Absorption" : 100,
+        "Activates when Health drops below ${value}%" : 25.0,
+        "MaxLevel" : 8,
+        "UltimateLevel" : 12
+      }
+    } ] ]
+  }, {
+    "name" : "Illusionist",
+    "masteryAttributes" : {
+      "+${value} Health" : [ 20.0, 40.0, 60.0, 80.0, 100.0, 120.0, 140.0, 160.0, 180.0, 200.0, 220.0, 240.0, 260.0, 280.0, 300.0, 320.0, 340.0, 360.0, 380.0, 400.0, 420.0, 440.0, 460.0, 480.0, 500.0, 520.0, 540.0, 560.0, 580.0, 600.0, 620.0, 640.0, 660.0, 680.0, 700.0, 720.0, 740.0, 760.0, 780.0, 800.0 ],
+      "+${value} Strength" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0, 28.0, 29.0, 30.0, 31.0, 32.0, 33.0, 34.0, 35.0, 36.0, 37.0, 38.0, 39.0, 40.0 ],
+      "+${value} Intelligence" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0, 48.0, 50.0, 52.0, 54.0, 56.0, 58.0, 60.0, 62.0, 64.0, 66.0, 68.0, 70.0, 72.0, 74.0, 76.0, 78.0, 80.0 ],
+      "+${value} Dexterity" : [ 1.5, 3.0, 4.5, 6.0, 7.5, 9.0, 10.5, 12.0, 13.5, 15.0, 16.5, 18.0, 19.5, 21.0, 22.5, 24.0, 25.5, 27.0, 28.5, 30.0, 31.5, 33.0, 34.5, 36.0, 37.5, 39.0, 40.5, 42.0, 43.5, 45.0, 46.5, 48.0, 49.5, 51.0, 52.5, 54.0, 55.5, 57.0, 58.5, 60.0 ],
+      "MaxLevel" : 40
+    },
+    "skillTiers" : [ [ {
+      "name" : "Decoy",
+      "description" : "The Illusionist creates multiple decoys of themselves to confuse and distract enemies. The decoys might be weaker than the original but they will still use their weapons to attack.",
+      "skillIcon" : {
+        "posY" : 403,
+        "posX" : 128
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : 25.0,
+        "${value} Energy Cost" : [ 60.0, 64.0, 68.0, 72.0, 76.0, 80.0, 84.0, 88.0, 92.0, 96.0 ],
+        "${value} Summon Limit " : [ 2.0, 2.0, 4.0, 4.0, 4.0, 6.0, 6.0, 6.0, 8.0, 8.0 ],
+        "${value} Summoned Immediately" : [ 1.0, 1.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0, 4.0, 4.0 ],
+        "Life Time ${value} Seconds" : [ 10.0, 11.0, 11.0, 12.0, 13.0, 13.0, 14.0, 15.0, 15.0, 16.0 ],
+        "MaxLevel" : 6,
+        "UltimateLevel" : 10
+      },
+      "pet" : {
+        "attributes" : {
+          "+${value} Base Attack Speed" : [ 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1 ],
+          "+${value} Dexterity" : [ 80.0, 92.0, 104.0, 116.0, 128.0, 140.0, 152.0, 164.0, 176.0, 188.0 ],
+          "+${value} Intelligence" : [ 80.0, 92.0, 104.0, 116.0, 128.0, 140.0, 152.0, 164.0, 176.0, 188.0 ],
+          "+${value} Health" : [ 160.0, 200.0, 240.0, 280.0, 280.0, 360.0, 400.0, 440.0, 480.0, 520.0 ],
+          "+${value} Health Regeneration per second" : [ 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5 ],
+          "+${value} Energy" : [ 50.0, 55.0, 60.0, 65.0, 65.0, 75.0, 80.0, 85.0, 90.0, 95.0 ],
+          "+${value} Energy Regeneration per second" : [ 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0 ],
+          "+${value} Base Movement Speed" : [ 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2 ],
+          "+${value} Base Casting Speed" : [ 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2 ],
+          "+${value} Strength" : [ 80.0, 92.0, 104.0, 116.0, 128.0, 140.0, 152.0, 164.0, 176.0, 188.0 ],
+          " Bonus Damage on Hand Attacks" : {
+            "min" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0 ],
+            "max" : [ 5.0, 8.0, 11.0, 14.0, 17.0, 20.0, 23.0, 26.0, 29.0, 32.0 ]
+          }
+        },
+        "petSkills" : {
+          "Pet_DifficultyDamageScaling" : {
+            "name" : "Pet_DifficultyDamageScaling",
+            "attributes" : {
+              "+${value} Strength" : [ 150.0, 300.0 ],
+              "+${value} Intelligence" : [ 195.0, 390.0 ],
+              "+${value} Dexterity" : [ 100.0, 200.0 ],
+              "${value}% Damage Absorption" : [ 25.0, 50.0 ],
+              "+${value}% Bleeding Damage " : [ 30.0, 60.0 ],
+              "+${value}% Energy Leech " : [ 30.0, 60.0 ],
+              "+${value}% Instant Poison Damage" : [ 30.0, 60.0 ],
+              "+${value}% Life Leech " : [ 30.0, 60.0 ],
+              "+${value}% Pierce Damage" : [ 30.0, 60.0 ],
+              "+${value}% Poison Damage " : [ 30.0, 60.0 ],
+              "+${value}% Total Damage" : [ 30.0, 60.0 ],
+              "MaxLevel" : 2
+            }
+          },
+          "Unstable Illusions" : {
+            "name" : "Unstable Illusions",
+            "description" : "The Illusionist infuses their decoys with unstable elemental energy that unleashes in an explosion when the decoy is destroyed.",
+            "attributes" : {
+              "${value}m Radius" : 5.0,
+              "${value} Elemental Damage" : {
+                "min" : [ 18.0, 27.0, 36.0, 45.0, 54.0, 63.0, 72.0, 81.0, 90.0, 99.0, 108.0, 117.0, 126.0, 135.0, 144.0, 153.0 ],
+                "max" : [ 26.0, 39.0, 52.0, 65.0, 78.0, 91.0, 104.0, 117.0, 130.0, 143.0, 156.0, 169.0, 182.0, 195.0, 208.0, 221.0 ]
+              },
+              "${value} Projectile(s)" : 1,
+              "MaxLevel" : 12,
+              "UltimateLevel" : 16
+            }
+          },
+          "decoy_petskill_aura" : {
+            "name" : "decoy_petskill_aura",
+            "attributes" : {
+              "MaxLevel" : 20,
+              "UltimateLevel" : 20
+            }
+          }
+        },
+        "petSkillLevels" : {
+          "decoy_petskill_aura" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ]
+        }
+      }
+    }, {
+      "name" : "Shockwave",
+      "description" : "The Illusionist emits a shockwave from their fingertips that strikes foes as if it was made of solid matter.",
+      "skillIcon" : {
+        "posY" : 403,
+        "posX" : 228
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : 8.0,
+        "${value} Energy Cost" : [ 40.0, 42.0, 44.0, 46.0, 48.0, 50.0, 52.0, 54.0, 56.0, 58.0, 60.0, 62.0, 64.0, 66.0, 68.0, 70.0 ],
+        "${value} Physical Damage" : {
+          "min" : [ 14.0, 20.0, 26.0, 32.0, 38.0, 44.0, 50.0, 56.0, 62.0, 68.0, 74.0, 80.0, 86.0, 92.0, 98.0, 104.0 ]
+        },
+        "MaxLevel" : 12,
+        "UltimateLevel" : 16
+      }
+    }, {
+      "name" : "Mind over Matter",
+      "description" : "The Illusionist mastered the art of controlling strengthening the mind and body of allies with beneficial illusions.",
+      "skillIcon" : {
+        "posY" : 403,
+        "posX" : 328
+      },
+      "attributes" : {
+        "${value} Energy Cost" : [ 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0, 70.0, 74.0 ],
+        "${value} Second Duration" : 300.0,
+        "+${value}% Strength" : [ 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0 ],
+        "${value}% Skill Disruption Protection" : [ 12.0, 20.0, 28.0, 36.0, 44.0, 52.0, 60.0, 68.0, 76.0, 84.0, 92.0, 100.0 ],
+        "+${value}% Casting Speed" : [ 14.0, 22.0, 30.0, 38.0, 46.0, 54.0, 62.0, 70.0, 78.0, 86.0, 94.0, 102.0 ],
+        "MaxLevel" : 8,
+        "UltimateLevel" : 12
+      }
+    }, {
+      "name" : "Mind Blast",
+      "description" : "The Illusionist sends out a concentrated thought to attack a foes mind.",
+      "skillIcon" : {
+        "posY" : 403,
+        "posX" : 528
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : 5,
+        "${value} Energy Cost" : [ 25.0, 26.0, 27.0, 28.0, 29.0, 30.0, 31.0, 32.0, 33.0, 34.0, 35.0, 36.0, 37.0, 38.0, 39.0, 40.0 ],
+        "${value} Physical Damage" : {
+          "min" : [ 40.0, 65.0, 90.0, 115.0, 140.0, 165.0, 190.0, 215.0, 240.0, 265.0, 290.0, 315.0, 340.0, 365.0, 390.0, 415.0 ]
+        },
+        "MaxLevel" : 12,
+        "UltimateLevel" : 16
+      }
+    } ], [ {
+      "name" : "Unstable Illusions",
+      "description" : "The Illusionist infuses their decoys with unstable elemental energy that unleashes in an explosion when the decoy is destroyed.",
+      "parent" : [ "Decoy" ],
+      "skillIcon" : {
+        "posY" : 341,
+        "posX" : 128
+      },
+      "attributes" : {
+        "${value}m Radius" : 5.0,
+        "${value} Elemental Damage" : {
+          "min" : [ 18.0, 27.0, 36.0, 45.0, 54.0, 63.0, 72.0, 81.0, 90.0, 99.0, 108.0, 117.0, 126.0, 135.0, 144.0, 153.0 ],
+          "max" : [ 26.0, 39.0, 52.0, 65.0, 78.0, 91.0, 104.0, 117.0, 130.0, 143.0, 156.0, 169.0, 182.0, 195.0, 208.0, 221.0 ]
+        },
+        "${value} Projectile(s)" : 1,
+        "MaxLevel" : 12,
+        "UltimateLevel" : 16
+      }
+    }, {
+      "name" : "Teleport",
+      "description" : "The Illusionist teleports behind an enemy before sending them to sleep with a gentle touch.",
+      "skillIcon" : {
+        "posY" : 341,
+        "posX" : 328
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : [ 20.0, 19.0, 18.0, 17.0, 16.0, 15.0, 14.0, 13.0, 12.0, 11.0 ],
+        "${value} Energy Cost" : 50.0,
+        "${value} second(s) of Sleep" : {
+          "min" : [ 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ],
+          "max" : [ 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0 ]
+        },
+        "MaxLevel" : 6,
+        "UltimateLevel" : 10
+      }
+    }, {
+      "name" : "Confusing Mist",
+      "description" : "A colourful mist is conjured in a large area. Creatures cought in this mist might see strange images distracting them from any target they might persue at the moment.",
+      "doesNotIncludeRacialDamage" : true,
+      "skillIcon" : {
+        "posY" : 341,
+        "posX" : 628
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : 12.0,
+        "${value} Energy Cost" : [ 54.0, 57.0, 60.0, 64.0, 67.0, 70.0, 74.0, 77.0, 80.0, 84.0, 87.0, 90.0 ],
+        "${value} Second Duration" : 6.0,
+        "${value}m Radius" : 8.0,
+        "${chance}% Chance of ${value}% Chance of Impaired Aim over ${duration} Second(s)" : {
+          "chance" : [ 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0 ],
+          "value" : {
+            "min" : [ 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0 ],
+            "max" : [ 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 64.0 ]
+          },
+          "duration" : {
+            "min" : [ 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0, 2.1 ]
+          }
+        },
+        "${chance}% Chance of ${value}% Chance to Fumble attacks over ${duration} Second(s)" : {
+          "chance" : [ 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0 ],
+          "value" : {
+            "min" : [ 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0 ],
+            "max" : [ 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 64.0 ]
+          },
+          "duration" : {
+            "min" : [ 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0, 2.1 ]
+          }
+        },
+        "MaxLevel" : 8,
+        "UltimateLevel" : 12
+      }
+    } ], [ {
+      "name" : "Mind Destruction",
+      "description" : "The mind blast is strengthened further by unleashing elemental energy inside an enemy's head.",
+      "parent" : [ "Mind Blast" ],
+      "skillIcon" : {
+        "posY" : 279,
+        "posX" : 528
+      },
+      "attributes" : {
+        "${value} Elemental Damage" : {
+          "min" : [ 40.0, 60.0, 80.0, 100.0, 120.0, 140.0, 160.0, 180.0, 200.0, 220.0, 240.0, 260.0, 280.0, 300.0 ],
+          "max" : [ 60.0, 90.0, 120.0, 150.0, 180.0, 210.0, 240.0, 270.0, 300.0, 330.0, 360.0, 390.0, 420.0, 450.0 ]
+        },
+        "MaxLevel" : 10,
+        "UltimateLevel" : 14
+      }
+    }, {
+      "name" : "Hyperfocus",
+      "description" : "By focusing the concentration for a short time, the Illusionist is capable to greatly enhance their mental capacity.",
+      "skillIcon" : {
+        "posY" : 279,
+        "posX" : 328
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : 60.0,
+        "${value} Energy Cost" : 100.0,
+        "${value} Second Duration" : 10.0,
+        "+${value}% Intelligence" : [ 20.0, 28.0, 36.0, 44.0, 52.0, 60.0, 68.0, 76.0, 84.0, 92.0, 100.0, 108.0, 116.0, 124.0 ],
+        "+${value}% Energy Regeneration" : [ 100.0, 150.0, 200.0, 250.0, 300.0, 350.0, 400.0, 450.0, 500.0, 550.0, 600.0, 650.0, 700.0, 750.0 ],
+        "MaxLevel" : 10,
+        "UltimateLevel" : 14
+      }
+    }, {
+      "name" : "Mental Blockade",
+      "description" : "A wall of purple, slow moving gas is conjured in front of the Illusionist. Creatures the touch the illusion feel like they have a solid wall right in front of their face.",
+      "skillIcon" : {
+        "posY" : 279,
+        "posX" : 428
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : 8.0,
+        "${value} Energy Cost" : [ 50.0, 52.0, 54.0, 56.0, 58.0, 60.0, 62.0, 64.0, 66.0, 68.0, 70.0, 72.0 ],
+        "${value} second(s) of Immobilization" : {
+          "min" : [ 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5 ]
+        },
+        "MaxLevel" : 6,
+        "UltimateLevel" : 10
+      }
+    } ], [ {
+      "name" : "Stunning Magic",
+      "description" : "The shockwave hits enemies with great force, making them unable to act for a brief moment.",
+      "parent" : [ "Shockwave" ],
+      "skillIcon" : {
+        "posY" : 217,
+        "posX" : 228
+      },
+      "attributes" : {
+        "${chance}% Chance of ${value} second(s) of Confusion" : {
+          "chance" : [ 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0 ],
+          "value" : {
+            "min" : [ 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5 ],
+            "max" : [ 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ]
+          }
+        },
+        "${value} second(s) of Stun" : {
+          "min" : [ 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.3, 3.6, 4.0, 4.5 ]
+        },
+        "MaxLevel" : 6,
+        "UltimateLevel" : 10
+      }
+    }, {
+      "name" : "Chromatic Mist",
+      "description" : "The illusions in the mist are charged with elemental magic and might unleash a strike of fire, ice or lightning at enemies within the mist.",
+      "parent" : [ "Confusing Mist" ],
+      "skillIcon" : {
+        "posY" : 217,
+        "posX" : 628
+      },
+      "attributes" : {
+        "MaxLevel" : 12,
+        "UltimateLevel" : 16,
+        "${chance}% Chance for one of the following:" : {
+          "chance" : [ 40.0, 42.0, 44.0, 46.0, 48.0, 50.0, 52.0, 54.0, 56.0, 58.0, 60.0, 62.0, 64.0, 66.0, 68.0, 70.0 ],
+          "values" : {
+            "${chance}% Chance of ${value} Cold Damage" : {
+              "chance" : 33.33,
+              "value" : {
+                "min" : [ 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0, 48.0, 50.0, 52.0, 54.0 ],
+                "max" : [ 36.0, 44.0, 52.0, 60.0, 68.0, 76.0, 84.0, 92.0, 100.0, 108.0, 116.0, 124.0, 132.0, 140.0, 148.0, 156.0 ]
+              }
+            },
+            "${chance}% Chance of ${value} Fire Damage" : {
+              "chance" : 33.33,
+              "value" : {
+                "min" : [ 30.0, 36.0, 42.0, 48.0, 54.0, 60.0, 66.0, 72.0, 78.0, 84.0, 90.0, 96.0, 102.0, 108.0, 114.0, 120.0 ]
+              }
+            },
+            "${chance}% Chance of ${value} Lightning Damage" : {
+              "chance" : 33.33,
+              "value" : {
+                "min" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+                "max" : [ 60.0, 72.0, 84.0, 96.0, 108.0, 120.0, 132.0, 144.0, 156.0, 168.0, 180.0, 192.0, 204.0, 216.0, 228.0, 240.0 ]
+              }
+            }
+          }
+        }
+      }
+    }, {
+      "name" : "Painful Thoughts",
+      "description" : "Creatures touched by the wall actually believe they just run into an obstacle. This thought is strong enough to actually harm their bodies.",
+      "parent" : [ "Mental Blockade" ],
+      "skillIcon" : {
+        "posY" : 217,
+        "posX" : 428
+      },
+      "attributes" : {
+        "${value} Second Duration" : [ 2.0, 2.5, 3.0, 3.5, 4.0, 5.0, 5.5, 6.0, 6.5, 7.0 ],
+        "${value} Elemental Damage" : {
+          "min" : [ 10.0, 13.0, 16.0, 19.0, 22.0, 25.0, 28.0, 31.0, 34.0, 37.0, 40.0, 43.0 ]
+        },
+        "${value} Physical Damage" : {
+          "min" : [ 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0 ]
+        },
+        "MaxLevel" : 8,
+        "UltimateLevel" : 12
+      }
+    } ], [ {
+      "name" : "Colorful Illusion",
+      "description" : "The shockwave is infused with elemental magic that causes even greater damage.",
+      "parent" : [ "Shockwave" ],
+      "skillIcon" : {
+        "posY" : 155,
+        "posX" : 228
+      },
+      "attributes" : {
+        "${value} Elemental Damage" : {
+          "min" : [ 20.0, 35.0, 50.0, 65.0, 80.0, 95.0, 110.0, 125.0, 140.0, 155.0, 170.0, 185.0 ]
+        },
+        "+${value}% Total Damage" : [ 20.0, 28.0, 36.0, 44.0, 52.0, 60.0, 68.0, 76.0, 84.0, 92.0, 100.0, 108.0 ],
+        "MaxLevel" : 8,
+        "UltimateLevel" : 12
+      }
+    }, {
+      "name" : "Eternal Mist",
+      "description" : "The mist persists for a much longer time and the illusions within are enhanced with even greater damaging power.",
+      "parent" : [ "Confusing Mist" ],
+      "skillIcon" : {
+        "posY" : 155,
+        "posX" : 628
+      },
+      "attributes" : {
+        "${value} Second Duration" : [ 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0 ],
+        "+${value}% Elemental Damages" : [ 20.0, 28.0, 36.0, 44.0, 52.0, 60.0, 68.0, 76.0, 84.0, 92.0, 100.0, 108.0 ],
+        "MaxLevel" : 8,
+        "UltimateLevel" : 12
+      }
+    }, {
+      "name" : "Clone Self",
+      "description" : "The Illusionist creates an actual copy of themselves. It might just be an illusion, but it is impossible to tell the difference from the original. The illusion even imitates the spells of their creator.",
+      "skillIcon" : {
+        "posY" : 155,
+        "posX" : 328
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : 120.0,
+        "${value} Energy Cost" : [ 100.0, 105.0, 110.0, 115.0, 120.0, 125.0, 130.0, 135.0, 140.0, 145.0, 150.0, 155.0, 160.0, 165.0, 170.0, 175.0 ],
+        "${value} Summon Limit " : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0, 3.0 ],
+        "${value} Summoned Immediately" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0, 3.0 ],
+        "Life Time ${value} Seconds" : [ 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0, 28.0, 29.0, 30.0 ],
+        "MaxLevel" : 12,
+        "UltimateLevel" : 16
+      },
+      "pet" : {
+        "attributes" : {
+          "+${value} Base Attack Speed" : [ 1.2 ],
+          "+${value} Dexterity" : [ 400.0 ],
+          "+${value} Intelligence" : [ 650.0 ],
+          "+${value} Health" : [ 1500.0 ],
+          "+${value} Health Regeneration per second" : [ 10.0 ],
+          "+${value} Energy" : [ 750.0 ],
+          "+${value} Energy Regeneration per second" : [ 15.0 ],
+          "+${value} Base Movement Speed" : [ 1.2 ],
+          "+${value} Base Casting Speed" : [ 1.5 ],
+          "+${value} Strength" : [ 500.0 ],
+          " Bonus Damage on Hand Attacks" : {
+            "min" : [ 384.0 ],
+            "max" : [ 480.0 ]
+          }
+        },
+        "petSkills" : {
+          "clone_petskill_aura" : {
+            "name" : "clone_petskill_aura",
+            "attributes" : {
+              "MaxLevel" : 20,
+              "UltimateLevel" : 20
+            }
+          }
+        },
+        "petSkillLevels" : {
+          "clone_petskill_aura" : [ 1 ]
+        }
+      }
+    }, {
+      "name" : "Mind Control",
+      "description" : "By creating false memories and feelings in the mind of an enemy, the Illusionist tricks them to believe they are allies. Eventually, the creature will realize it has been charmed and turn against the mage who tricked them.",
+      "doesNotIncludeRacialDamage" : true,
+      "skillIcon" : {
+        "posY" : 155,
+        "posX" : 528
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : 120.0,
+        "${value} Energy Cost" : [ 70.0, 72.0, 74.0, 76.0, 78.0, 80.0, 82.0, 84.0, 86.0, 88.0, 90.0, 92.0, 94.0, 96.0, 98.0, 100.0 ],
+        "${value} second(s) of Mind Control" : {
+          "min" : [ 30.0, 45.0, 60.0, 75.0, 90.0, 105.0, 120.0, 135.0, 150.0, 165.0, 180.0, 195.0, 210.0, 225.0, 240.0, 255.0, 270.0, 285.0, 300.0, 315.0 ]
+        },
+        "MaxLevel" : 16,
+        "UltimateLevel" : 20
+      }
+    } ], [ {
+      "name" : "Army of Mirages",
+      "description" : "Mastering the art of illusions allows the Illusionist to create countless copies of themselves.",
+      "parent" : [ "Decoy" ],
+      "skillIcon" : {
+        "posY" : 93,
+        "posX" : 128
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : [ -3.0, -5.0, -7.0, -9.0, -11.0, -13.0, -15.0, -17.0, -19.0, -21.0 ],
+        "Life Time ${value} Seconds" : [ 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0 ],
+        "MaxLevel" : 6,
+        "UltimateLevel" : 10
+      }
+    }, {
+      "name" : "Mind Slave",
+      "description" : "The mind bending magic is much more subtle, making it much harder for the victim to realize they are manipulated by illusions.",
+      "parent" : [ "Mind Control" ],
+      "skillIcon" : {
+        "posY" : 93,
+        "posX" : 528
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : [ -10.0, -20.0, -30.0, -40.0, -50.0, -60.0, -65.0, -70.0, -75.0, -80.0 ],
+        "MaxLevel" : 6,
+        "UltimateLevel" : 10
+      }
+    }, {
+      "name" : "Karma",
+      "description" : "Hitting an Illusionist is never a good idea. They might learn to store elemental energy in their body that unleashes at every foe nearby when the Illusionist is being hurt.",
+      "skillIcon" : {
+        "posY" : 93,
+        "posX" : 428
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : 12.0,
+        "${value}% Chance of Activating" : 30.0,
+        "${value} Energy Reserved" : 100.0,
+        "${value}m Radius" : 5.0,
+        "${value} Elemental Damage" : {
+          "min" : [ 50.0, 64.0, 78.0, 92.0, 106.0, 120.0, 134.0, 148.0, 162.0, 176.0, 190.0, 204.0, 218.0, 232.0, 246.0, 260.0 ]
+        },
+        "${value} second(s) of Petrify" : {
+          "min" : [ 1.5, 1.6, 1.7, 1.8, 1.9, 2.0, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3.0 ]
+        },
+        "MaxLevel" : 12,
+        "UltimateLevel" : 16
+      }
+    } ], [ {
+      "name" : "Master of Clones",
+      "description" : "By further refining the spell, the Illusionist is capable to keep the illusion of themselves alive for much longer.",
+      "parent" : [ "Clone Self" ],
+      "skillIcon" : {
+        "posY" : 31,
+        "posX" : 328
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : [ -10.0, -17.0, -24.0, -31.0, -38.0, -45.0, -52.0, -59.0, -66.0, -73.0, -80.0, -87.0 ],
+        "Life Time ${value} Seconds" : [ 5.0, 9.0, 13.0, 17.0, 21.0, 25.0, 29.0, 33.0, 37.0, 41.0, 45.0, 49.0 ],
+        "MaxLevel" : 8,
+        "UltimateLevel" : 12
+      }
+    }, {
+      "name" : "Mental Blade",
+      "description" : "Pure mental energy is channeled into a weapon for a short time, even morphing parts of the physical components into pure energy.",
+      "skillIcon" : {
+        "posY" : 31,
+        "posX" : 428
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : 150.0,
+        "${value} Energy Cost" : [ 70.0, 72.0, 74.0, 76.0, 78.0, 80.0, 82.0, 84.0, 86.0, 88.0, 90.0, 92.0, 94.0, 96.0, 98.0, 100.0 ],
+        "${value} Second Duration" : 20.0,
+        "${value} Elemental Damage" : {
+          "min" : [ 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0, 90.0, 95.0, 100.0, 105.0 ],
+          "max" : [ 50.0, 57.0, 64.0, 71.0, 78.0, 85.0, 92.0, 99.0, 106.0, 113.0, 120.0, 127.0, 134.0, 141.0, 148.0, 155.0 ]
+        },
+        "${value}% Weapon Base Damage becomes Elemental" : [ 33.0, 36.0, 39.0, 42.0, 45.0, 48.0, 51.0, 54.0, 57.0, 60.0, 63.0, 66.0, 69.0, 72.0, 75.0, 78.0 ],
+        "MaxLevel" : 12,
+        "UltimateLevel" : 16
       }
     } ] ]
   } ]
