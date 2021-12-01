@@ -45,7 +45,7 @@ public class SkillTreeParser {
                 }
 
                 if (index > 1) {
-                    mSkillIsInnate.set(index - 1, (str.split(",")[1].equals("1")));
+                    mSkillIsInnate.set(index - 1, (str.split(",", -1)[1].equals("1")));
                 }
             });
         } catch (FileNotFoundException e) {
@@ -73,20 +73,23 @@ public class SkillTreeParser {
                 } catch (NumberFormatException e) {
                 }
 
+                String skillName = str.split(",", -1)[1];
+                if (skillName.isEmpty())
+                    return;
                 if (index == 1) {
                     try {
                         BufferedReader masterySkillReader = new BufferedReader(
-                                new FileReader(new File(mModDir + str.split(",")[1])));
+                                new FileReader(new File(mModDir + skillName)));
                         Stream<String> fileStream1 = masterySkillReader.lines();
                         fileStream1.filter((str1) -> str1.startsWith("skillDisplayName")).forEach((str1) -> {
-                            mMasteryTag = str1.split(",")[1];
+                            mMasteryTag = str1.split(",", -1)[1];
                         });
                     } catch (FileNotFoundException e) {
                         e.printStackTrace();
                     }
                 }
-                if (!str.split(",")[1].contains("taunt")) {
-                    mSkills.set(index - 1, new File(mModDir + str.split(",")[1]));
+                if (!skillName.contains("taunt")) {
+                    mSkills.set(index - 1, new File(mModDir + str.split(",", -1)[1]));
                 }
             });
         } catch (FileNotFoundException e) {

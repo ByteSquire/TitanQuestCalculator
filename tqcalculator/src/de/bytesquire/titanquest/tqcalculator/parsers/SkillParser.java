@@ -55,8 +55,10 @@ public class SkillParser {
         try (BufferedReader skillReader = new BufferedReader(new FileReader(mSkill));) {
             Stream<String> fileStream = skillReader.lines();
             fileStream.forEach((str) -> {
-                String attributeName = str.split(",")[0];
-                String value = str.split(",")[1];
+                String attributeName = str.split(",", -1)[0];
+                String value = str.split(",", -1)[1];
+                if (value.isEmpty())
+                    return;
                 if (canBeIgnored(attributeName))
                     return;
                 if (attributeName.equals("skillDisplayName")) {
@@ -83,9 +85,9 @@ public class SkillParser {
                                 BufferedReader parentReader = new BufferedReader(new FileReader(new File(
                                         Control.DATABASES_DIR + mParentPath.split("/")[0] + "/database/" + string)));
                                 Stream<String> parentFileStream = parentReader.lines();
-                                parentFileStream.filter(str1 -> str1.split(",")[0].equals("skillDisplayName"))
+                                parentFileStream.filter(str1 -> str1.split(",", -1)[0].equals("skillDisplayName"))
                                         .forEach(name -> {
-                                            mParentSkill.add(mMSParser.getMatch(name.split(",")[1]));
+                                            mParentSkill.add(mMSParser.getMatch(name.split(",", -1)[1]));
                                         });
                             } catch (FileNotFoundException e) {
                                 System.err.println("missing file: " + e.getMessage()
@@ -127,9 +129,15 @@ public class SkillParser {
                 } catch (Exception e) {
                 }
                 if (attributeName.equals("petSkillName") || attributeName.equals("buffSkillName")) {
-                    Skill tmp = new Skill(
-                            new File(Control.DATABASES_DIR + mParentPath.split("/")[0] + "/database/" + value), null,
-                            mParentPath, mMSParser, mIconsParser);
+                    Skill tmp;
+                    try {
+                        tmp = new Skill(
+                                new File(Control.DATABASES_DIR + mParentPath.split("/")[0] + "/database/" + value),
+                                null, mParentPath, mMSParser, mIconsParser);
+                    } catch (FileNotFoundException e) {
+                        e.printStackTrace();
+                        return;
+                    }
                     for (String skillAttribute : tmp.getAttributes().keySet()) {
                         mAttributes.put(skillAttribute, tmp.getAttributes().get(skillAttribute));
                     }
@@ -161,9 +169,15 @@ public class SkillParser {
                     mAdditionalFiles.addAll(tmp.getFiles());
                 }
                 if (attributeName.equals("petBonusName")) {
-                    Skill tmp = new Skill(
-                            new File(Control.DATABASES_DIR + mParentPath.split("/")[0] + "/database/" + value), null,
-                            mParentPath, mMSParser, mIconsParser);
+                    Skill tmp;
+                    try {
+                        tmp = new Skill(
+                                new File(Control.DATABASES_DIR + mParentPath.split("/")[0] + "/database/" + value),
+                                null, mParentPath, mMSParser, mIconsParser);
+                    } catch (FileNotFoundException e) {
+                        e.printStackTrace();
+                        return;
+                    }
                     if (tmp.getName() == null)
                         return;
                     mAttributes.put("Bonus to all Pets:", tmp.getAttributes());
@@ -239,7 +253,7 @@ public class SkillParser {
         case "numRings":
         case "distanceIncrement":
         case "spacingAngle":
-        case "defensiveAbsorption": //doesn't work in game
+        case "defensiveAbsorption": // doesn't work in game
             return true;
         default:
             return false;

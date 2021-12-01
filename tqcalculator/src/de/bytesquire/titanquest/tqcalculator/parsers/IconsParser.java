@@ -37,17 +37,17 @@ public class IconsParser {
                 Stream<String> fileStream = skillReader.lines();
                 SkillIcon tmp = new SkillIcon();
                 fileStream.forEach((str) -> {
-                    if (str.split(",")[0].equals("skillName")) {
-                        tmp.setName(str.split(",")[1].toLowerCase());
+                    if (str.split(",", -1)[0].equals("skillName")) {
+                        tmp.setName(str.split(",", -1)[1].toLowerCase());
                     }
-                    if (str.split(",")[0].equals("bitmapPositionX")) {
-                        tmp.setPosX(Integer.parseInt(str.split(",")[1]));
+                    if (str.split(",", -1)[0].equals("bitmapPositionX")) {
+                        tmp.setPosX(Integer.parseInt(str.split(",", -1)[1]));
                     }
-                    if (str.split(",")[0].equals("bitmapPositionY")) {
-                        tmp.setPosY(Integer.parseInt(str.split(",")[1]));
+                    if (str.split(",", -1)[0].equals("bitmapPositionY")) {
+                        tmp.setPosY(Integer.parseInt(str.split(",", -1)[1]));
                     }
-                    if (str.split(",")[0].equals("isCircular")) {
-                        tmp.setCircular(str.split(",")[1].equals("1"));
+                    if (str.split(",", -1)[0].equals("isCircular")) {
+                        tmp.setCircular(str.split(",", -1)[1].equals("1"));
                     }
                 });
                 mIcons.put(tmp.getName(), tmp);

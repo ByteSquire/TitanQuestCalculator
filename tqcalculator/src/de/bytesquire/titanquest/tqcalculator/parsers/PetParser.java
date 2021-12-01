@@ -71,8 +71,10 @@ public class PetParser {
             try (BufferedReader skillReader = new BufferedReader(new FileReader(file));) {
                 Stream<String> fileStream = skillReader.lines();
                 fileStream.forEach((str) -> {
-                    String attributeName = str.split(",")[0];
-                    String value = str.split(",")[1];
+                    String attributeName = str.split(",", -1)[0];
+                    String value = str.split(",", -1)[1];
+                    if (value.isEmpty())
+                        return;
                     if (canBeIgnored(attributeName))
                         return;
 
@@ -83,9 +85,15 @@ public class PetParser {
                             return;
                         if (value.contains(" "))
                             return;
-                        Skill tmp = new Skill(
-                                new File(Control.DATABASES_DIR + mParentPath.split("/")[0] + "/database/" + value),
-                                null, mParentPath, mMSParser, mIconsParser);
+                        Skill tmp;
+                        try {
+                            tmp = new Skill(
+                                    new File(Control.DATABASES_DIR + mParentPath.split("/")[0] + "/database/" + value),
+                                    null, mParentPath, mMSParser, mIconsParser);
+                        } catch (FileNotFoundException e) {
+                            e.printStackTrace();
+                            return;
+                        }
                         if (tmp.getName() == null) {
                             return;
                         }
@@ -147,7 +155,7 @@ public class PetParser {
                         }
                         return;
                     } catch (NumberFormatException e) {
-                        //System.err.println("Pet attribute Number error: " + e.getMessage());
+                        // System.err.println("Pet attribute Number error: " + e.getMessage());
                     } catch (Exception e) {
                         System.err.println("Pet error: " + e.getMessage());
                     }
