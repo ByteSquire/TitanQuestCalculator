@@ -14,6 +14,7 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 import java.util.stream.Stream;
@@ -26,7 +27,7 @@ public class ModParser {
 
     private static final String SEPARATOR = Paths.get("").getFileSystem().getSeparator();
 
-    private ArrayList<File> mSkillTrees;
+    private TreeMap<Integer, File> mSkillTrees;
     private File mCharacter;
     private File mGameEngine;
     private File mPlayerLevels;
@@ -41,7 +42,7 @@ public class ModParser {
     private ArrayList<File> mQuestSkillFiles;
 
     public ModParser(String aModdir) {
-        mSkillTrees = new ArrayList<>();
+        mSkillTrees = new TreeMap<>();
         mLinks = new LinkedHashMap<>();
         mMasteryTiers = new ArrayList<>();
         mQuestSkillFiles = new ArrayList<>();
@@ -192,16 +193,20 @@ public class ModParser {
         mCharacter = new File(mModDir + "database/records/xpack/creatures/pc/malepc01.dbr");
         try (BufferedReader characterReader = new BufferedReader(new FileReader(mCharacter));) {
             Stream<String> fileStream = characterReader.lines();
-            fileStream.filter((str) -> str.startsWith("skillTree")).forEach((str) -> {
-                int index = Integer.parseInt(str.substring(9, 10));
-                if (index == 1) {
-                    try {
-                        index = Integer.parseInt(str.substring(9, 11));
-                    } catch (NumberFormatException e) {
-                    }
-                }
-                mSkillTrees.add(/* index - 1, */new File(mModDir + "database" + SEPARATOR + str.split(",", -1)[1]));
-            });
+            fileStream
+                    .filter((str) -> str.startsWith("skillTree")
+                            && !(str.contains("Records\\Quests") || str.contains("records\\quests")
+                                    || str.contains("quest") || str.contains("QuestRewardSkillTree")))
+                    .forEach((str) -> {
+                        int index = Integer.parseInt(str.substring(9, 10));
+                        if (index == 1) {
+                            try {
+                                index = Integer.parseInt(str.substring(9, 11));
+                            } catch (NumberFormatException e) {
+                            }
+                        }
+                        mSkillTrees.put(index, new File(mModDir + "database" + SEPARATOR + str.split(",", -1)[1]));
+                    });
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e1) {
@@ -225,8 +230,13 @@ public class ModParser {
         }
     }
 
-    public ArrayList<File> getSkillTrees() {
-        return mSkillTrees;
+    public List<File> getSkillTrees() {
+        File[] ret = new File[10];
+        int i = 0;
+        for (File file : mSkillTrees.values())
+            ret[i++] = file;
+
+        return Arrays.asList(ret);
     }
 
     public Map<String, String> getLinks() {
@@ -248,7 +258,7 @@ public class ModParser {
     public File getPlayerLevels() {
         return mPlayerLevels;
     }
-    
+
     public Integer getSkillPointIncrement() {
         return mSkillPointIncrement;
     }
