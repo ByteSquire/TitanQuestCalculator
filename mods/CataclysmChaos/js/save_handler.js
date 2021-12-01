@@ -2,32 +2,35 @@ function getSaveLink(){
     var ret = "";
     ret += location.href.split("&config")[0];
     ret += '&config=';
-    ret += '{"m1":[';
-    ret += "[";
-    ret += document.getElementById("plusButton1").getElementsByClassName("buttonText")[0].innerText.split("/")[0];
-    ret += ",";
-    ret += document.getElementById("allPlusButton1").innerText.replace(" ", "");
-    ret += "]";
     
-    ret += ",";
-    ret += masteryTiersToArrays(m1);
-    ret += "]";
+    var params = '{"m1":[';
+    params += "[";
+    params += document.getElementById("plusButton1").getElementsByClassName("buttonText")[0].innerText.split("/")[0];
+    params += ",";
+    params += document.getElementById("allPlusButton1").innerText.replace(" ", "");
+    params += "]";
+    
+    params += ",";
+    params += masteryTiersToArrays(m1);
+    params += "]";
     
     if(m2){
-        ret += ',"m2":[';
-        ret += "[";
-        ret += document.getElementById("plusButton2").getElementsByClassName("buttonText")[0].innerText.split("/")[0];
-        ret += ",";
-        ret += document.getElementById("allPlusButton2").innerText.replace(" ", "");
-        ret += "]";        
+        params += ',"m2":[';
+        params += "[";
+        params += document.getElementById("plusButton2").getElementsByClassName("buttonText")[0].innerText.split("/")[0];
+        params += ",";
+        params += document.getElementById("allPlusButton2").innerText.replace(" ", "");
+        params += "]";        
         
-        ret += ",";
-        ret += masteryTiersToArrays(m2);
-        ret += "]";
+        params += ",";
+        params += masteryTiersToArrays(m2);
+        params += "]";
     }
     
-    ret += '}';
-    ret = encodeURIComponent(ret);
+    params += '}';
+    params = encodeURIComponent(params);
+    
+    ret += params;
     return ret;
 }
 
