@@ -11,7 +11,7 @@ var hpPercent = 0;
 
 var pointsSpent = 0;
 var bonusPoints = 0;
-var maxPoints = 252;
+var maxPoints = mod.skillPointIncrement * (mod.maxLevel-1);
 
 function calcBoni(attributes, fromLevel, toLevel){
     var attrs = Object.keys(attributes);
@@ -49,9 +49,9 @@ function calcBoni(attributes, fromLevel, toLevel){
 
 function calcLevelReq() {
     if(pointsSpent > 0)
-        document.getElementById("lvl").innerText = 1 + Math.ceil(pointsSpent/3);
+        document.getElementById("lvl").innerText = 1 + Math.ceil(pointsSpent/mod.skillPointIncrement);
     else
-        document.getElementById("lvl").innerText = 1 + Math.floor(pointsSpent/3);
+        document.getElementById("lvl").innerText = 1 + Math.floor(pointsSpent/mod.skillPointIncrement);
 }
 
 function pointsSelected(select){
