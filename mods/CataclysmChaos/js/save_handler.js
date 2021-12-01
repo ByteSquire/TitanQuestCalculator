@@ -27,6 +27,7 @@ function getSaveLink(){
     }
     
     ret += '}';
+    ret = encodeURIComponent(ret);
     return ret;
 }
 
