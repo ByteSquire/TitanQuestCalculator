@@ -11,7 +11,12 @@ var hpPercent = 0;
 
 var pointsSpent = 0;
 var bonusPoints = 0;
-var maxPoints = mod.skillPointIncrement * (mod.maxLevel-1);
+var maxPoints = 252;
+
+function setSkillPoints(mod){
+    maxPoints = mod.skillPointIncrement * (mod.maxLevel-1);
+    updateUI();
+}
 
 function calcBoni(attributes, fromLevel, toLevel){
     var attrs = Object.keys(attributes);
