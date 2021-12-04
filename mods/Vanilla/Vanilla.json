@@ -6260,6 +6260,10 @@
     "skillTiers" : [ [ {
       "name" : "Breath Attack ",
       "description" : "You emanate a focused energy attack in a cone in front of you, disorienting your foes.{^n}{^Y}Assign this skill to your left mouse button. ",
+      "skillIcon" : {
+        "posY" : 403,
+        "posX" : 374
+      },
       "attributes" : {
         "^a${value} Second(s) Recharge" : 10.0,
         "${value} Energy Cost" : [ 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0, 48.0, 50.0, 52.0, 54.0, 56.0, 58.0, 60.0, 62.0, 64.0 ],
@@ -6310,6 +6314,10 @@
     }, {
       "name" : "Potent Elixir",
       "description" : "Neidan practitioners often alter their concoctions to grant them additional boons when imbibed.{^n}{^Y} Can trigger when a health or energy potion is used.",
+      "skillIcon" : {
+        "posY" : 403,
+        "posX" : 110
+      },
       "attributes" : {
         "${value}CastDuration" : [ 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0 ],
         "${value}CastLevel" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0 ],
@@ -6320,6 +6328,10 @@
     }, {
       "name" : "Huangdi's Favor",
       "description" : "You channel the wrath of Emperors past and strike your foes with lightning. ",
+      "skillIcon" : {
+        "posY" : 403,
+        "posX" : 638
+      },
       "attributes" : {
         "${value} Energy Cost" : 1.0,
         "${value} Charge Levels" : 1,
@@ -6344,6 +6356,10 @@
     }, {
       "name" : "Consequences",
       "description" : "You channel power through your weapon lowering your enemies' resistance to damage.{^n}{^Y} Weapon attacks have a chance to reduce enemies’ resistances. ",
+      "skillIcon" : {
+        "posY" : 403,
+        "posX" : 462
+      },
       "attributes" : {
         "${value} Second Duration" : [ 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0 ],
         "${value}CastLevel" : 11,
@@ -6381,6 +6397,10 @@
     } ], [ {
       "name" : "Smoke Cloud",
       "description" : "You throw a small amount of fine powder which releases a burst of energy blinding and hindering your foes.",
+      "skillIcon" : {
+        "posY" : 341,
+        "posX" : 198
+      },
       "attributes" : {
         "^a${value} Second(s) Recharge" : [ 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0 ],
         "${value} Energy Cost" : [ 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0 ],
@@ -6413,6 +6433,10 @@
       "name" : "Mutual Suffering",
       "description" : "Stricken enemies may spread death and feebleness around them upon death.{^n}{^Y} Slain enemies can spread Consequences debuff on death.",
       "parent" : [ "Consequences" ],
+      "skillIcon" : {
+        "posY" : 341,
+        "posX" : 462
+      },
       "attributes" : {
         "${value}CastLevel" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0 ],
         "${value}CastOnAllDamageTypes" : 1,
@@ -6436,6 +6460,10 @@
     } ], [ {
       "name" : "Chi Realignment",
       "description" : "Realigns an enemy's Chi, wounding them and bolstering your own energies",
+      "skillIcon" : {
+        "posY" : 279,
+        "posX" : 286
+      },
       "attributes" : {
         "^a${value} Second(s) Recharge" : [ 12.0, 11.5, 11.0, 10.5, 10.0, 9.5, 9.0, 8.5, 8.0, 7.5, 7.0, 6.5, 6.0, 5.5, 5.0, 4.5 ],
         "${value} Energy Cost" : [ 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0 ],
@@ -6462,6 +6490,10 @@
       "name" : "Essence of Jade ",
       "description" : "A powerful and mystic mineral, you use jade to sharpen your attack skills even further.",
       "parent" : [ "Potent Elixir" ],
+      "skillIcon" : {
+        "posY" : 279,
+        "posX" : 110
+      },
       "attributes" : {
         "${value}CastDuration" : [ 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0 ],
         "${value}CastLevel" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ],
@@ -6472,6 +6504,10 @@
     }, {
       "name" : "Aura of Tranquility",
       "description" : "Your mind is a weapon and a shield. You use your Chi to create a renewable barrier around you.",
+      "skillIcon" : {
+        "posY" : 279,
+        "posX" : 550
+      },
       "attributes" : {
         "${value} Active Energy Cost per Second" : [ 5.0, 6.0, 6.0, 7.0, 8.0, 8.0, 9.0, 10.0, 10.0, 11.0, 12.0, 12.0, 13.0, 14.0, 14.0, 15.0 ],
         "${chance}% Chance of ${value} Fire Damage Retaliation" : {
@@ -6490,6 +6526,10 @@
       "name" : "Shen Pao",
       "description" : "Throw a volatile alchemical concoction at a foe that detonates on impact and causes random elemental damage.",
       "projectileUsesAllDamage" : true,
+      "skillIcon" : {
+        "posY" : 217,
+        "posX" : 198
+      },
       "attributes" : {
         "^a${value} Second(s) Recharge" : 5.0,
         "${value} Energy Cost" : [ 35.0, 38.5, 42.0, 45.5, 49.0, 52.5, 56.0, 59.5, 63.0, 66.5, 70.0, 73.5, 77.0, 80.5, 84.0, 87.5 ],
@@ -6543,6 +6583,10 @@
     }, {
       "name" : "Blessing of Jin Chan ",
       "description" : "The blessings of Jin Chan are upon you, granting a chance for additional boons for every enemy slain.{^n}{^Y} Can trigger on enemy death.  ",
+      "skillIcon" : {
+        "posY" : 217,
+        "posX" : 638
+      },
       "attributes" : {
         "^a${value} Second(s) Recharge" : 8.0,
         "${value}CastLevel" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0 ],
@@ -6555,6 +6599,10 @@
     }, {
       "name" : "Terracotta Servants",
       "description" : "Throw a masterful alchemical concoction that creates a terracotta warrior at the point of impact that serves you.{^n}{^Y} You can summon more than one terracotta servant at the time. ",
+      "skillIcon" : {
+        "posY" : 217,
+        "posX" : 462
+      },
       "attributes" : {
         "^a${value} Second(s) Recharge" : 35.0,
         "${value} Energy Cost" : [ 140.0, 148.0, 156.0, 164.0, 172.0, 180.0, 188.0, 196.0, 204.0, 212.0, 220.0, 228.0, 236.0, 244.0, 252.0, 260.0, 268.0, 276.0, 284.0, 292.0 ],
@@ -6711,6 +6759,10 @@
       "name" : "Reverberation",
       "description" : "Severe changes to an enemy's Chi leaves them with lasting consequences.",
       "parent" : [ "Chi Realignment" ],
+      "skillIcon" : {
+        "posY" : 155,
+        "posX" : 286
+      },
       "attributes" : {
         "${value} Frostburn Damage over ${duration} Second(s)" : {
           "value" : {
@@ -6738,6 +6790,10 @@
     }, {
       "name" : "Convergence",
       "description" : "The Neidan's body is attuned to the potions themselves, sometimes granting additional unexpected power.{^Y} Can trigger when a health or energy potion is used.",
+      "skillIcon" : {
+        "posY" : 155,
+        "posX" : 110
+      },
       "attributes" : {
         "${value}CastDuration" : [ 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0 ],
         "${value}CastLevel" : 1,
@@ -6748,6 +6804,10 @@
       "name" : "Shatter",
       "description" : "Not even death breaks the bonds of servitude. Upon expiring or being killed your terracotta servant shatters, dealing damage around him. ",
       "parent" : [ "Terracotta Servants" ],
+      "skillIcon" : {
+        "posY" : 155,
+        "posX" : 462
+      },
       "attributes" : {
         "${value}m Radius" : [ 2.705, 2.91, 3.115, 3.32, 3.525, 3.73, 3.935, 4.14, 4.345, 4.55, 4.755, 4.96 ],
         "${value} Bleeding Damage over ${duration} Second(s)" : {
@@ -6773,6 +6833,10 @@
     }, {
       "name" : "Antidote",
       "parent" : [ "Potent Elixir" ],
+      "skillIcon" : {
+        "posY" : 341,
+        "posX" : 110
+      },
       "attributes" : {
         "${value}CastDuration" : [ 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0 ],
         "${value}CastLevel" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ],
@@ -6784,6 +6848,10 @@
       "name" : "Echoes of the Ancestors",
       "description" : "Upon vanquishing enemies with Shen Pao, blast waves emanate from you and deal damage around you.{^n}{^Y} Can trigger on enemy death. ",
       "parent" : [ "Shen Pao" ],
+      "skillIcon" : {
+        "posY" : 93,
+        "posX" : 198
+      },
       "attributes" : {
         "^a${value} Second(s) Recharge" : 2.0,
         "${value}CastLevel" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0 ],
@@ -6795,6 +6863,10 @@
       "name" : "Voice of the Ancients ",
       "description" : "Enemies caught in your Breath Attack will suffer the wrath of the Elements. ",
       "parent" : [ "Breath Attack " ],
+      "skillIcon" : {
+        "posY" : 93,
+        "posX" : 374
+      },
       "attributes" : {
         "${value} Energy Cost" : [ 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0 ],
         "${value} Elemental Damage" : {
@@ -6807,6 +6879,10 @@
       "name" : "Melding Armor ",
       "description" : "The strength of your Chi’s flow is such that your barrier is imbued with additional protective energies.",
       "parent" : [ "Aura of Tranquility" ],
+      "skillIcon" : {
+        "posY" : 93,
+        "posX" : 550
+      },
       "attributes" : {
         "${value} Active Energy Cost per Second" : [ 1.0, 1.0, 2.0, 2.0, 3.0, 3.0, 4.0, 4.0, 5.0, 5.0 ],
         "${value}% Chance to Avoid Projectiles" : [ 4.0, 5.85, 7.7, 9.55, 11.4, 13.25, 15.1, 16.95, 18.8, 20.65 ],
@@ -6818,6 +6894,10 @@
     } ], [ {
       "name" : "Weakest Chakra",
       "description" : "You become attuned to the elements, emanating lethal energy that diminishes enemy health and weakens their defences. ",
+      "skillIcon" : {
+        "posY" : 31,
+        "posX" : 286
+      },
       "attributes" : {
         "^a${value} Second(s) Recharge" : 150.0,
         "${value} Energy Cost" : [ 150.0, 164.0, 178.0, 192.0, 206.0, 220.0, 234.0, 248.0, 262.0, 276.0, 290.0, 304.0, 318.0, 332.0, 346.0, 360.0 ],
@@ -6854,6 +6934,10 @@
       "doesNotIncludeRacialDamage" : true,
       "notDispellable" : true,
       "parent" : [ "Terracotta Servants" ],
+      "skillIcon" : {
+        "posY" : 31,
+        "posX" : 462
+      },
       "attributes" : {
         "${value} Second Duration" : 100.0,
         "${value}m Radius" : [ 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5 ],
@@ -6873,6 +6957,10 @@
       "name" : "Spreading Influence ",
       "description" : "Upon hitting an enemy, your attacks deal damage in an area, damaging enemies around it.",
       "parent" : [ "Huangdi's Favor" ],
+      "skillIcon" : {
+        "posY" : 31,
+        "posX" : 638
+      },
       "attributes" : {
         "${value}m Radius" : [ 0.5, 0.7, 0.9, 1.1, 1.3, 1.5, 1.7, 1.9, 2.1, 2.3, 2.5, 2.7, 2.9, 3.1, 3.3, 3.5 ],
         "${value} Arc of Attack" : [ 7.0, 15.0, 23.0, 32.0, 41.0, 51.0, 61.0, 72.0, 83.0, 95.0, 107.0, 120.0, 133.0, 147.0, 161.0, 176.0 ],

@@ -19,9 +19,9 @@ xmlhttp.open("GET", url, true);
 xmlhttp.send();
 
 function init(){
-  if(m1_id > 10 || m1_id < 1 || Number.isNaN(m1_id))
+  if(m1_id > mod.masteries.length || m1_id < 1 || Number.isNaN(m1_id))
     m1_id = null;
-  if(m2_id > 10 || m2_id < 1 || Number.isNaN(m2_id))
+  if(m2_id > mod.masteries.length || m2_id < 1 || Number.isNaN(m2_id))
     m2_id = null;
     
   m1 = mod.masteries[m1_id - 1];
