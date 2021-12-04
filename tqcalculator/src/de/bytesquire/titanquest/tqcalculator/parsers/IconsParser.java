@@ -142,6 +142,28 @@ public class IconsParser {
             if (!(e instanceof NoSuchFileException))
                 e.printStackTrace();
         }
+        
+        try {
+            DirectoryStream<Path> playerSkills = Files
+                    .newDirectoryStream(Path.of(mModPath + "records/xpack4/ui/skills/"));
+            playerSkills.forEach((masteryPath) -> {
+                if (masteryPath.getFileName().toString().startsWith("mastery")) {
+                    try {
+                        DirectoryStream<Path> masterySkills = Files.newDirectoryStream(masteryPath);
+                        masterySkills.forEach((skillPath) -> {
+                            if (skillPath.getFileName().toString().startsWith("skill")) {
+                                mIconFiles.add(new File(skillPath.toAbsolutePath().toString()));
+                            }
+                        });
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+            });
+        } catch (IOException e) {
+            if (!(e instanceof NoSuchFileException))
+                e.printStackTrace();
+        }
     }
 
     public SkillIcon getIcon(String skillName) {

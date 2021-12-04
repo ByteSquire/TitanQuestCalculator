@@ -71,7 +71,7 @@ public class Mastery {
                             }
                         } catch (NullPointerException e) {
                             System.err
-                                    .println("Unused skill: " + mSkills.indexOf(masterySkill) + "in mastery: " + mName);
+                                    .println("Unused skill: " + mSkills.indexOf(masterySkill) + ", in mastery: " + mName);
                             continue;
                         }
                     }
