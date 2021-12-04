@@ -421,7 +421,9 @@ public class Skill {
         return mFiles;
     }
 
-    public int getSkillTier() {
+    public int getSkillTier() throws Exception {
+        if (mSkillTier <= 0)
+            throw new Exception("Skill tier missing for skill: " + mSkillName + " (" + mFiles.get(0) + ")");
         return mSkillTier;
     }
 

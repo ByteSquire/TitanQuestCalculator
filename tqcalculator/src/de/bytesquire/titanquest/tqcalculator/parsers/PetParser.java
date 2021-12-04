@@ -80,7 +80,7 @@ public class PetParser {
 
                     attributeName = attributeName.replace("character", "Character");
 
-                    if (attributeName.startsWith("skillName")) {
+                    if (attributeName.startsWith("skillName") || attributeName.startsWith("initialSkillName")) {
                         if (value.contains(";"))
                             return;
                         if (value.contains(" "))

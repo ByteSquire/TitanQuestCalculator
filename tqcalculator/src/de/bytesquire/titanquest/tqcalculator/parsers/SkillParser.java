@@ -141,7 +141,12 @@ public class SkillParser {
                     for (String skillAttribute : tmp.getAttributes().keySet()) {
                         mAttributes.put(skillAttribute, tmp.getAttributes().get(skillAttribute));
                     }
-                    mAttributes.put("skillTier", tmp.getSkillTier());
+                    try {
+                        mAttributes.put("skillTier", tmp.getSkillTier());
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                        System.err.println("Probably fine because it is a pet skill");
+                    }
                     mSkillTag = tmp.getSkillTag();
                     mSkillDescriptionTag = tmp.getSkillDescriptionTag();
                     mSkillIcon = tmp.getSkillIcon();

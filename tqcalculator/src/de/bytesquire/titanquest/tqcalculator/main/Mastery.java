@@ -65,8 +65,14 @@ public class Mastery {
                 for (String parent : skill.getParent()) {
                     boolean containsParent = false;
                     for (Skill masterySkill : mSkills) {
-                        if (masterySkill.getName().equals(parent)) {
-                            containsParent = true;
+                        try {
+                            if (masterySkill.getName().equals(parent)) {
+                                containsParent = true;
+                            }
+                        } catch (NullPointerException e) {
+                            System.err
+                                    .println("Unused skill: " + mSkills.indexOf(masterySkill) + "in mastery: " + mName);
+                            continue;
                         }
                     }
                     if (containsParent) {
@@ -91,6 +97,9 @@ public class Mastery {
                     break;
                 } catch (IndexOutOfBoundsException e) {
                     mSkillTiers.add(new ArrayList<>());
+                } catch (Exception e) {
+                    e.printStackTrace();
+                    break;
                 }
             }
         }

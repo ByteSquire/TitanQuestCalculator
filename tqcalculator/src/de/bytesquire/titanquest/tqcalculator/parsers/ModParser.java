@@ -231,7 +231,7 @@ public class ModParser {
     }
 
     public List<File> getSkillTrees() {
-        File[] ret = new File[10];
+        File[] ret = new File[mSkillTrees.size()];
         int i = 0;
         for (File file : mSkillTrees.values())
             ret[i++] = file;
