@@ -31,6 +31,7 @@ public class SkillParser {
     private Boolean mNotDispellable;
     private Boolean mProjectileUsesAllDamage;
     private ArrayList<String> mProtectsAgainst;
+    private ArrayList<Skill> mCastSkills;
 
     public SkillParser(File aSkill, String aParentPath, ModStringsParser aMSParser, IconsParser aIconsParser) {
 
@@ -44,6 +45,7 @@ public class SkillParser {
         mAttributes = new LinkedHashMap<>();
         mAdditionalFiles = new ArrayList<String>();
         mParentSkill = new ArrayList<String>();
+        mCastSkills = new ArrayList<>();
 
         mSkill = aSkill;
         mSkillIcon = mIconsParser.getIcon(mSkill.getAbsolutePath().split("database")[2].substring(1));
@@ -145,7 +147,7 @@ public class SkillParser {
                         mAttributes.put("skillTier", tmp.getSkillTier());
                     } catch (Exception e) {
                         e.printStackTrace();
-                        System.err.println("Probably fine because it is a pet skill");
+                        System.err.println("Probably fine because it is a pet or cast skill");
                     }
                     mSkillTag = tmp.getSkillTag();
                     mSkillDescriptionTag = tmp.getSkillDescriptionTag();
@@ -161,6 +163,81 @@ public class SkillParser {
                     mAdditionalFiles.addAll(tmp.getFiles());
                     if (tmp.getRace() != null)
                         mRace = tmp.getRace();
+                    return;
+                }
+                if (attributeName.equals("skillCastName")) {
+                    if (value.contains(";")) {
+                        String[] paths = value.split(";");
+                        for (String path : paths) {
+                            Skill tmp;
+                            try {
+                                tmp = new Skill(new File(
+                                        Control.DATABASES_DIR + mParentPath.split("/")[0] + "/database/" + path), null,
+                                        mParentPath, mMSParser, mIconsParser);
+                            } catch (FileNotFoundException e) {
+                                e.printStackTrace();
+                                return;
+                            }
+                            mCastSkills.add(tmp);
+//                            for (String skillAttribute : tmp.getAttributes().keySet()) {
+//                                mAttributes.put(skillAttribute, tmp.getAttributes().get(skillAttribute));
+//                            }
+//                            try {
+//                                mAttributes.put("skillTier", tmp.getSkillTier());
+//                            } catch (Exception e) {
+//                                e.printStackTrace();
+//                                System.err.println("Probably fine because it is a cast skill");
+//                            }
+//                            mSkillTag = tmp.getSkillTag();
+//                            mSkillDescriptionTag = tmp.getSkillDescriptionTag();
+//                            mSkillIcon = tmp.getSkillIcon();
+//                            mModifier = tmp.isModifier() || mModifier;
+//                            mDoesNotIncludeRacialDamage = tmp.isDoesNotIncludeRacialDamage();
+//                            mExclusiveSkill = tmp.isExclusiveSkill();
+//                            mNotDispellable = tmp.isNotDispellable();
+//                            mProtectsAgainst = tmp.getProtectsAgainst();
+//                            mProjectileUsesAllDamage = tmp.getProjectileUsesAllDamage();
+//                            if (tmp.getParent() != null)
+//                                mParentSkill.addAll(Arrays.asList(tmp.getParent()));
+                            mAdditionalFiles.addAll(tmp.getFiles());
+//                            if (tmp.getRace() != null)
+//                                mRace = tmp.getRace();
+                        }
+                    } else {
+                        Skill tmp;
+                        try {
+                            tmp = new Skill(
+                                    new File(Control.DATABASES_DIR + mParentPath.split("/")[0] + "/database/" + value),
+                                    null, mParentPath, mMSParser, mIconsParser);
+                        } catch (FileNotFoundException e) {
+                            e.printStackTrace();
+                            return;
+                        }
+                        mCastSkills.add(tmp);
+//                        for (String skillAttribute : tmp.getAttributes().keySet()) {
+//                            mAttributes.put(skillAttribute, tmp.getAttributes().get(skillAttribute));
+//                        }
+//                        try {
+//                            mAttributes.put("skillTier", tmp.getSkillTier());
+//                        } catch (Exception e) {
+//                            e.printStackTrace();
+//                            System.err.println("Probably fine because it is a cast skill");
+//                        }
+//                        mSkillTag = tmp.getSkillTag();
+//                        mSkillDescriptionTag = tmp.getSkillDescriptionTag();
+//                        mSkillIcon = tmp.getSkillIcon();
+//                        mModifier = tmp.isModifier() || mModifier;
+//                        mDoesNotIncludeRacialDamage = tmp.isDoesNotIncludeRacialDamage();
+//                        mExclusiveSkill = tmp.isExclusiveSkill();
+//                        mNotDispellable = tmp.isNotDispellable();
+//                        mProtectsAgainst = tmp.getProtectsAgainst();
+//                        mProjectileUsesAllDamage = tmp.getProjectileUsesAllDamage();
+//                        if (tmp.getParent() != null)
+//                            mParentSkill.addAll(Arrays.asList(tmp.getParent()));
+                        mAdditionalFiles.addAll(tmp.getFiles());
+//                        if (tmp.getRace() != null)
+//                            mRace = tmp.getRace();
+                    }
                     return;
                 }
                 if (attributeName.equals("SkillPet")) {
@@ -324,5 +401,9 @@ public class SkillParser {
 
     public ArrayList<String> getProtectsAgainst() {
         return mProtectsAgainst;
+    }
+    
+    public ArrayList<Skill> getCastSkills() {
+        return mCastSkills;
     }
 }

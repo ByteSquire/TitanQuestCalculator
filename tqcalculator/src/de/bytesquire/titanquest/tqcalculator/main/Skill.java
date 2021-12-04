@@ -21,7 +21,7 @@ import de.bytesquire.titanquest.tqcalculator.parsers.*;
         "requiredWeapons", "race" })
 @JsonInclude(Include.NON_NULL)
 @JsonPropertyOrder({ "name", "description", "doesNotIncludeRacialDamage", "exclusiveSkill", "notDispellable",
-        "projectileUsesAllDamage", "protectsAgainst", "parent", "skillIcon", "attributes", "pet" })
+        "projectileUsesAllDamage", "protectsAgainst", "parent", "skillIcon", "attributes", "pet", "castSkills" })
 public class Skill {
 
     private SkillParser mSkillParser;
@@ -46,20 +46,19 @@ public class Skill {
     private Boolean mNotDispellable;
     private Boolean mProjectileUsesAllDamage;
     private ArrayList<String> mProtectsAgainst;
+    private ArrayList<Skill> mCastSkills;
 
     public Skill(File aSkill, String[] aParent, String aParentPath, ModStringsParser aMSParser,
             IconsParser aIconsParser) throws FileNotFoundException {
-        if (!aSkill.exists())
-            return;
+        if (!aSkill.exists() || aSkill.isDirectory())
+            throw new FileNotFoundException(aSkill.getAbsolutePath());
         mAttributeBuilder = new LinkedHashMap<>();
         mSkillAttributes = new LinkedHashMap<>();
         mParentPath = aParentPath;
         mParent = aParent;
         mFiles = new ArrayList<>();
         mFiles.add(aSkill.getAbsolutePath());
-        
-        if(!aSkill.exists() || aSkill.isDirectory())
-            throw new FileNotFoundException(aSkill.getAbsolutePath());
+
         mSkillParser = new SkillParser(aSkill, aParentPath, aMSParser, aIconsParser);
 
         String name;
@@ -86,6 +85,9 @@ public class Skill {
         mProtectsAgainst = mSkillParser.getProtectsAgainst();
         if (mProtectsAgainst == null)
             mProtectsAgainst = new ArrayList<>();
+        mCastSkills = mSkillParser.getCastSkills();
+        if (mCastSkills == null)
+            mCastSkills = new ArrayList<>();
 
         if (mSkillParser.getAdditionalFiles().size() > 0) {
             mFiles.addAll(mSkillParser.getAdditionalFiles());
@@ -482,6 +484,12 @@ public class Skill {
 
     public Boolean getProjectileUsesAllDamage() {
         return mProjectileUsesAllDamage;
+    }
+
+    public ArrayList<Skill> getCastSkills() {
+        if (mCastSkills.size() == 0)
+            return null;
+        return mCastSkills;
     }
 
     private Map<String, Object> sortAttributes() {

@@ -4,7 +4,9 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
@@ -59,6 +61,11 @@ public class Mastery {
             }
         }
 
+        List<Skill> skillsWithIcons = mSkills.stream().filter(skill -> skill.getSkillIcon() != null).collect(Collectors.toList());
+        
+        mSkills.clear();
+        mSkills.addAll(skillsWithIcons);
+        
         for (Skill skill : mSkills) {
             if (skill.getParent() != null) {
                 ArrayList<String> validParents = new ArrayList<>();
