@@ -157,6 +157,12 @@ public class Skill {
             case "ProjectileUsesAllDamage":
                 mProjectileUsesAllDamage = true;
                 break;
+            case "skillCastOnTargetLocation":
+                mCastOnTarget = true;
+                break;
+            case "skillCastOnAllDamageTypes":
+                mCastOnAllDamage = true;
+                break;
             default:
                 Object value = mSkillParser.getAttributes().get(skillAttribute);
                 if (skillAttribute.endsWith("GlobalChance")) {

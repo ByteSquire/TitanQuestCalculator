@@ -173,6 +173,8 @@ public class SkillParser {
                     mNotDispellable = tmp.isNotDispellable();
                     mProtectsAgainst = tmp.getProtectsAgainst();
                     mProjectileUsesAllDamage = tmp.getProjectileUsesAllDamage();
+                    mCastOnAllDamage = tmp.getCastOnAllDamage();
+                    mCastOnTarget = tmp.getCastOnTarget();
                     if (tmp.getParent() != null)
                         mParentSkill.addAll(Arrays.asList(tmp.getParent()));
                     mAdditionalFiles.addAll(tmp.getFiles());

@@ -9218,6 +9218,8 @@
     }, {
       "name" : "Mutual Suffering",
       "description" : "Stricken enemies may spread death and feebleness around them upon death.{^n}{^Y} Slain enemies can spread Consequences debuff on death.",
+      "castOnTarget" : true,
+      "castOnAllDamage" : true,
       "triggerType" : "if the target is killed",
       "parent" : [ "Consequences" ],
       "skillIcon" : {
@@ -9226,8 +9228,6 @@
       },
       "attributes" : {
         "${value}% Chance of activating" : [ 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0 ],
-        "${value}CastOnAllDamageTypes" : 1,
-        "${value}CastOnTargetLocation" : 1,
         "MaxLevel" : 6,
         "UltimateLevel" : 10
       },
@@ -9514,6 +9514,8 @@
     }, {
       "name" : "Blessing of Jin Chan",
       "description" : "The blessings of Jin Chan are upon you, granting a chance for additional boons for every enemy slain.{^n}{^Y} Can trigger on enemy death.  ",
+      "castOnTarget" : true,
+      "castOnAllDamage" : true,
       "triggerType" : "if the target is killed",
       "skillIcon" : {
         "posY" : 217,
@@ -9522,8 +9524,6 @@
       "attributes" : {
         "^a${value} Second(s) Recharge" : 8.0,
         "${value}% Chance of activating" : [ 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0 ],
-        "${value}CastOnAllDamageTypes" : 1,
-        "${value}CastOnTargetLocation" : 1,
         "MaxLevel" : 8,
         "UltimateLevel" : 12
       },
@@ -9867,6 +9867,7 @@
     } ], [ {
       "name" : "Echoes of the Ancestors",
       "description" : "Upon vanquishing enemies with Shen Pao, blast waves emanate from you and deal damage around you.{^n}{^Y} Can trigger on enemy death. ",
+      "castOnTarget" : true,
       "triggerType" : "if the target is killed",
       "parent" : [ "Shen Pao" ],
       "skillIcon" : {
@@ -9876,7 +9877,6 @@
       "attributes" : {
         "^a${value} Second(s) Recharge" : 2.0,
         "${value}% Chance of activating" : [ 33.0, 33.0, 33.0, 33.0, 33.0, 33.0, 33.0, 33.0, 33.0, 33.0 ],
-        "${value}CastOnTargetLocation" : 1,
         "MaxLevel" : 6,
         "UltimateLevel" : 10
       },
