@@ -48,6 +48,21 @@ function getPopupString(skill, currLevel, skipNext){
         ret += '<span class="" style="color: orange">Projectile uses All Damage</span>\n';
     }
     
+    if(skill.triggerType){
+        ret += "<br>\n";
+        ret += '<span class="" style="color: orange">Skill(s) will be cast ' + skill.triggerType + '</span>\n';
+    }
+    
+    if(skill.castOnTarget){
+        ret += "<br>\n";
+        ret += '<span class="" style="color: orange">Will be casted at target location</span>\n';
+    }
+    
+    if(skill.castOnAllDamage){
+        ret += "<br>\n";
+        ret += '<span class="" style="color: orange">Activates on all damage types</span>\n';
+    }
+    
     if(skill.protectsAgainst){
         ret += "<br>\n";
         ret += '<span class="" style="color: green">Protects Against:</span>\n';

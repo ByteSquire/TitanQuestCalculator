@@ -197,7 +197,7 @@ function formatPetSkills(value, index, colour) {
 
 function formatCastSkills(value, index, colour) {
     var skills = value.castSkills;
-    var ret = '<span style="color: brown">Pet Skills:</span>\n';
+    var ret = '<span style="color: brown">Cast Skills:</span>\n';
     ret += '<table>\n<tr style="vertical-align: top">';
     var i = 0;
     skills.forEach((skill) => {

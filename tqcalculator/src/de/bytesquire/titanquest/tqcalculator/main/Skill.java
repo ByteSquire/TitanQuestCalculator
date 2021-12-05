@@ -23,7 +23,8 @@ import de.bytesquire.titanquest.tqcalculator.parsers.*;
         "requiredWeapons", "race" })
 @JsonInclude(Include.NON_NULL)
 @JsonPropertyOrder({ "name", "description", "doesNotIncludeRacialDamage", "exclusiveSkill", "notDispellable",
-        "projectileUsesAllDamage", "protectsAgainst", "parent", "skillIcon", "attributes", "pet", "skillCast" })
+        "projectileUsesAllDamage", "protectsAgainst", "castOnTarget", "castOnAllDamage", "triggerType", "parent",
+        "skillIcon", "attributes", "pet", "skillCast" })
 public class Skill {
 
     private SkillParser mSkillParser;
@@ -48,6 +49,9 @@ public class Skill {
     private Boolean mExclusiveSkill;
     private Boolean mNotDispellable;
     private Boolean mProjectileUsesAllDamage;
+    private Boolean mCastOnTarget;
+    private Boolean mCastOnAllDamage;
+    private TriggerType mTriggerType;
     private ArrayList<String> mProtectsAgainst;
 
     public Skill(File aSkill, String[] aParent, String aParentPath, ModStringsParser aMSParser,
@@ -91,6 +95,9 @@ public class Skill {
             mParent = mSkillParser.getParentSkill();
         }
         isModifier = mSkillParser.isModifier();
+        mTriggerType = mSkillParser.getTriggerType();
+        mCastOnTarget = mSkillParser.getCastOnTarget();
+        mCastOnAllDamage = mSkillParser.getCastOnAllDamage();
         mNotDispellable = mSkillParser.getNotDispellable();
         mDoesNotIncludeRacialDamage = mSkillParser.getDoesNotIncludeRacialDamage();
         mExclusiveSkill = mSkillParser.getExclusiveSkill();
@@ -274,7 +281,8 @@ public class Skill {
             putAttributeDuration(key, value);
             return;
         }
-        if (key.endsWith("Chance") && !key.equals("projectilePiercingChance") && !key.equals("onHitActivationChance") && !key.equals("CastChance")) {
+        if (key.endsWith("Chance") && !key.equals("projectilePiercingChance") && !key.equals("onHitActivationChance")
+                && !key.equals("CastChance")) {
             key = key.substring(0, key.length() - "Chance".length());
             putAttributeChance(key, value);
             return;
@@ -516,6 +524,18 @@ public class Skill {
         }
 
         return sortedMap;
+    }
+
+    public Boolean getCastOnTarget() {
+        return mCastOnTarget;
+    }
+
+    public Boolean getCastOnAllDamage() {
+        return mCastOnAllDamage;
+    }
+
+    public TriggerType getTriggerType() {
+        return mTriggerType;
     }
 }
 

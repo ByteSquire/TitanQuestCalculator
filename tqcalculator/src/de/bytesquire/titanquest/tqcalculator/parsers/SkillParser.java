@@ -32,6 +32,9 @@ public class SkillParser {
     private Boolean mProjectileUsesAllDamage;
     private ArrayList<String> mProtectsAgainst;
     private ArrayList<Skill> mCastSkills;
+    private Boolean mCastOnTarget;
+    private Boolean mCastOnAllDamage;
+    private TriggerType mTrigger;
 
     public SkillParser(File aSkill, String aParentPath, ModStringsParser aMSParser, IconsParser aIconsParser) {
 
@@ -284,6 +287,12 @@ public class SkillParser {
                 if (attributeName.equals("Class")) {
                     if (value.endsWith("Modifier") || value.startsWith("SkillSecondary"))
                         mModifier = true;
+                    if (value.contains("OnItemUse"))
+                        mTrigger = TriggerType.ON_ITEM_USE;
+                    if (value.contains("OnTargetKilled"))
+                        mTrigger = TriggerType.ON_TARGET_KILLED;
+                    if (value.contains("OnTargetHit"))
+                        mTrigger = TriggerType.ON_TARGET_HIT;
                 }
             });
         } catch (FileNotFoundException e) {
@@ -419,5 +428,17 @@ public class SkillParser {
 
     public ArrayList<Skill> getCastSkills() {
         return mCastSkills;
+    }
+
+    public TriggerType getTriggerType() {
+        return mTrigger;
+    }
+
+    public Boolean getCastOnTarget() {
+        return mCastOnTarget;
+    }
+
+    public Boolean getCastOnAllDamage() {
+        return mCastOnAllDamage;
     }
 }

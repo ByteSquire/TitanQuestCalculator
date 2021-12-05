@@ -6314,6 +6314,7 @@
     }, {
       "name" : "Potent Elixir",
       "description" : "Neidan practitioners often alter their concoctions to grant them additional boons when imbibed.{^n}{^Y} Can trigger when a health or energy potion is used.",
+      "triggerType" : "when an item is used",
       "skillIcon" : {
         "posY" : 403,
         "posX" : 110
@@ -6519,6 +6520,7 @@
     }, {
       "name" : "Consequences",
       "description" : "You channel power through your weapon lowering your enemies' resistance to damage.{^n}{^Y} Weapon attacks have a chance to reduce enemies’ resistances. ",
+      "triggerType" : "if the target is hit",
       "skillIcon" : {
         "posY" : 403,
         "posX" : 462
@@ -6598,6 +6600,7 @@
     }, {
       "name" : "Mutual Suffering",
       "description" : "Stricken enemies may spread death and feebleness around them upon death.{^n}{^Y} Slain enemies can spread Consequences debuff on death.",
+      "triggerType" : "if the target is killed",
       "parent" : [ "Consequences" ],
       "skillIcon" : {
         "posY" : 341,
@@ -6673,6 +6676,7 @@
     }, {
       "name" : "Essence of Jade",
       "description" : "A powerful and mystic mineral, you use jade to sharpen your attack skills even further.",
+      "triggerType" : "when an item is used",
       "parent" : [ "Potent Elixir" ],
       "skillIcon" : {
         "posY" : 279,
@@ -6890,6 +6894,7 @@
     }, {
       "name" : "Blessing of Jin Chan",
       "description" : "The blessings of Jin Chan are upon you, granting a chance for additional boons for every enemy slain.{^n}{^Y} Can trigger on enemy death.  ",
+      "triggerType" : "if the target is killed",
       "skillIcon" : {
         "posY" : 217,
         "posX" : 638
@@ -7099,6 +7104,7 @@
     }, {
       "name" : "Convergence",
       "description" : "The Neidan's body is attuned to the potions themselves, sometimes granting additional unexpected power.{^Y} Can trigger when a health or energy potion is used.",
+      "triggerType" : "when an item is used",
       "skillIcon" : {
         "posY" : 155,
         "posX" : 110
@@ -7240,6 +7246,7 @@
       }
     }, {
       "name" : "Antidote",
+      "triggerType" : "when an item is used",
       "parent" : [ "Potent Elixir" ],
       "skillIcon" : {
         "posY" : 341,
@@ -7378,6 +7385,7 @@
     } ], [ {
       "name" : "Echoes of the Ancestors",
       "description" : "Upon vanquishing enemies with Shen Pao, blast waves emanate from you and deal damage around you.{^n}{^Y} Can trigger on enemy death. ",
+      "triggerType" : "if the target is killed",
       "parent" : [ "Shen Pao" ],
       "skillIcon" : {
         "posY" : 93,
