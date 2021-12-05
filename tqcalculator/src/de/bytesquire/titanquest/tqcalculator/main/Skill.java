@@ -10,6 +10,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.Objects;
 import java.util.Map.Entry;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
@@ -542,6 +543,26 @@ public class Skill {
 
     public TriggerType getTriggerType() {
         return mTriggerType;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        boolean equals = false;
+        if (obj instanceof Skill) {
+            Skill other = (Skill) obj;
+            equals = other.getName().equals(mSkillName);
+            if (!equals)
+                return equals;
+            equals &= getAttributes().keySet().equals(other.getAttributes().keySet());
+            if (!equals)
+                return equals;
+//            equals &= getAttributes().values().equals(other.getAttributes().values());
+//            if (!equals)
+//                return equals;
+        }
+        return equals;
     }
 }
 

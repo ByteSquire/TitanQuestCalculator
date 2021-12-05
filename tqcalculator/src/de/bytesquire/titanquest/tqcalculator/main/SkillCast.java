@@ -1,5 +1,6 @@
 package de.bytesquire.titanquest.tqcalculator.main;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
@@ -27,6 +28,10 @@ public class SkillCast {
     public List<Skill> getCastSkills() {
         if (mCastSkills.size() == 0)
             return null;
-        return mCastSkills;
+        List<Skill> ret = new ArrayList<>();
+        for (Skill skill : mCastSkills)
+            if (!ret.contains(skill))
+                ret.add(skill);
+        return ret;
     }
 }
