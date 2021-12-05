@@ -83,21 +83,29 @@ public class SkillParser {
                     if (attributeName.equals("skillDependancy")) {
                         String[] parentFiles = value.split(";");
                         for (String string : parentFiles) {
+                            BufferedReader parentReader;
                             try {
-                                BufferedReader parentReader = new BufferedReader(new FileReader(new File(
+                                parentReader = new BufferedReader(new FileReader(new File(
                                         Control.DATABASES_DIR + mParentPath.split("/")[0] + "/database/" + string)));
-                                Stream<String> parentFileStream = parentReader.lines();
-                                parentFileStream.filter(str1 -> str1.split(",", -1)[0].equals("skillDisplayName"))
-                                        .forEach(name -> {
-                                            mParentSkill.add(mMSParser.getMatch(name.split(",", -1)[1]));
-                                        });
                             } catch (FileNotFoundException e) {
-                                System.err.println("missing file: " + e.getMessage()
-                                        .split(Control.DATABASES_DIR.replace("\\", "\\\\").replace("/", "\\\\"))[1]
-                                                .split(".dbr ")[0]);
-                                if (getSkillTag() == null)
-                                    System.err.println("But that's fine, as the skill is unused\n");
+                                try {
+                                    parentReader = new BufferedReader(new FileReader(
+                                            new File(Control.DATABASES_DIR + "Vanilla" + "/database/" + string)));
+                                } catch (FileNotFoundException ex) {
+                                    System.err.println("Parent/Dependency skill: "
+                                            + e.getMessage().split(
+                                                    Control.DATABASES_DIR.replace("\\", "\\\\").replace("/", "\\\\"))[1]
+                                            + " not found");
+                                    if (getSkillTag() == null)
+                                        System.err.println("But that's fine, as the skill is unused\n");
+                                    return;
+                                }
                             }
+                            Stream<String> parentFileStream = parentReader.lines();
+                            parentFileStream.filter(str1 -> str1.split(",", -1)[0].equals("skillDisplayName"))
+                                    .forEach(name -> {
+                                        mParentSkill.add(mMSParser.getMatch(name.split(",", -1)[1]));
+                                    });
                         }
                         return;
                     }
@@ -137,7 +145,10 @@ public class SkillParser {
                                 new File(Control.DATABASES_DIR + mParentPath.split("/")[0] + "/database/" + value),
                                 null, mParentPath, mMSParser, mIconsParser);
                     } catch (FileNotFoundException e) {
-                        e.printStackTrace();
+                        System.err.println("Pet or buff skill: "
+                                + e.getLocalizedMessage()
+                                        .split(Control.DATABASES_DIR.replace("\\", "\\\\").replace("/", "\\\\"))[1]
+                                + " not found");
                         return;
                     }
                     for (String skillAttribute : tmp.getAttributes().keySet()) {
@@ -146,8 +157,9 @@ public class SkillParser {
                     try {
                         mAttributes.put("skillTier", tmp.getSkillTier());
                     } catch (Exception e) {
-                        e.printStackTrace();
-                        System.err.println("Probably fine because it is a pet or cast skill");
+                        System.err.println("Skill tier missing for skill: " + e.getMessage()
+                                .split(Control.DATABASES_DIR.replace("\\", "\\\\").replace("/", "\\\\"))[1]);
+                        System.err.println("Probably fine because it is a pet or buff skill");
                     }
                     mSkillTag = tmp.getSkillTag();
                     mSkillDescriptionTag = tmp.getSkillDescriptionTag();
@@ -402,7 +414,7 @@ public class SkillParser {
     public ArrayList<String> getProtectsAgainst() {
         return mProtectsAgainst;
     }
-    
+
     public ArrayList<Skill> getCastSkills() {
         return mCastSkills;
     }

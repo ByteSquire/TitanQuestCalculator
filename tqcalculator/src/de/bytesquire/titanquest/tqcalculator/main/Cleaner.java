@@ -69,7 +69,7 @@ public class Cleaner {
                 if (!(e instanceof java.nio.file.FileAlreadyExistsException))
                     e.printStackTrace();
             }
-            
+
             Path originPlayerLevelsPath = mod.getPlayerLevels().toPath();
 //          System.out.println(originLinksPath);
             Path targetPlayerLevelsPath = Path.of(mod.getModDir().substring(0, mod.getModDir().length() - 1)
@@ -198,8 +198,14 @@ public class Cleaner {
         for (String skillFile : skill.getFiles()) {
             Path originPath = Paths.get(skillFile);
 //            System.out.println(originPath);
-            Path targetPath = Paths.get(mod.getModDir().substring(0, mod.getModDir().length() - 1) + "-cleaned",
-                    skillFile.split(mod.getName())[1]);
+            Path targetPath;
+            if (!skillFile.contains("Vanilla")) {
+                targetPath = Paths.get(mod.getModDir().substring(0, mod.getModDir().length() - 1) + "-cleaned",
+                        skillFile.split(mod.getName())[1]);
+            } else {
+                targetPath = Paths.get(Path.of(Control.DATABASES_DIR, "Vanilla") + "-cleaned",
+                        skillFile.split("Vanilla")[1]);
+            }
 //            System.out.println(targetPath);
             try {
                 String tp = targetPath.toString();

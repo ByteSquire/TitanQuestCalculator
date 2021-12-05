@@ -91,7 +91,10 @@ public class PetParser {
                                     new File(Control.DATABASES_DIR + mParentPath.split("/")[0] + "/database/" + value),
                                     null, mParentPath, mMSParser, mIconsParser);
                         } catch (FileNotFoundException e) {
-                            e.printStackTrace();
+                            System.err.println("Pet skill: "
+                                    + e.getMessage()
+                                            .split(Control.DATABASES_DIR.replace("\\", "\\\\").replace("/", "\\\\"))[1]
+                                    + " not found");
                             return;
                         }
                         if (tmp.getName() == null) {

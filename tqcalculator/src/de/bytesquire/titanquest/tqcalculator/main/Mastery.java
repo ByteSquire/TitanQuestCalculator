@@ -44,7 +44,7 @@ public class Mastery {
                 try {
                     tmp = new Skill(skill, null, (mParentModName + "/Masteries/" + mName), aMSParser, aIconsParser);
                 } catch (FileNotFoundException e) {
-                    e.printStackTrace();
+                    System.err.println("Skill: " + e.getMessage() + " not found");
                     continue;
                 }
                 mSkills.add(tmp);

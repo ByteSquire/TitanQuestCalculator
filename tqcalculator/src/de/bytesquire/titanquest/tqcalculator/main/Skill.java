@@ -2,6 +2,8 @@ package de.bytesquire.titanquest.tqcalculator.main;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -50,8 +52,18 @@ public class Skill {
 
     public Skill(File aSkill, String[] aParent, String aParentPath, ModStringsParser aMSParser,
             IconsParser aIconsParser) throws FileNotFoundException {
-        if (!aSkill.exists() || aSkill.isDirectory())
+        if (aSkill.isDirectory())
             throw new FileNotFoundException(aSkill.getAbsolutePath());
+        if (!aSkill.exists()) {
+            String relativePath = Paths.get(Control.DATABASES_DIR, aParentPath.split("/")[0]).relativize(aSkill.toPath()).toString();
+            Path vanillaPath = Paths.get(Control.DATABASES_DIR, "Vanilla", relativePath);
+            File vanillaSkill = vanillaPath.toFile();
+            if (!vanillaSkill.exists())
+                throw new FileNotFoundException(aSkill.getAbsolutePath());
+            else
+                aSkill = vanillaSkill;
+        }
+
         mAttributeBuilder = new LinkedHashMap<>();
         mSkillAttributes = new LinkedHashMap<>();
         mParentPath = aParentPath;
