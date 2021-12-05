@@ -1,3 +1,5 @@
+var skillsPerRow = 4
+
 function getAttributeStringWithColour(key, value, index, colour){
     return '<span class="skillAttribute" style="color: ' + colour + '">' + getAttributeString(key, value, index, colour) + '</span>';
 }
@@ -167,13 +169,15 @@ function formatPetSkills(value, index, colour) {
     var skills = Object.keys(value.petSkills);
     var ret = '<span style="color: brown">Pet Skills:</span>\n';
     ret += '<table>\n<tr style="vertical-align: top">';
+    if (skills.length > 10)
+        skillsPerRow = 6;
     var i = 0;
     skills.forEach((key) => {
         var skill = value.petSkills[key];
         if(value.petSkillLevels[key] === undefined){
             return;
         }
-        if(i !=0 && i%4 == 0){
+        if(i !=0 && i%skillsPerRow == 0){
             ret += '<tr style="vertical-align: top">';
         }
         i++;
@@ -199,9 +203,11 @@ function formatCastSkills(value, index, colour) {
     var skills = value.castSkills;
     var ret = '<span style="color: brown">Cast Skills:</span>\n';
     ret += '<table>\n<tr style="vertical-align: top">';
+    if (skills.length > 10)
+        skillsPerRow = 6;
     var i = 0;
     skills.forEach((skill) => {
-        if(i !=0 && i%4 == 0){
+        if(i !=0 && i%skillsPerRow == 0){
             ret += '<tr style="vertical-align: top">';
         }
         i++;
