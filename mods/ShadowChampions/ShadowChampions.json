@@ -2427,6 +2427,7 @@
           "Spinning Gears" : {
             "name" : "Spinning Gears",
             "description" : "Implement rotating gears, allowing your automaton to attack multiple enemies at once.",
+            "parent" : [ "Dual Wield" ],
             "attributes" : {
               "^a${value} Second(s) Recharge" : 6.0,
               "${value} Energy Cost" : 30.0,

@@ -7099,7 +7099,103 @@
         "${value}CastLevel" : 1,
         "MaxLevel" : 8,
         "UltimateLevel" : 12
-      }
+      },
+      "castSkills" : [ {
+        "name" : "This potion increases your primary resistances.",
+        "attributes" : {
+          "^a${value} Second(s) Recharge" : 90.0,
+          "${value} Second Duration" : 30.0,
+          "${value}% Bleeding Resistance" : 25.0,
+          "${value}% Elemental Resistance" : 25.0,
+          "${value}% Physical Resistance" : 25.0,
+          "${value}% Pierce Resistance" : 25.0,
+          "${value}% Poison Resistance" : 25.0,
+          "${value}% Vitality Damage Resistance" : 25.0,
+          "MaxLevel" : 1,
+          "UltimateLevel" : 1
+        }
+      }, {
+        "name" : "This potion increases your dodge and projectile avoidance chance.",
+        "attributes" : {
+          "^a${value} Second(s) Recharge" : 90.0,
+          "${value} Second Duration" : 30.0,
+          "${value}% Chance to Avoid Projectiles" : 40.0,
+          "${value}% Chance to Dodge Attacks" : 40.0,
+          "MaxLevel" : 1,
+          "UltimateLevel" : 1
+        }
+      }, {
+        "name" : "This potion increases your secondary resistances.",
+        "attributes" : {
+          "^a${value} Second(s) Recharge" : 90.0,
+          "${value} Second Duration" : 30.0,
+          "${value}% Energy Leech Resistance" : 70.0,
+          "${value}% Reduced Entrapment Duration" : 70.0,
+          "${value}% Reduced Freeze Duration" : 70.0,
+          "${value}% Reduced Petrify Duration" : 70.0,
+          "${value}% Skill Disruption Protection" : 70.0,
+          "${value}% Sleep Resistance" : 70.0,
+          "${value}% Slow Resistance" : 70.0,
+          "${value}% Stun Resistance" : 70.0,
+          "MaxLevel" : 1,
+          "UltimateLevel" : 1
+        }
+      }, {
+        "name" : "This potion converts a portion of the damage you deal to Life Leech.",
+        "attributes" : {
+          "^a${value} Second(s) Recharge" : 90.0,
+          "${value} Second Duration" : 30.0,
+          "${value} Life Leech Retaliation over ${duration} Second(s)" : {
+            "value" : {
+              "min" : 75.0
+            },
+            "duration" : {
+              "min" : 3.0
+            }
+          },
+          "${value} Life Leech over ${duration} Second(s)" : {
+            "value" : {
+              "min" : 75.0
+            },
+            "duration" : {
+              "min" : 3.0
+            }
+          },
+          "MaxLevel" : 1,
+          "UltimateLevel" : 1
+        }
+      }, {
+        "name" : "This potion increases your base armor.",
+        "attributes" : {
+          "^a${value} Second(s) Recharge" : 90.0,
+          "${value} Second Duration" : 30.0,
+          "${value} Armor" : 300.0,
+          "MaxLevel" : 1,
+          "UltimateLevel" : 1
+        }
+      }, {
+        "name" : "This potion increases your base movement speed.",
+        "notDispellable" : true,
+        "attributes" : {
+          "^a${value} Second(s) Recharge" : 90.0,
+          "${value} Second Duration" : 30.0,
+          "${value}forceIgnoreRunSpeedCaps" : 1,
+          "+${value}% Movement Speed" : 30.0,
+          "+${value}% Total Speed" : 20.0,
+          "MaxLevel" : 1
+        }
+      }, {
+        "name" : "This potion increases your bleeding and poison resistance.",
+        "attributes" : {
+          "^a${value} Second(s) Recharge" : 90.0,
+          "${value} Second Duration" : 30.0,
+          "${value}% Bleeding Resistance" : 70.0,
+          "${value}% Life Leech Resistance" : 70.0,
+          "${value}% Poison Resistance" : 70.0,
+          "MaxLevel" : 1,
+          "UltimateLevel" : 1
+        }
+      } ]
     }, {
       "name" : "Shatter",
       "description" : "Not even death breaks the bonds of servitude. Upon expiring or being killed your terracotta servant shatters, dealing damage around him. ",

@@ -1,6 +1,6 @@
 {
   "name" : "SoulvizierAERA",
-  "mappedMasteries" : [ "Warfare", "Defense", "Earth", "Storm", "Occult", "Hunting", "Nature", "Spirit", "Dream", "Runes" ],
+  "mappedMasteries" : [ "Warfare", "Defense", "Earth", "Storm", "Occult", "Hunting", "Nature", "Spirit", "Dream", "Runes", "Neidan" ],
   "masteryLevels" : [ 1, 4, 10, 16, 24, 32, 40 ],
   "skillPointIncrement" : 3,
   "maxLevel" : 85,
@@ -2612,7 +2612,6 @@
         "posX" : 286
       },
       "attributes" : {
-        "^a${value} Second(s) Recharge" : 0.7,
         "${value} Energy Cost" : 20.0,
         "Launches ${value} Projectile(s)" : 1,
         "${value}% Chance to Avoid Projectiles" : [ 10.0, 20.0, 29.0, 38.0, 46.0, 54.0, 61.0, 68.0, 74.0, 80.0 ],
@@ -4389,7 +4388,6 @@
       },
       "attributes" : {
         "${value} Energy Cost" : 1.0,
-        "${value}% Chance to pass through Enemies" : [ 14.0, 16.0, 18.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0, 35.0, 38.0 ],
         "+${value}% Bleeding Damage " : [ 9.0, 12.0, 15.0, 20.0, 23.0, 27.0, 30.0, 35.0, 38.0, 42.0, 45.0, 50.0 ],
         "+${value}% Pierce Damage" : [ 18.0, 20.0, 22.0, 24.0, 27.0, 30.0, 32.0, 34.0, 37.0, 40.0, 42.0, 45.0 ],
         "MaxLevel" : 8,
@@ -8857,6 +8855,1121 @@
         },
         "MaxLevel" : 6,
         "UltimateLevel" : 10
+      }
+    } ] ]
+  }, {
+    "name" : "Neidan",
+    "masteryAttributes" : {
+      "+${value} Health" : [ 22.5, 45.0, 67.5, 90.0, 112.5, 135.0, 157.5, 180.0, 202.5, 225.0, 247.5, 270.0, 292.5, 315.0, 337.5, 360.0, 382.5, 405.0, 427.5, 450.0, 472.5, 495.0, 517.5, 540.0, 562.5, 585.0, 607.5, 630.0, 652.5, 675.0, 697.5, 720.0, 742.5, 765.0, 787.5, 810.0, 832.5, 855.0, 877.5, 900.0, 900.0, 900.0, 900.0, 900.0, 900.0, 900.0, 900.0, 900.0, 900.0, 900.0, 900.0, 900.0, 900.0, 900.0, 900.0, 900.0, 900.0, 900.0, 900.0, 900.0 ],
+      "+${value} Energy" : [ 6.0, 12.0, 18.0, 24.0, 30.0, 36.0, 42.0, 48.0, 54.0, 60.0, 66.0, 72.0, 78.0, 84.0, 90.0, 96.0, 102.0, 108.0, 114.0, 120.0, 126.0, 132.0, 138.0, 144.0, 150.0, 156.0, 162.0, 168.0, 174.0, 180.0, 186.0, 192.0, 198.0, 204.0, 210.0, 216.0, 222.0, 228.0, 234.0, 240.0, 240.0, 240.0, 240.0, 240.0, 240.0, 240.0, 240.0, 240.0, 240.0, 240.0, 240.0, 240.0, 240.0, 240.0, 240.0, 240.0, 240.0, 240.0, 240.0, 240.0 ],
+      "+${value} Strength" : [ 1.375, 2.75, 4.125, 5.5, 6.875, 8.25, 9.625, 11.0, 12.375, 13.75, 15.125, 16.5, 17.875, 19.25, 20.625, 22.0, 23.375, 24.75, 26.125, 27.5, 28.875, 30.25, 31.625, 33.0, 34.375, 35.75, 37.125, 38.5, 39.875, 41.25, 42.625, 44.0, 45.375, 46.75, 48.125, 49.5, 50.875, 52.25, 53.625, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0 ],
+      "+${value} Intelligence" : [ 1.75, 3.5, 5.25, 7.0, 8.75, 10.5, 12.25, 14.0, 15.75, 17.5, 19.25, 21.0, 22.75, 24.5, 26.25, 28.0, 29.75, 31.5, 33.25, 35.0, 36.75, 38.5, 40.25, 42.0, 43.75, 45.5, 47.25, 49.0, 50.75, 52.5, 54.25, 56.0, 57.75, 59.5, 61.25, 63.0, 64.75, 66.5, 68.25, 70.0, 70.0, 70.0, 70.0, 70.0, 70.0, 70.0, 70.0, 70.0, 70.0, 70.0, 70.0, 70.0, 70.0, 70.0, 70.0, 70.0, 70.0, 70.0, 70.0, 70.0 ],
+      "+${value} Dexterity" : [ 1.375, 2.75, 4.125, 5.5, 6.875, 8.25, 9.625, 11.0, 12.375, 13.75, 15.125, 16.5, 17.875, 19.25, 20.625, 22.0, 23.375, 24.75, 26.125, 27.5, 28.875, 30.25, 31.625, 33.0, 34.375, 35.75, 37.125, 38.5, 39.875, 41.25, 42.625, 44.0, 45.375, 46.75, 48.125, 49.5, 50.875, 52.25, 53.625, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0 ],
+      "${chance}% Chance of +${value}% Total Damage" : {
+        "chance" : 5.0,
+        "value" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0, 48.0, 50.0, 52.0, 54.0, 56.0, 58.0, 60.0, 62.0, 64.0, 66.0, 68.0, 70.0, 72.0, 74.0, 76.0, 78.0, 80.0, 80.0, 80.0, 80.0, 80.0, 80.0, 80.0, 80.0, 80.0, 80.0, 80.0, 80.0, 80.0, 80.0, 80.0, 80.0, 80.0, 80.0, 80.0, 80.0, 80.0 ]
+      },
+      "${value}% Energy Leech Resistance" : [ 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 8.5, 9.0, 9.5, 10.0, 10.5, 11.0, 11.5, 12.0, 12.5, 13.0, 13.5, 14.0, 14.5, 15.0, 15.5, 16.0, 16.5, 17.0, 17.5, 18.0, 18.5, 19.0, 19.5, 20.0, 20.5, 21.0, 21.5, 22.0, 22.5, 23.0, 23.5, 24.0, 24.5, 25.0, 25.5, 26.0, 26.5, 27.0, 27.5, 28.0, 28.5, 29.0, 29.5, 30.0 ],
+      "${value}% Reduced Freeze Duration" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0 ],
+      "${value}% Reduced Petrify Duration" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0 ],
+      "${value}% Skill Disruption Protection" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0 ],
+      "MaxLevel" : 60
+    },
+    "skillTiers" : [ [ {
+      "name" : "Breath Attack",
+      "description" : "You emanate a focused energy attack in a cone in front of you, disorienting your foes.{^n}{^Y}Assign this skill to your left mouse button. ",
+      "skillIcon" : {
+        "posY" : 403,
+        "posX" : 374
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : 10.0,
+        "${value} Energy Cost" : [ 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0, 48.0, 50.0, 52.0, 54.0, 56.0, 58.0, 60.0, 62.0, 64.0 ],
+        "${value} Burn Damage over ${duration} Second(s)" : {
+          "value" : {
+            "min" : [ 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0 ]
+          },
+          "duration" : {
+            "min" : 3.0
+          }
+        },
+        "${value} Poison Damage over ${duration} Second(s)" : {
+          "value" : {
+            "min" : [ 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0 ]
+          },
+          "duration" : {
+            "min" : 3.0
+          }
+        },
+        "${value}% Chance to Fumble attacks over ${duration} Second(s)" : {
+          "value" : {
+            "min" : [ 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0, 51.0, 54.0, 57.0, 60.0, 63.0, 66.0, 69.0, 72.0, 75.0 ]
+          },
+          "duration" : {
+            "min" : 4.0
+          }
+        },
+        "MaxLevel" : 12,
+        "UltimateLevel" : 16,
+        "${chance}% Chance for one of the following:" : {
+          "chance" : [ 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0, 51.0, 54.0, 57.0, 60.0, 63.0, 66.0, 69.0, 72.0, 75.0 ],
+          "values" : {
+            "${chance}% Chance of ${value} second(s) of Confusion" : {
+              "chance" : 50.0,
+              "value" : {
+                "min" : [ 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0 ]
+              }
+            },
+            "${chance}% Chance of ${value} second(s) of Fear" : {
+              "chance" : 50.0,
+              "value" : {
+                "min" : [ 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0 ]
+              }
+            }
+          }
+        }
+      }
+    }, {
+      "name" : "Potent Elixir",
+      "description" : "Neidan practitioners often alter their concoctions to grant them additional boons when imbibed.{^n}{^Y} Can trigger when a health or energy potion is used.",
+      "skillIcon" : {
+        "posY" : 403,
+        "posX" : 110
+      },
+      "attributes" : {
+        "${value}CastDuration" : [ 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0 ],
+        "${value}CastLevel" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0 ],
+        "${value}CastNameIsBuff" : 1,
+        "MaxLevel" : 12,
+        "UltimateLevel" : 16
+      },
+      "castSkills" : [ {
+        "name" : "Potent Elixir",
+        "description" : "Neidan practitioners often alter their concoctions to grant them additional boons when imbibed.{^n}{^Y} Can trigger when a health or energy potion is used.",
+        "attributes" : {
+          "${value}% Damage Absorption" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ],
+          "+${value} Energy Regeneration per second" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0 ],
+          "+${value} Health Regeneration per second" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0 ],
+          "MaxLevel" : 12,
+          "UltimateLevel" : 16
+        }
+      }, {
+        "name" : "Potent Elixir",
+        "description" : "Neidan practitioners often alter their concoctions to grant them additional boons when imbibed.{^n}{^Y} Can trigger when a health or energy potion is used.",
+        "attributes" : {
+          "${value}% Damage Absorption" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ],
+          "+${value} Energy Regeneration per second" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0 ],
+          "+${value} Health Regeneration per second" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0 ],
+          "MaxLevel" : 12,
+          "UltimateLevel" : 16
+        }
+      }, {
+        "name" : "Potent Elixir",
+        "description" : "Neidan practitioners often alter their concoctions to grant them additional boons when imbibed.{^n}{^Y} Can trigger when a health or energy potion is used.",
+        "attributes" : {
+          "${value}% Damage Absorption" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ],
+          "+${value} Energy Regeneration per second" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0 ],
+          "+${value} Health Regeneration per second" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0 ],
+          "MaxLevel" : 12,
+          "UltimateLevel" : 16
+        }
+      }, {
+        "name" : "Potent Elixir",
+        "description" : "Neidan practitioners often alter their concoctions to grant them additional boons when imbibed.{^n}{^Y} Can trigger when a health or energy potion is used.",
+        "attributes" : {
+          "${value}% Damage Absorption" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ],
+          "+${value} Energy Regeneration per second" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0 ],
+          "+${value} Health Regeneration per second" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0 ],
+          "MaxLevel" : 12,
+          "UltimateLevel" : 16
+        }
+      }, {
+        "name" : "Potent Elixir",
+        "description" : "Neidan practitioners often alter their concoctions to grant them additional boons when imbibed.{^n}{^Y} Can trigger when a health or energy potion is used.",
+        "attributes" : {
+          "${value}% Damage Absorption" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ],
+          "+${value} Energy Regeneration per second" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0 ],
+          "+${value} Health Regeneration per second" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0 ],
+          "MaxLevel" : 12,
+          "UltimateLevel" : 16
+        }
+      }, {
+        "name" : "Potent Elixir",
+        "description" : "Neidan practitioners often alter their concoctions to grant them additional boons when imbibed.{^n}{^Y} Can trigger when a health or energy potion is used.",
+        "attributes" : {
+          "${value}% Damage Absorption" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ],
+          "+${value} Energy Regeneration per second" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0 ],
+          "+${value} Health Regeneration per second" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0 ],
+          "MaxLevel" : 12,
+          "UltimateLevel" : 16
+        }
+      }, {
+        "name" : "Potent Elixir",
+        "description" : "Neidan practitioners often alter their concoctions to grant them additional boons when imbibed.{^n}{^Y} Can trigger when a health or energy potion is used.",
+        "attributes" : {
+          "${value}% Damage Absorption" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ],
+          "+${value} Energy Regeneration per second" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0 ],
+          "+${value} Health Regeneration per second" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0 ],
+          "MaxLevel" : 12,
+          "UltimateLevel" : 16
+        }
+      }, {
+        "name" : "Potent Elixir",
+        "description" : "Neidan practitioners often alter their concoctions to grant them additional boons when imbibed.{^n}{^Y} Can trigger when a health or energy potion is used.",
+        "attributes" : {
+          "${value}% Damage Absorption" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ],
+          "+${value} Energy Regeneration per second" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0 ],
+          "+${value} Health Regeneration per second" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0 ],
+          "MaxLevel" : 12,
+          "UltimateLevel" : 16
+        }
+      }, {
+        "name" : "Potent Elixir",
+        "description" : "Neidan practitioners often alter their concoctions to grant them additional boons when imbibed.{^n}{^Y} Can trigger when a health or energy potion is used.",
+        "attributes" : {
+          "${value}% Damage Absorption" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ],
+          "+${value} Energy Regeneration per second" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0 ],
+          "+${value} Health Regeneration per second" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0 ],
+          "MaxLevel" : 12,
+          "UltimateLevel" : 16
+        }
+      }, {
+        "name" : "Potent Elixir",
+        "description" : "Neidan practitioners often alter their concoctions to grant them additional boons when imbibed.{^n}{^Y} Can trigger when a health or energy potion is used.",
+        "attributes" : {
+          "${value}% Damage Absorption" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ],
+          "+${value} Energy Regeneration per second" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0 ],
+          "+${value} Health Regeneration per second" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0 ],
+          "MaxLevel" : 12,
+          "UltimateLevel" : 16
+        }
+      }, {
+        "name" : "Potent Elixir",
+        "description" : "Neidan practitioners often alter their concoctions to grant them additional boons when imbibed.{^n}{^Y} Can trigger when a health or energy potion is used.",
+        "attributes" : {
+          "${value}% Damage Absorption" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ],
+          "+${value} Energy Regeneration per second" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0 ],
+          "+${value} Health Regeneration per second" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0 ],
+          "MaxLevel" : 12,
+          "UltimateLevel" : 16
+        }
+      }, {
+        "name" : "Potent Elixir",
+        "description" : "Neidan practitioners often alter their concoctions to grant them additional boons when imbibed.{^n}{^Y} Can trigger when a health or energy potion is used.",
+        "attributes" : {
+          "${value}% Damage Absorption" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ],
+          "+${value} Energy Regeneration per second" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0 ],
+          "+${value} Health Regeneration per second" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0 ],
+          "MaxLevel" : 12,
+          "UltimateLevel" : 16
+        }
+      }, {
+        "name" : "Potent Elixir",
+        "description" : "Neidan practitioners often alter their concoctions to grant them additional boons when imbibed.{^n}{^Y} Can trigger when a health or energy potion is used.",
+        "attributes" : {
+          "${value}% Damage Absorption" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ],
+          "+${value} Energy Regeneration per second" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0 ],
+          "+${value} Health Regeneration per second" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0 ],
+          "MaxLevel" : 12,
+          "UltimateLevel" : 16
+        }
+      }, {
+        "name" : "Potent Elixir",
+        "description" : "Neidan practitioners often alter their concoctions to grant them additional boons when imbibed.{^n}{^Y} Can trigger when a health or energy potion is used.",
+        "attributes" : {
+          "${value}% Damage Absorption" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ],
+          "+${value} Energy Regeneration per second" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0 ],
+          "+${value} Health Regeneration per second" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0 ],
+          "MaxLevel" : 12,
+          "UltimateLevel" : 16
+        }
+      }, {
+        "name" : "Potent Elixir",
+        "description" : "Neidan practitioners often alter their concoctions to grant them additional boons when imbibed.{^n}{^Y} Can trigger when a health or energy potion is used.",
+        "attributes" : {
+          "${value}% Damage Absorption" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ],
+          "+${value} Energy Regeneration per second" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0 ],
+          "+${value} Health Regeneration per second" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0 ],
+          "MaxLevel" : 12,
+          "UltimateLevel" : 16
+        }
+      }, {
+        "name" : "Potent Elixir",
+        "description" : "Neidan practitioners often alter their concoctions to grant them additional boons when imbibed.{^n}{^Y} Can trigger when a health or energy potion is used.",
+        "attributes" : {
+          "${value}% Damage Absorption" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ],
+          "+${value} Energy Regeneration per second" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0 ],
+          "+${value} Health Regeneration per second" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0 ],
+          "MaxLevel" : 12,
+          "UltimateLevel" : 16
+        }
+      } ]
+    }, {
+      "name" : "Huangdi's Favor",
+      "description" : "You channel the wrath of Emperors past and strike your foes with lightning. ",
+      "skillIcon" : {
+        "posY" : 403,
+        "posX" : 638
+      },
+      "attributes" : {
+        "${value} Energy Cost" : 1.0,
+        "${value} Charge Levels" : 1,
+        "Launches ${value} Projectile(s)" : 1,
+        "${value} Second(s) Charge Level Duration" : 5.0,
+        "+${value}% Total Damage" : [ 10.0, 17.0, 24.0, 31.0, 38.0, 45.0, 52.0, 59.0, 66.0, 73.0, 80.0, 87.0 ],
+        "MaxLevel" : 8,
+        "UltimateLevel" : 12,
+        "${chance}% Chance for all of the following:" : {
+          "chance" : 50.0,
+          "values" : {
+            "${value} Lightning Damage" : {
+              "min" : [ 21.6, 30.6, 39.6, 48.6, 57.6, 66.6, 75.6, 84.6, 93.6, 102.6, 111.6, 120.0 ],
+              "max" : [ 32.4, 45.9, 59.4, 72.9, 86.4, 99.9, 113.4, 126.9, 140.4, 153.9, 167.4, 180.0 ]
+            },
+            "${value} second(s) of Petrify" : {
+              "min" : 0.5
+            }
+          }
+        }
+      }
+    }, {
+      "name" : "Consequences",
+      "description" : "You channel power through your weapon lowering your enemies' resistance to damage.{^n}{^Y} Weapon attacks have a chance to reduce enemies’ resistances. ",
+      "skillIcon" : {
+        "posY" : 403,
+        "posX" : 462
+      },
+      "attributes" : {
+        "${value} Second Duration" : [ 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0 ],
+        "${value}CastLevel" : 11,
+        "MaxLevel" : 8,
+        "UltimateLevel" : 12
+      },
+      "castSkills" : [ {
+        "name" : "Consequences",
+        "description" : "You channel power through your weapon lowering your enemies' resistance to damage.{^n}{^Y} Weapon attacks have a chance to reduce enemies’ resistances. ",
+        "doesNotIncludeRacialDamage" : true,
+        "attributes" : {
+          "^a${value} Second(s) Recharge" : 1.0,
+          "${value} Second Duration" : 7.0,
+          "${value}m Radius" : [ 2.0, 2.5, 3.17, 4.0, 5.0, 6.17, 7.5, 9.0, 10.67, 12.5, 0.0 ],
+          "${value} Reduced Armor over ${duration} Second(s)" : {
+            "value" : {
+              "min" : 200.0
+            },
+            "duration" : {
+              "min" : 1.0
+            }
+          },
+          "${value}% Bleeding Resistance" : [ -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0 ],
+          "${value}% Elemental Resistance" : [ -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0 ],
+          "${value}% Energy Leech Resistance" : [ -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0 ],
+          "${value}% Life Leech Resistance" : [ -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0 ],
+          "${value}% Physical Resistance" : [ -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0 ],
+          "${value}% Pierce Resistance" : [ -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0 ],
+          "${value}% Poison Resistance" : [ -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0 ],
+          "${value}% Vitality Damage Resistance" : [ -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0 ],
+          "${value}forceHideIconFromQuickSlot" : 1,
+          "MaxLevel" : 11,
+          "UltimateLevel" : 11
+        }
+      } ]
+    } ], [ {
+      "name" : "Smoke Cloud",
+      "description" : "You throw a small amount of fine powder which releases a burst of energy blinding and hindering your foes.",
+      "skillIcon" : {
+        "posY" : 341,
+        "posX" : 198
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : [ 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0 ],
+        "${value} Energy Cost" : [ 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0 ],
+        "${value} Second Duration" : [ 1.0, 1.5, 2.0, 2.5, 3.0, 3.67, 4.33, 5.0, 5.75, 6.5, 7.25, 8.0 ],
+        "${value}m Radius" : 4.0,
+        "${value} Reduced Resistances" : {
+          "min" : 20.0
+        },
+        "MaxLevel" : 8,
+        "UltimateLevel" : 12,
+        "${chance}% Chance for one of the following:" : {
+          "chance" : 80.0,
+          "values" : {
+            "${chance}% Chance of ${value} second(s) of Immobilization" : {
+              "chance" : 40.0,
+              "value" : {
+                "min" : 1.0
+              }
+            },
+            "${chance}% Chance of ${value} second(s) of Stun" : {
+              "chance" : 60.0,
+              "value" : {
+                "min" : 1.0
+              }
+            }
+          }
+        }
+      }
+    }, {
+      "name" : "Mutual Suffering",
+      "description" : "Stricken enemies may spread death and feebleness around them upon death.{^n}{^Y} Slain enemies can spread Consequences debuff on death.",
+      "parent" : [ "Consequences" ],
+      "skillIcon" : {
+        "posY" : 341,
+        "posX" : 462
+      },
+      "attributes" : {
+        "${value}CastLevel" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0 ],
+        "${value}CastOnAllDamageTypes" : 1,
+        "${value}CastOnTargetLocation" : 1,
+        "MaxLevel" : 6,
+        "UltimateLevel" : 10
+      },
+      "castSkills" : [ {
+        "name" : "Consequences",
+        "description" : "You channel power through your weapon lowering your enemies' resistance to damage.{^n}{^Y} Weapon attacks have a chance to reduce enemies’ resistances. ",
+        "doesNotIncludeRacialDamage" : true,
+        "attributes" : {
+          "^a${value} Second(s) Recharge" : 1.0,
+          "${value} Second Duration" : 7.0,
+          "${value}m Radius" : [ 2.0, 2.5, 3.17, 4.0, 5.0, 6.17, 7.5, 9.0, 10.67, 12.5, 0.0 ],
+          "${value} Reduced Armor over ${duration} Second(s)" : {
+            "value" : {
+              "min" : 200.0
+            },
+            "duration" : {
+              "min" : 1.0
+            }
+          },
+          "${value}% Bleeding Resistance" : [ -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0 ],
+          "${value}% Elemental Resistance" : [ -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0 ],
+          "${value}% Energy Leech Resistance" : [ -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0 ],
+          "${value}% Life Leech Resistance" : [ -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0 ],
+          "${value}% Physical Resistance" : [ -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0 ],
+          "${value}% Pierce Resistance" : [ -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0 ],
+          "${value}% Poison Resistance" : [ -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0 ],
+          "${value}% Vitality Damage Resistance" : [ -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0, -25.0 ],
+          "${value}forceHideIconFromQuickSlot" : 1,
+          "MaxLevel" : 11,
+          "UltimateLevel" : 11
+        }
+      } ]
+    } ], [ {
+      "name" : "Chi Realignment",
+      "description" : "Realigns an enemy's Chi, wounding them and bolstering your own energies",
+      "skillIcon" : {
+        "posY" : 279,
+        "posX" : 286
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : [ 12.0, 11.5, 11.0, 10.5, 10.0, 9.5, 9.0, 8.5, 8.0, 7.5, 7.0, 6.5, 6.0, 5.5, 5.0, 4.5 ],
+        "${value} Energy Cost" : [ 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0 ],
+        " (${value}% of lost Energy as Damage)" : [ 75.0, 100.0, 125.0, 150.0, 175.0, 200.0, 225.0, 250.0, 275.0, 300.0, 325.0, 350.0, 375.0, 400.0, 425.0, 450.0 ],
+        "${value} Energy Leech over ${duration} Second(s)" : {
+          "value" : {
+            "min" : [ 24.0, 27.56, 31.12, 34.68, 38.24, 41.8, 45.36, 48.92, 52.48, 56.04, 59.6, 63.16, 66.72, 70.28, 73.84, 77.4 ]
+          },
+          "duration" : {
+            "min" : [ 1.0, 1.27, 1.54, 1.81, 2.08, 2.35, 2.62, 2.89, 3.16, 3.43, 3.7, 3.97, 4.24, 4.51, 4.78, 5.05 ]
+          }
+        },
+        "${value} second(s) of Stun" : {
+          "min" : 0.5
+        },
+        "${value}% Energy Drained" : {
+          "min" : [ 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0, 70.0, 74.0, 78.0, 82.0, 86.0, 90.0 ]
+        },
+        "${value}m max Distance" : 25.0,
+        "MaxLevel" : 8,
+        "UltimateLevel" : 12
+      }
+    }, {
+      "name" : "Essence of Jade",
+      "description" : "A powerful and mystic mineral, you use jade to sharpen your attack skills even further.",
+      "parent" : [ "Potent Elixir" ],
+      "skillIcon" : {
+        "posY" : 279,
+        "posX" : 110
+      },
+      "attributes" : {
+        "${value}CastDuration" : [ 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0 ],
+        "${value}CastLevel" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ],
+        "${value}CastNameIsBuff" : 1,
+        "MaxLevel" : 8,
+        "UltimateLevel" : 12
+      },
+      "castSkills" : [ {
+        "name" : "Essence of Jade",
+        "description" : "A powerful and mystic mineral, you use jade to sharpen your attack skills even further.",
+        "attributes" : {
+          "${value}% Bleeding Resistance" : [ 6.0, 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0 ],
+          "${value}% Life Leech Resistance" : [ 6.0, 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0 ],
+          "${value}% Poison Resistance" : [ 6.0, 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0 ],
+          "MaxLevel" : 8,
+          "UltimateLevel" : 12
+        }
+      }, {
+        "name" : "Essence of Jade",
+        "description" : "A powerful and mystic mineral, you use jade to sharpen your attack skills even further.",
+        "attributes" : {
+          "${value}% Bleeding Resistance" : [ 6.0, 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0 ],
+          "${value}% Life Leech Resistance" : [ 6.0, 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0 ],
+          "${value}% Poison Resistance" : [ 6.0, 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0 ],
+          "MaxLevel" : 8,
+          "UltimateLevel" : 12
+        }
+      }, {
+        "name" : "Essence of Jade",
+        "description" : "A powerful and mystic mineral, you use jade to sharpen your attack skills even further.",
+        "attributes" : {
+          "${value}% Bleeding Resistance" : [ 6.0, 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0 ],
+          "${value}% Life Leech Resistance" : [ 6.0, 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0 ],
+          "${value}% Poison Resistance" : [ 6.0, 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0 ],
+          "MaxLevel" : 8,
+          "UltimateLevel" : 12
+        }
+      }, {
+        "name" : "Essence of Jade",
+        "description" : "A powerful and mystic mineral, you use jade to sharpen your attack skills even further.",
+        "attributes" : {
+          "${value}% Bleeding Resistance" : [ 6.0, 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0 ],
+          "${value}% Life Leech Resistance" : [ 6.0, 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0 ],
+          "${value}% Poison Resistance" : [ 6.0, 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0 ],
+          "MaxLevel" : 8,
+          "UltimateLevel" : 12
+        }
+      }, {
+        "name" : "Essence of Jade",
+        "description" : "A powerful and mystic mineral, you use jade to sharpen your attack skills even further.",
+        "attributes" : {
+          "${value}% Bleeding Resistance" : [ 6.0, 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0 ],
+          "${value}% Life Leech Resistance" : [ 6.0, 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0 ],
+          "${value}% Poison Resistance" : [ 6.0, 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0 ],
+          "MaxLevel" : 8,
+          "UltimateLevel" : 12
+        }
+      }, {
+        "name" : "Essence of Jade",
+        "description" : "A powerful and mystic mineral, you use jade to sharpen your attack skills even further.",
+        "attributes" : {
+          "${value}% Bleeding Resistance" : [ 6.0, 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0 ],
+          "${value}% Life Leech Resistance" : [ 6.0, 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0 ],
+          "${value}% Poison Resistance" : [ 6.0, 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0 ],
+          "MaxLevel" : 8,
+          "UltimateLevel" : 12
+        }
+      }, {
+        "name" : "Essence of Jade",
+        "description" : "A powerful and mystic mineral, you use jade to sharpen your attack skills even further.",
+        "attributes" : {
+          "${value}% Bleeding Resistance" : [ 6.0, 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0 ],
+          "${value}% Life Leech Resistance" : [ 6.0, 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0 ],
+          "${value}% Poison Resistance" : [ 6.0, 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0 ],
+          "MaxLevel" : 8,
+          "UltimateLevel" : 12
+        }
+      }, {
+        "name" : "Essence of Jade",
+        "description" : "A powerful and mystic mineral, you use jade to sharpen your attack skills even further.",
+        "attributes" : {
+          "${value}% Bleeding Resistance" : [ 6.0, 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0 ],
+          "${value}% Life Leech Resistance" : [ 6.0, 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0 ],
+          "${value}% Poison Resistance" : [ 6.0, 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0 ],
+          "MaxLevel" : 8,
+          "UltimateLevel" : 12
+        }
+      }, {
+        "name" : "Essence of Jade",
+        "description" : "A powerful and mystic mineral, you use jade to sharpen your attack skills even further.",
+        "attributes" : {
+          "${value}% Bleeding Resistance" : [ 6.0, 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0 ],
+          "${value}% Life Leech Resistance" : [ 6.0, 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0 ],
+          "${value}% Poison Resistance" : [ 6.0, 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0 ],
+          "MaxLevel" : 8,
+          "UltimateLevel" : 12
+        }
+      }, {
+        "name" : "Essence of Jade",
+        "description" : "A powerful and mystic mineral, you use jade to sharpen your attack skills even further.",
+        "attributes" : {
+          "${value}% Bleeding Resistance" : [ 6.0, 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0 ],
+          "${value}% Life Leech Resistance" : [ 6.0, 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0 ],
+          "${value}% Poison Resistance" : [ 6.0, 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0 ],
+          "MaxLevel" : 8,
+          "UltimateLevel" : 12
+        }
+      }, {
+        "name" : "Essence of Jade",
+        "description" : "A powerful and mystic mineral, you use jade to sharpen your attack skills even further.",
+        "attributes" : {
+          "${value}% Bleeding Resistance" : [ 6.0, 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0 ],
+          "${value}% Life Leech Resistance" : [ 6.0, 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0 ],
+          "${value}% Poison Resistance" : [ 6.0, 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0 ],
+          "MaxLevel" : 8,
+          "UltimateLevel" : 12
+        }
+      }, {
+        "name" : "Essence of Jade",
+        "description" : "A powerful and mystic mineral, you use jade to sharpen your attack skills even further.",
+        "attributes" : {
+          "${value}% Bleeding Resistance" : [ 6.0, 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0 ],
+          "${value}% Life Leech Resistance" : [ 6.0, 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0 ],
+          "${value}% Poison Resistance" : [ 6.0, 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0 ],
+          "MaxLevel" : 8,
+          "UltimateLevel" : 12
+        }
+      } ]
+    }, {
+      "name" : "Aura of Tranquility",
+      "description" : "Your mind is a weapon and a shield. You use your Chi to create a renewable barrier around you.",
+      "skillIcon" : {
+        "posY" : 279,
+        "posX" : 550
+      },
+      "attributes" : {
+        "${value} Active Energy Cost per Second" : [ 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0, 35.0, 37.0 ],
+        "${chance}% Chance of ${value} Fire Damage Retaliation" : {
+          "chance" : [ 15.6, 21.2, 26.8, 32.4, 38.0, 43.6, 49.2, 54.8, 60.4, 66.0, 71.6, 77.2, 82.8, 88.4, 94.0, 99.6 ],
+          "value" : {
+            "min" : [ 50.0, 52.0, 53.0, 55.0, 57.0, 59.0, 62.0, 65.0, 69.0, 75.0, 80.0, 83.0, 86.0, 90.0, 94.0, 100.0 ]
+          }
+        },
+        "${value}% Damage Absorption" : [ 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0 ],
+        "${value}% Elemental Resistance" : [ 9.5, 11.0, 12.5, 14.0, 15.5, 17.0, 18.5, 20.0, 21.5, 23.0, 24.5, 26.0, 27.5, 29.0, 30.5, 32.0 ],
+        "${value}% Physical Resistance" : [ 3.6, 4.2, 4.8, 5.4, 6.0, 6.6, 7.2, 7.8, 8.4, 9.0, 9.6, 10.2, 10.8, 11.4, 12.0, 12.6 ],
+        "${value}% Poison Resistance" : [ 3.5, 5.0, 6.5, 8.0, 9.5, 11.0, 12.5, 14.0, 15.5, 17.0, 18.5, 20.0, 21.5, 23.0, 24.5, 26.0 ],
+        "+${value}% Armor Absorption" : [ 4.0, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 8.5, 9.0, 9.5, 10.0, 10.5, 11.0, 11.5 ],
+        "MaxLevel" : 12,
+        "UltimateLevel" : 16
+      }
+    } ], [ {
+      "name" : "Shen Pao",
+      "description" : "Throw a volatile alchemical concoction at a foe that detonates on impact and causes random elemental damage.",
+      "projectileUsesAllDamage" : true,
+      "skillIcon" : {
+        "posY" : 217,
+        "posX" : 198
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : 5.0,
+        "${value} Energy Cost" : [ 35.0, 38.5, 42.0, 45.5, 49.0, 52.5, 56.0, 59.5, 63.0, 66.5, 70.0, 73.5, 77.0, 80.5, 84.0, 87.5 ],
+        "${value}m Radius" : [ 3.0, 3.12, 3.24, 3.36, 3.48, 3.6, 3.72, 3.84, 3.96, 4.08, 4.2, 4.32, 4.44, 4.56, 4.68, 4.8 ],
+        "Launches ${value} Projectile(s)" : 1,
+        "${value}% Chance of Impaired Aim over ${duration} Second(s)" : {
+          "value" : {
+            "min" : [ 40.0, 42.0, 44.0, 46.0, 48.0, 50.0, 52.0, 54.0, 56.0, 58.0, 60.0, 62.0, 64.0, 66.0, 68.0, 70.0 ]
+          },
+          "duration" : {
+            "min" : 2.0
+          }
+        },
+        "${value}% Reduction to Enemy's Health" : {
+          "min" : [ 2.65, 3.75, 4.85, 5.95, 7.1, 8.2, 9.25, 10.35, 11.45, 12.55, 13.6, 14.7, 15.8, 16.95, 17.25, 18.0 ]
+        },
+        "${value}% Slower Movement over ${duration} Second(s)" : {
+          "value" : {
+            "min" : [ 40.0, 42.0, 44.0, 46.0, 48.0, 50.0, 52.0, 54.0, 56.0, 58.0, 60.0, 62.0, 64.0, 66.0, 68.0, 70.0 ]
+          },
+          "duration" : {
+            "min" : 2.0
+          }
+        },
+        "MaxLevel" : 12,
+        "UltimateLevel" : 16,
+        "${chance}% Chance for one of the following:" : {
+          "chance" : 100.0,
+          "values" : {
+            "${chance}% Chance of ${value} Fire Damage" : {
+              "chance" : 40.0,
+              "value" : {
+                "min" : [ 53.0, 75.0, 97.0, 119.0, 142.0, 164.0, 185.0, 207.0, 229.0, 251.0, 272.0, 294.0, 316.0, 339.0, 345.0, 360.0 ]
+              }
+            },
+            "${chance}% Chance of ${value} Lightning Damage" : {
+              "chance" : 30.0,
+              "value" : {
+                "min" : [ 53.0, 75.0, 97.0, 119.0, 142.0, 164.0, 185.0, 207.0, 229.0, 251.0, 272.0, 294.0, 316.0, 339.0, 345.0, 360.0 ]
+              }
+            },
+            "${chance}% Chance of ${value} Cold Damage" : {
+              "chance" : 30.0,
+              "value" : {
+                "min" : [ 53.0, 75.0, 97.0, 119.0, 142.0, 164.0, 185.0, 207.0, 229.0, 251.0, 272.0, 294.0, 316.0, 339.0, 345.0, 360.0 ]
+              }
+            }
+          }
+        }
+      }
+    }, {
+      "name" : "Blessing of Jin Chan",
+      "description" : "The blessings of Jin Chan are upon you, granting a chance for additional boons for every enemy slain.{^n}{^Y} Can trigger on enemy death.  ",
+      "skillIcon" : {
+        "posY" : 217,
+        "posX" : 638
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : 8.0,
+        "${value}CastLevel" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0 ],
+        "${value}CastOnAllDamageTypes" : 1,
+        "${value}CastOnTargetLocation" : 1,
+        "${value}forceHideIconFromQuickSlot" : 1,
+        "MaxLevel" : 8,
+        "UltimateLevel" : 12
+      },
+      "castSkills" : [ {
+        "name" : "Blessing of Jin Chan",
+        "description" : "The blessings of Jin Chan are upon you, granting a chance for additional boons for every enemy slain.{^n}{^Y} Can trigger on enemy death.  ",
+        "attributes" : {
+          "${value}m Radius" : 1.0,
+          "Launches ${value} Projectile(s)" : 1,
+          "${value} Summon Limit " : 1,
+          "${value}forceHideIconFromQuickSlot" : 1,
+          "Life Time ${value} Seconds" : 1.0,
+          "MaxLevel" : 14,
+          "UltimateLevel" : 14
+        },
+        "pet" : {
+          "attributes" : {
+            "+${value} Intelligence" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+            "+${value} Base Casting Speed" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+            "+${value} Strength" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+            "+${value} Base Movement Speed" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+            "+${value} Health" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+            "+${value} Dexterity" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+            "+${value} Base Attack Speed" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ]
+          },
+          "petSkills" : { },
+          "petSkillLevels" : { }
+        }
+      } ]
+    }, {
+      "name" : "Terracotta Servants",
+      "description" : "Throw a masterful alchemical concoction that creates a terracotta warrior at the point of impact that serves you.{^n}{^Y} You can summon more than one terracotta servant at the time. ",
+      "skillIcon" : {
+        "posY" : 217,
+        "posX" : 462
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : 35.0,
+        "${value} Energy Cost" : [ 140.0, 148.0, 156.0, 164.0, 172.0, 180.0, 188.0, 196.0, 204.0, 212.0, 220.0, 228.0, 236.0, 244.0, 252.0, 260.0, 268.0, 276.0, 284.0, 292.0 ],
+        "${value}m Radius" : 1.0,
+        "Launches ${value} Projectile(s)" : 1,
+        "${value} Summon Limit " : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0 ],
+        "MaxLevel" : 16,
+        "UltimateLevel" : 20
+      },
+      "pet" : {
+        "attributes" : {
+          "+${value} Intelligence" : [ 39.0, 40.0, 41.0, 42.0, 43.0, 44.0, 45.0, 46.0, 47.0, 48.0, 49.0, 50.0, 51.0, 52.0, 53.0, 54.0, 55.0, 56.0, 57.0, 58.0 ],
+          "+${value} Energy" : [ 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0, 150.0, 160.0, 170.0, 180.0, 190.0, 200.0, 210.0, 220.0, 230.0, 240.0 ],
+          "+${value} Base Casting Speed" : [ 0.65, 0.65, 0.65, 0.65, 0.65, 0.65, 0.65, 0.65, 0.65, 0.65, 0.65, 0.65, 0.65, 0.65, 0.65, 0.65, 0.65, 0.65, 0.65, 0.65 ],
+          "+${value} Strength" : [ 108.5, 113.0, 117.5, 122.0, 126.5, 131.0, 135.5, 140.0, 144.5, 149.0, 153.5, 158.0, 162.5, 167.0, 171.5, 176.0, 180.5, 185.0, 189.5, 194.0 ],
+          "+${value} Base Movement Speed" : [ 1.6, 1.6, 1.6, 1.6, 1.6, 1.6, 1.6, 1.6, 1.6, 1.6, 1.6, 1.6, 1.6, 1.6, 1.6, 1.6, 1.6, 1.6, 1.6, 1.6 ],
+          " Bonus Damage on Hand Attacks" : {
+            "min" : [ 20.0, 23.25, 26.5, 29.75, 33.0, 36.25, 39.5, 42.75, 46.0, 49.25, 52.5, 55.75, 59.0, 62.25, 65.5, 68.75, 72.0, 75.25, 78.5, 81.75 ],
+            "max" : [ 28.25, 32.5, 36.75, 41.0, 45.25, 49.5, 53.75, 58.0, 62.25, 66.5, 70.75, 75.0, 79.25, 83.5, 87.75, 92.0, 96.25, 100.5, 104.75, 109.0 ]
+          },
+          "+${value} Health" : [ 275.0, 325.0, 375.0, 425.0, 475.0, 525.0, 575.0, 625.0, 675.0, 725.0, 775.0, 825.0, 875.0, 925.0, 975.0, 1025.0, 1075.0, 1125.0, 1175.0, 1225.0 ],
+          "+${value} Dexterity" : [ 113.0, 117.5, 122.0, 126.5, 131.0, 135.5, 140.0, 144.5, 149.0, 153.5, 158.0, 162.5, 167.0, 171.5, 176.0, 180.5, 185.0, 189.5, 194.0, 198.5 ],
+          "+${value} Energy Regeneration per second" : [ 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0 ],
+          "+${value} Base Attack Speed" : [ 0.7, 0.73, 0.76, 0.79, 0.82, 0.85, 0.88, 0.91, 0.94, 0.7, 0.73, 0.76, 0.79, 0.82, 0.85, 0.88, 0.91, 0.94, 0.97, 1.0 ]
+        },
+        "petSkills" : {
+          "Lethal Strike" : {
+            "name" : "Lethal Strike",
+            "description" : "A single deadly hit that multiplies the damage of a normal weapon attack.",
+            "attributes" : {
+              "${value} Energy Cost" : [ 50.0, 100.0, 150.0 ],
+              "Launches ${value} Projectile(s)" : 1,
+              "${value} Bleeding Damage over ${duration} Second(s)" : {
+                "value" : {
+                  "min" : 11.0
+                },
+                "duration" : {
+                  "min" : 3.0
+                }
+              },
+              "${value}% Reduction to Enemy's Health" : {
+                "min" : 20.0
+              },
+              "+${value}% Total Damage" : [ 100.0, 150.0, 200.0 ],
+              "MaxLevel" : 3,
+              "UltimateLevel" : 3
+            }
+          },
+          "Forged by Fire" : {
+            "name" : "Forged by Fire",
+            "description" : "Creates an aura around the terracotta servant damaging him and enemies around him. ",
+            "doesNotIncludeRacialDamage" : true,
+            "notDispellable" : true,
+            "attributes" : {
+              "${value} Second Duration" : 100.0,
+              "${value}m Radius" : [ 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5 ],
+              "${value} Burn Damage over ${duration} Second(s)" : {
+                "value" : {
+                  "min" : [ 65.0, 80.0, 95.0, 110.0, 125.0, 140.0, 160.0, 180.0, 205.0, 230.0 ]
+                },
+                "duration" : {
+                  "min" : 1.0
+                }
+              },
+              "${value}% Physical Resistance" : [ -33.6, -42.0, -50.4, -58.8, -67.2, -75.6, -84.0, -92.4, -100.8, -109.2 ],
+              "MaxLevel" : 6,
+              "UltimateLevel" : 10
+            }
+          },
+          "Shatter" : {
+            "name" : "Shatter",
+            "description" : "Not even death breaks the bonds of servitude. Upon expiring or being killed your terracotta servant shatters, dealing damage around him. ",
+            "attributes" : {
+              "${value}m Radius" : [ 2.705, 2.91, 3.115, 3.32, 3.525, 3.73, 3.935, 4.14, 4.345, 4.55, 4.755, 4.96 ],
+              "${value} Bleeding Damage over ${duration} Second(s)" : {
+                "value" : {
+                  "min" : [ 11.4, 14.6, 17.9, 21.1, 24.3, 27.6, 30.8, 34.0, 37.2, 40.5, 43.7, 46.9 ]
+                },
+                "duration" : {
+                  "min" : 3.0
+                }
+              },
+              "${value} Piercing Damage" : {
+                "min" : [ 114.0, 146.0, 179.0, 211.0, 243.0, 276.0, 308.0, 340.0, 372.0, 405.0, 437.0, 469.0 ]
+              },
+              "${value} second(s) of Stun" : {
+                "min" : [ 1.0, 1.1, 1.2, 1.4, 1.6, 1.7, 1.9, 2.0, 2.2, 2.3, 2.5, 2.6 ]
+              },
+              "${value}% Reduction to Enemy's Health" : {
+                "min" : [ 6.0, 8.16, 10.31, 12.47, 14.63, 16.79, 18.95, 21.09, 23.25, 25.41, 27.57, 30.0 ]
+              },
+              "MaxLevel" : 8,
+              "UltimateLevel" : 12
+            }
+          },
+          "Pet_DifficultyDamageScaling" : {
+            "name" : "Pet_DifficultyDamageScaling",
+            "attributes" : {
+              "+${value} Strength" : [ 150.0, 300.0 ],
+              "+${value} Intelligence" : [ 195.0, 390.0 ],
+              "+${value}% Bleeding Damage " : [ 30.0, 60.0 ],
+              "+${value}% Energy Leech " : [ 30.0, 60.0 ],
+              "+${value}% Instant Poison Damage" : [ 30.0, 60.0 ],
+              "+${value}% Life Leech " : [ 30.0, 60.0 ],
+              "+${value}% Pierce Damage" : [ 30.0, 60.0 ],
+              "+${value}% Poison Damage " : [ 30.0, 60.0 ],
+              "MaxLevel" : 2
+            }
+          },
+          "Basic Attack" : {
+            "name" : "Basic Attack",
+            "attributes" : {
+              "Launches ${value} Projectile(s)" : 1,
+              "${value} Physical Damage" : {
+                "min" : [ 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0, 51.0, 54.0, 57.0, 60.0, 63.0, 66.0, 69.0 ],
+                "max" : [ 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0, 90.0, 95.0, 100.0, 105.0, 110.0, 115.0 ]
+              },
+              "MaxLevel" : 20,
+              "UltimateLevel" : 20
+            }
+          }
+        },
+        "petSkillLevels" : {
+          "Lethal Strike" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
+          "Basic Attack" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ]
+        }
+      }
+    } ], [ {
+      "name" : "Reverberation",
+      "description" : "Severe changes to an enemy's Chi leaves them with lasting consequences.",
+      "parent" : [ "Chi Realignment" ],
+      "skillIcon" : {
+        "posY" : 155,
+        "posX" : 286
+      },
+      "attributes" : {
+        "${value} Frostburn Damage over ${duration} Second(s)" : {
+          "value" : {
+            "min" : 20.0
+          },
+          "duration" : {
+            "min" : [ 1.5, 2.0, 2.6, 3.2, 3.9, 4.6, 5.4, 6.2, 7.1, 8.0, 9.0, 10.0 ]
+          }
+        },
+        "${value} second(s) of Skill Disruption" : {
+          "min" : [ 1.5, 2.0, 2.6, 3.2, 3.9, 4.6, 5.4, 6.2, 7.1, 8.0, 9.0, 10.0 ]
+        },
+        "${value}% Slowed over ${duration} Second(s)" : {
+          "value" : {
+            "min" : [ 66.0, 66.0, 66.0, 66.0, 66.0, 66.0, 66.0, 66.0, 66.0, 66.0, 66.0, 66.0 ]
+          },
+          "duration" : {
+            "min" : [ 1.5, 2.0, 2.6, 3.2, 3.9, 4.6, 5.4, 6.2, 7.1, 8.0, 9.0, 10.0 ]
+          }
+        },
+        "+${value}% Damage to Ghost" : 100.0,
+        "MaxLevel" : 8,
+        "UltimateLevel" : 12
+      }
+    }, {
+      "name" : "Convergence",
+      "description" : "The Neidan's body is attuned to the potions themselves, sometimes granting additional unexpected power.{^Y} Can trigger when a health or energy potion is used.",
+      "skillIcon" : {
+        "posY" : 155,
+        "posX" : 110
+      },
+      "attributes" : {
+        "${value}CastDuration" : [ 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0 ],
+        "${value}CastLevel" : 1,
+        "MaxLevel" : 8,
+        "UltimateLevel" : 12
+      },
+      "castSkills" : [ {
+        "name" : "This potion increases your primary resistances.",
+        "attributes" : {
+          "^a${value} Second(s) Recharge" : 90.0,
+          "${value} Second Duration" : 30.0,
+          "${value}% Bleeding Resistance" : 25.0,
+          "${value}% Elemental Resistance" : 25.0,
+          "${value}% Physical Resistance" : 25.0,
+          "${value}% Pierce Resistance" : 25.0,
+          "${value}% Poison Resistance" : 25.0,
+          "${value}% Vitality Damage Resistance" : 25.0,
+          "MaxLevel" : 1,
+          "UltimateLevel" : 1
+        }
+      }, {
+        "name" : "This potion increases your dodge and projectile avoidance chance.",
+        "attributes" : {
+          "^a${value} Second(s) Recharge" : 90.0,
+          "${value} Second Duration" : 30.0,
+          "${value}% Chance to Avoid Projectiles" : 40.0,
+          "${value}% Chance to Dodge Attacks" : 40.0,
+          "MaxLevel" : 1,
+          "UltimateLevel" : 1
+        }
+      }, {
+        "name" : "This potion increases your secondary resistances.",
+        "attributes" : {
+          "^a${value} Second(s) Recharge" : 90.0,
+          "${value} Second Duration" : 30.0,
+          "${value}% Energy Leech Resistance" : 70.0,
+          "${value}% Reduced Entrapment Duration" : 70.0,
+          "${value}% Reduced Freeze Duration" : 70.0,
+          "${value}% Reduced Petrify Duration" : 70.0,
+          "${value}% Skill Disruption Protection" : 70.0,
+          "${value}% Sleep Resistance" : 70.0,
+          "${value}% Slow Resistance" : 70.0,
+          "${value}% Stun Resistance" : 70.0,
+          "MaxLevel" : 1,
+          "UltimateLevel" : 1
+        }
+      }, {
+        "name" : "This potion converts a portion of the damage you deal to Life Leech.",
+        "attributes" : {
+          "^a${value} Second(s) Recharge" : 90.0,
+          "${value} Second Duration" : 30.0,
+          "${value} Life Leech Retaliation over ${duration} Second(s)" : {
+            "value" : {
+              "min" : 75.0
+            },
+            "duration" : {
+              "min" : 3.0
+            }
+          },
+          "${value} Life Leech over ${duration} Second(s)" : {
+            "value" : {
+              "min" : 75.0
+            },
+            "duration" : {
+              "min" : 3.0
+            }
+          },
+          "MaxLevel" : 1,
+          "UltimateLevel" : 1
+        }
+      }, {
+        "name" : "This potion increases your base armor.",
+        "attributes" : {
+          "^a${value} Second(s) Recharge" : 90.0,
+          "${value} Second Duration" : 30.0,
+          "${value} Armor" : 300.0,
+          "MaxLevel" : 1,
+          "UltimateLevel" : 1
+        }
+      }, {
+        "name" : "This potion increases your base movement speed.",
+        "notDispellable" : true,
+        "attributes" : {
+          "^a${value} Second(s) Recharge" : 90.0,
+          "${value} Second Duration" : 30.0,
+          "${value}forceIgnoreRunSpeedCaps" : 1,
+          "+${value}% Movement Speed" : 30.0,
+          "+${value}% Total Speed" : 20.0,
+          "MaxLevel" : 1
+        }
+      }, {
+        "name" : "This potion increases your bleeding and poison resistance.",
+        "attributes" : {
+          "^a${value} Second(s) Recharge" : 90.0,
+          "${value} Second Duration" : 30.0,
+          "${value}% Bleeding Resistance" : 70.0,
+          "${value}% Life Leech Resistance" : 70.0,
+          "${value}% Poison Resistance" : 70.0,
+          "MaxLevel" : 1,
+          "UltimateLevel" : 1
+        }
+      } ]
+    }, {
+      "name" : "Shatter",
+      "description" : "Not even death breaks the bonds of servitude. Upon expiring or being killed your terracotta servant shatters, dealing damage around him. ",
+      "parent" : [ "Terracotta Servants" ],
+      "skillIcon" : {
+        "posY" : 155,
+        "posX" : 462
+      },
+      "attributes" : {
+        "${value}m Radius" : [ 2.705, 2.91, 3.115, 3.32, 3.525, 3.73, 3.935, 4.14, 4.345, 4.55, 4.755, 4.96 ],
+        "${value} Bleeding Damage over ${duration} Second(s)" : {
+          "value" : {
+            "min" : [ 11.4, 14.6, 17.9, 21.1, 24.3, 27.6, 30.8, 34.0, 37.2, 40.5, 43.7, 46.9 ]
+          },
+          "duration" : {
+            "min" : 3.0
+          }
+        },
+        "${value} Piercing Damage" : {
+          "min" : [ 114.0, 146.0, 179.0, 211.0, 243.0, 276.0, 308.0, 340.0, 372.0, 405.0, 437.0, 469.0 ]
+        },
+        "${value} second(s) of Stun" : {
+          "min" : [ 1.0, 1.1, 1.2, 1.4, 1.6, 1.7, 1.9, 2.0, 2.2, 2.3, 2.5, 2.6 ]
+        },
+        "${value}% Reduction to Enemy's Health" : {
+          "min" : [ 6.0, 8.16, 10.31, 12.47, 14.63, 16.79, 18.95, 21.09, 23.25, 25.41, 27.57, 30.0 ]
+        },
+        "MaxLevel" : 8,
+        "UltimateLevel" : 12
+      }
+    } ], [ {
+      "name" : "Echoes of the Ancestors",
+      "description" : "Upon vanquishing enemies with Shen Pao, blast waves emanate from you and deal damage around you.{^n}{^Y} Can trigger on enemy death. ",
+      "parent" : [ "Shen Pao" ],
+      "skillIcon" : {
+        "posY" : 93,
+        "posX" : 198
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : 2.0,
+        "${value}CastLevel" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0 ],
+        "${value}CastOnTargetLocation" : 1,
+        "MaxLevel" : 6,
+        "UltimateLevel" : 10
+      }
+    }, {
+      "name" : "Voice of the Ancients",
+      "description" : "Enemies caught in your Breath Attack will suffer the wrath of the Elements. ",
+      "parent" : [ "Breath Attack" ],
+      "skillIcon" : {
+        "posY" : 93,
+        "posX" : 374
+      },
+      "attributes" : {
+        "${value} Energy Cost" : [ 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0 ],
+        "${value} Elemental Damage" : {
+          "min" : [ 39.75, 58.5, 86.25, 115.5, 143.25, 172.5, 198.75, 229.5, 255.75, 285.0, 312.75, 342.0, 384.75, 429.0, 471.75, 516.0 ]
+        },
+        "MaxLevel" : 10,
+        "UltimateLevel" : 14
+      }
+    }, {
+      "name" : "Melding Armor",
+      "description" : "The strength of your Chi’s flow is such that your barrier is imbued with additional protective energies.",
+      "parent" : [ "Aura of Tranquility" ],
+      "skillIcon" : {
+        "posY" : 93,
+        "posX" : 550
+      },
+      "attributes" : {
+        "${value} Active Energy Cost per Second" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0 ],
+        "${value}% Chance to Avoid Projectiles" : [ 3.0, 4.5, 6.0, 7.5, 9.0, 10.5, 12.0, 13.5, 15.0, 16.5 ],
+        "${value}% Chance to Dodge Attacks" : [ 3.0, 4.5, 6.0, 7.5, 9.0, 10.5, 12.0, 13.5, 15.0, 16.5 ],
+        "${value}% Damage Reflected" : [ 4.7, 8.4, 12.1, 15.8, 19.5, 23.2, 26.9, 30.6, 34.3, 38.0 ],
+        "MaxLevel" : 6,
+        "UltimateLevel" : 10
+      }
+    } ], [ {
+      "name" : "Weakest Chakra",
+      "description" : "You become attuned to the elements, emanating lethal energy that diminishes enemy health and weakens their defences. ",
+      "skillIcon" : {
+        "posY" : 31,
+        "posX" : 286
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : 150.0,
+        "${value} Energy Cost" : [ 150.0, 164.0, 178.0, 192.0, 206.0, 220.0, 234.0, 248.0, 262.0, 276.0, 290.0, 304.0, 318.0, 332.0, 346.0, 360.0 ],
+        "${value} Second Duration" : [ 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0 ],
+        "${value}m Radius" : [ 6.7, 7.4, 8.1, 8.8, 9.5, 10.2, 10.9, 11.6, 12.3, 13.0, 13.7, 14.4, 15.1, 15.8, 16.5, 17.2 ],
+        "${value} Vitality Damage" : {
+          "min" : [ 19.0, 30.0, 41.0, 52.0, 63.0, 74.0, 85.0, 96.0, 107.0, 118.0, 129.0, 140.0, 151.0, 162.0, 173.0, 184.0 ]
+        },
+        "${value} second(s) of Petrify" : {
+          "min" : 0.25
+        },
+        "${value}% Reduced Damage over ${duration} Second(s)" : {
+          "value" : {
+            "min" : [ 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0, 35.0 ]
+          },
+          "duration" : {
+            "min" : 3.0
+          }
+        },
+        "${value}% Reduced Resistances over ${duration} Second(s)" : {
+          "value" : {
+            "min" : [ 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0, 35.0 ]
+          },
+          "duration" : {
+            "min" : 3.0
+          }
+        },
+        "MaxLevel" : 12,
+        "UltimateLevel" : 16
+      }
+    }, {
+      "name" : "Forged by Fire",
+      "description" : "Creates an aura around the terracotta servant damaging him and enemies around him. ",
+      "doesNotIncludeRacialDamage" : true,
+      "notDispellable" : true,
+      "parent" : [ "Terracotta Servants" ],
+      "skillIcon" : {
+        "posY" : 31,
+        "posX" : 462
+      },
+      "attributes" : {
+        "${value} Second Duration" : 100.0,
+        "${value}m Radius" : [ 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5 ],
+        "${value} Burn Damage over ${duration} Second(s)" : {
+          "value" : {
+            "min" : [ 65.0, 80.0, 95.0, 110.0, 125.0, 140.0, 160.0, 180.0, 205.0, 230.0 ]
+          },
+          "duration" : {
+            "min" : 1.0
+          }
+        },
+        "${value}% Fire Resistance" : [ -16.8, -21.0, -25.2, -29.4, -33.6, -37.8, -42.0, -46.2, -50.4, -54.6 ],
+        "${value}% Physical Resistance" : [ -16.8, -21.0, -25.2, -29.4, -33.6, -37.8, -42.0, -46.2, -50.4, -54.6 ],
+        "MaxLevel" : 6,
+        "UltimateLevel" : 10
+      }
+    }, {
+      "name" : "Spreading Influence",
+      "description" : "Upon hitting an enemy, your attacks deal damage in an area, damaging enemies around it.",
+      "parent" : [ "Huangdi's Favor" ],
+      "skillIcon" : {
+        "posY" : 31,
+        "posX" : 638
+      },
+      "attributes" : {
+        "${value}m Radius" : [ 0.5, 0.7, 0.9, 1.1, 1.3, 1.5, 1.7, 1.9, 2.1, 2.3, 2.5, 2.7, 2.9, 3.1, 3.3, 3.5 ],
+        "${value} Arc of Attack" : [ 7.0, 15.0, 23.0, 32.0, 41.0, 51.0, 61.0, 72.0, 83.0, 95.0, 107.0, 120.0, 133.0, 147.0, 161.0, 176.0 ],
+        "+${value}% Damage to Humankind" : [ 10.0, 19.5, 28.5, 37.0, 45.0, 52.5, 59.5, 66.0, 72.0, 77.5, 82.5, 87.0, 91.0, 94.5, 97.5, 100.0 ],
+        "MaxLevel" : 12,
+        "UltimateLevel" : 16
       }
     } ] ]
   } ]
