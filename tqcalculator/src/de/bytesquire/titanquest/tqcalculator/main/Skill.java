@@ -23,7 +23,7 @@ import de.bytesquire.titanquest.tqcalculator.parsers.*;
         "requiredWeapons", "race" })
 @JsonInclude(Include.NON_NULL)
 @JsonPropertyOrder({ "name", "description", "doesNotIncludeRacialDamage", "exclusiveSkill", "notDispellable",
-        "projectileUsesAllDamage", "protectsAgainst", "parent", "skillIcon", "attributes", "pet", "castSkills" })
+        "projectileUsesAllDamage", "protectsAgainst", "parent", "skillIcon", "attributes", "pet", "skillCast" })
 public class Skill {
 
     private SkillParser mSkillParser;
@@ -32,6 +32,7 @@ public class Skill {
     private LinkedHashMap<String, SkillAttribute> mAttributeBuilder;
     private LinkedHashMap<String, Object> mSkillAttributes;
     private PetParser mPet;
+    private SkillCast mSkillCast;
     private String mParentPath;
     private boolean isModifier;
     private String[] mParent;
@@ -48,14 +49,14 @@ public class Skill {
     private Boolean mNotDispellable;
     private Boolean mProjectileUsesAllDamage;
     private ArrayList<String> mProtectsAgainst;
-    private ArrayList<Skill> mCastSkills;
 
     public Skill(File aSkill, String[] aParent, String aParentPath, ModStringsParser aMSParser,
             IconsParser aIconsParser) throws FileNotFoundException {
         if (aSkill.isDirectory())
             throw new FileNotFoundException(aSkill.getAbsolutePath());
         if (!aSkill.exists()) {
-            String relativePath = Paths.get(Control.DATABASES_DIR, aParentPath.split("/")[0]).relativize(aSkill.toPath()).toString();
+            String relativePath = Paths.get(Control.DATABASES_DIR, aParentPath.split("/")[0])
+                    .relativize(aSkill.toPath()).toString();
             Path vanillaPath = Paths.get(Control.DATABASES_DIR, "Vanilla", relativePath);
             File vanillaSkill = vanillaPath.toFile();
             if (!vanillaSkill.exists())
@@ -97,9 +98,6 @@ public class Skill {
         mProtectsAgainst = mSkillParser.getProtectsAgainst();
         if (mProtectsAgainst == null)
             mProtectsAgainst = new ArrayList<>();
-        mCastSkills = mSkillParser.getCastSkills();
-        if (mCastSkills == null)
-            mCastSkills = new ArrayList<>();
 
         if (mSkillParser.getAdditionalFiles().size() > 0) {
             mFiles.addAll(mSkillParser.getAdditionalFiles());
@@ -192,6 +190,13 @@ public class Skill {
                     mSkillAttributes.put(skillAttribute, value);
                     break;
                 }
+                if (skillAttribute.contains("CastLevel")) {
+                    ArrayList<Skill> castSkills = mSkillParser.getCastSkills();
+                    if (castSkills == null)
+                        castSkills = new ArrayList<>();
+                    mSkillCast = new SkillCast(value, castSkills);
+                    break;
+                }
                 putAttribute(skillAttribute, value);
                 break;
             }
@@ -269,7 +274,7 @@ public class Skill {
             putAttributeDuration(key, value);
             return;
         }
-        if (key.endsWith("Chance") && !key.equals("projectilePiercingChance") && !key.equals("onHitActivationChance")) {
+        if (key.endsWith("Chance") && !key.equals("projectilePiercingChance") && !key.equals("onHitActivationChance") && !key.equals("CastChance")) {
             key = key.substring(0, key.length() - "Chance".length());
             putAttributeChance(key, value);
             return;
@@ -466,6 +471,10 @@ public class Skill {
         return mPet;
     }
 
+    public SkillCast getSkillCast() {
+        return mSkillCast;
+    }
+
     public Boolean isDoesNotIncludeRacialDamage() {
         return mDoesNotIncludeRacialDamage;
     }
@@ -496,12 +505,6 @@ public class Skill {
 
     public Boolean getProjectileUsesAllDamage() {
         return mProjectileUsesAllDamage;
-    }
-
-    public ArrayList<Skill> getCastSkills() {
-        if (mCastSkills.size() == 0)
-            return null;
-        return mCastSkills;
     }
 
     private Map<String, Object> sortAttributes() {

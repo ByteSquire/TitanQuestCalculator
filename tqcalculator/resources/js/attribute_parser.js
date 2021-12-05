@@ -194,3 +194,30 @@ function formatPetSkills(value, index, colour) {
     ret += '</table>';
     return ret;
 }
+
+function formatCastSkills(value, index, colour) {
+    var skills = value.castSkills;
+    var ret = '<span style="color: brown">Pet Skills:</span>\n';
+    ret += '<table>\n<tr style="vertical-align: top">';
+    var i = 0;
+    skills.forEach((skill) => {
+        if(i !=0 && i%4 == 0){
+            ret += '<tr style="vertical-align: top">';
+        }
+        i++;
+        ret += '<td style="min-width: fit-content">';
+        var tmpIndex = index;
+        var skillLevel = 0;
+        if (!isNaN(value.castLevels)) {
+            skillLevel = value.castLevels;
+        } else {
+            if(tmpIndex >= value.castLevels.length)
+                tmpIndex = value.castLevels.length-1;
+            skillLevel = value.castLevels[tmpIndex];
+        }
+        ret += getPopupString(skill, skillLevel, true);
+        ret += '</td>';
+    });
+    ret += '</table>';
+    return ret;
+}

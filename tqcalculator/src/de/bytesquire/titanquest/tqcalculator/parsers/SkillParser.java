@@ -347,6 +347,8 @@ public class SkillParser {
         case "numRings":
         case "distanceIncrement":
         case "spacingAngle":
+        case "forceHideIconFromQuickSlot":
+        case "skillCastNameIsBuff":
         case "defensiveAbsorption": // doesn't work in game
             return true;
         default:
