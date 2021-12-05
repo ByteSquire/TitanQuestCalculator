@@ -268,6 +268,19 @@ function getPopupStringPet(skill, currLevel){
             ret += formatPetSkills(skill.pet, currLevel, "white");
         }
         ret += '</table>';
+    } else if (skill.skillCast) {
+        var ret = '<span class="title">' + skill.name + '</span>\n<br>\n';
+        if(currLevel == 0){
+            ret += '<span style="color: red">Invest at least one point into this skill to get info about the skill(s) it casts</span>';
+            return ret;
+        }
+        currLevel -= 1;
+        ret += '<table><tr style="vertical-align: top">';
+        if(skill.skillCast.castSkills){
+            ret += "<td>";
+            ret += formatCastSkills(skill.skillCast, currLevel, "white");
+        }
+        ret += '</table>';
     } else
         return getPopupString(skill, currLevel);
     return ret;
