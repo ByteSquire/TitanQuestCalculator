@@ -285,7 +285,8 @@ function getPopupStringPet(skill, currLevel){
         if (skill.pet.initialSkill){
             ret += '<tr style="vertical-align: top">';
             ret += '<td>';
-            ret += formatPetInitialSkill(skill.pet.initialSkill, currLevel, "white");
+            ret += formatPetInitialSkill(skill.pet.initialSkill, currLevel+1, "white");
+            ret += '</table>';
         }
         if(skill.pet.petSkills){
             ret += "<td>";
