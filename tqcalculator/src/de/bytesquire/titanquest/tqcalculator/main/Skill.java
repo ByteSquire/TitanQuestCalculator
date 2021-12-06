@@ -234,7 +234,10 @@ public class Skill {
             SkillAttribute tmp = entry.getValue();
             if (tmp.getKey() == null)
                 continue;
-            mSkillAttributes.put(tmp.getKey(), tmp.getObject());
+            String key = tmp.getKey();
+            if (isModifier && key.startsWith("Life Time"))
+                key = "Extra " + key;
+            mSkillAttributes.put(key, tmp.getObject());
         }
     }
 

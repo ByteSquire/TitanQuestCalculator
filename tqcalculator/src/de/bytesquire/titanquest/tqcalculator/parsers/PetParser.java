@@ -190,22 +190,7 @@ public class PetParser {
     }
 
     private void putAttribute(String key, Object value) {
-        if (AttributeNameParser.getMatch(key) != null)
-            key = AttributeNameParser.getMatch(key);
-        else if (key.endsWith("Modifier")) {
-            if (AttributeNameParser.getMatch(key.substring(0, key.length() - "Modifier".length())) != null)
-                key = key.replace(key.substring(0, key.length() - "Modifier".length()),
-                        AttributeNameParser.getMatch(key.substring(0, key.length() - "Modifier".length())) + " ");
-        }
-        if (!key.contains("${value}") && key.indexOf("{") > -1) {
-            if (key.contains("{%+"))
-                key = key.substring(0, key.indexOf("{")) + "+${value}"
-                        + key.substring(key.indexOf("}") + 1, key.length());
-            else
-                key = key.substring(0, key.indexOf("{")) + "${value}"
-                        + key.substring(key.indexOf("}") + 1, key.length());
-        }
-        mAttributes.put(key, value);
+        mAttributes.put(convertKey(key), value);
     }
 
     private String convertKey(String key) {

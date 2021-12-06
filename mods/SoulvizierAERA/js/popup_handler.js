@@ -55,7 +55,7 @@ function getPopupString(skill, currLevel, skipNext){
     
     if(skill.castOnTarget){
         ret += "<br>\n";
-        ret += '<span class="" style="color: orange">Will be casted at target location</span>\n';
+        ret += '<span class="" style="color: orange">Will be cast at target location</span>\n';
     }
     
     if(skill.castOnAllDamage){
