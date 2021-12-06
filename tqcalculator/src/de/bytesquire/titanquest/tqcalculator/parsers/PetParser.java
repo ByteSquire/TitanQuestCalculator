@@ -18,11 +18,12 @@ import de.bytesquire.titanquest.tqcalculator.main.*;
 
 @JsonIgnoreProperties({ "files", "additionalFiles" })
 @JsonInclude(Include.NON_NULL)
-@JsonPropertyOrder({ "attributes", "petSkills", "petSkillLevels" })
+@JsonPropertyOrder({ "attributes", "initialSkill", "petSkills", "petSkillLevels" })
 public class PetParser {
 
     private LinkedHashMap<String, Object> mAttributes;
     private LinkedHashMap<String, Skill> mPetSkills;
+    private Skill mInitialSkill;
     private LinkedHashMap<Integer, String> mSkillNameIndexMap;
     private LinkedHashMap<String, ArrayList<Integer>> mPetSkillLevels;
     private LinkedHashMap<Integer, ArrayList<Integer>> mSkillLevelIndexMap;
@@ -80,11 +81,11 @@ public class PetParser {
 
                     attributeName = attributeName.replace("character", "Character");
 
-                    if (attributeName.startsWith("skillName") || attributeName.startsWith("initialSkillName")) {
+                    if (attributeName.startsWith("skillName")) {
                         if (value.contains(";"))
                             return;
-                        if (value.contains(" "))
-                            return;
+//                        if (value.contains(" "))
+//                            return;
                         Skill tmp;
                         try {
                             tmp = new Skill(
@@ -107,9 +108,35 @@ public class PetParser {
                         mAdditionalFiles.addAll(tmp.getFiles());
                         return;
                     }
+                    
+                    if (attributeName.startsWith("initialSkillName")) {
+                        if (value.contains(";"))
+                            return;
+//                        if (value.contains(" "))
+//                            return;
+                        Skill tmp;
+                        try {
+                            tmp = new Skill(
+                                    new File(Control.DATABASES_DIR + mParentPath.split("/")[0] + "/database/" + value),
+                                    null, mParentPath, mMSParser, mIconsParser);
+                        } catch (FileNotFoundException e) {
+                            System.err.println("Pet initial skill: "
+                                    + e.getMessage()
+                                            .split(Control.DATABASES_DIR.replace("\\", "\\\\").replace("/", "\\\\"))[1]
+                                    + " not found");
+                            return;
+                        }
+                        if (tmp.getName() == null) {
+                            return;
+                        }
+                        mInitialSkill = tmp;
+
+                        mAdditionalFiles.addAll(tmp.getFiles());
+                        return;
+                    }
 
                     if (attributeName.startsWith("skillLevel")) {
-                        Integer lvl = Integer.parseInt(value.split(";")[0]);
+                        Integer lvl = Integer.parseInt(value.split(";")[0]); // only supports normal difficulty
 //                        if (lvl == 0)
 //                            return;
                         if (mSkillLevelIndexMap.containsKey(Integer.parseInt(attributeName.split("skillLevel")[1])))
@@ -175,6 +202,8 @@ public class PetParser {
         if (attributeName.startsWith("character"))
             return false;
         if (attributeName.startsWith("skillName"))
+            return false;
+        if (attributeName.startsWith("initialSkillName"))
             return false;
         if (attributeName.startsWith("skillLevel"))
             return false;
@@ -246,5 +275,9 @@ public class PetParser {
 
     public LinkedHashMap<String, ArrayList<Integer>> getPetSkillLevels() {
         return mPetSkillLevels;
+    }
+
+    public Skill getInitialSkill() {
+        return mInitialSkill;
     }
 }

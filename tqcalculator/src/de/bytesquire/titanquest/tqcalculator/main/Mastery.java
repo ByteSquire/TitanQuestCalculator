@@ -44,7 +44,9 @@ public class Mastery {
                 try {
                     tmp = new Skill(skill, null, (mParentModName + "/Masteries/" + mName), aMSParser, aIconsParser);
                 } catch (FileNotFoundException e) {
-                    System.err.println("Skill: " + e.getMessage() + " not found");
+                    System.err.println("Skill: "
+                            + e.getMessage().split(Control.DATABASES_DIR.replace("\\", "\\\\").replace("/", "\\\\"))[1]
+                            + " not found");
                     continue;
                 }
                 mSkills.add(tmp);
@@ -61,11 +63,12 @@ public class Mastery {
             }
         }
 
-        List<Skill> skillsWithIcons = mSkills.stream().filter(skill -> skill.getSkillIcon() != null).collect(Collectors.toList());
-        
+        List<Skill> skillsWithIcons = mSkills.stream().filter(skill -> skill.getSkillIcon() != null)
+                .collect(Collectors.toList());
+
         mSkills.clear();
         mSkills.addAll(skillsWithIcons);
-        
+
         for (Skill skill : mSkills) {
             if (skill.getParent() != null) {
                 ArrayList<String> validParents = new ArrayList<>();
@@ -77,8 +80,8 @@ public class Mastery {
                                 containsParent = true;
                             }
                         } catch (NullPointerException e) {
-                            System.err
-                                    .println("Unused skill: " + mSkills.indexOf(masterySkill) + ", in mastery: " + mName);
+                            System.err.println(
+                                    "Unused skill: " + mSkills.indexOf(masterySkill) + ", in mastery: " + mName);
                             continue;
                         }
                     }
