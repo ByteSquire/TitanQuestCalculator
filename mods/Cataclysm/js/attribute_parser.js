@@ -165,6 +165,12 @@ function formatPetAttributes(value, index, colour) {
     return ret;
 }
 
+function formatPetInitialSkill(value, index, colour) {
+    var ret = '<span style="color: brown">Pet initial Skill:</span><br>';
+    ret += getPopupString(value, index, true);
+    return ret;
+}
+
 function formatPetSkills(value, index, colour) {
     var skills = Object.keys(value.petSkills);
     var ret = '<span style="color: brown">Pet Skills:</span>\n';
