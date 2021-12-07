@@ -3,7 +3,9 @@ function getSaveLink(){
     ret += location.href.split("&config")[0];
     ret += '&config=';
     
-    var params = '{"m1":[';
+    var params = '{"qp": ' + document.getElementById("questPoints").value;
+    params += ",";
+    params += '"m1":[';
     params += "[";
     params += document.getElementById("plusButton1").getElementsByClassName("buttonText")[0].innerText.split("/")[0];
     params += ",";
@@ -68,6 +70,11 @@ function getCommaSeparatedSkillLevelsInTier(tier){
 }
 
 function loadConfig(config){
+    if(config.qp){
+        var dropDown = document.getElementById("questPoints");
+        dropDown.value = config.qp;
+        pointsSelected(dropDown);
+    }
     if(config.m1){
         for(var i = 0; i < config.m1[0][0]; i++){
             plusClicked(document.getElementById("plusButton1"), { "button" : 0 });

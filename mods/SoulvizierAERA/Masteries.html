@@ -11,13 +11,13 @@
     <script type="text/javascript" src="js/plusButton_handler.js"></script>
     <script type="text/javascript" src="js/popup_handler.js"></script>
     <script type="text/javascript" src="js/skillButton_handler.js"></script>
-    <script type="text/javascript" src="js/JSON_handler.js"></script>
     <script type="text/javascript" src="js/skill.js"></script>
     <script type="text/javascript" src="js/masteryTier_handler.js"></script>
     <script type="text/javascript" src="js/skillPlusButton_handler.js"></script>
     <script type="text/javascript" src="js/attribute_parser.js"></script>
     <script type="text/javascript" src="js/resetMastery_handler.js"></script>
     <script type="text/javascript" src="js/skillConnector.js"></script>
+    <script type="text/javascript" src="js/JSON_handler.js"></script>
     <script type="text/javascript" src="js/save_handler.js"></script>
   </head>
 
