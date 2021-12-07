@@ -64,6 +64,7 @@ function pointsSelected(select){
     bonusPoints = select.value;
     pointsSpent -= diff;
     calcLevelReq();
+    updateUI();
 }
 
 function updateAttributes(x, value){
