@@ -76,7 +76,10 @@ public class SkillAttribute {
         switch (mType) {
         case DURATION:
             if (!key.contains("duration"))
-                key = key + " over ${duration} Second(s)";
+                if (!key.contains("Reduced"))
+                    key = key + " over ${duration} Second(s)";
+                else
+                    key = key + " for ${duration} Second(s)";
             break;
         case CHANCE:
             if (!key.contains("chance"))

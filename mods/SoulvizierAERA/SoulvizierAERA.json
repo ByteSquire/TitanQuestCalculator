@@ -12,7 +12,7 @@
       "+${value} Strength" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0, 48.0, 50.0, 52.0, 54.0, 56.0, 58.0, 60.0, 62.0, 64.0, 66.0, 68.0, 70.0, 72.0, 74.0, 76.0, 78.0, 80.0 ],
       "+${value} Dexterity" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0, 48.0, 50.0, 52.0, 54.0, 56.0, 58.0, 60.0, 62.0, 64.0, 66.0, 68.0, 70.0, 72.0, 74.0, 76.0, 78.0, 80.0 ],
       "+${value}% Strength" : [ 1.6, 2.2, 2.8, 3.4, 4.0, 4.6, 5.2, 5.8, 6.4, 7.0, 7.6, 8.2, 8.8, 9.4, 10.0, 10.6, 11.2, 11.8, 12.4, 13.0, 13.6, 14.2, 14.8, 15.4, 16.0, 16.6, 17.2, 17.8, 18.4, 19.0, 19.6, 20.2, 20.8, 21.4, 22.0, 22.6, 23.2, 23.8, 24.4, 25.0 ],
-      "${value} Reduced Armor over ${duration} Second(s)" : {
+      "${value} Reduced Armor for ${duration} Second(s)" : {
         "value" : {
           "min" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 4.2, 8.4, 12.6, 16.8, 21.0, 25.2, 29.4, 33.6, 37.8, 42.0, 46.2, 50.4, 54.6, 58.8, 63.0, 67.2, 71.4, 75.6, 79.8, 84.0 ]
         },
@@ -507,7 +507,7 @@
       },
       "attributes" : {
         "${value}m Radius" : 2.5,
-        "${value} Reduced Armor over ${duration} Second(s)" : {
+        "${value} Reduced Armor for ${duration} Second(s)" : {
           "value" : {
             "min" : [ 34.0, 40.0, 46.0, 52.0, 58.0, 65.0, 70.0, 76.0, 83.0, 90.0 ]
           },
@@ -934,7 +934,7 @@
       },
       "attributes" : {
         "${value} Energy Cost" : [ 7.0, 8.1, 9.2, 10.3, 11.4, 12.5, 13.6, 14.7, 15.8, 16.9, 18.0, 19.1, 20.2, 21.3, 22.4, 23.5 ],
-        "${value} Reduced Armor over ${duration} Second(s)" : {
+        "${value} Reduced Armor for ${duration} Second(s)" : {
           "value" : {
             "min" : [ 18.0, 36.0, 54.0, 72.0, 90.0, 108.0, 126.0, 144.0, 162.0, 180.0, 201.0, 225.0, 249.0, 276.0, 309.0, 345.0 ]
           },
@@ -1129,7 +1129,7 @@
         "${value} Physical Damage" : {
           "min" : [ 30.0, 38.0, 46.0, 54.0, 62.0, 70.0, 78.0, 94.0, 106.0, 118.0, 130.0, 150.0 ]
         },
-        "${value} Reduced Armor over ${duration} Second(s)" : {
+        "${value} Reduced Armor for ${duration} Second(s)" : {
           "value" : {
             "min" : [ 94.0, 110.0, 126.0, 142.0, 158.0, 174.0, 190.0, 206.0, 222.0, 238.0, 254.0, 270.0 ]
           },
@@ -1816,7 +1816,7 @@
         "${value} Physical Damage" : {
           "min" : [ 7.35, 12.6, 17.85, 23.1, 29.4, 35.7, 42.0, 49.35, 55.65, 64.05, 72.45, 85.05 ]
         },
-        "${value} Reduced Armor over ${duration} Second(s)" : {
+        "${value} Reduced Armor for ${duration} Second(s)" : {
           "value" : {
             "min" : [ 27.0, 36.0, 45.0, 54.0, 63.0, 72.0, 81.0, 99.0, 108.0, 117.0, 126.0, 144.0 ]
           },
@@ -1824,7 +1824,7 @@
             "min" : 3.0
           }
         },
-        "${value} Reduced Damage over ${duration} Second(s)" : {
+        "${value} Reduced Damage for ${duration} Second(s)" : {
           "value" : {
             "min" : [ 12.0, 18.0, 24.0, 30.0, 36.0, 42.0, 48.0, 60.0, 66.0, 72.0, 78.0, 90.0 ]
           },
@@ -2203,7 +2203,7 @@
           "min" : 1,
           "max" : 1
         },
-        "${value} Reduced Armor over ${duration} Second(s)" : {
+        "${value} Reduced Armor for ${duration} Second(s)" : {
           "value" : {
             "min" : [ 30.0, 39.0, 48.0, 57.0, 66.0, 75.0, 84.0, 93.0, 102.0, 111.0, 120.0, 130.0 ]
           },
@@ -2211,7 +2211,7 @@
             "min" : 5.0
           }
         },
-        "${value} Reduced Physical Damage over ${duration} Second(s)" : {
+        "${value} Reduced Physical Damage for ${duration} Second(s)" : {
           "value" : {
             "min" : [ 14.0, 20.0, 26.0, 32.0, 38.0, 44.0, 50.0, 56.0, 62.0, 68.0, 74.0, 80.0 ]
           },
@@ -2950,7 +2950,7 @@
             "max" : [ 31.0, 52.0, 73.0, 94.0, 115.0, 136.0, 157.0, 178.0, 199.0, 220.0, 241.0, 263.0 ]
           }
         },
-        "${value}% Reduced Damage over ${duration} Second(s)" : {
+        "${value}% Reduced Damage for ${duration} Second(s)" : {
           "value" : {
             "min" : [ 12.5, 15.0, 17.5, 20.0, 22.5, 25.0, 27.5, 30.0, 32.5, 35.0, 37.5, 40.0 ]
           },
@@ -2958,7 +2958,7 @@
             "min" : 3.0
           }
         },
-        "${value}% Reduced Resistances over ${duration} Second(s)" : {
+        "${value}% Reduced Resistances for ${duration} Second(s)" : {
           "value" : {
             "min" : [ 12.5, 15.0, 17.5, 20.0, 22.5, 25.0, 27.5, 30.0, 32.5, 35.0, 37.5, 40.0 ]
           },
@@ -3540,7 +3540,7 @@
               "${value} Physical Damage" : {
                 "min" : [ 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0, 48.0, 50.0, 52.0, 54.0, 56.0, 58.0, 60.0 ]
               },
-              "${value} Reduced Resistances over ${duration} Second(s)" : {
+              "${value} Reduced Resistances for ${duration} Second(s)" : {
                 "value" : {
                   "min" : 6.0
                 },
@@ -3907,7 +3907,7 @@
               "${value} Physical Damage" : {
                 "min" : [ 11.0, 14.0, 17.0, 20.0, 23.0, 26.0, 29.0, 32.0, 35.0, 38.0, 41.0, 44.0, 47.0, 50.0, 53.0, 56.0, 59.0, 62.0, 65.0, 68.0, 71.0, 74.0 ]
               },
-              "${value} Reduced Resistances over ${duration} Second(s)" : {
+              "${value} Reduced Resistances for ${duration} Second(s)" : {
                 "value" : {
                   "min" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ]
                 },
@@ -4100,7 +4100,7 @@
               "${value} second(s) of Stun" : {
                 "min" : 5.0
               },
-              "${value}% Reduced Resistances over ${duration} Second(s)" : {
+              "${value}% Reduced Resistances for ${duration} Second(s)" : {
                 "value" : {
                   "min" : [ 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0, 28.0, 29.0, 30.0, 31.0, 32.0, 33.0 ]
                 },
@@ -4182,7 +4182,7 @@
             "min" : 5.0
           }
         },
-        "${value}% Reduced Damage over ${duration} Second(s)" : {
+        "${value}% Reduced Damage for ${duration} Second(s)" : {
           "value" : {
             "min" : [ 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0, 35.0, 37.0, 39.0, 41.0, 43.0, 45.0 ]
           },
@@ -4190,7 +4190,7 @@
             "min" : 8.0
           }
         },
-        "${value}% Reduced Resistances over ${duration} Second(s)" : {
+        "${value}% Reduced Resistances for ${duration} Second(s)" : {
           "value" : {
             "min" : [ 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0, 35.0, 37.0, 39.0, 41.0, 43.0, 45.0 ]
           },
@@ -5402,7 +5402,7 @@
           "max" : [ 7.48, 11.56, 15.64, 19.72, 23.8, 27.88, 31.96, 36.04, 40.12, 44.2, 48.28, 52.36 ]
         },
         "${value}% Increase in Projectile Speed" : [ 31.0, 36.0, 41.0, 46.0, 51.0, 56.0, 61.0, 66.0, 71.0, 76.0, 81.0, 86.0 ],
-        "${value}% Reduced Damage over ${duration} Second(s)" : {
+        "${value}% Reduced Damage for ${duration} Second(s)" : {
           "value" : {
             "min" : [ 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0 ]
           },
@@ -5482,7 +5482,7 @@
             "min" : [ 50.0, 52.0, 55.0, 57.0, 61.0, 64.0, 66.0, 69.0, 71.0, 75.0, 78.0, 80.0 ]
           }
         },
-        "${value}% Reduced Damage over ${duration} Second(s)" : {
+        "${value}% Reduced Damage for ${duration} Second(s)" : {
           "value" : {
             "min" : [ 15.0, 18.0, 20.0, 23.0, 28.0, 31.0, 34.0, 36.0, 39.0, 45.0, 47.0, 50.0 ]
           },
@@ -6052,7 +6052,7 @@
                 "min" : [ 249.0, 273.0, 297.0, 321.0, 345.0, 369.0, 393.0, 417.0, 441.0, 465.0, 489.0, 513.0, 537.0, 561.0, 585.0, 609.0, 633.0, 657.0, 681.0, 705.0 ],
                 "max" : [ 468.0, 501.0, 534.0, 567.0, 600.0, 633.0, 666.0, 699.0, 732.0, 765.0, 798.0, 831.0, 864.0, 897.0, 930.0, 963.0, 996.0, 1029.0, 1062.0, 1095.0 ]
               },
-              "${value} Reduced Armor over ${duration} Second(s)" : {
+              "${value} Reduced Armor for ${duration} Second(s)" : {
                 "value" : {
                   "min" : [ 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0, 51.0, 54.0, 57.0, 60.0, 63.0, 66.0, 69.0, 72.0, 75.0, 78.0 ]
                 },
@@ -6102,7 +6102,7 @@
       "+${value} Energy" : [ 8.0, 16.0, 24.0, 32.0, 40.0, 48.0, 56.0, 64.0, 72.0, 80.0, 88.0, 96.0, 104.0, 112.0, 120.0, 128.0, 136.0, 144.0, 152.0, 160.0, 168.0, 176.0, 184.0, 192.0, 200.0, 208.0, 216.0, 224.0, 232.0, 240.0, 248.0, 256.0, 264.0, 272.0, 280.0, 288.0, 296.0, 304.0, 312.0, 320.0 ],
       "+${value} Intelligence" : [ 3.0, 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0, 51.0, 54.0, 57.0, 60.0, 63.0, 66.0, 69.0, 72.0, 75.0, 78.0, 81.0, 84.0, 87.0, 90.0, 93.0, 96.0, 99.0, 102.0, 105.0, 108.0, 111.0, 114.0, 117.0, 120.0 ],
       "+${value} Dexterity" : [ 1.0, 3.0, 4.0, 6.0, 7.0, 9.0, 10.0, 12.0, 13.0, 15.0, 16.0, 18.0, 19.0, 21.0, 22.0, 24.0, 25.0, 27.0, 28.0, 30.0, 31.0, 33.0, 34.0, 36.0, 37.0, 39.0, 40.0, 42.0, 43.0, 45.0, 46.0, 48.0, 50.0, 51.0, 53.0, 54.0, 56.0, 57.0, 59.0, 60.0 ],
-      "${value} Reduced Resistances over ${duration} Second(s)" : {
+      "${value} Reduced Resistances for ${duration} Second(s)" : {
         "value" : {
           "min" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.8, 1.6, 2.4, 3.2, 4.0, 4.8, 5.6, 6.4, 7.2, 8.0, 8.8, 9.6, 10.4, 11.2, 12.0, 12.8, 13.6, 14.4, 15.2, 16.0 ]
         },
@@ -6332,7 +6332,7 @@
             "min" : [ 3.0, 3.6, 4.2, 4.8, 5.4, 6.0, 7.0, 8.0 ]
           }
         },
-        "${value}% Reduced Damage over ${duration} Second(s)" : {
+        "${value}% Reduced Damage for ${duration} Second(s)" : {
           "value" : {
             "min" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 18.0 ]
           },
@@ -6533,7 +6533,7 @@
       },
       "attributes" : {
         "${value} Active Energy Cost per Second" : 0.5,
-        "${value}% Reduced Damage over ${duration} Second(s)" : {
+        "${value}% Reduced Damage for ${duration} Second(s)" : {
           "value" : {
             "min" : [ 10.0, 15.0, 18.0, 22.0, 25.0, 29.0, 32.0, 36.0, 39.0, 41.0, 43.0, 45.0 ]
           },
@@ -6961,7 +6961,7 @@
               "${value} Energy Cost" : [ 32.0, 33.0, 35.0, 36.0, 38.0, 39.0, 41.0, 42.0, 44.0, 45.0, 47.0, 48.0, 50.0, 51.0, 53.0 ],
               "${value}m Radius" : 6.0,
               "Launches ${value} Projectile(s)" : 1,
-              "${value}% Reduced Resistances over ${duration} Second(s)" : {
+              "${value}% Reduced Resistances for ${duration} Second(s)" : {
                 "value" : {
                   "min" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0, 50.0 ]
                 },
@@ -7657,7 +7657,7 @@
       "attributes" : {
         "^a${value} Second(s) Recharge" : [ 0.0, -3.0 ],
         "${value} Energy Cost" : [ 8.0, 10.0, 11.0, 13.0, 14.0, 16.0, 17.0, 19.0, 20.0, 22.0, 23.0, 25.0 ],
-        "${value} Reduced Armor over ${duration} Second(s)" : {
+        "${value} Reduced Armor for ${duration} Second(s)" : {
           "value" : {
             "min" : [ 25.0, 39.0, 55.0, 73.0, 93.0, 115.0, 140.0, 168.0, 200.0, 236.0, 277.0, 323.0 ]
           },
@@ -7711,7 +7711,7 @@
             "min" : 5.0
           }
         },
-        "${value}% Reduced Resistances over ${duration} Second(s)" : {
+        "${value}% Reduced Resistances for ${duration} Second(s)" : {
           "value" : {
             "min" : [ 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 18.0 ],
             "max" : [ 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 32.0 ]
@@ -8081,7 +8081,7 @@
         "${value} second(s) of Skill Disruption" : {
           "min" : 1.0
         },
-        "${value}% Reduced Resistances over ${duration} Second(s)" : {
+        "${value}% Reduced Resistances for ${duration} Second(s)" : {
           "value" : {
             "min" : [ 10.0, 12.0, 14.0, 15.0, 17.0, 19.0, 20.0, 22.0, 24.0, 25.0, 27.0, 29.0, 30.0, 31.0, 33.0, 35.0 ]
           },
@@ -8937,7 +8937,7 @@
             "min" : 3.0
           }
         },
-        "${value}% Reduced Damage over ${duration} Second(s)" : {
+        "${value}% Reduced Damage for ${duration} Second(s)" : {
           "value" : {
             "min" : [ 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0 ]
           },
@@ -9490,7 +9490,7 @@
             "min" : 4.0
           }
         },
-        "${value} Reduced Armor over ${duration} Second(s)" : {
+        "${value} Reduced Armor for ${duration} Second(s)" : {
           "value" : {
             "min" : [ 140.0, 200.0, 260.0, 320.0, 380.0, 440.0, 500.0, 560.0, 620.0, 680.0 ]
           },
@@ -9498,7 +9498,7 @@
             "min" : 4.0
           }
         },
-        "${value} Reduced Resistances over ${duration} Second(s)" : {
+        "${value} Reduced Resistances for ${duration} Second(s)" : {
           "value" : {
             "min" : [ 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0 ]
           },
@@ -9681,7 +9681,7 @@
             "^a${value} Second(s) Recharge" : 1.0,
             "${value} Second Duration" : 7.0,
             "${value}m Radius" : [ 2.0, 2.5, 3.17, 4.0, 5.0, 6.17, 7.5, 9.0, 10.67, 12.5, 0.0 ],
-            "${value} Reduced Armor over ${duration} Second(s)" : {
+            "${value} Reduced Armor for ${duration} Second(s)" : {
               "value" : {
                 "min" : 200.0
               },
@@ -9760,7 +9760,7 @@
             "^a${value} Second(s) Recharge" : 1.0,
             "${value} Second Duration" : 7.0,
             "${value}m Radius" : [ 2.0, 2.5, 3.17, 4.0, 5.0, 6.17, 7.5, 9.0, 10.67, 12.5, 0.0 ],
-            "${value} Reduced Armor over ${duration} Second(s)" : {
+            "${value} Reduced Armor for ${duration} Second(s)" : {
               "value" : {
                 "min" : 200.0
               },
@@ -10386,7 +10386,7 @@
         "${value} second(s) of Petrify" : {
           "min" : 0.25
         },
-        "${value}% Reduced Damage over ${duration} Second(s)" : {
+        "${value}% Reduced Damage for ${duration} Second(s)" : {
           "value" : {
             "min" : [ 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0, 35.0 ]
           },
@@ -10394,7 +10394,7 @@
             "min" : 3.0
           }
         },
-        "${value}% Reduced Resistances over ${duration} Second(s)" : {
+        "${value}% Reduced Resistances for ${duration} Second(s)" : {
           "value" : {
             "min" : [ 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 33.0, 35.0 ]
           },

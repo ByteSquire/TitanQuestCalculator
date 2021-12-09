@@ -38,7 +38,7 @@ function formatSkillAttribute(key, value, index){
         ret = ret.replace("${chance}", formatCurrValue(value.chance, index));
     if(value.duration){
         ret = ret.replace("${duration}", formatCurrValue(value.duration, index));
-        if(value.value && !key.includes("${value}%")){
+        if(value.value && !key.includes("${value}%") && !key.includes("Reduced")){
             ret = ret.replace("${value}", formatCurrValueScaled(value.value, value.duration, index));
             return ret;
         }
