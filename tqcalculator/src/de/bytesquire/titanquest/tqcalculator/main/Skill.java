@@ -259,7 +259,7 @@ public class Skill {
                 putAttributeMinMaxChance(key, tmp);
                 return;
             }
-            if (key.startsWith("DamageDuration") || key.contains("Fumble")) {
+            if (key.startsWith("DamageDuration") || key.contains("Fumble") || key.startsWith("DamageTotalResistanceReduction")) {
                 putAttributeMinMaxDurationDamage(key, tmp);
                 return;
             }
@@ -279,7 +279,7 @@ public class Skill {
                 putAttributeMinMaxChance(key, tmp);
                 return;
             }
-            if (key.startsWith("DamageDuration") || key.contains("Fumble")) {
+            if (key.startsWith("DamageDuration") || key.contains("Fumble") || key.startsWith("DamageTotalResistanceReduction")) {
                 putAttributeMinMaxDurationDamage(key, tmp);
                 return;
             }
@@ -303,7 +303,7 @@ public class Skill {
                         + AttributeNameParser.getMatch(key.substring(0, key.length() - "DurationModifier".length()))
                         + " Duration";
         }
-        if (!key.endsWith("Modifier") && (key.startsWith("DamageDuration") || key.contains("Fumble"))) {
+        if (!key.endsWith("Modifier") && (key.startsWith("DamageDuration") || key.contains("Fumble")) || key.startsWith("DamageTotalResistanceReduction")) {
             putAttributeDurationDamage(key, value);
             return;
         }
