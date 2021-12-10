@@ -403,6 +403,10 @@
             "min" : 10.0
           }
         },
+        "${value} Reduced Resistances" : {
+          "min" : [ 25.0, 29.0, 33.0, 37.0, 43.0, 47.0, 51.0, 55.0, 59.0, 65.0, 67.0, 70.0, 73.0, 75.0, 80.0 ],
+          "max" : 8.0
+        },
         "${value}% Reduction to Enemy's Health" : {
           "min" : [ 9.0, 12.0, 15.0, 18.0, 21.0, 25.0, 27.0, 30.0, 33.0, 36.0 ]
         },
@@ -6771,6 +6775,9 @@
         "${value} Energy Cost" : [ 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0 ],
         "${value} Second Duration" : [ 1.0, 1.5, 2.0, 2.5, 3.0, 3.67, 4.33, 5.0, 5.75, 6.5, 7.25, 8.0 ],
         "${value}m Radius" : 4.0,
+        "${value} Reduced Resistances" : {
+          "min" : 20.0
+        },
         "MaxLevel" : 8,
         "UltimateLevel" : 12,
         "${chance}% Chance for one of the following:" : {
@@ -6795,7 +6802,7 @@
       "name" : "Mutual Suffering",
       "description" : "Stricken enemies may spread death and feebleness around them upon death.{^n}{^Y} Slain enemies can spread Consequences debuff on death.",
       "castOnTarget" : true,
-      "castOnAllDamage" : true,
+      "castOnDamage" : "ALL",
       "triggerType" : "if the target is killed",
       "parent" : [ "Consequences" ],
       "skillIcon" : {
@@ -6979,7 +6986,7 @@
       "name" : "Blessing of Jin Chan",
       "description" : "The blessings of Jin Chan are upon you, granting a chance for additional boons for every enemy slain.{^n}{^Y} Can trigger on enemy death.  ",
       "castOnTarget" : true,
-      "castOnAllDamage" : true,
+      "castOnDamage" : "ALL",
       "triggerType" : "if the target is killed",
       "skillIcon" : {
         "posY" : 217,
@@ -7417,7 +7424,65 @@
         "UltimateLevel" : 10
       },
       "skillCast" : {
-        "castLevels" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0 ]
+        "castLevels" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0 ],
+        "castSkills" : [ {
+          "name" : "x4tagDeathBomb",
+          "castOnDamage" : "FIRE",
+          "attributes" : {
+            "^a${value} Second(s) Recharge" : 1.0,
+            "${value}m Radius" : 6.0,
+            "${chance}% Chance of ${value} second(s) of Stun" : {
+              "chance" : 100.0,
+              "value" : {
+                "min" : 1.0,
+                "max" : 2.0
+              }
+            },
+            "${value} Fire Damage" : {
+              "min" : [ 40.02, 55.43, 70.17, 85.58, 100.99, 115.73, 131.14, 146.55, 161.96, 176.7, 192.11, 207.52 ]
+            },
+            "MaxLevel" : 8,
+            "UltimateLevel" : 12
+          }
+        }, {
+          "name" : "x4tagDeathBomb",
+          "castOnDamage" : "LIGHTNING",
+          "attributes" : {
+            "^a${value} Second(s) Recharge" : 1.0,
+            "${value}m Radius" : 6.0,
+            "${chance}% Chance of ${value} second(s) of Petrify" : {
+              "chance" : 100.0,
+              "value" : {
+                "min" : 1.0,
+                "max" : 2.0
+              }
+            },
+            "${value} Lightning Damage" : {
+              "min" : [ 40.02, 55.43, 70.17, 85.58, 100.99, 115.73, 131.14, 146.55, 161.96, 176.7, 192.11, 207.52 ]
+            },
+            "MaxLevel" : 8,
+            "UltimateLevel" : 12
+          }
+        }, {
+          "name" : "x4tagDeathBomb",
+          "castOnDamage" : "COLD",
+          "attributes" : {
+            "^a${value} Second(s) Recharge" : 1.0,
+            "${value}m Radius" : 6.0,
+            "${chance}% Chance of ${value} second(s) of Freeze" : {
+              "chance" : 100.0,
+              "value" : {
+                "min" : 1.0,
+                "max" : 2.0
+              }
+            },
+            "${value} Cold Damage" : {
+              "min" : [ 40.02, 55.43, 70.17, 85.58, 100.99, 115.73, 131.14, 146.55, 161.96, 176.7, 192.11, 207.52 ]
+            },
+            "MaxLevel" : 8,
+            "UltimateLevel" : 12
+          }
+        } ]
       }
     }, {
       "name" : "Voice of the Ancients",
