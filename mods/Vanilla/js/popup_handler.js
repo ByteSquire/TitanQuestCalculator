@@ -60,7 +60,7 @@ function getPopupString(skill, currLevel, skipNext){
     
     if(skill.castOnDamage){
         ret += "<br>\n";
-        switch(skill.castOnDamage)
+        switch(skill.castOnDamage) {
         case "ALL":
             ret += '<span class="" style="color: orange">Activates on all damage types</span>\n';
             break;
@@ -73,6 +73,7 @@ function getPopupString(skill, currLevel, skipNext){
         case "COLD":
             ret += '<span class="" style="color: orange">Activates with cold damage</span>\n';
             break;
+        }
     }
     
     if(skill.protectsAgainst){
