@@ -24,7 +24,7 @@ import de.bytesquire.titanquest.tqcalculator.parsers.*;
         "requiredWeapons", "race" })
 @JsonInclude(Include.NON_NULL)
 @JsonPropertyOrder({ "name", "description", "doesNotIncludeRacialDamage", "exclusiveSkill", "notDispellable",
-        "projectileUsesAllDamage", "protectsAgainst", "castOnTarget", "castOnAllDamage", "triggerType", "parent",
+        "projectileUsesAllDamage", "protectsAgainst", "castOnTarget", "castOnDamage", "triggerType", "parent",
         "skillIcon", "attributes", "pet", "skillCast" })
 public class Skill {
 
@@ -51,7 +51,7 @@ public class Skill {
     private Boolean mNotDispellable;
     private Boolean mProjectileUsesAllDamage;
     private Boolean mCastOnTarget;
-    private Boolean mCastOnAllDamage;
+    private TriggerDamage mCastOnDamage;
     private TriggerType mTriggerType;
     private ArrayList<String> mProtectsAgainst;
 
@@ -98,7 +98,7 @@ public class Skill {
         isModifier = mSkillParser.isModifier();
         mTriggerType = mSkillParser.getTriggerType();
         mCastOnTarget = mSkillParser.getCastOnTarget();
-        mCastOnAllDamage = mSkillParser.getCastOnAllDamage();
+        mCastOnDamage = mSkillParser.getCastOnDamage();
         mNotDispellable = mSkillParser.getNotDispellable();
         mDoesNotIncludeRacialDamage = mSkillParser.getDoesNotIncludeRacialDamage();
         mExclusiveSkill = mSkillParser.getExclusiveSkill();
@@ -162,7 +162,7 @@ public class Skill {
                 mCastOnTarget = true;
                 break;
             case "skillCastOnAllDamageTypes":
-                mCastOnAllDamage = true;
+                mCastOnDamage = TriggerDamage.ALL;
                 break;
             default:
                 Object value = mSkillParser.getAttributes().get(skillAttribute);
@@ -259,7 +259,7 @@ public class Skill {
                 putAttributeMinMaxChance(key, tmp);
                 return;
             }
-            if (key.startsWith("DamageDuration") || key.contains("Fumble") || key.startsWith("DamageTotalResistanceReduction")) {
+            if (key.startsWith("DamageDuration") || key.contains("Fumble")/* || key.startsWith("DamageTotalResistanceReduction")*/) {
                 putAttributeMinMaxDurationDamage(key, tmp);
                 return;
             }
@@ -279,7 +279,7 @@ public class Skill {
                 putAttributeMinMaxChance(key, tmp);
                 return;
             }
-            if (key.startsWith("DamageDuration") || key.contains("Fumble") || key.startsWith("DamageTotalResistanceReduction")) {
+            if (key.startsWith("DamageDuration") || key.contains("Fumble")/* || key.startsWith("DamageTotalResistanceReduction")*/) {
                 putAttributeMinMaxDurationDamage(key, tmp);
                 return;
             }
@@ -303,7 +303,7 @@ public class Skill {
                         + AttributeNameParser.getMatch(key.substring(0, key.length() - "DurationModifier".length()))
                         + " Duration";
         }
-        if (!key.endsWith("Modifier") && (key.startsWith("DamageDuration") || key.contains("Fumble")) || key.startsWith("DamageTotalResistanceReduction")) {
+        if (!key.endsWith("Modifier") && (key.startsWith("DamageDuration") || key.contains("Fumble"))/* || key.startsWith("DamageTotalResistanceReduction")*/) {
             putAttributeDurationDamage(key, value);
             return;
         }
@@ -540,8 +540,12 @@ public class Skill {
         return mCastOnTarget;
     }
 
-    public Boolean getCastOnAllDamage() {
-        return mCastOnAllDamage;
+    public TriggerDamage getCastOnDamage() {
+        return mCastOnDamage;
+    }
+    
+    public void setCastOnDamage(TriggerDamage dmgType) {
+        mCastOnDamage = dmgType;
     }
 
     public TriggerType getTriggerType() {

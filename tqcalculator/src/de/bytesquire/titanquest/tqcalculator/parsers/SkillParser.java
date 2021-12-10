@@ -10,6 +10,8 @@ import java.util.Arrays;
 import java.util.LinkedHashMap;
 import java.util.stream.Stream;
 
+import javax.swing.text.html.HTML.Attribute;
+
 import de.bytesquire.titanquest.tqcalculator.main.*;
 
 public class SkillParser {
@@ -33,7 +35,7 @@ public class SkillParser {
     private ArrayList<String> mProtectsAgainst;
     private ArrayList<Skill> mCastSkills;
     private Boolean mCastOnTarget;
-    private Boolean mCastOnAllDamage;
+    private TriggerDamage mCastOnDamage;
     private TriggerType mTrigger;
 
     public SkillParser(File aSkill, String aParentPath, ModStringsParser aMSParser, IconsParser aIconsParser) {
@@ -173,7 +175,7 @@ public class SkillParser {
                     mNotDispellable = tmp.isNotDispellable();
                     mProtectsAgainst = tmp.getProtectsAgainst();
                     mProjectileUsesAllDamage = tmp.getProjectileUsesAllDamage();
-                    mCastOnAllDamage = tmp.getCastOnAllDamage();
+                    mCastOnDamage = tmp.getCastOnDamage();
                     mCastOnTarget = tmp.getCastOnTarget();
                     if (tmp.getParent() != null)
                         mParentSkill.addAll(Arrays.asList(tmp.getParent()));
@@ -196,29 +198,7 @@ public class SkillParser {
                                 return;
                             }
                             mCastSkills.add(tmp);
-//                            for (String skillAttribute : tmp.getAttributes().keySet()) {
-//                                mAttributes.put(skillAttribute, tmp.getAttributes().get(skillAttribute));
-//                            }
-//                            try {
-//                                mAttributes.put("skillTier", tmp.getSkillTier());
-//                            } catch (Exception e) {
-//                                e.printStackTrace();
-//                                System.err.println("Probably fine because it is a cast skill");
-//                            }
-//                            mSkillTag = tmp.getSkillTag();
-//                            mSkillDescriptionTag = tmp.getSkillDescriptionTag();
-//                            mSkillIcon = tmp.getSkillIcon();
-//                            mModifier = tmp.isModifier() || mModifier;
-//                            mDoesNotIncludeRacialDamage = tmp.isDoesNotIncludeRacialDamage();
-//                            mExclusiveSkill = tmp.isExclusiveSkill();
-//                            mNotDispellable = tmp.isNotDispellable();
-//                            mProtectsAgainst = tmp.getProtectsAgainst();
-//                            mProjectileUsesAllDamage = tmp.getProjectileUsesAllDamage();
-//                            if (tmp.getParent() != null)
-//                                mParentSkill.addAll(Arrays.asList(tmp.getParent()));
                             mAdditionalFiles.addAll(tmp.getFiles());
-//                            if (tmp.getRace() != null)
-//                                mRace = tmp.getRace();
                         }
                     } else {
                         Skill tmp;
@@ -231,29 +211,55 @@ public class SkillParser {
                             return;
                         }
                         mCastSkills.add(tmp);
-//                        for (String skillAttribute : tmp.getAttributes().keySet()) {
-//                            mAttributes.put(skillAttribute, tmp.getAttributes().get(skillAttribute));
-//                        }
-//                        try {
-//                            mAttributes.put("skillTier", tmp.getSkillTier());
-//                        } catch (Exception e) {
-//                            e.printStackTrace();
-//                            System.err.println("Probably fine because it is a cast skill");
-//                        }
-//                        mSkillTag = tmp.getSkillTag();
-//                        mSkillDescriptionTag = tmp.getSkillDescriptionTag();
-//                        mSkillIcon = tmp.getSkillIcon();
-//                        mModifier = tmp.isModifier() || mModifier;
-//                        mDoesNotIncludeRacialDamage = tmp.isDoesNotIncludeRacialDamage();
-//                        mExclusiveSkill = tmp.isExclusiveSkill();
-//                        mNotDispellable = tmp.isNotDispellable();
-//                        mProtectsAgainst = tmp.getProtectsAgainst();
-//                        mProjectileUsesAllDamage = tmp.getProjectileUsesAllDamage();
-//                        if (tmp.getParent() != null)
-//                            mParentSkill.addAll(Arrays.asList(tmp.getParent()));
                         mAdditionalFiles.addAll(tmp.getFiles());
-//                        if (tmp.getRace() != null)
-//                            mRace = tmp.getRace();
+                    }
+                    return;
+                }
+                if (attributeName.startsWith("skillNameCastOnDamage")) {
+                    String dmgTypeStr = attributeName.split("_")[1];
+                    TriggerDamage dmgType = null;
+                    switch (dmgTypeStr) {
+                    case "Lightning":
+                        dmgType = TriggerDamage.LIGHTNING;
+                        break;
+                    case "Fire": 
+                        dmgType = TriggerDamage.FIRE;
+                        break;
+                    case "Cold":
+                        dmgType = TriggerDamage.COLD;
+                        break;
+                    }
+                    if (value.contains(";")) {
+                        String[] paths = value.split(";");
+                        for (String path : paths) {
+                            Skill tmp;
+                            try {
+                                tmp = new Skill(new File(
+                                        Control.DATABASES_DIR + mParentPath.split("/")[0] + "/database/" + path), null,
+                                        mParentPath, mMSParser, mIconsParser);
+                            } catch (FileNotFoundException e) {
+                                e.printStackTrace();
+                                return;
+                            }
+                            if (dmgType != null)
+                                tmp.setCastOnDamage(dmgType);
+                            mCastSkills.add(tmp);
+                            mAdditionalFiles.addAll(tmp.getFiles());
+                        }
+                    } else {
+                        Skill tmp;
+                        try {
+                            tmp = new Skill(
+                                    new File(Control.DATABASES_DIR + mParentPath.split("/")[0] + "/database/" + value),
+                                    null, mParentPath, mMSParser, mIconsParser);
+                        } catch (FileNotFoundException e) {
+                            e.printStackTrace();
+                            return;
+                        }
+                        if (dmgType != null)
+                            tmp.setCastOnDamage(dmgType);
+                        mCastSkills.add(tmp);
+                        mAdditionalFiles.addAll(tmp.getFiles());
                     }
                     return;
                 }
@@ -440,7 +446,7 @@ public class SkillParser {
         return mCastOnTarget;
     }
 
-    public Boolean getCastOnAllDamage() {
-        return mCastOnAllDamage;
+    public TriggerDamage getCastOnDamage() {
+        return mCastOnDamage;
     }
 }
