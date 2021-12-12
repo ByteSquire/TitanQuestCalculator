@@ -7379,34 +7379,6 @@
         "MaxLevel" : 8,
         "UltimateLevel" : 12
       }
-    }, {
-      "name" : "Antidote",
-      "triggerType" : "when an item is used",
-      "parent" : [ "Potent Elixir" ],
-      "skillIcon" : {
-        "posY" : 341,
-        "posX" : 110
-      },
-      "attributes" : {
-        "${value} Second Duration" : [ 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0 ],
-        "${value}% Chance of activating" : [ 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0 ],
-        "MaxLevel" : 8,
-        "UltimateLevel" : 12
-      },
-      "skillCast" : {
-        "castLevels" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ],
-        "castSkills" : [ {
-          "name" : "Essence of Jade",
-          "description" : "A powerful and mystic mineral, you use jade to sharpen your attack skills even further.",
-          "attributes" : {
-            "${value}% Bleeding Resistance" : [ 6.0, 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0 ],
-            "${value}% Life Leech Resistance" : [ 6.0, 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0 ],
-            "${value}% Poison Resistance" : [ 6.0, 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0 ],
-            "MaxLevel" : 8,
-            "UltimateLevel" : 12
-          }
-        } ]
-      }
     } ], [ {
       "name" : "Echoes of the Ancestors",
       "description" : "Upon vanquishing enemies with Shen Pao, blast waves emanate from you and deal damage around you.{^n}{^Y} Can trigger on enemy death. ",
