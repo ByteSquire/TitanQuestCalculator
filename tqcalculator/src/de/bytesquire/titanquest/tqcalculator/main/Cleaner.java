@@ -99,8 +99,14 @@ public class Cleaner {
         for (File f : mod.getIconsParser().getIconFiles()) {
             Path originPath = f.toPath();
 //          System.out.println(originLinksPath);
-            Path targetPath = Path.of(mod.getModDir().substring(0, mod.getModDir().length() - 1) + "-cleaned/"
-                    + f.getAbsolutePath().split(mod.getName())[1]);
+            Path targetPath;
+            if (!originPath.toString().contains("Vanilla")) {
+                targetPath = Path.of(mod.getModDir().substring(0, mod.getModDir().length() - 1) + "-cleaned/"
+                        + f.getAbsolutePath().split(mod.getName())[1]);
+            } else {
+                targetPath = Paths.get(Path.of(Control.DATABASES_DIR, "Vanilla") + "-cleaned",
+                        f.getAbsolutePath().split("Vanilla")[1]);
+            }
 //          System.out.println(targetLinksPath);
             try {
                 String tp = targetPath.toString();

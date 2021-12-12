@@ -88,7 +88,10 @@ public class SkillAttribute {
         case CHANCE_DURATION:
             if (!key.contains("chance")) {
                 if (!key.contains("duration"))
-                    key = "${chance}% Chance of " + key + " over ${duration} Second(s)";
+                    if (!key.contains("Reduced"))
+                        key = "${chance}% Chance of " + key + " over ${duration} Second(s)";
+                    else
+                        key = "${chance}% Chance of " + key + " for ${duration} Second(s)";
                 else
                     key = "${chance}% Chance of " + key;
             } else if (!key.contains("duration"))
