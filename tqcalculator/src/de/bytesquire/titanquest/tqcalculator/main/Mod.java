@@ -1,15 +1,17 @@
 package de.bytesquire.titanquest.tqcalculator.main;
 
 import java.io.File;
-import java.nio.file.Paths;
+import java.nio.file.Path;
 import java.security.InvalidParameterException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.logging.Logger;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
+import de.bytesquire.titanquest.tqcalculator.logging.Util;
 import de.bytesquire.titanquest.tqcalculator.parsers.IconsParser;
 import de.bytesquire.titanquest.tqcalculator.parsers.ModParser;
 import de.bytesquire.titanquest.tqcalculator.parsers.ModStringsParser;
@@ -25,7 +27,9 @@ public class Mod {
     private IconsParser mIconsParser;
     private ArrayList<Mastery> mMasteries;
     private ArrayList<String> mMappedMasteries;
-    private String mModName, mModDir;
+    private String mModName;
+    private Path mModDir;
+    private Path mDatabaseDir;
     private Map<String, String> mLinks;
     private File mCharacter;
     private File mGameEngine;
@@ -36,18 +40,21 @@ public class Mod {
     private Map<String, ArrayList<ArrayList<String>>> mQuestSkillPoints;
     private String[][] mClassNames;
 
-    public Mod(String aModName, String aModDir) {
+    private static final Logger LOGGER = Util.getLoggerForClass(Mod.class);
+
+    public Mod(String aModName, Path aModDir) {
         if (aModName == null)
             return;
         mMasteries = new ArrayList<Mastery>();
         mMappedMasteries = new ArrayList<String>();
         mModName = aModName;
         mModDir = aModDir;
-        mMSParser = new ModStringsParser(aModDir + "/text/");
+        mDatabaseDir = mModDir.resolve("database");
+        mMSParser = new ModStringsParser(mModDir.resolve("text"));
         initClassNames();
 
-        mIconsParser = new IconsParser(aModDir + "/database/");
-        mModParser = new ModParser(aModDir);
+        mIconsParser = new IconsParser(mDatabaseDir);
+        mModParser = new ModParser(mDatabaseDir);
         mLinks = mModParser.getLinks();
         mCharacter = mModParser.getCharacter();
         mMasteryTiers = mModParser.getMasteryTiers();
@@ -58,9 +65,7 @@ public class Mod {
 
         for (File skillTree : mModParser.getSkillTrees()) {
             if (!skillTree.getName().equals("QuestRewardSkillTree.dbr")) {
-                Mastery tmp = new Mastery(skillTree,
-                        mModDir + "database" + Paths.get("").getFileSystem().getSeparator(), mModName, mMSParser,
-                        mIconsParser);
+                Mastery tmp = new Mastery(skillTree, mDatabaseDir, mMSParser, mIconsParser);
                 mMasteries.add(tmp);
                 mMappedMasteries.add(tmp.getName());
             }
@@ -174,7 +179,7 @@ public class Mod {
         return mModName;
     }
 
-    public String getModDir() {
+    public Path getModDir() {
         return mModDir;
     }
 

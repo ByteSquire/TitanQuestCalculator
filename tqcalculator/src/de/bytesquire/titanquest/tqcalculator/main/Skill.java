@@ -3,14 +3,13 @@ package de.bytesquire.titanquest.tqcalculator.main;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.LinkedHashMap;
 import java.util.Map;
-import java.util.Objects;
+import java.util.logging.Logger;
 import java.util.Map.Entry;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
@@ -18,6 +17,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
+import de.bytesquire.titanquest.tqcalculator.logging.Util;
 import de.bytesquire.titanquest.tqcalculator.parsers.*;
 
 @JsonIgnoreProperties({ "files", "buff", "skillTag", "skillDescriptionTag", "modifier", "skillTier", "urlLegacy",
@@ -55,19 +55,22 @@ public class Skill {
     private TriggerType mTriggerType;
     private ArrayList<String> mProtectsAgainst;
 
-    public Skill(File aSkill, String[] aParent, String aParentPath, ModStringsParser aMSParser,
+    private static final Logger LOGGER = Util.getLoggerForClass(Skill.class);
+
+    public Skill(File aSkill, String[] aParent, String aParentPath, Path aDatabasePath, ModStringsParser aMSParser,
             IconsParser aIconsParser) throws FileNotFoundException {
         if (aSkill.isDirectory())
             throw new FileNotFoundException(aSkill.getAbsolutePath());
         if (!aSkill.exists()) {
-            String relativePath = Paths.get(Control.DATABASES_DIR, aParentPath.split("/")[0])
-                    .relativize(aSkill.toPath()).toString();
-            Path vanillaPath = Paths.get(Control.DATABASES_DIR, "Vanilla", relativePath);
+            String relativePath = aDatabasePath.relativize(aSkill.toPath()).toString();
+            Path vanillaPath = Control.VANILLA_DATABASE_DIR.resolve(relativePath);
             File vanillaSkill = vanillaPath.toFile();
             if (!vanillaSkill.exists())
                 throw new FileNotFoundException(aSkill.getAbsolutePath());
-            else
+            else {
+                Util.logDebug(LOGGER, relativePath + " not found, falling back to vanilla...");
                 aSkill = vanillaSkill;
+            }
         }
 
         mAttributeBuilder = new LinkedHashMap<>();
@@ -77,7 +80,7 @@ public class Skill {
         mFiles = new ArrayList<>();
         mFiles.add(aSkill.getAbsolutePath());
 
-        mSkillParser = new SkillParser(aSkill, aParentPath, aMSParser, aIconsParser);
+        mSkillParser = new SkillParser(aSkill, aParentPath, aDatabasePath, aMSParser, aIconsParser);
 
         String name;
         if ((name = aMSParser.getMatch(mSkillParser.getSkillTag())) != null)
@@ -259,7 +262,8 @@ public class Skill {
                 putAttributeMinMaxChance(key, tmp);
                 return;
             }
-            if (key.startsWith("DamageDuration") || key.contains("Fumble")/* || key.startsWith("DamageTotalResistanceReduction")*/) {
+            if (key.startsWith("DamageDuration")
+                    || key.contains("Fumble")/* || key.startsWith("DamageTotalResistanceReduction") */) {
                 putAttributeMinMaxDurationDamage(key, tmp);
                 return;
             }
@@ -279,7 +283,8 @@ public class Skill {
                 putAttributeMinMaxChance(key, tmp);
                 return;
             }
-            if (key.startsWith("DamageDuration") || key.contains("Fumble")/* || key.startsWith("DamageTotalResistanceReduction")*/) {
+            if (key.startsWith("DamageDuration")
+                    || key.contains("Fumble")/* || key.startsWith("DamageTotalResistanceReduction") */) {
                 putAttributeMinMaxDurationDamage(key, tmp);
                 return;
             }
@@ -303,7 +308,8 @@ public class Skill {
                         + AttributeNameParser.getMatch(key.substring(0, key.length() - "DurationModifier".length()))
                         + " Duration";
         }
-        if (!key.endsWith("Modifier") && (key.startsWith("DamageDuration") || key.contains("Fumble"))/* || key.startsWith("DamageTotalResistanceReduction")*/) {
+        if (!key.endsWith("Modifier") && (key.startsWith("DamageDuration")
+                || key.contains("Fumble"))/* || key.startsWith("DamageTotalResistanceReduction") */) {
             putAttributeDurationDamage(key, value);
             return;
         }
@@ -434,7 +440,7 @@ public class Skill {
     }
 
     public String getUrlLegacy() {
-        String parentMasteryName = mParentPath.split("/")[2];
+        String parentMasteryName = mParentPath.split("/")[1];
         return parentMasteryName + "/" + getName() + ".html";
     }
 
@@ -460,15 +466,13 @@ public class Skill {
 
     public int getSkillTier() throws Exception {
         if (mSkillTier <= 0)
-            throw new Exception("Skill tier missing for skill: " + mSkillName + " (" + mFiles.get(0) + ")");
+            throw new Exception("Skill tier missing for skill: " + mSkillName + " ("
+                    + Control.DATABASES_DIR.relativize(Path.of(mFiles.get(0))) + ")");
         return mSkillTier;
     }
 
     public SkillIcon getSkillIcon() {
-        if (mSkillIcon != null)
-            return mSkillIcon;
-        else
-            return null;
+        return mSkillIcon;
     }
 
     public String getRequiredWeapons() {
@@ -543,7 +547,7 @@ public class Skill {
     public TriggerDamage getCastOnDamage() {
         return mCastOnDamage;
     }
-    
+
     public void setCastOnDamage(TriggerDamage dmgType) {
         mCastOnDamage = dmgType;
     }

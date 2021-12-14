@@ -5,20 +5,23 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedHashMap;
+import java.util.logging.Logger;
 import java.util.stream.Stream;
 
-import javax.swing.text.html.HTML.Attribute;
-
+import de.bytesquire.titanquest.tqcalculator.logging.Util;
 import de.bytesquire.titanquest.tqcalculator.main.*;
+import de.bytesquire.titanquest.tqcalculator.util.FileNotFoundFormatter;
 
 public class SkillParser {
 
     private LinkedHashMap<String, Object> mAttributes;
     private ArrayList<String> mAdditionalFiles;
     private File mSkill;
+    private Path mDatabasePath;
     private String mParentPath;
     private String mSkillTag;
     private ModStringsParser mMSParser;
@@ -38,12 +41,15 @@ public class SkillParser {
     private TriggerDamage mCastOnDamage;
     private TriggerType mTrigger;
 
-    public SkillParser(File aSkill, String aParentPath, ModStringsParser aMSParser, IconsParser aIconsParser) {
+    private static final Logger LOGGER = Util.getLoggerForClass(SkillParser.class);
 
+    public SkillParser(File aSkill, String aParentPath, Path aDatabasePath, ModStringsParser aMSParser,
+            IconsParser aIconsParser) {
         if (aSkill == null)
             return;
 
         mParentPath = aParentPath;
+        mDatabasePath = aDatabasePath;
         mMSParser = aMSParser;
         mIconsParser = aIconsParser;
 
@@ -53,7 +59,16 @@ public class SkillParser {
         mCastSkills = new ArrayList<>();
 
         mSkill = aSkill;
-        mSkillIcon = mIconsParser.getIcon(mSkill.getAbsolutePath().split("database")[2].substring(1));
+        String iconPath;
+        SkillIcon test = null;
+        if (!aParentPath.contains("Vanilla") && aSkill.getAbsolutePath().contains("Vanilla")) {
+            iconPath = Control.VANILLA_DATABASE_DIR.relativize(aSkill.toPath()).toString();
+            // TODO: implement vanilla fallback icon handling
+        } else {
+            iconPath = aDatabasePath.relativize(aSkill.toPath()).toString();
+            test = mIconsParser.getIcon(iconPath);
+        }
+        mSkillIcon = test;
 
         initSkill();
     }
@@ -90,19 +105,21 @@ public class SkillParser {
                         for (String string : parentFiles) {
                             BufferedReader parentReader;
                             try {
-                                parentReader = new BufferedReader(new FileReader(new File(
-                                        Control.DATABASES_DIR + mParentPath.split("/")[0] + "/database/" + string)));
+                                parentReader = new BufferedReader(new FileReader(
+                                        Control.DATABASES_DIR.resolve(mDatabasePath).resolve(string).toFile()));
                             } catch (FileNotFoundException e) {
                                 try {
-                                    parentReader = new BufferedReader(new FileReader(
-                                            new File(Control.DATABASES_DIR + "Vanilla" + "/database/" + string)));
+                                    parentReader = new BufferedReader(
+                                            new FileReader(Control.VANILLA_DATABASE_DIR.resolve(string).toFile()));
                                 } catch (FileNotFoundException ex) {
-                                    System.err.println("Parent/Dependency skill: "
-                                            + e.getMessage().split(
-                                                    Control.DATABASES_DIR.replace("\\", "\\\\").replace("/", "\\\\"))[1]
-                                            + " not found");
                                     if (getSkillTag() == null)
-                                        System.err.println("But that's fine, as the skill is unused\n");
+                                        Util.logWarning(LOGGER, "Parent/Dependency skill: " + FileNotFoundFormatter
+                                                .relativizeExceptionPath(ex, Control.DATABASES_DIR));
+                                    else
+                                        Util.logError(LOGGER, "Parent/Dependency skill: " + FileNotFoundFormatter
+                                                .relativizeExceptionPath(ex, Control.DATABASES_DIR));
+//                                    System.err.println("Parent/Dependency skill: " + e.getMessage().split(
+//                                            Control.DATABASES_DIR.replace("\\", "\\\\").replace("/", "\\\\"))[1]);
                                     return;
                                 }
                             }
@@ -146,14 +163,15 @@ public class SkillParser {
                 if (attributeName.equals("petSkillName") || attributeName.equals("buffSkillName")) {
                     Skill tmp;
                     try {
-                        tmp = new Skill(
-                                new File(Control.DATABASES_DIR + mParentPath.split("/")[0] + "/database/" + value),
-                                null, mParentPath, mMSParser, mIconsParser);
+                        tmp = new Skill(mDatabasePath.resolve(value).toFile(), null, mParentPath, mDatabasePath,
+                                mMSParser, mIconsParser);
                     } catch (FileNotFoundException e) {
-                        System.err.println("Pet or buff skill: "
-                                + e.getLocalizedMessage()
-                                        .split(Control.DATABASES_DIR.replace("\\", "\\\\").replace("/", "\\\\"))[1]
-                                + " not found");
+                        Util.logError(LOGGER, "Pet or buff skill: "
+                                + FileNotFoundFormatter.relativizeExceptionPath(e, Control.DATABASES_DIR));
+//                        System.err.println("Pet or buff skill: "
+//                                + e.getLocalizedMessage()
+//                                        .split(Control.DATABASES_DIR.replace("\\", "\\\\").replace("/", "\\\\"))[1]
+//                                + " not found");
                         return;
                     }
                     for (String skillAttribute : tmp.getAttributes().keySet()) {
@@ -162,13 +180,12 @@ public class SkillParser {
                     try {
                         mAttributes.put("skillTier", tmp.getSkillTier());
                     } catch (Exception e) {
-                        System.err.println("Skill tier missing for skill: " + e.getMessage()
-                                .split(Control.DATABASES_DIR.replace("\\", "\\\\").replace("/", "\\\\"))[1]);
-                        System.err.println("Probably fine because it is a pet or buff skill");
+                        Util.logDebug(LOGGER, "Probably fine because it is a pet or buff skill:\n" + e.getMessage());
                     }
                     mSkillTag = tmp.getSkillTag();
                     mSkillDescriptionTag = tmp.getSkillDescriptionTag();
-                    mSkillIcon = tmp.getSkillIcon();
+                    if (mSkillIcon == null)
+                        mSkillIcon = tmp.getSkillIcon();
                     mModifier = tmp.isModifier() || mModifier;
                     mDoesNotIncludeRacialDamage = tmp.isDoesNotIncludeRacialDamage();
                     mExclusiveSkill = tmp.isExclusiveSkill();
@@ -190,11 +207,11 @@ public class SkillParser {
                         for (String path : paths) {
                             Skill tmp;
                             try {
-                                tmp = new Skill(new File(
-                                        Control.DATABASES_DIR + mParentPath.split("/")[0] + "/database/" + path), null,
-                                        mParentPath, mMSParser, mIconsParser);
+                                tmp = new Skill(mDatabasePath.resolve(path).toFile(), null, mParentPath, mDatabasePath,
+                                        mMSParser, mIconsParser);
                             } catch (FileNotFoundException e) {
-                                e.printStackTrace();
+                                Util.logError(LOGGER, "Cast skill: "
+                                        + FileNotFoundFormatter.relativizeExceptionPath(e, Control.DATABASES_DIR));
                                 return;
                             }
                             mCastSkills.add(tmp);
@@ -203,11 +220,11 @@ public class SkillParser {
                     } else {
                         Skill tmp;
                         try {
-                            tmp = new Skill(
-                                    new File(Control.DATABASES_DIR + mParentPath.split("/")[0] + "/database/" + value),
-                                    null, mParentPath, mMSParser, mIconsParser);
+                            tmp = new Skill(mDatabasePath.resolve(value).toFile(), null, mParentPath, mDatabasePath,
+                                    mMSParser, mIconsParser);
                         } catch (FileNotFoundException e) {
-                            e.printStackTrace();
+                            Util.logError(LOGGER, "Cast skill: "
+                                    + FileNotFoundFormatter.relativizeExceptionPath(e, Control.DATABASES_DIR));
                             return;
                         }
                         mCastSkills.add(tmp);
@@ -222,7 +239,7 @@ public class SkillParser {
                     case "Lightning":
                         dmgType = TriggerDamage.LIGHTNING;
                         break;
-                    case "Fire": 
+                    case "Fire":
                         dmgType = TriggerDamage.FIRE;
                         break;
                     case "Cold":
@@ -234,11 +251,11 @@ public class SkillParser {
                         for (String path : paths) {
                             Skill tmp;
                             try {
-                                tmp = new Skill(new File(
-                                        Control.DATABASES_DIR + mParentPath.split("/")[0] + "/database/" + path), null,
-                                        mParentPath, mMSParser, mIconsParser);
+                                tmp = new Skill(mDatabasePath.resolve(path).toFile(), null, mParentPath, mDatabasePath,
+                                        mMSParser, mIconsParser);
                             } catch (FileNotFoundException e) {
-                                e.printStackTrace();
+                                Util.logError(LOGGER,
+                                        FileNotFoundFormatter.relativizeExceptionPath(e, Control.DATABASES_DIR));
                                 return;
                             }
                             if (dmgType != null)
@@ -249,11 +266,11 @@ public class SkillParser {
                     } else {
                         Skill tmp;
                         try {
-                            tmp = new Skill(
-                                    new File(Control.DATABASES_DIR + mParentPath.split("/")[0] + "/database/" + value),
-                                    null, mParentPath, mMSParser, mIconsParser);
+                            tmp = new Skill(mDatabasePath.resolve(value).toFile(), null, mParentPath, mDatabasePath,
+                                    mMSParser, mIconsParser);
                         } catch (FileNotFoundException e) {
-                            e.printStackTrace();
+                            Util.logError(LOGGER, "Cast skill: "
+                                    + FileNotFoundFormatter.relativizeExceptionPath(e, Control.DATABASES_DIR));
                             return;
                         }
                         if (dmgType != null)
@@ -267,20 +284,20 @@ public class SkillParser {
                     File[] files = new File[value.split(";").length];
                     int i = 0;
                     for (String file : value.split(";")) {
-                        files[i++] = new File(Control.DATABASES_DIR + mParentPath.split("/")[0] + "/database/" + file);
+                        files[i++] = mDatabasePath.resolve(file).toFile();
                     }
-                    PetParser tmp = new PetParser(files, mParentPath, mMSParser, mIconsParser);
+                    PetParser tmp = new PetParser(files, mParentPath, mDatabasePath, mMSParser, mIconsParser);
                     mAttributes.put("Pet", tmp);
                     mAdditionalFiles.addAll(tmp.getFiles());
                 }
                 if (attributeName.equals("petBonusName")) {
                     Skill tmp;
                     try {
-                        tmp = new Skill(
-                                new File(Control.DATABASES_DIR + mParentPath.split("/")[0] + "/database/" + value),
-                                null, mParentPath, mMSParser, mIconsParser);
+                        tmp = new Skill(mDatabasePath.resolve(value).toFile(), null, mParentPath, mDatabasePath,
+                                mMSParser, mIconsParser);
                     } catch (FileNotFoundException e) {
-                        e.printStackTrace();
+                        Util.logError(LOGGER, "Pet bonus skill: "
+                                + FileNotFoundFormatter.relativizeExceptionPath(e, Control.DATABASES_DIR));
                         return;
                     }
                     if (tmp.getName() == null)
@@ -304,13 +321,16 @@ public class SkillParser {
                 }
             });
         } catch (FileNotFoundException e) {
-            System.err.println("missing file: "
-                    + e.getMessage().split(Control.DATABASES_DIR.replace("\\", "\\\\").replace("/", "\\\\"))[1]
-                            .split(".dbr ")[0]);
             if (getSkillTag() == null)
-                System.err.println("But that's fine, as the skill is unused\n");
+                Util.logWarning(LOGGER, FileNotFoundFormatter.relativizeExceptionPath(e, Control.DATABASES_DIR));
+            else
+                Util.logError(LOGGER, FileNotFoundFormatter.relativizeExceptionPath(e, Control.DATABASES_DIR));
+//            System.err.println("missing file: "
+//                    + e.getMessage().split(Control.DATABASES_DIR.replace("\\", "\\\\").replace("/", "\\\\"))[1]
+//                            .split(".dbr ")[0]);
+//                System.err.println("But that's fine, as the skill is unused\n");
         } catch (IOException e1) {
-            e1.printStackTrace();
+            Util.logError(LOGGER, e1);
         }
     }
 
@@ -386,11 +406,6 @@ public class SkillParser {
     }
 
     public SkillIcon getSkillIcon() {
-        if (mIconsParser.getIcon(mSkill.getAbsolutePath().split("database")[2].substring(1)) != null) {
-            return mIconsParser.getIcon(mSkill.getAbsolutePath().split("database")[2].substring(1).toLowerCase());
-        } else {
-//            System.out.println(mSkill.getAbsolutePath().split("database")[2].substring(1).toLowerCase());
-        }
         return mSkillIcon;
     }
 

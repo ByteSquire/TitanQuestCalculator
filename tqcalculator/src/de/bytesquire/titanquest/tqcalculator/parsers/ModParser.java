@@ -17,23 +17,25 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
+import java.util.logging.Logger;
 import java.util.stream.Stream;
 
 import org.mozilla.universalchardet.UniversalDetector;
 
+import de.bytesquire.titanquest.tqcalculator.logging.Util;
 import de.bytesquire.titanquest.tqcalculator.main.Control;
+import de.bytesquire.titanquest.tqcalculator.util.FileNotFoundFormatter;
 
 public class ModParser {
-
-    private static final String SEPARATOR = Paths.get("").getFileSystem().getSeparator();
 
     private TreeMap<Integer, File> mSkillTrees;
     private File mCharacter;
     private File mGameEngine;
     private File mPlayerLevels;
-    public static final int COUNT_MASTERIES = 10;
+    public static final int COUNT_MASTERIES = 11;
     public static final int COUNT_QUEST_REWARD_TREES = 1;
-    private String mModDir;
+    private Path mModDir;
+    private Path mDatabaseDir;
     private LinkedHashMap<String, String> mLinks;
     private TreeMap<String, ArrayList<ArrayList<String>>> mQuestSkillPoints;
     private ArrayList<Integer> mMasteryTiers;
@@ -41,13 +43,16 @@ public class ModParser {
     // private int mMaxLevel;
     private ArrayList<File> mQuestSkillFiles;
 
-    public ModParser(String aModdir) {
+    private static final Logger LOGGER = Util.getLoggerForClass(ModParser.class);
+
+    public ModParser(Path aDatabaseDir) {
         mSkillTrees = new TreeMap<>();
         mLinks = new LinkedHashMap<>();
         mMasteryTiers = new ArrayList<>();
         mQuestSkillFiles = new ArrayList<>();
         mQuestSkillPoints = new TreeMap<>((s1, s2) -> compareQuestFiles(s1, s2));
-        mModDir = aModdir;
+        mDatabaseDir = aDatabaseDir;
+        mModDir = aDatabaseDir.getParent();
 
         initSkillTrees();
         initLinks();
@@ -73,7 +78,7 @@ public class ModParser {
 
     private void initQuestSkillPoints() {
         try {
-            DirectoryStream<Path> questSkillDir = Files.newDirectoryStream(Path.of(mModDir + "questSkillPoints"));
+            DirectoryStream<Path> questSkillDir = Files.newDirectoryStream(mModDir.resolve("questSkillPoints"));
 
             questSkillDir.forEach((textFile) -> {
                 if (textFile != null) {
@@ -100,16 +105,16 @@ public class ModParser {
                                 }
                             });
                         } catch (Exception e) {
-                            e.printStackTrace();
+                            Util.logError(LOGGER, e);
                         }
                         mQuestSkillPoints.put(textFile.getFileName().toString().replace(".txt", ""), tmp);
                     } catch (IOException e1) {
-                        e1.printStackTrace();
+                        Util.logError(LOGGER, e1);
                     }
                 }
             });
         } catch (IOException e1) {
-            e1.printStackTrace();
+            Util.logError(LOGGER, e1);
         }
     }
 
@@ -118,10 +123,11 @@ public class ModParser {
     }
 
     private boolean initEngine(boolean vanilla) {
-        if (vanilla)
-            mGameEngine = new File(Control.DATABASES_DIR + "Vanilla/database/records/game/gameengine.dbr");
-        else
-            mGameEngine = new File(mModDir + "database/records/game/gameengine.dbr");
+        if (vanilla) {
+            Util.logDebug(LOGGER, "No custom gameengine.dbr found, falling back to vanilla...");
+            mGameEngine = Control.VANILLA_DATABASE_DIR.resolve(Paths.get("records", "game", "gameengine.dbr")).toFile();
+        } else
+            mGameEngine = mDatabaseDir.resolve(Paths.get("records", "game", "gameengine.dbr")).toFile();
 
         try (BufferedReader characterReader = new BufferedReader(new FileReader(mGameEngine));) {
             Stream<String> fileStream = characterReader.lines();
@@ -134,11 +140,12 @@ public class ModParser {
             if (!vanilla)
                 return initEngine(true);
             else {
-                e.printStackTrace();
+                Util.logError(LOGGER,
+                        "Gameengine: " + FileNotFoundFormatter.relativizeExceptionPath(e, Control.DATABASES_DIR));
                 return false;
             }
         } catch (IOException e1) {
-            e1.printStackTrace();
+            Util.logError(LOGGER, e1);
         }
         return true;
     }
@@ -148,10 +155,12 @@ public class ModParser {
     }
 
     private boolean initPlayerLevels(boolean vanilla) {
-        if (vanilla)
-            mPlayerLevels = new File(Control.DATABASES_DIR + "Vanilla/database/records/creature/pc/playerlevels.dbr");
-        else
-            mPlayerLevels = new File(mModDir + "database/records/creature/pc/playerlevels.dbr");
+        if (vanilla) {
+            Util.logDebug(LOGGER, "No custom playerlevels.dbr found, falling back to vanilla...");
+            mPlayerLevels = Control.VANILLA_DATABASE_DIR
+                    .resolve(Paths.get("records", "creature", "pc", "playerlevels.dbr")).toFile();
+        } else
+            mPlayerLevels = mDatabaseDir.resolve(Paths.get("records", "creature", "pc", "playerlevels.dbr")).toFile();
 
         try (BufferedReader characterReader = new BufferedReader(new FileReader(mPlayerLevels));) {
             Stream<String> fileStream = characterReader.lines();
@@ -159,11 +168,11 @@ public class ModParser {
                 if (str.startsWith("skillModifierPoints")) {
                     String value = str.split(",", -1)[1];
                     if (value.isEmpty())
-                        return;
+                        Util.logError(LOGGER, "skillModifierPoints missing in " + mPlayerLevels.toString());
                     try {
                         mSkillPointIncrement = Integer.parseInt(value);
                     } catch (NumberFormatException e) {
-                        e.printStackTrace();
+                        Util.logError(LOGGER, "skillModifierPoints not a valid integer in " + mPlayerLevels.toString());
                     }
                 }
                 // Maybe implement in the future if THQ Nordic is nice
@@ -180,17 +189,18 @@ public class ModParser {
             if (!vanilla)
                 return initPlayerLevels(true);
             else {
-                e.printStackTrace();
+                Util.logError(LOGGER,
+                        "Playerlevels: " + FileNotFoundFormatter.relativizeExceptionPath(e, Control.DATABASES_DIR));
                 return false;
             }
         } catch (IOException e1) {
-            e1.printStackTrace();
+            Util.logError(LOGGER, e1);
         }
         return true;
     }
 
     private void initSkillTrees() {
-        mCharacter = new File(mModDir + "database/records/xpack/creatures/pc/malepc01.dbr");
+        mCharacter = mDatabaseDir.resolve(Paths.get("records", "xpack", "creatures", "pc", "malepc01.dbr")).toFile();
         try (BufferedReader characterReader = new BufferedReader(new FileReader(mCharacter));) {
             Stream<String> fileStream = characterReader.lines();
             fileStream
@@ -198,19 +208,15 @@ public class ModParser {
                             && !(str.contains("Records\\Quests") || str.contains("records\\quests")
                                     || str.contains("quest") || str.contains("QuestRewardSkillTree")))
                     .forEach((str) -> {
-                        int index = Integer.parseInt(str.substring(9, 10));
-                        if (index == 1) {
-                            try {
-                                index = Integer.parseInt(str.substring(9, 11));
-                            } catch (NumberFormatException e) {
-                            }
-                        }
-                        mSkillTrees.put(index, new File(mModDir + "database" + SEPARATOR + str.split(",", -1)[1]));
+                        String key = str.split(",", -1)[0];
+                        String value = str.split(",", -1)[1];
+                        if (value == null)
+                            return;
+                        int index = Integer.parseInt(key.substring(9, key.length()));
+                        mSkillTrees.put(index, mDatabaseDir.resolve(value).toFile());
                     });
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
         } catch (IOException e1) {
-            e1.printStackTrace();
+            Util.logError(LOGGER, e1);
         }
     }
 
@@ -223,20 +229,17 @@ public class ModParser {
             fileStream.filter((str) -> !str.isBlank()).forEach((str) -> {
                 mLinks.put(str.split("->")[0], str.split("->")[1]);
             });
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
         } catch (IOException e1) {
-            e1.printStackTrace();
+            Util.logError(LOGGER, e1);
         }
     }
 
     public List<File> getSkillTrees() {
-        File[] ret = new File[mSkillTrees.size()];
-        int i = 0;
+        List<File> ret = new ArrayList<File>(mSkillTrees.size());
         for (File file : mSkillTrees.values())
-            ret[i++] = file;
+            ret.add(file);
 
-        return Arrays.asList(ret);
+        return ret;
     }
 
     public Map<String, String> getLinks() {

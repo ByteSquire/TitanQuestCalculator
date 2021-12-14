@@ -2,30 +2,33 @@ package de.bytesquire.titanquest.tqcalculator.parsers;
 
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.logging.Logger;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
+
+import de.bytesquire.titanquest.tqcalculator.logging.Util;
+import de.bytesquire.titanquest.tqcalculator.util.ListExtensions;
 
 public class SkillTreeParser {
 
     private ArrayList<File> mSkills;
     private ArrayList<Boolean> mSkillIsInnate;
-    public static final int COUNT_SKILLS = 50;
     private File mSkillTree;
-    private String mModDir;
+    private Path mModDir;
     private String mMasteryTag;
 
-    public SkillTreeParser(File aSkillTree, String aModDir) {
+    private static final Logger LOGGER = Util.getLoggerForClass(SkillTreeParser.class);
+
+    public SkillTreeParser(File aSkillTree, Path aModDir) {
         mModDir = aModDir;
         mSkills = new ArrayList<File>();
         mSkillIsInnate = new ArrayList<Boolean>();
-
-        for (int i = 0; i < COUNT_SKILLS; i++) {
-            mSkills.add(null);
-            mSkillIsInnate.add(null);
-        }
 
         mSkillTree = aSkillTree;
 
@@ -34,7 +37,7 @@ public class SkillTreeParser {
     }
 
     private void filterSkills() {
-        try (BufferedReader skillTreeReader = new BufferedReader(new FileReader(mSkillTree));) {
+        try (BufferedReader skillTreeReader = new BufferedReader(new FileReader(mSkillTree))) {
             Stream<String> fileStream = skillTreeReader.lines();
 
             fileStream.filter((str) -> str.startsWith("skillLevel")).forEach((str) -> {
@@ -45,68 +48,54 @@ public class SkillTreeParser {
                 }
 
                 if (index > 1) {
-                    mSkillIsInnate.set(index - 1, (str.split(",", -1)[1].equals("1")));
+                    ListExtensions.setElementInListAtIndex((str.split(",", -1)[1].equals("1")), mSkillIsInnate,
+                            index - 1);
                 }
             });
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-            return;
-        } catch (IOException e1) {
-            e1.printStackTrace();
+        } catch (IOException e) {
+            Util.logError(LOGGER, e);
             return;
         }
 
         for (int i = 1; i < mSkills.size(); i++) {
             if (mSkillIsInnate.get(i) != null && mSkillIsInnate.get(i))
-                mSkills.set(i, null);
+                ListExtensions.setElementInListAtIndex(null, mSkills, i);
         }
     }
 
     private void initSkills() {
-        try (BufferedReader skillTreeReader = new BufferedReader(new FileReader(mSkillTree));) {
+        try (BufferedReader skillTreeReader = new BufferedReader(new FileReader(mSkillTree))) {
             Stream<String> fileStream = skillTreeReader.lines();
 
             fileStream.filter((str) -> str.startsWith("skillName")).forEach((str) -> {
-                int index = Integer.parseInt(str.substring(9, 10));
-                try {
-                    index = Integer.parseInt(str.substring(9, 11));
-                } catch (NumberFormatException e) {
-                }
-
+                String key = str.split(",", -1)[0];
                 String skillName = str.split(",", -1)[1];
+
+                int index = Integer.parseInt(key.substring(9, key.length()));
+
                 if (skillName.isEmpty())
                     return;
                 if (index == 1) {
-                    try {
-                        BufferedReader masterySkillReader = new BufferedReader(
-                                new FileReader(new File(mModDir + skillName)));
-                        Stream<String> fileStream1 = masterySkillReader.lines();
+                    try (Stream<String> fileStream1 = Files.lines(mModDir.resolve(skillName))) {
                         fileStream1.filter((str1) -> str1.startsWith("skillDisplayName")).forEach((str1) -> {
                             mMasteryTag = str1.split(",", -1)[1];
                         });
-                    } catch (FileNotFoundException e) {
-                        e.printStackTrace();
+                    } catch (IOException e) {
+                        Util.logError(LOGGER, e);
                     }
                 }
                 if (!skillName.contains("taunt")) {
-                    mSkills.set(index - 1, new File(mModDir + str.split(",", -1)[1]));
+                    ListExtensions.setElementInListAtIndex(mModDir.resolve(skillName).toFile(), mSkills, index - 1);
                 }
             });
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-            return;
-        } catch (IOException e1) {
-            e1.printStackTrace();
+        } catch (IOException e) {
+            Util.logError(LOGGER, e);
             return;
         }
     }
 
-    public ArrayList<File> getSkills() {
-        ArrayList<File> ret = new ArrayList<>();
-        for (File file : mSkills)
-            if (file != null)
-                ret.add(file);
-        return ret;
+    public List<File> getSkills() {
+        return mSkills.stream().filter(skill -> skill != null).collect(Collectors.toList());
     }
 
     public String getMasteryTag() {

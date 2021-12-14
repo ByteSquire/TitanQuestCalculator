@@ -13,24 +13,29 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedHashMap;
+import java.util.logging.Logger;
 import java.util.stream.Stream;
 
+import de.bytesquire.titanquest.tqcalculator.logging.Util;
 import de.bytesquire.titanquest.tqcalculator.main.Control;
 import de.bytesquire.titanquest.tqcalculator.main.SkillIcon;
 
 public class IconsParser {
 
-    private static final Path VANILLA_DATABASE = Paths.get(Control.DATABASES_DIR, "Vanilla", "database");
     private static final Path SKILLSWINDOW_PATH = Paths.get("records", "xpack4", "ui", "skills", "skillswindow.dbr");
     private static final Path SKILLSWINDOW_PATH_FALLBACK = Paths.get("records", "xpack3", "ui", "skills",
             "skillswindow.dbr");
     private ArrayList<File> mIconFiles;
+    private ArrayList<File> mAdditionalFiles;
     private LinkedHashMap<String, SkillIcon> mIcons;
-    private String mModPath;
+    private Path mModPath;
     private Path mSkillsWindowPath;
 
-    public IconsParser(String aModPath) {
+    private static final Logger LOGGER = Util.getLoggerForClass(IconsParser.class);
+
+    public IconsParser(Path aModPath) {
         mIconFiles = new ArrayList<>();
+        mAdditionalFiles = new ArrayList<>();
         mIcons = new LinkedHashMap<>();
         mModPath = aModPath;
 
@@ -40,17 +45,17 @@ public class IconsParser {
     }
 
     private void initPath() {
-        Path modPath = Paths.get(mModPath);
-        File test = modPath.resolve(SKILLSWINDOW_PATH).toFile();
-        File testFallback = modPath.resolve(SKILLSWINDOW_PATH_FALLBACK).toFile();
+        File test = mModPath.resolve(SKILLSWINDOW_PATH).toFile();
+        File testFallback = mModPath.resolve(SKILLSWINDOW_PATH_FALLBACK).toFile();
         if (test.exists())
             mSkillsWindowPath = Paths.get(test.getAbsolutePath());
         else if (testFallback.exists())
             mSkillsWindowPath = Paths.get(testFallback.getAbsolutePath());
         else {
-            System.err.println("No skillswindow found, falling back to vanilla...");
-            mSkillsWindowPath = VANILLA_DATABASE.resolve(SKILLSWINDOW_PATH);
+            Util.logDebug(LOGGER, "No skillswindow found, falling back to vanilla...");
+            mSkillsWindowPath = Control.VANILLA_DATABASE_DIR.resolve(SKILLSWINDOW_PATH);
         }
+        mAdditionalFiles.add(mSkillsWindowPath.toFile());
     }
 
     private void initIcons() {
@@ -60,30 +65,33 @@ public class IconsParser {
                 Stream<String> fileStream = skillReader.lines();
                 SkillIcon tmp = new SkillIcon();
                 fileStream.forEach((str) -> {
-                    if (str.split(",", -1)[0].equals("skillName")) {
-                        tmp.setName(str.split(",", -1)[1].toLowerCase());
+                    String key = str.split(",", -1)[0];
+                    String value = str.split(",", -1)[1];
+                    if (key.equals("skillName")) {
+                        tmp.setName(value.toLowerCase());
                     }
-                    if (str.split(",", -1)[0].equals("bitmapPositionX")) {
-                        tmp.setPosX(Integer.parseInt(str.split(",", -1)[1]));
+                    if (key.equals("bitmapPositionX")) {
+                        tmp.setPosX(Integer.parseInt(value));
                     }
-                    if (str.split(",", -1)[0].equals("bitmapPositionY")) {
-                        tmp.setPosY(Integer.parseInt(str.split(",", -1)[1]));
+                    if (key.equals("bitmapPositionY")) {
+                        tmp.setPosY(Integer.parseInt(value));
                     }
-                    if (str.split(",", -1)[0].equals("isCircular")) {
-                        tmp.setCircular(str.split(",", -1)[1].equals("1"));
+                    if (key.equals("isCircular")) {
+                        tmp.setCircular(value.equals("1"));
                     }
                 });
-                mIcons.put(tmp.getName(), tmp);
+                if (tmp.getName() != null && !tmp.getName().isEmpty())
+                    mIcons.put(tmp.getName(), tmp);
+                else
+                    Util.logError(LOGGER, "Ui element: " + uiSkill.toString() + " missing skillName");
             } catch (Exception e) {
-                e.printStackTrace();
+                Util.logError(LOGGER, e);
             }
         }
     }
 
     private void initFiles() {
-        try {
-            Stream<String> skillsWindowLines = Files.lines(mSkillsWindowPath);
-
+        try (Stream<String> skillsWindowLines = Files.lines(mSkillsWindowPath)) {
             ArrayList<String> ctrlPanes = new ArrayList<>();
             skillsWindowLines.forEach(line -> {
                 String key = line.split(",", -1)[0];
@@ -94,18 +102,17 @@ public class IconsParser {
             });
 
             ctrlPanes.forEach(ctrlPane -> {
-                File test = Paths.get(mModPath, ctrlPane).toFile();
+                File test = mModPath.resolve(ctrlPane).toFile();
                 Path ctrlPanePath;
                 if (test.exists())
                     ctrlPanePath = Paths.get(test.getAbsolutePath());
                 else {
-                    System.err.println(test.toString() + " not found, falling back to vanilla...");
-                    ctrlPanePath = VANILLA_DATABASE.resolve(ctrlPane);
+                    Util.logDebug(LOGGER, test.toString() + " not found, falling back to vanilla...");
+                    ctrlPanePath = Control.VANILLA_DATABASE_DIR.resolve(ctrlPane);
                 }
+                mAdditionalFiles.add(ctrlPanePath.toFile());
 
-                try {
-                    Stream<String> ctrlPaneLines = Files.lines(ctrlPanePath);
-
+                try (Stream<String> ctrlPaneLines = Files.lines(ctrlPanePath)) {
                     ArrayList<String> skillButtons = new ArrayList<>();
                     ctrlPaneLines.forEach(line -> {
                         String key = line.split(",", -1)[0];
@@ -116,76 +123,23 @@ public class IconsParser {
                     });
 
                     skillButtons.forEach(skillButton -> {
-                        File skillButtonFile = Paths.get(mModPath, skillButton).toFile();
+                        File skillButtonFile = mModPath.resolve(skillButton).toFile();
 
                         if (skillButtonFile.exists())
                             mIconFiles.add(skillButtonFile);
-                        else
-                            mIconFiles.add(VANILLA_DATABASE.resolve(skillButton).toFile());
+                        else {
+                            Util.logDebug(LOGGER, "UI element: " + skillButtonFile.toString()
+                                    + " not found, falling back to vanilla...");
+                            mIconFiles.add(Control.VANILLA_DATABASE_DIR.resolve(skillButton).toFile());
+                        }
                     });
-                    ctrlPaneLines.close();
                 } catch (IOException e) {
-                    e.printStackTrace();
+                    Util.logError(LOGGER, e);
                 }
             });
-
-            skillsWindowLines.close();
         } catch (IOException e) {
-            e.printStackTrace();
+            Util.logError(LOGGER, e);
         }
-        /*
-         * try { DirectoryStream<Path> playerSkills = Files
-         * .newDirectoryStream(Path.of(mModPath + "records/ingameui/player skills/"));
-         * playerSkills.forEach((masteryPath) -> { if
-         * (masteryPath.getFileName().toString().startsWith("mastery")) { try {
-         * DirectoryStream<Path> masterySkills = Files.newDirectoryStream(masteryPath);
-         * masterySkills.forEach((skillPath) -> { if
-         * (skillPath.getFileName().toString().startsWith("skill")) { mIconFiles.add(new
-         * File(skillPath.toAbsolutePath().toString())); } }); } catch (IOException e) {
-         * e.printStackTrace(); } } }); } catch (IOException e) { e.printStackTrace(); }
-         * 
-         * try { DirectoryStream<Path> playerSkills = Files
-         * .newDirectoryStream(Path.of(mModPath + "records/xpack/ui/skills/"));
-         * playerSkills.forEach((masteryPath) -> { if
-         * (masteryPath.getFileName().toString().startsWith("mastery")) { try {
-         * DirectoryStream<Path> masterySkills = Files.newDirectoryStream(masteryPath);
-         * masterySkills.forEach((skillPath) -> { if
-         * (skillPath.getFileName().toString().startsWith("skill")) { mIconFiles.add(new
-         * File(skillPath.toAbsolutePath().toString())); } }); } catch (IOException e) {
-         * e.printStackTrace(); } } }); } catch (IOException e) { e.printStackTrace(); }
-         * 
-         * try { DirectoryStream<Path> playerSkills = Files
-         * .newDirectoryStream(Path.of(mModPath + "records/xpack2/ui/skills/"));
-         * playerSkills.forEach((masteryPath) -> { if
-         * (masteryPath.getFileName().toString().startsWith("mastery")) { try {
-         * DirectoryStream<Path> masterySkills = Files.newDirectoryStream(masteryPath);
-         * masterySkills.forEach((skillPath) -> { if
-         * (skillPath.getFileName().toString().startsWith("skill")) { mIconFiles.add(new
-         * File(skillPath.toAbsolutePath().toString())); } }); } catch (IOException e) {
-         * e.printStackTrace(); } } }); } catch (IOException e) { e.printStackTrace(); }
-         * 
-         * try { DirectoryStream<Path> playerSkills = Files
-         * .newDirectoryStream(Path.of(mModPath + "records/xpack3/ui/skills/"));
-         * playerSkills.forEach((masteryPath) -> { if
-         * (masteryPath.getFileName().toString().startsWith("mastery")) { try {
-         * DirectoryStream<Path> masterySkills = Files.newDirectoryStream(masteryPath);
-         * masterySkills.forEach((skillPath) -> { if
-         * (skillPath.getFileName().toString().startsWith("skill")) { mIconFiles.add(new
-         * File(skillPath.toAbsolutePath().toString())); } }); } catch (IOException e) {
-         * e.printStackTrace(); } } }); } catch (IOException e) { if (!(e instanceof
-         * NoSuchFileException)) e.printStackTrace(); }
-         * 
-         * try { DirectoryStream<Path> playerSkills = Files
-         * .newDirectoryStream(Path.of(mModPath + "records/xpack4/ui/skills/"));
-         * playerSkills.forEach((masteryPath) -> { if
-         * (masteryPath.getFileName().toString().startsWith("mastery")) { try {
-         * DirectoryStream<Path> masterySkills = Files.newDirectoryStream(masteryPath);
-         * masterySkills.forEach((skillPath) -> { if
-         * (skillPath.getFileName().toString().startsWith("skill")) { mIconFiles.add(new
-         * File(skillPath.toAbsolutePath().toString())); } }); } catch (IOException e) {
-         * e.printStackTrace(); } } }); } catch (IOException e) { if (!(e instanceof
-         * NoSuchFileException)) e.printStackTrace(); }
-         */
     }
 
     public SkillIcon getIcon(String skillName) {
@@ -199,7 +153,8 @@ public class IconsParser {
     }
 
     public ArrayList<File> getIconFiles() {
-        return mIconFiles;
+        mAdditionalFiles.addAll(mIconFiles);
+        return mAdditionalFiles;
     }
 
 }

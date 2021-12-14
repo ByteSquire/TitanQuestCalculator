@@ -35,12 +35,14 @@ import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.logging.Logger;
 
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import de.bytesquire.titanquest.tqcalculator.logging.Util;
 import de.bytesquire.titanquest.tqcalculator.parsers.AttributeNameParser;
 import freemarker.template.*;
 
@@ -50,9 +52,17 @@ public class Control {
 
     public static final String URL = "https://bytesquire.github.io/TitanQuestCalculator";
 
-    public static final String DATABASES_DIR = Paths.get("").toAbsolutePath().toString() + "/resources/databases/";
+    public static final Path DATABASES_DIR = Paths.get("").toAbsolutePath().resolve("resources").resolve("databases");
 
-    public static final String REPOSITORY_DIR = Paths.get("").toAbsolutePath().toString().split("tqcalculator")[0];
+    public static final Path VANILLA_DATABASE_DIR = Paths.get("").toAbsolutePath()
+            .resolve(Paths.get("resources", "databases", "Vanilla", "database"));
+
+    public static final Path VANILLA_MOD_DIR = Paths.get("").toAbsolutePath()
+            .resolve(Paths.get("resources", "databases", "Vanilla"));
+
+    public static final Path REPOSITORY_DIR = Paths.get("").toAbsolutePath().getParent().getParent();
+
+    private static final Logger LOGGER = Util.getLoggerForClass(Control.class);
 
     private static ArrayList<Mod> mMods = new ArrayList<>();
 
@@ -65,7 +75,8 @@ public class Control {
     private static boolean mSuccess;
 
     public static void main(String[] args) {
-
+        System.err.println("Repo dir:" + REPOSITORY_DIR.toString());
+        Util.init();
         configFreemarker();
         getTemplates();
         AttributeNameParser.parseAttributeNames();
@@ -74,16 +85,19 @@ public class Control {
 
         DirectoryStream<Path> databaseDir;
         try {
-            databaseDir = Files.newDirectoryStream(Path.of(DATABASES_DIR));
+            databaseDir = Files.newDirectoryStream(DATABASES_DIR);
 
             databaseDir.forEach((mod) -> {
                 if (mod != null && !mod.getFileName().toString().startsWith(".")
                         && !mod.getFileName().toString().endsWith("-cleaned"))
-                    mMods.add(new Mod(mod.getFileName().toString(), mod.toAbsolutePath().toString() + "/"));
+                    mMods.add(new Mod(mod.getFileName().toString(), mod));
             });
         } catch (IOException e) {
-            e.printStackTrace();
+            Util.logError(LOGGER, e);
             mSuccess = false;
+        } catch (Exception e) {
+            Util.logError(LOGGER, e);
+            return;
         }
 
         LinkedHashMap<String, String> links = new LinkedHashMap<>();
@@ -97,35 +111,35 @@ public class Control {
         rootHome.put("links", links);
         rootHome.put("mods", mMods);
         try {
-            Writer outHome = new FileWriter(REPOSITORY_DIR + "index.md");
+            Writer outHome = new FileWriter(REPOSITORY_DIR.resolve("index.md").toFile());
             home.process(rootHome, outHome);
         } catch (Exception e) {
-            e.printStackTrace();
+            Util.logError(LOGGER, e);
             mSuccess = false;
         }
 
         for (Mod mod : mMods) {
+            Path out = REPOSITORY_DIR.resolve("mods").resolve(mod.getName());
             try {
-                Path out = Path.of(REPOSITORY_DIR + "mods/" + mod.getName());
                 Files.createDirectories(out);
 
                 writeModToJSON(mod, out);
             } catch (IOException e) {
-                e.printStackTrace();
+                Util.logError(LOGGER, e);
                 mSuccess = false;
             }
             for (Mastery mastery : mod.getMasteries()) {
                 try {
-                    Path out = Path.of(REPOSITORY_DIR + "mods/" + mod.getName() + "/Masteries/" + mastery.getName());
-                    Files.createDirectories(out);
-                    
-                    out = Path.of(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/");
-                    Files.createDirectories(out);
-                    
-                    out = Path.of(REPOSITORY_DIR + "mods/" + mod.getName() + "/images/");
-                    Files.createDirectories(out);
+                    Path outMastery = out.resolve("Masteries").resolve(mastery.getName());
+                    Files.createDirectories(outMastery);
+
+                    outMastery = out.resolve("js");
+                    Files.createDirectories(outMastery);
+
+                    outMastery = out.resolve("images");
+                    Files.createDirectories(outMastery);
                 } catch (IOException e) {
-                    e.printStackTrace();
+                    Util.logError(LOGGER, e);
                     mSuccess = false;
                 }
             }
@@ -156,7 +170,7 @@ public class Control {
             mapper.writerWithDefaultPrettyPrinter()
                     .writeValue(new File(modPath.toString() + "/" + mod.getName() + ".json"), mod);
         } catch (IOException e) {
-            e.printStackTrace();
+            Util.logError(LOGGER, e);
             mSuccess = false;
         }
     }
@@ -164,16 +178,16 @@ public class Control {
     private static void writeTemplatesLegacy() {
         try {
             for (Mod mod : mMods) {
-                Writer outMod = new FileWriter(
-                        REPOSITORY_DIR + "mods/" + mod.getName() + "/" + mod.getName() + ".html");
+                Path modPath = REPOSITORY_DIR.resolve("mods").resolve(mod.getName());
+                Writer outMod = new FileWriter(modPath.resolve(mod.getName() + ".html").toFile());
                 rootMod = new LinkedHashMap<>();
                 rootMod.put("masteries", mod.getMasteries());
                 rootMod.put("name", mod.getName());
                 Control.mod.process(rootMod, outMod);
 
                 for (Mastery mastery : mod.getMasteries()) {
-                    Writer outMastery = new FileWriter(
-                            REPOSITORY_DIR + "mods/" + mod.getName() + "/Masteries/" + mastery.getName() + ".html");
+                    Path masteriesPath = modPath.resolve("Masteries");
+                    Writer outMastery = new FileWriter(masteriesPath.resolve(mastery.getName() + ".html").toFile());
                     rootMastery = new LinkedHashMap<>();
                     rootMastery.put("skills", mastery.getSkillTiers());
                     rootMastery.put("name", mastery.getName());
@@ -181,10 +195,10 @@ public class Control {
 
                     for (int i = 0; i < mastery.getSkillTiers().size(); i++)
                         for (Skill skill : mastery.getSkillTier(i)) {
-                            Writer outSkill = new FileWriter(REPOSITORY_DIR + "mods/" + mod.getName() + "/Masteries/"
-                                    + mastery.getName() + "/"
-                                    + ((skill.getName() == null) ? skill.toString() : skill.getName().replace(":", ""))
-                                    + ".html");
+                            Writer outSkill = new FileWriter(masteriesPath.resolve(mastery.getName())
+                                    .resolve((skill.getName() == null) ? skill.toString()
+                                            : skill.getName().replace(":", "") + ".html")
+                                    .toFile());
                             rootSkill = new LinkedHashMap<>();
                             rootSkill.put("attributes", skill.getAttributes());
                             rootSkill.put("name", skill.getName());
@@ -196,8 +210,8 @@ public class Control {
                         }
                 }
             }
-        } catch (IOException | TemplateException e1) {
-            e1.printStackTrace();
+        } catch (IOException | TemplateException e) {
+            Util.logError(LOGGER, e);
             mSuccess = false;
         }
 
@@ -205,26 +219,26 @@ public class Control {
 
     private static void writeTemplates() {
         for (Mod mod : mMods) {
+            Path modPath = REPOSITORY_DIR.resolve("mods").resolve(mod.getName());
             try {
-                Writer outMod = new FileWriter(REPOSITORY_DIR + "mods/" + mod.getName() + "/index.html");
+                Writer outMod = new FileWriter(modPath.resolve("index.html").toFile());
                 rootMod = new LinkedHashMap<>();
                 rootMod.put("name", mod.getName());
                 rootMod.put("masteries", mod.getMasteries());
                 Control.mod_fancy.process(rootMod, outMod);
 
-                Writer outMastery = new FileWriter(REPOSITORY_DIR + "mods/" + mod.getName() + "/Masteries.html");
+                Writer outMastery = new FileWriter(modPath.resolve("Masteries.html").toFile());
                 rootMastery = new LinkedHashMap<>();
                 rootMastery.put("name", mod.getName());
                 rootMastery.put("questSkillPoints", mod.getQuestSkillPoints());
                 Control.mastery_fancy.process(rootMastery, outMastery);
 
-                Writer skillJs = new FileWriter(REPOSITORY_DIR + "mods/" + mod.getName() + "/js/skill.js");
+                Writer skillJs = new FileWriter(modPath.resolve("js").resolve("skill.js").toFile());
                 rootMastery = new LinkedHashMap<>();
                 rootMastery.put("name", mod.getName());
                 Control.skill_js.process(rootMastery, skillJs);
 
-                Writer json_handlerJs = new FileWriter(
-                        REPOSITORY_DIR + "mods/" + mod.getName() + "/js/JSON_handler.js");
+                Writer json_handlerJs = new FileWriter(modPath.resolve("js").resolve("JSON_handler.js").toFile());
 //                rootMastery = new LinkedHashMap<>();
                 rootMastery.put("name", mod.getName());
                 Control.json_handler.process(rootMastery, json_handlerJs);
@@ -232,15 +246,14 @@ public class Control {
                 DirectoryStream<Path> javascripts = Files.newDirectoryStream(Path.of("resources/js/"), "*.js");
                 javascripts.forEach(script -> {
                     try {
-                        Files.copy(script, Path.of(
-                                REPOSITORY_DIR + "mods/" + mod.getName() + "/js/" + script.getFileName().toString()),
-                                StandardCopyOption.REPLACE_EXISTING);
+                        Files.copy(script, REPOSITORY_DIR.resolve("mods").resolve(mod.getName()).resolve("js")
+                                .resolve(script.getFileName().toString()), StandardCopyOption.REPLACE_EXISTING);
                     } catch (IOException e) {
-                        e.printStackTrace();
+                        Util.logError(LOGGER, e);
                     }
                 });
             } catch (IOException | TemplateException e) {
-                e.printStackTrace();
+                Util.logError(LOGGER, e);
                 mSuccess = false;
             }
         }
@@ -257,7 +270,7 @@ public class Control {
             skill_js = mCfg.getTemplate("skill_js.ftlh");
             json_handler = mCfg.getTemplate("JSON_handler.ftlh");
         } catch (IOException e) {
-            e.printStackTrace();
+            Util.logError(LOGGER, e);
             mSuccess = false;
         }
     }
@@ -267,7 +280,7 @@ public class Control {
             mCfg.setDirectoryForTemplateLoading(
                     new File(Paths.get("").toAbsolutePath().toString() + "/resources/templates"));
         } catch (IOException e) {
-            e.printStackTrace();
+            Util.logError(LOGGER, e);
             mSuccess = false;
         }
 

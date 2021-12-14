@@ -10,10 +10,12 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
+import java.util.logging.Logger;
 import java.util.stream.Stream;
 
 import org.mozilla.universalchardet.UniversalDetector;
 
+import de.bytesquire.titanquest.tqcalculator.logging.Util;
 import de.bytesquire.titanquest.tqcalculator.main.Control;
 
 public class ModStringsParser {
@@ -22,24 +24,24 @@ public class ModStringsParser {
     private LinkedHashMap<String, String> defaultTags;
     private ArrayList<File> mModStrings;
 
-    public ModStringsParser(String aModStringsPath) {
+    private static final Logger LOGGER = Util.getLoggerForClass(ModStringsParser.class);
+
+    public ModStringsParser(Path aModStringsPath) {
         tags = new LinkedHashMap<>();
         mModStrings = new ArrayList<File>();
         defaultTags = new LinkedHashMap<>();
 
         tags = parseTextFile(aModStringsPath, true);
-        defaultTags = parseTextFile(Control.DATABASES_DIR + "Vanilla/text/");
+        defaultTags = parseTextFile(Control.VANILLA_MOD_DIR.resolve("text"));
     }
 
-    private LinkedHashMap<String, String> parseTextFile(String filePath) {
+    private LinkedHashMap<String, String> parseTextFile(Path filePath) {
         return parseTextFile(filePath, false);
     }
 
-    private LinkedHashMap<String, String> parseTextFile(String filePath, boolean save) {
+    private LinkedHashMap<String, String> parseTextFile(Path filePath, boolean save) {
         LinkedHashMap<String, String> _tags = new LinkedHashMap<String, String>();
-        try {
-            DirectoryStream<Path> modStringsDir = Files.newDirectoryStream(Path.of(filePath));
-
+        try (DirectoryStream<Path> modStringsDir = Files.newDirectoryStream(filePath)) {
             modStringsDir.forEach((textFile) -> {
                 if (textFile != null) {
                     String encoding;
@@ -62,17 +64,17 @@ public class ModStringsParser {
                                     }
                             });
                         } catch (Exception e) {
-                            e.printStackTrace();
+                            Util.logError(LOGGER, e);
                         }
                     } catch (IOException e1) {
-                        e1.printStackTrace();
+                        Util.logError(LOGGER, e1);
                     }
                     if (save)
                         mModStrings.add(textFile.toFile());
                 }
             });
         } catch (IOException e1) {
-            e1.printStackTrace();
+            Util.logError(LOGGER, e1);
         }
         return _tags;
     }

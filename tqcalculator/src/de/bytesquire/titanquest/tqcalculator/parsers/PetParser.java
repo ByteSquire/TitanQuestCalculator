@@ -5,8 +5,10 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
+import java.util.logging.Logger;
 import java.util.stream.Stream;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
@@ -14,7 +16,9 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 
+import de.bytesquire.titanquest.tqcalculator.logging.Util;
 import de.bytesquire.titanquest.tqcalculator.main.*;
+import de.bytesquire.titanquest.tqcalculator.util.FileNotFoundFormatter;
 
 @JsonIgnoreProperties({ "files", "additionalFiles" })
 @JsonInclude(Include.NON_NULL)
@@ -29,11 +33,16 @@ public class PetParser {
     private LinkedHashMap<Integer, ArrayList<Integer>> mSkillLevelIndexMap;
     private File[] mSkills;
     private ArrayList<String> mAdditionalFiles;
+    private Path mDatabasePath;
     private String mParentPath;
     private ModStringsParser mMSParser;
     private IconsParser mIconsParser;
+    private FileNotFoundException mLastMissingPetSkill = null;
 
-    public PetParser(File[] files, String aParentPath, ModStringsParser aMSParser, IconsParser aIconsParser) {
+    private static final Logger LOGGER = Util.getLoggerForClass(PetParser.class);
+
+    public PetParser(File[] files, String aParentPath, Path aDatabasePath, ModStringsParser aMSParser,
+            IconsParser aIconsParser) {
         if (files == null)
             return;
 
@@ -45,6 +54,7 @@ public class PetParser {
         mSkillLevelIndexMap = new LinkedHashMap<>();
 
         mSkills = files;
+        mDatabasePath = aDatabasePath;
         mParentPath = aParentPath;
         mMSParser = aMSParser;
         mIconsParser = aIconsParser;
@@ -88,14 +98,20 @@ public class PetParser {
 //                            return;
                         Skill tmp;
                         try {
-                            tmp = new Skill(
-                                    new File(Control.DATABASES_DIR + mParentPath.split("/")[0] + "/database/" + value),
-                                    null, mParentPath, mMSParser, mIconsParser);
+                            tmp = new Skill(mDatabasePath.resolve(value).toFile(), null, mParentPath, mDatabasePath,
+                                    mMSParser, mIconsParser);
                         } catch (FileNotFoundException e) {
-                            System.err.println("Pet skill: "
-                                    + e.getMessage()
-                                            .split(Control.DATABASES_DIR.replace("\\", "\\\\").replace("/", "\\\\"))[1]
-                                    + " not found");
+                            if (mLastMissingPetSkill != null
+                                    && mLastMissingPetSkill.getMessage().equals(e.getMessage()))
+                                return; // can get really spam-y otherwise
+                            else
+                                mLastMissingPetSkill = e;
+                            Util.logError(LOGGER, "Pet skill missing: "
+                                    + FileNotFoundFormatter.relativizeExceptionPath(e, Control.DATABASES_DIR));
+//                            System.err.println("Pet skill: "
+//                                    + e.getMessage()
+//                                            .split(Control.DATABASES_DIR.replace("\\", "\\\\").replace("/", "\\\\"))[1]
+//                                    + " not found");
                             return;
                         }
                         if (tmp.getName() == null) {
@@ -108,7 +124,7 @@ public class PetParser {
                         mAdditionalFiles.addAll(tmp.getFiles());
                         return;
                     }
-                    
+
                     if (attributeName.startsWith("initialSkillName")) {
                         if (value.contains(";"))
                             return;
@@ -116,14 +132,15 @@ public class PetParser {
 //                            return;
                         Skill tmp;
                         try {
-                            tmp = new Skill(
-                                    new File(Control.DATABASES_DIR + mParentPath.split("/")[0] + "/database/" + value),
-                                    null, mParentPath, mMSParser, mIconsParser);
+                            tmp = new Skill(mDatabasePath.resolve(value).toFile(), null, mParentPath, mDatabasePath,
+                                    mMSParser, mIconsParser);
                         } catch (FileNotFoundException e) {
-                            System.err.println("Pet initial skill: "
-                                    + e.getMessage()
-                                            .split(Control.DATABASES_DIR.replace("\\", "\\\\").replace("/", "\\\\"))[1]
-                                    + " not found");
+                            Util.logError(LOGGER, "Pet initial skill missing: "
+                                    + FileNotFoundFormatter.relativizeExceptionPath(e, Control.DATABASES_DIR));
+//                            System.err.println("Pet initial skill: "
+//                                    + e.getMessage()
+//                                            .split(Control.DATABASES_DIR.replace("\\", "\\\\").replace("/", "\\\\"))[1]
+//                                    + " not found");
                             return;
                         }
                         if (tmp.getName() == null) {
@@ -187,13 +204,11 @@ public class PetParser {
                     } catch (NumberFormatException e) {
                         // System.err.println("Pet attribute Number error: " + e.getMessage());
                     } catch (Exception e) {
-                        System.err.println("Pet error: " + e.getMessage());
+                        Util.logError(LOGGER, e);
                     }
                 });
-            } catch (FileNotFoundException e) {
-                e.printStackTrace();
-            } catch (IOException e1) {
-                e1.printStackTrace();
+            } catch (IOException e) {
+                Util.logError(LOGGER, e);
             }
         }
     }

@@ -2,18 +2,21 @@ package de.bytesquire.titanquest.tqcalculator.main;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.nio.file.Path;
 import java.util.ArrayList;
-import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
+import de.bytesquire.titanquest.tqcalculator.logging.Util;
 import de.bytesquire.titanquest.tqcalculator.parsers.IconsParser;
 import de.bytesquire.titanquest.tqcalculator.parsers.ModStringsParser;
 import de.bytesquire.titanquest.tqcalculator.parsers.SkillTreeParser;
+import de.bytesquire.titanquest.tqcalculator.util.FileNotFoundFormatter;
 
 @JsonIgnoreProperties({ "masteryFiles", "skillTree", "mSkills", "mSkillTreeParser", "urlLegacy" })
 @JsonPropertyOrder({ "name", "masteryAttributes", "skillTiers" })
@@ -22,43 +25,51 @@ public class Mastery {
     private SkillTreeParser mSkillTreeParser;
     private ArrayList<Skill> mSkills;
     private ArrayList<ArrayList<Skill>> mSkillTiers;
-    private LinkedHashMap<String, Object> mMasteryAttributes;
+    private Map<String, Object> mMasteryAttributes;
     private String mName;
-    private String mParentModName;
     private File mSkillTree;
     private ArrayList<String> mMasteryFiles;
 
-    public Mastery(File aSkillTree, String aModDir, String aModName, ModStringsParser aMSParser,
-            IconsParser aIconsParser) {
-        mParentModName = aModName;
+    private static final Logger LOGGER = Util.getLoggerForClass(Mastery.class);
+
+    public Mastery(File aSkillTree, Path aDatabaseDir, ModStringsParser aMSParser, IconsParser aIconsParser) {
+
         mSkillTree = aSkillTree;
-        mSkillTreeParser = new SkillTreeParser(aSkillTree, aModDir);
+        mSkillTreeParser = new SkillTreeParser(aSkillTree, aDatabaseDir);
         mSkillTiers = new ArrayList<>();
         mSkills = new ArrayList<>();
 
         mName = aMSParser.getMatch(mSkillTreeParser.getMasteryTag()).split(" Mastery")[0];
 
         for (File skill : mSkillTreeParser.getSkills()) {
-            if (!(mSkillTreeParser.getSkills().indexOf(skill) == 0)) {
+            if (mSkillTreeParser.getSkills().indexOf(skill) != 0) {
                 Skill tmp;
                 try {
-                    tmp = new Skill(skill, null, (mParentModName + "/Masteries/" + mName), aMSParser, aIconsParser);
+                    tmp = new Skill(skill, null, aDatabaseDir.getParent().getFileName() + "/" + mName, aDatabaseDir,
+                            aMSParser, aIconsParser);
                 } catch (FileNotFoundException e) {
-                    System.err.println("Skill: "
-                            + e.getMessage().split(Control.DATABASES_DIR.replace("\\", "\\\\").replace("/", "\\\\"))[1]
-                            + " not found");
+                    Util.logError(LOGGER,
+                            "Skill: " + FileNotFoundFormatter.relativizeExceptionPath(e, Control.DATABASES_DIR));
+//                    System.err.println("Skill: "
+//                            + e.getMessage().split(Control.DATABASES_DIR.replace("\\", "\\\\").replace("/", "\\\\"))[1]
+//                            + " not found");
                     continue;
                 }
+                if (tmp.getSkillIcon() == null)
+                    Util.logWarning(LOGGER,
+                            "No skill icon found for skill: " + aDatabaseDir.getParent() + mName + "/" + tmp.getName());
                 mSkills.add(tmp);
             } else {
                 Skill tmp;
                 try {
-                    tmp = new Skill(skill, null, (mParentModName + "/Masteries/" + mName), aMSParser, aIconsParser);
+                    tmp = new Skill(skill, null, aDatabaseDir.getParent().getFileName() + "/" + mName, aDatabaseDir,
+                            aMSParser, aIconsParser);
                 } catch (FileNotFoundException e) {
-                    e.printStackTrace();
+                    Util.logError(LOGGER,
+                            "Skill: " + FileNotFoundFormatter.relativizeExceptionPath(e, Control.DATABASES_DIR));
                     continue;
                 }
-                mMasteryAttributes = (LinkedHashMap<String, Object>) tmp.getAttributes();
+                mMasteryAttributes = tmp.getAttributes();
                 mMasteryFiles = tmp.getFiles();
             }
         }
@@ -80,7 +91,7 @@ public class Mastery {
                                 containsParent = true;
                             }
                         } catch (NullPointerException e) {
-                            System.err.println(
+                            Util.logWarning(LOGGER,
                                     "Unused skill: " + mSkills.indexOf(masterySkill) + ", in mastery: " + mName);
                             continue;
                         }
@@ -93,10 +104,11 @@ public class Mastery {
             }
             if (skill.isModifier()) {
                 if (skill.getParent() == null) {
+                    int skillIndex = mSkills.indexOf(skill);
                     int i = 1;
-                    Skill tmp = mSkills.get(mSkills.indexOf(skill) - i++);
+                    Skill tmp = mSkills.get(skillIndex - i++);
                     while (tmp.isModifier()) {
-                        tmp = mSkills.get(mSkills.indexOf(skill) - i++);
+                        tmp = mSkills.get(skillIndex - i++);
                     }
                     skill.setParent(tmp.getName());
                 }
@@ -108,7 +120,7 @@ public class Mastery {
                 } catch (IndexOutOfBoundsException e) {
                     mSkillTiers.add(new ArrayList<>());
                 } catch (Exception e) {
-                    e.printStackTrace();
+                    Util.logError(LOGGER, e);
                     break;
                 }
             }
