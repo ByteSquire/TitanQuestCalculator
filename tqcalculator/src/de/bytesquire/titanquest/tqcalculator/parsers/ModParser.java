@@ -221,7 +221,7 @@ public class ModParser {
     }
 
     private void initLinks() {
-        File links = new File(mModDir + "links.txt");
+        File links = mModDir.resolve("links.txt").toFile();
         if (!links.exists())
             return;
         try (BufferedReader linksReader = new BufferedReader(new FileReader(links));) {
