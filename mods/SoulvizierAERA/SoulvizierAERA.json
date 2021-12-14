@@ -3593,11 +3593,37 @@
               "MaxLevel" : 16,
               "UltimateLevel" : 16
             }
+          },
+          "boss_conversionimmunity" : {
+            "name" : "boss_conversionimmunity",
+            "attributes" : {
+              "${value}% Chance to Dodge Attacks" : [ 10.0, 20.0, 30.0 ],
+              "${value}% Energy Leech Resistance" : 80.0,
+              "${value}% Health Reduction Resistance" : [ 85.0, 75.0, 65.0 ],
+              "${value}% Life Leech Resistance" : 80.0,
+              "${value}% Protection from Taunting (for Pets/Traps)" : 50.0,
+              "${value}% Reduced Confusion Duration (for Pets/Traps)" : 1000.0,
+              "${value}% Reduced Entrapment Duration" : 1000.0,
+              "${value}% Reduced Fear Duration (for Pets/Traps)" : 1000.0,
+              "${value}% Reduced Freeze Duration" : 1000.0,
+              "${value}% Reduced Mind Control Duration (for Pets/Traps)" : 1000.0,
+              "${value}% Reduced Petrify Duration" : 1000.0,
+              "${value}% Reduction in Damage from lost Energy" : [ 70.0, 65.0, 60.0 ],
+              "${value}% Skill Disruption Protection" : 1000.0,
+              "${value}% Sleep Resistance" : 1000.0,
+              "${value}% Slow Resistance" : 1000.0,
+              "${value}% Stun Resistance" : 1000.0,
+              "+${value}% Damage to Demon & Undead" : 25.0,
+              "+${value}% Health" : [ 0.0, 25.0, 50.0 ],
+              "MaxLevel" : 3,
+              "UltimateLevel" : 3
+            }
           }
         },
         "petSkillLevels" : {
           "Detonate" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ],
-          "Maul" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ]
+          "Maul" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
+          "boss_conversionimmunity" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ]
         }
       }
     } ], [ {
@@ -6741,6 +6767,16 @@
               "UltimateLevel" : 20
             }
           },
+          "resist_undead2" : {
+            "name" : "resist_undead2",
+            "attributes" : {
+              "${value}% Bleeding Resistance" : 100.0,
+              "${value}% Life Leech Resistance" : 100.0,
+              "${value}% Poison Resistance" : 100.0,
+              "${value}% Vitality Damage Resistance" : 100.0,
+              "MaxLevel" : 1
+            }
+          },
           "Armor_Passive" : {
             "name" : "Armor_Passive",
             "attributes" : {
@@ -6788,6 +6824,7 @@
           "Soul Spear" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ],
           "bonescourge_pound" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ],
           "Attributes" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ],
+          "resist_undead2" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
           "Armor_Passive" : [ 128, 131, 134, 137, 140, 143, 146, 149, 152, 155, 158, 161, 164, 167, 170, 173, 176, 179, 182, 185 ],
           "Soul Blast" : [ 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ]
         }
@@ -8477,6 +8514,31 @@
               "UltimateLevel" : 16
             }
           },
+          "hero_conversionimmunity_pets" : {
+            "name" : "hero_conversionimmunity_pets",
+            "attributes" : {
+              "${value}% Chance to Dodge Attacks" : [ 5.0, 10.0, 15.0 ],
+              "${value}% Damage Absorption" : [ 0.0, 0.0, 0.0 ],
+              "${value}% Energy Leech Resistance" : 65.0,
+              "${value}% Health Reduction Resistance" : [ 75.0, 65.0, 55.0 ],
+              "${value}% Life Leech Resistance" : 65.0,
+              "${value}% Protection from Taunting (for Pets/Traps)" : 25.0,
+              "${value}% Reduced Confusion Duration (for Pets/Traps)" : 1000.0,
+              "${value}% Reduced Entrapment Duration" : 65.0,
+              "${value}% Reduced Fear Duration (for Pets/Traps)" : 65.0,
+              "${value}% Reduced Freeze Duration" : 65.0,
+              "${value}% Reduced Mind Control Duration (for Pets/Traps)" : 1000.0,
+              "${value}% Reduced Petrify Duration" : 65.0,
+              "${value}% Reduction in Damage from lost Energy" : [ 50.0, 45.0, 40.0 ],
+              "${value}% Skill Disruption Protection" : 65.0,
+              "${value}% Sleep Resistance" : 65.0,
+              "${value}% Slow Resistance" : 66.0,
+              "${value}% Stun Resistance" : 65.0,
+              "+${value}% Health" : [ 0.0, 25.0, 50.0 ],
+              "MaxLevel" : 3,
+              "UltimateLevel" : 3
+            }
+          },
           "ElementalResistance_10xLevel" : {
             "name" : "ElementalResistance_10xLevel",
             "attributes" : {
@@ -8523,6 +8585,7 @@
         "petSkillLevels" : {
           "Psionic Burn" : [ 8 ],
           "Psionic Touch" : [ 8 ],
+          "hero_conversionimmunity_pets" : [ 1 ],
           "dreamcopypet_petskill_aura" : [ 1 ],
           "Distort Reality" : [ 12 ]
         }

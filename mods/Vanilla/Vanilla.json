@@ -5855,6 +5855,25 @@
               "UltimateLevel" : 16
             }
           },
+          "hero_conversionimmunity" : {
+            "name" : "hero_conversionimmunity",
+            "attributes" : {
+              "${value}% Chance to Dodge Attacks" : [ 5.0, 10.0, 15.0 ],
+              "${value}% Energy Leech Resistance" : 65.0,
+              "${value}% Health Reduction Resistance" : [ 75.0, 65.0, 55.0 ],
+              "${value}% Life Leech Resistance" : 65.0,
+              "${value}% Protection from Taunting (for Pets/Traps)" : 25.0,
+              "${value}% Reduced Confusion Duration (for Pets/Traps)" : 1000.0,
+              "${value}% Reduced Fear Duration (for Pets/Traps)" : 65.0,
+              "${value}% Reduced Mind Control Duration (for Pets/Traps)" : 1000.0,
+              "${value}% Reduction in Damage from lost Energy" : [ 50.0, 45.0, 40.0 ],
+              "${value}% Skill Disruption Protection" : 65.0,
+              "${value}% Slow Resistance" : 66.0,
+              "+${value}% Health" : [ 0.0, 25.0, 50.0 ],
+              "MaxLevel" : 3,
+              "UltimateLevel" : 3
+            }
+          },
           "ElementalResistance_10xLevel" : {
             "name" : "ElementalResistance_10xLevel",
             "attributes" : {
@@ -5898,6 +5917,7 @@
         "petSkillLevels" : {
           "Psionic Burn" : [ 8 ],
           "Psionic Touch" : [ 8 ],
+          "hero_conversionimmunity" : [ 1 ],
           "dreamcopypet_petskill_aura" : [ 1 ],
           "Distort Reality" : [ 12 ]
         }
