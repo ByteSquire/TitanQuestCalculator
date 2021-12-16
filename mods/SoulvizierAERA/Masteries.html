@@ -22,6 +22,8 @@
   </head>
 
   <body oncontextmenu="return false">
+    <a href="../../">Back to homepage</a>
+    <a href="./index.html">Back to mastery selection</a>
     <h1 id="className" class="centered">ClassName</h1>
     <table class="masteryTable">
       <tr>
