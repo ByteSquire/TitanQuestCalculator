@@ -156,7 +156,8 @@ public class SkillParser {
                     for (String e : value.split(";")) {
                         values.add(Double.parseDouble(e));
                     }
-                    mAttributes.put(attributeName, values);
+                    if (!values.stream().allMatch(doubleValue -> doubleValue == 0.0))
+                        mAttributes.put(attributeName, values);
                     return;
                 } catch (Exception e) {
                 }
