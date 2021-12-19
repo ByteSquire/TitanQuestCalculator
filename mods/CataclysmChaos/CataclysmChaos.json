@@ -2060,6 +2060,7 @@
             "description" : "The ghoul drains the life from an opponent and transfers it to their master.",
             "attributes" : {
               "${value} Energy Cost" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0 ],
+              "${value} Second Duration" : 1.0,
               "${value} Vitality Decay over ${duration} Second(s)" : {
                 "value" : {
                   "min" : [ 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0, 150.0, 160.0, 170.0, 180.0, 190.0, 200.0 ],
@@ -2069,7 +2070,6 @@
                   "min" : 1.0
                 }
               },
-              "${value}SpellAuraDuration" : 1.0,
               "MaxLevel" : 16,
               "UltimateLevel" : 16
             }
