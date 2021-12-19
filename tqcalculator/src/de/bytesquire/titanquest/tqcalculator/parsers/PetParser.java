@@ -75,6 +75,14 @@ public class PetParser {
             }
         }
 
+        ArrayList<String> skillsToRemove = new ArrayList<>();
+        for (String skillName : mPetSkills.keySet()) {
+            if (!mPetSkillLevels.containsKey(skillName))
+                skillsToRemove.add(skillName);
+        }
+
+        for (String skillName : skillsToRemove)
+            mPetSkills.remove(skillName);
     }
 
     private void initSkill() {
