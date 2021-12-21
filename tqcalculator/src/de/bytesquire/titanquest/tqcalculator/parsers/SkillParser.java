@@ -246,6 +246,12 @@ public class SkillParser {
                     case "Cold":
                         dmgType = TriggerDamage.COLD;
                         break;
+                    case "Poison":
+                        dmgType = TriggerDamage.POISON;
+                        break;
+                    default:
+                        Util.logError(LOGGER, "Skill Cast damage trigger: " + dmgTypeStr + " unknown!");
+                        break;
                     }
                     if (value.contains(";")) {
                         String[] paths = value.split(";");
@@ -415,7 +421,7 @@ public class SkillParser {
     }
 
     public String[] getParentSkill() {
-        if (mParentSkill.size() == 0)
+        if (mParentSkill.isEmpty())
             return null;
         String[] tmp = new String[mParentSkill.size()];
         /* tmp = */mParentSkill.toArray(tmp);
