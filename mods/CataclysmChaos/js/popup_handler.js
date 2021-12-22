@@ -61,7 +61,6 @@ function getPopupString(skill, currLevel, skipNext){
     if(skill.castOnDamage){
         ret += "<br>\n";
         ret += '<span class="" style="color: orange">Activates on ' + skill.castOnDamage.toLowerCase()  + ' damage</span>\n';
-        break;
     }
     
     if(skill.protectsAgainst){
