@@ -60,20 +60,8 @@ function getPopupString(skill, currLevel, skipNext){
     
     if(skill.castOnDamage){
         ret += "<br>\n";
-        switch(skill.castOnDamage) {
-        case "ALL":
-            ret += '<span class="" style="color: orange">Activates on all damage types</span>\n';
-            break;
-        case "FIRE":
-            ret += '<span class="" style="color: orange">Activates with fire damage</span>\n';
-            break;
-        case "LIGHTNING":
-            ret += '<span class="" style="color: orange">Activates with lightning damage</span>\n';
-            break;
-        case "COLD":
-            ret += '<span class="" style="color: orange">Activates with cold damage</span>\n';
-            break;
-        }
+        ret += '<span class="" style="color: orange">Activates on ' + skill.castOnDamage.toLowerCase()  + ' damage</span>\n';
+        break;
     }
     
     if(skill.protectsAgainst){
