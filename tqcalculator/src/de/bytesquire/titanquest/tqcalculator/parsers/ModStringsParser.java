@@ -53,15 +53,14 @@ public class ModStringsParser {
                             BufferedReader skillReader = new BufferedReader(isr);
                             Stream<String> fileStream = skillReader.lines();
                             fileStream.forEach((str) -> {
-                                if (!str.isBlank())
-                                    if (str.split("=").length > 1) {
-                                        String key = str.split("=")[0];
-                                        String value = str.split("=")[1];
-                                        if (value.split("//").length > 0)
-                                            _tags.put(key, value.split("//")[0]);
-                                        else
-                                            _tags.put(key, value);
-                                    }
+                                if (!str.isBlank() && str.split("=").length > 1) {
+                                    String key = str.split("=")[0];
+                                    String value = str.split("=")[1];
+                                    if (value.split("//").length > 0)
+                                        _tags.put(key, value.split("//")[0]);
+                                    else
+                                        _tags.put(key, value);
+                                }
                             });
                         } catch (Exception e) {
                             Util.logError(LOGGER, e);
@@ -86,7 +85,14 @@ public class ModStringsParser {
     public String getMatch(String element) {
         if (tags.containsKey(element))
             return tags.get(element);
-        else
+        else if (defaultTags.containsKey(element))
             return defaultTags.get(element);
+        else {
+            if (element != null)
+                Util.logError(LOGGER, "tag: " + element + " not found!");
+            else
+                Util.logDebug(LOGGER, "tag: " + element + " not found!");
+            return null;
+        }
     }
 }

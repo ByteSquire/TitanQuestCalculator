@@ -1,10 +1,10 @@
 {
   "name" : "ShadowChampions",
-  "mappedMasteries" : [ "Lifegiving", "Barbarism", "Geomancy", "Science", "Chaos", "Archery", "Aqua", "Necromancy", "Time", "Witchcraft" ],
+  "mappedMasteries" : [ "Lifegiving", "Barbarism", "Geomancy", "Science", "Chaos", "Archery", "Aqua", "Necromancy", "Time", "Witchcraft", "Destruction" ],
   "masteryLevels" : [ 1, 4, 10, 16, 24, 32, 40 ],
   "skillPointIncrement" : 3,
   "maxLevel" : 85,
-  "classNames" : [ [ "Mastery parameters missing or invalid", null, null, null, null, null, null, null, null, null, null, null ], [ "Lifegiver ", null, "Paragon ", "Sentinel ", "Originator ", "Corruptor ", "Waywatcher ", "Source Protector ", "Death Priest ", "Lifesaver ", "Woundmender ", "Daoist" ], [ "Barbarian ", null, null, "Mountaineer ", "Adventurer ", "Bloodcrazed ", "Commando ", "Wave Crasher ", "Skullbasher ", "Timebreaker ", "Arcanesmith ", "Monk" ], [ "Geomancer ", null, null, null, "Naturalist ", "Groundbreaker ", "Survivalist ", "Earth Guardian ", "Gravedigger ", "Worldshaper ", "Hexcrafter ", "Wu" ], [ "Scientist ", null, null, null, null, "Occultist ", "Trapper ", "Captain ", "Resurrector ", "Immortal ", "Inventor ", "Channeler" ], [ "Chaotic ", null, null, null, null, null, "Deadeye ", "Apocalyptic ", "Nemesis ", "Opportunist ", "Maniac ", "Disruptor" ], [ "Archer ", null, null, null, null, null, null, "Storm Chaser ", "Renegade ", "Eliminator ", "Witch Hunter ", "Pilgrim" ], [ "Aquamancer ", null, null, null, null, null, null, null, "Corpse Drowner ", "Overseer ", "Hydromagus ", "Hermit" ], [ "Necromancer ", null, null, null, null, null, null, null, null, "Fatewriter ", "Doom Herald ", "Spiritualist" ], [ "Timetraveller ", null, null, null, null, null, null, null, null, null, "Clairvoyant ", "Contemplator" ], [ "Witch ", null, null, null, null, null, null, null, null, null, null, "Esoterist" ], [ "Neidan", null, null, null, null, null, null, null, null, null, null, null ] ],
+  "classNames" : [ [ "Mastery parameters missing or invalid", null, null, null, null, null, null, null, null, null, null, null ], [ "Lifegiver ", null, "Paragon ", "Sentinel ", "Originator ", "Corruptor ", "Waywatcher ", "Source Protector ", "Death Priest ", "Lifesaver ", "Woundmender ", "Demigod " ], [ "Barbarian ", null, null, "Mountaineer ", "Adventurer ", "Bloodcrazed ", "Commando ", "Wave Crasher ", "Skullbasher ", "Timebreaker ", "Arcanesmith ", "Tyrant " ], [ "Geomancer ", null, null, null, "Naturalist ", "Groundbreaker ", "Survivalist ", "Earth Guardian ", "Gravedigger ", "Worldshaper ", "Hexcrafter ", "Decimator " ], [ "Scientist ", null, null, null, null, "Occultist ", "Trapper ", "Captain ", "Resurrector ", "Immortal ", "Inventor ", "Exterminator " ], [ "Chaotic ", null, null, null, null, null, "Deadeye ", "Apocalyptic ", "Nemesis ", "Opportunist ", "Maniac ", "Hellspawn " ], [ "Archer ", null, null, null, null, null, null, "Storm Chaser ", "Renegade ", "Eliminator ", "Witch Hunter ", "Predator " ], [ "Aquamancer ", null, null, null, null, null, null, null, "Corpse Drowner ", "Overseer ", "Hydromagus ", "Dominator " ], [ "Necromancer ", null, null, null, null, null, null, null, null, "Fatewriter ", "Doom Herald ", "Catalyst " ], [ "Timetraveller ", null, null, null, null, null, null, null, null, null, "Clairvoyant ", "Doomsayer " ], [ "Witch ", null, null, null, null, null, null, null, null, null, null, "Mastermind " ], [ "Destructor", null, null, null, null, null, null, null, null, null, null, null ] ],
   "masteries" : [ {
     "name" : "Lifegiving",
     "masteryAttributes" : {
@@ -60,6 +60,21 @@
         "+${value}% Less Damage from Demon" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0 ],
         "MaxLevel" : 8,
         "UltimateLevel" : 12
+      }
+    }, {
+      "name" : "Merit of Heroism",
+      "description" : "Establish yourself in history as a hero incarnating holiness and invicibility.{^n}{^y}Scales infinitely beyond the maximum level. Provides only bonuses when beyond the maximum level.",
+      "skillIcon" : {
+        "posY" : 403,
+        "posX" : 640
+      },
+      "attributes" : {
+        "+${value} Health" : [ 0.0, 150.0, 300.0, 450.0, 600.0, 750.0, 900.0, 1050.0, 1200.0, 1350.0, 1500.0, 1650.0, 1800.0, 1950.0, 2100.0, 2250.0, 2400.0, 2550.0, 2700.0, 2850.0, 3000.0, 3150.0, 3300.0, 3450.0, 3600.0, 3750.0, 3900.0, 4050.0, 4200.0, 4350.0, 4500.0, 4650.0, 4800.0, 4950.0, 5100.0, 5250.0, 5400.0, 5550.0, 5700.0, 5850.0, 6000.0, 6150.0, 6300.0, 6450.0, 6600.0, 6750.0, 6900.0, 7050.0, 7200.0, 7350.0, 7500.0, 7650.0, 7800.0, 7950.0, 8100.0, 8250.0, 8400.0, 8550.0, 8700.0, 8850.0, 9000.0, 9150.0, 9300.0, 9450.0, 9600.0, 9750.0, 9900.0, 10050.0, 10200.0, 10350.0, 10500.0, 10650.0, 10800.0, 10950.0, 11100.0, 11250.0, 11400.0, 11550.0, 11700.0, 11850.0, 12000.0, 12150.0, 12300.0, 12450.0, 12600.0, 12750.0, 12900.0, 13050.0, 13200.0, 13350.0, 13500.0, 13650.0, 13800.0, 13950.0, 14100.0, 14250.0, 14400.0, 14550.0, 14700.0 ],
+        "+${value} Health Regeneration per second" : [ 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0, 28.0, 29.0, 30.0, 31.0, 32.0, 33.0, 34.0, 35.0, 36.0, 37.0, 38.0, 39.0, 40.0, 41.0, 42.0, 43.0, 44.0, 45.0, 46.0, 47.0, 48.0, 49.0, 50.0, 51.0, 52.0, 53.0, 54.0, 55.0, 56.0, 57.0, 58.0, 59.0, 60.0, 61.0, 62.0, 63.0, 64.0, 65.0, 66.0, 67.0, 68.0, 69.0, 70.0, 71.0, 72.0, 73.0, 74.0, 75.0, 76.0, 77.0, 78.0, 79.0, 80.0, 81.0, 82.0, 83.0, 84.0, 85.0, 86.0, 87.0, 88.0, 89.0, 90.0, 91.0, 92.0, 93.0, 94.0, 95.0, 96.0, 97.0, 98.0 ],
+        "+${value}% Health" : [ 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0, 28.0, 29.0, 30.0, 31.0, 32.0, 33.0, 34.0, 35.0, 36.0, 37.0, 38.0, 39.0, 40.0, 41.0, 42.0, 43.0, 44.0, 45.0, 46.0, 47.0, 48.0, 49.0, 50.0, 51.0, 52.0, 53.0, 54.0, 55.0, 56.0, 57.0, 58.0, 59.0, 60.0, 61.0, 62.0, 63.0, 64.0, 65.0, 66.0, 67.0, 68.0, 69.0, 70.0, 71.0, 72.0, 73.0, 74.0, 75.0, 76.0, 77.0, 78.0, 79.0, 80.0, 81.0, 82.0, 83.0, 84.0, 85.0, 86.0, 87.0, 88.0, 89.0, 90.0, 91.0, 92.0, 93.0, 94.0, 95.0, 96.0, 97.0, 98.0 ],
+        "+${value}% Health Regeneration" : [ 0.0, 25.0, 50.0, 75.0, 100.0, 125.0, 150.0, 175.0, 200.0, 225.0, 250.0, 275.0, 300.0, 325.0, 350.0, 375.0, 400.0, 425.0, 450.0, 475.0, 500.0, 525.0, 550.0, 575.0, 600.0, 625.0, 650.0, 675.0, 700.0, 725.0, 750.0, 775.0, 800.0, 825.0, 850.0, 875.0, 900.0, 925.0, 950.0, 975.0, 1000.0, 1025.0, 1050.0, 1075.0, 1100.0, 1125.0, 1150.0, 1175.0, 1200.0, 1225.0, 1250.0, 1275.0, 1300.0, 1325.0, 1350.0, 1375.0, 1400.0, 1425.0, 1450.0, 1475.0, 1500.0, 1525.0, 1550.0, 1575.0, 1600.0, 1625.0, 1650.0, 1675.0, 1700.0, 1725.0, 1750.0, 1775.0, 1800.0, 1825.0, 1850.0, 1875.0, 1900.0, 1925.0, 1950.0, 1975.0, 2000.0, 2025.0, 2050.0, 2075.0, 2100.0, 2125.0, 2150.0, 2175.0, 2200.0, 2225.0, 2250.0, 2275.0, 2300.0, 2325.0, 2350.0, 2375.0, 2400.0, 2425.0, 2450.0 ],
+        "MaxLevel" : 1,
+        "UltimateLevel" : 99
       }
     } ], [ {
       "name" : "Punishment",
@@ -172,19 +187,19 @@
         "posX" : 552
       },
       "attributes" : {
-        "+${value}% Bleeding Damage Retaliation" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ],
-        "+${value}% Burn Retaliation" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ],
-        "+${value}% Cold Damage Retaliation" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ],
-        "+${value}% Electrical Burn Retaliation" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ],
-        "+${value}% Fire Damage Retaliation" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ],
-        "+${value}% Frostburn Retaliation" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ],
-        "+${value}% Instant Poison Retaliation" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ],
-        "+${value}% Lightning Damage Retaliation" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ],
-        "+${value}% Physical Retaliation" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ],
-        "+${value}% Pierce Damage Retaliation" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ],
-        "+${value}% Poison Retaliation" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ],
-        "+${value}% Vitality Damage Retaliation" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ],
-        "+${value}% Vitality Decay Retaliation" : [ 10.0, 16.0, 23.0, 29.0, 35.0, 42.0, 48.0, 55.0, 61.0, 67.0, 74.0, 80.0 ],
+        "+${value}% Bleeding Damage Retaliation" : [ 15.0, 24.0, 35.0, 44.0, 53.0, 63.0, 72.0, 83.0, 92.0, 101.0, 111.0, 120.0 ],
+        "+${value}% Burn Retaliation" : [ 15.0, 24.0, 35.0, 44.0, 53.0, 63.0, 72.0, 83.0, 92.0, 101.0, 111.0, 120.0 ],
+        "+${value}% Cold Damage Retaliation" : [ 15.0, 24.0, 35.0, 44.0, 53.0, 63.0, 72.0, 83.0, 92.0, 101.0, 111.0, 120.0 ],
+        "+${value}% Electrical Burn Retaliation" : [ 15.0, 24.0, 35.0, 44.0, 53.0, 63.0, 72.0, 83.0, 92.0, 101.0, 111.0, 120.0 ],
+        "+${value}% Fire Damage Retaliation" : [ 15.0, 24.0, 35.0, 44.0, 53.0, 63.0, 72.0, 83.0, 92.0, 101.0, 111.0, 120.0 ],
+        "+${value}% Frostburn Retaliation" : [ 15.0, 24.0, 35.0, 44.0, 53.0, 63.0, 72.0, 83.0, 92.0, 101.0, 111.0, 120.0 ],
+        "+${value}% Instant Poison Retaliation" : [ 15.0, 24.0, 35.0, 44.0, 53.0, 63.0, 72.0, 83.0, 92.0, 101.0, 111.0, 120.0 ],
+        "+${value}% Lightning Damage Retaliation" : [ 15.0, 24.0, 35.0, 44.0, 53.0, 63.0, 72.0, 83.0, 92.0, 101.0, 111.0, 120.0 ],
+        "+${value}% Physical Retaliation" : [ 15.0, 24.0, 35.0, 44.0, 53.0, 63.0, 72.0, 83.0, 92.0, 101.0, 111.0, 120.0 ],
+        "+${value}% Pierce Damage Retaliation" : [ 15.0, 24.0, 35.0, 44.0, 53.0, 63.0, 72.0, 83.0, 92.0, 101.0, 111.0, 120.0 ],
+        "+${value}% Poison Retaliation" : [ 15.0, 24.0, 35.0, 44.0, 53.0, 63.0, 72.0, 83.0, 92.0, 101.0, 111.0, 120.0 ],
+        "+${value}% Vitality Damage Retaliation" : [ 15.0, 24.0, 35.0, 44.0, 53.0, 63.0, 72.0, 83.0, 92.0, 101.0, 111.0, 120.0 ],
+        "+${value}% Vitality Decay Retaliation" : [ 15.0, 24.0, 35.0, 44.0, 53.0, 63.0, 72.0, 83.0, 92.0, 101.0, 111.0, 120.0 ],
         "MaxLevel" : 8,
         "UltimateLevel" : 12
       }
@@ -242,6 +257,9 @@
       "attributes" : {
         "${value} Energy Cost" : [ 3.0, 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0 ],
         " (${value}% of lost Energy as Damage)" : [ 25.0, 38.0, 52.0, 65.0, 79.0, 92.0, 106.0, 119.0, 133.0, 146.0, 160.0, 173.0, 187.0, 200.0 ],
+        "${value} Elemental Damage" : {
+          "min" : [ 12.0, 15.0, 19.0, 22.0, 25.0, 29.0, 32.0, 36.0, 39.0, 43.0, 46.0, 50.0, 53.0, 58.0 ]
+        },
         "${value} second(s) of Skill Disruption" : {
           "min" : [ 1.0, 1.4, 1.8, 2.2, 2.5, 2.9, 3.3, 3.7, 4.1, 4.5, 4.8, 5.2, 5.6, 6.0 ]
         },
@@ -691,7 +709,7 @@
         "posX" : 200
       },
       "attributes" : {
-        "^a${value} Second(s) Recharge" : 4.0,
+        "^a${value} Second(s) Recharge" : 3.0,
         "${value} Electrical Burn Damage over ${duration} Second(s)" : {
           "value" : {
             "min" : [ 20.0, 35.0, 50.0, 65.0, 80.0, 95.0, 110.0, 125.0, 140.0, 155.0, 170.0, 185.0, 200.0, 215.0, 230.0, 245.0, 260.0 ]
@@ -723,7 +741,7 @@
         "posX" : 288
       },
       "attributes" : {
-        "^a${value} Second(s) Recharge" : 180.0,
+        "^a${value} Second(s) Recharge" : 150.0,
         "${value} Energy Cost" : [ 100.0, 110.0, 120.0, 130.0, 140.0, 150.0, 160.0, 170.0, 180.0, 190.0, 200.0, 210.0 ],
         "${value} Second Duration" : 15.0,
         "+${value}% Defensive Ability" : [ 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 20.0 ],
@@ -825,6 +843,26 @@
         "MaxLevel" : 8,
         "UltimateLevel" : 12
       }
+    }, {
+      "name" : "Deiform",
+      "description" : "You've retained your powers until now, but now is the time to make the enemies falter for good.",
+      "skillIcon" : {
+        "posY" : 31,
+        "posX" : 376
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : 60.0,
+        "${value} Active Energy Cost per Second" : [ 12.0, 13.25, 14.5, 15.75, 17.0, 18.25, 19.5, 20.75, 22.0, 23.25, 24.5, 25.75, 27.0, 28.25 ],
+        "${value} Second Duration" : 12.0,
+        "${value}% Damage Reflected" : [ 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0, 90.0, 95.0 ],
+        "+${value}% Burn Damage " : [ 30.0, 36.0, 43.0, 52.0, 59.0, 67.0, 77.0, 84.0, 92.0, 100.0, 109.0, 118.0, 127.0, 135.0 ],
+        "+${value}% Burn Retaliation" : [ 30.0, 36.0, 43.0, 52.0, 59.0, 67.0, 77.0, 84.0, 92.0, 100.0, 109.0, 118.0, 127.0, 135.0 ],
+        "+${value}% Fire Damage" : [ 30.0, 36.0, 43.0, 52.0, 59.0, 67.0, 77.0, 84.0, 92.0, 100.0, 109.0, 118.0, 127.0, 135.0 ],
+        "+${value}% Fire Damage Retaliation" : [ 30.0, 36.0, 43.0, 52.0, 59.0, 67.0, 77.0, 84.0, 92.0, 100.0, 109.0, 118.0, 127.0, 135.0 ],
+        "+${value}% Health" : [ 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 64.0, 68.0, 72.0, 76.0, 80.0, 85.0, 90.0, 95.0 ],
+        "MaxLevel" : 10,
+        "UltimateLevel" : 14
+      }
     } ] ]
   }, {
     "name" : "Barbarism",
@@ -901,6 +939,20 @@
         "MaxLevel" : 6,
         "UltimateLevel" : 10
       }
+    }, {
+      "name" : "Master at Arms",
+      "description" : "Your natural fighting skills simply put you above any warrior you encounter, both in terms of offensive and defensive proficiency.",
+      "skillIcon" : {
+        "posY" : 403,
+        "posX" : 640
+      },
+      "attributes" : {
+        "+${value}% Health" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ],
+        "+${value}% Movement Speed" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0 ],
+        "+${value}% Physical Damage" : [ 4.0, 8.0, 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 38.0, 44.0, 50.0, 58.0 ],
+        "MaxLevel" : 8,
+        "UltimateLevel" : 12
+      }
     } ], [ {
       "name" : "Tyrant's Shout",
       "description" : "{^g}Skill Modifier{^n}{^w}This technique prioritizes raw damage output over usability to ensure that enemies are taken down before they pose a threat.",
@@ -934,7 +986,7 @@
         "${value}% Chance to be Used" : [ 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0 ],
         "Launches ${value} Projectile(s)" : 1,
         "${value} Physical Damage" : {
-          "min" : [ 5.0, 7.0, 9.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0 ]
+          "min" : [ 5.0, 9.0, 14.0, 20.0, 25.0, 29.0, 34.0, 38.0, 43.0, 47.0 ]
         },
         "MaxLevel" : 6,
         "UltimateLevel" : 10,
@@ -976,7 +1028,7 @@
         "${value} Piercing Damage" : {
           "min" : [ 4.0, 6.0, 9.0, 11.0, 13.0, 15.0, 18.0, 20.0, 22.0, 24.0, 27.0, 29.0, 31.0, 33.0, 36.0, 38.0 ]
         },
-        "+${value} Offensive Ability" : [ 20.0, 33.0, 45.0, 58.0, 71.0, 83.0, 96.0, 109.0, 121.0, 134.0, 147.0, 159.0, 172.0, 185.0, 197.0, 210.0 ],
+        "+${value} Offensive Ability" : [ 24.0, 39.0, 54.0, 69.0, 84.0, 99.0, 114.0, 130.0, 144.0, 159.0, 175.0, 189.0, 205.0, 220.0, 234.0, 250.0 ],
         "+${value}% Physical Damage" : [ 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 18.0, 20.0, 23.0, 25.0, 28.0, 30.0, 33.0, 36.0, 39.0, 42.0 ],
         "MaxLevel" : 12,
         "UltimateLevel" : 16
@@ -990,7 +1042,7 @@
         "posX" : 552
       },
       "attributes" : {
-        "^a${value} Second(s) Recharge" : [ 40.0, 38.0, 37.0, 35.0, 33.0, 32.0, 30.0, 28.0, 27.0, 25.0 ],
+        "^a${value} Second(s) Recharge" : [ 60.0, 54.0, 50.0, 44.0, 38.0, 33.0, 27.0, 21.0, 16.0, 10.0 ],
         "${value} Energy Cost" : [ 50.0, 52.0, 53.0, 55.0, 57.0, 58.0, 60.0, 62.0, 63.0, 65.0 ],
         "${value} Second Duration" : 4.0,
         "${value}% Damage Absorption" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0 ],
@@ -1004,6 +1056,51 @@
         "${value}% Reduction in Vitality Decay Duration" : 100.0,
         "MaxLevel" : 6,
         "UltimateLevel" : 10
+      }
+    }, {
+      "name" : "Metal Daze",
+      "description" : "Killing an enemy has a chance to cast around you a whirlwind of blades that damages any unit nearby.{^n}{^y}Requires a melee weapon.",
+      "castOnDamage" : "ALL",
+      "triggerType" : "if the target is killed",
+      "skillIcon" : {
+        "posY" : 341,
+        "posX" : 640
+      },
+      "attributes" : {
+        "${value}% Chance of activating" : [ 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0 ],
+        "MaxLevel" : 10,
+        "UltimateLevel" : 14,
+        "requiredWeapons" : "Sword, Spear, Axe, Mace"
+      },
+      "skillCast" : {
+        "castLevels" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0 ],
+        "castSkills" : [ {
+          "name" : "Metal Daze",
+          "description" : "Killing an enemy has a chance to cast around you a whirlwind of blades that damages any unit nearby.{^n}{^y}Requires a melee weapon.",
+          "attributes" : {
+            "${value}m Radius" : 5.0,
+            "${value} Physical Damage" : {
+              "min" : [ 17.85312, 32.30738, 46.1475, 60.60175, 75.056, 88.89613, 103.3504, 117.8046, 131.6447, 146.099, 160.5533, 174.3934, 188.8476, 203.3019 ]
+            },
+            "${value} Piercing Damage" : {
+              "min" : [ 28.0625, 45.0675, 61.35, 78.355, 95.36, 111.6425, 128.6475, 145.6525, 161.935, 178.94, 195.945, 212.2275, 229.2325, 246.2375 ]
+            },
+            "${value}% Chance of Impaired Aim over ${duration} Second(s)" : {
+              "value" : {
+                "min" : 66.0
+              },
+              "duration" : {
+                "min" : [ 1.0, 1.25, 1.5, 1.75, 2.0, 2.25, 2.5, 2.75, 3.0, 3.25, 3.5, 3.75, 4.0, 4.25 ]
+              }
+            },
+            "${value}% Reduction to Enemy's Health" : {
+              "min" : [ 3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 5.0, 5.0, 6.0, 6.0, 7.0, 7.0, 8.0, 8.0 ]
+            },
+            "MaxLevel" : 10,
+            "UltimateLevel" : 14,
+            "requiredWeapons" : "Sword, Axe, Mace, Spear"
+          }
+        } ]
       }
     } ], [ {
       "name" : "Mutilating Edge",
@@ -1037,14 +1134,14 @@
         "posX" : 464
       },
       "attributes" : {
-        "${value} Energy Cost" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0 ],
+        "${value} Energy Cost" : [ 4.0, 7.0, 10.0, 13.0, 16.0, 19.0, 22.0, 25.0, 28.0, 31.0, 34.0, 37.0 ],
         "${value}% Reduction to Enemy's Health" : {
           "min" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0 ]
         },
         "MaxLevel" : 8,
         "UltimateLevel" : 12,
         "${chance}% Chance for all of the following:" : {
-          "chance" : [ 15.0, 20.0, 26.0, 31.0, 37.0, 42.0, 48.0, 53.0, 59.0, 64.0, 70.0, 75.0 ],
+          "chance" : [ 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 100.0, 100.0, 100.0 ],
           "values" : {
             "${value}% reduced Offensive Ability over ${duration} Second(s)" : {
               "value" : {
@@ -1085,7 +1182,7 @@
         "${value}% Chance to Avoid Projectiles" : [ 4.0, 5.0, 5.0, 6.0, 6.0, 7.0, 7.0, 8.0, 8.0, 9.0, 9.0, 10.0, 10.0, 11.0, 11.0, 12.0 ],
         "${value}% Chance to Dodge Attacks" : [ 4.0, 5.0, 5.0, 6.0, 6.0, 7.0, 7.0, 8.0, 8.0, 9.0, 9.0, 10.0, 10.0, 11.0, 11.0, 12.0 ],
         "+${value}% Movement Speed" : [ 4.0, 5.0, 7.0, 8.0, 10.0, 11.0, 13.0, 14.0, 16.0, 17.0, 19.0, 20.0, 22.0, 23.0, 25.0, 26.0 ],
-        "Activates when Health drops below ${value}%" : 40.0,
+        "Activates when Health drops below ${value}%" : 60.0,
         "MaxLevel" : 12,
         "UltimateLevel" : 16
       }
@@ -1183,8 +1280,8 @@
       },
       "attributes" : {
         "+${value} Energy Regeneration per second" : [ 1.5, 2.5, 3.4, 4.4, 5.3, 6.3, 7.2, 8.2, 9.1, 10.1, 11.0, 12.0 ],
-        "+${value}% Physical Damage" : [ 12.0, 16.5, 21.1, 25.6, 30.2, 34.7, 39.3, 43.8, 48.4, 52.9, 57.5, 62.0 ],
-        "+${value}% Pierce Damage" : [ 12.0, 16.5, 21.1, 25.6, 30.2, 34.7, 39.3, 43.8, 48.4, 52.9, 57.5, 62.0 ],
+        "+${value}% Physical Damage" : [ 15.8, 20.975, 26.265, 31.44, 36.73, 41.905, 47.195, 52.37, 57.66, 62.835, 68.125, 73.3 ],
+        "+${value}% Pierce Damage" : [ 15.8, 20.975, 26.265, 31.44, 36.73, 41.905, 47.195, 52.37, 57.66, 62.835, 68.125, 73.3 ],
         "MaxLevel" : 8,
         "UltimateLevel" : 12
       }
@@ -1202,6 +1299,14 @@
         "${value} Bleeding Damage over ${duration} Second(s)" : {
           "value" : {
             "min" : [ 29.16, 33.0, 38.0, 42.0, 46.0, 51.0, 55.0, 59.0, 64.0, 68.0, 72.0, 77.0, 81.0, 86.0, 92.0, 96.0 ]
+          },
+          "duration" : {
+            "min" : 3.0
+          }
+        },
+        "${value} Energy Leech over ${duration} Second(s)" : {
+          "value" : {
+            "min" : [ 5.0, 6.1, 7.2, 8.2, 9.5, 10.6, 11.6, 12.8, 13.8, 15.1, 16.2, 17.2, 18.3, 19.6, 20.7, 21.8 ]
           },
           "duration" : {
             "min" : 3.0
@@ -1279,7 +1384,8 @@
         "posX" : 552
       },
       "attributes" : {
-        "${value}% Bleeding Resistance" : [ 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 64.0, 68.0, 72.0 ],
+        "${value}% Energy Leech Resistance" : [ 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 64.0, 68.0, 72.0 ],
+        "${value}% Skill Disruption Protection" : [ 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 64.0, 68.0, 72.0 ],
         "${value}% Sleep Resistance" : [ 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 64.0, 68.0, 72.0 ],
         "${value}% Slow Resistance" : [ 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 64.0, 68.0, 72.0 ],
         "${value}% Stun Resistance" : [ 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 64.0, 68.0, 72.0 ],
@@ -1389,8 +1495,8 @@
       },
       "attributes" : {
         "${value} Energy Cost" : 1.0,
+        "${value}% Bleeding Resistance" : [ 10.0, 14.0, 16.0, 18.0, 21.0, 23.0, 25.0, 27.0, 30.0, 32.0, 34.0, 37.0, 39.0, 41.0, 45.0 ],
         "${value}% Pierce Resistance" : [ 10.0, 14.0, 16.0, 18.0, 21.0, 23.0, 25.0, 27.0, 30.0, 32.0, 34.0, 37.0, 39.0, 41.0, 45.0 ],
-        "${value}% Skill Disruption Protection" : [ 18.0, 22.0, 26.0, 30.0, 36.0, 40.0, 44.0, 48.0, 53.0, 59.0, 63.0, 67.0, 71.0, 76.0, 80.0 ],
         "+${value}% Physical Damage" : [ 10.0, 12.5, 15.0, 17.5, 20.0, 22.5, 25.0, 27.5, 30.0, 32.5, 35.0, 37.5, 40.0, 42.5, 45.0 ],
         "MaxLevel" : 11,
         "UltimateLevel" : 15
@@ -1594,6 +1700,21 @@
         "MaxLevel" : 14,
         "UltimateLevel" : 18
       }
+    }, {
+      "name" : "Boon of Stone",
+      "description" : "Heroes using two-handed weapons can take on the way of Geomancy as well, and receive unique blessings to help them quicken their learning.{^n}{^y}Requires a staff or a bow.",
+      "skillIcon" : {
+        "posY" : 403,
+        "posX" : 640
+      },
+      "attributes" : {
+        "+${value}% Movement Speed" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0 ],
+        "+${value}% Physical Damage" : [ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0 ],
+        "-${value}% Recharge" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0 ],
+        "MaxLevel" : 10,
+        "UltimateLevel" : 14,
+        "requiredWeapons" : "Staff, Bow"
+      }
     } ], [ {
       "name" : "Staggering Force",
       "description" : "Geomancers' remarkable display of physical strength is capable of grinding bones into mere dust.{^n}{^y}Requires an axe or a club.",
@@ -1612,7 +1733,7 @@
             "${chance}% Chance of ${value} Reduced Armor for ${duration} Second(s)" : {
               "chance" : 50.0,
               "value" : {
-                "min" : [ 15.0, 25.0, 34.0, 44.0, 53.0, 63.0, 72.0, 82.0, 91.0, 101.0, 110.0, 120.0 ]
+                "min" : [ 24.0, 38.0, 51.0, 66.0, 80.0, 95.0, 108.0, 123.0, 137.0, 152.0, 165.0, 180.0 ]
               },
               "duration" : {
                 "min" : 3.0
@@ -1620,7 +1741,7 @@
             },
             "${chance}% Chance of +${value}% Physical Damage" : {
               "chance" : 50.0,
-              "value" : [ 10.0, 13.0, 15.0, 18.0, 21.0, 24.0, 26.0, 29.0, 32.0, 35.0, 37.0, 40.0 ]
+              "value" : [ 12.0, 18.0, 24.0, 30.0, 36.0, 42.0, 48.0, 54.0, 60.0, 66.0, 72.0, 78.0 ]
             }
           }
         }
@@ -2075,7 +2196,7 @@
         "posX" : 464
       },
       "attributes" : {
-        "^a${value} Second(s) Recharge" : 12.0,
+        "^a${value} Second(s) Recharge" : 13.0,
         "${value} Energy Cost" : [ 40.0, 43.0, 46.0, 50.0, 53.0, 56.0, 59.0, 62.0, 65.0, 69.0, 72.0, 75.0 ],
         "Launches ${value} Projectile(s)" : 1,
         "${value} second(s) of Stun" : {
@@ -2188,6 +2309,21 @@
         "UltimateLevel" : 14
       }
     } ], [ {
+      "name" : "Heracles",
+      "description" : "With your one-in-a-million strength, restlessly harass your enemies with shield attacks.",
+      "parent" : [ "Pressurize" ],
+      "skillIcon" : {
+        "posY" : 31,
+        "posX" : 464
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : [ -1.0, -1.6, -2.3, -2.9, -3.5, -4.2, -4.8, -5.5, -6.1, -6.7, -7.4, -8.0 ],
+        "${value} Energy Cost" : [ 2.08, 2.9, 3.73, 4.55, 5.38, 6.2, 7.03, 7.85, 8.68, 9.5, 10.32, 11.15 ],
+        "+${value}% Total Damage" : [ 10.0, 11.8, 13.6, 15.5, 17.3, 19.1, 20.9, 22.7, 24.5, 26.4, 28.2, 30.0 ],
+        "MaxLevel" : 8,
+        "UltimateLevel" : 12
+      }
+    }, {
       "name" : "Sundering",
       "description" : "Seismic forces awake as you strike to unfurl calamitous damage.",
       "parent" : [ "Fissure" ],
@@ -2247,7 +2383,7 @@
       },
       "attributes" : {
         "^a${value} Second(s) Recharge" : [ 0.0, 1.5, 3.0 ],
-        "${value} Energy Cost" : [ 70.0, 140.0, 210.0 ],
+        "${value} Energy Cost" : [ 15.0, 30.0, 45.0 ],
         "${value}m Radius" : 2.5,
         "${value} Fire Damage" : {
           "min" : [ 75.0, 150.0, 225.0 ]
@@ -2437,6 +2573,23 @@
         "MaxLevel" : 10,
         "UltimateLevel" : 14
       }
+    }, {
+      "name" : "Invigorate",
+      "description" : "Power up a friendly unit or yourself with an empowering enhancement that allows the receiver to inflict electrical shocks with every attacks while the effect lasts.",
+      "skillIcon" : {
+        "posY" : 403,
+        "posX" : 640
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : 20.0,
+        "${value} Energy Cost" : [ 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 64.0, 68.0, 72.0, 76.0, 80.0, 84.0, 88.0, 92.0, 96.0, 100.0 ],
+        "${value} Second Duration" : [ 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0 ],
+        "${value} Lightning Damage" : {
+          "min" : [ 16.0, 27.0, 38.0, 49.0, 61.0, 72.0, 86.0, 98.0, 110.0, 122.0, 135.0, 148.0, 162.0, 177.0, 194.0, 211.0 ]
+        },
+        "MaxLevel" : 12,
+        "UltimateLevel" : 16
+      }
     } ], [ {
       "name" : "Nature Familiarity",
       "description" : "Your past studies on biology prove useful during your journey, when it comes to knowing how to better deal with beasts and plants alike.",
@@ -2464,14 +2617,14 @@
         "${value}m Radius" : 5.0,
         "${value} Electrical Burn Damage over ${duration} Second(s)" : {
           "value" : {
-            "min" : [ 12.0, 19.0, 25.0, 32.0, 38.0, 45.0, 51.0, 58.0, 64.0, 71.0, 77.0, 84.0, 90.0, 97.0, 103.0, 110.0 ]
+            "min" : [ 18.0, 27.0, 35.0, 43.0, 51.0, 60.0, 68.0, 76.0, 84.0, 93.0, 101.0, 109.0, 117.0, 126.0, 134.0, 142.0 ]
           },
           "duration" : {
             "min" : 1.0
           }
         },
         "${value} Lightning Damage" : {
-          "min" : [ 12.0, 17.0, 21.0, 26.0, 30.0, 35.0, 39.0, 44.0, 48.0, 53.0, 57.0, 62.0, 66.0, 71.0, 75.0, 80.0 ]
+          "min" : [ 18.0, 27.0, 35.0, 43.0, 51.0, 60.0, 68.0, 76.0, 84.0, 93.0, 101.0, 109.0, 117.0, 126.0, 134.0, 142.0 ]
         },
         "MaxLevel" : 12,
         "UltimateLevel" : 16
@@ -2515,10 +2668,10 @@
         "posX" : 376
       },
       "attributes" : {
-        "^a${value} Second(s) Recharge" : [ 1.0, 2.0, 3.0 ],
-        "${value} Second Duration" : -2.0,
+        "^a${value} Second(s) Recharge" : [ 2.0, 4.0, 6.0 ],
+        "${value} Second Duration" : -4.0,
         "${chance}% Chance of ${value} second(s) of Petrify" : {
-          "chance" : [ 10.0, 14.0, 18.0 ],
+          "chance" : [ 15.0, 20.0, 25.0 ],
           "value" : {
             "min" : 1.0
           }
@@ -2526,8 +2679,8 @@
         "${value}% Reduction to Enemy's Health" : {
           "min" : [ 2.0, 4.0, 6.0 ]
         },
-        "+${value}% Electrical Burn Damage " : [ 15.0, 25.0, 35.0 ],
-        "+${value}% Improved Electrical Burn Damage Duration" : 25.0,
+        "+${value}% Electrical Burn Damage " : [ 50.0, 75.0, 100.0 ],
+        "+${value}% Improved Electrical Burn Damage Duration" : 50.0,
         "MaxLevel" : 3,
         "UltimateLevel" : 3
       }
@@ -2558,16 +2711,16 @@
         "^a${value} Second(s) Recharge" : 8.0,
         "${value} Energy Cost" : [ 30.0, 36.0, 42.0, 48.0, 54.0, 60.0, 66.0, 72.0, 78.0, 84.0, 90.0, 96.0, 102.0, 108.0, 114.0, 120.0, 126.0, 132.0, 138.0, 144.0, 150.0, 156.0, 162.0, 168.0, 174.0, 180.0, 186.0, 192.0, 198.0, 204.0, 210.0, 216.0, 222.0, 228.0, 234.0, 240.0, 246.0, 252.0, 258.0, 264.0, 270.0, 276.0, 282.0, 288.0, 294.0, 300.0, 306.0, 312.0, 318.0, 324.0, 330.0, 336.0, 342.0, 348.0, 354.0, 360.0, 366.0, 372.0, 378.0, 384.0, 390.0, 396.0, 402.0, 408.0, 414.0, 420.0, 426.0, 432.0, 438.0, 444.0, 450.0, 456.0, 462.0, 468.0, 474.0, 480.0, 486.0, 492.0, 498.0, 504.0, 510.0, 516.0, 522.0, 528.0, 534.0, 540.0, 546.0, 552.0, 558.0, 564.0, 570.0, 576.0, 582.0, 588.0, 594.0, 600.0, 606.0, 612.0, 618.0, 624.0 ],
         "${chance}% Chance of ${value} second(s) of Stun" : {
-          "chance" : [ 10.0, 10.5, 11.0, 11.5, 12.0, 12.5, 13.0, 13.5, 14.0, 14.5, 15.0, 15.5, 16.0, 16.5, 17.0, 17.5, 18.0, 18.5, 19.0, 19.5, 20.0, 20.5, 21.0, 21.5, 22.0, 22.5, 23.0, 23.5, 24.0, 24.5, 25.0, 25.5, 26.0, 26.5, 27.0, 27.5, 28.0, 28.5, 29.0, 29.5, 30.0, 30.5, 31.0, 31.5, 32.0, 32.5, 33.0, 33.5, 34.0, 34.5, 35.0, 35.5, 36.0, 36.5, 37.0, 37.5, 38.0, 38.5, 39.0, 39.5, 40.0, 40.5, 41.0, 41.5, 42.0, 42.5, 43.0, 43.5, 44.0, 44.5, 45.0, 45.5, 46.0, 46.5, 47.0, 47.5, 48.0, 48.5, 49.0, 49.5, 50.0, 50.5, 51.0, 51.5, 52.0, 52.5, 53.0, 53.5, 54.0, 54.5, 55.0, 55.5, 56.0, 56.5, 57.0, 57.5, 58.0, 58.5, 59.0, 59.5 ],
+          "chance" : [ 20.0, 26.0, 32.0, 38.0, 44.0, 50.0, 56.0, 62.0, 68.0, 74.0, 80.0, 86.0, 92.0, 98.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0 ],
           "value" : {
             "min" : [ 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3.0, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4.0, 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 4.9, 5.0, 5.1, 5.2, 5.3, 5.4, 5.5, 5.6, 5.7, 5.8, 5.9, 6.0, 6.1, 6.2, 6.3, 6.4, 6.5, 6.6, 6.7, 6.8, 6.9, 7.0, 7.1, 7.2, 7.3, 7.4, 7.5, 7.6, 7.7, 7.8, 7.9, 8.0, 8.1, 8.2, 8.3, 8.4, 8.5, 8.6, 8.7, 8.8, 8.9, 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6, 9.7, 9.8, 9.9, 10.0, 10.1, 10.2, 10.3, 10.4, 10.5, 10.6, 10.7, 10.8, 10.9 ]
           }
         },
         "${value} Instant Poison Damage" : {
-          "min" : [ 15.0, 25.0, 35.0, 45.0, 55.0, 65.0, 75.0, 85.0, 95.0, 105.0, 115.0, 125.0, 135.0, 145.0, 155.0, 165.0, 175.0, 185.0, 195.0, 205.0, 215.0, 225.0, 235.0, 245.0, 255.0, 265.0, 275.0, 285.0, 295.0, 305.0, 315.0, 325.0, 335.0, 345.0, 355.0, 365.0, 375.0, 385.0, 395.0, 405.0, 415.0, 425.0, 435.0, 445.0, 455.0, 465.0, 475.0, 485.0, 495.0, 505.0, 515.0, 525.0, 535.0, 545.0, 555.0, 565.0, 575.0, 585.0, 595.0, 605.0, 615.0, 625.0, 635.0, 645.0, 655.0, 665.0, 675.0, 685.0, 695.0, 705.0, 715.0, 725.0, 735.0, 745.0, 755.0, 765.0, 775.0, 785.0, 795.0, 805.0, 815.0, 825.0, 835.0, 845.0, 855.0, 865.0, 875.0, 885.0, 895.0, 905.0, 915.0, 925.0, 935.0, 945.0, 955.0, 965.0, 975.0, 985.0, 995.0, 1005.0 ]
+          "min" : [ 23.1, 38.0, 52.8, 67.7, 82.5, 97.3, 112.2, 127.1, 141.9, 156.8, 171.6, 186.4, 201.3, 216.2, 231.0, 245.8, 260.7, 275.6, 290.4, 305.3, 320.1, 334.9, 349.8, 364.6, 379.5, 394.4, 409.2, 424.1, 438.9, 453.8, 468.6, 483.4, 498.3, 513.1, 528.0, 542.9, 557.7, 572.5, 587.4, 602.3, 617.1, 632.0, 646.8, 661.6, 676.5, 691.4, 706.2, 721.0, 735.9, 750.8, 765.6, 780.5, 795.3, 810.1, 825.0, 839.9, 854.7, 869.5, 884.4, 899.3, 914.1, 929.0, 943.8, 958.6, 973.5, 988.4, 1003.2, 1018.1, 1032.9, 1047.8, 1062.6, 1077.5, 1092.3, 1107.2, 1122.0, 1136.8, 1151.7, 1166.6, 1181.4, 1196.3, 1211.1, 1226.0, 1240.8, 1255.7, 1270.5, 1285.3, 1300.2, 1315.1, 1329.9, 1344.8, 1359.6, 1374.5, 1389.3, 1404.2, 1419.0, 1433.8, 1448.7, 1463.6, 1478.4, 1493.3 ]
         },
         "${value} Lightning Damage" : {
-          "min" : [ 15.0, 25.0, 35.0, 45.0, 55.0, 65.0, 75.0, 85.0, 95.0, 105.0, 115.0, 125.0, 135.0, 145.0, 155.0, 165.0, 175.0, 185.0, 195.0, 205.0, 215.0, 225.0, 235.0, 245.0, 255.0, 265.0, 275.0, 285.0, 295.0, 305.0, 315.0, 325.0, 335.0, 345.0, 355.0, 365.0, 375.0, 385.0, 395.0, 405.0, 415.0, 425.0, 435.0, 445.0, 455.0, 465.0, 475.0, 485.0, 495.0, 505.0, 515.0, 525.0, 535.0, 545.0, 555.0, 565.0, 575.0, 585.0, 595.0, 605.0, 615.0, 625.0, 635.0, 645.0, 655.0, 665.0, 675.0, 685.0, 695.0, 705.0, 715.0, 725.0, 735.0, 745.0, 755.0, 765.0, 775.0, 785.0, 795.0, 805.0, 815.0, 825.0, 835.0, 845.0, 855.0, 865.0, 875.0, 885.0, 895.0, 905.0, 915.0, 925.0, 935.0, 945.0, 955.0, 965.0, 975.0, 985.0, 995.0, 1005.0 ]
+          "min" : [ 23.1, 38.0, 52.8, 67.7, 82.5, 97.3, 112.2, 127.1, 141.9, 156.8, 171.6, 186.4, 201.3, 216.2, 231.0, 245.8, 260.7, 275.6, 290.4, 305.3, 320.1, 334.9, 349.8, 364.6, 379.5, 394.4, 409.2, 424.1, 438.9, 453.8, 468.6, 483.4, 498.3, 513.1, 528.0, 542.9, 557.7, 572.5, 587.4, 602.3, 617.1, 632.0, 646.8, 661.6, 676.5, 691.4, 706.2, 721.0, 735.9, 750.8, 765.6, 780.5, 795.3, 810.1, 825.0, 839.9, 854.7, 869.5, 884.4, 899.3, 914.1, 929.0, 943.8, 958.6, 973.5, 988.4, 1003.2, 1018.1, 1032.9, 1047.8, 1062.6, 1077.5, 1092.3, 1107.2, 1122.0, 1136.8, 1151.7, 1166.6, 1181.4, 1196.3, 1211.1, 1226.0, 1240.8, 1255.7, 1270.5, 1285.3, 1300.2, 1315.1, 1329.9, 1344.8, 1359.6, 1374.5, 1389.3, 1404.2, 1419.0, 1433.8, 1448.7, 1463.6, 1478.4, 1493.3 ]
         },
         "${value}m between each target" : 12.0,
         "Affects up to ${value} targets" : [ 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 8.0, 8.0, 8.0, 9.0, 9.0, 9.0, 10.0, 10.0, 10.0, 11.0, 11.0, 11.0, 12.0, 12.0, 12.0, 13.0, 13.0, 13.0, 14.0, 14.0, 14.0, 15.0, 15.0, 15.0, 16.0, 16.0, 16.0, 17.0, 17.0, 17.0, 18.0, 18.0, 18.0, 19.0, 19.0, 19.0, 20.0, 20.0, 20.0, 21.0, 21.0, 21.0, 22.0, 22.0, 22.0, 23.0, 23.0, 23.0, 24.0, 24.0, 24.0, 25.0, 25.0, 25.0, 26.0, 26.0, 26.0, 27.0, 27.0, 27.0, 28.0, 28.0, 28.0, 29.0, 29.0, 29.0, 30.0, 30.0, 30.0, 31.0, 31.0, 31.0, 32.0, 32.0, 32.0, 33.0, 33.0, 33.0, 34.0, 34.0, 34.0, 35.0, 35.0, 35.0, 36.0, 36.0, 36.0, 37.0 ],
@@ -2702,6 +2855,23 @@
             "min" : 3.0
           }
         },
+        "MaxLevel" : 8,
+        "UltimateLevel" : 12
+      }
+    }, {
+      "name" : "Genes Alteration",
+      "description" : "Become able to improve the genetical structure of your allies for global improvements on their organism.",
+      "parent" : [ "Invigorate" ],
+      "skillIcon" : {
+        "posY" : 279,
+        "posX" : 640
+      },
+      "attributes" : {
+        "${value} Energy Cost" : [ 10.0, 11.0, 12.0, 13.0, 15.0, 16.0, 17.0, 18.0, 20.0, 21.0, 22.0, 24.0 ],
+        "${value} less Energy Reserved" : [ 33.0, 33.0, 33.0, 33.0, 33.0, 33.0, 33.0, 33.0, 33.0, 33.0, 33.0, 33.0 ],
+        "+${value} Energy Regeneration per second" : [ 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5 ],
+        "+${value} Health Regeneration per second" : [ 3.0, 4.5, 6.0, 7.5, 9.0, 10.5, 12.0, 13.5, 15.0, 16.5, 18.0, 19.5 ],
+        "+${value}% Total Speed" : [ 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 22.0 ],
         "MaxLevel" : 8,
         "UltimateLevel" : 12
       }
@@ -3228,10 +3398,10 @@
         "${value} Energy Cost" : [ 40.0, 42.0, 44.0, 46.0, 48.0, 50.0, 52.0, 54.0, 56.0, 58.0, 60.0, 62.0, 64.0, 66.0, 68.0, 70.0 ],
         "${value}m Radius" : 5.0,
         "${value} Physical Damage" : {
-          "min" : [ 20.0, 37.0, 53.0, 70.0, 87.0, 103.0, 120.0, 137.0, 153.0, 170.0, 187.0, 203.0, 220.0, 237.0, 253.0, 270.0 ]
+          "min" : [ 22.0, 40.7, 58.3, 77.0, 95.7, 113.3, 132.0, 150.7, 168.3, 187.0, 205.7, 223.3, 242.0, 260.7, 278.3, 297.0 ]
         },
         "${value} Vitality Damage" : {
-          "min" : [ 10.0, 23.0, 35.0, 48.0, 61.0, 73.0, 86.0, 99.0, 111.0, 124.0, 137.0, 149.0, 162.0, 175.0, 187.0, 200.0 ]
+          "min" : [ 11.0, 25.3, 38.5, 52.8, 67.1, 80.3, 94.6, 108.9, 122.1, 136.4, 150.7, 163.9, 178.2, 192.5, 205.7, 220.0 ]
         },
         "MaxLevel" : 12,
         "UltimateLevel" : 16
@@ -3363,10 +3533,49 @@
         "${value} Energy Cost" : [ 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0, 51.0, 54.0, 57.0, 60.0, 63.0, 66.0, 69.0, 72.0, 75.0 ],
         "${value} Second Duration" : 10.0,
         "${value} Health Restored" : [ 200.0, 395.0, 590.0, 785.0, 980.0, 1175.0, 1370.0, 1565.0, 1760.0, 1955.0, 2150.0, 2345.0, 2540.0, 2735.0, 2930.0, 3125.0 ],
-        "+${value} Offensive Ability" : [ 50.0, 67.0, 83.0, 100.0, 117.0, 133.0, 150.0, 167.0, 183.0, 200.0, 217.0, 233.0, 250.0, 267.0, 283.0, 300.0 ],
+        "+${value} Offensive Ability" : [ 60.0, 83.75, 103.75, 125.0, 146.25, 166.25, 187.5, 208.75, 228.75, 250.0, 271.25, 291.25, 312.5, 333.75, 353.75, 375.0 ],
         "+${value}% Attack Speed" : [ 10.0, 11.0, 13.0, 14.0, 15.0, 17.0, 18.0, 19.0, 21.0, 22.0, 23.0, 25.0, 26.0, 27.0, 29.0, 30.0 ],
         "MaxLevel" : 12,
         "UltimateLevel" : 16
+      }
+    }, {
+      "name" : "Malediction",
+      "description" : "After every blow you land, your enemies may become afflicted by a striking curse that makes them more vulnerable to your chaotic power.",
+      "triggerType" : "if the target is hit",
+      "skillIcon" : {
+        "posY" : 341,
+        "posX" : 112
+      },
+      "attributes" : {
+        "${value} Second Duration" : [ 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0 ],
+        "${value}% Chance of activating" : [ 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 20.0 ],
+        "MaxLevel" : 12,
+        "UltimateLevel" : 16
+      },
+      "skillCast" : {
+        "castLevels" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0 ],
+        "castSkills" : [ {
+          "name" : "Malediction",
+          "description" : "After every blow you land, your enemies may become afflicted by a striking curse that makes them more vulnerable to your chaotic power.",
+          "attributes" : {
+            "${value} Second Duration" : 5.0,
+            "${value}m Radius" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+            "${value} Reduced Armor for ${duration} Second(s)" : {
+              "value" : {
+                "min" : 200.0
+              },
+              "duration" : {
+                "min" : 1.0
+              }
+            },
+            "${value}% Reduction to Enemy's Health" : {
+              "min" : [ 2.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 4.0, 5.0, 5.0, 6.0, 6.0 ]
+            },
+            "${value}% Vitality Damage Resistance" : [ -40.0, -40.0, -40.0, -40.0, -40.0, -40.0, -40.0, -40.0, -40.0, -40.0, -40.0, -40.0, -40.0, -40.0, -40.0, -40.0 ],
+            "MaxLevel" : 12,
+            "UltimateLevel" : 16
+          }
+        } ]
       }
     } ], [ {
       "name" : "Extreme Pressure",
@@ -3435,7 +3644,7 @@
         "${chance}% Chance of ${value} Reduced Resistances over ${duration} Second(s)" : {
           "chance" : 12.0,
           "value" : {
-            "min" : [ 10.0, 12.0, 14.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 26.0, 28.0, 30.0 ]
+            "min" : [ 18.0, 21.0, 25.0, 26.0, 30.0, 33.0, 37.0, 40.0, 44.0, 46.0, 49.0, 53.0 ]
           },
           "duration" : {
             "min" : 3.0
@@ -3488,14 +3697,14 @@
         "${value} Energy Cost" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0 ],
         "${value} Bleeding Damage over ${duration} Second(s)" : {
           "value" : {
-            "min" : [ 18.0, 26.0, 34.0, 42.0, 50.0, 58.0, 66.0, 74.0, 82.0, 90.0, 98.0, 106.0, 114.0, 122.0 ]
+            "min" : [ 21.6, 31.2, 40.8, 50.4, 60.0, 69.6, 79.2, 88.8, 98.4, 108.0, 117.6, 127.2, 136.8, 146.4 ]
           },
           "duration" : {
             "min" : 3.0
           }
         },
         "${value} Piercing Damage" : {
-          "min" : [ 10.0, 18.0, 27.0, 35.0, 44.0, 52.0, 61.0, 69.0, 78.0, 86.0, 95.0, 103.0, 112.0, 120.0 ]
+          "min" : [ 15.0, 27.0, 41.0, 53.0, 66.0, 78.0, 92.0, 104.0, 117.0, 129.0, 143.0, 155.0, 168.0, 180.0 ]
         },
         "MaxLevel" : 10,
         "UltimateLevel" : 14
@@ -3538,7 +3747,7 @@
           }
         },
         "${value} Piercing Damage" : {
-          "min" : [ 14.0, 21.0, 28.0, 35.0, 42.0, 49.0, 55.0, 62.0, 69.0, 76.0, 83.0, 90.0 ]
+          "min" : [ 20.0, 32.0, 42.0, 53.0, 63.0, 74.0, 83.0, 93.0, 104.0, 114.0, 125.0, 135.0 ]
         },
         "MaxLevel" : 8,
         "UltimateLevel" : 12,
@@ -3650,12 +3859,53 @@
           }
         },
         "${value} Vitality Damage" : {
-          "min" : [ 108.0, 128.25, 148.5, 168.75, 189.0, 209.25, 229.5, 249.75, 267.75, 288.0, 308.25, 328.5, 348.75, 369.0, 389.25, 409.5 ]
+          "min" : [ 120.96, 143.64, 166.32, 189.0, 211.68, 234.36, 257.04, 279.72, 299.88, 322.56, 345.24, 367.92, 390.6, 413.28, 435.96, 458.64 ]
         },
         "${value}m max Distance" : 24.0,
         "MaxLevel" : 12,
         "UltimateLevel" : 16,
         "requiredWeapons" : "Staff"
+      }
+    }, {
+      "name" : "Chaos Release",
+      "description" : "Exteriorize your chaotic powers in the form of a magical projectile and hurl it at your foes. Around the area of explosion, targets will suffer great pain and be dispelled of all buffs.",
+      "skillIcon" : {
+        "posY" : 155,
+        "posX" : 112
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : 9.0,
+        "${value} Energy Cost" : [ 80.0, 85.0, 89.0, 94.0, 98.0, 103.0, 108.0, 112.0, 117.0, 121.0, 126.0, 131.0 ],
+        "${value}m Radius" : 4.0,
+        "${value} Vitality Damage" : {
+          "min" : [ 108.0, 127.0, 144.0, 163.0, 181.0, 200.0, 217.0, 236.0, 255.0, 273.0, 291.0, 310.0 ]
+        },
+        "${value} Vitality Decay over ${duration} Second(s)" : {
+          "value" : {
+            "min" : [ 47.0, 55.0, 62.0, 70.0, 77.0, 84.0, 92.0, 99.0, 106.0, 114.0, 122.0, 129.0 ]
+          },
+          "duration" : {
+            "min" : 3.0
+          }
+        },
+        "${value}% Chance of Impaired Aim over ${duration} Second(s)" : {
+          "value" : {
+            "min" : [ 25.0, 28.0, 31.0, 34.0, 38.0, 42.0, 46.0, 50.0, 55.0, 60.0, 66.0, 72.0 ]
+          },
+          "duration" : {
+            "min" : 3.0
+          }
+        },
+        "${value}% Chance to Fumble attacks over ${duration} Second(s)" : {
+          "value" : {
+            "min" : [ 25.0, 28.0, 31.0, 34.0, 38.0, 42.0, 46.0, 50.0, 55.0, 60.0, 66.0, 72.0 ]
+          },
+          "duration" : {
+            "min" : 3.0
+          }
+        },
+        "MaxLevel" : 8,
+        "UltimateLevel" : 12
       }
     } ], [ {
       "name" : "Frenzy",
@@ -3682,15 +3932,15 @@
         "posX" : 376
       },
       "attributes" : {
-        "${value}% Reduction in Energy Leech Duration" : -300.0,
-        "${value}% Reduction in Life Leech Duration" : -300.0,
-        "+${value}% Bleeding Damage " : 100.0,
+        "${value} Active Energy Cost per Second" : 35.0,
+        "${value} Active Health Cost per Second" : 10.0,
+        "+${value}% Bleeding Damage " : 150.0,
         "+${value}% Energy Leech " : -300.0,
         "+${value}% Energy Regeneration" : -300.0,
         "+${value}% Health Regeneration" : -300.0,
         "+${value}% Life Leech " : -300.0,
-        "+${value}% Vitality Damage" : 100.0,
-        "+${value}% Vitality Decay " : 100.0,
+        "+${value}% Vitality Damage" : 150.0,
+        "+${value}% Vitality Decay " : 150.0,
         "MaxLevel" : 1,
         "UltimateLevel" : 1
       }
@@ -3764,7 +4014,7 @@
           "min" : [ 40.0, 54.0, 68.0, 82.0, 95.0, 109.0, 123.0, 137.0, 151.0, 165.0, 178.0, 192.0, 206.0, 220.0, 235.0, 249.0 ]
         },
         "${value} Vitality Damage" : {
-          "min" : [ 35.0, 45.0, 56.0, 66.0, 77.0, 87.0, 97.0, 108.0, 118.0, 128.0, 139.0, 149.0, 160.0, 170.0, 181.0, 193.0 ]
+          "min" : [ 78.8, 101.3, 126.0, 148.5, 173.3, 195.8, 218.3, 243.0, 40.5, 288.0, 312.8, 335.3, 360.0, 382.5, 407.3, 434.3 ]
         },
         "${value} Vitality Decay over ${duration} Second(s)" : {
           "value" : {
@@ -3776,7 +4026,7 @@
         },
         "${value}% Slowed over ${duration} Second(s)" : {
           "value" : {
-            "min" : [ 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0 ]
+            "min" : [ 15.0, 16.75, 18.5, 20.25, 22.0, 23.75, 25.5, 27.25, 29.0, 30.75, 32.5, 34.25, 36.0, 37.75, 39.5, 42.8 ]
           },
           "duration" : {
             "min" : 3.0
@@ -3857,7 +4107,7 @@
           "min" : [ 40.0, 53.0, 67.0, 80.0, 93.0, 107.0, 120.0, 133.0, 147.0, 160.0, 173.0, 187.0, 200.0, 213.0, 227.0, 240.0 ]
         },
         "${value} Vitality Damage" : {
-          "min" : [ 40.0, 53.0, 67.0, 80.0, 93.0, 107.0, 120.0, 133.0, 147.0, 160.0, 173.0, 187.0, 200.0, 213.0, 227.0, 240.0 ]
+          "min" : [ 70.0, 93.0, 117.0, 140.0, 163.0, 187.0, 210.0, 233.0, 257.0, 280.0, 303.0, 327.0, 350.0, 373.0, 397.0, 420.0 ]
         },
         "MaxLevel" : 12,
         "UltimateLevel" : 16
@@ -4066,14 +4316,14 @@
         "${value} Energy Reserved" : 50.0,
         "${value} Active Energy Cost per Second" : 1.0,
         "${value}m Radius" : [ 6.0, 6.0, 7.0, 7.0, 8.0, 8.0, 8.0, 9.0, 9.0, 10.0, 10.0, 10.0, 11.0, 11.0, 12.0, 12.0 ],
-        "+${value}% Pierce Damage" : [ 4.0, 7.0, 10.0, 13.0, 16.0, 19.0, 22.0, 25.0, 29.0, 32.0, 35.0, 38.0, 41.0, 44.0, 47.0, 50.0 ],
+        "+${value}% Pierce Damage" : [ 10.0, 14.0, 19.0, 23.0, 27.0, 32.0, 36.0, 40.0, 45.0, 49.0, 53.0, 58.0, 62.0, 66.0, 71.0, 75.0 ],
         "+${value}% increased Pierce Ratio" : [ 10.0, 14.0, 19.0, 23.0, 27.0, 32.0, 36.0, 40.0, 45.0, 49.0, 53.0, 58.0, 62.0, 66.0, 71.0, 75.0 ],
         "MaxLevel" : 12,
         "UltimateLevel" : 16,
         "requiredWeapons" : "Sword, Spear, Bow, Thrown Weapon",
         "Bonus to all Pets:" : {
           "${value} Piercing Damage" : {
-            "min" : [ 3.0, 6.1, 9.3, 12.4, 15.5, 18.7, 21.8, 24.9, 28.1, 31.2, 34.3, 37.5, 40.6, 43.7, 46.9, 50.0 ]
+            "min" : [ 4.5, 9.15, 13.95, 18.6, 23.25, 28.05, 32.7, 37.35, 42.15, 46.8, 51.45, 56.25, 60.9, 65.55, 70.35, 75.0 ]
           }
         }
       }
@@ -4086,7 +4336,7 @@
         "posX" : 288
       },
       "attributes" : {
-        "^a${value} Second(s) Recharge" : 10.0,
+        "^a${value} Second(s) Recharge" : 6.0,
         "${value} Energy Cost" : [ 50.0, 53.0, 57.0, 60.0, 64.0, 67.0, 71.0, 74.0, 77.0, 81.0, 84.0, 88.0, 91.0, 94.0, 98.0, 101.0, 105.0, 108.0, 112.0, 115.0 ],
         "${value}m Radius" : 3.0,
         "Launches ${value} Projectile(s)" : 1,
@@ -4120,6 +4370,20 @@
         "+${value}% Less Damage from Demon & Giant" : [ 3.0, 5.0, 6.0, 8.0, 9.0, 11.0, 12.0, 14.0, 15.0, 17.0, 18.0, 20.0 ],
         "MaxLevel" : 8,
         "UltimateLevel" : 12
+      }
+    }, {
+      "name" : "Two for One",
+      "description" : "Learn a more efficient way to fire your arrows which allows you to rapidly shoot two arrows in sequence.{^n}{^y}Requires a bow.",
+      "skillIcon" : {
+        "posY" : 341,
+        "posX" : 640
+      },
+      "attributes" : {
+        "${value}% Chance to be Used" : [ 8.0, 10.0, 13.0, 15.0, 18.0, 20.0, 21.0, 23.0, 24.0, 25.0 ],
+        "Launches ${value} Projectile(s)" : 1,
+        "MaxLevel" : 6,
+        "UltimateLevel" : 10,
+        "requiredWeapons" : "Bow"
       }
     } ], [ {
       "name" : "Bloodletting",
@@ -4566,7 +4830,7 @@
         "posX" : 288
       },
       "attributes" : {
-        "^a${value} Second(s) Recharge" : 15.0,
+        "^a${value} Second(s) Recharge" : 10.0,
         "${value} Energy Cost" : [ 75.0, 83.0, 91.0, 99.0, 107.0, 115.0, 122.0, 130.0, 138.0, 146.0, 154.0, 162.0 ],
         "${value}m Radius" : 2.0,
         "${value} Bleeding Damage over ${duration} Second(s)" : {
@@ -4578,16 +4842,32 @@
           }
         },
         "${value} Cold Damage" : {
-          "min" : [ 33.8, 47.5, 60.1, 73.7, 87.4, 100.0, 113.6, 126.3, 139.9, 153.5, 166.1, 179.8 ]
+          "min" : [ 40.6, 57.0, 72.1, 88.4, 104.9, 120.0, 136.3, 151.6, 167.9, 184.2, 199.3, 215.8 ]
         },
         "${value} Projectile(s)" : 3,
         "${value} Vitality Damage" : {
-          "min" : [ 33.8, 47.5, 60.1, 73.7, 87.4, 100.0, 113.6, 126.3, 139.9, 153.5, 166.1, 179.8 ]
+          "min" : [ 40.6, 57.0, 72.1, 88.4, 104.9, 120.0, 136.3, 151.6, 167.9, 184.2, 199.3, 215.8 ]
         },
         "+${value}% Physical Damage" : -50.0,
         "MaxLevel" : 8,
         "UltimateLevel" : 12,
         "requiredWeapons" : "Bow, Staff, Thrown Weapon"
+      }
+    }, {
+      "name" : "Expertise",
+      "description" : "Great focus and awareness allows you to overuse your abilities and overwhelm your enemies.",
+      "skillIcon" : {
+        "posY" : 93,
+        "posX" : 376
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : 30.0,
+        "${value} Energy Cost" : [ 100.0, 104.0, 108.0, 112.0, 117.0, 121.0, 125.0, 129.0, 133.0, 138.0, 142.0, 146.0 ],
+        "${value} Second Duration" : 10.0,
+        "+${value}% Casting Speed" : [ 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0 ],
+        "-${value}% Recharge" : [ 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 40.0, 43.0, 46.0, 50.0 ],
+        "MaxLevel" : 8,
+        "UltimateLevel" : 12
       }
     } ], [ {
       "name" : "Dragon Arrow",
@@ -4598,8 +4878,8 @@
         "posX" : 464
       },
       "attributes" : {
-        "^a${value} Second(s) Recharge" : 15.0,
-        "${value} Energy Cost" : [ 90.0, 92.0, 96.0, 98.0, 103.0, 105.0, 108.0, 112.0, 115.0, 118.0, 122.0, 125.0, 127.0, 131.0, 136.0, 140.0 ],
+        "^a${value} Second(s) Recharge" : 10.0,
+        "${value} Energy Cost" : [ 100.0, 102.0, 107.0, 109.0, 114.0, 117.0, 120.0, 124.0, 128.0, 131.0, 135.0, 139.0, 141.0, 145.0, 151.0, 155.0 ],
         "${value}m Radius" : 3.0,
         "Launches ${value} Projectile(s)" : 1,
         "${value} Burn Damage over ${duration} Second(s)" : {
@@ -4922,6 +5202,43 @@
         "MaxLevel" : 8,
         "UltimateLevel" : 12
       }
+    }, {
+      "name" : "Breathe Underwater",
+      "description" : "Aquamancers have the blessing of being kings in the underwater kingdom. Take advantage of this gift by creating a small pool of water in which you can recollect your strength for a few moments. While inside, you cannot move nor directly attack your enemies, however.{^n}{^a}Cannot be dispelled.",
+      "notDispellable" : true,
+      "skillIcon" : {
+        "posY" : 341,
+        "posX" : 640
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : 25.0,
+        "${value} Energy Cost" : [ 50.0, 54.0, 59.0, 63.0, 68.0, 72.0, 77.0, 81.0, 86.0, 90.0, 95.0, 99.0, 104.0, 108.0 ],
+        "${value} Second Duration" : 4.0,
+        "${value}% Chance to Avoid Projectiles" : 300.0,
+        "${value}% Chance to Dodge Attacks" : 300.0,
+        "${value}% Damage Absorption" : 100.0,
+        "${value}% Damage Reflected" : -300.0,
+        "${value}RetaliationDurationManaLeachModifier" : -300.0,
+        "${value}RetaliationStunModifier" : -300.0,
+        "+${value} Health Regeneration per second" : [ 15.0, 29.5, 43.25, 57.0, 70.75, 84.5, 97.0, 112.0, 124.5, 137.0, 149.5, 164.5, 178.25, 192.0 ],
+        "+${value}% Bleeding Damage Retaliation" : -300.0,
+        "+${value}% Burn Retaliation" : -300.0,
+        "+${value}% Cold Damage Retaliation" : -300.0,
+        "+${value}% Electrical Burn Retaliation" : -300.0,
+        "+${value}% Fire Damage Retaliation" : -300.0,
+        "+${value}% Frostburn Retaliation" : -300.0,
+        "+${value}% Instant Poison Retaliation" : -300.0,
+        "+${value}% Life Leech Retaliation" : -300.0,
+        "+${value}% Lightning Damage Retaliation" : -300.0,
+        "+${value}% Physical Retaliation" : -300.0,
+        "+${value}% Pierce Damage Retaliation" : -300.0,
+        "+${value}% Poison Retaliation" : -300.0,
+        "+${value}% Total Damage" : -300.0,
+        "+${value}% Vitality Damage Retaliation" : -300.0,
+        "+${value}% Vitality Decay Retaliation" : -300.0,
+        "MaxLevel" : 10,
+        "UltimateLevel" : 14
+      }
     } ], [ {
       "name" : "Rust",
       "description" : "Concentrated water pulses cause metal armor to rust, almost completely negating its effectiveness.",
@@ -4937,7 +5254,7 @@
             "min" : [ 40.0, 65.0, 89.0, 114.0, 138.0, 163.0, 187.0, 212.0, 236.0, 261.0, 285.0, 310.0 ]
           },
           "duration" : {
-            "min" : 3.0
+            "min" : 6.0
           }
         },
         "MaxLevel" : 8,
@@ -4981,6 +5298,21 @@
         "${value} Second Duration" : [ 15.0, 30.0, 45.0, 60.0, 75.0, 90.0, 105.0, 120.0, 135.0, 150.0 ],
         "MaxLevel" : 6,
         "UltimateLevel" : 10
+      }
+    }, {
+      "name" : "Surf",
+      "description" : "Assemble waves of gargantuan proportions, increasing the area over which damage is inflicted, the number of projectiles and their chance to pass through enemies.",
+      "parent" : [ "Shore Uprising" ],
+      "skillIcon" : {
+        "posY" : 279,
+        "posX" : 376
+      },
+      "attributes" : {
+        "${value} Energy Cost" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0 ],
+        "${value} Projectile(s)" : [ 1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0, 4.0, 4.0, 4.0 ],
+        "${value}% Chance to pass through Enemies" : [ 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 24.0 ],
+        "MaxLevel" : 10,
+        "UltimateLevel" : 14
       }
     }, {
       "name" : "Scaly Skin",
@@ -5346,7 +5678,7 @@
         "posX" : 376
       },
       "attributes" : {
-        "${value} Energy Cost" : [ 8.0, 11.0, 14.0, 17.0, 20.0, 23.0, 26.0, 29.0, 32.0, 35.0, 38.0, 41.0 ],
+        "${value} Energy Cost" : [ 12.0, 17.0, 21.0, 26.0, 30.0, 35.0, 39.0, 44.0, 48.0, 53.0, 57.0, 62.0 ],
         "${value} Bleeding Damage over ${duration} Second(s)" : {
           "value" : {
             "min" : [ 22.78, 30.954, 39.128, 47.235, 55.409, 63.583, 71.757, 79.931, 88.105, 96.212, 104.386, 112.56 ]
@@ -5467,7 +5799,7 @@
         "posX" : 640
       },
       "attributes" : {
-        "${value} Energy Reserved" : [ 50.0, 56.0, 61.0, 67.0, 72.0, 78.0, 83.0, 89.0, 94.0, 100.0 ],
+        "${value} Energy Reserved" : [ 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0 ],
         "${value}% Reduced Freeze Duration" : [ -10.0, -16.0, -21.0, -27.0, -32.0, -38.0, -43.0, -49.0, -54.0, -60.0 ],
         "${value}% Reduction in Frostburn Duration" : [ -25.0, -33.0, -42.0, -50.0, -58.0, -67.0, -75.0, -83.0, -92.0, -100.0 ],
         "${value}% Slow Resistance" : [ -10.0, -16.0, -21.0, -27.0, -32.0, -38.0, -43.0, -49.0, -54.0, -60.0 ],
@@ -6018,10 +6350,18 @@
         "${value}m Radius" : 2.5,
         "Launches ${value} Projectile(s)" : 1,
         "${value} Physical Damage" : {
-          "min" : [ 25.0, 39.0, 53.0, 67.0, 81.0, 95.0, 109.0, 123.0, 137.0, 151.0, 165.0, 189.0, 213.0, 236.0, 260.0 ]
+          "min" : [ 27.0, 45.0, 62.0, 80.0, 96.0, 114.0, 131.0, 149.0, 167.0, 183.0, 201.0, 218.0, 236.0, 252.0, 270.0 ]
         },
         "${value} Piercing Damage" : {
-          "min" : [ 18.0, 30.0, 41.0, 53.0, 64.0, 76.0, 87.0, 99.0, 111.0, 122.0, 134.0, 145.0, 157.0, 168.0, 180.0 ]
+          "min" : [ 27.0, 45.0, 62.0, 80.0, 96.0, 114.0, 131.0, 149.0, 167.0, 183.0, 201.0, 218.0, 236.0, 252.0, 270.0 ]
+        },
+        "${value} Reduced Armor for ${duration} Second(s)" : {
+          "value" : {
+            "min" : [ 100.0, 136.0, 172.0, 208.0, 244.0, 280.0, 316.0, 352.0, 388.0, 424.0, 460.0, 496.0, 532.0, 568.0, 604.0 ]
+          },
+          "duration" : {
+            "min" : 2.0
+          }
         },
         "+${value}% Vitality Damage" : [ -66.0, -60.0, -53.0, -47.0, -40.0, -34.0, -27.0, -21.0, -14.0, -8.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
         "+${value}% Vitality Decay " : [ -66.0, -60.0, -53.0, -47.0, -40.0, -34.0, -27.0, -21.0, -14.0, -8.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
@@ -6358,14 +6698,14 @@
         "${value} Energy Cost" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0 ],
         "${value} Bleeding Damage over ${duration} Second(s)" : {
           "value" : {
-            "min" : [ 20.7, 28.5, 36.3, 44.1, 51.9, 59.8, 67.6, 75.4, 83.2, 91.0, 98.8, 106.7 ]
+            "min" : [ 27.945, 38.475, 49.005, 59.535, 70.065, 80.73, 91.26, 101.79, 112.32, 122.85, 133.38, 144.045 ]
           },
           "duration" : {
             "min" : 3.0
           }
         },
         "${value} Piercing Damage" : {
-          "min" : [ 15.0, 20.5, 25.9, 31.4, 36.8, 42.3, 47.7, 53.2, 58.6, 64.1, 69.5, 75.0 ]
+          "min" : [ 18.75, 25.625, 32.375, 39.25, 46.0, 52.875, 59.625, 66.5, 73.25, 80.125, 86.875, 93.75 ]
         },
         "MaxLevel" : 8,
         "UltimateLevel" : 12
@@ -6582,7 +6922,7 @@
       "attributes" : {
         "^a${value} Second(s) Recharge" : [ 0.0, 2.0, 4.0 ],
         "${value} Vitality Damage" : {
-          "min" : [ 50.0, 100.0, 150.0 ]
+          "min" : [ 100.0, 200.0, 300.0 ]
         },
         "${value} Vitality Decay over ${duration} Second(s)" : {
           "value" : {
@@ -6661,6 +7001,35 @@
         "MaxLevel" : 8,
         "UltimateLevel" : 12
       }
+    }, {
+      "name" : "Life Guzzler",
+      "description" : "Greedily devour the vitality of an opponent when you land the killing blow, and distribute it to all nearby allies. Later levels increase the amount of health resotored and the energy cost.{^n}{^y}Although the skill costs energy, it can still be activated when the energy cost is not met.",
+      "castOnDamage" : "ALL",
+      "triggerType" : "if the target is killed",
+      "skillIcon" : {
+        "posY" : 93,
+        "posX" : 464
+      },
+      "attributes" : {
+        "${value}% Chance of activating" : [ 18.0, 18.0, 18.0, 18.0, 18.0, 18.0, 18.0, 18.0, 18.0, 18.0, 18.0, 18.0 ],
+        "MaxLevel" : 8,
+        "UltimateLevel" : 12
+      },
+      "skillCast" : {
+        "castLevels" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ],
+        "castSkills" : [ {
+          "name" : "Life Guzzler",
+          "description" : "Greedily devour the vitality of an opponent when you land the killing blow, and distribute it to all nearby allies. Later levels increase the amount of health resotored and the energy cost.{^n}{^y}Although the skill costs energy, it can still be activated when the energy cost is not met.",
+          "attributes" : {
+            "${value} Energy Cost" : [ 50.0, 57.0, 64.0, 71.0, 78.0, 85.0, 92.0, 99.0, 106.0, 113.0, 120.0, 127.0 ],
+            "${value} Second Duration" : 1.0,
+            "${value}m Radius" : 10.0,
+            "${value} Health Restored" : [ 700.0, 965.0, 1231.0, 1495.0, 1761.0, 2026.0, 2292.0, 2557.0, 2823.0, 3087.0, 3353.0, 3618.0 ],
+            "MaxLevel" : 8,
+            "UltimateLevel" : 12
+          }
+        } ]
+      }
     } ], [ {
       "name" : "Necromania",
       "description" : "Awakening the undead makes their past regrets and vengeful desires reappear.",
@@ -6698,6 +7067,22 @@
         "+${value}% Vitality Decay " : [ 12.0, 16.0, 21.0, 25.0, 29.0, 34.0, 38.0, 43.0, 47.0, 51.0, 56.0, 60.0 ],
         "MaxLevel" : 8,
         "UltimateLevel" : 12
+      }
+    }, {
+      "name" : "Second Chance",
+      "description" : "Your time has not yet come; become temporarily nearly invincible and recover a large portion of your health to give yourself another chance when all seems lost.",
+      "skillIcon" : {
+        "posY" : 31,
+        "posX" : 200
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : 50.0,
+        "${value} Second Duration" : 3.0,
+        "${value} Health Restored" : [ 1500.0, 2000.0, 2500.0, 3000.0, 3500.0, 4000.0, 4500.0, 5000.0, 5500.0, 6000.0, 6500.0, 7000.0, 7500.0, 8000.0 ],
+        "${value}% Damage Absorption" : [ 55.0, 58.0, 60.0, 63.0, 67.0, 70.0, 74.0, 77.0, 81.0, 84.0, 88.0, 91.0, 94.0, 98.0 ],
+        "${value}% Energy Reserved" : 80.0,
+        "MaxLevel" : 10,
+        "UltimateLevel" : 14
       }
     } ] ]
   }, {
@@ -6857,7 +7242,7 @@
         "posX" : 464
       },
       "attributes" : {
-        "^a${value} Second(s) Recharge" : 15.0,
+        "^a${value} Second(s) Recharge" : 10.0,
         "${value} Energy Cost" : [ 40.0, 42.0, 44.0, 46.0, 48.0, 50.0, 52.0, 54.0, 56.0, 58.0, 60.0, 62.0, 64.0, 66.0, 68.0, 70.0, 72.0, 75.0 ],
         "Launches ${value} Projectile(s)" : 1,
         "${value} Electrical Burn Damage over ${duration} Second(s)" : {
@@ -6869,8 +7254,8 @@
           }
         },
         "${value} Lightning Damage" : {
-          "min" : [ 13.4, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 29.0, 31.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0 ],
-          "max" : [ 50.0, 55.0, 60.0, 66.0, 72.0, 78.0, 84.0, 90.0, 97.0, 104.0, 111.0, 118.0, 125.0, 131.0, 138.0, 145.0, 154.0, 167.0 ]
+          "min" : [ 16.75, 19.0, 21.0, 24.0, 26.0, 29.0, 31.0, 34.0, 36.0, 39.0, 43.0, 45.0, 48.0, 50.0, 53.0, 55.0, 58.0 ],
+          "max" : [ 62.5, 69.0, 75.0, 83.0, 90.0, 98.0, 105.0, 113.0, 121.0, 130.0, 139.0, 148.0, 156.0, 164.0, 173.0, 181.0, 193.0, 209.0 ]
         },
         "${value} Target Maximum" : [ 1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 5.0, 5.0 ],
         "${value}° Arc of Attack" : 360.0,
@@ -7235,7 +7620,7 @@
         "MaxLevel" : 6,
         "UltimateLevel" : 10,
         "Bonus to all Pets:" : {
-          "-${value}% Recharge" : [ 8.0, 13.0, 17.0, 22.0, 27.0, 31.0, 36.0, 41.0, 45.0, 50.0 ]
+          "-${value}% Recharge" : [ 16.0, 22.0, 28.0, 34.0, 40.0, 46.0, 54.0, 62.0, 70.0, 80.0 ]
         }
       }
     }, {
@@ -7519,6 +7904,52 @@
           }
         }
       }
+    }, {
+      "name" : "Infinite Eternity",
+      "description" : "Afflict a single enemy with a malediction that will last for eons, permanently turning it into decrepified prey with which the Timetraveller can toy with. The only way out of this malediction is to either die or have it dispelled.",
+      "doesNotIncludeRacialDamage" : true,
+      "skillIcon" : {
+        "posY" : 93,
+        "posX" : 376
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : 24.0,
+        "${value} Energy Cost" : [ 125.0, 133.0, 141.0, 149.0, 158.0, 166.0, 174.0, 182.0, 191.0, 199.0, 207.0, 215.0, 224.0, 232.0 ],
+        "${value} Second Duration" : 999.0,
+        "${value}% Chance to Dodge Attacks" : [ -20.0, -23.0, -26.0, -29.0, -32.0, -35.0, -38.0, -41.0, -44.0, -47.0, -50.0, -53.0, -56.0, -59.0 ],
+        "${value}% Elemental Resistance" : [ -20.0, -23.0, -26.0, -29.0, -32.0, -35.0, -38.0, -41.0, -44.0, -47.0, -50.0, -53.0, -56.0, -59.0 ],
+        "${value}% Reduced Petrify Duration" : [ -20.0, -23.0, -26.0, -29.0, -32.0, -35.0, -38.0, -41.0, -44.0, -47.0, -50.0, -53.0, -56.0, -59.0 ],
+        "+${value}% Defensive Ability" : [ -20.0, -23.0, -26.0, -29.0, -32.0, -35.0, -38.0, -41.0, -44.0, -47.0, -50.0, -53.0, -56.0, -59.0 ],
+        "MaxLevel" : 10,
+        "UltimateLevel" : 14
+      }
+    }, {
+      "name" : "Stasis",
+      "description" : "Cage yourself within a barrier of celestial energy and put yourself in stasis to protect yourself from all damage and negative effects.{^n}{^a}Cannot be dispelled.{^n}{^y}Cooldown is reduced with more skill points.",
+      "notDispellable" : true,
+      "skillIcon" : {
+        "posY" : 93,
+        "posX" : 200
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : [ 24.0, 23.0, 22.0, 21.0, 20.0, 19.0, 18.0, 17.0, 16.0, 15.0, 14.0, 13.0, 12.0, 10.0, 9.0, 8.0 ],
+        "${value} Energy Cost" : [ 80.0, 89.0, 98.0, 107.0, 116.0, 125.0, 134.0, 143.0, 152.0, 161.0, 170.0, 179.0, 188.0, 197.0, 206.0, 215.0 ],
+        "${value} Second Duration" : 5.0,
+        "${value} Lightning Damage Retaliation" : {
+          "min" : [ 24.19, 31.38, 38.56, 45.75, 52.94, 60.13, 67.31, 74.5, 81.69, 88.88, 96.06, 103.25, 110.44, 117.63, 124.81, 132.0 ]
+        },
+        "${value} Stun Retaliation" : {
+          "min" : [ 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5 ]
+        },
+        "${value}% Damage Absorption" : 100.0,
+        "${value}% Health Reduction Retaliation" : {
+          "min" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ]
+        },
+        "+${value}% Energy Regeneration" : [ 60.0, 80.0, 100.0, 120.0, 140.0, 160.0, 180.0, 200.0, 220.0, 240.0, 260.0, 280.0, 300.0, 320.0, 340.0, 360.0 ],
+        "+${value}% Health Regeneration" : [ 60.0, 80.0, 100.0, 120.0, 140.0, 160.0, 180.0, 200.0, 220.0, 240.0, 260.0, 280.0, 300.0, 320.0, 340.0, 360.0 ],
+        "MaxLevel" : 8,
+        "UltimateLevel" : 12
+      }
     } ], [ {
       "name" : "Gravity Nova",
       "description" : "Modify the rules of time in a circular area, shattering and imploding everything inside.",
@@ -7680,11 +8111,11 @@
         "${value} Active Energy Cost per Second" : 1.0,
         "${value}m Radius" : 16.0,
         "${value} Instant Poison Damage" : {
-          "min" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ]
+          "min" : [ 6.25, 10.0, 12.5, 16.25, 20.0, 22.5, 26.25, 30.0, 33.75, 36.25, 40.0, 43.75, 46.25, 50.0 ]
         },
-        "+${value}% Improved Poison Damage Duration" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ],
-        "+${value}% Instant Poison Damage" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ],
-        "+${value}% Poison Damage " : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ],
+        "+${value}% Improved Poison Damage Duration" : [ 6.25, 10.0, 12.5, 16.25, 20.0, 22.5, 26.25, 30.0, 33.75, 36.25, 40.0, 43.75, 46.25, 50.0 ],
+        "+${value}% Instant Poison Damage" : [ 6.25, 10.0, 12.5, 16.25, 20.0, 22.5, 26.25, 30.0, 33.75, 36.25, 40.0, 43.75, 46.25, 50.0 ],
+        "+${value}% Poison Damage " : [ 6.25, 10.0, 12.5, 16.25, 20.0, 22.5, 26.25, 30.0, 33.75, 36.25, 40.0, 43.75, 46.25, 50.0 ],
         "MaxLevel" : 10,
         "UltimateLevel" : 14
       }
@@ -7701,11 +8132,11 @@
         "${value} Active Energy Cost per Second" : 1.0,
         "${value}m Radius" : 16.0,
         "${value} Vitality Damage" : {
-          "min" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ]
+          "min" : [ 6.25, 10.0, 12.5, 16.25, 20.0, 22.5, 26.25, 30.0, 33.75, 36.25, 40.0, 43.75, 46.25, 50.0 ]
         },
-        "+${value}% Improved Vitality Decay Duration" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ],
-        "+${value}% Vitality Damage" : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ],
-        "+${value}% Vitality Decay " : [ 5.0, 8.0, 10.0, 13.0, 16.0, 18.0, 21.0, 24.0, 27.0, 29.0, 32.0, 35.0, 37.0, 40.0 ],
+        "+${value}% Improved Vitality Decay Duration" : [ 6.25, 10.0, 12.5, 16.25, 20.0, 22.5, 26.25, 30.0, 33.75, 36.25, 40.0, 43.75, 46.25, 50.0 ],
+        "+${value}% Vitality Damage" : [ 6.25, 10.0, 12.5, 16.25, 20.0, 22.5, 26.25, 30.0, 33.75, 36.25, 40.0, 43.75, 46.25, 50.0 ],
+        "+${value}% Vitality Decay " : [ 6.25, 10.0, 12.5, 16.25, 20.0, 22.5, 26.25, 30.0, 33.75, 36.25, 40.0, 43.75, 46.25, 50.0 ],
         "MaxLevel" : 10,
         "UltimateLevel" : 14
       }
@@ -7825,6 +8256,36 @@
         "MaxLevel" : 12,
         "UltimateLevel" : 16
       }
+    }, {
+      "name" : "Arcane Flare",
+      "description" : "A magical ball of flames flies out and explodes on the targeted area, dealing mediocre damage if thrown aimlessly, but becomes deadly when precisely landing on an enemy.",
+      "skillIcon" : {
+        "posY" : 341,
+        "posX" : 112
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : 5.0,
+        "${value} Energy Cost" : [ 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0, 90.0, 95.0, 100.0, 105.0, 110.0, 115.0, 120.0, 125.0 ],
+        "${value}m Radius" : 2.0,
+        "Launches ${value} Projectile(s)" : 1,
+        "${value} Burn Damage over ${duration} Second(s)" : {
+          "value" : {
+            "min" : [ 10.0, 15.0, 19.0, 23.0, 28.0, 32.0, 36.0, 41.0, 45.0, 49.0, 54.0, 58.0, 62.0, 67.0, 71.0, 75.0 ]
+          },
+          "duration" : {
+            "min" : 3.0
+          }
+        },
+        "${value} Fire Damage" : {
+          "min" : [ 6.0, 9.0, 11.0, 15.0, 18.0, 20.0, 24.0, 27.0, 29.0, 33.0, 36.0, 38.0, 42.0, 45.0, 47.0, 51.0 ]
+        },
+        "${value} Fragments" : {
+          "min" : 8,
+          "max" : 8
+        },
+        "MaxLevel" : 12,
+        "UltimateLevel" : 16
+      }
     } ], [ {
       "name" : "Conjured Steel",
       "description" : "Expert sorcerers are able to masterfully imbue all sorts of items with magic, even steel-crafted weapons.{^n}{^y}Requires any weapon that is not a staff.",
@@ -7849,13 +8310,13 @@
       },
       "attributes" : {
         "${chance}% Chance of ${value} second(s) of Petrify" : {
-          "chance" : 5.0,
+          "chance" : 7.5,
           "value" : {
-            "min" : 1.0
+            "min" : 1.5
           }
         },
         "${chance}% Chance of +${value}% Total Damage" : {
-          "chance" : 20.0,
+          "chance" : 15.0,
           "value" : -100.0
         },
         "MaxLevel" : 1,
@@ -7869,8 +8330,8 @@
         "posX" : 464
       },
       "attributes" : {
-        "^a${value} Second(s) Recharge" : [ 6.0, 6.0, 5.0, 5.0, 5.0, 5.0, 4.0, 4.0, 4.0, 4.0, 3.0, 3.0, 2.85, 2.7, 2.55, 2.4, 2.25, 2.1, 1.95, 1.8, 1.65, 1.5, 1.35, 1.2, 1.05, 0.9, 0.75, 0.6, 0.45, 0.3, 0.15, 0.0 ],
-        "${value} Energy Cost" : [ 40.0, 47.0, 55.0, 62.0, 69.0, 76.0, 84.0, 91.0, 98.0, 105.0, 113.0, 120.0, 126.0, 132.0, 138.0, 144.0, 150.0, 156.0, 162.0, 168.0, 174.0, 180.0, 186.0, 192.0, 198.0, 204.0, 210.0, 216.0, 222.0, 228.0, 234.0, 240.0, 246.0, 252.0, 258.0, 264.0, 270.0, 276.0, 282.0, 288.0, 294.0, 300.0, 306.0, 312.0, 318.0, 324.0, 330.0, 336.0, 342.0, 348.0, 354.0, 360.0, 366.0, 372.0, 378.0, 384.0, 390.0, 396.0, 402.0, 408.0, 414.0, 420.0, 426.0, 432.0, 438.0, 444.0, 450.0, 456.0, 462.0, 468.0, 474.0, 480.0, 486.0, 492.0, 498.0, 504.0, 510.0, 516.0, 522.0, 528.0, 534.0, 540.0, 546.0, 552.0, 558.0, 564.0, 570.0, 576.0, 582.0, 588.0, 594.0, 600.0, 606.0, 612.0, 618.0, 624.0, 630.0, 636.0, 642.0, 648.0 ],
+        "^a${value} Second(s) Recharge" : [ 6.0, 6.0, 5.0, 5.0, 5.0, 5.0, 4.0, 4.0, 4.0, 4.0, 3.0, 3.0, 2.85, 2.7, 2.55, 2.4, 2.25, 2.1, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0 ],
+        "${value} Energy Cost" : [ 45.0, 53.11, 62.15, 70.06, 77.97, 85.88, 94.92, 102.83, 110.74, 118.65, 127.69, 135.6, 142.0, 149.0, 156.0, 163.0, 170.0, 176.0, 183.0, 190.0, 197.0, 203.0, 210.0, 217.0, 224.0, 231.0, 237.0, 244.0, 251.0, 258.0, 264.0, 271.0, 278.0, 285.0, 292.0, 298.0, 305.0, 312.0, 319.0, 325.0, 332.0, 339.0, 346.0, 353.0, 359.0, 366.0, 373.0, 380.0, 386.0, 393.0, 400.0, 407.0, 414.0, 420.0, 427.0, 434.0, 441.0, 447.0, 454.0, 461.0, 468.0, 475.0, 481.0, 488.0, 495.0, 502.0, 509.0, 515.0, 522.0, 529.0, 536.0, 542.0, 549.0, 556.0, 563.0, 570.0, 576.0, 583.0, 590.0, 597.0, 603.0, 610.0, 617.0, 624.0, 631.0, 637.0, 644.0, 651.0, 658.0, 664.0, 671.0, 678.0, 685.0, 692.0, 698.0, 705.0, 712.0, 719.0, 725.0, 732.0 ],
         "${value} Fire Damage" : {
           "min" : [ 18.0, 25.0, 33.0, 40.0, 48.0, 55.0, 63.0, 70.0, 78.0, 85.0, 93.0, 100.0, 110.0, 120.0, 130.0, 140.0, 150.0, 160.0, 170.0, 180.0, 190.0, 200.0, 210.0, 220.0, 230.0, 240.0, 250.0, 260.0, 270.0, 280.0, 290.0, 300.0, 310.0, 320.0, 330.0, 340.0, 350.0, 360.0, 370.0, 380.0, 390.0, 400.0, 410.0, 420.0, 430.0, 440.0, 450.0, 460.0, 470.0, 480.0, 490.0, 500.0, 510.0, 520.0, 530.0, 540.0, 550.0, 560.0, 570.0, 580.0, 590.0, 600.0, 610.0, 620.0, 630.0, 640.0, 650.0, 660.0, 670.0, 680.0, 690.0, 700.0, 710.0, 720.0, 730.0, 740.0, 750.0, 760.0, 770.0, 780.0, 790.0, 800.0, 810.0, 820.0, 830.0, 840.0, 850.0, 860.0, 870.0, 880.0, 890.0, 900.0, 910.0, 920.0, 930.0, 940.0, 950.0, 960.0, 970.0, 980.0 ]
         },
@@ -7899,6 +8360,53 @@
         "MaxLevel" : 8,
         "UltimateLevel" : 12
       }
+    }, {
+      "name" : "Heat Wave",
+      "description" : "A blast of burning energy has a chance to be released around you after killing an enemy with Arcane Flare, for increased area damage.",
+      "castOnDamage" : "ALL",
+      "triggerType" : "if the target is killed",
+      "skillIcon" : {
+        "posY" : 279,
+        "posX" : 112
+      },
+      "attributes" : {
+        "${value}% Chance of activating" : [ 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0 ],
+        "MaxLevel" : 8,
+        "UltimateLevel" : 12
+      },
+      "skillCast" : {
+        "castLevels" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0 ],
+        "castSkills" : [ {
+          "name" : "Fire Nova",
+          "description" : "Sends out a ring of flames that ignites everything in the area.",
+          "attributes" : {
+            "^a${value} Second(s) Recharge" : 15.0,
+            "${value} Energy Cost" : [ 130.0, 150.0, 170.0, 190.0, 210.0, 230.0, 250.0, 270.0, 290.0, 310.0, 330.0, 350.0 ],
+            "${value}m Radius" : 20.0,
+            "${value} Burn Damage over ${duration} Second(s)" : {
+              "value" : {
+                "min" : [ 33.0, 37.0, 42.0, 48.0, 55.0, 63.0, 72.0, 82.0, 93.0, 105.0, 118.0, 132.0 ]
+              },
+              "duration" : {
+                "min" : 3.0
+              }
+            },
+            "${value} Fire Damage" : {
+              "min" : [ 33.0, 37.0, 42.0, 48.0, 55.0, 63.0, 72.0, 82.0, 93.0, 105.0, 118.0, 132.0 ]
+            },
+            "${value}% Chance of Impaired Aim over ${duration} Second(s)" : {
+              "value" : {
+                "min" : [ 11.0, 12.7, 14.3, 16.0, 17.6, 19.3, 21.0, 22.6, 24.3, 26.0, 27.6, 29.3 ]
+              },
+              "duration" : {
+                "min" : 3.0
+              }
+            },
+            "MaxLevel" : 8,
+            "UltimateLevel" : 12
+          }
+        } ]
+      }
     } ], [ {
       "name" : "Cone of Flames",
       "description" : "Unleash a violent blast of fire, which burns to the bone the enemies it touches.",
@@ -7910,7 +8418,7 @@
         "^a${value} Second(s) Recharge" : 6.0,
         "${value} Energy Cost" : [ 68.0, 74.0, 80.0, 86.0, 93.0, 99.0, 105.0, 111.0, 117.0, 123.0, 130.0, 136.0, 142.0, 148.0 ],
         "${value} Fire Damage" : {
-          "min" : [ 87.5, 108.5, 127.75, 148.75, 168.0, 189.0, 208.25, 229.25, 248.5, 269.5, 288.75, 309.75, 329.0, 350.0 ]
+          "min" : [ 102.625, 128.775, 152.9125, 179.0625, 203.2, 229.35, 253.4875, 279.6375, 303.775, 329.925, 354.0625, 380.2125, 404.35, 430.5 ]
         },
         "${value}% reduced Defensive Ability over ${duration} Second(s)" : {
           "value" : {
@@ -7978,7 +8486,7 @@
         "${value} Energy Cost" : [ 10.0, 12.0, 15.0, 17.0, 20.0, 22.0, 25.0, 27.0, 30.0, 32.0, 35.0, 37.0, 40.0, 42.0 ],
         "${value} Burn Damage over ${duration} Second(s)" : {
           "value" : {
-            "min" : [ 20.0, 28.0, 36.0, 45.0, 53.0, 61.0, 69.0, 77.0, 85.0, 94.0, 102.0, 110.0 ]
+            "min" : [ 22.0, 30.8, 39.6, 49.5, 58.3, 67.1, 75.9, 84.7, 93.5, 103.4, 112.2, 121.0 ]
           },
           "duration" : {
             "min" : 3.0
@@ -8095,7 +8603,7 @@
         "posX" : 464
       },
       "attributes" : {
-        "^a${value} Second(s) Recharge" : 12.0,
+        "^a${value} Second(s) Recharge" : 16.0,
         "${value} Energy Cost" : [ 70.0, 76.9, 83.8, 90.7, 97.6, 104.5, 111.4, 118.3, 125.2, 132.1, 139.0, 145.9 ],
         "${value}m Radius" : 6.0,
         "${value} Reduced Resistances for ${duration} Second(s)" : {
@@ -8138,7 +8646,7 @@
         " (${value}% of lost Energy as Damage)" : 100.0,
         "${value} Electrical Burn Damage over ${duration} Second(s)" : {
           "value" : {
-            "min" : [ 10.0, 15.5, 20.9, 26.4, 31.8, 37.3, 42.7, 48.2, 53.6, 59.1, 64.5, 70.0 ]
+            "min" : [ 15.0, 22.7, 30.26, 37.96, 45.52, 53.22, 60.78, 68.48, 76.04, 83.74, 91.3, 99.0 ]
           },
           "duration" : {
             "min" : 4.0
@@ -8409,6 +8917,1073 @@
         "MaxLevel" : 12,
         "UltimateLevel" : 16,
         "requiredWeapons" : "Staff"
+      }
+    } ] ]
+  }, {
+    "name" : "Destruction",
+    "masteryAttributes" : {
+      "+${value} Health" : [ 20.0, 40.0, 60.0, 80.0, 100.0, 120.0, 140.0, 160.0, 180.0, 200.0, 220.0, 240.0, 260.0, 280.0, 300.0, 320.0, 340.0, 360.0, 380.0, 400.0, 420.0, 440.0, 460.0, 480.0, 500.0, 520.0, 540.0, 560.0, 580.0, 600.0, 620.0, 640.0, 660.0, 680.0, 700.0, 720.0, 740.0, 760.0, 780.0, 800.0 ],
+      "+${value} Energy" : [ 20.0, 40.0, 60.0, 80.0, 100.0, 120.0, 140.0, 160.0, 180.0, 200.0, 220.0, 240.0, 260.0, 280.0, 300.0, 320.0, 340.0, 360.0, 380.0, 400.0, 420.0, 440.0, 460.0, 480.0, 500.0, 520.0, 540.0, 560.0, 580.0, 600.0, 620.0, 640.0, 660.0, 680.0, 700.0, 720.0, 740.0, 760.0, 780.0, 800.0 ],
+      "+${value} Strength" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0, 48.0, 50.0, 52.0, 54.0, 56.0, 58.0, 60.0, 62.0, 64.0, 66.0, 68.0, 70.0, 72.0, 74.0, 76.0, 78.0, 80.0 ],
+      "+${value} Intelligence" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0, 48.0, 50.0, 52.0, 54.0, 56.0, 58.0, 60.0, 62.0, 64.0, 66.0, 68.0, 70.0, 72.0, 74.0, 76.0, 78.0, 80.0 ],
+      "MaxLevel" : 40
+    },
+    "skillTiers" : [ [ {
+      "name" : "Lay Waste",
+      "description" : "Make flames and cinder surge from the ground with a mighty blow and burn all enemies in a cone-shaped area in front of you.",
+      "skillIcon" : {
+        "posY" : 403,
+        "posX" : 112
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : 8.0,
+        "${value} Energy Cost" : [ 50.0, 54.0, 58.0, 62.0, 66.0, 70.0, 74.0, 79.0, 83.0, 87.0, 91.0, 95.0, 100.0, 103.0, 108.0, 112.0, 117.0, 120.0 ],
+        "${value} Fire Damage" : {
+          "min" : [ 16.0, 30.0, 44.0, 58.0, 72.0, 87.0, 100.0, 114.0, 128.0, 142.0, 156.0, 170.0, 184.0, 200.0, 215.0, 231.0 ]
+        },
+        "${value} Lightning Damage" : {
+          "min" : [ 16.0, 30.0, 44.0, 58.0, 72.0, 87.0, 100.0, 114.0, 128.0, 142.0, 156.0, 170.0, 184.0, 200.0, 215.0, 231.0 ]
+        },
+        "${value}% Slower Attack over ${duration} Second(s)" : {
+          "value" : {
+            "min" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 35.0, 37.0, 39.0, 42.0 ]
+          },
+          "duration" : {
+            "min" : 3.0
+          }
+        },
+        "MaxLevel" : 12,
+        "UltimateLevel" : 16
+      }
+    }, {
+      "name" : "Lavawrought Arsenal",
+      "description" : "Forged in the flames of beyond, your weapons cannot be compared to the mortal-crafted weapons, as they never grow dull and deal injuries that can never be fully healed.",
+      "skillIcon" : {
+        "posY" : 403,
+        "posX" : 640
+      },
+      "attributes" : {
+        "${value} Burn Damage over ${duration} Second(s)" : {
+          "value" : {
+            "min" : [ 4.0, 7.0, 9.0, 12.0, 15.0, 17.0, 20.0, 23.0, 25.0, 28.0, 31.0, 33.33333 ]
+          },
+          "duration" : {
+            "min" : 3.0
+          }
+        },
+        "${value} Fire Damage" : {
+          "min" : [ 3.0, 7.0, 10.0, 14.0, 18.0, 22.0, 25.0, 29.0, 35.0, 42.0, 47.0, 55.0 ]
+        },
+        "+${value} Offensive Ability" : [ 10.0, 32.0, 54.0, 75.0, 97.0, 119.0, 141.0, 163.0, 185.0, 206.0, 228.0, 250.0 ],
+        "MaxLevel" : 8,
+        "UltimateLevel" : 12
+      }
+    }, {
+      "name" : "Brand of Destruction",
+      "description" : "To unfold destruction, the Destructor uses its finest weapon in its arsenal : a magical layer of elemental energy wrapping any weapon to increase its damaging potential.",
+      "skillIcon" : {
+        "posY" : 403,
+        "posX" : 200
+      },
+      "attributes" : {
+        "${value} Energy Reserved" : 50.0,
+        "${value} Active Energy Cost per Second" : 1.0,
+        "+${value}% Fire Damage" : [ 8.0, 12.0, 16.0, 19.0, 23.0, 27.0, 31.0, 35.0, 39.0, 42.0, 46.0, 50.0, 56.0, 62.0, 69.0, 75.0 ],
+        "+${value}% Lightning Damage" : [ 8.0, 12.0, 16.0, 19.0, 23.0, 27.0, 31.0, 35.0, 39.0, 42.0, 46.0, 50.0, 56.0, 62.0, 69.0, 75.0 ],
+        "MaxLevel" : 12,
+        "UltimateLevel" : 16
+      }
+    }, {
+      "name" : "Inferno",
+      "description" : "The intensity of your battles heatens up your weapons to a point that they can cause grievous burns every fourth attack. {^y}Apply this skill to your left mouse button.",
+      "skillIcon" : {
+        "posY" : 403,
+        "posX" : 376
+      },
+      "attributes" : {
+        "${value} Energy Cost" : [ 2.0, 2.0, 3.0, 3.0, 4.0, 4.0, 5.0, 5.0, 6.0, 6.0, 7.0, 7.0, 8.0, 8.0, 9.0, 9.0 ],
+        "${value} Charge Levels" : 3,
+        "Launches ${value} Projectile(s)" : 1,
+        "${value} Burn Damage over ${duration} Second(s)" : {
+          "value" : {
+            "min" : [ 12.0, 24.0, 37.0, 49.0, 62.0, 75.0, 87.0, 100.0, 112.0, 125.0, 138.0, 150.0, 164.0, 178.0, 191.0, 205.0 ]
+          },
+          "duration" : {
+            "min" : 3.0
+          }
+        },
+        "${value} Second(s) Charge Level Duration" : 5.0,
+        "MaxLevel" : 12,
+        "UltimateLevel" : 16
+      }
+    } ], [ {
+      "name" : "Haste",
+      "description" : "Rush forward in the direction you are facing to quickly join the battle or run away to safety.{^n}{^y}Cooldown is reduced with more skill points.",
+      "notDispellable" : true,
+      "skillIcon" : {
+        "posY" : 341,
+        "posX" : 464
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : [ 12.0, 10.0, 9.0, 8.0, 7.0, 6.0, 5.0, 4.0, 3.0, 2.0 ],
+        "${value} Energy Cost" : [ 15.0, 17.0, 19.0, 20.0, 22.0, 23.0, 27.0, 28.0, 30.0, 32.0, 33.0, 35.0 ],
+        "${value} Second Duration" : 0.35,
+        "${value}forceIgnoreRunSpeedCaps" : 1,
+        "+${value}% Movement Speed" : 500.0,
+        "MaxLevel" : 6,
+        "UltimateLevel" : 10
+      }
+    }, {
+      "name" : "Lust for Battle",
+      "description" : "While winning fights is a common occurrence for a Destroyer, it never gets boring to them. Every time you defeat an enemy, there is a small chance that you restore health a small amount of health and energy. The amount restored depends on the level of this skill.",
+      "castOnDamage" : "ALL",
+      "triggerType" : "if the target is killed",
+      "skillIcon" : {
+        "posY" : 341,
+        "posX" : 552
+      },
+      "attributes" : {
+        "${value}% Chance of activating" : [ 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0 ],
+        "MaxLevel" : 8,
+        "UltimateLevel" : 12
+      },
+      "skillCast" : {
+        "castLevels" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ],
+        "castSkills" : [ {
+          "name" : "Lust for Battle",
+          "description" : "While winning fights is a common occurrence for a Destroyer, it never gets boring to them. Every time you defeat an enemy, there is a small chance that you restore health a small amount of health and energy. The amount restored depends on the level of this skill.",
+          "attributes" : {
+            "${value} Second Duration" : 2.0,
+            "${value} Energy Restored" : [ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0 ],
+            "${value} Health Restored" : [ 125.0, 227.5, 330.0, 431.25, 533.75, 636.25, 738.75, 841.25, 943.75, 1045.0, 1147.5, 1250.0 ],
+            "+${value}% Energy Regeneration" : [ 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0 ],
+            "+${value}% Health Regeneration" : [ 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0 ],
+            "MaxLevel" : 8,
+            "UltimateLevel" : 12
+          }
+        } ]
+      }
+    }, {
+      "name" : "Ravager's Enmity",
+      "description" : "The beings that threaten the world are cold-hearted and feared by all but the foolish. Such reputation is only earned by the accumulation of more power.",
+      "parent" : [ "Brand of Destruction" ],
+      "skillIcon" : {
+        "posY" : 341,
+        "posX" : 200
+      },
+      "attributes" : {
+        "${value} Energy Reserved" : 25.0,
+        "+${value} Strength" : [ 5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0 ],
+        "+${value}% Burn Damage " : [ 12.0, 19.0, 26.0, 33.0, 39.0, 46.0, 53.0, 60.0, 68.0, 77.0, 85.0, 92.0 ],
+        "+${value}% Electrical Burn Damage " : [ 12.0, 19.0, 26.0, 33.0, 39.0, 46.0, 53.0, 60.0, 68.0, 77.0, 85.0, 92.0 ],
+        "MaxLevel" : 8,
+        "UltimateLevel" : 12
+      }
+    }, {
+      "name" : "Control Loss",
+      "description" : "{^g}Skill Modifier{^n}{^w}You can access greater realms of power seemingly at will, but when too much power is in reach, it's easy to lose control and become drained and maddened.",
+      "parent" : [ "Inferno" ],
+      "skillIcon" : {
+        "posY" : 341,
+        "posX" : 376
+      },
+      "attributes" : {
+        "${value} Energy Cost" : 35.0,
+        "${value} Electrical Burn Damage over ${duration} Second(s)" : {
+          "value" : {
+            "min" : 150.0
+          },
+          "duration" : {
+            "min" : 3.0
+          }
+        },
+        "MaxLevel" : 1,
+        "UltimateLevel" : 1
+      }
+    }, {
+      "name" : "Prepare for Combat",
+      "description" : "Before the fight, some fighters can enter a mental state in which they become unshakable and battle-ready.",
+      "skillIcon" : {
+        "posY" : 341,
+        "posX" : 288
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : 20.0,
+        "${value} Energy Cost" : [ 80.0, 87.0, 94.0, 101.0, 108.0, 115.0, 122.0, 129.0, 136.0, 143.0, 150.0, 157.0, 164.0, 171.0, 178.0, 185.0 ],
+        "${value} Second Duration" : 40.0,
+        "${value} Energy Leech over ${duration} Second(s)" : {
+          "value" : {
+            "min" : [ 3.9, 6.9, 9.89, 13.53, 17.17, 19.51, 23.15, 26.79, 29.13, 32.77, 36.41, 38.75, 42.39, 46.03 ]
+          },
+          "duration" : {
+            "min" : 1.0
+          }
+        },
+        "${value} Life Leech over ${duration} Second(s)" : {
+          "value" : {
+            "min" : [ 3.9, 6.9, 9.89, 13.53, 17.17, 19.51, 23.15, 26.79, 29.13, 32.77, 36.41, 38.75, 42.39, 46.03 ]
+          },
+          "duration" : {
+            "min" : 3.0
+          }
+        },
+        "${value}% Pierce Resistance" : [ 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0 ],
+        "${value}% Skill Disruption Protection" : [ 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0 ],
+        "MaxLevel" : 10,
+        "UltimateLevel" : 14
+      }
+    } ], [ {
+      "name" : "Convection",
+      "description" : "Increased burning power ignites your enemies with unbearable heat and allows you to fuel your power.",
+      "parent" : [ "Lay Waste" ],
+      "skillIcon" : {
+        "posY" : 279,
+        "posX" : 112
+      },
+      "attributes" : {
+        "${value} Energy Cost" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0 ],
+        "${value} Burn Damage over ${duration} Second(s)" : {
+          "value" : {
+            "min" : [ 12.0, 18.0, 24.0, 30.0, 36.0, 42.0, 48.0, 54.0, 60.0, 66.0, 72.0, 78.0 ]
+          },
+          "duration" : {
+            "min" : 3.0
+          }
+        },
+        "${value} Life Leech over ${duration} Second(s)" : {
+          "value" : {
+            "min" : [ 6.0, 9.02, 12.05, 15.07, 18.1, 21.13, 24.15, 27.18, 30.2, 33.23, 36.26, 39.28 ]
+          },
+          "duration" : {
+            "min" : 3.0
+          }
+        },
+        "MaxLevel" : 8,
+        "UltimateLevel" : 12
+      }
+    }, {
+      "name" : "Fulminating Blast",
+      "description" : "Striking an enemy with all your power, it overflows in the form of a blast of fiery energy and strikes nearby enemies.",
+      "parent" : [ "Inferno" ],
+      "skillIcon" : {
+        "posY" : 279,
+        "posX" : 376
+      },
+      "attributes" : {
+        "${value} Fire Damage" : {
+          "min" : [ 20.0, 36.0, 51.0, 67.0, 82.0, 97.0, 112.0, 128.0, 143.0, 158.0, 173.0, 189.0 ]
+        },
+        "${value} second(s) of Petrify" : {
+          "min" : 0.5
+        },
+        "${value}% Reduction to Enemy's Health" : {
+          "min" : [ 5.0, 5.0, 6.0, 6.0, 7.0, 7.0, 8.0, 8.0, 9.0, 9.0, 10.0, 10.0 ]
+        },
+        "${value}m between each target" : 10.0,
+        "Affects up to ${value} targets" : [ 3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 5.0, 5.0, 6.0, 6.0, 7.0, 7.0 ],
+        "MaxLevel" : 8,
+        "UltimateLevel" : 12
+      }
+    }, {
+      "name" : "Warborne",
+      "description" : "Having spent the most of your existence on the battlefield, you can always call a warzone \"home\".",
+      "parent" : [ "Prepare for Combat" ],
+      "skillIcon" : {
+        "posY" : 279,
+        "posX" : 288
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : [ 0.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0 ],
+        "${value} Energy Cost" : [ 10.0, 13.0, 16.0, 19.0, 22.0, 25.0, 28.0, 31.0, 34.0, 37.0, 40.0, 43.0, 46.0, 49.0 ],
+        "${chance}% Chance of ${value}% Slowed Attack Retaliation over ${duration} Second(s)" : {
+          "chance" : [ 5.0, 6.75, 8.5, 10.25, 12.0, 13.75, 15.5, 17.25, 19.0, 20.75, 22.5, 24.25, 26.0, 27.75 ],
+          "value" : {
+            "min" : [ 66.0, 66.0, 66.0, 66.0, 66.0, 66.0, 66.0, 66.0, 66.0, 66.0, 66.0, 66.0, 66.0, 66.0 ]
+          },
+          "duration" : {
+            "min" : 3.0
+          }
+        },
+        "+${value} Defensive Ability" : [ 25.0, 37.0, 49.0, 61.0, 73.0, 85.0, 97.0, 109.0, 121.0, 133.0, 145.0, 157.0, 169.0, 181.0 ],
+        "+${value}% Health" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0 ],
+        "+${value}% Health Regeneration" : [ 35.0, 50.0, 65.0, 80.0, 95.0, 110.0, 125.0, 140.0, 155.0, 170.0, 185.0, 200.0, 215.0, 230.0 ],
+        "MaxLevel" : 10,
+        "UltimateLevel" : 14
+      }
+    }, {
+      "name" : "Bladestorm",
+      "description" : "The thunderous energy inscribed in your weapon is unleashed with this weapon technique allowing you to hit at most five enemies with great lightning damage at the cost of lower damage of other types.{^n}{^y}Requires a melee weapon.",
+      "skillIcon" : {
+        "posY" : 279,
+        "posX" : 552
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : 12.0,
+        "${value} Energy Cost" : [ 100.0, 109.0, 118.0, 127.0, 136.0, 145.0, 154.0, 163.0, 174.0, 185.0, 196.0, 205.0 ],
+        "Launches ${value} Projectile(s)" : 1,
+        "${value} Lightning Damage" : {
+          "min" : [ 109.6326, 168.2941, 228.9903, 289.6865, 350.3828, 408.3201, 469.0163, 526.9537, 587.6499, 648.3461, 709.0424, 766.9797 ]
+        },
+        "${value} Target Maximum" : 5,
+        "${value} second(s) of Confusion" : {
+          "min" : 1.0
+        },
+        "${value}% Energy Drained" : {
+          "min" : [ 25.0, 28.0, 31.0, 34.0, 37.0, 40.0, 43.0, 46.0, 50.0, 53.0, 57.0, 60.0 ]
+        },
+        "${value}° Arc of Attack" : 360.0,
+        "+${value}% Movement Speed" : 150.0,
+        "+${value}% Total Damage" : -50.0,
+        "MaxLevel" : 8,
+        "UltimateLevel" : 12,
+        "requiredWeapons" : "Sword, Spear, Axe, Mace"
+      }
+    }, {
+      "name" : "Razing Arc",
+      "description" : "A storm of destructive energy spins around you to engulf all nearby enemies with fire and lightning.",
+      "skillIcon" : {
+        "posY" : 279,
+        "posX" : 464
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : 4.0,
+        "${value} Energy Cost" : [ 184.0, 198.0, 212.0, 225.0, 239.0, 253.0, 267.0, 281.0, 294.0, 308.0, 322.0, 336.0 ],
+        "${value}m Radius" : 6.0,
+        "${value} Burn Damage over ${duration} Second(s)" : {
+          "value" : {
+            "min" : [ 37.75, 48.5, 58.25, 68.0, 78.75, 88.5, 98.25, 108.0, 118.75, 128.5, 138.25, 148.0 ]
+          },
+          "duration" : {
+            "min" : 4.0
+          }
+        },
+        "${value} Electrical Burn Damage over ${duration} Second(s)" : {
+          "value" : {
+            "min" : [ 37.75, 48.5, 58.25, 68.0, 78.75, 88.5, 98.25, 108.0, 118.75, 128.5, 138.25, 148.0 ]
+          },
+          "duration" : {
+            "min" : 4.0
+          }
+        },
+        "${value}% Reduction to Enemy's Health" : {
+          "min" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0 ]
+        },
+        "MaxLevel" : 8,
+        "UltimateLevel" : 12
+      }
+    } ], [ {
+      "name" : "Shocking Armor",
+      "description" : "The rare souls courageous enough to even land a blow on the Destroyer inevitably regret their action as they get afflicted by unbearable pain and become drained of energy.",
+      "parent" : [ "Lavawrought Arsenal" ],
+      "skillIcon" : {
+        "posY" : 217,
+        "posX" : 640
+      },
+      "attributes" : {
+        "${chance}% Chance of +${value}% Lightning Damage Retaliation" : {
+          "chance" : [ 10.0, 11.0, 12.0, 13.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 22.0, 23.0, 24.0, 25.0 ],
+          "value" : [ 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0 ]
+        },
+        "${value} Energy Leech Retaliation over ${duration} Second(s)" : {
+          "value" : {
+            "min" : [ 3.5, 5.1, 6.8, 8.5, 10.1, 11.8, 13.5, 15.1, 16.8, 18.4, 20.0, 21.7, 23.3, 25.0 ]
+          },
+          "duration" : {
+            "min" : 3.0
+          }
+        },
+        "${value} Lightning Damage Retaliation" : {
+          "min" : [ 18.0, 22.0, 27.0, 31.0, 36.0, 40.0, 45.0, 49.0, 54.0, 58.0, 63.0, 67.0, 72.0, 76.0, 82.0, 90.0, 99.0, 108.0 ]
+        },
+        "MaxLevel" : 10,
+        "UltimateLevel" : 14
+      }
+    }, {
+      "name" : "Maximal Firepower",
+      "description" : "Unleash unbridled power to produce a blazing aura that increases the damage you and your allies can inflict.",
+      "skillIcon" : {
+        "posY" : 217,
+        "posX" : 376
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : 60.0,
+        "${value} Energy Cost" : [ 125.0, 137.0, 148.0, 160.0, 172.0, 183.0, 195.0, 207.0, 218.0, 230.0, 242.0, 253.0, 265.0, 277.0, 289.0, 300.0 ],
+        "${value} Second Duration" : 10.0,
+        "${value}m Radius" : 10.0,
+        "${value} Fire Damage" : {
+          "min" : [ 25.0, 31.0, 36.0, 41.0, 46.0, 52.0, 57.0, 63.0, 68.0, 73.0, 79.0, 84.0, 89.0, 94.0, 99.0, 104.0 ]
+        },
+        "${value} Physical Damage" : {
+          "min" : [ 25.0, 31.0, 36.0, 41.0, 46.0, 52.0, 57.0, 63.0, 68.0, 73.0, 79.0, 84.0, 89.0, 94.0, 99.0, 104.0 ]
+        },
+        "+${value}% Burn Damage " : [ 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0, 90.0, 95.0, 100.0 ],
+        "+${value}% Fire Damage" : [ 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0, 90.0, 95.0, 100.0 ],
+        "+${value}% Physical Damage" : [ 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0, 90.0, 95.0, 100.0 ],
+        "MaxLevel" : 12,
+        "UltimateLevel" : 16
+      }
+    }, {
+      "name" : "Viciousness",
+      "description" : "Mercy is for the weakminded, and no Destructor is weakminded.",
+      "parent" : [ "Prepare for Combat" ],
+      "skillIcon" : {
+        "posY" : 217,
+        "posX" : 288
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : [ 0.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0 ],
+        "${value} Energy Cost" : [ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0 ],
+        "${chance}% Chance of ${value}% Reduction to Enemy's Health" : {
+          "chance" : 15.0,
+          "value" : {
+            "min" : [ 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0 ]
+          }
+        },
+        "${chance}% Chance of +${value}% Total Damage" : {
+          "chance" : [ 6.0, 8.0, 9.0, 10.0, 11.0, 13.0, 14.0, 15.0, 16.0, 18.0, 19.0, 20.0 ],
+          "value" : [ 175.0, 175.0, 175.0, 175.0, 175.0, 175.0, 175.0, 175.0, 175.0, 175.0, 175.0, 175.0 ]
+        },
+        "+${value}% Life Leech " : [ 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0 ],
+        "MaxLevel" : 8,
+        "UltimateLevel" : 12
+      }
+    }, {
+      "name" : "Genocide",
+      "description" : "One who wishes to live should hide from the gaze of the Destroyer, in hope to be spared from the wrath of calamitous powers that wear down foes of any strength.",
+      "parent" : [ "Razing Arc" ],
+      "skillIcon" : {
+        "posY" : 217,
+        "posX" : 464
+      },
+      "attributes" : {
+        "${value} Energy Cost" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0 ],
+        "${chance}% Chance of ${value} second(s) of Stun" : {
+          "chance" : [ 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0 ],
+          "value" : {
+            "min" : 1.5
+          }
+        },
+        "${chance}% Chance of ${value}% Reduced Damage over ${duration} Second(s)" : {
+          "chance" : [ 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0 ],
+          "value" : {
+            "min" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0 ]
+          },
+          "duration" : {
+            "min" : 3.0
+          }
+        },
+        "${chance}% Chance of ${value}% Reduced Resistances for ${duration} Second(s)" : {
+          "chance" : [ 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0 ],
+          "value" : {
+            "min" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0 ]
+          },
+          "duration" : {
+            "min" : 3.0
+          }
+        },
+        "${chance}% Chance of ${value}% reduced Defensive Ability over ${duration} Second(s)" : {
+          "chance" : [ 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0 ],
+          "value" : {
+            "min" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0 ]
+          },
+          "duration" : {
+            "min" : 3.0
+          }
+        },
+        "${chance}% Chance of ${value}% reduced Offensive Ability over ${duration} Second(s)" : {
+          "chance" : [ 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0 ],
+          "value" : {
+            "min" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0 ]
+          },
+          "duration" : {
+            "min" : 3.0
+          }
+        },
+        "MaxLevel" : 8,
+        "UltimateLevel" : 12
+      }
+    } ], [ {
+      "name" : "Thunder Sparks",
+      "description" : "Volatile electrical energy heeds the call of your fury, adding up to the power of your Earth Smashes and fries your enemies from the inside.",
+      "parent" : [ "Lay Waste" ],
+      "skillIcon" : {
+        "posY" : 155,
+        "posX" : 112
+      },
+      "attributes" : {
+        "${value} Energy Cost" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0 ],
+        "${chance}% Chance of ${value} second(s) of Skill Disruption" : {
+          "chance" : 25.0,
+          "value" : {
+            "min" : [ 1.0, 1.25, 1.5, 1.75, 2.0, 2.25, 2.5, 2.75, 3.0, 3.25, 3.5, 3.75, 4.0, 4.25, 4.5, 4.75, 5.0, 5.25 ]
+          }
+        },
+        "${value} Electrical Burn Damage over ${duration} Second(s)" : {
+          "value" : {
+            "min" : [ 20.0, 29.0, 38.0, 47.0, 54.0, 62.0, 71.0, 79.0, 86.0, 94.0, 103.0, 112.0, 121.0, 127.0, 137.0, 144.0, 153.0, 160.0 ]
+          },
+          "duration" : {
+            "min" : 3.0
+          }
+        },
+        "${value}% Reduced Resistances for ${duration} Second(s)" : {
+          "value" : {
+            "min" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 20.0, 21.0, 23.0, 25.0 ]
+          },
+          "duration" : {
+            "min" : 3.0
+          }
+        },
+        "MaxLevel" : 14,
+        "UltimateLevel" : 18
+      }
+    }, {
+      "name" : "Hand of God",
+      "description" : "Abuse your power by smiting a single enemy with unseen might, just like the divine beings ever would. {^n}{^y}Requires a melee weapon.",
+      "skillIcon" : {
+        "posY" : 155,
+        "posX" : 464
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : 20.0,
+        "${value} Energy Cost" : [ 100.0, 111.0, 122.0, 133.0, 144.0, 155.0, 166.0, 177.0, 188.0, 200.0, 210.0, 220.0, 230.0, 240.0 ],
+        "Launches ${value} Projectile(s)" : 1,
+        "+${value}% Physical Damage" : [ 100.0, 120.0, 140.0, 160.0, 180.0, 200.0, 220.0, 240.0, 260.0, 280.0, 300.0, 320.0, 340.0, 360.0 ],
+        "+${value}% Total Damage" : [ 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 87.0, 94.0, 100.0 ],
+        "MaxLevel" : 10,
+        "UltimateLevel" : 14,
+        "requiredWeapons" : "Sword, Spear, Axe, Mace, Bow"
+      }
+    }, {
+      "name" : "Scions of Embers",
+      "description" : "The lord of destruction has his personal army of fiery minions to assist him in fighting. When an weakling enemy is vanquished, one of your minions can rise from the ashes and fight for a short period of time.",
+      "castOnTarget" : true,
+      "castOnDamage" : "ALL",
+      "triggerType" : "if the target is killed",
+      "skillIcon" : {
+        "posY" : 155,
+        "posX" : 288
+      },
+      "attributes" : {
+        "${value}% Chance of activating" : [ 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0 ],
+        "MaxLevel" : 12,
+        "UltimateLevel" : 16
+      },
+      "skillCast" : {
+        "castLevels" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0 ],
+        "castSkills" : [ {
+          "name" : "Blessing of Jin Chan",
+          "description" : "The blessings of Jin Chan are upon you, granting a chance for additional boons for every enemy slain.{^n}{^Y} Can trigger on enemy death.  ",
+          "attributes" : {
+            "${value}m Radius" : 1.0,
+            "Launches ${value} Projectile(s)" : 1,
+            "${value} Summon Limit " : 4,
+            "${value} Summoned Immediately" : 1,
+            "Life Time ${value} Seconds" : 35.0,
+            "MaxLevel" : 12,
+            "UltimateLevel" : 16
+          },
+          "pet" : {
+            "attributes" : {
+              "+${value} Health Regeneration per second" : [ 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5 ],
+              "+${value} Intelligence" : [ 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0 ],
+              "+${value} Energy" : [ 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0 ],
+              "+${value} Base Casting Speed" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+              "+${value} Strength" : [ 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0, 128.0 ],
+              "+${value} Base Movement Speed" : [ 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88 ],
+              " Bonus Damage on Hand Attacks" : {
+                "min" : [ 33.89, 37.78, 41.67, 45.56, 49.45, 53.34, 57.23, 61.12, 65.01, 68.9, 72.79, 76.68, 80.57, 84.46, 88.35, 92.24 ],
+                "max" : [ 37.96, 41.92, 45.88, 49.84, 53.8, 57.76, 61.72, 65.68, 69.64, 73.6, 77.56, 81.52, 85.48, 89.44, 93.4, 97.36 ]
+              },
+              "+${value} Health" : [ 137.0, 137.0, 137.0, 137.0, 137.0, 137.0, 137.0, 137.0, 137.0, 137.0, 137.0, 137.0, 137.0, 137.0, 137.0, 137.0 ],
+              "+${value} Dexterity" : [ 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0, 68.0 ],
+              "+${value} Energy Regeneration per second" : [ 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0 ],
+              "+${value} Base Attack Speed" : [ 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89, 0.89 ]
+            },
+            "petSkills" : {
+              "Basic Attack" : {
+                "name" : "Basic Attack",
+                "attributes" : {
+                  "Launches ${value} Projectile(s)" : 1,
+                  "${value} Burn Damage over ${duration} Second(s)" : {
+                    "value" : {
+                      "min" : [ 13.0, 18.0, 22.0, 27.0, 30.0, 35.0, 39.0, 43.0, 48.0, 52.0, 57.0, 61.0, 65.0, 70.0, 74.0, 78.0, 82.0, 87.0, 91.0, 96.0 ]
+                    },
+                    "duration" : {
+                      "min" : 3.0
+                    }
+                  },
+                  "${value} Fire Damage" : {
+                    "min" : [ 13.0, 18.0, 22.0, 27.0, 30.0, 35.0, 39.0, 43.0, 48.0, 52.0, 57.0, 61.0, 65.0, 70.0, 74.0, 78.0, 82.0, 87.0, 91.0, 96.0 ]
+                  },
+                  "${value} Physical Damage" : {
+                    "min" : [ 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0, 66.0, 70.0, 74.0, 78.0, 82.0, 86.0, 90.0 ]
+                  },
+                  "MaxLevel" : 20,
+                  "UltimateLevel" : 20
+                }
+              },
+              "Armor_Passive" : {
+                "name" : "Armor_Passive",
+                "attributes" : {
+                  "${value} Armor" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0, 28.0, 29.0, 30.0, 31.0, 32.0, 33.0, 34.0, 35.0, 36.0, 37.0, 38.0, 39.0, 40.0, 41.0, 42.0, 43.0, 44.0, 45.0, 46.0, 47.0, 48.0, 49.0, 50.0, 51.0, 52.0, 53.0, 54.0, 55.0, 56.0, 57.0, 58.0, 59.0, 60.0, 61.0, 62.0, 63.0, 64.0, 65.0, 66.0, 67.0, 68.0, 69.0, 70.0, 71.0, 72.0, 73.0, 74.0, 75.0, 76.0, 77.0, 78.0, 79.0, 80.0, 81.0, 82.0, 83.0, 84.0, 85.0, 86.0, 87.0, 88.0, 89.0, 90.0, 91.0, 92.0, 93.0, 94.0, 95.0, 96.0, 97.0, 98.0, 99.0, 100.0, 101.0, 102.0, 103.0, 104.0, 105.0, 106.0, 107.0, 108.0, 109.0, 110.0, 111.0, 112.0, 113.0, 114.0, 115.0, 116.0, 117.0, 118.0, 119.0, 120.0, 121.0, 122.0, 123.0, 124.0, 125.0, 126.0, 127.0, 128.0, 129.0, 130.0, 131.0, 132.0, 133.0, 134.0, 135.0, 136.0, 137.0, 138.0, 139.0, 140.0, 141.0, 142.0, 143.0, 144.0, 145.0, 146.0, 147.0, 148.0, 149.0, 150.0, 151.0, 152.0, 153.0, 154.0, 155.0, 156.0, 157.0, 158.0, 159.0, 160.0, 161.0, 162.0, 163.0, 164.0, 165.0, 166.0, 167.0, 168.0, 169.0, 170.0, 171.0, 172.0, 173.0, 174.0, 175.0, 176.0, 177.0, 178.0, 179.0, 180.0, 181.0, 182.0, 183.0, 184.0, 185.0, 186.0, 187.0, 188.0, 189.0, 190.0, 191.0, 192.0, 193.0, 194.0, 195.0, 196.0, 197.0, 198.0, 199.0, 200.0, 201.0, 202.0, 203.0, 204.0, 205.0, 206.0, 207.0, 208.0, 209.0, 210.0, 211.0, 212.0, 213.0, 214.0, 215.0, 216.0, 217.0, 218.0, 219.0, 220.0, 221.0, 222.0, 223.0, 224.0, 225.0, 226.0, 227.0, 228.0, 229.0, 230.0, 231.0, 232.0, 233.0, 234.0, 235.0, 236.0, 237.0, 238.0, 239.0, 240.0, 241.0, 242.0, 243.0, 244.0, 245.0, 246.0, 247.0, 248.0, 249.0, 250.0, 251.0, 252.0, 253.0, 254.0, 255.0, 256.0, 257.0, 258.0, 259.0, 260.0, 261.0, 262.0, 263.0, 264.0, 265.0, 266.0, 267.0, 268.0, 269.0, 270.0, 271.0, 272.0, 273.0, 274.0, 275.0, 276.0, 277.0, 278.0, 279.0, 280.0, 281.0, 282.0, 283.0, 284.0, 285.0, 286.0, 287.0, 288.0, 289.0, 290.0, 291.0, 292.0, 293.0, 294.0, 295.0, 296.0, 297.0, 298.0, 299.0, 300.0, 301.0, 302.0, 303.0, 304.0, 305.0, 306.0, 307.0, 308.0, 309.0, 310.0, 311.0, 312.0, 313.0, 314.0, 315.0, 316.0, 317.0, 318.0, 319.0, 320.0, 321.0, 322.0, 323.0, 324.0, 325.0, 326.0, 327.0, 328.0, 329.0, 330.0, 331.0, 332.0, 333.0, 334.0, 335.0, 336.0, 337.0, 338.0, 339.0, 340.0, 341.0, 342.0, 343.0, 344.0, 345.0, 346.0, 347.0, 348.0, 349.0, 350.0, 351.0, 352.0, 353.0, 354.0, 355.0, 356.0, 357.0, 358.0, 359.0, 360.0, 361.0, 362.0, 363.0, 364.0, 365.0, 366.0, 367.0, 368.0, 369.0, 370.0, 371.0, 372.0, 373.0, 374.0, 375.0, 376.0, 377.0, 378.0, 379.0, 380.0, 381.0, 382.0, 383.0, 384.0, 385.0, 386.0, 387.0, 388.0, 389.0, 390.0, 391.0, 392.0, 393.0, 394.0, 395.0, 396.0, 397.0, 398.0, 399.0, 400.0, 401.0, 402.0, 403.0, 404.0, 405.0, 406.0, 407.0, 408.0, 409.0, 410.0, 411.0, 412.0, 413.0, 414.0, 415.0, 416.0, 417.0, 418.0, 419.0, 420.0, 421.0, 422.0, 423.0, 424.0, 425.0, 426.0, 427.0, 428.0, 429.0, 430.0, 431.0, 432.0, 433.0, 434.0, 435.0, 436.0, 437.0, 438.0, 439.0, 440.0, 441.0, 442.0, 443.0, 444.0, 445.0, 446.0, 447.0, 448.0, 449.0, 450.0, 451.0, 452.0, 453.0, 454.0, 455.0, 456.0, 457.0, 458.0, 459.0, 460.0, 461.0, 462.0, 463.0, 464.0, 465.0, 466.0, 467.0, 468.0, 469.0, 470.0, 471.0, 472.0, 473.0, 474.0, 475.0, 476.0, 477.0, 478.0, 479.0, 480.0, 481.0, 482.0, 483.0, 484.0, 485.0, 486.0, 487.0, 488.0, 489.0, 490.0, 491.0, 492.0, 493.0, 494.0, 495.0, 496.0, 497.0, 498.0, 499.0, 500.0, 501.0, 502.0, 503.0, 504.0, 505.0, 506.0, 507.0, 508.0, 509.0, 510.0, 511.0, 512.0, 513.0, 514.0, 515.0, 516.0, 517.0, 518.0, 519.0, 520.0, 521.0, 522.0, 523.0, 524.0, 525.0, 526.0, 527.0, 528.0, 529.0, 530.0, 531.0, 532.0, 533.0, 534.0, 535.0, 536.0, 537.0, 538.0, 539.0, 540.0, 541.0, 542.0, 543.0, 544.0, 545.0, 546.0, 547.0, 548.0, 549.0, 550.0, 551.0, 552.0, 553.0, 554.0, 555.0, 556.0, 557.0, 558.0, 559.0, 560.0, 561.0, 562.0, 563.0, 564.0, 565.0, 566.0, 567.0, 568.0, 569.0, 570.0, 571.0, 572.0, 573.0, 574.0, 575.0, 576.0, 577.0, 578.0, 579.0, 580.0, 581.0, 582.0, 583.0, 584.0, 585.0, 586.0, 587.0, 588.0, 589.0, 590.0, 591.0, 592.0, 593.0, 594.0, 595.0, 596.0, 597.0, 598.0, 599.0, 600.0, 601.0, 602.0, 603.0, 604.0, 605.0, 606.0, 607.0, 608.0, 609.0, 610.0, 611.0, 612.0, 613.0, 614.0, 615.0, 616.0, 617.0, 618.0, 619.0, 620.0, 621.0, 622.0, 623.0, 624.0, 625.0, 626.0, 627.0, 628.0, 629.0, 630.0, 631.0, 632.0, 633.0, 634.0, 635.0, 636.0, 637.0, 638.0, 639.0, 640.0, 641.0, 642.0, 643.0, 644.0, 645.0, 646.0, 647.0, 648.0, 649.0, 650.0 ],
+                  "MaxLevel" : 1000
+                }
+              },
+              "Fire Blast (on Death)" : {
+                "name" : "Fire Blast (on Death)",
+                "attributes" : {
+                  "${value}m Radius" : 3.5,
+                  "${value} Fire Damage" : {
+                    "min" : [ 27.0, 35.0, 43.0, 51.0, 59.0, 67.0, 75.0, 83.0, 91.0, 99.0, 107.0, 115.0, 123.0, 131.0, 139.0, 147.0, 155.0, 163.0, 171.0, 179.0 ]
+                  },
+                  "${value} Physical Damage" : {
+                    "min" : [ 27.0, 35.0, 43.0, 51.0, 59.0, 67.0, 75.0, 83.0, 91.0, 99.0, 107.0, 115.0, 123.0, 131.0, 139.0, 147.0, 155.0, 163.0, 171.0, 179.0 ]
+                  },
+                  "${value} Piercing Damage" : {
+                    "min" : [ 27.0, 35.0, 43.0, 51.0, 59.0, 67.0, 75.0, 83.0, 91.0, 99.0, 107.0, 115.0, 123.0, 131.0, 139.0, 147.0, 155.0, 163.0, 171.0, 179.0 ]
+                  },
+                  "MaxLevel" : 12,
+                  "UltimateLevel" : 16
+                }
+              },
+              "DodgeProjectile_1%perlevelx100" : {
+                "name" : "DodgeProjectile_1%perlevelx100",
+                "attributes" : {
+                  "${value}% Chance to Avoid Projectiles" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0, 28.0, 29.0, 30.0, 31.0, 32.0, 33.0, 34.0, 35.0, 36.0, 37.0, 38.0, 39.0, 40.0, 41.0, 42.0, 43.0, 44.0, 45.0, 46.0, 47.0, 48.0, 49.0, 50.0, 51.0, 52.0, 53.0, 54.0, 55.0, 56.0, 57.0, 58.0, 59.0, 60.0, 61.0, 62.0, 63.0, 64.0, 65.0, 66.0, 67.0, 68.0, 69.0, 70.0, 71.0, 72.0, 73.0, 74.0, 75.0, 76.0, 77.0, 78.0, 79.0, 80.0, 81.0, 82.0, 83.0, 84.0, 85.0, 86.0, 87.0, 88.0, 89.0, 90.0, 91.0, 92.0, 93.0, 94.0, 95.0, 96.0, 97.0, 98.0, 99.0, 100.0 ],
+                  "MaxLevel" : 100
+                }
+              }
+            },
+            "petSkillLevels" : {
+              "Basic Attack" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ],
+              "Armor_Passive" : [ 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42 ],
+              "Fire Blast (on Death)" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ],
+              "DodgeProjectile_1%perlevelx100" : [ 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10 ]
+            }
+          }
+        } ]
+      }
+    }, {
+      "name" : "Evilminded Ancestry",
+      "description" : "A whole lineage precedes the author of calamities, and with every generation, descendants grow exponentially stronger.",
+      "parent" : [ "Brand of Destruction" ],
+      "skillIcon" : {
+        "posY" : 155,
+        "posX" : 200
+      },
+      "attributes" : {
+        "${value} Energy Reserved" : 25.0,
+        "${value}% Fire Resistance" : [ 15.0, 19.0, 23.0, 26.0, 30.0, 34.0, 38.0, 41.0, 45.0, 49.0, 53.0, 56.0, 60.0, 64.0 ],
+        "${value}% Vitality Damage Resistance" : [ 15.0, 19.0, 23.0, 26.0, 30.0, 34.0, 38.0, 41.0, 45.0, 49.0, 53.0, 56.0, 60.0, 64.0 ],
+        "+${value}% Energy" : [ 10.0, 12.0, 13.0, 15.0, 16.0, 18.0, 19.0, 21.0, 22.0, 24.0, 25.0, 27.0, 28.0, 30.0 ],
+        "MaxLevel" : 10,
+        "UltimateLevel" : 14
+      }
+    }, {
+      "name" : "Dissonance",
+      "description" : "Pulsing destruction takes form inside your enemies, conflicting with their own thoughts. Indecisive and disrupted, they become unable to take decisions or think clearly, turning them into diminished threats.",
+      "doesNotIncludeRacialDamage" : true,
+      "skillIcon" : {
+        "posY" : 155,
+        "posX" : 640
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : 14.0,
+        "${value} Energy Cost" : [ 65.0, 69.0, 73.0, 77.0, 81.0, 85.0, 90.0, 94.0, 98.0, 102.0, 106.0, 110.0 ],
+        "${value} Second Duration" : 6.0,
+        "${value}m Radius" : 6.0,
+        "+${value}% Intelligence" : [ -10.0, -12.0, -14.0, -16.0, -19.0, -21.0, -23.0, -25.0, -28.0, -30.0, -31.0, -33.0 ],
+        "${value}% Energy Leech Resistance" : [ -50.0, -57.0, -64.0, -70.0, -77.0, -84.0, -91.0, -98.0, -105.0, -111.0, -118.0, -125.0 ],
+        "${value}% Skill Disruption Protection" : [ -50.0, -57.0, -64.0, -70.0, -77.0, -84.0, -91.0, -98.0, -105.0, -111.0, -118.0, -125.0 ],
+        "+${value}% Casting Speed" : [ -20.0, -24.0, -27.0, -31.0, -35.0, -38.0, -42.0, -45.0, -49.0, -53.0, -56.0, -60.0 ],
+        "MaxLevel" : 8,
+        "UltimateLevel" : 12
+      }
+    }, {
+      "name" : "Flash",
+      "description" : "Destructors have a reputation of delivering swift and unpredictable counter-attacks.",
+      "skillIcon" : {
+        "posY" : 155,
+        "posX" : 552
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : 10.0,
+        "${value} Energy Cost" : [ 72.0, 84.0, 96.0, 108.0, 120.0, 132.0, 144.0, 156.0, 168.0, 180.0, 192.0, 204.0 ],
+        "${value} Second Duration" : 4.0,
+        "${value} Electrical Burn Retaliation over ${duration} Second(s)" : {
+          "value" : {
+            "min" : [ 37.56, 48.0, 59.0, 69.0, 79.0, 90.0, 101.0, 111.0, 121.0, 132.0, 143.0, 153.0 ]
+          },
+          "duration" : {
+            "min" : 3.0
+          }
+        },
+        "${value} Lightning Damage Retaliation" : {
+          "min" : [ 72.0, 88.0, 103.0, 119.0, 134.0, 150.0, 166.0, 181.0, 197.0, 212.0, 228.0, 244.0 ]
+        },
+        "${value}% Absorption of Spell Energy" : [ 150.0, 150.0, 150.0, 150.0, 150.0, 150.0, 150.0, 150.0, 150.0, 150.0, 150.0, 150.0 ],
+        "+${value}% Defensive Ability" : [ 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0 ],
+        "MaxLevel" : 8,
+        "UltimateLevel" : 12
+      }
+    } ], [ {
+      "name" : "Globe of Fiery Tenebrosity",
+      "description" : "Exert all your magical power to conjure a ball of volatile fiery power, and hurl it at your foes. Upon hitting an enemy, the magic explodes over a wide area and inflicts a long-lasting debuff on all enemies in the area.",
+      "skillIcon" : {
+        "posY" : 93,
+        "posX" : 552
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : 15.0,
+        "${value} Energy Cost" : [ 75.0, 79.0, 83.0, 87.0, 91.0, 95.0, 99.0, 103.0, 107.0, 111.0, 115.0, 119.0, 123.0, 127.0, 131.0, 135.0 ],
+        "${value} Second Duration" : [ 8.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0 ],
+        "${value}m Radius" : 8.0,
+        "${value} Fire Damage" : {
+          "min" : [ 40.8, 54.0, 66.0, 79.0, 92.0, 105.0, 118.0, 130.0, 143.0, 156.0, 169.0, 182.0, 194.0, 207.0, 220.0, 233.0 ]
+        },
+        "${value} Projectile(s)" : 1,
+        "${value}% Fire Resistance" : [ -10.0, -12.0, -14.0, -15.0, -17.0, -19.0, -21.0, -23.0, -25.0, -26.0, -28.0, -30.0, -32.0, -35.0, -38.0, -40.0 ],
+        "${value}% Reduction in Burn Duration" : [ -10.0, -12.0, -14.0, -15.0, -17.0, -19.0, -21.0, -23.0, -25.0, -26.0, -28.0, -30.0, -32.0, -35.0, -38.0, -40.0 ],
+        "${value}% Vitality Damage Resistance" : [ -10.0, -12.0, -14.0, -15.0, -17.0, -19.0, -21.0, -23.0, -25.0, -26.0, -28.0, -30.0, -32.0, -35.0, -38.0, -40.0 ],
+        "MaxLevel" : 12,
+        "UltimateLevel" : 16,
+        "${chance}% Chance for one of the following:" : {
+          "chance" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ],
+          "values" : {
+            "${chance}% Chance of ${value} second(s) of Skill Disruption" : {
+              "chance" : 50.0,
+              "value" : {
+                "min" : 3.0
+              }
+            },
+            "${chance}% Chance of ${value} second(s) of Fear" : {
+              "chance" : 50.0,
+              "value" : {
+                "min" : 2.0
+              }
+            }
+          }
+        }
+      }
+    }, {
+      "name" : "Globe of Electrical Tenebrosity",
+      "description" : "Exert all your magical power to conjure a ball of volatile electrical power, and hurl it at your foes. Upon hitting an enemy, the magic explodes over a wide area and inflicts a long-lasting debuff on all enemies in the area.",
+      "skillIcon" : {
+        "posY" : 93,
+        "posX" : 640
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : 15.0,
+        "${value} Energy Cost" : [ 75.0, 79.0, 83.0, 87.0, 91.0, 95.0, 99.0, 103.0, 107.0, 111.0, 115.0, 119.0, 123.0, 127.0, 131.0, 135.0 ],
+        "${value} Second Duration" : [ 8.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0 ],
+        "${value}m Radius" : 8.0,
+        "${value} Lightning Damage" : {
+          "min" : [ 40.8, 54.0, 66.0, 79.0, 92.0, 105.0, 118.0, 130.0, 143.0, 156.0, 169.0, 182.0, 194.0, 207.0, 220.0, 233.0 ]
+        },
+        "${value} Projectile(s)" : 1,
+        "${value}% Lightning Resistance" : [ -10.0, -12.0, -14.0, -15.0, -17.0, -19.0, -21.0, -23.0, -25.0, -26.0, -28.0, -30.0, -32.0, -35.0, -38.0, -40.0 ],
+        "${value}% Reduction in Lightning Duration" : [ -10.0, -12.0, -14.0, -15.0, -17.0, -19.0, -21.0, -23.0, -25.0, -26.0, -28.0, -30.0, -32.0, -35.0, -38.0, -40.0 ],
+        "${value}% Vitality Damage Resistance" : [ -10.0, -12.0, -14.0, -15.0, -17.0, -19.0, -21.0, -23.0, -25.0, -26.0, -28.0, -30.0, -32.0, -35.0, -38.0, -40.0 ],
+        "MaxLevel" : 12,
+        "UltimateLevel" : 16,
+        "${chance}% Chance for one of the following:" : {
+          "chance" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0 ],
+          "values" : {
+            "${chance}% Chance of ${value} second(s) of Skill Disruption" : {
+              "chance" : 50.0,
+              "value" : {
+                "min" : 3.0
+              }
+            },
+            "${chance}% Chance of ${value} second(s) of Fear" : {
+              "chance" : 50.0,
+              "value" : {
+                "min" : 2.0
+              }
+            }
+          }
+        }
+      }
+    }, {
+      "name" : "Overthrow",
+      "description" : "The Destroyer is never easily stopped in its step, bringing down even the strongest foes with ease.",
+      "skillIcon" : {
+        "posY" : 93,
+        "posX" : 112
+      },
+      "attributes" : {
+        "+${value}% Damage to Humankind" : [ 25.0, 33.0, 41.0, 49.0, 57.0, 65.0, 73.0, 82.0, 91.0, 100.0 ],
+        "+${value}% Less Damage from Humankind" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0 ],
+        "+${value}% Physical Damage" : [ 25.0, 31.0, 36.0, 40.0, 45.0, 50.0, 56.0, 62.0, 68.0, 74.0 ],
+        "MaxLevel" : 6,
+        "UltimateLevel" : 10
+      }
+    }, {
+      "name" : "Void Rip",
+      "description" : "Powers from uncharted dimensions cannot escape your grasp, as you can wield them to augment your superiority on the battlefield.",
+      "parent" : [ "Bladestorm" ],
+      "skillIcon" : {
+        "posY" : 217,
+        "posX" : 552
+      },
+      "attributes" : {
+        "${value} Energy Cost" : [ 10.0, 17.0, 24.0, 31.0, 38.0, 45.0, 52.0, 59.0, 66.0, 73.0, 80.0, 87.0 ],
+        "${value}% Reduced Resistances for ${duration} Second(s)" : {
+          "value" : {
+            "min" : [ 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 16.0, 17.0, 18.0, 19.0, 20.0 ]
+          },
+          "duration" : {
+            "min" : 3.0
+          }
+        },
+        "${value}% Reduction to Enemy's Health" : {
+          "min" : [ 5.0, 5.0, 6.0, 6.0, 7.0, 7.0, 8.0, 8.0, 9.0, 9.0, 10.0, 10.0 ]
+        },
+        "+${value}% Damage to Ghost" : 33.0,
+        "+${value}% Total Damage" : [ 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 44.0, 50.0, 55.0, 60.0 ],
+        "MaxLevel" : 6,
+        "UltimateLevel" : 10
+      }
+    }, {
+      "name" : "The Power Overwhelming",
+      "description" : "The culmination of your destructive powers does not exist, and so has always been the way of Destructors.{^n}{^y}Scales infinitely beyond the maximum level.",
+      "skillIcon" : {
+        "posY" : 93,
+        "posX" : 200
+      },
+      "attributes" : {
+        "^a${value} Second(s) Recharge" : 12.0,
+        "${value} Energy Reserved" : [ 100.0, 120.0, 140.0, 160.0, 180.0, 200.0, 220.0, 240.0, 260.0, 280.0, 300.0, 320.0, 340.0, 360.0, 380.0, 400.0, 420.0, 440.0, 460.0, 480.0, 500.0, 520.0, 540.0, 560.0, 580.0, 600.0, 620.0, 640.0, 660.0, 680.0, 700.0, 720.0, 740.0, 760.0, 780.0, 800.0, 820.0, 840.0, 860.0, 880.0, 900.0, 920.0, 940.0, 960.0, 980.0, 1000.0, 1020.0, 1040.0, 1060.0, 1080.0, 1100.0, 1120.0, 1140.0, 1160.0, 1180.0, 1200.0, 1220.0, 1240.0, 1260.0, 1280.0, 1300.0, 1320.0, 1340.0, 1360.0, 1380.0, 1400.0, 1420.0, 1440.0, 1460.0, 1480.0, 1500.0, 1520.0, 1540.0, 1560.0, 1580.0, 1600.0, 1620.0, 1640.0, 1660.0, 1680.0, 1700.0, 1720.0, 1740.0, 1760.0, 1780.0, 1800.0, 1820.0, 1840.0, 1860.0, 1880.0, 1900.0, 1920.0, 1940.0, 1960.0, 1980.0, 2000.0, 2020.0, 2040.0, 2060.0, 2080.0 ],
+        "${value}% Energy Reserved" : [ 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0, 28.0, 29.0, 30.0, 31.0, 32.0, 33.0, 34.0, 35.0, 36.0, 37.0, 38.0, 39.0, 40.0, 41.0, 42.0, 43.0, 44.0, 45.0, 46.0, 47.0, 48.0, 49.0, 50.0, 51.0, 52.0, 53.0, 54.0, 55.0, 56.0, 57.0, 58.0, 59.0, 60.0, 61.0, 62.0, 63.0, 64.0, 65.0, 66.0, 67.0, 68.0, 69.0, 70.0, 71.0, 72.0, 73.0, 74.0, 75.0, 76.0, 77.0, 78.0, 79.0, 80.0, 81.0, 82.0, 83.0, 84.0, 85.0, 86.0, 87.0, 88.0, 89.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0 ],
+        "+${value}% Total Damage" : [ 15.0, 21.82, 28.65, 35.56, 42.38, 49.28, 56.1, 62.92, 69.82, 76.73, 83.47, 90.37, 97.28, 104.18, 110.92, 117.83, 126.72, 135.54, 144.35, 153.25, 162.08, 170.98, 179.79, 188.61, 197.52, 206.41, 215.15, 224.05, 232.95, 243.84, 254.57, 265.47, 276.36, 287.18, 297.99, 308.89, 319.7, 330.59, 341.41, 355.26, 369.1, 382.95, 396.72, 410.65, 424.5, 438.34, 452.11, 465.96, 479.89, 493.73, 507.5, 521.35, 535.19, 549.13, 562.89, 576.74, 590.59, 604.43, 618.21, 632.14, 645.98, 659.83, 673.59, 687.44, 701.37, 715.21, 728.99, 742.84, 756.68, 770.61, 784.37, 798.22, 812.08, 825.92, 839.69, 853.62, 867.46, 881.31, 895.08, 908.93, 922.86, 936.7, 950.47, 964.32, 978.16, 992.09, 1005.86, 1019.71, 1033.56, 1047.41, 1061.17, 1075.1, 1088.95, 1102.8, 1116.56, 1130.41, 1144.33, 1158.19, 1171.95, 1185.8 ],
+        "MaxLevel" : 16,
+        "UltimateLevel" : 100
+      }
+    }, {
+      "name" : "Mana Reservoir",
+      "description" : "With your every attack, you can increase your energy limit for a few moments. {^y}Apply this skill to your left mouse button.",
+      "skillIcon" : {
+        "posY" : 93,
+        "posX" : 290
+      },
+      "attributes" : {
+        "${value} Energy Cost" : 3.0,
+        "${value} Charge Levels" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0 ],
+        "+${value} Energy" : [ 200.0, 300.0, 400.0, 500.0, 600.0, 700.0, 800.0, 900.0, 1000.0, 1100.0, 1200.0, 1300.0, 1400.0, 1500.0 ],
+        "${value} Second(s) Charge Level Duration" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+        "+${value}% Energy Regeneration" : [ 100.0, 130.0, 160.0, 190.0, 220.0, 250.0, 280.0, 310.0, 340.0, 370.0, 400.0, 430.0 ],
+        "MaxLevel" : 10,
+        "UltimateLevel" : 14
+      }
+    } ], [ {
+      "name" : "Overkill",
+      "description" : "Perhaps all this violence isn’t necessary, but the forces of evil deserve no less. ",
+      "parent" : [ "Hand of God" ],
+      "skillIcon" : {
+        "posY" : 31,
+        "posX" : 464
+      },
+      "attributes" : {
+        "${value} Energy Cost" : [ 24.0, 48.0, 72.0, 96.0, 120.0, 144.0, 168.0, 192.0, 216.0, 240.0, 264.0, 288.0 ],
+        "${value} Burn Damage over ${duration} Second(s)" : {
+          "value" : {
+            "min" : [ 60.0, 76.0, 92.0, 108.0, 124.0, 140.0, 156.0, 172.0, 191.0, 210.0, 232.0, 250.0 ]
+          },
+          "duration" : {
+            "min" : 3.0
+          }
+        },
+        "${value} Electrical Burn Damage over ${duration} Second(s)" : {
+          "value" : {
+            "min" : [ 60.0, 76.0, 92.0, 108.0, 124.0, 140.0, 156.0, 172.0, 191.0, 210.0, 232.0, 250.0 ]
+          },
+          "duration" : {
+            "min" : 3.0
+          }
+        },
+        "${value} Life Leech over ${duration} Second(s)" : {
+          "value" : {
+            "min" : [ 40.0, 46.0, 52.0, 58.0, 64.0, 70.0, 76.0, 82.0, 91.0, 100.0, 110.0, 120.0 ]
+          },
+          "duration" : {
+            "min" : 3.0
+          }
+        },
+        "MaxLevel" : 8,
+        "UltimateLevel" : 12
+      }
+    }, {
+      "name" : "Birth of the Flameforged",
+      "description" : "Your strongest minions can take form in this world in the form of a colossal golem of magma and rock.",
+      "parent" : [ "Maximal Firepower" ],
+      "skillIcon" : {
+        "posY" : 31,
+        "posX" : 376
+      },
+      "attributes" : {
+        "${value} Summon Limit " : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+        "Extra Life Time ${value} Seconds" : [ 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0 ],
+        "MaxLevel" : 16,
+        "UltimateLevel" : 20
+      },
+      "pet" : {
+        "attributes" : {
+          "+${value} Intelligence" : [ 84.624, 90.624, 96.624, 102.624, 108.624, 114.624, 120.624, 126.624, 132.624, 138.624, 144.624, 150.624, 156.624, 162.624, 168.624, 174.624, 187.624, 193.624, 199.624, 205.624 ],
+          "+${value} Energy" : [ 599.0, 622.0, 645.0, 668.0, 691.0, 714.0, 737.0, 760.0, 783.0, 806.0, 829.0, 852.0, 875.0, 898.0, 921.0, 944.0, 975.0, 998.0, 1021.0, 1044.0 ],
+          "+${value} Base Casting Speed" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+          "+${value} Strength" : [ 381.272, 386.272, 391.272, 396.272, 401.272, 406.272, 411.272, 416.272, 421.272, 426.272, 431.272, 436.272, 441.272, 446.272, 451.272, 456.272, 453.272, 458.272, 463.272, 468.272 ],
+          "+${value} Base Movement Speed" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+          " Bonus Damage on Hand Attacks" : {
+            "min" : [ 52.4, 52.4, 52.4, 52.4, 52.4, 52.4, 52.4, 52.4, 52.4, 52.4, 52.4, 52.4, 52.4, 52.4, 52.4, 52.4, 52.4, 52.4, 52.4, 52.4 ],
+            "max" : [ 61.6, 61.6, 61.6, 61.6, 61.6, 61.6, 61.6, 61.6, 61.6, 61.6, 61.6, 61.6, 61.6, 61.6, 61.6, 61.6, 61.6, 61.6, 61.6, 61.6 ]
+          },
+          "+${value} Health" : [ 1600.0, 1750.0, 1900.0, 2050.0, 2200.0, 2350.0, 2500.0, 2650.0, 2800.0, 2950.0, 3100.0, 3250.0, 3400.0, 3550.0, 3700.0, 3850.0, 3900.0, 4050.0, 4200.0, 4350.0 ],
+          "+${value} Dexterity" : [ 191.328, 197.328, 203.328, 209.328, 215.328, 221.328, 227.328, 233.328, 239.328, 245.328, 251.328, 257.328, 263.328, 269.328, 275.328, 281.328, 281.328, 287.328, 293.328, 299.328 ],
+          "+${value} Base Attack Speed" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ]
+        },
+        "initialSkill" : {
+          "name" : "Incinerate",
+          "doesNotIncludeRacialDamage" : true,
+          "attributes" : {
+            "^a${value} Second(s) Recharge" : 4.0,
+            "${value} Active Energy Cost per Second" : [ 3.29, 3.58, 3.87, 4.16, 4.45, 4.74, 5.03, 5.32, 5.61, 5.9, 6.19, 6.48, 6.77, 7.06, 7.35, 7.64, 7.93, 8.22, 8.51, 8.8, 9.09, 9.38, 9.67, 9.96 ],
+            "${value}m Radius" : [ 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0 ],
+            "${value} Burn Damage over ${duration} Second(s)" : {
+              "value" : {
+                "min" : [ 18.0, 23.0, 27.0, 31.0, 36.0, 41.0, 45.0, 49.0, 54.0, 58.0, 62.0, 67.0, 71.0, 75.0, 80.0, 84.0, 89.0, 93.0, 97.0, 102.0, 106.0, 110.0, 114.0, 119.0 ]
+              },
+              "duration" : {
+                "min" : 8.0
+              }
+            },
+            "${value} Fire Damage" : {
+              "min" : [ 20.0, 23.0, 25.0, 28.0, 31.0, 34.0, 37.0, 39.0, 42.0, 45.0, 48.0, 51.0, 53.0, 56.0, 59.0, 62.0, 65.0, 67.0, 70.0, 73.0, 76.0, 79.0, 81.0, 84.0 ]
+            },
+            "MaxLevel" : 24,
+            "UltimateLevel" : 24
+          }
+        },
+        "petSkills" : {
+          "Volcanic Barrage" : {
+            "name" : "Volcanic Barrage",
+            "attributes" : {
+              "^a${value} Second(s) Recharge" : 6.0,
+              "${value} Energy Cost" : [ 112.0, 119.0, 126.0, 133.0, 140.0, 147.0, 154.0, 161.0, 168.0, 175.0, 182.0, 189.0, 196.0, 203.0, 210.0, 217.0, 224.0, 231.0, 238.0, 245.0, 254.0, 263.0, 271.0, 280.0 ],
+              "${value}m Radius" : 3.0,
+              "Launches ${value} Projectile(s)" : 1,
+              "${chance}% Chance of +${value}% Total Damage" : {
+                "chance" : 10.0,
+                "value" : [ 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0, 150.0, 160.0, 170.0, 180.0, 190.0, 200.0, 215.0, 230.0, 245.0, 260.0, 275.0, 290.0, 305.0, 320.0 ]
+              },
+              "${value} Fire Damage" : {
+                "min" : [ 61.0, 73.0, 84.0, 95.0, 106.0, 118.0, 129.0, 140.0, 152.0, 163.0, 174.0, 186.0, 197.0, 208.0, 220.0, 230.0, 242.0, 253.0, 265.0, 276.0, 287.0, 299.0, 311.0, 322.0 ]
+              },
+              "${value} Fragments" : {
+                "min" : [ 5.0, 6.0, 7.0, 8.0, 9.0, 10.0 ],
+                "max" : [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ]
+              },
+              "${value} Physical Damage" : {
+                "min" : [ 17.0, 22.0, 27.0, 32.0, 36.0, 41.0, 46.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0, 89.0, 94.0, 99.0, 104.0, 109.0, 113.0, 118.0, 123.0, 128.0 ],
+                "max" : [ 31.0, 40.0, 49.0, 59.0, 68.0, 75.0, 85.0, 94.0, 103.0, 112.0, 121.0, 130.0, 139.0, 148.0, 157.0, 165.0, 174.0, 183.0, 192.0, 202.0, 211.0, 220.0, 229.0, 238.0 ]
+              },
+              "${value}% Slower Attack over ${duration} Second(s)" : {
+                "value" : {
+                  "min" : 80.0
+                },
+                "duration" : {
+                  "min" : 1.0
+                }
+              },
+              "MaxLevel" : 24,
+              "UltimateLevel" : 24
+            }
+          },
+          "Rekindled Flame" : {
+            "name" : "Rekindled Flame",
+            "attributes" : {
+              "${value} Fire Damage Retaliation" : {
+                "min" : [ 61.0, 70.0, 79.0, 88.0, 97.0, 106.0, 115.0, 124.0, 133.0, 142.0, 151.0, 160.0, 169.0, 178.0, 187.0, 196.0, 205.0, 214.0, 223.0, 232.0, 241.0, 250.0, 259.0, 268.0 ]
+              },
+              "${value}% Bleeding Resistance" : 100.0,
+              "${value}% Fire Resistance" : 100.0,
+              "${value}% Skill Disruption Protection" : 100.0,
+              "MaxLevel" : 24,
+              "UltimateLevel" : 24
+            }
+          },
+          "Flame Cascade" : {
+            "name" : "Flame Cascade",
+            "attributes" : {
+              "^a${value} Second(s) Recharge" : 8.0,
+              "${value} Energy Cost" : [ 160.0, 172.0, 184.0, 196.0, 208.0, 220.0, 232.0, 244.0, 256.0, 268.0, 280.0, 292.0, 304.0, 316.0, 328.0, 340.0, 352.0, 364.0, 376.0, 388.0, 400.0, 412.0, 424.0, 436.0 ],
+              "${value} Burn Damage over ${duration} Second(s)" : {
+                "value" : {
+                  "min" : [ 61.8075, 79.0, 96.0, 113.0, 131.0, 147.0, 164.0, 182.0, 199.0, 215.0, 233.0, 250.0, 267.0, 284.0, 301.0, 318.0, 335.0, 353.0, 369.0, 386.0, 404.0, 421.0, 438.0, 455.0 ]
+                },
+                "duration" : {
+                  "min" : 3.0
+                }
+              },
+              "${value} Fire Damage" : {
+                "min" : [ 82.41, 105.0, 128.0, 151.0, 174.0, 196.0, 219.0, 242.0, 265.0, 287.0, 310.0, 333.0, 356.0, 379.0, 401.0, 424.0, 447.0, 470.0, 492.0, 515.0, 538.0, 561.0, 584.0, 606.0 ]
+              },
+              "MaxLevel" : 20,
+              "UltimateLevel" : 24
+            }
+          },
+          "DodgeProjectile_1%perlevelx100" : {
+            "name" : "DodgeProjectile_1%perlevelx100",
+            "attributes" : {
+              "${value}% Chance to Avoid Projectiles" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0, 28.0, 29.0, 30.0, 31.0, 32.0, 33.0, 34.0, 35.0, 36.0, 37.0, 38.0, 39.0, 40.0, 41.0, 42.0, 43.0, 44.0, 45.0, 46.0, 47.0, 48.0, 49.0, 50.0, 51.0, 52.0, 53.0, 54.0, 55.0, 56.0, 57.0, 58.0, 59.0, 60.0, 61.0, 62.0, 63.0, 64.0, 65.0, 66.0, 67.0, 68.0, 69.0, 70.0, 71.0, 72.0, 73.0, 74.0, 75.0, 76.0, 77.0, 78.0, 79.0, 80.0, 81.0, 82.0, 83.0, 84.0, 85.0, 86.0, 87.0, 88.0, 89.0, 90.0, 91.0, 92.0, 93.0, 94.0, 95.0, 96.0, 97.0, 98.0, 99.0, 100.0 ],
+              "MaxLevel" : 100
+            }
+          },
+          "Basic Attack" : {
+            "name" : "Basic Attack",
+            "attributes" : {
+              "Launches ${value} Projectile(s)" : 1,
+              "${value} Fire Damage" : {
+                "min" : [ 43.0, 50.0, 56.0, 64.0, 71.0, 78.0, 84.0, 92.0, 99.0, 106.0, 113.0, 121.0, 127.0, 134.0, 142.0, 149.0, 155.0, 162.0, 170.0, 177.0, 184.0, 192.0, 198.0, 205.0 ]
+              },
+              "${value} Physical Damage" : {
+                "min" : [ 32.0, 37.0, 42.0, 48.0, 53.0, 58.0, 63.0, 69.0, 74.0, 79.0, 84.0, 90.0, 95.0, 100.0, 106.0, 111.0, 116.0, 121.0, 127.0, 132.0, 137.0, 143.0, 148.0, 153.0 ]
+              },
+              "MaxLevel" : 24,
+              "UltimateLevel" : 24
+            }
+          },
+          "Incinerate" : {
+            "name" : "Incinerate",
+            "doesNotIncludeRacialDamage" : true,
+            "attributes" : {
+              "^a${value} Second(s) Recharge" : 4.0,
+              "${value} Active Energy Cost per Second" : [ 3.29, 3.58, 3.87, 4.16, 4.45, 4.74, 5.03, 5.32, 5.61, 5.9, 6.19, 6.48, 6.77, 7.06, 7.35, 7.64, 7.93, 8.22, 8.51, 8.8, 9.09, 9.38, 9.67, 9.96 ],
+              "${value}m Radius" : [ 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0 ],
+              "${value} Burn Damage over ${duration} Second(s)" : {
+                "value" : {
+                  "min" : [ 18.0, 23.0, 27.0, 31.0, 36.0, 41.0, 45.0, 49.0, 54.0, 58.0, 62.0, 67.0, 71.0, 75.0, 80.0, 84.0, 89.0, 93.0, 97.0, 102.0, 106.0, 110.0, 114.0, 119.0 ]
+                },
+                "duration" : {
+                  "min" : 8.0
+                }
+              },
+              "${value} Fire Damage" : {
+                "min" : [ 20.0, 23.0, 25.0, 28.0, 31.0, 34.0, 37.0, 39.0, 42.0, 45.0, 48.0, 51.0, 53.0, 56.0, 59.0, 62.0, 65.0, 67.0, 70.0, 73.0, 76.0, 79.0, 81.0, 84.0 ]
+              },
+              "MaxLevel" : 24,
+              "UltimateLevel" : 24
+            }
+          }
+        },
+        "petSkillLevels" : {
+          "Volcanic Barrage" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ],
+          "Rekindled Flame" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ],
+          "Flame Cascade" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ],
+          "DodgeProjectile_1%perlevelx100" : [ 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 30 ],
+          "Basic Attack" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ],
+          "Incinerate" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ]
+        }
       }
     } ] ]
   } ]
