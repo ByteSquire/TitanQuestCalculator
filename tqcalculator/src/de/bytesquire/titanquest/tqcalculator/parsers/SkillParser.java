@@ -9,7 +9,9 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.logging.Logger;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import de.bytesquire.titanquest.tqcalculator.logging.Util;
@@ -28,7 +30,7 @@ public class SkillParser {
     private IconsParser mIconsParser;
     private String mSkillDescriptionTag;
     private SkillIcon mSkillIcon;
-    private ArrayList<String> mParentSkill;
+    private List<String> mParentSkill;
     private boolean mModifier = false;
     private String mRace;
     private Boolean mDoesNotIncludeRacialDamage;
@@ -40,6 +42,7 @@ public class SkillParser {
     private Boolean mCastOnTarget;
     private TriggerDamage mCastOnDamage;
     private TriggerType mTrigger;
+    private String mTriggeringSkill;
 
     private static final Logger LOGGER = Util.getLoggerForClass(SkillParser.class);
 
@@ -99,38 +102,40 @@ public class SkillParser {
                         .replace("spawnObjects", "SkillPet").replace("numProjectiles", "ProjectileNumber")
                         .replace("RatioAdder", "Modifier").replace("offensive", "Damage").replace("Slow", "Duration");
 
-                if (attributeName.startsWith("skill")) {
-                    if (attributeName.equals("skillDependancy")) {
-                        String[] parentFiles = value.split(";");
-                        for (String string : parentFiles) {
-                            BufferedReader parentReader;
+                if (attributeName.equals("skillDependancy") || attributeName.equals("triggeringSkill")) {
+                    String[] parentFiles = value.split(";");
+                    for (String string : parentFiles) {
+                        BufferedReader parentReader;
+                        try {
+                            parentReader = new BufferedReader(new FileReader(
+                                    Control.DATABASES_DIR.resolve(mDatabasePath).resolve(string).toFile()));
+                        } catch (FileNotFoundException e) {
                             try {
-                                parentReader = new BufferedReader(new FileReader(
-                                        Control.DATABASES_DIR.resolve(mDatabasePath).resolve(string).toFile()));
-                            } catch (FileNotFoundException e) {
-                                try {
-                                    parentReader = new BufferedReader(
-                                            new FileReader(Control.VANILLA_DATABASE_DIR.resolve(string).toFile()));
-                                } catch (FileNotFoundException ex) {
-                                    if (getSkillTag() == null)
-                                        Util.logWarning(LOGGER, "Parent/Dependency skill: " + FileNotFoundFormatter
-                                                .relativizeExceptionPath(ex, Control.DATABASES_DIR));
-                                    else
-                                        Util.logError(LOGGER, "Parent/Dependency skill: " + FileNotFoundFormatter
-                                                .relativizeExceptionPath(ex, Control.DATABASES_DIR));
+                                parentReader = new BufferedReader(
+                                        new FileReader(Control.VANILLA_DATABASE_DIR.resolve(string).toFile()));
+                            } catch (FileNotFoundException ex) {
+                                if (getSkillTag() == null)
+                                    Util.logWarning(LOGGER, "Parent/Dependency skill: "
+                                            + FileNotFoundFormatter.relativizeExceptionPath(ex, Control.DATABASES_DIR));
+                                else
+                                    Util.logError(LOGGER, "Parent/Dependency skill: "
+                                            + FileNotFoundFormatter.relativizeExceptionPath(ex, Control.DATABASES_DIR));
 //                                    System.err.println("Parent/Dependency skill: " + e.getMessage().split(
 //                                            Control.DATABASES_DIR.replace("\\", "\\\\").replace("/", "\\\\"))[1]);
-                                    return;
-                                }
+                                return;
                             }
-                            Stream<String> parentFileStream = parentReader.lines();
-                            parentFileStream.filter(str1 -> str1.split(",", -1)[0].equals("skillDisplayName"))
-                                    .forEach(name -> {
-                                        mParentSkill.add(mMSParser.getMatch(name.split(",", -1)[1]));
-                                    });
                         }
-                        return;
+                        final boolean isTriggering = attributeName.equals("triggeringSkill");
+                        Stream<String> parentFileStream = parentReader.lines();
+                        parentFileStream.filter(str1 -> str1.split(",", -1)[0].equals("skillDisplayName"))
+                                .forEach(name -> {
+                                    String skillName = mMSParser.getMatch(name.split(",", -1)[1]);
+                                    mParentSkill.add(skillName);
+                                    if (isTriggering)
+                                        mTriggeringSkill = skillName;
+                                });
                     }
+                    return;
                 }
 
                 try {
@@ -423,6 +428,7 @@ public class SkillParser {
     public String[] getParentSkill() {
         if (mParentSkill.isEmpty())
             return null;
+        mParentSkill = mParentSkill.stream().distinct().collect(Collectors.toList());
         String[] tmp = new String[mParentSkill.size()];
         /* tmp = */mParentSkill.toArray(tmp);
         return tmp;
@@ -470,5 +476,9 @@ public class SkillParser {
 
     public TriggerDamage getCastOnDamage() {
         return mCastOnDamage;
+    }
+
+    public String getTriggeringSkill() {
+        return mTriggeringSkill;
     }
 }

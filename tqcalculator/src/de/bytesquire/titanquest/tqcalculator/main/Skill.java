@@ -24,8 +24,8 @@ import de.bytesquire.titanquest.tqcalculator.parsers.*;
         "requiredWeapons", "race" })
 @JsonInclude(Include.NON_NULL)
 @JsonPropertyOrder({ "name", "description", "doesNotIncludeRacialDamage", "exclusiveSkill", "notDispellable",
-        "projectileUsesAllDamage", "protectsAgainst", "castOnTarget", "castOnDamage", "triggerType", "parent",
-        "skillIcon", "attributes", "pet", "skillCast" })
+        "projectileUsesAllDamage", "protectsAgainst", "castOnTarget", "castOnDamage", "triggerType", "triggeringSkill",
+        "parent", "skillIcon", "attributes", "pet", "skillCast" })
 public class Skill {
 
     private SkillParser mSkillParser;
@@ -53,6 +53,7 @@ public class Skill {
     private Boolean mCastOnTarget;
     private TriggerDamage mCastOnDamage;
     private TriggerType mTriggerType;
+    private String mTriggeringSkill;
     private ArrayList<String> mProtectsAgainst;
 
     private static final Logger LOGGER = Util.getLoggerForClass(Skill.class);
@@ -102,6 +103,7 @@ public class Skill {
         mTriggerType = mSkillParser.getTriggerType();
         mCastOnTarget = mSkillParser.getCastOnTarget();
         mCastOnDamage = mSkillParser.getCastOnDamage();
+        mTriggeringSkill = mSkillParser.getTriggeringSkill();
         mNotDispellable = mSkillParser.getNotDispellable();
         mDoesNotIncludeRacialDamage = mSkillParser.getDoesNotIncludeRacialDamage();
         mExclusiveSkill = mSkillParser.getExclusiveSkill();
@@ -556,6 +558,10 @@ public class Skill {
         return mTriggerType;
     }
 
+    public String getTriggeringSkill() {
+        return mTriggeringSkill;
+    }
+
     @Override
     public boolean equals(Object obj) {
         if (this == obj)
@@ -579,16 +585,15 @@ public class Skill {
 
 class AttributesComparator implements Comparator<Entry<String, Object>> {
 
-    private static final ArrayList<String> order = new ArrayList<String>(Arrays.asList(new String[] {
-            "^a${value} Second(s) Recharge", "${value}% Chance of Activating", "${value} Energy Reserved",
-            "${value} Energy Cost", "${value} Active Energy Cost per Second", "${value}% Chance to be Used",
-            "${value} Second Duration", "${value}m Radius", "${value} Charge Levels", "Launches ${value} Projectile(s)",
-            "+${value} Health", "+${value} Energy", "+${value} Strength", "+${value} Intelligence",
-            "+${value} Dexterity", "+${value}% Strength", "+${value}% Intelligence", "+${value}% Dexterity" }));
+    private static final ArrayList<String> order = new ArrayList<String>(Arrays.asList("^a${value} Second(s) Recharge",
+            "${value}% Chance of Activating", "${value} Energy Reserved", "${value} Energy Cost",
+            "${value} Active Energy Cost per Second", "${value}% Chance to be Used", "${value} Second Duration",
+            "${value}m Radius", "${value} Charge Levels", "Launches ${value} Projectile(s)", "+${value} Health",
+            "+${value} Energy", "+${value} Strength", "+${value} Intelligence", "+${value} Dexterity",
+            "+${value}% Strength", "+${value}% Intelligence", "+${value}% Dexterity"));
 
-    private static final ArrayList<String> orderBottomUp = new ArrayList<String>(
-            Arrays.asList(new String[] { "Bonus to all Pets:", "${chance}% Chance for one of the following:",
-                    "${chance}% Chance for all of the following:" }));
+    private static final ArrayList<String> orderBottomUp = new ArrayList<String>(Arrays.asList("Bonus to all Pets:",
+            "${chance}% Chance for one of the following:", "${chance}% Chance for all of the following:"));
 
     public int compare(Entry<String, Object> entry1, Entry<String, Object> entry2) {
         String str1 = entry1.getKey();
