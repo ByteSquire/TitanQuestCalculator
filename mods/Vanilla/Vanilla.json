@@ -6306,6 +6306,7 @@
       "castOnTarget" : true,
       "castOnDamage" : "ALL",
       "triggerType" : "if the target is killed",
+      "triggeringSkill" : "Consequences",
       "parent" : [ "Consequences" ],
       "skillIcon" : {
         "posY" : 341,
@@ -6790,6 +6791,7 @@
       "description" : "Upon vanquishing enemies with Shen Pao, blast waves emanate from you and deal damage around you.{^n}{^Y} Can trigger on enemy death. ",
       "castOnTarget" : true,
       "triggerType" : "if the target is killed",
+      "triggeringSkill" : "Shen Pao",
       "parent" : [ "Shen Pao" ],
       "skillIcon" : {
         "posY" : 93,

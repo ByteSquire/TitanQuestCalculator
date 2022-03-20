@@ -8365,6 +8365,8 @@
       "description" : "A blast of burning energy has a chance to be released around you after killing an enemy with Arcane Flare, for increased area damage.",
       "castOnDamage" : "ALL",
       "triggerType" : "if the target is killed",
+      "triggeringSkill" : "Arcane Flare",
+      "parent" : [ "Arcane Flare" ],
       "skillIcon" : {
         "posY" : 279,
         "posX" : 112

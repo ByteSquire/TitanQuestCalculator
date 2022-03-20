@@ -53,6 +53,11 @@ function getPopupString(skill, currLevel, skipNext){
         ret += '<span class="" style="color: orange">Skill(s) will be cast ' + skill.triggerType + '</span>\n';
     }
     
+    if(skill.triggeringSkill){
+        ret += "<br>\n";
+        ret += '<span class="" style="color: orange">Skill(s) are triggered by ' + skill.triggeringSkill + '</span>\n';
+    }
+    
     if(skill.castOnTarget){
         ret += "<br>\n";
         ret += '<span class="" style="color: orange">Will be cast at target location</span>\n';
