@@ -24,7 +24,8 @@
       "attributes" : {
         "^a${value} Second(s) Recharge" : 5.0,
         "${value} Energy Cost" : [ 30.0, 34.0, 38.0, 42.0, 47.0, 52.0, 57.0, 62.0, 68.0, 74.0, 79.0, 85.0, 90.0, 96.0, 102.0, 108.0, 114.0, 122.0, 130.0, 137.0 ],
-        "${value}m Radius" : 3.0,
+        "${value} Second Duration" : 1.0,
+        "${value}m Radius" : 5.0,
         "${value} Health Restored" : [ 200.0, 450.0, 700.0, 950.0, 1200.0, 1450.0, 1700.0, 1950.0, 2200.0, 2450.0, 2700.0, 2950.0, 3275.0, 3600.0, 3925.0, 4250.0 ],
         "MaxLevel" : 12,
         "UltimateLevel" : 16
@@ -762,8 +763,8 @@
       },
       "attributes" : {
         "${chance}% Chance of +${value}% Lightning Damage" : {
-          "chance" : 10.0,
-          "value" : 150.0
+          "chance" : 20.0,
+          "value" : 250.0
         },
         "${value} Electrical Burn Damage over ${duration} Second(s)" : {
           "value" : {
@@ -1662,12 +1663,12 @@
         "${value} Energy Cost" : [ 40.5, 45.9, 49.3, 52.7, 56.1, 59.5, 62.9, 66.3, 69.7, 73.1, 76.5, 79.9 ],
         "${value} Second Duration" : 2.0,
         "${chance}% Chance of ${value} Stun Retaliation" : {
-          "chance" : [ 27.0, 32.0, 36.0, 41.0, 46.0, 51.0, 54.0, 59.0, 64.0, 69.0, 73.0, 78.0 ],
+          "chance" : [ 30.0, 36.0, 42.0, 49.0, 56.0, 63.0, 68.0, 75.0, 82.0, 89.0, 95.0, 100.0 ],
           "value" : {
             "min" : [ 1.0, 1.2, 1.4, 1.6, 1.8, 2.0, 2.2, 2.4, 2.6, 2.8, 3.0, 3.2 ]
           }
         },
-        "${value} Health Restored" : [ 100.0, 200.0, 300.0, 400.0, 500.0, 600.0, 700.0, 800.0, 900.0, 1000.0, 1100.0, 1200.0 ],
+        "${value} Health Restored" : [ 150.0, 300.0, 450.0, 600.0, 750.0, 900.0, 1050.0, 1200.0, 1350.0, 1500.0, 1650.0, 1800.0 ],
         "${value}% Damage Absorption" : 100.0,
         "MaxLevel" : 8,
         "UltimateLevel" : 12
@@ -1749,15 +1750,14 @@
     }, {
       "name" : "Sharpstone Veil",
       "description" : "A set of razor-sharp rocks quickly orbits around you, reducing incoming damage and injuring nearby opponents.",
-      "doesNotIncludeRacialDamage" : true,
       "skillIcon" : {
         "posY" : 341,
         "posX" : 376
       },
       "attributes" : {
-        "^a${value} Second(s) Recharge" : 21.0,
+        "^a${value} Second(s) Recharge" : 24.0,
         "${value} Energy Cost" : [ 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0, 90.0, 95.0 ],
-        "${value} Second Duration" : 5.0,
+        "${value} Second Duration" : 7.0,
         "${value}m Radius" : [ 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0 ],
         "${value} Armor" : [ 17.0, 23.0, 29.0, 35.0, 41.0, 47.0, 53.0, 59.0, 65.0, 71.0, 77.0, 85.0, 92.0, 100.0 ],
         "${value} Bleeding Damage over ${duration} Second(s)" : {
@@ -2581,11 +2581,11 @@
         "posX" : 640
       },
       "attributes" : {
-        "^a${value} Second(s) Recharge" : 20.0,
+        "^a${value} Second(s) Recharge" : 35.0,
         "${value} Energy Cost" : [ 40.0, 44.0, 48.0, 52.0, 56.0, 60.0, 64.0, 68.0, 72.0, 76.0, 80.0, 84.0, 88.0, 92.0, 96.0, 100.0 ],
         "${value} Second Duration" : [ 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0 ],
         "${value} Lightning Damage" : {
-          "min" : [ 16.0, 27.0, 38.0, 49.0, 61.0, 72.0, 86.0, 98.0, 110.0, 122.0, 135.0, 148.0, 162.0, 177.0, 194.0, 211.0 ]
+          "min" : [ 18.0, 30.0, 42.0, 54.0, 67.0, 79.0, 95.0, 108.0, 121.0, 134.0, 149.0, 163.0, 178.0, 195.0, 213.0, 232.0 ]
         },
         "MaxLevel" : 12,
         "UltimateLevel" : 16
@@ -3617,17 +3617,17 @@
       },
       "attributes" : {
         "^a${value} Second(s) Recharge" : 8.0,
-        "${value} Energy Cost" : [ 35.0, 38.0, 41.0, 44.0, 47.0, 50.0, 53.0, 56.0, 59.0, 62.0, 65.0, 68.0 ],
+        "${value} Energy Cost" : [ 25.0, 28.0, 31.0, 34.0, 37.0, 40.0, 43.0, 46.0, 49.0, 52.0, 55.0, 58.0 ],
         "Launches ${value} Projectile(s)" : 1,
         "${value} Piercing Damage" : {
-          "min" : [ 8.0, 15.0, 21.0, 28.0, 34.0, 41.0, 47.0, 54.0, 60.0, 67.0, 73.0, 80.0 ]
+          "min" : [ 27.83025, 44.5284, 61.22655, 77.9247, 94.62285, 108.538, 121.0, 136.0, 150.0, 165.0, 181.0, 198.0 ]
         },
         "${value} Vitality Damage" : {
           "min" : [ 27.83025, 44.5284, 61.22655, 77.9247, 94.62285, 108.538, 121.0, 136.0, 150.0, 165.0, 181.0, 198.0 ]
         },
         "+${value}% Movement Speed" : 500.0,
         "+${value}% Physical Damage" : [ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0 ],
-        "+${value}% Pierce Damage" : [ 5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0 ],
+        "+${value}% Pierce Damage" : [ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0 ],
         "MaxLevel" : 8,
         "UltimateLevel" : 12
       }
@@ -3705,6 +3705,14 @@
         },
         "${value} Piercing Damage" : {
           "min" : [ 15.0, 27.0, 41.0, 53.0, 66.0, 78.0, 92.0, 104.0, 117.0, 129.0, 143.0, 155.0, 168.0, 180.0 ]
+        },
+        "${value}% Reduced Damage for ${duration} Second(s)" : {
+          "value" : {
+            "min" : [ 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0, 25.0 ]
+          },
+          "duration" : {
+            "min" : 3.0
+          }
         },
         "MaxLevel" : 10,
         "UltimateLevel" : 14
@@ -3809,21 +3817,24 @@
         "posX" : 288
       },
       "attributes" : {
-        "^a${value} Second(s) Recharge" : [ 0.0, 1.0, 2.0, 3.0, 4.0 ],
-        "${value} Energy Cost" : [ 6.0, 12.0, 18.0, 24.0 ],
+        "^a${value} Second(s) Recharge" : [ 0.0, 6.0 ],
+        "${value} Energy Cost" : [ 30.0, 60.0 ],
         "${value} Life Leech over ${duration} Second(s)" : {
           "value" : {
-            "min" : 25.0
+            "min" : [ 8.0, 16.0 ]
           },
           "duration" : {
-            "min" : 3.0
+            "min" : 6.0
           }
         },
-        "${value} Target Maximum" : [ 2.0, 3.0, 4.0, 5.0 ],
+        "${value} Target Maximum" : 5,
+        "${value}% of Attack damage converted to Health" : {
+          "min" : [ 4.0, 8.0 ]
+        },
         "${value}° Arc of Attack" : 360.0,
-        "+${value}% Physical Damage" : [ -25.0, -50.0, -75.0, -100.0 ],
-        "MaxLevel" : 4,
-        "UltimateLevel" : 4
+        "+${value}% Total Damage" : [ -10.0, -20.0 ],
+        "MaxLevel" : 2,
+        "UltimateLevel" : 2
       }
     }, {
       "name" : "Demon's Gift",
@@ -3932,7 +3943,7 @@
         "posX" : 376
       },
       "attributes" : {
-        "${value} Active Energy Cost per Second" : 35.0,
+        "${value} Active Energy Cost per Second" : 25.0,
         "${value} Active Health Cost per Second" : 10.0,
         "+${value}% Bleeding Damage " : 150.0,
         "+${value}% Energy Leech " : -300.0,
@@ -4175,7 +4186,7 @@
         "posX" : 464
       },
       "attributes" : {
-        "+${value}% Dexterity" : [ 2.0, 3.0, 4.0, 6.0, 7.0, 8.0, 9.0, 11.0, 12.0, 13.0, 14.0, 16.0, 17.0, 18.0 ],
+        "+${value}% Dexterity" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0 ],
         "+${value}% Attack Speed" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0 ],
         "MaxLevel" : 10,
         "UltimateLevel" : 14,
@@ -4336,19 +4347,22 @@
         "posX" : 288
       },
       "attributes" : {
-        "^a${value} Second(s) Recharge" : 6.0,
+        "^a${value} Second(s) Recharge" : 5.0,
         "${value} Energy Cost" : [ 50.0, 53.0, 57.0, 60.0, 64.0, 67.0, 71.0, 74.0, 77.0, 81.0, 84.0, 88.0, 91.0, 94.0, 98.0, 101.0, 105.0, 108.0, 112.0, 115.0 ],
         "${value}m Radius" : 3.0,
         "Launches ${value} Projectile(s)" : 1,
         "${value} Elemental Damage" : {
-          "min" : [ 30.0, 41.3, 52.7, 64.0, 75.3, 86.7, 98.0, 109.3, 120.7, 132.0, 143.3, 154.7, 166.0, 177.3, 188.7, 200.0, 225.0, 250.0, 275.0, 300.0 ]
+          "min" : [ 35.0, 52.3, 69.7, 87.0, 104.3, 121.7, 139.0, 156.3, 173.7, 191.0, 208.3, 225.7, 243.0, 260.3, 277.7, 295.0, 326.0, 357.0, 388.0, 420.0 ]
         },
         "${value} Piercing Damage" : {
-          "min" : [ 8.0, 10.0, 13.0, 15.0, 18.0, 20.0, 23.0, 25.0, 28.0, 30.0, 33.0, 35.0, 38.0, 40.0, 43.0, 45.0, 48.0, 50.0, 53.0, 55.0 ]
+          "min" : [ 13.0, 20.0, 28.0, 35.0, 43.0, 50.0, 58.0, 65.0, 73.0, 80.0, 88.0, 95.0, 103.0, 110.0, 118.0, 125.0, 133.0, 140.0, 148.0, 155.0 ]
+        },
+        "${value}% Reduction to Enemy's Health" : {
+          "min" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 5.0, 8.0, 12.0, 15.0 ]
         },
         "${value}% Slower Movement over ${duration} Second(s)" : {
           "value" : {
-            "min" : [ 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0, 42.0, 44.0, 46.0, 48.0, 50.0 ]
+            "min" : [ 30.0, 33.0, 35.0, 38.0, 41.0, 44.0, 46.0, 49.0, 52.0, 54.0, 57.0, 60.0, 62.0, 65.0, 68.0, 71.0 ]
           },
           "duration" : {
             "min" : 3.0
@@ -4410,7 +4424,7 @@
       "attributes" : {
         "${value} Energy Cost" : [ 2.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 20.0, 22.0, 24.0, 27.0 ],
         "${chance}% Chance of ${value} second(s) of Confusion" : {
-          "chance" : [ 5.0, 7.0, 9.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 21.0, 23.0, 25.0 ],
+          "chance" : [ 15.0, 21.0, 27.0, 32.0, 38.0, 44.0, 50.0, 56.0, 62.0, 67.0, 73.0, 79.0 ],
           "value" : {
             "min" : [ 0.4, 0.4, 0.5, 0.5, 0.6, 0.6, 0.8, 0.8, 0.9, 1.0, 1.1, 1.3 ],
             "max" : [ 1.9, 2.0, 2.0, 2.1, 2.1, 2.3, 2.3, 2.4, 2.5, 2.6, 2.8, 3.0 ]
@@ -4530,7 +4544,8 @@
         "+${value}% Attack Speed" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0, 34.0, 36.0, 38.0, 40.0 ],
         "+${value}% Casting Speed" : [ 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0, 51.0, 54.0, 57.0, 60.0 ],
         "MaxLevel" : 12,
-        "UltimateLevel" : 16
+        "UltimateLevel" : 16,
+        "requiredWeapons" : "Sword, Spear, Staff, Bow, Thrown Weapon"
       }
     }, {
       "name" : "Silver Feathers",
@@ -4712,11 +4727,11 @@
       "attributes" : {
         "${value} Energy Cost" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0 ],
         "${value} Elemental Damage" : {
-          "min" : [ 12.0, 18.0, 22.0, 28.0, 34.0, 38.0, 44.0, 50.0, 54.0, 60.0 ]
+          "min" : [ 14.0, 22.0, 28.0, 36.0, 44.0, 50.0, 58.0, 66.0, 72.0, 80.0 ]
         },
-        "${value}% Slower Movement over ${duration} Second(s)" : {
+        "${value}% Slower Attack over ${duration} Second(s)" : {
           "value" : {
-            "min" : [ 12.0, 16.0, 20.0, 25.0, 29.0, 33.0, 37.0, 42.0, 46.0, 50.0 ]
+            "min" : [ 15.0, 22.0, 29.0, 37.0, 44.0, 51.0, 58.0, 66.0, 73.0, 80.0 ]
           },
           "duration" : {
             "min" : 3.0
@@ -4760,14 +4775,14 @@
         },
         "${value} Reduced Armor for ${duration} Second(s)" : {
           "value" : {
-            "min" : [ 75.0, 165.0, 255.0 ]
+            "min" : [ 100.0, 200.0, 300.0 ]
           },
           "duration" : {
             "min" : 3.0
           }
         },
-        "+${value}% Physical Damage" : [ 33.0, 66.0, 100.0 ],
-        "+${value}% Pierce Damage" : [ -30.0, -60.0, -80.0 ],
+        "+${value}% Physical Damage" : [ 100.0, 200.0, 300.0 ],
+        "+${value}% Pierce Damage" : [ -10.0, -20.0, -30.0 ],
         "+${value}% increased Pierce Ratio" : [ -100.0, -200.0, -300.0 ],
         "MaxLevel" : 3,
         "UltimateLevel" : 3,
@@ -4801,8 +4816,7 @@
           "value" : [ 25.0, 31.0, 37.0, 42.0, 48.0, 54.0, 60.0, 65.0, 71.0, 77.0, 83.0, 88.0, 94.0, 100.0 ]
         },
         "MaxLevel" : 10,
-        "UltimateLevel" : 14,
-        "requiredWeapons" : "Bow, Thrown Weapon"
+        "UltimateLevel" : 14
       }
     }, {
       "name" : "Light Armor Specialist",
@@ -4844,9 +4858,15 @@
         "${value} Cold Damage" : {
           "min" : [ 40.6, 57.0, 72.1, 88.4, 104.9, 120.0, 136.3, 151.6, 167.9, 184.2, 199.3, 215.8 ]
         },
+        "${value} Piercing Damage" : {
+          "min" : [ 34.5, 48.5, 61.3, 75.1, 89.2, 102.0, 115.9, 128.9, 142.7, 156.6, 169.4, 183.4 ]
+        },
         "${value} Projectile(s)" : 3,
         "${value} Vitality Damage" : {
           "min" : [ 40.6, 57.0, 72.1, 88.4, 104.9, 120.0, 136.3, 151.6, 167.9, 184.2, 199.3, 215.8 ]
+        },
+        "${value}% Reduction to Enemy's Health" : {
+          "min" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 3.0, 5.0, 7.0, 10.0 ]
         },
         "+${value}% Physical Damage" : -50.0,
         "MaxLevel" : 8,
@@ -4972,7 +4992,7 @@
         "Launches ${value} Projectile(s)" : 1,
         "${value} Frostburn Damage over ${duration} Second(s)" : {
           "value" : {
-            "min" : [ 10.5, 12.0, 13.5, 15.5, 17.5, 20.0, 23.0, 26.0, 29.0, 33.0, 37.0, 41.5, 45.0, 50.0 ]
+            "min" : [ 11.8, 13.0, 15.1, 17.4, 19.6, 22.0, 26.0, 29.0, 32.0, 37.0, 41.0, 46.5, 50.0, 56.0 ]
           },
           "duration" : {
             "min" : 3.0
@@ -4981,7 +5001,7 @@
         "${value} Second(s) Charge Level Duration" : 3.0,
         "${value} Target Maximum" : 2,
         "${value}° Arc of Attack" : 45.0,
-        "+${value}% Total Damage" : [ 4.0, 8.0, 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0 ],
+        "+${value}% Total Damage" : [ 10.0, 15.0, 19.0, 24.0, 28.0, 33.0, 37.0, 42.0, 46.0, 51.0, 55.0, 60.0, 65.0, 70.0 ],
         "MaxLevel" : 10,
         "UltimateLevel" : 14
       }
@@ -5947,10 +5967,10 @@
         "^a${value} Second(s) Recharge" : [ 5.0, 4.6, 4.3, 3.9, 3.5, 3.2, 2.8, 2.5, 2.1, 1.7, 1.4, 1.0, 0.6, 0.3, 0.0, 0.0 ],
         "${value} Energy Cost" : [ 25.0, 28.0, 31.0, 34.0, 37.0, 40.0, 43.0, 46.0, 49.0, 52.0, 55.0, 58.0, 61.0, 64.0, 67.0, 70.0 ],
         "${value} Cold Damage" : {
-          "min" : [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0 ]
+          "min" : [ 4.5, 9.0, 13.5, 18.0, 22.5, 27.0, 31.5, 36.0, 40.5, 45.0, 49.5, 54.0, 58.5, 63.0, 67.5, 72.0 ]
         },
         "${value} Piercing Damage" : {
-          "min" : [ 3.0, 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0, 48.0 ]
+          "min" : [ 4.5, 9.0, 13.5, 18.0, 22.5, 27.0, 31.5, 36.0, 40.5, 45.0, 49.5, 54.0, 58.5, 63.0, 67.5, 72.0 ]
         },
         "${value} Vitality Damage" : {
           "min" : [ 16.0, 29.0, 42.0, 55.0, 68.0, 81.0, 94.0, 107.0, 119.0, 132.0, 145.0, 158.0, 171.0, 184.0, 197.0, 210.0 ]
@@ -7531,7 +7551,6 @@
         "posX" : 200
       },
       "attributes" : {
-        "${value} Active Health Cost per Second" : 20.0,
         "${value} Energy Leech over ${duration} Second(s)" : {
           "value" : {
             "min" : 33.33333
@@ -7540,6 +7559,7 @@
             "min" : 3.0
           }
         },
+        "+${value} Health Regeneration per second" : -20.0,
         "MaxLevel" : 1,
         "UltimateLevel" : 1
       }
@@ -9110,9 +9130,9 @@
         "posX" : 288
       },
       "attributes" : {
-        "^a${value} Second(s) Recharge" : 20.0,
+        "^a${value} Second(s) Recharge" : 70.0,
         "${value} Energy Cost" : [ 80.0, 87.0, 94.0, 101.0, 108.0, 115.0, 122.0, 129.0, 136.0, 143.0, 150.0, 157.0, 164.0, 171.0, 178.0, 185.0 ],
-        "${value} Second Duration" : 40.0,
+        "${value} Second Duration" : 60.0,
         "${value} Energy Leech over ${duration} Second(s)" : {
           "value" : {
             "min" : [ 3.9, 6.9, 9.89, 13.53, 17.17, 19.51, 23.15, 26.79, 29.13, 32.77, 36.41, 38.75, 42.39, 46.03 ]
@@ -9195,7 +9215,7 @@
         "posX" : 288
       },
       "attributes" : {
-        "^a${value} Second(s) Recharge" : [ 0.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0 ],
+        "^a${value} Second(s) Recharge" : [ 0.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0 ],
         "${value} Energy Cost" : [ 10.0, 13.0, 16.0, 19.0, 22.0, 25.0, 28.0, 31.0, 34.0, 37.0, 40.0, 43.0, 46.0, 49.0 ],
         "${chance}% Chance of ${value}% Slowed Attack Retaliation over ${duration} Second(s)" : {
           "chance" : [ 5.0, 6.75, 8.5, 10.25, 12.0, 13.75, 15.5, 17.25, 19.0, 20.75, 22.5, 24.25, 26.0, 27.75 ],
@@ -9333,7 +9353,7 @@
         "posX" : 288
       },
       "attributes" : {
-        "^a${value} Second(s) Recharge" : [ 0.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0 ],
+        "^a${value} Second(s) Recharge" : [ 0.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0 ],
         "${value} Energy Cost" : [ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0 ],
         "${chance}% Chance of ${value}% Reduction to Enemy's Health" : {
           "chance" : 15.0,
@@ -9348,6 +9368,32 @@
         "+${value}% Life Leech " : [ 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0 ],
         "MaxLevel" : 8,
         "UltimateLevel" : 12
+      }
+    }, {
+      "name" : "Void Rip",
+      "description" : "Powers from uncharted dimensions cannot escape your grasp, as you can wield them to augment your superiority on the battlefield.",
+      "parent" : [ "Bladestorm" ],
+      "skillIcon" : {
+        "posY" : 217,
+        "posX" : 552
+      },
+      "attributes" : {
+        "${value} Energy Cost" : [ 10.0, 17.0, 24.0, 31.0, 38.0, 45.0, 52.0, 59.0, 66.0, 73.0, 80.0, 87.0 ],
+        "${value}% Reduced Resistances for ${duration} Second(s)" : {
+          "value" : {
+            "min" : [ 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 16.0, 17.0, 18.0, 19.0, 20.0 ]
+          },
+          "duration" : {
+            "min" : 3.0
+          }
+        },
+        "${value}% Reduction to Enemy's Health" : {
+          "min" : [ 5.0, 5.0, 6.0, 6.0, 7.0, 7.0, 8.0, 8.0, 9.0, 9.0, 10.0, 10.0 ]
+        },
+        "+${value}% Damage to Ghost" : 33.0,
+        "+${value}% Total Damage" : [ 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 44.0, 50.0, 55.0, 60.0 ],
+        "MaxLevel" : 6,
+        "UltimateLevel" : 10
       }
     }, {
       "name" : "Genocide",
@@ -9610,8 +9656,8 @@
         "posX" : 552
       },
       "attributes" : {
-        "^a${value} Second(s) Recharge" : 10.0,
-        "${value} Energy Cost" : [ 72.0, 84.0, 96.0, 108.0, 120.0, 132.0, 144.0, 156.0, 168.0, 180.0, 192.0, 204.0 ],
+        "^a${value} Second(s) Recharge" : 15.0,
+        "${value} Energy Cost" : [ 80.0, 93.0, 106.0, 119.0, 132.0, 145.0, 158.0, 171.0, 184.0, 197.0, 210.0, 223.0 ],
         "${value} Second Duration" : 4.0,
         "${value} Electrical Burn Retaliation over ${duration} Second(s)" : {
           "value" : {
@@ -9718,32 +9764,6 @@
         "+${value}% Damage to Humankind" : [ 25.0, 33.0, 41.0, 49.0, 57.0, 65.0, 73.0, 82.0, 91.0, 100.0 ],
         "+${value}% Less Damage from Humankind" : [ 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0 ],
         "+${value}% Physical Damage" : [ 25.0, 31.0, 36.0, 40.0, 45.0, 50.0, 56.0, 62.0, 68.0, 74.0 ],
-        "MaxLevel" : 6,
-        "UltimateLevel" : 10
-      }
-    }, {
-      "name" : "Void Rip",
-      "description" : "Powers from uncharted dimensions cannot escape your grasp, as you can wield them to augment your superiority on the battlefield.",
-      "parent" : [ "Bladestorm" ],
-      "skillIcon" : {
-        "posY" : 217,
-        "posX" : 552
-      },
-      "attributes" : {
-        "${value} Energy Cost" : [ 10.0, 17.0, 24.0, 31.0, 38.0, 45.0, 52.0, 59.0, 66.0, 73.0, 80.0, 87.0 ],
-        "${value}% Reduced Resistances for ${duration} Second(s)" : {
-          "value" : {
-            "min" : [ 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 16.0, 17.0, 18.0, 19.0, 20.0 ]
-          },
-          "duration" : {
-            "min" : 3.0
-          }
-        },
-        "${value}% Reduction to Enemy's Health" : {
-          "min" : [ 5.0, 5.0, 6.0, 6.0, 7.0, 7.0, 8.0, 8.0, 9.0, 9.0, 10.0, 10.0 ]
-        },
-        "+${value}% Damage to Ghost" : 33.0,
-        "+${value}% Total Damage" : [ 10.0, 14.0, 18.0, 22.0, 26.0, 30.0, 34.0, 38.0, 44.0, 50.0, 55.0, 60.0 ],
         "MaxLevel" : 6,
         "UltimateLevel" : 10
       }
