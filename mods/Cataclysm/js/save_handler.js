@@ -208,8 +208,8 @@ function loadConfigNew(config){
     	if (b < m1.skillTiers[j].length)
         	skillName = m1.skillTiers[j][b++].name;
     	else{
-    		b = 0;	
-        	skillName = m1.skillTiers[j++][b++].name;
+    		b = 0;
+        	skillName = m1.skillTiers[++j][b++].name;
 		}
 	    for(var k = 0; k < parseInt(skill); k++){
             skillClicked(document.getElementById(skillName), { "button" : 0 });
@@ -244,8 +244,8 @@ function loadConfigNew(config){
 	    	if (b < m2.skillTiers[j].length)
 	        	skillName = m2.skillTiers[j][b++].name;
 	    	else{
-	    		b = 0;	
-	        	skillName = m2.skillTiers[j++][b++].name;
+	    		b = 0;
+	        	skillName = m2.skillTiers[++j][b++].name;
 			}
 		    for(var k = 0; k < parseInt(skill); k++){
 	            skillClicked(document.getElementById(skillName), { "button" : 0 });
