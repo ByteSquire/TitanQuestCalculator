@@ -40,7 +40,12 @@ function init(){
         config = JSON.parse(config_string);
         loadConfig(config);
       } catch(err){
-        document.getElementById("className").innerHTML += ' <span style="color: red">Error parsing config!</span>';
+        try{
+    	  if (!loadConfigNew(config_string))
+      	    document.getElementById("className").innerHTML += ' <span style="color: red">Error parsing config!</span>';
+        } catch(err){
+          document.getElementById("className").innerHTML += ' <span style="color: red">Error parsing config!</span>';
+        }
       }
   }
 }
