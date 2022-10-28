@@ -213,7 +213,7 @@ function getPopupString(skill, currLevel, skipNext){
     ret += '</tr></table>\n';
     
     if (skill.pet || skill.skillCast)
-    	ret += "Press shift for more info\n";
+    	ret += '<span class="" style="color: gray">Press shift for more info</span>\n';
     
     return ret;
 }
