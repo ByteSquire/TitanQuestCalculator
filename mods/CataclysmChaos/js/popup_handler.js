@@ -33,10 +33,11 @@ function getPopupString(skill, currLevel, skipNext){
         ret += '<span class="" style="color: cyan">Cannot be dispelled</span>\n';
     }
     
-    if(skill.doesNotIncludeRacialDamage){
-        ret += "<br>\n";
-        ret += '<span class="" style="color: orange">Does not include Racial Damage</span>\n';
-    }
+    // not sure how it works
+    //if(skill.doesNotIncludeRacialDamage){
+    //    ret += "<br>\n";
+    //    ret += '<span class="" style="color: orange">Does not include Racial Damage</span>\n';
+    //}
     
     if(skill.exclusiveSkill){
         ret += "<br>\n";
@@ -210,6 +211,9 @@ function getPopupString(skill, currLevel, skipNext){
         ret = ret.substring(0, ret.length - "<br>\n".length);
     
     ret += '</tr></table>\n';
+    
+    if (skill.pet || skill.skillCast)
+    	ret += "Press shift for more info\n";
     
     return ret;
 }
