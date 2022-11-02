@@ -106,7 +106,7 @@
               <tr>
                 <td>Level required:</td>
                 <td><div id="lvl">1</div></td>
-                <td>Maximum level:</td>
+                <td>Max level:</td>
                 <td><div id="maxLevel">85</div></td>
               </tr>
               <tr>
