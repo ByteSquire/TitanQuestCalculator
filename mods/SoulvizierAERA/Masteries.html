@@ -108,6 +108,8 @@
                 <td><div id="lvl">1</div></td>
                 <td>Maximum level:</td>
                 <td><div id="maxLevel">85</div></td>
+              </tr>
+              <tr>
                 <td>Points left:</td>
                 <td><div id="pointsLeft">252</div></td>
               </tr>
@@ -120,8 +122,12 @@
               <tr>
                 <td>Strength:</td>
                 <td><div id="str">50+0%</div></td>
+              </tr>
+              <tr>
                 <td>Intelligence:</td>
                 <td><div id="int">50+0%</div></td>
+              </tr>
+              <tr>
                 <td>Dexterity:</td>
                 <td><div id="dex">50+0%</div></td>
               </tr>
