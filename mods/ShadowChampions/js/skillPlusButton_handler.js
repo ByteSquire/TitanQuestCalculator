@@ -53,7 +53,6 @@ function allPlusClicked(button, event) {
 function allPlusButtonPopup(button, event){
     var pop = document.getElementById( 'pop' );
 
-    var pageHeight = getPageHeight();
     if( event ) {
         var pos = getPopupPos(event);
         
@@ -64,7 +63,7 @@ function allPlusButtonPopup(button, event){
     pop.innerHTML = '<span class="title">Adds ' + Number((button.parentElement.id == "panel1")? m1GlobalPlus : m2GlobalPlus) + " to all skills of this mastery</span>";
     
     pop.style.display = "block";
-    movePopupintoView(pop, pageHeight);
+    movePopupintoView(pop);
 }
 
 function skillPlusClicked(button, event) {
@@ -114,7 +113,6 @@ function skillPlusClicked(button, event) {
 function skillPlusButtonPopup(button, event){
     var pop = document.getElementById( 'pop' );
 
-    var pageHeight = getPageHeight();
     if( event ) {
         var pos = getPopupPos(event);
         
@@ -125,5 +123,5 @@ function skillPlusButtonPopup(button, event){
     pop.innerHTML = '<span class="title">Adds ' + button.innerText + " to this skill</span>";
     
     pop.style.display = "block";
-    movePopupintoView(pop, pageHeight);
+    movePopupintoView(pop);
 }

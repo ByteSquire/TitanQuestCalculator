@@ -97,7 +97,6 @@ function updateSkills(){
 function skillButtonPopup(button, event){
     var pop = document.getElementById( 'pop' );
 
-    var pageHeight = getPageHeight();
     if( event ) {
         var pos = getPopupPos(event);
         
@@ -114,7 +113,7 @@ function skillButtonPopup(button, event){
         pop.innerHTML = getPopupStringPet(skill, Number(button.innerText.split("/")[0].replaceAll("\n", "")));
     }
     pop.style.display = "block";
-    movePopupintoView(pop, pageHeight);
+    movePopupintoView(pop);
 }
 
 var petDisplayed = false;
@@ -146,7 +145,7 @@ function shiftPressed(event){
             petDisplayed = false;
         }
         pop.style.display = "block";
-        movePopupintoView(pop, getPageHeight());
+        movePopupintoView(pop);
     }
 }
 

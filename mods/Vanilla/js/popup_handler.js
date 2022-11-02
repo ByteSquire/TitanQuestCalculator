@@ -128,8 +128,7 @@ function getPopupString(skill, currLevel, skipNext){
         ret = ret.substring(0, ret.length - "<br>\n".length);
     
     if(skipNext){
-        ret += '</tr></table>\n';
-        return ret;
+		return popupEarlyOut(skill, ret);
     }
     
     if(currLevel+1 <= skill.attributes["MaxLevel"]){
@@ -139,7 +138,7 @@ function getPopupString(skill, currLevel, skipNext){
         ret += '<td>';
         ret += '<span class="nextLevel" style="color: yellow">Next Level: ' + (currLevel+1) + '</span>\n';
     } else {
-        return ret;
+		return popupEarlyOut(skill, ret);
     }
     ret += '<br>\n';    
     var attr = Object.keys(skill.attributes);
@@ -210,12 +209,16 @@ function getPopupString(skill, currLevel, skipNext){
     if(ret.endsWith("<br>\n"))
         ret = ret.substring(0, ret.length - "<br>\n".length);
     
-    ret += '</tr></table>\n';
+	return popupEarlyOut(skill, ret);
+}
+
+function popupEarlyOut(skill, value){
+	value += '</tr></table>\n';
     
     if (skill.pet || skill.skillCast)
-    	ret += '<span class="" style="color: gray">Press shift for more info</span>\n';
-    
-    return ret;
+    	value += '<span class="" style="color: gray">Press shift for more info</span>\n';
+	
+	return value;
 }
 
 function checkForArray(value){
@@ -257,17 +260,30 @@ function getPopupPos(event) {
     return { x: Number(event.pageX)+15, y: event.pageY }
 }
 
-function movePopupintoView(pop, pageHeight){
+function movePopupintoView(pop){
+    var pageHeight = getPageHeight();
     var bottomPos = Number(pop.style.top.split("px")[0]) + pop.offsetHeight;
     
     if(bottomPos > pageHeight){
         pop.style.top = "unset";
         pop.style.bottom = "-" + window.pageYOffset + "px";
     }
+    
+    var pageWidth = getPageWidth();
+    var rightPos = Number(pop.style.left.split("px")[0]) + pop.offsetWidth;
+    
+    if (rightPos > pageWidth){
+    	pop.style.left = "unset";
+    	pop.style.right = "-" + window.pageXOffset + "px";
+    }
 }
 
 function getPageHeight() {
     return window.innerHeight + window.pageYOffset;              
+}
+
+function getPageWidth() {
+	return window.innerWidth + window.pageXOffset;
 }
 
 function hidePopup(){
