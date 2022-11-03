@@ -36,7 +36,14 @@ function submit(button) {
 }
 
 function getMasteriesPage() {
-  if (masteryIndex1 != 0)
-    return "Masteries.html?m1=" + masteryIndex0 + "&m2=" + masteryIndex1;
-  else return "Masteries.html?m1=" + masteryIndex0;
+  var ret = "Masteries.html";
+  if (masteryIndex0 > 0){
+    ret += "?m1=" + masteryIndex0;
+    if (masteryIndex1 > 0)
+  	  ret += "&m2=" + masteryIndex1;
+  }
+  else if (masteryIndex1 > 0)
+  	ret += "?m1=" + masteryIndex1;
+  
+  return ret;
 }
