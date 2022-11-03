@@ -68,8 +68,9 @@ function scaleButtonPosition(button, iconPosition) {
   button.style.left = (iconPosition.posX-19)/8.65 + "%";
 }
 
-function updateSkills(){    
-    for (var i = 0; i < m1.skillTiers.length; i++){
+function updateSkills(){
+	var numTiers = m1 ? m1.skillTiers.length : m2.skillTiers.length;   
+    for (var i = 0; i < numTiers; i++){
         if(m1)
             if(i+1 <= m1CurrTier){
                 m1.skillTiers[i].forEach((skill) => {
