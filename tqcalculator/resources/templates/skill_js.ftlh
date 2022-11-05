@@ -21,9 +21,9 @@ function addSkill(panel, mastery, skill) {
     skillImage.classList.add("skillButtonImage");
     skillImage.src = "images/skills/" +
     <#if name=="ShadowChampions">
-    mastery.name.toLowerCase() + "/" + skill.name.replaceAll(" ", "_").replaceAll("'", "").toLowerCase().replaceAll(":", "")
+    mastery.name.toLowerCase() + "/" + skill.name.replaceAll(" ", "_").replaceAll("'", "").toLowerCase().replaceAll(":", "").trim()
     <#else>
-    mastery.name + "/" + skill.name.replaceAll(":", "")
+    mastery.name + "/" + skill.name.replaceAll(":", "").trim()
     </#if>
     + ".png";
     skillButton.appendChild(skillImage);

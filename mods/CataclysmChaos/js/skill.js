@@ -20,7 +20,7 @@ function addSkill(panel, mastery, skill) {
     var skillImage = document.createElement("img");
     skillImage.classList.add("skillButtonImage");
     skillImage.src = "images/skills/" +
-        mastery.name + "/" + skill.name.replaceAll(":", "")
+        mastery.name + "/" + skill.name.replaceAll(":", "").trim()
     + ".png";
     skillButton.appendChild(skillImage);
     
