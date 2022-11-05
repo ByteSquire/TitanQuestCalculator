@@ -8687,7 +8687,7 @@
     },
     "skillTiers" : [ [ {
       "name" : "Potent Elixir",
-      "description" : "Neidan practitioners often alter their concoctions to grant them additional boons when imbibed.{^n}{^Y} Can trigger when a health or energy potion is used.",
+      "description" : "Neidan practitioners often alter their concoctions to grant them additional boons when imbibed.{^n}{^Y}Triggers when a health or energy potion is used.",
       "triggerType" : "when an item is used",
       "skillIcon" : {
         "posY" : 403,
@@ -8703,7 +8703,7 @@
         "castLevels" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0 ],
         "castSkills" : [ {
           "name" : "Potent Elixir",
-          "description" : "Neidan practitioners often alter their concoctions to grant them additional boons when imbibed.{^n}{^Y} Can trigger when a health or energy potion is used.",
+          "description" : "Neidan practitioners often alter their concoctions to grant them additional boons when imbibed.{^n}{^Y}Triggers when a health or energy potion is used.",
           "attributes" : {
             "${value}% Bleeding Resistance" : [ 5.0, 8.0, 11.0, 14.0, 17.0, 20.0, 23.0, 26.0, 29.0, 32.0, 35.0, 38.0, 41.0, 44.0, 47.0, 50.0 ],
             "${value}% Life Leech Resistance" : [ 5.0, 8.0, 11.0, 14.0, 17.0, 20.0, 23.0, 26.0, 29.0, 32.0, 35.0, 38.0, 41.0, 44.0, 47.0, 50.0 ],
@@ -8717,7 +8717,7 @@
       }
     }, {
       "name" : "Smoke Cloud",
-      "description" : "You throw a small amount of fine powder which releases a burst of energy blinding and hindering your foes.",
+      "description" : "Throw a flask that creates a debilitating smoke cloud that can hinder your foes.",
       "skillIcon" : {
         "posY" : 403,
         "posX" : 228
@@ -8752,7 +8752,7 @@
       }
     }, {
       "name" : "Huangdi's Favor",
-      "description" : "You channel the wrath of Emperors past and strike your foes with lightning. ",
+      "description" : "You channel the wrath of Emperors past and strike your foes with lightning.{^n}{^Y}Assign this skill to your left mouse button. ",
       "skillIcon" : {
         "posY" : 403,
         "posX" : 628
@@ -8780,7 +8780,7 @@
       }
     }, {
       "name" : "Consequences",
-      "description" : "You channel power through your weapon lowering your enemies' resistance to damage.{^n}{^Y} Weapon attacks have a chance to reduce enemies’ resistances. ",
+      "description" : "When attacking, you channel ancient mystical powers to lower your foe’s resistances.{^n}{^Y}Attacks have a chance to reduce enemy resistances.",
       "triggerType" : "if the target is hit",
       "skillIcon" : {
         "posY" : 403,
@@ -8796,7 +8796,7 @@
         "castLevels" : 11,
         "castSkills" : [ {
           "name" : "Consequences",
-          "description" : "You channel power through your weapon lowering your enemies' resistance to damage.{^n}{^Y} Weapon attacks have a chance to reduce enemies’ resistances. ",
+          "description" : "When attacking, you channel ancient mystical powers to lower your foe’s resistances.{^n}{^Y}Attacks have a chance to reduce enemy resistances.",
           "doesNotIncludeRacialDamage" : true,
           "attributes" : {
             "^a${value} Second(s) Recharge" : 1.0,
@@ -8824,8 +8824,8 @@
         } ]
       }
     } ], [ {
-      "name" : "Breath Attack",
-      "description" : "You emanate a focused energy attack in a cone in front of you, disorienting your foes.{^n}{^Y}Assign this skill to your left mouse button. ",
+      "name" : "Dragon’s Flame ",
+      "description" : "You unleash the dragon’s flame burning all in front of you and engulfing your enemies with poisonous fumes.",
       "skillIcon" : {
         "posY" : 341,
         "posX" : 328
@@ -8878,8 +8878,8 @@
         }
       }
     }, {
-      "name" : "Essence of Jade",
-      "description" : "A powerful and mystic mineral, you use jade to sharpen your attack skills even further.",
+      "name" : "Inner Equilibrium",
+      "description" : "Even when not under the influence of your concoctions, your prowess grows.{^n}{^Y}Bonuses are lost when under the effects of a health or energy potion.",
       "triggerType" : "when an item is used",
       "parent" : [ "Potent Elixir" ],
       "skillIcon" : {
@@ -8898,8 +8898,8 @@
       "skillCast" : {
         "castLevels" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ],
         "castSkills" : [ {
-          "name" : "Essence of Jade",
-          "description" : "A powerful and mystic mineral, you use jade to sharpen your attack skills even further.",
+          "name" : "Inner Equilibrium",
+          "description" : "Even when not under the influence of your concoctions, your prowess grows.{^n}{^Y}Bonuses are lost when under the effects of a health or energy potion.",
           "attributes" : {
             "+${value}% Attack Speed" : [ -5.0, -9.0, -13.0, -17.0, -21.0, -25.0, -29.0, -33.0, -37.0, -41.0, -45.0, -50.0 ],
             "+${value}% Casting Speed" : [ -8.0, -14.0, -20.0, -26.0, -32.0, -38.0, -44.0, -50.0, -56.0, -62.0, -68.0, -75.0 ],
@@ -8911,7 +8911,7 @@
       }
     }, {
       "name" : "Mutual Suffering",
-      "description" : "Stricken enemies may spread death and feebleness around them upon death.{^n}{^Y} Slain enemies can spread Consequences debuff on death.",
+      "description" : "If affected by the consequences of your mystical powers, enemies can spread their weakness on others when stricken.{^n}{^Y}Enemies who die with the Consequences debuff on them have a chance to spread it to nearby allies.",
       "castOnTarget" : true,
       "castOnDamage" : "ALL",
       "triggerType" : "if the target is killed",
@@ -8930,7 +8930,7 @@
         "castLevels" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0 ],
         "castSkills" : [ {
           "name" : "Consequences",
-          "description" : "You channel power through your weapon lowering your enemies' resistance to damage.{^n}{^Y} Weapon attacks have a chance to reduce enemies’ resistances. ",
+          "description" : "When attacking, you channel ancient mystical powers to lower your foe’s resistances.{^n}{^Y}Attacks have a chance to reduce enemy resistances.",
           "doesNotIncludeRacialDamage" : true,
           "attributes" : {
             "^a${value} Second(s) Recharge" : 1.0,
@@ -8981,7 +8981,7 @@
       }
     }, {
       "name" : "Terracotta Servants",
-      "description" : "Throw a masterful alchemical concoction that creates a terracotta warrior at the point of impact that serves you.{^n}{^Y} You can summon more than one terracotta servant at the time. ",
+      "description" : "Throw an alchemically altered figurine that spawns an allied terracotta warrior on impact. More servants can be controlled at once at higher levels.",
       "skillIcon" : {
         "posY" : 279,
         "posX" : 228
@@ -9087,7 +9087,7 @@
       }
     } ], [ {
       "name" : "Shen Pao",
-      "description" : "Throw a volatile alchemical concoction at a foe that detonates on impact and causes random elemental damage.",
+      "description" : "Throw a volatile alchemical concoction at a foe that detonates on impact and causes random elemental damage.{^n}{^Y}Can transmit weapon effects.",
       "projectileUsesAllDamage" : true,
       "skillIcon" : {
         "posY" : 217,
@@ -9173,8 +9173,8 @@
         "UltimateLevel" : 12
       }
     }, {
-      "name" : "Blessing of Jin Chan",
-      "description" : "The blessings of Jin Chan are upon you, granting a chance for additional boons for every enemy slain.{^n}{^Y} Can trigger on enemy death.  ",
+      "name" : "Blessing of Jin Chan ",
+      "description" : "The blessings of Jin Chan are upon you, granting good fortune.{^n}{^Y}Killing monsters has a chance to grant additional rewards. {&s}Higher levels increase the amount of treasure.",
       "castOnTarget" : true,
       "castOnDamage" : "ALL",
       "triggerType" : "if the target is killed",
@@ -9191,8 +9191,8 @@
       "skillCast" : {
         "castLevels" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0 ],
         "castSkills" : [ {
-          "name" : "Blessing of Jin Chan",
-          "description" : "The blessings of Jin Chan are upon you, granting a chance for additional boons for every enemy slain.{^n}{^Y} Can trigger on enemy death.  ",
+          "name" : "Blessing of Jin Chan ",
+          "description" : "The blessings of Jin Chan are upon you, granting good fortune.{^n}{^Y}Killing monsters has a chance to grant additional rewards. {&s}Higher levels increase the amount of treasure.",
           "attributes" : {
             "${value}m Radius" : 1.0,
             "Launches ${value} Projectile(s)" : 1,
@@ -9256,7 +9256,7 @@
       }
     }, {
       "name" : "Convergence",
-      "description" : "The Neidan's body is attuned to the potions themselves, sometimes granting additional unexpected power.{^Y} Can trigger when a health or energy potion is used.",
+      "description" : "The Neidan's body is attuned to the potions themselves, sometimes granting additional unexpected power.{^n}{^Y}Can trigger when a health or energy potion is used.",
       "triggerType" : "when an item is used",
       "skillIcon" : {
         "posY" : 155,
@@ -9369,7 +9369,7 @@
       }
     }, {
       "name" : "Shatter",
-      "description" : "Not even death breaks the bonds of servitude. Upon expiring or being killed your terracotta servant shatters, dealing damage around him. ",
+      "description" : "Not even death breaks the bonds of servitude. Your terracotta servant shatters upon death, dealing damage around him.",
       "parent" : [ "Terracotta Servants" ],
       "skillIcon" : {
         "posY" : 155,
@@ -9399,7 +9399,7 @@
       }
     } ], [ {
       "name" : "Echoes of the Ancestors",
-      "description" : "Upon vanquishing enemies with Shen Pao, blast waves emanate from you and deal damage around you.{^n}{^Y} Can trigger on enemy death. ",
+      "description" : "Upon vanquishing enemies with Shen Pao, blast waves emanate from you and deal damage around you.{^n}{^Y}Can trigger on enemy death. ",
       "castOnTarget" : true,
       "triggerType" : "if the target is killed",
       "triggeringSkill" : "Shen Pao",
@@ -9476,9 +9476,9 @@
         } ]
       }
     }, {
-      "name" : "Voice of the Ancients",
-      "description" : "Enemies caught in your Breath Attack will suffer the wrath of the Elements. ",
-      "parent" : [ "Breath Attack" ],
+      "name" : "Dragon Breath",
+      "description" : "Enemies caught in your Dragon’s Flame will suffer the wrath of the Elements. ",
+      "parent" : [ "Dragon’s Flame " ],
       "skillIcon" : {
         "posY" : 93,
         "posX" : 328
@@ -9492,7 +9492,7 @@
         "UltimateLevel" : 14
       }
     }, {
-      "name" : "Melding Armor",
+      "name" : "Melding Armor ",
       "description" : "The strength of your Chi’s flow is such that your barrier is imbued with additional protective energies.",
       "parent" : [ "Aura of Tranquility" ],
       "skillIcon" : {
@@ -9509,7 +9509,7 @@
       }
     } ], [ {
       "name" : "Weakest Chakra",
-      "description" : "You become attuned to the elements, emanating lethal energy that diminishes enemy health and weakens their defences. ",
+      "description" : "You become attuned to the elements, emanating lethal energy that weakens enemies and diminishes their vitality.",
       "skillIcon" : {
         "posY" : 31,
         "posX" : 428
@@ -9545,8 +9545,8 @@
         "UltimateLevel" : 16
       }
     }, {
-      "name" : "Forged by Fire",
-      "description" : "Creates an aura around the terracotta servant damaging him and enemies around him. ",
+      "name" : "Forged by Fire ",
+      "description" : "Creates a fire aura around the terracotta servant. The aura makes it more fragile but continuously damages enemies in a small area around it.",
       "doesNotIncludeRacialDamage" : true,
       "notDispellable" : true,
       "parent" : [ "Terracotta Servants" ],
@@ -9570,8 +9570,8 @@
         "UltimateLevel" : 10
       }
     }, {
-      "name" : "Spreading Influence",
-      "description" : "Upon hitting an enemy, your attacks deal damage in an area, damaging enemies around it.",
+      "name" : "Spreading Influence ",
+      "description" : "You channel the wrath of Huangdi himself, granting your attacks a chance to deal damage in an area.",
       "parent" : [ "Huangdi's Favor" ],
       "skillIcon" : {
         "posY" : 31,
