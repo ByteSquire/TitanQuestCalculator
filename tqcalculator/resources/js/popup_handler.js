@@ -46,27 +46,51 @@ function getPopupString(skill, currLevel, skipNext){
     
     if(skill.projectileUsesAllDamage){
         ret += "<br>\n";
-        ret += '<span class="" style="color: orange">Projectile uses All Damage</span>\n';
+        ret += '<span class="" style="color: orange">Projectile(s) trigger weapon hit effects</span>\n';
+    }
+    
+    var skillCastStringDesc = "";
+    
+    if(skill.castOnTarget){
+        skillCastStringDesc += 'Skill(s) will be cast at the target’s location';
     }
     
     if(skill.triggerType){
-        ret += "<br>\n";
-        ret += '<span class="" style="color: orange">Skill(s) will be cast ' + skill.triggerType + '</span>\n';
-    }
-    
-    if(skill.triggeringSkill){
-        ret += "<br>\n";
-        ret += '<span class="" style="color: orange">Skill(s) are triggered by ' + skill.triggeringSkill + '</span>\n';
-    }
-    
-    if(skill.castOnTarget){
-        ret += "<br>\n";
-        ret += '<span class="" style="color: orange">Will be cast at target location</span>\n';
+        var s;
+        if (skillCastStringDesc.length == 0){
+            s = 'Skill(s) will be cast ' + skill.triggerType;
+        } else{
+            s = ' ' + skill.triggerType
+        }
+        skillCastStringDesc += s;
     }
     
     if(skill.castOnDamage){
+        var s;
+        var damageType = skill.castOnDamage == 'ALL' ? 'any' : skill.castOnDamage.toLowerCase();
+        if (!skill.triggerType){
+            s = 'Skill(s) will be cast when dealing ' + damageType  + ' damage';
+        } else{
+            s = ' by ' + damageType + ' damage'; 
+        }
+        skillCastStringDesc += s;
+    }
+    
+    if(skill.triggeringSkill){
+        var s;
+        if (skillCastStringDesc.length == 0){
+            s = 'Skill(s) are triggered by ' + skill.triggeringSkill;
+        } else{
+            s = (skill.castOnDamage ? ' from ' : ' by ') + skill.triggeringSkill; 
+        }
+        skillCastStringDesc += s;
+    }
+    
+    if (skillCastStringDesc.length > 0){
         ret += "<br>\n";
-        ret += '<span class="" style="color: orange">Activates on ' + skill.castOnDamage.toLowerCase()  + ' damage</span>\n';
+        ret += '<span class="" style="color: orange">';
+        ret += skillCastStringDesc;
+        ret += '</span>\n';
     }
     
     if(skill.protectsAgainst){
