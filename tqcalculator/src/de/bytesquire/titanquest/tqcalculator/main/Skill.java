@@ -265,7 +265,7 @@ public class Skill {
                 return;
             }
             if (key.startsWith("DamageDuration")
-                    || key.contains("Fumble")/* || key.startsWith("DamageTotalResistanceReduction") */) {
+                    || key.contains("Fumble") || key.startsWith("DamageTotalResistanceReduction")) {
                 putAttributeMinMaxDurationDamage(key, tmp);
                 return;
             }
@@ -286,7 +286,7 @@ public class Skill {
                 return;
             }
             if (key.startsWith("DamageDuration")
-                    || key.contains("Fumble")/* || key.startsWith("DamageTotalResistanceReduction") */) {
+                    || key.contains("Fumble") || key.startsWith("DamageTotalResistanceReduction")) {
                 putAttributeMinMaxDurationDamage(key, tmp);
                 return;
             }
@@ -311,7 +311,7 @@ public class Skill {
                         + " Duration";
         }
         if (!key.endsWith("Modifier") && (key.startsWith("DamageDuration")
-                || key.contains("Fumble"))/* || key.startsWith("DamageTotalResistanceReduction") */) {
+                || key.contains("Fumble")) || key.startsWith("DamageTotalResistanceReduction")) {
             putAttributeDurationDamage(key, value);
             return;
         }

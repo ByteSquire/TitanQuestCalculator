@@ -71,9 +71,6 @@
       },
       "attributes" : {
         "${value}% Chance to Dodge Attacks" : [ 3.0, 6.0, 8.0, 10.0, 12.0, 15.0, 18.0, 21.0, 23.0, 25.0, 27.0, 30.0 ],
-        "${value}% Piercing Damage" : {
-          "min" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 28.0, 30.0, 35.0 ]
-        },
         "MaxLevel" : 8,
         "UltimateLevel" : 12
       }
@@ -389,10 +386,6 @@
           "duration" : {
             "min" : 10.0
           }
-        },
-        "${value} Reduced Resistances" : {
-          "min" : [ 25.0, 29.0, 33.0, 37.0, 43.0, 47.0, 51.0, 55.0, 59.0, 65.0, 67.0, 70.0, 73.0, 75.0, 80.0 ],
-          "max" : 8.0
         },
         "${value}% Reduction to Enemy's Health" : {
           "min" : [ 9.0, 12.0, 15.0, 18.0, 21.0, 25.0, 27.0, 30.0, 33.0, 36.0 ]
@@ -2575,10 +2568,6 @@
         "${value}m Radius" : 1.0,
         "Launches ${value} Projectile(s)" : 1,
         "${value} Summon Limit " : 3,
-        "${value}% Piercing Damage" : {
-          "min" : 30.0,
-          "max" : 50.0
-        },
         "Life Time ${value} Seconds" : 30.0,
         "MaxLevel" : 16,
         "UltimateLevel" : 20
@@ -2601,9 +2590,6 @@
                 "max" : [ 30.0, 38.0, 48.0, 58.0, 72.0, 82.0, 94.0, 106.0, 118.0, 134.0, 148.0, 162.0, 176.0, 190.0, 210.0, 226.0, 242.0, 260.0, 280.0, 306.0, 324.0, 346.0, 368.0, 392.0, 416.0, 440.0, 464.0, 488.0, 514.0, 540.0 ]
               },
               "${value} Projectile(s)" : 1,
-              "${value}% Piercing Damage" : {
-                "min" : 50.0
-              },
               "MaxLevel" : 30,
               "UltimateLevel" : 30
             }
@@ -5421,9 +5407,6 @@
         "${value} Second Duration" : [ 600.0, 600.0, 600.0, 600.0, 600.0, 600.0, 600.0, 600.0, 600.0, 600.0 ],
         "+${value}% Strength" : [ 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 8.5, 9.0, 9.5, 10.0, 10.5, 11.0, 11.5 ],
         "${value}% Bleeding Resistance" : [ 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0, 36.0, 39.0, 42.0, 45.0 ],
-        "${value}% Piercing Damage" : {
-          "min" : [ 3.0, 5.0, 7.0, 9.0, 11.0, 13.0, 15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 28.0, 30.0, 35.0 ]
-        },
         "${value}% Vitality Damage Resistance" : [ 8.0, 12.0, 16.0, 20.0, 24.0, 28.0, 32.0, 36.0, 40.0, 44.0, 48.0, 52.0, 56.0, 60.0 ],
         "+${value}% Movement Speed" : 10.0,
         "MaxLevel" : 10,
@@ -6125,9 +6108,6 @@
         "${value} Energy Cost" : [ 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0 ],
         "${value} Second Duration" : [ 1.0, 1.5, 2.0, 2.5, 3.0, 3.67, 4.33, 5.0, 5.75, 6.5, 7.25, 8.0 ],
         "${value}m Radius" : 4.0,
-        "${value} Reduced Resistances" : {
-          "min" : 20.0
-        },
         "MaxLevel" : 8,
         "UltimateLevel" : 12,
         "${chance}% Chance for one of the following:" : {

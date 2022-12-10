@@ -399,6 +399,8 @@ public class SkillParser {
         case "forceHideIconFromQuickSlot":
         case "skillCastNameIsBuff":
         case "defensiveAbsorption": // doesn't work in game
+        case "offensivePierceRatioMin": // doesn't work for skills
+        case "offensivePierceRatioMax": // doesn't work for skills
             return true;
         default:
             return false;
