@@ -70,8 +70,8 @@ function pointsSelected(select){
 function updateAttributes(x, value){
     if(!x.startsWith("+") && !x.startsWith("-"))
         return;
-    var attr = x.split(" ")[1];
-    if(!x.includes("Regeneration"))
+    if(!(x.includes("Regeneration") || x.includes("Leech"))){
+        var attr = x.split(" ")[1];
         if(!x.includes("%")){
             switch(attr){
             case "Strength": str += value;
@@ -99,6 +99,7 @@ function updateAttributes(x, value){
                     break; 
             }
         }
+    }
 }
 
 function updateUI(){
