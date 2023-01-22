@@ -3054,7 +3054,6 @@
     }, {
       "name" : "Blade Fury",
       "description" : "A swift and potent multi-hit attack. ^y(Hits more targets at higher levels of the skill. Sword~Dagger/Axe Required)",
-      "parent" : [ "Calculated Strike" ],
       "skillIcon" : {
         "posY" : 279,
         "posX" : 638
@@ -4320,8 +4319,7 @@
         "+${value}% Damage to Beastman & Beast" : 33.0,
         "+${value}% Pierce Damage" : [ 58.0, 66.0, 77.0, 85.0, 93.0, 104.0, 112.0, 120.0, 131.0, 139.0, 147.0, 158.0, 166.0, 174.0, 185.0 ],
         "MaxLevel" : 10,
-        "UltimateLevel" : 14,
-        "requiredWeapons" : "Spear"
+        "UltimateLevel" : 14
       }
     }, {
       "name" : "Study Prey",
@@ -4603,12 +4601,6 @@
               "MaxLevel" : 20
             }
           },
-          "GlobalProperties_Normal01" : {
-            "name" : "GlobalProperties_Normal01",
-            "attributes" : {
-              "MaxLevel" : 20
-            }
-          },
           "Attributes" : {
             "name" : "Attributes",
             "attributes" : {
@@ -4652,7 +4644,6 @@
         },
         "petSkillLevels" : {
           "Poof" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ],
-          "GlobalProperties_Normal01" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
           "Attributes" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ],
           "Venom" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ]
         }
@@ -8441,7 +8432,6 @@
     }, {
       "name" : "Transmutation",
       "description" : "A master Runesmith is able to convert the very nature of their weapon, turning mere metal into a manifestation of Elemental magic. {^n}{^y}Reduces reliance on strength in favor of intelligence.",
-      "parent" : [ "Rune Weapon" ],
       "skillIcon" : {
         "posY" : 93,
         "posX" : 110
