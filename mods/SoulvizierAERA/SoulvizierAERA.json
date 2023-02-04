@@ -4,7 +4,7 @@
   "masteryLevels" : [ 1, 4, 10, 16, 24, 32, 40 ],
   "skillPointIncrement" : 3,
   "maxLevel" : 85,
-  "classNames" : [ [ "Mastery parameters missing or invalid", null, null, null, null, null, null, null, null, null, null, null ], [ "Warrior", null, "Conqueror", "Destroyer", "Tempest", "Assassin", "Slayer", "Champion", "Soul Reaver", "Harbinger ", "Berserker", "Daoist" ], [ "Defender", null, null, "Juggernaut", "Archon", "Executioner", "Warden", "Guardian", "Dreadnaught", "Spellbreaker ", "Runesmith", "Monk" ], [ "Pyromancer", null, null, null, "Elementalist", "Marauder", "Avenger", "Evoker", "Planescaller", "Geomancer ", "Stonespeaker", "Wu" ], [ "Stormcaller", null, null, null, null, "Sorcerer", "Sage ", "Dawnbringer", "Duskbringer", "Prophet ", "Thunderer", "Channeler" ], [ "Occultist", null, null, null, null, null, "Stalker", "Illusionist", "Warlock", "Dreamkiller", "Trickster", "Disruptor" ], [ "Hunter", null, null, null, null, null, null, "Ranger", "Soul Binder", "Haruspex", "Dragon Hunter", "Pilgrim" ], [ "Wanderer ", null, null, null, null, null, null, null, "Hierophant", "Soothsayer", "Druid", "Hermit" ], [ "Necromancer", null, null, null, null, null, null, null, null, "Diviner", "Shaman", "Spiritualist" ], [ "Seer", null, null, null, null, null, null, null, null, null, "Oracle", "Contemplator" ], [ "Runemaster", null, null, null, null, null, null, null, null, null, null, "Esoterist" ], [ "Neidan", null, null, null, null, null, null, null, null, null, null, null ] ],
+  "classNames" : [ [ "Mastery parameters missing or invalid", null, null, null, null, null, null, null, null, null, null, null ], [ "Warrior", null, "Conqueror", "Destroyer", "Tempest", "Assassin", "Slayer", "Champion", "Soul Reaver", "Harbinger", "Berserker", "Daoist" ], [ "Defender", null, null, "Juggernaut", "Archon", "Executioner", "Warden", "Guardian", "Dreadnaught", "Spellbreaker ", "Runesmith", "Monk" ], [ "Pyromancer", null, null, null, "Elementalist", "Marauder", "Avenger", "Evoker", "Planescaller", "Geomancer ", "Stonespeaker", "Wu" ], [ "Stormcaller", null, null, null, null, "Sorcerer", "Sage", "Dawnbringer", "Duskbringer", "Prophet", "Thunderer", "Channeler" ], [ "Occultist", null, null, null, null, null, "Stalker", "Illusionist", "Warlock", "Dreamkiller", "Trickster", "Disruptor" ], [ "Hunter", null, null, null, null, null, null, "Ranger", "Soul Binder", "Haruspex", "Dragon Hunter", "Pilgrim" ], [ "Wanderer", null, null, null, null, null, null, null, "Hierophant", "Soothsayer", "Druid", "Hermit" ], [ "Necromancer", null, null, null, null, null, null, null, null, "Diviner", "Shaman", "Spiritualist" ], [ "Seer", null, null, null, null, null, null, null, null, null, "Oracle", "Contemplator" ], [ "Runemaster", null, null, null, null, null, null, null, null, null, null, "Esoterist" ], [ "Neidan", null, null, null, null, null, null, null, null, null, null, null ] ],
   "masteries" : [ {
     "name" : "Warfare",
     "masteryAttributes" : {
@@ -74,7 +74,7 @@
       }
     } ], [ {
       "name" : "War Dance",
-      "description" : "Executes a devastating spinning attack. Initially each hit is not as powerful as a normal attack but the effectiveness increases every level. ^y(Melee weapon Required)",
+      "description" : "Executes a devastating spinning attack. Initially each hit is not as powerful as a normal attack but the effectiveness increases every level.{^n}{^y}Melee weapon required.",
       "skillIcon" : {
         "posY" : 341,
         "posX" : 550
@@ -93,7 +93,7 @@
       }
     }, {
       "name" : "Parry",
-      "description" : "Even the sturdiest armor has its chinks. The best way to stay alive is to not get hit. ^n^y(You need two melee weapons for this skill to work)",
+      "description" : "Even the sturdiest armor has its chinks. The best way to stay alive is to not get hit.{^n}{^y}Dual wield of Melee weapons required.",
       "parent" : [ "Dual Wield" ],
       "skillIcon" : {
         "posY" : 341,
@@ -141,7 +141,7 @@
       }
     }, {
       "name" : "Slam",
-      "description" : "Hit all enemies in a straight line with staggering force. ^y(The length of the line extends with levels. Melee weapon or Staff Required)",
+      "description" : "Hit all enemies in a straight line with staggering force.{^n}{^y}The length of the line extends with levels.{^n}{^y}Melee weapon or Staff required.",
       "skillIcon" : {
         "posY" : 341,
         "posX" : 462
@@ -171,7 +171,7 @@
       }
     } ], [ {
       "name" : "Hew",
-      "description" : "A dual-wield technique attack that bleeds the enemy.^n^y(You need two melee weapons for this skill to work)",
+      "description" : "A dual-wield technique attack that bleeds the enemy.{^n}{^y}Dual wield of Melee weapons required.",
       "parent" : [ "Parry" ],
       "skillIcon" : {
         "posY" : 279,
@@ -307,7 +307,7 @@
       }
     } ], [ {
       "name" : "Lacerate",
-      "description" : "Adds bleeding and piercing damage to War Dance. ^y(Sword~Dagger/Axe/Spear Required)",
+      "description" : "Adds bleeding and piercing damage to War Dance.{^n}{^y}Melee weapon required.",
       "parent" : [ "War Dance" ],
       "skillIcon" : {
         "posY" : 217,
@@ -332,7 +332,7 @@
       }
     }, {
       "name" : "Cross Cut",
-      "description" : "A dual-wield technique that can hit up to 2 enemies with a cross-cutting scissor motion.^n^y(You need two melee weapons for this skill to work)",
+      "description" : "A dual-wield technique that can hit up to 2 enemies with a cross-cutting scissor motion.{^n}{^y}Dual wield of Melee weapons required.",
       "parent" : [ "Hew" ],
       "skillIcon" : {
         "posY" : 217,
@@ -404,7 +404,7 @@
       }
     } ], [ {
       "name" : "Finesse",
-      "description" : "Execute War Dance more frequently and at a lesser cost, striking more enemies, where they are most vulnerable. ^y(Reduced cooldown starts at level 2. Melee weapon Required)",
+      "description" : "Execute War Dance more frequently and at a lesser cost, striking more enemies, where they are most vulnerable. {^n}{^y}Reduced cooldown starts at level 2.{^n}{^y}Melee weapon required.",
       "parent" : [ "War Dance" ],
       "skillIcon" : {
         "posY" : 155,
@@ -459,7 +459,7 @@
       }
     } ], [ {
       "name" : "Tumult",
-      "description" : "A dual-wield technique that hits up to 3 adjacent enemies.^n^y(You need two melee weapons for this skill to work)",
+      "description" : "A dual-wield technique that hits up to 3 adjacent enemies.{^n}{^y}Dual wield of Melee weapons required.",
       "parent" : [ "Cross Cut" ],
       "skillIcon" : {
         "posY" : 93,
@@ -587,7 +587,7 @@
       }
     } ], [ {
       "name" : "Double Helix",
-      "description" : "Learn to leap up then spiral down, slashing all enemies around you with such speed and control that a whirlwind of energy strikes a second time as you hit the ground. ^n^y(You need two melee weapons for this skill to work)",
+      "description" : "Learn to leap up then spiral down, slashing all enemies around you with such speed and control that a whirlwind of energy strikes a second time as you hit the ground.{^n}{^y}Dual wield of Melee weapons required.",
       "parent" : [ "Tumult" ],
       "skillIcon" : {
         "posY" : 31,
@@ -748,7 +748,7 @@
       }
     }, {
       "name" : "Concussive Blow",
-      "description" : "While wielding a club-type weapon, this skill adds a chance to stun enemies on attack, and increases the duration of all stuns. ^y(Club/Mace/Maul/Hammer Required)",
+      "description" : "While wielding a club-type weapon, this skill adds a chance to stun enemies on attack, and increases the duration of all stuns.{^n}{^y}Club required.",
       "skillIcon" : {
         "posY" : 403,
         "posX" : 110
@@ -799,7 +799,7 @@
       }
     }, {
       "name" : "Hack",
-      "description" : "Improves penetration when using melee axes, and adds a chance that axe attacks will chop through enemy armor. ^y(Axe Required)",
+      "description" : "Improves penetration when using melee axes, and adds a chance that axe attacks will chop through enemy armor. {^n}{^y}Axe required.",
       "skillIcon" : {
         "posY" : 341,
         "posX" : 198
@@ -1021,7 +1021,7 @@
       }
     }, {
       "name" : "Cleave",
-      "description" : "A savage melee axe attack that strikes twice, landing both hands each time for a total of four hits. ^y(Axe Required)",
+      "description" : "A savage melee axe attack that strikes twice, landing both hands each time for a total of four hits.{^n}{^y}Axe required.",
       "parent" : [ "Hack" ],
       "skillIcon" : {
         "posY" : 155,
@@ -1076,7 +1076,7 @@
       }
     }, {
       "name" : "Heave",
-      "description" : "A slow and brutal attack that deals massive damage. ^y(Club/Mace/Maul/Hammer Required)",
+      "description" : "A slow and brutal attack that deals massive damage.{^n}{^y}Club required.",
       "parent" : [ "Concussive Blow" ],
       "skillIcon" : {
         "posY" : 93,
@@ -1377,7 +1377,7 @@
       }
     }, {
       "name" : "Rupture",
-      "description" : "Connects the player's tumultuous earth energies to their staff, causing projectiles to explode on impact. ^y(Staff Only)",
+      "description" : "Connects the player's tumultuous earth energies to their staff, causing projectiles to explode on impact.{^n}{^y}Staff required.",
       "skillIcon" : {
         "posY" : 403,
         "posX" : 550
@@ -2647,7 +2647,7 @@
           },
           "Arc Discharge" : {
             "name" : "Arc Discharge",
-            "description" : "Enhances the Wisp’s Thunderclap ability, generating tendrils of lightning.",
+            "description" : "Enhances the Wisp�s Thunderclap ability, generating tendrils of lightning.",
             "attributes" : {
               "${value} Lightning Damage" : {
                 "min" : [ 30.0, 40.0, 50.0, 61.0, 72.0, 83.0, 95.0, 108.0, 122.0, 138.0, 154.0, 171.0 ],
@@ -3053,7 +3053,7 @@
       }
     }, {
       "name" : "Blade Fury",
-      "description" : "A swift and potent multi-hit attack. ^y(Hits more targets at higher levels of the skill. Sword~Dagger/Axe Required)",
+      "description" : "A swift and potent multi-hit attack.{^n}{^y}Hits more targets at higher levels of the skill.{^n}{^y}Sword or Axe required.",
       "skillIcon" : {
         "posY" : 279,
         "posX" : 638
@@ -3076,7 +3076,7 @@
       }
     }, {
       "name" : "Dual Blade Proficiency",
-      "description" : "The Occultist is able to wield two blade melee weapons at once. With lighter blades, the Occultist can attack with greater proficiency and speed. ^y(Requires Dual wield of Swords~Daggers/Axes)",
+      "description" : "The Occultist is able to wield two blade melee weapons at once. With lighter blades, the Occultist can attack with greater proficiency and speed.{^n}{^y}Dual wield of Swords or Axes required.",
       "parent" : [ "Agility" ],
       "skillIcon" : {
         "posY" : 279,
@@ -3400,7 +3400,7 @@
       }
     }, {
       "name" : "Dual Ranged Proficiency",
-      "description" : "The Occultist is able to wield two ranged weapons at once. With lighter ranged weapons, the Occultist can attack with greater proficiency and speed. ^y(Requires Dual wield of One-hand Ranged Weapons)",
+      "description" : "The Occultist is able to wield two ranged weapons at once. With lighter ranged weapons, the Occultist can attack with greater proficiency and speed.{^n}{^y}Dual wield of Throwing weapons required.",
       "parent" : [ "Agility" ],
       "skillIcon" : {
         "posY" : 217,
@@ -3445,7 +3445,7 @@
       }
     }, {
       "name" : "Nether Strike",
-      "description" : "Speed through the shadow realm unseen to deliver an attack with terrifying momentum that will greatly multiply damage and penetration. ^y(Doesn't work with staves)",
+      "description" : "Speed through the shadow realm unseen to deliver an attack with terrifying momentum that will greatly multiply damage and penetration.{^n}{^y}Doesn't work with staves.",
       "skillIcon" : {
         "posY" : 155,
         "posX" : 638
@@ -3806,7 +3806,7 @@
       }
     } ], [ {
       "name" : "Dark Vapors",
-      "description" : "Shadow energies cling to your weapon as you pass through the shadow realm, greatly increasing bleeding and life damage. ^y(Doesn't work with staves)",
+      "description" : "Shadow energies cling to your weapon as you pass through the shadow realm, greatly increasing bleeding and life damage.{^n}{^y}Doesn't work with staves.",
       "parent" : [ "Nether Strike" ],
       "skillIcon" : {
         "posY" : 31,
@@ -3939,7 +3939,7 @@
     },
     "skillTiers" : [ [ {
       "name" : "Wood Lore",
-      "description" : "Central to survival in the wilderness is the ability to hunt with bow, spear, and throwing projectiles. Great familiarity with these weapons allows you to wield them with exceptional speed and grace. ^y(Spear, Bow or One-hand ranged weapon Required)",
+      "description" : "Central to survival in the wilderness is the ability to hunt with bow, spear, and throwing projectiles. Great familiarity with these weapons allows you to wield them with exceptional speed and grace.{^n}{^y}Spear, Bow or Throwing weapon required.",
       "skillIcon" : {
         "posY" : 403,
         "posX" : 374
@@ -3954,7 +3954,7 @@
       }
     }, {
       "name" : "Take Down",
-      "description" : "Speed toward enemies and deliver a brutal thrust with your spear. ^y(Spear Required)",
+      "description" : "Speed toward enemies and deliver a brutal thrust with your spear.{^n}{^y}Spear required.",
       "skillIcon" : {
         "posY" : 403,
         "posX" : 462
@@ -4012,7 +4012,7 @@
       }
     }, {
       "name" : "Marksmanship",
-      "description" : "Marksmanship skill allows you to fire or throw projectiles that fly faster and increase pierce damage. {^n}{^y}(Bow or One-hand Ranged weapon Required). Assign this skill to your left mouse button.",
+      "description" : "Marksmanship skill allows you to fire or throw projectiles that fly faster and increase pierce damage.{^n}{^y}Bow or Throwing weapon required. Assign this skill to your left mouse button.",
       "skillIcon" : {
         "posY" : 341,
         "posX" : 286
@@ -4069,7 +4069,7 @@
       }
     }, {
       "name" : "Gouge",
-      "description" : "A combat technique that uses the spear or bow to inflict deep wounds that will result in prolonged bleeding. ^y(Spear or Bow Required)",
+      "description" : "A combat technique that uses the spear or bow to inflict deep wounds that will result in prolonged bleeding.{^n}{^y}Spear or Bow required.",
       "parent" : [ "Wood Lore" ],
       "skillIcon" : {
         "posY" : 279,
@@ -4093,7 +4093,7 @@
       }
     }, {
       "name" : "Eviscerate",
-      "description" : "Target vital weak points on your enemy to deal devastating damage. ^y(Spear Required)",
+      "description" : "Target vital weak points on your enemy to deal devastating damage.{^n}{^y}Spear required.",
       "parent" : [ "Take Down" ],
       "skillIcon" : {
         "posY" : 279,
@@ -4232,7 +4232,7 @@
       }
     }, {
       "name" : "Puncture Shot Arrows",
-      "description" : "Incorporating a more streamlined shaft into your arrows allows them to pass through targets and hit additional enemies in their path. {^n}{^y}(Bow or One-hand Ranged weapon Required)",
+      "description" : "Incorporating a more streamlined shaft into your arrows allows them to pass through targets and hit additional enemies in their path.{^n}{^y}Bow or Throwing weapon required.",
       "parent" : [ "Marksmanship" ],
       "skillIcon" : {
         "posY" : 217,
@@ -4249,7 +4249,7 @@
       }
     }, {
       "name" : "Spear Tempest",
-      "description" : "Execute a whirling multi-hit attack so fast and complex that enemies are caught off guard. ^y(Spear Required)",
+      "description" : "Execute a whirling multi-hit attack so fast and complex that enemies are caught off guard.{^n}{^y}Spear required.",
       "skillIcon" : {
         "posY" : 217,
         "posX" : 462
@@ -4341,7 +4341,7 @@
       }
     } ], [ {
       "name" : "Scatter Shot Arrows",
-      "description" : "A secret of master fletchers is the ability to craft special arrow heads that burst on impact sending out razor-sharp fragments in all directions. {^n}{^y}(Bow or One-hand Ranged weapon Required)",
+      "description" : "A secret of master fletchers is the ability to craft special arrow heads that burst on impact sending out razor-sharp fragments in all directions.{^n}{^y}Bow or Throwing weapon required.",
       "parent" : [ "Puncture Shot Arrows" ],
       "skillIcon" : {
         "posY" : 93,
@@ -4391,7 +4391,7 @@
       }
     }, {
       "name" : "Flayer",
-      "description" : "With snake-like control of your body, you learn to coil greater tension into your muscles and strike with lethal precision. ^y(Spear Required)          ",
+      "description" : "With snake-like control of your body, you learn to coil greater tension into your muscles and strike with lethal precision.{^n}{^y}Spear required.",
       "parent" : [ "Spear Tempest" ],
       "skillIcon" : {
         "posY" : 93,
@@ -4443,7 +4443,7 @@
       }
     }, {
       "name" : "Volley",
-      "description" : "A combat technique that uses the spear or bow to rapidly strike three times. ^y(Spear or Bow Required)",
+      "description" : "A combat technique that uses the spear or bow to rapidly strike three times.{^n}{^y}Spear or Bow required.",
       "skillIcon" : {
         "posY" : 31,
         "posX" : 374
@@ -4932,7 +4932,7 @@
       }
     }, {
       "name" : "Sylvan Nymph",
-      "description" : "Summons a powerful forest Nymph who can bring down enemies with her magical bow and cast enchantments to strengthen allies in battle.^y^nAt level 5, the Nymph learns Nature’s Grace, a rejuvenating and protective aura she can cast on the player and his allies.^y^nAt level 10, the Nymph learns Nature’s Wrath, a special skill that imbues her attacks with the power of the elements.",
+      "description" : "Summons a powerful forest Nymph who can bring down enemies with her magical bow and cast enchantments to strengthen allies in battle.^y^nAt level 5, the Nymph learns Nature�s Grace, a rejuvenating and protective aura she can cast on the player and his allies.^y^nAt level 10, the Nymph learns Nature�s Wrath, a special skill that imbues her attacks with the power of the elements.",
       "skillIcon" : {
         "posY" : 217,
         "posX" : 550
@@ -5436,7 +5436,7 @@
       }
     }, {
       "name" : "Bone Spire",
-      "description" : "Through your very essence, you raze a path ahead of you, spiring death up from the ground to attack the living. ^y(Counts as Weapon Attack)",
+      "description" : "Through your very essence, you raze a path ahead of you, spiring death up from the ground to attack the living.{^n}{^y}Transfers flat damage outside of the wielded weapons.",
       "projectileUsesAllDamage" : true,
       "skillIcon" : {
         "posY" : 403,
@@ -6110,7 +6110,7 @@
       }
     }, {
       "name" : "Liche King",
-      "description" : "In ages past, powerful sorcerers learned how to cheat Hades and persist as undead liches long after death had robbed their bodies of life. A dangerous practice of the Necromancer is to bind the souls of these ancient liches to their will, thus acquiring their powers.",
+      "description" : "In ages past, powerful sorcerers learned how to cheat Hades and persist as undead liches long after death had robbed their bodies of life. A dangerous practice of the Necromancer is to bind the souls of these ancient liches to their will, thus acquiring their powers.^y^nAt level 14, drawing upon ancient arcane craft, the Liche King learns Arcane Blast and can launch deadly bolts of elemental energy at enemies.",
       "parent" : [ "Bone Fiend" ],
       "skillIcon" : {
         "posY" : 155,
@@ -6202,8 +6202,8 @@
               "MaxLevel" : 1
             }
           },
-          "tagPetskillSVAER066" : {
-            "name" : "tagPetskillSVAER066",
+          "Dodge Attacks" : {
+            "name" : "Dodge Attacks",
             "attributes" : {
               "${value}% Chance to Dodge Attacks" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0, 28.0, 29.0, 30.0, 31.0, 32.0, 33.0, 34.0, 35.0, 36.0, 37.0, 38.0, 39.0, 40.0, 41.0, 42.0, 43.0, 44.0, 45.0, 46.0, 47.0, 48.0, 49.0, 50.0, 51.0, 52.0, 53.0, 54.0, 55.0, 56.0, 57.0, 58.0, 59.0, 60.0, 61.0, 62.0, 63.0, 64.0, 65.0, 66.0, 67.0, 68.0, 69.0, 70.0, 71.0, 72.0, 73.0, 74.0, 75.0, 76.0, 77.0, 78.0, 79.0, 80.0, 81.0, 82.0, 83.0, 84.0, 85.0, 86.0, 87.0, 88.0, 89.0, 90.0, 91.0, 92.0, 93.0, 94.0, 95.0, 96.0, 97.0, 98.0, 99.0, 100.0 ],
               "MaxLevel" : 100
@@ -6273,7 +6273,7 @@
           "Armor_Passive" : [ 7, 13, 20, 26, 33, 39, 46, 52, 59, 65, 72, 78, 85, 91, 98, 104, 111, 117, 124, 130 ],
           "drxwraithlord_defaultattack" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ],
           "resist_undead" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
-          "tagPetskillSVAER066" : [ 15, 15, 16, 16, 16, 17, 17, 17, 18, 18, 18, 19, 19, 19, 20, 20, 20, 21, 21, 21 ],
+          "Dodge Attacks" : [ 15, 15, 16, 16, 16, 17, 17, 17, 18, 18, 18, 19, 19, 19, 20, 20, 20, 21, 21, 21 ],
           "Soul Blight" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ],
           "Avoid Projectiles" : [ 20, 21, 22, 23, 23, 25, 25, 26, 27, 28, 28, 30, 30, 31, 32, 33, 33, 35, 35, 36 ],
           "Arcane Blast" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 10, 12, 14, 16, 18, 20 ]
@@ -6939,7 +6939,7 @@
       }
     }, {
       "name" : "Phantom Strike",
-      "description" : "Vanish from the waking world and reappear  before a target enemy to deliver a monstrous attack.",
+      "description" : "Vanish from the waking world and reappear before a target enemy to deliver a monstrous attack.",
       "skillIcon" : {
         "posY" : 279,
         "posX" : 374
@@ -7377,7 +7377,7 @@
       }
     }, {
       "name" : "Psionic Beam",
-      "description" : "Improve the psionic focus within your magic staff to channel a rapid-fire attack. {^n}{^y}Works only with Staves.",
+      "description" : "Improve the psionic focus within your magic staff to channel a rapid-fire attack. {^n}{^y}The special firing attack works only with staves. The other bonuses work with all weapon types.",
       "parent" : [ "Psionic Touch" ],
       "skillIcon" : {
         "posY" : 31,
@@ -7845,7 +7845,7 @@
       }
     } ], [ {
       "name" : "Menhir Wall",
-      "description" : "Summon a wall of lesser rune stones to block and distract enemies.{^n}{^Y}These stones can cast elemental bolts, but need Energy to do so. The Runic Golem can provide it.",
+      "description" : "Summon a wall of lesser rune stones to block and distract enemies.{^n}{^y}These stones can cast elemental bolts, but need Energy to do so. The Runic Golem can provide it.",
       "skillIcon" : {
         "posY" : 279,
         "posX" : 638
@@ -7867,8 +7867,8 @@
           "+${value} Base Attack Speed" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ]
         },
         "petSkills" : {
-          "Runic Arcanes" : {
-            "name" : "Runic Arcanes",
+          "Lesser Elemental Lightning" : {
+            "name" : "Lesser Elemental Lightning",
             "attributes" : {
               "^a${value} Second(s) Recharge" : 4.0,
               "${value} Energy Cost" : 50.0,
@@ -7928,7 +7928,7 @@
           }
         },
         "petSkillLevels" : {
-          "Runic Arcanes" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ],
+          "Lesser Elemental Lightning" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ],
           "Provoke" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ],
           "wallstone_retaliation" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ],
           "construct_resists" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ]
@@ -8049,7 +8049,7 @@
       }
     }, {
       "name" : "Runeword: Burn",
-      "description" : "Makes your strikes explode with intense heat and projectiles break into burning fragments. {^n}{^Y}Burn damage works for all weapons. The fragments only work with ranged weapons.",
+      "description" : "Makes your strikes explode with intense heat and projectiles break into burning fragments.{^n}{^y}Burn damage works for all weapons. The fragments only work with ranged weapons.",
       "parent" : [ "Runeword: Explode" ],
       "skillIcon" : {
         "posY" : 217,
@@ -8073,8 +8073,8 @@
         "UltimateLevel" : 14
       }
     }, {
-      "name" : "Runic Warrior",
-      "description" : "Summons forth a Runic Warrior with destructive elemental powers.",
+      "name" : "Rune of Elements",
+      "description" : "Cast the Rune of Elements to empower your allies with the destructive forces of nature.",
       "skillIcon" : {
         "posY" : 217,
         "posX" : 374
@@ -8145,7 +8145,7 @@
       }
     } ], [ {
       "name" : "Runic Golem",
-      "description" : "Call for a Runic Golem with a special affinity for energy. Two Golems can be summoned at higher levels.{^n}{^Y}Catalyst : the Golems improves the Energy of nearby allies. This allows the Menhir Wall to shoot elemental bolts.",
+      "description" : "Call for a Runic Golem with a special affinity for energy. Two Golems can be summoned at higher levels.{^n}{^y}Catalyst : the Golems improves the Energy of nearby allies. This allows the Menhir Wall to shoot elemental bolts.",
       "parent" : [ "Menhir Wall" ],
       "skillIcon" : {
         "posY" : 155,
@@ -8229,8 +8229,8 @@
               "UltimateLevel" : 40
             }
           },
-          "tagPetskillSVAER066" : {
-            "name" : "tagPetskillSVAER066",
+          "Dodge Attacks" : {
+            "name" : "Dodge Attacks",
             "attributes" : {
               "${value}% Chance to Dodge Attacks" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0, 28.0, 29.0, 30.0, 31.0, 32.0, 33.0, 34.0, 35.0, 36.0, 37.0, 38.0, 39.0, 40.0, 41.0, 42.0, 43.0, 44.0, 45.0, 46.0, 47.0, 48.0, 49.0, 50.0, 51.0, 52.0, 53.0, 54.0, 55.0, 56.0, 57.0, 58.0, 59.0, 60.0, 61.0, 62.0, 63.0, 64.0, 65.0, 66.0, 67.0, 68.0, 69.0, 70.0, 71.0, 72.0, 73.0, 74.0, 75.0, 76.0, 77.0, 78.0, 79.0, 80.0, 81.0, 82.0, 83.0, 84.0, 85.0, 86.0, 87.0, 88.0, 89.0, 90.0, 91.0, 92.0, 93.0, 94.0, 95.0, 96.0, 97.0, 98.0, 99.0, 100.0 ],
               "MaxLevel" : 100
@@ -8339,7 +8339,7 @@
           "offensive_ability_+1perlevelx1000" : [ 25, 28, 31, 34, 37, 40, 43, 46, 49, 52, 55, 58, 61, 64, 67, 70, 73, 76, 79, 82 ],
           "Catalyst Aura" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ],
           "_drx_runegolem_petskill_resists" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
-          "tagPetskillSVAER066" : [ 5, 5, 5, 5, 5, 6, 6, 6, 6, 6, 7, 7, 7, 7, 7, 8, 8, 8, 8, 8 ],
+          "Dodge Attacks" : [ 5, 5, 5, 5, 5, 6, 6, 6, 6, 6, 7, 7, 7, 7, 7, 8, 8, 8, 8, 8 ],
           "Cleave" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
           "defensive_ability_+1perlevelx1000" : [ 55, 60, 65, 70, 75, 80, 85, 90, 95, 100, 105, 110, 115, 120, 125, 130, 135, 140, 145, 150 ],
           "Provoke" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ],
@@ -8794,7 +8794,7 @@
       }
     }, {
       "name" : "Consequences",
-      "description" : "When attacking, you channel ancient mystical powers to lower your foe’s resistances.{^n}{^Y}Attacks have a chance to reduce enemy resistances.",
+      "description" : "When attacking, you channel ancient mystical powers to lower your foe�s resistances.{^n}{^Y}Attacks have a chance to reduce enemy resistances.",
       "triggerType" : "if the target is hit",
       "skillIcon" : {
         "posY" : 403,
@@ -8810,7 +8810,7 @@
         "castLevels" : 11,
         "castSkills" : [ {
           "name" : "Consequences",
-          "description" : "When attacking, you channel ancient mystical powers to lower your foe’s resistances.{^n}{^Y}Attacks have a chance to reduce enemy resistances.",
+          "description" : "When attacking, you channel ancient mystical powers to lower your foe�s resistances.{^n}{^Y}Attacks have a chance to reduce enemy resistances.",
           "doesNotIncludeRacialDamage" : true,
           "attributes" : {
             "^a${value} Second(s) Recharge" : 1.0,
@@ -8838,8 +8838,8 @@
         } ]
       }
     } ], [ {
-      "name" : "Dragon’s Flame ",
-      "description" : "You unleash the dragon’s flame burning all in front of you and engulfing your enemies with poisonous fumes.",
+      "name" : "Dragon�s Flame ",
+      "description" : "You unleash the dragon�s flame burning all in front of you and engulfing your enemies with poisonous fumes.",
       "skillIcon" : {
         "posY" : 341,
         "posX" : 328
@@ -8943,7 +8943,7 @@
         "castLevels" : [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0 ],
         "castSkills" : [ {
           "name" : "Consequences",
-          "description" : "When attacking, you channel ancient mystical powers to lower your foe’s resistances.{^n}{^Y}Attacks have a chance to reduce enemy resistances.",
+          "description" : "When attacking, you channel ancient mystical powers to lower your foe�s resistances.{^n}{^Y}Attacks have a chance to reduce enemy resistances.",
           "doesNotIncludeRacialDamage" : true,
           "attributes" : {
             "^a${value} Second(s) Recharge" : 1.0,
@@ -9152,7 +9152,7 @@
       }
     }, {
       "name" : "Chi Realignment",
-      "description" : "Realigns an enemy's Chi, wounding them and bolstering your own energies",
+      "description" : "Realigns an enemy's Chi, wounding them and bolstering your own energies.",
       "skillIcon" : {
         "posY" : 217,
         "posX" : 428
@@ -9472,8 +9472,8 @@
       }
     }, {
       "name" : "Dragon Breath",
-      "description" : "Enemies caught in your Dragon’s Flame will suffer the wrath of the Elements. ",
-      "parent" : [ "Dragon’s Flame " ],
+      "description" : "Enemies caught in your Dragon�s Flame will suffer the wrath of the Elements. ",
+      "parent" : [ "Dragon�s Flame " ],
       "skillIcon" : {
         "posY" : 93,
         "posX" : 328
@@ -9488,7 +9488,7 @@
       }
     }, {
       "name" : "Melding Armor ",
-      "description" : "The strength of your Chi’s flow is such that your barrier is imbued with additional protective energies.",
+      "description" : "The strength of your Chi�s flow is such that your barrier is imbued with additional protective energies.",
       "parent" : [ "Aura of Tranquility" ],
       "skillIcon" : {
         "posY" : 93,
