@@ -70,36 +70,38 @@ function pointsSelected(select){
 function updateAttributes(x, value){
     if(!x.startsWith("+") && !x.startsWith("-"))
         return;
-    //if(!(x.includes("Requirement") || !(x.includes("Regeneration") || x.includes("Leech"))){
-        var attr = x.split(" ", 2)[1];
-        if(!x.includes("%")){
-            switch(attr){
-            case "Strength": str += value;
-                    break;
-            case "Intelligence": int += value;
-                    break;       
-            case "Dexterity": dex += value;
-                    break; 
-            case "Health": hp += value;
-                    break; 
-            case "Energy": mp += value;
-                    break; 
-            }
-        } else {
-            switch(attr){
-            case "Strength": strPercent += value;
-                    break;
-            case "Intelligence": intPercent += value;
-                    break;       
-            case "Dexterity": dexPercent += value;
-                    break; 
-            case "Health": hpPercent += value;
-                    break; 
-            case "Energy": mpPercent += value;
-                    break; 
-            }
+    var split = x.split(" ");
+    if (split.length > 2)
+        return;
+    
+    var attr = split[1];
+    if(!x.includes("%")){
+        switch(attr){
+        case "Strength": str += value;
+                break;
+        case "Intelligence": int += value;
+                break;       
+        case "Dexterity": dex += value;
+                break; 
+        case "Health": hp += value;
+                break; 
+        case "Energy": mp += value;
+                break; 
         }
-    //}
+    } else {
+        switch(attr){
+        case "Strength": strPercent += value;
+                break;
+        case "Intelligence": intPercent += value;
+                break;       
+        case "Dexterity": dexPercent += value;
+                break; 
+        case "Health": hpPercent += value;
+                break; 
+        case "Energy": mpPercent += value;
+                break; 
+        }
+    }
 }
 
 function updateUI(){
